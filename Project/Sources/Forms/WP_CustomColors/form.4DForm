@@ -1,0 +1,161 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 200,
+	"height": 230,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDeactivate"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 206,
+					"left": 152,
+					"width": 38,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture1.png"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 206,
+					"left": 152,
+					"width": 38,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fill": "transparent",
+					"stroke": "#808080"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 206,
+					"left": 102,
+					"width": 38,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fill": "transparent",
+					"stroke": "#808080"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 207,
+					"left": 103,
+					"width": 36,
+					"height": 18,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/Invisible.png"
+				},
+				"btn43": {
+					"type": "button",
+					"top": 206,
+					"left": 152,
+					"width": 38,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"display": false,
+					"method": "ObjectMethods/btn43.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SVGPalette": {
+					"type": "input",
+					"top": 0,
+					"left": 0,
+					"width": 200,
+					"height": 200,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "scaled",
+					"dragging": "none",
+					"method": "ObjectMethods/SVGPalette.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"btnTransparent": {
+					"type": "button",
+					"top": 206,
+					"left": 102,
+					"width": 38,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"display": false,
+					"method": "ObjectMethods/btnTransparent.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"sample": {
+					"type": "rectangle",
+					"top": 206,
+					"left": 10,
+					"width": 80,
+					"height": 20,
+					"fill": "transparent",
+					"stroke": "#808080"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 201,
+					"left": 0,
+					"width": 200,
+					"stroke": "#BFBFBF"
+				},
+				"Button": {
+					"type": "button",
+					"top": 11,
+					"left": 272,
+					"width": 71,
+					"height": 25,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Esc.",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group2": [
+				"Picture1",
+				"Rectangle2"
+			],
+			"Group3": [
+				"Rectangle1",
+				"Picture2"
+			]
+		}
+	}
+}

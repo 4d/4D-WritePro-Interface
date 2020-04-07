@@ -1,0 +1,1 @@
+  //WP DeleteInTable (WP Table get columns(Form.selection))

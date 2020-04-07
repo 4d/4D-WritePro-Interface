@@ -1,0 +1,1 @@
+  //WP InsertInTable (WP Table get columns(Form.selection);"left")

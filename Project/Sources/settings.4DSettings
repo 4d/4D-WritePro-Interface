@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="16">
+	<com.4d>
+		<web>
+			<standalone_server>
+				<configuration automatic_session_management="true"/>
+			</standalone_server>
+			<remote>
+				<configuration automatic_session_management="true"/>
+			</remote>
+		</web>
+		<compiler>
+			<options compilation_path="3" fat_binary="true"/>
+			<typage default_for_button="2"/>
+		</compiler>
+		<interface>
+			<shortcuts>
+				<accept_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+				<cancel_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+				<add_subform alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+			</shortcuts>
+			<developper display_toolbar="true"/>
+		</interface>
+		<general startup_environnement="0"/>
+		<database>
+			<misc use_ast_interpreter="false"/>
+		</database>
+		<server>
+			<network>
+				<options use_legacy_network_layer="false"/>
+			</network>
+		</server>
+		<deployment>
+			<options/>
+		</deployment>
+	</com.4d>
+</preferences>

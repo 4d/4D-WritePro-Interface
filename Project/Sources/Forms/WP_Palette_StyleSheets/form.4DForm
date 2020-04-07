@@ -1,0 +1,393 @@
+﻿{
+	"destination": "detailScreen",
+	"shared": true,
+	"windowTitle": "Tabulations",
+	"inheritedForm": "WP_Z_Common",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 260,
+	"height": 620,
+	"menuBar": "Main",
+	"markerBody": 440,
+	"markerBreak": 620,
+	"markerFooter": 620,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rect1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 440,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"LB_StyleSheets": {
+					"type": "listbox",
+					"top": 90,
+					"left": 25,
+					"width": 210,
+					"height": 300,
+					"resizingMode": "legacy",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"hideExtraBlankRows": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"headerHeight": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"stroke": "automatic",
+					"fill": "transparent",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"method": "ObjectMethods/LB_StyleSheets.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onBeforeDataEntry"
+					],
+					"columns": [
+						{
+							"name": "stylesheet_Names",
+							"width": 210,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"fill": "#DDDDDD",
+							"textAlign": "left",
+							"fontFamily": "System Font Regular",
+							"fontSize": 11,
+							"events": [
+								"onLosingFocus",
+								"onDataChange",
+								"onBeforeDataEntry"
+							],
+							"header": {
+								"name": "Header1",
+								"text": ":xliff:Position",
+								"stroke": "#000000",
+								"fontFamily": "System Font Regular",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#FFFFFF",
+								"fill": "#DDDDDD",
+								"fontFamily": "System Font Regular",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"btnAdd": {
+					"type": "button",
+					"top": 405,
+					"left": 40,
+					"width": 30,
+					"height": 30,
+					"tooltip": ":xliff:newStylesheet",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Plus.png",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"style": "custom",
+					"method": "ObjectMethods/btnAdd.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnDelete": {
+					"type": "button",
+					"top": 405,
+					"left": 80,
+					"width": 30,
+					"height": 30,
+					"tooltip": ":xliff:deleteStylesheet",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Minus.png",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"style": "custom",
+					"method": "ObjectMethods/btnDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Separator2": {
+					"type": "rectangle",
+					"top": 15,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_position": {
+					"type": "text",
+					"top": 15,
+					"left": 20,
+					"width": 90,
+					"height": 13,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"text": ":xliff:stylesheets"
+				},
+				"btnUpdateStylesheet": {
+					"type": "button",
+					"top": 405,
+					"left": 120,
+					"width": 30,
+					"height": 30,
+					"tooltip": ":xliff:updateStylesheet",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Reload.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btnUpdateStylesheet.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnEdit": {
+					"type": "button",
+					"top": 405,
+					"left": 310,
+					"width": 30,
+					"height": 30,
+					"tooltip": ":xliff:editStylesheet",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Edit.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btnEdit.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 405,
+					"left": 300,
+					"height": 30,
+					"stroke": "#696969",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"ssType2": {
+					"type": "radio",
+					"top": 40,
+					"left": 48,
+					"width": 22,
+					"height": 30,
+					"dataSource": "oForm.styleSheet.btnType[1]",
+					"tooltip": ":xliff:characterStylesheets",
+					"fontFamily": "Xingkai SC Light",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Text.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group6",
+					"method": "ObjectMethods/ssType2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ssType1": {
+					"type": "radio",
+					"top": 40,
+					"left": 20,
+					"width": 22,
+					"height": 30,
+					"sizingX": "move",
+					"dataSource": "oForm.styleSheet.btnType[0]",
+					"tooltip": ":xliff:paragraphStylesheets",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Paragraph.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group6",
+					"method": "ObjectMethods/ssType1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ssType3": {
+					"type": "radio",
+					"top": 40,
+					"left": 296,
+					"width": 22,
+					"height": 30,
+					"sizingX": "move",
+					"dataSource": "oForm.styleSheet.btnType[2]",
+					"tooltip": ":xliff:imageStylesheets",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Picture.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"method": "ObjectMethods/ssType3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ssType4": {
+					"type": "radio",
+					"top": 40,
+					"left": 334,
+					"width": 22,
+					"height": 30,
+					"sizingX": "move",
+					"dataSource": "oForm.styleSheet.btnType[3]",
+					"tooltip": ":xliff:tableStylesheets",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Tables.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"method": "ObjectMethods/ssType4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ssType5": {
+					"type": "radio",
+					"top": 40,
+					"left": 372,
+					"width": 22,
+					"height": 30,
+					"sizingX": "move",
+					"dataSource": "oForm.styleSheet.btnType[4]",
+					"tooltip": ":xliff:rowStylesheets",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Rows.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"method": "ObjectMethods/ssType5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ssType6": {
+					"type": "radio",
+					"top": 40,
+					"left": 410,
+					"width": 22,
+					"height": 30,
+					"sizingX": "move",
+					"dataSource": "oForm.styleSheet.btnType[5]",
+					"tooltip": ":xliff:cellStylesheets",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Cells.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"method": "ObjectMethods/ssType6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 440,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 0,
+					"left": 10,
+					"width": 41,
+					"height": 440,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4D WritePro Style sheets"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group6": [
+				"ssType2",
+				"ssType1"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Rect1"
+				]
+			},
+			"GRID": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {
+				"visible": false,
+				"selectable": false,
+				"objects": [
+					"Rect2",
+					"Text"
+				]
+			}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

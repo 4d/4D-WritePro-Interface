@@ -1,0 +1,407 @@
+﻿{
+	"destination": "detailScreen",
+	"shared": true,
+	"inheritedForm": "WP_Z_Common",
+	"width": 260,
+	"height": 680,
+	"markerBody": 680,
+	"markerBreak": 680,
+	"markerFooter": 680,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rect": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 40,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"PaletteSubform": {
+					"type": "subform",
+					"top": 50,
+					"left": 0,
+					"width": 260,
+					"height": 630,
+					"detailForm": "WP_Palette_Fonts",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/PaletteSubform.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PaletteSelector0": {
+					"type": "button",
+					"top": 5,
+					"left": 366,
+					"width": 30,
+					"height": 30,
+					"visibility": "hidden",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Document"
+					},
+					"fontFamily": "Xingkai SC Light",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Document_Menu.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/PaletteSelector0.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 5,
+					"left": 396,
+					"height": 30,
+					"visibility": "hidden",
+					"stroke": "#777777"
+				},
+				"PaletteSelector2": {
+					"type": "radio",
+					"top": 5,
+					"left": 30,
+					"width": 22,
+					"height": 30,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Margins"
+					},
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Margins.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/PaletteSelector2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PaletteSelector1": {
+					"type": "radio",
+					"top": 5,
+					"left": 5,
+					"width": 22,
+					"height": 30,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/FontStyle"
+					},
+					"fontFamily": "Xingkai SC Light",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Text.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/PaletteSelector1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PaletteSelector4": {
+					"type": "radio",
+					"top": 5,
+					"left": 155,
+					"width": 22,
+					"height": 30,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Information"
+					},
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Expressions.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/PaletteSelector4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PaletteSelector5": {
+					"type": "radio",
+					"top": 5,
+					"left": 105,
+					"width": 22,
+					"height": 30,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Frames"
+					},
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Frame.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/PaletteSelector5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PaletteSelector3": {
+					"type": "radio",
+					"top": 5,
+					"left": 55,
+					"width": 22,
+					"height": 30,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Tabulations"
+					},
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_tabs.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/PaletteSelector3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PaletteSelector6": {
+					"type": "radio",
+					"top": 5,
+					"left": 80,
+					"width": 22,
+					"height": 30,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sizes"
+					},
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Sizes.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/PaletteSelector6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PaletteSelector7": {
+					"type": "radio",
+					"top": 5,
+					"left": 130,
+					"width": 22,
+					"height": 30,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Backgrounds"
+					},
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Background.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/PaletteSelector7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PaletteSelector8": {
+					"type": "radio",
+					"top": 5,
+					"left": 181,
+					"width": 22,
+					"height": 30,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Bookmarks"
+					},
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Bookmark.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/PaletteSelector8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PaletteSelector9": {
+					"type": "radio",
+					"top": 5,
+					"left": 207,
+					"width": 22,
+					"height": 30,
+					"tooltip": ":xliff:stylesheets",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_styleSheets.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/PaletteSelector9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PaletteSelector11": {
+					"type": "radio",
+					"top": 5,
+					"left": 233,
+					"width": 22,
+					"height": 30,
+					"tooltip": ":xliff:Tables",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Tables.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/PaletteSelector11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PaletteSelector10": {
+					"type": "radio",
+					"top": 5,
+					"left": 331,
+					"width": 22,
+					"height": 30,
+					"tooltip": ":xliff:FindAndReplace",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_find.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"method": "ObjectMethods/PaletteSelector10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rect1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 680,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 0,
+					"left": 10,
+					"width": 60,
+					"height": 680,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 50,
+					"textAngle": 270,
+					"text": "4D WritePro Widget"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group27": [
+				"PaletteSelector2",
+				"PaletteSelector1",
+				"PaletteSelector4",
+				"PaletteSelector5",
+				"PaletteSelector3",
+				"PaletteSelector6",
+				"PaletteSelector7",
+				"PaletteSelector8",
+				"PaletteSelector9",
+				"PaletteSelector11"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Rect"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"Invisible By default": {
+				"objects": [
+					"Rect1",
+					"Text"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,609 @@
+﻿{
+	"destination": "detailScreen",
+	"shared": true,
+	"windowTitle": "Frames",
+	"inheritedForm": "WP_Z_Common",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 260,
+	"height": 620,
+	"markerBody": 430,
+	"markerBreak": 620,
+	"markerFooter": 620,
+	"events": [
+		"onLoad",
+		"onDataChange",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rect1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 430,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Separator1": {
+					"type": "rectangle",
+					"top": 85,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_Frame": {
+					"type": "text",
+					"top": 85,
+					"left": 40,
+					"width": 180,
+					"height": 14,
+					"stroke": "#FFFFFF",
+					"class": "Palette",
+					"textAlign": "center",
+					"text": ":xliff:LabelRows"
+				},
+				"Separator3": {
+					"type": "rectangle",
+					"top": 215,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_padding": {
+					"type": "text",
+					"top": 215,
+					"left": 40,
+					"width": 180,
+					"height": 14,
+					"stroke": "#FFFFFF",
+					"class": "Palette",
+					"textAlign": "center",
+					"text": ":xliff:LabelColumns"
+				},
+				"decor1": {
+					"type": "button",
+					"top": 120,
+					"left": 30,
+					"width": 30,
+					"height": 30,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Rows.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"events": [
+						"onClick"
+					]
+				},
+				"decor2": {
+					"type": "button",
+					"top": 252,
+					"left": 30,
+					"width": 30,
+					"height": 30,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Columns.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"events": [
+						"onClick"
+					]
+				},
+				"decor3": {
+					"type": "button",
+					"top": 367,
+					"left": 30,
+					"width": 30,
+					"height": 30,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Cells.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnInsertAboveRow": {
+					"type": "button",
+					"top": 110,
+					"left": 100,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"action": "insertRowAbove",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:InsertAbove",
+					"icon": "/RESOURCES/Images/Dark/Arrow_Small_Top.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"method": "ObjectMethods/btnInsertAboveRow.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnInsertBelowRow": {
+					"type": "button",
+					"top": 140,
+					"left": 100,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"action": "insertRowBelow",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:InsertBelow",
+					"icon": "/RESOURCES/Images/Dark/Arrow_Small_Bottom.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"method": "ObjectMethods/btnInsertBelowRow.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnInsertBeforeColumn": {
+					"type": "button",
+					"top": 240,
+					"left": 100,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"action": "insertColumnToTheLeft",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:InsertLeft",
+					"icon": "/RESOURCES/Images/Dark/Arrow_Small_Left.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"method": "ObjectMethods/btnInsertBeforeColumn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnInsertAfterColumn": {
+					"type": "button",
+					"top": 270,
+					"left": 100,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"action": "insertColumnToTheRight",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:InsertRight",
+					"icon": "/RESOURCES/Images/Dark/Arrow_Small_Right.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"method": "ObjectMethods/btnInsertAfterColumn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Separator2": {
+					"type": "rectangle",
+					"top": 345,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_padding1": {
+					"type": "text",
+					"top": 345,
+					"left": 40,
+					"width": 180,
+					"height": 14,
+					"stroke": "#FFFFFF",
+					"class": "Palette",
+					"textAlign": "center",
+					"text": ":xliff:LabelCells"
+				},
+				"btnInsertBeforeCells": {
+					"type": "button",
+					"top": 522,
+					"left": 474,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:InsertLeft",
+					"icon": "/RESOURCES/Images/Dark/Arrow_Small_Left.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnInsertAfterCells": {
+					"type": "button",
+					"top": 552,
+					"left": 474,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:InsertRight",
+					"icon": "/RESOURCES/Images/Dark/Arrow_Small_Right.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 400,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 0,
+					"left": 10,
+					"width": 41,
+					"height": 398,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4D WritePro Tables"
+				},
+				"btnInsertAboveCells": {
+					"type": "button",
+					"top": 582,
+					"left": 474,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:InsertAbove",
+					"icon": "/RESOURCES/Images/Dark/Arrow_Small_Top.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnInsertBelowCells": {
+					"type": "button",
+					"top": 612,
+					"left": 474,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:InsertBelow",
+					"icon": "/RESOURCES/Images/Dark/Arrow_Small_Bottom.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnDeleteRows": {
+					"type": "button",
+					"top": 180,
+					"left": 100,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"action": "deleteRows",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:DeleteRow",
+					"icon": "/RESOURCES/Images/Dark/small_Trash.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"method": "ObjectMethods/btnDeleteRows.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnDeleteColumns": {
+					"type": "button",
+					"top": 310,
+					"left": 100,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"action": "deleteColumns",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:DeleteColumn",
+					"icon": "/RESOURCES/Images/Dark/small_Trash.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"method": "ObjectMethods/btnDeleteColumns.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnDeleteCells": {
+					"type": "button",
+					"top": 652,
+					"left": 474,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:DeleteCell",
+					"icon": "/RESOURCES/Images/Dark/small_Trash.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 170,
+					"left": 120,
+					"width": 100,
+					"stroke": "#696969"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 300,
+					"left": 120,
+					"width": 100,
+					"stroke": "#696969"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 642,
+					"left": 494,
+					"width": 100,
+					"stroke": "#696969"
+				},
+				"btnShiftUp": {
+					"type": "radio",
+					"top": 702,
+					"left": 474,
+					"width": 160,
+					"height": 15,
+					"dataSource": "oForm.tables.shiftUp",
+					"text": ":xliff:ShiftCellsUp",
+					"focusable": false,
+					"radioGroup": "Group16",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnShiftLeft": {
+					"type": "radio",
+					"top": 682,
+					"left": 474,
+					"width": 160,
+					"height": 15,
+					"dataSource": "oForm.tables.shiftLeft",
+					"text": ":xliff:ShiftCellsLeft",
+					"focusable": false,
+					"radioGroup": "Group16",
+					"events": [
+						"onClick"
+					]
+				},
+				"Separator4": {
+					"type": "rectangle",
+					"top": 15,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_Frame1": {
+					"type": "text",
+					"top": 15,
+					"left": 40,
+					"width": 180,
+					"height": 14,
+					"stroke": "#FFFFFF",
+					"class": "Palette",
+					"textAlign": "center",
+					"text": ":xliff:Table"
+				},
+				"decor4": {
+					"type": "button",
+					"top": 40,
+					"left": 30,
+					"width": 30,
+					"height": 30,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Tables.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnInsertTable": {
+					"type": "button",
+					"top": 43,
+					"left": 100,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:InsertTable",
+					"icon": "/RESOURCES/",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"textPlacement": "right",
+					"method": "ObjectMethods/btnInsertTable.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lbl_Background": {
+					"type": "text",
+					"top": 397,
+					"left": 30,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:BackgroundColon"
+				},
+				"backgroundColor": {
+					"type": "input",
+					"top": 397,
+					"left": 116,
+					"width": 98,
+					"height": 14,
+					"fill": "#FFEECC",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/backgroundColor.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"SampleFrame3": {
+					"type": "rectangle",
+					"top": 396,
+					"left": 115,
+					"width": 100,
+					"height": 16,
+					"fill": "transparent",
+					"stroke": "#404040",
+					"borderRadius": 4
+				},
+				"MultiBackgroundColor": {
+					"type": "picture",
+					"top": 398,
+					"left": 121,
+					"width": 90,
+					"height": 12,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/Mixed.png"
+				},
+				"InvisibleBackground": {
+					"type": "picture",
+					"top": 398,
+					"left": 121,
+					"width": 90,
+					"height": 12,
+					"visibility": "hidden",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/Invisible.png"
+				},
+				"btnSetCellsColor": {
+					"type": "button",
+					"top": 395,
+					"left": 116,
+					"width": 100,
+					"height": 18,
+					"display": false,
+					"method": "ObjectMethods/btnSetCellsColor.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group16": [
+				"btnShiftUp",
+				"btnShiftLeft"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"sepLbl_Frame",
+					"Separator3",
+					"sepLbl_padding",
+					"sepLbl_Frame1"
+				]
+			},
+			"View 3": {},
+			"View 4": {
+				"objects": [
+					"MultiBackgroundColor",
+					"InvisibleBackground"
+				]
+			},
+			"View 5": {
+				"objects": [
+					"SampleFrame3"
+				]
+			},
+			"View 6": {
+				"objects": [
+					"btnSetCellsColor"
+				]
+			},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {
+				"visible": false,
+				"selectable": false,
+				"objects": [
+					"Rect2",
+					"Text"
+				]
+			}
+		}
+	}
+}

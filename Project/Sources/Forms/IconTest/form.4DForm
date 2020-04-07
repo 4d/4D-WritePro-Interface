@@ -1,0 +1,2435 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Zone de groupe": {
+					"type": "groupBox",
+					"top": 20,
+					"left": 20,
+					"width": 630,
+					"height": 96,
+					"text": "4D (3)"
+				},
+				"TB_SizeUp": {
+					"type": "button",
+					"top": 50,
+					"left": 40,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 11,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/4D/ComputeReference_32.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"Popup Liste déroulante1": {
+					"type": "dropdown",
+					"top": 36,
+					"left": 1325,
+					"width": 185,
+					"height": 24,
+					"dataSource": "_toolbars",
+					"focusable": false,
+					"method": "ObjectMethods/Popup Liste déroulante1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Popup Liste déroulante": {
+					"type": "dropdown",
+					"top": 76,
+					"left": 1325,
+					"width": 185,
+					"height": 24,
+					"dataSource": "_sizes",
+					"focusable": false,
+					"choiceList": [
+						"16",
+						"24",
+						"32",
+						"48",
+						"16@2x",
+						"24@2x"
+					],
+					"method": "ObjectMethods/Popup Liste déroulante.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"TB_SizeUp1": {
+					"type": "button",
+					"top": 50,
+					"left": 100,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/4D/FreezeDocument_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp2": {
+					"type": "button",
+					"top": 50,
+					"left": 160,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/4D/Show4DExpression_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de groupe1": {
+					"type": "groupBox",
+					"top": 120,
+					"left": 20,
+					"width": 630,
+					"height": 92,
+					"text": "Columns (5)"
+				},
+				"TB_SizeUp3": {
+					"type": "button",
+					"top": 150,
+					"left": 40,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Columns/columnsNumber_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp4": {
+					"type": "button",
+					"top": 150,
+					"left": 100,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Columns/gutters_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp5": {
+					"type": "button",
+					"top": 150,
+					"left": 160,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Columns/separatorColor_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp6": {
+					"type": "button",
+					"top": 150,
+					"left": 220,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Columns/separatorStyle_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp7": {
+					"type": "button",
+					"top": 150,
+					"left": 280,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Columns/separatorWidth_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de groupe2": {
+					"type": "groupBox",
+					"top": 220,
+					"left": 20,
+					"width": 630,
+					"height": 92,
+					"text": "File (9)"
+				},
+				"TB_SizeUp8": {
+					"type": "button",
+					"top": 250,
+					"left": 40,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/Information_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp9": {
+					"type": "button",
+					"top": 250,
+					"left": 100,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/New_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp10": {
+					"type": "button",
+					"top": 250,
+					"left": 160,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/Open_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp11": {
+					"type": "button",
+					"top": 250,
+					"left": 220,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/PageSetup_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp12": {
+					"type": "button",
+					"top": 250,
+					"left": 280,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/Print_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp13": {
+					"type": "button",
+					"top": 250,
+					"left": 340,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/PrintPreview_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp14": {
+					"type": "button",
+					"top": 250,
+					"left": 400,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/Quit_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp15": {
+					"type": "button",
+					"top": 250,
+					"left": 460,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/Save_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp16": {
+					"type": "button",
+					"top": 250,
+					"left": 520,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/SaveAs_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de groupe3": {
+					"type": "groupBox",
+					"top": 320,
+					"left": 20,
+					"width": 630,
+					"height": 210,
+					"text": "Home (28)"
+				},
+				"TB_SizeUp17": {
+					"type": "button",
+					"top": 350,
+					"left": 40,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/AlignCenter_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp18": {
+					"type": "button",
+					"top": 350,
+					"left": 100,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/AlignLeft_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp19": {
+					"type": "button",
+					"top": 350,
+					"left": 160,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/AlignRight_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp20": {
+					"type": "button",
+					"top": 350,
+					"left": 220,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/BackgroundColor_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp21": {
+					"type": "button",
+					"top": 350,
+					"left": 280,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Bold_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp22": {
+					"type": "button",
+					"top": 350,
+					"left": 340,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Clear_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp23": {
+					"type": "button",
+					"top": 350,
+					"left": 400,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/ConvertCase_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp24": {
+					"type": "button",
+					"top": 350,
+					"left": 460,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Copy_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp25": {
+					"type": "button",
+					"top": 350,
+					"left": 520,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Cut_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp26": {
+					"type": "button",
+					"top": 350,
+					"left": 580,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/FontSizeDown_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp27": {
+					"type": "button",
+					"top": 410,
+					"left": 40,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/FontSizeUp_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp28": {
+					"type": "button",
+					"top": 410,
+					"left": 100,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/FullJustification_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp29": {
+					"type": "button",
+					"top": 410,
+					"left": 160,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Italic_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp30": {
+					"type": "button",
+					"top": 410,
+					"left": 220,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/ListBullet_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp31": {
+					"type": "button",
+					"top": 410,
+					"left": 280,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/ListNone_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp32": {
+					"type": "button",
+					"top": 410,
+					"left": 340,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/ListNumbered_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp33": {
+					"type": "button",
+					"top": 410,
+					"left": 400,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Paste_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp34": {
+					"type": "button",
+					"top": 410,
+					"left": 460,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Redo_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp35": {
+					"type": "button",
+					"top": 410,
+					"left": 520,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/SelectAll_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp36": {
+					"type": "button",
+					"top": 410,
+					"left": 580,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/ShadowColor_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp37": {
+					"type": "button",
+					"top": 470,
+					"left": 40,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Strikethrough_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp38": {
+					"type": "button",
+					"top": 470,
+					"left": 100,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/StrikethroughColor_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp39": {
+					"type": "button",
+					"top": 470,
+					"left": 160,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Subscript_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp40": {
+					"type": "button",
+					"top": 470,
+					"left": 220,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Superscript_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp41": {
+					"type": "button",
+					"top": 470,
+					"left": 280,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/TextColor_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp42": {
+					"type": "button",
+					"top": 470,
+					"left": 340,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Underline_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp43": {
+					"type": "button",
+					"top": 470,
+					"left": 400,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/UnderlineColor_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp44": {
+					"type": "button",
+					"top": 470,
+					"left": 460,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Undo_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de groupe4": {
+					"type": "groupBox",
+					"top": 540,
+					"left": 20,
+					"width": 630,
+					"height": 150,
+					"text": "Image (14)"
+				},
+				"TB_SizeUp45": {
+					"type": "button",
+					"top": 570,
+					"left": 40,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/alignBottom_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp46": {
+					"type": "button",
+					"top": 570,
+					"left": 100,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/alignCenter_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp47": {
+					"type": "button",
+					"top": 570,
+					"left": 160,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/alignCenter_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp48": {
+					"type": "button",
+					"top": 570,
+					"left": 220,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/alignLeft_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp49": {
+					"type": "button",
+					"top": 570,
+					"left": 280,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/alignLeft_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp50": {
+					"type": "button",
+					"top": 570,
+					"left": 340,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/alignMiddle_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp51": {
+					"type": "button",
+					"top": 570,
+					"left": 400,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/imageInEveryPage_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp52": {
+					"type": "button",
+					"top": 570,
+					"left": 460,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/imageInEverySection_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp53": {
+					"type": "button",
+					"top": 570,
+					"left": 520,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/imageInLine_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp54": {
+					"type": "button",
+					"top": 570,
+					"left": 580,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/imageInText_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp55": {
+					"type": "button",
+					"top": 630,
+					"left": 40,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/imageOverText_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp56": {
+					"type": "button",
+					"top": 630,
+					"left": 160,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/onBack_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp57": {
+					"type": "button",
+					"top": 630,
+					"left": 220,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/onTop_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp58": {
+					"type": "button",
+					"top": 630,
+					"left": 100,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Images/imageBehindText_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de groupe5": {
+					"type": "groupBox",
+					"top": 700,
+					"left": 20,
+					"width": 630,
+					"height": 150,
+					"text": "Insert (14)"
+				},
+				"TB_SizeUp59": {
+					"type": "button",
+					"top": 730,
+					"left": 37,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/Bookmarks_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp60": {
+					"type": "button",
+					"top": 730,
+					"left": 97,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/columnBreak_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp61": {
+					"type": "button",
+					"top": 730,
+					"left": 157,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/Footer_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp62": {
+					"type": "button",
+					"top": 730,
+					"left": 217,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/Header_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp63": {
+					"type": "button",
+					"top": 730,
+					"left": 277,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/Hyperlinks_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp64": {
+					"type": "button",
+					"top": 730,
+					"left": 337,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/Images_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp65": {
+					"type": "button",
+					"top": 730,
+					"left": 397,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/InsertDate_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp66": {
+					"type": "button",
+					"top": 730,
+					"left": 457,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/InsertExpression_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp67": {
+					"type": "button",
+					"top": 730,
+					"left": 577,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/PageBreak_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp68": {
+					"type": "button",
+					"top": 790,
+					"left": 37,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/PageCount_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp69": {
+					"type": "button",
+					"top": 790,
+					"left": 97,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/PageNumber_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp70": {
+					"type": "button",
+					"top": 790,
+					"left": 217,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/Tables_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp72": {
+					"type": "button",
+					"top": 790,
+					"left": 157,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/SectionBreak_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de groupe6": {
+					"type": "groupBox",
+					"top": 20,
+					"left": 680,
+					"width": 620,
+					"height": 212,
+					"text": "Page Layout (22)"
+				},
+				"TB_SizeUp71": {
+					"type": "button",
+					"top": 50,
+					"left": 700,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderBackground_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp73": {
+					"type": "button",
+					"top": 50,
+					"left": 760,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderBottom_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp74": {
+					"type": "button",
+					"top": 50,
+					"left": 820,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderLeft_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp75": {
+					"type": "button",
+					"top": 50,
+					"left": 880,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderLine_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp76": {
+					"type": "button",
+					"top": 50,
+					"left": 940,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderRight_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp77": {
+					"type": "button",
+					"top": 50,
+					"left": 1000,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/Borders_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp78": {
+					"type": "button",
+					"top": 50,
+					"left": 1120,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderTop_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp79": {
+					"type": "button",
+					"top": 50,
+					"left": 1180,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/Margin_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp80": {
+					"type": "button",
+					"top": 50,
+					"left": 1240,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/MarginBottom_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp81": {
+					"type": "button",
+					"top": 110,
+					"left": 700,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/MarginLeft_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp83": {
+					"type": "button",
+					"top": 110,
+					"left": 880,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/PaddingBottom_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp84": {
+					"type": "button",
+					"top": 170,
+					"left": 700,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/PageSize_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp85": {
+					"type": "button",
+					"top": 110,
+					"left": 940,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/PaddingLeft_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp86": {
+					"type": "button",
+					"top": 110,
+					"left": 1000,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/PaddingRight_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp87": {
+					"type": "button",
+					"top": 110,
+					"left": 1060,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/PaddingTop_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp88": {
+					"type": "button",
+					"top": 170,
+					"left": 760,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/StyleSheet_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de groupe7": {
+					"type": "groupBox",
+					"top": 240,
+					"left": 680,
+					"width": 620,
+					"height": 152,
+					"text": "Review (13)"
+				},
+				"TB_SizeUp89": {
+					"type": "button",
+					"top": 270,
+					"left": 700,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/Autocorrect_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp90": {
+					"type": "button",
+					"top": 270,
+					"left": 760,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/Autodash_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp91": {
+					"type": "button",
+					"top": 270,
+					"left": 820,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/AutoLanguage_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp92": {
+					"type": "button",
+					"top": 270,
+					"left": 880,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/Autoquote_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp93": {
+					"type": "button",
+					"top": 270,
+					"left": 940,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/Autosubstitution_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp94": {
+					"type": "button",
+					"top": 270,
+					"left": 1000,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/ForgetIgnore_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp95": {
+					"type": "button",
+					"top": 270,
+					"left": 1060,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/Grammar_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp96": {
+					"type": "button",
+					"top": 270,
+					"left": 1120,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/Ignore_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp97": {
+					"type": "button",
+					"top": 270,
+					"left": 1180,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/Learn_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp98": {
+					"type": "button",
+					"top": 270,
+					"left": 1240,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/RemoveSubstitution_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp99": {
+					"type": "button",
+					"top": 330,
+					"left": 700,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/Spelling_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp100": {
+					"type": "button",
+					"top": 330,
+					"left": 820,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/VisibleSubstitution_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp101": {
+					"type": "button",
+					"top": 330,
+					"left": 760,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Review/Unlearn_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de groupe8": {
+					"type": "groupBox",
+					"top": 700,
+					"left": 680,
+					"width": 620,
+					"height": 152,
+					"text": "View (11)"
+				},
+				"TB_SizeUp102": {
+					"type": "button",
+					"top": 730,
+					"left": 700,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Draft_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp103": {
+					"type": "button",
+					"top": 730,
+					"left": 760,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Footer_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp104": {
+					"type": "button",
+					"top": 730,
+					"left": 820,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Frames_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp105": {
+					"type": "button",
+					"top": 730,
+					"left": 880,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/GotoPage_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp106": {
+					"type": "button",
+					"top": 730,
+					"left": 940,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Header_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp107": {
+					"type": "button",
+					"top": 730,
+					"left": 1000,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/InvisibleCharacters_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp108": {
+					"type": "button",
+					"top": 730,
+					"left": 1060,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Page_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp109": {
+					"type": "button",
+					"top": 730,
+					"left": 1120,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Ruler_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp110": {
+					"type": "button",
+					"top": 730,
+					"left": 1240,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/ShowSelection_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp111": {
+					"type": "button",
+					"top": 790,
+					"left": 700,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Web_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp112": {
+					"type": "button",
+					"top": 790,
+					"left": 760,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/Zoom_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp114": {
+					"type": "button",
+					"top": 50,
+					"left": 1060,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BordersNone_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp113": {
+					"type": "button",
+					"top": 730,
+					"left": 517,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/InsertTime_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp115": {
+					"type": "button",
+					"top": 110,
+					"left": 760,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/MarginRight_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp116": {
+					"type": "button",
+					"top": 110,
+					"left": 820,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/MarginTop_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp117": {
+					"type": "button",
+					"top": 110,
+					"left": 1120,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/PageBackgroundColor_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp118": {
+					"type": "button",
+					"top": 110,
+					"left": 1180,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/PageBorder_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp119": {
+					"type": "button",
+					"top": 110,
+					"left": 1240,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/PageOrientation_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de groupe9": {
+					"type": "groupBox",
+					"top": 400,
+					"left": 680,
+					"width": 620,
+					"height": 92,
+					"text": "Stylesheets (7)"
+				},
+				"Zone de groupe10": {
+					"type": "groupBox",
+					"top": 600,
+					"left": 680,
+					"width": 620,
+					"height": 92,
+					"text": "Tables (5)"
+				},
+				"TB_SizeUp120": {
+					"type": "button",
+					"top": 430,
+					"left": 700,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Del_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp121": {
+					"type": "button",
+					"top": 430,
+					"left": 760,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Edit_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp122": {
+					"type": "button",
+					"top": 430,
+					"left": 820,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Image_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp123": {
+					"type": "button",
+					"top": 430,
+					"left": 880,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Paragraph_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp124": {
+					"type": "button",
+					"top": 430,
+					"left": 940,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Plus_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp125": {
+					"type": "button",
+					"top": 430,
+					"left": 1000,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Refresh_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp128": {
+					"type": "button",
+					"top": 430,
+					"left": 1060,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Text_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp130": {
+					"type": "button",
+					"top": 630,
+					"left": 700,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/CellBorder_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp131": {
+					"type": "button",
+					"top": 630,
+					"left": 820,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/RowBorder_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp132": {
+					"type": "button",
+					"top": 630,
+					"left": 880,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/TableBorder_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp133": {
+					"type": "button",
+					"top": 630,
+					"left": 940,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/Trash_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp134": {
+					"type": "button",
+					"top": 630,
+					"left": 760,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/Columns_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zone de groupe11": {
+					"type": "groupBox",
+					"top": 500,
+					"left": 680,
+					"width": 620,
+					"height": 92,
+					"text": "Switch (1)"
+				},
+				"TB_SizeUp82": {
+					"type": "button",
+					"top": 530,
+					"left": 700,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Switch/switch_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				},
+				"TB_SizeUp126": {
+					"type": "button",
+					"top": 730,
+					"left": 1180,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/RulerV_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

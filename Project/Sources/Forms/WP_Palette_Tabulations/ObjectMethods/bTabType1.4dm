@@ -1,0 +1,1 @@
+WP_SetTabType (wk right:K81:96)

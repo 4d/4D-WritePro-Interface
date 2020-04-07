@@ -1,0 +1,941 @@
+﻿{
+	"destination": "detailScreen",
+	"shared": true,
+	"windowTitle": "Fonts",
+	"inheritedForm": "WP_Z_Common",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 260,
+	"height": 620,
+	"markerBody": 500,
+	"markerBreak": 620,
+	"markerFooter": 620,
+	"events": [
+		"onLoad",
+		"onDataChange",
+		"onUnload",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rect1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 500,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"fontFamilly": {
+					"type": "dropdown",
+					"top": 10,
+					"left": 85,
+					"width": 140,
+					"height": 18,
+					"dataSource": "WP_FontFamilly",
+					"focusable": false,
+					"class": "Palette",
+					"method": "ObjectMethods/fontFamilly.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"fontStyle": {
+					"type": "dropdown",
+					"top": 35,
+					"left": 85,
+					"width": 140,
+					"height": 18,
+					"dataSource": "WP_fontStyle",
+					"focusable": false,
+					"class": "Palette",
+					"method": "ObjectMethods/fontStyle.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"fontLongName": {
+					"type": "dropdown",
+					"top": 34,
+					"left": 305,
+					"width": 140,
+					"height": 18,
+					"dataSource": "WP_fontLongName",
+					"focusable": false,
+					"class": "Palette",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"fontSizeRuler": {
+					"type": "ruler",
+					"top": 64,
+					"left": 85,
+					"width": 95,
+					"height": 17,
+					"dataSource": "oForm.fontSize",
+					"dataSourceTypeHint": "number",
+					"min": 9,
+					"max": 48,
+					"graduationStep": 1,
+					"method": "ObjectMethods/fontSizeRuler.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ColorSample": {
+					"type": "input",
+					"top": 93,
+					"left": 86,
+					"width": 98,
+					"height": 14,
+					"fill": "#f5deb3",
+					"borderStyle": "none",
+					"enterable": false,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/ColorSample.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 2
+				},
+				"BackgroundColor": {
+					"type": "input",
+					"top": 123,
+					"left": 86,
+					"width": 98,
+					"height": 14,
+					"fill": "#f5deb3",
+					"borderStyle": "none",
+					"enterable": false,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/BackgroundColor.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 2
+				},
+				"cbBold": {
+					"type": "checkbox",
+					"top": 152,
+					"left": 85,
+					"width": 140,
+					"height": 16,
+					"dataSource": "oForm.cbBold",
+					"text": ":xliff:Bold",
+					"class": "Palette",
+					"focusable": false,
+					"threeState": true,
+					"method": "ObjectMethods/cbBold.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbItalic": {
+					"type": "checkbox",
+					"top": 172,
+					"left": 85,
+					"width": 140,
+					"height": 16,
+					"dataSource": "oForm.cbItalic",
+					"text": ":xliff:Italic",
+					"class": "Palette",
+					"focusable": false,
+					"threeState": true,
+					"method": "ObjectMethods/cbItalic.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbLinethrough": {
+					"type": "checkbox",
+					"top": 192,
+					"left": 85,
+					"width": 140,
+					"height": 16,
+					"text": ":xliff:Linethrough",
+					"class": "Palette",
+					"focusable": false,
+					"threeState": true,
+					"method": "ObjectMethods/cbLinethrough.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"linethroughStylesNames": {
+					"type": "dropdown",
+					"top": 210,
+					"left": 135,
+					"width": 90,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"method": "ObjectMethods/linethroughStylesNames.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LinethroughColor": {
+					"type": "input",
+					"top": 236,
+					"left": 136,
+					"width": 88,
+					"height": 14,
+					"fill": "#f5deb3",
+					"borderStyle": "none",
+					"enterable": false,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/LinethroughColor.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 2
+				},
+				"cbUnderline": {
+					"type": "checkbox",
+					"top": 262,
+					"left": 85,
+					"width": 140,
+					"height": 16,
+					"text": ":xliff:Underline",
+					"class": "Palette",
+					"focusable": false,
+					"threeState": true,
+					"method": "ObjectMethods/cbUnderline.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"underlineStylesNames": {
+					"type": "dropdown",
+					"top": 280,
+					"left": 135,
+					"width": 90,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"method": "ObjectMethods/underlineStylesNames.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"UnderlineColor": {
+					"type": "input",
+					"top": 306,
+					"left": 136,
+					"width": 88,
+					"height": 14,
+					"fill": "#f5deb3",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"allowFontColorPicker": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/UnderlineColor.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 2
+				},
+				"verticalAlignNames": {
+					"type": "dropdown",
+					"top": 340,
+					"left": 85,
+					"width": 140,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"method": "ObjectMethods/verticalAlignNames.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"textTransformNames": {
+					"type": "dropdown",
+					"top": 365,
+					"left": 85,
+					"width": 140,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"method": "ObjectMethods/textTransformNames.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cbShadow": {
+					"type": "checkbox",
+					"top": 422,
+					"left": 85,
+					"width": 140,
+					"height": 16,
+					"dataSource": "oForm.cbShadow",
+					"text": ":xliff:Shadow",
+					"class": "Palette",
+					"focusable": false,
+					"threeState": true,
+					"method": "ObjectMethods/cbShadow.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"shadowOffsetRuler": {
+					"type": "ruler",
+					"top": 444,
+					"left": 135,
+					"width": 45,
+					"height": 17,
+					"dataSource": "oForm.shadowOffset",
+					"dataSourceTypeHint": "number",
+					"min": 1,
+					"max": 5,
+					"graduationStep": 1,
+					"method": "ObjectMethods/shadowOffsetRuler.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ColorShadow": {
+					"type": "input",
+					"top": 467,
+					"left": 136,
+					"width": 88,
+					"height": 14,
+					"fill": "#f5deb3",
+					"borderStyle": "none",
+					"enterable": false,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/ColorShadow.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					],
+					"fontFamily": "Arial",
+					"fontSize": 2
+				},
+				"InvisibleBackground": {
+					"type": "picture",
+					"top": 124,
+					"left": 87,
+					"width": 96,
+					"height": 12,
+					"visibility": "hidden",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/Invisible.png"
+				},
+				"Separator1": {
+					"type": "rectangle",
+					"top": 400,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_Shadows": {
+					"type": "text",
+					"top": 400,
+					"left": 25,
+					"width": 210,
+					"height": 14,
+					"stroke": "#FFFFFF",
+					"class": "Palette",
+					"textAlign": "center",
+					"text": ":xliff:Shadows"
+				},
+				"fontSizeInput": {
+					"type": "input",
+					"top": 64,
+					"left": 190,
+					"width": 35,
+					"height": 14,
+					"dataSource": "oForm.fontSize",
+					"dataSourceTypeHint": "number",
+					"class": "Palette",
+					"contextMenu": "none",
+					"numberFormat": "######0 pt",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/fontSizeInput.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"shadowOffsetInput": {
+					"type": "input",
+					"top": 444,
+					"left": 190,
+					"width": 35,
+					"height": 14,
+					"dataSource": "oForm.shadowOffset",
+					"dataSourceTypeHint": "number",
+					"class": "Palette",
+					"contextMenu": "none",
+					"numberFormat": "######0 pt",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/shadowOffsetInput.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"lbl_Font": {
+					"type": "text",
+					"top": 11,
+					"left": 0,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:FontColon"
+				},
+				"lbl_Color": {
+					"type": "text",
+					"top": 92,
+					"left": 0,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:ColorColon"
+				},
+				"lbl_Size": {
+					"type": "text",
+					"top": 62,
+					"left": 0,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:SizeColon"
+				},
+				"lbl_Style2": {
+					"type": "text",
+					"top": 282,
+					"left": 15,
+					"width": 115,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:LineColon"
+				},
+				"lbl_Color1": {
+					"type": "text",
+					"top": 306,
+					"left": 15,
+					"width": 115,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:ColorColon"
+				},
+				"lbl_Color2": {
+					"type": "text",
+					"top": 467,
+					"left": 65,
+					"width": 65,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:ColorColon"
+				},
+				"lbl_Offset": {
+					"type": "text",
+					"top": 443,
+					"left": 65,
+					"width": 65,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:OffsetColon"
+				},
+				"lbl_Background": {
+					"type": "text",
+					"top": 122,
+					"left": 0,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:BackgroundColon"
+				},
+				"lbl_Style1": {
+					"type": "text",
+					"top": 152,
+					"left": 0,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:StyleColon0"
+				},
+				"lbl_VertAlign": {
+					"type": "text",
+					"top": 342,
+					"left": 0,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:VertAlignColon"
+				},
+				"lbl_Transform": {
+					"type": "text",
+					"top": 367,
+					"left": 0,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:TransformColon"
+				},
+				"underlineStylesValues": {
+					"type": "dropdown",
+					"top": 280,
+					"left": 305,
+					"width": 190,
+					"height": 18,
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"verticalAlignValues": {
+					"type": "dropdown",
+					"top": 340,
+					"left": 305,
+					"width": 56,
+					"height": 19,
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"textTransformValues": {
+					"type": "dropdown",
+					"top": 363,
+					"left": 305,
+					"width": 56,
+					"height": 18,
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"btnAction": {
+					"type": "button",
+					"top": 465,
+					"left": 0,
+					"width": 30,
+					"height": 30,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Dark/Icon_Action.png",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"style": "custom",
+					"method": "ObjectMethods/btnAction.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SampleFrame4": {
+					"type": "rectangle",
+					"top": 92,
+					"left": 85,
+					"width": 100,
+					"height": 16,
+					"fill": "transparent",
+					"stroke": "#404040",
+					"borderRadius": 4
+				},
+				"SampleFrame2": {
+					"type": "rectangle",
+					"top": 122,
+					"left": 85,
+					"width": 100,
+					"height": 16,
+					"fill": "transparent",
+					"stroke": "#404040",
+					"borderRadius": 4
+				},
+				"SampleFrame3": {
+					"type": "rectangle",
+					"top": 305,
+					"left": 135,
+					"width": 90,
+					"height": 16,
+					"fill": "transparent",
+					"borderRadius": 4
+				},
+				"SampleFrame1": {
+					"type": "rectangle",
+					"top": 466,
+					"left": 135,
+					"width": 90,
+					"height": 16,
+					"fill": "transparent",
+					"stroke": "#404040",
+					"borderRadius": 4
+				},
+				"FakeFocusFontColor": {
+					"type": "picture",
+					"top": 95,
+					"left": 190,
+					"width": 10,
+					"height": 10,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Rainbow.png"
+				},
+				"FakeFocusBackgroundColor": {
+					"type": "picture",
+					"top": 126,
+					"left": 190,
+					"width": 10,
+					"height": 10,
+					"visibility": "hidden",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Rainbow.png"
+				},
+				"FakeFocusUnderlineColor": {
+					"type": "picture",
+					"top": 308,
+					"left": 230,
+					"width": 10,
+					"height": 10,
+					"visibility": "hidden",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Rainbow.png"
+				},
+				"FakeFocusShadowColor": {
+					"type": "picture",
+					"top": 469,
+					"left": 230,
+					"width": 10,
+					"height": 10,
+					"visibility": "hidden",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Rainbow.png"
+				},
+				"MultiFontColor": {
+					"type": "picture",
+					"top": 94,
+					"left": 87,
+					"width": 96,
+					"height": 12,
+					"visibility": "hidden",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/Mixed.png"
+				},
+				"MultiUnderlineColor": {
+					"type": "picture",
+					"top": 307,
+					"left": 138,
+					"width": 84,
+					"height": 12,
+					"visibility": "hidden",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/Mixed.png"
+				},
+				"MultiShadowColor": {
+					"type": "picture",
+					"top": 468,
+					"left": 138,
+					"width": 84,
+					"height": 12,
+					"visibility": "hidden",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/Mixed.png"
+				},
+				"btnInvisible4": {
+					"type": "button",
+					"top": 465,
+					"left": 134,
+					"width": 92,
+					"height": 18,
+					"display": false,
+					"method": "ObjectMethods/btnInvisible4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnInvisible1": {
+					"type": "button",
+					"top": 91,
+					"left": 85,
+					"width": 100,
+					"height": 18,
+					"display": false,
+					"method": "ObjectMethods/btnInvisible1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnInvisible3": {
+					"type": "button",
+					"top": 304,
+					"left": 134,
+					"width": 92,
+					"height": 18,
+					"display": false,
+					"method": "ObjectMethods/btnInvisible3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MultiBackgroundColor": {
+					"type": "picture",
+					"top": 124,
+					"left": 87,
+					"width": 96,
+					"height": 12,
+					"visibility": "hidden",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/Mixed.png"
+				},
+				"btnInvisible2": {
+					"type": "button",
+					"top": 121,
+					"left": 85,
+					"width": 100,
+					"height": 18,
+					"display": false,
+					"method": "ObjectMethods/btnInvisible2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lbl_Font1": {
+					"type": "text",
+					"top": 36,
+					"left": 0,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:StyleColon1"
+				},
+				"lbl_Style3": {
+					"type": "text",
+					"top": 212,
+					"left": 15,
+					"width": 115,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:LineColon"
+				},
+				"lbl_Color3": {
+					"type": "text",
+					"top": 236,
+					"left": 15,
+					"width": 115,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:ColorColon"
+				},
+				"SampleFrame5": {
+					"type": "rectangle",
+					"top": 235,
+					"left": 135,
+					"width": 90,
+					"height": 16,
+					"fill": "transparent",
+					"borderRadius": 4
+				},
+				"FakeFocusLinethroughColor": {
+					"type": "picture",
+					"top": 238,
+					"left": 230,
+					"width": 10,
+					"height": 10,
+					"visibility": "hidden",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/Rainbow.png"
+				},
+				"MultiLinethroughColor": {
+					"type": "picture",
+					"top": 237,
+					"left": 138,
+					"width": 84,
+					"height": 12,
+					"visibility": "hidden",
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/Mixed.png"
+				},
+				"btnInvisible5": {
+					"type": "button",
+					"top": 234,
+					"left": 134,
+					"width": 92,
+					"height": 18,
+					"display": false,
+					"method": "ObjectMethods/btnInvisible5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"linethroughStylesValues": {
+					"type": "dropdown",
+					"top": 210,
+					"left": 305,
+					"width": 190,
+					"height": 18,
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 500,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 0,
+					"left": 10,
+					"width": 40,
+					"height": 500,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4D WritePro Fonts"
+				}
+			},
+			"entryOrder": [
+				"fontFamilly",
+				"fontStyle",
+				"fontLongName",
+				"fontSizeRuler",
+				"ColorSample",
+				"BackgroundColor",
+				"cbBold",
+				"cbItalic",
+				"cbLinethrough",
+				"linethroughStylesNames",
+				"LinethroughColor",
+				"cbUnderline",
+				"underlineStylesNames",
+				"UnderlineColor",
+				"verticalAlignNames",
+				"textTransformNames",
+				"cbShadow",
+				"shadowOffsetRuler",
+				"ColorShadow",
+				"underlineStylesValues",
+				"verticalAlignValues",
+				"textTransformValues",
+				"linethroughStylesValues"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"Frames": {
+				"objects": [
+					"Rect1",
+					"sepLbl_Shadows"
+				]
+			},
+			"Grid": {},
+			"FakeFocus": {
+				"objects": [
+					"FakeFocusFontColor",
+					"FakeFocusBackgroundColor",
+					"FakeFocusUnderlineColor",
+					"FakeFocusShadowColor",
+					"FakeFocusLinethroughColor"
+				]
+			},
+			"SampleFrames": {
+				"objects": [
+					"SampleFrame4",
+					"SampleFrame2",
+					"SampleFrame3",
+					"SampleFrame1",
+					"SampleFrame5"
+				]
+			},
+			"Boutons Invisibles": {
+				"objects": [
+					"btnInvisible4",
+					"btnInvisible1",
+					"btnInvisible3",
+					"btnInvisible2",
+					"btnInvisible5"
+				]
+			},
+			"Static pictures": {
+				"objects": [
+					"InvisibleBackground",
+					"MultiFontColor",
+					"MultiUnderlineColor",
+					"MultiShadowColor",
+					"MultiBackgroundColor",
+					"MultiLinethroughColor"
+				]
+			},
+			"View 8": {},
+			"View 9": {
+				"visible": false,
+				"objects": [
+					"Rect2",
+					"Text"
+				]
+			}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

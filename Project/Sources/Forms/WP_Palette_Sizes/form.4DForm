@@ -1,0 +1,574 @@
+﻿{
+	"destination": "detailScreen",
+	"shared": true,
+	"windowTitle": "Sizes",
+	"inheritedForm": "",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 260,
+	"height": 620,
+	"markerBody": 400,
+	"markerBreak": 620,
+	"markerFooter": 620,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rect1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 400,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"UserUnitNames": {
+					"type": "dropdown",
+					"top": 42,
+					"left": 115,
+					"width": 100,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"method": "ObjectMethods/UserUnitNames.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"rbWidthOption1": {
+					"type": "radio",
+					"top": 107,
+					"left": 20,
+					"width": 150,
+					"height": 14,
+					"text": ":xliff:SetWidth",
+					"class": "Palette",
+					"focusable": false,
+					"radioGroup": "Group10",
+					"method": "ObjectMethods/rbWidthOption1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rbWidthOption2": {
+					"type": "radio",
+					"top": 157,
+					"left": 20,
+					"width": 150,
+					"height": 14,
+					"text": ":xliff:VariableWidth",
+					"class": "Palette",
+					"focusable": false,
+					"radioGroup": "Group10",
+					"method": "ObjectMethods/rbWidthOption2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"paragraphWidth": {
+					"type": "input",
+					"top": 127,
+					"left": 115,
+					"width": 50,
+					"height": 14,
+					"dataSourceTypeHint": "number",
+					"class": "Palette",
+					"textAlign": "right",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/paragraphWidth.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					],
+					"enterable": true,
+					"focusable": false
+				},
+				"paragraphMinWidth": {
+					"type": "input",
+					"top": 177,
+					"left": 115,
+					"width": 50,
+					"height": 14,
+					"dataSourceTypeHint": "number",
+					"class": "Palette",
+					"textAlign": "right",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/paragraphMinWidth.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					],
+					"enterable": true,
+					"focusable": false
+				},
+				"paragraphMinHeight": {
+					"type": "input",
+					"top": 217,
+					"left": 115,
+					"width": 50,
+					"height": 14,
+					"dataSourceTypeHint": "number",
+					"class": "Palette",
+					"textAlign": "right",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/paragraphMinHeight.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					],
+					"enterable": true,
+					"focusable": false
+				},
+				"pictureWidth": {
+					"type": "input",
+					"top": 277,
+					"left": 115,
+					"width": 50,
+					"height": 14,
+					"dataSourceTypeHint": "number",
+					"class": "Palette",
+					"textAlign": "right",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/pictureWidth.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					],
+					"enterable": true,
+					"focusable": false
+				},
+				"pictureHeight": {
+					"type": "input",
+					"top": 297,
+					"left": 115,
+					"width": 50,
+					"height": 14,
+					"dataSourceTypeHint": "number",
+					"class": "Palette",
+					"textAlign": "right",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/pictureHeight.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					],
+					"enterable": true,
+					"focusable": false
+				},
+				"pictureMinWidth": {
+					"type": "input",
+					"top": 317,
+					"left": 115,
+					"width": 50,
+					"height": 14,
+					"dataSourceTypeHint": "number",
+					"class": "Palette",
+					"textAlign": "right",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/pictureMinWidth.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					],
+					"enterable": true,
+					"focusable": false
+				},
+				"pictureMinHeight": {
+					"type": "input",
+					"top": 337,
+					"left": 115,
+					"width": 50,
+					"height": 14,
+					"dataSourceTypeHint": "number",
+					"class": "Palette",
+					"textAlign": "right",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/pictureMinHeight.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					],
+					"enterable": true,
+					"focusable": false
+				},
+				"pictAltText": {
+					"type": "input",
+					"top": 357,
+					"left": 115,
+					"width": 120,
+					"height": 28,
+					"class": "Palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/pictAltText.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"enterable": true,
+					"focusable": false
+				},
+				"Separator2": {
+					"type": "rectangle",
+					"top": 75,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"Separator1": {
+					"type": "rectangle",
+					"top": 250,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"lbl_AltText": {
+					"type": "text",
+					"top": 357,
+					"left": 30,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:AltText"
+				},
+				"TargetSelector2": {
+					"type": "radio",
+					"top": 95,
+					"left": 210,
+					"width": 40,
+					"height": 32,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/Icon_Paragraph.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"TargetSelector3": {
+					"type": "radio",
+					"top": 270,
+					"left": 210,
+					"width": 40,
+					"height": 32,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/Icon_Picture.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"lbl_Width": {
+					"type": "text",
+					"top": 277,
+					"left": 30,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:WidthColon"
+				},
+				"lbl_height": {
+					"type": "text",
+					"top": 297,
+					"left": 30,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:HeightColon"
+				},
+				"sepLbl_paragraph": {
+					"type": "text",
+					"top": 75,
+					"left": 20,
+					"width": 220,
+					"height": 13,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"text": ":xliff:Paragraph"
+				},
+				"lbl_MinWidth": {
+					"type": "text",
+					"top": 177,
+					"left": 30,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:minWidthColon"
+				},
+				"lbl_MinHeight": {
+					"type": "text",
+					"top": 217,
+					"left": 30,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:minHeightColon"
+				},
+				"lbl_MinWidth1": {
+					"type": "text",
+					"top": 317,
+					"left": 30,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:minWidthColon"
+				},
+				"lbl_MinHeight1": {
+					"type": "text",
+					"top": 337,
+					"left": 30,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:minHeightColon"
+				},
+				"Line": {
+					"type": "line",
+					"top": 205,
+					"left": 30,
+					"width": 200,
+					"stroke": "#999999",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"lbl_zero": {
+					"type": "text",
+					"top": 127,
+					"left": 173,
+					"width": 82,
+					"height": 13,
+					"textAlign": "left",
+					"fontTheme": "additional",
+					"text": ":xliff:ZeroAuto"
+				},
+				"sepLbl_Picture1": {
+					"type": "text",
+					"top": 250,
+					"left": 20,
+					"width": 220,
+					"height": 13,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"text": ":xliff:Picture"
+				},
+				"lbl_MinWidth2": {
+					"type": "text",
+					"top": 127,
+					"left": 30,
+					"width": 80,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:WidthColon"
+				},
+				"lbl_zero1": {
+					"type": "text",
+					"top": 217,
+					"left": 173,
+					"width": 82,
+					"height": 13,
+					"textAlign": "left",
+					"fontTheme": "additional",
+					"text": ":xliff:ZeroAuto"
+				},
+				"lbl_Unit": {
+					"type": "text",
+					"top": 44,
+					"left": 0,
+					"width": 110,
+					"height": 14,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:UnitColon"
+				},
+				"TargetSelector1": {
+					"type": "radio",
+					"top": 35,
+					"left": 210,
+					"width": 40,
+					"height": 32,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/Icon_Document.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/",
+					"method": "ObjectMethods/TargetSelector1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Separator3": {
+					"type": "rectangle",
+					"top": 15,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_paragraph1": {
+					"type": "text",
+					"top": 15,
+					"left": 20,
+					"width": 220,
+					"height": 13,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"text": ":xliff:Document"
+				},
+				"UserUnitValues": {
+					"type": "dropdown",
+					"top": 37,
+					"left": 280,
+					"width": 140,
+					"height": 18,
+					"visibility": "hidden",
+					"focusable": false,
+					"fontTheme": "main",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 400,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 0,
+					"left": 10,
+					"width": 41,
+					"height": 400,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4D WritePro Sizes"
+				},
+				"previousValue": {
+					"type": "input",
+					"top": 103,
+					"left": 363,
+					"width": 115,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000CD",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 85,
+					"left": 302,
+					"width": 149,
+					"height": 17,
+					"textAlign": "right",
+					"text": "//ACI0097045"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Rect1"
+				]
+			},
+			"Grid": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {
+				"visible": false,
+				"selectable": false,
+				"objects": [
+					"Rect2",
+					"Text"
+				]
+			}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

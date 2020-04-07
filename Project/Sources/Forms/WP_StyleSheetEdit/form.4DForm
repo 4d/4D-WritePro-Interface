@@ -1,0 +1,1296 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"width": 480,
+	"height": 720,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 60,
+					"left": 20,
+					"width": 440,
+					"height": 440,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_StylesheetTabs",
+					"method": "ObjectMethods/Tab Control.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 520,
+					"left": 290,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ".Cancel",
+					"class": "Buttons_13",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 520,
+					"left": 380,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": ".OK",
+					"class": "Buttons_13",
+					"defaultButton": true,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 20,
+					"left": 20,
+					"width": 135,
+					"height": 17,
+					"textAlign": "right",
+					"text": ":xliff:ssNameColon"
+				},
+				"stylesheetName": {
+					"type": "input",
+					"top": 20,
+					"left": 160,
+					"width": 240,
+					"height": 17,
+					"dataSource": "Form:C1466.name",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"StyleSample": {
+					"type": "write",
+					"top": 560,
+					"left": 20,
+					"width": 440,
+					"height": 140,
+					"sizingY": "move",
+					"dataSource": "wpStyleSample",
+					"enterable": false,
+					"focusable": false,
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "none",
+					"dpi": 0,
+					"showSelection": false,
+					"showHeaders": false,
+					"showFooters": false,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"layoutMode": "embedded",
+					"events": [
+						"onDataChange",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texte2": {
+					"type": "text",
+					"top": 765,
+					"left": 71,
+					"width": 290,
+					"height": 23,
+					"stroke": "#808080",
+					"textAlign": "left",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 18,
+					"text": ":xliff:ssInfoForced"
+				},
+				"LBedit": {
+					"type": "listbox",
+					"top": 139,
+					"left": 20,
+					"width": 440,
+					"height": 339,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.edit",
+					"metaSource": "StylesheetEditMeta ",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"verticalAlign": "middle",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "colLabel",
+							"dataSource": "This:C1470.label",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "right",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Attribute",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "colSeparator",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "right",
+							"verticalAlign": "middle",
+							"fontFamily": ".SF NS Text",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "colStylesheet",
+							"dataSource": "This:C1470.displayStylesheetValue",
+							"width": 130,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "#696969",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Value",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "colCheck",
+							"dataSource": "This:C1470.check",
+							"dataSourceTypeHint": "boolean",
+							"width": 30,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"events": [
+								"onDataChange"
+							],
+							"method": "ObjectMethods/colCheck.4dm",
+							"header": {
+								"name": "Header5",
+								"text": "Normal",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer5",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "colNormal",
+							"dataSource": "This:C1470.displayNormalValue",
+							"width": 130,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "#696969",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Normal",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 788,
+					"left": 30,
+					"width": 340,
+					"height": 50,
+					"stroke": "#808080",
+					"textAlign": "left",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 13,
+					"text": ":xliff:ssInfoDetailed"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 520,
+					"left": 20,
+					"width": 190,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"shortcutKey": "[Esc]",
+					"text": ".Update with selection",
+					"class": "Buttons_13",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LabelNormal": {
+					"type": "text",
+					"top": 105,
+					"left": 303,
+					"width": 157,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Use 'Normal' property"
+				},
+				"LabelForced": {
+					"type": "text",
+					"top": 105,
+					"left": 20,
+					"width": 140,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Forced"
+				},
+				"HorizontallSeparator": {
+					"type": "line",
+					"top": 130,
+					"left": 40,
+					"width": 400,
+					"stroke": "#696969"
+				},
+				"Bouton": {
+					"type": "button",
+					"top": 852,
+					"left": 24,
+					"width": 142,
+					"height": 19,
+					"text": "Build Sample",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VerticalSeparator": {
+					"type": "line",
+					"top": 101,
+					"left": 297,
+					"height": 377,
+					"sizingY": "grow",
+					"stroke": "#696969"
+				}
+			}
+		},
+		{
+			"objects": {
+				"btnLineHeight": {
+					"type": "checkbox",
+					"top": 360,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Line height",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnTabs": {
+					"type": "checkbox",
+					"top": 110,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Tabs",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnListFontFamilly": {
+					"type": "checkbox",
+					"top": 180,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Lists font ",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnTabDefault": {
+					"type": "checkbox",
+					"top": 130,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Tab default",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnTextIndent": {
+					"type": "checkbox",
+					"top": 150,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Text indend",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnTextAlign": {
+					"type": "checkbox",
+					"top": 270,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Text align",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnVerticalAlign": {
+					"type": "checkbox",
+					"top": 290,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Vertical align",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnWidth": {
+					"type": "checkbox",
+					"top": 320,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Width",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnHeight": {
+					"type": "checkbox",
+					"top": 340,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Height",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnTextDirection": {
+					"type": "checkbox",
+					"top": 390,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Text direction",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnAvoidWidowsAndOrphans": {
+					"type": "checkbox",
+					"top": 420,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Avoid widows and orphans",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnPageBreakInside": {
+					"type": "checkbox",
+					"top": 440,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "Page break inside",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnListStyleType": {
+					"type": "checkbox",
+					"top": 200,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "List style type",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnListStyleImage": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "List style image",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnListStyleImageHeight": {
+					"type": "checkbox",
+					"top": 240,
+					"left": 600,
+					"width": 220,
+					"height": 20,
+					"text": "List style image height",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"valLineHeight": {
+					"type": "input",
+					"top": 364,
+					"left": 730,
+					"width": 180,
+					"height": 15,
+					"stroke": "#808080",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"valTextDirection": {
+					"type": "input",
+					"top": 393,
+					"left": 730,
+					"width": 180,
+					"height": 15,
+					"stroke": "#808080",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"valAvoidWidowsAndOrphans": {
+					"type": "input",
+					"top": 423,
+					"left": 730,
+					"width": 180,
+					"height": 15,
+					"stroke": "#808080",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"valPageBreakInside": {
+					"type": "input",
+					"top": 443,
+					"left": 730,
+					"width": 180,
+					"height": 15,
+					"stroke": "#808080",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"valTabs": {
+					"type": "input",
+					"top": 112,
+					"left": 730,
+					"width": 180,
+					"height": 15,
+					"visibility": "hidden",
+					"stroke": "#FF6347",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"valTabDefault": {
+					"type": "input",
+					"top": 133,
+					"left": 730,
+					"width": 180,
+					"height": 15,
+					"visibility": "hidden",
+					"stroke": "#FF6347",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"valTextIndent": {
+					"type": "input",
+					"top": 153,
+					"left": 730,
+					"width": 180,
+					"height": 15,
+					"stroke": "#808080",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"valWidth": {
+					"type": "input",
+					"top": 323,
+					"left": 730,
+					"width": 180,
+					"height": 15,
+					"stroke": "#808080",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"valheight": {
+					"type": "input",
+					"top": 343,
+					"left": 730,
+					"width": 180,
+					"height": 15,
+					"stroke": "#808080",
+					"textAlign": "right",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Sous formulaire1": {
+					"type": "subform",
+					"top": 119,
+					"left": 118,
+					"width": 260,
+					"height": 450,
+					"dataSource": "oForm.StyleSheetSub",
+					"detailForm": "WP_Palette_Alignments",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 120,
+					"left": 40,
+					"width": 60,
+					"height": 400,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"btnTextShadowOffset2": {
+					"type": "checkbox",
+					"top": 470,
+					"left": 60,
+					"width": 20,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnTextUnderlineStyle2": {
+					"type": "checkbox",
+					"top": 390,
+					"left": 60,
+					"width": 20,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnTextLinethroughStyle2": {
+					"type": "checkbox",
+					"top": 301,
+					"left": 60,
+					"width": 20,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnTextColor2": {
+					"type": "checkbox",
+					"top": 192,
+					"left": 60,
+					"width": 20,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBackgroundColor12": {
+					"type": "checkbox",
+					"top": 216,
+					"left": 60,
+					"width": 20,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnFont10": {
+					"type": "checkbox",
+					"top": 252,
+					"left": 60,
+					"width": 20,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnFont11": {
+					"type": "checkbox",
+					"top": 272,
+					"left": 60,
+					"width": 20,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 540,
+					"left": 65,
+					"width": 313,
+					"height": 23,
+					"stroke": "#808080",
+					"textAlign": "left",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 18,
+					"text": "↳  Forced in style sheet"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zone de groupe2": {
+					"type": "groupBox",
+					"top": 195,
+					"left": 640,
+					"width": 140,
+					"height": 160,
+					"text": "Left"
+				},
+				"Zone de groupe3": {
+					"type": "groupBox",
+					"top": 195,
+					"left": 800,
+					"width": 140,
+					"height": 160,
+					"textAlign": "right",
+					"text": "Right"
+				},
+				"Zone de groupe": {
+					"type": "groupBox",
+					"top": 100,
+					"left": 640,
+					"width": 300,
+					"height": 90,
+					"text": "Top"
+				},
+				"Zone de groupe1": {
+					"type": "groupBox",
+					"top": 360,
+					"left": 640,
+					"width": 300,
+					"height": 90,
+					"text": "Bottom"
+				},
+				"btnBorderStyleLeft": {
+					"type": "checkbox",
+					"top": 279,
+					"left": 650,
+					"width": 110,
+					"height": 20,
+					"text": "Border style",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBorderWidthLeft": {
+					"type": "checkbox",
+					"top": 299,
+					"left": 650,
+					"width": 110,
+					"height": 20,
+					"text": "Border width",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBorderColorLeft": {
+					"type": "checkbox",
+					"top": 319,
+					"left": 650,
+					"width": 110,
+					"height": 20,
+					"text": "Border color",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBorderStyleRight": {
+					"type": "checkbox",
+					"top": 279,
+					"left": 810,
+					"width": 110,
+					"height": 20,
+					"text": "Border style",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBorderWidthRight": {
+					"type": "checkbox",
+					"top": 299,
+					"left": 810,
+					"width": 110,
+					"height": 20,
+					"text": "Border width",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBorderColorRight": {
+					"type": "checkbox",
+					"top": 319,
+					"left": 810,
+					"width": 110,
+					"height": 20,
+					"text": "Border color",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBorderStyleBottom": {
+					"type": "checkbox",
+					"top": 380,
+					"left": 810,
+					"width": 110,
+					"height": 20,
+					"text": "Border style",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBorderWidthBottom": {
+					"type": "checkbox",
+					"top": 400,
+					"left": 810,
+					"width": 110,
+					"height": 20,
+					"text": "Border width",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBorderColorBottom": {
+					"type": "checkbox",
+					"top": 420,
+					"left": 810,
+					"width": 110,
+					"height": 20,
+					"text": "Border color",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBorderStyleTop": {
+					"type": "checkbox",
+					"top": 120,
+					"left": 810,
+					"width": 110,
+					"height": 20,
+					"text": "Border style",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBorderWidthTop": {
+					"type": "checkbox",
+					"top": 140,
+					"left": 810,
+					"width": 110,
+					"height": 20,
+					"text": "Border width",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnBorderColorTop": {
+					"type": "checkbox",
+					"top": 160,
+					"left": 810,
+					"width": 110,
+					"height": 20,
+					"text": "Border color",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnMarginLeft": {
+					"type": "checkbox",
+					"top": 219,
+					"left": 650,
+					"width": 110,
+					"height": 20,
+					"text": "Margin",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnPaddingLeft": {
+					"type": "checkbox",
+					"top": 239,
+					"left": 650,
+					"width": 110,
+					"height": 20,
+					"text": "Padding",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnMarginRight": {
+					"type": "checkbox",
+					"top": 219,
+					"left": 810,
+					"width": 110,
+					"height": 20,
+					"text": "Margin",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnPaddingRight": {
+					"type": "checkbox",
+					"top": 239,
+					"left": 810,
+					"width": 110,
+					"height": 20,
+					"text": "Padding",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnMarginTop": {
+					"type": "checkbox",
+					"top": 120,
+					"left": 660,
+					"width": 110,
+					"height": 20,
+					"text": "Margin",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnPaddingTop": {
+					"type": "checkbox",
+					"top": 140,
+					"left": 660,
+					"width": 110,
+					"height": 20,
+					"text": "Padding",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnMarginBottom": {
+					"type": "checkbox",
+					"top": 380,
+					"left": 650,
+					"width": 110,
+					"height": 20,
+					"text": "Margin",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnPaddingBottom": {
+					"type": "checkbox",
+					"top": 400,
+					"left": 650,
+					"width": 110,
+					"height": 20,
+					"text": "Padding",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnMarginTop1": {
+					"type": "checkbox",
+					"top": 460,
+					"left": 650,
+					"width": 80,
+					"height": 20,
+					"text": "Radius",
+					"focusable": false,
+					"threeState": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 270,
+					"left": 680,
+					"width": 60,
+					"stroke": "#696969"
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 270,
+					"left": 840,
+					"width": 60,
+					"stroke": "#696969"
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 130,
+					"left": 790,
+					"height": 40,
+					"stroke": "#696969"
+				},
+				"Ligne3": {
+					"type": "line",
+					"top": 390,
+					"left": 790,
+					"height": 40,
+					"stroke": "#696969"
+				},
+				"Sous formulaire2": {
+					"type": "subform",
+					"top": 119,
+					"left": 118,
+					"width": 260,
+					"height": 450,
+					"dataSource": "oForm.StyleSheetSub",
+					"detailForm": "WP_Palette_Frames",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Rect3": {
+					"type": "rectangle",
+					"top": 120,
+					"left": 40,
+					"width": 60,
+					"height": 400,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"btnTextTransform4": {
+					"type": "checkbox",
+					"top": 430,
+					"left": 60,
+					"width": 20,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnTextColor3": {
+					"type": "checkbox",
+					"top": 207,
+					"left": 60,
+					"width": 20,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 540,
+					"left": 65,
+					"width": 313,
+					"height": 23,
+					"stroke": "#808080",
+					"textAlign": "left",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 18,
+					"text": "↳  Forced in style sheet"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Rect2",
+					"Rect3"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

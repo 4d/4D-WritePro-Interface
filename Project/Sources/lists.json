@@ -1,0 +1,33 @@
+﻿{
+	"TabTypes": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": ":xliff:Left",
+				"ref": 0,
+				"editable": true
+			},
+			{
+				"text": ":xliff:Right",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": ":xliff:Center",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": ":xliff:Decimal",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": ":xliff:Bars",
+				"ref": 4,
+				"editable": true
+			}
+		]
+	}
+}

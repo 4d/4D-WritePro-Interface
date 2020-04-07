@@ -1,0 +1,1253 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+   <!--
+Translation file.
+This file is distributed under the same license as the product package.-->
+
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+   <file datatype="x-STR#" original="undefined" source-language="en" target-language="cs">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">2.0</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group id="0" resname="Palette_0">
+            <trans-unit id="999" resname="Document">
+               <source>Document</source>
+               <target>Dokument</target>
+            </trans-unit>
+            <trans-unit id="2" resname="FontStyle">
+               <source>Font Style</source>
+               <target>Styl písma</target>
+            </trans-unit>
+            <trans-unit id="3" resname="MarginsAlignments">
+               <source>Margins &amp; Alignments</source>
+               <target>Okraje &amp; zarovnání</target>
+            </trans-unit>
+            <trans-unit id="5" resname="Frames">
+               <source>Frames</source>
+               <target>Rámování</target>
+            </trans-unit>
+            <trans-unit id="6" resname="Sizes">
+               <source>Sizes</source>
+               <target>Velikosti</target>
+            </trans-unit>
+            <trans-unit id="7" resname="Tabulations">
+               <source>Tabulations</source>
+               <target>Tabelátory</target>
+            </trans-unit>
+            <trans-unit id="8" resname="Background">
+               <source>Background</source>
+               <target>Pozadí</target>
+            </trans-unit>
+            <trans-unit id="9" resname="Information">
+               <source>Information</source>
+               <target>Informace</target>
+            </trans-unit>
+            <trans-unit id="290" resname="FindAndReplace">
+               <source>Find and replace</source>
+               <target>Nalézt a nahradit</target>
+            </trans-unit>
+            <trans-unit id="291" resname="Tables">
+               <source>Tables</source>
+               <target>Tabulky</target>
+            </trans-unit>
+         </group>
+         <group resname="Palette_alignment">
+            <trans-unit id="9" resname="HorAlignColon">
+               <source>Hor. Align.:</source>
+               <target>Vod. zarov.:</target>
+            </trans-unit>
+            <trans-unit id="10" resname="VertAlignColon">
+               <source>Vert. Align.:</source>
+               <target>Svis. zarov.:</target>
+            </trans-unit>
+            <trans-unit id="11" resname="FirstIndentationColon">
+               <source>1st indentation:</source>
+               <target>1.odsazení:</target>
+            </trans-unit>
+            <trans-unit id="13" resname="BackgroundColon">
+               <source>Background:</source>
+               <target>Pozadí:</target>
+            </trans-unit>
+            <trans-unit id="15" resname="Text">
+               <source>Text</source>
+               <target>Text</target>
+            </trans-unit>
+            <trans-unit id="16" resname="Margins">
+               <source>Margins</source>
+               <target>Okraje</target>
+            </trans-unit>
+            <trans-unit id="17" resname="Lists">
+               <source>Lists</source>
+               <target>Seznamy</target>
+            </trans-unit>
+            <trans-unit id="25" resname="LineHeightColon">
+               <source>Line Height:</source>
+               <target>Výška řádky:</target>
+            </trans-unit>
+            <trans-unit id="84" resname="StyleColon0">
+               <source>Style:</source>
+               <target>Styl:</target>
+            </trans-unit>
+         </group>
+         <group resname="PaletteBackgrounds">
+            <trans-unit id="18" resname="BackgroundPicture">
+               <source>Background Picture</source>
+               <target>Obrázek pozadí</target>
+            </trans-unit>
+            <trans-unit id="19" resname="PictureOrURL">
+               <source>Picture:
+(or URL)</source>
+               <target>Obrázek:
+(nebo URL)</target>
+            </trans-unit>
+            <trans-unit id="20" resname="RepeatColon">
+               <source>Repeat:</source>
+               <target>Opakovat:</target>
+            </trans-unit>
+            <trans-unit id="21" resname="Clip">
+               <source>Clip:</source>
+               <target>Střih:</target>
+            </trans-unit>
+            <trans-unit id="22" resname="Origin">
+               <source>Origin:</source>
+               <target>Zdroj:</target>
+            </trans-unit>
+            <trans-unit id="23" resname="HorizontalSize">
+               <source>Horizontal Size:</source>
+               <target>Vodorovná velikost:</target>
+            </trans-unit>
+            <trans-unit id="24" resname="VerticalSize">
+               <source>Vertical Size:</source>
+               <target>Svislá velikost:</target>
+            </trans-unit>
+            <trans-unit id="25" resname="PositionColon">
+               <source>Position:</source>
+               <target>Pozice:</target>
+            </trans-unit>
+         </group>
+         <group resname="PaletteFonts">
+            <trans-unit id="26" resname="FontColon">
+               <source>Font:</source>
+               <target>Písmo:</target>
+            </trans-unit>
+            <trans-unit id="28" resname="SizeColon">
+               <source>Size:</source>
+               <target>Velikost:</target>
+            </trans-unit>
+            <trans-unit id="30" resname="BackgroundColon">
+               <source></source>
+               <target></target>
+            </trans-unit>
+            <trans-unit id="31" resname="Bold">
+               <source>Bold</source>
+               <target>Tučné</target>
+            </trans-unit>
+            <trans-unit id="32" resname="Italic">
+               <source>Italic</source>
+               <target>Kurzíva</target>
+            </trans-unit>
+            <trans-unit id="33" resname="Linethrough">
+               <source>Linethrough</source>
+               <target>Přeškrtnuté</target>
+            </trans-unit>
+            <trans-unit id="34" resname="Underline">
+               <source>Underline</source>
+               <target>Podtržené</target>
+            </trans-unit>
+            <trans-unit id="34" resname="LineColon">
+               <source>Line:</source>
+               <target>Řádek:</target>
+            </trans-unit>        
+
+            <trans-unit id="35" resname="ColorColon:">
+               <source>Color:</source>
+               <target>Bava:</target>
+            </trans-unit>
+            <trans-unit id="36" resname="Shadows">
+               <source>Shadows</source>
+               <target>Stíny</target>
+            </trans-unit>
+            <trans-unit id="37" resname="Shadow">
+               <source>Shadow</source>
+               <target>Zastínit</target>
+            </trans-unit>
+            <trans-unit id="38" resname="OffsetColon">
+               <source>Offset:</source>
+               <target>Ofset:</target>
+            </trans-unit>
+            <trans-unit id="95" resname="StyleColon1">
+               <source>Style:</source>
+               <target>Styl:</target>
+            </trans-unit>
+         <trans-unit id="96" resname="TransformColon">
+               <source>Transform:</source>
+               <target>Transformovat:</target>
+            </trans-unit>
+
+         </group>
+         <group resname="PaletteFrame">
+            <trans-unit id="39" resname="SidesColon">
+               <source>Sides:</source>
+               <target>Boky:</target>
+            </trans-unit>
+            <trans-unit id="42" resname="ColorColon">
+               <source>Color:</source>
+               <target>Barva:</target>
+            </trans-unit>
+            <trans-unit id="43" resname="RadiusColon">
+               <source>Radius:</source>
+               <target>Poloměr:</target>
+            </trans-unit>
+            <trans-unit id="44" resname="Frame">
+               <source>Frame</source>
+               <target>Rámování</target>
+            </trans-unit>
+            <trans-unit id="45" resname="Padding">
+               <source>Padding</source>
+               <target>Výplň</target>
+            </trans-unit>
+            <trans-unit id="95" resname="WidthColon">
+               <source>Width:</source>
+               <target>Šířka:</target>
+            </trans-unit>
+            <trans-unit id="96" resname="StyleColon2">
+               <source>Style:</source>
+               <target>Styl:</target>
+            </trans-unit>
+            <trans-unit id="97" resname="IndentationColon">
+               <source>Indentation:</source>
+               <target>Odsazení:</target>
+            </trans-unit>
+            <trans-unit id="98" resname="Outside">
+               <source>Outside</source>
+               <target>Vně</target>
+            </trans-unit>
+            <trans-unit id="99" resname="Inside">
+               <source>Inside</source>
+               <target>Uvnitř</target>
+            </trans-unit>
+            <trans-unit id="100" resname="ApplyToColon">
+               <source>Apply to:</source>
+               <target>Použít na:</target>
+            </trans-unit>
+         </group>
+         <group resname="PaletteInformation">
+            <trans-unit id="46" resname="4dExpression">
+               <source>4D Expression</source>
+               <target>4D výraz</target>
+            </trans-unit>
+            <trans-unit id="47" resname="InsertColon">
+               <source>Insert:</source>
+               <target>Vložit:</target>
+            </trans-unit>
+            <trans-unit id="48" resname="Date">
+               <source>Date</source>
+               <target>Datum</target>
+            </trans-unit>
+            <trans-unit id="49" resname="ExpressionColon">
+               <source>Expression:</source>
+               <target>Výraz:</target>
+            </trans-unit>
+            <trans-unit id="50" resname="DisplayCollon">
+               <source>Display:</source>
+               <target>Zobrazit:</target>
+            </trans-unit>
+            <trans-unit id="51" resname="LabelColon">
+               <source>Label:</source>
+               <target>Popiska:</target>
+            </trans-unit>
+            <trans-unit id="52" resname="LinkColon">
+               <source>Link:</source>
+               <target>Vztah:</target>
+            </trans-unit>
+            <trans-unit id="50" resname="URL">
+               <source>URL</source>
+               <target>URL</target>
+            </trans-unit>
+            <trans-unit id="51" resname="TitleColon">
+               <source>Title:</source>
+               <target>Nadpis:</target>
+            </trans-unit>
+            <trans-unit id="52" resname="SubjectColon">
+               <source>Subject:</source>
+               <target>Předmět:</target>
+            </trans-unit>
+            <trans-unit id="53" resname="AuthorColon">
+               <source>Author:</source>
+               <target>Autor:</target>
+            </trans-unit>
+            <trans-unit id="54" resname="CompanyColon">
+               <source>Company:</source>
+               <target>Společnost:</target>
+            </trans-unit>
+            <trans-unit id="55" resname="NotesColon">
+               <source>Notes:</source>
+               <target>Poznámky:</target>
+            </trans-unit>
+            <trans-unit id="56" resname="CreatedColon">
+               <source>Created:</source>
+               <target>Vytvořeno:</target>
+            </trans-unit>
+            <trans-unit id="57" resname="ModifiedColon">
+               <source>Modified:</source>
+               <target>Upraveno:</target>
+            </trans-unit>
+            <trans-unit id="58" resname="ActionsColon">
+               <source>Actions:</source>
+               <target>Akce:</target>
+            </trans-unit>
+            <trans-unit id="60" resname="Compute">
+               <source>Compute</source>
+               <target>Počítat</target>
+            </trans-unit>
+            <trans-unit id="63" resname="Freeze">
+               <source>Freeze</source>
+               <target>Zmrazit</target>
+            </trans-unit>
+            <trans-unit id="64" resname="SelectionOnly">
+               <source>Selection only</source>
+               <target>Pouze vybrané</target>
+            </trans-unit>
+            <trans-unit id="64" resname="Expression">
+               <source>Expression</source>
+               <target>Výraz</target>
+            </trans-unit>
+            <trans-unit id="65" resname="Values">
+               <source>Values</source>
+               <target>Hodnoty</target>
+            </trans-unit>
+            <trans-unit id="66" resname="Expressions">
+               <source>Expressions</source>
+               <target>Výrazy</target>
+            </trans-unit>
+            <trans-unit id="67" resname="Set">
+               <source>Set</source>
+               <target>Nastavit</target>
+            </trans-unit>
+            <trans-unit id="96" resname="Document1">
+               <source>Document</source>
+               <target>Dokument</target>
+            </trans-unit>
+            <trans-unit id="v0KYZg1/E5YU2xvWP3exVA" resname="NoTableAvailable">
+               <source>No table available. The formula editor can not be open.</source>
+               <target>Žádná dostupná tabulka. Editor výrazů nemůže být otevřen.</target>
+            </trans-unit>
+         </group>
+         <group resname="PaletteSizes">
+            <trans-unit id="68" resname="Paragraph">
+               <source>Paragraph</source>
+               <target>Odstavec</target>
+            </trans-unit>
+            <trans-unit id="69" resname="Picture">
+               <source>Picture</source>
+               <target>Obrázek</target>
+            </trans-unit>
+            <trans-unit id="70" resname="SetWidth">
+               <source>Set width</source>
+               <target>Nastavit šířku</target>
+            </trans-unit>
+            <trans-unit id="71" resname="VariableWidth">
+               <source>Variable width</source>
+               <target>Proměnná šířka</target>
+            </trans-unit>
+            <trans-unit id="74" resname="minWidthColon">
+               <source>Min width:</source>
+               <target>Min šířka:</target>
+            </trans-unit>
+            <trans-unit id="75" resname="minHeightColon">
+               <source>Min height:</source>
+               <target>Min výška:</target>
+            </trans-unit>
+            <trans-unit id="0" resname="WidthColon">
+               <source>Width:</source>
+               <target>Šířka:</target>
+            </trans-unit>
+            <trans-unit id="77" resname="AltTextColon">
+               <source>Alt. Text</source>
+               <target>Stříd.txt</target>
+            </trans-unit>
+            <trans-unit id="74" resname="HeightColon">
+               <source>Height:</source>
+               <target>Výška:</target>
+            </trans-unit>
+            <trans-unit id="75" resname="AltText">
+               <source>Alternate text</source>
+               <target>Střídavý text</target>
+            </trans-unit>
+            <trans-unit id="76" resname="ZeroAuto">
+               <source>(0 = Auto)</source>
+               <target>(0 = auto)</target>
+            </trans-unit>
+            <trans-unit id="83" resname="UnitColon">
+               <source>Unit:</source>
+               <target>Jedn:</target>
+            </trans-unit>
+         </group>
+         <group resname="PaletteTabulations">
+            <trans-unit id="77" resname="defaultTabColon">
+               <source>Default tab:</source>
+               <target>Výchozí tab:</target>
+            </trans-unit>     
+            <trans-unit id="77" resname="TypeColon">
+               <source>Type:</source>
+               <target>Typ:</target>
+            </trans-unit>
+            <trans-unit id="80" resname="Type">
+               <source>Type</source>
+               <target>Typ</target>
+            </trans-unit>
+            <trans-unit id="81" resname="Position">
+               <source>Position</source>
+               <target>Pozice</target>
+            </trans-unit>
+            <trans-unit id="82" resname="tipDeleteTab">
+               <source>Delete tabulation</source>
+               <target>Vymazat tabelátory</target>
+            </trans-unit>
+            <trans-unit id="83" resname="tipNewTab">
+               <source>New tabulation</source>
+               <target>Nové tabelátory</target>
+            </trans-unit>
+            <trans-unit id="84" resname="DefaultLeadingChar">
+               <source>Default leading char.</source>
+               <target>Výchozí vedoucí znak.</target>
+            </trans-unit>
+            <trans-unit id="85" resname="LeadingChar">
+               <source>Leading char.</source>
+               <target>Vedoucí znak.</target>
+            </trans-unit>
+         </group>
+         <group resname="PaletteBookmarks">
+            <trans-unit id="1" resname="Bookmarks">
+               <source>Bookmarks</source>
+               <target>Záložky</target>
+            </trans-unit>
+            <trans-unit id="2" resname="NewBookmark">
+               <source>New Bookmark</source>
+               <target>Nová záložka</target>
+            </trans-unit>
+            <trans-unit id="3" resname="tipRedefineBookmark">
+               <source>Redefine bookmark "[1]"</source>
+               <target>Předefinovat záložku "[1]"</target>
+            </trans-unit>
+            <trans-unit id="4" resname="tipDeleteBookmark">
+               <source>Delete bookmark "[1]"</source>
+               <target>Vymazat záložku "[1]"</target>
+            </trans-unit>
+            <trans-unit id="5" resname="tipNewBookmark">
+               <source>New bookmark</source>
+               <target>Nová záložka</target>
+            </trans-unit>
+         </group>
+         <group resname="Menu_CopyPaste">
+            <trans-unit id="82" resname="CopyStyle">
+               <source>Copy Style</source>
+               <target>Kopírovat styl</target>
+            </trans-unit>
+            <trans-unit id="83" resname="PasteStyle">
+               <source>Paste Style</source>
+               <target>Vložit styl</target>
+            </trans-unit>
+            <trans-unit id="86" resname="CopyTextSettings">
+               <source>Copy Text Settings</source>
+               <target>Kopírovat nastavení textu</target>
+            </trans-unit>
+            <trans-unit id="87" resname="PasteTextSettings">
+               <source>Paste Text Settings</source>
+               <target>Vložit nastavení textu</target>
+            </trans-unit>
+            <trans-unit id="87" resname="CopyMargins">
+               <source>Copy Margins</source>
+               <target>Kopírovat okraje</target>
+            </trans-unit>
+            <trans-unit id="88" resname="PasteMargins">
+               <source>Paste Margins</source>
+               <target>Vložit okraje</target>
+            </trans-unit>
+            <trans-unit id="89" resname="CopyTabulation">
+               <source>Copy Tabulation</source>
+               <target>Kopírovat tabelátory</target>
+            </trans-unit>
+            <trans-unit id="90" resname="PasteTabulation">
+               <source>Paste Tabulation</source>
+               <target>Vložit tabelátory</target>
+            </trans-unit>
+            <trans-unit id="91" resname="CopyFrame">
+               <source>Copy Frame</source>
+               <target>Kopírovat rámování</target>
+            </trans-unit>
+            <trans-unit id="92" resname="PasteFrame">
+               <source>Paste Frame</source>
+               <target>Vložit rámování</target>
+            </trans-unit>
+            <trans-unit id="93" resname="CopyBackground">
+               <source>Copy Background</source>
+               <target>Kopírovat pozadí</target>
+            </trans-unit>
+            <trans-unit id="" resname="PasteBackground">
+               <source>Paste Background</source>
+               <target>Vložit pozadí</target>
+            </trans-unit>
+         </group>
+         <group resname="Menu_Main">
+            <trans-unit id="97" resname="NewEllipsis">
+               <source>New…</source>
+               <target>Nový…</target>
+            </trans-unit>
+            <trans-unit id="98" resname="ImportEllipsis">
+               <source>Import…</source>
+               <target>Import…</target>
+            </trans-unit>
+            <trans-unit id="99" resname="Export">
+               <source>Export</source>
+               <target>Export</target>
+            </trans-unit>
+            <trans-unit id="100" resname="AsHTMLdoc">
+               <source>As HTML Document…</source>
+               <target>Jako HTML dokument…</target>
+            </trans-unit>
+            <trans-unit id="101" resname="as4DWPdoc">
+               <source>As 4D WritePro Document…</source>
+               <target>Jako 4D WritePro dokument…</target>
+            </trans-unit>
+         </group>
+         <group resname="AlertsAndMessages">
+            <trans-unit id="102" resname="AreYouSure">
+               <source>Are you sure?</source>
+               <target>Jse si jistý?</target>
+            </trans-unit>
+            <trans-unit id="103" resname="SelectA4DWPdoc">
+               <source>Select a 4D Write document</source>
+               <target>Vybrat 4D Write dokument</target>
+            </trans-unit>
+            <trans-unit id="104" resname="SelectADestination">
+               <source>Select a destination.</source>
+               <target>Vybrat cílení.</target>
+            </trans-unit>
+         </group>
+      <group resname="listStyleNames">
+            <trans-unit id="1" resname="None">
+               <source>None</source>
+               <target>Žádný</target>
+            </trans-unit>
+            <trans-unit id="2" resname="Disc">
+               <source>Disc</source>
+               <target>Ovál</target>
+            </trans-unit>
+            <trans-unit id="3" resname="Circle">
+               <source>Circle</source>
+               <target>Kruh</target>
+            </trans-unit>
+            <trans-unit id="4" resname="Square">
+               <source>Square</source>
+               <target>Čverec</target>
+            </trans-unit>
+            <trans-unit id="5" resname="HollowSquare">
+               <source>Hollow square</source>
+               <target>Dutý čtverec</target>
+            </trans-unit>
+            <trans-unit id="6" resname="Diamond">
+               <source>Diamond</source>
+               <target>Diamant</target>
+            </trans-unit>
+            <trans-unit id="7" resname="Club">
+               <source>Club</source>
+               <target>Křížky</target>
+            </trans-unit>
+            <trans-unit id="8" resname="123">
+               <source>1 2 3</source>
+               <target>1 2 3</target>
+            </trans-unit>
+            <trans-unit id="9" resname="010203">
+               <source>01 02 03</source>
+               <target>01 02 03</target>
+            </trans-unit>
+            <trans-unit id="10" resname="abcLow">
+               <source>a b c</source>
+               <target>a b c</target>
+            </trans-unit>
+            <trans-unit id="11" resname="abcCAP">
+               <source>A B C</source>
+               <target>A B C</target>
+            </trans-unit>
+            <trans-unit id="12" resname="Roman">
+               <source>I II III</source>
+               <target>I II III</target>
+            </trans-unit>
+         </group>
+         <group resname="listUnits">
+            <trans-unit id="1" resname="cm">
+               <source>cm</source>
+               <target>cm</target>
+            </trans-unit>
+            <trans-unit id="2" resname="mm">
+               <source>mm</source>
+               <target>mm</target>
+            </trans-unit>
+            <trans-unit id="3" resname="inches">
+               <source>inches</source>
+               <target>palce</target>
+            </trans-unit>
+            <trans-unit id="4" resname="pt">
+               <source>pt</source>
+               <target>body</target>
+            </trans-unit>
+            <trans-unit id="5" resname="auto">
+               <source>auto</source>
+               <target>auto</target>
+            </trans-unit>
+            <trans-unit id="6" resname="pct">
+               <source>%</source>
+               <target>%</target>
+            </trans-unit>
+
+         </group>
+         <group resname="borderStyleNames">
+            <trans-unit id="1" resname="Solid">
+               <source>Solid</source>
+               <target>Plná</target>
+            </trans-unit>
+            <trans-unit id="2" resname="Dotted">
+               <source>Dotted</source>
+               <target>Tečkovaná</target>
+            </trans-unit>
+            <trans-unit id="3" resname="Dashed">
+               <source>Dashed</source>
+               <target>Čárkovaná</target>
+            </trans-unit>
+            <trans-unit id="4" resname="Double">
+               <source>Double</source>
+               <target>Dvojitá</target>
+            </trans-unit>
+            <trans-unit id="5" resname="Groove">
+               <source>Groove</source>
+               <target>Rýha</target>
+            </trans-unit>
+            <trans-unit id="6" resname="Ridge">
+               <source>Ridge</source>
+               <target>Vystouplá</target>
+            </trans-unit>
+            <trans-unit id="7" resname="Inset">
+               <source>Inset</source>
+               <target>Detail</target>
+            </trans-unit>
+            <trans-unit id="8" resname="Semi">
+               <source>Semi</source>
+               <target>Semi</target>
+            </trans-unit>
+            <trans-unit id="9" resname="Word">
+               <source>Word</source>
+               <target>Slovo</target>
+            </trans-unit>
+            <trans-unit id="231" resname="Outset">
+               <source>Outset</source>
+               <target>Počátek</target>
+            </trans-unit>
+            <trans-unit id="232" resname="Hidden">
+               <source>Hidden</source>
+               <target>Skrytý</target>
+            </trans-unit>
+         </group>
+         <group resname="BgndRepeatMode">
+            <trans-unit id="1" resname="None">
+               <source>None</source>
+               <target>Žádné</target>
+            </trans-unit>
+            <trans-unit id="2" resname="Repeat">
+               <source>Repeat</source>
+               <target>Opakovat</target>
+            </trans-unit>
+            <trans-unit id="3" resname="RepeatHor">
+               <source>Repeat Hor.</source>
+               <target>Opakovat vod.</target>
+            </trans-unit>
+            <trans-unit id="4" resname="RepeatVert">
+               <source>Repeat Vert.</source>
+               <target>Opakovat svis.</target>
+            </trans-unit>
+         </group>
+         <group resname="BgndClipMode">
+            <trans-unit id="1" resname="Border">
+               <source>Border</source>
+               <target>Ohraničení</target>
+            </trans-unit>
+            <trans-unit id="2" resname="Padding">
+               <source>Padding</source>
+               <target>Výplň</target>
+            </trans-unit>
+            <trans-unit id="3" resname="Content">
+               <source>Content</source>
+               <target>Obsah</target>
+            </trans-unit>
+            <trans-unit id="4" resname="Paper">
+               <source>Paper</source>
+               <target>Papír</target>
+            </trans-unit>
+         </group>
+         <group resname="Tabulations">
+            <trans-unit id="1" resname="Left">
+               <source>Left</source>
+               <target>Levé</target>
+            </trans-unit>
+            <trans-unit id="2" resname="Right">
+               <source>Right</source>
+               <target>Pravé</target>
+            </trans-unit>
+            <trans-unit id="3" resname="Center">
+               <source>Center</source>
+               <target>Střed</target>
+            </trans-unit>
+            <trans-unit id="4" resname="Decimal">
+               <source>Decimal</source>
+               <target>Decimální</target>
+            </trans-unit>
+            <trans-unit id="5" resname="Bars">
+               <source>Bars</source>
+               <target>Mříž</target>
+            </trans-unit>
+         </group>
+                <group resname="FontAlignVert">
+            <trans-unit id="1" resname="Baseline">
+               <source>Baseline</source>
+               <target>Výchozí</target>
+            </trans-unit>
+            <trans-unit id="2" resname="Superscript">
+               <source>Superscript</source>
+               <target>Horní index</target>
+            </trans-unit>
+            <trans-unit id="3" resname="Subscript">
+               <source>Subscript</source>
+               <target>Dolní index</target>
+            </trans-unit>
+         </group>
+         <group resname="TextTransform">
+            <trans-unit id="1" resname="TextTransformNone">
+               <source>None</source>
+               <target>Žádná</target>
+            </trans-unit>
+            <trans-unit id="2" resname="Capitalize">
+               <source>Capitalize</source>
+               <target>Kapitálky</target>
+            </trans-unit>
+            <trans-unit id="3" resname="Lowercase">
+               <source>Lowercase</source>
+               <target>Malá</target>
+            </trans-unit>
+            <trans-unit id="4" resname="Uppercase">
+               <source>Uppercase</source>
+               <target>Velká</target>
+            </trans-unit>
+            <trans-unit id="5" resname="SmallUppercase">
+               <source>Small uppercase</source>
+               <target>Malá velká</target>
+            </trans-unit>
+         </group>
+
+         <group resname="PaletteStylesheets">
+            <trans-unit id="169" resname="characterStylesheets">
+               <source>Character style sheets</source>
+               <target>Znakové styly</target>
+            </trans-unit>
+            <trans-unit id="172" resname="rowStylesheets">
+               <source>Row style sheets</source>
+               <target>Řádkové styly</target>
+            </trans-unit>
+            <trans-unit id="173" resname="cellStylesheets">
+               <source>Cell style sheets</source>
+               <target>Buňkové styly</target>
+            </trans-unit>
+            <trans-unit id="173" resname="paragraphStylesheets">
+               <source>Paragraph style sheets</source>
+               <target>Odstavcové styly</target>
+            </trans-unit>
+            <trans-unit id="174" resname="tableStylesheets">
+               <source>Table style sheets</source>
+               <target>Tabulkové styly</target>
+            </trans-unit>
+            <trans-unit id="175" resname="imageStylesheets">
+               <source>Image style sheets</source>
+               <target>Obrázkové styly</target>
+            </trans-unit>
+            <trans-unit id="176" resname="newStylesheet">
+               <source>New style sheet</source>
+               <target>Nový styl</target>
+            </trans-unit>
+            <trans-unit id="177" resname="deleteStylesheet">
+               <source>Delete style sheet</source>
+               <target>Vymazat styl</target>
+            </trans-unit>
+            <trans-unit id="178" resname="updateStylesheet">
+               <source>Update style sheet</source>
+               <target>Aktualizovat styl</target>
+            </trans-unit>
+            <trans-unit id="179" resname="editStylesheet">
+               <source>Edit style sheet</source>
+               <target>Upravit styl</target>
+            </trans-unit>
+            <trans-unit id="180" resname="stylesheets">
+               <source>Style sheets</source>
+               <target>Seznam stylů</target>
+            </trans-unit>
+            <trans-unit id="181" resname="applyStylesheet">
+               <source>Apply style sheet</source>
+               <target>Použít styl</target>
+            </trans-unit>
+            <trans-unit id="216" resname="menuNewEmpty">
+               <source>New empty style sheet</source>
+               <target>Nový prázdný styl</target>
+            </trans-unit>
+            <trans-unit id="217" resname="menuNewFromSelection">
+               <source>New style sheet based on selection</source>
+               <target>Nový styl založený na výběru</target>
+            </trans-unit>
+            <trans-unit id="218" resname="menuDuplicate">
+               <source>Duplicate</source>
+               <target>Duplikovat</target>
+            </trans-unit>
+            <trans-unit id="219" resname="requestTitle">
+               <source>New style sheet name?</source>
+               <target>Název nového stylu?</target>
+            </trans-unit>
+            <trans-unit id="220" resname="requestPlaceHolder">
+               <source>Style Sheet</source>
+               <target>Styl</target>
+            </trans-unit>
+            <trans-unit id="221" resname="requestCreateLabel">
+               <source>Create</source>
+               <target>Vytvořit</target>
+            </trans-unit>
+            <trans-unit id="222" resname="requestCancelLabel">
+               <source>Cancel</source>
+               <target>Storno</target>
+            </trans-unit>
+            <trans-unit id="223" resname="menuDeleteStylesheet">
+               <source>Delete "&lt;1&gt;" style sheet…</source>
+               <target>Vymazat "&lt;1&gt;" styl…</target>
+            </trans-unit>
+            <trans-unit id="224" resname="menuRemoveParagraphStylesheet">
+               <source>Remove paragraph stylesheet</source>
+               <target>Odstranit styl odstavců</target>
+            </trans-unit>
+            <trans-unit id="226" resname="menuRemoveCharacterStyleshet">
+               <source>Remove character style sheets</source>
+               <target>Odstranit styl znaků</target>
+            </trans-unit>
+            <trans-unit id="242" resname="menuEditStylesheet">
+               <source>Edit '&lt;1&gt;' style sheet</source>
+               <target>Upravit '&lt;1&gt;' styl</target>
+            </trans-unit>
+            <trans-unit id="243" resname="menuEditDefault">
+               <source>Default values…</source>
+               <target>Výchozí hodnoty…</target>
+            </trans-unit>
+            <trans-unit id="245" resname="confirmDeleteStylesheet">
+               <source>Delete "&lt;1&gt;" style sheet?</source>
+               <target>Vymazat "&lt;1&gt;" styl?</target>
+            </trans-unit>
+         </group>
+         <group resname="StylesheetEditor">
+            <trans-unit id="180" resname="ssFontSize">
+               <source>Font size</source>
+               <target>Velikost písma</target>
+            </trans-unit>
+            <trans-unit id="181" resname="ssFont">
+               <source>Font</source>
+               <target>Písmo</target>
+            </trans-unit>
+            <trans-unit id="182" resname="ssFontFamily">
+               <source>Font familly</source>
+               <target>Rodina písem</target>
+            </trans-unit>
+            <trans-unit id="183" resname="ssTextColor">
+               <source>Text color</source>
+               <target>Barva textu</target>
+            </trans-unit>
+            <trans-unit id="184" resname="ssBackgroundColor">
+               <source>Background color</source>
+               <target>Barva pozadí</target>
+            </trans-unit>
+            <trans-unit id="185" resname="ssBold">
+               <source>Bold</source>
+               <target>Tučně</target>
+            </trans-unit>
+            <trans-unit id="186" resname="ssItalic">
+               <source>Italic</source>
+               <target>Kurzíva</target>
+            </trans-unit>
+            <trans-unit id="187" resname="ssUnderlineStyle">
+               <source>Underline style</source>
+               <target>Podtržené</target>
+            </trans-unit>
+            <trans-unit id="188" resname="ssUnderlineColor">
+               <source>Underline color</source>
+               <target>Barva podtržení</target>
+            </trans-unit>
+            <trans-unit id="189" resname="ssLinethroughStyle">
+               <source>Line through style</source>
+               <target>Styl čáry přeškrtnutí</target>
+            </trans-unit>
+            <trans-unit id="190" resname="ssLinethroughColor">
+               <source>Line through color</source>
+               <target>Barva čáry přeškrtnutí</target>
+            </trans-unit>
+            <trans-unit id="191" resname="ssShadowColor">
+               <source>Shadow color</source>
+               <target>Barva stínování</target>
+            </trans-unit>
+            <trans-unit id="192" resname="ssShadowOffet">
+               <source>Shadow offset</source>
+               <target>Ofset stínování</target>
+            </trans-unit>
+            <trans-unit id="193" resname="ssHorizontalAlign">
+               <source>Horizontal align</source>
+               <target>Vodorovné zarovnání</target>
+            </trans-unit>
+            <trans-unit id="194" resname="ssTextIndent">
+               <source>Text indent</source>
+               <target>Odrážka textu</target>
+            </trans-unit>
+            <trans-unit id="195" resname="ssLineHeight">
+               <source>Line height</source>
+               <target>Výška řádku</target>
+            </trans-unit>
+            <trans-unit id="196" resname="ssVerticalAlign">
+               <source>Vertical align</source>
+               <target>Svislé zarovnání</target>
+            </trans-unit>
+            <trans-unit id="197" resname="ssTabs">
+               <source>Tabs</source>
+               <target>Tabelátory</target>
+            </trans-unit>
+            <trans-unit id="198" resname="ssDefaultTab">
+               <source>Default tab</source>
+               <target>Výchozí tab</target>
+            </trans-unit>
+            <trans-unit id="199" resname="ssListStyleType">
+               <source>List style</source>
+               <target>Styl listu</target>
+            </trans-unit>
+            <trans-unit id="200" resname="ssMarginLeft">
+               <source>Margin left</source>
+               <target>Levý okraj</target>
+            </trans-unit>
+            <trans-unit id="201" resname="ssMarginTop">
+               <source>Margin top</source>
+               <target>Horní okraj</target>
+            </trans-unit>
+            <trans-unit id="202" resname="ssMarginRight">
+               <source>Margin right</source>
+               <target>Pravý okraj</target>
+            </trans-unit>
+            <trans-unit id="203" resname="ssMarginBottom">
+               <source>Margin bottom</source>
+               <target>Spodní okraj</target>
+            </trans-unit>
+            <trans-unit id="204" resname="ssPaddingLeft">
+               <source>Padding left</source>
+               <target>Výplň vlevo</target>
+            </trans-unit>
+            <trans-unit id="205" resname="ssPaddingTop">
+               <source>Padding top</source>
+               <target>Výplň horní</target>
+            </trans-unit>
+            <trans-unit id="206" resname="ssPaddingRight">
+               <source>Padding right</source>
+               <target>Výplň vpravo</target>
+            </trans-unit>
+            <trans-unit id="207" resname="ssPaddingBottom">
+               <source>Padding bottom</source>
+               <target>Výplň spodní</target>
+            </trans-unit>
+            <trans-unit id="208" resname="ssBorderStyle">
+               <source>Border style</source>
+               <target>Styl ohraničení</target>
+            </trans-unit>
+            <trans-unit id="209" resname="ssBorderWidth">
+               <source>Border width</source>
+               <target>Šířka ohraničení</target>
+            </trans-unit>
+            <trans-unit id="210" resname="ssBorderColor">
+               <source>Border color</source>
+               <target>Barva ohraničení</target>
+            </trans-unit>
+            <trans-unit id="211" resname="ssBorderRadius">
+               <source>Border radius</source>
+               <target>Poloměr ohraničení</target>
+            </trans-unit>
+            <trans-unit id="212" resname="ssNameColon">
+               <source>Name:</source>
+               <target>Název:</target>
+            </trans-unit>
+            <trans-unit id="213" resname="ssFonts">
+               <source>Fonts</source>
+               <target>Písma</target>
+            </trans-unit>
+            <trans-unit id="214" resname="ssParagraphs">
+               <source>Paragraphs</source>
+               <target>Odstavce</target>
+            </trans-unit>
+            <trans-unit id="215" resname="ssMarginsBorders">
+               <source>Margins &amp; borders</source>
+               <target>Okraje &amp; ohraničení</target>
+            </trans-unit>
+            <trans-unit id="226" resname="ssTransform">
+               <source>Transform</source>
+               <target>Transformovat</target>
+            </trans-unit>
+            <trans-unit id="227" resname="ssAlignLeft">
+               <source>Left aligned</source>
+               <target>Zarovnání vlevo</target>
+            </trans-unit>
+            <trans-unit id="228" resname="ssAlignCenter">
+               <source>Centered</source>
+               <target>Centrované</target>
+            </trans-unit>
+            <trans-unit id="230" resname="ssAlignJustified">
+               <source>Justified</source>
+               <target>Zarovnaný</target>
+            </trans-unit>
+            <trans-unit id="231" resname="ssAlignRight">
+               <source>Right aligned</source>
+               <target>Zarovnání vpravo</target>
+            </trans-unit>
+            <trans-unit id="233" resname="ssAlignBase">
+               <source>Base line</source>
+               <target>Základní linie</target>
+            </trans-unit>
+            <trans-unit id="234" resname="ssAlignTop">
+               <source>Top</source>
+               <target>Vrch</target>
+            </trans-unit>
+            <trans-unit id="235" resname="ssAlignBottom">
+               <source>Bottom</source>
+               <target>Spodek</target>
+            </trans-unit>
+            <trans-unit id="236" resname="ssAlignMiddle">
+               <source>Middle</source>
+               <target>Střed</target>
+            </trans-unit>
+            <trans-unit id="237" resname="ssAlignSuperscript">
+               <source>Superscript</source>
+               <target>Horní index</target>
+            </trans-unit>
+            <trans-unit id="238" resname="ssAlignSubscript">
+               <source>Subscript</source>
+               <target>Spodní index</target>
+            </trans-unit>
+            <trans-unit id="239" resname="ssAlignDefault">
+               <source>Default</source>
+               <target>Výchozí</target>
+            </trans-unit>
+         </group>
+         <group resname="Misc">
+            <trans-unit id="240" resname="ok">
+               <source>OK</source>
+               <target>OK</target>
+            </trans-unit>
+            <trans-unit id="241" resname="cancel">
+               <source>Cancel</source>
+               <target>Storno</target>
+            </trans-unit>
+            <trans-unit id="244" resname="delete">
+               <source>Delete</source>
+               <target>Vymazat</target>
+            </trans-unit>
+         </group>
+         <group resname="PaletteFindReplace">
+            <trans-unit id="250" resname="CaseSensitive">
+               <source>Case sensitive</source>
+               <target>Rozeznávat velká a malá písmena</target>
+            </trans-unit>
+            <trans-unit id="272" resname="ErrorEmptyFind">
+               <source>The "find" property can not be an empty string.</source>
+               <target>Vlastnost "find" nemůže být prázdný řetězec.</target>
+            </trans-unit>
+            <trans-unit id="264" resname="ErrorMissingAction">
+               <source>The "action" property is mandatory.</source>
+               <target>Vlastnost "action" je povinná.</target>
+            </trans-unit>
+            <trans-unit id="263" resname="ErrorMissingDocument">
+               <source>The "document" property is mandatory.</source>
+               <target>Vlastnost "document" je povinná.</target>
+            </trans-unit>
+            <trans-unit id="266" resname="ErrorMissingFind">
+               <source>The "find" property is mandatory.</source>
+               <target>Vlastnost "find" je povinná.</target>
+            </trans-unit>
+            <trans-unit id="265" resname="ErrorMissingSelection">
+               <source>The "selection" property is mandatory.</source>
+               <target>TVlastnost "selection" je povinná.</target>
+            </trans-unit>
+            <trans-unit id="270" resname="ErrorTypeAction">
+               <source>The "action" property must be of the text type.</source>
+               <target>Vlastnost "action" musí být typu text.</target>
+            </trans-unit>
+            <trans-unit id="273" resname="ErrorTypeCaseSensitive">
+               <source>The "caseSensitive" property must be of the boolean type.</source>
+               <target>Vlastnost "caseSensitive" musí být typu logické.</target>
+            </trans-unit>
+            <trans-unit id="268" resname="ErrorTypeDocument">
+               <source>The "document" property must be of the object type.</source>
+               <target>Vlastnost "document" musí být typu objekt.</target>
+            </trans-unit>
+            <trans-unit id="271" resname="ErrorTypeFind">
+               <source>The "find" property must be of the text type.</source>
+               <target>Vlastnost "find" musí být typu text.</target>
+            </trans-unit>
+            <trans-unit id="276" resname="ErrorTypeFullWord">
+               <source>The "fullWord" property must be of the boolean type.</source>
+               <target>Vlastnost "fullWord" musí být typu logické.</target>
+            </trans-unit>
+            <trans-unit id="275" resname="ErrorTypeKeepCharStyle">
+               <source>The "keepCharStyle" property must be of the boolean type.</source>
+               <target>Vlastnost "keepCharStyle" musí být typu logické.</target>
+            </trans-unit>
+            <trans-unit id="272" resname="ErrorTypeReplace">
+               <source>The "replace" property must be of the text type.</source>
+               <target>Vlastnost "replace" musí být typu text.</target>
+            </trans-unit>
+            <trans-unit id="269" resname="ErrorTypeSelection">
+               <source>The "selection" property must be of the object type.</source>
+               <target>Vlastnost "selection" musí být typu objekt.</target>
+            </trans-unit>
+            <trans-unit id="248" resname="Find">
+               <source>Find</source>
+               <target>Nalézt</target>
+            </trans-unit>
+            <trans-unit id="247" resname="FindColon">
+               <source>Find:</source>
+               <target>Nalézt:</target>
+            </trans-unit>
+            <trans-unit id="251" resname="FindFirst">
+               <source>First</source>
+               <target>První</target>
+            </trans-unit>
+            <trans-unit id="254" resname="FindLast">
+               <source>Last</source>
+               <target>Poslední</target>
+            </trans-unit>
+            <trans-unit id="252" resname="FindNext">
+               <source>Next</source>
+               <target>Další</target>
+            </trans-unit>
+            <trans-unit id="253" resname="FindPrevious">
+               <source>Previous</source>
+               <target>Předchozí</target>
+            </trans-unit>
+            <trans-unit id="262" resname="FindSlashReplace">
+               <source>Find/Replace</source>
+               <target>Nalézt/nahradit</target>
+            </trans-unit>
+            <trans-unit id="260" resname="FullWord">
+               <source>Full word</source>
+               <target>Celé slovo</target>
+            </trans-unit>
+            <trans-unit id="259" resname="KeepCharStyle">
+               <source>Keep each character style</source>
+               <target>Zachovat každý styl znaku</target>
+            </trans-unit>
+            <trans-unit id="261" resname="Option">
+               <source>Option</source>
+               <target>Možnost</target>
+            </trans-unit>
+            <trans-unit id="249" resname="Options">
+               <source>Options</source>
+               <target>Možnosti</target>
+            </trans-unit>
+            <trans-unit id="255" resname="Replace">
+               <source>Replace</source>
+               <target>Nahradit</target>
+            </trans-unit>
+            <trans-unit id="262" resname="ReplaceAll">
+               <source>Replace all</source>
+               <target>Nahradit vše</target>
+            </trans-unit>
+            <trans-unit id="262" resname="ReplaceAllMessage">
+               <source>Replace "&amp;1" by "&amp;2"…</source>
+               <target>Nahradit "&amp;1" čím "&amp;2"…</target>
+            </trans-unit>
+            <trans-unit id="257" resname="ReplaceAndNext">
+               <source>Replace and find</source>
+               <target>Nahradit a nalézt</target>
+            </trans-unit>
+            <trans-unit id="256" resname="ReplaceByColon">
+               <source>Replace by:</source>
+               <target>Nahradit čím:</target>
+            </trans-unit>
+            <trans-unit id="276" resname="ErrorUnknownAction">
+               <source>This action is unknown.</source>
+               <target>Tato akce je neznámá.</target>
+            </trans-unit>
+         </group>
+         <group resname="PaletteTables">
+            <trans-unit id="277" resname="InsertAbove">
+               <source>Insert above</source>
+               <target>Vložit nad</target>
+            </trans-unit>
+            <trans-unit id="278" resname="InsertBelow">
+               <source>Insert below</source>
+               <target>Vložit pod</target>
+            </trans-unit>
+            <trans-unit id="279" resname="InsertLeft">
+               <source>Insert to the left</source>
+               <target>Vložit vlevo</target>
+            </trans-unit>
+            <trans-unit id="280" resname="InsertRight">
+               <source>Insert to the right</source>
+               <target>Vložit vpravo</target>
+            </trans-unit>
+            <trans-unit id="281" resname="DeleteRow">
+               <source>Delete row</source>
+               <target>Vymazat řádek</target>
+            </trans-unit>
+            <trans-unit id="282" resname="DeleteRows">
+               <source>Delete &lt;n&gt; rows</source>
+               <target>Vymazat &lt;n&gt; řádek</target>
+            </trans-unit>
+            <trans-unit id="283" resname="DeleteColumn">
+               <source>Delete column</source>
+               <target>Vymazat sloupec</target>
+            </trans-unit>
+            <trans-unit id="284" resname="DeleteColumns">
+               <source>Delete &lt;n&gt; columns</source>
+               <target>Vymazat &lt;n&gt; sloupců</target>
+            </trans-unit>
+            <trans-unit id="285" resname="DeleteCell">
+               <source>Delete cell</source>
+               <target>Vymazat buňku</target>
+            </trans-unit>
+            <trans-unit id="286" resname="DeleteCells">
+               <source>Delete &lt;n&gt; cells</source>
+               <target>Vymazat &lt;n&gt; buněk</target>
+            </trans-unit>
+            <trans-unit id="287" resname="LabelRows">
+               <source>Rows</source>
+               <target>Řádků</target>
+            </trans-unit>
+            <trans-unit id="288" resname="LabelColumns">
+               <source>Columns</source>
+               <target>Sloupců</target>
+            </trans-unit>
+            <trans-unit id="289" resname="LabelCells">
+               <source>Cells</source>
+               <target>Buněk</target>
+            </trans-unit>
+            <trans-unit id="292" resname="Table">
+               <source>Table</source>
+               <target>Tabulka</target>
+            </trans-unit>
+            <trans-unit id="293" resname="InsertTable">
+               <source>Insert table</source>
+               <target>Vložit tabulku</target>
+            </trans-unit>
+            <trans-unit id="294" resname="LabelTable">
+               <source>Table</source>
+               <target>Tabulka</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

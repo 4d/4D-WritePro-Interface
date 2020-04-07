@@ -1,0 +1,2 @@
+WP_CopyPasteMenu ("Frame")
+
