@@ -1,6 +1,4 @@
 C_REAL:C285($tab)
-C_OBJECT:C1216($range)
-
 $tab:=Self:C308->
 
 $tab:=WP_Convert ($tab;wk unit pt:K81:136;userUnit)

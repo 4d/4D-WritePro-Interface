@@ -3,15 +3,13 @@
 
 C_LONGINT:C283($1)
 
-C_BOOLEAN:C305($check;$translate)
+C_BOOLEAN:C305($translate)
 C_BOOLEAN:C305($forceCheck)
 
   //C_TEXT($1;$category)
 
 C_OBJECT:C1216($styleSheet)
-C_OBJECT:C1216($sampleRange)
 C_OBJECT:C1216($tempTarget)
-C_OBJECT:C1216($o)
 C_OBJECT:C1216($item)
 C_OBJECT:C1216($temp)
 C_OBJECT:C1216($target)
@@ -20,13 +18,11 @@ C_OBJECT:C1216($val_o)
 C_COLLECTION:C1488($col)
 C_COLLECTION:C1488($val_c)
 
-C_LONGINT:C283($type)
 C_LONGINT:C283($i)
 
 C_REAL:C285($val_r)
 
-C_TEXT:C284($value;$displayStylesheetValue)
-C_TEXT:C284($label)
+C_TEXT:C284($displayStylesheetValue)
 C_TEXT:C284($displayNormalValue;$displayStylesheetValue)
 C_TEXT:C284($category)
 C_TEXT:C284($val_t)

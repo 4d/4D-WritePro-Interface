@@ -11,6 +11,7 @@
 		"onLoad",
 		"onUnload",
 		"onTimer",
+		"onResize",
 		"onBoundVariableChange"
 	],
 	"method": "method.4dm",
@@ -28,14 +29,24 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 40,
+					"height": 30,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
-					"borderRadius": 8
+					"borderRadius": 0
+				},
+				"TabArea": {
+					"type": "rectangle",
+					"top": 5,
+					"left": 3,
+					"width": 253,
+					"height": 24,
+					"visibility": "hidden",
+					"stroke": "#9400d3",
+					"fill": "transparent"
 				},
 				"PaletteSubform": {
 					"type": "subform",
-					"top": 50,
+					"top": 31,
 					"left": 0,
 					"width": 260,
 					"height": 630,
@@ -51,7 +62,7 @@
 						"onDataChange"
 					]
 				},
-				"PaletteSelector0": {
+				"PaletteSelectorXX1": {
 					"type": "button",
 					"top": 5,
 					"left": 366,
@@ -65,10 +76,10 @@
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Document_Menu.png",
+					"icon": "/RESOURCES/Images/Light/Icon_Document_Menu.png",
 					"iconFrames": 4,
 					"style": "custom",
-					"method": "ObjectMethods/PaletteSelector0.4dm",
+					"method": "ObjectMethods/PaletteSelectorXX1.4dm",
 					"events": [
 						"onClick"
 					]
@@ -79,14 +90,16 @@
 					"left": 396,
 					"height": 30,
 					"visibility": "hidden",
-					"stroke": "#777777"
+					"stroke": "#777777",
+					"width": 0,
+					"startPoint": "topLeft"
 				},
-				"PaletteSelector2": {
+				"tabBtn_Alignments": {
 					"type": "radio",
 					"top": 5,
-					"left": 30,
-					"width": 22,
-					"height": 30,
+					"left": 23,
+					"width": 20,
+					"height": 20,
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/Margins"
 					},
@@ -94,23 +107,23 @@
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Margins.png",
+					"icon": "/RESOURCES/Images/Light/margins.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"radioGroup": "Group27",
-					"method": "ObjectMethods/PaletteSelector2.4dm",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_Alignments.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"PaletteSelector1": {
+				"tabBtn_Fonts": {
 					"type": "radio",
 					"top": 5,
-					"left": 5,
-					"width": 22,
-					"height": 30,
+					"left": 3,
+					"width": 20,
+					"height": 20,
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/FontStyle"
 					},
@@ -118,23 +131,23 @@
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Text.png",
+					"icon": "/RESOURCES/Images/Light/fontStyle.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"radioGroup": "Group27",
-					"method": "ObjectMethods/PaletteSelector1.4dm",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_Fonts.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"PaletteSelector4": {
+				"tabBtn_Expressions": {
 					"type": "radio",
 					"top": 5,
-					"left": 155,
-					"width": 22,
-					"height": 30,
+					"left": 123,
+					"width": 20,
+					"height": 20,
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/Information"
 					},
@@ -142,23 +155,23 @@
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Expressions.png",
+					"icon": "/RESOURCES/Images/Light/expressions.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"radioGroup": "Group27",
-					"method": "ObjectMethods/PaletteSelector4.4dm",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_Expressions.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"PaletteSelector5": {
+				"tabBtn_Frames": {
 					"type": "radio",
 					"top": 5,
-					"left": 105,
-					"width": 22,
-					"height": 30,
+					"left": 83,
+					"width": 20,
+					"height": 20,
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/Frames"
 					},
@@ -166,23 +179,23 @@
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Frame.png",
+					"icon": "/RESOURCES/Images/Light/frames.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"radioGroup": "Group27",
-					"method": "ObjectMethods/PaletteSelector5.4dm",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_Frames.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"PaletteSelector3": {
+				"tabBtn_Tabulations": {
 					"type": "radio",
 					"top": 5,
-					"left": 55,
-					"width": 22,
-					"height": 30,
+					"left": 43,
+					"width": 20,
+					"height": 20,
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/Tabulations"
 					},
@@ -190,23 +203,23 @@
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_tabs.png",
+					"icon": "/RESOURCES/Images/Light/tabulations.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"radioGroup": "Group27",
-					"method": "ObjectMethods/PaletteSelector3.4dm",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_Tabulations.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"PaletteSelector6": {
+				"tabBtn_Sizes": {
 					"type": "radio",
 					"top": 5,
-					"left": 80,
-					"width": 22,
-					"height": 30,
+					"left": 63,
+					"width": 20,
+					"height": 20,
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/Sizes"
 					},
@@ -214,23 +227,23 @@
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Sizes.png",
+					"icon": "/RESOURCES/Images/Light/units.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"radioGroup": "Group27",
-					"method": "ObjectMethods/PaletteSelector6.4dm",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_Sizes.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"PaletteSelector7": {
+				"tabBtn_Backgrounds": {
 					"type": "radio",
 					"top": 5,
-					"left": 130,
-					"width": 22,
-					"height": 30,
+					"left": 103,
+					"width": 20,
+					"height": 20,
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/Backgrounds"
 					},
@@ -238,23 +251,23 @@
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Background.png",
+					"icon": "/RESOURCES/Images/Light/Background.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"radioGroup": "Group27",
-					"method": "ObjectMethods/PaletteSelector7.4dm",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_Backgrounds.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"PaletteSelector8": {
+				"tabBtn_Bookmarks": {
 					"type": "radio",
 					"top": 5,
-					"left": 181,
-					"width": 22,
-					"height": 30,
+					"left": 143,
+					"width": 20,
+					"height": 20,
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/Bookmarks"
 					},
@@ -262,62 +275,62 @@
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Bookmark.png",
+					"icon": "/RESOURCES/Images/Light/bookmarks.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"radioGroup": "Group27",
-					"method": "ObjectMethods/PaletteSelector8.4dm",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_Bookmarks.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"PaletteSelector9": {
+				"tabBtn_Stylesheets": {
 					"type": "radio",
 					"top": 5,
-					"left": 207,
-					"width": 22,
-					"height": 30,
+					"left": 163,
+					"width": 20,
+					"height": 20,
 					"tooltip": ":xliff:stylesheets",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_styleSheets.png",
+					"icon": "/RESOURCES/Images/Light/stylesheets.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"radioGroup": "Group27",
-					"method": "ObjectMethods/PaletteSelector9.4dm",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_Stylesheets.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"PaletteSelector11": {
+				"tabBtn_Tables": {
 					"type": "radio",
 					"top": 5,
-					"left": 233,
-					"width": 22,
-					"height": 30,
+					"left": 183,
+					"width": 20,
+					"height": 20,
 					"tooltip": ":xliff:Tables",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Tables.png",
+					"icon": "/RESOURCES/Images/Light/tables.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"radioGroup": "Group27",
-					"method": "ObjectMethods/PaletteSelector11.4dm",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_Tables.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"PaletteSelector10": {
+				"PaletteSelectorXX": {
 					"type": "radio",
 					"top": 5,
 					"left": 331,
@@ -328,12 +341,34 @@
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_find.png",
+					"icon": "/RESOURCES/Images/Light/Icon_find.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
 					"customBackgroundPicture": "/RESOURCES/",
-					"method": "ObjectMethods/PaletteSelector10.4dm",
+					"method": "ObjectMethods/PaletteSelectorXX.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"tabBtn_Protection": {
+					"type": "radio",
+					"top": 5,
+					"left": 204,
+					"width": 20,
+					"height": 20,
+					"tooltip": ":xliff:stylesheets",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Light/protection.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_Protection.4dm",
 					"events": [
 						"onClick"
 					]
@@ -367,20 +402,6 @@
 		}
 	],
 	"editor": {
-		"groups": {
-			"Group27": [
-				"PaletteSelector2",
-				"PaletteSelector1",
-				"PaletteSelector4",
-				"PaletteSelector5",
-				"PaletteSelector3",
-				"PaletteSelector6",
-				"PaletteSelector7",
-				"PaletteSelector8",
-				"PaletteSelector9",
-				"PaletteSelector11"
-			]
-		},
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
@@ -397,11 +418,16 @@
 			"View 7": {},
 			"View 8": {},
 			"Invisible By default": {
+				"visible": false,
 				"objects": [
 					"Rect1",
 					"Text"
 				]
 			}
 		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
 	}
 }

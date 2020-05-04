@@ -8,7 +8,6 @@ C_TEXT:C284($areaName)
 C_LONGINT:C283($start;$end)
 C_POINTER:C301($ptrLabel;$ptrURL;$ptrTrueExpression;$ptrVirtualExpression)
 
-C_OBJECT:C1216($oCurrent)
 C_TEXT:C284($label;$URL)
 C_LONGINT:C283($start;$end)
 

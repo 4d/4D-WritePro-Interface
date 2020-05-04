@@ -55,17 +55,10 @@ Case of
 		If ($setupOK) & ($typeSelection#2)
 			
 			WP_GetUserUnit (Form:C1466.selection[wk owner:K81:168])
-			
 			WP_GetSizes (Form:C1466.paragraphRange;"paragraph")
 			
-			
-			  //WP_GetSizes (oImages;"picture")
-			  //WP_GetImageUrl (oImages)
-			
-			WP_GetSizes (Form:C1466.imageRange;"picture")
-			WP_GetImageUrl (Form:C1466.imageRange)
-			
-			
+			WP_GetSizes (Form:C1466.imageRange;"picture")  //ACI0100269
+			WP_GetImageUrl (Form:C1466.imageRange)  //ACI0100269
 			
 		End if 
 		

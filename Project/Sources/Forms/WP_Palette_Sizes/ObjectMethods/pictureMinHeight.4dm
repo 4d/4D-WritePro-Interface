@@ -10,7 +10,7 @@ Case of
 		ON ERR CALL:C155("TrapError")
 		
 		  //WP_SetSizes (oImages;"picture")
-		WP_SetSizes (Form:C1466.imageRange;"picture")
+		WP_SetSizes (Form:C1466.imageRange;"picture")  //ACI0100269
 		
 		ON ERR CALL:C155("")
 		If (vError=True:C214)

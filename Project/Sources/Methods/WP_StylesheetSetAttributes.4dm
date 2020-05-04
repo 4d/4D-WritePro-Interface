@@ -16,15 +16,11 @@ C_OBJECT:C1216($item)
 C_OBJECT:C1216($source)
 C_OBJECT:C1216($paragraph)
 C_OBJECT:C1216($target)
-C_OBJECT:C1216($attribute)
-C_OBJECT:C1216($object)  //used for variant
 C_OBJECT:C1216($document)
 C_OBJECT:C1216($normal)
 C_OBJECT:C1216($stackItem)
-C_OBJECT:C1216($removeTarget)
+
 C_TEXT:C284($action)
-C_TEXT:C284($marginBottom;$marginTop;$marginLeft;$marginRight)
-C_TEXT:C284($paddingBottom;$paddingTop;$paddingLeft;$paddingRight)
 C_TEXT:C284($property)
 C_TEXT:C284($jsonSource;$jsonNormal)
 

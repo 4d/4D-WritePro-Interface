@@ -3,7 +3,6 @@ C_LONGINT:C283($color)
 C_POINTER:C301($ptrText)
 C_POINTER:C301($ptrValue)
 C_LONGINT:C283($value)
-C_POINTER:C301($ptrCB)
 
 oForm.cbUnderline:=1
 

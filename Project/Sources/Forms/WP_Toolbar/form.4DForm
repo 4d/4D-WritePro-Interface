@@ -11,7 +11,8 @@
 	"events": [
 		"onLoad",
 		"onTimer",
-		"onBoundVariableChange"
+		"onBoundVariableChange",
+		"onPageChange"
 	],
 	"method": "method.4dm",
 	"pageFormat": {
@@ -22,6 +23,16 @@
 	"pages": [
 		{
 			"objects": {
+				"TabArea": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 5,
+					"width": 843,
+					"height": 20,
+					"visibility": "hidden",
+					"stroke": "#9400d3",
+					"fill": "transparent"
+				},
 				"Rectangle": {
 					"type": "rectangle",
 					"top": 20,
@@ -352,11 +363,11 @@
 					"width": 0,
 					"startPoint": "topLeft"
 				},
-				"tab1": {
+				"tabBtn_Home": {
 					"type": "radio",
 					"top": 0,
 					"left": 5,
-					"width": 100,
+					"width": 50,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -368,16 +379,16 @@
 					"style": "custom",
 					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
 					"radioGroup": "Group34",
-					"method": "ObjectMethods/tab1.4dm",
+					"method": "ObjectMethods/tabBtn_Home.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"tab2": {
+				"tabBtn_Insert": {
 					"type": "radio",
 					"top": 0,
-					"left": 105,
-					"width": 100,
+					"left": 60,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -389,16 +400,16 @@
 					"style": "custom",
 					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
 					"radioGroup": "Group34",
-					"method": "ObjectMethods/tab2.4dm",
+					"method": "ObjectMethods/tabBtn_Insert.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"tab3": {
+				"tabBtn_Margins": {
 					"type": "radio",
 					"top": 0,
-					"left": 205,
-					"width": 100,
+					"left": 145,
+					"width": 50,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -410,16 +421,16 @@
 					"style": "custom",
 					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
 					"radioGroup": "Group34",
-					"method": "ObjectMethods/tab3.4dm",
+					"method": "ObjectMethods/tabBtn_Margins.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"tab6": {
+				"tabBtn_Printing": {
 					"type": "radio",
 					"top": 0,
-					"left": 505,
-					"width": 100,
+					"left": 310,
+					"width": 40,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -431,16 +442,16 @@
 					"style": "custom",
 					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
 					"radioGroup": "Group34",
-					"method": "ObjectMethods/tab6.4dm",
+					"method": "ObjectMethods/tabBtn_Printing.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"tab5": {
+				"tabBtn_Images": {
 					"type": "radio",
 					"top": 0,
-					"left": 405,
-					"width": 100,
+					"left": 255,
+					"width": 50,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -452,16 +463,16 @@
 					"style": "custom",
 					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
 					"radioGroup": "Group34",
-					"method": "ObjectMethods/tab5.4dm",
+					"method": "ObjectMethods/tabBtn_Images.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"tab4": {
+				"tabBtn_Borders": {
 					"type": "radio",
 					"top": 0,
-					"left": 305,
-					"width": 100,
+					"left": 200,
+					"width": 50,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -473,16 +484,16 @@
 					"style": "custom",
 					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
 					"radioGroup": "Group34",
-					"method": "ObjectMethods/tab4.4dm",
+					"method": "ObjectMethods/tabBtn_Borders.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"tab8": {
+				"tabBtn_Spell": {
 					"type": "radio",
 					"top": 0,
-					"left": 705,
-					"width": 100,
+					"left": 400,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -494,16 +505,16 @@
 					"style": "custom",
 					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
 					"radioGroup": "Group34",
-					"method": "ObjectMethods/tab8.4dm",
+					"method": "ObjectMethods/tabBtn_Spell.4dm",
 					"events": [
 						"onClick"
 					]
 				},
-				"tab7": {
+				"tabBtn_Tables": {
 					"type": "radio",
 					"top": 0,
-					"left": 605,
-					"width": 100,
+					"left": 355,
+					"width": 40,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -515,7 +526,7 @@
 					"style": "custom",
 					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
 					"radioGroup": "Group34",
-					"method": "ObjectMethods/tab7.4dm",
+					"method": "ObjectMethods/tabBtn_Tables.4dm",
 					"events": [
 						"onClick"
 					]
@@ -613,7 +624,12 @@
 					"style": "toolbar",
 					"events": [
 						"onClick"
-					]
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "b"
 				},
 				"cbItalic": {
 					"type": "checkbox",
@@ -630,7 +646,12 @@
 					"style": "toolbar",
 					"events": [
 						"onClick"
-					]
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "i"
 				},
 				"btn_underline": {
 					"type": "checkbox",
@@ -647,7 +668,12 @@
 					"style": "toolbar",
 					"events": [
 						"onClick"
-					]
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "u"
 				},
 				"btn_strikethrough": {
 					"type": "checkbox",
@@ -1197,8 +1223,8 @@
 			"objects": {
 				"Text3": {
 					"type": "groupBox",
-					"top": 216,
-					"left": 1006,
+					"top": 123,
+					"left": 1256,
 					"width": 251,
 					"height": 176,
 					"sizingX": "move",
@@ -1553,8 +1579,8 @@
 				},
 				"URLlabel": {
 					"type": "input",
-					"top": 327,
-					"left": 1031,
+					"top": 234,
+					"left": 1281,
 					"width": 130,
 					"height": 13,
 					"sizingX": "move",
@@ -1573,8 +1599,8 @@
 				},
 				"URLurl": {
 					"type": "input",
-					"top": 342,
-					"left": 1031,
+					"top": 249,
+					"left": 1281,
 					"width": 130,
 					"height": 45,
 					"sizingX": "move",
@@ -1593,8 +1619,8 @@
 				},
 				"VirtualExpression": {
 					"type": "input",
-					"top": 242,
-					"left": 1021,
+					"top": 149,
+					"left": 1271,
 					"width": 220,
 					"height": 23,
 					"sizingX": "move",
@@ -1614,8 +1640,8 @@
 				},
 				"TrueExpression": {
 					"type": "input",
-					"top": 278,
-					"left": 1021,
+					"top": 185,
+					"left": 1271,
 					"width": 220,
 					"height": 23,
 					"sizingX": "move",
@@ -1645,10 +1671,58 @@
 					"icon": "/RESOURCES/Images/Toolbar1/View/RulerV_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
+				},
+				"btnProtected": {
+					"type": "checkbox",
+					"top": 414,
+					"left": 780,
+					"width": 40,
+					"height": 40,
+					"text": "",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.protected",
+					"method": "ObjectMethods/btnProtected.4dm",
+					"threeState": true,
+					"stroke": "#ff0000",
+					"visibility": "visible",
+					"style": "toolbar",
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Protected_32.png",
+					"iconFrames": 4,
+					"textPlacement": "right"
+				},
+				"btnProtectionEnabled": {
+					"type": "checkbox",
+					"top": 414,
+					"left": 840,
+					"width": 40,
+					"height": 40,
+					"text": "",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.protectionEnabled",
+					"method": "ObjectMethods/btnProtectionEnabled.4dm",
+					"threeState": false,
+					"visibility": "visible",
+					"stroke": "#ff0000",
+					"style": "toolbar",
+					"icon": "/RESOURCES/Images/Toolbar1/Home/DocumentProtected_32.png",
+					"iconFrames": 4,
+					"textPlacement": "right"
 				}
 			},
 			"entryOrder": [
-				"Popup_zoom"
+				"Popup_zoom",
+				"btnProtected",
+				"btnProtectionEnabled"
 			]
 		},
 		{
@@ -1907,8 +1981,8 @@
 				},
 				"btnBorderStyleLeft": {
 					"type": "button",
-					"top": 30,
-					"left": 1008,
+					"top": 286,
+					"left": 1044,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderLeft",
@@ -1924,8 +1998,8 @@
 				},
 				"btnBorderStyleBottom": {
 					"type": "button",
-					"top": 60,
-					"left": 1008,
+					"top": 316,
+					"left": 1044,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderBottom",
@@ -1938,8 +2012,8 @@
 				},
 				"btnBorderStyleTop": {
 					"type": "button",
-					"top": 60,
-					"left": 1038,
+					"top": 316,
+					"left": 1074,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderTop",
@@ -1952,8 +2026,8 @@
 				},
 				"btnBorderStyleRight": {
 					"type": "button",
-					"top": 30,
-					"left": 1038,
+					"top": 286,
+					"left": 1074,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderRight",
@@ -2532,28 +2606,10 @@
 		},
 		{
 			"objects": {
-				"Picture1": {
-					"type": "picture",
-					"top": 51,
-					"left": 520,
-					"width": 24,
-					"height": 24,
-					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/Home/BackgroundColor_24.png"
-				},
-				"Line58": {
-					"type": "line",
-					"top": 150,
-					"left": 720,
-					"height": 50,
-					"stroke": "#888888",
-					"width": 0,
-					"startPoint": "topLeft"
-				},
 				"lbl_Size1": {
 					"type": "text",
 					"top": 30,
-					"left": 100,
+					"left": 140,
 					"width": 180,
 					"height": 14,
 					"textAlign": "left",
@@ -2563,7 +2619,7 @@
 				"lbl_Size2": {
 					"type": "text",
 					"top": 30,
-					"left": 310,
+					"left": 360,
 					"width": 180,
 					"height": 14,
 					"textAlign": "left",
@@ -2573,7 +2629,7 @@
 				"btnInsertAboveRow": {
 					"type": "button",
 					"top": 40,
-					"left": 100,
+					"left": 140,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:InsertAbove",
@@ -2588,7 +2644,7 @@
 				"btnInsertBelowRow": {
 					"type": "button",
 					"top": 40,
-					"left": 170,
+					"left": 190,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:InsertBelow",
@@ -2603,7 +2659,7 @@
 				"btnInsertBeforeColumn": {
 					"type": "button",
 					"top": 40,
-					"left": 310,
+					"left": 360,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:InsertLeft",
@@ -2618,7 +2674,7 @@
 				"btnInsertAfterColumn": {
 					"type": "button",
 					"top": 40,
-					"left": 380,
+					"left": 410,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:InsertRight",
@@ -2648,7 +2704,7 @@
 				"btnDeleteColumns": {
 					"type": "button",
 					"top": 40,
-					"left": 450,
+					"left": 460,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:DeleteColumn",
@@ -2660,28 +2716,10 @@
 					"textPlacement": "right",
 					"style": "custom"
 				},
-				"btnInsertTable": {
-					"type": "button",
-					"top": 165,
-					"left": 50,
-					"width": 140,
-					"height": 22,
-					"class": "Palette",
-					"focusable": false,
-					"text": ":xliff:InsertTable",
-					"icon": "/RESOURCES/Images/Buttons/PopupTriangle.png",
-					"iconFrames": 4,
-					"popupPlacement": "linked",
-					"textPlacement": "right",
-					"method": "ObjectMethods/btnInsertTable.4dm",
-					"events": [
-						"onClick"
-					]
-				},
 				"Line54": {
 					"type": "line",
 					"top": 30,
-					"left": 85,
+					"left": 125,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2690,97 +2728,26 @@
 				"lbl_Background": {
 					"type": "text",
 					"top": 30,
-					"left": 520,
+					"left": 600,
 					"width": 80,
 					"height": 14,
 					"textAlign": "left",
 					"fontTheme": "additional",
 					"text": ":xliff:LabelCells"
 				},
-				"SampleFrame3": {
-					"type": "rectangle",
-					"top": 115,
-					"left": 555,
-					"width": 60,
-					"height": 16,
-					"fill": "transparent",
-					"stroke": "#404040",
-					"borderRadius": 4
-				},
-				"Picture18": {
-					"type": "picture",
-					"top": 160,
-					"left": 10,
-					"width": 30,
-					"height": 30,
-					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/Tables/TableBorder_32.png"
-				},
-				"Picture19": {
-					"type": "picture",
-					"top": 148,
-					"left": 225,
-					"width": 24,
-					"height": 24,
-					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/Tables/RowBorder_24.png"
-				},
-				"Picture20": {
-					"type": "picture",
-					"top": 178,
-					"left": 225,
-					"width": 24,
-					"height": 24,
-					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/Tables/Columns_24.png"
-				},
-				"btnInsertTable1": {
+				"btnTableSettings": {
 					"type": "button",
 					"top": 40,
-					"left": 20,
+					"left": 60,
 					"width": 40,
 					"height": 40,
-					"tooltip": ":xliff:InsertTable",
+					"tooltip": ":xliff:Properties",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Tables/Tables_32.png",
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/TableSettings_32.png",
 					"iconFrames": 4,
 					"popupPlacement": "linked",
 					"style": "custom",
-					"method": "ObjectMethods/btnInsertTable1.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"btnTableManageRows": {
-					"type": "button",
-					"top": 365,
-					"left": 80,
-					"width": 43,
-					"height": 22,
-					"tooltip": ":xliff:LabelRows",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Tables/RowBorder_24.png",
-					"iconFrames": 4,
-					"popupPlacement": "linked",
-					"style": "custom",
-					"method": "ObjectMethods/btnTableManageRows.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"btnTableManageRows1": {
-					"type": "button",
-					"top": 365,
-					"left": 127,
-					"width": 43,
-					"height": 22,
-					"tooltip": ":xliff:LabelColumns",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Tables/Columns_24.png",
-					"iconFrames": 4,
-					"popupPlacement": "linked",
-					"style": "custom",
-					"method": "ObjectMethods/btnTableManageRows1.4dm",
+					"method": "ObjectMethods/btnTableSettings.4dm",
 					"events": [
 						"onClick"
 					]
@@ -2788,7 +2755,7 @@
 				"Line55": {
 					"type": "line",
 					"top": 30,
-					"left": 295,
+					"left": 345,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2797,7 +2764,7 @@
 				"Line56": {
 					"type": "line",
 					"top": 30,
-					"left": 505,
+					"left": 585,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2806,53 +2773,99 @@
 				"lbl_Size3": {
 					"type": "text",
 					"top": 30,
-					"left": 10,
+					"left": 50,
 					"width": 70,
 					"height": 14,
 					"textAlign": "left",
 					"fontTheme": "additional",
 					"text": ":xliff:LabelTable"
 				},
-				"backgroundColor": {
-					"type": "rectangle",
-					"top": 69,
-					"left": 523,
-					"width": 19,
-					"height": 4,
-					"stroke": "#FFFFFF",
-					"fill": "#FFFFFF"
+				"Line57": {
+					"type": "line",
+					"top": 30,
+					"left": 675,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
 				},
-				"btnSetCellsColor": {
+				"btnRowSettings": {
 					"type": "button",
-					"top": 51,
-					"left": 520,
-					"width": 24,
-					"height": 24,
-					"display": false,
-					"method": "ObjectMethods/btnSetCellsColor.4dm",
+					"top": 40,
+					"left": 290,
+					"width": 40,
+					"height": 40,
+					"action": "",
+					"class": "Palette",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/RowSettings_32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"popupPlacement": "linked",
+					"method": "ObjectMethods/btnRowSettings.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"tooltip": ":xliff:Properties"
 				},
-				"MultiBackgroundColor": {
-					"type": "picture",
-					"top": 144,
-					"left": 523,
-					"width": 18,
-					"height": 4,
-					"visibility": "hidden",
-					"pictureFormat": "scaled",
-					"picture": "/RESOURCES/Images/Mixed.png"
+				"btnCellSettings": {
+					"type": "button",
+					"top": 40,
+					"left": 610,
+					"width": 40,
+					"height": 40,
+					"action": "",
+					"class": "Palette",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/CellSettings_32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"popupPlacement": "linked",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btnCellSettings.4dm",
+					"tooltip": ":xliff:Properties"
 				},
-				"InvisibleBackground": {
-					"type": "picture",
-					"top": 139,
-					"left": 523,
-					"width": 18,
-					"height": 4,
-					"visibility": "hidden",
-					"pictureFormat": "scaled",
-					"picture": "/RESOURCES/Images/Invisible.png"
+				"btnColumnSettings": {
+					"type": "button",
+					"top": 40,
+					"left": 520,
+					"width": 40,
+					"height": 40,
+					"action": "",
+					"class": "Palette",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/ColumnSettings_32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"popupPlacement": "linked",
+					"method": "ObjectMethods/btnColumnSettings.4dm",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:Properties"
+				},
+				"btnInsertTable": {
+					"type": "button",
+					"top": 40,
+					"left": 10,
+					"width": 40,
+					"height": 40,
+					"tooltip": ":xliff:InsertTable",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/AddTable_32.png",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"style": "custom",
+					"method": "ObjectMethods/btnInsertTable.4dm",
+					"events": [
+						"onClick"
+					],
+					"text": ""
 				}
 			}
 		},
@@ -2927,8 +2940,8 @@
 				"btn_mac_autoQuoteSubstitutionsEnabled": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 690,
-					"width": 40,
+					"left": 700,
+					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:autoQuoteSubstitutionsEnabled",
 					"action": "spell/autoQuoteSubstitutionsEnabled",
@@ -2944,8 +2957,8 @@
 				"btn_mac_autoDashSubstitutionsEnabled": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 690,
-					"width": 40,
+					"left": 700,
+					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:autoDashSubstitutionsEnabled",
 					"action": "spell/autoDashSubstitutionsEnabled",
@@ -3089,7 +3102,7 @@
 					"tooltip": ":xliff:spellDialog",
 					"action": "spell/showDialog",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/File/PageSetup_48.png",
+					"icon": "/RESOURCES/Images/Toolbar1/File/PageSetup_32.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				}
@@ -3135,8 +3148,8 @@
 				},
 				"3D Button31": {
 					"type": "button",
-					"top": 30,
-					"left": 230,
+					"top": 136,
+					"left": 228,
 					"width": 40,
 					"height": 40,
 					"focusable": false,
@@ -3147,11 +3160,23 @@
 				"Line1": {
 					"type": "line",
 					"top": 20,
-					"left": 205,
+					"left": 335,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
 					"startPoint": "topLeft"
+				},
+				"3D Button1": {
+					"type": "button",
+					"top": 30,
+					"left": 200,
+					"width": 40,
+					"height": 40,
+					"stroke": "#FF0000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/Save_32.png",
+					"iconFrames": 4,
+					"style": "toolbar"
 				}
 			}
 		}
@@ -3159,14 +3184,14 @@
 	"editor": {
 		"groups": {
 			"Group34": [
-				"tab1",
-				"tab2",
-				"tab3",
-				"tab6",
-				"tab5",
-				"tab4",
-				"tab8",
-				"tab7"
+				"tabBtn_Home",
+				"tabBtn_Insert",
+				"tabBtn_Margins",
+				"tabBtn_Printing",
+				"tabBtn_Images",
+				"tabBtn_Borders",
+				"tabBtn_Spell",
+				"tabBtn_Tables"
 			],
 			"Group31": [
 				"Stylesheet_Type2",
@@ -3179,22 +3204,9 @@
 			"View 1": {},
 			"View 2": {},
 			"View 3": {},
-			"View 4": {
-				"objects": [
-					"MultiBackgroundColor",
-					"InvisibleBackground"
-				]
-			},
-			"View 5": {
-				"objects": [
-					"SampleFrame3"
-				]
-			},
-			"View 6": {
-				"objects": [
-					"btnSetCellsColor"
-				]
-			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
 			"View 7": {},
 			"View 8": {},
 			"View 9": {

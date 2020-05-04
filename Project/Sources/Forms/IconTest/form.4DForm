@@ -33,6 +33,14 @@
 		null,
 		{
 			"objects": {
+				"Zone de groupe2": {
+					"type": "groupBox",
+					"top": 220,
+					"left": 20,
+					"width": 630,
+					"height": 92,
+					"text": "File (9)"
+				},
 				"Zone de groupe": {
 					"type": "groupBox",
 					"top": 20,
@@ -86,9 +94,7 @@
 						"16",
 						"24",
 						"32",
-						"48",
-						"16@2x",
-						"24@2x"
+						"48"
 					],
 					"method": "ObjectMethods/Popup Liste déroulante.4dm",
 					"events": [
@@ -223,14 +229,6 @@
 					"events": [
 						"onClick"
 					]
-				},
-				"Zone de groupe2": {
-					"type": "groupBox",
-					"top": 220,
-					"left": 20,
-					"width": 630,
-					"height": 92,
-					"text": "File (9)"
 				},
 				"TB_SizeUp8": {
 					"type": "button",
@@ -2428,8 +2426,76 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 247,
+					"left": 517,
+					"width": 56,
+					"height": 56,
+					"fill": "transparent",
+					"stroke": "#ff6347"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 247,
+					"left": 37,
+					"width": 56,
+					"height": 56,
+					"fill": "transparent",
+					"stroke": "#ff6347"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 347,
+					"left": 397,
+					"width": 56,
+					"height": 56,
+					"fill": "transparent",
+					"stroke": "#ff6347"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 406,
+					"left": 337,
+					"width": 56,
+					"height": 56,
+					"fill": "transparent",
+					"stroke": "#ff6347"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 407,
+					"left": 277,
+					"width": 56,
+					"height": 56,
+					"fill": "transparent",
+					"stroke": "#ff6347"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 467,
+					"left": 397,
+					"width": 56,
+					"height": 56,
+					"fill": "transparent",
+					"stroke": "#ff6347"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 566,
+					"left": 577,
+					"width": 56,
+					"height": 56,
+					"fill": "transparent",
+					"stroke": "#ff6347"
 				}
 			}
 		}
-	]
+	],
+	"method": "method.4dm",
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

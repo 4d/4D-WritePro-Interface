@@ -88,7 +88,6 @@
 			"WP_Palette_BookMarks",
 			"WP_Palette_Fonts",
 			"WP_Palette_Frames",
-			"WP_Palette_Information",
 			"WP_Palette_Sizes",
 			"WP_Palette_Tabulations"
 		]
@@ -104,6 +103,7 @@
 			"RndRGB",
 			"TOOL_ColorRgbLongToColorRgbText",
 			"TOOL_ColorRgbTextToColorRgbLong",
+			"TOOL_WPIAlignButtons",
 			"TrapError",
 			"UI_PaletteBackgrounds",
 			"UI_PaletteBookMarks",

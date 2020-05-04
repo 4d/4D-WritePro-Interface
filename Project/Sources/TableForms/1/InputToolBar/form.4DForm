@@ -2,7 +2,7 @@
 	"destination": "detailScreen",
 	"windowTitle": "4D Write Pro",
 	"width": 920,
-	"height": 760,
+	"height": 860,
 	"markerBody": 217,
 	"markerBreak": 217,
 	"markerFooter": 227,
@@ -54,7 +54,8 @@
 					"doubleClickInRowAction": "editSubrecord",
 					"doubleClickInEmptyAreaAction": "addSubrecord",
 					"selectionMode": "multiple",
-					"printFrame": "variable"
+					"printFrame": "variable",
+					"dataSource": ""
 				},
 				"WParea": {
 					"type": "write",
@@ -79,13 +80,14 @@
 						"onGettingFocus",
 						"onSelectionChange",
 						"onAfterEdit"
-					]
+					],
+					"enterable": true
 				},
 				"Button6": {
 					"type": "button",
 					"top": 726,
 					"left": 23,
-					"width": 114,
+					"width": 44,
 					"height": 21,
 					"sizingY": "move",
 					"action": "previousPage",
@@ -98,8 +100,8 @@
 				"Button7": {
 					"type": "button",
 					"top": 726,
-					"left": 157,
-					"width": 114,
+					"left": 77,
+					"width": 44,
 					"height": 21,
 					"sizingY": "move",
 					"action": "nextPage",
@@ -111,9 +113,9 @@
 				},
 				"Button5": {
 					"type": "button",
-					"top": 723,
-					"left": 345,
-					"width": 127,
+					"top": 797,
+					"left": 740,
+					"width": 77,
 					"height": 22,
 					"sizingY": "move",
 					"text": "Toolbar1",
@@ -125,9 +127,9 @@
 				},
 				"Button4": {
 					"type": "button",
-					"top": 725,
-					"left": 476,
-					"width": 127,
+					"top": 797,
+					"left": 823,
+					"width": 77,
 					"height": 22,
 					"sizingY": "move",
 					"text": "Toolbar2",
@@ -140,19 +142,23 @@
 				"Button": {
 					"type": "button",
 					"top": 722,
-					"left": 750,
+					"left": 740,
 					"width": 70,
 					"height": 20,
 					"sizingX": "move",
 					"sizingY": "move",
 					"action": "cancel",
-					"shortcutKey": "[Esc]",
+					"shortcutKey": "",
 					"text": "Cancel",
 					"class": "Buttons_13",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false
 				},
 				"Button1": {
 					"type": "button",
@@ -172,69 +178,203 @@
 						"onClick"
 					]
 				},
-				"Button3": {
+				"Button9": {
 					"type": "button",
-					"top": 798,
-					"left": 27,
-					"width": 104,
-					"height": 20,
+					"top": 260,
+					"left": 1192,
+					"width": 127,
+					"height": 21,
 					"sizingY": "move",
-					"text": "Button",
+					"text": "Enterable (shift)",
 					"focusable": false,
-					"method": "ObjectMethods/Button3.4dm",
+					"method": "ObjectMethods/Button9.4dm",
 					"events": [
 						"onClick"
 					]
 				},
 				"Button2": {
 					"type": "button",
-					"top": 799,
-					"left": 471,
-					"width": 70,
-					"height": 20,
-					"sizingX": "move",
+					"top": 725,
+					"left": 180,
+					"width": 84,
+					"height": 26,
 					"sizingY": "move",
-					"action": "cancel",
-					"shortcutKey": "[Esc]",
-					"text": "Export",
-					"class": "Buttons_13",
+					"text": "Import",
 					"focusable": false,
 					"method": "ObjectMethods/Button2.4dm",
 					"events": [
 						"onClick"
 					]
 				},
+				"Button3": {
+					"type": "button",
+					"top": 725,
+					"left": 284,
+					"width": 84,
+					"height": 26,
+					"sizingY": "move",
+					"text": "Table+",
+					"focusable": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button10": {
+					"type": "button",
+					"top": 725,
+					"left": 388,
+					"width": 84,
+					"height": 26,
+					"sizingY": "move",
+					"text": "Export",
+					"focusable": false,
+					"method": "ObjectMethods/Button10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button11": {
+					"type": "button",
+					"top": 773,
+					"left": 245,
+					"width": 154,
+					"height": 26,
+					"sizingY": "move",
+					"text": "Table in header",
+					"focusable": false,
+					"method": "ObjectMethods/Button11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
 				"Variable": {
 					"type": "input",
-					"top": 801,
-					"left": 561,
-					"width": 89,
-					"height": 17,
-					"sizingX": "move",
+					"top": 722,
+					"left": 533,
+					"width": 147,
+					"height": 131,
 					"sizingY": "move",
+					"dataSource": "vSVG",
+					"dataSourceTypeHint": "picture",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button13": {
+					"type": "button",
+					"top": 780,
+					"left": 63,
+					"width": 141,
+					"height": 21,
+					"sizingY": "move",
+					"text": "Export Template",
+					"focusable": false,
+					"method": "ObjectMethods/Button13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button14": {
+					"type": "button",
+					"top": 820,
+					"left": 63,
+					"width": 141,
+					"height": 21,
+					"sizingY": "move",
+					"text": "Export SVG",
+					"focusable": false,
+					"method": "ObjectMethods/Button14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button12": {
+					"type": "button",
+					"top": 819,
+					"left": 245,
+					"width": 147,
+					"height": 21,
+					"sizingY": "move",
+					"text": "Picture setup",
+					"focusable": false,
+					"method": "ObjectMethods/Button12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 823,
+					"left": 437,
+					"width": 73,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "templateID",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
 					"dragging": "none",
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
 					]
 				},
-				"btnBorderStyleAll": {
+				"Button16": {
 					"type": "button",
-					"top": 712,
-					"left": 659,
-					"width": 50,
-					"height": 40,
-					"tooltip": ":xliff:bordersAll",
-					"action": "paragraph/outside/borderStyle?value=solid",
+					"top": 762,
+					"left": 740,
+					"width": 48,
+					"height": 21,
+					"sizingY": "move",
+					"text": "T1",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/Borders_32.png",
-					"iconFrames": 4,
-					"popupPlacement": "separated",
-					"style": "toolbar",
-					"method": "ObjectMethods/btnBorderStyleAll.4dm",
+					"method": "ObjectMethods/Button16.4dm",
 					"events": [
-						"onClick",
-						"onAlternateClick"
+						"onClick"
+					]
+				},
+				"Button8": {
+					"type": "button",
+					"top": 762,
+					"left": 794,
+					"width": 44,
+					"height": 21,
+					"sizingY": "move",
+					"text": "T2",
+					"focusable": false,
+					"method": "ObjectMethods/Button8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button15": {
+					"type": "button",
+					"top": 762,
+					"left": 844,
+					"width": 44,
+					"height": 21,
+					"sizingY": "move",
+					"text": "T3",
+					"focusable": false,
+					"method": "ObjectMethods/Button15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button17": {
+					"type": "button",
+					"top": 828,
+					"left": 782,
+					"width": 72,
+					"height": 20,
+					"text": "TABS",
+					"focusable": false,
+					"method": "ObjectMethods/Button17.4dm",
+					"events": [
+						"onClick"
 					],
 					"sizingX": "move",
 					"sizingY": "move"
@@ -246,5 +386,6 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
-	}
+	},
+	"method": "method.4dm"
 }

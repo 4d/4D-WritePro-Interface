@@ -1,5 +1,3 @@
-C_TEXT:C284($fontFamilly)
-C_POINTER:C301($ptr;$ptr1;$ptr2)
 C_POINTER:C301($ptrArrayNames;$ptrArrayValues)
 
 C_LONGINT:C283($paletteID)
@@ -126,7 +124,7 @@ Case of
 			skinAppliedSub:=UI_ApplySkin 
 		End if 
 		
-		UI_PaletteFonts 
+		  // UI_PaletteFonts moved from here…
 		
 		If ($setupOK) & ($typeSelection#2)
 			
@@ -149,6 +147,8 @@ Case of
 			
 		End if 
 		
+		  // …to here
+		UI_PaletteFonts 
 		
 		  //: (Form event=On Close Box)
 		

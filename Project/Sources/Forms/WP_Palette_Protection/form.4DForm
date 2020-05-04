@@ -1,0 +1,244 @@
+﻿{
+	"destination": "detailScreen",
+	"shared": true,
+	"windowTitle": "Frames",
+	"inheritedForm": "WP_Z_Common",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 260,
+	"height": 620,
+	"markerBody": 430,
+	"markerBreak": 620,
+	"markerFooter": 620,
+	"events": [
+		"onLoad",
+		"onDataChange",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rect1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 240,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 0
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 400,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 0,
+					"left": 10,
+					"width": 41,
+					"height": 398,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4D WritePro Tables"
+				},
+				"Separator4": {
+					"type": "rectangle",
+					"top": 15,
+					"left": 5,
+					"width": 250,
+					"height": 17,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_Frame1": {
+					"type": "text",
+					"top": 15,
+					"left": 40,
+					"width": 180,
+					"height": 14,
+					"stroke": "#FFFFFF",
+					"class": "Palette",
+					"textAlign": "center",
+					"text": ":xliff:protection"
+				},
+				"cbProtected": {
+					"type": "checkbox",
+					"top": 50,
+					"left": 80,
+					"width": 170,
+					"height": 16,
+					"text": ":xliff:protectParagraphs",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.paragraphProtected",
+					"method": "ObjectMethods/cbProtected.4dm",
+					"threeState": true
+				},
+				"cbProtectionEnabled": {
+					"type": "checkbox",
+					"top": 200,
+					"left": 85,
+					"width": 170,
+					"height": 16,
+					"text": ":xliff:protectionEnabled",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.protectionEnabled",
+					"method": "ObjectMethods/cbProtectionEnabled.4dm",
+					"threeState": false
+				},
+				"Separator1": {
+					"type": "rectangle",
+					"top": 165,
+					"left": 5,
+					"width": 250,
+					"height": 17,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_Frame2": {
+					"type": "text",
+					"top": 165,
+					"left": 40,
+					"width": 170,
+					"height": 15,
+					"stroke": "#FFFFFF",
+					"class": "Palette",
+					"textAlign": "center",
+					"text": "Document",
+					"fill": "transparent"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 196,
+					"left": 25,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/Toolbar1/Home/DocumentProtected_32.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 43,
+					"left": 25,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/Toolbar1/Home/Protected_32.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"cbProtected2": {
+					"type": "checkbox",
+					"top": 80,
+					"left": 80,
+					"width": 110,
+					"height": 16,
+					"text": ":xliff:protectTables",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.tableProtected",
+					"method": "ObjectMethods/cbProtected2.4dm",
+					"threeState": true
+				},
+				"cbProtected1": {
+					"type": "checkbox",
+					"top": 101,
+					"left": 100,
+					"width": 110,
+					"height": 16,
+					"text": ":xliff:protectRows",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.rowProtected",
+					"method": "ObjectMethods/cbProtected1.4dm",
+					"threeState": true
+				},
+				"cbProtected3": {
+					"type": "checkbox",
+					"top": 122,
+					"left": 120,
+					"width": 110,
+					"height": 16,
+					"text": ":xliff:protectCells",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.cellProtected",
+					"method": "ObjectMethods/cbProtected3.4dm",
+					"threeState": true
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"sepLbl_Frame1",
+					"sepLbl_Frame2"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {
+				"visible": false,
+				"selectable": false,
+				"objects": [
+					"Rect2",
+					"Text"
+				]
+			}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

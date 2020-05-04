@@ -5,13 +5,11 @@ C_POINTER:C301($ptrLineHeightUnit)
 C_LONGINT:C283($case)
 C_BOOLEAN:C305($setupOK)
 C_OBJECT:C1216($oCurrent)
-C_LONGINT:C283($paletteID)
-
-$paletteID:=2
 
 C_LONGINT:C283($typeSelection)
-$typeSelection:=Form:C1466.selection.type
 
+
+$typeSelection:=Form:C1466.selection.type
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)
@@ -100,8 +98,6 @@ Case of
 			skinAppliedSub:=UI_ApplySkin 
 		End if 
 		
-		  //UI_PaletteAlignments 
-		
 		If ($setupOK)
 			
 			$oCurrent:=WP_FillCurrent 
@@ -122,7 +118,7 @@ Case of
 				End if 
 				
 				If ($case#3)
-					WP_GetTextAlign ($oCurrent)
+					WP_GetTextAlign ($oCurrent)  // automatic action
 					WP_GetTextIndent ($oCurrent)
 					WP_GetTextLineHeight ($oCurrent)
 					WP_GetListStyle ($oCurrent)
@@ -136,12 +132,7 @@ Case of
 			
 		End if 
 		
-		UI_PaletteAlignments   //ACI0098389  2018/07/10  (moved at the end of the méthod…)
-		
-		  //: (Form event=On Close Box)
-		
-		  //CANCEL
-		  //_paletteState{$paletteID}:=0
+		UI_PaletteAlignments   //ACI0098389  2018/07/10  (moved at the end of the method…)
 		
 End case 
 

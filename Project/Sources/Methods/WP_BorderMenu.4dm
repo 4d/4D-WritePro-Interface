@@ -20,6 +20,12 @@ Case of
 		$applyTo:="paragraph"
 	: (WP_applyTo=3)
 		$applyTo:="image"
+	: (WP_applyTo=4)
+		$applyTo:="table"
+	: (WP_applyTo=5)
+		$applyTo:="cell"
+	: (WP_applyTo=6)
+		$applyTo:="row"
 End case 
 
 If ($withMenu)

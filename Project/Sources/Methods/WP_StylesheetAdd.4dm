@@ -5,7 +5,7 @@ C_LONGINT:C283($typeStylesheet)
 C_LONGINT:C283($i;$n;$p)
 
 C_OBJECT:C1216($newStylesheet)
-C_OBJECT:C1216($source;$sourceStylesheet;$o)
+C_OBJECT:C1216($source;$o)
 
 C_POINTER:C301($ptrStylesheetNames)
 

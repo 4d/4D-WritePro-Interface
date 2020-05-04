@@ -8,7 +8,6 @@ C_LONGINT:C283($x1;$y1;$x2;$y2)
 C_LONGINT:C283($height)
 C_LONGINT:C283($availableHeight)
 
-C_POINTER:C301($ptr1;$ptr2)
 
 If (Not:C34(Undefined:C82(skin)))
 	If (OB Is defined:C1231(skin;"scrollbar"))
@@ -28,11 +27,11 @@ If (Not:C34($scrollbarDefined))
 	  //If ($p>0)
 	  //$height:=$ptr2->{$p}
 	
-	$p:=oForm.paletteNames.indexOf($subformDetail)
+	$p:=oForm.palette.subforms.indexOf($subformDetail)
 	
 	If ($p>=0)
 		  //$height:=$ptr2->{$p}
-		$height:=oForm.paletteHeights[$p]
+		$height:=oForm.palette.heights[$p]
 		
 		  //OBJECT GET COORDINATES(*;"PaletteSubform";$x1;$y1;$x2;$y2)
 		
@@ -51,3 +50,5 @@ If (Not:C34($scrollbarDefined))
 End if 
 
 OBJECT SET SCROLLBAR:C843(*;"PaletteSubform";False:C215;$scrollbar)
+
+  //OBJECT SET SCROLLBAR(*;"PaletteSubform";False;True)

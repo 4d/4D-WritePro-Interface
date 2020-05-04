@@ -8,11 +8,10 @@ Case of
 		_toolbars:=1
 		
 		ARRAY TEXT:C222(_sizes;0)
+		APPEND TO ARRAY:C911(_sizes;"16")
 		APPEND TO ARRAY:C911(_sizes;"24")
 		APPEND TO ARRAY:C911(_sizes;"32")
 		APPEND TO ARRAY:C911(_sizes;"48")
-		APPEND TO ARRAY:C911(_sizes;"16@2x")
-		APPEND TO ARRAY:C911(_sizes;"24@2x")
 		
 		_sizes:=2
 		

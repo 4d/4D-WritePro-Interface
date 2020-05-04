@@ -10,7 +10,6 @@ C_LONGINT:C283($p)
 C_LONGINT:C283($frameColor)
 C_LONGINT:C283($fontSize;$style;$weight;$color)
 C_LONGINT:C283($rangeStart;$rangeEnd)
-C_POINTER:C301($ptr;$ptr1;$ptr2)
 
 C_TEXT:C284($fontFamily)
 C_TEXT:C284($font)
@@ -76,8 +75,8 @@ If (Not:C34(OB Is empty:C1297($range)))
 				WP_fontFamilly:=0
 			End if 
 			
-			OBJECT SET ENABLED:C1123(*;"cbBold";WP Is font style supported:C1363($range;wk font bold:K81:68))
-			OBJECT SET ENABLED:C1123(*;"cbItalic";WP Is font style supported:C1363($range;wk font italic:K81:67))
+			  //OBJECT SET ENABLED(*;"cbBold";WP Is font style supported($range;wk font bold))
+			  //OBJECT SET ENABLED(*;"cbItalic";WP Is font style supported($range;wk font italic))
 			
 		Else 
 			  // font familly not found in array !

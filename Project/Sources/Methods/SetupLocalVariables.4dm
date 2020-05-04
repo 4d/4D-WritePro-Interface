@@ -2,9 +2,6 @@
 C_BOOLEAN:C305($0)
 C_BOOLEAN:C305($ok)
 
-C_POINTER:C301($ptrSource)
-C_OBJECT:C1216($o)
-C_OBJECT:C1216($document)
 C_LONGINT:C283($typeSelection)
 
 C_OBJECT:C1216(oTempArea)

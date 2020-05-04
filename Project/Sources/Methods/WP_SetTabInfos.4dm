@@ -1,14 +1,10 @@
 //%attributes = {"invisible":true}
-C_POINTER:C301($ptrOffsets;$ptrTypes)
+C_LONGINT:C283($offset)
+
 C_OBJECT:C1216($oParagraphs)
 C_OBJECT:C1216(tabDefault)
-
-C_LONGINT:C283($n)
-C_LONGINT:C283($tabType;$offset)
-
 C_OBJECT:C1216($tab)
 
-C_REAL:C285($tabValue)
 C_TEXT:C284($unit)
 
 $oParagraphs:=Form:C1466.paragraphRange

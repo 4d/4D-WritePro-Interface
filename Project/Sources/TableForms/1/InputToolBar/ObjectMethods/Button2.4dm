@@ -1,1 +1,6 @@
-WP EXPORT DOCUMENT:C1337([SAMPLE:1]WP:2;"go.4wp";wk 4wp:K81:4;wk normal:K81:7)
+﻿C_TEXT:C284($doc;$path)
+
+$doc:=Select document:C905("";".4wp";"";0)
+$path:=document
+
+[SAMPLE:1]WP:2:=WP Import document:C1318($path)

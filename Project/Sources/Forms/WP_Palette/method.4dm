@@ -1,9 +1,7 @@
 
 C_BOOLEAN:C305($setupOK)
-C_LONGINT:C283($n)
 C_OBJECT:C1216($o)
 C_POINTER:C301($ptrSource;$ptrTarget)
-C_POINTER:C301($ptr)
 
 C_OBJECT:C1216(oForm)
 
@@ -12,22 +10,39 @@ Case of
 		
 		  //If (oForm=Null)
 		
-		oForm:=New object:C1471
+		If (oForm=Null:C1517)
+			oForm:=New object:C1471
+		End if 
 		
-		oForm.paletteNames:=New collection:C1472(\
+		oForm.palette:=New object:C1471
+		oForm.palette.tabButtonNames:=New collection:C1472(\
+			"tabBtn_Fonts";\
+			"tabBtn_Alignments";\
+			"tabBtn_Tabulations";\
+			"tabBtn_Sizes";\
+			"tabBtn_Frames";\
+			"tabBtn_Backgrounds";\
+			"tabBtn_Expressions";\
+			"tabBtn_Bookmarks";\
+			"tabBtn_Stylesheets";\
+			"tabBtn_Tables";\
+			"tabBtn_Protection")
+		
+		oForm.palette.subforms:=New collection:C1472(\
 			"WP_Palette_Fonts";\
 			"WP_Palette_Alignments";\
 			"WP_Palette_Tabulations";\
-			"WP_Palette_Information";\
-			"WP_Palette_Frames";\
 			"WP_Palette_Sizes";\
+			"WP_Palette_Frames";\
 			"WP_Palette_Backgrounds";\
+			"WP_Palette_Expressions";\
 			"WP_Palette_Bookmarks";\
 			"WP_Palette_Stylesheets";\
-			"WP_Palette_Tables")
+			"WP_Palette_Tables";\
+			"WP_Palette_Protection")
 		
-		oForm.paletteHeights:=New collection:C1472(\
-			450;\
+		oForm.palette.heights:=New collection:C1472(\
+			500;\
 			400;\
 			440;\
 			620;\
@@ -36,16 +51,17 @@ Case of
 			370;\
 			440;\
 			440;\
-			460)
+			520;\
+			240)
 		
-		  //oForm:=Storage.form
 		
-		  //End if 
-		
-		(OBJECT Get pointer:C1124(Object named:K67:5;"PaletteSelector1"))->:=1
-		
-		UI_Selector (1)
+		  //(OBJECT Get pointer(Object named;"tabBtn_Fonts"))->:=1
+		UI_Selector (oForm.palette.tabButtonNames[0])
 		  //SET TIMER(10)
+		
+		
+	: (Form event code:C388=On Resize:K2:27)
+		UI_Palette 
 		
 	: (Form event code:C388=On Bound Variable Change:K2:52)
 		

@@ -3,7 +3,7 @@ C_OBJECT:C1216($document)
 C_COLLECTION:C1488($_stylesheets)
 
 C_POINTER:C301($ptrStylesheetNames)
-C_LONGINT:C283($stylesheetType;$p)
+C_LONGINT:C283($stylesheetType)
 
 
 $stylesheetType:=WP_GetStylesheetType 

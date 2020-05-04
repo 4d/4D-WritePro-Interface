@@ -33,7 +33,7 @@
 					"height": 400,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
-					"borderRadius": 8
+					"borderRadius": 0
 				},
 				"Separator1": {
 					"type": "rectangle",
@@ -105,10 +105,10 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"bAlign1": {
-					"type": "radio",
-					"top": 82,
-					"left": 90,
+				"bAlign1_": {
+					"type": "checkbox",
+					"top": 89,
+					"left": 395,
 					"width": 20,
 					"height": 16,
 					"fontFamily": "System Font Regular",
@@ -117,16 +117,15 @@
 					"icon": "/RESOURCES/Images/Buttons/Icon_AlignLeft.png",
 					"iconFrames": 4,
 					"style": "custom",
-					"radioGroup": "Group28",
-					"method": "ObjectMethods/bAlign1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"action": "paragraph/textAlign?value=left"
 				},
-				"bAlign2": {
-					"type": "radio",
-					"top": 82,
-					"left": 129,
+				"bAlign2_": {
+					"type": "checkbox",
+					"top": 89,
+					"left": 434,
 					"width": 20,
 					"height": 16,
 					"fontFamily": "System Font Regular",
@@ -135,16 +134,15 @@
 					"icon": "/RESOURCES/Images/Buttons/Icon_AlignCenter.png",
 					"iconFrames": 4,
 					"style": "custom",
-					"radioGroup": "Group28",
-					"method": "ObjectMethods/bAlign2.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"action": "paragraph/textAlign?value=center"
 				},
-				"bAlign3": {
-					"type": "radio",
-					"top": 82,
-					"left": 168,
+				"bAlign3_": {
+					"type": "checkbox",
+					"top": 89,
+					"left": 473,
 					"width": 20,
 					"height": 16,
 					"fontFamily": "System Font Regular",
@@ -153,16 +151,15 @@
 					"icon": "/RESOURCES/Images/Buttons/Icon_AlignRight.png",
 					"iconFrames": 4,
 					"style": "custom",
-					"radioGroup": "Group28",
-					"method": "ObjectMethods/bAlign3.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"action": "doc/textAlign?value=right"
 				},
-				"bAlign4": {
-					"type": "radio",
-					"top": 82,
-					"left": 207,
+				"bAlign4_": {
+					"type": "checkbox",
+					"top": 89,
+					"left": 512,
 					"width": 20,
 					"height": 16,
 					"fontFamily": "System Font Regular",
@@ -171,11 +168,10 @@
 					"icon": "/RESOURCES/Images/Buttons/Icon_AlignJustified.png",
 					"iconFrames": 4,
 					"style": "custom",
-					"radioGroup": "Group28",
-					"method": "ObjectMethods/bAlign4.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"action": "doc/textAlign?value=justify"
 				},
 				"sepLbl_margins": {
 					"type": "text",
@@ -488,7 +484,7 @@
 					"width": 30,
 					"height": 30,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Action.png",
+					"icon": "/RESOURCES/Images/Light/Icon_Action.png",
 					"iconFrames": 4,
 					"popupPlacement": "linked",
 					"style": "custom",
@@ -685,7 +681,7 @@
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Document.png",
+					"icon": "/RESOURCES/Images/Light/Icon_Document.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
@@ -705,7 +701,7 @@
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Paragraph.png",
+					"icon": "/RESOURCES/Images/Light/Icon_Paragraph.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
@@ -725,7 +721,7 @@
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_Picture.png",
+					"icon": "/RESOURCES/Images/Light/Icon_Picture.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
@@ -745,7 +741,7 @@
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Dark/Icon_PictureBack.png",
+					"icon": "/RESOURCES/Images/Light/Icon_PictureBack.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
@@ -780,11 +776,82 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Alignments"
+				},
+				"bAlign1": {
+					"type": "radio",
+					"top": 82,
+					"left": 90,
+					"width": 20,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/Icon_AlignLeft.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAlign1.4dm",
+					"radioGroup": "H_Align"
+				},
+				"bAlign2": {
+					"type": "radio",
+					"top": 82,
+					"left": 129,
+					"width": 20,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/Icon_AlignCenter.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAlign2.4dm",
+					"radioGroup": "H_Align"
+				},
+				"bAlign3": {
+					"type": "radio",
+					"top": 82,
+					"left": 168,
+					"width": 20,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/Icon_AlignRight.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAlign3.4dm",
+					"radioGroup": "H_Align"
+				},
+				"bAlign4": {
+					"type": "radio",
+					"top": 82,
+					"left": 207,
+					"width": 20,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Buttons/Icon_AlignJustified.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/bAlign4.4dm",
+					"radioGroup": "H_Align"
 				}
 			},
 			"entryOrder": [
 				"textIndentRuler",
-				"Group24",
 				"rb1",
 				"rb2",
 				"marginVerticalRuler",
@@ -793,35 +860,39 @@
 				"listStyleValues",
 				"lineHeightRuler",
 				"backgroundColor",
-				"lineHeightUnit"
-			]
-		}
-	],
-	"editor": {
-		"groups": {
-			"Group35": [
-				"TargetSelector1",
-				"TargetSelector2",
-				"TargetSelector3",
-				"TargetSelector4"
-			],
-			"Group29": [
-				"bAlign5",
-				"bAlign6",
-				"bAlign7"
-			],
-			"Group24": [
-				"rb1",
-				"rb2"
-			],
-			"Group28": [
+				"lineHeightUnit",
 				"bAlign1",
 				"bAlign2",
 				"bAlign3",
 				"bAlign4"
 			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group": [
+				"bAlign1",
+				"bAlign2",
+				"bAlign3",
+				"bAlign4"
+			],
+			"Group24": [
+				"rb1",
+				"rb2"
+			],
+			"Group1": [
+				"bAlign5",
+				"bAlign6",
+				"bAlign7"
+			],
+			"Group35": [
+				"TargetSelector1",
+				"TargetSelector2",
+				"TargetSelector3",
+				"TargetSelector4"
+			]
 		},
-		"activeView": "View 1",
+		"activeView": "Boxes",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
@@ -858,7 +929,6 @@
 			"View 8": {},
 			"View 9": {
 				"visible": false,
-				"selectable": false,
 				"objects": [
 					"Rect2",
 					"Text"

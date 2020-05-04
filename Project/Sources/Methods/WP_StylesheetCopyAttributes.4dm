@@ -1,16 +1,14 @@
 //%attributes = {"invisible":true}
 C_OBJECT:C1216($1;$o)
 
-C_BOOLEAN:C305($removeFromSource)
 
 C_COLLECTION:C1488($_attributes)
 
 C_OBJECT:C1216($source)
 C_OBJECT:C1216($target)
-C_OBJECT:C1216($attribute)
-C_OBJECT:C1216($object)  //used for variant
 
 C_TEXT:C284($name)
+
 
 $o:=$1
 

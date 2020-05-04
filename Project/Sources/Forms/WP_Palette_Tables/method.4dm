@@ -5,14 +5,11 @@ C_BOOLEAN:C305($setupOK)
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
-		  //If (Undefined(oForm.tables)) | (Shift down)
-		
-		  //oForm.tables:=New object
-		
-		  //oForm.tables.shiftLeft:=1
-		  //oForm.tables.shiftUp:=0
-		
-		  //End if 
+		OBJECT SET TITLE:C194(*;"btnInsertTable";Get localized string:C991("InsertTable")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*;"btnTableSettings";Get localized string:C991("Properties")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*;"btnRowSettings";Get localized string:C991("Properties")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*;"btnColumnSettings";Get localized string:C991("Properties")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*;"btnCellSettings";Get localized string:C991("Properties")+" "+Char:C90(9660))
 		
 		skinAppliedSub:=UI_ApplySkin 
 		SET TIMER:C645(-1)
@@ -29,11 +26,7 @@ Case of
 			skinAppliedSub:=UI_ApplySkin 
 		End if 
 		
-		
-		
-		WP_GetCellsBackgroundColor (Form:C1466.selection)
-		
-		UI_PaletteTables 
+		UI_Tables ("Palette")
 		
 End case 
 

@@ -7,8 +7,6 @@ C_POINTER:C301($ptr)
 
 C_LONGINT:C283($color)
 C_LONGINT:C283($frameColor)
-C_LONGINT:C283($linethrough)
-C_LONGINT:C283($underline)
 C_LONGINT:C283($i;$p)
 C_LONGINT:C283($styleValue)
 

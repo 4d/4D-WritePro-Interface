@@ -34,7 +34,7 @@
 					"height": 400,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
-					"borderRadius": 8
+					"borderRadius": 0
 				},
 				"UserUnitNames": {
 					"type": "dropdown",

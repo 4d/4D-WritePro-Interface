@@ -4,7 +4,7 @@
 C_TEXT:C284($1)
 C_TEXT:C284($NewfolderName)
 
-C_LONGINT:C283($i;$n;$p)
+C_LONGINT:C283($i;$n;$p;$length)
 C_TEXT:C284($start)
 
 C_TEXT:C284($format;$folderName;$NewFolderName)
@@ -21,10 +21,23 @@ For ($i;1;$n)
 	
 	$format:=OBJECT Get format:C894(*;$_formObjects{$i})
 	
+	
+	
 	$p:=Position:C15("#Images";$format)
 	If ($p>0)
-		$start:=Substring:C12($format;1;$p+7)  // Copy;#Images/
-		$format:=Substring:C12($format;$p+8)  // Toolbar1/Home/Copy_24.png;0;5;0;1;0;0;0;0;0;0;4
+		$length:=Length:C16("#Images")
+	Else 
+		$p:=Position:C15("RESOURCES/Images";$format)
+		If ($p>0)
+			$length:=Length:C16("RESOURCES/Images")
+		End if 
+	End if 
+	
+	If ($p>0)
+		
+		$start:=Substring:C12($format;1;$p+$length)  // Copy;#Images/
+		$format:=Substring:C12($format;$p+$length+1)  // Toolbar1/Home/Copy_24.png;0;5;0;1;0;0;0;0;0;0;4
+		
 		
 		$p:=Position:C15("/";$format)
 		$folderName:=Substring:C12($format;1;$p-1)  //Toolbar1

@@ -1,18 +1,13 @@
 //%attributes = {"invisible":true}
-C_OBJECT:C1216($document)
 
-C_LONGINT:C283($value)
-C_LONGINT:C283($stylesheetType)
 C_LONGINT:C283($n;$p;$win)
 
+C_OBJECT:C1216($document)
 C_OBJECT:C1216($styleSheet)
 C_OBJECT:C1216($form)
 
-C_POINTER:C301($ptrArrayNames)
-C_POINTER:C301($ptrArrayValues)
 C_POINTER:C301($ptrStylesheetNames;$ptrListbox)
 
-C_TEXT:C284($menu;$menuLabel;$choice)
 C_TEXT:C284($stylesheetName;$newName)
 
 $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5;"LB_StyleSheets")

@@ -30,6 +30,14 @@ For ($i;1;$n)
 		If ($p>0)
 			$start:=Substring:C12($format;1;$p+10)  // file:Images/
 			$format:=Substring:C12($format;$p+11)  //  Toolbar1/PageLayout/MarginLeft_24.png
+			
+		Else 
+			
+			$p:=Position:C15("/RESOURCES/Images/";$format)
+			If ($p>0)
+				$start:=Substring:C12($format;1;$p+17)  // file:Images/
+				$format:=Substring:C12($format;$p+18)  //  Toolbar1/PageLayout/MarginLeft_24.png
+			End if 
 		End if 
 	End if 
 	

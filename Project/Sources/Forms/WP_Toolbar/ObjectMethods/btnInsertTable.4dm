@@ -1,1 +1,2 @@
-WP_InsertTableFromTemplates 
+
+WP_TableMenu ("InsertTable")

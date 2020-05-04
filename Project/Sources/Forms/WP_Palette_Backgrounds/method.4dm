@@ -40,11 +40,6 @@ Case of
 		$ptrArrayValues->:=1
 		
 		
-		
-		
-		
-		
-		
 		  //--------------------------
 		
 		$ptrArrayNames:=OBJECT Get pointer:C1124(Object named:K67:5;"bgndSizeHorUnit")
@@ -65,11 +60,13 @@ Case of
 		APPEND TO ARRAY:C911($ptrArrayNames->;Get localized string:C991("pt"))
 		$ptrArrayNames->:=1
 		
+		
+		
 		skinAppliedSub:=UI_ApplySkin 
 		SET TIMER:C645(-1)
 		
-	: (Form event code:C388=On Data Change:K2:15)
-		UI_PaletteBackgrounds 
+		  //: (Form event code=On Data Change)
+		  //UI_PaletteBackgrounds 
 		
 	: ((Form event code:C388=On Bound Variable Change:K2:52) | (Form event code:C388=On Timer:K2:25))
 		
