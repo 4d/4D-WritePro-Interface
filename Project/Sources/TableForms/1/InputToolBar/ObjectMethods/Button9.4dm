@@ -1,5 +1,5 @@
 
-OBJECT SET ENTERABLE:C238(*;"WParea";Shift down:C543)
-WP UpdateWidget ("WPtoolbar";"WParea")
+  //OBJECT SET ENTERABLE(*;"WParea";Shift down)
+  //WP UpdateWidget ("WPtoolbar";"WParea")
 
 

@@ -1,11 +1,17 @@
 C_LONGINT:C283($typeSelection)
+C_LONGINT:C283($page)
+C_OBJECT:C1216($param)
 
 Case of 
 		
 	: (Form event code:C388=On Load:K2:1)
 		
 		InitFontLists 
-		TB_InitButtons 
+		
+		$param:=New object:C1471
+		$param.formName:="toolbar"
+		$param.buttonNames:=New collection:C1472("Home";"Insert";"Margins";"Borders";"Images";"Printing";"Tables";"Spell";"Protection";"ImportExport")  // prefixed by tabBtn_ in the form
+		InitButtons ($param)
 		
 		  //APPEND TO ARRAY(WP_applyTo;".tables")
 		  //APPEND TO ARRAY(WP_applyTo;".cells")
@@ -31,11 +37,12 @@ Case of
 			"tabBtn_Images";\
 			"tabBtn_Printing";\
 			"tabBtn_Tables";\
-			"tabBtn_Spell")
-		oForm.toolbar.pageIndexes:=New collection:C1472(1;2;3;4;5;6;7;8)
+			"tabBtn_Spell";\
+			"tabBtn_Protection";\
+			"tabBtn_ImportExport")
+		oForm.toolbar.pageIndexes:=New collection:C1472(1;2;3;4;5;6;7;8;9;10)
 		
 		TB_GotoPage (oForm.toolbar.tabButtonNames[0])
-		
 		
 		
 		
@@ -93,10 +100,20 @@ Case of
 						$typeSelection:=Form:C1466.selection.type
 						SetupLocalVariables   // in this widget, mainly for areaName and masterTable
 						
+						
 						If ($typeSelection#2)
 							WP_GetExpressions 
 							WP_GetFontInfo (Form:C1466.selection)  // font, size, weight, textcolor  (common method with font palette)
 						End if 
+						
+						$page:=FORM Get current page:C276(*)
+						Case of 
+								
+							: ($page=9)
+								WP_GetProtections (Form:C1466.selection)
+								
+						End case 
+						
 						
 						  // WP_GetProtection  // page 2
 						

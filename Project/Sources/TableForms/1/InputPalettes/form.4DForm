@@ -139,7 +139,8 @@
 					],
 					"contextMenu": "automatic",
 					"showSelection": true,
-					"enterable": true
+					"enterable": true,
+					"showHiddenChars": true
 				},
 				"WPwidget": {
 					"type": "subform",
@@ -170,7 +171,8 @@
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"Bouton1": {
 					"type": "button",
@@ -184,7 +186,8 @@
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"Button2": {
 					"type": "button",
@@ -198,7 +201,8 @@
 					"method": "ObjectMethods/Button2.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"Button3": {
 					"type": "button",
@@ -212,7 +216,8 @@
 					"method": "ObjectMethods/Button3.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"Button10": {
 					"type": "button",
@@ -226,7 +231,8 @@
 					"method": "ObjectMethods/Button10.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"Button": {
 					"type": "button",
@@ -234,7 +240,7 @@
 					"left": 750,
 					"width": 70,
 					"height": 20,
-					"sizingX": "move",
+					"sizingX": "fixed",
 					"sizingY": "move",
 					"action": "cancel",
 					"shortcutKey": "[Esc]",
@@ -251,7 +257,7 @@
 					"left": 830,
 					"width": 70,
 					"height": 20,
-					"sizingX": "move",
+					"sizingX": "fixed",
 					"sizingY": "move",
 					"action": "accept",
 					"shortcutKey": "[Enter]",
@@ -275,7 +281,8 @@
 					"method": "ObjectMethods/Button11.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"Variable": {
 					"type": "input",
@@ -291,7 +298,8 @@
 					"dragging": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"Button13": {
 					"type": "button",
@@ -305,7 +313,8 @@
 					"method": "ObjectMethods/Button13.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"Button14": {
 					"type": "button",
@@ -319,7 +328,8 @@
 					"method": "ObjectMethods/Button14.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"Button12": {
 					"type": "button",
@@ -333,28 +343,13 @@
 					"method": "ObjectMethods/Button12.4dm",
 					"events": [
 						"onClick"
-					]
-				},
-				"Button15": {
-					"type": "button",
-					"top": 860,
-					"left": 750,
-					"width": 150,
-					"height": 25,
-					"sizingX": "move",
-					"sizingY": "move",
-					"text": "BUG",
-					"focusable": false,
-					"method": "ObjectMethods/Button15.4dm",
-					"events": [
-						"onClick"
 					],
-					"stroke": "#ff6347"
+					"sizingX": "fixed"
 				},
 				"Variable1": {
 					"type": "input",
-					"top": 939,
-					"left": 131,
+					"top": 913,
+					"left": 103,
 					"width": 73,
 					"height": 17,
 					"sizingY": "move",
@@ -365,7 +360,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"Texte": {
 					"type": "text",
@@ -380,8 +376,8 @@
 				},
 				"Button16": {
 					"type": "button",
-					"top": 935,
-					"left": 237,
+					"top": 911,
+					"left": 217,
 					"width": 127,
 					"height": 21,
 					"sizingY": "move",
@@ -390,34 +386,61 @@
 					"method": "ObjectMethods/Button16.4dm",
 					"events": [
 						"onClick"
-					]
-				},
-				"Button17": {
-					"type": "button",
-					"top": 40,
-					"left": 826,
-					"width": 72,
-					"height": 20,
-					"text": "TABS",
-					"focusable": false,
-					"method": "ObjectMethods/Button17.4dm",
-					"events": [
-						"onClick"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"Button19": {
 					"type": "button",
-					"text": "Button",
-					"top": 825,
-					"left": 658,
+					"text": "Skin",
+					"top": 829,
+					"left": 690,
 					"width": 149,
-					"height": 25,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"sizingX": "move",
+					"sizingX": "fixed",
 					"sizingY": "move",
 					"method": "ObjectMethods/Button19.4dm"
+				},
+				"Input": {
+					"type": "input",
+					"left": 616,
+					"top": 913,
+					"width": 135,
+					"height": 65,
+					"dataSource": "dummyObject",
+					"dataSourceTypeHint": "object",
+					"sizingY": "move",
+					"sizingX": "fixed"
+				},
+				"Button20": {
+					"type": "button",
+					"text": "GET FontFam",
+					"top": 919,
+					"left": 771,
+					"width": 127,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button20.4dm",
+					"sizingY": "move",
+					"sizingX": "fixed"
+				},
+				"Button21": {
+					"type": "button",
+					"text": "SET FontFam",
+					"top": 950,
+					"left": 771,
+					"width": 127,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button21.4dm",
+					"sizingX": "fixed",
+					"sizingY": "move"
 				}
 			}
 		}
@@ -425,5 +448,6 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
-	}
+	},
+	"geometryStamp": 1
 }

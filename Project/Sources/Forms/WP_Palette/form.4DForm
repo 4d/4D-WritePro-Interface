@@ -20,6 +20,10 @@
 		"paperWidth": "595pt",
 		"paperHeight": "842pt"
 	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
 	"pages": [
 		null,
 		{
@@ -39,7 +43,7 @@
 					"top": 5,
 					"left": 3,
 					"width": 253,
-					"height": 24,
+					"height": 20,
 					"visibility": "hidden",
 					"stroke": "#9400d3",
 					"fill": "transparent"
@@ -62,28 +66,6 @@
 						"onDataChange"
 					]
 				},
-				"PaletteSelectorXX1": {
-					"type": "button",
-					"top": 5,
-					"left": 366,
-					"width": 30,
-					"height": 30,
-					"visibility": "hidden",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Document"
-					},
-					"fontFamily": "Xingkai SC Light",
-					"fontSize": 11,
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_Document_Menu.png",
-					"iconFrames": 4,
-					"style": "custom",
-					"method": "ObjectMethods/PaletteSelectorXX1.4dm",
-					"events": [
-						"onClick"
-					]
-				},
 				"Line": {
 					"type": "line",
 					"top": 5,
@@ -97,7 +79,7 @@
 				"tabBtn_Alignments": {
 					"type": "radio",
 					"top": 5,
-					"left": 23,
+					"left": 24,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -145,7 +127,7 @@
 				"tabBtn_Expressions": {
 					"type": "radio",
 					"top": 5,
-					"left": 123,
+					"left": 129,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -169,7 +151,7 @@
 				"tabBtn_Frames": {
 					"type": "radio",
 					"top": 5,
-					"left": 83,
+					"left": 87,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -193,7 +175,7 @@
 				"tabBtn_Tabulations": {
 					"type": "radio",
 					"top": 5,
-					"left": 43,
+					"left": 45,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -217,7 +199,7 @@
 				"tabBtn_Sizes": {
 					"type": "radio",
 					"top": 5,
-					"left": 63,
+					"left": 66,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -241,7 +223,7 @@
 				"tabBtn_Backgrounds": {
 					"type": "radio",
 					"top": 5,
-					"left": 103,
+					"left": 108,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -265,7 +247,7 @@
 				"tabBtn_Bookmarks": {
 					"type": "radio",
 					"top": 5,
-					"left": 143,
+					"left": 150,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -289,7 +271,7 @@
 				"tabBtn_Stylesheets": {
 					"type": "radio",
 					"top": 5,
-					"left": 163,
+					"left": 171,
 					"width": 20,
 					"height": 20,
 					"tooltip": ":xliff:stylesheets",
@@ -311,7 +293,7 @@
 				"tabBtn_Tables": {
 					"type": "radio",
 					"top": 5,
-					"left": 183,
+					"left": 192,
 					"width": 20,
 					"height": 20,
 					"tooltip": ":xliff:Tables",
@@ -354,7 +336,7 @@
 				"tabBtn_Protection": {
 					"type": "radio",
 					"top": 5,
-					"left": 204,
+					"left": 213,
 					"width": 20,
 					"height": 20,
 					"tooltip": ":xliff:stylesheets",
@@ -369,6 +351,28 @@
 					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
 					"radioGroup": "GR_Top",
 					"method": "ObjectMethods/tabBtn_Protection.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"tabBtn_ImportExport": {
+					"type": "radio",
+					"top": 5,
+					"left": 236,
+					"width": 20,
+					"height": 20,
+					"tooltip": ":xliff:ImportExport",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Light/file.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"radioGroup": "GR_Top",
+					"method": "ObjectMethods/tabBtn_ImportExport.4dm",
 					"events": [
 						"onClick"
 					]
@@ -425,9 +429,5 @@
 				]
 			}
 		}
-	},
-	"$4d": {
-		"version": "1",
-		"kind": "form"
 	}
 }

@@ -200,6 +200,7 @@ If (Not:C34(Undefined:C82(skin)))
 		APPEND TO ARRAY:C911($_names;"tabBtn_Stylesheets")
 		APPEND TO ARRAY:C911($_names;"tabBtn_Tables")
 		APPEND TO ARRAY:C911($_names;"tabBtn_Protection")
+		APPEND TO ARRAY:C911($_names;"tabBtn_ImportExport")
 		
 		APPEND TO ARRAY:C911($_names;"TargetSelector1")  // document
 		APPEND TO ARRAY:C911($_names;"TargetSelector2")  // paragraphg

@@ -155,6 +155,7 @@ Case of
 			: ($context="fontFamilly")
 				
 				APPEND TO ARRAY:C911($_attributes;wk font family:K81:65)
+				APPEND TO ARRAY:C911($_attributes;wk font:K81:69)  //2020/06/02
 				  //
 				APPEND TO ARRAY:C911($_attributes;wk font size:K81:66)
 				APPEND TO ARRAY:C911($_attributes;wk text color:K81:64)
@@ -177,7 +178,7 @@ Case of
 				For ($i;1;$n)
 					
 					Case of 
-						: ($_attributes{$i}=wk font family:K81:65)
+						: ($_attributes{$i}=wk font family:K81:65) | ($_attributes{$i}=wk font:K81:69)  //2020/06/02
 							
 							WP GET ATTRIBUTES:C1345($oCurrent;$_attributes{$i};$textValue)
 							OB SET:C1220(oSettings1;$_attributes{$i};$textValue)

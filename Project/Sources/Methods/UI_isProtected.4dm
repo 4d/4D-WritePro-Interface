@@ -4,7 +4,6 @@ C_BOOLEAN:C305($1;$manageFocus)
 C_BOOLEAN:C305($0)
 C_BOOLEAN:C305($protected)
 C_LONGINT:C283($protectedDoc;$protectedSel)
-C_OBJECT:C1216($actionInfo)
 
 $protected:=False:C215  // NOT protected by default
 

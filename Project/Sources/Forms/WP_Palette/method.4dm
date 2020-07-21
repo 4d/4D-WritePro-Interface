@@ -3,6 +3,8 @@ C_BOOLEAN:C305($setupOK)
 C_OBJECT:C1216($o)
 C_POINTER:C301($ptrSource;$ptrTarget)
 
+C_OBJECT:C1216($param)
+
 C_OBJECT:C1216(oForm)
 
 Case of 
@@ -26,7 +28,8 @@ Case of
 			"tabBtn_Bookmarks";\
 			"tabBtn_Stylesheets";\
 			"tabBtn_Tables";\
-			"tabBtn_Protection")
+			"tabBtn_Protection";\
+			"tabBtn_ImportExport")
 		
 		oForm.palette.subforms:=New collection:C1472(\
 			"WP_Palette_Fonts";\
@@ -39,7 +42,8 @@ Case of
 			"WP_Palette_Bookmarks";\
 			"WP_Palette_Stylesheets";\
 			"WP_Palette_Tables";\
-			"WP_Palette_Protection")
+			"WP_Palette_Protection";\
+			"WP_Palette_ImportExport")
 		
 		oForm.palette.heights:=New collection:C1472(\
 			500;\
@@ -52,8 +56,14 @@ Case of
 			440;\
 			440;\
 			520;\
-			240)
+			260;\
+			510)
 		
+		
+		$param:=New object:C1471
+		$param.formName:="palette"
+		$param.buttonNames:=New collection:C1472("Fonts";"Alignments";"Tabulations";"Sizes";"Frames";"Backgrounds";"Expressions";"Bookmarks";"Stylesheets";"Tables";"Protection";"ImportExport")  // remove ImportExport from 18R3
+		InitButtons ($param)
 		
 		  //(OBJECT Get pointer(Object named;"tabBtn_Fonts"))->:=1
 		UI_Selector (oForm.palette.tabButtonNames[0])

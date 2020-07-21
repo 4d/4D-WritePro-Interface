@@ -32,14 +32,14 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 370,
+					"height": 360,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
 				"Separator2": {
 					"type": "rectangle",
-					"top": 50,
+					"top": 40,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -49,7 +49,7 @@
 				},
 				"WhiteRect": {
 					"type": "rectangle",
-					"top": 150,
+					"top": 140,
 					"left": 85,
 					"width": 150,
 					"height": 60,
@@ -58,17 +58,17 @@
 				"TargetSelector1": {
 					"type": "radio",
 					"top": 10,
-					"left": 30,
-					"width": 60,
-					"height": 32,
+					"left": 20,
+					"width": 24,
+					"height": 24,
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_Document.png",
+					"icon": "/RESOURCES/Images/Light/file.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/Selector.png",
 					"radioGroup": "Groupe15",
 					"method": "ObjectMethods/TargetSelector1.4dm",
 					"events": [
@@ -78,17 +78,17 @@
 				"TargetSelector2": {
 					"type": "radio",
 					"top": 10,
-					"left": 100,
-					"width": 60,
-					"height": 32,
+					"left": 85,
+					"width": 24,
+					"height": 24,
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_Paragraph.png",
+					"icon": "/RESOURCES/Images/Light/paragraph.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/Selector.png",
 					"radioGroup": "Groupe15",
 					"method": "ObjectMethods/TargetSelector2.4dm",
 					"events": [
@@ -98,17 +98,17 @@
 				"TargetSelector3": {
 					"type": "radio",
 					"top": 10,
-					"left": 170,
-					"width": 60,
-					"height": 32,
+					"left": 150,
+					"width": 24,
+					"height": 24,
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_Picture.png",
+					"icon": "/RESOURCES/Images/Light/picture.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/Selector.png",
 					"radioGroup": "Groupe15",
 					"method": "ObjectMethods/TargetSelector3.4dm",
 					"events": [
@@ -117,7 +117,7 @@
 				},
 				"sepLbl_backgroundPicture": {
 					"type": "text",
-					"top": 50,
+					"top": 40,
 					"left": 40,
 					"width": 180,
 					"height": 14,
@@ -128,17 +128,18 @@
 				},
 				"lbl_Repeat": {
 					"type": "text",
-					"top": 222,
+					"top": 212,
 					"left": 0,
 					"width": 80,
-					"height": 14,
+					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:RepeatColon"
+					"text": ":xliff:RepeatColon",
+					"fontTheme": "additional"
 				},
 				"bgndRepeatMode": {
 					"type": "dropdown",
-					"top": 220,
+					"top": 210,
 					"left": 85,
 					"width": 150,
 					"height": 18,
@@ -151,17 +152,18 @@
 				},
 				"lbl_Clip": {
 					"type": "text",
-					"top": 247,
+					"top": 237,
 					"left": 0,
 					"width": 80,
-					"height": 14,
+					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:Clip"
+					"text": ":xliff:Clip",
+					"fontTheme": "additional"
 				},
 				"bgndClip": {
 					"type": "dropdown",
-					"top": 245,
+					"top": 235,
 					"left": 85,
 					"width": 150,
 					"height": 18,
@@ -174,17 +176,18 @@
 				},
 				"lbl_Origin": {
 					"type": "text",
-					"top": 272,
+					"top": 262,
 					"left": 0,
 					"width": 80,
-					"height": 14,
+					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:Origin"
+					"text": ":xliff:Origin",
+					"fontTheme": "additional"
 				},
 				"bgndOrigin": {
 					"type": "dropdown",
-					"top": 270,
+					"top": 260,
 					"left": 85,
 					"width": 150,
 					"height": 18,
@@ -197,7 +200,7 @@
 				},
 				"bgndSizeHor": {
 					"type": "input",
-					"top": 309,
+					"top": 299,
 					"left": 125,
 					"width": 35,
 					"height": 14,
@@ -213,7 +216,7 @@
 				},
 				"bgndSizeVert": {
 					"type": "input",
-					"top": 335,
+					"top": 325,
 					"left": 125,
 					"width": 35,
 					"height": 14,
@@ -229,37 +232,40 @@
 				},
 				"lbl_HorSize": {
 					"type": "text",
-					"top": 309,
+					"top": 299,
 					"left": 10,
 					"width": 110,
-					"height": 14,
+					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:HorizontalSize"
+					"text": ":xliff:HorizontalSize",
+					"fontTheme": "additional"
 				},
 				"lbl_VertSize": {
 					"type": "text",
-					"top": 335,
+					"top": 325,
 					"left": 10,
 					"width": 110,
-					"height": 14,
+					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:VerticalSize"
+					"text": ":xliff:VerticalSize",
+					"fontTheme": "additional"
 				},
 				"lbl_Picture": {
 					"type": "text",
-					"top": 82,
+					"top": 72,
 					"left": 0,
 					"width": 80,
-					"height": 28,
+					"height": 26,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:PictureOrURL"
+					"text": ":xliff:PictureOrURL",
+					"fontTheme": "additional"
 				},
 				"bgndPictPreview": {
 					"type": "input",
-					"top": 79,
+					"top": 69,
 					"left": 85,
 					"width": 150,
 					"height": 60,
@@ -280,8 +286,8 @@
 				},
 				"bgndRepeatModeVal": {
 					"type": "dropdown",
-					"top": 220,
-					"left": 285,
+					"top": 225,
+					"left": 390,
 					"width": 140,
 					"height": 18,
 					"focusable": false,
@@ -292,8 +298,8 @@
 				},
 				"bgndClipVal": {
 					"type": "dropdown",
-					"top": 245,
-					"left": 285,
+					"top": 250,
+					"left": 390,
 					"width": 140,
 					"height": 18,
 					"focusable": false,
@@ -304,8 +310,8 @@
 				},
 				"bgndOriginVal": {
 					"type": "dropdown",
-					"top": 270,
-					"left": 285,
+					"top": 275,
+					"left": 390,
 					"width": 140,
 					"height": 18,
 					"focusable": false,
@@ -316,7 +322,7 @@
 				},
 				"rbPos11": {
 					"type": "radio",
-					"top": 150,
+					"top": 140,
 					"left": 85,
 					"width": 18,
 					"height": 20,
@@ -335,7 +341,7 @@
 				},
 				"rbPos12": {
 					"type": "radio",
-					"top": 150,
+					"top": 140,
 					"left": 151,
 					"width": 18,
 					"height": 20,
@@ -354,7 +360,7 @@
 				},
 				"rbPos13": {
 					"type": "radio",
-					"top": 150,
+					"top": 140,
 					"left": 213,
 					"width": 18,
 					"height": 20,
@@ -373,7 +379,7 @@
 				},
 				"rbPos21": {
 					"type": "radio",
-					"top": 170,
+					"top": 160,
 					"left": 85,
 					"width": 18,
 					"height": 20,
@@ -392,7 +398,7 @@
 				},
 				"rbPos22": {
 					"type": "radio",
-					"top": 170,
+					"top": 160,
 					"left": 151,
 					"width": 18,
 					"height": 20,
@@ -411,7 +417,7 @@
 				},
 				"rbPos23": {
 					"type": "radio",
-					"top": 170,
+					"top": 160,
 					"left": 213,
 					"width": 18,
 					"height": 20,
@@ -430,7 +436,7 @@
 				},
 				"rbPos31": {
 					"type": "radio",
-					"top": 190,
+					"top": 180,
 					"left": 85,
 					"width": 18,
 					"height": 20,
@@ -449,7 +455,7 @@
 				},
 				"rbPos32": {
 					"type": "radio",
-					"top": 190,
+					"top": 180,
 					"left": 151,
 					"width": 18,
 					"height": 20,
@@ -468,7 +474,7 @@
 				},
 				"rbPos33": {
 					"type": "radio",
-					"top": 190,
+					"top": 180,
 					"left": 213,
 					"width": 18,
 					"height": 20,
@@ -487,17 +493,18 @@
 				},
 				"lbl_Position": {
 					"type": "text",
-					"top": 152,
+					"top": 142,
 					"left": 0,
 					"width": 80,
-					"height": 14,
+					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:PositionColon"
+					"text": ":xliff:PositionColon",
+					"fontTheme": "additional"
 				},
 				"bgndPictURL": {
 					"type": "input",
-					"top": 79,
+					"top": 69,
 					"left": 85,
 					"width": 150,
 					"height": 60,
@@ -517,7 +524,7 @@
 				},
 				"bgndSizeHorUnit": {
 					"type": "dropdown",
-					"top": 307,
+					"top": 297,
 					"left": 170,
 					"width": 65,
 					"height": 18,
@@ -530,7 +537,7 @@
 				},
 				"bgndSizeVertUnit": {
 					"type": "dropdown",
-					"top": 333,
+					"top": 323,
 					"left": 170,
 					"width": 65,
 					"height": 18,
@@ -543,7 +550,7 @@
 				},
 				"btn_Rubber": {
 					"type": "button",
-					"top": 115,
+					"top": 105,
 					"left": 210,
 					"width": 24,
 					"height": 24,
@@ -558,12 +565,12 @@
 				},
 				"btnAction": {
 					"type": "button",
-					"top": 335,
+					"top": 325,
 					"left": 0,
 					"width": 30,
 					"height": 30,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_Action.png",
+					"icon": "/RESOURCES/Images/Light/burger.png",
 					"iconFrames": 4,
 					"popupPlacement": "linked",
 					"style": "custom",
@@ -574,8 +581,8 @@
 				},
 				"bgndPictPreviewCopy": {
 					"type": "input",
-					"top": 89,
-					"left": 285,
+					"top": 94,
+					"left": 390,
 					"width": 140,
 					"height": 60,
 					"dataSourceTypeHint": "picture",
@@ -633,11 +640,6 @@
 	],
 	"editor": {
 		"groups": {
-			"Groupe15": [
-				"TargetSelector1",
-				"TargetSelector2",
-				"TargetSelector3"
-			],
 			"Group17": [
 				"rbPos11",
 				"rbPos12",
@@ -648,6 +650,11 @@
 				"rbPos31",
 				"rbPos32",
 				"rbPos33"
+			],
+			"Groupe15": [
+				"TargetSelector1",
+				"TargetSelector2",
+				"TargetSelector3"
 			]
 		},
 		"activeView": "View 1",
@@ -663,7 +670,6 @@
 			"View 8": {},
 			"View 9": {
 				"visible": false,
-				"selectable": false,
 				"objects": [
 					"Rect2",
 					"Text"

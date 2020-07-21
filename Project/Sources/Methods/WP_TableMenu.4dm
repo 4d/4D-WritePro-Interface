@@ -9,7 +9,7 @@ C_COLLECTION:C1488($files)
 C_LONGINT:C283($i)
 
 C_TEXT:C284($path)
-C_TEXT:C284($menu;$subMenu)
+C_TEXT:C284($menu)
 C_TEXT:C284($choice)
 C_TEXT:C284($where)
 
@@ -148,6 +148,7 @@ Else
 		
 		
 		$choice:=Dynamic pop up menu:C1006($menu)
+		
 	End if 
 End if 
 

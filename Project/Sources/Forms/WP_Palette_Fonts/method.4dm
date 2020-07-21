@@ -12,6 +12,9 @@ $typeSelection:=Form:C1466.selection.type
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
+		If (oForm=Null:C1517)  // when used as a single palette, not as a sub-sub-form
+			oForm:=New object:C1471
+		End if 
 		
 		InitFontLists 
 		

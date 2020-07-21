@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 C_OBJECT:C1216($1;$document)
 C_BOOLEAN:C305($2;$protected)
 $document:=$1

@@ -81,7 +81,8 @@
 						"onSelectionChange",
 						"onAfterEdit"
 					],
-					"enterable": true
+					"enterable": true,
+					"showSelection": true
 				},
 				"Button6": {
 					"type": "button",
@@ -90,7 +91,7 @@
 					"width": 44,
 					"height": 21,
 					"sizingY": "move",
-					"action": "previousPage",
+					"action": "previousRecord",
 					"text": "<",
 					"focusable": false,
 					"events": [
@@ -104,7 +105,7 @@
 					"width": 44,
 					"height": 21,
 					"sizingY": "move",
-					"action": "nextPage",
+					"action": "nextRecord",
 					"text": ">",
 					"focusable": false,
 					"events": [
@@ -180,8 +181,8 @@
 				},
 				"Button9": {
 					"type": "button",
-					"top": 260,
-					"left": 1192,
+					"top": 268,
+					"left": 1085,
 					"width": 127,
 					"height": 21,
 					"sizingY": "move",
@@ -266,7 +267,7 @@
 				},
 				"Button13": {
 					"type": "button",
-					"top": 780,
+					"top": 770,
 					"left": 63,
 					"width": 141,
 					"height": 21,
@@ -280,7 +281,7 @@
 				},
 				"Button14": {
 					"type": "button",
-					"top": 820,
+					"top": 810,
 					"left": 63,
 					"width": 141,
 					"height": 21,
@@ -363,29 +364,14 @@
 					"events": [
 						"onClick"
 					]
-				},
-				"Button17": {
-					"type": "button",
-					"top": 828,
-					"left": 782,
-					"width": 72,
-					"height": 20,
-					"text": "TABS",
-					"focusable": false,
-					"method": "ObjectMethods/Button17.4dm",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "move",
-					"sizingY": "move"
 				}
 			}
-		},
-		null
+		}
 	],
 	"$4d": {
 		"version": "1",
 		"kind": "form"
 	},
-	"method": "method.4dm"
+	"method": "method.4dm",
+	"geometryStamp": 1
 }

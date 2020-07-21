@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 C_OBJECT:C1216($1;$range1)  // range of any kind
 C_OBJECT:C1216($2;$range2)  // range of any kind
 

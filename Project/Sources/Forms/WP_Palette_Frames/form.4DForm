@@ -31,14 +31,14 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 400,
+					"height": 390,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
 				"Separator1": {
 					"type": "rectangle",
-					"top": 50,
+					"top": 40,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -48,7 +48,7 @@
 				},
 				"sepLbl_Frame": {
 					"type": "text",
-					"top": 50,
+					"top": 40,
 					"left": 40,
 					"width": 180,
 					"height": 14,
@@ -59,7 +59,7 @@
 				},
 				"FrameRect": {
 					"type": "rectangle",
-					"top": 80,
+					"top": 70,
 					"left": 93,
 					"width": 130,
 					"height": 41,
@@ -67,7 +67,7 @@
 				},
 				"Invisible Button1": {
 					"type": "button",
-					"top": 88,
+					"top": 78,
 					"left": 99,
 					"width": 117,
 					"height": 26,
@@ -79,7 +79,7 @@
 				},
 				"borderStyleNames": {
 					"type": "dropdown",
-					"top": 142,
+					"top": 132,
 					"left": 85,
 					"width": 140,
 					"height": 18,
@@ -104,7 +104,7 @@
 				},
 				"borderWidthRuler": {
 					"type": "ruler",
-					"top": 174,
+					"top": 164,
 					"left": 85,
 					"width": 95,
 					"height": 17,
@@ -120,7 +120,7 @@
 				},
 				"borderRadiusRuler": {
 					"type": "ruler",
-					"top": 234,
+					"top": 224,
 					"left": 85,
 					"width": 95,
 					"height": 15,
@@ -135,7 +135,7 @@
 				},
 				"borderWidthInput": {
 					"type": "input",
-					"top": 174,
+					"top": 164,
 					"left": 190,
 					"width": 35,
 					"height": 14,
@@ -152,7 +152,7 @@
 				},
 				"borderRadiusInput": {
 					"type": "input",
-					"top": 234,
+					"top": 224,
 					"left": 190,
 					"width": 35,
 					"height": 14,
@@ -169,7 +169,7 @@
 				},
 				"lbl_Style": {
 					"type": "text",
-					"top": 142,
+					"top": 132,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -179,7 +179,7 @@
 				},
 				"lbl_Width": {
 					"type": "text",
-					"top": 172,
+					"top": 162,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -189,7 +189,7 @@
 				},
 				"lbl_Color": {
 					"type": "text",
-					"top": 202,
+					"top": 192,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -199,7 +199,7 @@
 				},
 				"lbl_Radius": {
 					"type": "text",
-					"top": 232,
+					"top": 222,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -209,7 +209,7 @@
 				},
 				"lbl_ApplyTo": {
 					"type": "text",
-					"top": 92,
+					"top": 82,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -219,7 +219,7 @@
 				},
 				"cb2": {
 					"type": "checkbox",
-					"top": 70,
+					"top": 60,
 					"left": 149,
 					"width": 18,
 					"height": 20,
@@ -232,7 +232,7 @@
 				},
 				"cb1": {
 					"type": "checkbox",
-					"top": 90,
+					"top": 80,
 					"left": 85,
 					"width": 20,
 					"height": 20,
@@ -245,7 +245,7 @@
 				},
 				"cb3": {
 					"type": "checkbox",
-					"top": 90,
+					"top": 80,
 					"left": 213,
 					"width": 20,
 					"height": 20,
@@ -258,7 +258,7 @@
 				},
 				"cb4": {
 					"type": "checkbox",
-					"top": 110,
+					"top": 100,
 					"left": 149,
 					"width": 18,
 					"height": 20,
@@ -273,16 +273,16 @@
 					"type": "radio",
 					"top": 10,
 					"left": 20,
-					"width": 40,
-					"height": 32,
+					"width": 24,
+					"height": 24,
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_Document.png",
+					"icon": "/RESOURCES/Images/Light/file.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/Selector.png",
 					"radioGroup": "Group15",
 					"method": "ObjectMethods/TargetSelector1.4dm",
 					"events": [
@@ -292,17 +292,17 @@
 				"TargetSelector2": {
 					"type": "radio",
 					"top": 10,
-					"left": 80,
-					"width": 40,
-					"height": 32,
+					"left": 85,
+					"width": 24,
+					"height": 24,
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_Paragraph.png",
+					"icon": "/RESOURCES/Images/Light/paragraph.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/Selector.png",
 					"radioGroup": "Group15",
 					"method": "ObjectMethods/TargetSelector2.4dm",
 					"events": [
@@ -312,17 +312,17 @@
 				"TargetSelector3": {
 					"type": "radio",
 					"top": 10,
-					"left": 140,
-					"width": 40,
-					"height": 32,
+					"left": 150,
+					"width": 24,
+					"height": 24,
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_Picture.png",
+					"icon": "/RESOURCES/Images/Light/picture.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/Selector.png",
 					"radioGroup": "Group15",
 					"method": "ObjectMethods/TargetSelector3.4dm",
 					"events": [
@@ -332,9 +332,9 @@
 				"TargetSelector4": {
 					"type": "radio",
 					"top": 10,
-					"left": 200,
-					"width": 40,
-					"height": 32,
+					"left": 216,
+					"width": 24,
+					"height": 24,
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
@@ -342,7 +342,7 @@
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/Selector.png",
 					"radioGroup": "Group15",
 					"method": "ObjectMethods/TargetSelector4.4dm",
 					"events": [
@@ -390,12 +390,12 @@
 				},
 				"btnAction": {
 					"type": "button",
-					"top": 365,
+					"top": 355,
 					"left": 0,
 					"width": 30,
 					"height": 30,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_Action.png",
+					"icon": "/RESOURCES/Images/Light/burger.png",
 					"iconFrames": 4,
 					"popupPlacement": "linked",
 					"style": "custom",
@@ -406,7 +406,7 @@
 				},
 				"borderColor": {
 					"type": "input",
-					"top": 202,
+					"top": 192,
 					"left": 88,
 					"width": 96,
 					"height": 14,
@@ -427,7 +427,7 @@
 				},
 				"SampleFrame3": {
 					"type": "rectangle",
-					"top": 201,
+					"top": 191,
 					"left": 87,
 					"width": 98,
 					"height": 16,
@@ -437,7 +437,7 @@
 				},
 				"FakeFocusBorderColor": {
 					"type": "picture",
-					"top": 205,
+					"top": 195,
 					"left": 190,
 					"width": 10,
 					"height": 10,
@@ -447,7 +447,7 @@
 				},
 				"MultiFrameColor": {
 					"type": "picture",
-					"top": 203,
+					"top": 193,
 					"left": 90,
 					"width": 92,
 					"height": 12,
@@ -456,7 +456,7 @@
 				},
 				"btnInvisible3": {
 					"type": "button",
-					"top": 200,
+					"top": 190,
 					"left": 86,
 					"width": 100,
 					"height": 18,
@@ -468,7 +468,7 @@
 				},
 				"Separator3": {
 					"type": "rectangle",
-					"top": 265,
+					"top": 255,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -478,7 +478,7 @@
 				},
 				"sepLbl_padding": {
 					"type": "text",
-					"top": 265,
+					"top": 255,
 					"left": 40,
 					"width": 180,
 					"height": 14,
@@ -489,7 +489,7 @@
 				},
 				"paddingVerticalRuler": {
 					"type": "ruler",
-					"top": 295,
+					"top": 285,
 					"left": 20,
 					"width": 15,
 					"height": 60,
@@ -504,7 +504,7 @@
 				},
 				"paddingHorizontalRuler": {
 					"type": "ruler",
-					"top": 350,
+					"top": 340,
 					"left": 65,
 					"width": 155,
 					"height": 15,
@@ -519,7 +519,7 @@
 				},
 				"PaddingTop": {
 					"type": "input",
-					"top": 294,
+					"top": 284,
 					"left": 120,
 					"width": 45,
 					"height": 14,
@@ -538,7 +538,7 @@
 				},
 				"PaddingLeft": {
 					"type": "input",
-					"top": 310,
+					"top": 300,
 					"left": 55,
 					"width": 45,
 					"height": 14,
@@ -557,7 +557,7 @@
 				},
 				"PaddingRight": {
 					"type": "input",
-					"top": 310,
+					"top": 300,
 					"left": 185,
 					"width": 45,
 					"height": 14,
@@ -576,7 +576,7 @@
 				},
 				"PaddingBottom": {
 					"type": "input",
-					"top": 324,
+					"top": 314,
 					"left": 120,
 					"width": 45,
 					"height": 14,
@@ -640,16 +640,16 @@
 	],
 	"editor": {
 		"groups": {
-			"Group5": [
-				"rb1",
-				"rb2",
-				"rb3"
-			],
 			"Group15": [
 				"TargetSelector1",
 				"TargetSelector2",
 				"TargetSelector3",
 				"TargetSelector4"
+			],
+			"Group5": [
+				"rb1",
+				"rb2",
+				"rb3"
 			]
 		},
 		"activeView": "View 1",

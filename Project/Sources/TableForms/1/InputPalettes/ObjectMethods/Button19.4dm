@@ -14,6 +14,7 @@ If (Shift down:C543)
 	
 Else 
 	
+	  //$WP_skin.backgroundColor:=0x00FFFF00
 	OB SET:C1220($WP_skin;"skinName";"light")
 	
 End if 

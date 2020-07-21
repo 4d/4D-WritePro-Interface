@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 C_COLLECTION:C1488($1;$_actions)  // automatic actions to test
 C_BOOLEAN:C305($0;$result)  // returns true if at least one action is available)
 C_TEXT:C284($action)

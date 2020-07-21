@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
    <!--Translation file.This file is distributed under the same license as the product package.-->
 <xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
    <file datatype="plaintext" original="Undefined" source-language="en" target-language="ja">
       <header>
          <prop-group name="Xliff-Editor.4dbase">
-            <prop prop-type="version">1.0</prop>
+            <prop prop-type="version">2.0</prop>
          </prop-group>
       </header>
       <body>
@@ -210,8 +210,8 @@
                <target>ページ番号を挿入</target>
             </trans-unit>
             <trans-unit id="55" resname="insertPicture">
-               <source>Insert picture…</source>
-               <target>ピクチャーを挿入…</target>
+               <source>Insert picture‚Ä¶</source>
+               <target>ピクチャーを挿入‚Ä¶</target>
             </trans-unit>
             <trans-unit id="54" resname="insertSectionbreak">
                <source>Insert section break</source>
@@ -401,6 +401,42 @@
                <source>Zoom</source>
                <target>ズーム</target>
             </trans-unit>
+ 	        <trans-unit id="PjDICmJfB+IqPGQcyvXkNA" resname="protectParagraph">
+	           <source>Protect paragraph</source>
+	           <target>段落をプロテクトする</target>
+	         </trans-unit>
+	         <trans-unit id="hGxsyWJ4OuFZ0mdV7Aw1hA" resname="protectTable">
+	           <source>Protect table</source>
+	           <target>表をプロテクトする</target>
+	         </trans-unit>
+	         <trans-unit id="PtipgXThmjnu0yKMcKTmBw" resname="protectRow">
+	           <source>Protect row</source>
+	           <target>行をプロテクトする</target>
+	         </trans-unit>
+	         <trans-unit id="XIc4CBvMQWzefZfhtU+Fog" resname="protectCell">
+	           <source>Protect cell</source>
+	           <target>セルをプロテクトする</target>
+	         </trans-unit>
+	         <trans-unit id="WTkM05EEsc772zfzDM6Jwg" resname="protectDocument">
+	           <source>Enable document protection</source>
+	           <target>ドキュメントのプロテクションを有効化</target>
+	         </trans-unit>
+	         <trans-unit id="f4FmDAwxzQUZfL8FuuLc0g" resname="import">
+	           <source>Import</source>
+	           <target>読み込み</target>
+	         </trans-unit>
+	         <trans-unit id="5J6VhIDdsPnJrL/4yXzTHw" resname="export">
+	           <source>Export</source>
+	           <target>書き出し</target>
+	         </trans-unit>
+	         <trans-unit id="/CMBzGF25LWzqcDFGiS6sA" resname="InsertSoftHyphen">
+	           <source>Insert soft hyphen</source>
+	           <target>ソフトハイフンを挿入</target>
+	         </trans-unit>
+	         <trans-unit id="ZLC852EL1drI+I11mR0Tvg" resname="RemoveSoftHyphen">
+	           <source>Remove soft hyphen</source>
+	           <target>ソフトハイフンを削除</target>
+	         </trans-unit>
          </group>
          <group resname="Tabs">
             <trans-unit id="24" resname="borders">
@@ -423,7 +459,7 @@
                <source>Margins</source>
                <target>マージン</target>
             </trans-unit>
-            <trans-unit id="27" resname="printing">
+            <trans-unit id="27" resname="print">
                <source>Print</source>
                <target>印刷</target>
             </trans-unit>
@@ -431,6 +467,14 @@
                <source>Spell &amp; Gram.</source>
                <target>スペル &amp; 文法</target>
             </trans-unit>
+	        <trans-unit id="5Z6VRDjZQZ7WPdlb+giy5g" resname="protection">
+	          <source>Protection</source>
+	          <target>プロテクション</target>
+	        </trans-unit>
+	        <trans-unit id="1u02Lw6NTI7jpeJX1CLp2A" resname="importExport">
+	          <source>Import Export</source>
+	          <target>読み込み 書き出し</target>
+	        </trans-unit>
          </group>
          <group resname="Labels">
             <trans-unit id="57" resname="applyMarginsTo">

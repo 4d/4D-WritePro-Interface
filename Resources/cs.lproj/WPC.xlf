@@ -52,6 +52,10 @@ This file is distributed under the same license as the product package.-->
           <source>Tables</source>
           <target>Tabulky</target>
         </trans-unit>
+        <trans-unit id="/h5RnHFGXRGnCZiYU/DhZQ" resname="ImportExport">
+          <source>Import Export</source>
+          <target>Import Export</target>
+        </trans-unit>
       </group>
       <group resname="Palette_alignment">
         <trans-unit id="9" resname="HorAlignColon">
@@ -493,7 +497,7 @@ This file is distributed under the same license as the product package.-->
           <target>Vložit pozadí</target>
         </trans-unit>
       </group>
-      <group resname="Menu_Main">
+      <group resname="Menu_ImportExport">
         <trans-unit id="97" resname="NewEllipsis">
           <source>New…</source>
           <target>Nový…</target>
@@ -502,17 +506,45 @@ This file is distributed under the same license as the product package.-->
           <source>Import…</source>
           <target>Import…</target>
         </trans-unit>
-        <trans-unit id="99" resname="Export">
-          <source>Export</source>
-          <target>Export</target>
+        <trans-unit id="99" resname="ExportAs">
+          <source>Export as:</source>
+          <target>Export jako:</target>
         </trans-unit>
-        <trans-unit id="100" resname="AsHTMLdoc">
-          <source>As HTML Document…</source>
-          <target>Jako HTML dokument…</target>
+        <trans-unit id="100" resname="HtmlEllipsis">
+          <source>HTML…</source>
+          <target>HTML…</target>
         </trans-unit>
-        <trans-unit id="101" resname="as4DWPdoc">
-          <source>As 4D WritePro Document…</source>
-          <target>Jako 4D WritePro dokument…</target>
+        <trans-unit id="101" resname="4DWriteProEllipsis">
+          <source>4D Write Pro…</source>
+          <target>4D Write Pro…</target>
+        </trans-unit>
+        <trans-unit id="UxW87OWPGPdnNHB/00tm4w" resname="WordEllipsis">
+          <source>Microsoft Word…</source>
+          <target>Microsoft Word…</target>
+        </trans-unit>
+        <trans-unit id="azodlWWrSTDq7NsEsKhs2w" resname="PdfEllipsis">
+          <source>PDF…</source>
+          <target>PDF…</target>
+        </trans-unit>
+        <trans-unit id="6Uw3JqUrx1zvQs/W032F0Q" resname="TextEllipsis">
+          <source>Text…</source>
+          <target>Text…</target>
+        </trans-unit>
+        <trans-unit id="HKtPq6HziMxcUM5TiHmLfQ" resname="HtmlMimeEllipsis">
+          <source>HTML Mime…</source>
+          <target>HTML Mime…</target>
+        </trans-unit>
+        <trans-unit id="6vzRUs/48oy0kosSPH+4IA" resname="clearEllipsis">
+          <source>Clear…</source>
+          <target>Odstranit…</target>
+        </trans-unit>
+        <trans-unit id="giehscfoPnUFF9q+EyY2Fg" resname="4DWriteEllipsis">
+          <source>4D Write…</source>
+          <target>4D Write…</target>
+        </trans-unit>
+        <trans-unit id="6K4ODRIRH2gZNBJ27Zw7zA" resname="Import">
+          <source>Import</source>
+          <target>Import</target>
         </trans-unit>
       </group>
       <group resname="AlertsAndMessages">
@@ -520,16 +552,12 @@ This file is distributed under the same license as the product package.-->
           <source>Are you sure?</source>
           <target>Jse si jistý?</target>
         </trans-unit>
-        <trans-unit id="103" resname="SelectA4DWPdoc">
-          <source>Select a 4D Write document</source>
-          <target>Vybrat 4D Write dokument</target>
-        </trans-unit>
         <trans-unit id="104" resname="SelectADestination">
           <source>Select a destination.</source>
           <target>Vybrat cílení.</target>
         </trans-unit>
-      </group>
-      <group resname="listStyleNames">
+        </group>
+      <group resname="ListStyleNames">
         <trans-unit id="1" resname="None">
           <source>None</source>
           <target>Žádný</target>
@@ -579,7 +607,7 @@ This file is distributed under the same license as the product package.-->
           <target>I II III</target>
         </trans-unit>
       </group>
-      <group resname="listUnits">
+      <group resname="ListUnits">
         <trans-unit id="1" resname="cm">
           <source>cm</source>
           <target>cm</target>
@@ -846,6 +874,10 @@ This file is distributed under the same license as the product package.-->
           <source>Delete "&lt;1&gt;" style sheet?</source>
           <target>Vymazat "&lt;1&gt;" styl?</target>
         </trans-unit>
+      <trans-unit id="UNLqBZ0kwRTrWB3TzdCdnA" resname="StyleSheetPlaceHolder">
+          <source>Style sheet name</source>
+          <target>Název stylu</target>
+        </trans-unit>
       </group>
       <group resname="StylesheetEditor">
         <trans-unit id="180" resname="ssFontSize">
@@ -1053,6 +1085,10 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="244" resname="delete">
           <source>Delete</source>
           <target>Vymazat</target>
+        </trans-unit>
+        <trans-unit id="7mnro3rRCakLRVI5zALjKg" resname="clear">
+          <source>Clear</source>
+          <target>Odstranit</target>
         </trans-unit>
       </group>
       <group resname="PaletteFindReplace">
@@ -1327,6 +1363,185 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="03iEJ+It6O69xY6j0lz6Qg" resname="protectCells">
           <source>Cells</source>
           <target>Buňky</target>
+        </trans-unit>
+      </group>
+      <group resname="Errors">
+        <trans-unit id="GwNqq+FAlrv+V8fYd7geXA" resname="missingPointer">
+          <source>The pointer on 4D Write Pro document is missing.</source>
+          <target>Chybí ukazatel na 4D Write Pro dokument.</target>
+        </trans-unit>
+        <trans-unit id="nx2miGaaD+xCPQKlY//Q+g" resname="nilPointer">
+          <source>The pointer on 4D Write Pro document is nil.</source>
+          <target>Ukazatel na 4D Write Pro dokument je nil.</target>
+        </trans-unit>
+        <trans-unit id="2UM2PhxkLdT3NCFN+uzEJA" resname="thisTypeOfDocumentCantBeImported">
+          <source>This type of document can't be imported.</source>
+          <target>Tento typ dokumentu nemůže být importován.</target>
+        </trans-unit>
+      </group>
+      <group resname="DialogExport">
+        <trans-unit id="seROCZqSCuxQqqVcq1uboA" resname="exportPDF">
+          <source>PDF Export</source>
+          <target>PDF Export</target>
+        </trans-unit>
+        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="background">
+          <source>Background</source>
+          <target>Pozadí</target>
+        </trans-unit>
+        <trans-unit id="2zaxAplGAgJvGg5f+KnwOA" resname="headers">
+          <source>Headers</source>
+          <target>Záhlaví</target>
+        </trans-unit>
+        <trans-unit id="GbCtfYrp9W6n/xYbqhxNkQ" resname="footers">
+          <source>Footers</source>
+          <target>Zápatí</target>
+        </trans-unit>
+        <trans-unit id="tMZO5KyH1Qe77I7HSLR6og" resname="htmlWysiwyg">
+          <source>HTML "WYSIWIG"</source>
+          <target>HTML "WYSIWIG"</target>
+        </trans-unit>
+        <trans-unit id="th+uJGqJE/aRdxxSHhxRlg" resname="htmlPrettyPrint">
+          <source>"Pretty print"</source>
+          <target>"Pěkný tisk"</target>
+        </trans-unit>
+        <trans-unit id="7yp1Rkz6KWEs2pehpSqJoA" resname="recomputeFormulas">
+          <source>Recompute formulas</source>
+          <target>Přepočítat výrazy</target>
+        </trans-unit>
+        <trans-unit id="6u1E8KwGXapCFqeIJkqYQA" resname="Screen">
+          <source>Screen</source>
+          <target>Obrazovka</target>
+        </trans-unit>
+        <trans-unit id="gVQaYSHGiwZBwAt4P5iaYw" resname="print">
+          <source>Print</source>
+          <target>Tisk</target>
+        </trans-unit>
+        <trans-unit id="rfCY4nYj4m3OHuYW++DWlA" resname="maxPictureDPI">
+          <source>Maximum DPI for pictures:</source>
+          <target >Maximum DPI pro obrázky:</target>
+        </trans-unit>
+        <trans-unit id="EuJJLbs1LD5q4/WlL7w0XA" resname="cidHostDomainName">
+          <source>CID Host domain name:</source>
+          <target>CID Host domain název:</target>
+        </trans-unit>
+        <trans-unit id="J+Sxu8o5HUf7ju4qU4EfMQ" resname="optimizedFor">
+          <source>Optimized for:</source>
+          <target>Optimalizováno pro:</target>
+        </trans-unit>
+        <trans-unit id="G9BJhwrgI8ZjjK+PvIb0oA" resname="exportOptions">
+          <source>Export options</source>
+          <target>Možnosti exportu</target>
+        </trans-unit>
+        <trans-unit id="STSER3qbzZIUcH0uINw3MA" resname="ExportEllipsis">
+          <source>Export…</source>
+          <target>Export…</target>
+        </trans-unit>
+        <trans-unit id="fMOz7wl6MpDwxlU77dYxUA" resname="InfoScreen">
+          <source>The document size will be smaller and the pictures will be compressed into "jpg" or "png"</source>
+          <target>Velikost dokumentu bude menší a obrázky budou komprimovány do "jpg" nebo "png"</target>
+        </trans-unit>
+        <trans-unit id="SD+Y7dnDCOmvJ94LKms7CQ" resname="InfoPrint">
+          <source>The document size will be bigger and the pictures will be keep their original "codec".</source>
+          <target>Velikost obrázku bude větší a obrázky budou drženy ve svých originálních "codec".</target>
+        </trans-unit>
+        <trans-unit id="M/by8K2LDXD/OhCDfGnX+Q" resname="InfoFormulas">
+          <source>When selected, all formulas will be recomputed before export.
+            
+When not selected, only formulas that have never been evaluated will be computed.</source>
+          <target>Pokud zvolíte, všechny výrazy budou před exportem přepočítány.
+            
+Pokud toto nezvolíte, budou vypočítány pouze výrazy, jež ještě nebyly vyhodnoceny.</target>
+        </trans-unit>
+        <trans-unit id="DpRVy4keJdQU2SqZwEacYg" resname="FormulasComma">
+          <source>Formulas:</source>
+          <target>Výrazy:</target>
+        </trans-unit>
+        <trans-unit id="TLfxhPbY2ZRWaf3J3RyOcw" resname="htmlEllipsis">
+          <source>HTML…</source>
+          <target>HTML…</target>
+        </trans-unit>
+        <trans-unit id="jqxt3L4zVABvifyA9e+8sA" resname="InfoPrettyPrint">
+          <source>This option generates a document with more human-readable source code and increases document size.</source>
+          <target>Tato možnost generuje dokument s lidsky čitelnějším zdrojovým kódem a zvýší velikost dokumentu.</target>
+        </trans-unit>
+        <trans-unit id="6LkWY9PvfM8ea1sA6vSrBw" resname="ExportComma">
+          <source>Export:</source>
+          <target>Export:</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteImportExport"/>
+      <group resname="DialogImport">
+        <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
+          <source>Erase the document</source>
+          <target>Vymazat dokument</target>
+        </trans-unit>
+        <trans-unit id="FlHVoUXe7QVKBS23F0ny5Q" resname="BeforeDocument">
+          <source>at the beginning</source>
+          <target>na začátku</target>
+        </trans-unit>
+        <trans-unit id="v2qONMZHKzxZtNap9RsfFw" resname="AfterDocument">
+          <source>at the end</source>
+          <target>na konci</target>
+        </trans-unit>
+        <trans-unit id="ewuKg1WiWojJOtdoz3wpqg" resname="ReplaceSelection">
+          <source>at cursor position</source>
+          <target>na pozici kurzoru</target>
+        </trans-unit>
+        <trans-unit id="kRahCITb8zTZzcaUFp2q0Q" resname="ImportOptions">
+          <source>Import options</source>
+          <target>Možnosti importu</target>
+        </trans-unit>
+        <trans-unit id="/ZwYY2UXzYETIAVO1G2dvA" resname="InfoErase">
+          <source>The document will be replaced</source>
+          <target>Dokument bude nahrazen</target>
+        </trans-unit>
+        <trans-unit id="OEeH+VlZg5xuxWvUjW1P1A" resname="InfoBefore">
+          <source>After the first header (if any)</source>
+          <target>Za první záhlaví (pokud existuje)</target>
+        </trans-unit>
+        <trans-unit id="KGyZW8NNWI/ZTRVopYvVHw" resname="InforAfter">
+          <source>Before the last footer (if any)</source>
+          <target>Před poslední zápatí (pokud existuje)</target>
+        </trans-unit>
+        <trans-unit id="ERLyD4OELj5tXGKqcoTmNQ" resname="InfoReplaceSelection">
+          <source>(or insert at the cursor position)</source>
+          <target>(nebo vložte na pozici kurzoru)</target>
+        </trans-unit>
+        <trans-unit id="fUY1y/mfq8YIayhWmfKZeg" resname="SelectFile">
+          <source>Select file to import…</source>
+          <target>Vybrat soubor pro import…</target>
+        </trans-unit>
+        <trans-unit id="ceXUiqKwcVAUS6ay3ug5xQ" resname="ReplaceDocument">
+          <source>Replace document</source>
+          <target>Nahradit dokument</target>
+        </trans-unit>
+        <trans-unit id="NFtFcqXg4EZ1lxL/0wtdpw" resname="InfoReplaceDocument">
+          <source>The full document will be replaced including headers and footers.</source>
+          <target>Bude nahrazen celý dokument včetně zaáhlaví a zápatí.</target>
+        </trans-unit>
+        <trans-unit id="V9QRc48mupZaPsRVherBRQ" resname="InfoNotImported">
+          <source>Note: The headers, footers and anchored pictures will not be imported.</source>
+          <target>Poznámka: Záhlaví, zápatí a ukotvené obrázky nebudou importovány.</target>
+        </trans-unit>
+      <trans-unit id="n4aL7HhXL+o5ruwGL/guAQ" resname="InsertInTheDocument">
+          <source>Insert in the document…</source>
+          <target>Vložit do dokumentu…</target>
+        </trans-unit>
+        <trans-unit id="+siVncaV7S9ujx1b+dIgiA" resname="SelectDocumentOfType">
+          <source>Select a document (.txt, .4wp or .4w7)</source>
+          <target>Vybrat dokument (.txt, .4wp or .4w7)</target>
+        </trans-unit>
+        <trans-unit id="ovkE8m6t9hOAvs5WY9nA7A" resname="ConfirmClear">
+          <source>This action will remove all content from the document.</source>
+          <target>Tato akce odstraní veškerý obsah z dokumentu.</target>
+        </trans-unit>
+        <trans-unit id="DU4JNkbLHrgf3m8pAIaC6Q" resname="ClearEllipsis">
+          <source>Clear…</source>
+          <target>Odstranit…</target>
+        </trans-unit>
+        <trans-unit id="PLXw3AoYuswFhizuV35Zgg" resname="Clear">
+          <source>Clear</source>
+          <target>Odstranit</target>
         </trans-unit>
       </group>
     </body>

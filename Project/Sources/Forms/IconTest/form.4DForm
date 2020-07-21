@@ -67,7 +67,7 @@
 						"onClick"
 					]
 				},
-				"Popup Liste déroulante1": {
+				"Popup1": {
 					"type": "dropdown",
 					"top": 36,
 					"left": 1325,
@@ -75,14 +75,14 @@
 					"height": 24,
 					"dataSource": "_toolbars",
 					"focusable": false,
-					"method": "ObjectMethods/Popup Liste déroulante1.4dm",
+					"method": "ObjectMethods/Popup1.4dm",
 					"events": [
 						"onLoad",
 						"onClick",
 						"onDataChange"
 					]
 				},
-				"Popup Liste déroulante": {
+				"Popup2": {
 					"type": "dropdown",
 					"top": 76,
 					"left": 1325,
@@ -91,12 +91,11 @@
 					"dataSource": "_sizes",
 					"focusable": false,
 					"choiceList": [
-						"16",
 						"24",
 						"32",
 						"48"
 					],
-					"method": "ObjectMethods/Popup Liste déroulante.4dm",
+					"method": "ObjectMethods/Popup2.4dm",
 					"events": [
 						"onLoad",
 						"onClick",
@@ -374,7 +373,7 @@
 					"height": 50,
 					"tooltip": "Increase text",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/File/SaveAs_32.png",
+					"icon": "/RESOURCES/Images/Toolbar1/File/Import_32.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
@@ -2427,15 +2426,6 @@
 						"onClick"
 					]
 				},
-				"Rectangle1": {
-					"type": "rectangle",
-					"top": 247,
-					"left": 517,
-					"width": 56,
-					"height": 56,
-					"fill": "transparent",
-					"stroke": "#ff6347"
-				},
 				"Rectangle": {
 					"type": "rectangle",
 					"top": 247,
@@ -2483,12 +2473,29 @@
 				},
 				"Rectangle6": {
 					"type": "rectangle",
-					"top": 566,
+					"top": 567,
 					"left": 577,
 					"width": 56,
 					"height": 56,
 					"fill": "transparent",
 					"stroke": "#ff6347"
+				},
+				"TB_SizeUp127": {
+					"type": "button",
+					"top": 250,
+					"left": 580,
+					"width": 50,
+					"height": 50,
+					"tooltip": "Increase text",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/Export_32.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"borderStyle": "dotted",
+					"events": [
+						"onClick"
+					]
 				}
 			}
 		}

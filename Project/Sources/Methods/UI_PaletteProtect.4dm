@@ -4,6 +4,7 @@ If (UI_isProtected (True:C214))  // true means take focus into account
 	OBJECT SET ENABLED:C1123(*;"@";False:C215)
 	OBJECT SET ENTERABLE:C238(*;"@";False:C215)
 	
+	
 Else 
 	
 	If (Form:C1466.protectionEnabled=True:C214)
@@ -21,5 +22,7 @@ Else
 End if 
 
 
-  //… except the docuement protection itlself
+  // the tab buttons are always enabled
+OBJECT SET ENABLED:C1123(*;"tabBtn_@";True:C214)
+  //… except the document protection itlself
 OBJECT SET ENABLED:C1123(*;"cbProtectionEnabled";True:C214)

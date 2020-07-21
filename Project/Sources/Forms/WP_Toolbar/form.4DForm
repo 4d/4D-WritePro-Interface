@@ -20,6 +20,10 @@
 		"paperWidth": "595pt",
 		"paperHeight": "841pt"
 	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
 	"pages": [
 		{
 			"objects": {
@@ -366,8 +370,8 @@
 				"tabBtn_Home": {
 					"type": "radio",
 					"top": 0,
-					"left": 5,
-					"width": 50,
+					"left": 15,
+					"width": 75,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -387,8 +391,8 @@
 				"tabBtn_Insert": {
 					"type": "radio",
 					"top": 0,
-					"left": 60,
-					"width": 80,
+					"left": 97,
+					"width": 75,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -408,8 +412,8 @@
 				"tabBtn_Margins": {
 					"type": "radio",
 					"top": 0,
-					"left": 145,
-					"width": 50,
+					"left": 179,
+					"width": 75,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -429,13 +433,13 @@
 				"tabBtn_Printing": {
 					"type": "radio",
 					"top": 0,
-					"left": 310,
-					"width": 40,
+					"left": 425,
+					"width": 75,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"focusable": false,
-					"text": ":xliff:printing",
+					"text": ":xliff:print",
 					"icon": "/RESOURCES/",
 					"iconFrames": 4,
 					"textPlacement": "center",
@@ -450,8 +454,8 @@
 				"tabBtn_Images": {
 					"type": "radio",
 					"top": 0,
-					"left": 255,
-					"width": 50,
+					"left": 343,
+					"width": 75,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -471,8 +475,8 @@
 				"tabBtn_Borders": {
 					"type": "radio",
 					"top": 0,
-					"left": 200,
-					"width": 50,
+					"left": 261,
+					"width": 75,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -492,8 +496,8 @@
 				"tabBtn_Spell": {
 					"type": "radio",
 					"top": 0,
-					"left": 400,
-					"width": 80,
+					"left": 589,
+					"width": 75,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -513,8 +517,8 @@
 				"tabBtn_Tables": {
 					"type": "radio",
 					"top": 0,
-					"left": 355,
-					"width": 40,
+					"left": 507,
+					"width": 75,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -530,11 +534,62 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"tabBtn_Protection": {
+					"type": "radio",
+					"top": 0,
+					"left": 671,
+					"width": 75,
+					"height": 20,
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"focusable": false,
+					"text": ":xliff:protection",
+					"icon": "/RESOURCES/",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
+					"radioGroup": "Group34",
+					"method": "ObjectMethods/tabBtn_Protection.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"tabBtn_ImportExport": {
+					"type": "radio",
+					"top": 0,
+					"left": 753,
+					"width": 75,
+					"height": 20,
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"focusable": false,
+					"text": ":xliff:importExport",
+					"icon": "/RESOURCES/",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
+					"radioGroup": "Group34",
+					"method": "ObjectMethods/tabBtn_ImportExport.4dm",
+					"events": [
+						"onClick"
+					]
 				}
 			}
 		},
 		{
 			"objects": {
+				"Line59": {
+					"type": "line",
+					"top": 30,
+					"left": 875,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
 				"Image2": {
 					"type": "picture",
 					"top": 30,
@@ -1671,58 +1726,10 @@
 					"icon": "/RESOURCES/Images/Toolbar1/View/RulerV_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
-				},
-				"btnProtected": {
-					"type": "checkbox",
-					"top": 414,
-					"left": 780,
-					"width": 40,
-					"height": 40,
-					"text": "",
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"events": [
-						"onClick"
-					],
-					"dataSource": "Form:C1466.protected",
-					"method": "ObjectMethods/btnProtected.4dm",
-					"threeState": true,
-					"stroke": "#ff0000",
-					"visibility": "visible",
-					"style": "toolbar",
-					"icon": "/RESOURCES/Images/Toolbar1/Home/Protected_32.png",
-					"iconFrames": 4,
-					"textPlacement": "right"
-				},
-				"btnProtectionEnabled": {
-					"type": "checkbox",
-					"top": 414,
-					"left": 840,
-					"width": 40,
-					"height": 40,
-					"text": "",
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"events": [
-						"onClick"
-					],
-					"dataSource": "Form:C1466.protectionEnabled",
-					"method": "ObjectMethods/btnProtectionEnabled.4dm",
-					"threeState": false,
-					"visibility": "visible",
-					"stroke": "#ff0000",
-					"style": "toolbar",
-					"icon": "/RESOURCES/Images/Toolbar1/Home/DocumentProtected_32.png",
-					"iconFrames": 4,
-					"textPlacement": "right"
 				}
 			},
 			"entryOrder": [
-				"Popup_zoom",
-				"btnProtected",
-				"btnProtectionEnabled"
+				"Popup_zoom"
 			]
 		},
 		{
@@ -1954,8 +1961,8 @@
 				},
 				"borderStyleColor": {
 					"type": "button",
-					"top": 199,
-					"left": 989,
+					"top": 158,
+					"left": 1358,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:bordersColor",
@@ -1967,8 +1974,8 @@
 				},
 				"borderStyleType": {
 					"type": "dropdown",
-					"top": 201,
-					"left": 859,
+					"top": 160,
+					"left": 1234,
 					"width": 120,
 					"height": 20,
 					"tooltip": ":xliff:bordersStyle",
@@ -1981,8 +1988,8 @@
 				},
 				"btnBorderStyleLeft": {
 					"type": "button",
-					"top": 286,
-					"left": 1044,
+					"top": 302,
+					"left": 1241,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderLeft",
@@ -1998,8 +2005,8 @@
 				},
 				"btnBorderStyleBottom": {
 					"type": "button",
-					"top": 316,
-					"left": 1044,
+					"top": 332,
+					"left": 1241,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderBottom",
@@ -2012,8 +2019,8 @@
 				},
 				"btnBorderStyleTop": {
 					"type": "button",
-					"top": 316,
-					"left": 1074,
+					"top": 332,
+					"left": 1271,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderTop",
@@ -2026,8 +2033,8 @@
 				},
 				"btnBorderStyleRight": {
 					"type": "button",
-					"top": 286,
-					"left": 1074,
+					"top": 302,
+					"left": 1271,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderRight",
@@ -2052,8 +2059,8 @@
 				},
 				"borderStyleWidth": {
 					"type": "dropdown",
-					"top": 202,
-					"left": 1029,
+					"top": 160,
+					"left": 1393,
 					"width": 90,
 					"height": 18,
 					"tooltip": ":xliff:borderWidth",
@@ -2094,8 +2101,8 @@
 				},
 				"Image17": {
 					"type": "picture",
-					"top": 286,
-					"left": 442,
+					"top": 321,
+					"left": 1361,
 					"width": 30,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
@@ -2529,7 +2536,7 @@
 				"Image1": {
 					"type": "picture",
 					"top": 40,
-					"left": 310,
+					"left": 330,
 					"width": 30,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
@@ -2538,7 +2545,7 @@
 				"Popup_pageSize": {
 					"type": "dropdown",
 					"top": 43,
-					"left": 130,
+					"left": 150,
 					"width": 170,
 					"height": 20,
 					"tooltip": ":xliff:pageSize",
@@ -2564,7 +2571,7 @@
 				"btnPrintPreview": {
 					"type": "button",
 					"top": 40,
-					"left": 50,
+					"left": 70,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:preview",
@@ -2577,7 +2584,7 @@
 				"Popup_pageOrientation": {
 					"type": "dropdown",
 					"top": 43,
-					"left": 370,
+					"left": 390,
 					"width": 170,
 					"height": 20,
 					"tooltip": ":xliff:pageOrientation",
@@ -2587,7 +2594,7 @@
 				"Line49": {
 					"type": "line",
 					"top": 30,
-					"left": 115,
+					"left": 135,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2596,11 +2603,20 @@
 				"Image15": {
 					"type": "picture",
 					"top": 40,
-					"left": 550,
+					"left": 570,
 					"width": 30,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
 					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/PageOrientation_24.png"
+				},
+				"Line60": {
+					"type": "line",
+					"top": 30,
+					"left": 605,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
 				}
 			}
 		},
@@ -3105,80 +3121,212 @@
 					"icon": "/RESOURCES/Images/Toolbar1/File/PageSetup_32.png",
 					"iconFrames": 4,
 					"style": "toolbar"
+				},
+				"Line61": {
+					"type": "line",
+					"top": 30,
+					"left": 755,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
 				}
 			}
 		},
 		{
 			"objects": {
-				"3D Button18": {
-					"type": "button",
-					"top": 30,
-					"left": 140,
+				"cbProtectionEnabled": {
+					"type": "checkbox",
+					"top": 40,
+					"left": 300,
 					"width": 40,
 					"height": 40,
-					"stroke": "#FF0000",
+					"action": "",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/File/Save_32.png",
+					"icon": "/RESOURCES/Images/Toolbar1/Home/DocumentProtected_32.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"dataSource": "Form:C1466.protectionEnabled",
+					"method": "ObjectMethods/cbProtectionEnabled.4dm",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:protectDocument"
 				},
-				"3D Button28": {
-					"type": "button",
-					"top": 30,
-					"left": 80,
-					"width": 40,
-					"height": 40,
-					"stroke": "#FF0000",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/File/Open_32.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"New": {
-					"type": "button",
-					"top": 30,
-					"left": 20,
-					"width": 40,
-					"height": 40,
-					"stroke": "#FF0000",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/File/New_32.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"3D Button31": {
-					"type": "button",
-					"top": 136,
-					"left": 228,
-					"width": 40,
-					"height": 40,
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/File/Quit_32.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"Line1": {
+				"Line58": {
 					"type": "line",
-					"top": 20,
-					"left": 335,
+					"top": 30,
+					"left": 285,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
 					"startPoint": "topLeft"
 				},
-				"3D Button1": {
-					"type": "button",
+				"cbCellProtected": {
+					"type": "checkbox",
+					"top": 40,
+					"left": 230,
+					"width": 40,
+					"height": 40,
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Protection/CellProtected_32.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"dataSource": "Form:C1466.cellProtected",
+					"method": "ObjectMethods/cbCellProtected.4dm",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:protectCell"
+				},
+				"cbRowProtected": {
+					"type": "checkbox",
+					"top": 40,
+					"left": 160,
+					"width": 40,
+					"height": 40,
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Protection/RowProtected_32.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"dataSource": "Form:C1466.rowProtected",
+					"method": "ObjectMethods/cbRowProtected.4dm",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:protectRow"
+				},
+				"cbTableProtected": {
+					"type": "checkbox",
+					"top": 40,
+					"left": 90,
+					"width": 40,
+					"height": 40,
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Protection/TableProtected_32.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"dataSource": "Form:C1466.tableProtected",
+					"method": "ObjectMethods/cbTableProtected.4dm",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:protectTable"
+				},
+				"cbParagraphProtected": {
+					"type": "checkbox",
+					"top": 40,
+					"left": 20,
+					"width": 40,
+					"height": 40,
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Protection/ParagraphProtected_32.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"dataSource": "Form:C1466.paragraphProtected",
+					"method": "ObjectMethods/cbParagraphProtected.4dm",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:protectParagraph"
+				},
+				"Line62": {
+					"type": "line",
 					"top": 30,
-					"left": 200,
+					"left": 355,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
+				}
+			}
+		},
+		{
+			"objects": {
+				"btnExport": {
+					"type": "button",
+					"top": 40,
+					"left": 70,
 					"width": 40,
 					"height": 40,
 					"stroke": "#FF0000",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/File/Save_32.png",
+					"icon": "/RESOURCES/Images/Toolbar1/File/Export_32.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "custom",
+					"popupPlacement": "linked",
+					"method": "ObjectMethods/btnExport.4dm",
+					"text": "",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:export"
+				},
+				"btnImport": {
+					"type": "button",
+					"top": 40,
+					"left": 10,
+					"width": 40,
+					"height": 40,
+					"stroke": "#FF0000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/Import_32.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"popupPlacement": "none",
+					"method": "ObjectMethods/btnImport.4dm",
+					"text": "",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:import"
+				},
+				"btnClear": {
+					"type": "button",
+					"top": 40,
+					"left": 150,
+					"width": 40,
+					"height": 40,
+					"stroke": "#FF0000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Clear_32.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"popupPlacement": "none",
+					"method": "ObjectMethods/btnClear.4dm",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:clear"
+				},
+				"Line63": {
+					"type": "line",
+					"top": 30,
+					"left": 205,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"Line64": {
+					"type": "line",
+					"top": 30,
+					"left": 135,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
 				}
-			}
+			},
+			"entryOrder": [
+				"btnImport",
+				"btnExport",
+				"btnClear"
+			]
 		}
 	],
 	"editor": {
@@ -3191,7 +3339,9 @@
 				"tabBtn_Images",
 				"tabBtn_Borders",
 				"tabBtn_Spell",
-				"tabBtn_Tables"
+				"tabBtn_Tables",
+				"tabBtn_Protection",
+				"tabBtn_ImportExport"
 			],
 			"Group31": [
 				"Stylesheet_Type2",
@@ -3202,25 +3352,35 @@
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
-			"View 2": {},
-			"View 3": {},
-			"View 4": {},
-			"View 5": {},
-			"View 6": {},
-			"View 7": {},
-			"View 8": {},
-			"View 9": {
+			"View 2": {
 				"visible": false,
-				"selectable": false,
 				"objects": [
 					"Rect2",
 					"Text2"
 				]
+			},
+			"View 3": {
+				"visible": false
+			},
+			"View 4": {
+				"visible": false
+			},
+			"View 5": {
+				"visible": false
+			},
+			"View 7": {
+				"visible": false
+			},
+			"View 6": {
+				"visible": false
+			},
+			"View 8": {
+				"visible": false
+			},
+			"View 9": {
+				"visible": false
 			}
 		}
 	},
-	"$4d": {
-		"version": "1",
-		"kind": "form"
-	}
+	"geometryStamp": 12
 }

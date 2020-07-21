@@ -1,0 +1,82 @@
+﻿{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"inputValue": {
+					"type": "input",
+					"left": 40,
+					"top": 40,
+					"width": 360,
+					"height": 17,
+					"dataSource": "Form:C1466.value",
+					"events": [
+						"onAfterEdit"
+					],
+					"method": "ObjectMethods/inputValue.4dm"
+				},
+				"labelTitle": {
+					"type": "text",
+					"text": "Title",
+					"top": 10,
+					"left": 40,
+					"width": 360,
+					"height": 16
+				},
+				"buttonCancel": {
+					"type": "button",
+					"top": 80,
+					"left": 180,
+					"width": 100,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					]
+				},
+				"buttonOK": {
+					"type": "button",
+					"top": 80,
+					"left": 300,
+					"width": 100,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"width": 420,
+	"height": 120,
+	"method": "method.4dm"
+}

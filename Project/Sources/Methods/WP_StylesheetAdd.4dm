@@ -10,7 +10,7 @@ C_OBJECT:C1216($source;$o)
 C_POINTER:C301($ptrStylesheetNames)
 
 C_TEXT:C284($menu;$submenu;$choice)
-C_TEXT:C284($rqCancel;$rqOK;$rqPlaceHolder;$rqTitle)
+C_TEXT:C284($rqCancel;$rqOK;$rqPlaceHolder;$rqTitle;$placeHolder)
 C_TEXT:C284($newName;$sourceName)
 
 $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5;"stylesheet_Names")
@@ -52,11 +52,15 @@ If ($choice#"")
 	$rqPlaceHolder:=Get localized string:C991("requestPlaceHolder")
 	$rqOK:=Get localized string:C991("requestCreateLabel")
 	$rqCancel:=Get localized string:C991("requestCancelLabel")
+	$placeHolder:=Get localized string:C991("StyleSheetPlaceHolder")
 	
 	Case of 
 		: ($choice="new") | ($choice="newFromSelection")
 			Repeat 
-				$newName:=Request:C163($rqTitle;$rqPlaceHolder;$rqOK;$rqCancel)
+				
+				  //$newName:=Request($rqTitle;$rqPlaceHolder;$rqOK;$rqCancel)
+				  //Method WP_Request created 2020/06/03 to fix the ACI0100879
+				$newName:=WP_Request ($rqTitle;$rqPlaceHolder;$rqOK;$rqCancel;$placeHolder)
 				If ($newName="section@")
 					ALERT:C41(Get localized string:C991("nameError"))
 				End if 
@@ -70,7 +74,10 @@ If ($choice#"")
 				$newName:=TOOL_IncrementString ($newName)
 				$p:=Find in array:C230($allstylesheet_Names;$newName)
 			Until ($p<0)
-			$newName:=Request:C163($rqTitle;$newName;$rqOK;$rqCancel)
+			
+			  //$newName:=Request($rqTitle;$newName;$rqOK;$rqCancel)
+			  //Method WP_Request created 2020/06/03 to fix the ACI0100879
+			$newName:=WP_Request ($rqTitle;$rqPlaceHolder;$rqOK;$rqCancel;$placeHolder)
 			
 	End case 
 	

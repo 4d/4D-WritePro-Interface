@@ -23,13 +23,14 @@ Case of
 			skinAppliedSub:=UI_ApplySkin 
 		End if 
 		
+		  //Form.protectionEnabled:=WP_GetDocumentProtection (Form.selection.owner)
 		
-		Form:C1466.protectionEnabled:=WP_GetDocumentProtection (Form:C1466.selection.owner)
+		  //Form.paragraphProtected:=WP_GetParagraphProtection (Form.selection)
+		  //Form.tableProtected:=WP_GetTableProtection (Form.selection)
+		  //Form.rowProtected:=WP_GetRowProtection (Form.selection)
+		  //Form.cellProtected:=WP_GetCellProtection (Form.selection)
 		
-		Form:C1466.paragraphProtected:=WP_GetParagraphProtection (Form:C1466.selection)
-		Form:C1466.tableProtected:=WP_GetTableProtection (Form:C1466.selection)
-		Form:C1466.rowProtected:=WP_GetRowProtection (Form:C1466.selection)
-		Form:C1466.cellProtected:=WP_GetCellProtection (Form:C1466.selection)
+		WP_GetProtections (Form:C1466.selection)
 		
 		UI_PaletteProtect 
 		

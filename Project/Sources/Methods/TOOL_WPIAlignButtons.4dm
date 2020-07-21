@@ -12,7 +12,7 @@ If (False:C215)  //EXEMPLE D'APPEL DE LA METHODE (Seul le premier parametre est 
 	ARRAY LONGINT:C221($_Space;2)
 	ARRAY LONGINT:C221($_Height;2)
 	ARRAY LONGINT:C221($_MinWidth;2)
-	ARRAY LONGINT:C221($_Rounded;2)
+	
 	
 	$_ObjectNames{1}:="Bouton1"
 	$_ObjectNames{2}:="Bouton2"
@@ -94,109 +94,67 @@ $Plateform:=Choose:C955($Plateform=Windows:K25:3;1;2)
 $PtrArrayObjectNames:=$1
 
 If (Count parameters:C259>=2)
-	
 	$PtrArrayObjectLabels:=$2
-	
 End if 
 
 If (Count parameters:C259>=3)
-	
 	$HorizontalAlign:=$3
-	
 Else 
-	
 	$HorizontalAlign:=On the left:K39:2
-	
 End if 
 
 If (Count parameters:C259>=4)
-	
 	$VerticalAlign:=$4
-	
 Else 
-	
 	$VerticalAlign:=At the top:K39:5
-	
 End if 
 
 If (Count parameters:C259>=5)
-	
 	$AlignementType:=$5
-	
 Else 
-	
 	$AlignementType:="Horizontal"
-	
 End if 
 
 If (Count parameters:C259>=6)
-	
 	$SizeMode:=$6
-	
 Else 
-	
 	$SizeMode:="Proportional"
-	
 End if 
 
 If (Count parameters:C259>=7)
-	
 	$SizeValue:=$7
-	
 Else 
-	
 	$SizeValue:=0
-	
 End if 
 
 If (Count parameters:C259>=8)
-	
 	$ButtonHeight:=$8->{$Plateform}
-	
 Else 
-	
 	$ButtonHeight:=Choose:C955($Plateform=1;23;20)
-	
 End if 
 
 If (Count parameters:C259>=9)
-	
 	$TextMargin:=$9->{$Plateform}
-	
 Else 
-	
 	$TextMargin:=0
-	
 End if 
 
 If (Count parameters:C259>=10)
-	
 	$ButtonSpace:=$10->{$Plateform}
-	
 Else 
-	
 	$ButtonSpace:=10
-	
 End if 
 
 If (Count parameters:C259>=11)  //largeur minimum d'un bouton
-	
 	$ButtonMinWidth:=$11->{$Plateform}
-	
 Else 
-	
 	$ButtonMinWidth:=20
-	
 End if 
 
 If (Count parameters:C259>=12)  //arrondi à une valeur donnée
-	
 	$RoundValue:=$12->{$Plateform}
-	
 Else 
-	
 	$RoundValue:=0
-	
 End if 
 
 $n:=Size of array:C274($PtrArrayObjectNames->)
@@ -206,8 +164,7 @@ ARRAY LONGINT:C221($_btnWidth;$n)
 
   //Cas le pire, il faut calculer la plus grande taille des boutons
 
-If ($SizeMode="Fixed")\
- & ($SizeValue=0)
+If ($SizeMode="Fixed") & ($SizeValue=0)
 	
 	For ($i;1;$n;1)
 		

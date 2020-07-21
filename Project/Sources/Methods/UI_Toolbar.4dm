@@ -22,56 +22,73 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 		
 		$page:=FORM Get current page:C276(*)
 		
-		If (UI_isProtected )
-			
-			  // Disable everyting (followed by exceptions)
-			
-			OBJECT SET ENABLED:C1123(*;"@";False:C215)
-			OBJECT SET ENTERABLE:C238(*;"@";False:C215)
-			
-			  // Except TAB buttons
-			OBJECT SET ENABLED:C1123(*;"tab@";True:C214)
-			
-			Case of 
+		Case of 
+			: ($page=9)  // page 9 is special case
+				
+				UI_PaletteProtect   // common with palettes
+				
+			: ($page=10)  // page 10 is also special case
+				
+				UI_PaletteImportExport 
+				
+			Else 
+				
+				If (UI_isProtected )
 					
-				: ($page=2)  //Except buttons for local protection button
+					  // Disable everyting (followed by exceptions)
 					
-					OBJECT SET ENABLED:C1123(*;"btnProtectionEnabled";True:C214)
+					OBJECT SET ENABLED:C1123(*;"@";False:C215)
+					OBJECT SET ENTERABLE:C238(*;"@";False:C215)
 					
-				: ($page=6)  // Except for Print
+					  // Except TAB buttons
+					OBJECT SET ENABLED:C1123(*;"tab@";True:C214)
+					
+					Case of 
+							
+						: ($page=2)  //Except buttons for local protection button
+							
+							OBJECT SET ENABLED:C1123(*;"btnProtectionEnabled";True:C214)
+							
+						: ($page=6)  // Except for Print
+							
+							OBJECT SET ENABLED:C1123(*;"@";True:C214)
+							OBJECT SET ENABLED:C1123(*;"@";True:C214)
+							
+					End case 
+					
+				Else 
+					
+					  // Enable everyting (followed by exceptions)
 					
 					OBJECT SET ENABLED:C1123(*;"@";True:C214)
-					OBJECT SET ENABLED:C1123(*;"@";True:C214)
+					OBJECT SET ENTERABLE:C238(*;"@";True:C214)
 					
-			End case 
-			
-		Else 
-			
-			  // Enable everyting (followed by exceptions)
-			
-			OBJECT SET ENABLED:C1123(*;"@";True:C214)
-			OBJECT SET ENTERABLE:C238(*;"@";True:C214)
-			
-			Case of 
-				: ($page=1)
-					If (Form:C1466.selection.type#wk type image:K81:192)
-						WP_GetStyleSheets 
-					End if 
-					UI_ToolbarStylesheets 
+					Case of 
+						: ($page=1)
+							If (Form:C1466.selection.type#wk type image:K81:192)
+								WP_GetStyleSheets 
+							End if 
+							UI_ToolbarStylesheets 
+							
+						: ($page=7)
+							UI_Tables ("Toolbar")
+							
+							
+					End case 
 					
-				: ($page=7)
-					UI_Tables ("Toolbar")
-					
-			End case 
-			
-		End if 
+				End if 
+				
+		End case 
+		
+		
+		
+		
+		
+		
 		
 		  // the local protection button is ALWAYS based on global document protection
 		WP GET ATTRIBUTES:C1345(Form:C1466.selection.owner;wk protection enabled:K81:307;$protectedDoc)
 		OBJECT SET ENABLED:C1123(*;"btnProtected";Not:C34($protectedDoc))
-		
-		
-		
 		
 		
 	End if 

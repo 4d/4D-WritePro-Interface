@@ -1,4 +1,5 @@
 ﻿{
+	"ImportExport Dialogs": {},
 	"Methods": {
 		"methods": [
 			"Call_CustomColorPalette",
@@ -86,9 +87,14 @@
 			"WP_Palette_Alignments",
 			"WP_Palette_Backgrounds",
 			"WP_Palette_BookMarks",
+			"WP_Palette_Expressions",
 			"WP_Palette_Fonts",
 			"WP_Palette_Frames",
+			"WP_Palette_ImportExport",
+			"WP_Palette_Protection",
 			"WP_Palette_Sizes",
+			"WP_Palette_StyleSheets",
+			"WP_Palette_Tables",
 			"WP_Palette_Tabulations"
 		]
 	},
@@ -121,6 +127,7 @@
 		],
 		"forms": [
 			"[SAMPLE]InputPalettes",
+			"[SAMPLE]InputToolBar",
 			"[SAMPLE]Output"
 		]
 	},
@@ -134,8 +141,49 @@
 			"WP_SwitchToolbar"
 		],
 		"forms": [
-			"IconTest",
 			"WP_Toolbar"
+		]
+	},
+	"WP_Private": {
+		"methods": [
+			"UI_isProtected",
+			"UI_PaletteFindAndReplace",
+			"UI_PaletteProtect",
+			"UI_PaletteStylesheets",
+			"UI_Tables",
+			"UI_Toolbar",
+			"UI_ToolbarStylesheets",
+			"UI_TranslateConstant",
+			"WP_BorderMenu",
+			"WP_GetProtections",
+			"WP_GetStyleAttributesByGroup",
+			"WP_GetStyleAttributesByType",
+			"WP_GetStyleSheet",
+			"WP_GetStyleSheets",
+			"WP_GetStylesheetType",
+			"WP_IgnoreError",
+			"WP_SetCellProtection",
+			"WP_SetDocumentProtection",
+			"WP_SetImageUrl",
+			"WP_SetParagraphProtection",
+			"WP_SetRowProtection",
+			"WP_SetTableProtection",
+			"WP_StyleFillEditLB",
+			"WP_StylesheetAdd",
+			"WP_StylesheetCopyAttributes",
+			"WP_StylesheetEdit",
+			"WP_StylesheetRemove",
+			"WP_StylesheetSetAttributes",
+			"WP_StylesheetUpdate",
+			"WP_TableMenu"
+		],
+		"forms": [
+			"WP_StyleSheetEdit"
+		]
+	},
+	"WP_Public": {
+		"methods": [
+			"WP UpdateWidget"
 		]
 	},
 	"trash": {}
