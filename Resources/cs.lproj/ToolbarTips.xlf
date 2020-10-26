@@ -436,7 +436,7 @@ This file is distributed under the same license as the product package.-->
           <source>Insert soft hyphen</source>
           <target>Vložit volitelný rozdělovník</target>
         </trans-unit>
-      <trans-unit id="ZLC852EL1drI+I11mR0Tvg" resname="RemoveSoftHyphen">
+        <trans-unit id="ZLC852EL1drI+I11mR0Tvg" resname="RemoveSoftHyphen">
           <source>Remove soft hyphen</source>
           <target>Odstranit volitelný rozdělovník</target>
         </trans-unit>

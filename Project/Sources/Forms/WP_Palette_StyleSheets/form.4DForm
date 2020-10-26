@@ -2,7 +2,7 @@
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Tabulations",
-	"inheritedForm": "WP_Z_Common",
+	"inheritedForm": "",
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
 	"width": 260,
@@ -149,7 +149,7 @@
 					"type": "text",
 					"top": 15,
 					"left": 20,
-					"width": 90,
+					"width": 220,
 					"height": 13,
 					"stroke": "#FFFFFF",
 					"textAlign": "center",
@@ -389,5 +389,6 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
-	}
+	},
+	"geometryStamp": 20
 }

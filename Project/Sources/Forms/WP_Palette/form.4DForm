@@ -1,9 +1,9 @@
 ﻿{
 	"destination": "detailScreen",
 	"shared": true,
-	"inheritedForm": "WP_Z_Common",
+	"inheritedForm": "",
 	"width": 260,
-	"height": 680,
+	"height": 650,
 	"markerBody": 680,
 	"markerBreak": 680,
 	"markerFooter": 680,
@@ -33,27 +33,27 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 30,
+					"height": 29,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
 				"TabArea": {
 					"type": "rectangle",
-					"top": 5,
-					"left": 3,
-					"width": 253,
-					"height": 20,
+					"top": 4,
+					"left": 2,
+					"width": 256,
+					"height": 22,
 					"visibility": "hidden",
 					"stroke": "#9400d3",
 					"fill": "transparent"
 				},
 				"PaletteSubform": {
 					"type": "subform",
-					"top": 31,
+					"top": 30,
 					"left": 0,
 					"width": 260,
-					"height": 630,
+					"height": 620,
 					"detailForm": "WP_Palette_Fonts",
 					"focusable": false,
 					"deletableInList": false,
@@ -64,7 +64,12 @@
 					"method": "ObjectMethods/PaletteSubform.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"borderStyle": "none",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow"
 				},
 				"Line": {
 					"type": "line",
@@ -79,7 +84,7 @@
 				"tabBtn_Alignments": {
 					"type": "radio",
 					"top": 5,
-					"left": 24,
+					"left": 22,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -103,7 +108,7 @@
 				"tabBtn_Fonts": {
 					"type": "radio",
 					"top": 5,
-					"left": 3,
+					"left": 2,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -127,7 +132,7 @@
 				"tabBtn_Expressions": {
 					"type": "radio",
 					"top": 5,
-					"left": 129,
+					"left": 122,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -151,7 +156,7 @@
 				"tabBtn_Frames": {
 					"type": "radio",
 					"top": 5,
-					"left": 87,
+					"left": 82,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -175,7 +180,7 @@
 				"tabBtn_Tabulations": {
 					"type": "radio",
 					"top": 5,
-					"left": 45,
+					"left": 42,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -199,7 +204,7 @@
 				"tabBtn_Sizes": {
 					"type": "radio",
 					"top": 5,
-					"left": 66,
+					"left": 62,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -223,7 +228,7 @@
 				"tabBtn_Backgrounds": {
 					"type": "radio",
 					"top": 5,
-					"left": 108,
+					"left": 102,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -247,7 +252,7 @@
 				"tabBtn_Bookmarks": {
 					"type": "radio",
 					"top": 5,
-					"left": 150,
+					"left": 142,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -271,7 +276,7 @@
 				"tabBtn_Stylesheets": {
 					"type": "radio",
 					"top": 5,
-					"left": 171,
+					"left": 161,
 					"width": 20,
 					"height": 20,
 					"tooltip": ":xliff:stylesheets",
@@ -293,7 +298,7 @@
 				"tabBtn_Tables": {
 					"type": "radio",
 					"top": 5,
-					"left": 192,
+					"left": 180,
 					"width": 20,
 					"height": 20,
 					"tooltip": ":xliff:Tables",
@@ -312,23 +317,23 @@
 						"onClick"
 					]
 				},
-				"PaletteSelectorXX": {
+				"tabBtn_FindAndReplace": {
 					"type": "radio",
 					"top": 5,
-					"left": 331,
-					"width": 22,
-					"height": 30,
+					"left": 337,
+					"width": 20,
+					"height": 20,
 					"tooltip": ":xliff:FindAndReplace",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_find.png",
+					"icon": "/RESOURCES/Images/Light/find.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"method": "ObjectMethods/PaletteSelectorXX.4dm",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"method": "ObjectMethods/tabBtn_FindAndReplace.4dm",
 					"events": [
 						"onClick"
 					]
@@ -336,7 +341,7 @@
 				"tabBtn_Protection": {
 					"type": "radio",
 					"top": 5,
-					"left": 213,
+					"left": 199,
 					"width": 20,
 					"height": 20,
 					"tooltip": ":xliff:stylesheets",
@@ -358,7 +363,7 @@
 				"tabBtn_ImportExport": {
 					"type": "radio",
 					"top": 5,
-					"left": 236,
+					"left": 218,
 					"width": 20,
 					"height": 20,
 					"tooltip": ":xliff:ImportExport",
@@ -401,6 +406,99 @@
 					"fontSize": 50,
 					"textAngle": 270,
 					"text": "4D WritePro Widget"
+				},
+				"Button": {
+					"type": "button",
+					"text": "LOREM",
+					"top": 0,
+					"left": 454,
+					"width": 138,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": true,
+					"shortcutAlt": true,
+					"shortcutKey": "l",
+					"method": "ObjectMethods/Button.4dm",
+					"focusable": false,
+					"sizingX": "move"
+				},
+				"cbBold": {
+					"type": "checkbox",
+					"top": 39,
+					"left": 460,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:bold",
+					"action": "fontBold",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Bold_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "b"
+				},
+				"cbItalic": {
+					"type": "checkbox",
+					"top": 39,
+					"left": 490,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:italic",
+					"action": "fontItalic",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Italic_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "i"
+				},
+				"btn_underline": {
+					"type": "checkbox",
+					"top": 39,
+					"left": 520,
+					"width": 30,
+					"height": 24,
+					"tooltip": ":xliff:underline",
+					"action": "fontUnderline",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Underline_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "u"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 29,
+					"left": 0,
+					"width": 260,
+					"height": 0,
+					"stroke": "#808080"
 				}
 			}
 		}
@@ -429,5 +527,6 @@
 				]
 			}
 		}
-	}
+	},
+	"geometryStamp": 512
 }

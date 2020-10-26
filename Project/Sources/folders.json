@@ -1,5 +1,9 @@
 ﻿{
-	"ImportExport Dialogs": {},
+	"ImportExport Dialogs": {
+		"forms": [
+			"D_Import"
+		]
+	},
 	"Methods": {
 		"methods": [
 			"Call_CustomColorPalette",
@@ -105,7 +109,6 @@
 		],
 		"methods": [
 			"4D_Licence",
-			"Compiler_Variables",
 			"RndRGB",
 			"TOOL_ColorRgbLongToColorRgbText",
 			"TOOL_ColorRgbTextToColorRgbLong",
@@ -136,9 +139,7 @@
 			"debug_ReformatButtons",
 			"TB_GotoPage",
 			"TB_setAutomaticActions",
-			"TB_SwitchSkin",
-			"WP SwitchToolbar",
-			"WP_SwitchToolbar"
+			"TB_SwitchSkin"
 		],
 		"forms": [
 			"WP_Toolbar"
@@ -146,8 +147,11 @@
 	},
 	"WP_Private": {
 		"methods": [
+			"MENU_Display",
+			"MENU_Execute",
 			"UI_isProtected",
 			"UI_PaletteFindAndReplace",
+			"UI_PaletteImportExport",
 			"UI_PaletteProtect",
 			"UI_PaletteStylesheets",
 			"UI_Tables",
@@ -162,12 +166,16 @@
 			"WP_GetStyleSheets",
 			"WP_GetStylesheetType",
 			"WP_IgnoreError",
+			"WP_InsertSoftHyphen",
+			"WP_RemoveSoftHyphen",
+			"WP_Request",
 			"WP_SetCellProtection",
 			"WP_SetDocumentProtection",
 			"WP_SetImageUrl",
 			"WP_SetParagraphProtection",
 			"WP_SetRowProtection",
 			"WP_SetTableProtection",
+			"WP_ShowTabPages",
 			"WP_StyleFillEditLB",
 			"WP_StylesheetAdd",
 			"WP_StylesheetCopyAttributes",
@@ -175,6 +183,7 @@
 			"WP_StylesheetRemove",
 			"WP_StylesheetSetAttributes",
 			"WP_StylesheetUpdate",
+			"WP_SwitchToolbar",
 			"WP_TableMenu"
 		],
 		"forms": [
@@ -183,6 +192,8 @@
 	},
 	"WP_Public": {
 		"methods": [
+			"WP ShowTabPages",
+			"WP SwitchToolbar",
 			"WP UpdateWidget"
 		]
 	},

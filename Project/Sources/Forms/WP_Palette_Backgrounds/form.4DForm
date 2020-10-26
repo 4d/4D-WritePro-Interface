@@ -120,11 +120,12 @@
 					"top": 40,
 					"left": 40,
 					"width": 180,
-					"height": 14,
+					"height": 13,
 					"stroke": "#FFFFFF",
 					"class": "Palette",
 					"textAlign": "center",
-					"text": ":xliff:BackgroundPicture"
+					"text": ":xliff:BackgroundPicture",
+					"fontTheme": "additional"
 				},
 				"lbl_Repeat": {
 					"type": "text",
@@ -640,6 +641,11 @@
 	],
 	"editor": {
 		"groups": {
+			"Groupe15": [
+				"TargetSelector1",
+				"TargetSelector2",
+				"TargetSelector3"
+			],
 			"Group17": [
 				"rbPos11",
 				"rbPos12",
@@ -650,11 +656,6 @@
 				"rbPos31",
 				"rbPos32",
 				"rbPos33"
-			],
-			"Groupe15": [
-				"TargetSelector1",
-				"TargetSelector2",
-				"TargetSelector3"
 			]
 		},
 		"activeView": "View 1",
@@ -680,5 +681,6 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
-	}
+	},
+	"geometryStamp": 4
 }

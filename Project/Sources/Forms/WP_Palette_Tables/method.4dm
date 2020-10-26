@@ -1,17 +1,17 @@
 C_BOOLEAN:C305($setupOK)
 
-  //$paletteID:=11
+//$paletteID:=11
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
-		OBJECT SET TITLE:C194(*;"btnInsertTable";Get localized string:C991("InsertTable")+" "+Char:C90(9660))
-		OBJECT SET TITLE:C194(*;"btnTableSettings";Get localized string:C991("Properties")+" "+Char:C90(9660))
-		OBJECT SET TITLE:C194(*;"btnRowSettings";Get localized string:C991("Properties")+" "+Char:C90(9660))
-		OBJECT SET TITLE:C194(*;"btnColumnSettings";Get localized string:C991("Properties")+" "+Char:C90(9660))
-		OBJECT SET TITLE:C194(*;"btnCellSettings";Get localized string:C991("Properties")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*; "btnInsertTable"; Get localized string:C991("InsertTable")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*; "btnTableSettings"; Get localized string:C991("Properties")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*; "btnRowSettings"; Get localized string:C991("Properties")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*; "btnColumnSettings"; Get localized string:C991("Properties")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*; "btnCellSettings"; Get localized string:C991("Properties")+" "+Char:C90(9660))
 		
-		skinAppliedSub:=UI_ApplySkin 
+		skinAppliedSub:=UI_ApplySkin
 		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Data Change:K2:15)
@@ -20,13 +20,13 @@ Case of
 		
 		SET TIMER:C645(0)
 		
-		$setupOK:=SetupLocalVariables 
+		$setupOK:=SetupLocalVariables
 		
 		If (Not:C34(skinAppliedSub))  // 2nd chance
-			skinAppliedSub:=UI_ApplySkin 
+			skinAppliedSub:=UI_ApplySkin
 		End if 
 		
-		UI_Tables ("Palette")
+		UI_Tables("sidebar")
 		
 End case 
 

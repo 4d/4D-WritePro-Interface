@@ -178,11 +178,12 @@
 					"top": 210,
 					"left": 40,
 					"width": 180,
-					"height": 14,
+					"height": 13,
 					"stroke": "#FFFFFF",
 					"class": "Palette",
 					"textAlign": "center",
-					"text": ":xliff:Margins"
+					"text": ":xliff:Margins",
+					"fontTheme": "additional"
 				},
 				"textIndentRuler": {
 					"type": "ruler",
@@ -413,11 +414,12 @@
 					"top": 320,
 					"left": 40,
 					"width": 180,
-					"height": 14,
+					"height": 13,
 					"stroke": "#FFFFFF",
 					"class": "Palette",
 					"textAlign": "center",
-					"text": ":xliff:Lists"
+					"text": ":xliff:Lists",
+					"fontTheme": "additional"
 				},
 				"lbl_Styles": {
 					"type": "text",
@@ -435,11 +437,12 @@
 					"top": 40,
 					"left": 40,
 					"width": 180,
-					"height": 14,
+					"height": 13,
 					"stroke": "#FFFFFF",
 					"class": "Palette",
 					"textAlign": "center",
-					"text": ":xliff:Text"
+					"text": ":xliff:Text",
+					"fontTheme": "additional"
 				},
 				"lineHeightRuler": {
 					"type": "ruler",
@@ -879,26 +882,26 @@
 	],
 	"editor": {
 		"groups": {
-			"Group": [
-				"bAlign1",
-				"bAlign2",
-				"bAlign3",
-				"bAlign4"
-			],
-			"Group24": [
-				"rb1",
-				"rb2"
+			"Group35": [
+				"TargetSelector1",
+				"TargetSelector2",
+				"TargetSelector3",
+				"TargetSelector4"
 			],
 			"Group1": [
 				"bAlign5",
 				"bAlign6",
 				"bAlign7"
 			],
-			"Group35": [
-				"TargetSelector1",
-				"TargetSelector2",
-				"TargetSelector3",
-				"TargetSelector4"
+			"Group24": [
+				"rb1",
+				"rb2"
+			],
+			"Group": [
+				"bAlign1",
+				"bAlign2",
+				"bAlign3",
+				"bAlign4"
 			]
 		},
 		"activeView": "Boxes",
@@ -949,5 +952,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 6
+	"geometryStamp": 12
 }

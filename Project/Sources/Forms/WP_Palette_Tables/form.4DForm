@@ -2,7 +2,7 @@
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Frames",
-	"inheritedForm": "WP_Z_Common",
+	"inheritedForm": "",
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
 	"width": 260,
@@ -48,14 +48,15 @@
 				},
 				"sepLbl_Frame": {
 					"type": "text",
-					"top": 120,
-					"left": 40,
-					"width": 180,
-					"height": 14,
+					"top": 121,
+					"left": 20,
+					"width": 220,
+					"height": 13,
 					"stroke": "#FFFFFF",
 					"class": "Palette",
 					"textAlign": "center",
-					"text": ":xliff:LabelRows"
+					"text": ":xliff:LabelRows",
+					"fontTheme": "additional"
 				},
 				"Separator3": {
 					"type": "rectangle",
@@ -69,14 +70,15 @@
 				},
 				"sepLbl_padding": {
 					"type": "text",
-					"top": 285,
-					"left": 40,
-					"width": 180,
-					"height": 14,
+					"top": 286,
+					"left": 20,
+					"width": 220,
+					"height": 13,
 					"stroke": "#FFFFFF",
 					"class": "Palette",
 					"textAlign": "center",
-					"text": ":xliff:LabelColumns"
+					"text": ":xliff:LabelColumns",
+					"fontTheme": "additional"
 				},
 				"btnInsertAboveRow": {
 					"type": "button",
@@ -166,14 +168,15 @@
 				},
 				"sepLbl_padding1": {
 					"type": "text",
-					"top": 450,
-					"left": 40,
-					"width": 180,
-					"height": 14,
+					"top": 451,
+					"left": 20,
+					"width": 220,
+					"height": 13,
 					"stroke": "#FFFFFF",
 					"class": "Palette",
 					"textAlign": "center",
-					"text": ":xliff:LabelCells"
+					"text": ":xliff:LabelCells",
+					"fontTheme": "additional"
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -268,14 +271,15 @@
 				},
 				"sepLbl_Frame1": {
 					"type": "text",
-					"top": 15,
-					"left": 40,
-					"width": 180,
-					"height": 14,
+					"top": 16,
+					"left": 20,
+					"width": 220,
+					"height": 13,
 					"stroke": "#FFFFFF",
 					"class": "Palette",
 					"textAlign": "center",
-					"text": ":xliff:Table"
+					"text": ":xliff:Table",
+					"fontTheme": "additional"
 				},
 				"btnInsertTable": {
 					"type": "button",
@@ -452,5 +456,6 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
-	}
+	},
+	"geometryStamp": 18
 }

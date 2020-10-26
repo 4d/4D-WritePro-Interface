@@ -51,9 +51,11 @@ If (Form:C1466.selection#Null:C1517)
 	End case 
 	
 	Form:C1466.document:=Form:C1466.selection[wk owner:K81:168]
-	WP GET ATTRIBUTES:C1345(Form:C1466.document;wk layout unit:K81:78;userUnit)
+	Form:C1466.body:=WP Get body:C1516(Form:C1466.document)
 	
-	  //userUnit:=wk unit cm
+	WP GET ATTRIBUTES:C1345(Form:C1466.document; wk layout unit:K81:78; userUnit)
+	
+	//userUnit:=wk unit cm
 	Case of 
 		: (userUnit=wk unit cm:K81:135)
 			
@@ -87,7 +89,7 @@ If (Form:C1466.selection#Null:C1517)
 			
 	End case 
 	
-	maxTabValue:=WP_Convert (10000;wk unit pt:K81:136;unitName)
+	maxTabValue:=WP_Convert(10000; wk unit pt:K81:136; unitName)
 	
 	$ok:=True:C214
 	
@@ -100,12 +102,12 @@ End if
 
 areaName:=Form:C1466.areaName
 
-  //Case of 
-  //: ($o.areaName#Null)
-  //areaName:=$o.areaName
-  //: ($o.zoneName#Null)
-  //areaName:=$o.zoneName
-  //End case 
+//Case of 
+//: ($o.areaName#Null)
+//areaName:=$o.areaName
+//: ($o.zoneName#Null)
+//areaName:=$o.zoneName
+//End case 
 
 If (Form:C1466.masterTable#Null:C1517)
 	masterTable:=Form:C1466.masterTable

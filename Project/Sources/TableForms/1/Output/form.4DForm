@@ -4,8 +4,8 @@
 	"bottomMargin": 10,
 	"markerHeader": 19,
 	"markerBody": 44,
-	"markerBreak": 47,
-	"markerFooter": 47,
+	"markerBreak": 44,
+	"markerFooter": 107,
 	"events": [
 		"onLoad",
 		"onValidate",
@@ -136,8 +136,44 @@
 					"height": 49,
 					"sizingX": "move",
 					"stroke": "#A8A8A8"
+				},
+				"Button": {
+					"type": "button",
+					"text": "Query",
+					"top": 64,
+					"left": 319,
+					"width": 189,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "All",
+					"top": 64,
+					"left": 186,
+					"width": 99,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm"
 				}
 			}
 		}
-	]
+	],
+	"geometryStamp": 33,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }

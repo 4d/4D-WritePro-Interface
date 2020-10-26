@@ -1,8 +1,6 @@
 ﻿{
 	"destination": "detailScreen",
 	"windowTitle": "4D Write Pro",
-	"width": 920,
-	"height": 860,
 	"markerBody": 217,
 	"markerBreak": 217,
 	"markerFooter": 227,
@@ -78,6 +76,8 @@
 						"onLoad",
 						"onLosingFocus",
 						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onAfterKeystroke",
 						"onSelectionChange",
 						"onAfterEdit"
 					],
@@ -181,8 +181,8 @@
 				},
 				"Button9": {
 					"type": "button",
-					"top": 268,
-					"left": 1085,
+					"top": 110,
+					"left": 954,
 					"width": 127,
 					"height": 21,
 					"sizingY": "move",
@@ -191,7 +191,8 @@
 					"method": "ObjectMethods/Button9.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"Button2": {
 					"type": "button",
@@ -235,20 +236,6 @@
 						"onClick"
 					]
 				},
-				"Button11": {
-					"type": "button",
-					"top": 773,
-					"left": 245,
-					"width": 154,
-					"height": 26,
-					"sizingY": "move",
-					"text": "Table in header",
-					"focusable": false,
-					"method": "ObjectMethods/Button11.4dm",
-					"events": [
-						"onClick"
-					]
-				},
 				"Variable": {
 					"type": "input",
 					"top": 722,
@@ -267,8 +254,8 @@
 				},
 				"Button13": {
 					"type": "button",
-					"top": 770,
-					"left": 63,
+					"top": 767,
+					"left": 29,
 					"width": 141,
 					"height": 21,
 					"sizingY": "move",
@@ -281,8 +268,8 @@
 				},
 				"Button14": {
 					"type": "button",
-					"top": 810,
-					"left": 63,
+					"top": 797,
+					"left": 29,
 					"width": 141,
 					"height": 21,
 					"sizingY": "move",
@@ -364,6 +351,21 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"Button17": {
+					"type": "button",
+					"top": 823,
+					"left": 740,
+					"width": 136,
+					"height": 20,
+					"text": "ShowTabPages",
+					"focusable": false,
+					"method": "ObjectMethods/Button17.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "move"
 				}
 			}
 		}
@@ -373,5 +375,14 @@
 		"kind": "form"
 	},
 	"method": "method.4dm",
-	"geometryStamp": 1
+	"geometryStamp": 34,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }

@@ -376,7 +376,7 @@
 					"top": 205,
 					"left": 30,
 					"width": 200,
-					"stroke": "#999999",
+					"stroke": "#696969",
 					"height": 0,
 					"startPoint": "topLeft"
 				},
@@ -570,5 +570,6 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
-	}
+	},
+	"geometryStamp": 14
 }

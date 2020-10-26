@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($1;$btnName)
+C_TEXT:C284($1; $btnName)
 C_LONGINT:C283($id)
 C_TEXT:C284($subform)
 C_TEXT:C284($btn)
@@ -10,20 +10,20 @@ Else
 	$btnName:=OBJECT Get name:C1087(Object current:K67:2)
 End if 
 
-$id:=oForm.palette.tabButtonNames.indexOf($btnName)
+$id:=oForm.SidebarTabs.buttonNames.indexOf($btnName)
 
 If ($id>=0)
 	
-	$subform:=oForm.palette.subforms[$id]
-	OBJECT SET SUBFORM:C1138(*;"PaletteSubform";$subform;"")
+	$subform:=oForm.SidebarTabs.subforms[$id]
+	OBJECT SET SUBFORM:C1138(*; "PaletteSubform"; $subform; "")
 	
-	For each ($btn;oForm.palette.tabButtonNames)
-		OBJECT SET FONT STYLE:C166(*;$btn;Plain:K14:1)
-		(OBJECT Get pointer:C1124(Object named:K67:5;$btn))->:=0
+	For each ($btn; oForm.SidebarTabs.buttonNames)
+		OBJECT SET FONT STYLE:C166(*; $btn; Plain:K14:1)
+		(OBJECT Get pointer:C1124(Object named:K67:5; $btn))->:=0
 	End for each 
 	
-	OBJECT SET FONT STYLE:C166(*;$btnName;Bold:K14:2)
-	(OBJECT Get pointer:C1124(Object named:K67:5;$btnName))->:=1
+	OBJECT SET FONT STYLE:C166(*; $btnName; Bold:K14:2)
+	(OBJECT Get pointer:C1124(Object named:K67:5; $btnName))->:=1
 	
 	
 	SET TIMER:C645(-1)

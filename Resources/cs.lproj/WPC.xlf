@@ -98,6 +98,10 @@ This file is distributed under the same license as the product package.-->
           <source>Style:</source>
           <target>Styl:</target>
         </trans-unit>
+        <trans-unit id="2HRYy6hkMPJ7DgLcWpD6cQ" resname="ParagraphBackgroundColor">
+          <source>Paragraph background color</source>
+          <target>Paragraph background color</target>
+        </trans-unit>
       </group>
       <group resname="PaletteBackgrounds">
         <trans-unit id="18" resname="BackgroundPicture">
@@ -191,6 +195,14 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="96" resname="TransformColon">
           <source>Transform:</source>
           <target>Transformovat:</target>
+        </trans-unit>
+        <trans-unit id="U+//oc3/u1IXrlP6L4mWAQ" resname="SpecialCharacters">
+          <source>Special characters</source>
+          <target state="new">Special characters</target>
+        </trans-unit>
+        <trans-unit id="SSmzUaLxeO3nXDjxyyb0gg" resname="SoftHyphen">
+          <source>Soft hyphen:</source>
+          <target state="new">Soft hyphen:</target>
         </trans-unit>
       </group>
       <group resname="PaletteFrame">
@@ -556,7 +568,7 @@ This file is distributed under the same license as the product package.-->
           <source>Select a destination.</source>
           <target>Vybrat cílení.</target>
         </trans-unit>
-        </group>
+      </group>
       <group resname="ListStyleNames">
         <trans-unit id="1" resname="None">
           <source>None</source>
@@ -874,7 +886,7 @@ This file is distributed under the same license as the product package.-->
           <source>Delete "&lt;1&gt;" style sheet?</source>
           <target>Vymazat "&lt;1&gt;" styl?</target>
         </trans-unit>
-      <trans-unit id="UNLqBZ0kwRTrWB3TzdCdnA" resname="StyleSheetPlaceHolder">
+        <trans-unit id="UNLqBZ0kwRTrWB3TzdCdnA" resname="StyleSheetPlaceHolder">
           <source>Style sheet name</source>
           <target>Název stylu</target>
         </trans-unit>
@@ -1216,6 +1228,34 @@ This file is distributed under the same license as the product package.-->
           <source>This action is unknown.</source>
           <target>Tato akce je neznámá.</target>
         </trans-unit>
+        <trans-unit id="fllZberc5UmVoY77eN6hWg" resname="AccentSensitive">
+          <source>Accent sensitive</source>
+          <target>Citlivé na přízvuk</target>
+        </trans-unit>
+        <trans-unit id="mWfZe71n2prS1bwT5Kl/7Q" resname="HiraganaSensitive">
+          <source>Hiragana sensitive</source>
+          <target>Hiragana sensitive</target>
+        </trans-unit>
+        <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="KatakanaWidthSensitive">
+          <source>Katakana width sensitive</source>
+          <target>Katakana width sensitive</target>
+        </trans-unit>
+        <trans-unit id="msIfGk9Zlbu60aimbEHQOw" resname="OccurrencesReplaced">
+          <source>&lt;x&gt; occurrences have been replaced.</source>
+          <target>&lt;x&gt; výskyty byly nahrazeny.</target>
+        </trans-unit>
+        <trans-unit id="ZUDcR0S8puBf1AHiVHqHWw" resname="SearchOptions">
+          <source>Search options</source>
+          <target>Možnosti hledání</target>
+        </trans-unit>
+        <trans-unit id="kzbkcXohhISsex2WHJcFtw" resname="ReplaceOptions">
+          <source>Replace options</source>
+          <target>Možnosti nahrazování</target>
+        </trans-unit>
+        <trans-unit id="emHWvgg7g+0idYuJ+FxPwA" resname="ReplaceBy">
+          <source>Replace by</source>
+          <target>Nahradit čím</target>
+        </trans-unit>
       </group>
       <group resname="PaletteTables">
         <trans-unit id="277" resname="InsertAbove">
@@ -1418,7 +1458,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="rfCY4nYj4m3OHuYW++DWlA" resname="maxPictureDPI">
           <source>Maximum DPI for pictures:</source>
-          <target >Maximum DPI pro obrázky:</target>
+          <target>Maximum DPI pro obrázky:</target>
         </trans-unit>
         <trans-unit id="EuJJLbs1LD5q4/WlL7w0XA" resname="cidHostDomainName">
           <source>CID Host domain name:</source>
@@ -1523,7 +1563,7 @@ Pokud toto nezvolíte, budou vypočítány pouze výrazy, jež ještě nebyly vy
           <source>Note: The headers, footers and anchored pictures will not be imported.</source>
           <target>Poznámka: Záhlaví, zápatí a ukotvené obrázky nebudou importovány.</target>
         </trans-unit>
-      <trans-unit id="n4aL7HhXL+o5ruwGL/guAQ" resname="InsertInTheDocument">
+        <trans-unit id="n4aL7HhXL+o5ruwGL/guAQ" resname="InsertInTheDocument">
           <source>Insert in the document…</source>
           <target>Vložit do dokumentu…</target>
         </trans-unit>

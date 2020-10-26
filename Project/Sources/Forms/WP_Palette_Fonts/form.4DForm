@@ -2,7 +2,7 @@
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Fonts",
-	"inheritedForm": "WP_Z_Common",
+	"inheritedForm": "",
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
 	"width": 260,
@@ -32,10 +32,30 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 500,
+					"height": 570,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
 					"borderRadius": 0
+				},
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 540,
+					"left": 210,
+					"width": 40,
+					"height": 18,
+					"fill": "#DDDDDD",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"Round Rectangle3": {
+					"type": "rectangle",
+					"top": 540,
+					"left": 160,
+					"width": 40,
+					"height": 18,
+					"fill": "#DDDDDD",
+					"stroke": "transparent",
+					"borderRadius": 4
 				},
 				"fontFamilly": {
 					"type": "dropdown",
@@ -389,11 +409,12 @@
 					"top": 400,
 					"left": 25,
 					"width": 210,
-					"height": 14,
+					"height": 13,
 					"stroke": "#FFFFFF",
 					"class": "Palette",
 					"textAlign": "center",
-					"text": ":xliff:Shadows"
+					"text": ":xliff:Shadows",
+					"fontTheme": "additional"
 				},
 				"fontSizeInput": {
 					"type": "input",
@@ -838,12 +859,77 @@
 						"onDataChange"
 					]
 				},
+				"Separator2": {
+					"type": "rectangle",
+					"top": 510,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_SpecialChars": {
+					"type": "text",
+					"top": 510,
+					"left": 25,
+					"width": 210,
+					"height": 13,
+					"stroke": "#FFFFFF",
+					"class": "Palette",
+					"textAlign": "center",
+					"text": ":xliff:SpecialCharacters",
+					"fontTheme": "additional"
+				},
+				"lbl_SoftHyphen": {
+					"type": "text",
+					"top": 542,
+					"left": 0,
+					"width": 150,
+					"height": 13,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:SoftHyphen",
+					"fontTheme": "additional"
+				},
+				"btn_InsertSH": {
+					"type": "button",
+					"top": 541,
+					"left": 165,
+					"width": 30,
+					"height": 16,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/SoftHyphen_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:InsertSoftHyphen",
+					"action": "insertSoftHyphen"
+				},
+				"btn_RemoveSH": {
+					"type": "button",
+					"top": 541,
+					"left": 215,
+					"width": 30,
+					"height": 16,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/SoftHyphen-del_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:RemoveSoftHyphen",
+					"action": "removeSoftHyphens"
+				},
 				"Rect2": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 500,
+					"height": 570,
 					"visibility": "hidden",
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
@@ -887,7 +973,9 @@
 				"underlineStylesValues",
 				"verticalAlignValues",
 				"textTransformValues",
-				"linethroughStylesValues"
+				"linethroughStylesValues",
+				"btn_InsertSH",
+				"btn_RemoveSH"
 			]
 		}
 	],
@@ -915,5 +1003,6 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
-	}
+	},
+	"geometryStamp": 240
 }

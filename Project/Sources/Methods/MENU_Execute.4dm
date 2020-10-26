@@ -1,17 +1,17 @@
 //%attributes = {"invisible":true}
-var $1,$action : Text
+var $1; $action : Text
 
-var $exportType,$win : Integer
-var $file,$options : Object
+var $exportType; $win : Integer
+var $file; $options : Object
 var $ptr : Pointer
-var $prompt,$path,$action,$rawText,$extension,$form,$memoErrorMethod,$formName : Text
+var $prompt; $path; $action; $rawText; $extension; $form; $memoErrorMethod; $formName : Text
 
-var $newDocument,$range : Object
+var $newDocument; $range : Object
 
 
 $action:=$1
 
-If (OB Is defined:C1231(Form:C1466;"areaPointer"))
+If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 	
 	$ptr:=Form:C1466.areaPointer
 	If (Not:C34(Is nil pointer:C315($ptr)))
@@ -22,7 +22,7 @@ If (OB Is defined:C1231(Form:C1466;"areaPointer"))
 					
 				: ($action="new…") | ($action="clear…")
 					
-					CONFIRM:C162(Get localized string:C991("ConfirmClear");Get localized string:C991("cancel");Get localized string:C991("Clear"))  //"Are you sure?")
+					CONFIRM:C162(Get localized string:C991("ConfirmClear"); Get localized string:C991("cancel"); Get localized string:C991("Clear"))  //"Are you sure?")
 					If (ok=0)  // OK = 1 = Cancel
 						$ptr->:=WP New:C1317
 					End if 
@@ -34,75 +34,75 @@ If (OB Is defined:C1231(Form:C1466;"areaPointer"))
 				: ($action="import@")
 					
 					$options:=New object:C1471
-					//If (False)
-					//$options.beforeDocument:=False
-					//$options.newDocument:=True
-					//$options.afterDocument:=False
-					//$options.cursorPosition:=False
-					//$options.extension:=$extension
-					
-					//$form:="D_Import"
-					//$win:=Open form window($form;Movable form dialog box;Horizontally centered;Vertically centered)
-					//DIALOG($form;$options)
-					//Else 
-					$options.newDocument:=True:C214
-					//ok:=1
-					//End if 
-					
-					//If (ok=1)
-					
-					$prompt:=Get localized string:C991("SelectDocumentOfType")
-					$extension:="txt;text;4w7;4wp"
-					
-					$path:=Select document:C905("";$extension;$prompt;0)  //;.4w7;.4wt //"Select a 4D Write document"
+					If (False:C215)
+						$options.beforeDocument:=False:C215
+						$options.newDocument:=True:C214
+						$options.afterDocument:=False:C215
+						$options.cursorPosition:=False:C215
+						$options.extension:=$extension
+						
+						$form:="D_Import"
+						$win:=Open form window:C675($form; Movable form dialog box:K39:8; Horizontally centered:K39:1; Vertically centered:K39:4)
+						DIALOG:C40($form; $options)
+					Else 
+						$options.newDocument:=True:C214
+						ok:=1
+					End if 
 					
 					If (ok=1)
-						$path:=document
-						$file:=Path to object:C1547($path;fk platform path:K87:2)
 						
+						$prompt:=Get localized string:C991("SelectDocumentOfType")
+						$extension:="txt;text;4w7;4wp;rtf"
 						
-						$memoErrorMethod:=Method called on error:C704
-						ON ERR CALL:C155("WP_IgnoreError")
+						$path:=Select document:C905(""; $extension; $prompt; 0)  //;.4w7;.4wt //"Select a 4D Write document"
 						
-						Case of 
-							: ($file.extension=".4wp") | ($file.extension=".4w7")
-								
-								$newDocument:=WP Import document:C1318(document)
-								
-							: ($file.extension=".txt") | ($file.extension=".text")
-								
-								$rawText:=Document to text:C1236(document;"UTF-8")
-								
-								$newDocument:=WP New:C1317
-								WP SET TEXT:C1574($newDocument;$rawText;wk replace:K81:177)
-								
-							Else 
-								// this should NEVER append
-								ALERT:C41(Get localized string:C991("thisTypeOfDocumentCantBeImported"))
-						End case 
-						
-						ON ERR CALL:C155($memoErrorMethod)
-						
-						Case of 
-							: ($options.beforeDocument)
-								$range:=WP Text range:C1341($ptr->;wk start text:K81:165;wk start text:K81:165)
-								WP INSERT DOCUMENT:C1411($range;$newDocument;wk replace:K81:177)
-								
-							: ($options.newDocument)
-								$ptr->:=$newDocument  // including hearder, footers, etc…
-								
-							: ($options.afterDocument)
-								$range:=WP Text range:C1341($ptr->;wk end text:K81:164;wk start text:K81:165)
-								WP INSERT DOCUMENT:C1411($range;$newDocument;wk replace:K81:177)
-								
-							: ($options.cursorPosition)
-								$range:=WP Selection range:C1340($ptr->)
-								WP INSERT DOCUMENT:C1411($range;$newDocument;wk replace:K81:177)
-								
-						End case 
-						
+						If (ok=1)
+							$path:=document
+							$file:=Path to object:C1547($path; fk platform path:K87:2)
+							
+							
+							$memoErrorMethod:=Method called on error:C704
+							ON ERR CALL:C155("WP_IgnoreError")
+							
+							Case of 
+								: ($file.extension=".4wp") | ($file.extension=".4w7") | ($file.extension=".rtf")
+									
+									$newDocument:=WP Import document:C1318(document)
+									
+								: ($file.extension=".txt") | ($file.extension=".text")
+									
+									$rawText:=Document to text:C1236(document; "UTF-8")
+									
+									$newDocument:=WP New:C1317
+									WP SET TEXT:C1574($newDocument; $rawText; wk replace:K81:177)
+									
+								Else 
+									// this should NEVER append
+									ALERT:C41(Get localized string:C991("thisTypeOfDocumentCantBeImported"))
+							End case 
+							
+							ON ERR CALL:C155($memoErrorMethod)
+							
+							Case of 
+								: ($options.beforeDocument)
+									$range:=WP Text range:C1341($ptr->; wk start text:K81:165; wk start text:K81:165)
+									WP INSERT DOCUMENT:C1411($range; $newDocument; wk replace:K81:177)
+									
+								: ($options.newDocument)
+									$ptr->:=$newDocument  // including hearder, footers, etc…
+									
+								: ($options.afterDocument)
+									$range:=WP Text range:C1341($ptr->; wk end text:K81:164; wk start text:K81:165)
+									WP INSERT DOCUMENT:C1411($range; $newDocument; wk replace:K81:177)
+									
+								: ($options.cursorPosition)
+									$range:=WP Selection range:C1340($ptr->)
+									WP INSERT DOCUMENT:C1411($range; $newDocument; wk replace:K81:177)
+									
+							End case 
+							
+						End if 
 					End if 
-					//End if 
 					
 				: ($action="export@")
 					
@@ -128,7 +128,7 @@ If (OB Is defined:C1231(Form:C1466;"areaPointer"))
 							$options[wk HTML pretty print:K81:322]:=False:C215
 							$options[wk recompute formulas:K81:320]:=True:C214
 							$options[wk optimized for:K81:317]:=wk screen:K81:319
-							$options[wk max picture DPI:K81:316]:=192
+							$options[wk max picture DPI:K81:316]:=96
 							
 							
 						: ($action="exportHTMLmime")
@@ -145,7 +145,7 @@ If (OB Is defined:C1231(Form:C1466;"areaPointer"))
 							$options[wk HTML pretty print:K81:322]:=False:C215
 							$options[wk recompute formulas:K81:320]:=True:C214
 							$options[wk optimized for:K81:317]:=wk screen:K81:319
-							$options[wk max picture DPI:K81:316]:=192
+							$options[wk max picture DPI:K81:316]:=96
 							//$options[wk CID host domain name]:="" // only for variables
 							
 						: ($action="export4dwritePro")  // Write PRO
@@ -186,30 +186,30 @@ If (OB Is defined:C1231(Form:C1466;"areaPointer"))
 						$options.extra.defaultScreenDPI:=192
 						
 						$formName:=$options.extra.form
-						$win:=Open form window:C675($formName;Movable form dialog box:K39:8;Horizontally centered:K39:1;Vertically centered:K39:4)
-						DIALOG:C40($options.extra.form;$options)
+						$win:=Open form window:C675($formName; Movable form dialog box:K39:8; Horizontally centered:K39:1; Vertically centered:K39:4)
+						DIALOG:C40($options.extra.form; $options)
 						
-						OB REMOVE:C1226($options;"extra")
+						OB REMOVE:C1226($options; "extra")
 					Else 
 						ok:=1
 					End if 
 					
 					If (ok=1)
 						
-						$path:=Select document:C905("";"";"";File name entry:K24:17)
+						$path:=Select document:C905(""; ""; ""; File name entry:K24:17)
 						
 						If (ok=1) & ($path#"")
 							
 							$path:=document
-							$file:=Path to object:C1547($path;fk platform path:K87:2)
+							$file:=Path to object:C1547($path; fk platform path:K87:2)
 							$file.extension:=$extension
 							$path:=$file.name+"."+$file.extension
 							
 							If ($exportType=-9999)
-								$rawText:=WP Get text:C1575($ptr->;wk expressions as value:K81:255)
-								TEXT TO DOCUMENT:C1237($path;$rawText)
+								$rawText:=WP Get text:C1575($ptr->; wk expressions as value:K81:255)
+								TEXT TO DOCUMENT:C1237($path; $rawText)
 							Else 
-								WP EXPORT DOCUMENT:C1337($ptr->;$path;$exportType;$options)  // even if $options = null
+								WP EXPORT DOCUMENT:C1337($ptr->; $path; $exportType; $options)  // even if $options = null
 							End if 
 							
 						End if 

@@ -98,6 +98,10 @@ This file is distributed under the same license as the product package.-->
           <source>Style:</source>
           <target>Estilo:</target>
         </trans-unit>
+        <trans-unit id="2HRYy6hkMPJ7DgLcWpD6cQ" resname="ParagraphBackgroundColor">
+          <source>Paragraph background color</source>
+          <target>Cor de fundo do parágrafo</target>
+        </trans-unit>
       </group>
       <group resname="PaletteBackgrounds">
         <trans-unit id="18" resname="BackgroundPicture">
@@ -191,6 +195,14 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="96" resname="TransformColon">
           <source>Transform:</source>
           <target>Transform:</target>
+        </trans-unit>
+        <trans-unit id="U+//oc3/u1IXrlP6L4mWAQ" resname="SpecialCharacters">
+          <source>Special characters</source>
+          <target>Caracteres especiais</target>
+        </trans-unit>
+        <trans-unit id="SSmzUaLxeO3nXDjxyyb0gg" resname="SoftHyphen">
+          <source>Soft hyphen:</source>
+          <target>Hífen condicional:</target>
         </trans-unit>
       </group>
       <group resname="PaletteFrame">
@@ -1216,6 +1228,34 @@ This file is distributed under the same license as the product package.-->
           <source>This action is unknown.</source>
           <target>Esta ação é desconhecida.</target>
         </trans-unit>
+        <trans-unit id="fllZberc5UmVoY77eN6hWg" resname="AccentSensitive">
+          <source>Accent sensitive</source>
+          <target>Sensível aos sotaques</target>
+        </trans-unit>
+        <trans-unit id="mWfZe71n2prS1bwT5Kl/7Q" resname="HiraganaSensitive">
+          <source>Hiragana sensitive</source>
+          <target>Sensível a Hiragana</target>
+        </trans-unit>
+        <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="KatakanaWidthSensitive">
+          <source>Katakana width sensitive</source>
+          <target>Sensível à largura Katakana</target>
+        </trans-unit>
+        <trans-unit id="msIfGk9Zlbu60aimbEHQOw" resname="OccurrencesReplaced">
+          <source>&lt;x&gt; occurrences have been replaced.</source>
+          <target>&lt;x&gt;currenências foram substituídas.</target>
+        </trans-unit>
+        <trans-unit id="ZUDcR0S8puBf1AHiVHqHWw" resname="SearchOptions">
+          <source>Search options</source>
+          <target>Opções de pesquisa</target>
+        </trans-unit>
+        <trans-unit id="kzbkcXohhISsex2WHJcFtw" resname="ReplaceOptions">
+          <source>Replace options</source>
+          <target>Opções de substituição</target>
+        </trans-unit>
+        <trans-unit id="emHWvgg7g+0idYuJ+FxPwA" resname="ReplaceBy">
+          <source>Replace by</source>
+          <target>Substitua por</target>
+        </trans-unit>
       </group>
       <group resname="PaletteTables">
         <trans-unit id="277" resname="InsertAbove">
@@ -1459,8 +1499,8 @@ Caso contrário, serão calculadas apenas fórmulas que nunca foram calculadas.
           <target>Fórmulas:</target>
         </trans-unit>
         <trans-unit id="TLfxhPbY2ZRWaf3J3RyOcw" resname="htmlEllipsis">
-          <source>HTML:</source>
-          <target>HTML:</target>
+          <source>HTML…</source>
+          <target>HTML…</target>
         </trans-unit>
         <trans-unit id="jqxt3L4zVABvifyA9e+8sA" resname="InfoPrettyPrint">
           <source>This option generates a document with more human-readable source code and increases document size.</source>

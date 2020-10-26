@@ -30,12 +30,13 @@
 				"TabArea": {
 					"type": "rectangle",
 					"top": 0,
-					"left": 5,
-					"width": 843,
+					"left": 0,
+					"width": 880,
 					"height": 20,
 					"visibility": "hidden",
 					"stroke": "#9400d3",
-					"fill": "transparent"
+					"fill": "#da70d6",
+					"sizingX": "grow"
 				},
 				"Rectangle": {
 					"type": "rectangle",
@@ -370,8 +371,8 @@
 				"tabBtn_Home": {
 					"type": "radio",
 					"top": 0,
-					"left": 15,
-					"width": 75,
+					"left": 7,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -391,8 +392,8 @@
 				"tabBtn_Insert": {
 					"type": "radio",
 					"top": 0,
-					"left": 97,
-					"width": 75,
+					"left": 86,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -412,8 +413,8 @@
 				"tabBtn_Margins": {
 					"type": "radio",
 					"top": 0,
-					"left": 179,
-					"width": 75,
+					"left": 165,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -433,8 +434,8 @@
 				"tabBtn_Printing": {
 					"type": "radio",
 					"top": 0,
-					"left": 425,
-					"width": 75,
+					"left": 402,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -454,8 +455,8 @@
 				"tabBtn_Images": {
 					"type": "radio",
 					"top": 0,
-					"left": 343,
-					"width": 75,
+					"left": 323,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -475,8 +476,8 @@
 				"tabBtn_Borders": {
 					"type": "radio",
 					"top": 0,
-					"left": 261,
-					"width": 75,
+					"left": 244,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -496,8 +497,8 @@
 				"tabBtn_Spell": {
 					"type": "radio",
 					"top": 0,
-					"left": 589,
-					"width": 75,
+					"left": 559,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -517,8 +518,8 @@
 				"tabBtn_Tables": {
 					"type": "radio",
 					"top": 0,
-					"left": 507,
-					"width": 75,
+					"left": 481,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -538,8 +539,8 @@
 				"tabBtn_Protection": {
 					"type": "radio",
 					"top": 0,
-					"left": 671,
-					"width": 75,
+					"left": 637,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -559,8 +560,8 @@
 				"tabBtn_ImportExport": {
 					"type": "radio",
 					"top": 0,
-					"left": 753,
-					"width": 75,
+					"left": 715,
+					"width": 80,
 					"height": 20,
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
@@ -576,6 +577,25 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"Button": {
+					"type": "button",
+					"text": "LOREM",
+					"top": 477,
+					"left": 1246,
+					"width": 138,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": true,
+					"shortcutAlt": true,
+					"shortcutKey": "l",
+					"method": "ObjectMethods/Button.4dm",
+					"focusable": false,
+					"sizingX": "move"
 				}
 			}
 		},
@@ -657,8 +677,6 @@
 					"height": 20,
 					"dataSource": "WP_FontFamilly",
 					"focusable": false,
-					"fontFamily": ".SF NS Text",
-					"fontSize": 11,
 					"method": "ObjectMethods/WP.4dm",
 					"events": [
 						"onDataChange"
@@ -668,7 +686,7 @@
 					"type": "checkbox",
 					"top": 59,
 					"left": 10,
-					"width": 30,
+					"width": 28,
 					"height": 24,
 					"tooltip": ":xliff:bold",
 					"action": "fontBold",
@@ -689,8 +707,8 @@
 				"cbItalic": {
 					"type": "checkbox",
 					"top": 59,
-					"left": 40,
-					"width": 30,
+					"left": 38,
+					"width": 28,
 					"height": 24,
 					"tooltip": ":xliff:italic",
 					"action": "fontItalic",
@@ -711,8 +729,8 @@
 				"btn_underline": {
 					"type": "checkbox",
 					"top": 59,
-					"left": 70,
-					"width": 30,
+					"left": 66,
+					"width": 28,
 					"height": 24,
 					"tooltip": ":xliff:underline",
 					"action": "fontUnderline",
@@ -733,8 +751,8 @@
 				"btn_strikethrough": {
 					"type": "checkbox",
 					"top": 59,
-					"left": 100,
-					"width": 30,
+					"left": 94,
+					"width": 28,
 					"height": 24,
 					"tooltip": ":xliff:strikethrough",
 					"action": "fontLinethrough",
@@ -749,9 +767,9 @@
 				},
 				"btn_subScript": {
 					"type": "checkbox",
-					"top": 59,
-					"left": 130,
-					"width": 30,
+					"top": 58,
+					"left": 122,
+					"width": 28,
 					"height": 24,
 					"tooltip": ":xliff:subscript",
 					"action": "fontSubscript",
@@ -766,9 +784,9 @@
 				},
 				"btn_superScript": {
 					"type": "checkbox",
-					"top": 59,
-					"left": 160,
-					"width": 30,
+					"top": 58,
+					"left": 150,
+					"width": 28,
 					"height": 24,
 					"tooltip": ":xliff:superscript",
 					"action": "fontSuperscript",
@@ -852,7 +870,7 @@
 				"Line12": {
 					"type": "line",
 					"top": 59,
-					"left": 205,
+					"left": 195,
 					"height": 24,
 					"stroke": "#888888",
 					"width": 0,
@@ -995,8 +1013,6 @@
 					"height": 20,
 					"tooltip": ":xliff:size",
 					"focusable": false,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
 					"action": "fontSize"
 				},
 				"Line6": {
@@ -1028,10 +1044,10 @@
 				},
 				"Popup Dropdown List2": {
 					"type": "dropdown",
-					"top": 32,
+					"top": 30,
 					"left": 355,
 					"width": 70,
-					"height": 17,
+					"height": 20,
 					"tooltip": ":xliff:lists",
 					"focusable": false,
 					"action": "listStyleType"
@@ -1212,9 +1228,39 @@
 					"top": 60,
 					"left": 600,
 					"width": 165,
-					"height": 17,
+					"height": 20,
 					"focusable": false,
 					"method": "ObjectMethods/Stylesheet_Names.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"WP1": {
+					"type": "dropdown",
+					"top": 399,
+					"left": 916,
+					"width": 120,
+					"height": 17,
+					"dataSource": "WP_fontLongName",
+					"focusable": false,
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"method": "ObjectMethods/WP1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"WP2": {
+					"type": "dropdown",
+					"top": 377,
+					"left": 916,
+					"width": 120,
+					"height": 18,
+					"dataSource": "WP_fontStyle",
+					"focusable": false,
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"method": "ObjectMethods/WP2.4dm",
 					"events": [
 						"onDataChange"
 					]
@@ -1241,36 +1287,6 @@
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 44,
 					"text": "4D Write Pro Toolbar"
-				},
-				"WP1": {
-					"type": "dropdown",
-					"top": 399,
-					"left": 916,
-					"width": 120,
-					"height": 17,
-					"dataSource": "WP_fontLongName",
-					"focusable": false,
-					"fontFamily": ".SF NS Text",
-					"fontSize": 9,
-					"method": "ObjectMethods/WP1.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"WP2": {
-					"type": "dropdown",
-					"top": 377,
-					"left": 916,
-					"width": 120,
-					"height": 18,
-					"dataSource": "WP_fontStyle",
-					"focusable": false,
-					"fontFamily": ".SF NS Text",
-					"fontSize": 9,
-					"method": "ObjectMethods/WP2.4dm",
-					"events": [
-						"onDataChange"
-					]
 				}
 			}
 		},
@@ -1437,7 +1453,7 @@
 				"btn_visibleHeaders": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 520,
+					"left": 550,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHeaders",
@@ -1450,7 +1466,7 @@
 				"btn_visibleFooters": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 550,
+					"left": 580,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideFooters",
@@ -1463,7 +1479,7 @@
 				"btn_visibleHorizontalRuler": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 610,
+					"left": 640,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHiddenHorizontalRuler",
@@ -1476,7 +1492,7 @@
 				"btn_visibleHiddenChars": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 520,
+					"left": 550,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHiddenChars",
@@ -1489,7 +1505,7 @@
 				"btn_visiblePageFrames": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 580,
+					"left": 610,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideFrames",
@@ -1501,14 +1517,12 @@
 				},
 				"Popup_zoom": {
 					"type": "dropdown",
-					"top": 63,
-					"left": 580,
+					"top": 60,
+					"left": 610,
 					"width": 90,
-					"height": 18,
+					"height": 20,
 					"tooltip": ":xliff:zoom",
 					"focusable": false,
-					"fontFamily": ".SF NS Text",
-					"fontSize": 11,
 					"action": "zoom"
 				},
 				"Line2": {
@@ -1516,14 +1530,14 @@
 					"top": 30,
 					"left": 295,
 					"height": 50,
-					"stroke": "#888888",
+					"stroke": "#696969",
 					"width": 0,
 					"startPoint": "topLeft"
 				},
 				"Line5": {
 					"type": "line",
 					"top": 30,
-					"left": 505,
+					"left": 535,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -1532,9 +1546,9 @@
 				"Line3": {
 					"type": "line",
 					"top": 30,
-					"left": 685,
+					"left": 715,
 					"height": 50,
-					"stroke": "#888888",
+					"stroke": "#696969",
 					"width": 0,
 					"startPoint": "topLeft"
 				},
@@ -1626,7 +1640,7 @@
 				"zoomIcon": {
 					"type": "picture",
 					"top": 60,
-					"left": 555,
+					"left": 585,
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
@@ -1717,7 +1731,7 @@
 				"btn_visibleVerticalRuler": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 640,
+					"left": 670,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHiddenVerticalRuler",
@@ -1726,50 +1740,109 @@
 					"icon": "/RESOURCES/Images/Toolbar1/View/RulerV_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
+				},
+				"btn_insertTime1": {
+					"type": "button",
+					"top": 30,
+					"left": 500,
+					"width": 30,
+					"height": 24,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/SoftHyphen_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:InsertSoftHyphen",
+					"action": "insertSoftHyphen"
+				},
+				"btn_insertTime2": {
+					"type": "button",
+					"top": 60,
+					"left": 500,
+					"width": 30,
+					"height": 24,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/SoftHyphen-del_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:RemoveSoftHyphen",
+					"action": "removeSoftHyphens"
 				}
 			},
 			"entryOrder": [
-				"Popup_zoom"
+				"Popup_zoom",
+				"btn_insertTime1",
+				"btn_insertTime2",
+				"URLlabel",
+				"URLurl",
+				"VirtualExpression",
+				"TrueExpression",
+				"btn_insertPageBreak",
+				"btn_insertSectiobBreak",
+				"btn_insertImage",
+				"btn_insertPageCount",
+				"btn_insertPageNumber",
+				"btn_insertTime",
+				"btn_InsertDate",
+				"btn_insertExpression",
+				"btn_computeExpression",
+				"btn_freezeExpressions",
+				"btn_visibleHeaders",
+				"btn_visibleFooters",
+				"btn_visibleHorizontalRuler",
+				"btn_visibleHiddenChars",
+				"btn_visiblePageFrames",
+				"btn_pageModePage",
+				"btn_pageModeDraft",
+				"btn_pageModeEmbedded",
+				"btn_showHide4Dexpressions",
+				"btn_insertColumnBreak",
+				"btn_visibleVerticalRuler"
 			]
 		},
 		{
 			"objects": {
 				"popPaddingTop": {
 					"type": "dropdown",
-					"top": 33,
+					"top": 32,
 					"left": 620,
 					"width": 80,
-					"height": 18,
+					"height": 20,
 					"tooltip": ":xliff:paddingTop",
 					"focusable": false,
 					"action": "paragraph/paddingTop"
 				},
 				"popPaddingBottom": {
 					"type": "dropdown",
-					"top": 64,
+					"top": 60,
 					"left": 620,
 					"width": 80,
-					"height": 18,
+					"height": 20,
 					"tooltip": ":xliff:paddingBottom",
 					"focusable": false,
 					"action": "paragraph/paddingBottom"
 				},
 				"popPaddingLeft": {
 					"type": "dropdown",
-					"top": 33,
+					"top": 32,
 					"left": 520,
 					"width": 80,
-					"height": 18,
+					"height": 20,
 					"tooltip": ":xliff:paddingLeft",
 					"focusable": false,
 					"action": "paragraph/paddingLeft"
 				},
 				"popPaddingRight": {
 					"type": "dropdown",
-					"top": 64,
+					"top": 60,
 					"left": 520,
 					"width": 80,
-					"height": 18,
+					"height": 20,
 					"tooltip": ":xliff:paddingRight",
 					"focusable": false,
 					"action": "paragraph/paddingRight"
@@ -1794,40 +1867,40 @@
 				},
 				"popMarginTop": {
 					"type": "dropdown",
-					"top": 34,
+					"top": 32,
 					"left": 350,
 					"width": 80,
-					"height": 17,
+					"height": 20,
 					"tooltip": ":xliff:marginTop",
 					"focusable": false,
 					"action": "paragraph/marginTop"
 				},
 				"popMarginBottom": {
 					"type": "dropdown",
-					"top": 64,
+					"top": 60,
 					"left": 350,
 					"width": 80,
-					"height": 17,
+					"height": 20,
 					"tooltip": ":xliff:marginBottom",
 					"focusable": false,
 					"action": "paragraph/marginBottom"
 				},
 				"popMarginLeft": {
 					"type": "dropdown",
-					"top": 34,
+					"top": 32,
 					"left": 250,
 					"width": 80,
-					"height": 17,
+					"height": 20,
 					"tooltip": ":xliff:marginLeft",
 					"focusable": false,
 					"action": "paragraph/marginLeft"
 				},
 				"popMarginRight": {
 					"type": "dropdown",
-					"top": 64,
+					"top": 60,
 					"left": 250,
 					"width": 80,
-					"height": 17,
+					"height": 20,
 					"tooltip": ":xliff:marginRight",
 					"focusable": false,
 					"action": "paragraph/marginRight"
@@ -1875,7 +1948,7 @@
 				},
 				"Image9": {
 					"type": "picture",
-					"top": 60,
+					"top": 58,
 					"left": 225,
 					"width": 24,
 					"height": 24,
@@ -1893,7 +1966,7 @@
 				},
 				"Image11": {
 					"type": "picture",
-					"top": 60,
+					"top": 58,
 					"left": 436,
 					"width": 24,
 					"height": 24,
@@ -1911,7 +1984,7 @@
 				},
 				"Image13": {
 					"type": "picture",
-					"top": 60,
+					"top": 58,
 					"left": 495,
 					"width": 24,
 					"height": 24,
@@ -1929,7 +2002,7 @@
 				},
 				"Image16": {
 					"type": "picture",
-					"top": 60,
+					"top": 58,
 					"left": 706,
 					"width": 24,
 					"height": 24,
@@ -1961,8 +2034,8 @@
 				},
 				"borderStyleColor": {
 					"type": "button",
-					"top": 158,
-					"left": 1358,
+					"top": 199,
+					"left": 989,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:bordersColor",
@@ -1974,8 +2047,8 @@
 				},
 				"borderStyleType": {
 					"type": "dropdown",
-					"top": 160,
-					"left": 1234,
+					"top": 201,
+					"left": 859,
 					"width": 120,
 					"height": 20,
 					"tooltip": ":xliff:bordersStyle",
@@ -1988,8 +2061,8 @@
 				},
 				"btnBorderStyleLeft": {
 					"type": "button",
-					"top": 302,
-					"left": 1241,
+					"top": 286,
+					"left": 1044,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderLeft",
@@ -2005,8 +2078,8 @@
 				},
 				"btnBorderStyleBottom": {
 					"type": "button",
-					"top": 332,
-					"left": 1241,
+					"top": 316,
+					"left": 1044,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderBottom",
@@ -2019,8 +2092,8 @@
 				},
 				"btnBorderStyleTop": {
 					"type": "button",
-					"top": 332,
-					"left": 1271,
+					"top": 316,
+					"left": 1074,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderTop",
@@ -2033,8 +2106,8 @@
 				},
 				"btnBorderStyleRight": {
 					"type": "button",
-					"top": 302,
-					"left": 1271,
+					"top": 286,
+					"left": 1074,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:borderRight",
@@ -2059,8 +2132,8 @@
 				},
 				"borderStyleWidth": {
 					"type": "dropdown",
-					"top": 160,
-					"left": 1393,
+					"top": 202,
+					"left": 1029,
 					"width": 90,
 					"height": 18,
 					"tooltip": ":xliff:borderWidth",
@@ -2101,8 +2174,8 @@
 				},
 				"Image17": {
 					"type": "picture",
-					"top": 321,
-					"left": 1361,
+					"top": 286,
+					"left": 442,
 					"width": 30,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
@@ -2198,40 +2271,40 @@
 				},
 				"Popup_columnCount": {
 					"type": "dropdown",
-					"top": 34,
+					"top": 30,
 					"left": 460,
 					"width": 70,
-					"height": 17,
+					"height": 20,
 					"tooltip": ":xliff:columnsCount",
 					"focusable": false,
 					"action": "section/columnCount"
 				},
 				"Popup_columnSpacing": {
 					"type": "dropdown",
-					"top": 62,
+					"top": 58,
 					"left": 460,
 					"width": 70,
-					"height": 18,
+					"height": 20,
 					"tooltip": ":xliff:columnsSpacing",
 					"focusable": false,
 					"action": "section/columnSpacing"
 				},
 				"Popup_columnRuleStyle": {
 					"type": "dropdown",
-					"top": 34,
+					"top": 30,
 					"left": 570,
 					"width": 90,
-					"height": 17,
+					"height": 20,
 					"tooltip": ":xliff:columnRuleStyle",
 					"focusable": false,
 					"action": "section/columnRuleStyle"
 				},
 				"Popup_columnRuleWidth": {
 					"type": "dropdown",
-					"top": 62,
+					"top": 58,
 					"left": 570,
 					"width": 90,
-					"height": 18,
+					"height": 20,
 					"tooltip": ":xliff:columnRuleWidth",
 					"focusable": false,
 					"action": "section/columnRuleWidth"
@@ -2251,7 +2324,7 @@
 				},
 				"Image3": {
 					"type": "picture",
-					"top": 30,
+					"top": 28,
 					"left": 430,
 					"width": 24,
 					"height": 24,
@@ -2260,7 +2333,7 @@
 				},
 				"Image4": {
 					"type": "picture",
-					"top": 30,
+					"top": 28,
 					"left": 545,
 					"width": 24,
 					"height": 24,
@@ -2269,7 +2342,7 @@
 				},
 				"Image5": {
 					"type": "picture",
-					"top": 60,
+					"top": 56,
 					"left": 430,
 					"width": 24,
 					"height": 24,
@@ -2278,7 +2351,7 @@
 				},
 				"Image6": {
 					"type": "picture",
-					"top": 60,
+					"top": 56,
 					"left": 545,
 					"width": 24,
 					"height": 24,
@@ -2362,7 +2435,7 @@
 				},
 				"btn_alignCenter1": {
 					"type": "checkbox",
-					"top": 60,
+					"top": 56,
 					"left": 340,
 					"width": 30,
 					"height": 24,
@@ -2375,7 +2448,7 @@
 				},
 				"btn_alignLeft1": {
 					"type": "checkbox",
-					"top": 60,
+					"top": 56,
 					"left": 310,
 					"width": 30,
 					"height": 24,
@@ -2388,7 +2461,7 @@
 				},
 				"btn_alignRight1": {
 					"type": "checkbox",
-					"top": 60,
+					"top": 56,
 					"left": 370,
 					"width": 30,
 					"height": 24,
@@ -2401,7 +2474,7 @@
 				},
 				"btn_alignMiddle": {
 					"type": "checkbox",
-					"top": 30,
+					"top": 28,
 					"left": 340,
 					"width": 30,
 					"height": 24,
@@ -2414,7 +2487,7 @@
 				},
 				"btn_alignTop": {
 					"type": "checkbox",
-					"top": 30,
+					"top": 28,
 					"left": 310,
 					"width": 30,
 					"height": 24,
@@ -2427,7 +2500,7 @@
 				},
 				"btn_alignBottom": {
 					"type": "checkbox",
-					"top": 30,
+					"top": 28,
 					"left": 370,
 					"width": 30,
 					"height": 24,
@@ -2458,10 +2531,10 @@
 				},
 				"Popup_anchorToPage": {
 					"type": "dropdown",
-					"top": 34,
+					"top": 32,
 					"left": 200,
 					"width": 80,
-					"height": 18,
+					"height": 17,
 					"tooltip": ":xliff:anchorToPage",
 					"focusable": false,
 					"action": "anchorPage",
@@ -2471,10 +2544,10 @@
 				},
 				"Popup-anchorToSection": {
 					"type": "dropdown",
-					"top": 61,
+					"top": 60,
 					"left": 200,
 					"width": 80,
-					"height": 18,
+					"height": 17,
 					"tooltip": ":xliff:AnchorToSection",
 					"focusable": false,
 					"action": "anchorSection",
@@ -2507,7 +2580,7 @@
 				},
 				"3D Button72": {
 					"type": "button",
-					"top": 30,
+					"top": 28,
 					"left": 160,
 					"width": 30,
 					"height": 24,
@@ -2519,7 +2592,7 @@
 				},
 				"3D Button76": {
 					"type": "button",
-					"top": 60,
+					"top": 56,
 					"left": 160,
 					"width": 30,
 					"height": 24,
@@ -2535,7 +2608,7 @@
 			"objects": {
 				"Image1": {
 					"type": "picture",
-					"top": 40,
+					"top": 42,
 					"left": 330,
 					"width": 30,
 					"height": 24,
@@ -2544,7 +2617,7 @@
 				},
 				"Popup_pageSize": {
 					"type": "dropdown",
-					"top": 43,
+					"top": 44,
 					"left": 150,
 					"width": 170,
 					"height": 20,
@@ -2583,7 +2656,7 @@
 				},
 				"Popup_pageOrientation": {
 					"type": "dropdown",
-					"top": 43,
+					"top": 44,
 					"left": 390,
 					"width": 170,
 					"height": 20,
@@ -2602,7 +2675,7 @@
 				},
 				"Image15": {
 					"type": "picture",
-					"top": 40,
+					"top": 42,
 					"left": 570,
 					"width": 30,
 					"height": 24,
@@ -3352,35 +3425,21 @@
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
-			"View 2": {
+			"Hidden": {
 				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text2"
 				]
 			},
-			"View 3": {
-				"visible": false
-			},
-			"View 4": {
-				"visible": false
-			},
-			"View 5": {
-				"visible": false
-			},
-			"View 7": {
-				"visible": false
-			},
-			"View 6": {
-				"visible": false
-			},
-			"View 8": {
-				"visible": false
-			},
-			"View 9": {
-				"visible": false
-			}
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 7": {},
+			"View 6": {},
+			"View 8": {},
+			"View 9": {}
 		}
 	},
-	"geometryStamp": 18
+	"geometryStamp": 1815
 }
