@@ -256,7 +256,8 @@
 					"method": "ObjectMethods/marginVerticalRuler.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"focusable": false
 				},
 				"marginHorizontalRuler": {
 					"type": "ruler",
@@ -269,7 +270,9 @@
 					"method": "ObjectMethods/marginHorizontalRuler.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"focusable": false,
+					"dataSource": ""
 				},
 				"listStyleNames": {
 					"type": "dropdown",
@@ -945,5 +948,6 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
-	}
+	},
+	"geometryStamp": 6
 }
