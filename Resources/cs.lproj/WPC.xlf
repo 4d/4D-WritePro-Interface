@@ -102,6 +102,22 @@ This file is distributed under the same license as the product package.-->
           <source>Paragraph background color</source>
           <target>Paragraph background color</target>
         </trans-unit>
+        <trans-unit id="J/YshwyIKycFvHMMljmKyA" resname="CopyRuler">
+          <source>Copy ruler</source>
+          <target>Kopírovat pravítko</target>
+        </trans-unit>
+        <trans-unit id="TbhlTOVpXGK5g/2set0oGw" resname="PasteRuler">
+          <source>Paste ruler</source>
+          <target>Vložit pravítko</target>
+        </trans-unit>
+        <trans-unit id="JP6IFI5cuF2FnMhVrQ8ukw" resname="IncreaseIndent">
+          <source>Increase indent</source>
+          <target>Zvětšit odsazení</target>
+        </trans-unit>
+        <trans-unit id="MzVx3kZk0LyQrDAWjJAUrA" resname="DecreaseIndent">
+          <source>Decrease indent</source>
+          <target>Zmenšit odsazení</target>
+        </trans-unit>
       </group>
       <group resname="PaletteBackgrounds">
         <trans-unit id="18" resname="BackgroundPicture">
@@ -1102,6 +1118,14 @@ This file is distributed under the same license as the product package.-->
           <source>Clear</source>
           <target>Odstranit</target>
         </trans-unit>
+        <trans-unit id="ZHzfpo82912nh75LjvWUsw" resname="Yes">
+          <source>Yes</source>
+          <target>Ano</target>
+        </trans-unit>
+        <trans-unit id="algTRD9sqjDsayCBIx1jig" resname="No">
+          <source>No</source>
+          <target>Ne</target>
+        </trans-unit>
       </group>
       <group resname="PaletteFindReplace">
         <trans-unit id="250" resname="CaseSensitive">
@@ -1582,6 +1606,24 @@ Pokud toto nezvolíte, budou vypočítány pouze výrazy, jež ještě nebyly vy
         <trans-unit id="PLXw3AoYuswFhizuV35Zgg" resname="Clear">
           <source>Clear</source>
           <target>Odstranit</target>
+        </trans-unit>
+      </group>
+      <group resname="DialogImportLog">
+        <trans-unit id="A4sgoBTWcmhTBII7qTJgAQ" resname="HeaderInfo">
+          <source>Some differences may appear in the imported document compared to the original.</source>
+          <target>Ve srovnání s originálem se mohou v importovaném dokumentu objevit některé rozdíly.</target>
+        </trans-unit>
+        <trans-unit id="sOiTU6STg6XmKEoEewJ0Cw" resname="BrowseTheImportLog">
+          <source>Would you like to browse the import log?</source>
+          <target>Chcete procházet protokol importu?</target>
+        </trans-unit>
+        <trans-unit id="cfsKcFg01whY9Os6iiMC0Q" resname="HoverOverTheLines">
+          <source>Hover over the lines for more information</source>
+          <target>Další informace zobrazíte přesunutím kurzoru</target>
+        </trans-unit>
+        <trans-unit id="gXld70IPpB0lJKIP67qp/Q" resname="ImportLog">
+          <source>Import log</source>
+          <target>Import log</target>
         </trans-unit>
       </group>
     </body>

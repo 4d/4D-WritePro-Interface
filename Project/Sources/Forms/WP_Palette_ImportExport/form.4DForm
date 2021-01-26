@@ -311,7 +311,7 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 510,
+					"height": 450,
 					"visibility": "hidden",
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
@@ -322,7 +322,7 @@
 					"top": 0,
 					"left": 10,
 					"width": 41,
-					"height": 510,
+					"height": 450,
 					"visibility": "hidden",
 					"stroke": "#AAAAAA",
 					"textAlign": "center",
@@ -372,5 +372,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 60
+	"geometryStamp": 79
 }
