@@ -767,8 +767,8 @@
 				},
 				"btn_subScript": {
 					"type": "checkbox",
-					"top": 421,
-					"left": 644,
+					"top": 58,
+					"left": 122,
 					"width": 28,
 					"height": 24,
 					"tooltip": ":xliff:subscript",
@@ -784,8 +784,8 @@
 				},
 				"btn_superScript": {
 					"type": "checkbox",
-					"top": 421,
-					"left": 672,
+					"top": 58,
+					"left": 150,
 					"width": 28,
 					"height": 24,
 					"tooltip": ":xliff:superscript",
@@ -836,7 +836,7 @@
 				"btn_shadowColor": {
 					"type": "button",
 					"top": 59,
-					"left": 190,
+					"left": 220,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:shadowColor",
@@ -853,7 +853,7 @@
 				"btn_colorShowDialog": {
 					"type": "button",
 					"top": 59,
-					"left": 250,
+					"left": 280,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:textColor",
@@ -870,7 +870,7 @@
 				"Line12": {
 					"type": "line",
 					"top": 59,
-					"left": 175,
+					"left": 195,
 					"height": 24,
 					"stroke": "#888888",
 					"width": 0,
@@ -879,7 +879,7 @@
 				"btn_backgroundColor": {
 					"type": "button",
 					"top": 59,
-					"left": 220,
+					"left": 250,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:backgroundColor",
@@ -1264,43 +1264,6 @@
 					"events": [
 						"onDataChange"
 					]
-				},
-				"btn_colorShowDialog1": {
-					"type": "button",
-					"top": 59,
-					"left": 280,
-					"width": 30,
-					"height": 24,
-					"tooltip": ":xliff:ParagraphBackgroundColor",
-					"action": "paragraph/backgroundColor/showDialog",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Home/ParagraphColor_24.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "toolbar",
-					"events": [
-						"onClick"
-					]
-				},
-				"btn_colorShowDialog2": {
-					"type": "button",
-					"top": 59,
-					"left": 130,
-					"width": 28,
-					"height": 24,
-					"action": "",
-					"focusable": false,
-					"icon": "",
-					"iconFrames": 4,
-					"textPlacement": "left",
-					"style": "custom",
-					"events": [
-						"onClick"
-					],
-					"text": "…",
-					"popupPlacement": "linked",
-					"fontWeight": "bold",
-					"method": "ObjectMethods/btn_colorShowDialog2.4dm"
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -2045,88 +2008,6 @@
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
 					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/PaddingBottom_24.png"
-				},
-				"Bouton": {
-					"type": "button",
-					"text": "",
-					"top": 26,
-					"left": 800,
-					"width": 40,
-					"height": 30,
-					"events": [
-						"onClick"
-					],
-					"style": "toolbar",
-					"method": "ObjectMethods/Bouton.4dm",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/RightShift_32.png",
-					"textPlacement": "center",
-					"iconFrames": 4,
-					"tooltip": ":xliff:IncreaseIndent"
-				},
-				"Bouton1": {
-					"type": "button",
-					"text": "",
-					"top": 26,
-					"left": 760,
-					"width": 40,
-					"height": 30,
-					"events": [
-						"onClick"
-					],
-					"style": "toolbar",
-					"method": "ObjectMethods/Bouton1.4dm",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/LeftShift_32.png",
-					"textPlacement": "center",
-					"iconFrames": 4,
-					"tooltip": ":xliff:DecreaseIndent"
-				},
-				"Line65": {
-					"type": "line",
-					"top": 30,
-					"left": 855,
-					"height": 50,
-					"stroke": "#888888",
-					"width": 0,
-					"startPoint": "topLeft"
-				},
-				"btn_copy1": {
-					"type": "button",
-					"top": 59,
-					"left": 760,
-					"width": 40,
-					"height": 24,
-					"action": "",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/CopyRuler_32.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "toolbar",
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btn_copy1.4dm",
-					"text": "",
-					"tooltip": ":xliff:CopyRuler"
-				},
-				"btn_paste1": {
-					"type": "button",
-					"top": 59,
-					"left": 800,
-					"width": 40,
-					"height": 24,
-					"action": "",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/PasteRuler_32.png",
-					"iconFrames": 4,
-					"style": "toolbar",
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btn_paste1.4dm",
-					"text": "",
-					"tooltip": ":xliff:PasteRuler"
 				}
 			}
 		},
@@ -3560,5 +3441,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 1773
+	"geometryStamp": 1815
 }

@@ -44,7 +44,7 @@ Case of
 			"tabBtn_Tables"; \
 			"tabBtn_Spell"; \
 			"tabBtn_Protection"; \
-			"tabBtn_ImportExport")
+			"tabBtn_ImportExport")  //ACI0101275 (remove "tabBtn_FindAndReplace")
 		
 		For each ($buttonName; $_buttonNames)
 			OBJECT SET FONT STYLE:C166(*; $buttonName; Bold:K14:2)  // Temporary to be sure they fit in space
@@ -52,10 +52,10 @@ Case of
 		
 		oForm.ToolbarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")
 		
-		oForm.ToolbarTabs.setButtonSizes(100; 20)  // height (temp) and height (fixed)
-		oForm.ToolbarTabs.setLabelMargins(2; 2)  //2px label margins
+		oForm.ToolbarTabs.setButtonSizes(100; 20)  //  height (temp) and height (fixed)
+		oForm.ToolbarTabs.setLabelMargins(2; 2)  //  2px label margins
 		oForm.ToolbarTabs.setButtonMargins(2; 0; 2; 0)  // left - top - right - bottom
-		oForm.ToolbarTabs.pageIndexes:=New collection:C1472(1; 2; 3; 4; 5; 6; 7; 8; 9; 10)
+		oForm.ToolbarTabs.pageIndexes:=New collection:C1472(1; 2; 3; 4; 5; 6; 7; 8; 9; 10)  //  ACI0101275 (remove "tabBtn_FindAndReplace")
 		
 		TB_GotoPage(oForm.ToolbarTabs.buttonNames[0])
 		
@@ -63,20 +63,6 @@ Case of
 		oForm.styleSheet:=New object:C1471
 		oForm.styleSheet.btnType:=New collection:C1472(1; 0; 0; 0; 0; 0)  // buttons (1 : pushed)
 		oForm.styleSheet.btnValue:=New collection:C1472(wk type paragraph:K81:191; wk type default:K81:190; wk type image:K81:192; wk type table:K81:222; wk type table row:K81:223; wk type table cell:K81:224)  // type of style sheet for each button
-		
-		
-		// temporarly
-		OBJECT SET ENABLED:C1123(*; "ssType3"; False:C215)
-		OBJECT SET ENABLED:C1123(*; "ssType4"; False:C215)
-		OBJECT SET ENABLED:C1123(*; "ssType5"; False:C215)
-		OBJECT SET ENABLED:C1123(*; "ssType6"; False:C215)
-		
-		If (Is macOS:C1572)
-			OBJECT SET VISIBLE:C603(*; "mac_@"; True:C214)
-		Else 
-			OBJECT SET VISIBLE:C603(*; "win_@"; True:C214)
-		End if 
-		
 		
 		SET TIMER:C645(-1)
 		
@@ -117,6 +103,9 @@ Case of
 								
 							: ($page=9)
 								WP_GetProtections(Form:C1466.selection)
+								
+							: ($page=11)  //  find & replace
+								UI_PaletteFindAndReplace
 								
 						End case 
 						

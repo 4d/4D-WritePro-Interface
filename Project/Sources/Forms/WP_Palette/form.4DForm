@@ -84,7 +84,7 @@
 				"tabBtn_Alignments": {
 					"type": "radio",
 					"top": 5,
-					"left": 23,
+					"left": 22,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -132,7 +132,7 @@
 				"tabBtn_Expressions": {
 					"type": "radio",
 					"top": 5,
-					"left": 128,
+					"left": 122,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -156,7 +156,7 @@
 				"tabBtn_Frames": {
 					"type": "radio",
 					"top": 5,
-					"left": 86,
+					"left": 82,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -180,7 +180,7 @@
 				"tabBtn_Tabulations": {
 					"type": "radio",
 					"top": 5,
-					"left": 44,
+					"left": 42,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -204,7 +204,7 @@
 				"tabBtn_Sizes": {
 					"type": "radio",
 					"top": 5,
-					"left": 65,
+					"left": 62,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -228,7 +228,7 @@
 				"tabBtn_Backgrounds": {
 					"type": "radio",
 					"top": 5,
-					"left": 107,
+					"left": 102,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -252,7 +252,7 @@
 				"tabBtn_Bookmarks": {
 					"type": "radio",
 					"top": 5,
-					"left": 150,
+					"left": 142,
 					"width": 20,
 					"height": 20,
 					"tooltip": {
@@ -276,7 +276,7 @@
 				"tabBtn_Stylesheets": {
 					"type": "radio",
 					"top": 5,
-					"left": 172,
+					"left": 161,
 					"width": 20,
 					"height": 20,
 					"tooltip": ":xliff:stylesheets",
@@ -298,7 +298,7 @@
 				"tabBtn_Tables": {
 					"type": "radio",
 					"top": 5,
-					"left": 194,
+					"left": 180,
 					"width": 20,
 					"height": 20,
 					"tooltip": ":xliff:Tables",
@@ -317,10 +317,31 @@
 						"onClick"
 					]
 				},
+				"tabBtn_FindAndReplace": {
+					"type": "radio",
+					"top": 5,
+					"left": 337,
+					"width": 20,
+					"height": 20,
+					"tooltip": ":xliff:FindAndReplace",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Light/find.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/Images/Light/selector.png",
+					"method": "ObjectMethods/tabBtn_FindAndReplace.4dm",
+					"events": [
+						"onClick"
+					]
+				},
 				"tabBtn_Protection": {
 					"type": "radio",
 					"top": 5,
-					"left": 216,
+					"left": 199,
 					"width": 20,
 					"height": 20,
 					"tooltip": ":xliff:stylesheets",
@@ -342,7 +363,7 @@
 				"tabBtn_ImportExport": {
 					"type": "radio",
 					"top": 5,
-					"left": 238,
+					"left": 218,
 					"width": 20,
 					"height": 20,
 					"tooltip": ":xliff:ImportExport",
@@ -360,6 +381,31 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"Rect1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 680,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 0,
+					"left": 10,
+					"width": 60,
+					"height": 680,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 50,
+					"textAngle": 270,
+					"text": "4D WritePro Widget"
 				},
 				"Button": {
 					"type": "button",
@@ -453,31 +499,6 @@
 					"width": 260,
 					"height": 0,
 					"stroke": "#808080"
-				},
-				"Rect1": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 650,
-					"visibility": "hidden",
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 8
-				},
-				"Text": {
-					"type": "text",
-					"top": 0,
-					"left": 10,
-					"width": 60,
-					"height": 650,
-					"visibility": "hidden",
-					"stroke": "#AAAAAA",
-					"textAlign": "center",
-					"fontFamily": ".Helvetica Neue DeskInterface",
-					"fontSize": 50,
-					"textAngle": 270,
-					"text": "4D WritePro Widget"
 				}
 			}
 		}
@@ -499,6 +520,7 @@
 			"View 7": {},
 			"View 8": {},
 			"Invisible By default": {
+				"visible": false,
 				"objects": [
 					"Rect1",
 					"Text"
@@ -506,5 +528,5 @@
 			}
 		}
 	},
-	"geometryStamp": 514
+	"geometryStamp": 512
 }

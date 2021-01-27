@@ -52,7 +52,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 					If (ok=1)
 						
 						$prompt:=Get localized string:C991("SelectDocumentOfType")
-						$extension:="txt;text;4w7;4wp;rtf;docx"
+						$extension:="txt;text;4w7;4wp;rtf"
 						
 						$path:=Select document:C905(""; $extension; $prompt; 0)  //;.4w7;.4wt //"Select a 4D Write document"
 						
@@ -75,19 +75,6 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 									
 									$newDocument:=WP New:C1317
 									WP SET TEXT:C1574($newDocument; $rawText; wk replace:K81:177)
-									
-								: ($file.extension=".docx")  // MAIN ONLY
-									$newDocument:=WP Import document:C1318(document)
-									If ($newDocument.importLog#Null:C1517)
-										CONFIRM:C162(Get localized string:C991("BrowseTheImportLog"); Get localized string:C991("Yes"); Get localized string:C991("No"))
-										
-										If (ok=1)
-											$win:=Open form window:C675("D_LogDisplay"; Movable form dialog box:K39:8; Horizontally centered:K39:1; Vertically centered:K39:4)
-											DIALOG:C40("D_LogDisplay"; $newDocument.importLog)
-											CLOSE WINDOW:C154($win)
-										End if 
-										
-									End if 
 									
 								Else 
 									// this should NEVER append
