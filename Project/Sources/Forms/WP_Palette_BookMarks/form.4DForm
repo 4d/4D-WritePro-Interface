@@ -215,7 +215,6 @@
 			"View 8": {},
 			"View 9": {
 				"visible": false,
-				"selectable": false,
 				"objects": [
 					"Rect2",
 					"Text"

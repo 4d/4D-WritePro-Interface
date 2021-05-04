@@ -102,6 +102,22 @@ This file is distributed under the same license as the product package.-->
           <source>Paragraph background color</source>
           <target>Color de fondo de párrafo</target>
         </trans-unit>
+        <trans-unit id="J/YshwyIKycFvHMMljmKyA" resname="CopyRuler">
+          <source>Copy ruler</source>
+          <target>Copiar la regla</target>
+        </trans-unit>
+        <trans-unit id="TbhlTOVpXGK5g/2set0oGw" resname="PasteRuler">
+          <source>Paste ruler</source>
+          <target>Pegar la regla</target>
+        </trans-unit>
+        <trans-unit id="JP6IFI5cuF2FnMhVrQ8ukw" resname="IncreaseIndent">
+          <source>Increase indent</source>
+          <target>Aumentar la indentación</target>
+        </trans-unit>
+        <trans-unit id="MzVx3kZk0LyQrDAWjJAUrA" resname="DecreaseIndent">
+          <source>Decrease indent</source>
+          <target>Disminuir la indentación</target>
+        </trans-unit>
       </group>
       <group resname="PaletteBackgrounds">
         <trans-unit id="18" resname="BackgroundPicture">
@@ -1102,6 +1118,14 @@ This file is distributed under the same license as the product package.-->
           <source>Clear</source>
           <target>Borrar</target>
         </trans-unit>
+        <trans-unit id="ZHzfpo82912nh75LjvWUsw" resname="Yes">
+          <source>Yes</source>
+          <target>Sí</target>
+        </trans-unit>
+        <trans-unit id="algTRD9sqjDsayCBIx1jig" resname="No">
+          <source>No</source>
+          <target>No</target>
+        </trans-unit>
       </group>
       <group resname="PaletteFindReplace">
         <trans-unit id="250" resname="CaseSensitive">
@@ -1584,6 +1608,24 @@ De lo contrario, solo se calcularán las fórmulas que nunca se hayan evaluado.
         <trans-unit id="PLXw3AoYuswFhizuV35Zgg" resname="Clear">
           <source>Clear</source>
           <target>Borrar</target>
+        </trans-unit>
+      </group>
+      <group resname="DialogImportLog">
+        <trans-unit id="A4sgoBTWcmhTBII7qTJgAQ" resname="HeaderInfo">
+          <source>Some differences may appear in the imported document compared to the original.</source>
+          <target>Pueden aparecer algunas diferencias en el documento importado en comparación con el original.</target>
+        </trans-unit>
+        <trans-unit id="sOiTU6STg6XmKEoEewJ0Cw" resname="BrowseTheImportLog">
+          <source>Would you like to browse the import log?</source>
+          <target>¿Le gustaría navegar por el historial de importación?</target>
+        </trans-unit>
+        <trans-unit id="cfsKcFg01whY9Os6iiMC0Q" resname="HoverOverTheLines">
+          <source>Hover over the lines for more information</source>
+          <target>Pase el ratón sobre las líneas para más información</target>
+        </trans-unit>
+        <trans-unit id="gXld70IPpB0lJKIP67qp/Q" resname="ImportLog">
+          <source>Import log</source>
+          <target>Historial de importación</target>
         </trans-unit>
       </group>
     </body>

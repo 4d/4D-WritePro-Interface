@@ -1,1 +1,0 @@
-WP SwitchToolbar ("WPtoolbar";"Toolbar1")
