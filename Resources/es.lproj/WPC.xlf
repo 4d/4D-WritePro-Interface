@@ -154,6 +154,26 @@ This file is distributed under the same license as the product package.-->
           <source>Position:</source>
           <target>Posición:</target>
         </trans-unit>
+        <trans-unit id="sg9lHFhI0LqrVxCysNWY7g" resname="MoveHyphen">
+          <source>Move:</source>
+          <target>Mover:</target>
+        </trans-unit>
+        <trans-unit id="yWaHkpmXJEV+bnWMCVsAVg" resname="PageHyphen">
+          <source>Page:</source>
+          <target>Página:</target>
+        </trans-unit>
+        <trans-unit id="33fb+8NhEANEWmPAFLSQjg" resname="SectionHyphen">
+          <source>Section:</source>
+          <target>Sección:</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Picture">
+          <source>Picture</source>
+          <target>Imagen</target>
+        </trans-unit>
+        <trans-unit id="xZf5yixaHWdVwEkN2lFVkg" resname="AdvancedSettingsEllipsis">
+          <source>Advanced settings…</source>
+          <target>Ajustes avanzados...</target>
+        </trans-unit>
       </group>
       <group resname="PaletteFonts">
         <trans-unit id="26" resname="FontColon">
@@ -219,6 +239,10 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="SSmzUaLxeO3nXDjxyyb0gg" resname="SoftHyphen">
           <source>Soft hyphen:</source>
           <target>Guión condicional:</target>
+        </trans-unit>
+        <trans-unit id="eAIqOo9+b5XNQn3YeW33eg" resname="FontsElipsis">
+          <source>Fonts…</source>
+          <target>Fuentes...</target>
         </trans-unit>
       </group>
       <group resname="PaletteFrame">
@@ -1213,8 +1237,8 @@ This file is distributed under the same license as the product package.-->
           <target>Buscar/Reemplazar</target>
         </trans-unit>
         <trans-unit id="260" resname="FullWord">
-          <source>Full word</source>
-          <target>Palabra completa</target>
+          <source>Full words only</source>
+          <target>Sólo palabras completas</target>
         </trans-unit>
         <trans-unit id="259" resname="KeepCharStyle">
           <source>Keep each character style</source>
@@ -1256,13 +1280,13 @@ This file is distributed under the same license as the product package.-->
           <source>Accent sensitive</source>
           <target>Sensible a los acentos</target>
         </trans-unit>
-        <trans-unit id="mWfZe71n2prS1bwT5Kl/7Q" resname="HiraganaSensitive">
-          <source>Hiragana sensitive</source>
-          <target>Sensible a Hiragana</target>
+        <trans-unit id="mWfZe71n2prS1bwT5Kl/7Q" resname="KanaSensitive">
+          <source>kana sensitive</source>
+          <target>Sensible a kana</target>
         </trans-unit>
-        <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="KatakanaWidthSensitive">
-          <source>Katakana width sensitive</source>
-          <target>Sensible al ancho Katakana</target>
+        <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="WidthSensitive">
+          <source>Width sensitive</source>
+          <target>Sensible al ancho</target>
         </trans-unit>
         <trans-unit id="msIfGk9Zlbu60aimbEHQOw" resname="OccurrencesReplaced">
           <source>&lt;x&gt; occurrences have been replaced.</source>
@@ -1279,6 +1303,18 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="emHWvgg7g+0idYuJ+FxPwA" resname="ReplaceBy">
           <source>Replace by</source>
           <target>Reemplazar por</target>
+        </trans-unit>
+        <trans-unit id="lp5g7Q738nbVfrHPkzSBPQ" resname="IncludeHeadersAndFooters">
+          <source>Include headers and footers</source>
+          <target>Incluir encabezados y pies de página</target>
+        </trans-unit>
+        <trans-unit id="pZv3LaV+16Uw8EoSBOzxLA" resname="KeyboardBased">
+          <source>Search based on '&lt;1&gt;' keyboard </source>
+          <target>Búsqueda basada en el teclado '&lt;1&gt;'</target>
+        </trans-unit>
+        <trans-unit id="4TFSNZU8Z6IMoq+NekNNIg" resname="OccurencesColon">
+          <source>Occurences:</source>
+          <target>Ocurrencias:</target>
         </trans-unit>
       </group>
       <group resname="PaletteTables">
@@ -1609,6 +1645,10 @@ De lo contrario, solo se calcularán las fórmulas que nunca se hayan evaluado.
           <source>Clear</source>
           <target>Borrar</target>
         </trans-unit>
+        <trans-unit id="DZMDM6LbSQUK7XnLqvm8+g" resname="Freeze">
+          <source/>
+          <target/>
+        </trans-unit>
       </group>
       <group resname="DialogImportLog">
         <trans-unit id="A4sgoBTWcmhTBII7qTJgAQ" resname="HeaderInfo">
@@ -1626,6 +1666,96 @@ De lo contrario, solo se calcularán las fórmulas que nunca se hayan evaluado.
         <trans-unit id="gXld70IPpB0lJKIP67qp/Q" resname="ImportLog">
           <source>Import log</source>
           <target>Historial de importación</target>
+        </trans-unit>
+      </group>
+      <group resname="DialogPictureSettings">
+        <trans-unit id="nyFYGQNHQerfVfW24a7oeQ" resname="Margins">
+          <source>Margins</source>
+          <target>Márgenes</target>
+        </trans-unit>
+        <trans-unit id="wL0rIpQnidAkY6wndHrvDg" resname="Padding">
+          <source>Padding</source>
+          <target>Márgenes internos</target>
+        </trans-unit>
+        <trans-unit id="PiyV+E6B2BOy4GNsS6PbpQ" resname="FormulaAndURL">
+          <source>Formula and URL</source>
+          <target>Fórmula y URL</target>
+        </trans-unit>
+        <trans-unit id="wRMExlUUxWxkESUYigSjbQ" resname="FormulaHyphen">
+          <source>Formula:</source>
+          <target>Fórmula:</target>
+        </trans-unit>
+        <trans-unit id="LLLtQzZjWPEMU5jxnvSvmw" resname="URLhyphen">
+          <source>URL:</source>
+          <target>URL:</target>
+        </trans-unit>
+        <trans-unit id="tX1lPAf1vFI1IN4iTPThbQ" resname="AlternateText">
+          <source>Alternate text</source>
+          <target>Texto alternativo</target>
+        </trans-unit>
+        <trans-unit id="lUrF6H2gRySYCSMqQIxzdA" resname="PagesAndSections">
+          <source>Pages and sections</source>
+          <target>Páginas y secciones</target>
+        </trans-unit>
+        <trans-unit id="lHXUAc0Aid8ZFUFZrz/6ew" resname="Alignments">
+          <source>Alignments</source>
+          <target>Alineaciones</target>
+        </trans-unit>
+        <trans-unit id="zRIujmEncGp6o57fw558gQ" resname="HorizontalHyphen">
+          <source>Horizontal:</source>
+          <target>Horizontal:</target>
+        </trans-unit>
+        <trans-unit id="8LsAUIhSSfbN0OJ6Lw53Tg" resname="VerticalHyphen">
+          <source>Vertical:</source>
+          <target>Vertical:</target>
+        </trans-unit>
+        <trans-unit id="OeBtEIyH9SPbvssc58l4CQ" resname="OriginHyphen">
+          <source>Origin:</source>
+          <target>Origen:</target>
+        </trans-unit>
+        <trans-unit id="catAtKcAEEEZdYnyhfv67Q" resname="OffsetHyphen">
+          <source>Offset:</source>
+          <target>Intervalo:</target>
+        </trans-unit>
+        <trans-unit id="65ama9WrvtHLrbrdjVJfaQ" resname="LayoutHyphen">
+          <source>Layout:</source>
+          <target>Posición:</target>
+        </trans-unit>
+        <trans-unit id="E7Im6nkWi6aJJv3eGzlZYA" resname="PageHyphen">
+          <source>Page:</source>
+          <target>Página:</target>
+        </trans-unit>
+        <trans-unit id="jWqVmNI+1acCwuigWZHmPg" resname="SectionHyphen">
+          <source>Section:</source>
+          <target>Sección:</target>
+        </trans-unit>
+        <trans-unit id="UsV1y7NogpqYqFKGqBnpdQ" resname="SectionNumberHyphen">
+          <source>Section number:</source>
+          <target>Número de sección:</target>
+        </trans-unit>
+        <trans-unit id="HA6gCicHrNfGJXvIau+4aw" resname="PageNumberHyphen">
+          <source>Page number:</source>
+          <target>Número de página:</target>
+        </trans-unit>
+        <trans-unit id="8zcpBgEZdV1mEBmM17EvNQ" resname="EditEllipsis">
+          <source>Edit…</source>
+          <target>Editar…</target>
+        </trans-unit>
+        <trans-unit id="d8Pz/T0Mn8VIE4BrsRYx7Q" resname="Clear">
+          <source>Clear</source>
+          <target>Borrar</target>
+        </trans-unit>
+        <trans-unit id="2iXsmivw0on7vNRnbY3/MQ" resname="Freeze">
+          <source>Freeze</source>
+          <target>Congelar</target>
+        </trans-unit>
+        <trans-unit id="Yum8Y38jHqiWZ72k7Jr0uQ" resname="PictureSettings">
+          <source>Picture settings</source>
+          <target>Parámetros imagen</target>
+        </trans-unit>
+        <trans-unit id="lP5Wk5MEdkpNOiSJgn9p8A" resname="OriginalSize">
+          <source>Original size</source>
+          <target>Tamaño original</target>
         </trans-unit>
       </group>
     </body>

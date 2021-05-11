@@ -11,4 +11,10 @@ Case of
 		//WP SET ATTRIBUTES(WParea; wk text shadow color; wk transparent)
 		//WP SET ATTRIBUTES(WParea; wk text underline style; wk none)
 		
+		
+		ARRAY TEXT:C222($_AllowedMethods; 0)
+		APPEND TO ARRAY:C911($_AllowedMethods; "zGetSamplePict")
+		APPEND TO ARRAY:C911($_AllowedMethods; "zGetSamplePictBW")
+		SET ALLOWED METHODS:C805($_AllowedMethods)
+		
 End case 

@@ -1,1 +1,1 @@
-﻿﻿WP_Ruler("paste")
+﻿WP_Ruler("paste")

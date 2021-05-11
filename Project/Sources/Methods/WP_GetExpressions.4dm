@@ -64,24 +64,32 @@ If (areaName#"")
 		OBJECT GET COORDINATES:C663(*; $areaName; $x1; $y1; $y1; $y2)
 		If (($x1+$y1+$y1+$y2)#0)
 			
+			// form in current page
+			
 			ST GET URL:C1288(*; $areaName; $label; $URL; $start; $end)
 			
 			$ptrLabel->:=$label
 			$ptrURL->:=$URL
 			
-			$memoExpression:=ST Get expression:C1287(*; $areaName; $start; $end)
-			$virtualExpression:=Parse formula:C1576($memoExpression; Formula out with virtual structure:K88:2)
-			$trueExpression:=Parse formula:C1576($virtualExpression; Formula in with virtual structure:K88:1)
+			// when the cursor is just prior the expression, the expression should be ""
 			
-			If ($memoExpression=$trueExpression)
-				$ptrTrueExpression->:=$trueExpression
-				$ptrVirtualExpression->:=$virtualExpression  //display expression using virtual structure (RL palettes only)
-			Else 
-				$ptrTrueExpression->:=""
-				$ptrVirtualExpression->:=""
+			$ptrTrueExpression->:=""
+			$ptrVirtualExpression->:=""
+			
+			If ($start#$end)
+				$memoExpression:=ST Get expression:C1287(*; $areaName; $start; $end)
+				$virtualExpression:=Parse formula:C1576($memoExpression; Formula out with virtual structure:K88:2)
+				$trueExpression:=Parse formula:C1576($virtualExpression; Formula in with virtual structure:K88:1)
+				
+				If ($memoExpression=$trueExpression)
+					$ptrTrueExpression->:=$trueExpression
+					$ptrVirtualExpression->:=$virtualExpression  //display expression using virtual structure (RL palettes only)
+				End if 
 			End if 
 			
 		Else 
+			
+			// try in subforms
 			
 			FORM GET OBJECTS:C898($_objects; $_variables; Form current page:K67:6)
 			$n:=Size of array:C274($_objects)
@@ -91,9 +99,7 @@ If (areaName#"")
 				End if 
 			End for 
 			
-			
 		End if 
-		
 		
 	End if 
 	

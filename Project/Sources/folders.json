@@ -150,6 +150,7 @@
 			"MENU_Display",
 			"MENU_Execute",
 			"UI_isProtected",
+			"UI_PaletteFindAndReplace",
 			"UI_PaletteImportExport",
 			"UI_PaletteProtect",
 			"UI_PaletteStylesheets",

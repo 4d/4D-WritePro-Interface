@@ -1,0 +1,407 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "4D Write Pro",
+	"windowMinWidth": 320,
+	"windowMinHeight": 350,
+	"markerBody": 217,
+	"markerBreak": 217,
+	"markerFooter": 227,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Champ": {
+					"type": "input",
+					"top": 26,
+					"left": 88,
+					"width": 214,
+					"height": 22,
+					"dataSource": "[SAMPLE:1]Title:3",
+					"fontSize": 18,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontTheme": "normal"
+				},
+				"WParea": {
+					"type": "write",
+					"top": 80,
+					"left": 20,
+					"width": 600,
+					"height": 960,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[SAMPLE:1]WP:2",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showPageFrames": true,
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					],
+					"contextMenu": "automatic",
+					"showSelection": true,
+					"enterable": true,
+					"showHiddenChars": true
+				},
+				"Bouton": {
+					"type": "button",
+					"top": 1064,
+					"left": 36,
+					"width": 107,
+					"height": 26,
+					"sizingY": "move",
+					"action": "previousRecord",
+					"text": "<",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed"
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 1063,
+					"left": 155,
+					"width": 107,
+					"height": 26,
+					"sizingY": "move",
+					"action": "nextRecord",
+					"text": ">",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 1063,
+					"left": 282,
+					"width": 84,
+					"height": 26,
+					"sizingY": "move",
+					"text": "Import",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed"
+				},
+				"Button3": {
+					"type": "button",
+					"top": 1063,
+					"left": 386,
+					"width": 84,
+					"height": 26,
+					"sizingY": "move",
+					"text": "Table+",
+					"focusable": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed"
+				},
+				"Button10": {
+					"type": "button",
+					"top": 1063,
+					"left": 490,
+					"width": 84,
+					"height": 26,
+					"sizingY": "move",
+					"text": "Export",
+					"focusable": false,
+					"method": "ObjectMethods/Button10.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed"
+				},
+				"Button": {
+					"type": "button",
+					"top": 1154,
+					"left": 460,
+					"width": 70,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "Buttons_13",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 1154,
+					"left": 540,
+					"width": 70,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "Buttons_13",
+					"focusable": false,
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 26,
+					"left": 8,
+					"width": 76,
+					"height": 22,
+					"textAlign": "right",
+					"fontSize": 18,
+					"text": "Titre :",
+					"fontTheme": "normal"
+				},
+				"WPwidget1": {
+					"type": "subform",
+					"top": 80,
+					"left": 650,
+					"width": 260,
+					"height": 460,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_Alignments",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				},
+				"WPwidget2": {
+					"type": "subform",
+					"top": 560,
+					"left": 650,
+					"width": 260,
+					"height": 360,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_Backgrounds",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				},
+				"WPwidget3": {
+					"type": "subform",
+					"top": 80,
+					"left": 930,
+					"width": 260,
+					"height": 440,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_BookMarks",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				},
+				"WPwidget4": {
+					"type": "subform",
+					"top": 540,
+					"left": 930,
+					"width": 260,
+					"height": 620,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_Expressions",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				},
+				"WPwidget5": {
+					"type": "subform",
+					"top": 80,
+					"left": 1210,
+					"width": 260,
+					"height": 570,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_Fonts",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				},
+				"WPwidget6": {
+					"type": "subform",
+					"top": 670,
+					"left": 1210,
+					"width": 260,
+					"height": 570,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_Frames",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				},
+				"WPwidget7": {
+					"type": "subform",
+					"top": 80,
+					"left": 1490,
+					"width": 260,
+					"height": 450,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_ImportExport",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				},
+				"WPwidget8": {
+					"type": "subform",
+					"top": 550,
+					"left": 1490,
+					"width": 260,
+					"height": 260,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_Protection",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				},
+				"WPwidget9": {
+					"type": "subform",
+					"top": 830,
+					"left": 1490,
+					"width": 260,
+					"height": 400,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_Sizes",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				},
+				"WPwidget10": {
+					"type": "subform",
+					"top": 80,
+					"left": 1770,
+					"width": 260,
+					"height": 430,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_StyleSheets",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				},
+				"WPwidget11": {
+					"type": "subform",
+					"top": 530,
+					"left": 1770,
+					"width": 260,
+					"height": 540,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_Tables",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				},
+				"WPwidget12": {
+					"type": "subform",
+					"top": 80,
+					"left": 2050,
+					"width": 260,
+					"height": 440,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"detailForm": "WP_Palette_Tabulations",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "none"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 378,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"rightMargin": 20,
+	"bottomMargin": 20
+}

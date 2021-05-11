@@ -10,11 +10,18 @@ Else
 	$btnName:=OBJECT Get name:C1087(Object current:K67:2)
 End if 
 
-$id:=oForm.ToolbarTabs.buttonNames.indexOf($btnName)
+$id:=oForm.ToolbarTabs.allButtonNames.indexOf($btnName)  // ACI0101694
+//$id:=oForm.ToolbarTabs.buttonNames.indexOf($btnName)  // ACI0101694
 
 If ($id>=0)
 	
 	$page:=oForm.ToolbarTabs.pageIndexes[$id]
+	
+	//$tempppppp:=0
+	//If (Shift down)
+	//$page:=$page+1
+	//End if 
+	
 	FORM GOTO PAGE:C247($page; *)
 	
 	For each ($btn; oForm.ToolbarTabs.buttonNames)

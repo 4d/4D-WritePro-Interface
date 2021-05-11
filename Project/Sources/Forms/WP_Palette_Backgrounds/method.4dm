@@ -83,6 +83,7 @@ Case of
 		End if 
 		
 		UI_PaletteBackgrounds
+		UI_PaletteImage
 		
 		If ($setupOK) & ($typeSelection#2)
 			

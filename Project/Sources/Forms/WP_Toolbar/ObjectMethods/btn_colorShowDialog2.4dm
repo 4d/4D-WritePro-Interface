@@ -3,11 +3,11 @@ $menuRef:=Create menu:C408
 
 APPEND MENU ITEM:C411($menuRef; Get localized string:C991("subscript"))
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "fontSubscript")
-SET MENU ITEM ICON:C984($menuRef; -1; "Path:/RESOURCES/Images/Toolbar1/Home/Subscript_24_1.png")
+SET MENU ITEM ICON:C984($menuRef; -1; "Path:/RESOURCES/Images/MenuIcons/Subscript_24_1.png")
 
 APPEND MENU ITEM:C411($menuRef; Get localized string:C991("superscript"))
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "fontSuperscript")
-SET MENU ITEM ICON:C984($menuRef; -1; "Path:/RESOURCES/Images/Toolbar1/Home/Superscript_24_1.png")
+SET MENU ITEM ICON:C984($menuRef; -1; "Path:/RESOURCES/Images/MenuIcons/Superscript_24_1.png")
 
 APPEND MENU ITEM:C411($menuRef; "-")
 
@@ -25,6 +25,14 @@ SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "tex
 
 APPEND MENU ITEM:C411($menuRef; Get localized string:C991("TextTransformNone"))
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "textTransform?value=none")
+
+APPEND MENU ITEM:C411($menuRef; "-")
+APPEND MENU ITEM:C411($menuRef; Get localized string:C991("FontsElipsis"))
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "font/showDialog")
+
+
+
+
 
 
 $choice:=Dynamic pop up menu:C1006($menuRef)

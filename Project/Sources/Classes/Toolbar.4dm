@@ -2,8 +2,9 @@ Class constructor
 	var $1 : Collection
 	var $2 : Text
 	
-	This:C1470.buttonNames:=$1
+	This:C1470.allButtonNames:=$1  // will never change  ACI0101694
 	
+	This:C1470.buttonNames:=$1  // Based on visible tabs only
 	This:C1470.buttonsWidth:=80
 	This:C1470.buttonsHeight:=20
 	

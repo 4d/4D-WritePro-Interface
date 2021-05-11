@@ -23,6 +23,10 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 		$page:=FORM Get current page:C276(*)
 		
 		Case of 
+				
+			: ($page=5)  // image
+				UI_PaletteImage
+				
 			: ($page=9)  // page 9 is special case
 				
 				UI_PaletteProtect  // common with palettes
@@ -30,6 +34,9 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 			: ($page=10)  // page 10 is also special case
 				
 				UI_PaletteImportExport
+			: ($page=11)  // page 11 find and replace
+				
+				UI_PaletteFindAndReplace
 				
 			Else 
 				

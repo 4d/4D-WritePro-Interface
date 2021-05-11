@@ -17,20 +17,17 @@ WP GET ATTRIBUTES:C1345($document; wk protection enabled:K81:307; $docProtected)
 
 Form:C1466.protectionEnabled:=$docProtected
 
-If ($range.type=2)  // anchored image
-	
-	$protection:=0
-	
-Else 
-	
-	//-------------------- paragraph ----------------------
-	
-	WP GET ATTRIBUTES:C1345($range; wk protected:K81:306; $protection)
-	If ($protection=wk mixed:K81:89)
-		$protection:=2  // semi-checked on palettes, checked on toolbar 
-	End if 
-	
-	Form:C1466.paragraphProtected:=$protection
+//-------------------- paragraph ----------------------
+
+WP GET ATTRIBUTES:C1345($range; wk protected:K81:306; $protection)
+If ($protection=wk mixed:K81:89)
+	$protection:=2  // semi-checked on palettes, checked on toolbar 
+End if 
+
+Form:C1466.paragraphProtected:=$protection
+
+
+If ($range.type#2)  // anchored picture (check added 2021/01/13 by RL)
 	
 	//---------------------- table ------------------------
 	If (WP Get elements:C1550($range; wk type table:K81:222).length>0)
@@ -66,8 +63,6 @@ Else
 	
 	//---------------------- cell ------------------------
 	
-	$range:=$1
-	
 	$cells:=WP Table get cells:C1477($range)
 	If (Not:C34($cells=Null:C1517))
 		
@@ -81,7 +76,13 @@ Else
 		$protection:=0
 	End if 
 	
+	Form:C1466.cellProtected:=$protection
+	
+Else 
+	
+	Form:C1466.tableProtected:=0
+	Form:C1466.rowProtected:=0
+	Form:C1466.cellProtected:=0
+	
 End if 
 
-
-Form:C1466.cellProtected:=$protection

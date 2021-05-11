@@ -1,0 +1,125 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "4D Write Pro",
+	"markerBody": 217,
+	"markerBreak": 217,
+	"markerFooter": 227,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"WPtoolbar": {
+					"type": "subform",
+					"top": 20,
+					"left": 20,
+					"width": 880,
+					"height": 90,
+					"sizingX": "grow",
+					"detailForm": "WP_Toolbar",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"dataSource": ""
+				},
+				"Button": {
+					"type": "button",
+					"top": 722,
+					"left": 740,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "",
+					"text": "Cancel",
+					"class": "Buttons_13",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false
+				},
+				"Button1": {
+					"type": "button",
+					"top": 722,
+					"left": 830,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "Buttons_13",
+					"focusable": false,
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"WParea": {
+					"type": "write",
+					"top": 110,
+					"left": 20,
+					"width": 880,
+					"height": 595,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.wp",
+					"hideFocusRing": true,
+					"spellcheck": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showVerticalRuler": false,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onAfterEdit"
+					],
+					"enterable": true,
+					"showSelection": true,
+					"keyboardDialect": "fr-be"
+				}
+			}
+		},
+		{
+			"objects": {}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"method": "method.4dm",
+	"geometryStamp": 57,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

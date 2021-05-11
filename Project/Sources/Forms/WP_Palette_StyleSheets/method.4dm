@@ -13,7 +13,6 @@ Case of
 			oForm:=New object:C1471
 		End if 
 		
-		
 		If (Undefined:C82(oForm.styleSheet))
 			oForm.styleSheet:=New object:C1471
 			oForm.styleSheet.btnType:=New collection:C1472(1; 0; 0; 0; 0; 0)
@@ -39,12 +38,12 @@ Case of
 		skinAppliedSub:=UI_ApplySkin
 		SET TIMER:C645(-1)
 		
-		SetupLocalVariables
+		//SetupLocalVariables    // ACI0101427  (removed here…)
 		
 	: (Form event code:C388=On Bound Variable Change:K2:52) | (Form event code:C388=On Timer:K2:25)
 		SET TIMER:C645(0)
 		
-		$setupOK:=SetupLocalVariables
+		$setupOK:=SetupLocalVariables  // ACI0101427  (…reactivated here)
 		
 		If (Not:C34(skinAppliedSub))  // 2nd chance
 			skinAppliedSub:=UI_ApplySkin

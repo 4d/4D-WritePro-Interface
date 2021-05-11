@@ -1,1 +1,1 @@
-﻿﻿WP_Ruler("Copy")
+﻿WP_Ruler("Copy")

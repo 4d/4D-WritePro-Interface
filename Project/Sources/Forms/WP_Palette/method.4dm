@@ -32,7 +32,8 @@ Case of
 			"tabBtn_Stylesheets"; \
 			"tabBtn_Tables"; \
 			"tabBtn_Protection"; \
-			"tabBtn_ImportExport")
+			"tabBtn_ImportExport"; \
+			"tabBtn_FindAndReplace")
 		
 		oForm.SidebarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")
 		
@@ -56,11 +57,12 @@ Case of
 			"WP_Palette_Stylesheets"; \
 			"WP_Palette_Tables"; \
 			"WP_Palette_Protection"; \
-			"WP_Palette_ImportExport")
+			"WP_Palette_ImportExport"; \
+			"WP_Palette_FindAndReplace")
 		
 		$param:=New object:C1471
 		$param.formName:="sidebar"
-		$param.buttonNames:=New collection:C1472("Fonts"; "Alignments"; "Tabulations"; "Sizes"; "Frames"; "Backgrounds"; "Expressions"; "Bookmarks"; "Stylesheets"; "Tables"; "Protection"; "ImportExport")
+		$param.buttonNames:=New collection:C1472("Fonts"; "Alignments"; "Tabulations"; "Sizes"; "Frames"; "Backgrounds"; "Expressions"; "Bookmarks"; "Stylesheets"; "Tables"; "Protection"; "ImportExport"; "FindAndReplace")  // remove ImportExport from 18R3
 		InitButtons($param)
 		
 		//(OBJECT Get pointer(Object named;"tabBtn_Fonts"))->:=1
@@ -87,7 +89,7 @@ Case of
 			skinAppliedMain:=UI_ApplySkin
 		End if 
 		
-		UI_Palette
+		//UI_Palette
 		
 		$ptrSource:=OBJECT Get pointer:C1124(Object subform container:K67:4)
 		$ptrTarget:=OBJECT Get pointer:C1124(Object named:K67:5; "PaletteSubform")
@@ -108,7 +110,7 @@ Case of
 			End if 
 		End if 
 		
-		UI_Palette
+		//UI_Palette
 		
 		
 	: (Form event code:C388=On Unload:K2:2)

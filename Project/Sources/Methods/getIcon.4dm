@@ -1,5 +1,4 @@
-//%attributes = {}
-
+//%attributes = {"invisible":true}
 var $1; $type : Text
 var $0 : Picture
 

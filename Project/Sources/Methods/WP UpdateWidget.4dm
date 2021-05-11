@@ -1,21 +1,21 @@
 //%attributes = {"invisible":true,"shared":true}
-  // this method is executed in the main form context
+// this method is executed in the main form context
 
-C_TEXT:C284($1;$widgetName)
-C_TEXT:C284($2;$areaName)
-C_OBJECT:C1216($3;$skin)
+C_TEXT:C284($1; $widgetName)
+C_TEXT:C284($2; $areaName)
+C_OBJECT:C1216($3; $skin)
 
 C_BOOLEAN:C305($send)
 C_OBJECT:C1216($WP_object)  // variable used manage to the 4D WritePro Widget
-C_POINTER:C301($widgetPtr;$areaPtr)  // Pointers on the area and widget
+C_POINTER:C301($widgetPtr; $areaPtr)  // Pointers on the area and widget
 C_POINTER:C301($p)
-C_TEXT:C284($areaName;$widgetName)  // "4DWritePro area" and "4DWritePro widget" object names
+C_TEXT:C284($areaName; $widgetName)  // "4DWritePro area" and "4DWritePro widget" object names
 
 Case of 
 	: (Count parameters:C259=1)
 		
 		$widgetName:=$1
-		$p:=OBJECT Get pointer:C1124(Object named:K67:5;$widgetName)
+		$p:=OBJECT Get pointer:C1124(Object named:K67:5; $widgetName)
 		If (Not:C34(Is nil pointer:C315($p)))
 			$p->:=$p->
 		End if 
@@ -25,9 +25,9 @@ Case of
 		$widgetName:=$1
 		$areaName:=$2
 		
-		  //-----------------------------------------------------------
-		$areaPtr:=OBJECT Get pointer:C1124(Object named:K67:5;$areaName)
-		$widgetPtr:=OBJECT Get pointer:C1124(Object named:K67:5;$widgetName)
+		//-----------------------------------------------------------
+		$areaPtr:=OBJECT Get pointer:C1124(Object named:K67:5; $areaName)
+		$widgetPtr:=OBJECT Get pointer:C1124(Object named:K67:5; $widgetName)
 		
 		
 		If ((Not:C34(Is nil pointer:C315($areaPtr))) & (Not:C34(Is nil pointer:C315($widgetPtr))))
@@ -37,13 +37,14 @@ Case of
 						
 						$WP_object:=New object:C1471
 						
-						$WP_object.selection:=WP Selection range:C1340(*;$areaName)
+						$WP_object.selection:=WP Selection range:C1340(*; $areaName)
 						$WP_object.areaPointer:=Self:C308
 						$WP_object.areaName:=$areaName  //mandatory to use ST Commands
 						$WP_object.masterTable:=Current form table:C627  // or a pointer or any other table (for formula)
-						$WP_object.spellCheck:=OBJECT Get auto spellcheck:C1174(*;$areaName)  // true or false according to the setting
+						$WP_object.spellCheck:=OBJECT Get auto spellcheck:C1174(*; $areaName)  // true or false according to the setting
 						
-						$WP_object.enterable:=OBJECT Get enterable:C1067(*;$WP_object.areaName)
+						$WP_object.enterable:=OBJECT Get enterable:C1067(*; $WP_object.areaName)
+						$WP_object.keyboard:=OBJECT Get keyboard layout:C1180(*; $WP_object.areaName)
 						
 						Case of 
 							: (Form event code:C388=On Losing Focus:K2:8)
@@ -74,16 +75,16 @@ Case of
 						End if 
 						
 					Else 
-						  // [compiled mode : page 2 of form (during on load)] OR [interpreted mode with dynamic var]
+						// [compiled mode : page 2 of form (during on load)] OR [interpreted mode with dynamic var]
 					End if 
 				Else 
-					  // bad type… programming error
+					// bad type… programming error
 				End if 
 			Else 
-				  // Interpreted mode and page 2
+				// Interpreted mode and page 2
 			End if 
 		Else 
-			  // Either $areaName or $widgetName is not well defined
+			// Either $areaName or $widgetName is not well defined
 		End if 
 		
 End case 

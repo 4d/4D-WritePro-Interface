@@ -585,7 +585,6 @@
 			"entryOrder": [
 				"btnDate",
 				"btnExpression",
-				"Group4",
 				"rbValues",
 				"rbExpressions",
 				"btnCompute",
@@ -596,7 +595,13 @@
 				"Subject",
 				"Author",
 				"Company",
-				"Notes"
+				"Notes",
+				"VirtualExpression",
+				"URLlabel",
+				"URLurl",
+				"Created",
+				"Modified",
+				"TrueExpression"
 			]
 		}
 	],
@@ -620,6 +625,7 @@
 			"View 8": {},
 			"View 9": {
 				"visible": false,
+				"selectable": false,
 				"objects": [
 					"Rect2",
 					"Text"

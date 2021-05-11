@@ -1,1 +1,1 @@
-﻿﻿WP_ShiftIndent("right")
+﻿WP_ShiftIndent("right")

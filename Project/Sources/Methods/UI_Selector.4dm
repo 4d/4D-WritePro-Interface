@@ -10,7 +10,7 @@ Else
 	$btnName:=OBJECT Get name:C1087(Object current:K67:2)
 End if 
 
-$id:=oForm.SidebarTabs.buttonNames.indexOf($btnName)
+$id:=oForm.SidebarTabs.allButtonNames.indexOf($btnName)  //ACI0101694
 
 If ($id>=0)
 	

@@ -11,20 +11,7 @@
 	"windowMaxHeight": 32767,
 	"events": [
 		"onLoad",
-		"onPageChange",
-		"onValidate",
-		"onClick",
-		"onDoubleClick",
-		"onOutsideCall",
-		"onBeginDragOver",
-		"onDragOver",
-		"onDrop",
-		"onAfterKeystroke",
-		"onMenuSelect",
-		"onPluginArea",
-		"onAfterEdit",
-		"onTimer",
-		"onBoundVariableChange"
+		"onClick"
 	],
 	"windowTitle": "window title",
 	"destination": "detailScreen",
@@ -38,7 +25,7 @@
 					"type": "checkbox",
 					"top": 40,
 					"left": 40,
-					"width": 260,
+					"width": 280,
 					"height": 16,
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.caseSensitive",
@@ -51,7 +38,7 @@
 				},
 				"cbFullWord": {
 					"type": "checkbox",
-					"top": 130,
+					"top": 140,
 					"left": 40,
 					"width": 260,
 					"height": 16,
@@ -66,7 +53,7 @@
 				},
 				"cbKeepCharStyle": {
 					"type": "checkbox",
-					"top": 190,
+					"top": 240,
 					"left": 40,
 					"width": 260,
 					"height": 16,
@@ -83,14 +70,14 @@
 					"stroke": "automatic",
 					"fontStyle": "normal"
 				},
-				"cbCaseSensitive1": {
+				"cbAccentSensitive": {
 					"type": "checkbox",
 					"top": 60,
 					"left": 40,
-					"width": 260,
+					"width": 280,
 					"height": 16,
 					"sizingX": "fixed",
-					"dataSource": "oForm.FR.accentSensitive",
+					"dataSource": "oForm.FR.diacriticSensitive",
 					"text": ":xliff:AccentSensitive",
 					"class": "Palette",
 					"focusable": false,
@@ -98,30 +85,31 @@
 						"onClick"
 					]
 				},
-				"cbCaseSensitive2": {
+				"cbKanaSensitive": {
 					"type": "checkbox",
 					"top": 80,
 					"left": 40,
-					"width": 260,
+					"width": 280,
 					"height": 16,
 					"sizingX": "fixed",
-					"dataSource": "oForm.FR.hiraganaSensitive",
-					"text": ":xliff:HiraganaSensitive",
+					"dataSource": "oForm.FR.kanaSensitive",
+					"text": ":xliff:KanaSensitive",
 					"class": "Palette",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"method": "ObjectMethods/cbKanaSensitive.4dm"
 				},
-				"cbCaseSensitive3": {
+				"cbWidthSensitive": {
 					"type": "checkbox",
 					"top": 100,
-					"left": 40,
+					"left": 60,
 					"width": 260,
 					"height": 16,
 					"sizingX": "fixed",
-					"dataSource": "oForm.FR.hiraganaWidthSensitive",
-					"text": ":xliff:KatakanaWidthSensitive",
+					"dataSource": "oForm.FR.widthSensitive",
+					"text": ":xliff:WidthSensitive",
 					"class": "Palette",
 					"focusable": false,
 					"events": [
@@ -141,24 +129,85 @@
 				"Texte1": {
 					"type": "text",
 					"text": ":xliff:ReplaceOptions",
-					"top": 160,
+					"top": 210,
 					"left": 20,
 					"width": 278,
 					"height": 16,
 					"stroke": "automatic",
 					"fontWeight": "normal"
+				},
+				"cbIncludeHeadersAndFooters": {
+					"type": "checkbox",
+					"top": 160,
+					"left": 40,
+					"width": 260,
+					"height": 16,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.includeHeadersAndFooters",
+					"text": ":xliff:IncludeHeadersAndFooters",
+					"class": "Palette",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"cbKeyboardBased": {
+					"type": "checkbox",
+					"top": 180,
+					"left": 40,
+					"width": 260,
+					"height": 16,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.keyboardBased",
+					"text": ":xliff:KeyboardBased",
+					"class": "Palette",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 129,
+					"left": 90,
+					"width": 180,
+					"height": 1,
+					"stroke": "#808080"
+				},
+				"Bouton1": {
+					"type": "button",
+					"text": ":xliff:ok",
+					"top": 290,
+					"left": 220,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"defaultButton": true,
+					"action": "accept"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 270,
+					"left": 90,
+					"width": 180,
+					"height": 1,
+					"stroke": "#808080"
 				}
 			}
 		}
 	],
-	"geometryStamp": 147,
-	"width": 320,
-	"height": 230,
+	"geometryStamp": 398,
+	"width": 340,
+	"height": 330,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"method": "method.4dm"
 }

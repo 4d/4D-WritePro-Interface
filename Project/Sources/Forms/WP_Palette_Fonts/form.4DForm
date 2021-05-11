@@ -103,7 +103,7 @@
 					"top": 64,
 					"left": 85,
 					"width": 95,
-					"height": 17,
+					"height": 12,
 					"dataSource": "oForm.fontSize",
 					"dataSourceTypeHint": "number",
 					"min": 9,
@@ -349,10 +349,10 @@
 				},
 				"shadowOffsetRuler": {
 					"type": "ruler",
-					"top": 444,
+					"top": 445,
 					"left": 135,
 					"width": 45,
-					"height": 17,
+					"height": 12,
 					"dataSource": "oForm.shadowOffset",
 					"dataSourceTypeHint": "number",
 					"min": 1,
@@ -361,7 +361,8 @@
 					"method": "ObjectMethods/shadowOffsetRuler.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"focusable": false
 				},
 				"ColorShadow": {
 					"type": "input",
@@ -975,7 +976,9 @@
 				"textTransformValues",
 				"linethroughStylesValues",
 				"btn_InsertSH",
-				"btn_RemoveSH"
+				"btn_RemoveSH",
+				"fontSizeInput",
+				"shadowOffsetInput"
 			]
 		}
 	],
@@ -1004,5 +1007,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 240
+	"geometryStamp": 499
 }

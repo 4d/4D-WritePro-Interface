@@ -1,0 +1,559 @@
+﻿{
+	"destination": "detailScreen",
+	"shared": true,
+	"windowTitle": "Sizes",
+	"inheritedForm": "",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 260,
+	"height": 620,
+	"markerBody": 500,
+	"markerBreak": 620,
+	"markerFooter": 620,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rect4": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 0,
+					"sizingX": "fixed"
+				},
+				"cbKeyboardBased": {
+					"type": "checkbox",
+					"top": 335,
+					"left": 20,
+					"width": 235,
+					"height": 16,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.keyboardBased",
+					"text": ":xliff:KeyboardBased",
+					"class": "Palette",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/cbKeyboardBased.4dm"
+				},
+				"occurencesInfo": {
+					"type": "input",
+					"left": 135,
+					"top": 71,
+					"width": 80,
+					"height": 17,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSource": "oForm.FR.occurences",
+					"stroke": "automatic",
+					"fontStyle": "normal",
+					"dataSourceTypeHint": "number",
+					"numberFormat": "###,##0;;0",
+					"textAlign": "left",
+					"fontWeight": "normal"
+				},
+				"OccurencesLabel": {
+					"type": "text",
+					"text": ":xliff:OccurencesColon",
+					"top": 71,
+					"left": 5,
+					"width": 125,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 397,
+					"left": 25,
+					"width": 210,
+					"height": 17,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.replace",
+					"class": "Palette",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onAfterEdit"
+					],
+					"hideFocusRing": true,
+					"fill": "automatic",
+					"borderStyle": "system",
+					"fontTheme": "main",
+					"fontSize": 14,
+					"fontWeight": "normal"
+				},
+				"Separator2": {
+					"type": "rectangle",
+					"top": 365,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4,
+					"sizingX": "fixed"
+				},
+				"Separator1": {
+					"type": "rectangle",
+					"top": 160,
+					"left": 30,
+					"width": 200,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4,
+					"sizingX": "fixed"
+				},
+				"sepLbl_paragraph": {
+					"type": "text",
+					"top": 365,
+					"left": 10,
+					"width": 240,
+					"height": 13,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"text": ":xliff:Replace",
+					"sizingX": "fixed"
+				},
+				"sepLbl_Picture1": {
+					"type": "text",
+					"top": 160,
+					"left": 40,
+					"width": 180,
+					"height": 13,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"text": ":xliff:Options",
+					"sizingX": "fixed"
+				},
+				"Separator3": {
+					"type": "rectangle",
+					"top": 15,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4,
+					"sizingX": "fixed"
+				},
+				"sepLbl_paragraph1": {
+					"type": "text",
+					"top": 15,
+					"left": 10,
+					"width": 240,
+					"height": 13,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"text": ":xliff:Find",
+					"sizingX": "fixed"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 47,
+					"left": 25,
+					"width": 210,
+					"height": 18,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.find",
+					"class": "Palette",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onAfterEdit"
+					],
+					"hideFocusRing": true,
+					"fill": "automatic",
+					"borderStyle": "system",
+					"fontTheme": "main",
+					"fontSize": 14,
+					"fontWeight": "normal",
+					"contextMenu": "automatic"
+				},
+				"cbCaseSensitive": {
+					"type": "checkbox",
+					"top": 185,
+					"left": 20,
+					"width": 235,
+					"height": 16,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.caseSensitive",
+					"text": ":xliff:CaseSensitive",
+					"class": "Palette",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/cbCaseSensitive.4dm"
+				},
+				"cbFullWord": {
+					"type": "checkbox",
+					"top": 295,
+					"left": 20,
+					"width": 235,
+					"height": 16,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.fullWord",
+					"text": ":xliff:FullWord",
+					"class": "Palette",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/cbFullWord.4dm"
+				},
+				"btnFindNext": {
+					"type": "button",
+					"top": 95,
+					"left": 40,
+					"width": 180,
+					"height": 22,
+					"sizingX": "fixed",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:FindNext",
+					"icon": "/RESOURCES/Images/Light/Arrow_Small_Right.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"method": "ObjectMethods/btnFindNext.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnReplaceAll": {
+					"type": "button",
+					"top": 495,
+					"left": 40,
+					"width": 180,
+					"height": 20,
+					"sizingX": "fixed",
+					"text": ":xliff:ReplaceAll",
+					"class": "Palette",
+					"focusable": false,
+					"method": "ObjectMethods/btnReplaceAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 400,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Rect1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 400,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"btnFindPrevious": {
+					"type": "button",
+					"top": 125,
+					"left": 40,
+					"width": 180,
+					"height": 22,
+					"sizingX": "fixed",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:FindPrevious",
+					"icon": "/RESOURCES/Images/Light/Arrow_Small_Left.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"method": "ObjectMethods/btnFindPrevious.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Separator4": {
+					"type": "rectangle",
+					"top": 530,
+					"left": 30,
+					"width": 200,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4,
+					"sizingX": "fixed"
+				},
+				"sepLbl_Picture2": {
+					"type": "text",
+					"top": 530,
+					"left": 40,
+					"width": 180,
+					"height": 13,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"text": ":xliff:Option",
+					"sizingX": "fixed"
+				},
+				"cbKeepCharStyle": {
+					"type": "checkbox",
+					"top": 555,
+					"left": 20,
+					"width": 235,
+					"height": 16,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.keepCharStyle",
+					"text": ":xliff:KeepCharStyle",
+					"class": "Palette",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnReplaceSingleAndFind": {
+					"type": "button",
+					"top": 465,
+					"left": 40,
+					"width": 180,
+					"height": 20,
+					"sizingX": "fixed",
+					"text": ":xliff:ReplaceAndNext",
+					"class": "Palette",
+					"focusable": false,
+					"method": "ObjectMethods/btnReplaceSingleAndFind.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnReplaceSingle": {
+					"type": "button",
+					"top": 435,
+					"left": 40,
+					"width": 180,
+					"height": 20,
+					"sizingX": "fixed",
+					"text": ":xliff:Replace",
+					"class": "Palette",
+					"focusable": false,
+					"method": "ObjectMethods/btnReplaceSingle.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbAccentSensitive": {
+					"type": "checkbox",
+					"top": 205,
+					"left": 20,
+					"width": 235,
+					"height": 16,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.diacriticSensitive",
+					"text": ":xliff:AccentSensitive",
+					"class": "Palette",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/cbAccentSensitive.4dm"
+				},
+				"cbKanaSensitive": {
+					"type": "checkbox",
+					"top": 225,
+					"left": 20,
+					"width": 235,
+					"height": 16,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.kanaSensitive",
+					"text": ":xliff:KanaSensitive",
+					"class": "Palette",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/cbKanaSensitive.4dm"
+				},
+				"cbWidthSensitive": {
+					"type": "checkbox",
+					"top": 245,
+					"left": 30,
+					"width": 225,
+					"height": 16,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.widthSensitive",
+					"text": ":xliff:WidthSensitive",
+					"class": "Palette",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/cbWidthSensitive.4dm"
+				},
+				"Texte": {
+					"type": "text",
+					"text": "ak case insensitive (2)\rak accent insensitive (4) \rak hiragana insensitive (8) \rak width insensitive (16) \rak whole word (32)        //occurences should match only full words\rwk find first (32768)  //find or replace first occurence only\rwk find reverse (65536) //reverse find (returns also ranges for occurences in reversed order)\rwk override protected (131072) //replace text in protected areas (on default do not replace text in protected areas)\rwk keep character style (262144) //try to preserve per character style while replacing text (on default replaced text uses original text first character style as WP SET TEXT)\rwk default (-1)  or ak default (0)          //wk default cannot be combinated - it means all sensitive, no whole word, search all",
+					"top": 185,
+					"left": 354,
+					"width": 1403,
+					"height": 276,
+					"fontTheme": "main"
+				},
+				"Line": {
+					"type": "line",
+					"top": 279,
+					"left": 20,
+					"width": 220,
+					"height": 1,
+					"stroke": "#808080"
+				},
+				"cbIncludeHeadersAndFooters": {
+					"type": "checkbox",
+					"top": 315,
+					"left": 20,
+					"width": 235,
+					"height": 16,
+					"sizingX": "fixed",
+					"dataSource": "oForm.FR.includeHeadersAndFooters",
+					"text": ":xliff:IncludeHeadersAndFooters",
+					"class": "Palette",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/cbIncludeHeadersAndFooters.4dm"
+				},
+				"Rect3": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 0
+				},
+				"Text": {
+					"type": "text",
+					"top": 0,
+					"left": 10,
+					"width": 41,
+					"height": 620,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4D WritePro Find & Replace"
+				},
+				"tempoMessage": {
+					"type": "input",
+					"left": 10,
+					"top": 581,
+					"width": 240,
+					"height": 30,
+					"enterable": false,
+					"focusable": false,
+					"fill": "automatic",
+					"borderStyle": "none",
+					"dataSource": "oForm.FR.message",
+					"stroke": "automatic",
+					"fontStyle": "normal",
+					"dataSourceTypeHint": "text",
+					"textAlign": "center",
+					"fontWeight": "normal",
+					"contextMenu": "none",
+					"visibility": "hidden"
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 0,
+					"left": 129,
+					"width": 1,
+					"height": 620,
+					"visibility": "hidden",
+					"stroke": "#dda0dd",
+					"strokeDashArray": [
+						3,
+						5
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"visible": false
+			},
+			"Grid": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 4": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 5": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 6": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 7": {
+				"visible": false,
+				"selectable": false
+			},
+			"View 8": {
+				"visible": false,
+				"selectable": false
+			},
+			"Titles (invisible)": {
+				"visible": false,
+				"objects": [
+					"Rect2",
+					"Rect1",
+					"Rect3",
+					"Text"
+				]
+			}
+		}
+	},
+	"geometryStamp": 1107,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

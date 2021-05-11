@@ -6,7 +6,6 @@ Case of
 			oForm:=New object:C1471
 		End if 
 		
-		
 		skinAppliedSub:=UI_ApplySkin
 		SET TIMER:C645(-1)
 		
