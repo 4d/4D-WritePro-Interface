@@ -79,14 +79,8 @@ Case of
 		
 		$rangeCollection:=WP Find all:C1755($target; oForm.FR.find; $options; oForm.FR.replace)
 		
-		$n:=$rangeCollection.length
-		If ($n>=1)
-			$message:=Get localized string:C991("OccurrencesReplaced")
-			$message:=Replace string:C233($message; "<x>"; String:C10($n))
-			oForm.FR.flashMessage:=True:C214
-			oForm.FR.message:=$message
-		End if 
-		
+		oForm.FR.replacements:=$rangeCollection.length
+		oForm.FR.displayReplacements:=True:C214
 		
 	: ($action="replace")
 		
@@ -99,10 +93,13 @@ Case of
 			
 			CALL FORM:C1391(Current form window:C827; "WP_SelectText"; Form:C1466.areaName; $range)
 			Form:C1466.selection:=$range
+			
 		Else 
 			BEEP:C151
 		End if 
 		
+		oForm.FR.replacements:=$rangeCollection.length
+		oForm.FR.displayReplacements:=True:C214
 End case 
 
 $0:=$nbOccurences

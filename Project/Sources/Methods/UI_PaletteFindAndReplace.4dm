@@ -46,14 +46,29 @@ OBJECT SET ENTERABLE:C238(*; "occurencesInfo@"; False:C215)
 OBJECT SET ENABLED:C1123(*; "tabBtn_@"; True:C214)
 
 
-If (oForm.FR.flashMessage=True:C214)
-	
-	OBJECT SET VISIBLE:C603(*; "tempoMessage"; True:C214)
-	SET TIMER:C645(60*3)
-	oForm.FR.flashMessage:=False:C215
-	
+//OBJECT SET VISIBLE(*; "Replacement@"; oForm.FR.displayReplacements)
+//OBJECT SET VISIBLE(*; "Occurences@"; Not(oForm.FR.displayReplacements))
+
+
+//for sidebar "find"
+If (oForm.FR.find#"")
+	oForm.FR.messageoccurences:=Get localized string:C991("OccurencesColon")+" "+String:C10(oForm.FR.occurences)
 Else 
-	oForm.FR.message:=""
-	OBJECT SET VISIBLE:C603(*; "tempoMessage"; False:C215)
+	oForm.FR.messageoccurences:=""
 End if 
+//for sidebar "replace"
+If (oForm.FR.displayReplacements)
+	oForm.FR.messageReplacements:=Get localized string:C991("ReplacementsColon")+" "+String:C10(oForm.FR.replacements)
+Else 
+	oForm.FR.messageReplacements:=""
+End if 
+
+
+If (oForm.FR.displayReplacements)
+	oForm.FR.message:=oForm.FR.messageReplacements
+	oForm.FR.displayReplacements:=False:C215  // next time occurences shall be displayed
+Else 
+	oForm.FR.message:=oForm.FR.messageoccurences
+End if 
+
 

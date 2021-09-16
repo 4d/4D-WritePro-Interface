@@ -15,6 +15,7 @@ Possible values inside collection for sidebar
 "Tables"
 "Protection"
 "ImportExport"
+"FindAndReplace"
 
 Possible values inside collection for toolbar
 
@@ -28,6 +29,7 @@ Possible values inside collection for toolbar
 "Spell"
 "Protection"
 "ImportExport"
+"FindAndReplace"
 
 */
 

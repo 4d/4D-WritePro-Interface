@@ -71,7 +71,7 @@ If (areaName#"")
 			$ptrLabel->:=$label
 			$ptrURL->:=$URL
 			
-			// when the cursor is just prior the expression, the expression should be ""
+			// when the cursor is just prior the expression, the expression should be ""  // ACI0101873
 			
 			$ptrTrueExpression->:=""
 			$ptrVirtualExpression->:=""

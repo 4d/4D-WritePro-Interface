@@ -36,6 +36,11 @@ If (Count parameters:C259=0)  // component context
 	
 	
 	If (Not:C34(Is nil pointer:C315($ptr)))
+		
+		If (Form:C1466.selection.start=Form:C1466.selection.end)  //ACI0101873 (check again)
+			$trueExpression:=""
+			$virtualExpression:=""
+		End if 
 		EDIT FORMULA:C806($ptr->; $trueExpression)  // always pass the true expression to edit formula  (in/out parameter)
 		
 		If (ok=1)

@@ -213,8 +213,8 @@ This file is distributed under the same license as the product package.-->
           <target>Vložit číslo stránky</target>
         </trans-unit>
         <trans-unit id="55" resname="insertPicture">
-          <source>Insert picture‚Ä</source>
-          <target>Vložit obrázek‚Ä</target>
+          <source>Insert picture</source>
+          <target>Vložit obrázek</target>
         </trans-unit>
         <trans-unit id="54" resname="insertSectionbreak">
           <source>Insert section break</source>

@@ -210,8 +210,8 @@
                <target>ページ番号を挿入</target>
             </trans-unit>
             <trans-unit id="55" resname="insertPicture">
-               <source>Insert picture‚Ä¶</source>
-               <target>ピクチャーを挿入‚Ä¶</target>
+               <source>Insert picture…</source>
+               <target>ピクチャーを挿入…</target>
             </trans-unit>
             <trans-unit id="54" resname="insertSectionbreak">
                <source>Insert section break</source>

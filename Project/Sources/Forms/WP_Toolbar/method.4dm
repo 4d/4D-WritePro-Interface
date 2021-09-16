@@ -70,8 +70,7 @@ Case of
 		oForm.FR:=New object:C1471
 		oForm.FR.find:=""
 		oForm.FR.replace:=""
-		oForm.FR.flashMessage:=False:C215
-		oForm.FR.message:=""
+		oForm.FR.displayReplacements:=False:C215
 		oForm.FR.occurences:=-1
 		
 		// ++see on timer

@@ -24,7 +24,7 @@
 				"cbCaseSensitive": {
 					"type": "checkbox",
 					"top": 40,
-					"left": 40,
+					"left": 20,
 					"width": 280,
 					"height": 16,
 					"sizingX": "fixed",
@@ -38,9 +38,9 @@
 				},
 				"cbFullWord": {
 					"type": "checkbox",
-					"top": 140,
-					"left": 40,
-					"width": 260,
+					"top": 130,
+					"left": 20,
+					"width": 280,
 					"height": 16,
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.fullWord",
@@ -54,8 +54,8 @@
 				"cbKeepCharStyle": {
 					"type": "checkbox",
 					"top": 240,
-					"left": 40,
-					"width": 260,
+					"left": 20,
+					"width": 280,
 					"height": 16,
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.keepCharStyle",
@@ -73,7 +73,7 @@
 				"cbAccentSensitive": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 40,
+					"left": 20,
 					"width": 280,
 					"height": 16,
 					"sizingX": "fixed",
@@ -88,7 +88,7 @@
 				"cbKanaSensitive": {
 					"type": "checkbox",
 					"top": 80,
-					"left": 40,
+					"left": 20,
 					"width": 280,
 					"height": 16,
 					"sizingX": "fixed",
@@ -104,7 +104,7 @@
 				"cbWidthSensitive": {
 					"type": "checkbox",
 					"top": 100,
-					"left": 60,
+					"left": 40,
 					"width": 260,
 					"height": 16,
 					"sizingX": "fixed",
@@ -124,7 +124,7 @@
 					"width": 278,
 					"height": 16,
 					"stroke": "automatic",
-					"fontWeight": "normal"
+					"fontWeight": "bold"
 				},
 				"Texte1": {
 					"type": "text",
@@ -134,13 +134,13 @@
 					"width": 278,
 					"height": 16,
 					"stroke": "automatic",
-					"fontWeight": "normal"
+					"fontWeight": "bold"
 				},
 				"cbIncludeHeadersAndFooters": {
 					"type": "checkbox",
-					"top": 160,
-					"left": 40,
-					"width": 260,
+					"top": 150,
+					"left": 20,
+					"width": 280,
 					"height": 16,
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.includeHeadersAndFooters",
@@ -153,9 +153,9 @@
 				},
 				"cbKeyboardBased": {
 					"type": "checkbox",
-					"top": 180,
-					"left": 40,
-					"width": 260,
+					"top": 170,
+					"left": 20,
+					"width": 280,
 					"height": 16,
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.keyboardBased",
@@ -166,19 +166,11 @@
 						"onClick"
 					]
 				},
-				"Line": {
-					"type": "line",
-					"top": 129,
-					"left": 90,
-					"width": 180,
-					"height": 1,
-					"stroke": "#808080"
-				},
 				"Bouton1": {
 					"type": "button",
 					"text": ":xliff:ok",
-					"top": 290,
-					"left": 220,
+					"top": 280,
+					"left": 200,
 					"width": 100,
 					"height": 20,
 					"events": [
@@ -187,21 +179,13 @@
 					"focusable": false,
 					"defaultButton": true,
 					"action": "accept"
-				},
-				"Line1": {
-					"type": "line",
-					"top": 270,
-					"left": 90,
-					"width": 180,
-					"height": 1,
-					"stroke": "#808080"
 				}
 			}
 		}
 	],
-	"geometryStamp": 398,
-	"width": 340,
-	"height": 330,
+	"geometryStamp": 556,
+	"width": 320,
+	"height": 320,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
