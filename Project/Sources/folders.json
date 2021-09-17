@@ -122,6 +122,9 @@
 			"WP_GetTextShadow",
 			"WP_SelectBookmark",
 			"WP_SetFont"
+		],
+		"forms": [
+			"WP_Palette_FindAndReplace"
 		]
 	},
 	"Table Forms": {
@@ -142,23 +145,31 @@
 			"TB_SwitchSkin"
 		],
 		"forms": [
+			"D_FindOptions",
 			"WP_Toolbar"
 		]
 	},
 	"WP_Private": {
 		"methods": [
+			"_and",
+			"_bool",
+			"_or",
 			"MENU_Display",
 			"MENU_Execute",
 			"UI_isProtected",
 			"UI_PaletteFindAndReplace",
+			"UI_PaletteImage",
 			"UI_PaletteImportExport",
 			"UI_PaletteProtect",
 			"UI_PaletteStylesheets",
+			"UI_PictureSettings",
 			"UI_Tables",
 			"UI_Toolbar",
 			"UI_ToolbarStylesheets",
 			"UI_TranslateConstant",
+			"WP_ApplyPictureSettings",
 			"WP_BorderMenu",
+			"WP_FR_InitOptions",
 			"WP_GetProtections",
 			"WP_GetStyleAttributesByGroup",
 			"WP_GetStyleAttributesByType",
@@ -169,6 +180,8 @@
 			"WP_InsertSoftHyphen",
 			"WP_RemoveSoftHyphen",
 			"WP_Request",
+			"WP_Ruler",
+			"WP_SelectText",
 			"WP_SetCellProtection",
 			"WP_SetDocumentProtection",
 			"WP_SetImageUrl",

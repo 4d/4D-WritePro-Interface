@@ -146,7 +146,7 @@
 				"WPwidget": {
 					"type": "subform",
 					"top": 80,
-					"left": 640,
+					"left": 642,
 					"width": 260,
 					"height": 680,
 					"sizingX": "move",
@@ -158,7 +158,8 @@
 					"doubleClickInEmptyAreaAction": "addSubrecord",
 					"selectionMode": "multiple",
 					"printFrame": "variable",
-					"borderStyle": "none"
+					"borderStyle": "none",
+					"method": "ObjectMethods/WPwidget.4dm"
 				},
 				"Bouton": {
 					"type": "button",
@@ -473,7 +474,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 37,
+	"geometryStamp": 51,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

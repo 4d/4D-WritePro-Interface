@@ -3,7 +3,7 @@ $WP_skin:=New object:C1471
 
 If (Shift down:C543)
 	
-	OB SET:C1220($WP_skin; "skinName"; "00"+String:C10(0x00300030))  //"light","dark")//;"00"+String(0x00FF00FF))  //
+	OB SET:C1220($WP_skin; "skinName"; "dark")  //"00"+String(0x00300030))  //"light","dark")//;"00"+String(0x00FF00FF))  //
 	//or step by step
 	//$WP_skin.separatorColor:=0x2080
 	//$WP_skin.backgroundColor:=0x0040

@@ -3,6 +3,7 @@ C_BOOLEAN:C305($GotoPage2)
 
 C_LONGINT:C283($p)
 C_LONGINT:C283($x1; $y1; $x2; $y2; $memoX; $memoY)
+C_LONGINT:C283($width; $height)
 
 C_TEXT:C284($Unit; $format; $format1; $format2)
 C_TEXT:C284($find; $replace)
@@ -68,39 +69,7 @@ End if
 
 
 
-If (Form:C1466.display.formulaSource="")
-	//OBJECT SET ENTERABLE(*; "formula"; False)
-	//OBJECT SET ENABLED(*; "formula"; False)
-	OBJECT SET RGB COLORS:C628(*; "formula"; "grey"; "white")
-	OBJECT SET FORMAT:C236(*; "formula"; "(none)")
-Else 
-	//OBJECT SET ENTERABLE(*; "formula"; True)
-	//OBJECT SET ENABLED(*; "formula"; True)
-	OBJECT SET RGB COLORS:C628(*; "formula"; Foreground color:K23:1; Background color:K23:2)
-	OBJECT SET FORMAT:C236(*; "formula"; "")
-End if 
-
-
-If (Form:C1466.pictSettings[wk image url:K81:218]="data:image@") | (Form:C1466.pictSettings[wk image url:K81:218]="data:application@")
-	OBJECT SET ENTERABLE:C238(*; "URL"; False:C215)
-	OBJECT SET ENABLED:C1123(*; "URL"; False:C215)
-	OBJECT SET RGB COLORS:C628(*; "URL"; "grey"; "white")
-	OBJECT SET FORMAT:C236(*; "URL"; "Data (base 64)")
-	
-	//OBJECT SET ENABLED(*; "btnClearURL"; False)  // do NOT clear base64 data !
-	
-Else 
-	OBJECT SET ENTERABLE:C238(*; "URL"; True:C214)
-	OBJECT SET ENABLED:C1123(*; "URL"; True:C214)
-	OBJECT SET RGB COLORS:C628(*; "URL"; Foreground color:K23:1; Background color:K23:2)
-	OBJECT SET FORMAT:C236(*; "URL"; "")
-	
-	//OBJECT SET ENABLED(*; "btnClearURL"; True)
-	
-	
-End if 
-
-$p:=Find in array:C230(_displayFormatValues; Form:C1466.displayMode)
+$p:=Find in array:C230(_displayFormatValues; Form:C1466.pictSettings[wk image display mode:K81:340])
 If ($p>0)
 	_displayFormatLabels:=$p
 End if 
@@ -110,10 +79,18 @@ End if
 
 If (Form:C1466.display.UI_WindowResized=False:C215)
 	
+	OBJECT GET BEST SIZE:C717(*; "marginsLabel"; $width; $height)
+	OBJECT GET COORDINATES:C663(*; "marginsLabel"; $x1; $y1; $x2; $y2)
+	OBJECT SET COORDINATES:C1248(*; "marginsLabel"; $x2-$width-5; $y1; $x2; $y1+$height+2)
+	
+	OBJECT GET BEST SIZE:C717(*; "paddingLabel"; $width; $height)
+	OBJECT GET COORDINATES:C663(*; "paddingLabel"; $x1; $y1; $x2; $y2)
+	OBJECT SET COORDINATES:C1248(*; "paddingLabel"; $x2-$width-5; $y1; $x2; $y1+$height+2)
+	
 	$GotoPage2:=False:C215
 	
 	If (Form:C1466.pictSettings.anchored=True:C214)  // ANCHORED PICTURE
-		If (Form:C1466.pictSettings.anchorSection=wk anchor embedded:K81:230)
+		If (Form:C1466.pictSettings[wk anchor section:K81:228]=wk anchor embedded:K81:230)
 			$GotoPage2:=True:C214
 		End if 
 	Else   // INLINE PICTURE
@@ -125,54 +102,10 @@ If (Form:C1466.display.UI_WindowResized=False:C215)
 		FORM GOTO PAGE:C247(2)
 		
 		
-		If (Form:C1466.pictSettings.anchored=True:C214)
-			// the picure is anchored, the formula AND the URL can be edited or cleared
-			
-			//OBJECT SET ENABLED(*; "btnEditFormula"; True)
-			
-		Else 
-			
-			
-			// the picture is inline
-			If (Form:C1466.pictSettings.formula=Null:C1517)
-				// the formula can NOT be edited
-				// the formula can NOT be cleared
-				// the URl can not be cleared
-				
-/*
-OBJECT SET VISIBLE(*; "btnEditFormula"; False)
-OBJECT SET VISIBLE(*; "btnClearFormula"; False)
-OBJECT SET VISIBLE(*; "btnClearURL"; False)
-				
-				
-OBJECT GET COORDINATES(*; "alternateText"; $x1; $y1; $x2; $y2)
-$memoX:=$x2
-				
-OBJECT GET COORDINATES(*; "formula"; $x1; $y1; $x2; $y2)
-OBJECT SET COORDINATES(*; "formula"; $x1; $y1; $memoX; $y2)
-				
-OBJECT GET COORDINATES(*; "URL"; $x1; $y1; $x2; $y2)
-OBJECT SET COORDINATES(*; "URL"; $x1; $y1; $memoX; $y2)
-				
-OBJECT SET RGB COLORS(*; "formula"; "grey"; "white")
-*/
-				
-			End if 
-			
-			
-		End if 
-		
-		
 		GET WINDOW RECT:C443($memoX; $memoY; $x2; $y2)
 		OBJECT GET COORDINATES:C663(*; "rectPage2"; $x1; $y1; $x2; $y2)
 		SET WINDOW RECT:C444($memoX; $memoY; $memoX+($x2-$x1); $memoY+($y2-$y1))
 		
-		
-	Else 
-		// anchored picture and NOT embededded mode
-		// stay in page one
-		
-		//OBJECT SET VISIBLE(*; "btnEditFormula"; True)  // formula can be edited
 		
 	End if 
 	

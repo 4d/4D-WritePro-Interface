@@ -13,7 +13,7 @@
 		</field>
 		<field name="Title" uuid="19F64DF6BDDD4615A1EEC9F1978DBD56" type="10" limiting_length="255" never_null="true" id="3"/>
 		<primary_key field_name="ID" field_uuid="25E1AC17AE3D4D5FBED8BEFDB6E6B6DC"/>
-		<table_extra input_form="InputPalettes" output_form="Output">
+		<table_extra input_form="InputToolBar" output_form="Output">
 			<editor_table_info displayable_fields_count="6">
 				<color red="255" green="255" blue="255" alpha="0"/>
 				<coordinates left="41.5" top="16.453125" width="120" height="167.33203125"/>

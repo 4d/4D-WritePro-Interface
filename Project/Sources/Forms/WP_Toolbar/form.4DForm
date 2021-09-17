@@ -1260,7 +1260,7 @@
 				"btn_insertSectiobBreak": {
 					"type": "button",
 					"top": 40,
-					"left": 390,
+					"left": 430,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:insertSectionbreak",
@@ -1273,7 +1273,7 @@
 				"btn_insertImage": {
 					"type": "button",
 					"top": 35,
-					"left": 455,
+					"left": 495,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:insertPicture",
@@ -1281,7 +1281,9 @@
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/Images_32.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"popupPlacement": "none",
+					"events": []
 				},
 				"btn_insertPageCount": {
 					"type": "button",
@@ -1394,7 +1396,7 @@
 				"btn_visibleHeaders": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 550,
+					"left": 590,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHeaders",
@@ -1407,7 +1409,7 @@
 				"btn_visibleFooters": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 580,
+					"left": 620,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideFooters",
@@ -1420,7 +1422,7 @@
 				"btn_visibleHorizontalRuler": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 640,
+					"left": 680,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHiddenHorizontalRuler",
@@ -1433,7 +1435,7 @@
 				"btn_visibleHiddenChars": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 550,
+					"left": 590,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHiddenChars",
@@ -1446,7 +1448,7 @@
 				"btn_visiblePageFrames": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 610,
+					"left": 650,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideFrames",
@@ -1459,7 +1461,7 @@
 				"Popup_zoom": {
 					"type": "dropdown",
 					"top": 60,
-					"left": 610,
+					"left": 650,
 					"width": 90,
 					"height": 20,
 					"tooltip": ":xliff:zoom",
@@ -1478,7 +1480,7 @@
 				"Line5": {
 					"type": "line",
 					"top": 30,
-					"left": 535,
+					"left": 575,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -1487,7 +1489,7 @@
 				"Line3": {
 					"type": "line",
 					"top": 30,
-					"left": 715,
+					"left": 755,
 					"height": 50,
 					"stroke": "#696969",
 					"width": 0,
@@ -1572,7 +1574,7 @@
 				"Line50": {
 					"type": "line",
 					"top": 30,
-					"left": 445,
+					"left": 485,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -1581,7 +1583,7 @@
 				"zoomIcon": {
 					"type": "picture",
 					"top": 60,
-					"left": 585,
+					"left": 625,
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
@@ -1672,7 +1674,7 @@
 				"btn_visibleVerticalRuler": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 670,
+					"left": 710,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHiddenVerticalRuler",
@@ -1685,7 +1687,7 @@
 				"btn_insertTime1": {
 					"type": "button",
 					"top": 30,
-					"left": 500,
+					"left": 540,
 					"width": 30,
 					"height": 24,
 					"focusable": false,
@@ -1701,7 +1703,7 @@
 				"btn_insertTime2": {
 					"type": "button",
 					"top": 60,
-					"left": 500,
+					"left": 540,
 					"width": 30,
 					"height": 24,
 					"focusable": false,
@@ -1713,6 +1715,19 @@
 					],
 					"tooltip": ":xliff:RemoveSoftHyphen",
 					"action": "removeSoftHyphens"
+				},
+				"btn_insertPageBreak1": {
+					"type": "button",
+					"top": 40,
+					"left": 390,
+					"width": 40,
+					"height": 40,
+					"tooltip": ":xliff:insertContinuousPageBreak",
+					"action": "insertContinuousSectionBreak",
+					"focusable": false,
+					"icon": "/PACKAGE/iconsFullSet-Retina/Toolbar1/Insert/ContinousSectionBreak_32.png",
+					"iconFrames": 4,
+					"style": "toolbar"
 				}
 			},
 			"entryOrder": [
@@ -1743,7 +1758,8 @@
 				"btn_pageModeEmbedded",
 				"btn_showHide4Dexpressions",
 				"btn_insertColumnBreak",
-				"btn_visibleVerticalRuler"
+				"btn_visibleVerticalRuler",
+				"btn_insertPageBreak1"
 			]
 		},
 		{
@@ -2596,24 +2612,6 @@
 					"icon": "/RESOURCES/Images/Toolbar1/Images/imageInEverySection_24.png",
 					"iconFrames": 4,
 					"style": "custom"
-				},
-				"btn_PictInfo": {
-					"type": "button",
-					"text": "",
-					"top": 30,
-					"left": 560,
-					"width": 50,
-					"height": 50,
-					"events": [
-						"onClick"
-					],
-					"stroke": "#ff0000",
-					"focusable": false,
-					"method": "ObjectMethods/btn_PictInfo.4dm",
-					"style": "toolbar",
-					"icon": "/RESOURCES/Images/Toolbar1/Images/ImageSettings_48.png",
-					"iconFrames": 4,
-					"textPlacement": "center"
 				},
 				"btn_PictInfo1": {
 					"type": "button",
@@ -4066,6 +4064,10 @@
 	],
 	"editor": {
 		"groups": {
+			"Group31": [
+				"Stylesheet_Type2",
+				"Stylesheet_Type1"
+			],
 			"Group34": [
 				"tabBtn_Home",
 				"tabBtn_Insert",
@@ -4078,17 +4080,14 @@
 				"tabBtn_Protection",
 				"tabBtn_ImportExport",
 				"tabBtn_FindAndReplace"
-			],
-			"Group31": [
-				"Stylesheet_Type2",
-				"Stylesheet_Type1"
 			]
 		},
-		"activeView": "Hidden",
+		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
 			"Hidden": {
+				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text2",
@@ -4130,5 +4129,5 @@
 			}
 		}
 	},
-	"geometryStamp": 3350
+	"geometryStamp": 3374
 }

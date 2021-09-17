@@ -213,7 +213,7 @@ This file is distributed under the same license as the product package.-->
           <target>Inserir número de página</target>
         </trans-unit>
         <trans-unit id="55" resname="insertPicture">
-          <source>Insert picture‚Ä¶</source>
+          <source>Insert picture…</source>
           <target>Inserir uma imagem...</target>
         </trans-unit>
         <trans-unit id="54" resname="insertSectionbreak">
@@ -439,6 +439,10 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="ZLC852EL1drI+I11mR0Tvg" resname="RemoveSoftHyphen">
           <source>Remove soft hyphen</source>
           <target>Remover o hífen de separação</target>
+        </trans-unit>
+        <trans-unit id="nkUFnYv0Dk1wv6yHCjjgqQ" resname="insertContinuousPageBreak">
+          <source>Insert continuous page break</source>
+          <target>Insira uma quebra contínua da página</target>
         </trans-unit>
       </group>
       <group resname="Tabs">

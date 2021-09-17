@@ -213,8 +213,8 @@ This file is distributed under the same license as the product package.-->
           <target>Vložit číslo stránky</target>
         </trans-unit>
         <trans-unit id="55" resname="insertPicture">
-          <source>Insert picture</source>
-          <target>Vložit obrázek</target>
+          <source>Insert picture…</source>
+          <target>Vložit obrázek…</target>
         </trans-unit>
         <trans-unit id="54" resname="insertSectionbreak">
           <source>Insert section break</source>
@@ -439,6 +439,10 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="ZLC852EL1drI+I11mR0Tvg" resname="RemoveSoftHyphen">
           <source>Remove soft hyphen</source>
           <target>Odstranit volitelný rozdělovník</target>
+        </trans-unit>
+        <trans-unit id="nkUFnYv0Dk1wv6yHCjjgqQ" resname="insertContinuousPageBreak">
+          <source>Insert continuous page break</source>
+          <target>Vložte kontinuální konec stránky</target>
         </trans-unit>
       </group>
       <group resname="Tabs">

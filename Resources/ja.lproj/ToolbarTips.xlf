@@ -437,6 +437,10 @@
 	           <source>Remove soft hyphen</source>
 	           <target>ソフトハイフンを削除</target>
 	         </trans-unit>
+	         <trans-unit id="nkUFnYv0Dk1wv6yHCjjgqQ" resname="insertContinuousPageBreak">
+	           <source>Insert continuous page break</source>
+	           <target>継続した改ページを挿入</target>
+	         </trans-unit>
          </group>
          <group resname="Tabs">
             <trans-unit id="24" resname="borders">

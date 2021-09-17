@@ -2,7 +2,7 @@ C_COLLECTION:C1488($tabs)
 
 Case of 
 	: (Shift down:C543)
-		$tabs:=New collection:C1472("ImportExport"; "Fonts"; "Alignments"; "Tabulations"; "Sizes"; "Frames"; "Backgrounds"; "Expressions"; "Bookmarks"; "Stylesheets"; "Tables"; "Protection")
+		$tabs:=New collection:C1472("ImportExport"; "Fonts"; "Alignments"; "Tabulations"; "Sizes"; "Frames"; "Backgrounds"; "Expressions"; "Bookmarks"; "Stylesheets"; "Tables"; "Protection"; "FindAndReplace")
 		
 		//: (Macintosh option down)
 		//$tabs:=New collection("All")

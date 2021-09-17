@@ -164,7 +164,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="33fb+8NhEANEWmPAFLSQjg" resname="SectionHyphen">
           <source>Section:</source>
-          <target>Paragrqf:</target>
+          <target>Paragraf:</target>
         </trans-unit>
         <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Picture">
           <source>Picture</source>
@@ -1286,7 +1286,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="WidthSensitive">
           <source>Width sensitive</source>
-          <target>Citlivé na šířku</target>
+          <target>Ciktlivé na šířku</target>
         </trans-unit>
         <trans-unit id="msIfGk9Zlbu60aimbEHQOw" resname="OccurrencesReplaced">
           <source>&lt;x&gt; occurrences have been replaced.</source>
@@ -1312,7 +1312,7 @@ This file is distributed under the same license as the product package.-->
           <source>Search based on '&lt;1&gt;' keyboard </source>
         	<target>Hledání založené na '&lt;1&gt;' klávesnici </target>
         </trans-unit>
-      <trans-unit id="4TFSNZU8Z6IMoq+NekNNIg" resname="OccurencesColon">
+        <trans-unit id="4TFSNZU8Z6IMoq+NekNNIg" resname="OccurencesColon">
           <source>Occurences:</source>
           <target>Výskyty:</target>
         </trans-unit>
@@ -1675,11 +1675,11 @@ Pokud toto nezvolíte, budou vypočítány pouze výrazy, jež ještě nebyly vy
         </trans-unit>
       </group>
       <group resname="DialogPictureSettings">
-        <trans-unit id="nyFYGQNHQerfVfW24a7oeQ" resname="Margins">
+        <trans-unit id="nyFYGQNHQerfVfW24a7oeQ" resname="MarginsHyphen">
           <source>Margins:</source>
           <target>Okraje:</target>
         </trans-unit>
-        <trans-unit id="wL0rIpQnidAkY6wndHrvDg" resname="Padding">
+        <trans-unit id="wL0rIpQnidAkY6wndHrvDg" resname="PaddingHyphen">
           <source>Padding:</source>
           <target>Vyplnění:</target>
         </trans-unit>
@@ -1695,7 +1695,7 @@ Pokud toto nezvolíte, budou vypočítány pouze výrazy, jež ještě nebyly vy
           <source>URL:</source>
           <target>URL:</target>
         </trans-unit>
-        <trans-unit id="tX1lPAf1vFI1IN4iTPThbQ" resname="AlternateText">
+        <trans-unit id="tX1lPAf1vFI1IN4iTPThbQ" resname="AlternateTextHyphen">
           <source>Alternate text:</source>
           <target>Alternativní text:</target>
         </trans-unit>
@@ -1782,6 +1782,18 @@ Pokud toto nezvolíte, budou vypočítány pouze výrazy, jež ještě nebyly vy
         <trans-unit id="QR7rFC0zJIwfzEn9E+IYRA" resname="PageNumber">
           <source>Page number</source>
           <target>Číslo stránky</target>
+        </trans-unit>
+        <trans-unit id="ynXAPxhJMkNpcwRliQMXvg" resname="insertImageURL">
+          <source>Insert an image URL…</source>
+          <target>Vložit URL obrázku…</target>
+        </trans-unit>
+        <trans-unit id="m3a/CgZ8NS600XAnT/CuFA" resname="insertImageFormula">
+          <source>Insert an image formula…</source>
+          <target>Vložit vzorec obrázku…</target>
+        </trans-unit>
+        <trans-unit id="PkaSe6J+O4IfvlHou7auvA" resname="editImageURL">
+          <source>Edit image URL…</source>
+          <target>Upravit URL obrázku…</target>
         </trans-unit>
       </group>
     </body>

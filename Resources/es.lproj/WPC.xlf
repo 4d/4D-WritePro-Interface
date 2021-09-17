@@ -1281,7 +1281,7 @@ This file is distributed under the same license as the product package.-->
           <target>Sensible a los acentos</target>
         </trans-unit>
         <trans-unit id="mWfZe71n2prS1bwT5Kl/7Q" resname="KanaSensitive">
-          <source>kana sensitive</source>
+          <source>Kana sensitive</source>
           <target>Sensible a kana</target>
         </trans-unit>
         <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="WidthSensitive">
@@ -1315,6 +1315,10 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="4TFSNZU8Z6IMoq+NekNNIg" resname="OccurencesColon">
           <source>Occurences:</source>
           <target>Ocurrencias:</target>
+        </trans-unit>
+        <trans-unit id="Q8D13uFpth/PNUBxsK/oVw" resname="ReplacementsColon">
+          <source>Replacements:</source>
+          <target>Reemplazos:</target>
         </trans-unit>
       </group>
       <group resname="PaletteTables">
@@ -1649,6 +1653,10 @@ De lo contrario, solo se calcularán las fórmulas que nunca se hayan evaluado.
           <source/>
           <target/>
         </trans-unit>
+        <trans-unit id="3KMV7oT2tuLS05721O0Waw" resname="SectionNumber">
+          <source>Section number</source>
+          <target>Número de sección</target>
+        </trans-unit>
       </group>
       <group resname="DialogImportLog">
         <trans-unit id="A4sgoBTWcmhTBII7qTJgAQ" resname="HeaderInfo">
@@ -1669,13 +1677,13 @@ De lo contrario, solo se calcularán las fórmulas que nunca se hayan evaluado.
         </trans-unit>
       </group>
       <group resname="DialogPictureSettings">
-        <trans-unit id="nyFYGQNHQerfVfW24a7oeQ" resname="Margins">
-          <source>Margins</source>
-          <target>Márgenes</target>
+        <trans-unit id="nyFYGQNHQerfVfW24a7oeQ" resname="MarginsHyphen">
+          <source>Margins:</source>
+          <target>Márgenes:</target>
         </trans-unit>
-        <trans-unit id="wL0rIpQnidAkY6wndHrvDg" resname="Padding">
-          <source>Padding</source>
-          <target>Márgenes internos</target>
+        <trans-unit id="wL0rIpQnidAkY6wndHrvDg" resname="PaddingHyphen">
+          <source>Padding:</source>
+          <target>Relleno:</target>
         </trans-unit>
         <trans-unit id="PiyV+E6B2BOy4GNsS6PbpQ" resname="FormulaAndURL">
           <source>Formula and URL</source>
@@ -1689,9 +1697,9 @@ De lo contrario, solo se calcularán las fórmulas que nunca se hayan evaluado.
           <source>URL:</source>
           <target>URL:</target>
         </trans-unit>
-        <trans-unit id="tX1lPAf1vFI1IN4iTPThbQ" resname="AlternateText">
-          <source>Alternate text</source>
-          <target>Texto alternativo</target>
+        <trans-unit id="tX1lPAf1vFI1IN4iTPThbQ" resname="AlternateTextHyphen">
+          <source>Alternate text:</source>
+          <target>Texto alternativo:</target>
         </trans-unit>
         <trans-unit id="lUrF6H2gRySYCSMqQIxzdA" resname="PagesAndSections">
           <source>Pages and sections</source>
@@ -1756,6 +1764,38 @@ De lo contrario, solo se calcularán las fórmulas que nunca se hayan evaluado.
         <trans-unit id="lP5Wk5MEdkpNOiSJgn9p8A" resname="OriginalSize">
           <source>Original size</source>
           <target>Tamaño original</target>
+        </trans-unit>
+        <trans-unit id="Qk23GVWVSIVC55yKGMhYaQ" resname="PictureFormat">
+          <source>Picture format:</source>
+          <target>Formato de imagen:</target>
+        </trans-unit>
+        <trans-unit id="fBvnMsjh2EReTO1gRxu7sw" resname="LeftPages">
+          <source>Left pages</source>
+          <target>Páginas izquierdas</target>
+        </trans-unit>
+        <trans-unit id="mFFDsjPq2TAu2gzl5XM0mQ" resname="FirstPage">
+          <source>First page</source>
+          <target>Primera Página</target>
+        </trans-unit>
+        <trans-unit id="khX9wIKnpJFDIWvtbHJpCg" resname="RightPages">
+          <source>Right pages</source>
+          <target>Páginas derechas</target>
+        </trans-unit>
+        <trans-unit id="QR7rFC0zJIwfzEn9E+IYRA" resname="PageNumber">
+          <source>Page number</source>
+          <target>Número de página</target>
+        </trans-unit>
+        <trans-unit id="ynXAPxhJMkNpcwRliQMXvg" resname="insertImageURL">
+          <source>Insert an image URL…</source>
+          <target>Insertar URL de una imagen...</target>
+        </trans-unit>
+        <trans-unit id="m3a/CgZ8NS600XAnT/CuFA" resname="insertImageFormula">
+          <source>Insert an image formula…</source>
+          <target>Insertar una fórmula imagen...</target>
+        </trans-unit>
+        <trans-unit id="PkaSe6J+O4IfvlHou7auvA" resname="editImageURL">
+          <source>Edit image URL…</source>
+          <target>Editar el URL de la imagen...</target>
         </trans-unit>
       </group>
     </body>

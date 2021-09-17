@@ -41,7 +41,7 @@ If (Count parameters:C259=0)  // component context
 			$trueExpression:=""
 			$virtualExpression:=""
 		End if 
-		EDIT FORMULA:C806($ptr->; $trueExpression)  // always pass the true expression to edit formula  (in/out parameter)
+		EDIT FORMULA:C806($ptr->; $trueExpression)
 		
 		If (ok=1)
 			
