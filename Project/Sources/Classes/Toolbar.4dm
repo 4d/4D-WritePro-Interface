@@ -1,10 +1,10 @@
-Class constructor
-	var $1 : Collection
-	var $2 : Text
+
+Class constructor($allButtonNames : Collection; $container : Text)
 	
-	This:C1470.allButtonNames:=$1  // will never change  ACI0101694
 	
-	This:C1470.buttonNames:=$1  // Based on visible tabs only
+	This:C1470.allButtonNames:=$allButtonNames  // will never change  ACI0101694
+	This:C1470.buttonNames:=$allButtonNames  // Based on visible tabs only
+	
 	This:C1470.buttonsWidth:=80
 	This:C1470.buttonsHeight:=20
 	
@@ -29,66 +29,97 @@ Class constructor
 	This:C1470.rect:=New object:C1471("left"; 0; "top"; 0; "right"; 0; "bottom"; 0)
 	This:C1470.bestContainer:=""
 	This:C1470.bestRect:=New object:C1471("left"; 0; "top"; 0; "right"; 0; "bottom"; 0)
-	If (Count parameters:C259>=2)
-		This:C1470.setContainer($2)
+	
+	
+	If (FORM Get color scheme:C1761="light")
+		
+		
+		This:C1470.fontColor:=0x00101010  // font color
+		This:C1470.backgroundColor:=0x00D8D8D8  // background color
+		
+		This:C1470.separatorFontColor:=0x00383838  // separator font color
+		This:C1470.separatorColor:=0x00B0B0B0  //
+		
+	Else 
+		
+		This:C1470.fontColor:=0x00F0F0F0
+		This:C1470.backgroundColor:=0x00404040
+		
+		This:C1470.separatorFontColor:=0x00C8C8C8
+		This:C1470.separatorColor:=0x00303030  // 
+		
 	End if 
 	
-	This:C1470._alignButtons()
+	If (Count parameters:C259>=2)
+		This:C1470.setContainer($container)
+	End if 
 	
+	//This._alignButtons()
 	
-Function setButtons
-	var $1 : Collection
-	This:C1470.buttonNames:=$1
+Function setButtons($_buttons : Collection)
 	
-	This:C1470._alignButtons()
+	var $button : Text
 	
+	// 1st : disable ALL tabs 
+	For each ($button; This:C1470.allButtonNames)
+		OBJECT SET ENABLED:C1123(*; "tabBtn_"+$button+"@"; False:C215)
+		OBJECT SET VISIBLE:C603(*; "tabBtn_"+$button+"@"; False:C215)
+		OBJECT SET VISIBLE:C603(*; "tabRect_"+$button+"@"; False:C215)
+	End for each 
 	
-Function setButtonSizes
-	var $1; $2 : Integer
-	
-	This:C1470.buttonsWidth:=$1
-	This:C1470.buttonsHeight:=$2
-	
-	This:C1470._alignButtons()
-	
-Function setBestSize
-	var $1 : Boolean
-	
-	This:C1470.bestSize:=$1
-	
-	This:C1470._alignButtons()
-	
-Function setButtonMargins
-	//left-top-right-bottom
-	var $1; $2; $3; $4 : Integer
-	
-	This:C1470.buttonMargins.left:=$1
-	This:C1470.buttonMargins.top:=$2
-	This:C1470.buttonMargins.right:=$3
-	This:C1470.buttonMargins.bottom:=$4
+	// create new collection where will be added known buttons
+	// (unknown buttons shall be ignored)
+	This:C1470.buttonNames:=New collection:C1472
+	For each ($button; $_buttons)
+		If (This:C1470.allButtonNames.indexOf($button)>=0)
+			This:C1470.buttonNames.push($button)
+			OBJECT SET ENABLED:C1123(*; "tabBtn_"+$button+"@"; True:C214)
+			OBJECT SET VISIBLE:C603(*; "tabBtn_"+$button+"@"; True:C214)
+			OBJECT SET VISIBLE:C603(*; "tabRect_"+$button+"@"; True:C214)
+		End if 
+	End for each 
 	
 	This:C1470._alignButtons()
 	
-Function setLabelMargins
-	//left-right
-	var $1; $2 : Integer
+Function setButtonSizes($width : Integer; $height : Integer)
 	
-	This:C1470.labelMargins.left:=$1
-	This:C1470.labelMargins.right:=$2
+	This:C1470.buttonsWidth:=$width
+	This:C1470.buttonsHeight:=$height
 	
 	This:C1470._alignButtons()
 	
-Function setDirection
-	var $1 : Text
+Function setBestSize($bestSize : Boolean)
 	
-	This:C1470.direction:=$1
+	This:C1470.bestSize:=$bestSize
 	
 	This:C1470._alignButtons()
 	
-Function setContainer
-	var $1 : Text
+Function setButtonMargins($left : Integer; $top : Integer; $right : Integer; $bottom : Integer)
 	
-	This:C1470.container:=$1
+	This:C1470.buttonMargins.left:=$left
+	This:C1470.buttonMargins.top:=$top
+	This:C1470.buttonMargins.right:=$right
+	This:C1470.buttonMargins.bottom:=$bottom
+	
+	This:C1470._alignButtons()
+	
+Function setLabelMargins($left : Integer; $right : Integer)
+	
+	This:C1470.labelMargins.left:=$left
+	This:C1470.labelMargins.right:=$right
+	
+	This:C1470._alignButtons()
+	
+Function setDirection($direction : Text)
+	
+	This:C1470.direction:=$direction  //  "LeftToRight", "RightToLeft", "TopToBottom", "BottomToTop"
+	
+	This:C1470._alignButtons()
+	
+Function setContainer($container : Text)
+	
+	This:C1470.container:=$container
+	
 	OBJECT GET COORDINATES:C663(*; This:C1470.container; $x1; $y1; $x2; $y2)
 	This:C1470.rect.left:=$x1
 	This:C1470.rect.top:=$y1
@@ -100,25 +131,45 @@ Function setContainer
 	
 	This:C1470._alignButtons()
 	
-Function setBestContainer
-	var $1 : Text
-	This:C1470.bestContainer:=$1
+Function setBestContainer($bestContainer : Text)
+	
+	This:C1470.bestContainer:=$bestContainer
 	
 	This:C1470._alignButtons()
 	
-Function setRect
-	var $1 : Object
+Function setRect($rect : Object)
 	
-	This:C1470.rect:=$1  //.left, .top, .right; .bottom
-	
+	This:C1470.rect:=$rect  //.left, .top, .right; .bottom
 	This:C1470._alignButtons()
 	
+Function setColors($fontColor : Integer; $backgroundColor : Integer; $separatorFontColor : Integer; $separatorColor : Integer)
 	
+	This:C1470.fontColor:=$fontColor
+	This:C1470.backgroundColor:=$backgroundColor
+	This:C1470.separatorFontColor:=$separatorFontColor
+	This:C1470.separatorColor:=$separatorColor
 	
+Function activate($btnName : Text)
+	
+	var $btn : Text
+	
+	For each ($btn; This:C1470.allButtonNames)
+		OBJECT SET FONT STYLE:C166(*; "tabBtn_"+$btn; Plain:K14:1)
+		
+		OBJECT SET RGB COLORS:C628(*; "tabRect_"+$btn; This:C1470.separatorColor; This:C1470.separatorColor)
+		OBJECT SET RGB COLORS:C628(*; "tabBtn_"+$btn; This:C1470.separatorFontColor; This:C1470.separatorFontColor)
+	End for each 
+	
+	OBJECT SET FONT STYLE:C166(*; "tabBtn_"+$btnName; Bold:K14:2)
+	
+	OBJECT SET RGB COLORS:C628(*; "tabRect_"+$btnName; This:C1470.backgroundColor; This:C1470.backgroundColor)
+	OBJECT SET RGB COLORS:C628(*; "tabBtn_"+$btnName; This:C1470.fontColor; This:C1470.fontColor)
+	
+Function redraw()
+	This:C1470._alignButtons()
 	
 	//////////////////// PRIVATE FUNCTIONS ///////////////////////////
 Function _alignButtons
-	
 	
 	
 	var $startX; $startY; $limitX; $limitY : Integer
@@ -168,7 +219,7 @@ Function _alignButtons
 	For each ($buttonName; This:C1470.buttonNames)
 		
 		If (This:C1470.bestSize)
-			OBJECT GET BEST SIZE:C717(*; $buttonName; $buttonWidth; $buttonHeight)
+			OBJECT GET BEST SIZE:C717(*; "tabBtn_"+$buttonName; $buttonWidth; $buttonHeight)
 		Else 
 			$buttonWidth:=This:C1470.buttonsWidth
 		End if 
@@ -282,7 +333,8 @@ Function _alignButtons
 				
 		End case 
 		
-		OBJECT SET COORDINATES:C1248(*; $buttonName; $x1; $y1; $x2; $y2)
+		OBJECT SET COORDINATES:C1248(*; "tabBtn_"+$buttonName; $x1; $y1; $x2; $y2)
+		OBJECT SET COORDINATES:C1248(*; "tabRect_"+$buttonName; $x1; $y1; $x2; $y2+6)
 		
 		If ($x1<This:C1470.bestRect.left)
 			This:C1470.bestRect.left:=$x1
@@ -315,7 +367,6 @@ Function _alignButtons
 		
 	End for each 
 	
-	
 	This:C1470.bestRect.left:=This:C1470.bestRect.left-This:C1470.buttonMargins.left
 	This:C1470.bestRect.top:=This:C1470.bestRect.top-This:C1470.buttonMargins.top
 	This:C1470.bestRect.right:=This:C1470.bestRect.right+This:C1470.buttonMargins.right
@@ -324,7 +375,4 @@ Function _alignButtons
 	If (This:C1470.bestContainer#"")
 		OBJECT SET COORDINATES:C1248(*; This:C1470.bestContainer; This:C1470.bestRect.left; This:C1470.bestRect.top; This:C1470.bestRect.right; This:C1470.bestRect.bottom)
 	End if 
-	
-	
-	
 	

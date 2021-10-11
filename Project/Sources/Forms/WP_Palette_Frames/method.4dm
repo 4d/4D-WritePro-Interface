@@ -65,10 +65,8 @@ Case of
 		(OBJECT Get pointer:C1124(Object named:K67:5; "borderRadiusRuler"))->:=0
 		(OBJECT Get pointer:C1124(Object named:K67:5; "borderRadiusinput"))->:=0
 		
-		skinAppliedSub:=UI_ApplySkin
-		SET TIMER:C645(-1)
+		oForm.skinAppliedSub:=UI_ApplySkin
 		
-	: (Form event code:C388=On Data Change:K2:15)
 		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Bound Variable Change:K2:52) | (Form event code:C388=On Timer:K2:25)
@@ -77,8 +75,8 @@ Case of
 		
 		$setupOK:=SetupLocalVariables
 		
-		If (Not:C34(skinAppliedSub))  // 2nd chance
-			skinAppliedSub:=UI_ApplySkin
+		If (oForm.skinAppliedSub=False:C215)  // may have changed on bound variable change
+			oForm.skinAppliedSub:=UI_ApplySkin
 		End if 
 		
 		UI_PaletteFrames

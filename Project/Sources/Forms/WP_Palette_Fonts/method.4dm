@@ -46,7 +46,7 @@ Case of
 		
 		//-------------------------------------------
 		
-		$ptrArrayNames:=OBJECT Get pointer:C1124(Object named:K67:5; "linethroughStylesNames")
+		$ptrArrayNames:=OBJECT Get pointer:C1124(Object named:K67:5; "throughStylesNames")
 		$ptrArrayValues:=OBJECT Get pointer:C1124(Object named:K67:5; "linethroughStylesValues")
 		
 		ARRAY TEXT:C222($ptrArrayNames->; 0)
@@ -113,7 +113,8 @@ Case of
 		$ptrArrayNames->:=1
 		$ptrArrayValues->:=1
 		
-		skinAppliedSub:=UI_ApplySkin
+		oForm.skinAppliedSub:=UI_ApplySkin
+		
 		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Bound Variable Change:K2:52) | (Form event code:C388=On Timer:K2:25)
@@ -122,9 +123,8 @@ Case of
 		
 		$setupOK:=SetupLocalVariables
 		
-		If (Not:C34(skinAppliedSub))
-			// 2nd chance
-			skinAppliedSub:=UI_ApplySkin
+		If (oForm.skinAppliedSub=False:C215)  // may have changed on bound variable change
+			oForm.skinAppliedSub:=UI_ApplySkin
 		End if 
 		
 		// UI_PaletteFonts moved from here…

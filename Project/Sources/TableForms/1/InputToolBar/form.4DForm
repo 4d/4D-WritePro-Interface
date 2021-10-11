@@ -130,7 +130,7 @@
 				"Button9": {
 					"type": "button",
 					"top": 110,
-					"left": 954,
+					"left": 937,
 					"width": 127,
 					"height": 21,
 					"sizingY": "fixed",
@@ -187,10 +187,10 @@
 				},
 				"Variable": {
 					"type": "input",
-					"top": 722,
-					"left": 533,
+					"top": 726,
+					"left": 558,
 					"width": 147,
-					"height": 131,
+					"height": 129,
 					"sizingY": "move",
 					"dataSource": "vSVG",
 					"dataSourceTypeHint": "picture",
@@ -337,8 +337,6 @@
 						"onLoad",
 						"onLosingFocus",
 						"onGettingFocus",
-						"onBeforeKeystroke",
-						"onAfterKeystroke",
 						"onSelectionChange",
 						"onAfterEdit"
 					],
@@ -349,8 +347,8 @@
 				"Button11": {
 					"type": "button",
 					"text": "SET EXPRESSION",
-					"top": 239,
-					"left": 944,
+					"top": 172,
+					"left": 937,
 					"width": 137,
 					"height": 28,
 					"events": [
@@ -359,13 +357,14 @@
 					"method": "ObjectMethods/Button11.4dm",
 					"sizingX": "move",
 					"focusable": false,
-					"stroke": "#da70d6"
+					"stroke": "#da70d6",
+					"sizingY": "fixed"
 				},
 				"Button18": {
 					"type": "button",
 					"text": "SET URL",
-					"top": 307,
-					"left": 944,
+					"top": 220,
+					"left": 937,
 					"width": 137,
 					"height": 28,
 					"events": [
@@ -374,13 +373,14 @@
 					"method": "ObjectMethods/Button18.4dm",
 					"sizingX": "move",
 					"focusable": false,
-					"stroke": "#da70d6"
+					"stroke": "#da70d6",
+					"sizingY": "fixed"
 				},
 				"Button19": {
 					"type": "button",
-					"text": "BLUE+YELLOW",
-					"top": 482,
-					"left": 944,
+					"text": "PICT SETTINGS",
+					"top": 268,
+					"left": 937,
 					"width": 137,
 					"height": 28,
 					"events": [
@@ -389,22 +389,217 @@
 					"method": "ObjectMethods/Button19.4dm",
 					"sizingX": "move",
 					"focusable": false,
-					"stroke": "#da70d6"
+					"stroke": "#9400d3",
+					"fontWeight": "bold",
+					"sizingY": "fixed"
 				},
 				"Button20": {
 					"type": "button",
 					"text": "Import Write Pro Doc",
 					"top": 47,
-					"left": 961,
+					"left": 937,
 					"width": 187,
 					"height": 37,
 					"events": [
 						"onClick"
 					],
 					"method": "ObjectMethods/Button20.4dm",
-					"focusable": true
+					"focusable": false,
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"Button21": {
+					"type": "button",
+					"text": "Create preview",
+					"top": 353,
+					"left": 1206,
+					"width": 180,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button21.4dm",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"Input": {
+					"type": "input",
+					"left": 944,
+					"top": 395,
+					"width": 442,
+					"height": 305,
+					"dataSource": "svgPict",
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "proportionalCenter",
+					"sizingX": "move",
+					"hideFocusRing": true,
+					"borderStyle": "none",
+					"fill": "automatic",
+					"sizingY": "fixed"
+				},
+				"Button22": {
+					"type": "button",
+					"text": "Create preview (no param)",
+					"top": 353,
+					"left": 944,
+					"width": 180,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button22.4dm",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"Button23": {
+					"type": "button",
+					"text": "Skin",
+					"top": 798,
+					"left": 944,
+					"width": 148,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"method": "ObjectMethods/Button23.4dm",
+					"focusable": false
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 730,
+					"left": 1311,
+					"width": 58,
+					"height": 26,
+					"fill": "#434343"
+				},
+				"Radio Button": {
+					"type": "radio",
+					"text": "Radio",
+					"top": 464,
+					"left": 944,
+					"width": 158,
+					"height": 32,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"radioGroup": "XXX",
+					"sizingX": "move"
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"text": "Radio",
+					"top": 501,
+					"left": 944,
+					"width": 158,
+					"height": 32,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"radioGroup": "XXX",
+					"sizingX": "move"
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"text": "Radio",
+					"top": 538,
+					"left": 944,
+					"width": 158,
+					"height": 32,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"radioGroup": "XXX",
+					"sizingX": "move"
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"text": "Radio",
+					"top": 575,
+					"left": 944,
+					"width": 158,
+					"height": 32,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"radioGroup": "XXX",
+					"sizingX": "move"
+				},
+				"Popup Liste déroulante": {
+					"type": "dropdown",
+					"left": 1193,
+					"top": 56,
+					"width": 176,
+					"height": 28,
+					"events": [
+						"onDataChange"
+					],
+					"action": "pageSize",
+					"sizingX": "move"
+				},
+				"Ligne": {
+					"type": "line",
+					"top": -2,
+					"left": 900,
+					"width": 1,
+					"height": 943,
+					"stroke": "#ff0000"
+				},
+				"Button24": {
+					"type": "button",
+					"text": "preview",
+					"top": 871,
+					"left": 944,
+					"width": 130,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button24.4dm"
 				}
-			}
+			},
+			"entryOrder": [
+				"WPtoolbar",
+				"Button20",
+				"WParea",
+				"Button9",
+				"Button11",
+				"Button18",
+				"Button19",
+				"Button6",
+				"Button7",
+				"Button2",
+				"Button3",
+				"Button10",
+				"Variable",
+				"Button",
+				"Button1",
+				"Button16",
+				"Button8",
+				"Button15",
+				"Button13",
+				"Button14",
+				"Button5",
+				"Button4",
+				"Button12",
+				"Variable1",
+				"Button17",
+				"Button21",
+				"Input",
+				"Button22",
+				"Button23",
+				"Radio Button",
+				"Radio Button1",
+				"Radio Button2",
+				"Radio Button3",
+				"Popup Liste déroulante",
+				"Button24"
+			]
 		},
 		{
 			"objects": {}
@@ -415,7 +610,7 @@
 		"kind": "form"
 	},
 	"method": "method.4dm",
-	"geometryStamp": 60,
+	"geometryStamp": 210,
 	"rightMargin": 20,
 	"bottomMargin": 20,
 	"editor": {

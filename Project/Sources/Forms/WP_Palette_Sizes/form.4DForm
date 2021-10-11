@@ -26,7 +26,7 @@
 		null,
 		{
 			"objects": {
-				"Rect1": {
+				"Background": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
@@ -259,12 +259,12 @@
 				"lbl_AltText": {
 					"type": "text",
 					"top": 357,
-					"left": 30,
-					"width": 80,
+					"left": 10,
+					"width": 100,
 					"height": 14,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:AltText"
+					"text": ":xliff:AltTextColon"
 				},
 				"TargetSelector2": {
 					"type": "radio",
@@ -303,8 +303,8 @@
 				"lbl_Width": {
 					"type": "text",
 					"top": 277,
-					"left": 30,
-					"width": 80,
+					"left": 10,
+					"width": 100,
 					"height": 14,
 					"class": "Palette",
 					"textAlign": "right",
@@ -313,8 +313,8 @@
 				"lbl_height": {
 					"type": "text",
 					"top": 297,
-					"left": 30,
-					"width": 80,
+					"left": 10,
+					"width": 100,
 					"height": 14,
 					"class": "Palette",
 					"textAlign": "right",
@@ -334,8 +334,8 @@
 				"lbl_MinWidth": {
 					"type": "text",
 					"top": 177,
-					"left": 30,
-					"width": 80,
+					"left": 10,
+					"width": 100,
 					"height": 14,
 					"class": "Palette",
 					"textAlign": "right",
@@ -344,8 +344,8 @@
 				"lbl_MinHeight": {
 					"type": "text",
 					"top": 217,
-					"left": 30,
-					"width": 80,
+					"left": 10,
+					"width": 100,
 					"height": 14,
 					"class": "Palette",
 					"textAlign": "right",
@@ -354,8 +354,8 @@
 				"lbl_MinWidth1": {
 					"type": "text",
 					"top": 317,
-					"left": 30,
-					"width": 80,
+					"left": 10,
+					"width": 100,
 					"height": 14,
 					"class": "Palette",
 					"textAlign": "right",
@@ -364,8 +364,8 @@
 				"lbl_MinHeight1": {
 					"type": "text",
 					"top": 337,
-					"left": 30,
-					"width": 80,
+					"left": 10,
+					"width": 100,
 					"height": 14,
 					"class": "Palette",
 					"textAlign": "right",
@@ -404,8 +404,8 @@
 				"lbl_MinWidth2": {
 					"type": "text",
 					"top": 127,
-					"left": 30,
-					"width": 80,
+					"left": 10,
+					"width": 100,
 					"height": 14,
 					"class": "Palette",
 					"textAlign": "right",
@@ -548,7 +548,7 @@
 			"View 1": {},
 			"View 2": {
 				"objects": [
-					"Rect1"
+					"Background"
 				]
 			},
 			"Grid": {},
@@ -571,5 +571,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 14
+	"geometryStamp": 23
 }

@@ -1,14 +1,20 @@
 //%attributes = {"invisible":true}
 C_TEXT:C284($1; $btnName)
 C_LONGINT:C283($id)
-C_LONGINT:C283($page)
+C_LONGINT:C283($page; $p)
 C_TEXT:C284($btn)
 
 If (Count parameters:C259=1)
 	$btnName:=$1
 Else 
-	$btnName:=OBJECT Get name:C1087(Object current:K67:2)
+	$btnName:=OBJECT Get name:C1087(Object current:K67:2)  // physical button name ("btn_Home")
 End if 
+
+$p:=Position:C15("_"; $btnName)
+If ($p>0)
+	$btnName:=Substring:C12($btnName; $p+1)  // logical button name ("Home")
+End if 
+
 
 $id:=oForm.ToolbarTabs.allButtonNames.indexOf($btnName)  // ACI0101694
 //$id:=oForm.ToolbarTabs.buttonNames.indexOf($btnName)  // ACI0101694
@@ -24,16 +30,14 @@ If ($id>=0)
 	
 	FORM GOTO PAGE:C247($page; *)
 	
-	For each ($btn; oForm.ToolbarTabs.buttonNames)
-		OBJECT SET FONT STYLE:C166(*; $btn; Plain:K14:1)
-		(OBJECT Get pointer:C1124(Object named:K67:5; $btn))->:=0
-	End for each 
+	oForm.ToolbarTabs.activate($btnName)
 	
-	OBJECT SET FONT STYLE:C166(*; $btnName; Bold:K14:2)
-	(OBJECT Get pointer:C1124(Object named:K67:5; $btnName))->:=1
+	//For each ($btn; oForm.ToolbarTabs.buttonNames)
+	//OBJECT SET FONT STYLE(*; $btn; Plain)
+	//End for each 
+	//OBJECT SET FONT STYLE(*; $btnName; Bold)
 	
 	
-	SET TIMER:C645(-1)
 End if 
 
 

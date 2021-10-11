@@ -6,6 +6,13 @@ C_BOOLEAN:C305($protectedDoc)
 OBJECT SET ENABLED:C1123(*; "@"; False:C215)  //ACI0100560
 OBJECT SET ENTERABLE:C238(*; "@"; False:C215)  //ACI0100560
 
+
+If (oForm.redrawTabs)
+	oForm.ToolbarTabs.redraw()
+	oForm.redrawTabs:=False:C215
+End if 
+
+
 //If (Asserted(Form#Null;"The variable associated to the toolbar should be an object!")) // before ACI0100560
 If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be an object!")) //ACI0100560
 	
@@ -13,7 +20,7 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 	If (Form event code:C388=On Load:K2:1)
 		If (Form:C1466.spellCheck#Null:C1517)
 			If (Value type:C1509(Form:C1466.spellCheck)=Is boolean:K8:9)
-				OBJECT SET VISIBLE:C603(*; "tab8"; Form:C1466.spellCheck)  // true or false
+				OBJECT SET VISIBLE:C603(*; "tabBtn_Spell"; Form:C1466.spellCheck)  // true or false
 			End if 
 		End if 
 	End if 

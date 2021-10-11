@@ -17,17 +17,18 @@ Case of
 		
 		OBJECT SET STYLE SHEET:C1257(*; "@"; Automatic style sheet_additional:K14:14)
 		
-		skinAppliedSub:=UI_ApplySkin
+		oForm.skinAppliedSub:=UI_ApplySkin
+		
 		SET TIMER:C645(-1)
 		
-		
 	: (Form event code:C388=On Bound Variable Change:K2:52) | (Form event code:C388=On Timer:K2:25)
+		
 		SET TIMER:C645(0)
 		
 		$setupOK:=SetupLocalVariables
 		
-		If (Not:C34(skinAppliedSub))  // 2nd chance
-			skinAppliedSub:=UI_ApplySkin
+		If (oForm.skinAppliedSub=False:C215)  // may have changed on bound variable change
+			oForm.skinAppliedSub:=UI_ApplySkin
 		End if 
 		
 		UI_PaletteBookMarks

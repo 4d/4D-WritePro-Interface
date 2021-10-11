@@ -34,29 +34,32 @@ Case of
 			oForm:=New object:C1471
 		End if 
 		
+		// WITHOUT PREFIX !!! (tabBtn_ or tabRect_" managed in class)
 		$_buttonNames:=New collection:C1472(\
-			"tabBtn_Home"; \
-			"tabBtn_Insert"; \
-			"tabBtn_Margins"; \
-			"tabBtn_Borders"; \
-			"tabBtn_Images"; \
-			"tabBtn_Printing"; \
-			"tabBtn_Tables"; \
-			"tabBtn_Spell"; \
-			"tabBtn_Protection"; \
-			"tabBtn_ImportExport"; \
-			"tabBtn_FindAndReplace")
+			"Home"; \
+			"Insert"; \
+			"Margins"; \
+			"Borders"; \
+			"Images"; \
+			"Printing"; \
+			"Tables"; \
+			"Spell"; \
+			"Protection"; \
+			"ImportExport"; \
+			"FindAndReplace")
 		
 		For each ($buttonName; $_buttonNames)
-			OBJECT SET FONT STYLE:C166(*; $buttonName; Bold:K14:2)  // Temporary to be sure they fit in space
+			OBJECT SET FONT STYLE:C166(*; "tabBtn_"+$buttonName; Bold:K14:2)  // Temporary to be sure they fit in space
 		End for each 
 		
-		oForm.ToolbarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")
+		oForm.ToolbarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")  // create CLASS
 		
-		oForm.ToolbarTabs.setButtonSizes(100; 20)  // height (temp) and height (fixed)
-		oForm.ToolbarTabs.setLabelMargins(2; 2)  //2px label margins
-		oForm.ToolbarTabs.setButtonMargins(2; 0; 2; 0)  // left - top - right - bottom
+		//oForm.ToolbarTabs.setButtonSizes(50; 20)  // width (temp) and height (fixed)
+		oForm.ToolbarTabs.setLabelMargins(6; 6)  //2px label margins
+		oForm.ToolbarTabs.setButtonMargins(0; 0; 3; 0)  // left - top - right - bottom
 		oForm.ToolbarTabs.pageIndexes:=New collection:C1472(1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11)
+		
+		oForm.ToolbarTabs.activate($_buttonNames[0])
 		
 		TB_GotoPage(oForm.ToolbarTabs.buttonNames[0])
 		
@@ -89,6 +92,9 @@ Case of
 		End if 
 		
 		
+		oForm.skinAppliedMain:=UI_ApplySkin
+		oForm.redrawTabs:=True:C214
+		
 		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Page Change:K2:54)
@@ -106,8 +112,19 @@ Case of
 			WP_applyTo:=2
 		End if 
 		
-	: (Form event code:C388=On Bound Variable Change:K2:52) | (Form event code:C388=On Timer:K2:25)
+		//SET TIMER(-1)
 		
+	: (Form event code:C388=On Resize:K2:27)
+		oForm.redrawTabs:=True:C214
+		SET TIMER:C645(-1)
+		
+	: (Form event code:C388=On Bound Variable Change:K2:52)
+		
+		SET TIMER:C645(-1)
+		
+	: (Form event code:C388=On Timer:K2:25)
+		
+		//oForm.ToolbarTabs.redraw()
 		SET TIMER:C645(0)
 		
 		If (Form:C1466#Null:C1517)  //ACI0100560
@@ -117,6 +134,10 @@ Case of
 						
 						$typeSelection:=Form:C1466.selection.type
 						SetupLocalVariables  // in this widget, mainly for areaName and masterTable
+						
+						If (Not:C34(oForm.skinAppliedMain))
+							oForm.skinAppliedMain:=UI_ApplySkin
+						End if 
 						
 						
 						If ($typeSelection#2)

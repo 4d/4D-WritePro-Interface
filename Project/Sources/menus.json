@@ -14,6 +14,18 @@
 					"link": 32003
 				}
 			]
+		},
+		{
+			"id": 2,
+			"name": "EditOnly",
+			"items": [
+				{
+					"link": 32001
+				},
+				{
+					"link": 32002
+				}
+			]
 		}
 	],
 	"menus": [
@@ -21,13 +33,6 @@
 			"link": 32001,
 			"title": ":xliff:CommonMenuFile",
 			"items": [
-				{
-					"title": "Documents",
-					"method": "a",
-					"shortcutAccel": true,
-					"shortcutKey": "k",
-					"startNewProcess": true
-				},
 				{
 					"title": "Quit",
 					"action": "quit"

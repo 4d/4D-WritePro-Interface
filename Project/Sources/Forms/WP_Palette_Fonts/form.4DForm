@@ -27,33 +27,33 @@
 		null,
 		{
 			"objects": {
-				"Rect1": {
+				"background": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
 					"width": 260,
 					"height": 570,
-					"fill": "#CCCCCC",
+					"fill": "#D6D6D6",
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
-				"Round Rectangle1": {
+				"IconBgnd2": {
 					"type": "rectangle",
 					"top": 540,
 					"left": 210,
 					"width": 40,
 					"height": 18,
-					"fill": "#DDDDDD",
+					"fill": "#c0c0c0",
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle3": {
+				"IconBgnd1": {
 					"type": "rectangle",
 					"top": 540,
 					"left": 160,
 					"width": 40,
 					"height": 18,
-					"fill": "#DDDDDD",
+					"fill": "#c0c0c0",
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
@@ -215,7 +215,7 @@
 						"onClick"
 					]
 				},
-				"linethroughStylesNames": {
+				"throughStylesNames": {
 					"type": "dropdown",
 					"top": 210,
 					"left": 135,
@@ -223,7 +223,7 @@
 					"height": 18,
 					"focusable": false,
 					"class": "Palette",
-					"method": "ObjectMethods/linethroughStylesNames.4dm",
+					"method": "ObjectMethods/throughStylesNames.4dm",
 					"events": [
 						"onDataChange"
 					]
@@ -401,7 +401,7 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
+					"fill": "#929292",
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
@@ -411,7 +411,7 @@
 					"left": 25,
 					"width": 210,
 					"height": 13,
-					"stroke": "#FFFFFF",
+					"stroke": "#c0c0c0",
 					"class": "Palette",
 					"textAlign": "center",
 					"text": ":xliff:Shadows",
@@ -603,7 +603,7 @@
 					"width": 30,
 					"height": 30,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/burger.png",
+					"icon": "/RESOURCES/Images/Sidebar/burger.png",
 					"iconFrames": 4,
 					"popupPlacement": "linked",
 					"style": "custom",
@@ -866,7 +866,7 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
+					"fill": "#929292",
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
@@ -876,7 +876,7 @@
 					"left": 25,
 					"width": 210,
 					"height": 13,
-					"stroke": "#FFFFFF",
+					"stroke": "#c0c0c0",
 					"class": "Palette",
 					"textAlign": "center",
 					"text": ":xliff:SpecialCharacters",
@@ -925,14 +925,14 @@
 					"tooltip": ":xliff:RemoveSoftHyphen",
 					"action": "removeSoftHyphens"
 				},
-				"Rect2": {
+				"background1": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
 					"width": 260,
 					"height": 570,
 					"visibility": "hidden",
-					"fill": "#CCCCCC",
+					"fill": "#CBCBCB",
 					"stroke": "transparent",
 					"borderRadius": 8
 				},
@@ -961,7 +961,7 @@
 				"cbBold",
 				"cbItalic",
 				"cbLinethrough",
-				"linethroughStylesNames",
+				"throughStylesNames",
 				"LinethroughColor",
 				"cbUnderline",
 				"underlineStylesNames",
@@ -997,7 +997,7 @@
 			"View 9": {
 				"visible": false,
 				"objects": [
-					"Rect2",
+					"background1",
 					"Text"
 				]
 			}
@@ -1007,5 +1007,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 499
+	"geometryStamp": 506
 }

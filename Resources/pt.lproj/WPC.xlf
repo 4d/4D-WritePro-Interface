@@ -67,7 +67,7 @@ This file is distributed under the same license as the product package.-->
           <target>Alin. Vert.: </target>
         </trans-unit>
         <trans-unit id="11" resname="FirstIndentationColon">
-          <source>1st indentation:</source>
+          <source>1st indent.:</source>
           <target>1º travessão:</target>
         </trans-unit>
         <trans-unit id="13" resname="BackgroundColon">
@@ -422,17 +422,13 @@ This file is distributed under the same license as the product package.-->
           <source>Width:</source>
           <target>Largura:</target>
         </trans-unit>
-        <trans-unit id="77" resname="AltTextColon">
-          <source>Alt. Text</source>
-          <target>Alt. Texto</target>
-        </trans-unit>
         <trans-unit id="74" resname="HeightColon">
           <source>Height:</source>
           <target>Altura:</target>
         </trans-unit>
-        <trans-unit id="75" resname="AltText">
-          <source>Alternate text</source>
-          <target>Texto alternativo</target>
+        <trans-unit id="75" resname="AltTextColon">
+          <source>Alternate text:</source>
+          <target>Texto alternativo:</target>
         </trans-unit>
         <trans-unit id="76" resname="ZeroAuto">
           <source>(0 = Auto)</source>
@@ -469,7 +465,7 @@ This file is distributed under the same license as the product package.-->
           <target>Nova tabulação</target>
         </trans-unit>
         <trans-unit id="84" resname="DefaultLeadingChar">
-          <source>Default leading char.</source>
+          <source>Default leading char.:</source>
           <target>Caractere inicial padrão:</target>
         </trans-unit>
         <trans-unit id="85" resname="LeadingChar">
@@ -1232,9 +1228,9 @@ This file is distributed under the same license as the product package.-->
           <source>Previous</source>
           <target>Anterior</target>
         </trans-unit>
-        <trans-unit id="262" resname="FindSlashReplace">
-          <source>Find/Replace</source>
-          <target>Pesquisar/substituir</target>
+        <trans-unit id="262" resname="FindElipsis">
+          <source>Find…</source>
+          <target>Pesquisar...</target>
         </trans-unit>
         <trans-unit id="260" resname="FullWord">
           <source>Full words only</source>
@@ -1504,10 +1500,6 @@ This file is distributed under the same license as the product package.-->
           <source>HTML "WYSIWYG"</source>
           <target>HTML "WYSIWIG"</target>
         </trans-unit>
-        <trans-unit id="th+uJGqJE/aRdxxSHhxRlg" resname="htmlPrettyPrint">
-          <source>"Pretty print"</source>
-          <target>"Pretty print"</target>
-        </trans-unit>
         <trans-unit id="7yp1Rkz6KWEs2pehpSqJoA" resname="recomputeFormulas">
           <source>Recompute formulas</source>
           <target>Recomputar fórmulas</target>
@@ -1552,27 +1544,89 @@ This file is distributed under the same license as the product package.-->
           <source>When selected, all formulas will be recomputed before export.
 
 When not selected, only formulas that have never been evaluated will be computed.</source>
-          <target>Esta opção força o cálculo da fórmula antes da exportação.
+          <target>Quando selecionados, todas as fórmulas serão recomputadas antes da exportação.
 
-Caso contrário, serão calculadas apenas fórmulas que nunca foram calculadas.
-
-</target>
+Quando não selecionadas, serão computadas apenas fórmulas que nunca foram avaliadas.</target>
         </trans-unit>
         <trans-unit id="DpRVy4keJdQU2SqZwEacYg" resname="FormulasComma">
           <source>Formulas:</source>
           <target>Fórmulas:</target>
         </trans-unit>
-        <trans-unit id="TLfxhPbY2ZRWaf3J3RyOcw" resname="htmlEllipsis">
-          <source>HTML…</source>
-          <target>HTML…</target>
-        </trans-unit>
-        <trans-unit id="jqxt3L4zVABvifyA9e+8sA" resname="InfoPrettyPrint">
-          <source>This option generates a document with more human-readable source code and increases document size.</source>
-          <target>Essa opção gera documentos com um código-fonte mais legível. Isso aumenta significativamente o tamanho dos documentos.</target>
-        </trans-unit>
         <trans-unit id="6LkWY9PvfM8ea1sA6vSrBw" resname="ExportComma">
           <source>Export:</source>
           <target>Export:</target>
+        </trans-unit>
+        <trans-unit id="caQYk8btXcl+pUBojuXPoQ" resname="InfoEmbedPictures">
+          <source>With this option, the generated SVG document will be standalone but its size will increase</source>
+          <target>Com esta opção, o documento SVG gerado será autónomo para seu tamanho aumentará</target>
+        </trans-unit>
+        <trans-unit id="Jm3zqgXEMB//3tACqAcZ0A" resname="InfoExportPictures">
+          <source>This option allows you to export the images of your document to an external "images" folder. The SVG file will be lighter.</source>
+          <target>Esta opção permite exportar as imagens de seu documento a uma carpeta "imagens" externas. O arquivo SVG será más ligero.</target>
+        </trans-unit>
+        <trans-unit id="l5yK2FqhagnuTfX+7DfKjA" resname="InfoCreateFolder">
+          <source>A folder will be created and will contain the SVG file and the pictures folder if needed.</source>
+          <target>Se criar uma carpeta que contendrá el arquivo SVG e la carpeta "imagens" si es necesario.</target>
+        </trans-unit>
+        <trans-unit id="h60zhveTCxSBSmc8ly911Q" resname="EmbedImages">
+          <source>Embed document pictures</source>
+          <target>Insertar imagens de documentos</target>
+        </trans-unit>
+        <trans-unit id="EyvZbU4fegiD39MW7BvMNQ" resname="ExportImages">
+          <source>Export images from document</source>
+          <target>Exportar imagens do documento</target>
+        </trans-unit>
+        <trans-unit id="ftw1H7xGhhRTkqQ2O2LLGg" resname="EnableGoogleFonts">
+          <source>Enable Google fonts substitution</source>
+          <target>Ativar a substituição Google fonts</target>
+        </trans-unit>
+        <trans-unit id="NqxkQgc34W90eQYBmYkkvg" resname="InfoGoogleFonts">
+          <source>This option adds a Google font import directive.
+Use this option if the fonts in your document are not cross-platform.</source>
+          <target>Essa opção adiciona uma política de importação de fontes do Google.
+Use esta opção se as fontes do documento não forem multiplataformas.</target>
+        </trans-unit>
+        <trans-unit id="KRk/LGj7Cj0IKqbAD1+m2Q" resname="PagesComma">
+          <source>Pages:</source>
+          <target>Páginas:</target>
+        </trans-unit>
+        <trans-unit id="9rxyF4rWKl6cSTgcq13Plw" resname="ConfirmImageFolder">
+          <source>An "Images" folder already exists there!
+Would you like to replace it?</source>
+          <target>Uma pasta "Images" já existe 
+Gostaria de substituí-la?</target>
+        </trans-unit>
+        <trans-unit id="ZYahIeSDiz5Tz/hjbW8C2A" resname="Overwrite">
+          <source>Overwrite</source>
+          <target>Sobrescrever</target>
+        </trans-unit>
+        <trans-unit id="gJPawW7rsig8FtISvxRypw" resname="All">
+          <source>All</source>
+          <target>Todos</target>
+        </trans-unit>
+        <trans-unit id="JYFMlsryz/0iGg7gUz7AUA" resname="FromComma">
+          <source>From:</source>
+          <target>De:</target>
+        </trans-unit>
+        <trans-unit id="vcXBxWYL/WBWSqCP8bp63A" resname="ToComma">
+          <source>to:</source>
+          <target>Até:</target>
+        </trans-unit>
+        <trans-unit id="RMDC+cSZBoQl5t/kVyWSGg" resname="svgEllipsis">
+          <source>SVG…</source>
+          <target>SVG…</target>
+        </trans-unit>
+        <trans-unit id="yXC6rMdaGMCwbJsOKcSU+Q" resname="htmlEllipsis">
+          <source>HTML…</source>
+          <target>HTML…</target>
+        </trans-unit>
+        <trans-unit id="DlMn8kPNE6u2c2tRr8jppA" resname="FileNamePrompt">
+          <source>Name of the file to be created</source>
+          <target>Nome do arquivo a ser criado</target>
+        </trans-unit>
+        <trans-unit id="9AHHUOIbvZ1JaXXlXU4VWQ" resname="FolderNamePrompt">
+          <source>Name of the folder to be created</source>
+          <target>Nome da pasta a ser criado</target>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
@@ -1710,12 +1764,12 @@ Caso contrário, serão calculadas apenas fórmulas que nunca foram calculadas.
           <target>Alinhamentos</target>
         </trans-unit>
         <trans-unit id="zRIujmEncGp6o57fw558gQ" resname="HorizontalHyphen">
-          <source>Horizontal:</source>
-          <target>Horizontal:</target>
+          <source>Horizontal alignment:</source>
+          <target>Alinhamento horizontal:</target>
         </trans-unit>
         <trans-unit id="8LsAUIhSSfbN0OJ6Lw53Tg" resname="VerticalHyphen">
-          <source>Vertical:</source>
-          <target>Vertical:</target>
+          <source>Vertical alignment:</source>
+          <target>Alinhamento vertical:</target>
         </trans-unit>
         <trans-unit id="OeBtEIyH9SPbvssc58l4CQ" resname="OriginHyphen">
           <source>Origin:</source>
@@ -1796,6 +1850,22 @@ Caso contrário, serão calculadas apenas fórmulas que nunca foram calculadas.
         <trans-unit id="PkaSe6J+O4IfvlHou7auvA" resname="editImageURL">
           <source>Edit image URL…</source>
           <target>Editar a URL da imagem...</target>
+        </trans-unit>
+        <trans-unit id="00lbTfGC7req5VFUsKJClQ" resname="editImageFormula">
+          <source>Edit image formula</source>
+          <target>Editar a fórmula de imagem</target>
+        </trans-unit>
+        <trans-unit id="fol28Q4W1QaiCmasz8InLQ" resname="WidthColon">
+          <source>Width:</source>
+          <target>Largura:</target>
+        </trans-unit>
+        <trans-unit id="gRUAqvqF/1uDA6gPAG35KQ" resname="HeightColon">
+          <source>Height:</source>
+          <target>Altura:</target>
+        </trans-unit>
+        <trans-unit id="kTXJQBET6xQGp0xvCmrDSg" resname="Propagate">
+          <source>Propagate</source>
+          <target>Propagar</target>
         </trans-unit>
       </group>
     </body>

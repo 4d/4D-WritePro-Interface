@@ -26,6 +26,7 @@ For toolbars, the following tabs are available:
 * "Spell"
 * "Protection"
 * "ImportExport"
+* "FindAndReplace"
 
 For sidebars, the following tabs are available:
 
@@ -41,7 +42,7 @@ For sidebars, the following tabs are available:
 * "Tables"
 * "Protection"
 * "ImportExport"
-
+* "FindAndReplace"
 
 ## Example
 

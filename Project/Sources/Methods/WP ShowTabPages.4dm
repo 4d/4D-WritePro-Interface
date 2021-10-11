@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"shared":true,"invisible":true}
 C_TEXT:C284($1;$subformName)
 C_COLLECTION:C1488($2;$tabs)
 

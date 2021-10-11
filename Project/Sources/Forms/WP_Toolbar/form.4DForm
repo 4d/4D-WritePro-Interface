@@ -11,6 +11,7 @@
 	"events": [
 		"onLoad",
 		"onTimer",
+		"onResize",
 		"onBoundVariableChange",
 		"onPageChange"
 	],
@@ -31,23 +32,12 @@
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
-					"width": 880,
+					"width": 1370,
 					"height": 20,
 					"visibility": "hidden",
-					"stroke": "#9400d3",
-					"fill": "#da70d6",
+					"stroke": "transparent",
+					"fill": "#ffb6c1",
 					"sizingX": "grow"
-				},
-				"Rectangle": {
-					"type": "rectangle",
-					"top": 20,
-					"left": 0,
-					"width": 880,
-					"height": 70,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"fill": "#E0E0E0",
-					"stroke": "transparent"
 				},
 				"Line": {
 					"type": "line",
@@ -368,216 +358,6 @@
 					"width": 0,
 					"startPoint": "topLeft"
 				},
-				"tabBtn_Home": {
-					"type": "radio",
-					"top": 0,
-					"left": 7,
-					"width": 80,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"text": ":xliff:Home",
-					"icon": "/RESOURCES/",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
-					"radioGroup": "Group34",
-					"method": "ObjectMethods/tabBtn_Home.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"tabBtn_Insert": {
-					"type": "radio",
-					"top": 0,
-					"left": 86,
-					"width": 80,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"text": ":xliff:insertAndView",
-					"icon": "/RESOURCES/",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
-					"radioGroup": "Group34",
-					"method": "ObjectMethods/tabBtn_Insert.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"tabBtn_Margins": {
-					"type": "radio",
-					"top": 0,
-					"left": 165,
-					"width": 80,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"text": ":xliff:margins",
-					"icon": "/RESOURCES/",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
-					"radioGroup": "Group34",
-					"method": "ObjectMethods/tabBtn_Margins.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"tabBtn_Printing": {
-					"type": "radio",
-					"top": 0,
-					"left": 402,
-					"width": 80,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"text": ":xliff:print",
-					"icon": "/RESOURCES/",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
-					"radioGroup": "Group34",
-					"method": "ObjectMethods/tabBtn_Printing.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"tabBtn_Images": {
-					"type": "radio",
-					"top": 0,
-					"left": 323,
-					"width": 80,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"text": ":xliff:images",
-					"icon": "/RESOURCES/",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
-					"radioGroup": "Group34",
-					"method": "ObjectMethods/tabBtn_Images.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"tabBtn_Borders": {
-					"type": "radio",
-					"top": 0,
-					"left": 244,
-					"width": 80,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"text": ":xliff:borders",
-					"icon": "/RESOURCES/",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
-					"radioGroup": "Group34",
-					"method": "ObjectMethods/tabBtn_Borders.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"tabBtn_Spell": {
-					"type": "radio",
-					"top": 0,
-					"left": 559,
-					"width": 80,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"text": ":xliff:spell",
-					"icon": "/RESOURCES/",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
-					"radioGroup": "Group34",
-					"method": "ObjectMethods/tabBtn_Spell.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"tabBtn_Tables": {
-					"type": "radio",
-					"top": 0,
-					"left": 481,
-					"width": 80,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"text": ":xliff:Tables",
-					"icon": "/RESOURCES/",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
-					"radioGroup": "Group34",
-					"method": "ObjectMethods/tabBtn_Tables.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"tabBtn_Protection": {
-					"type": "radio",
-					"top": 0,
-					"left": 637,
-					"width": 80,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"text": ":xliff:protection",
-					"icon": "/RESOURCES/",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
-					"radioGroup": "Group34",
-					"method": "ObjectMethods/tabBtn_Protection.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"tabBtn_ImportExport": {
-					"type": "radio",
-					"top": 0,
-					"left": 715,
-					"width": 80,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"text": ":xliff:importExport",
-					"icon": "/RESOURCES/",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
-					"radioGroup": "Group34",
-					"method": "ObjectMethods/tabBtn_ImportExport.4dm",
-					"events": [
-						"onClick"
-					]
-				},
 				"Button": {
 					"type": "button",
 					"text": "LOREM",
@@ -597,26 +377,357 @@
 					"focusable": false,
 					"sizingX": "move"
 				},
-				"tabBtn_FindAndReplace": {
-					"type": "radio",
+				"tabRect_Home": {
+					"type": "rectangle",
+					"top": -9,
+					"left": 0,
+					"width": 52,
+					"height": 30,
+					"stroke": "transparent",
+					"fill": "#b1c4dd",
+					"borderRadius": 2
+				},
+				"tabRect_Insert": {
+					"type": "rectangle",
+					"top": -10,
+					"left": 80,
+					"width": 52,
+					"height": 30,
+					"stroke": "transparent",
+					"fill": "#b1c4dd",
+					"borderRadius": 2
+				},
+				"tabRect_Margins": {
+					"type": "rectangle",
+					"top": -10,
+					"left": 160,
+					"width": 52,
+					"height": 30,
+					"stroke": "transparent",
+					"fill": "#b1c4dd",
+					"borderRadius": 2
+				},
+				"tabRect_Borders": {
+					"type": "rectangle",
+					"top": -10,
+					"left": 240,
+					"width": 52,
+					"height": 30,
+					"stroke": "transparent",
+					"fill": "#b1c4dd",
+					"borderRadius": 2
+				},
+				"tabRect_Images": {
+					"type": "rectangle",
+					"top": -10,
+					"left": 320,
+					"width": 52,
+					"height": 30,
+					"stroke": "transparent",
+					"fill": "#b1c4dd",
+					"borderRadius": 2
+				},
+				"tabRect_Printing": {
+					"type": "rectangle",
+					"top": -10,
+					"left": 401,
+					"width": 52,
+					"height": 30,
+					"stroke": "transparent",
+					"fill": "#b1c4dd",
+					"borderRadius": 2
+				},
+				"tabRect_Tables": {
+					"type": "rectangle",
+					"top": -10,
+					"left": 482,
+					"width": 52,
+					"height": 30,
+					"stroke": "transparent",
+					"fill": "#b1c4dd",
+					"borderRadius": 2
+				},
+				"tabRect_Spell": {
+					"type": "rectangle",
+					"top": -10,
+					"left": 563,
+					"width": 52,
+					"height": 30,
+					"stroke": "transparent",
+					"fill": "#b1c4dd",
+					"borderRadius": 2
+				},
+				"tabRect_Protection": {
+					"type": "rectangle",
+					"top": -10,
+					"left": 644,
+					"width": 52,
+					"height": 30,
+					"stroke": "transparent",
+					"fill": "#b1c4dd",
+					"borderRadius": 2
+				},
+				"tabRect_ImportExport": {
+					"type": "rectangle",
+					"top": -10,
+					"left": 719,
+					"width": 52,
+					"height": 30,
+					"stroke": "transparent",
+					"fill": "#b1c4dd",
+					"borderRadius": 2
+				},
+				"tabRect_FindAndReplace": {
+					"type": "rectangle",
+					"top": -10,
+					"left": 796,
+					"width": 52,
+					"height": 30,
+					"stroke": "transparent",
+					"fill": "#b1c4dd",
+					"borderRadius": 2
+				},
+				"tabBtn_Home": {
+					"type": "button",
+					"text": ":xliff:Home",
 					"top": 0,
-					"left": 793,
-					"width": 80,
+					"left": 0,
+					"width": 52,
 					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"text": ":xliff:FindSlashReplace",
-					"icon": "/RESOURCES/",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Toolbar1/Tab.png",
-					"radioGroup": "Group34",
-					"method": "ObjectMethods/tabBtn_FindAndReplace.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "toolbar",
+					"method": "ObjectMethods/tabBtn_Home.4dm",
+					"focusable": false
+				},
+				"tabBtn_Insert": {
+					"type": "button",
+					"text": ":xliff:insertAndView",
+					"top": 0,
+					"left": 80,
+					"width": 52,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"method": "ObjectMethods/tabBtn_Insert.4dm",
+					"focusable": false
+				},
+				"tabBtn_Margins": {
+					"type": "button",
+					"text": ":xliff:margins",
+					"top": 0,
+					"left": 160,
+					"width": 52,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"method": "ObjectMethods/tabBtn_Margins.4dm",
+					"focusable": false
+				},
+				"tabBtn_Borders": {
+					"type": "button",
+					"text": ":xliff:borders",
+					"top": 0,
+					"left": 240,
+					"width": 52,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"method": "ObjectMethods/tabBtn_Borders.4dm",
+					"focusable": false
+				},
+				"tabBtn_Images": {
+					"type": "button",
+					"text": ":xliff:images",
+					"top": 0,
+					"left": 320,
+					"width": 52,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"method": "ObjectMethods/tabBtn_Images.4dm",
+					"focusable": false
+				},
+				"tabBtn_Printing": {
+					"type": "button",
+					"text": ":xliff:print",
+					"top": 0,
+					"left": 401,
+					"width": 52,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"method": "ObjectMethods/tabBtn_Printing.4dm",
+					"focusable": false
+				},
+				"tabBtn_Tables": {
+					"type": "button",
+					"text": ":xliff:Tables",
+					"top": 0,
+					"left": 482,
+					"width": 52,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"method": "ObjectMethods/tabBtn_Tables.4dm",
+					"focusable": false
+				},
+				"tabBtn_Spell": {
+					"type": "button",
+					"text": ":xliff:spell",
+					"top": 0,
+					"left": 563,
+					"width": 52,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"method": "ObjectMethods/tabBtn_Spell.4dm",
+					"focusable": false
+				},
+				"tabBtn_Protection": {
+					"type": "button",
+					"text": ":xliff:protection",
+					"top": 0,
+					"left": 644,
+					"width": 52,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"method": "ObjectMethods/tabBtn_Protection.4dm",
+					"stroke": "automatic",
+					"focusable": false
+				},
+				"tabBtn_ImportExport": {
+					"type": "button",
+					"text": ":xliff:importExport",
+					"top": 0,
+					"left": 719,
+					"width": 52,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"method": "ObjectMethods/tabBtn_ImportExport.4dm",
+					"focusable": false
+				},
+				"tabBtn_FindAndReplace": {
+					"type": "button",
+					"text": ":xliff:FindElipsis",
+					"top": 0,
+					"left": 796,
+					"width": 52,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"method": "ObjectMethods/tabBtn_FindAndReplace.4dm",
+					"focusable": false
+				},
+				"Background": {
+					"type": "rectangle",
+					"top": 20,
+					"left": 0,
+					"width": 880,
+					"height": 70,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#E0E0E0",
+					"stroke": "transparent"
+				},
+				"cbBold1": {
+					"type": "checkbox",
+					"top": 338,
+					"left": 10,
+					"width": 28,
+					"height": 24,
+					"tooltip": ":xliff:bold",
+					"action": "fontBold",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Bold_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "b"
+				},
+				"cbItalic1": {
+					"type": "checkbox",
+					"top": 338,
+					"left": 38,
+					"width": 28,
+					"height": 24,
+					"tooltip": ":xliff:italic",
+					"action": "fontItalic",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Italic_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "i"
+				},
+				"btn_underline1": {
+					"type": "checkbox",
+					"top": 338,
+					"left": 66,
+					"width": 28,
+					"height": 24,
+					"tooltip": ":xliff:underline",
+					"action": "fontUnderline",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Underline_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "u"
+				},
+				"Text4": {
+					"type": "text",
+					"text": "<<--  Always active even if visible only in tab 1\r(drawback : can't be disabled, bu who cares ?)",
+					"top": 342,
+					"left": 100,
+					"width": 371,
+					"height": 46,
+					"fontWeight": "bold",
+					"stroke": "#ffd700"
 				}
 			}
 		},
@@ -1277,13 +1388,16 @@
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:insertPicture",
-					"action": "insertImage",
+					"action": "",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/Images_32.png",
 					"iconFrames": 4,
 					"style": "toolbar",
-					"popupPlacement": "none",
-					"events": []
+					"method": "ObjectMethods/btn_insertImage.4dm",
+					"popupPlacement": "linked",
+					"events": [
+						"onClick"
+					]
 				},
 				"btn_insertPageCount": {
 					"type": "button",
@@ -1725,7 +1839,7 @@
 					"tooltip": ":xliff:insertContinuousPageBreak",
 					"action": "insertContinuousSectionBreak",
 					"focusable": false,
-					"icon": "/PACKAGE/iconsFullSet-Retina/Toolbar1/Insert/ContinousSectionBreak_32.png",
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/ContinuousSectionBreak_32.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				}
@@ -1884,7 +1998,7 @@
 					"width": 0,
 					"startPoint": "topLeft"
 				},
-				"Text": {
+				"lbl_Text": {
 					"type": "text",
 					"top": 30,
 					"left": 0,
@@ -2071,91 +2185,6 @@
 						"onAlternateClick"
 					]
 				},
-				"borderStyleColor": {
-					"type": "button",
-					"top": 199,
-					"left": 989,
-					"width": 30,
-					"height": 24,
-					"tooltip": ":xliff:bordersColor",
-					"action": "paragraph/borderColor/showDialog",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderBackground_24.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"borderStyleType": {
-					"type": "dropdown",
-					"top": 201,
-					"left": 859,
-					"width": 120,
-					"height": 20,
-					"tooltip": ":xliff:bordersStyle",
-					"focusable": false,
-					"action": "paragraph/borderStyle",
-					"method": "ObjectMethods/borderStyleType.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"btnBorderStyleLeft": {
-					"type": "button",
-					"top": 286,
-					"left": 1044,
-					"width": 30,
-					"height": 24,
-					"tooltip": ":xliff:borderLeft",
-					"action": "paragraph/borderStyleLeft?value=solid",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderLeft_24.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "toolbar",
-					"events": [
-						"onClick"
-					]
-				},
-				"btnBorderStyleBottom": {
-					"type": "button",
-					"top": 316,
-					"left": 1044,
-					"width": 30,
-					"height": 24,
-					"tooltip": ":xliff:borderBottom",
-					"action": "paragraph/outside/borderStyleBottom?value=solid",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/Borderbottom_24.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "toolbar"
-				},
-				"btnBorderStyleTop": {
-					"type": "button",
-					"top": 316,
-					"left": 1074,
-					"width": 30,
-					"height": 24,
-					"tooltip": ":xliff:borderTop",
-					"action": "paragraph/outside/borderStyleTop?value=solid",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderTop_24.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "toolbar"
-				},
-				"btnBorderStyleRight": {
-					"type": "button",
-					"top": 286,
-					"left": 1074,
-					"width": 30,
-					"height": 24,
-					"tooltip": ":xliff:borderRight",
-					"action": "paragraph/borderStyleRight?value=solid",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderRight_24.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
 				"btnBorderStyleNone": {
 					"type": "button",
 					"top": 40,
@@ -2169,22 +2198,12 @@
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"borderStyleWidth": {
-					"type": "dropdown",
-					"top": 202,
-					"left": 1029,
-					"width": 90,
-					"height": 18,
-					"tooltip": ":xliff:borderWidth",
-					"focusable": false,
-					"action": "paragraph/borderWidth"
-				},
-				"Text1": {
+				"lbl_Text1": {
 					"type": "text",
 					"top": 30,
 					"left": 0,
 					"width": 190,
-					"height": 14,
+					"height": 13,
 					"textAlign": "right",
 					"fontTheme": "additional",
 					"text": ":xliff:applyBordersTo"
@@ -2210,15 +2229,6 @@
 					"stroke": "#888888",
 					"width": 0,
 					"startPoint": "topLeft"
-				},
-				"Image17": {
-					"type": "picture",
-					"top": 286,
-					"left": 442,
-					"width": 30,
-					"height": 24,
-					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/BorderLine_24.png"
 				},
 				"btnBorderStyleLeft1": {
 					"type": "button",
@@ -2413,7 +2423,7 @@
 				"btn_imageInline": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 50,
+					"left": 55,
 					"width": 50,
 					"height": 50,
 					"tooltip": ":xliff:imageInline",
@@ -2426,7 +2436,7 @@
 				"btn_imageInFront": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 100,
+					"left": 105,
 					"width": 50,
 					"height": 50,
 					"tooltip": ":xliff:imageInFront",
@@ -2439,7 +2449,7 @@
 				"btn_imageBehind": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 5,
+					"left": 10,
 					"width": 45,
 					"height": 50,
 					"tooltip": ":xliff:imageBehind",
@@ -2452,7 +2462,7 @@
 				"Line43": {
 					"type": "line",
 					"top": 30,
-					"left": 155,
+					"left": 160,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2461,7 +2471,7 @@
 				"btn_alignCenter1": {
 					"type": "checkbox",
 					"top": 56,
-					"left": 345,
+					"left": 350,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignCenter",
@@ -2474,7 +2484,7 @@
 				"btn_alignLeft1": {
 					"type": "checkbox",
 					"top": 56,
-					"left": 315,
+					"left": 320,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignLeft",
@@ -2487,7 +2497,7 @@
 				"btn_alignRight1": {
 					"type": "checkbox",
 					"top": 56,
-					"left": 375,
+					"left": 380,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignRight",
@@ -2500,7 +2510,7 @@
 				"btn_alignMiddle": {
 					"type": "checkbox",
 					"top": 28,
-					"left": 345,
+					"left": 350,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignCenter",
@@ -2513,7 +2523,7 @@
 				"btn_alignTop": {
 					"type": "checkbox",
 					"top": 28,
-					"left": 315,
+					"left": 320,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignTop",
@@ -2526,7 +2536,7 @@
 				"btn_alignBottom": {
 					"type": "checkbox",
 					"top": 28,
-					"left": 375,
+					"left": 380,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignBottom",
@@ -2539,7 +2549,7 @@
 				"Line44": {
 					"type": "line",
 					"top": 30,
-					"left": 420,
+					"left": 425,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2548,7 +2558,7 @@
 				"Line45": {
 					"type": "line",
 					"top": 30,
-					"left": 300,
+					"left": 305,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2557,7 +2567,7 @@
 				"Popup_anchorToPage": {
 					"type": "dropdown",
 					"top": 32,
-					"left": 205,
+					"left": 210,
 					"width": 80,
 					"height": 17,
 					"tooltip": ":xliff:anchorToPage",
@@ -2570,7 +2580,7 @@
 				"Popup-anchorToSection": {
 					"type": "dropdown",
 					"top": 60,
-					"left": 205,
+					"left": 210,
 					"width": 80,
 					"height": 17,
 					"tooltip": ":xliff:AnchorToSection",
@@ -2583,7 +2593,7 @@
 				"Line42": {
 					"type": "line",
 					"top": 30,
-					"left": 540,
+					"left": 545,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2592,7 +2602,7 @@
 				"3D Button72": {
 					"type": "button",
 					"top": 28,
-					"left": 165,
+					"left": 170,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:anchorToPage",
@@ -2604,7 +2614,7 @@
 				"3D Button76": {
 					"type": "button",
 					"top": 56,
-					"left": 165,
+					"left": 170,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:AnchorToSection",
@@ -2613,11 +2623,29 @@
 					"iconFrames": 4,
 					"style": "custom"
 				},
+				"btn_PictInfo": {
+					"type": "button",
+					"text": "",
+					"top": 30,
+					"left": 565,
+					"width": 50,
+					"height": 50,
+					"events": [
+						"onClick"
+					],
+					"stroke": "#ff0000",
+					"focusable": false,
+					"method": "ObjectMethods/btn_PictInfo.4dm",
+					"style": "toolbar",
+					"icon": "/RESOURCES/Images/Toolbar1/Images/ImageSettings_48.png",
+					"iconFrames": 4,
+					"textPlacement": "center"
+				},
 				"btn_PictInfo1": {
 					"type": "button",
 					"text": "",
 					"top": 30,
-					"left": 430,
+					"left": 435,
 					"width": 50,
 					"height": 50,
 					"events": [],
@@ -2634,7 +2662,7 @@
 					"type": "button",
 					"text": "",
 					"top": 30,
-					"left": 490,
+					"left": 495,
 					"width": 50,
 					"height": 50,
 					"events": [],
@@ -2743,9 +2771,9 @@
 				"lbl_Size1": {
 					"type": "text",
 					"top": 30,
-					"left": 140,
+					"left": 120,
 					"width": 180,
-					"height": 14,
+					"height": 13,
 					"textAlign": "left",
 					"fontTheme": "additional",
 					"text": ":xliff:LabelRows"
@@ -2753,9 +2781,9 @@
 				"lbl_Size2": {
 					"type": "text",
 					"top": 30,
-					"left": 360,
+					"left": 330,
 					"width": 180,
-					"height": 14,
+					"height": 13,
 					"textAlign": "left",
 					"fontTheme": "additional",
 					"text": ":xliff:LabelColumns"
@@ -2763,7 +2791,7 @@
 				"btnInsertAboveRow": {
 					"type": "button",
 					"top": 40,
-					"left": 140,
+					"left": 120,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:InsertAbove",
@@ -2778,7 +2806,7 @@
 				"btnInsertBelowRow": {
 					"type": "button",
 					"top": 40,
-					"left": 190,
+					"left": 165,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:InsertBelow",
@@ -2793,7 +2821,7 @@
 				"btnInsertBeforeColumn": {
 					"type": "button",
 					"top": 40,
-					"left": 360,
+					"left": 330,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:InsertLeft",
@@ -2808,7 +2836,7 @@
 				"btnInsertAfterColumn": {
 					"type": "button",
 					"top": 40,
-					"left": 410,
+					"left": 375,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:InsertRight",
@@ -2823,7 +2851,7 @@
 				"btnDeleteRows": {
 					"type": "button",
 					"top": 40,
-					"left": 240,
+					"left": 210,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:DeleteRow",
@@ -2838,7 +2866,7 @@
 				"btnDeleteColumns": {
 					"type": "button",
 					"top": 40,
-					"left": 460,
+					"left": 420,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:DeleteColumn",
@@ -2853,7 +2881,7 @@
 				"Line54": {
 					"type": "line",
 					"top": 30,
-					"left": 125,
+					"left": 110,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2861,12 +2889,12 @@
 				},
 				"lbl_Background": {
 					"type": "text",
-					"top": 30,
-					"left": 600,
+					"top": 31,
+					"left": 540,
 					"width": 80,
-					"height": 14,
+					"height": 16,
 					"textAlign": "left",
-					"fontTheme": "additional",
+					"fontTheme": "normal",
 					"text": ":xliff:LabelCells"
 				},
 				"btnTableSettings": {
@@ -2889,7 +2917,7 @@
 				"Line55": {
 					"type": "line",
 					"top": 30,
-					"left": 345,
+					"left": 320,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2898,7 +2926,7 @@
 				"Line56": {
 					"type": "line",
 					"top": 30,
-					"left": 585,
+					"left": 530,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2907,9 +2935,9 @@
 				"lbl_Size3": {
 					"type": "text",
 					"top": 30,
-					"left": 50,
+					"left": 10,
 					"width": 70,
-					"height": 14,
+					"height": 13,
 					"textAlign": "left",
 					"fontTheme": "additional",
 					"text": ":xliff:LabelTable"
@@ -2917,7 +2945,7 @@
 				"Line57": {
 					"type": "line",
 					"top": 30,
-					"left": 675,
+					"left": 650,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2926,7 +2954,7 @@
 				"btnRowSettings": {
 					"type": "button",
 					"top": 40,
-					"left": 290,
+					"left": 270,
 					"width": 40,
 					"height": 40,
 					"action": "",
@@ -2946,7 +2974,7 @@
 				"btnCellSettings": {
 					"type": "button",
 					"top": 40,
-					"left": 610,
+					"left": 540,
 					"width": 40,
 					"height": 40,
 					"action": "",
@@ -2966,7 +2994,7 @@
 				"btnColumnSettings": {
 					"type": "button",
 					"top": 40,
-					"left": 520,
+					"left": 480,
 					"width": 40,
 					"height": 40,
 					"action": "",
@@ -3624,7 +3652,7 @@
 					"width": 0,
 					"startPoint": "topLeft"
 				},
-				"Text4": {
+				"lbl_Replace": {
 					"type": "text",
 					"text": ":xliff:ReplaceByColon",
 					"top": 60,
@@ -3633,7 +3661,7 @@
 					"height": 16,
 					"textAlign": "right"
 				},
-				"Text5": {
+				"lbl_Find": {
 					"type": "text",
 					"text": ":xliff:FindColon",
 					"top": 32,
@@ -3779,7 +3807,7 @@
 					"class": "Palette",
 					"focusable": false,
 					"text": "",
-					"icon": "/RESOURCES/Images/Toolbar1/FindAndReplace/Options.png",
+					"icon": "/RESOURCES/Images/Toolbar1/FindAndReplace/options_32.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
 					"method": "ObjectMethods/btnOptions.4dm",
@@ -3821,245 +3849,6 @@
 				"ReplacementCount",
 				"message"
 			]
-		},
-		{
-			"objects": {
-				"inputFind1": {
-					"type": "input",
-					"top": 30,
-					"left": 130,
-					"width": 140,
-					"height": 17,
-					"sizingX": "fixed",
-					"dataSource": "oForm.FR.find",
-					"class": "Palette",
-					"dragging": "none",
-					"dropping": "custom",
-					"method": "ObjectMethods/inputFind1.4dm",
-					"events": [
-						"onAfterKeystroke",
-						"onAfterEdit"
-					],
-					"hideFocusRing": true,
-					"fill": "automatic",
-					"borderStyle": "system",
-					"fontTheme": "main",
-					"fontSize": 14,
-					"fontWeight": "normal",
-					"placeholder": ""
-				},
-				"inputReplace1": {
-					"type": "input",
-					"top": 30,
-					"left": 400,
-					"width": 140,
-					"height": 17,
-					"sizingX": "fixed",
-					"dataSource": "oForm.FR.replace",
-					"class": "Palette",
-					"dragging": "none",
-					"dropping": "custom",
-					"method": "ObjectMethods/inputReplace1.4dm",
-					"events": [
-						"onAfterEdit"
-					],
-					"hideFocusRing": true,
-					"fill": "automatic",
-					"borderStyle": "system",
-					"fontTheme": "main",
-					"fontSize": 14,
-					"fontWeight": "normal",
-					"placeholder": ""
-				},
-				"btnReplaceAll1": {
-					"type": "button",
-					"top": 60,
-					"left": 680,
-					"width": 110,
-					"height": 22,
-					"sizingX": "fixed",
-					"text": ":xliff:ReplaceAll",
-					"class": "Palette",
-					"focusable": false,
-					"method": "ObjectMethods/btnReplaceAll1.4dm",
-					"events": [
-						"onClick"
-					],
-					"tooltip": ":xliff:ReplaceAll",
-					"fontWeight": "normal",
-					"icon": "",
-					"style": "regular",
-					"iconFrames": 4
-				},
-				"btnReplaceSingle1": {
-					"type": "button",
-					"top": 59,
-					"left": 400,
-					"width": 100,
-					"height": 22,
-					"sizingX": "fixed",
-					"text": ":xliff:Replace",
-					"class": "Palette",
-					"focusable": false,
-					"method": "ObjectMethods/btnReplaceSingle1.4dm",
-					"events": [
-						"onClick"
-					],
-					"icon": "",
-					"iconFrames": 4,
-					"tooltip": ":xliff:Replace",
-					"textPlacement": "right",
-					"style": "regular"
-				},
-				"btnReplaceSingleAndFind1": {
-					"type": "button",
-					"top": 60,
-					"left": 510,
-					"width": 160,
-					"height": 22,
-					"sizingX": "fixed",
-					"text": ":xliff:ReplaceAndNext",
-					"class": "Palette",
-					"focusable": false,
-					"method": "ObjectMethods/btnReplaceSingleAndFind1.4dm",
-					"events": [
-						"onClick"
-					],
-					"icon": "",
-					"iconFrames": 4,
-					"textPlacement": "right",
-					"tooltip": ":xliff:ReplaceAndNext",
-					"style": "regular"
-				},
-				"Line1": {
-					"type": "line",
-					"top": 30,
-					"left": 295,
-					"height": 50,
-					"stroke": "#888888",
-					"width": 0,
-					"startPoint": "topLeft"
-				},
-				"btnOptions1": {
-					"type": "button",
-					"top": 40,
-					"left": 820,
-					"width": 40,
-					"height": 22,
-					"sizingX": "fixed",
-					"class": "Palette",
-					"focusable": false,
-					"text": "",
-					"icon": "/RESOURCES/Images/Toolbar1/FindAndReplace/Options.png",
-					"iconFrames": 4,
-					"textPlacement": "right",
-					"method": "ObjectMethods/btnOptions1.4dm",
-					"events": [
-						"onClick"
-					],
-					"tooltip": ":xliff:Options",
-					"style": "toolbar"
-				},
-				"Text6": {
-					"type": "text",
-					"text": ":xliff:ReplaceByColon",
-					"top": 30,
-					"left": 290,
-					"width": 100,
-					"height": 16,
-					"textAlign": "right"
-				},
-				"Text7": {
-					"type": "text",
-					"text": ":xliff:FindColon",
-					"top": 30,
-					"left": 40,
-					"width": 80,
-					"height": 16,
-					"textAlign": "right"
-				},
-				"occurencesInfo1": {
-					"type": "input",
-					"left": 693,
-					"top": 30,
-					"width": 47,
-					"height": 17,
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"dataSource": "Form:C1466.nbOccurences",
-					"stroke": "automatic",
-					"fontStyle": "italic",
-					"dataSourceTypeHint": "number",
-					"numberFormat": "###,##0;;0",
-					"textAlign": "left",
-					"fontWeight": "normal"
-				},
-				"btnFindPrevious1": {
-					"type": "button",
-					"top": 60,
-					"left": 130,
-					"width": 65,
-					"height": 20,
-					"sizingX": "fixed",
-					"class": "Palette",
-					"focusable": false,
-					"text": "◁",
-					"icon": "",
-					"iconFrames": 4,
-					"textPlacement": "right",
-					"method": "ObjectMethods/btnFindPrevious1.4dm",
-					"events": [
-						"onClick"
-					],
-					"tooltip": ":xliff:FindPrevious",
-					"style": "regular",
-					"fontSize": 16,
-					"stroke": "automatic"
-				},
-				"btnFindPrevious2": {
-					"type": "button",
-					"top": 60,
-					"left": 205,
-					"width": 65,
-					"height": 22,
-					"sizingX": "fixed",
-					"class": "Palette",
-					"focusable": false,
-					"text": "▷",
-					"icon": "",
-					"iconFrames": 4,
-					"textPlacement": "right",
-					"method": "ObjectMethods/btnFindPrevious2.4dm",
-					"events": [
-						"onClick"
-					],
-					"tooltip": ":xliff:FindNext",
-					"style": "regular",
-					"fontSize": 16,
-					"stroke": "automatic"
-				},
-				"OccurencesLabel1": {
-					"type": "text",
-					"text": ":xliff:OccurencesColon",
-					"top": 30,
-					"left": 585,
-					"width": 100,
-					"height": 16,
-					"textAlign": "right",
-					"fontStyle": "italic"
-				},
-				"Line66": {
-					"type": "line",
-					"top": 30,
-					"left": 810,
-					"height": 50,
-					"stroke": "#888888",
-					"width": 0,
-					"startPoint": "topLeft"
-				}
-			}
 		}
 	],
 	"editor": {
@@ -4067,19 +3856,6 @@
 			"Group31": [
 				"Stylesheet_Type2",
 				"Stylesheet_Type1"
-			],
-			"Group34": [
-				"tabBtn_Home",
-				"tabBtn_Insert",
-				"tabBtn_Margins",
-				"tabBtn_Printing",
-				"tabBtn_Images",
-				"tabBtn_Borders",
-				"tabBtn_Spell",
-				"tabBtn_Tables",
-				"tabBtn_Protection",
-				"tabBtn_ImportExport",
-				"tabBtn_FindAndReplace"
 			]
 		},
 		"activeView": "View 1",
@@ -4099,7 +3875,6 @@
 				]
 			},
 			"View 3": {
-				"visible": false,
 				"objects": [
 					"win_replaceLeft1",
 					"mac_replaceCenter3",
@@ -4109,25 +3884,15 @@
 					"win_replaceRight"
 				]
 			},
-			"View 4": {
-				"visible": false
-			},
-			"View 5": {
-				"visible": false
-			},
-			"View 7": {
-				"visible": false
-			},
-			"View 6": {
-				"visible": false
-			},
-			"View 8": {
-				"visible": false
-			},
+			"View 4": {},
+			"View 5": {},
+			"View 7": {},
+			"View 6": {},
+			"View 8": {},
 			"View 9": {
 				"visible": false
 			}
 		}
 	},
-	"geometryStamp": 3374
+	"geometryStamp": 4605
 }

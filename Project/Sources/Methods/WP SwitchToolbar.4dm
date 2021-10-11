@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"shared":true,"invisible":true}
   //ACI0099141 fixed 29/01/2019 by RL  (WP SwitchToolbar intead of WP SwichToolbar, without "t")
 
 C_TEXT:C284($1;$2)

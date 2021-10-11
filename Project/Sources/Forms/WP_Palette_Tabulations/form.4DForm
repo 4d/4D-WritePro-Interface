@@ -2,7 +2,7 @@
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Tabulations",
-	"inheritedForm": "WP_Z_Common",
+	"inheritedForm": "",
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
 	"width": 260,
@@ -27,7 +27,7 @@
 		null,
 		{
 			"objects": {
-				"Rect1": {
+				"Background": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
@@ -47,7 +47,7 @@
 					"textAlign": "right",
 					"text": ":xliff:TypeColon"
 				},
-				"Round Rectangle6": {
+				"IconBgnd2": {
 					"type": "rectangle",
 					"top": 40,
 					"left": 115,
@@ -57,7 +57,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle7": {
+				"IconBgnd3": {
 					"type": "rectangle",
 					"top": 40,
 					"left": 144,
@@ -67,7 +67,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle8": {
+				"IconBgnd4": {
 					"type": "rectangle",
 					"top": 40,
 					"left": 173,
@@ -77,7 +77,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle5": {
+				"IconBgnd1": {
 					"type": "rectangle",
 					"top": 40,
 					"left": 85,
@@ -87,7 +87,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle1": {
+				"IconBgnd5": {
 					"type": "rectangle",
 					"top": 40,
 					"left": 202,
@@ -104,7 +104,7 @@
 					"width": 23,
 					"height": 14,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_TabLeft.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_TabLeft.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"radioGroup": "Group2",
@@ -120,7 +120,7 @@
 					"width": 23,
 					"height": 14,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_TabRight.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_TabRight.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"radioGroup": "Group2",
@@ -136,7 +136,7 @@
 					"width": 23,
 					"height": 14,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_TabCenter.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_TabCenter.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"radioGroup": "Group2",
@@ -152,7 +152,7 @@
 					"width": 23,
 					"height": 14,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_TabDecimal.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_TabDecimal.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"radioGroup": "Group2",
@@ -168,7 +168,7 @@
 					"width": 23,
 					"height": 14,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_TabBar.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_TabBar.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"radioGroup": "Group2",
@@ -344,7 +344,7 @@
 					"width": 30,
 					"height": 30,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/burger.png",
+					"icon": "/RESOURCES/Images/Sidebar/burger.png",
 					"iconFrames": 4,
 					"popupPlacement": "linked",
 					"style": "custom",
@@ -363,7 +363,7 @@
 						"$ref": "/SOURCES/tips.json#/NewTabulation"
 					},
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_Plus.png",
+					"icon": "/RESOURCES/Images/Sidebar/plus.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"method": "ObjectMethods/btnAdd.4dm",
@@ -381,7 +381,7 @@
 						"$ref": "/SOURCES/tips.json#/DeleteTab"
 					},
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_Minus.png",
+					"icon": "/RESOURCES/Images/Sidebar/minus.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"method": "ObjectMethods/btnRemove.4dm",
@@ -482,12 +482,12 @@
 			"View 1": {},
 			"View 2": {
 				"objects": [
-					"Rect1",
+					"Background",
 					"lbl_type",
-					"Round Rectangle6",
-					"Round Rectangle7",
-					"Round Rectangle8",
-					"Round Rectangle5",
+					"IconBgnd2",
+					"IconBgnd3",
+					"IconBgnd4",
+					"IconBgnd1",
 					"tabIndentRuler",
 					"lbl_Indentation",
 					"tabIndentInput"
@@ -513,5 +513,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 2
+	"geometryStamp": 14
 }

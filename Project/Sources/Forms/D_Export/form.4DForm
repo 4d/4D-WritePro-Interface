@@ -18,53 +18,30 @@
 	"pages": [
 		{
 			"objects": {
-				"Button": {
-					"type": "button",
-					"top": 490,
-					"left": 290,
-					"width": 90,
-					"height": 20,
-					"sizingX": "move",
-					"sizingY": "move",
-					"dataSource": "Button",
-					"action": "cancel",
-					"shortcutKey": "[Esc]",
-					"text": ":xliff:cancel",
-					"events": [],
-					"focusable": false
+				"BackgroundB_0": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 540,
+					"height": 750,
+					"fill": "#FFFFFF",
+					"stroke": "transparent"
 				},
-				"Button1": {
-					"type": "button",
-					"top": 490,
-					"left": 400,
-					"width": 120,
-					"height": 20,
-					"sizingX": "move",
-					"sizingY": "move",
-					"dataSource": "Button",
-					"action": "accept",
-					"shortcutKey": "[Enter]",
-					"text": ":xliff:ExportEllipsis",
-					"defaultButton": true,
-					"events": [
-						"onClick"
-					],
-					"focusable": false
-				},
-				"Group Box": {
-					"type": "groupBox",
-					"text": ":xliff:exportOptions",
-					"top": 20,
-					"left": 20,
-					"width": 500,
-					"height": 450
+				"BackgroundA_1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 830,
+					"height": 120,
+					"fill": "#F2F2F2",
+					"stroke": "transparent"
 				},
 				"Line1": {
 					"type": "line",
-					"top": -31,
+					"top": 0,
 					"left": 260,
-					"width": 0,
-					"height": 480,
+					"width": 1,
+					"height": 640,
 					"visibility": "hidden",
 					"stroke": "#da70d6",
 					"strokeDashArray": [
@@ -76,33 +53,24 @@
 				"cbRecomputeFormulas": {
 					"type": "checkbox",
 					"text": ":xliff:recomputeFormulas",
-					"top": 260,
+					"top": 140,
 					"left": 220,
-					"width": 250,
-					"height": 20,
+					"width": 260,
+					"height": 17,
 					"events": [
 						"onClick"
 					],
 					"dataSource": "Form:C1466.recomputeFormulas",
 					"focusable": false,
-					"dataSourceTypeHint": "boolean"
-				},
-				"Text4": {
-					"type": "text",
-					"text": ":xliff:InfoFormulas",
-					"top": 285,
-					"left": 250,
-					"width": 250,
-					"height": 80,
-					"fontTheme": "additional",
-					"stroke": "#696969"
+					"dataSourceTypeHint": "boolean",
+					"tooltip": ":xliff:InfoFormulas"
 				},
 				"rbScreen": {
 					"type": "radio",
 					"text": ":xliff:Screen",
-					"top": 50,
+					"top": 20,
 					"left": 220,
-					"width": 200,
+					"width": 260,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -110,14 +78,15 @@
 					"focusable": false,
 					"dataSource": "Form:C1466.local.rbScreen",
 					"radioGroup": "rbOptimized",
-					"method": "ObjectMethods/rbScreen.4dm"
+					"method": "ObjectMethods/rbScreen.4dm",
+					"tooltip": ":xliff:InfoScreen"
 				},
 				"rbPrint": {
 					"type": "radio",
 					"text": ":xliff:print",
-					"top": 125,
+					"top": 45,
 					"left": 220,
-					"width": 200,
+					"width": 260,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -125,32 +94,22 @@
 					"focusable": false,
 					"dataSource": "Form:C1466.local.rbPrint",
 					"radioGroup": "rbOptimized",
-					"method": "ObjectMethods/rbPrint.4dm"
+					"method": "ObjectMethods/rbPrint.4dm",
+					"tooltip": ":xliff:InfoPrint"
 				},
 				"lblOptimized": {
 					"type": "text",
 					"text": ":xliff:optimizedFor",
-					"top": 52,
+					"top": 22,
 					"left": 30,
 					"width": 180,
 					"height": 16,
 					"textAlign": "right"
 				},
-				"lblMaxDPI": {
-					"type": "text",
-					"text": ":xliff:InfoPrint",
-					"top": 150,
-					"left": 250,
-					"width": 250,
-					"height": 50,
-					"textAlign": "left",
-					"fontTheme": "additional",
-					"stroke": "#696969"
-				},
 				"InputDPI": {
 					"type": "input",
 					"left": 223,
-					"top": 200,
+					"top": 80,
 					"width": 60,
 					"height": 17,
 					"dataSource": "Form:C1466.maxPictureDpi",
@@ -159,103 +118,200 @@
 					],
 					"method": "ObjectMethods/InputDPI.4dm"
 				},
-				"Text": {
-					"type": "text",
-					"text": ":xliff:InfoScreen",
-					"top": 75,
-					"left": 250,
-					"width": 250,
-					"height": 50,
-					"fontTheme": "additional",
-					"stroke": "#696969"
-				},
 				"Text2": {
 					"type": "text",
 					"text": ":xliff:maxPictureDPI",
-					"top": 200,
+					"top": 80,
 					"left": 30,
 					"width": 180,
 					"height": 17,
 					"textAlign": "right"
-				},
-				"Line": {
-					"type": "line",
-					"top": 245,
-					"left": 60,
-					"width": 400,
-					"height": 0,
-					"startPoint": "topLeft",
-					"stroke": "#808080"
 				},
 				"Text3": {
 					"type": "text",
 					"text": ":xliff:FormulasComma",
-					"top": 260,
+					"top": 140,
 					"left": 30,
 					"width": 180,
 					"height": 17,
 					"textAlign": "right"
 				},
-				"Line3": {
+				"Limit_P5": {
 					"type": "line",
-					"top": 365,
-					"left": 60,
-					"width": 400,
-					"height": 0,
-					"startPoint": "topLeft",
-					"stroke": "#808080"
+					"top": 179,
+					"left": 0,
+					"width": 630,
+					"height": 1,
+					"visibility": "hidden",
+					"stroke": "#da70d6",
+					"strokeDashArray": [
+						2,
+						6
+					]
 				}
 			}
 		},
 		{
 			"objects": {
-				"cbHtmlPrettyPrint": {
-					"type": "checkbox",
-					"text": ":xliff:htmlPrettyPrint",
-					"top": 380,
-					"left": 220,
-					"width": 200,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"dataSource": "Form:C1466.htmlPrettyPrint",
-					"focusable": false,
-					"dataSourceTypeHint": "boolean"
+				"BackgroundA_3": {
+					"type": "rectangle",
+					"top": 180,
+					"left": 0,
+					"width": 830,
+					"height": 60,
+					"fill": "#F2F2F2",
+					"stroke": "transparent"
+				},
+				"Text11": {
+					"type": "text",
+					"text": "HTML",
+					"top": 0,
+					"left": 895,
+					"width": 295,
+					"height": 107,
+					"fontSize": 80,
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"visibility": "hidden"
 				},
 				"Text1": {
 					"type": "text",
 					"text": ":xliff:InfoPrettyPrint",
 					"top": 405,
-					"left": 250,
+					"left": 660,
 					"width": 250,
 					"height": 61,
 					"fontTheme": "additional",
 					"stroke": "#696969"
 				},
-				"Text5": {
-					"type": "text",
-					"text": ":xliff:htmlEllipsis",
-					"top": 380,
-					"left": 30,
-					"width": 180,
-					"height": 17,
-					"textAlign": "right"
+				"Limit_P1": {
+					"type": "line",
+					"top": 239,
+					"left": 0,
+					"width": 630,
+					"height": 1,
+					"visibility": "hidden",
+					"stroke": "#da70d6",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 200,
+					"left": 290,
+					"width": 90,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":xliff:cancel",
+					"events": [],
+					"focusable": false
+				},
+				"Button1": {
+					"type": "button",
+					"top": 200,
+					"left": 400,
+					"width": 120,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": ":xliff:ExportEllipsis",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"Limit_P4": {
+					"type": "line",
+					"top": 179,
+					"left": 0,
+					"width": 630,
+					"height": 1,
+					"visibility": "hidden",
+					"stroke": "#da70d6",
+					"strokeDashArray": [
+						2,
+						6
+					]
 				}
 			},
 			"entryOrder": [
-				"cbHtmlPrettyPrint"
+				"Button",
+				"Button1"
 			]
 		},
 		{
 			"objects": {
+				"BackgroundA_2": {
+					"type": "rectangle",
+					"top": 180,
+					"left": 0,
+					"width": 830,
+					"height": 100,
+					"fill": "#F2F2F2",
+					"stroke": "transparent"
+				},
+				"Text10": {
+					"type": "text",
+					"text": "PDF",
+					"top": 0,
+					"left": 955,
+					"width": 295,
+					"height": 107,
+					"fontSize": 80,
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"visibility": "hidden"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 300,
+					"left": 290,
+					"width": 90,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":xliff:cancel",
+					"events": [],
+					"focusable": false
+				},
+				"Button3": {
+					"type": "button",
+					"top": 300,
+					"left": 400,
+					"width": 120,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": ":xliff:ExportEllipsis",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
 				"cbVisibleBackground": {
 					"type": "checkbox",
 					"text": ":xliff:background",
-					"top": 380,
+					"top": 200,
 					"left": 220,
 					"width": 150,
-					"height": 20,
+					"height": 17,
 					"events": [
 						"onClick"
 					],
@@ -266,10 +322,10 @@
 				"cbVisibleHeaders": {
 					"type": "checkbox",
 					"text": ":xliff:headers",
-					"top": 405,
+					"top": 225,
 					"left": 220,
 					"width": 150,
-					"height": 20,
+					"height": 17,
 					"events": [
 						"onClick"
 					],
@@ -280,10 +336,10 @@
 				"cbVisibleFooters": {
 					"type": "checkbox",
 					"text": ":xliff:footers",
-					"top": 430,
+					"top": 250,
 					"left": 220,
 					"width": 150,
-					"height": 20,
+					"height": 17,
 					"events": [
 						"onClick"
 					],
@@ -294,16 +350,325 @@
 				"Text6": {
 					"type": "text",
 					"text": ":xliff:ExportComma",
-					"top": 380,
+					"top": 200,
 					"left": 30,
 					"width": 180,
 					"height": 17,
+					"textAlign": "right"
+				},
+				"Limit_P2": {
+					"type": "line",
+					"top": 339,
+					"left": 0,
+					"width": 630,
+					"height": 1,
+					"visibility": "hidden",
+					"stroke": "#da70d6",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"BackgroundA_6": {
+					"type": "rectangle",
+					"top": 180,
+					"left": 0,
+					"width": 830,
+					"height": 100,
+					"fill": "#F2F2F2",
+					"stroke": "transparent"
+				},
+				"BackgroundA_5": {
+					"type": "rectangle",
+					"top": 830,
+					"left": 24,
+					"width": 830,
+					"height": 60,
+					"fill": "#F2F2F2",
+					"stroke": "transparent"
+				},
+				"BackgroundA_4": {
+					"type": "rectangle",
+					"top": 360,
+					"left": 0,
+					"width": 830,
+					"height": 120,
+					"fill": "#F2F2F2",
+					"stroke": "transparent"
+				},
+				"Text9": {
+					"type": "text",
+					"text": "SVG",
+					"top": 0,
+					"left": 955,
+					"width": 295,
+					"height": 107,
+					"fontSize": 80,
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"sizingY": "fixed",
+					"visibility": "hidden"
+				},
+				"Button4": {
+					"type": "button",
+					"top": 500,
+					"left": 400,
+					"width": 120,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": ":xliff:ExportEllipsis",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"cbVisibleBackground1": {
+					"type": "checkbox",
+					"text": ":xliff:background",
+					"top": 200,
+					"left": 220,
+					"width": 150,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.visibleBackground",
+					"focusable": false,
+					"dataSourceTypeHint": "boolean",
+					"sizingY": "fixed"
+				},
+				"cbVisibleHeaders1": {
+					"type": "checkbox",
+					"text": ":xliff:headers",
+					"top": 225,
+					"left": 220,
+					"width": 150,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.visibleHeaders",
+					"focusable": false,
+					"dataSourceTypeHint": "boolean",
+					"sizingY": "fixed"
+				},
+				"cbVisibleFooters1": {
+					"type": "checkbox",
+					"text": ":xliff:footers",
+					"top": 250,
+					"left": 220,
+					"width": 150,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.visibleFooters",
+					"focusable": false,
+					"dataSourceTypeHint": "boolean",
+					"sizingY": "fixed"
+				},
+				"Text7": {
+					"type": "text",
+					"text": ":xliff:ExportComma",
+					"top": 200,
+					"left": 30,
+					"width": 180,
+					"height": 17,
+					"textAlign": "right",
+					"sizingY": "fixed"
+				},
+				"InputDPI2": {
+					"type": "input",
+					"left": 290,
+					"top": 325,
+					"width": 40,
+					"height": 17,
+					"dataSource": "Form:C1466.pageIndexFrom",
+					"events": [
+						"onDataChange"
+					],
+					"sizingY": "fixed",
+					"method": "ObjectMethods/InputDPI2.4dm"
+				},
+				"Text4": {
+					"type": "text",
+					"text": ":xliff:PagesComma",
+					"top": 300,
+					"left": 30,
+					"width": 180,
+					"height": 17,
+					"textAlign": "right",
+					"sizingY": "fixed"
+				},
+				"cbRecomputeFormulas1": {
+					"type": "checkbox",
+					"text": ".Create folder",
+					"top": 811,
+					"left": 223,
+					"width": 260,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.createFolder",
+					"focusable": false,
+					"dataSourceTypeHint": "boolean",
+					"sizingY": "fixed",
+					"tooltip": ":xliff:InfoCreateFolder"
+				},
+				"rbScreen1": {
+					"type": "radio",
+					"text": ":xliff:EmbedImages",
+					"top": 380,
+					"left": 220,
+					"width": 300,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"dataSource": "Form:C1466.local.rbEmbedPictures",
+					"radioGroup": "rbEmbedded",
+					"sizingY": "fixed",
+					"method": "ObjectMethods/rbScreen1.4dm",
+					"tooltip": ":xliff:InfoEmbedPictures"
+				},
+				"rbPrint1": {
+					"type": "radio",
+					"text": ":xliff:ExportImages",
+					"top": 405,
+					"left": 220,
+					"width": 300,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"dataSource": "Form:C1466.local.rbExportPictures",
+					"radioGroup": "rbEmbedded",
+					"sizingY": "fixed",
+					"method": "ObjectMethods/rbPrint1.4dm",
+					"tooltip": ":xliff:InfoExportPictures"
+				},
+				"Limit_P3": {
+					"type": "line",
+					"top": 539,
+					"left": 0,
+					"width": 630,
+					"height": 1,
+					"visibility": "hidden",
+					"stroke": "#da70d6",
+					"strokeDashArray": [
+						2,
+						6
+					],
+					"sizingY": "fixed"
+				},
+				"Button5": {
+					"type": "button",
+					"top": 500,
+					"left": 290,
+					"width": 90,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":xliff:cancel",
+					"events": [],
+					"focusable": false
+				},
+				"cbRecomputeFormulas2": {
+					"type": "checkbox",
+					"text": ":xliff:EnableGoogleFonts",
+					"top": 445,
+					"left": 220,
+					"width": 260,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.googleFontsTag",
+					"focusable": false,
+					"dataSourceTypeHint": "boolean",
+					"sizingY": "fixed",
+					"tooltip": ":xliff:InfoGoogleFonts",
+					"method": "ObjectMethods/cbRecomputeFormulas2.4dm"
+				},
+				"rbScreen2": {
+					"type": "radio",
+					"text": ":xliff:All",
+					"top": 300,
+					"left": 220,
+					"width": 120,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"dataSource": "Form:C1466.local.rbPagesAll",
+					"radioGroup": "rbPages",
+					"sizingY": "fixed"
+				},
+				"rbPrint2": {
+					"type": "radio",
+					"text": ":xliff:FromComma",
+					"top": 325,
+					"left": 220,
+					"width": 65,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"dataSource": "Form:C1466.local.rbPagesFromTo",
+					"radioGroup": "rbPages",
+					"sizingY": "fixed"
+				},
+				"InputDPI3": {
+					"type": "input",
+					"left": 390,
+					"top": 325,
+					"width": 40,
+					"height": 17,
+					"dataSource": "Form:C1466.pageIndexTo",
+					"events": [
+						"onDataChange"
+					],
+					"sizingY": "fixed",
+					"method": "ObjectMethods/InputDPI3.4dm"
+				},
+				"Text5": {
+					"type": "text",
+					"text": ":xliff:ToComma",
+					"top": 325,
+					"left": 345,
+					"width": 40,
+					"height": 16,
 					"textAlign": "right"
 				}
 			}
 		}
 	],
 	"width": 540,
-	"height": 530,
-	"method": "method.4dm"
+	"height": 600,
+	"method": "method.4dm",
+	"geometryStamp": 1767,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }

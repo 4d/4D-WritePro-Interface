@@ -9,7 +9,8 @@
 	"markerBreak": 217,
 	"markerFooter": 227,
 	"events": [
-		"onLoad"
+		"onLoad",
+		"onTimer"
 	],
 	"method": "method.4dm",
 	"pageFormat": {
@@ -158,8 +159,7 @@
 					"doubleClickInEmptyAreaAction": "addSubrecord",
 					"selectionMode": "multiple",
 					"printFrame": "variable",
-					"borderStyle": "none",
-					"method": "ObjectMethods/WPwidget.4dm"
+					"borderStyle": "none"
 				},
 				"Bouton": {
 					"type": "button",
@@ -466,6 +466,21 @@
 					"sizingX": "move",
 					"sizingY": "move",
 					"method": "ObjectMethods/Button18.4dm"
+				},
+				"Button20": {
+					"type": "button",
+					"top": 957,
+					"left": 826,
+					"width": 84,
+					"height": 26,
+					"sizingY": "move",
+					"text": "TempoDark",
+					"focusable": false,
+					"method": "ObjectMethods/Button20.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed"
 				}
 			}
 		}
@@ -474,7 +489,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 51,
+	"geometryStamp": 56,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

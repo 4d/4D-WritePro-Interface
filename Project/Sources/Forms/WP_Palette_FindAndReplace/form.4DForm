@@ -26,7 +26,7 @@
 		null,
 		{
 			"objects": {
-				"Rect4": {
+				"Background": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
@@ -495,7 +495,7 @@
 			}
 		}
 	},
-	"geometryStamp": 1949,
+	"geometryStamp": 1950,
 	"$4d": {
 		"version": "1",
 		"kind": "form"

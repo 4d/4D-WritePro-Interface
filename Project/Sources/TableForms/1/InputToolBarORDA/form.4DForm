@@ -79,7 +79,7 @@
 					"height": 595,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"dataSource": "Form:C1466.wp",
+					"dataSource": "",
 					"hideFocusRing": true,
 					"spellcheck": true,
 					"scrollbarVertical": "automatic",

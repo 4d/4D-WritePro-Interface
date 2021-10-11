@@ -38,7 +38,7 @@ C_COLLECTION:C1488($1; $_tabs)
 C_BOOLEAN:C305($found)
 
 C_LONGINT:C283($width; $height; $nbPages)
-C_LONGINT:C283($id)
+C_LONGINT:C283($id; $i; $n)
 
 C_OBJECT:C1216($param)
 
@@ -59,22 +59,17 @@ Else   //palettes
 	$className:="SidebarTabs"
 End if 
 
-// 1st : disable ALL tabs of the current form
-For each ($tab; oForm[$className].buttonNames)
-	OBJECT SET ENABLED:C1123(*; $tab; False:C215)
-	OBJECT SET VISIBLE:C603(*; $tab; False:C215)
-End for each 
+//$n:=$_tabs.length
+//For ($i; 0; $n-1)
+//$_tabs[$i]:="tabBtn_"+$_tabs[$i]
+//End for 
+
+oForm[$className].setButtons($_tabs)
 
 If ($_tabs.length>0)
 	
-	$param:=New object:C1471
-	$param.formName:=$typeForm
-	$param.buttonNames:=$_tabs
-	
-	InitButtons($param)
-	
 	// activate 1st tab
-	$buttonName:="tabBtn_"+$_tabs[0]
+	$buttonName:=$_tabs[0]
 	
 	If ($typeForm="toolbar")  // if Toolbar, goto page
 		TB_GotoPage($buttonName)

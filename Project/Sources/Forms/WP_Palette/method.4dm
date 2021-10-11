@@ -14,36 +14,36 @@ C_POINTER:C301($ptrSource; $ptrTarget)
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
-		//If (oForm=Null)
-		
 		If (oForm=Null:C1517)
 			oForm:=New object:C1471
 		End if 
 		
+		// WITHOUT PREFIX !!! (tabBtn_ or tabRect_" managed in class)
 		$_buttonNames:=New collection:C1472(\
-			"tabBtn_Fonts"; \
-			"tabBtn_Alignments"; \
-			"tabBtn_Tabulations"; \
-			"tabBtn_Sizes"; \
-			"tabBtn_Frames"; \
-			"tabBtn_Backgrounds"; \
-			"tabBtn_Expressions"; \
-			"tabBtn_Bookmarks"; \
-			"tabBtn_Stylesheets"; \
-			"tabBtn_Tables"; \
-			"tabBtn_Protection"; \
-			"tabBtn_ImportExport"; \
-			"tabBtn_FindAndReplace")
+			"Fonts"; \
+			"Alignments"; \
+			"Tabulations"; \
+			"Sizes"; \
+			"Frames"; \
+			"Backgrounds"; \
+			"Expressions"; \
+			"Bookmarks"; \
+			"Stylesheets"; \
+			"Tables"; \
+			"Protection"; \
+			"ImportExport"; \
+			"FindAndReplace")
 		
-		oForm.SidebarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")
+		
+		oForm.SidebarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")  // NEW
 		
 		OBJECT GET COORDINATES:C663(*; "TabArea"; $x1; $y1; $x2; $y2)
 		$width:=Int:C8(($x2-$x1)/$_buttonNames.length)  //-1
 		
-		oForm.SidebarTabs.setButtonSizes($width; 20)
+		oForm.SidebarTabs.setBestSize(False:C215)  // no labels !
+		oForm.SidebarTabs.setButtonSizes($width; 20)  // for side bar ONLY
 		oForm.SidebarTabs.setLabelMargins(0; 0)  // no labels
 		oForm.SidebarTabs.setButtonMargins(0; 0; 0; 0)
-		oForm.SidebarTabs.setBestSize(False:C215)  // no labels
 		
 		oForm.SidebarTabs.subforms:=New collection:C1472(\
 			"WP_Palette_Fonts"; \
@@ -60,33 +60,24 @@ Case of
 			"WP_Palette_ImportExport"; \
 			"WP_Palette_FindAndReplace")
 		
-		$param:=New object:C1471
-		$param.formName:="sidebar"
-		$param.buttonNames:=New collection:C1472("Fonts"; "Alignments"; "Tabulations"; "Sizes"; "Frames"; "Backgrounds"; "Expressions"; "Bookmarks"; "Stylesheets"; "Tables"; "Protection"; "ImportExport"; "FindAndReplace")  // remove ImportExport from 18R3
-		InitButtons($param)
-		
-		//(OBJECT Get pointer(Object named;"tabBtn_Fonts"))->:=1
 		UI_Selector(oForm.SidebarTabs.buttonNames[0])
+		
+		oForm.skinAppliedMain:=UI_ApplySkin
 		
 		SET TIMER:C645(10)
 		
-	: (Form event code:C388=On Resize:K2:27)
-		UI_Palette
 		
 	: (Form event code:C388=On Bound Variable Change:K2:52)
 		
 		$setupOK:=SetupLocalVariables
-		
-		skinAppliedMain:=UI_ApplySkin
-		
 		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Timer:K2:25)  //| (Form event=On Outside Call)
 		
 		SET TIMER:C645(0)
 		
-		If (Not:C34(skinAppliedMain))
-			skinAppliedMain:=UI_ApplySkin
+		If (Not:C34(oForm.skinAppliedMain))
+			oForm.skinAppliedMain:=UI_ApplySkin
 		End if 
 		
 		//UI_Palette
@@ -114,7 +105,7 @@ Case of
 		
 		
 	: (Form event code:C388=On Unload:K2:2)
-		
-		CLEAR VARIABLE:C89(oForm)
+		//CLEAR VARIABLE(oForm)  // don't clear it, it may still be used in other windows in the same process
+		oForm:=New object:C1471  // just make it smaller (!)
 		
 End case 

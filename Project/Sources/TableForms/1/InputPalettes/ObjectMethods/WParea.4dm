@@ -1,7 +1,7 @@
 
 
-$WP_skin:=New object:C1471
 If (False:C215)
+	$WP_skin:=New object:C1471
 	C_OBJECT:C1216($WP_skin)
 	
 	OB SET:C1220($WP_skin; "skinName"; "dark")  //"00"+String(0x2060))  //"light","dark")//;"00"+String(0x00FF00FF))  //
@@ -14,4 +14,4 @@ If (False:C215)
 	//$WP_skin.separatorFontColor:=0x00D0D0FF
 End if 
 
-WP UpdateWidget("WPwidget"; "WParea"; $WP_skin)
+WP UpdateWidget("WPwidget"; "WParea")  //; $WP_skin)

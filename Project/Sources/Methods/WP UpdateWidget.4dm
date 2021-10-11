@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"shared":true,"invisible":true}
 // this method is executed in the main form context
 
 C_TEXT:C284($1; $widgetName)
@@ -38,7 +38,7 @@ Case of
 						$WP_object:=New object:C1471
 						
 						$WP_object.selection:=WP Selection range:C1340(*; $areaName)
-						$WP_object.areaPointer:=Self:C308
+						$WP_object.areaPointer:=$areaPtr  //Self
 						$WP_object.areaName:=$areaName  //mandatory to use ST Commands
 						$WP_object.masterTable:=Current form table:C627  // or a pointer or any other table (for formula)
 						$WP_object.spellCheck:=OBJECT Get auto spellcheck:C1174(*; $areaName)  // true or false according to the setting
@@ -46,12 +46,14 @@ Case of
 						$WP_object.enterable:=OBJECT Get enterable:C1067(*; $WP_object.areaName)
 						$WP_object.keyboard:=OBJECT Get keyboard layout:C1180(*; $WP_object.areaName)
 						
+						
 						Case of 
-							: (Form event code:C388=On Losing Focus:K2:8)
+							: (Form event code:C388=On Losing Focus:K2:8) | (Form event code:C388=On Load:K2:1)
 								$WP_object.focus:=False:C215  // anticipate lost of focus to disable interface
 							: (Form event code:C388=On Getting Focus:K2:7)
 								$WP_object.focus:=True:C214
 						End case 
+						
 						
 						If (Count parameters:C259>=3)
 							$skin:=$3
@@ -66,6 +68,9 @@ Case of
 							: (Form event code:C388=On Getting Focus:K2:7)
 							: (Form event code:C388=On Losing Focus:K2:8)
 							: (Form event code:C388=On Clicked:K2:4)  // when called from a button !
+								
+							: (Form event code:C388=On Timer:K2:25)
+								
 							Else 
 								$send:=False:C215
 						End case 

@@ -1,6 +1,6 @@
 
 C_POINTER:C301($ptrArrayNames; $ptrArrayValues)
-C_POINTER:C301($ptrLineHeightUnit)
+C_POINTER:C301($ptrTextLineHeightUnit)
 
 C_LONGINT:C283($case)
 C_BOOLEAN:C305($setupOK)
@@ -42,7 +42,7 @@ Case of
 		(OBJECT Get pointer:C1124(Object named:K67:5; "marginHorizontalRuler"))->:=0
 		(OBJECT Get pointer:C1124(Object named:K67:5; "marginVerticalRuler"))->:=0
 		
-		(OBJECT Get pointer:C1124(Object named:K67:5; "lineHeightRuler"))->:=100
+		(OBJECT Get pointer:C1124(Object named:K67:5; "textLineHeightRuler"))->:=100
 		
 		CLEAR VARIABLE:C89(oSettings1)
 		CLEAR VARIABLE:C89(oSettings2)
@@ -51,11 +51,11 @@ Case of
 		
 		$ptrArrayNames:=OBJECT Get pointer:C1124(Object named:K67:5; "listStyleNames")
 		$ptrArrayValues:=OBJECT Get pointer:C1124(Object named:K67:5; "listStyleValues")
-		$ptrLineHeightUnit:=OBJECT Get pointer:C1124(Object named:K67:5; "lineHeightUnit")
+		$ptrTextLineHeightUnit:=OBJECT Get pointer:C1124(Object named:K67:5; "TextLineHeightUnit")
 		
 		ARRAY TEXT:C222($ptrArrayNames->; 0)
 		ARRAY LONGINT:C221($ptrArrayValues->; 0)
-		ARRAY TEXT:C222($ptrLineHeightUnit->; 0)
+		ARRAY TEXT:C222($ptrTextLineHeightUnit->; 0)
 		
 		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("None"))
 		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("Disc"))
@@ -83,13 +83,14 @@ Case of
 		APPEND TO ARRAY:C911($ptrArrayValues->; wk upper latin:K81:146)
 		APPEND TO ARRAY:C911($ptrArrayValues->; wk upper roman:K81:147)
 		
-		APPEND TO ARRAY:C911($ptrLineHeightUnit->; "%")
-		APPEND TO ARRAY:C911($ptrLineHeightUnit->; "pt")
-		$ptrLineHeightUnit->:=1
+		APPEND TO ARRAY:C911($ptrTextLineHeightUnit->; "%")
+		APPEND TO ARRAY:C911($ptrTextLineHeightUnit->; "pt")
+		$ptrTextLineHeightUnit->:=1
 		
 		//----------------------------------------------------------------
 		
-		skinAppliedSub:=UI_ApplySkin
+		oForm.skinAppliedSub:=UI_ApplySkin
+		
 		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Bound Variable Change:K2:52) | (Form event code:C388=On Timer:K2:25)
@@ -98,8 +99,8 @@ Case of
 		
 		$setupOK:=SetupLocalVariables
 		
-		If (Not:C34(skinAppliedSub))  // 2nd chance
-			skinAppliedSub:=UI_ApplySkin
+		If (oForm.skinAppliedSub=False:C215)  // may have changed on bound variable change
+			oForm.skinAppliedSub:=UI_ApplySkin
 		End if 
 		
 		If ($setupOK)

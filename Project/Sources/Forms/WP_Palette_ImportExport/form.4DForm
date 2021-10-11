@@ -27,7 +27,7 @@
 		null,
 		{
 			"objects": {
-				"Rect1": {
+				"Background": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
@@ -79,42 +79,6 @@
 					"fontTheme": "additional",
 					"text": ":xliff:export"
 				},
-				"btnImportDecor": {
-					"type": "button",
-					"top": 40,
-					"left": 20,
-					"width": 50,
-					"height": 50,
-					"sizingX": "move",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/import_48.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"events": [
-						"onClick"
-					]
-				},
-				"btnExportDecor": {
-					"type": "button",
-					"top": 130,
-					"left": 20,
-					"width": 50,
-					"height": 50,
-					"sizingX": "move",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/export_48.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"events": [
-						"onClick"
-					]
-				},
 				"btnExport1": {
 					"type": "button",
 					"top": 135,
@@ -136,7 +100,7 @@
 				},
 				"btnExport2": {
 					"type": "button",
-					"top": 170,
+					"top": 164,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -155,7 +119,7 @@
 				},
 				"btnExport3": {
 					"type": "button",
-					"top": 205,
+					"top": 193,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -174,7 +138,7 @@
 				},
 				"btnExport4": {
 					"type": "button",
-					"top": 240,
+					"top": 222,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -193,7 +157,7 @@
 				},
 				"btnExport5": {
 					"type": "button",
-					"top": 275,
+					"top": 251,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -250,27 +214,9 @@
 						"onClick"
 					]
 				},
-				"btnClearDecor": {
-					"type": "button",
-					"top": 390,
-					"left": 20,
-					"width": 50,
-					"height": 50,
-					"sizingX": "move",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/clear_48.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
-					"events": [
-						"onClick"
-					]
-				},
 				"btnExport6": {
 					"type": "button",
-					"top": 310,
+					"top": 280,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -330,20 +276,64 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Import-Export"
+				},
+				"btnExport7": {
+					"type": "button",
+					"top": 308,
+					"left": 100,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:svgEllipsis",
+					"icon": "",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"textPlacement": "right",
+					"method": "ObjectMethods/btnExport7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 40,
+					"left": 20,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/Toolbar1/File/import_32.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 130,
+					"left": 20,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/Toolbar1/File/export_32.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"Static Picture3": {
+					"type": "picture",
+					"top": 390,
+					"left": 20,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/Toolbar1/Home/Clear_32.png",
+					"pictureFormat": "truncatedTopLeft"
 				}
 			},
 			"entryOrder": [
-				"btnImportDecor",
-				"btnExportDecor",
 				"btnExport1",
 				"btnExport2",
 				"btnExport3",
 				"btnExport4",
 				"btnExport5",
 				"btnClear",
-				"btnClearDecor",
 				"btnExport6",
-				"btnImport"
+				"btnImport",
+				"btnExport7"
 			]
 		}
 	],
@@ -372,5 +362,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 71
+	"geometryStamp": 160
 }

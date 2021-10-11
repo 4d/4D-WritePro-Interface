@@ -27,7 +27,7 @@
 		null,
 		{
 			"objects": {
-				"Rect1": {
+				"Background": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
@@ -37,7 +37,7 @@
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
-				"NonEnterableBackground": {
+				"IconBgnd": {
 					"type": "rectangle",
 					"top": 95,
 					"left": 85,
@@ -637,5 +637,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 52
+	"geometryStamp": 54
 }

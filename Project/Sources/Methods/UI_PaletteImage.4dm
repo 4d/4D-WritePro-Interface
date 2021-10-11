@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 C_OBJECT:C1216($range)
 C_COLLECTION:C1488($elements)
 

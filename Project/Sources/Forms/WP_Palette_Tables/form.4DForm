@@ -26,7 +26,7 @@
 		null,
 		{
 			"objects": {
-				"Rect1": {
+				"Background": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
@@ -91,7 +91,7 @@
 					"class": "Palette",
 					"focusable": false,
 					"text": ":xliff:InsertAbove",
-					"icon": "/RESOURCES/Images/Light/Arrow_Small_Top.png",
+					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_Top.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
 					"method": "ObjectMethods/btnInsertAboveRow.4dm",
@@ -110,7 +110,7 @@
 					"class": "Palette",
 					"focusable": false,
 					"text": ":xliff:InsertBelow",
-					"icon": "/RESOURCES/Images/Light/Arrow_Small_Bottom.png",
+					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_Bottom.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
 					"method": "ObjectMethods/btnInsertBelowRow.4dm",
@@ -129,7 +129,7 @@
 					"class": "Palette",
 					"focusable": false,
 					"text": ":xliff:InsertLeft",
-					"icon": "/RESOURCES/Images/Light/Arrow_Small_Left.png",
+					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_Left.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
 					"method": "ObjectMethods/btnInsertBeforeColumn.4dm",
@@ -148,7 +148,7 @@
 					"class": "Palette",
 					"focusable": false,
 					"text": ":xliff:InsertRight",
-					"icon": "/RESOURCES/Images/Light/Arrow_Small_Right.png",
+					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_Right.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
 					"method": "ObjectMethods/btnInsertAfterColumn.4dm",
@@ -189,7 +189,7 @@
 					"class": "Palette",
 					"focusable": false,
 					"text": ":xliff:DeleteRow",
-					"icon": "/RESOURCES/Images/Light/small_Trash.png",
+					"icon": "/RESOURCES/Images/Sidebar/small_Trash.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
 					"method": "ObjectMethods/btnDeleteRows.4dm",
@@ -208,7 +208,7 @@
 					"class": "Palette",
 					"focusable": false,
 					"text": ":xliff:DeleteColumn",
-					"icon": "/RESOURCES/Images/Light/small_Trash.png",
+					"icon": "/RESOURCES/Images/Sidebar/small_Trash.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
 					"method": "ObjectMethods/btnDeleteColumns.4dm",
@@ -364,36 +364,36 @@
 					"type": "picture",
 					"top": 145,
 					"left": 20,
-					"width": 50,
-					"height": 50,
-					"picture": "/RESOURCES/Images/Light/RowSettings_48.png",
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/Toolbar1/Tables/RowSettings_32.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
 				"decor1": {
 					"type": "picture",
 					"top": 40,
 					"left": 20,
-					"width": 50,
-					"height": 50,
-					"picture": "/RESOURCES/Images/Light/TableSettings_48.png",
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/Toolbar1/Tables/TableSettings_32.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
 				"decor4": {
 					"type": "picture",
 					"top": 475,
 					"left": 20,
-					"width": 50,
-					"height": 50,
-					"picture": "/RESOURCES/Images/Light/CellSettings_48.png",
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/Toolbar1/Tables/CellSettings_32.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
 				"decor3": {
 					"type": "picture",
 					"top": 310,
 					"left": 20,
-					"width": 50,
-					"height": 50,
-					"picture": "/RESOURCES/Images/Light/ColumnSettings_48.png",
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/Toolbar1/Tables/ColumnSettings_32.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
 				"Rect2": {
@@ -456,5 +456,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 58
+	"geometryStamp": 71
 }

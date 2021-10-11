@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!--
 Translation file.
 This file is distributed under the same license as the product package.-->
@@ -67,8 +67,8 @@ This file is distributed under the same license as the product package.-->
           <target>Svis. zarov.:</target>
         </trans-unit>
         <trans-unit id="11" resname="FirstIndentationColon">
-          <source>1st indentation:</source>
-          <target>1.odsazení:</target>
+          <source>1st indent.:</source>
+          <target>1.odsaz.:</target>
         </trans-unit>
         <trans-unit id="13" resname="BackgroundColon">
           <source>Background:</source>
@@ -422,17 +422,13 @@ This file is distributed under the same license as the product package.-->
           <source>Width:</source>
           <target>Šířka:</target>
         </trans-unit>
-        <trans-unit id="77" resname="AltTextColon">
-          <source>Alt. Text</source>
-          <target>Stříd.txt</target>
-        </trans-unit>
         <trans-unit id="74" resname="HeightColon">
           <source>Height:</source>
           <target>Výška:</target>
         </trans-unit>
         <trans-unit id="75" resname="AltText">
-          <source>Alternate text</source>
-          <target>Střídavý text</target>
+          <source>Alternate text:</source>
+          <target>Střídavý text:</target>
         </trans-unit>
         <trans-unit id="76" resname="ZeroAuto">
           <source>(0 = Auto)</source>
@@ -469,12 +465,12 @@ This file is distributed under the same license as the product package.-->
           <target>Nové tabelátory</target>
         </trans-unit>
         <trans-unit id="84" resname="DefaultLeadingChar">
-          <source>Default leading char.</source>
-          <target>Výchozí vedoucí znak.</target>
+          <source>Default leading char.:</source>
+          <target>Výchozí vedoucí znak:</target>
         </trans-unit>
         <trans-unit id="85" resname="LeadingChar">
           <source>Leading char.</source>
-          <target>Vedoucí znak.</target>
+          <target>Vedoucí znak</target>
         </trans-unit>
       </group>
       <group resname="PaletteBookmarks">
@@ -1233,8 +1229,8 @@ This file is distributed under the same license as the product package.-->
           <target>Předchozí</target>
         </trans-unit>
         <trans-unit id="262" resname="FindSlashReplace">
-          <source>Find/Replace</source>
-          <target>Nalézt/nahradit</target>
+          <source>Find…</source>
+          <target>Nalézt…</target>
         </trans-unit>
         <trans-unit id="260" resname="FullWord">
           <source>Full word</source>
@@ -1504,10 +1500,6 @@ This file is distributed under the same license as the product package.-->
           <source>HTML "WYSIWIG"</source>
           <target>HTML "WYSIWIG"</target>
         </trans-unit>
-        <trans-unit id="th+uJGqJE/aRdxxSHhxRlg" resname="htmlPrettyPrint">
-          <source>"Pretty print"</source>
-          <target>"Pěkný tisk"</target>
-        </trans-unit>
         <trans-unit id="7yp1Rkz6KWEs2pehpSqJoA" resname="recomputeFormulas">
           <source>Recompute formulas</source>
           <target>Přepočítat výrazy</target>
@@ -1560,17 +1552,85 @@ Pokud toto nezvolíte, budou vypočítány pouze výrazy, jež ještě nebyly vy
           <source>Formulas:</source>
           <target>Výrazy:</target>
         </trans-unit>
-        <trans-unit id="TLfxhPbY2ZRWaf3J3RyOcw" resname="htmlEllipsis">
-          <source>HTML…</source>
-          <target>HTML…</target>
-        </trans-unit>
-        <trans-unit id="jqxt3L4zVABvifyA9e+8sA" resname="InfoPrettyPrint">
-          <source>This option generates a document with more human-readable source code and increases document size.</source>
-          <target>Tato možnost generuje dokument s lidsky čitelnějším zdrojovým kódem a zvýší velikost dokumentu.</target>
-        </trans-unit>
         <trans-unit id="6LkWY9PvfM8ea1sA6vSrBw" resname="ExportComma">
           <source>Export:</source>
           <target>Export:</target>
+        </trans-unit>
+        <trans-unit id="EMrE2d0apZplq3CTxdm91Q" resname="svgEllipsis">
+          <source>SVG…</source>
+          <target>SVG…</target>
+        </trans-unit>
+        <trans-unit id="caQYk8btXcl+pUBojuXPoQ" resname="InfoEmbedPictures">
+          <source>With this option, the generated SVG document will be standalone but its size will increase</source>
+          <target>Pomocí této možnosti bude generovaný dokument SVG samostatný, ale jeho velikost se zvýší</target>
+        </trans-unit>
+        <trans-unit id="Jm3zqgXEMB//3tACqAcZ0A" resname="InfoExportPictures">
+          <source>This option allows you to export the images of your document to an external "images" folder. The SVG file will be lighter.</source>
+          <target>Tato možnost vám umožňuje exportovat obrázky vašeho dokumentu do externí složky „images“. Soubor SVG bude světlejší.</target>
+        </trans-unit>
+        <trans-unit id="l5yK2FqhagnuTfX+7DfKjA" resname="InfoCreateFolder">
+          <source>A folder will be created and will contain the SVG file and the pictures folder if needed.</source>
+          <target>Vytvoří se složka, která bude v případě potřeby obsahovat soubor SVG a složku obrázků.</target>
+        </trans-unit>
+        <trans-unit id="h60zhveTCxSBSmc8ly911Q" resname="EmbedImages">
+          <source>Embed document pictures</source>
+          <target>Vložit obrázky dokumentu</target>
+        </trans-unit>
+        <trans-unit id="EyvZbU4fegiD39MW7BvMNQ" resname="ExportImages">
+          <source>Export images from document</source>
+          <target>Export obrázků z dokumentu</target>
+        </trans-unit>
+        <trans-unit id="ftw1H7xGhhRTkqQ2O2LLGg" resname="EnableGoogleFonts">
+          <source>Enable Google fonts substitution</source>
+          <target>Povolit nahrazování písem Google</target>
+        </trans-unit>
+        <trans-unit id="NqxkQgc34W90eQYBmYkkvg" resname="InfoGoogleFonts">
+          <source>This option adds a Google font import directive.
+ Use this option if the fonts in your document are not cross-platform.</source>
+          <target>Tato možnost přidává pokyn pro import písem Google.
+Tuto možnost použijte, pokud písma v dokumentu nejsou meziplatformová.</target>
+        </trans-unit>
+        <trans-unit id="KRk/LGj7Cj0IKqbAD1+m2Q" resname="PagesComma">
+          <source>Pages:</source>
+          <target>Stránky:</target>
+        </trans-unit>
+        <trans-unit id="9rxyF4rWKl6cSTgcq13Plw" resname="ConfirmImageFolder">
+          <source>An "Images" folder already exists there!
+Would you like to replace it?</source>
+          <target>Složka "Images" již existuje!
+Chcete ji nahradit?</target>
+        </trans-unit>
+        <trans-unit id="ZYahIeSDiz5Tz/hjbW8C2A" resname="Overwrite">
+          <source>Overwrite</source>
+          <target>Přepsat</target>
+        </trans-unit>
+      <trans-unit id="gJPawW7rsig8FtISvxRypw" resname="All">
+          <source>All</source>
+          <target>Vše</target>
+        </trans-unit>
+        <trans-unit id="JYFMlsryz/0iGg7gUz7AUA" resname="FromComma">
+          <source>From:</source>
+          <target>Z:</target>
+        </trans-unit>
+        <trans-unit id="vcXBxWYL/WBWSqCP8bp63A" resname="ToComma">
+          <source>to:</source>
+          <target>do:</target>
+        </trans-unit>
+        <trans-unit id="RMDC+cSZBoQl5t/kVyWSGg" resname="svgEllipsis">
+          <source>SVG…</source>
+          <target>SVG…</target>
+        </trans-unit>
+        <trans-unit id="yXC6rMdaGMCwbJsOKcSU+Q" resname="htmlEllipsis">
+          <source>HTML…</source>
+          <target>HTML…</target>
+        </trans-unit>
+        <trans-unit id="DlMn8kPNE6u2c2tRr8jppA" resname="FileNamePrompt">
+          <source>Name of the file to be created</source>
+          <target>Název vytvářeného souboru</target>
+        </trans-unit>
+        <trans-unit id="9AHHUOIbvZ1JaXXlXU4VWQ" resname="FolderNamePrompt">
+          <source>Name of the folder to be created</source>
+          <target>Název vytvářené složky</target>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
@@ -1794,6 +1854,22 @@ Pokud toto nezvolíte, budou vypočítány pouze výrazy, jež ještě nebyly vy
         <trans-unit id="PkaSe6J+O4IfvlHou7auvA" resname="editImageURL">
           <source>Edit image URL…</source>
           <target>Upravit URL obrázku…</target>
+        </trans-unit>
+        <trans-unit id="00lbTfGC7req5VFUsKJClQ" resname="editImageFormula">
+          <source>Edit image formula</source>
+          <target>EUpravit vzorec obrázku</target>
+        </trans-unit>
+        <trans-unit id="fol28Q4W1QaiCmasz8InLQ" resname="WidthColon">
+          <source>Width:</source>
+          <target>Šířka:</target>
+        </trans-unit>
+        <trans-unit id="gRUAqvqF/1uDA6gPAG35KQ" resname="HeightColon">
+          <source>Height:</source>
+          <target>Výška:</target>
+        </trans-unit>
+        <trans-unit id="kTXJQBET6xQGp0xvCmrDSg" resname="Propagate">
+          <source>Propagate</source>
+          <target>Rozšířit</target>
         </trans-unit>
       </group>
     </body>

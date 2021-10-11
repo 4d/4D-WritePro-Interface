@@ -1,4 +1,9 @@
 ﻿{
+	"CLASSES": {
+		"classes": [
+			"Toolbar"
+		]
+	},
 	"ImportExport Dialogs": {
 		"forms": [
 			"D_Import"
@@ -170,6 +175,7 @@
 			"WP_ApplyPictureSettings",
 			"WP_BorderMenu",
 			"WP_FR_InitOptions",
+			"WP_GetPictureSettings",
 			"WP_GetProtections",
 			"WP_GetStyleAttributesByGroup",
 			"WP_GetStyleAttributesByType",
@@ -178,6 +184,7 @@
 			"WP_GetStylesheetType",
 			"WP_IgnoreError",
 			"WP_InsertSoftHyphen",
+			"WP_PictureSaveSettings",
 			"WP_RemoveSoftHyphen",
 			"WP_Request",
 			"WP_Ruler",
@@ -206,6 +213,8 @@
 	},
 	"WP_Public": {
 		"methods": [
+			"WP RemoveDocumentIndex",
+			"WP SetDocumentIndex",
 			"WP ShowTabPages",
 			"WP SwitchToolbar",
 			"WP UpdateWidget"

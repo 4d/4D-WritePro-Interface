@@ -25,7 +25,7 @@
 		null,
 		{
 			"objects": {
-				"Rect1": {
+				"Background": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
@@ -65,7 +65,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle6": {
+				"IconBgnd2": {
 					"type": "rectangle",
 					"top": 71,
 					"left": 124,
@@ -75,7 +75,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle7": {
+				"IconBgnd3": {
 					"type": "rectangle",
 					"top": 71,
 					"left": 163,
@@ -85,7 +85,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle8": {
+				"IconBgnd4": {
 					"type": "rectangle",
 					"top": 71,
 					"left": 202,
@@ -95,7 +95,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle5": {
+				"IconBgnd1": {
 					"type": "rectangle",
 					"top": 71,
 					"left": 85,
@@ -189,7 +189,7 @@
 					"type": "ruler",
 					"top": 128,
 					"left": 85,
-					"width": 75,
+					"width": 65,
 					"height": 12,
 					"dataSourceTypeHint": "number",
 					"max": 250,
@@ -202,9 +202,9 @@
 				},
 				"textIndentInput": {
 					"type": "input",
-					"top": 129,
-					"left": 170,
-					"width": 75,
+					"top": 128,
+					"left": 160,
+					"width": 85,
 					"height": 13,
 					"dataSourceTypeHint": "number",
 					"fontTheme": "additional",
@@ -445,17 +445,17 @@
 					"text": ":xliff:Text",
 					"fontTheme": "additional"
 				},
-				"lineHeightRuler": {
+				"textLineHeightRuler": {
 					"type": "ruler",
 					"top": 150,
 					"left": 85,
-					"width": 75,
+					"width": 65,
 					"height": 12,
 					"dataSourceTypeHint": "number",
 					"min": 80,
 					"max": 200,
 					"graduationStep": 1,
-					"method": "ObjectMethods/lineHeightRuler.4dm",
+					"method": "ObjectMethods/textLineHeightRuler.4dm",
 					"events": [
 						"onDoubleClick",
 						"onDataChange"
@@ -473,23 +473,6 @@
 					"text": ":xliff:LineHeightColon",
 					"fontTheme": "additional"
 				},
-				"lineHeightInput": {
-					"type": "input",
-					"top": 151,
-					"left": 170,
-					"width": 25,
-					"height": 13,
-					"dataSourceTypeHint": "number",
-					"fontTheme": "additional",
-					"contextMenu": "none",
-					"numberFormat": "#####0",
-					"dragging": "none",
-					"dropping": "custom",
-					"method": "ObjectMethods/lineHeightInput.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
 				"btnAction": {
 					"type": "button",
 					"top": 425,
@@ -497,7 +480,7 @@
 					"width": 30,
 					"height": 30,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/burger.png",
+					"icon": "/RESOURCES/Images/Sidebar/burger.png",
 					"iconFrames": 4,
 					"popupPlacement": "linked",
 					"style": "custom",
@@ -506,7 +489,7 @@
 						"onClick"
 					]
 				},
-				"Round Rectangle1": {
+				"IconBgnd6": {
 					"type": "rectangle",
 					"top": 96,
 					"left": 136,
@@ -516,7 +499,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle3": {
+				"IconBgnd7": {
 					"type": "rectangle",
 					"top": 96,
 					"left": 188,
@@ -526,7 +509,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle4": {
+				"IconBgnd5": {
 					"type": "rectangle",
 					"top": 96,
 					"left": 85,
@@ -545,7 +528,7 @@
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_AlignTop.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignTop.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"radioGroup": "Group29",
@@ -563,7 +546,7 @@
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_AlignMiddle.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignMiddle.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"radioGroup": "Group29",
@@ -581,7 +564,7 @@
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_AlignBottom.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignBottom.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"radioGroup": "Group29",
@@ -674,14 +657,14 @@
 						"onClick"
 					]
 				},
-				"lineHeightUnit": {
+				"TextLineHeightUnit": {
 					"type": "dropdown",
-					"top": 149,
+					"top": 147,
 					"left": 200,
 					"width": 47,
 					"height": 17,
 					"focusable": false,
-					"method": "ObjectMethods/lineHeightUnit.4dm",
+					"method": "ObjectMethods/TextLineHeightUnit.4dm",
 					"events": [
 						"onDataChange"
 					]
@@ -695,11 +678,11 @@
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/file.png",
+					"icon": "/RESOURCES/Images/Sidebar/file.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Light/Selector.png",
+					"customBackgroundPicture": "/RESOURCES/Images/Sidebar/Selector.png",
 					"radioGroup": "Group35",
 					"method": "ObjectMethods/TargetSelector1.4dm",
 					"events": [
@@ -715,11 +698,11 @@
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/paragraph.png",
+					"icon": "/RESOURCES/Images/Sidebar/paragraph.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Light/Selector.png",
+					"customBackgroundPicture": "/RESOURCES/Images/Sidebar/Selector.png",
 					"radioGroup": "Group35",
 					"method": "ObjectMethods/TargetSelector2.4dm",
 					"events": [
@@ -735,11 +718,11 @@
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/picture.png",
+					"icon": "/RESOURCES/Images/Sidebar/picture.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Light/Selector.png",
+					"customBackgroundPicture": "/RESOURCES/Images/Sidebar/Selector.png",
 					"radioGroup": "Group35",
 					"method": "ObjectMethods/TargetSelector3.4dm",
 					"events": [
@@ -755,11 +738,11 @@
 					"sizingX": "move",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Light/Icon_PictureBack.png",
+					"icon": "/RESOURCES/Images/Sidebar/BackgroundPicture.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Light/Selector.png",
+					"customBackgroundPicture": "/RESOURCES/Images/Sidebar/Selector.png",
 					"radioGroup": "Group35",
 					"method": "ObjectMethods/TargetSelector4.4dm",
 					"events": [
@@ -775,7 +758,7 @@
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_AlignLeft.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignLeft.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"events": [
@@ -793,7 +776,7 @@
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_AlignCenter.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignCenter.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"events": [
@@ -811,7 +794,7 @@
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_AlignRight.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignRight.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"events": [
@@ -829,7 +812,7 @@
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Buttons/Icon_AlignJustified.png",
+					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignCenter.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"events": [
@@ -838,7 +821,7 @@
 					"method": "ObjectMethods/bAlign4.4dm",
 					"radioGroup": "H_Align"
 				},
-				"Round Rectangle2": {
+				"IconBgnd11": {
 					"type": "rectangle",
 					"top": 192,
 					"left": 202,
@@ -848,7 +831,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle9": {
+				"IconBgnd10": {
 					"type": "rectangle",
 					"top": 192,
 					"left": 163,
@@ -858,7 +841,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle10": {
+				"IconBgnd9": {
 					"type": "rectangle",
 					"top": 192,
 					"left": 124,
@@ -868,7 +851,7 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Round Rectangle11": {
+				"IconBgnd8": {
 					"type": "rectangle",
 					"top": 192,
 					"left": 85,
@@ -877,6 +860,76 @@
 					"fill": "#DDDDDD",
 					"stroke": "transparent",
 					"borderRadius": 4
+				},
+				"Line1": {
+					"type": "line",
+					"top": 180,
+					"left": 40,
+					"width": 200,
+					"height": 1,
+					"stroke": "#808080"
+				},
+				"Line": {
+					"type": "line",
+					"top": 230,
+					"left": 40,
+					"width": 200,
+					"height": 1,
+					"stroke": "#808080"
+				},
+				"textLineHeightInput": {
+					"type": "input",
+					"top": 149,
+					"left": 160,
+					"width": 35,
+					"height": 13,
+					"dataSourceTypeHint": "number",
+					"fontTheme": "additional",
+					"contextMenu": "none",
+					"numberFormat": "#####0",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/textLineHeightInput.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"btn_paste1": {
+					"type": "button",
+					"top": 193,
+					"left": 205,
+					"width": 24,
+					"height": 24,
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/PasteRuler_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_paste1.4dm",
+					"text": "",
+					"tooltip": ":xliff:PasteRuler"
+				},
+				"btn_copy1": {
+					"type": "button",
+					"top": 193,
+					"left": 166,
+					"width": 24,
+					"height": 23,
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/CopyRuler_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_copy1.4dm",
+					"text": "",
+					"tooltip": ":xliff:CopyRuler"
 				},
 				"Bouton": {
 					"type": "button",
@@ -914,59 +967,6 @@
 					"iconFrames": 4,
 					"tooltip": ":xliff:DecreaseIndent"
 				},
-				"btn_copy1": {
-					"type": "button",
-					"top": 193,
-					"left": 166,
-					"width": 24,
-					"height": 23,
-					"action": "",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/CopyRuler_24.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "toolbar",
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btn_copy1.4dm",
-					"text": "",
-					"tooltip": ":xliff:CopyRuler"
-				},
-				"btn_paste1": {
-					"type": "button",
-					"top": 193,
-					"left": 205,
-					"width": 24,
-					"height": 24,
-					"action": "",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/PasteRuler_24.png",
-					"iconFrames": 4,
-					"style": "toolbar",
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btn_paste1.4dm",
-					"text": "",
-					"tooltip": ":xliff:PasteRuler"
-				},
-				"Line": {
-					"type": "line",
-					"top": 230,
-					"left": 40,
-					"width": 200,
-					"height": 1,
-					"stroke": "#808080"
-				},
-				"Line1": {
-					"type": "line",
-					"top": 180,
-					"left": 40,
-					"width": 200,
-					"height": 1,
-					"stroke": "#808080"
-				},
 				"Rect2": {
 					"type": "rectangle",
 					"top": 0,
@@ -1001,9 +1001,9 @@
 				"marginHorizontalRuler",
 				"listStyleNames",
 				"listStyleValues",
-				"lineHeightRuler",
+				"textLineHeightRuler",
 				"backgroundColor",
-				"lineHeightUnit",
+				"TextLineHeightUnit",
 				"bAlign1",
 				"bAlign2",
 				"bAlign3",
@@ -1015,7 +1015,8 @@
 				"Bouton",
 				"Bouton1",
 				"btn_copy1",
-				"btn_paste1"
+				"btn_paste1",
+				"textLineHeightInput"
 			]
 		}
 	],
@@ -1027,14 +1028,14 @@
 				"bAlign3",
 				"bAlign4"
 			],
-			"Group24": [
-				"rb1",
-				"rb2"
-			],
 			"Group1": [
 				"bAlign5",
 				"bAlign6",
 				"bAlign7"
+			],
+			"Group24": [
+				"rb1",
+				"rb2"
 			],
 			"Group35": [
 				"TargetSelector1",
@@ -1049,7 +1050,7 @@
 			"View 1": {},
 			"Boxes": {
 				"objects": [
-					"Rect1",
+					"Background",
 					"Separator1",
 					"Separator2",
 					"Separator4",
@@ -1087,7 +1088,7 @@
 			"View 8": {
 				"visible": false
 			},
-			"View 9": {
+			"TITLE": {
 				"visible": false,
 				"objects": [
 					"Rect2",
@@ -1100,5 +1101,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 685
+	"geometryStamp": 823
 }

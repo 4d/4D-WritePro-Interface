@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 var $1; $document; $header; $footer : Object
 var $text : Text
 var $i; $sections : Integer

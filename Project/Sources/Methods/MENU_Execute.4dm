@@ -1,15 +1,21 @@
 //%attributes = {"invisible":true}
-var $1; $action : Text
+#DECLARE($action : Text)
 
-var $exportType; $win : Integer
+
+var $exportType; $win; $p; $i : Integer
+
 var $file; $options : Object
-var $ptr : Pointer
-var $prompt; $path; $action; $rawText; $extension; $form; $memoErrorMethod; $formName : Text
-
 var $newDocument; $range : Object
+var $position : Object
+
+var $ptr : Pointer
+
+var $prompt; $path; $action; $rawText; $extension; $form; $memoErrorMethod; $formName : Text
+var $title; $docName; $folderPath : Text
+
+var $folders : Collection
 
 
-$action:=$1
 
 If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 	
@@ -138,7 +144,6 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 							$options.extra.extension:=$extension
 							$options.extra.form:="D_Export"
 							
-							$options[wk HTML pretty print:K81:322]:=False:C215
 							$options[wk recompute formulas:K81:320]:=True:C214
 							$options[wk optimized for:K81:317]:=wk screen:K81:319
 							$options[wk max picture DPI:K81:316]:=96
@@ -190,6 +195,44 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 							$options[wk optimized for:K81:317]:=wk screen:K81:319
 							$options[wk max picture DPI:K81:316]:=192
 							
+							
+						: ($action="exportSVG")  //SVG
+							
+							
+							
+							
+							
+							$extension:="svg"
+							$exportType:=8  // wk svg  //8
+							
+							$options:=New object:C1471
+							$options.extra:=New object:C1471
+							$options.extra.windowTitle:="SVG Export"
+							$options.extra.extension:=$extension
+							$options.extra.form:="D_Export"
+							
+							$options[wk visible background:K81:289]:=True:C214
+							$options[wk visible headers:K81:287]:=True:C214
+							$options[wk visible footers:K81:288]:=True:C214
+							
+							$options[wk recompute formulas:K81:320]:=True:C214
+							$options[wk optimized for:K81:317]:=wk screen:K81:319
+							$options[wk max picture DPI:K81:316]:=192
+							
+							// how many pages in the document ?
+							$range:=WP Text range:C1341($ptr->; wk end text:K81:164; wk end text:K81:164)
+							$position:=WP Get position:C1577($range)
+							
+							$options.pageIndexFrom:=1
+							$options.pageIndexTo:=$position.page
+							
+							$options.embeddedPictures:=True:C214  //[wk embedded pictures]
+							$options.googleFontsTag:=False:C215  //[wk google fonts tag]
+							
+							//$options folder
+							//$option page
+							
+							
 					End case 
 					
 					
@@ -203,30 +246,75 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 						DIALOG:C40($options.extra.form; $options)
 						
 						OB REMOVE:C1226($options; "extra")
+						
 					Else 
 						ok:=1
 					End if 
 					
+					
 					If (ok=1)
 						
-						$path:=Select document:C905(""; ""; ""; File name entry:K24:17)
+						If ($action="exportSVG")
+							$title:=Get localized string:C991("FolderNamePrompt")
+						Else 
+							$title:=Get localized string:C991("FileNamePrompt")
+						End if 
 						
-						If (ok=1) & ($path#"")
+						
+						$docName:=Select document:C905(""; ""; $title; File name entry:K24:17)
+						
+						If (ok=1) & ($docName#"")
 							
-							$path:=document
-							$file:=Path to object:C1547($path; fk platform path:K87:2)
-							$file.extension:=$extension
-							$path:=$file.name+"."+$file.extension
+							$folderPath:=document
+							//$file:=Path to object($path; fk platform path)
+							//$file.extension:=$extension
 							
-							If ($exportType=-9999)
-								$rawText:=WP Get text:C1575($ptr->; wk expressions as value:K81:255)
-								TEXT TO DOCUMENT:C1237($path; $rawText)
+							If ($action="exportSVG")
+								
+								//$folderPath:=$file.name+"."+$file.extension
+								If (Test path name:C476($folderPath)=Is a folder:K24:2)
+									DELETE FOLDER:C693($folderPath; Delete with contents:K24:24)
+								End if 
+								CREATE FOLDER:C475($folderPath)  // if path exists, finder manages and request 
+								
+								If (Substring:C12($folderPath; Length:C16($folderPath); 1)#Folder separator:K24:12)
+									$folderPath:=$folderPath+Folder separator:K24:12
+								End if 
+								
+								If (False:C215)
+									$p:=Position:C15("."; $docName)
+									If ($p>0)
+										$docName:=Substring:C12($docName; 1; $p-1)
+									End if 
+								End if 
+								
+								For ($i; $options.pageIndexFrom; $options.pageIndexTo)
+									$options.pageIndex:=$i  //[wk page index]
+									$path:=$folderPath+$docName+String:C10($i)
+									WP EXPORT DOCUMENT:C1337($ptr->; $path; $exportType; $options)
+								End for 
+								
 							Else 
-								WP EXPORT DOCUMENT:C1337($ptr->; $path; $exportType; $options)  // even if $options = null
+								$path:=$file.name+"."+$file.extension
+								
+								If ($exportType=-9999)
+									$rawText:=WP Get text:C1575($ptr->; wk expressions as value:K81:255)
+									TEXT TO DOCUMENT:C1237($path; $rawText)
+								Else 
+									WP EXPORT DOCUMENT:C1337($ptr->; $path; $exportType; $options)  // even if $options = null
+								End if 
+								
 							End if 
+							
+							
+						Else 
+							
+							// user canceled
 							
 						End if 
 					End if 
+					
+					
 					
 			End case 
 			
