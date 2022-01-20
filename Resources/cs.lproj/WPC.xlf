@@ -426,7 +426,7 @@ This file is distributed under the same license as the product package.-->
           <source>Height:</source>
           <target>Výška:</target>
         </trans-unit>
-        <trans-unit id="75" resname="AltText">
+        <trans-unit id="75" resname="AltTextColon">
           <source>Alternate text:</source>
           <target>Střídavý text:</target>
         </trans-unit>
@@ -1228,7 +1228,7 @@ This file is distributed under the same license as the product package.-->
           <source>Previous</source>
           <target>Předchozí</target>
         </trans-unit>
-        <trans-unit id="262" resname="FindSlashReplace">
+        <trans-unit id="262" resname="FindElipsis">
           <source>Find…</source>
           <target>Nalézt…</target>
         </trans-unit>
@@ -1555,10 +1555,6 @@ Pokud toto nezvolíte, budou vypočítány pouze výrazy, jež ještě nebyly vy
         <trans-unit id="6LkWY9PvfM8ea1sA6vSrBw" resname="ExportComma">
           <source>Export:</source>
           <target>Export:</target>
-        </trans-unit>
-        <trans-unit id="EMrE2d0apZplq3CTxdm91Q" resname="svgEllipsis">
-          <source>SVG…</source>
-          <target>SVG…</target>
         </trans-unit>
         <trans-unit id="caQYk8btXcl+pUBojuXPoQ" resname="InfoEmbedPictures">
           <source>With this option, the generated SVG document will be standalone but its size will increase</source>

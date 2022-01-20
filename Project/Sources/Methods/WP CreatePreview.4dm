@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true}
 #DECLARE($doc : Object; $options : Object)->$picture : Picture
 
 var $text; $svg : Text

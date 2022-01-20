@@ -198,10 +198,6 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 							
 						: ($action="exportSVG")  //SVG
 							
-							
-							
-							
-							
 							$extension:="svg"
 							$exportType:=8  // wk svg  //8
 							
@@ -265,11 +261,10 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 						
 						If (ok=1) & ($docName#"")
 							
-							$folderPath:=document
-							//$file:=Path to object($path; fk platform path)
-							//$file.extension:=$extension
 							
 							If ($action="exportSVG")
+								
+								$folderPath:=document  // ACI0102385 
 								
 								//$folderPath:=$file.name+"."+$file.extension
 								If (Test path name:C476($folderPath)=Is a folder:K24:2)
@@ -281,12 +276,12 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 									$folderPath:=$folderPath+Folder separator:K24:12
 								End if 
 								
-								If (False:C215)
-									$p:=Position:C15("."; $docName)
-									If ($p>0)
-										$docName:=Substring:C12($docName; 1; $p-1)
-									End if 
-								End if 
+								//If (False)
+								//$p:=Position("."; $docName)
+								//If ($p>0)
+								//$docName:=Substring($docName; 1; $p-1)
+								//End if 
+								//End if 
 								
 								For ($i; $options.pageIndexFrom; $options.pageIndexTo)
 									$options.pageIndex:=$i  //[wk page index]
@@ -294,7 +289,11 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 									WP EXPORT DOCUMENT:C1337($ptr->; $path; $exportType; $options)
 								End for 
 								
-							Else 
+							Else   // other exports
+								
+								$path:=document  // ACI0102385 
+								$file:=Path to object:C1547($path; fk platform path:K87:2)
+								$file.extension:=$extension
 								$path:=$file.name+"."+$file.extension
 								
 								If ($exportType=-9999)
@@ -305,7 +304,6 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 								End if 
 								
 							End if 
-							
 							
 						Else 
 							
