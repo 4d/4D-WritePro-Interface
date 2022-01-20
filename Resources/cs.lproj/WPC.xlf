@@ -1234,7 +1234,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="260" resname="FullWord">
           <source>Full word</source>
-          <target>Pouze celá slova (Full words)</target>
+          <target>Pouze celá slova (Full word)</target>
         </trans-unit>
         <trans-unit id="259" resname="KeepCharStyle">
           <source>Keep each character style</source>
@@ -1600,7 +1600,7 @@ Chcete ji nahradit?</target>
           <source>Overwrite</source>
           <target>Přepsat</target>
         </trans-unit>
-      <trans-unit id="gJPawW7rsig8FtISvxRypw" resname="All">
+        <trans-unit id="gJPawW7rsig8FtISvxRypw" resname="All">
           <source>All</source>
           <target>Vše</target>
         </trans-unit>

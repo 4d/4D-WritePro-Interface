@@ -2,35 +2,42 @@ C_TEXT:C284($menuRef; $choice)
 $menuRef:=Create menu:C408
 
 APPEND MENU ITEM:C411($menuRef; Get localized string:C991("subscript"))
-SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "fontSubscript")
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "fontSubscript")
 SET MENU ITEM ICON:C984($menuRef; -1; "Path:/RESOURCES/Images/MenuIcons/Subscript_24_1.png")
 
 APPEND MENU ITEM:C411($menuRef; Get localized string:C991("superscript"))
-SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "fontSuperscript")
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "fontSuperscript")
 SET MENU ITEM ICON:C984($menuRef; -1; "Path:/RESOURCES/Images/MenuIcons/Superscript_24_1.png")
 
 APPEND MENU ITEM:C411($menuRef; "-")
 
 APPEND MENU ITEM:C411($menuRef; Get localized string:C991("Uppercase"))
-SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "textTransform?value=uppercase")
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textTransform?value=uppercase")
 
 APPEND MENU ITEM:C411($menuRef; Get localized string:C991("Lowercase"))
-SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "textTransform?value=lowercase")
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textTransform?value=lowercase")
 
 APPEND MENU ITEM:C411($menuRef; Get localized string:C991("Capitalize"))
-SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "textTransform?value=capitalize")
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textTransform?value=capitalize")
 
 APPEND MENU ITEM:C411($menuRef; Get localized string:C991("SmallUppercase"))
-SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "textTransform?value=small-uppercase")
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textTransform?value=small-uppercase")
 
 APPEND MENU ITEM:C411($menuRef; Get localized string:C991("TextTransformNone"))
-SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "textTransform?value=none")
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textTransform?value=none")
 
 APPEND MENU ITEM:C411($menuRef; "-")
 APPEND MENU ITEM:C411($menuRef; Get localized string:C991("FontsElipsis"))
-SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K28:8; "font/showDialog")
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "font/showDialog")
 
+APPEND MENU ITEM:C411($menuRef; "-")
 
+APPEND MENU ITEM:C411($menuRef; ak standard action title:K76:83)
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textShadowColor")
+APPEND MENU ITEM:C411($menuRef; ak standard action title:K76:83)
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textShadowColor/showdialog")
+APPEND MENU ITEM:C411($menuRef; ak standard action title:K76:83)
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textShadowOffset")
 
 
 

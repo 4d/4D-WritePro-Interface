@@ -95,6 +95,64 @@ Case of
 		oForm.skinAppliedMain:=UI_ApplySkin
 		oForm.redrawTabs:=True:C214
 		
+		
+		
+		
+		//oForm.fonts:=New object
+		
+		//oForm.fonts.menu:=Create menu
+		//oForm.fonts.families:=New collection
+		//oForm.fonts.names:=New collection  // real names
+		//oForm.fonts.styles:=New collection  // localised names
+		
+		//FONT LIST($_fonts; System fonts)
+		
+		//$n:=Size of array($_fonts)
+		//For ($i; 1; $n)
+		//$subMenu:=""
+		//FONT STYLE LIST($_fonts{$i}; $_fontStyleList; $_fontNameList)
+		//$m:=Size of array($_fontStyleList)
+		
+		//If ($m>1)
+		//$subMenu:=Create menu
+		//For ($j; 1; $m)
+		//APPEND MENU ITEM($subMenu; $_fontStyleList{$j})
+		//SET MENU ITEM PARAMETER($subMenu; -1; $_fontNameList{$j})
+		
+		//oForm.fonts.families.push($_fonts{$i})
+		//oForm.fonts.names.push($_fontNameList{$j})
+		//oForm.fonts.styles.push($_fontStyleList{$j})
+		
+		//End for 
+		//End if 
+		
+		//If ($subMenu="")
+		//APPEND MENU ITEM(oForm.fonts.menu; $_fonts{$i})
+		//SET MENU ITEM PARAMETER(oForm.fonts.menu; -1; $_fonts{$i})
+		
+		//oForm.fonts.families.push($_fonts{$i})
+		//oForm.fonts.names.push($_fonts{$i})
+		//oForm.fonts.styles.push("")
+		
+		//Else 
+		//APPEND MENU ITEM(oForm.fonts.menu; $_fonts{$i}; $subMenu)
+		//End if 
+		
+		//End for 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Page Change:K2:54)

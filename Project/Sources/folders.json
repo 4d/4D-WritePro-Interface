@@ -150,8 +150,7 @@
 			"TB_SwitchSkin"
 		],
 		"forms": [
-			"D_FindOptions",
-			"WP_Toolbar"
+			"D_FindOptions"
 		]
 	},
 	"WP_Private": {

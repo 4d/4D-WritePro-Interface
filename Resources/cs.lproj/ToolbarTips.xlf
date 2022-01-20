@@ -482,6 +482,26 @@ This file is distributed under the same license as the product package.-->
           <source>Import Export</source>
           <target>Import Export</target>
         </trans-unit>
+        <trans-unit id="TklbnlJH6IlPhKZlBsEMkg" resname="bookmarks">
+          <source>Bookmarks</source>
+          <target>Záložky</target>
+        </trans-unit>
+        <trans-unit id="jommi73R0Dp87QF5h4UANw" resname="formulaInfo">
+          <source>Formulas and information</source>
+          <target>Výrazy a informce</target>
+        </trans-unit>
+        <trans-unit id="NKCIqThMk09ZY+qSWR4zRw" resname="background">
+          <source>Background</source>
+          <target>Pozadí</target>
+        </trans-unit>
+        <trans-unit id="sFQsGsLwXPZnU/DjSqlmsw" resname="unitsAndSizes">
+          <source>Units and sizes</source>
+          <target>Jednotky a velikosti</target>
+        </trans-unit>
+        <trans-unit id="27FB4/hz8xoNjYSQHbk5cg" resname="tabulations">
+          <source>Tabulations</source>
+          <target>Tabulálory</target>
+        </trans-unit>
       </group>
       <group resname="Labels">
         <trans-unit id="57" resname="applyMarginsTo">

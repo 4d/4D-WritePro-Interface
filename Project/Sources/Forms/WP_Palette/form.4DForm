@@ -87,9 +87,7 @@
 					"left": 22,
 					"width": 20,
 					"height": 20,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Margins"
-					},
+					"tooltip": ":xliff:margins",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
@@ -135,9 +133,7 @@
 					"left": 122,
 					"width": 20,
 					"height": 20,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Information"
-					},
+					"tooltip": ":xliff:formulaInfo",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
@@ -159,9 +155,7 @@
 					"left": 82,
 					"width": 20,
 					"height": 20,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Frames"
-					},
+					"tooltip": ":xliff:borders",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
@@ -183,9 +177,7 @@
 					"left": 42,
 					"width": 20,
 					"height": 20,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Tabulations"
-					},
+					"tooltip": ":xliff:tabulations",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
@@ -207,9 +199,7 @@
 					"left": 62,
 					"width": 20,
 					"height": 20,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Sizes"
-					},
+					"tooltip": ":xliff:unitsAndSizes",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
@@ -231,7 +221,7 @@
 					"left": 102,
 					"width": 20,
 					"height": 20,
-					"tooltip": "Picture",
+					"tooltip": ":xliff:background",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
@@ -253,9 +243,7 @@
 					"left": 142,
 					"width": 20,
 					"height": 20,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Bookmarks"
-					},
+					"tooltip": ":xliff:bookmarks",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",
@@ -342,7 +330,7 @@
 					"left": 199,
 					"width": 20,
 					"height": 20,
-					"tooltip": ":xliff:stylesheets",
+					"tooltip": ":xliff:protection",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",

@@ -1,7 +1,6 @@
 //%attributes = {"invisible":true}
 #DECLARE($action : Text)
 
-
 var $exportType; $win; $p; $i : Integer
 
 var $file; $options : Object
@@ -14,8 +13,6 @@ var $prompt; $path; $action; $rawText; $extension; $form; $memoErrorMethod; $for
 var $title; $docName; $folderPath : Text
 
 var $folders : Collection
-
-
 
 If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 	
@@ -124,7 +121,6 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 					End if 
 					
 				: ($action="export@")
-					
 					
 					Case of 
 							
