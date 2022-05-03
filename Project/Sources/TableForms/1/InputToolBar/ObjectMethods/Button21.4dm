@@ -1,4 +1,4 @@
-var $text : Text
+
 var $options : Object
 
 $options:=New object:C1471

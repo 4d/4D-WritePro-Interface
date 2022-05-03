@@ -1,18 +1,19 @@
 //%attributes = {"invisible":true}
 #DECLARE($action : Text)
 
-var $exportType; $win; $p; $i : Integer
+var $exportType; $win; $i; $n; $start; $end : Integer
+var $collection; $_attributes : Collection
 
 var $file; $options : Object
 var $newDocument; $range : Object
-var $position : Object
+var $position; $attribute : Object
+var $formula : Object
 
 var $ptr : Pointer
 
 var $prompt; $path; $action; $rawText; $extension; $form; $memoErrorMethod; $formName : Text
-var $title; $docName; $folderPath : Text
+var $title; $docName; $folderPath; $propertyName : Text
 
-var $folders : Collection
 
 If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 	
@@ -301,6 +302,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 								
 							End if 
 							
+							
 						Else 
 							
 							// user canceled
@@ -309,6 +311,65 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 					End if 
 					
 					
+				: ($action="ResetCharacterAttributes")
+					
+					$range:=WP Paragraph range:C1346(Form:C1466.selection)
+					
+					$collection:=WP Get elements:C1550($range; wk type paragraph:K81:191)
+					$n:=$collection.length
+					
+					// 1st remove ALL character attributes in the extended range
+					If ($n>0)
+						
+						$start:=WP Paragraph range:C1346($collection[0]).start
+						$end:=WP Paragraph range:C1346($collection[$n-1]).end
+						$range:=WP Text range:C1341($range.owner; $start; $end)
+						
+						$_attributes:=WP_GetStyleAttributesByType(wk type character:K81:296)  // all possible attributes for this type of style sheet
+						
+						For each ($attribute; $_attributes)
+							For each ($propertyName; $attribute.properties)
+								WP RESET ATTRIBUTES:C1344($range; $propertyName)
+							End for each 
+						End for each 
+						WP RESET ATTRIBUTES:C1344($range; wk style sheet:K81:63)  //"styleSheet") (character style sheet)
+					End if 
+					
+					
+					// 2nd re-apply paragraph style sheet for each paragraph
+					// For each ($paragraph; $collection)
+					// WP GET ATTRIBUTES($paragraph; wk style sheet; $styleSheet)
+					// WP SET ATTRIBUTES($paragraph; wk style sheet; $styleSheet)
+					// End for each 
+					
+				: ($action="document@")
+					
+					
+					Case of 
+						: ($action="documentTitle")
+							$formula:=Formula:C1597(This:C1470.title)
+							
+						: ($action="documentAuthor")
+							$formula:=Formula:C1597(This:C1470.author)
+							
+						: ($action="documentSubject")
+							$formula:=Formula:C1597(This:C1470.subject)
+							
+						: ($action="documentCompany")
+							$formula:=Formula:C1597(This:C1470.company)
+							
+						: ($action="documentNotes")
+							$formula:=Formula:C1597(This:C1470.notes)
+							
+						: ($action="documentCreationStamp")
+							$formula:=Formula:C1597(This:C1470.dateCreation)
+							
+						: ($action="documentModificationStamp")
+							$formula:=Formula:C1597(This:C1470.dateModified)
+							
+					End case 
+					
+					WP INSERT FORMULA:C1703(Form:C1466.selection; $formula; wk replace:K81:177)
 					
 			End case 
 			

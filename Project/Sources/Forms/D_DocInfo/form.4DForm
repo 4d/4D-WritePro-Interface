@@ -1,0 +1,320 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": ":xliff:Information",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"BackgroundB_0": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 540,
+					"height": 750,
+					"fill": "#FFFFFF",
+					"stroke": "transparent"
+				},
+				"BackgroundA_1": {
+					"type": "rectangle",
+					"top": 260,
+					"left": 0,
+					"width": 830,
+					"height": 200,
+					"fill": "#F2F2F2",
+					"stroke": "transparent"
+				},
+				"BackgroundA_2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 830,
+					"height": 200,
+					"fill": "#F2F2F2",
+					"stroke": "transparent"
+				},
+				"Button": {
+					"type": "button",
+					"top": 280,
+					"left": 249,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":xliff:cancel",
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"Button1": {
+					"type": "button",
+					"top": 280,
+					"left": 329,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": ":xliff:ok",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"lbl_subject": {
+					"type": "text",
+					"top": 50,
+					"left": 10,
+					"width": 120,
+					"height": 16,
+					"class": "",
+					"textAlign": "right",
+					"text": ":xliff:SubjectColon",
+					"fontTheme": "normal",
+					"fontStyle": "normal"
+				},
+				"lbl_Author": {
+					"type": "text",
+					"top": 80,
+					"left": 10,
+					"width": 120,
+					"height": 16,
+					"class": "",
+					"textAlign": "right",
+					"text": ":xliff:AuthorColon",
+					"fontTheme": "normal",
+					"fontStyle": "normal"
+				},
+				"lbl_Company": {
+					"type": "text",
+					"top": 110,
+					"left": 10,
+					"width": 120,
+					"height": 16,
+					"class": "",
+					"textAlign": "right",
+					"text": ":xliff:CompanyColon",
+					"fontTheme": "normal",
+					"fontStyle": "normal"
+				},
+				"lbl_Created": {
+					"type": "text",
+					"top": 210,
+					"left": 10,
+					"width": 120,
+					"height": 16,
+					"class": "",
+					"textAlign": "right",
+					"fontStyle": "normal",
+					"text": ":xliff:CreatedColon",
+					"fontTheme": "normal"
+				},
+				"lbl_Modified": {
+					"type": "text",
+					"top": 230,
+					"left": 10,
+					"width": 120,
+					"height": 16,
+					"class": "",
+					"textAlign": "right",
+					"fontStyle": "normal",
+					"text": ":xliff:ModifiedColon",
+					"fontTheme": "normal"
+				},
+				"Subject": {
+					"type": "input",
+					"top": 50,
+					"left": 139,
+					"width": 240,
+					"height": 17,
+					"class": "",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.subject"
+				},
+				"Author": {
+					"type": "input",
+					"top": 80,
+					"left": 139,
+					"width": 240,
+					"height": 17,
+					"class": "",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.author"
+				},
+				"Company": {
+					"type": "input",
+					"top": 110,
+					"left": 139,
+					"width": 240,
+					"height": 17,
+					"class": "",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.company"
+				},
+				"Notes": {
+					"type": "input",
+					"top": 140,
+					"left": 139,
+					"width": 240,
+					"height": 41,
+					"class": "",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.notes"
+				},
+				"Created": {
+					"type": "input",
+					"top": 210,
+					"left": 139,
+					"width": 240,
+					"height": 17,
+					"dataSourceTypeHint": "date",
+					"stroke": "#777777",
+					"class": "",
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.dateCreation",
+					"fill": "transparent"
+				},
+				"lbl_Notes1": {
+					"type": "text",
+					"top": 140,
+					"left": 10,
+					"width": 120,
+					"height": 13,
+					"class": "",
+					"textAlign": "right",
+					"fontStyle": "normal",
+					"text": ":xliff:NotesColon",
+					"fontTheme": "normal"
+				},
+				"Modified": {
+					"type": "input",
+					"top": 230,
+					"left": 139,
+					"width": 240,
+					"height": 17,
+					"dataSourceTypeHint": "date",
+					"stroke": "#777777",
+					"class": "",
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.dateModified",
+					"fill": "transparent"
+				},
+				"lbl_subject1": {
+					"type": "text",
+					"top": 20,
+					"left": 10,
+					"width": 120,
+					"height": 16,
+					"class": "",
+					"textAlign": "right",
+					"text": ":xliff:TitleColon",
+					"fontTheme": "normal",
+					"fontStyle": "normal"
+				},
+				"Subject1": {
+					"type": "input",
+					"top": 20,
+					"left": 139,
+					"width": 240,
+					"height": 17,
+					"class": "",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.title"
+				}
+			},
+			"entryOrder": [
+				"Subject1",
+				"Subject",
+				"Author",
+				"Company",
+				"Notes",
+				"Created",
+				"Modified",
+				"Button",
+				"Button1"
+			]
+		}
+	],
+	"geometryStamp": 239,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"width": 420,
+	"height": 320,
+	"method": "method.4dm"
+}

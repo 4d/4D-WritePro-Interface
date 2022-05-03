@@ -35,14 +35,8 @@ Possible values inside collection for toolbar
 
 C_COLLECTION:C1488($1; $_tabs)
 
-C_BOOLEAN:C305($found)
-
 C_LONGINT:C283($width; $height; $nbPages)
-C_LONGINT:C283($id; $i; $n)
 
-C_OBJECT:C1216($param)
-
-C_TEXT:C284($tab)
 C_TEXT:C284($typeForm)
 C_TEXT:C284($buttonName)
 C_TEXT:C284($className)

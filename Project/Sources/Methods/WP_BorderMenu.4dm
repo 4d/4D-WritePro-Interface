@@ -3,7 +3,7 @@ C_TEXT:C284($1)
 C_BOOLEAN:C305($2)
 
 
-  //C_LONGINT($menu)
+//C_LONGINT($menu)
 C_TEXT:C284($applyTo)
 C_TEXT:C284($select)
 C_TEXT:C284($where)
@@ -14,33 +14,42 @@ $where:=$1
 $withMenu:=$2
 
 Case of 
-	: (WP_applyTo=1)
-		$applyTo:="section"
-	: (WP_applyTo=2)
-		$applyTo:="paragraph"
-	: (WP_applyTo=3)
-		$applyTo:="image"
+		
+	: (WP_applyTo=1)  // v19R5
+		$applyTo:="doc"
+	: (WP_applyTo=2)  // v19R5
+		$applyTo:="header"
+	: (WP_applyTo=3)  // v19R5
+		$applyTo:="footer"
+		
 	: (WP_applyTo=4)
-		$applyTo:="table"
+		$applyTo:="section"
 	: (WP_applyTo=5)
-		$applyTo:="cell"
+		$applyTo:="paragraph"
 	: (WP_applyTo=6)
+		$applyTo:="image"
+	: (WP_applyTo=7)
+		$applyTo:="table"
+	: (WP_applyTo=8)
+		$applyTo:="cell"
+	: (WP_applyTo=9)
 		$applyTo:="row"
+		
 End case 
 
 If ($withMenu)
 	
-	  // read the "applyTo"
+	// read the "applyTo"
 	
 	$menuRef:=Create menu:C408
-	APPEND MENU ITEM:C411($menuRef;Get localized string:C991("bordersStyle"))
-	SET MENU ITEM PROPERTY:C973($menuRef;-1;Associated standard action:K28:8;$applyTo+"/borderStyle"+$where)
+	APPEND MENU ITEM:C411($menuRef; Get localized string:C991("bordersStyle"))
+	SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; $applyTo+"/borderStyle"+$where)
 	
-	APPEND MENU ITEM:C411($menuRef;Get localized string:C991("bordersColor"))
-	SET MENU ITEM PROPERTY:C973($menuRef;-1;Associated standard action:K28:8;$applyTo+"/borderColor"+$where)
+	APPEND MENU ITEM:C411($menuRef; Get localized string:C991("bordersColor"))
+	SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; $applyTo+"/borderColor"+$where)
 	
-	APPEND MENU ITEM:C411($menuRef;Get localized string:C991("borderWidth"))
-	SET MENU ITEM PROPERTY:C973($menuRef;-1;Associated standard action:K28:8;$applyTo+"/borderWidth"+$where)
+	APPEND MENU ITEM:C411($menuRef; Get localized string:C991("borderWidth"))
+	SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; $applyTo+"/borderWidth"+$where)
 	
 	$select:=Dynamic pop up menu:C1006($menuRef)
 	
@@ -51,8 +60,8 @@ Else
 	
 	INVOKE ACTION:C1439($applyTo+"/borderStyle"+$where+"?value=solid")
 	
-	  //INVOKE ACTION($applyTo+"/borderColor"+$where+"?value=black")
-	  //INVOKE ACTION($applyTo+"/borderWidth"+$where+"?value=1pt")
-	  //INVOKE ACTION($applyTo+"/padding"+$where+"?value=5pt")
+	//INVOKE ACTION($applyTo+"/borderColor"+$where+"?value=black")
+	//INVOKE ACTION($applyTo+"/borderWidth"+$where+"?value=1pt")
+	//INVOKE ACTION($applyTo+"/padding"+$where+"?value=5pt")
 	
 End if 

@@ -32,14 +32,14 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 450,
+					"height": 590,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
 				"Separator2": {
 					"type": "rectangle",
-					"top": 15,
+					"top": 165,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -49,7 +49,7 @@
 				},
 				"sepLbl_type": {
 					"type": "text",
-					"top": 15,
+					"top": 165,
 					"left": 20,
 					"width": 220,
 					"height": 13,
@@ -60,7 +60,7 @@
 				},
 				"Separator1": {
 					"type": "rectangle",
-					"top": 105,
+					"top": 255,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -70,7 +70,7 @@
 				},
 				"sepLbl_type1": {
 					"type": "text",
-					"top": 105,
+					"top": 255,
 					"left": 20,
 					"width": 220,
 					"height": 13,
@@ -81,7 +81,7 @@
 				},
 				"btnExport1": {
 					"type": "button",
-					"top": 135,
+					"top": 285,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -100,7 +100,7 @@
 				},
 				"btnExport2": {
 					"type": "button",
-					"top": 164,
+					"top": 314,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -119,7 +119,7 @@
 				},
 				"btnExport3": {
 					"type": "button",
-					"top": 193,
+					"top": 343,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -138,7 +138,7 @@
 				},
 				"btnExport4": {
 					"type": "button",
-					"top": 222,
+					"top": 372,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -157,7 +157,7 @@
 				},
 				"btnExport5": {
 					"type": "button",
-					"top": 251,
+					"top": 401,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -176,7 +176,7 @@
 				},
 				"Separator3": {
 					"type": "rectangle",
-					"top": 365,
+					"top": 515,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -186,7 +186,7 @@
 				},
 				"sepLbl_type2": {
 					"type": "text",
-					"top": 365,
+					"top": 515,
 					"left": 20,
 					"width": 220,
 					"height": 13,
@@ -197,7 +197,7 @@
 				},
 				"btnClear": {
 					"type": "button",
-					"top": 395,
+					"top": 545,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -216,7 +216,7 @@
 				},
 				"btnExport6": {
 					"type": "button",
-					"top": 280,
+					"top": 430,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -235,7 +235,7 @@
 				},
 				"btnImport": {
 					"type": "button",
-					"top": 45,
+					"top": 195,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -252,34 +252,9 @@
 						"onClick"
 					]
 				},
-				"Rect2": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 450,
-					"visibility": "hidden",
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 8
-				},
-				"Text": {
-					"type": "text",
-					"top": 0,
-					"left": 10,
-					"width": 41,
-					"height": 510,
-					"visibility": "hidden",
-					"stroke": "#AAAAAA",
-					"textAlign": "center",
-					"fontFamily": ".Helvetica Neue DeskInterface",
-					"fontSize": 28,
-					"textAngle": 270,
-					"text": "4D WritePro Import-Export"
-				},
 				"btnExport7": {
 					"type": "button",
-					"top": 308,
+					"top": 458,
 					"left": 100,
 					"width": 140,
 					"height": 22,
@@ -298,7 +273,7 @@
 				},
 				"Static Picture1": {
 					"type": "picture",
-					"top": 40,
+					"top": 190,
 					"left": 20,
 					"width": 32,
 					"height": 32,
@@ -307,7 +282,7 @@
 				},
 				"Static Picture2": {
 					"type": "picture",
-					"top": 130,
+					"top": 280,
 					"left": 20,
 					"width": 32,
 					"height": 32,
@@ -316,12 +291,145 @@
 				},
 				"Static Picture3": {
 					"type": "picture",
-					"top": 390,
+					"top": 540,
 					"left": 20,
 					"width": 32,
 					"height": 32,
 					"picture": "/RESOURCES/Images/Toolbar1/Home/Clear_32.png",
 					"pictureFormat": "truncatedTopLeft"
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 44,
+					"left": 22,
+					"width": 30,
+					"height": 24,
+					"pictureFormat": "truncatedTopLeft",
+					"picture": "/RESOURCES/Images/Toolbar1/File/PageSetup_24.png"
+				},
+				"Popup_pageSize": {
+					"type": "dropdown",
+					"top": 47,
+					"left": 70,
+					"width": 170,
+					"height": 20,
+					"tooltip": ":xliff:pageSize",
+					"focusable": false,
+					"action": "pageSize"
+				},
+				"btnPrint": {
+					"type": "button",
+					"top": 36,
+					"left": 373,
+					"width": 40,
+					"height": 40,
+					"tooltip": ":xliff:print",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/Print_32.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/btnPrint.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnPrintPreview": {
+					"type": "button",
+					"top": 36,
+					"left": 433,
+					"width": 40,
+					"height": 40,
+					"tooltip": ":xliff:preview",
+					"action": "print",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/File/PrintPreview_32.png",
+					"iconFrames": 4,
+					"style": "toolbar"
+				},
+				"Popup_pageOrientation": {
+					"type": "dropdown",
+					"top": 77,
+					"left": 70,
+					"width": 170,
+					"height": 20,
+					"tooltip": ":xliff:pageOrientation",
+					"focusable": false,
+					"action": "section/pageOrientation"
+				},
+				"Image15": {
+					"type": "picture",
+					"top": 75,
+					"left": 22,
+					"width": 30,
+					"height": 24,
+					"pictureFormat": "truncatedTopLeft",
+					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/PageOrientation_24.png"
+				},
+				"Separator4": {
+					"type": "rectangle",
+					"top": 15,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#777777",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_type3": {
+					"type": "text",
+					"top": 15,
+					"left": 20,
+					"width": 220,
+					"height": 13,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"text": ":xliff:print"
+				},
+				"btnImport1": {
+					"type": "button",
+					"top": 120,
+					"left": 100,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"class": "Palette",
+					"focusable": false,
+					"text": ":xliff:print",
+					"icon": "",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"textPlacement": "right",
+					"events": [
+						"onClick"
+					],
+					"action": "print",
+					"tooltip": ":xliff:preview"
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 590,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 0,
+					"left": 10,
+					"width": 41,
+					"height": 590,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4D WritePro Import-Export"
 				}
 			},
 			"entryOrder": [
@@ -333,7 +441,12 @@
 				"btnClear",
 				"btnExport6",
 				"btnImport",
-				"btnExport7"
+				"btnExport7",
+				"Popup_pageSize",
+				"btnPrint",
+				"btnPrintPreview",
+				"Popup_pageOrientation",
+				"btnImport1"
 			]
 		}
 	],
@@ -362,5 +475,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 160
+	"geometryStamp": 285
 }

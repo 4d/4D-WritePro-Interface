@@ -1,11 +1,4 @@
-var $picture : Picture
-var $formula; $pictureElement; $range : Object
-var $memoError; $URL : Text
 
-var $_formulas : Collection
-
-var $result : Integer
-var $pictureWidth; $pictureHeight : Integer
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)

@@ -18,15 +18,7 @@ Else
 			
 			OBJECT SET RGB COLORS:C628(*; "linethroughColor"; $color; $color)
 			
-			$ptrStyleNames:=OBJECT Get pointer:C1124(Object named:K67:5; "throughStylesNames")
-			$ptrStyleValues:=OBJECT Get pointer:C1124(Object named:K67:5; "linethroughStylesValues")
-			If (($ptrStyleNames->)>0)
-				$style:=$ptrStyleValues->{$ptrStyleNames->}
-			Else 
-				$style:=wk mixed:K81:89
-			End if 
-			
-			WP_SetTextLinetrough(Form:C1466.selection; $style; $color)
+			WP_SetTextLinetrough(Form:C1466.selection; $color)
 			
 		: ($color=-2)  // other…
 			

@@ -169,15 +169,13 @@
 					"class": "Palette",
 					"focusable": false,
 					"threeState": true,
-					"method": "ObjectMethods/cbBold.4dm",
-					"events": [
-						"onClick"
-					],
+					"events": [],
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "b"
+					"shortcutKey": "b",
+					"action": "fontBold"
 				},
 				"cbItalic": {
 					"type": "checkbox",
@@ -190,15 +188,13 @@
 					"class": "Palette",
 					"focusable": false,
 					"threeState": true,
-					"method": "ObjectMethods/cbItalic.4dm",
-					"events": [
-						"onClick"
-					],
+					"events": [],
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "i"
+					"shortcutKey": "i",
+					"action": "fontItalic"
 				},
 				"cbLinethrough": {
 					"type": "checkbox",
@@ -210,23 +206,8 @@
 					"class": "Palette",
 					"focusable": false,
 					"threeState": true,
-					"method": "ObjectMethods/cbLinethrough.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"throughStylesNames": {
-					"type": "dropdown",
-					"top": 210,
-					"left": 135,
-					"width": 90,
-					"height": 18,
-					"focusable": false,
-					"class": "Palette",
-					"method": "ObjectMethods/throughStylesNames.4dm",
-					"events": [
-						"onDataChange"
-					]
+					"events": [],
+					"action": "fontLinethrough"
 				},
 				"LinethroughColor": {
 					"type": "input",
@@ -259,28 +240,13 @@
 					"class": "Palette",
 					"focusable": false,
 					"threeState": true,
-					"method": "ObjectMethods/cbUnderline.4dm",
-					"events": [
-						"onClick"
-					],
+					"events": [],
 					"shortcutAccel": true,
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "u"
-				},
-				"underlineStylesNames": {
-					"type": "dropdown",
-					"top": 280,
-					"left": 135,
-					"width": 90,
-					"height": 18,
-					"focusable": false,
-					"class": "Palette",
-					"method": "ObjectMethods/underlineStylesNames.4dm",
-					"events": [
-						"onDataChange"
-					]
+					"shortcutKey": "u",
+					"action": "fontUnderline"
 				},
 				"UnderlineColor": {
 					"type": "input",
@@ -304,48 +270,6 @@
 					],
 					"fontFamily": "Arial",
 					"fontSize": 2
-				},
-				"verticalAlignNames": {
-					"type": "dropdown",
-					"top": 340,
-					"left": 85,
-					"width": 140,
-					"height": 18,
-					"focusable": false,
-					"class": "Palette",
-					"method": "ObjectMethods/verticalAlignNames.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"textTransformNames": {
-					"type": "dropdown",
-					"top": 365,
-					"left": 85,
-					"width": 140,
-					"height": 18,
-					"focusable": false,
-					"class": "Palette",
-					"method": "ObjectMethods/textTransformNames.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"cbShadow": {
-					"type": "checkbox",
-					"top": 422,
-					"left": 85,
-					"width": 140,
-					"height": 16,
-					"dataSource": "oForm.cbShadow",
-					"text": ":xliff:Shadow",
-					"class": "Palette",
-					"focusable": false,
-					"threeState": true,
-					"method": "ObjectMethods/cbShadow.4dm",
-					"events": [
-						"onClick"
-					]
 				},
 				"shadowOffsetRuler": {
 					"type": "ruler",
@@ -562,39 +486,6 @@
 					"class": "Palette",
 					"textAlign": "right",
 					"text": ":xliff:TransformColon"
-				},
-				"underlineStylesValues": {
-					"type": "dropdown",
-					"top": 280,
-					"left": 305,
-					"width": 190,
-					"height": 18,
-					"focusable": false,
-					"events": [
-						"onDataChange"
-					]
-				},
-				"verticalAlignValues": {
-					"type": "dropdown",
-					"top": 340,
-					"left": 305,
-					"width": 56,
-					"height": 19,
-					"focusable": false,
-					"events": [
-						"onDataChange"
-					]
-				},
-				"textTransformValues": {
-					"type": "dropdown",
-					"top": 363,
-					"left": 305,
-					"width": 56,
-					"height": 18,
-					"focusable": false,
-					"events": [
-						"onDataChange"
-					]
 				},
 				"btnAction": {
 					"type": "button",
@@ -849,17 +740,6 @@
 						"onClick"
 					]
 				},
-				"linethroughStylesValues": {
-					"type": "dropdown",
-					"top": 210,
-					"left": 305,
-					"width": 190,
-					"height": 18,
-					"focusable": false,
-					"events": [
-						"onDataChange"
-					]
-				},
 				"Separator2": {
 					"type": "rectangle",
 					"top": 510,
@@ -925,6 +805,70 @@
 					"tooltip": ":xliff:RemoveSoftHyphen",
 					"action": "removeSoftHyphens"
 				},
+				"STD_underlineStyles": {
+					"type": "dropdown",
+					"top": 280,
+					"left": 136,
+					"width": 90,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"events": [],
+					"action": "textUnderlineStyle"
+				},
+				"STD_LinethroughStyle": {
+					"type": "dropdown",
+					"top": 210,
+					"left": 136,
+					"width": 90,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"events": [],
+					"action": "textLinethroughStyle"
+				},
+				"STD_verticalAlign": {
+					"type": "dropdown",
+					"top": 340,
+					"left": 85,
+					"width": 140,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"events": [
+						"onDataChange"
+					],
+					"action": "verticalAlign"
+				},
+				"STD_textTransform": {
+					"type": "dropdown",
+					"top": 365,
+					"left": 85,
+					"width": 140,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"events": [
+						"onDataChange"
+					],
+					"action": "textTransform"
+				},
+				"cbShadow1": {
+					"type": "checkbox",
+					"top": 422,
+					"left": 85,
+					"width": 140,
+					"height": 16,
+					"dataSource": "oForm.cbShadow",
+					"text": ":xliff:Shadow",
+					"class": "Palette",
+					"focusable": false,
+					"threeState": true,
+					"method": "ObjectMethods/cbShadow1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
 				"background1": {
 					"type": "rectangle",
 					"top": 0,
@@ -961,24 +905,20 @@
 				"cbBold",
 				"cbItalic",
 				"cbLinethrough",
-				"throughStylesNames",
 				"LinethroughColor",
 				"cbUnderline",
-				"underlineStylesNames",
 				"UnderlineColor",
-				"verticalAlignNames",
-				"textTransformNames",
-				"cbShadow",
 				"shadowOffsetRuler",
 				"ColorShadow",
-				"underlineStylesValues",
-				"verticalAlignValues",
-				"textTransformValues",
-				"linethroughStylesValues",
 				"btn_InsertSH",
 				"btn_RemoveSH",
 				"fontSizeInput",
-				"shadowOffsetInput"
+				"shadowOffsetInput",
+				"STD_underlineStyles",
+				"STD_LinethroughStyle",
+				"STD_verticalAlign",
+				"STD_textTransform",
+				"cbShadow1"
 			]
 		}
 	],
@@ -1007,5 +947,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 506
+	"geometryStamp": 809
 }

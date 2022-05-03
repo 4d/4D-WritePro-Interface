@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!--
 Translation file.
 This file is distributed under the same license as the product package.-->
@@ -444,6 +444,34 @@ This file is distributed under the same license as the product package.-->
           <source>Insert continuous page break</source>
           <target>Insira uma quebra contínua da página</target>
         </trans-unit>
+        <trans-unit id="4CkYikT+ULlL5PCYMO32fA" resname="edit">
+          <source>Edit</source>
+          <target>Editar</target>
+        </trans-unit>
+        <trans-unit id="QOb/KgQRLtlJ9bxSHsL+hQ" resname="paragraphSettings">
+          <source>Paragraph settings</source>
+          <target>Opções de parágrafo</target>
+        </trans-unit>
+        <trans-unit id="qVqquxTVolQoqo/2HDQchQ" resname="DocumentInfo">
+          <source>Document information</source>
+          <target>Informações do documento</target>
+        </trans-unit>
+        <trans-unit id="xB2/MofqT/+E9+utQApmQA" resname="MoreTextSettings">
+          <source>More text settings</source>
+          <target>Outros atributos de texto</target>
+        </trans-unit>
+        <trans-unit id="usmFit13wk3qE3iKTaF/YA" resname="Radius">
+          <source>Radius</source>
+          <target>Rádio</target>
+        </trans-unit>
+        <trans-unit id="YHVwqX8XI8m8DMYdgvHX3Q" resname="InsertDocumentInfo">
+          <source>Insert document information</source>
+          <target>Inserir informações do documento</target>
+        </trans-unit>
+        <trans-unit id="hnQ1aCT77wrAYUrIuNJaDg" resname="ColumnSettings">
+          <source>Column settings</source>
+          <target>Opções de coluna</target>
+        </trans-unit>
       </group>
       <group resname="Tabs">
         <trans-unit id="24" resname="borders">
@@ -519,6 +547,18 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="74" resname="applyBordersTo">
           <source>Apply borders to…</source>
           <target>Aplicam-se as bordas para...</target>
+        </trans-unit>
+        <trans-unit id="zBez708L9OKugb+NacL/wg" resname="document">
+          <source>Document</source>
+          <target>Documento</target>
+        </trans-unit>
+        <trans-unit id="6XaBEYjv65KnAQo0lgIBJA" resname="headers">
+          <source>Headers</source>
+          <target>Cabeçalhos</target>
+        </trans-unit>
+        <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">
+          <source>Footers</source>
+          <target>Rodapés</target>
         </trans-unit>
       </group>
     </body>

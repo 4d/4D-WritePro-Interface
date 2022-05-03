@@ -118,6 +118,18 @@ This file is distributed under the same license as the product package.-->
           <source>Decrease indent</source>
           <target>Zmenšit odsazení</target>
         </trans-unit>
+        <trans-unit id="jOdgvUoCqlAAvJ9MNLCnTQ" resname="insert">
+          <source>Insert</source>
+          <target>Vložit</target>
+        </trans-unit>
+        <trans-unit id="f1S2oecx6Pl/gFkJV86S4A" resname="columns">
+          <source>Columns</source>
+          <target>Sloupce</target>
+        </trans-unit>
+        <trans-unit id="VmvGVTTjR+qrSCge2mVPfw" resname="numberHiphen">
+          <source>Number:</source>
+          <target>Číslo:</target>
+        </trans-unit>
       </group>
       <group resname="PaletteBackgrounds">
         <trans-unit id="18" resname="BackgroundPicture">
@@ -398,10 +410,6 @@ This file is distributed under the same license as the product package.-->
           <source>Paragraph</source>
           <target>Odstavec</target>
         </trans-unit>
-        <trans-unit id="69" resname="Picture">
-          <source>Picture</source>
-          <target>Obrázek</target>
-        </trans-unit>
         <trans-unit id="70" resname="SetWidth">
           <source>Set width</source>
           <target>Nastavit šířku</target>
@@ -437,6 +445,22 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="83" resname="UnitColon">
           <source>Unit:</source>
           <target>Jedn:</target>
+        </trans-unit>
+        <trans-unit id="Ozjo60l1QOY5Jt3l4nm2BA" resname="display">
+          <source>Display</source>
+          <target>Zobrazit</target>
+        </trans-unit>
+        <trans-unit id="6mdklHugZWAmT19d8JTRBQ" resname="modeHyphen">
+          <source>Mode:</source>
+          <target>Režim:</target>
+        </trans-unit>
+        <trans-unit id="aP7rDxq6XdlIr1OxlgkisQ" resname="elementsHyphen">
+          <source>Elements:</source>
+          <target>Prvky:</target>
+        </trans-unit>
+        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="zoomHyphen">
+          <source>Zoom:</source>
+          <target>Zvětšení:</target>
         </trans-unit>
       </group>
       <group resname="PaletteTabulations">
@@ -1866,6 +1890,42 @@ Chcete ji nahradit?</target>
         <trans-unit id="kTXJQBET6xQGp0xvCmrDSg" resname="Propagate">
           <source>Propagate</source>
           <target>Rozšířit</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_Paragraph">
+        <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
+          <source>Reset paragraph font attributes</source>
+          <target>Obnovit atributy písma odstavce</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_DocInfo">
+        <trans-unit id="KIsUNyYrj7evpWMAyBfemg" resname="title">
+          <source>Title</source>
+          <target>Název</target>
+        </trans-unit>
+        <trans-unit id="O3s/HchQTWSZ/UcjrtMpWg" resname="author">
+          <source>author</source>
+          <target>Autor</target>
+        </trans-unit>
+        <trans-unit id="Au2W7hEQE5ZfKI1rvAnUww" resname="subject">
+          <source>Subject</source>
+          <target>Předmět</target>
+        </trans-unit>
+        <trans-unit id="s9AD0G6fIMkDCStHS2ysnw" resname="company">
+          <source>Company</source>
+          <target>Společnost</target>
+        </trans-unit>
+        <trans-unit id="QBkunZ9iy6al8OgBj45hjQ" resname="notes">
+          <source>Notes</source>
+          <target>Poznámka</target>
+        </trans-unit>
+        <trans-unit id="+/lt/JavD2HppAAJysR5rg" resname="creationDate">
+          <source>Creation date</source>
+          <target>Datum vzniku</target>
+        </trans-unit>
+        <trans-unit id="wqkPw22mAeFQtMi7rOGTuA" resname="modificationDate">
+          <source>Modification date</source>
+          <target>Datum úpravy</target>
         </trans-unit>
       </group>
     </body>

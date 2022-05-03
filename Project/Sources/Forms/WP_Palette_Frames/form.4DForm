@@ -658,6 +658,13 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Frames"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 619,
+					"left": 265,
+					"width": 461,
+					"height": 1
 				}
 			},
 			"entryOrder": [
@@ -742,5 +749,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 107
+	"geometryStamp": 108
 }

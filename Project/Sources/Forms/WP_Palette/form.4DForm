@@ -87,7 +87,7 @@
 					"left": 22,
 					"width": 20,
 					"height": 20,
-					"tooltip": ":xliff:margins",
+					"tooltip": ":xliff:MarginsAlignments",
 					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"stroke": "#FFFFFF",

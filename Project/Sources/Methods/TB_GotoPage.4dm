@@ -2,7 +2,6 @@
 C_TEXT:C284($1; $btnName)
 C_LONGINT:C283($id)
 C_LONGINT:C283($page; $p)
-C_TEXT:C284($btn)
 
 If (Count parameters:C259=1)
 	$btnName:=$1

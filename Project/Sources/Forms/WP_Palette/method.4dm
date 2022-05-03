@@ -1,15 +1,12 @@
 
 C_COLLECTION:C1488($_buttonNames)
-
 C_BOOLEAN:C305($setupOK)
-
 C_LONGINT:C283($width)
-
 C_OBJECT:C1216($o)
-C_OBJECT:C1216($param)
+C_POINTER:C301($ptrSource; $ptrTarget)
+
 C_OBJECT:C1216(oForm)
 
-C_POINTER:C301($ptrSource; $ptrTarget)
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)

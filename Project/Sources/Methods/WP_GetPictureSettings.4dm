@@ -2,7 +2,7 @@
 var $marginTop; $marginLeft; $marginRight; $marginBottom : Real
 var $paddingTop; $paddingLeft; $paddingRight; $paddingBottom : Real
 var $width; $height : Real
-var $URL; $alternateText; $memoError; $imageDisplayMode : Text
+var $URL; $alternateText; $imageDisplayMode : Text
 
 var $borderColorBottom; $borderColorTop; $borderColorLeft; $borderColorRight : Text
 var $borderWidthBottom; $borderWidthTop; $borderWidthLeft; $borderWidthRight : Text

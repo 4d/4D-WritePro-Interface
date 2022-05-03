@@ -43,6 +43,8 @@ Else
 			OBJECT SET VISIBLE:C603(*; "backgroundColor"; True:C214)  // fake text behing the color picker button
 			OBJECT SET ENTERABLE:C238(*; "backgroundColor"; False:C215)  //visible but not enterable
 			
+			OBJECT SET ENABLED:C1123(*; "btn_etc"; False:C215)  // only for paragraphs
+			
 			OBJECT SET ENABLED:C1123(*; "TargetSelector4"; False:C215)  // target4 disabled
 			(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector4"))->:=0
 			
@@ -65,6 +67,8 @@ Else
 					OBJECT SET ENABLED:C1123(*; "lineHeight@"; True:C214)
 					OBJECT SET ENABLED:C1123(*; "listStyleNames"; True:C214)
 					OBJECT SET ENABLED:C1123(*; "bAlign@"; True:C214)
+					
+					OBJECT SET ENABLED:C1123(*; "btn_etc"; True:C214)
 					
 				: ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector3"))->=1)  // picture (inline)
 					

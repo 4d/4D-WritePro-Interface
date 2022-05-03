@@ -444,13 +444,33 @@ This file is distributed under the same license as the product package.-->
           <source>Insert continuous page break</source>
           <target>Vložte kontinuální konec stránky</target>
         </trans-unit>
-        <trans-unit id="4CkYikT+ULlL5PCYMO32fA" resname="edit">
+      <trans-unit id="4CkYikT+ULlL5PCYMO32fA" resname="edit">
           <source>Edit</source>
           <target>Upravit</target>
         </trans-unit>
         <trans-unit id="QOb/KgQRLtlJ9bxSHsL+hQ" resname="paragraphSettings">
           <source>Paragraph settings</source>
           <target>Nastavení odstavce</target>
+        </trans-unit>
+        <trans-unit id="qVqquxTVolQoqo/2HDQchQ" resname="DocumentInfo">
+          <source>Document information</source>
+          <target>Informace o dokumentu</target>
+        </trans-unit>
+        <trans-unit id="xB2/MofqT/+E9+utQApmQA" resname="MoreTextSettings">
+          <source>More text settings</source>
+          <target>Další nastavení textu</target>
+        </trans-unit>
+        <trans-unit id="usmFit13wk3qE3iKTaF/YA" resname="Radius">
+          <source>Radius</source>
+          <target>Poloměr</target>
+        </trans-unit>
+        <trans-unit id="YHVwqX8XI8m8DMYdgvHX3Q" resname="InsertDocumentInfo">
+          <source>Insert document information</source>
+          <target>Vložte informace o dukumentu</target>
+        </trans-unit>
+        <trans-unit id="hnQ1aCT77wrAYUrIuNJaDg" resname="ColumnSettings">
+          <source>Column settings</source>
+          <target>Nastavení sloupců</target>
         </trans-unit>
       </group>
       <group resname="Tabs">
@@ -527,6 +547,18 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="74" resname="applyBordersTo">
           <source>Apply borders to…</source>
           <target>Použít ohraničení na…</target>
+        </trans-unit>
+      <trans-unit id="zBez708L9OKugb+NacL/wg" resname="document">
+          <source>Document</source>
+          <target>Dokument</target>
+        </trans-unit>
+        <trans-unit id="6XaBEYjv65KnAQo0lgIBJA" resname="headers">
+          <source>Headers</source>
+          <target>Záhlaví</target>
+        </trans-unit>
+        <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">
+          <source>Footers</source>
+          <target>Zápatí</target>
         </trans-unit>
       </group>
     </body>

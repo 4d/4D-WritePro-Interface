@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!--
 Translation file.
 This file is distributed under the same license as the product package.-->
@@ -117,6 +117,18 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="MzVx3kZk0LyQrDAWjJAUrA" resname="DecreaseIndent">
           <source>Decrease indent</source>
           <target>Disminuir la indentación</target>
+        </trans-unit>
+        <trans-unit id="jOdgvUoCqlAAvJ9MNLCnTQ" resname="insert">
+          <source>Insert</source>
+          <target>Insertar</target>
+        </trans-unit>
+        <trans-unit id="f1S2oecx6Pl/gFkJV86S4A" resname="columns">
+          <source>Columns</source>
+          <target>Columnas</target>
+        </trans-unit>
+        <trans-unit id="VmvGVTTjR+qrSCge2mVPfw" resname="numberHiphen">
+          <source>Number:</source>
+          <target>Número:</target>
         </trans-unit>
       </group>
       <group resname="PaletteBackgrounds">
@@ -398,10 +410,6 @@ This file is distributed under the same license as the product package.-->
           <source>Paragraph</source>
           <target>Párrafo</target>
         </trans-unit>
-        <trans-unit id="69" resname="Picture">
-          <source>Picture</source>
-          <target>Imagen</target>
-        </trans-unit>
         <trans-unit id="70" resname="SetWidth">
           <source>Set width</source>
           <target>Ajuste de ancho</target>
@@ -437,6 +445,22 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="83" resname="UnitColon">
           <source>Unit:</source>
           <target>Unidad:</target>
+        </trans-unit>
+        <trans-unit id="Ozjo60l1QOY5Jt3l4nm2BA" resname="display">
+          <source>Display</source>
+          <target>Monitor</target>
+        </trans-unit>
+        <trans-unit id="6mdklHugZWAmT19d8JTRBQ" resname="modeHyphen">
+          <source>Mode:</source>
+          <target>Modo:</target>
+        </trans-unit>
+        <trans-unit id="aP7rDxq6XdlIr1OxlgkisQ" resname="elementsHyphen">
+          <source>Elements:</source>
+          <target>Elementos:</target>
+        </trans-unit>
+        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="zoomHyphen">
+          <source>Zoom:</source>
+          <target>Zoom:</target>
         </trans-unit>
       </group>
       <group resname="PaletteTabulations">
@@ -1866,6 +1890,42 @@ Would you like to replace it?</source>
         <trans-unit id="kTXJQBET6xQGp0xvCmrDSg" resname="Propagate">
           <source>Propagate</source>
           <target>Propagar</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_Paragraph">
+        <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
+          <source>Reset paragraph font attributes</source>
+          <target>Reinicializar los atributos de fuente de párrafo</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_DocInfo">
+        <trans-unit id="KIsUNyYrj7evpWMAyBfemg" resname="title">
+          <source>Title</source>
+          <target>Título</target>
+        </trans-unit>
+        <trans-unit id="O3s/HchQTWSZ/UcjrtMpWg" resname="author">
+          <source>author</source>
+          <target>Autor</target>
+        </trans-unit>
+        <trans-unit id="Au2W7hEQE5ZfKI1rvAnUww" resname="subject">
+          <source>Subject</source>
+          <target>Asunto</target>
+        </trans-unit>
+        <trans-unit id="s9AD0G6fIMkDCStHS2ysnw" resname="company">
+          <source>Company</source>
+          <target>Empresa</target>
+        </trans-unit>
+        <trans-unit id="QBkunZ9iy6al8OgBj45hjQ" resname="notes">
+          <source>Notes</source>
+          <target>Notas</target>
+        </trans-unit>
+        <trans-unit id="+/lt/JavD2HppAAJysR5rg" resname="creationDate">
+          <source>Creation date</source>
+          <target>Fecha de creación</target>
+        </trans-unit>
+        <trans-unit id="wqkPw22mAeFQtMi7rOGTuA" resname="modificationDate">
+          <source>Modification date</source>
+          <target>Fecha de modificación</target>
         </trans-unit>
       </group>
     </body>

@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="19">
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="21">
 	<com.4d>
 		<web>
 			<standalone_server>
-				<configuration automatic_session_management="true"/>
+				<configuration automatic_session_management="true" port_number="80"/>
 			</standalone_server>
 			<remote>
 				<configuration automatic_session_management="true"/>
@@ -19,18 +19,24 @@
 				<add_subform alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
 			</shortcuts>
 			<developper display_toolbar="true"/>
+			<user formula_editor_with_full_lists="true"/>
 		</interface>
-		<general startup_environnement="0"/>
+		<general component_classStore_name="" startup_environnement="0"/>
 		<database>
 			<misc use_ast_interpreter="false"/>
+			<cache flush_buffer_delay="20s"/>
 		</database>
 		<server>
 			<network>
-				<options use_legacy_network_layer="false"/>
+				<options publication_name="4D WritePro Interface" use_legacy_network_layer="false"/>
 			</network>
 		</server>
 		<deployment>
 			<options/>
 		</deployment>
+		<php ip_address="127.0.0.1"/>
+		<sql>
+			<publication port_number="19812"/>
+		</sql>
 	</com.4d>
 </preferences>

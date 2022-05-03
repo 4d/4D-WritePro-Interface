@@ -25,8 +25,6 @@
 			"UI_PaletteSizes",
 			"UI_PaletteTabulations",
 			"UI_Selector",
-			"WP_4DexpressionCompute",
-			"WP_4DexpressionFreeze",
 			"WP_CopyPasteMenu",
 			"WP_FillCurrent",
 			"WP_GetBackgroundClip",
@@ -37,11 +35,9 @@
 			"WP_GetBackgroundSize",
 			"WP_GetBackgroundURL",
 			"WP_GetDecoInfo",
-			"WP_GetExpressions",
 			"WP_GetFontInfo",
 			"WP_GetFontVertAlign",
 			"WP_GetFrame",
-			"WP_GetImageUrl",
 			"WP_GetListStyle",
 			"WP_GetMargins",
 			"WP_GetParagraphVertAlign",
@@ -55,8 +51,6 @@
 			"WP_GetUserUnit",
 			"WP_Set4Ddate",
 			"WP_Set4Ddisplay",
-			"WP_Set4Dexpression",
-			"WP_Set4Durl",
 			"WP_SetAlign",
 			"WP_SetBackgroundClip",
 			"WP_SetBackgroundColor",
@@ -137,7 +131,6 @@
 			"SAMPLE"
 		],
 		"forms": [
-			"[SAMPLE]InputPalettes",
 			"[SAMPLE]InputToolBar",
 			"[SAMPLE]Output"
 		]
@@ -190,7 +183,6 @@
 			"WP_SelectText",
 			"WP_SetCellProtection",
 			"WP_SetDocumentProtection",
-			"WP_SetImageUrl",
 			"WP_SetParagraphProtection",
 			"WP_SetRowProtection",
 			"WP_SetTableProtection",

@@ -1,7 +1,6 @@
 //%attributes = {"invisible":true}
-var $c1; $c2 : Boolean
-var $formula; $pictureElement; $range : Object
-var $_formulas; $_pictures : Collection
+
+var $pictureElement; $range : Object
 
 $range:=Form:C1466.range
 $pictureElement:=Form:C1466.picture

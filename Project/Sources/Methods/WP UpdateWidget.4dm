@@ -46,6 +46,7 @@ Case of
 						$WP_object.enterable:=OBJECT Get enterable:C1067(*; $WP_object.areaName)
 						$WP_object.keyboard:=OBJECT Get keyboard layout:C1180(*; $WP_object.areaName)
 						
+						//$WP_object.event:=FORM Event
 						
 						Case of 
 							: (Form event code:C388=On Losing Focus:K2:8) | (Form event code:C388=On Load:K2:1)
@@ -68,7 +69,7 @@ Case of
 							: (Form event code:C388=On Getting Focus:K2:7)
 							: (Form event code:C388=On Losing Focus:K2:8)
 							: (Form event code:C388=On Clicked:K2:4)  // when called from a button !
-								
+								//: (Form event code=On Double Clicked)  // for pictures and formulas
 							: (Form event code:C388=On Timer:K2:25)
 								
 							Else 

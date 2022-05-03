@@ -9,14 +9,9 @@ C_REAL:C285($L)
 
 C_LONGINT:C283($color; $fontColor; $separatorColor; $backgroundColor; $separatorFontColor)
 C_LONGINT:C283($fontSize)
-C_LONGINT:C283($i; $n)
 
-C_TEXT:C284($format)
-C_TEXT:C284($button)
 C_TEXT:C284($font)
 C_TEXT:C284($skinName)
-C_TEXT:C284($find)
-C_TEXT:C284($replace)
 C_TEXT:C284($name)
 
 C_OBJECT:C1216($skin)

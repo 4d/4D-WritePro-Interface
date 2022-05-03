@@ -9,5 +9,6 @@ $range:=$1
 $style:=$2
 
 If (Not:C34(OB Is empty:C1297($range)))
-	WP SET ATTRIBUTES:C1342($range;wk font italic:K81:67;$style)
+	WP SET ATTRIBUTES:C1342($range; wk font italic:K81:67; $style)
+	WP_SetListFont($range)
 End if 

@@ -16,10 +16,6 @@ Case of
 		OBJECT GET RGB COLORS:C1074(Self:C308->; $color)  // get the color of the text
 		OBJECT SET RGB COLORS:C628(Self:C308->; $color; $color)  // set the same color on the background
 		
-		$ptrStyleNames:=OBJECT Get pointer:C1124(Object named:K67:5; "throughStylesNames")
-		$ptrStyleValues:=OBJECT Get pointer:C1124(Object named:K67:5; "linethroughStylesValues")
-		$style:=$ptrStyleValues->{$ptrStyleNames->}
-		
-		WP_SetTextLinetrough(Form:C1466.selection; $style; $color)
+		WP_SetTextLinetrough(Form:C1466.selection; $color)
 		
 End case 

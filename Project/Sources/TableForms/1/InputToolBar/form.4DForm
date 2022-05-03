@@ -72,7 +72,8 @@
 					"method": "ObjectMethods/Button5.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"Button4": {
 					"type": "button",
@@ -86,7 +87,8 @@
 					"method": "ObjectMethods/Button4.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"Button": {
 					"type": "button",
@@ -130,7 +132,7 @@
 				"Button9": {
 					"type": "button",
 					"top": 110,
-					"left": 937,
+					"left": 957,
 					"width": 127,
 					"height": 21,
 					"sizingY": "fixed",
@@ -231,8 +233,8 @@
 				},
 				"Button12": {
 					"type": "button",
-					"top": 819,
-					"left": 245,
+					"top": 798,
+					"left": 206,
 					"width": 147,
 					"height": 21,
 					"sizingY": "move",
@@ -271,7 +273,8 @@
 					"method": "ObjectMethods/Button16.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"Button8": {
 					"type": "button",
@@ -285,7 +288,8 @@
 					"method": "ObjectMethods/Button8.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"Button15": {
 					"type": "button",
@@ -299,7 +303,8 @@
 					"method": "ObjectMethods/Button15.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"Button17": {
 					"type": "button",
@@ -326,7 +331,7 @@
 					"sizingY": "grow",
 					"dataSource": "[SAMPLE:1]WP:2",
 					"hideFocusRing": true,
-					"spellcheck": true,
+					"spellcheck": false,
 					"scrollbarVertical": "automatic",
 					"scrollbarHorizontal": "automatic",
 					"dpi": 0,
@@ -348,7 +353,7 @@
 					"type": "button",
 					"text": "SET EXPRESSION",
 					"top": 172,
-					"left": 937,
+					"left": 957,
 					"width": 137,
 					"height": 28,
 					"events": [
@@ -364,7 +369,7 @@
 					"type": "button",
 					"text": "SET URL",
 					"top": 220,
-					"left": 937,
+					"left": 957,
 					"width": 137,
 					"height": 28,
 					"events": [
@@ -380,7 +385,7 @@
 					"type": "button",
 					"text": "PICT SETTINGS",
 					"top": 268,
-					"left": 937,
+					"left": 957,
 					"width": 137,
 					"height": 28,
 					"events": [
@@ -397,7 +402,7 @@
 					"type": "button",
 					"text": "Import Write Pro Doc",
 					"top": 47,
-					"left": 937,
+					"left": 957,
 					"width": 187,
 					"height": 37,
 					"events": [
@@ -412,7 +417,7 @@
 					"type": "button",
 					"text": "Create preview",
 					"top": 353,
-					"left": 1206,
+					"left": 1226,
 					"width": 180,
 					"height": 27,
 					"events": [
@@ -424,7 +429,7 @@
 				},
 				"Input": {
 					"type": "input",
-					"left": 944,
+					"left": 964,
 					"top": 395,
 					"width": 442,
 					"height": 305,
@@ -441,7 +446,7 @@
 					"type": "button",
 					"text": "Create preview (no param)",
 					"top": 353,
-					"left": 944,
+					"left": 964,
 					"width": 180,
 					"height": 27,
 					"events": [
@@ -455,7 +460,7 @@
 					"type": "button",
 					"text": "Skin",
 					"top": 798,
-					"left": 944,
+					"left": 964,
 					"width": 148,
 					"height": 20,
 					"events": [
@@ -469,16 +474,17 @@
 				"Rectangle": {
 					"type": "rectangle",
 					"top": 730,
-					"left": 1311,
+					"left": 1331,
 					"width": 58,
 					"height": 26,
-					"fill": "#434343"
+					"fill": "#434343",
+					"sizingX": "move"
 				},
 				"Radio Button": {
 					"type": "radio",
 					"text": "Radio",
 					"top": 464,
-					"left": 944,
+					"left": 964,
 					"width": 158,
 					"height": 32,
 					"events": [
@@ -492,7 +498,7 @@
 					"type": "radio",
 					"text": "Radio",
 					"top": 501,
-					"left": 944,
+					"left": 964,
 					"width": 158,
 					"height": 32,
 					"events": [
@@ -506,7 +512,7 @@
 					"type": "radio",
 					"text": "Radio",
 					"top": 538,
-					"left": 944,
+					"left": 964,
 					"width": 158,
 					"height": 32,
 					"events": [
@@ -520,7 +526,7 @@
 					"type": "radio",
 					"text": "Radio",
 					"top": 575,
-					"left": 944,
+					"left": 964,
 					"width": 158,
 					"height": 32,
 					"events": [
@@ -532,7 +538,7 @@
 				},
 				"Popup Liste déroulante": {
 					"type": "dropdown",
-					"left": 1193,
+					"left": 1213,
 					"top": 56,
 					"width": 176,
 					"height": 28,
@@ -545,22 +551,38 @@
 				"Ligne": {
 					"type": "line",
 					"top": -2,
-					"left": 900,
+					"left": 930,
 					"width": 1,
 					"height": 943,
-					"stroke": "#ff0000"
+					"stroke": "#ff0000",
+					"sizingX": "move"
 				},
 				"Button24": {
 					"type": "button",
 					"text": "preview",
 					"top": 871,
-					"left": 944,
+					"left": 964,
 					"width": 130,
 					"height": 28,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button24.4dm"
+					"method": "ObjectMethods/Button24.4dm",
+					"sizingX": "move"
+				},
+				"Button25": {
+					"type": "button",
+					"top": 856,
+					"left": 206,
+					"width": 147,
+					"height": 21,
+					"sizingY": "move",
+					"text": "Modify Normal",
+					"focusable": false,
+					"method": "ObjectMethods/Button25.4dm",
+					"events": [
+						"onClick"
+					]
 				}
 			},
 			"entryOrder": [
@@ -598,7 +620,8 @@
 				"Radio Button2",
 				"Radio Button3",
 				"Popup Liste déroulante",
-				"Button24"
+				"Button24",
+				"Button25"
 			]
 		},
 		{
@@ -610,14 +633,14 @@
 		"kind": "form"
 	},
 	"method": "method.4dm",
-	"geometryStamp": 210,
-	"rightMargin": 20,
-	"bottomMargin": 20,
+	"geometryStamp": 304,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"width": 1500,
+	"height": 961
 }

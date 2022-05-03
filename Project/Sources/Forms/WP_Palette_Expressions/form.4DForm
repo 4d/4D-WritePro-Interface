@@ -2,7 +2,7 @@
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Information",
-	"inheritedForm": "WP_Z_Common",
+	"inheritedForm": "",
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
 	"width": 260,
@@ -37,19 +37,59 @@
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
+				"IconBgnd1": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 142,
+					"width": 24,
+					"height": 24,
+					"fill": "#DDDDDD",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"IconBgnd2": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 113,
+					"width": 24,
+					"height": 24,
+					"fill": "#DDDDDD",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"IconBgnd3": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 85,
+					"width": 24,
+					"height": 24,
+					"fill": "#DDDDDD",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"IconBgnd4": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 171,
+					"width": 24,
+					"height": 24,
+					"fill": "#DDDDDD",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
 				"IconBgnd": {
 					"type": "rectangle",
-					"top": 95,
+					"top": 105,
 					"left": 85,
 					"width": 140,
-					"height": 55,
+					"height": 45,
 					"fill": "#EEEEEE",
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
 				"Separator2": {
 					"type": "rectangle",
-					"top": 405,
+					"top": 395,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -69,7 +109,7 @@
 				},
 				"lbl_Title": {
 					"type": "text",
-					"top": 430,
+					"top": 420,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -79,7 +119,7 @@
 				},
 				"lbl_subject": {
 					"type": "text",
-					"top": 450,
+					"top": 440,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -89,7 +129,7 @@
 				},
 				"lbl_Author": {
 					"type": "text",
-					"top": 470,
+					"top": 460,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -99,7 +139,7 @@
 				},
 				"lbl_Company": {
 					"type": "text",
-					"top": 490,
+					"top": 480,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -132,7 +172,7 @@
 				"btnDate": {
 					"type": "button",
 					"top": 40,
-					"left": 85,
+					"left": 544,
 					"width": 140,
 					"height": 19,
 					"text": ":xliff:Date",
@@ -145,7 +185,7 @@
 				},
 				"btnExpression": {
 					"type": "button",
-					"top": 65,
+					"top": 75,
 					"left": 85,
 					"width": 140,
 					"height": 19,
@@ -159,10 +199,10 @@
 				},
 				"VirtualExpression": {
 					"type": "input",
-					"top": 96,
+					"top": 106,
 					"left": 90,
 					"width": 130,
-					"height": 53,
+					"height": 43,
 					"class": "Palette",
 					"focusable": false,
 					"fill": "transparent",
@@ -269,7 +309,7 @@
 					"top": 322,
 					"left": 85,
 					"width": 140,
-					"height": 45,
+					"height": 35,
 					"class": "Palette",
 					"fill": "automatic",
 					"borderStyle": "system",
@@ -283,7 +323,7 @@
 				},
 				"btnURL": {
 					"type": "button",
-					"top": 375,
+					"top": 365,
 					"left": 85,
 					"width": 140,
 					"height": 19,
@@ -297,7 +337,7 @@
 				},
 				"Title": {
 					"type": "input",
-					"top": 430,
+					"top": 420,
 					"left": 85,
 					"width": 140,
 					"height": 14,
@@ -312,7 +352,7 @@
 				},
 				"Subject": {
 					"type": "input",
-					"top": 450,
+					"top": 440,
 					"left": 85,
 					"width": 140,
 					"height": 14,
@@ -327,7 +367,7 @@
 				},
 				"Author": {
 					"type": "input",
-					"top": 470,
+					"top": 460,
 					"left": 85,
 					"width": 140,
 					"height": 14,
@@ -342,7 +382,7 @@
 				},
 				"Company": {
 					"type": "input",
-					"top": 490,
+					"top": 480,
 					"left": 85,
 					"width": 140,
 					"height": 14,
@@ -357,10 +397,10 @@
 				},
 				"Notes": {
 					"type": "input",
-					"top": 511,
+					"top": 500,
 					"left": 85,
 					"width": 140,
-					"height": 41,
+					"height": 31,
 					"class": "Palette",
 					"hideFocusRing": true,
 					"contextMenu": "none",
@@ -414,7 +454,7 @@
 				},
 				"sepLbl_Document": {
 					"type": "text",
-					"top": 405,
+					"top": 395,
 					"left": 20,
 					"width": 220,
 					"height": 13,
@@ -435,13 +475,13 @@
 				},
 				"lbl_Notes1": {
 					"type": "text",
-					"top": 508,
+					"top": 500,
 					"left": 0,
 					"width": 80,
 					"height": 14,
 					"class": "Palette",
 					"textAlign": "right",
-					"fontStyle": "italic",
+					"fontStyle": "normal",
 					"text": ":xliff:NotesColon"
 				},
 				"Separator3": {
@@ -468,7 +508,7 @@
 				},
 				"lbl_Insert": {
 					"type": "text",
-					"top": 42,
+					"top": 46,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -498,7 +538,7 @@
 				},
 				"lbl_Expression": {
 					"type": "text",
-					"top": 95,
+					"top": 105,
 					"left": 0,
 					"width": 80,
 					"height": 34,
@@ -538,6 +578,117 @@
 					"textAlign": "right",
 					"text": ":xliff:ActionsColon"
 				},
+				"TrueExpression": {
+					"type": "input",
+					"top": 106,
+					"left": 303,
+					"width": 130,
+					"height": 41,
+					"class": "Palette",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"btn_insertPageCount": {
+					"type": "button",
+					"top": 40,
+					"left": 113,
+					"width": 24,
+					"height": 24,
+					"tooltip": ":xliff:insertPageCount",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/PageCount_24.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btn_insertPageCount.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_insertPageNumber": {
+					"type": "button",
+					"top": 40,
+					"left": 85,
+					"width": 24,
+					"height": 24,
+					"tooltip": ":xliff:insertPageNumber",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/PageNumber_24.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btn_insertPageNumber.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_insertTime": {
+					"type": "button",
+					"top": 40,
+					"left": 171,
+					"width": 24,
+					"height": 24,
+					"tooltip": ":xliff:InsertTime",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/InsertTime_24.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btn_insertTime.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_InsertDate": {
+					"type": "button",
+					"top": 40,
+					"left": 142,
+					"width": 24,
+					"height": 24,
+					"tooltip": ":xliff:insertDate",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/InsertDate_24.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btn_InsertDate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"IconBgnd5": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 200,
+					"width": 24,
+					"height": 24,
+					"fill": "#DDDDDD",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"btn_insertTime1": {
+					"type": "button",
+					"top": 40,
+					"left": 200,
+					"width": 24,
+					"height": 24,
+					"tooltip": ":xliff:InsertDocumentInfo",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBcommon/Home/ellipsis_24.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/btn_insertTime1.4dm",
+					"events": [
+						"onClick"
+					],
+					"popupPlacement": "linked",
+					"text": "",
+					"textPlacement": "bottom"
+				},
 				"Rect2": {
 					"type": "rectangle",
 					"top": 0,
@@ -563,22 +714,25 @@
 					"textAngle": 270,
 					"text": "4D WritePro Information"
 				},
-				"TrueExpression": {
-					"type": "input",
-					"top": 97,
-					"left": 316,
-					"width": 130,
-					"height": 53,
+				"Line1": {
+					"type": "line",
+					"top": 619,
+					"left": 265,
+					"width": 461,
+					"height": 1
+				},
+				"btnCompute1": {
+					"type": "button",
+					"top": 540,
+					"left": 85,
+					"width": 140,
+					"height": 19,
+					"text": ":xliff:Set",
 					"class": "Palette",
 					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"enterable": false,
-					"contextMenu": "none",
-					"dragging": "none",
-					"dropping": "custom",
+					"method": "ObjectMethods/btnCompute1.4dm",
 					"events": [
-						"onDataChange"
+						"onClick"
 					]
 				}
 			},
@@ -601,7 +755,13 @@
 				"URLurl",
 				"Created",
 				"Modified",
-				"TrueExpression"
+				"TrueExpression",
+				"btn_insertPageCount",
+				"btn_insertPageNumber",
+				"btn_insertTime",
+				"btn_InsertDate",
+				"btn_insertTime1",
+				"btnCompute1"
 			]
 		}
 	],
@@ -616,16 +776,29 @@
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
-			"View 2": {},
-			"View 3": {},
-			"View 4": {},
-			"View 5": {},
-			"View 6": {},
-			"View 7": {},
-			"View 8": {},
-			"View 9": {
+			"View 2": {
+				"visible": false
+			},
+			"View 3": {
+				"visible": false
+			},
+			"View 4": {
+				"visible": false
+			},
+			"View 5": {
+				"visible": false
+			},
+			"View 6": {
+				"visible": false
+			},
+			"View 7": {
+				"visible": false
+			},
+			"View 8": {
+				"visible": false
+			},
+			"Preview": {
 				"visible": false,
-				"selectable": false,
 				"objects": [
 					"Rect2",
 					"Text"
@@ -637,5 +810,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 54
+	"geometryStamp": 264
 }

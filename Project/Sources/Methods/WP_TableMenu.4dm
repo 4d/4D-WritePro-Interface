@@ -114,6 +114,9 @@ Else
 				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "table/avoidPageBreakInside")
 				
+				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "headerRowCount")  //a remplacer par constante
+				
 /*
 APPEND MENU ITEM($menu; "-")
 APPEND MENU ITEM($menu; ".Set datasource…")

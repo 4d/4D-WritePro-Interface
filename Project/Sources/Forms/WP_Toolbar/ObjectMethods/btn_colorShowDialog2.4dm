@@ -33,13 +33,25 @@ SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8;
 APPEND MENU ITEM:C411($menuRef; "-")
 
 APPEND MENU ITEM:C411($menuRef; ak standard action title:K76:83)
-SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textShadowColor")
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K56:1; wk text underline style:K81:73)
 APPEND MENU ITEM:C411($menuRef; ak standard action title:K76:83)
-SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textShadowColor/showdialog")
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K56:1; wk text underline color:K81:74)
+
+APPEND MENU ITEM:C411($menuRef; "-")
+
+APPEND MENU ITEM:C411($menuRef; ak standard action title:K76:83)
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K56:1; wk text linethrough style:K81:75)
+APPEND MENU ITEM:C411($menuRef; ak standard action title:K76:83)
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action:K56:1; wk text linethrough color:K81:76)
+
+APPEND MENU ITEM:C411($menuRef; "-")
+
+APPEND MENU ITEM:C411($menuRef; ak standard action title:K76:83)
+SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textShadowColor")
+//APPEND MENU ITEM($menuRef; ak standard action title)
+//SET MENU ITEM PROPERTY($menuRef; -1; Associated standard action name; "textShadowColor/showdialog")
 APPEND MENU ITEM:C411($menuRef; ak standard action title:K76:83)
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textShadowOffset")
-
-
 
 
 $choice:=Dynamic pop up menu:C1006($menuRef)

@@ -2,7 +2,7 @@
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Frames",
-	"inheritedForm": "WP_Z_Common",
+	"inheritedForm": "",
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
 	"width": 260,
@@ -227,5 +227,5 @@
 			}
 		}
 	},
-	"geometryStamp": 62
+	"geometryStamp": 63
 }

@@ -48,8 +48,9 @@ If (Form:C1466.selection#Null:C1517)
 			End if 
 			
 		: ($result="insertFormula")
-			WP_Set4Dexpression
 			
+			//WP_Set4Dexpression
+			WP_SetFormula
 	End case 
 	
 	RELEASE MENU:C978($menu)

@@ -60,10 +60,14 @@ Case of
 		If ($setupOK) & ($typeSelection#2)
 			
 			WP_GetUserUnit(Form:C1466.selection[wk owner:K81:168])
+			
 			WP_GetSizes(Form:C1466.paragraphRange; "paragraph")
 			
-			WP_GetSizes(Form:C1466.imageRange; "picture")  //ACI0100269
-			WP_GetImageUrl(Form:C1466.imageRange)  //ACI0100269
+			// removed from dial, no more info for pictures v19R5 01/02/2022)
+			// WP_GetSizes(Form.imageRange; "picture")  //ACI0100269
+			
+			// removed from dial, no more info for pictures v19R5 14/02/2022)
+			// WP_GetImageUrl(Form.imageRange)  //ACI0100269
 			
 		End if 
 		

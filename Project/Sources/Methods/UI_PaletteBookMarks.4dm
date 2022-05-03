@@ -1,6 +1,6 @@
 //%attributes = {"invisible":true}
-C_POINTER:C301($ptr; $ptrFontColor)
-C_LONGINT:C283($i; $n; $p)
+C_POINTER:C301($ptr)
+C_LONGINT:C283($p)
 C_TEXT:C284($tip)
 C_LONGINT:C283($typeSelection)
 

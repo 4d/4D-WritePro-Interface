@@ -1,5 +1,3 @@
-C_BOOLEAN:C305($check)
-
 C_COLLECTION:C1488($_buttonNames)
 
 C_LONGINT:C283($typeSelection)
@@ -24,9 +22,9 @@ Case of
 		
 		//If (Is Windows)
 		//OBJECT SET VISIBLE(*; "btn_mac_@"; False)
-		//Else 
+		//Else
 		//OBJECT SET VISIBLE(*; "btn_win_@"; False)
-		//End if 
+		//End if
 		
 		// style sheets
 		
@@ -123,8 +121,8 @@ Case of
 		//oForm.fonts.names.push($_fontNameList{$j})
 		//oForm.fonts.styles.push($_fontStyleList{$j})
 		
-		//End for 
-		//End if 
+		//End for
+		//End if
 		
 		//If ($subMenu="")
 		//APPEND MENU ITEM(oForm.fonts.menu; $_fonts{$i})
@@ -134,11 +132,11 @@ Case of
 		//oForm.fonts.names.push($_fonts{$i})
 		//oForm.fonts.styles.push("")
 		
-		//Else 
+		//Else
 		//APPEND MENU ITEM(oForm.fonts.menu; $_fonts{$i}; $subMenu)
-		//End if 
+		//End if
 		
-		//End for 
+		//End for
 		
 		
 		
@@ -159,15 +157,20 @@ Case of
 		
 		ARRAY TEXT:C222(WP_applyTo; 0)
 		If ((FORM Get current page:C276(*)=3) | (FORM Get current page:C276(*)=4))
-			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("sections"))  //1
-			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("paragraphs"))  //2
-			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("pictures"))  //3
-			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("Table"))  //4
-			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("Cell"))  //5
+			
+			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("document"))  //1  // v19R5
+			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("headers"))  //2   // v19R5
+			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("footers"))  //3   // v19R5
+			
+			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("sections"))  //4
+			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("paragraphs"))  //5 // default
+			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("pictures"))  //6
+			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("Table"))  //7
+			APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("Cell"))  //8
 			If (FORM Get current page:C276(*)=4)
-				APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("Row"))  //6
+				APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("Row"))  //9
 			End if 
-			WP_applyTo:=2
+			WP_applyTo:=5
 		End if 
 		
 		//SET TIMER(-1)
@@ -199,12 +202,15 @@ Case of
 						
 						
 						If ($typeSelection#2)
-							WP_GetExpressions
+							WP_GetFormulas
 							WP_GetFontInfo(Form:C1466.selection)  // font, size, weight, textcolor  (common method with font palette)
 						End if 
 						
 						$page:=FORM Get current page:C276(*)
 						Case of 
+								
+							: ($page=1)
+								WP_SetListFont(Form:C1466.selection)
 								
 							: ($page=9)
 								WP_GetProtections(Form:C1466.selection)

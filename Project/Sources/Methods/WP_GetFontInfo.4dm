@@ -12,7 +12,7 @@ C_BOOLEAN:C305($redraw)
 
 C_LONGINT:C283($p)
 C_LONGINT:C283($frameColor)
-C_LONGINT:C283($fontSize; $style; $weight; $color)
+C_LONGINT:C283($fontSize; $color)
 C_LONGINT:C283($rangeStart; $rangeEnd)
 
 C_TEXT:C284($fontFamily)
@@ -86,8 +86,6 @@ If (Not:C34(OB Is empty:C1297($range)))
 				WP_fontFamilly:=0
 			End if 
 			
-			//OBJECT SET ENABLED(*;"cbBold";WP Is font style supported($range;wk font bold))
-			//OBJECT SET ENABLED(*;"cbItalic";WP Is font style supported($range;wk font italic))
 			
 		Else 
 			// font familly not found in array !
@@ -126,19 +124,21 @@ If (Not:C34(OB Is empty:C1297($range)))
 		End if 
 		
 		
-		WP GET ATTRIBUTES:C1345($range; wk font italic:K81:67; $style)  //0, 1 or wk mixed
-		If ($style#wk mixed:K81:89)
-			oForm.cbItalic:=$style
-		Else 
-			oForm.cbItalic:=2
-		End if 
+		// standard action since 2022 march 17th
 		
-		WP GET ATTRIBUTES:C1345($range; wk font bold:K81:68; $weight)  //0, 1 or wk mixed
-		If ($weight#wk mixed:K81:89)
-			oForm.cbBold:=$weight
-		Else 
-			oForm.cbBold:=2
-		End if 
+		//WP GET ATTRIBUTES($range; wk font italic; $style)  //0, 1 or wk mixed
+		//If ($style#wk mixed)
+		//oForm.cbItalic:=$style
+		//Else 
+		//oForm.cbItalic:=2
+		//End if 
+		
+		//WP GET ATTRIBUTES($range; wk font bold; $weight)  //0, 1 or wk mixed
+		//If ($weight#wk mixed)
+		//oForm.cbBold:=$weight
+		//Else 
+		//oForm.cbBold:=2
+		//End if 
 		
 		
 		

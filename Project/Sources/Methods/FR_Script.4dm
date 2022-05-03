@@ -1,10 +1,10 @@
 //%attributes = {"invisible":true}
 var $1; $action : Text
 
-var $options; $n; $nbOccurences : Integer
+var $options; $nbOccurences : Integer
 var $range; $target : Object
 var $rangeCollection : Collection
-var $message : Text
+
 
 var $0 : Integer  // nb of occurences found
 

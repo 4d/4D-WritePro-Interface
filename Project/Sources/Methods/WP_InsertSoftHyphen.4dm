@@ -1,8 +1,7 @@
 //%attributes = {"invisible":true}
 C_BOOLEAN:C305($insert)
-C_TEXT:C284($objectName;$memoErrorMethod;$softHyphen;$previousChar;$nextChar)
-C_POINTER:C301($ptr)
-C_OBJECT:C1216($document;$range;$headerFooterRange;$documentRange;$paragraphRange)
+C_TEXT:C284($softHyphen; $previousChar; $nextChar)
+C_OBJECT:C1216($document; $range; $paragraphRange)
 
 $insert:=True:C214  // lets be OPTIMISTIC
 
@@ -13,7 +12,7 @@ If (Form:C1466.selection#Null:C1517)
 	
 	If ($range.type=wk type character:K81:296)
 		
-		$paragraphRange:=WP Paragraph range:C1346(WP Get elements:C1550($range;wk type paragraph:K81:191)[0])
+		$paragraphRange:=WP Paragraph range:C1346(WP Get elements:C1550($range; wk type paragraph:K81:191)[0])
 		
 		Case of 
 			: ($range.start=$paragraphRange.start)  // ignore beginning of §
@@ -26,11 +25,11 @@ If (Form:C1466.selection#Null:C1517)
 				
 				$softHyphen:=Char:C90(0x00AD)
 				
-				$previousChar:=WP Get text:C1575(WP Text range:C1341($range;$range.start-1;$range.start))
-				$nextChar:=WP Get text:C1575(WP Text range:C1341($range;$range.start;$range.start+1))
+				$previousChar:=WP Get text:C1575(WP Text range:C1341($range; $range.start-1; $range.start))
+				$nextChar:=WP Get text:C1575(WP Text range:C1341($range; $range.start; $range.start+1))
 				
 				Case of 
-						  //ignore those cases
+						//ignore those cases
 					: ($previousChar=$softHyphen)
 					: ($nextChar=$softHyphen)
 					: ($previousChar=" ")
@@ -40,7 +39,7 @@ If (Form:C1466.selection#Null:C1517)
 					: ($previousChar=",")
 					: ($nextChar=",")
 					Else 
-						WP SET TEXT:C1574($range;$softHyphen;wk replace:K81:177;wk exclude from range:K81:181)
+						WP SET TEXT:C1574($range; $softHyphen; wk replace:K81:177; wk exclude from range:K81:181)
 				End case 
 				
 		End case 
