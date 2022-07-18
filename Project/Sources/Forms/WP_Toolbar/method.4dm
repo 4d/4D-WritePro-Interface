@@ -204,33 +204,33 @@ Case of
 						If ($typeSelection#2)
 							WP_GetFormulas
 							WP_GetFontInfo(Form:C1466.selection)  // font, size, weight, textcolor  (common method with font palette)
-						End if 
-						
-						$page:=FORM Get current page:C276(*)
-						Case of 
-								
-							: ($page=1)
-								WP_SetListFont(Form:C1466.selection)
-								
-							: ($page=9)
-								WP_GetProtections(Form:C1466.selection)
-								
-							: ($page=11)  //  find & replace
-								
-								//UI_PaletteFindAndReplace
-								WP_FR_InitOptions("toolbar")
-								
-								
-								If (Length:C16(oForm.FR.find)>0)  //
-									oForm.FR.occurences:=FR_Script("findAll")  //; oForm.FR.find)
-								Else 
-									oForm.FR.occurences:=-1
-								End if 
-								
-								
-						End case 
-						
-						// WP_GetProtection  // page 2
+							
+							// end if  -> moved after end case (BUG)
+							
+							$page:=FORM Get current page:C276(*)
+							Case of 
+									
+								: ($page=1)
+									WP_SetListFont(Form:C1466.selection)
+									
+								: ($page=9)
+									WP_GetProtections(Form:C1466.selection)
+									
+								: ($page=11)  //  find & replace
+									
+									//UI_PaletteFindAndReplace
+									WP_FR_InitOptions("toolbar")
+									
+									
+									If (Length:C16(oForm.FR.find)>0)  //
+										oForm.FR.occurences:=FR_Script("findAll")  //; oForm.FR.find)
+									Else 
+										oForm.FR.occurences:=-1
+									End if 
+									
+							End case 
+							
+						End if   // ACI0102916
 						
 					End if 
 				End if 
