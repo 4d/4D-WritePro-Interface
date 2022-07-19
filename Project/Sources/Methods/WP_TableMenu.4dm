@@ -1,26 +1,29 @@
 //%attributes = {"invisible":true}
 C_TEXT:C284($1; $applyTo)
 
-
 C_BOOLEAN:C305($isTable)
 
 C_COLLECTION:C1488($files)
+C_COLLECTION:C1488($_templates; $_icons)
 
 C_LONGINT:C283($i)
+
+C_OBJECT:C1216($folder)
+C_OBJECT:C1216($template)
+C_OBJECT:C1216($rows)
+C_OBJECT:C1216($formula; $wpTable)
+
+C_POINTER:C301($4Dtable)
 
 C_TEXT:C284($path)
 C_TEXT:C284($menu)
 C_TEXT:C284($choice)
 C_TEXT:C284($where)
-
-C_COLLECTION:C1488($_templates; $_icons)
-
-C_OBJECT:C1216($folder)
-C_OBJECT:C1216($template)
-C_OBJECT:C1216($rows)
+C_TEXT:C284($formulaText)
 
 $applyTo:=$1  // "insertTable", "table", "row"; column or "cell"
 $where:=""
+
 
 $rows:=WP Table get rows:C1475(Form:C1466.selection)
 If ($rows=Null:C1517)
@@ -117,12 +120,9 @@ Else
 				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "headerRowCount")  //a remplacer par constante
 				
-/*
-APPEND MENU ITEM($menu; "-")
-APPEND MENU ITEM($menu; ".Set datasource…")
-SET MENU ITEM PARAMETER($menu; -1; ".Set datasource…")
-//SET MENU ITEM PROPERTY($menu; -1; "SetTableDataSource")
-*/
+				APPEND MENU ITEM:C411($menu; "-")
+				APPEND MENU ITEM:C411($menu; Get localized string:C991("SetDatasourceEllipsis"))
+				SET MENU ITEM PARAMETER:C1004($menu; -1; "SetDatasource")
 				
 			: ($applyTo="row")
 				
@@ -173,14 +173,48 @@ SET MENU ITEM PARAMETER($menu; -1; ".Set datasource…")
 		
 		
 		$choice:=Dynamic pop up menu:C1006($menu)
+		//C_COLLECTION()
 		
 		Case of 
-			: ($choice=".Set datasource…")
-				ALERT:C41("work in progress…")
+			: ($choice="SetDatasource")
+				//ALERT("work in progress…")
+				
+				$wpTable:=WP Get elements:C1550(Form:C1466.selection; wk type table:K81:222)[0]
+				WP GET ATTRIBUTES:C1345($wpTable; wk datasource:K81:367; $formula)
+				
+				If ($formula#Null:C1517)
+					$formulaText:=$formula.source
+				Else 
+					$formulaText:=""
+				End if 
+				
+				
+				$i:=1
+				While (Not:C34(Is table number valid:C999($i))) & ($i<Get last table number:C254)
+					$i:=$i+1
+				End while 
+				
+				If (Is table number valid:C999($i))
+					$4Dtable:=Table:C252($i)
+					EDIT FORMULA:C806($4Dtable->; $formulaText)
+					
+					If (ok=1)
+						If ($formulaText#"")
+							$formula:=Formula from string:C1601($formulaText)
+							WP SET ATTRIBUTES:C1342($wpTable; wk datasource:K81:367; $formula)
+						Else 
+							WP RESET ATTRIBUTES:C1344($wpTable; wk datasource:K81:367)
+						End if 
+					End if 
+					
+				Else 
+					// aucune table valide
+				End if 
+				
 				
 		End case 
 		
-	End if 
+	End if   // is table
 End if 
 
 

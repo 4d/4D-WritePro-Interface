@@ -1539,12 +1539,12 @@
 					"top": 60,
 					"left": 160,
 					"width": 30,
-					"height": 25,
+					"height": 24,
 					"tooltip": ":xliff:insertExpression",
 					"fontFamily": "Segoe UI",
 					"fontSize": 10,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Insert/InsertExpression_24.png",
+					"icon": "/RESOURCES/Images/TBcommon/Insert/InsertExpression_24.png",
 					"iconFrames": 4,
 					"style": "toolbar",
 					"method": "ObjectMethods/btn_insertExpression.4dm",
@@ -1555,28 +1555,38 @@
 				"btn_computeExpression": {
 					"type": "button",
 					"top": 60,
-					"left": 190,
-					"width": 30,
+					"left": 238,
+					"width": 32,
 					"height": 24,
 					"tooltip": ":xliff:compute4Dexpressions",
-					"action": "computeExpressions",
+					"action": "",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/4D/ComputeReference_24.png",
+					"icon": "/RESOURCES/Images/TBcommon/4D/ComputeReference_24.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"popupPlacement": "linked",
+					"method": "ObjectMethods/btn_computeExpression.4dm",
+					"events": [
+						"onClick"
+					]
 				},
 				"btn_freezeExpressions": {
 					"type": "button",
 					"top": 60,
-					"left": 220,
-					"width": 30,
+					"left": 280,
+					"width": 32,
 					"height": 24,
 					"tooltip": ":xliff:freeze4DExpressions",
-					"action": "freezeExpressions",
+					"action": "",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/4D/FreezeDocument_24.png",
+					"icon": "/RESOURCES/Images/TBcommon/4D/FreezeDocument_24.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"popupPlacement": "linked",
+					"method": "ObjectMethods/btn_freezeExpressions.4dm",
+					"events": [
+						"onClick"
+					]
 				},
 				"btn_visibleHeaders": {
 					"type": "checkbox",
@@ -1646,7 +1656,7 @@
 				"Popup_zoom": {
 					"type": "dropdown",
 					"top": 60,
-					"left": 670,
+					"left": 700,
 					"width": 90,
 					"height": 20,
 					"tooltip": ":xliff:zoom",
@@ -1674,7 +1684,7 @@
 				"Line3": {
 					"type": "line",
 					"top": 30,
-					"left": 775,
+					"left": 805,
 					"height": 50,
 					"stroke": "#696969",
 					"width": 0,
@@ -1733,13 +1743,13 @@
 				"btn_showHide4Dexpressions": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 250,
+					"left": 199,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHide4Dexpressions",
-					"action": "visibleReferences",
+					"action": "visiblereferences",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/4D/Show4DExpression_24.png",
+					"icon": "/RESOURCES/Images/TBcommon/4D/Show4DExpression_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
@@ -1768,7 +1778,7 @@
 				"zoomIcon": {
 					"type": "picture",
 					"top": 60,
-					"left": 645,
+					"left": 675,
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
@@ -1940,6 +1950,36 @@
 					"popupPlacement": "linked",
 					"text": "",
 					"textPlacement": "bottom"
+				},
+				"btn_computeExpression1": {
+					"type": "button",
+					"top": 120,
+					"left": 198,
+					"width": 32,
+					"height": 24,
+					"tooltip": ":xliff:showHide4Dexpressions",
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBcommon/4D/Show4DExpression_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"popupPlacement": "linked",
+					"method": "ObjectMethods/btn_computeExpression1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_visibleEmptyImages": {
+					"type": "checkbox",
+					"top": 60,
+					"left": 640,
+					"width": 30,
+					"height": 24,
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Insert/HideEmptyImages_24.png",
+					"iconFrames": 4,
+					"style": "toolbar"
 				}
 			},
 			"entryOrder": [
@@ -1972,7 +2012,9 @@
 				"btn_insertColumnBreak",
 				"btn_visibleVerticalRuler",
 				"btn_insertPageBreak1",
-				"btn_insertTime3"
+				"btn_insertTime3",
+				"btn_computeExpression1",
+				"btn_visibleEmptyImages"
 			]
 		},
 		{
@@ -4014,5 +4056,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 5170
+	"geometryStamp": 5307
 }

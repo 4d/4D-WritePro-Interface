@@ -23,7 +23,7 @@ $pictureElement:=Form:C1466.picture
 Form:C1466.pictSettings:=New object:C1471  // real picture settings
 Form:C1466.display:=New object:C1471  // used for display only
 
-If ($range.type=2)
+If (Not:C34(Undefined:C82($pictureElement[wk anchor horizontal align:K81:237])))  //($range.type=2)
 	Form:C1466.pictSettings.anchored:=True:C214
 Else 
 	Form:C1466.pictSettings.anchored:=False:C215
@@ -132,12 +132,18 @@ End if
 // (Used to determine the picture ratio)
 
 If (Form:C1466.pictSettings.anchored)
+	
 	WP GET ATTRIBUTES:C1345($pictureElement; wk image formula:K81:305; $formula)
+	
 Else 
-	$_formulas:=WP Get formulas:C1702($range)
-	If ($_formulas.length>0)
-		$formula:=$_formulas[0].formula
+	
+	If ($range#Null:C1517)
+		$_formulas:=WP Get formulas:C1702($range)
+		If ($_formulas.length>0)
+			$formula:=$_formulas[0].formula
+		End if 
 	End if 
+	
 End if 
 If ($formula#Null:C1517)
 	Form:C1466.pictSettings.formula:=$formula  // FORMULA

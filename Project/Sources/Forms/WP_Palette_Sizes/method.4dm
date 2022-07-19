@@ -43,6 +43,10 @@ Case of
 		
 		oForm.skinAppliedSub:=UI_ApplySkin
 		
+		//tip for HideEmptyImages
+		OBJECT SET HELP TIP:C1181(*; "btn_visibleEmptyImages"; Get action info:C1442("visibleEmptyImages").title)
+		
+		
 		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Bound Variable Change:K2:52) | (Form event code:C388=On Timer:K2:25)

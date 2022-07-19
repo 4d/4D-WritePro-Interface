@@ -31,7 +31,7 @@
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
-					"width": 260,
+					"width": 259,
 					"height": 620,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
@@ -40,56 +40,56 @@
 				"IconBgnd1": {
 					"type": "rectangle",
 					"top": 40,
-					"left": 142,
-					"width": 24,
-					"height": 24,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"left": 144,
+					"width": 25,
+					"height": 26,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"IconBgnd2": {
 					"type": "rectangle",
 					"top": 40,
-					"left": 113,
-					"width": 24,
-					"height": 24,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"left": 114,
+					"width": 25,
+					"height": 26,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"IconBgnd3": {
 					"type": "rectangle",
 					"top": 40,
-					"left": 85,
-					"width": 24,
-					"height": 24,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"left": 84,
+					"width": 25,
+					"height": 26,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"IconBgnd4": {
 					"type": "rectangle",
 					"top": 40,
-					"left": 171,
-					"width": 24,
-					"height": 24,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"left": 174,
+					"width": 25,
+					"height": 26,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"IconBgnd": {
 					"type": "rectangle",
 					"top": 105,
 					"left": 85,
-					"width": 140,
-					"height": 45,
+					"width": 155,
+					"height": 55,
 					"fill": "#EEEEEE",
 					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 6
 				},
 				"Separator2": {
 					"type": "rectangle",
-					"top": 395,
+					"top": 375,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -99,7 +99,7 @@
 				},
 				"SeparatorURL": {
 					"type": "rectangle",
-					"top": 275,
+					"top": 245,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -109,7 +109,7 @@
 				},
 				"lbl_Title": {
 					"type": "text",
-					"top": 420,
+					"top": 400,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -119,7 +119,7 @@
 				},
 				"lbl_subject": {
 					"type": "text",
-					"top": 440,
+					"top": 422,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -129,7 +129,7 @@
 				},
 				"lbl_Author": {
 					"type": "text",
-					"top": 460,
+					"top": 443,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -139,7 +139,7 @@
 				},
 				"lbl_Company": {
 					"type": "text",
-					"top": 480,
+					"top": 464,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -149,7 +149,7 @@
 				},
 				"lbl_Created": {
 					"type": "text",
-					"top": 577,
+					"top": 575,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -160,7 +160,7 @@
 				},
 				"lbl_Modified": {
 					"type": "text",
-					"top": 597,
+					"top": 595,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -187,7 +187,7 @@
 					"type": "button",
 					"top": 75,
 					"left": 85,
-					"width": 140,
+					"width": 155,
 					"height": 19,
 					"text": ":xliff:Expression",
 					"class": "Palette",
@@ -201,8 +201,8 @@
 					"type": "input",
 					"top": 106,
 					"left": 90,
-					"width": 130,
-					"height": 43,
+					"width": 145,
+					"height": 53,
 					"class": "Palette",
 					"focusable": false,
 					"fill": "transparent",
@@ -213,85 +213,14 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
-				},
-				"rbValues": {
-					"type": "radio",
-					"top": 158,
-					"left": 85,
-					"width": 140,
-					"height": 15,
-					"text": ":xliff:Values",
-					"class": "Palette",
-					"focusable": false,
-					"radioGroup": "Group4",
-					"method": "ObjectMethods/rbValues.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"rbExpressions": {
-					"type": "radio",
-					"top": 178,
-					"left": 85,
-					"width": 140,
-					"height": 15,
-					"text": ":xliff:Expressions",
-					"class": "Palette",
-					"focusable": false,
-					"radioGroup": "Group4",
-					"method": "ObjectMethods/rbExpressions.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"btnCompute": {
-					"type": "button",
-					"top": 200,
-					"left": 85,
-					"width": 135,
-					"height": 19,
-					"text": ":xliff:Compute",
-					"class": "Palette",
-					"focusable": false,
-					"method": "ObjectMethods/btnCompute.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"btnFreeze": {
-					"type": "button",
-					"top": 225,
-					"left": 85,
-					"width": 135,
-					"height": 19,
-					"text": ":xliff:Freeze",
-					"class": "Palette",
-					"focusable": false,
-					"method": "ObjectMethods/btnFreeze.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"rbScopeSelection": {
-					"type": "checkbox",
-					"top": 250,
-					"left": 85,
-					"width": 140,
-					"height": 16,
-					"text": ":xliff:SelectionOnly",
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
-					"focusable": false,
-					"events": [
-						"onClick"
-					]
+					],
+					"fontStyle": "italic"
 				},
 				"URLlabel": {
 					"type": "input",
-					"top": 301,
+					"top": 271,
 					"left": 85,
-					"width": 140,
+					"width": 155,
 					"height": 14,
 					"class": "Palette",
 					"fill": "automatic",
@@ -306,10 +235,10 @@
 				},
 				"URLurl": {
 					"type": "input",
-					"top": 322,
+					"top": 292,
 					"left": 85,
-					"width": 140,
-					"height": 35,
+					"width": 155,
+					"height": 41,
 					"class": "Palette",
 					"fill": "automatic",
 					"borderStyle": "system",
@@ -323,9 +252,9 @@
 				},
 				"btnURL": {
 					"type": "button",
-					"top": 365,
+					"top": 345,
 					"left": 85,
-					"width": 140,
+					"width": 155,
 					"height": 19,
 					"text": ":xliff:Set",
 					"class": "Palette",
@@ -337,10 +266,10 @@
 				},
 				"Title": {
 					"type": "input",
-					"top": 420,
+					"top": 400,
 					"left": 85,
-					"width": 140,
-					"height": 14,
+					"width": 155,
+					"height": 15,
 					"class": "Palette",
 					"hideFocusRing": true,
 					"contextMenu": "none",
@@ -352,9 +281,9 @@
 				},
 				"Subject": {
 					"type": "input",
-					"top": 440,
+					"top": 422,
 					"left": 85,
-					"width": 140,
+					"width": 155,
 					"height": 14,
 					"class": "Palette",
 					"hideFocusRing": true,
@@ -367,9 +296,9 @@
 				},
 				"Author": {
 					"type": "input",
-					"top": 460,
+					"top": 443,
 					"left": 85,
-					"width": 140,
+					"width": 155,
 					"height": 14,
 					"class": "Palette",
 					"hideFocusRing": true,
@@ -382,9 +311,9 @@
 				},
 				"Company": {
 					"type": "input",
-					"top": 480,
+					"top": 464,
 					"left": 85,
-					"width": 140,
+					"width": 155,
 					"height": 14,
 					"class": "Palette",
 					"hideFocusRing": true,
@@ -397,10 +326,10 @@
 				},
 				"Notes": {
 					"type": "input",
-					"top": 500,
+					"top": 485,
 					"left": 85,
-					"width": 140,
-					"height": 31,
+					"width": 155,
+					"height": 41,
 					"class": "Palette",
 					"hideFocusRing": true,
 					"contextMenu": "none",
@@ -412,9 +341,9 @@
 				},
 				"Created": {
 					"type": "input",
-					"top": 577,
+					"top": 575,
 					"left": 85,
-					"width": 140,
+					"width": 155,
 					"height": 14,
 					"dataSourceTypeHint": "date",
 					"stroke": "#777777",
@@ -433,9 +362,9 @@
 				},
 				"Modified": {
 					"type": "input",
-					"top": 597,
+					"top": 595,
 					"left": 85,
-					"width": 140,
+					"width": 155,
 					"height": 14,
 					"dataSourceTypeHint": "date",
 					"stroke": "#777777",
@@ -454,7 +383,7 @@
 				},
 				"sepLbl_Document": {
 					"type": "text",
-					"top": 395,
+					"top": 375,
 					"left": 20,
 					"width": 220,
 					"height": 13,
@@ -467,15 +396,15 @@
 				"Line": {
 					"type": "line",
 					"top": 565,
-					"left": 30,
-					"width": 200,
+					"left": 100,
+					"width": 120,
 					"stroke": "#696969",
-					"height": 0,
+					"height": 1,
 					"startPoint": "topLeft"
 				},
 				"lbl_Notes1": {
 					"type": "text",
-					"top": 500,
+					"top": 485,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -518,7 +447,7 @@
 				},
 				"lbl_Label": {
 					"type": "text",
-					"top": 300,
+					"top": 270,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -528,7 +457,7 @@
 				},
 				"lbl_URL": {
 					"type": "text",
-					"top": 320,
+					"top": 290,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -546,19 +475,9 @@
 					"textAlign": "right",
 					"text": ":xliff:ExpressionColon"
 				},
-				"lbl_Expression1": {
-					"type": "text",
-					"top": 160,
-					"left": 0,
-					"width": 80,
-					"height": 14,
-					"class": "Palette",
-					"textAlign": "right",
-					"text": ":xliff:DisplayCollon"
-				},
 				"sepLbl_Document2": {
 					"type": "text",
-					"top": 275,
+					"top": 245,
 					"left": 20,
 					"width": 220,
 					"height": 13,
@@ -598,15 +517,15 @@
 				},
 				"btn_insertPageCount": {
 					"type": "button",
-					"top": 40,
-					"left": 113,
-					"width": 24,
-					"height": 24,
+					"top": 42,
+					"left": 115,
+					"width": 22,
+					"height": 22,
 					"tooltip": ":xliff:insertPageCount",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/PageCount_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"method": "ObjectMethods/btn_insertPageCount.4dm",
 					"events": [
 						"onClick"
@@ -614,15 +533,15 @@
 				},
 				"btn_insertPageNumber": {
 					"type": "button",
-					"top": 40,
+					"top": 42,
 					"left": 85,
-					"width": 24,
-					"height": 24,
+					"width": 22,
+					"height": 22,
 					"tooltip": ":xliff:insertPageNumber",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/PageNumber_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"method": "ObjectMethods/btn_insertPageNumber.4dm",
 					"events": [
 						"onClick"
@@ -630,15 +549,15 @@
 				},
 				"btn_insertTime": {
 					"type": "button",
-					"top": 40,
-					"left": 171,
-					"width": 24,
-					"height": 24,
+					"top": 42,
+					"left": 174,
+					"width": 22,
+					"height": 22,
 					"tooltip": ":xliff:InsertTime",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/InsertTime_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"method": "ObjectMethods/btn_insertTime.4dm",
 					"events": [
 						"onClick"
@@ -646,15 +565,15 @@
 				},
 				"btn_InsertDate": {
 					"type": "button",
-					"top": 40,
-					"left": 142,
-					"width": 24,
-					"height": 24,
+					"top": 42,
+					"left": 146,
+					"width": 22,
+					"height": 22,
 					"tooltip": ":xliff:insertDate",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/InsertDate_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"method": "ObjectMethods/btn_InsertDate.4dm",
 					"events": [
 						"onClick"
@@ -663,24 +582,24 @@
 				"IconBgnd5": {
 					"type": "rectangle",
 					"top": 40,
-					"left": 200,
-					"width": 24,
-					"height": 24,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"left": 204,
+					"width": 36,
+					"height": 26,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"btn_insertTime1": {
 					"type": "button",
-					"top": 40,
-					"left": 200,
-					"width": 24,
-					"height": 24,
+					"top": 42,
+					"left": 206,
+					"width": 31,
+					"height": 22,
 					"tooltip": ":xliff:InsertDocumentInfo",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/Home/ellipsis_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"method": "ObjectMethods/btn_insertTime1.4dm",
 					"events": [
 						"onClick"
@@ -688,6 +607,95 @@
 					"popupPlacement": "linked",
 					"text": "",
 					"textPlacement": "bottom"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 619,
+					"left": 265,
+					"width": 461,
+					"height": 1
+				},
+				"btnCompute1": {
+					"type": "button",
+					"top": 539,
+					"left": 85,
+					"width": 155,
+					"height": 19,
+					"text": ":xliff:Set",
+					"class": "Palette",
+					"focusable": false,
+					"method": "ObjectMethods/btnCompute1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"IconBgnd6": {
+					"type": "rectangle",
+					"top": 202,
+					"left": 85,
+					"width": 66,
+					"height": 28,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
+				},
+				"IconBgnd7": {
+					"type": "rectangle",
+					"top": 202,
+					"left": 176,
+					"width": 66,
+					"height": 28,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
+				},
+				"btn_computeExpression": {
+					"type": "button",
+					"top": 204,
+					"left": 102,
+					"width": 32,
+					"height": 24,
+					"tooltip": ":xliff:compute4Dexpressions",
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBCommon/4D/ComputeReference_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"popupPlacement": "linked",
+					"method": "ObjectMethods/btn_computeExpression.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_freezeExpressions": {
+					"type": "button",
+					"top": 204,
+					"left": 193,
+					"width": 32,
+					"height": 24,
+					"tooltip": ":xliff:freeze4DExpressions",
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBCommon/4D/FreezeDocument_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"popupPlacement": "linked",
+					"method": "ObjectMethods/btn_freezeExpressions.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_showHide4Dexpressions": {
+					"type": "checkbox",
+					"top": 166,
+					"left": 82,
+					"width": 158,
+					"height": 24,
+					"tooltip": ":xliff:showHide4Dexpressions",
+					"action": "visibleReferences",
+					"focusable": false,
+					"style": "regular",
+					"text": ":xliff:DisplayExpressions"
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -713,37 +721,11 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Information"
-				},
-				"Line1": {
-					"type": "line",
-					"top": 619,
-					"left": 265,
-					"width": 461,
-					"height": 1
-				},
-				"btnCompute1": {
-					"type": "button",
-					"top": 540,
-					"left": 85,
-					"width": 140,
-					"height": 19,
-					"text": ":xliff:Set",
-					"class": "Palette",
-					"focusable": false,
-					"method": "ObjectMethods/btnCompute1.4dm",
-					"events": [
-						"onClick"
-					]
 				}
 			},
 			"entryOrder": [
 				"btnDate",
 				"btnExpression",
-				"rbValues",
-				"rbExpressions",
-				"btnCompute",
-				"btnFreeze",
-				"rbScopeSelection",
 				"btnURL",
 				"Title",
 				"Subject",
@@ -761,17 +743,14 @@
 				"btn_insertTime",
 				"btn_InsertDate",
 				"btn_insertTime1",
-				"btnCompute1"
+				"btnCompute1",
+				"btn_computeExpression",
+				"btn_freezeExpressions",
+				"btn_showHide4Dexpressions"
 			]
 		}
 	],
 	"editor": {
-		"groups": {
-			"Group4": [
-				"rbValues",
-				"rbExpressions"
-			]
-		},
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
@@ -810,5 +789,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 264
+	"geometryStamp": 919
 }

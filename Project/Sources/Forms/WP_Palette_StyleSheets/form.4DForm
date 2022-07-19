@@ -228,11 +228,11 @@
 					"tooltip": ":xliff:imageStylesheets",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_Picture.png",
+					"icon": "/RESOURCES/Images/Sidebar/picture.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
+					"customBackgroundPicture": "",
 					"method": "ObjectMethods/ssType3.4dm",
 					"events": [
 						"onClick"
@@ -249,11 +249,11 @@
 					"tooltip": ":xliff:tableStylesheets",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_Tables.png",
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/TableSettings_32.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
+					"customBackgroundPicture": "",
 					"method": "ObjectMethods/ssType4.4dm",
 					"events": [
 						"onClick"
@@ -270,11 +270,11 @@
 					"tooltip": ":xliff:rowStylesheets",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_Rows.png",
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/RowSettings_32.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
+					"customBackgroundPicture": "",
 					"method": "ObjectMethods/ssType5.4dm",
 					"events": [
 						"onClick"
@@ -291,11 +291,11 @@
 					"tooltip": ":xliff:cellStylesheets",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_Cells.png",
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/CellSettings_32.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/",
+					"customBackgroundPicture": "",
 					"method": "ObjectMethods/ssType6.4dm",
 					"events": [
 						"onClick"

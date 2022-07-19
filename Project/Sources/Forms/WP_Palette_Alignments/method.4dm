@@ -24,10 +24,10 @@ Case of
 		(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector2"))->:=1  //paragraph by default
 		(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector3"))->:=0
 		
-		(OBJECT Get pointer:C1124(Object named:K67:5; "bAlign1"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "bAlign2"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "bAlign3"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "bAlign4"))->:=0
+		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignLeft"))->:=0
+		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignCenter"))->:=0
+		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignRight"))->:=0
+		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignJustify"))->:=0
 		
 		(OBJECT Get pointer:C1124(Object named:K67:5; "textIndentRuler"))->:=0
 		(OBJECT Get pointer:C1124(Object named:K67:5; "textIndentInput"))->:=0
@@ -49,40 +49,42 @@ Case of
 		
 		//----------------------------------------------------------------
 		
-		$ptrArrayNames:=OBJECT Get pointer:C1124(Object named:K67:5; "listStyleNames")
-		$ptrArrayValues:=OBJECT Get pointer:C1124(Object named:K67:5; "listStyleValues")
+		//$ptrArrayNames:=OBJECT Get pointer(Object named; "listStyleNames")
+		//$ptrArrayValues:=OBJECT Get pointer(Object named; "listStyleValues")
+		
+		//ARRAY TEXT($ptrArrayNames->; 0)
+		//ARRAY LONGINT($ptrArrayValues->; 0)
+		
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("None"))
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Disc"))
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Circle"))
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Square"))
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("HollowSquare"))
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Diamond"))
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Club"))
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("123"))
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("010203"))
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("abcLow"))
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("abcCAP"))
+		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Roman"))
+		
+		//APPEND TO ARRAY($ptrArrayValues->; wk none)
+		//APPEND TO ARRAY($ptrArrayValues->; wk disc)
+		//APPEND TO ARRAY($ptrArrayValues->; wk circle)
+		//APPEND TO ARRAY($ptrArrayValues->; wk square)
+		//APPEND TO ARRAY($ptrArrayValues->; wk hollow square)
+		//APPEND TO ARRAY($ptrArrayValues->; wk diamond)
+		//APPEND TO ARRAY($ptrArrayValues->; wk club)
+		//APPEND TO ARRAY($ptrArrayValues->; wk decimal)
+		//APPEND TO ARRAY($ptrArrayValues->; wk decimal leading zero)
+		//APPEND TO ARRAY($ptrArrayValues->; wk lower latin)
+		//APPEND TO ARRAY($ptrArrayValues->; wk upper latin)
+		//APPEND TO ARRAY($ptrArrayValues->; wk upper roman)
+		
+		
+		
 		$ptrTextLineHeightUnit:=OBJECT Get pointer:C1124(Object named:K67:5; "TextLineHeightUnit")
-		
-		ARRAY TEXT:C222($ptrArrayNames->; 0)
-		ARRAY LONGINT:C221($ptrArrayValues->; 0)
 		ARRAY TEXT:C222($ptrTextLineHeightUnit->; 0)
-		
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("None"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("Disc"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("Circle"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("Square"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("HollowSquare"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("Diamond"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("Club"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("123"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("010203"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("abcLow"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("abcCAP"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("Roman"))
-		
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk none:K81:91)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk disc:K81:140)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk circle:K81:141)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk square:K81:142)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk hollow square:K81:155)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk diamond:K81:156)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk club:K81:157)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk decimal:K81:126)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk decimal leading zero:K81:143)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk lower latin:K81:144)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk upper latin:K81:146)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk upper roman:K81:147)
-		
 		APPEND TO ARRAY:C911($ptrTextLineHeightUnit->; "%")
 		APPEND TO ARRAY:C911($ptrTextLineHeightUnit->; "pt")
 		$ptrTextLineHeightUnit->:=1
@@ -123,10 +125,10 @@ Case of
 				End if 
 				
 				If ($case#3)
-					WP_GetTextAlign($oCurrent)  // automatic action
+					WP_GetTextAlign($oCurrent)
 					WP_GetTextIndent($oCurrent)
 					WP_GetTextLineHeight($oCurrent)
-					WP_GetListStyle($oCurrent)
+					//WP_GetListStyle($oCurrent)  // automatic action
 				End if 
 				
 				WP_GetBackgroundColor($oCurrent)

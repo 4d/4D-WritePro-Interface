@@ -28,7 +28,7 @@ If (Form event code:C388=On Load:K2:1)
 	End if 
 End if 
 
-WP GET ATTRIBUTES:C1345(Form:C1466.range.owner; wk layout unit:K81:78; $Unit)
+WP GET ATTRIBUTES:C1345(Form:C1466.picture.owner; wk layout unit:K81:78; $Unit)
 
 Case of 
 	: ($Unit="mm")

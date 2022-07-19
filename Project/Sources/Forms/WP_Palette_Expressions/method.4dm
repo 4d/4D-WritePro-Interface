@@ -1,10 +1,11 @@
 
-C_LONGINT:C283($paletteID)
+var $paletteID; $typeSelection : Integer
+var $setupOK : Boolean
+var $info : Object
+
+//var $p1; $p2 : Pointer
+
 $paletteID:=4
-
-C_BOOLEAN:C305($setupOK)
-
-C_LONGINT:C283($typeSelection)
 $typeSelection:=Form:C1466.selection.type
 
 Case of 
@@ -14,9 +15,6 @@ Case of
 			oForm:=New object:C1471
 		End if 
 		
-		(OBJECT Get pointer:C1124(Object named:K67:5; "rbValues"))->:=1
-		(OBJECT Get pointer:C1124(Object named:K67:5; "rbExpressions"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "rbScopeSelection"))->:=0
 		
 		oForm.skinAppliedSub:=UI_ApplySkin
 		

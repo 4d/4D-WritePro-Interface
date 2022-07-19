@@ -361,7 +361,7 @@
 					"sizingX": "fixed",
 					"stroke": "#FFFFFF",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_PictureBack.png",
+					"icon": "/RESOURCES/Images/Sidebar/BackgroundPicture.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"style": "custom",
@@ -749,5 +749,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 108
+	"geometryStamp": 112
 }

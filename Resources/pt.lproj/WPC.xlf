@@ -148,7 +148,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="21" resname="Clip">
           <source>Clip:</source>
-          <target>Clip:</target>
+          <target>Aparar:</target>
         </trans-unit>
         <trans-unit id="22" resname="Origin">
           <source>Origin:</source>
@@ -222,7 +222,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="35" resname="ColorColon:">
           <source>Color:</source>
-          <target>Color:</target>
+          <target>Cor:</target>
         </trans-unit>
         <trans-unit id="36" resname="Shadows">
           <source>Shadows</source>
@@ -242,7 +242,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="96" resname="TransformColon">
           <source>Transform:</source>
-          <target>Transform:</target>
+          <target>Transformar:</target>
         </trans-unit>
         <trans-unit id="U+//oc3/u1IXrlP6L4mWAQ" resname="SpecialCharacters">
           <source>Special characters</source>
@@ -320,10 +320,6 @@ This file is distributed under the same license as the product package.-->
           <source>Expression:</source>
           <target>Expressão:</target>
         </trans-unit>
-        <trans-unit id="50" resname="DisplayCollon">
-          <source>Display:</source>
-          <target>Mostrar:</target>
-        </trans-unit>
         <trans-unit id="51" resname="LabelColon">
           <source>Label:</source>
           <target>Etiqueta:</target>
@@ -384,14 +380,6 @@ This file is distributed under the same license as the product package.-->
           <source>Expression</source>
           <target>Expressão</target>
         </trans-unit>
-        <trans-unit id="65" resname="Values">
-          <source>Values</source>
-          <target>Valores</target>
-        </trans-unit>
-        <trans-unit id="66" resname="Expressions">
-          <source>Expressions</source>
-          <target>Expressões</target>
-        </trans-unit>
         <trans-unit id="67" resname="Set">
           <source>Set</source>
           <target>Aplicam-se</target>
@@ -403,6 +391,10 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="v0KYZg1/E5YU2xvWP3exVA" resname="NoTableAvailable">
           <source>No table available. The formula editor can not be open.</source>
           <target>Não há tabela disponível. O editor de fórmula sem poder estar aberto.</target>
+        </trans-unit>
+        <trans-unit id="BTTvdZt/pKnIFwe7yAa5iQ" resname="DisplayExpressions">
+          <source>Display expressions</source>
+          <target>Mostrar expressões</target>
         </trans-unit>
       </group>
       <group resname="PaletteSizes">
@@ -627,56 +619,6 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="104" resname="SelectADestination">
           <source>Select a destination.</source>
           <target>Selecione um destino.</target>
-        </trans-unit>
-      </group>
-      <group resname="ListStyleNames">
-        <trans-unit id="1" resname="None">
-          <source>None</source>
-          <target>Nenhum</target>
-        </trans-unit>
-        <trans-unit id="2" resname="Disc">
-          <source>Disc</source>
-          <target>Disco</target>
-        </trans-unit>
-        <trans-unit id="3" resname="Circle">
-          <source>Circle</source>
-          <target>Círculo</target>
-        </trans-unit>
-        <trans-unit id="4" resname="Square">
-          <source>Square</source>
-          <target>Quadrado</target>
-        </trans-unit>
-        <trans-unit id="5" resname="HollowSquare">
-          <source>Hollow square</source>
-          <target>Quadrado oco</target>
-        </trans-unit>
-        <trans-unit id="6" resname="Diamond">
-          <source>Diamond</source>
-          <target>Diamante</target>
-        </trans-unit>
-        <trans-unit id="7" resname="Club">
-          <source>Club</source>
-          <target>Trevo</target>
-        </trans-unit>
-        <trans-unit id="8" resname="123">
-          <source>1 2 3</source>
-          <target>1 2 3</target>
-        </trans-unit>
-        <trans-unit id="9" resname="010203">
-          <source>01 02 03</source>
-          <target>01 02 03</target>
-        </trans-unit>
-        <trans-unit id="10" resname="abcLow">
-          <source>a b c</source>
-          <target>a b c</target>
-        </trans-unit>
-        <trans-unit id="11" resname="abcCAP">
-          <source>A B C</source>
-          <target>A B C</target>
-        </trans-unit>
-        <trans-unit id="12" resname="Roman">
-          <source>I II III</source>
-          <target>I II III</target>
         </trans-unit>
       </group>
       <group resname="ListUnits">
@@ -1168,7 +1110,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="algTRD9sqjDsayCBIx1jig" resname="No">
           <source>No</source>
-          <target>No</target>
+          <target>Não</target>
         </trans-unit>
       </group>
       <group resname="PaletteFindReplace">
@@ -1462,6 +1404,10 @@ This file is distributed under the same license as the product package.-->
           <source>Properties</source>
           <target>Propriedades</target>
         </trans-unit>
+        <trans-unit id="CBa5QNoUGYvlYOhE9ONZzg" resname="SetDatasourceEllipsis">
+          <source>Set datasource…</source>
+          <target>Defina a fonte...</target>
+        </trans-unit>
       </group>
       <group resname="PaletteProtect">
         <trans-unit id="QRCHOUVOvU1y6dkzlbGq5A" resname="protectParagraphs">
@@ -1652,6 +1598,14 @@ Gostaria de substituí-la?</target>
           <source>Name of the folder to be created</source>
           <target>Nome da pasta a ser criado</target>
         </trans-unit>
+        <trans-unit id="C1foIED4AjMt78iEf21vUQ" resname="exportEmptyPictures">
+          <source>Export empty pictures</source>
+          <target>Exporte as imagens vazias</target>
+        </trans-unit>
+        <trans-unit id="y32E8D1pr6wrutx/5zbK/A" resname="infoEmptyPictures">
+          <source>Check this box if you want to export empty pictures returned by formulas.</source>
+          <target>Selecione esta caixa de seleção se quiser exportar as imagens vazias devolvidas pelas fórmulas.</target>
+        </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
       <group resname="DialogImport">
@@ -1693,7 +1647,7 @@ Gostaria de substituí-la?</target>
         </trans-unit>
         <trans-unit id="fUY1y/mfq8YIayhWmfKZeg" resname="SelectFile">
           <source>Select file to import…</source>
-          <target>Select file to import…</target>
+          <target>Selecione o arquivo para importar...</target>
         </trans-unit>
         <trans-unit id="ceXUiqKwcVAUS6ay3ug5xQ" resname="ReplaceDocument">
           <source>Replace the current document</source>
@@ -1701,7 +1655,7 @@ Gostaria de substituí-la?</target>
         </trans-unit>
         <trans-unit id="NFtFcqXg4EZ1lxL/0wtdpw" resname="InfoReplaceDocument">
           <source>The full document will be replaced including headers and footers.</source>
-          <target>The full document will be replaced including headers and footers.</target>
+          <target>Todo o documento será substituído incluindo os cabeçalhos e rodapés.</target>
         </trans-unit>
         <trans-unit id="V9QRc48mupZaPsRVherBRQ" resname="InfoNotImported">
           <source>The headers, footers and anchored pictures will not be imported.</source>
@@ -1926,6 +1880,34 @@ Gostaria de substituí-la?</target>
         <trans-unit id="wqkPw22mAeFQtMi7rOGTuA" resname="modificationDate">
           <source>Modification date</source>
           <target>Data de modificação</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_Freeze">
+        <trans-unit id="YJ8st5NVYk9iAGILx5O23A" resname="FreezeDocument">
+          <source>Freeze document</source>
+          <target>Congelar o documento</target>
+        </trans-unit>
+        <trans-unit id="BsGWfaI7WPuzFCPnZEPaog" resname="FreezeSelection">
+          <source>Freeze selection</source>
+          <target>Congelar a seleção</target>
+        </trans-unit>
+        <trans-unit id="a21/ILiIHT15NrT6WxTPpA" resname="FreezeTables">
+          <source>Freeze tables</source>
+          <target>Congelar tabelas</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_Compute">
+        <trans-unit id="G1qriI3TB4C8on9assC28g" resname="ComputeSelection">
+          <source>Compute selection</source>
+          <target>Avalie a seleção</target>
+        </trans-unit>
+        <trans-unit id="X0cFWvYLS2IWq/9nLRCxPg" resname="ComputeDocument">
+          <source>Compute document</source>
+          <target>Avalie o documento</target>
+        </trans-unit>
+        <trans-unit id="bK4KIBvTGBVXEffFIfIYkg" resname="ComputeTables">
+          <source>Compute tables</source>
+          <target>Avaliar tabelas</target>
         </trans-unit>
       </group>
     </body>

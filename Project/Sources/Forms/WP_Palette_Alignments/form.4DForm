@@ -35,9 +35,60 @@
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
+				"Popup Dropdown List2": {
+					"type": "dropdown",
+					"top": 417,
+					"left": 85,
+					"width": 140,
+					"height": 18,
+					"tooltip": ":xliff:lists",
+					"focusable": false,
+					"action": "listStyleType",
+					"class": "Palette"
+				},
+				"IconBgnd14": {
+					"type": "rectangle",
+					"top": 479,
+					"left": 205,
+					"width": 35,
+					"height": 32,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
+				},
+				"IconBgnd15": {
+					"type": "rectangle",
+					"top": 479,
+					"left": 165,
+					"width": 35,
+					"height": 32,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
+				},
+				"IconBgnd16": {
+					"type": "rectangle",
+					"top": 479,
+					"left": 125,
+					"width": 35,
+					"height": 32,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
+				},
+				"IconBgnd17": {
+					"type": "rectangle",
+					"top": 479,
+					"left": 85,
+					"width": 35,
+					"height": 32,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
+				},
 				"Line3": {
 					"type": "line",
-					"top": 0,
+					"top": 4,
 					"left": 80,
 					"width": 1,
 					"height": 620,
@@ -78,46 +129,6 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"IconBgnd2": {
-					"type": "rectangle",
-					"top": 71,
-					"left": 124,
-					"width": 30,
-					"height": 18,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
-				},
-				"IconBgnd3": {
-					"type": "rectangle",
-					"top": 71,
-					"left": 163,
-					"width": 30,
-					"height": 18,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
-				},
-				"IconBgnd4": {
-					"type": "rectangle",
-					"top": 71,
-					"left": 202,
-					"width": 30,
-					"height": 18,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
-				},
-				"IconBgnd1": {
-					"type": "rectangle",
-					"top": 71,
-					"left": 85,
-					"width": 30,
-					"height": 18,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
-				},
 				"sepLbl_margins": {
 					"type": "text",
 					"top": 280,
@@ -132,9 +143,9 @@
 				},
 				"textIndentRuler": {
 					"type": "ruler",
-					"top": 128,
+					"top": 134,
 					"left": 85,
-					"width": 65,
+					"width": 60,
 					"height": 12,
 					"dataSourceTypeHint": "number",
 					"max": 250,
@@ -147,8 +158,8 @@
 				},
 				"textIndentInput": {
 					"type": "input",
-					"top": 128,
-					"left": 160,
+					"top": 134,
+					"left": 150,
 					"width": 85,
 					"height": 13,
 					"dataSourceTypeHint": "number",
@@ -220,31 +231,6 @@
 					],
 					"focusable": false,
 					"dataSource": ""
-				},
-				"listStyleNames": {
-					"type": "dropdown",
-					"top": 416,
-					"left": 85,
-					"width": 140,
-					"height": 18,
-					"focusable": false,
-					"class": "Palette",
-					"method": "ObjectMethods/listStyleNames.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"listStyleValues": {
-					"type": "dropdown",
-					"top": 417,
-					"left": 280,
-					"width": 140,
-					"height": 18,
-					"focusable": false,
-					"method": "ObjectMethods/listStyleValues.4dm",
-					"events": [
-						"onDataChange"
-					]
 				},
 				"MarginTop": {
 					"type": "input",
@@ -346,7 +332,7 @@
 				},
 				"lbl_Indentation": {
 					"type": "text",
-					"top": 127,
+					"top": 133,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -369,7 +355,7 @@
 				},
 				"lbl_Styles": {
 					"type": "text",
-					"top": 417,
+					"top": 418,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -392,9 +378,9 @@
 				},
 				"textLineHeightRuler": {
 					"type": "ruler",
-					"top": 150,
+					"top": 156,
 					"left": 85,
-					"width": 65,
+					"width": 60,
 					"height": 12,
 					"dataSourceTypeHint": "number",
 					"min": 80,
@@ -409,7 +395,7 @@
 				},
 				"lbl_LineHeight": {
 					"type": "text",
-					"top": 149,
+					"top": 155,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -434,93 +420,66 @@
 						"onClick"
 					]
 				},
-				"IconBgnd6": {
-					"type": "rectangle",
-					"top": 96,
-					"left": 136,
-					"width": 45,
-					"height": 18,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
-				},
-				"IconBgnd7": {
-					"type": "rectangle",
-					"top": 96,
-					"left": 188,
-					"width": 44,
-					"height": 18,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
-				},
-				"IconBgnd5": {
-					"type": "rectangle",
-					"top": 96,
-					"left": 85,
-					"width": 44,
-					"height": 18,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
-				},
 				"bAlign5": {
 					"type": "radio",
 					"top": 97,
 					"left": 88,
-					"width": 38,
-					"height": 16,
+					"width": 30,
+					"height": 25,
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignTop.png",
+					"icon": "/RESOURCES/Images/Sidebar/AlignTop_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"radioGroup": "Group29",
 					"method": "ObjectMethods/bAlign5.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"tooltip": ":xliff:alignTop"
 				},
 				"bAlign6": {
 					"type": "radio",
 					"top": 97,
-					"left": 139,
-					"width": 38,
-					"height": 16,
+					"left": 125,
+					"width": 30,
+					"height": 25,
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignMiddle.png",
+					"icon": "/RESOURCES/Images/Sidebar/AlignMiddle_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"radioGroup": "Group29",
 					"method": "ObjectMethods/bAlign6.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"tooltip": ":xliff:alignMiddle"
 				},
 				"bAlign7": {
 					"type": "radio",
 					"top": 97,
-					"left": 191,
-					"width": 38,
-					"height": 16,
+					"left": 162,
+					"width": 30,
+					"height": 25,
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignBottom.png",
+					"icon": "/RESOURCES/Images/Sidebar/AlignBottom_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"radioGroup": "Group29",
 					"method": "ObjectMethods/bAlign7.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"tooltip": ":xliff:alignBottom"
 				},
 				"lbl_Align1": {
 					"type": "text",
-					"top": 97,
+					"top": 101,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -604,8 +563,8 @@
 				},
 				"TextLineHeightUnit": {
 					"type": "dropdown",
-					"top": 147,
-					"left": 200,
+					"top": 153,
+					"left": 193,
 					"width": 47,
 					"height": 17,
 					"focusable": false,
@@ -694,117 +653,121 @@
 						"onClick"
 					]
 				},
-				"bAlign1": {
+				"btn_alignLeft": {
 					"type": "radio",
-					"top": 72,
-					"left": 90,
-					"width": 20,
-					"height": 16,
+					"top": 65,
+					"left": 88,
+					"width": 30,
+					"height": 25,
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignLeft.png",
+					"icon": "/RESOURCES/Images/Toolbar1/Home/AlignLeft_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bAlign1.4dm",
-					"radioGroup": "H_Align"
+					"method": "ObjectMethods/btn_alignLeft.4dm",
+					"radioGroup": "H_Align",
+					"tooltip": ":xliff:alignLeft"
 				},
-				"bAlign2": {
+				"btn_alignCenter": {
 					"type": "radio",
-					"top": 72,
-					"left": 129,
-					"width": 20,
-					"height": 16,
+					"top": 65,
+					"left": 125,
+					"width": 30,
+					"height": 25,
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignCenter.png",
+					"icon": "/RESOURCES/Images/Toolbar1/Home/AlignCenter_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bAlign2.4dm",
-					"radioGroup": "H_Align"
+					"method": "ObjectMethods/btn_alignCenter.4dm",
+					"radioGroup": "H_Align",
+					"tooltip": ":xliff:center"
 				},
-				"bAlign3": {
+				"btn_alignRight": {
 					"type": "radio",
-					"top": 72,
-					"left": 168,
-					"width": 20,
-					"height": 16,
+					"top": 65,
+					"left": 162,
+					"width": 30,
+					"height": 25,
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignRight.png",
+					"icon": "/RESOURCES/Images/Toolbar1/Home/AlignRight_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bAlign3.4dm",
-					"radioGroup": "H_Align"
+					"method": "ObjectMethods/btn_alignRight.4dm",
+					"radioGroup": "H_Align",
+					"tooltip": ":xliff:alignRight"
 				},
-				"bAlign4": {
+				"btn_alignJustify": {
 					"type": "radio",
-					"top": 72,
-					"left": 207,
-					"width": 20,
-					"height": 16,
+					"top": 65,
+					"left": 200,
+					"width": 30,
+					"height": 25,
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Icon_AlignJustified.png",
+					"icon": "/RESOURCES/Images/Toolbar1/Home/FullJustification_24.png",
 					"iconFrames": 4,
-					"style": "custom",
+					"style": "toolbar",
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/bAlign4.4dm",
-					"radioGroup": "H_Align"
+					"method": "ObjectMethods/btn_alignJustify.4dm",
+					"radioGroup": "H_Align",
+					"tooltip": ":xliff:justify"
 				},
 				"IconBgnd11": {
 					"type": "rectangle",
-					"top": 192,
-					"left": 202,
-					"width": 30,
-					"height": 26,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"top": 189,
+					"left": 205,
+					"width": 35,
+					"height": 32,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"IconBgnd10": {
 					"type": "rectangle",
-					"top": 192,
-					"left": 163,
-					"width": 30,
-					"height": 26,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"top": 189,
+					"left": 165,
+					"width": 35,
+					"height": 32,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"IconBgnd9": {
 					"type": "rectangle",
-					"top": 192,
-					"left": 124,
-					"width": 30,
-					"height": 26,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"top": 189,
+					"left": 125,
+					"width": 35,
+					"height": 32,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"IconBgnd8": {
 					"type": "rectangle",
-					"top": 192,
+					"top": 189,
 					"left": 85,
-					"width": 30,
-					"height": 26,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"width": 35,
+					"height": 32,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"Line1": {
 					"type": "line",
@@ -824,8 +787,8 @@
 				},
 				"textLineHeightInput": {
 					"type": "input",
-					"top": 149,
-					"left": 160,
+					"top": 155,
+					"left": 150,
 					"width": 35,
 					"height": 13,
 					"dataSourceTypeHint": "number",
@@ -841,19 +804,19 @@
 				},
 				"IconBgnd12": {
 					"type": "rectangle",
-					"top": 192,
+					"top": 189,
 					"left": 45,
-					"width": 30,
-					"height": 26,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"width": 35,
+					"height": 32,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"btn_paste1": {
 					"type": "button",
 					"top": 193,
-					"left": 166,
-					"width": 24,
+					"left": 168,
+					"width": 29,
 					"height": 24,
 					"action": "",
 					"focusable": false,
@@ -870,8 +833,8 @@
 				"btn_copy1": {
 					"type": "button",
 					"top": 193,
-					"left": 127,
-					"width": 24,
+					"left": 128,
+					"width": 29,
 					"height": 24,
 					"action": "",
 					"focusable": false,
@@ -891,7 +854,7 @@
 					"text": "",
 					"top": 193,
 					"left": 88,
-					"width": 24,
+					"width": 29,
 					"height": 24,
 					"events": [
 						"onClick"
@@ -909,7 +872,7 @@
 					"text": "",
 					"top": 193,
 					"left": 48,
-					"width": 24,
+					"width": 29,
 					"height": 24,
 					"events": [
 						"onClick"
@@ -926,8 +889,8 @@
 					"type": "button",
 					"text": "",
 					"top": 193,
-					"left": 205,
-					"width": 24,
+					"left": 208,
+					"width": 29,
 					"height": 24,
 					"events": [
 						"onClick"
@@ -950,53 +913,53 @@
 				},
 				"btn_insertPageBreak": {
 					"type": "button",
-					"top": 475,
-					"left": 112,
-					"width": 40,
-					"height": 40,
+					"top": 483,
+					"left": 128,
+					"width": 29,
+					"height": 24,
 					"tooltip": ":xliff:insertPageBreak",
 					"action": "insertPageBreak",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Insert/PageBreak_32.png",
+					"icon": "/RESOURCES/Images/Sidebar/PageBreak_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
 				"btn_insertSectiobBreak": {
 					"type": "button",
-					"top": 475,
-					"left": 192,
-					"width": 40,
-					"height": 40,
+					"top": 483,
+					"left": 208,
+					"width": 29,
+					"height": 24,
 					"tooltip": ":xliff:insertSectionbreak",
 					"action": "insertSectionBreak",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Insert/SectionBreak_32.png",
+					"icon": "/RESOURCES/Images/Sidebar/SectionBreak_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
 				"btn_insertColumnBreak": {
 					"type": "button",
-					"top": 475,
-					"left": 72,
-					"width": 40,
-					"height": 40,
+					"top": 483,
+					"left": 88,
+					"width": 29,
+					"height": 24,
 					"tooltip": ":xliff:insertColumnBreak",
 					"action": "insertColumnBreak",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Insert/columnBreak_32.png",
+					"icon": "/RESOURCES/Images/Sidebar/columnBreak_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
 				"btn_insertPageBreak1": {
 					"type": "button",
-					"top": 475,
-					"left": 152,
-					"width": 40,
-					"height": 40,
+					"top": 483,
+					"left": 168,
+					"width": 29,
+					"height": 24,
 					"tooltip": ":xliff:insertContinuousPageBreak",
 					"action": "insertContinuousSectionBreak",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Insert/ContinuousSectionBreak_32.png",
+					"icon": "/RESOURCES/Images/Sidebar/ContinuousSectionBreak_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
@@ -1056,20 +1019,20 @@
 				},
 				"IconBgnd13": {
 					"type": "rectangle",
-					"top": 550,
-					"left": 200,
-					"width": 30,
-					"height": 26,
-					"fill": "#DDDDDD",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"top": 548,
+					"left": 205,
+					"width": 35,
+					"height": 32,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"btn_etc1": {
 					"type": "button",
 					"text": "",
 					"top": 551,
-					"left": 203,
-					"width": 24,
+					"left": 208,
+					"width": 29,
 					"height": 24,
 					"events": [
 						"onClick"
@@ -1118,6 +1081,15 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Alignments"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 240,
+					"width": 1,
+					"height": 620,
+					"visibility": "hidden",
+					"stroke": "#da70d6"
 				}
 			},
 			"entryOrder": [
@@ -1126,15 +1098,13 @@
 				"rb2",
 				"marginVerticalRuler",
 				"marginHorizontalRuler",
-				"listStyleNames",
-				"listStyleValues",
 				"textLineHeightRuler",
 				"backgroundColor",
 				"TextLineHeightUnit",
-				"bAlign1",
-				"bAlign2",
-				"bAlign3",
-				"bAlign4",
+				"btn_alignLeft",
+				"btn_alignCenter",
+				"btn_alignRight",
+				"btn_alignJustify",
 				"MarginTop",
 				"MarginLeft",
 				"MarginRight",
@@ -1150,17 +1120,18 @@
 				"btn_insertColumnBreak",
 				"btn_insertPageBreak1",
 				"Popup_columnCount",
-				"btn_etc1"
+				"btn_etc1",
+				"Popup Dropdown List2"
 			]
 		}
 	],
 	"editor": {
 		"groups": {
 			"Group": [
-				"bAlign1",
-				"bAlign2",
-				"bAlign3",
-				"bAlign4"
+				"btn_alignLeft",
+				"btn_alignCenter",
+				"btn_alignRight",
+				"btn_alignJustify"
 			],
 			"Group1": [
 				"bAlign5",
@@ -1235,5 +1206,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1165
+	"geometryStamp": 2041
 }

@@ -836,6 +836,15 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Backgrounds"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 240,
+					"width": 1,
+					"height": 620,
+					"visibility": "hidden",
+					"stroke": "#da70d6"
 				}
 			},
 			"entryOrder": [
@@ -914,5 +923,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1081
+	"geometryStamp": 1082
 }

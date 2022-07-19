@@ -17,17 +17,6 @@ Case of
 		$param:=New object:C1471
 		$param.formName:="toolbar"
 		
-		//APPEND TO ARRAY(WP_applyTo;".tables")
-		//APPEND TO ARRAY(WP_applyTo;".cells")
-		
-		//If (Is Windows)
-		//OBJECT SET VISIBLE(*; "btn_mac_@"; False)
-		//Else
-		//OBJECT SET VISIBLE(*; "btn_win_@"; False)
-		//End if
-		
-		// style sheets
-		
 		If (oForm=Null:C1517)
 			oForm:=New object:C1471
 		End if 
@@ -61,7 +50,6 @@ Case of
 		
 		TB_GotoPage(oForm.ToolbarTabs.buttonNames[0])
 		
-		
 		oForm.styleSheet:=New object:C1471
 		oForm.styleSheet.btnType:=New collection:C1472(1; 0; 0; 0; 0; 0)  // buttons (1 : pushed)
 		oForm.styleSheet.btnValue:=New collection:C1472(wk type paragraph:K81:191; wk type default:K81:190; wk type image:K81:192; wk type table:K81:222; wk type table row:K81:223; wk type table cell:K81:224)  // type of style sheet for each button
@@ -93,62 +81,11 @@ Case of
 		oForm.skinAppliedMain:=UI_ApplySkin
 		oForm.redrawTabs:=True:C214
 		
+		//Show empty or unsupported images.
+		//Montrer les images vides ou non prises en charge.
 		
-		
-		
-		//oForm.fonts:=New object
-		
-		//oForm.fonts.menu:=Create menu
-		//oForm.fonts.families:=New collection
-		//oForm.fonts.names:=New collection  // real names
-		//oForm.fonts.styles:=New collection  // localised names
-		
-		//FONT LIST($_fonts; System fonts)
-		
-		//$n:=Size of array($_fonts)
-		//For ($i; 1; $n)
-		//$subMenu:=""
-		//FONT STYLE LIST($_fonts{$i}; $_fontStyleList; $_fontNameList)
-		//$m:=Size of array($_fontStyleList)
-		
-		//If ($m>1)
-		//$subMenu:=Create menu
-		//For ($j; 1; $m)
-		//APPEND MENU ITEM($subMenu; $_fontStyleList{$j})
-		//SET MENU ITEM PARAMETER($subMenu; -1; $_fontNameList{$j})
-		
-		//oForm.fonts.families.push($_fonts{$i})
-		//oForm.fonts.names.push($_fontNameList{$j})
-		//oForm.fonts.styles.push($_fontStyleList{$j})
-		
-		//End for
-		//End if
-		
-		//If ($subMenu="")
-		//APPEND MENU ITEM(oForm.fonts.menu; $_fonts{$i})
-		//SET MENU ITEM PARAMETER(oForm.fonts.menu; -1; $_fonts{$i})
-		
-		//oForm.fonts.families.push($_fonts{$i})
-		//oForm.fonts.names.push($_fonts{$i})
-		//oForm.fonts.styles.push("")
-		
-		//Else
-		//APPEND MENU ITEM(oForm.fonts.menu; $_fonts{$i}; $subMenu)
-		//End if
-		
-		//End for
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		//tip for HideEmptyImages
+		OBJECT SET HELP TIP:C1181(*; "btn_visibleEmptyImages"; Get action info:C1442("visibleEmptyImages").title)
 		
 		
 		SET TIMER:C645(-1)
@@ -201,11 +138,11 @@ Case of
 						End if 
 						
 						
-						If ($typeSelection#2)
+						If ($typeSelection#2)  // anchored picture
+							
 							WP_GetFormulas
 							WP_GetFontInfo(Form:C1466.selection)  // font, size, weight, textcolor  (common method with font palette)
 							
-							// end if  -> moved after end case (BUG)
 							
 							$page:=FORM Get current page:C276(*)
 							Case of 
@@ -228,9 +165,11 @@ Case of
 										oForm.FR.occurences:=-1
 									End if 
 									
+									
 							End case 
 							
-						End if   // ACI0102916
+						End if 
+						// WP_GetProtection  // page 2
 						
 					End if 
 				End if 

@@ -79,7 +79,7 @@ Case of
 			oForm.skinAppliedSub:=UI_ApplySkin
 		End if 
 		
-		UI_PaletteFrames
+		//UI_PaletteFrames
 		
 		If ($setupOK)  // & (s e lectionType#2)
 			

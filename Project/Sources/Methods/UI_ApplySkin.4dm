@@ -7,7 +7,7 @@ C_REAL:C285($H)
 C_REAL:C285($S)
 C_REAL:C285($L)
 
-C_LONGINT:C283($color; $fontColor; $separatorColor; $backgroundColor; $separatorFontColor)
+C_LONGINT:C283($color; $fontColor; $separatorColor; $backgroundColor; $separatorFontColor; $iconBackground; $iconBorder)
 C_LONGINT:C283($fontSize)
 
 C_TEXT:C284($font)
@@ -28,6 +28,9 @@ If (FORM Get color scheme:C1761="light")
 	$separatorFontColor:=0x00383838  // separator font color
 	$separatorColor:=0x00B0B0B0  //
 	
+	$iconBorder:=0x00E8E8E8  //0x00C0C0C0
+	$iconBackground:=0x00E8E8E8
+	
 Else 
 	
 	$fontColor:=0x00F0F0F0
@@ -35,6 +38,9 @@ Else
 	
 	$separatorFontColor:=0x00C8C8C8
 	$separatorColor:=0x00303030  // 
+	
+	$iconBorder:=0x00303030
+	$iconBackground:=0x00303030
 	
 End if 
 
@@ -154,7 +160,7 @@ OBJECT SET RGB COLORS:C628(*; "tabRect_@"; $backgroundColor; $backgroundColor)  
 OBJECT SET RGB COLORS:C628(*; "Separator@"; $separatorColor; $separatorColor)
 OBJECT SET RGB COLORS:C628(*; "sepLbl@"; $separatorFontColor; $separatorColor)
 OBJECT SET RGB COLORS:C628(*; "line@"; $separatorColor; $separatorColor)
-OBJECT SET RGB COLORS:C628(*; "IconBgnd@"; $separatorColor; $separatorColor)
+OBJECT SET RGB COLORS:C628(*; "IconBgnd@"; $iconBorder; $iconBackground)  // $separatorColor; $separatorColor)
 
 
 OBJECT SET RGB COLORS:C628(*; "rb@"; $fontColor; Background color:K23:2)  // radio buttons

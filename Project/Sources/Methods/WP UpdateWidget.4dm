@@ -46,6 +46,7 @@ Case of
 						$WP_object.enterable:=OBJECT Get enterable:C1067(*; $WP_object.areaName)
 						$WP_object.keyboard:=OBJECT Get keyboard layout:C1180(*; $WP_object.areaName)
 						
+						$WP_object.callback:=Formula:C1597(Formula from string:C1601($1))
 						//$WP_object.event:=FORM Event
 						
 						Case of 

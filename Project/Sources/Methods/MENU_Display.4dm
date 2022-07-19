@@ -4,7 +4,7 @@ var $0 : Text
 
 var $ptr : Pointer
 var $menu; $action; $item : Text
-var $_menuItems : Collection
+var $_menuItems; $_tables : Collection
 var $o : Object
 
 
@@ -102,6 +102,44 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer"))
 				
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("modificationDate"))
 				SET MENU ITEM PARAMETER:C1004($menu; -1; "documentModificationStamp")
+				
+			: ($content="FreezeFormulas")
+				APPEND MENU ITEM:C411($menu; Get localized string:C991("FreezeDocument"))
+				SET MENU ITEM PARAMETER:C1004($menu; -1; "freezeDocument")
+				
+				APPEND MENU ITEM:C411($menu; Get localized string:C991("FreezeSelection"))
+				SET MENU ITEM PARAMETER:C1004($menu; -1; "freezeSelection")
+				
+				$_tables:=WP_GetTablesWithDataSource
+				If ($_tables.length>0)
+					APPEND MENU ITEM:C411($menu; Get localized string:C991("FreezeTables"))
+					SET MENU ITEM PARAMETER:C1004($menu; -1; "freezeTables")
+				Else 
+					APPEND MENU ITEM:C411($menu; "("+Get localized string:C991("FreezeTables"))
+				End if 
+				
+			: ($content="ComputeFormulas")
+				APPEND MENU ITEM:C411($menu; Get localized string:C991("ComputeDocument"))
+				SET MENU ITEM PARAMETER:C1004($menu; -1; "computeDocument")
+				
+				APPEND MENU ITEM:C411($menu; Get localized string:C991("ComputeSelection"))
+				SET MENU ITEM PARAMETER:C1004($menu; -1; "computeSelection")
+				
+				$_tables:=WP_GetTablesWithDataSource
+				If ($_tables.length>0)
+					APPEND MENU ITEM:C411($menu; Get localized string:C991("ComputeTables"))
+					SET MENU ITEM PARAMETER:C1004($menu; -1; "computeTables")
+				Else 
+					APPEND MENU ITEM:C411($menu; "("+Get localized string:C991("ComputeTables"))
+				End if 
+				
+			: ($content="DisplayFormulas")
+				
+				//APPEND MENU ITEM($menu; ak standard action title)
+				//SET MENU ITEM PROPERTY($menu; -1; Associated standard action; ak show reference)
+				
+				//APPEND MENU ITEM($menu; ak standard action title)
+				//SET MENU ITEM PROPERTY($menu; -1; Associated standard action; wk display formula as symbol)
 				
 			: ($content="ColumnsSettings")
 				

@@ -39,23 +39,23 @@
 				},
 				"IconBgnd2": {
 					"type": "rectangle",
-					"top": 540,
+					"top": 538,
 					"left": 210,
 					"width": 40,
-					"height": 18,
-					"fill": "#c0c0c0",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"height": 22,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"IconBgnd1": {
 					"type": "rectangle",
-					"top": 540,
+					"top": 538,
 					"left": 160,
 					"width": 40,
-					"height": 18,
-					"fill": "#c0c0c0",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"height": 22,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
 				},
 				"fontFamilly": {
 					"type": "dropdown",
@@ -947,5 +947,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 809
+	"geometryStamp": 815
 }

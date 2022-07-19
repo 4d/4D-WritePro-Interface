@@ -367,7 +367,7 @@
 					"top": 73,
 					"left": 74,
 					"width": 50,
-					"height": 20,
+					"height": 21,
 					"sizingX": "fixed",
 					"class": "Palette",
 					"focusable": false,
@@ -395,7 +395,7 @@
 					"focusable": false,
 					"text": "▷",
 					"icon": "",
-					"iconFrames": 4,
+					"iconFrames": 0,
 					"textPlacement": "right",
 					"method": "ObjectMethods/btnFindPrevious12.4dm",
 					"events": [
@@ -495,7 +495,7 @@
 			}
 		}
 	},
-	"geometryStamp": 1950,
+	"geometryStamp": 1954,
 	"$4d": {
 		"version": "1",
 		"kind": "form"
