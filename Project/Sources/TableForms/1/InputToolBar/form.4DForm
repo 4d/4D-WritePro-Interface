@@ -601,16 +601,38 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"Button27": {
+					"type": "button",
+					"text": "Portrait / Landscape",
+					"top": 172,
+					"left": 1226,
+					"width": 137,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button27.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"stroke": "#da70d6",
+					"sizingY": "fixed"
 				}
 			},
 			"entryOrder": [
-				"WPtoolbar",
 				"Button20",
-				"WParea",
+				"Popup Liste déroulante",
 				"Button9",
 				"Button11",
 				"Button18",
 				"Button19",
+				"Button22",
+				"Button21",
+				"Input",
+				"Radio Button",
+				"Radio Button1",
+				"Radio Button2",
+				"Radio Button3",
 				"Button6",
 				"Button7",
 				"Button2",
@@ -623,24 +645,19 @@
 				"Button8",
 				"Button15",
 				"Button13",
+				"Button12",
+				"Button26",
 				"Button14",
+				"Button25",
 				"Button5",
 				"Button4",
-				"Button12",
+				"Button23",
 				"Variable1",
 				"Button17",
-				"Button21",
-				"Input",
-				"Button22",
-				"Button23",
-				"Radio Button",
-				"Radio Button1",
-				"Radio Button2",
-				"Radio Button3",
-				"Popup Liste déroulante",
 				"Button24",
-				"Button25",
-				"Button26"
+				"WParea",
+				"WPtoolbar",
+				"Button27"
 			]
 		},
 		{
@@ -652,7 +669,7 @@
 		"kind": "form"
 	},
 	"method": "method.4dm",
-	"geometryStamp": 311,
+	"geometryStamp": 364,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

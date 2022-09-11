@@ -120,6 +120,11 @@ Else
 				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "headerRowCount")  //a remplacer par constante
 				
+				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "bottomCarryOverRow")  //a remplacer par constante
+				
+				
+				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("SetDatasourceEllipsis"))
 				SET MENU ITEM PARAMETER:C1004($menu; -1; "SetDatasource")

@@ -32,6 +32,6 @@ Case of
 		End if 
 		
 		
-		WP UpdateWidget("WPtoolbar"; "WParea")  //; $WP_skin)
+		//WP UpdateWidget("WPtoolbar"; "WParea")  //; $WP_skin)
 		
 End case 

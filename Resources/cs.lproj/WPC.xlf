@@ -360,10 +360,6 @@ This file is distributed under the same license as the product package.-->
           <source>Modified:</source>
           <target>Upraveno:</target>
         </trans-unit>
-        <trans-unit id="58" resname="ActionsColon">
-          <source>Actions:</source>
-          <target>Akce:</target>
-        </trans-unit>
         <trans-unit id="60" resname="Compute">
           <source>Compute</source>
           <target>Počítat</target>
@@ -395,6 +391,14 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="BTTvdZt/pKnIFwe7yAa5iQ" resname="DisplayExpressions">
           <source>Display expressions</source>
           <target>Zobrazit výrazy</target>
+        </trans-unit>
+        <trans-unit id="HJEapLue/aA7XG3UPAUXjw" resname="DisplayColon">
+          <source>Display:</source>
+          <target>Zobrazit:</target>
+        </trans-unit>
+        <trans-unit id="Qx7gCjGjc14eNrDImk5B/A" resname="FormulasColon">
+          <source>Formulas:</source>
+          <target>Vzorce:</target>
         </trans-unit>
       </group>
       <group resname="PaletteSizes">

@@ -380,7 +380,7 @@
 				},
 				"cbVisibleBackground": {
 					"type": "checkbox",
-					"text": ":xliff:background",
+					"text": ":xliff:backgrounds",
 					"top": 210,
 					"left": 220,
 					"width": 300,

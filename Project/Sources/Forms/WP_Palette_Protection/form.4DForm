@@ -121,7 +121,7 @@
 					"left": 20,
 					"width": 32,
 					"height": 32,
-					"picture": "/RESOURCES/Images/Toolbar1/Home/DocumentProtected_32.png",
+					"picture": "/RESOURCES/Images/TBcommon/Protection/DocumentProtected_32.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
 				"decor1": {
@@ -227,5 +227,5 @@
 			}
 		}
 	},
-	"geometryStamp": 63
+	"geometryStamp": 64
 }

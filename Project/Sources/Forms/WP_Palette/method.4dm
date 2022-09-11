@@ -61,8 +61,9 @@ Case of
 		
 		oForm.skinAppliedMain:=UI_ApplySkin
 		
-		SET TIMER:C645(10)
-		
+		If (Form:C1466#Null:C1517)
+			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)
+		End if 
 		
 	: (Form event code:C388=On Bound Variable Change:K2:52)
 		

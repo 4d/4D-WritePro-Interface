@@ -40,7 +40,7 @@ C_TEXT:C284(WP UpdateWidget; $2)
 C_OBJECT:C1216(WP UpdateWidget; $3)
 C_OBJECT:C1216(WP_SetFontVertAlign; $1)
 C_LONGINT:C283(WP_SetFontVertAlign; $2)
-C_OBJECT:C1216(WP_SetListStyle; $1)
+//C_OBJECT(WP_SetListStyle; $1)
 C_OBJECT:C1216(WP_GetBackgroundPosition; $1)
 C_COLLECTION:C1488(WP_GetStyleAttributesByType; $0)
 C_LONGINT:C283(WP_GetStyleAttributesByType; $1)
@@ -239,3 +239,12 @@ C_OBJECT:C1216(WP_GetBackgroundSize; $1)
 
 //WP_GetTextAlign
 C_OBJECT:C1216(WP_GetTextAlign; $1)
+
+//WP UpdateWidget_OLD
+C_TEXT:C284(WP UpdateWidget_OLD; $1)
+C_TEXT:C284(WP UpdateWidget_OLD; $2)
+C_OBJECT:C1216(WP UpdateWidget_OLD; $3)
+
+
+//UI_GetApplyTo
+C_TEXT:C284(UI_GetApplyTo; $0)

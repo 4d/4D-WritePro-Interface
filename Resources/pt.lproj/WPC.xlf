@@ -360,10 +360,6 @@ This file is distributed under the same license as the product package.-->
           <source>Modified:</source>
           <target>Modificado:</target>
         </trans-unit>
-        <trans-unit id="58" resname="ActionsColon">
-          <source>Actions:</source>
-          <target>Ações:</target>
-        </trans-unit>
         <trans-unit id="60" resname="Compute">
           <source>Compute</source>
           <target>Calcular</target>
@@ -395,6 +391,14 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="BTTvdZt/pKnIFwe7yAa5iQ" resname="DisplayExpressions">
           <source>Display expressions</source>
           <target>Mostrar expressões</target>
+        </trans-unit>
+        <trans-unit id="HJEapLue/aA7XG3UPAUXjw" resname="DisplayColon">
+          <source>Display:</source>
+          <target>Mostrar:</target>
+        </trans-unit>
+        <trans-unit id="Qx7gCjGjc14eNrDImk5B/A" resname="FormulasColon">
+          <source>Formulas:</source>
+          <target>Fórmulas:</target>
         </trans-unit>
       </group>
       <group resname="PaletteSizes">
@@ -1454,9 +1458,9 @@ This file is distributed under the same license as the product package.-->
           <source>PDF Export</source>
           <target>Exportar PDF</target>
         </trans-unit>
-        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="background">
-          <source>Background</source>
-          <target>Fundo</target>
+        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgrounds">
+          <source>Backgrounds</source>
+          <target>Fundos</target>
         </trans-unit>
         <trans-unit id="2zaxAplGAgJvGg5f+KnwOA" resname="headers">
           <source>Headers</source>
@@ -1517,10 +1521,6 @@ When not selected, only formulas that have never been evaluated will be computed
           <target>Quando selecionados, todas as fórmulas serão recomputadas antes da exportação.
 
 Quando não selecionadas, serão computadas apenas fórmulas que nunca foram avaliadas.</target>
-        </trans-unit>
-        <trans-unit id="DpRVy4keJdQU2SqZwEacYg" resname="FormulasComma">
-          <source>Formulas:</source>
-          <target>Fórmulas:</target>
         </trans-unit>
         <trans-unit id="6LkWY9PvfM8ea1sA6vSrBw" resname="ExportComma">
           <source>Export:</source>
@@ -1598,13 +1598,17 @@ Gostaria de substituí-la?</target>
           <source>Name of the folder to be created</source>
           <target>Nome da pasta a ser criado</target>
         </trans-unit>
-        <trans-unit id="C1foIED4AjMt78iEf21vUQ" resname="exportEmptyPictures">
-          <source>Export empty pictures</source>
-          <target>Exporte as imagens vazias</target>
-        </trans-unit>
         <trans-unit id="y32E8D1pr6wrutx/5zbK/A" resname="infoEmptyPictures">
           <source>Check this box if you want to export empty pictures returned by formulas.</source>
           <target>Selecione esta caixa de seleção se quiser exportar as imagens vazias devolvidas pelas fórmulas.</target>
+        </trans-unit>
+        <trans-unit id="gzqU0lQaIqbShE0dEr/AwA" resname="optionsComma">
+          <source>Options:</source>
+          <target>Opções:</target>
+        </trans-unit>
+        <trans-unit id="ILaNpHjjQPifHiTlQjUIGg" resname="blackFrame">
+          <source>Black frame for empty pictures</source>
+          <target>Quadro preto para imagens vazias</target>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>

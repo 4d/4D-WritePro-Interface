@@ -13,29 +13,9 @@ C_BOOLEAN:C305($withMenu)
 $where:=$1
 $withMenu:=$2
 
-Case of 
-		
-	: (WP_applyTo=1)  // v19R5
-		$applyTo:="doc"
-	: (WP_applyTo=2)  // v19R5
-		$applyTo:="header"
-	: (WP_applyTo=3)  // v19R5
-		$applyTo:="footer"
-		
-	: (WP_applyTo=4)
-		$applyTo:="section"
-	: (WP_applyTo=5)
-		$applyTo:="paragraph"
-	: (WP_applyTo=6)
-		$applyTo:="image"
-	: (WP_applyTo=7)
-		$applyTo:="table"
-	: (WP_applyTo=8)
-		$applyTo:="cell"
-	: (WP_applyTo=9)
-		$applyTo:="row"
-		
-End case 
+// read the "applyTo"
+$applyTo:=UI_GetApplyTo
+
 
 If ($withMenu)
 	

@@ -40,7 +40,8 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 				
 			: ($page=10)  // page 10 is also special case
 				
-				UI_PaletteImportExport
+				UI_PaletteImportExport  //
+				
 			: ($page=11)  // page 11 find and replace
 				
 				UI_PaletteFindAndReplace
