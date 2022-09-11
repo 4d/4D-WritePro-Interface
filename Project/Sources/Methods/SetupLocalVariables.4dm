@@ -30,6 +30,8 @@ End if
 
 If (Form:C1466.selection#Null:C1517)
 	
+	
+	Form:C1466.document:=Form:C1466.selection.owner
 	$typeSelection:=Form:C1466.selection.type
 	
 	Case of 
@@ -93,6 +95,9 @@ If (Form:C1466.selection#Null:C1517)
 	
 	$ok:=True:C214
 	
+	
+Else 
+	Form:C1466.document:=Null:C1517
 End if 
 
 

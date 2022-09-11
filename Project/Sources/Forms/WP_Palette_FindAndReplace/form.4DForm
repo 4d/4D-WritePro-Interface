@@ -327,8 +327,8 @@
 				"Texte": {
 					"type": "text",
 					"text": "ak case insensitive (2)\rak accent insensitive (4) \rak hiragana insensitive (8) \rak width insensitive (16) \rak whole word (32)        //occurences should match only full words\rwk find first (32768)  //find or replace first occurence only\rwk find reverse (65536) //reverse find (returns also ranges for occurences in reversed order)\rwk override protected (131072) //replace text in protected areas (on default do not replace text in protected areas)\rwk keep character style (262144) //try to preserve per character style while replacing text (on default replaced text uses original text first character style as WP SET TEXT)\rwk default (-1)  or ak default (0)          //wk default cannot be combinated - it means all sensitive, no whole word, search all",
-					"top": 375,
-					"left": 679,
+					"top": 325,
+					"left": 545,
 					"width": 1403,
 					"height": 276,
 					"fontTheme": "main"
@@ -495,7 +495,7 @@
 			}
 		}
 	},
-	"geometryStamp": 1954,
+	"geometryStamp": 1955,
 	"$4d": {
 		"version": "1",
 		"kind": "form"

@@ -37,6 +37,16 @@
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
+				"IconBgnd12": {
+					"type": "rectangle",
+					"top": 110,
+					"left": 71,
+					"width": 40,
+					"height": 38,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
+				},
 				"Separator2": {
 					"type": "rectangle",
 					"top": 165,
@@ -389,8 +399,8 @@
 				"btnImport1": {
 					"type": "button",
 					"top": 120,
-					"left": 100,
-					"width": 140,
+					"left": 120,
+					"width": 120,
 					"height": 22,
 					"sizingX": "move",
 					"class": "Palette",
@@ -405,6 +415,22 @@
 					],
 					"action": "print",
 					"tooltip": ":xliff:preview"
+				},
+				"btnPrintPreview1": {
+					"type": "button",
+					"top": 109,
+					"left": 70,
+					"width": 40,
+					"height": 40,
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBcommon/Print/PrintSettings_32.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/btnPrintPreview1.4dm",
+					"events": [
+						"onClick"
+					]
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -446,7 +472,8 @@
 				"btnPrint",
 				"btnPrintPreview",
 				"Popup_pageOrientation",
-				"btnImport1"
+				"btnImport1",
+				"btnPrintPreview1"
 			]
 		}
 	],
@@ -475,5 +502,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 285
+	"geometryStamp": 322
 }

@@ -318,10 +318,6 @@ This file is distributed under the same license as the product package.-->
           <source>Expression:</source>
           <target>Ausdruck:</target>
         </trans-unit>
-        <trans-unit id="50" resname="DisplayCollon">
-          <source>Display:</source>
-          <target>Anzeigen:</target>
-        </trans-unit>
         <trans-unit id="51" resname="LabelColon">
           <source>Label:</source>
           <target>Bezeichnung:</target>
@@ -362,10 +358,6 @@ This file is distributed under the same license as the product package.-->
           <source>Modified:</source>
           <target>Geändert:</target>
         </trans-unit>
-        <trans-unit id="58" resname="ActionsColon">
-          <source>Actions:</source>
-          <target>Aktionen:</target>
-        </trans-unit>
         <trans-unit id="60" resname="Compute">
           <source>Compute</source>
           <target>Berechnen</target>
@@ -382,14 +374,6 @@ This file is distributed under the same license as the product package.-->
           <source>Expression</source>
           <target>Ausdruck</target>
         </trans-unit>
-        <trans-unit id="65" resname="Values">
-          <source>Values</source>
-          <target>Werte</target>
-        </trans-unit>
-        <trans-unit id="66" resname="Expressions">
-          <source>Expressions</source>
-          <target>Ausdrücke</target>
-        </trans-unit>
         <trans-unit id="67" resname="Set">
           <source>Set</source>
           <target>Setzen</target>
@@ -401,6 +385,18 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="v0KYZg1/E5YU2xvWP3exVA" resname="NoTableAvailable">
           <source>No table available. The formula editor can not be open.</source>
           <target>Es gibt keine Tabellen. Der Formel-Editor kann nicht geöffnet werden.</target>
+        </trans-unit>
+        <trans-unit id="BTTvdZt/pKnIFwe7yAa5iQ" resname="DisplayExpressions">
+          <source>Display expressions</source>
+          <target>Ausdrücke anzeigen</target>
+        </trans-unit>
+        <trans-unit id="HJEapLue/aA7XG3UPAUXjw" resname="DisplayColon">
+          <source>Display:</source>
+          <target>Anzeigen:</target>
+        </trans-unit>
+        <trans-unit id="Qx7gCjGjc14eNrDImk5B/A" resname="FormulasColon">
+          <source>Formulas:</source>
+          <target>Formeln:</target>
         </trans-unit>
       </group>
       <group resname="PaletteSizes">
@@ -1462,7 +1458,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="background">
           <source>Background</source>
-          <target>Hintergrund</target>
+          <target>Hintergründe</target>
         </trans-unit>
         <trans-unit id="2zaxAplGAgJvGg5f+KnwOA" resname="headers">
           <source>Headers</source>
@@ -1524,10 +1520,6 @@ When not selected, only formulas that have never been evaluated will be computed
 
 Ansonsten werden nur Formeln berechnet, die noch nie ausgewertet wurden.</target>
         </trans-unit>
-        <trans-unit id="DpRVy4keJdQU2SqZwEacYg" resname="FormulasComma">
-          <source>Formulas:</source>
-          <target>Formeln:</target>
-        </trans-unit>
         <trans-unit id="6LkWY9PvfM8ea1sA6vSrBw" resname="ExportComma">
           <source>Export:</source>
           <target>Export:</target>
@@ -1576,7 +1568,7 @@ Soll er ersetzt werden?</target>
           <source>Overwrite</source>
           <target>Überschreiben</target>
         </trans-unit>
-               <trans-unit id="gJPawW7rsig8FtISvxRypw" resname="All">
+        <trans-unit id="gJPawW7rsig8FtISvxRypw" resname="All">
           <source>All</source>
           <target>Alle</target>
         </trans-unit>
@@ -1604,13 +1596,17 @@ Soll er ersetzt werden?</target>
           <source>Name of the folder to be created</source>
           <target>Name des angelegten Ordners</target>
         </trans-unit>
-        <trans-unit id="C1foIED4AjMt78iEf21vUQ" resname="exportEmptyPictures">
-          <source>Export empty pictures</source>
-          <target>Exportiere leere Bilder</target>
-        </trans-unit>
         <trans-unit id="y32E8D1pr6wrutx/5zbK/A" resname="infoEmptyPictures">
           <source>Check this box if you want to export empty pictures returned by formulas.</source>
           <target>Markieren Sie diese Box, wenn von Formeln zurückgegebene leere Bilder exportiert werden sollen.</target>
+        </trans-unit>
+        <trans-unit id="gzqU0lQaIqbShE0dEr/AwA" resname="optionsComma">
+          <source>Options:</source>
+          <target>Optionen:</target>
+        </trans-unit>
+        <trans-unit id="ILaNpHjjQPifHiTlQjUIGg" resname="blackFrame">
+          <source>Black frame for empty pictures</source>
+          <target>Schwarzer Rahmen für leere Bilder</target>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>

@@ -47,7 +47,9 @@ Case of
 		OBJECT SET HELP TIP:C1181(*; "btn_visibleEmptyImages"; Get action info:C1442("visibleEmptyImages").title)
 		
 		
-		SET TIMER:C645(-1)
+		If (Form:C1466#Null:C1517)
+			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)
+		End if 
 		
 	: (Form event code:C388=On Bound Variable Change:K2:52) | (Form event code:C388=On Timer:K2:25)
 		
