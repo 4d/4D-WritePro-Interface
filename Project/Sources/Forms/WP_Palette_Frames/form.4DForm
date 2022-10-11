@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Frames",
@@ -101,8 +101,8 @@
 				},
 				"borderStyleValues": {
 					"type": "dropdown",
-					"top": 142,
-					"left": 275,
+					"top": 132,
+					"left": 297,
 					"width": 140,
 					"height": 18,
 					"focusable": false,
@@ -749,5 +749,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 112
+	"geometryStamp": 113
 }

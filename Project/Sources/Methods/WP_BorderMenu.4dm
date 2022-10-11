@@ -19,8 +19,6 @@ $applyTo:=UI_GetApplyTo
 
 If ($withMenu)
 	
-	// read the "applyTo"
-	
 	$menuRef:=Create menu:C408
 	APPEND MENU ITEM:C411($menuRef; Get localized string:C991("bordersStyle"))
 	SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; $applyTo+"/borderStyle"+$where)

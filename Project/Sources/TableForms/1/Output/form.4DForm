@@ -1,11 +1,13 @@
-﻿{
+{
 	"destination": "listScreen",
 	"rightMargin": 16,
 	"bottomMargin": 10,
 	"markerHeader": 19,
 	"markerBody": 44,
-	"markerBreak": 44,
-	"markerFooter": 107,
+	"markerBreak": [
+		67
+	],
+	"markerFooter": 106,
 	"events": [
 		"onLoad",
 		"onValidate",
@@ -65,7 +67,7 @@
 					"top": 19,
 					"left": 0,
 					"width": 528,
-					"height": 25,
+					"height": 205,
 					"sizingX": "grow",
 					"stroke": "transparent"
 				},
@@ -136,11 +138,19 @@
 					"height": 49,
 					"sizingX": "move",
 					"stroke": "#A8A8A8"
+				},
+				"Text": {
+					"type": "text",
+					"text": "{\"Pays\";\"Region\";\"Ville\";\"Quartier\"}",
+					"top": 293,
+					"left": 149,
+					"width": 594,
+					"height": 16
 				}
 			}
 		}
 	],
-	"geometryStamp": 52,
+	"geometryStamp": 143,
 	"$4d": {
 		"version": "1",
 		"kind": "form"

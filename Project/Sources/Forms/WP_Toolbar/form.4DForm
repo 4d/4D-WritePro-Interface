@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"shared": true,
 	"windowSizingX": "fixed",
@@ -1591,7 +1591,7 @@
 				"btn_visibleHeaders": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 620,
+					"left": 690,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHeaders",
@@ -1604,7 +1604,7 @@
 				"btn_visibleFooters": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 650,
+					"left": 720,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideFooters",
@@ -1617,7 +1617,7 @@
 				"btn_visibleHorizontalRuler": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 710,
+					"left": 780,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHiddenHorizontalRuler",
@@ -1630,7 +1630,7 @@
 				"btn_visibleHiddenChars": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 620,
+					"left": 690,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHiddenChars",
@@ -1643,7 +1643,7 @@
 				"btn_visiblePageFrames": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 680,
+					"left": 750,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideFrames",
@@ -1656,8 +1656,8 @@
 				"Popup_zoom": {
 					"type": "dropdown",
 					"top": 60,
-					"left": 710,
-					"width": 90,
+					"left": 780,
+					"width": 85,
 					"height": 20,
 					"tooltip": ":xliff:zoom",
 					"focusable": false,
@@ -1675,7 +1675,7 @@
 				"Line5": {
 					"type": "line",
 					"top": 30,
-					"left": 605,
+					"left": 625,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -1684,7 +1684,7 @@
 				"Line3": {
 					"type": "line",
 					"top": 30,
-					"left": 815,
+					"left": 575,
 					"height": 50,
 					"stroke": "#696969",
 					"width": 0,
@@ -1778,7 +1778,7 @@
 				"zoomIcon": {
 					"type": "picture",
 					"top": 60,
-					"left": 685,
+					"left": 755,
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
@@ -1869,7 +1869,7 @@
 				"btn_visibleVerticalRuler": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 740,
+					"left": 810,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:showHideHiddenVerticalRuler",
@@ -1882,7 +1882,7 @@
 				"btn_insertTime1": {
 					"type": "button",
 					"top": 30,
-					"left": 570,
+					"left": 585,
 					"width": 30,
 					"height": 24,
 					"focusable": false,
@@ -1898,7 +1898,7 @@
 				"btn_insertTime2": {
 					"type": "button",
 					"top": 60,
-					"left": 570,
+					"left": 585,
 					"width": 30,
 					"height": 24,
 					"focusable": false,
@@ -1946,7 +1946,7 @@
 				"btn_visibleEmptyImages": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 650,
+					"left": 720,
 					"width": 30,
 					"height": 24,
 					"action": "",
@@ -1978,40 +1978,39 @@
 				},
 				"Line66": {
 					"type": "line",
-					"top": 360,
-					"left": 575,
+					"top": 30,
+					"left": 685,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
 					"startPoint": "topLeft"
 				},
-				"Button4": {
-					"type": "button",
-					"text": "T.A.",
-					"top": 360,
-					"left": 521,
-					"width": 48,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"style": "regular",
-					"action": "",
-					"method": "ObjectMethods/Button4.4dm",
-					"focusable": false
-				},
-				"Button5": {
+				"btn_insertTextArea": {
 					"type": "button",
 					"text": "",
-					"top": 390,
-					"left": 525,
+					"top": 30,
+					"left": 635,
+					"width": 40,
+					"height": 24,
+					"events": [],
+					"style": "toolbar",
+					"action": "insertTextBox",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBcommon/Insert/textarea_24.png",
+					"iconFrames": 4
+				},
+				"btn_textAreaBackgroundColor": {
+					"type": "button",
+					"text": "",
+					"top": 60,
+					"left": 635,
 					"width": 40,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"style": "toolbar",
-					"action": "textArea/background/showDialog",
+					"action": "textBox/backgroundColor/showDialog",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Home/BackgroundColor_24.png",
 					"iconFrames": 4
@@ -2050,8 +2049,8 @@
 				"btn_insertTime3",
 				"btn_visibleEmptyImages",
 				"btn_displayAsSymbol",
-				"Button4",
-				"Button5"
+				"btn_insertTextArea",
+				"btn_textAreaBackgroundColor"
 			]
 		},
 		{
@@ -2980,6 +2979,25 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"Popup_pageOrientation1": {
+					"type": "dropdown",
+					"top": 44,
+					"left": 770,
+					"width": 90,
+					"height": 22,
+					"tooltip": ":xliff:pageOrientation",
+					"focusable": false,
+					"action": "userUnit"
+				},
+				"lbl_UserUnit": {
+					"type": "text",
+					"text": ":xliff:UnitColon",
+					"top": 47,
+					"left": 700,
+					"width": 65,
+					"height": 16,
+					"textAlign": "right"
 				}
 			}
 		},
@@ -3501,7 +3519,7 @@
 				"cbProtectionEnabled": {
 					"type": "checkbox",
 					"top": 40,
-					"left": 300,
+					"left": 820,
 					"width": 40,
 					"height": 40,
 					"action": "",
@@ -3600,7 +3618,7 @@
 				"Line62": {
 					"type": "line",
 					"top": 30,
-					"left": 355,
+					"left": 805,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -3617,8 +3635,8 @@
 				},
 				"Line69": {
 					"type": "line",
-					"top": 150,
-					"left": 150,
+					"top": 30,
+					"left": 365,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -3626,18 +3644,20 @@
 				},
 				"Button6": {
 					"type": "button",
-					"text": "TextArea",
-					"top": 156,
-					"left": 90,
-					"width": 48,
+					"text": "",
+					"top": 40,
+					"left": 310,
+					"width": 40,
 					"height": 40,
 					"events": [
 						"onClick"
 					],
-					"style": "regular",
+					"style": "toolbar",
 					"action": "",
 					"focusable": false,
-					"method": "ObjectMethods/Button6.4dm"
+					"method": "ObjectMethods/Button6.4dm",
+					"icon": "/RESOURCES/Images/TBcommon/Protection/textareaProtected_32.png",
+					"iconFrames": 4
 				}
 			}
 		},
@@ -4142,5 +4162,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 5756
+	"geometryStamp": 6044
 }

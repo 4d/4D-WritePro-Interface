@@ -22,25 +22,6 @@ Case of
 		(OBJECT Get pointer:C1124(Object named:K67:5; "rbWidthOption1"))->:=1  //set width by default
 		(OBJECT Get pointer:C1124(Object named:K67:5; "rbWidthOption2"))->:=0
 		
-		$ptrArrayNames:=OBJECT Get pointer:C1124(Object named:K67:5; "UserUnitNames")
-		$ptrArrayValues:=OBJECT Get pointer:C1124(Object named:K67:5; "UserUnitValues")
-		
-		ARRAY TEXT:C222($ptrArrayNames->; 0)
-		ARRAY TEXT:C222($ptrArrayValues->; 0)
-		
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("cm"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("mm"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("inches"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("pt"))
-		
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk unit cm:K81:135)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk unit mm:K81:171)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk unit inch:K81:172)
-		APPEND TO ARRAY:C911($ptrArrayValues->; wk unit pt:K81:136)
-		
-		$ptrArrayNames->:=1
-		$ptrArrayValues->:=1
-		
 		oForm.skinAppliedSub:=UI_ApplySkin
 		
 		//tip for HideEmptyImages
@@ -65,7 +46,8 @@ Case of
 		
 		If ($setupOK) & ($typeSelection#2)
 			
-			WP_GetUserUnit(Form:C1466.selection[wk owner:K81:168])
+			// removed from dialog, standard action instead (userUnit)
+			// WP_GetUserUnit(Form.selection[wk owner])
 			
 			WP_GetSizes(Form:C1466.paragraphRange; "paragraph")
 			

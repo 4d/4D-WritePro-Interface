@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <!--
 Translation file.
 This file is distributed under the same license as the product package.-->
-<xliff xmlns:d4="http://www.4d.com/d4-ns" version="1.0">
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+
   <file datatype="plaintext" original="Undefined" source-language="en" target-language="de">
     <header>
       <prop-group name="Xliff-Editor.4dbase">
-        <prop prop-type="version">1.0</prop>
+        <prop prop-type="version">2.0</prop>
       </prop-group>
     </header>
     <body>
@@ -559,7 +560,12 @@ This file is distributed under the same license as the product package.-->
           <source>Footers</source>
           <target>Fußteile</target>
         </trans-unit>
+        <trans-unit id="an7Gfwv2eaZPtYEu4Dtf2A" resname="TextBoxes">
+          <source>Text boxes</source>
+          <target state="new">Text boxes</target>
+        </trans-unit>
       </group>
     </body>
   </file>
+
 </xliff>

@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <!--
 Translation file.
 This file is distributed under the same license as the product package.-->
-<xliff xmlns:d4="http://www.4d.com/d4-ns" version="1.0">
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+
   <file datatype="x-STR#" original="undefined" source-language="en" target-language="de">
     <header>
       <prop-group name="Xliff-Editor.4dbase">
@@ -452,7 +453,7 @@ This file is distributed under the same license as the product package.-->
           <source>Elements:</source>
           <target>Elemente:</target>
         </trans-unit>
-        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="zoomHyphen">
+        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="pictures">
           <source>Zoom:</source>
           <target>Zoom:</target>
         </trans-unit>
@@ -621,32 +622,6 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="104" resname="SelectADestination">
           <source>Select a destination.</source>
           <target>Wählen Sie ein Ziel.</target>
-        </trans-unit>
-      </group>
-      <group resname="ListUnits">
-        <trans-unit id="1" resname="cm">
-          <source>cm</source>
-          <target>cm</target>
-        </trans-unit>
-        <trans-unit id="2" resname="mm">
-          <source>mm</source>
-          <target>mm</target>
-        </trans-unit>
-        <trans-unit id="3" resname="inches">
-          <source>inches</source>
-          <target>Zoll</target>
-        </trans-unit>
-        <trans-unit id="4" resname="pt">
-          <source>pt</source>
-          <target>pt</target>
-        </trans-unit>
-        <trans-unit id="5" resname="auto">
-          <source>auto</source>
-          <target>auto</target>
-        </trans-unit>
-        <trans-unit id="6" resname="pct">
-          <source>%</source>
-          <target>%</target>
         </trans-unit>
       </group>
       <group resname="borderStyleNames">
@@ -1610,7 +1585,7 @@ Soll er ersetzt werden?</target>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
-      <group resname="DialogImport">
+      <group resname="textArea">
         <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
           <source>Erase the document</source>
           <target>Dokument löschen</target>
@@ -1914,4 +1889,5 @@ Soll er ersetzt werden?</target>
       </group>
     </body>
   </file>
+
 </xliff>

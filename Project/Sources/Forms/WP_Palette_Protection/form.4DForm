@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Frames",
@@ -35,7 +35,7 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 250,
+					"height": 620,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
 					"borderRadius": 0
@@ -79,7 +79,7 @@
 				},
 				"cbProtectionEnabled": {
 					"type": "checkbox",
-					"top": 200,
+					"top": 270,
 					"left": 85,
 					"width": 170,
 					"height": 16,
@@ -94,7 +94,7 @@
 				},
 				"Separator1": {
 					"type": "rectangle",
-					"top": 165,
+					"top": 235,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -104,7 +104,7 @@
 				},
 				"sepLbl_Frame2": {
 					"type": "text",
-					"top": 165,
+					"top": 235,
 					"left": 20,
 					"width": 220,
 					"height": 13,
@@ -117,7 +117,7 @@
 				},
 				"decor2": {
 					"type": "picture",
-					"top": 195,
+					"top": 265,
 					"left": 20,
 					"width": 32,
 					"height": 32,
@@ -126,8 +126,8 @@
 				},
 				"decor1": {
 					"type": "picture",
-					"top": 40,
-					"left": 20,
+					"top": 42,
+					"left": 445,
 					"width": 32,
 					"height": 32,
 					"picture": "/RESOURCES/Images/Sidebar/Protected_32.png",
@@ -135,7 +135,7 @@
 				},
 				"cbTableProtected": {
 					"type": "checkbox",
-					"top": 80,
+					"top": 100,
 					"left": 80,
 					"width": 110,
 					"height": 16,
@@ -150,7 +150,7 @@
 				},
 				"cbRowProtected": {
 					"type": "checkbox",
-					"top": 101,
+					"top": 121,
 					"left": 100,
 					"width": 110,
 					"height": 16,
@@ -165,7 +165,7 @@
 				},
 				"cbCellProtected": {
 					"type": "checkbox",
-					"top": 122,
+					"top": 142,
 					"left": 120,
 					"width": 110,
 					"height": 16,
@@ -202,6 +202,48 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4DWP Protection"
+				},
+				"cbTableProtected1": {
+					"type": "checkbox",
+					"top": 190,
+					"left": 80,
+					"width": 110,
+					"height": 16,
+					"text": "Text boxes",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.textBoxProtected",
+					"method": "ObjectMethods/cbTableProtected1.4dm",
+					"threeState": true
+				},
+				"decor3": {
+					"type": "picture",
+					"top": 42,
+					"left": 20,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/TBcommon/Protection/ParagraphProtected_32.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"decor4": {
+					"type": "picture",
+					"top": 114,
+					"left": 20,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/TBcommon/Protection/TableProtected_32.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"decor5": {
+					"type": "picture",
+					"top": 182,
+					"left": 20,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/TBcommon/Protection/textareaProtected_32.png",
+					"pictureFormat": "truncatedTopLeft"
 				}
 			}
 		}
@@ -227,5 +269,5 @@
 			}
 		}
 	},
-	"geometryStamp": 64
+	"geometryStamp": 193
 }

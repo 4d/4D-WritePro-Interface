@@ -1,4 +1,4 @@
-﻿{
+{
 	"CLASSES": {
 		"classes": [
 			"Toolbar"
@@ -46,7 +46,6 @@
 			"WP_GetTextLineHeight",
 			"WP_GetTextTransform",
 			"WP_GetTextUnderline",
-			"WP_GetUserUnit",
 			"WP_Set4Ddate",
 			"WP_SetAlign",
 			"WP_SetBackgroundClip",
@@ -75,8 +74,7 @@
 			"WP_SetTextLinetrough",
 			"WP_SetTextShadow",
 			"WP_SetTextTransform",
-			"WP_SetTextUnderline",
-			"WP_SetUserUnit"
+			"WP_SetTextUnderline"
 		]
 	},
 	"PaletteForms": {

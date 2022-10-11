@@ -20,16 +20,16 @@ Case of
 	: (WP_applyTo=7)
 		$applyTo:="image"
 		
-		//: (WP_applyTo=8)
-		//$applyTo:="textArea"  // v19 R8 ?
+	: (WP_applyTo=8)
+		$applyTo:="textBox"  // *** NEW v19 R8 ***
 		
-	: (WP_applyTo=8)  // separator
+	: (WP_applyTo=9)  // separator
 		
-	: (WP_applyTo=9)  // "table"
+	: (WP_applyTo=10)  // "table"
 		$applyTo:="table"
-	: (WP_applyTo=10)  // "cell"
+	: (WP_applyTo=11)  // "cell"
 		$applyTo:="cell"
-	: (WP_applyTo=11)  // "row"
+	: (WP_applyTo=12)  // "row"
 		$applyTo:="row"
 End case 
 

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!--
 Translation file.
 This file is distributed under the same license as the product package.-->
@@ -444,7 +444,7 @@ This file is distributed under the same license as the product package.-->
           <source>Insert continuous page break</source>
           <target>Vložte kontinuální konec stránky</target>
         </trans-unit>
-      <trans-unit id="4CkYikT+ULlL5PCYMO32fA" resname="edit">
+        <trans-unit id="4CkYikT+ULlL5PCYMO32fA" resname="edit">
           <source>Edit</source>
           <target>Upravit</target>
         </trans-unit>
@@ -548,7 +548,7 @@ This file is distributed under the same license as the product package.-->
           <source>Apply borders to…</source>
           <target>Použít ohraničení na…</target>
         </trans-unit>
-      <trans-unit id="zBez708L9OKugb+NacL/wg" resname="document">
+        <trans-unit id="zBez708L9OKugb+NacL/wg" resname="document">
           <source>Document</source>
           <target>Dokument</target>
         </trans-unit>
@@ -559,6 +559,10 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">
           <source>Footers</source>
           <target>Zápatí</target>
+        </trans-unit>
+        <trans-unit id="an7Gfwv2eaZPtYEu4Dtf2A" resname="TextBoxes">
+          <source>Text boxes</source>
+          <target state="new">Text boxes</target>
         </trans-unit>
       </group>
     </body>

@@ -375,7 +375,7 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="64" resname="Expression">
           <source>Expression</source>
           <target>Výraz</target>
-        </trans-unit>    
+        </trans-unit>
         <trans-unit id="67" resname="Set">
           <source>Set</source>
           <target>Nastavit</target>
@@ -454,7 +454,7 @@ This file is distributed under the same license as the product package.-->
           <source>Elements:</source>
           <target>Prvky:</target>
         </trans-unit>
-        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="zoomHyphen">
+        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="pictures">
           <source>Zoom:</source>
           <target>Zvětšení:</target>
         </trans-unit>
@@ -623,32 +623,6 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="104" resname="SelectADestination">
           <source>Select a destination.</source>
           <target>Vybrat cílení.</target>
-        </trans-unit>
-      </group>
-      <group resname="ListUnits">
-        <trans-unit id="1" resname="cm">
-          <source>cm</source>
-          <target>cm</target>
-        </trans-unit>
-        <trans-unit id="2" resname="mm">
-          <source>mm</source>
-          <target>mm</target>
-        </trans-unit>
-        <trans-unit id="3" resname="inches">
-          <source>inches</source>
-          <target>palce</target>
-        </trans-unit>
-        <trans-unit id="4" resname="pt">
-          <source>pt</source>
-          <target>body</target>
-        </trans-unit>
-        <trans-unit id="5" resname="auto">
-          <source>auto</source>
-          <target>auto</target>
-        </trans-unit>
-        <trans-unit id="6" resname="pct">
-          <source>%</source>
-          <target>%</target>
         </trans-unit>
       </group>
       <group resname="borderStyleNames">
@@ -1276,7 +1250,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="pZv3LaV+16Uw8EoSBOzxLA" resname="KeyboardBased">
           <source>Search based on '&lt;1&gt;' keyboard </source>
-        	<target>Hledání založené na '&lt;1&gt;' klávesnici </target>
+          <target>Hledání založené na '&lt;1&gt;' klávesnici </target>
         </trans-unit>
         <trans-unit id="4TFSNZU8Z6IMoq+NekNNIg" resname="OccurencesColon">
           <source>Occurences:</source>
@@ -1612,7 +1586,7 @@ Chcete ji nahradit?</target>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
-      <group resname="DialogImport">
+      <group resname="textArea">
         <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
           <source>Erase the document</source>
           <target>Vymazat dokument</target>

@@ -454,7 +454,7 @@ This file is distributed under the same license as the product package.-->
           <source>Elements:</source>
           <target>Elementos:</target>
         </trans-unit>
-        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="zoomHyphen">
+        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="pictures">
           <source>Zoom:</source>
           <target>Zoom:</target>
         </trans-unit>
@@ -623,32 +623,6 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="104" resname="SelectADestination">
           <source>Select a destination.</source>
           <target>Seleccione un destino.</target>
-        </trans-unit>
-      </group>
-      <group resname="ListUnits">
-        <trans-unit id="1" resname="cm">
-          <source>cm</source>
-          <target>cm</target>
-        </trans-unit>
-        <trans-unit id="2" resname="mm">
-          <source>mm</source>
-          <target>mm</target>
-        </trans-unit>
-        <trans-unit id="3" resname="inches">
-          <source>inches</source>
-          <target>Pulgadas</target>
-        </trans-unit>
-        <trans-unit id="4" resname="pt">
-          <source>pt</source>
-          <target>pt</target>
-        </trans-unit>
-        <trans-unit id="5" resname="auto">
-          <source>auto</source>
-          <target>Auto</target>
-        </trans-unit>
-        <trans-unit id="6" resname="pct">
-          <source>%</source>
-          <target>%</target>
         </trans-unit>
       </group>
       <group resname="borderStyleNames">
@@ -1612,7 +1586,7 @@ Would you like to replace it?</source>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
-      <group resname="DialogImport">
+      <group resname="textArea">
         <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
           <source>Erase the document</source>
           <target>Borrar el documento</target>

@@ -88,6 +88,7 @@ Case of
 		OBJECT SET HELP TIP:C1181(*; "btn_visibleEmptyImages"; Get action info:C1442("visibleEmptyImages").title)
 		OBJECT SET HELP TIP:C1181(*; "btn_displayAsSymbol"; Get action info:C1442("displayFormulaAsSymbol").title)
 		
+		
 		If (Form:C1466#Null:C1517)
 			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)
 		End if 
