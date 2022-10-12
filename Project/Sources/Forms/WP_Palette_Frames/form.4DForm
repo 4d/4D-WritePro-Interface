@@ -32,11 +32,33 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 400,
+					"height": 440,
 					"fill": "#C8C8C8",
 					"stroke": "transparent",
 					"borderRadius": 0,
 					"sizingX": "fixed"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 305,
+					"left": 84,
+					"width": 150,
+					"height": 100,
+					"strokeWidth": 1,
+					"borderRadius": 6,
+					"fill": "transparent",
+					"stroke": "automatic"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 145,
+					"left": 84,
+					"width": 150,
+					"height": 60,
+					"strokeWidth": 1,
+					"borderRadius": 6,
+					"fill": "transparent",
+					"stroke": "automatic"
 				},
 				"Separator1": {
 					"type": "rectangle",
@@ -65,7 +87,7 @@
 				"FrameRect": {
 					"type": "rectangle",
 					"top": 70,
-					"left": 93,
+					"left": 763,
 					"width": 130,
 					"height": 41,
 					"fill": "transparent",
@@ -75,7 +97,7 @@
 				"Invisible Button1": {
 					"type": "button",
 					"top": 78,
-					"left": 99,
+					"left": 769,
 					"width": 117,
 					"height": 26,
 					"display": false,
@@ -88,7 +110,7 @@
 				"borderStyleNames": {
 					"type": "dropdown",
 					"top": 132,
-					"left": 85,
+					"left": 755,
 					"width": 140,
 					"height": 18,
 					"focusable": false,
@@ -102,7 +124,7 @@
 				"borderStyleValues": {
 					"type": "dropdown",
 					"top": 132,
-					"left": 297,
+					"left": 967,
 					"width": 140,
 					"height": 18,
 					"focusable": false,
@@ -115,7 +137,7 @@
 				"borderWidthRuler": {
 					"type": "ruler",
 					"top": 164,
-					"left": 85,
+					"left": 755,
 					"width": 95,
 					"height": 12,
 					"dataSourceTypeHint": "number",
@@ -131,8 +153,8 @@
 				},
 				"borderRadiusRuler": {
 					"type": "ruler",
-					"top": 224,
-					"left": 85,
+					"top": 236,
+					"left": 800,
 					"width": 95,
 					"height": 11,
 					"dataSourceTypeHint": "number",
@@ -148,7 +170,7 @@
 				"borderWidthInput": {
 					"type": "input",
 					"top": 164,
-					"left": 190,
+					"left": 860,
 					"width": 35,
 					"height": 14,
 					"dataSourceTypeHint": "number",
@@ -165,8 +187,8 @@
 				},
 				"borderRadiusInput": {
 					"type": "input",
-					"top": 224,
-					"left": 190,
+					"top": 236,
+					"left": 905,
 					"width": 35,
 					"height": 14,
 					"dataSourceTypeHint": "number",
@@ -184,7 +206,7 @@
 				"lbl_Style": {
 					"type": "text",
 					"top": 132,
-					"left": 0,
+					"left": 670,
 					"width": 80,
 					"height": 14,
 					"class": "Palette",
@@ -195,7 +217,7 @@
 				"lbl_Width": {
 					"type": "text",
 					"top": 162,
-					"left": 0,
+					"left": 670,
 					"width": 80,
 					"height": 14,
 					"class": "Palette",
@@ -206,7 +228,7 @@
 				"lbl_Color": {
 					"type": "text",
 					"top": 192,
-					"left": 0,
+					"left": 670,
 					"width": 80,
 					"height": 14,
 					"class": "Palette",
@@ -216,8 +238,8 @@
 				},
 				"lbl_Radius": {
 					"type": "text",
-					"top": 222,
-					"left": 0,
+					"top": 234,
+					"left": 715,
 					"width": 80,
 					"height": 14,
 					"class": "Palette",
@@ -228,7 +250,7 @@
 				"lbl_ApplyTo": {
 					"type": "text",
 					"top": 82,
-					"left": 0,
+					"left": 670,
 					"width": 80,
 					"height": 14,
 					"class": "Palette",
@@ -239,7 +261,7 @@
 				"cb2": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 149,
+					"left": 819,
 					"width": 18,
 					"height": 20,
 					"focusable": false,
@@ -253,7 +275,7 @@
 				"cb1": {
 					"type": "checkbox",
 					"top": 80,
-					"left": 85,
+					"left": 755,
 					"width": 20,
 					"height": 20,
 					"focusable": false,
@@ -267,7 +289,7 @@
 				"cb3": {
 					"type": "checkbox",
 					"top": 80,
-					"left": 213,
+					"left": 883,
 					"width": 20,
 					"height": 20,
 					"focusable": false,
@@ -281,7 +303,7 @@
 				"cb4": {
 					"type": "checkbox",
 					"top": 100,
-					"left": 149,
+					"left": 819,
 					"width": 18,
 					"height": 20,
 					"focusable": false,
@@ -295,7 +317,7 @@
 				"TargetSelector1": {
 					"type": "radio",
 					"top": 10,
-					"left": 20,
+					"left": 710,
 					"width": 24,
 					"height": 24,
 					"sizingX": "fixed",
@@ -315,7 +337,7 @@
 				"TargetSelector2": {
 					"type": "radio",
 					"top": 10,
-					"left": 85,
+					"left": 775,
 					"width": 24,
 					"height": 24,
 					"sizingX": "fixed",
@@ -335,7 +357,7 @@
 				"TargetSelector3": {
 					"type": "radio",
 					"top": 10,
-					"left": 150,
+					"left": 840,
 					"width": 24,
 					"height": 24,
 					"sizingX": "fixed",
@@ -355,7 +377,7 @@
 				"TargetSelector4": {
 					"type": "radio",
 					"top": 10,
-					"left": 216,
+					"left": 906,
 					"width": 24,
 					"height": 24,
 					"sizingX": "fixed",
@@ -374,8 +396,8 @@
 				},
 				"rb1": {
 					"type": "radio",
-					"top": 73,
-					"left": 331,
+					"top": 63,
+					"left": 1096,
 					"width": 147,
 					"height": 14,
 					"text": "All",
@@ -388,8 +410,8 @@
 				},
 				"rb2": {
 					"type": "radio",
-					"top": 93,
-					"left": 331,
+					"top": 83,
+					"left": 1096,
 					"width": 147,
 					"height": 14,
 					"text": "Outside only",
@@ -402,8 +424,8 @@
 				},
 				"rb3": {
 					"type": "radio",
-					"top": 113,
-					"left": 331,
+					"top": 103,
+					"left": 1096,
 					"width": 147,
 					"height": 14,
 					"text": "Inside only",
@@ -416,7 +438,7 @@
 				},
 				"btnAction": {
 					"type": "button",
-					"top": 355,
+					"top": 405,
 					"left": 0,
 					"width": 30,
 					"height": 30,
@@ -434,7 +456,7 @@
 				"borderColor": {
 					"type": "input",
 					"top": 192,
-					"left": 88,
+					"left": 758,
 					"width": 96,
 					"height": 14,
 					"fill": "#FFEECC",
@@ -456,7 +478,7 @@
 				"SampleFrame3": {
 					"type": "rectangle",
 					"top": 191,
-					"left": 87,
+					"left": 757,
 					"width": 98,
 					"height": 16,
 					"fill": "transparent",
@@ -467,7 +489,7 @@
 				"FakeFocusBorderColor": {
 					"type": "picture",
 					"top": 195,
-					"left": 190,
+					"left": 860,
 					"width": 10,
 					"height": 10,
 					"visibility": "hidden",
@@ -478,7 +500,7 @@
 				"MultiFrameColor": {
 					"type": "picture",
 					"top": 193,
-					"left": 90,
+					"left": 760,
 					"width": 92,
 					"height": 12,
 					"pictureFormat": "tiled",
@@ -488,7 +510,7 @@
 				"btnInvisible3": {
 					"type": "button",
 					"top": 190,
-					"left": 86,
+					"left": 756,
 					"width": 100,
 					"height": 18,
 					"display": false,
@@ -500,7 +522,7 @@
 				},
 				"Separator3": {
 					"type": "rectangle",
-					"top": 255,
+					"top": 235,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -511,7 +533,7 @@
 				},
 				"sepLbl_padding": {
 					"type": "text",
-					"top": 255,
+					"top": 235,
 					"left": 20,
 					"width": 220,
 					"height": 13,
@@ -525,7 +547,7 @@
 				"paddingVerticalRuler": {
 					"type": "ruler",
 					"top": 285,
-					"left": 20,
+					"left": 720,
 					"width": 12,
 					"height": 60,
 					"dataSourceTypeHint": "number",
@@ -541,7 +563,7 @@
 				"paddingHorizontalRuler": {
 					"type": "ruler",
 					"top": 340,
-					"left": 65,
+					"left": 765,
 					"width": 155,
 					"height": 12,
 					"dataSourceTypeHint": "number",
@@ -557,7 +579,7 @@
 				"PaddingTop": {
 					"type": "input",
 					"top": 284,
-					"left": 120,
+					"left": 820,
 					"width": 45,
 					"height": 14,
 					"dataSourceTypeHint": "number",
@@ -577,7 +599,7 @@
 				"PaddingLeft": {
 					"type": "input",
 					"top": 300,
-					"left": 55,
+					"left": 755,
 					"width": 45,
 					"height": 14,
 					"dataSourceTypeHint": "number",
@@ -597,7 +619,7 @@
 				"PaddingRight": {
 					"type": "input",
 					"top": 300,
-					"left": 185,
+					"left": 885,
 					"width": 45,
 					"height": 14,
 					"dataSourceTypeHint": "number",
@@ -617,7 +639,7 @@
 				"PaddingBottom": {
 					"type": "input",
 					"top": 314,
-					"left": 120,
+					"left": 820,
 					"width": 45,
 					"height": 14,
 					"dataSourceTypeHint": "number",
@@ -634,12 +656,290 @@
 					],
 					"sizingX": "fixed"
 				},
+				"Line1": {
+					"type": "line",
+					"top": 619,
+					"left": 265,
+					"width": 461,
+					"height": 1
+				},
+				"Popup_applyMarginsTo": {
+					"type": "dropdown",
+					"top": 10,
+					"left": 85,
+					"width": 140,
+					"height": 18,
+					"dataSource": "WP_applyTo",
+					"focusable": false,
+					"method": "ObjectMethods/Popup_applyMarginsTo.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"class": "Palette"
+				},
+				"lbl_Text": {
+					"type": "text",
+					"top": 13,
+					"left": 0,
+					"width": 80,
+					"height": 13,
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": ".apply to:"
+				},
+				"popPaddingTop": {
+					"type": "dropdown",
+					"top": 311,
+					"left": 127,
+					"width": 64,
+					"height": 18,
+					"tooltip": ":xliff:paddingTop",
+					"focusable": false,
+					"action": "paragraph/paddingTop",
+					"class": "Palette"
+				},
+				"popPaddingBottom": {
+					"type": "dropdown",
+					"top": 382,
+					"left": 127,
+					"width": 64,
+					"height": 18,
+					"tooltip": ":xliff:paddingBottom",
+					"focusable": false,
+					"action": "paragraph/paddingBottom",
+					"class": "Palette"
+				},
+				"popPaddingLeft": {
+					"type": "dropdown",
+					"top": 346,
+					"left": 86,
+					"width": 64,
+					"height": 18,
+					"tooltip": ":xliff:paddingLeft",
+					"focusable": false,
+					"action": "paragraph/paddingLeft",
+					"class": "Palette"
+				},
+				"popPaddingRight": {
+					"type": "dropdown",
+					"top": 346,
+					"left": 165,
+					"width": 64,
+					"height": 18,
+					"tooltip": ":xliff:paddingRight",
+					"focusable": false,
+					"action": "paragraph/paddingRight",
+					"class": "Palette"
+				},
+				"popPaddingAll": {
+					"type": "dropdown",
+					"top": 271,
+					"left": 86,
+					"width": 64,
+					"height": 18,
+					"tooltip": ":xliff:padding",
+					"focusable": false,
+					"action": "paragraph/padding",
+					"class": "Palette"
+				},
+				"btnBorderStyleAll": {
+					"type": "button",
+					"top": 69,
+					"left": 115,
+					"width": 30,
+					"height": 30,
+					"tooltip": ":xliff:bordersAll",
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/Borders_24.png",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "toolbar",
+					"method": "ObjectMethods/btnBorderStyleAll.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					]
+				},
+				"btnBorderStyleNone": {
+					"type": "button",
+					"top": 69,
+					"left": 80,
+					"width": 30,
+					"height": 30,
+					"tooltip": ":xliff:bordersNone",
+					"action": "paragraph/borderStyle?value=none",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BordersNone_24.png",
+					"iconFrames": 4,
+					"style": "toolbar"
+				},
+				"btnBorderStyleLeft1": {
+					"type": "button",
+					"top": 165,
+					"left": 82,
+					"width": 20,
+					"height": 20,
+					"tooltip": ":xliff:borderLeft",
+					"action": "borderStyle",
+					"focusable": false,
+					"icon": "",
+					"iconFrames": 1,
+					"popupPlacement": "none",
+					"textPlacement": "center",
+					"style": "toolbar",
+					"method": "ObjectMethods/btnBorderStyleLeft1.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					],
+					"text": "▾",
+					"fontSize": 20
+				},
+				"btnBorderStyleBottom1": {
+					"type": "button",
+					"top": 183,
+					"left": 149,
+					"width": 20,
+					"height": 20,
+					"tooltip": ":xliff:borderBottom",
+					"action": "borderStyle",
+					"focusable": false,
+					"icon": "",
+					"iconFrames": 1,
+					"popupPlacement": "none",
+					"textPlacement": "center",
+					"style": "toolbar",
+					"method": "ObjectMethods/btnBorderStyleBottom1.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					],
+					"text": "▾",
+					"fontSize": 20
+				},
+				"btnBorderStyleTop1": {
+					"type": "button",
+					"top": 141,
+					"left": 149,
+					"width": 20,
+					"height": 20,
+					"tooltip": ":xliff:borderTop",
+					"action": "borderStyle",
+					"focusable": false,
+					"icon": "",
+					"iconFrames": 1,
+					"popupPlacement": "none",
+					"textPlacement": "center",
+					"style": "toolbar",
+					"method": "ObjectMethods/btnBorderStyleTop1.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					],
+					"text": "▾",
+					"fontSize": 20
+				},
+				"btnBorderStyleRight1": {
+					"type": "button",
+					"top": 165,
+					"left": 215,
+					"width": 20,
+					"height": 20,
+					"tooltip": ":xliff:borderRight",
+					"action": "paragraph/borderStyle",
+					"focusable": false,
+					"icon": "",
+					"iconFrames": 1,
+					"style": "toolbar",
+					"method": "ObjectMethods/btnBorderStyleRight1.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					],
+					"text": "▾",
+					"fontSize": 20
+				},
+				"popRadius": {
+					"type": "dropdown",
+					"top": 107,
+					"left": 86,
+					"width": 64,
+					"height": 18,
+					"dataSource": "",
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					],
+					"action": "paragraph/borderRadius",
+					"tooltip": ":xliff:Radius",
+					"class": "Palette"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "▾",
+					"top": 40,
+					"left": 1015,
+					"width": 21,
+					"height": 29,
+					"fontSize": 24
+				},
+				"Text2": {
+					"type": "text",
+					"text": ":xliff:globalColon",
+					"top": 77,
+					"left": 14,
+					"width": 66,
+					"height": 13,
+					"fontTheme": "additional",
+					"textAlign": "right"
+				},
+				"Text3": {
+					"type": "text",
+					"text": ":xliff:detailsColon",
+					"top": 167,
+					"left": 14,
+					"width": 66,
+					"height": 13,
+					"fontTheme": "additional",
+					"textAlign": "right"
+				},
+				"Text4": {
+					"type": "text",
+					"text": ":xliff:RadiusColon",
+					"top": 110,
+					"left": 14,
+					"width": 66,
+					"height": 13,
+					"fontTheme": "additional",
+					"textAlign": "right"
+				},
+				"Text5": {
+					"type": "text",
+					"text": ":xliff:globalColon",
+					"top": 274,
+					"left": 14,
+					"width": 66,
+					"height": 13,
+					"fontTheme": "additional",
+					"textAlign": "right"
+				},
+				"Text6": {
+					"type": "text",
+					"text": ":xliff:detailsColon",
+					"top": 349,
+					"left": 14,
+					"width": 66,
+					"height": 13,
+					"fontTheme": "additional",
+					"textAlign": "right"
+				},
 				"Rect2": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 400,
+					"height": 440,
 					"visibility": "hidden",
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
@@ -650,7 +950,7 @@
 					"top": 0,
 					"left": 10,
 					"width": 41,
-					"height": 398,
+					"height": 438,
 					"visibility": "hidden",
 					"stroke": "#AAAAAA",
 					"textAlign": "center",
@@ -658,13 +958,6 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Frames"
-				},
-				"Line1": {
-					"type": "line",
-					"top": 619,
-					"left": 265,
-					"width": 461,
-					"height": 1
 				}
 			},
 			"entryOrder": [
@@ -687,7 +980,20 @@
 				"PaddingTop",
 				"PaddingLeft",
 				"PaddingRight",
-				"PaddingBottom"
+				"PaddingBottom",
+				"Popup_applyMarginsTo",
+				"popPaddingTop",
+				"popPaddingBottom",
+				"popPaddingLeft",
+				"popPaddingRight",
+				"popPaddingAll",
+				"btnBorderStyleAll",
+				"btnBorderStyleNone",
+				"btnBorderStyleLeft1",
+				"btnBorderStyleBottom1",
+				"btnBorderStyleTop1",
+				"btnBorderStyleRight1",
+				"popRadius"
 			]
 		}
 	],
@@ -698,11 +1004,6 @@
 				"TargetSelector2",
 				"TargetSelector3",
 				"TargetSelector4"
-			],
-			"Group5": [
-				"rb1",
-				"rb2",
-				"rb3"
 			]
 		},
 		"activeView": "View 1",
@@ -737,7 +1038,6 @@
 			"View 8": {},
 			"View 9": {
 				"visible": false,
-				"selectable": false,
 				"objects": [
 					"Rect2",
 					"Text"
@@ -749,5 +1049,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 113
+	"geometryStamp": 1450
 }

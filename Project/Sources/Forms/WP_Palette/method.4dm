@@ -65,6 +65,9 @@ Case of
 			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)
 		End if 
 		
+		UI_setApplyTo
+		
+		
 	: (Form event code:C388=On Bound Variable Change:K2:52)
 		
 		$setupOK:=SetupLocalVariables

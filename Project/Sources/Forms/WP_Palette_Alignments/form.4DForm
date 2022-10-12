@@ -30,14 +30,25 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 590,
+					"height": 620,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 305,
+					"left": 84,
+					"width": 150,
+					"height": 100,
+					"strokeWidth": 1,
+					"borderRadius": 6,
+					"fill": "transparent",
+					"stroke": "automatic"
+				},
 				"Popup Dropdown List2": {
 					"type": "dropdown",
-					"top": 417,
+					"top": 447,
 					"left": 85,
 					"width": 140,
 					"height": 18,
@@ -48,7 +59,7 @@
 				},
 				"IconBgnd14": {
 					"type": "rectangle",
-					"top": 479,
+					"top": 509,
 					"left": 205,
 					"width": 35,
 					"height": 32,
@@ -58,7 +69,7 @@
 				},
 				"IconBgnd15": {
 					"type": "rectangle",
-					"top": 479,
+					"top": 509,
 					"left": 165,
 					"width": 35,
 					"height": 32,
@@ -68,7 +79,7 @@
 				},
 				"IconBgnd16": {
 					"type": "rectangle",
-					"top": 479,
+					"top": 509,
 					"left": 125,
 					"width": 35,
 					"height": 32,
@@ -78,7 +89,7 @@
 				},
 				"IconBgnd17": {
 					"type": "rectangle",
-					"top": 479,
+					"top": 509,
 					"left": 85,
 					"width": 35,
 					"height": 32,
@@ -101,7 +112,7 @@
 				},
 				"Separator1": {
 					"type": "rectangle",
-					"top": 40,
+					"top": 10,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -111,7 +122,7 @@
 				},
 				"Separator2": {
 					"type": "rectangle",
-					"top": 280,
+					"top": 220,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -121,7 +132,7 @@
 				},
 				"Separator4": {
 					"type": "rectangle",
-					"top": 390,
+					"top": 420,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -131,7 +142,7 @@
 				},
 				"sepLbl_margins": {
 					"type": "text",
-					"top": 280,
+					"top": 220,
 					"left": 40,
 					"width": 180,
 					"height": 13,
@@ -143,7 +154,7 @@
 				},
 				"textIndentRuler": {
 					"type": "ruler",
-					"top": 134,
+					"top": 104,
 					"left": 85,
 					"width": 60,
 					"height": 12,
@@ -158,7 +169,7 @@
 				},
 				"textIndentInput": {
 					"type": "input",
-					"top": 134,
+					"top": 104,
 					"left": 150,
 					"width": 85,
 					"height": 13,
@@ -310,7 +321,7 @@
 				},
 				"lbl_Align": {
 					"type": "text",
-					"top": 72,
+					"top": 42,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -321,7 +332,7 @@
 				},
 				"lbl_Background": {
 					"type": "text",
-					"top": 247,
+					"top": 147,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -332,7 +343,7 @@
 				},
 				"lbl_Indentation": {
 					"type": "text",
-					"top": 133,
+					"top": 103,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -343,7 +354,7 @@
 				},
 				"sepLbl_Lists": {
 					"type": "text",
-					"top": 390,
+					"top": 420,
 					"left": 40,
 					"width": 180,
 					"height": 13,
@@ -355,7 +366,7 @@
 				},
 				"lbl_Styles": {
 					"type": "text",
-					"top": 418,
+					"top": 448,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -366,7 +377,7 @@
 				},
 				"sepLbl_Text": {
 					"type": "text",
-					"top": 40,
+					"top": 10,
 					"left": 40,
 					"width": 180,
 					"height": 13,
@@ -378,7 +389,7 @@
 				},
 				"textLineHeightRuler": {
 					"type": "ruler",
-					"top": 156,
+					"top": 126,
 					"left": 85,
 					"width": 60,
 					"height": 12,
@@ -395,7 +406,7 @@
 				},
 				"lbl_LineHeight": {
 					"type": "text",
-					"top": 155,
+					"top": 125,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -406,7 +417,7 @@
 				},
 				"btnAction": {
 					"type": "button",
-					"top": 415,
+					"top": 445,
 					"left": 0,
 					"width": 30,
 					"height": 30,
@@ -422,7 +433,7 @@
 				},
 				"bAlign5": {
 					"type": "radio",
-					"top": 97,
+					"top": 67,
 					"left": 88,
 					"width": 30,
 					"height": 25,
@@ -441,7 +452,7 @@
 				},
 				"bAlign6": {
 					"type": "radio",
-					"top": 97,
+					"top": 67,
 					"left": 125,
 					"width": 30,
 					"height": 25,
@@ -460,7 +471,7 @@
 				},
 				"bAlign7": {
 					"type": "radio",
-					"top": 97,
+					"top": 67,
 					"left": 162,
 					"width": 30,
 					"height": 25,
@@ -479,7 +490,7 @@
 				},
 				"lbl_Align1": {
 					"type": "text",
-					"top": 101,
+					"top": 71,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -490,7 +501,7 @@
 				},
 				"backgroundColor": {
 					"type": "input",
-					"top": 247,
+					"top": 147,
 					"left": 86,
 					"width": 98,
 					"height": 14,
@@ -512,7 +523,7 @@
 				},
 				"SampleFrame3": {
 					"type": "rectangle",
-					"top": 246,
+					"top": 146,
 					"left": 85,
 					"width": 100,
 					"height": 16,
@@ -522,7 +533,7 @@
 				},
 				"FakeBackgroundColor": {
 					"type": "picture",
-					"top": 249,
+					"top": 149,
 					"left": 190,
 					"width": 10,
 					"height": 10,
@@ -532,7 +543,7 @@
 				},
 				"MultiBackgroundColor": {
 					"type": "picture",
-					"top": 248,
+					"top": 148,
 					"left": 91,
 					"width": 90,
 					"height": 12,
@@ -541,7 +552,7 @@
 				},
 				"InvisibleBackground": {
 					"type": "picture",
-					"top": 248,
+					"top": 148,
 					"left": 91,
 					"width": 90,
 					"height": 12,
@@ -551,7 +562,7 @@
 				},
 				"btnInvisible3": {
 					"type": "button",
-					"top": 245,
+					"top": 145,
 					"left": 85,
 					"width": 100,
 					"height": 18,
@@ -563,7 +574,7 @@
 				},
 				"TextLineHeightUnit": {
 					"type": "dropdown",
-					"top": 153,
+					"top": 123,
 					"left": 193,
 					"width": 47,
 					"height": 17,
@@ -576,7 +587,7 @@
 				"TargetSelector1": {
 					"type": "radio",
 					"top": 10,
-					"left": 20,
+					"left": 330,
 					"width": 24,
 					"height": 24,
 					"sizingX": "move",
@@ -596,7 +607,7 @@
 				"TargetSelector2": {
 					"type": "radio",
 					"top": 10,
-					"left": 85,
+					"left": 395,
 					"width": 24,
 					"height": 24,
 					"sizingX": "move",
@@ -616,7 +627,7 @@
 				"TargetSelector3": {
 					"type": "radio",
 					"top": 10,
-					"left": 150,
+					"left": 460,
 					"width": 24,
 					"height": 24,
 					"sizingX": "move",
@@ -636,7 +647,7 @@
 				"TargetSelector4": {
 					"type": "radio",
 					"top": 10,
-					"left": 216,
+					"left": 526,
 					"width": 24,
 					"height": 24,
 					"sizingX": "move",
@@ -655,7 +666,7 @@
 				},
 				"btn_alignLeft": {
 					"type": "radio",
-					"top": 65,
+					"top": 35,
 					"left": 88,
 					"width": 30,
 					"height": 25,
@@ -674,7 +685,7 @@
 				},
 				"btn_alignCenter": {
 					"type": "radio",
-					"top": 65,
+					"top": 35,
 					"left": 125,
 					"width": 30,
 					"height": 25,
@@ -693,7 +704,7 @@
 				},
 				"btn_alignRight": {
 					"type": "radio",
-					"top": 65,
+					"top": 35,
 					"left": 162,
 					"width": 30,
 					"height": 25,
@@ -712,7 +723,7 @@
 				},
 				"btn_alignJustify": {
 					"type": "radio",
-					"top": 65,
+					"top": 35,
 					"left": 200,
 					"width": 30,
 					"height": 25,
@@ -731,7 +742,7 @@
 				},
 				"IconBgnd11": {
 					"type": "rectangle",
-					"top": 189,
+					"top": 179,
 					"left": 205,
 					"width": 35,
 					"height": 32,
@@ -741,7 +752,7 @@
 				},
 				"IconBgnd10": {
 					"type": "rectangle",
-					"top": 189,
+					"top": 179,
 					"left": 165,
 					"width": 35,
 					"height": 32,
@@ -751,7 +762,7 @@
 				},
 				"IconBgnd9": {
 					"type": "rectangle",
-					"top": 189,
+					"top": 179,
 					"left": 125,
 					"width": 35,
 					"height": 32,
@@ -761,7 +772,7 @@
 				},
 				"IconBgnd8": {
 					"type": "rectangle",
-					"top": 189,
+					"top": 179,
 					"left": 85,
 					"width": 35,
 					"height": 32,
@@ -771,15 +782,7 @@
 				},
 				"Line1": {
 					"type": "line",
-					"top": 180,
-					"left": 40,
-					"width": 200,
-					"height": 1,
-					"stroke": "#808080"
-				},
-				"Line": {
-					"type": "line",
-					"top": 230,
+					"top": 170,
 					"left": 40,
 					"width": 200,
 					"height": 1,
@@ -787,7 +790,7 @@
 				},
 				"textLineHeightInput": {
 					"type": "input",
-					"top": 155,
+					"top": 125,
 					"left": 150,
 					"width": 35,
 					"height": 13,
@@ -804,7 +807,7 @@
 				},
 				"IconBgnd12": {
 					"type": "rectangle",
-					"top": 189,
+					"top": 179,
 					"left": 45,
 					"width": 35,
 					"height": 32,
@@ -814,7 +817,7 @@
 				},
 				"btn_paste1": {
 					"type": "button",
-					"top": 193,
+					"top": 183,
 					"left": 168,
 					"width": 29,
 					"height": 24,
@@ -832,7 +835,7 @@
 				},
 				"btn_copy1": {
 					"type": "button",
-					"top": 193,
+					"top": 183,
 					"left": 128,
 					"width": 29,
 					"height": 24,
@@ -852,7 +855,7 @@
 				"Bouton": {
 					"type": "button",
 					"text": "",
-					"top": 193,
+					"top": 183,
 					"left": 88,
 					"width": 29,
 					"height": 24,
@@ -870,7 +873,7 @@
 				"Bouton1": {
 					"type": "button",
 					"text": "",
-					"top": 193,
+					"top": 183,
 					"left": 48,
 					"width": 29,
 					"height": 24,
@@ -888,7 +891,7 @@
 				"btn_etc": {
 					"type": "button",
 					"text": "",
-					"top": 193,
+					"top": 183,
 					"left": 208,
 					"width": 29,
 					"height": 24,
@@ -913,7 +916,7 @@
 				},
 				"btn_insertPageBreak": {
 					"type": "button",
-					"top": 483,
+					"top": 513,
 					"left": 128,
 					"width": 29,
 					"height": 24,
@@ -926,7 +929,7 @@
 				},
 				"btn_insertSectiobBreak": {
 					"type": "button",
-					"top": 483,
+					"top": 513,
 					"left": 208,
 					"width": 29,
 					"height": 24,
@@ -939,7 +942,7 @@
 				},
 				"btn_insertColumnBreak": {
 					"type": "button",
-					"top": 483,
+					"top": 513,
 					"left": 88,
 					"width": 29,
 					"height": 24,
@@ -952,7 +955,7 @@
 				},
 				"btn_insertPageBreak1": {
 					"type": "button",
-					"top": 483,
+					"top": 513,
 					"left": 168,
 					"width": 29,
 					"height": 24,
@@ -965,7 +968,7 @@
 				},
 				"Separator3": {
 					"type": "rectangle",
-					"top": 452,
+					"top": 482,
 					"left": 5,
 					"width": 250,
 					"height": 17,
@@ -975,7 +978,7 @@
 				},
 				"sepLbl_Frame1": {
 					"type": "text",
-					"top": 453,
+					"top": 483,
 					"left": 20,
 					"width": 220,
 					"height": 13,
@@ -987,7 +990,7 @@
 				},
 				"Popup_columnCount": {
 					"type": "dropdown",
-					"top": 555,
+					"top": 585,
 					"left": 86,
 					"width": 70,
 					"height": 19,
@@ -997,7 +1000,7 @@
 				},
 				"Separator5": {
 					"type": "rectangle",
-					"top": 522,
+					"top": 552,
 					"left": 5,
 					"width": 250,
 					"height": 17,
@@ -1007,7 +1010,7 @@
 				},
 				"sepLbl_Frame2": {
 					"type": "text",
-					"top": 523,
+					"top": 553,
 					"left": 20,
 					"width": 220,
 					"height": 13,
@@ -1019,7 +1022,7 @@
 				},
 				"IconBgnd13": {
 					"type": "rectangle",
-					"top": 548,
+					"top": 578,
 					"left": 205,
 					"width": 35,
 					"height": 32,
@@ -1030,7 +1033,7 @@
 				"btn_etc1": {
 					"type": "button",
 					"text": "",
-					"top": 551,
+					"top": 581,
 					"left": 208,
 					"width": 29,
 					"height": 24,
@@ -1048,7 +1051,7 @@
 				},
 				"lbl_LineHeight1": {
 					"type": "text",
-					"top": 558,
+					"top": 588,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -1068,7 +1071,7 @@
 				},
 				"IconBgnd1": {
 					"type": "rectangle",
-					"top": 479,
+					"top": 509,
 					"left": 25,
 					"width": 35,
 					"height": 32,
@@ -1078,7 +1081,7 @@
 				},
 				"btn_insertTextArea": {
 					"type": "button",
-					"top": 483,
+					"top": 513,
 					"left": 28,
 					"width": 29,
 					"height": 24,
@@ -1090,11 +1093,66 @@
 				},
 				"Line5": {
 					"type": "line",
-					"top": 479,
+					"top": 509,
 					"left": 72,
 					"width": 1,
 					"height": 32,
 					"stroke": "#808080"
+				},
+				"popMarginTop": {
+					"type": "dropdown",
+					"top": 309,
+					"left": 127,
+					"width": 64,
+					"height": 18,
+					"tooltip": ":xliff:marginTop",
+					"focusable": false,
+					"action": "paragraph/marginTop",
+					"class": "Palette"
+				},
+				"popMarginBottom": {
+					"type": "dropdown",
+					"top": 384,
+					"left": 127,
+					"width": 64,
+					"height": 18,
+					"tooltip": ":xliff:marginBottom",
+					"focusable": false,
+					"action": "paragraph/marginBottom",
+					"class": "Palette"
+				},
+				"popMarginLeft": {
+					"type": "dropdown",
+					"top": 346,
+					"left": 90,
+					"width": 64,
+					"height": 18,
+					"tooltip": ":xliff:marginLeft",
+					"focusable": false,
+					"action": "paragraph/marginLeft",
+					"class": "Palette"
+				},
+				"popMarginRight": {
+					"type": "dropdown",
+					"top": 346,
+					"left": 166,
+					"width": 64,
+					"height": 18,
+					"tooltip": ":xliff:marginRight",
+					"focusable": false,
+					"action": "paragraph/marginRight",
+					"class": "Palette"
+				},
+				"popMarginAll": {
+					"type": "dropdown",
+					"top": 275,
+					"left": 86,
+					"width": 64,
+					"height": 18,
+					"tooltip": ":xliff:marginTop",
+					"focusable": false,
+					"action": "paragraph/margin",
+					"class": "Palette"
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -1121,96 +1179,49 @@
 					"textAngle": 270,
 					"text": "4D WritePro Alignments"
 				},
-				"popMarginTop": {
+				"Popup_applyMarginsTo": {
 					"type": "dropdown",
-					"top": 306,
-					"left": 96,
-					"width": 64,
+					"top": 246,
+					"left": 85,
+					"width": 140,
 					"height": 18,
-					"tooltip": ":xliff:marginTop",
+					"dataSource": "WP_applyTo",
 					"focusable": false,
-					"action": "paragraph/marginTop",
+					"method": "ObjectMethods/Popup_applyMarginsTo.4dm",
+					"events": [
+						"onDataChange"
+					],
 					"class": "Palette"
 				},
-				"popMarginBottom": {
-					"type": "dropdown",
-					"top": 364,
-					"left": 96,
-					"width": 64,
-					"height": 18,
-					"tooltip": ":xliff:marginBottom",
-					"focusable": false,
-					"action": "paragraph/marginBottom",
-					"class": "Palette"
+				"lbl_Text": {
+					"type": "text",
+					"top": 249,
+					"left": 0,
+					"width": 80,
+					"height": 13,
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": ":xliff:ApplyToColon"
 				},
-				"popMarginLeft": {
-					"type": "dropdown",
-					"top": 335,
-					"left": 7,
-					"width": 64,
-					"height": 18,
-					"tooltip": ":xliff:marginLeft",
-					"focusable": false,
-					"action": "paragraph/marginLeft",
-					"class": "Palette"
+				"lbl_Text1": {
+					"type": "text",
+					"top": 279,
+					"left": 0,
+					"width": 80,
+					"height": 13,
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": ":xliff:globalColon"
 				},
-				"popMarginRight": {
-					"type": "dropdown",
-					"top": 335,
-					"left": 186,
-					"width": 64,
-					"height": 18,
-					"tooltip": ":xliff:marginRight",
-					"focusable": false,
-					"action": "paragraph/marginRight",
-					"class": "Palette"
-				},
-				"popMarginTop1": {
-					"type": "dropdown",
-					"top": 335,
-					"left": 96,
-					"width": 64,
-					"height": 18,
-					"tooltip": ":xliff:marginTop",
-					"focusable": false,
-					"action": "paragraph/margin",
-					"class": "Palette"
-				},
-				"Static Picture1": {
-					"type": "picture",
-					"top": 315,
-					"left": 35,
-					"width": 60,
-					"height": 20,
-					"picture": "/RESOURCES/Images/Sidebar/CornerTopLeft.png",
-					"pictureFormat": "scaled"
-				},
-				"Static Picture2": {
-					"type": "picture",
-					"top": 315,
-					"left": 165,
-					"width": 60,
-					"height": 20,
-					"picture": "/RESOURCES/Images/Sidebar/CornerTopRight.png",
-					"pictureFormat": "scaled"
-				},
-				"Static Picture3": {
-					"type": "picture",
-					"top": 354,
-					"left": 35,
-					"width": 60,
-					"height": 20,
-					"picture": "/RESOURCES/Images/Sidebar/CornerBottomLeft.png",
-					"pictureFormat": "scaled"
-				},
-				"Static Picture4": {
-					"type": "picture",
-					"top": 354,
-					"left": 165,
-					"width": 60,
-					"height": 20,
-					"picture": "/RESOURCES/Images/Sidebar/CornerBottomRight.png",
-					"pictureFormat": "scaled"
+				"Text6": {
+					"type": "text",
+					"text": ":xliff:detailsColon",
+					"top": 349,
+					"left": 14,
+					"width": 66,
+					"height": 13,
+					"fontTheme": "additional",
+					"textAlign": "right"
 				}
 			},
 			"entryOrder": [
@@ -1248,7 +1259,8 @@
 				"popMarginBottom",
 				"popMarginLeft",
 				"popMarginRight",
-				"popMarginTop1"
+				"popMarginAll",
+				"Popup_applyMarginsTo"
 			]
 		}
 	],
@@ -1291,35 +1303,26 @@
 					"sepLbl_Text"
 				]
 			},
-			"Grid": {
-				"visible": false
-			},
+			"Grid": {},
 			"View 4": {
-				"visible": false,
 				"objects": [
 					"MultiBackgroundColor",
 					"InvisibleBackground"
 				]
 			},
 			"View 5": {
-				"visible": false,
 				"objects": [
 					"SampleFrame3"
 				]
 			},
 			"View 6": {
-				"visible": false,
 				"objects": [
 					"FakeBackgroundColor",
 					"btnInvisible3"
 				]
 			},
-			"View 7": {
-				"visible": false
-			},
-			"View 8": {
-				"visible": false
-			},
+			"View 7": {},
+			"View 8": {},
 			"TITLE": {
 				"visible": false,
 				"objects": [
@@ -1333,5 +1336,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 2556
+	"geometryStamp": 2858
 }
