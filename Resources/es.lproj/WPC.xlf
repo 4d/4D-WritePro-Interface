@@ -1,1 +1,1894 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?><!--Translation file.This file is distributed under the same license as the product package.--><xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">  <file datatype="x-STR#" original="undefined" source-language="en" target-language="es">    <header>      <prop-group name="Xliff-Editor.4dbase">        <prop prop-type="version">2.0</prop>      </prop-group>    </header>    <body>      <group id="0" resname="Palette_0">        <trans-unit id="999" resname="Document">          <source>Document</source>          <target>Documento</target>        </trans-unit>        <trans-unit id="2" resname="FontStyle">          <source>Font Style</source>          <target>Estilo de fuente</target>        </trans-unit>        <trans-unit id="3" resname="MarginsAlignments">          <source>Margins &amp; Alignments</source>          <target>M√°rgenes y alineaci√≥n</target>        </trans-unit>        <trans-unit id="5" resname="Frames">          <source>Frames</source>          <target>Marcos</target>        </trans-unit>        <trans-unit id="6" resname="Sizes">          <source>Sizes</source>          <target>Tama√±os</target>        </trans-unit>        <trans-unit id="7" resname="Tabulations">          <source>Tabulations</source>          <target>Tabulaciones</target>        </trans-unit>        <trans-unit id="8" resname="Background">          <source>Background</source>          <target>Fondo</target>        </trans-unit>        <trans-unit id="9" resname="Information">          <source>Information</source>          <target>Informaci√≥n</target>        </trans-unit>        <trans-unit id="290" resname="FindAndReplace">          <source>Find and replace</source>          <target>Buscar y reemplazar</target>        </trans-unit>        <trans-unit id="291" resname="Tables">          <source>Tables</source>          <target>Tablas</target>        </trans-unit>        <trans-unit id="/h5RnHFGXRGnCZiYU/DhZQ" resname="ImportExport">          <source>Import Export</source>          <target>Import Export</target>        </trans-unit>      </group>      <group resname="Palette_alignment">        <trans-unit id="9" resname="HorAlignColon">          <source>Hor. Align.:</source>          <target>Alin. Hor.:</target>        </trans-unit>        <trans-unit id="10" resname="VertAlignColon">          <source>Vert. Align.:</source>          <target>Alin. Vert.:</target>        </trans-unit>        <trans-unit id="11" resname="FirstIndentationColon">          <source>1st indent.:</source>          <target>1ra sangr√≠a:</target>        </trans-unit>        <trans-unit id="13" resname="BackgroundColon">          <source>Background:</source>          <target>Fondo:</target>        </trans-unit>        <trans-unit id="14" resname="BordersColon">          <source>Borders:</source>          <target>Bordes:</target>        </trans-unit>        <trans-unit id="15" resname="Text">          <source>Text</source>          <target>Texto</target>        </trans-unit>        <trans-unit id="16" resname="Margins">          <source>Margins</source>          <target>M√°rgenes</target>        </trans-unit>        <trans-unit id="17" resname="Lists">          <source>Lists</source>          <target>Listas</target>        </trans-unit>        <trans-unit id="25" resname="LineHeightColon">          <source>Line Height:</source>          <target>Alto l√≠nea:</target>        </trans-unit>        <trans-unit id="84" resname="StyleColon0">          <source>Style:</source>          <target>Estilo:</target>        </trans-unit>        <trans-unit id="2HRYy6hkMPJ7DgLcWpD6cQ" resname="ParagraphBackgroundColor">          <source>Paragraph background color</source>          <target>Color de fondo de p√°rrafo</target>        </trans-unit>        <trans-unit id="J/YshwyIKycFvHMMljmKyA" resname="CopyRuler">          <source>Copy ruler</source>          <target>Copiar la regla</target>        </trans-unit>        <trans-unit id="TbhlTOVpXGK5g/2set0oGw" resname="PasteRuler">          <source>Paste ruler</source>          <target>Pegar la regla</target>        </trans-unit>        <trans-unit id="JP6IFI5cuF2FnMhVrQ8ukw" resname="IncreaseIndent">          <source>Increase indent</source>          <target>Aumentar la indentaci√≥n</target>        </trans-unit>        <trans-unit id="MzVx3kZk0LyQrDAWjJAUrA" resname="DecreaseIndent">          <source>Decrease indent</source>          <target>Disminuir la indentaci√≥n</target>        </trans-unit>        <trans-unit id="jOdgvUoCqlAAvJ9MNLCnTQ" resname="insert">          <source>Insert</source>          <target>Insertar</target>        </trans-unit>        <trans-unit id="f1S2oecx6Pl/gFkJV86S4A" resname="columns">          <source>Columns</source>          <target>Columnas</target>        </trans-unit>        <trans-unit id="VmvGVTTjR+qrSCge2mVPfw" resname="numberHiphen">          <source>Number:</source>          <target>N√∫mero:</target>        </trans-unit>      </group>      <group resname="PaletteBackgrounds">        <trans-unit id="18" resname="BackgroundPicture">          <source>Background Picture</source>          <target>Imagen de fondo</target>        </trans-unit>        <trans-unit id="19" resname="PictureOrURL">          <source>Picture:(or URL)</source>          <target>Imagen:(o URL)</target>        </trans-unit>        <trans-unit id="20" resname="RepeatColon">          <source>Repeat:</source>          <target>Repetir:</target>        </trans-unit>        <trans-unit id="21" resname="Clip">          <source>Clip:</source>          <target>Recortar:</target>        </trans-unit>        <trans-unit id="22" resname="Origin">          <source>Origin:</source>          <target>Origen:</target>        </trans-unit>        <trans-unit id="23" resname="HorizontalSize">          <source>Horizontal Size:</source>          <target>Tama√±o horizontal:</target>        </trans-unit>        <trans-unit id="24" resname="VerticalSize">          <source>Vertical Size:</source>          <target>Tama√±o vertical:</target>        </trans-unit>        <trans-unit id="25" resname="PositionColon">          <source>Position:</source>          <target>Posici√≥n:</target>        </trans-unit>        <trans-unit id="sg9lHFhI0LqrVxCysNWY7g" resname="MoveHyphen">          <source>Move:</source>          <target>Mover:</target>        </trans-unit>        <trans-unit id="yWaHkpmXJEV+bnWMCVsAVg" resname="PageHyphen">          <source>Page:</source>          <target>P√°gina:</target>        </trans-unit>        <trans-unit id="33fb+8NhEANEWmPAFLSQjg" resname="SectionHyphen">          <source>Section:</source>          <target>Secci√≥n:</target>        </trans-unit>        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Picture">          <source>Picture</source>          <target>Imagen</target>        </trans-unit>        <trans-unit id="xZf5yixaHWdVwEkN2lFVkg" resname="AdvancedSettingsEllipsis">          <source>Advanced settings‚Ä¶</source>          <target>Ajustes avanzados...</target>        </trans-unit>      </group>      <group resname="PaletteFonts">        <trans-unit id="26" resname="FontColon">          <source>Font:</source>          <target>Fuente:</target>        </trans-unit>        <trans-unit id="28" resname="SizeColon">          <source>Size:</source>          <target>Tama√±o:</target>        </trans-unit>        <trans-unit id="30" resname="BackgroundColon">          <source/>          <target/>        </trans-unit>        <trans-unit id="31" resname="Bold">          <source>Bold</source>          <target>Negrita</target>        </trans-unit>        <trans-unit id="32" resname="Italic">          <source>Italic</source>          <target>It√°lica</target>        </trans-unit>        <trans-unit id="33" resname="Linethrough">          <source>Linethrough</source>          <target>Tachado</target>        </trans-unit>        <trans-unit id="34" resname="Underline">          <source>Underline</source>          <target>Subrayado</target>        </trans-unit>        <trans-unit id="34" resname="LineColon">          <source>Line:</source>          <target>l√≠nea:</target>        </trans-unit>        <trans-unit id="35" resname="ColorColon:">          <source>Color:</source>          <target>Color:</target>        </trans-unit>        <trans-unit id="36" resname="Shadows">          <source>Shadows</source>          <target>Sombras</target>        </trans-unit>        <trans-unit id="37" resname="Shadow">          <source>Shadow</source>          <target>Sombra</target>        </trans-unit>        <trans-unit id="38" resname="OffsetColon">          <source>Offset:</source>          <target>Intervalo:</target>        </trans-unit>        <trans-unit id="95" resname="StyleColon1">          <source>Style:</source>          <target>Estilo:</target>        </trans-unit>        <trans-unit id="96" resname="TransformColon">          <source>Transform:</source>          <target>Transformar:</target>        </trans-unit>        <trans-unit id="U+//oc3/u1IXrlP6L4mWAQ" resname="SpecialCharacters">          <source>Special characters</source>          <target>Caracteres especiales</target>        </trans-unit>        <trans-unit id="SSmzUaLxeO3nXDjxyyb0gg" resname="SoftHyphen">          <source>Soft hyphen:</source>          <target>Gui√≥n condicional:</target>        </trans-unit>        <trans-unit id="eAIqOo9+b5XNQn3YeW33eg" resname="FontsElipsis">          <source>Fonts‚Ä¶</source>          <target>Fuentes...</target>        </trans-unit>      </group>      <group resname="PaletteFrame">        <trans-unit id="39" resname="SidesColon">          <source>Sides:</source>          <target>Bordes:</target>        </trans-unit>        <trans-unit id="42" resname="ColorColon">          <source>Color:</source>          <target>Color:</target>        </trans-unit>        <trans-unit id="43" resname="RadiusColon">          <source>Radius:</source>          <target>Radio:</target>        </trans-unit>        <trans-unit id="44" resname="Frame">          <source>Frame</source>          <target>Marco</target>        </trans-unit>        <trans-unit id="45" resname="Padding">          <source>Padding</source>          <target>Relleno</target>        </trans-unit>        <trans-unit id="95" resname="WidthColon">          <source>Width:</source>          <target>Ancho:</target>        </trans-unit>        <trans-unit id="96" resname="StyleColon2">          <source>Style:</source>          <target>Estilo:</target>        </trans-unit>        <trans-unit id="97" resname="IndentationColon">          <source>Indentation:</source>          <target>Indentaci√≥n:</target>        </trans-unit>        <trans-unit id="98" resname="Outside">          <source>Outside</source>          <target>Fuera</target>        </trans-unit>        <trans-unit id="99" resname="Inside">          <source>Inside</source>          <target>Dentro</target>        </trans-unit>        <trans-unit id="100" resname="ApplyToColon">          <source>Apply to:</source>          <target>Aplica a:</target>        </trans-unit>      </group>      <group resname="PaletteInformation">        <trans-unit id="46" resname="4dExpression">          <source>4D Expression</source>          <target>Expresi√≥n 4D</target>        </trans-unit>        <trans-unit id="47" resname="InsertColon">          <source>Insert:</source>          <target>Insertar:</target>        </trans-unit>        <trans-unit id="48" resname="Date">          <source>Date</source>          <target>Fecha</target>        </trans-unit>        <trans-unit id="49" resname="ExpressionColon">          <source>Expression:</source>          <target>Expresi√≥n:</target>        </trans-unit>        <trans-unit id="51" resname="LabelColon">          <source>Label:</source>          <target>Etiqueta:</target>        </trans-unit>        <trans-unit id="52" resname="LinkColon">          <source>Link:</source>          <target>Enlace:</target>        </trans-unit>        <trans-unit id="50" resname="URL">          <source>URL</source>          <target>URL</target>        </trans-unit>        <trans-unit id="51" resname="TitleColon">          <source>Title:</source>          <target>T√≠tulo:</target>        </trans-unit>        <trans-unit id="52" resname="SubjectColon">          <source>Subject:</source>          <target>Asunto:</target>        </trans-unit>        <trans-unit id="53" resname="AuthorColon">          <source>Author:</source>          <target>Autor:</target>        </trans-unit>        <trans-unit id="54" resname="CompanyColon">          <source>Company:</source>          <target>Empresa:</target>        </trans-unit>        <trans-unit id="55" resname="NotesColon">          <source>Notes:</source>          <target>Notas:</target>        </trans-unit>        <trans-unit id="56" resname="CreatedColon">          <source>Created:</source>          <target>Creado:</target>        </trans-unit>        <trans-unit id="57" resname="ModifiedColon">          <source>Modified:</source>          <target>Modificado:</target>        </trans-unit>        <trans-unit id="60" resname="Compute">          <source>Compute</source>          <target>Calcular</target>        </trans-unit>        <trans-unit id="63" resname="Freeze">          <source>Freeze</source>          <target>Congelar</target>        </trans-unit>        <trans-unit id="64" resname="SelectionOnly">          <source>Selection only</source>          <target>Selecci√≥n s√≥lo</target>        </trans-unit>        <trans-unit id="64" resname="Expression">          <source>Expression</source>          <target>Expresi√≥n</target>        </trans-unit>        <trans-unit id="67" resname="Set">          <source>Set</source>          <target>Aplicar</target>        </trans-unit>        <trans-unit id="96" resname="Document1">          <source>Document</source>          <target>Documento</target>        </trans-unit>        <trans-unit id="v0KYZg1/E5YU2xvWP3exVA" resname="NoTableAvailable">          <source>No table available. The formula editor can not be open.</source>          <target>No hay tabla disponible. El editor de f√≥rmulas no puede estar abierto.</target>        </trans-unit>        <trans-unit id="BTTvdZt/pKnIFwe7yAa5iQ" resname="DisplayExpressions">          <source>Display expressions</source>          <target>Mostrar las expresiones</target>        </trans-unit>        <trans-unit id="HJEapLue/aA7XG3UPAUXjw" resname="DisplayColon">          <source>Display:</source>          <target>Mostrar:</target>        </trans-unit>        <trans-unit id="Qx7gCjGjc14eNrDImk5B/A" resname="FormulasColon">          <source>Formulas:</source>          <target>F√≥rmulas:</target>        </trans-unit>      </group>      <group resname="PaletteSizes">        <trans-unit id="68" resname="Paragraph">          <source>Paragraph</source>          <target>P√°rrafo</target>        </trans-unit>        <trans-unit id="70" resname="SetWidth">          <source>Set width</source>          <target>Ajuste de ancho</target>        </trans-unit>        <trans-unit id="71" resname="VariableWidth">          <source>Variable width</source>          <target>Ancho variable</target>        </trans-unit>        <trans-unit id="74" resname="minWidthColon">          <source>Min width:</source>          <target>Ancho m√≠nimo:</target>        </trans-unit>        <trans-unit id="75" resname="minHeightColon">          <source>Min height:</source>          <target>Altura m√≠nima:</target>        </trans-unit>        <trans-unit id="0" resname="WidthColon">          <source>Width:</source>          <target>Ancho:</target>        </trans-unit>        <trans-unit id="74" resname="HeightColon">          <source>Height:</source>          <target>Altura:</target>        </trans-unit>        <trans-unit id="75" resname="AltTextColon">          <source>Alternate text:</source>          <target>Texto alternativo:</target>        </trans-unit>        <trans-unit id="76" resname="ZeroAuto">          <source>(0 = Auto)</source>          <target>(0 = Auto)</target>        </trans-unit>        <trans-unit id="83" resname="UnitColon">          <source>Unit:</source>          <target>Unidad:</target>        </trans-unit>        <trans-unit id="Ozjo60l1QOY5Jt3l4nm2BA" resname="display">          <source>Display</source>          <target>Monitor</target>        </trans-unit>        <trans-unit id="6mdklHugZWAmT19d8JTRBQ" resname="modeHyphen">          <source>Mode:</source>          <target>Modo:</target>        </trans-unit>        <trans-unit id="aP7rDxq6XdlIr1OxlgkisQ" resname="elementsHyphen">          <source>Elements:</source>          <target>Elementos:</target>        </trans-unit>        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="pictures">          <source>Zoom:</source>          <target>Zoom:</target>        </trans-unit>      </group>      <group resname="PaletteTabulations">        <trans-unit id="77" resname="defaultTabColon">          <source>Default tab:</source>          <target>Tab. por defecto:</target>        </trans-unit>        <trans-unit id="77" resname="TypeColon">          <source>Type:</source>          <target>Tipo:</target>        </trans-unit>        <trans-unit id="80" resname="Type">          <source>Type</source>          <target>Tipo</target>        </trans-unit>        <trans-unit id="81" resname="Position">          <source>Position</source>          <target>Posici√≥n</target>        </trans-unit>        <trans-unit id="82" resname="tipDeleteTab">          <source>Delete tabulation</source>          <target>Eliminar tabulaci√≥n</target>        </trans-unit>        <trans-unit id="83" resname="tipNewTab">          <source>New tabulation</source>          <target>Nueva tabulaci√≥n</target>        </trans-unit>        <trans-unit id="84" resname="DefaultLeadingChar">          <source>Default leading char.:</source>          <target>Car√°cter inicial por defecto:</target>        </trans-unit>        <trans-unit id="85" resname="LeadingChar">          <source>Leading char.</source>          <target>Car. inicial</target>        </trans-unit>      </group>      <group resname="PaletteBookmarks">        <trans-unit id="1" resname="Bookmarks">          <source>Bookmarks</source>          <target>Marcadores</target>        </trans-unit>        <trans-unit id="2" resname="NewBookmark">          <source>New Bookmark</source>          <target>Nuevo marcador</target>        </trans-unit>        <trans-unit id="3" resname="tipRedefineBookmark">          <source>Redefine bookmark "[1]"</source>          <target>Redefinir el marcador "[1]"</target>        </trans-unit>        <trans-unit id="4" resname="tipDeleteBookmark">          <source>Delete bookmark "[1]"</source>          <target>Eliminar marcador "[1]"</target>        </trans-unit>        <trans-unit id="5" resname="tipNewBookmark">          <source>New bookmark</source>          <target>Nuevo marcador</target>        </trans-unit>      </group>      <group resname="Menu_CopyPaste">        <trans-unit id="82" resname="CopyStyle">          <source>Copy Style</source>          <target>Copiar estilo</target>        </trans-unit>        <trans-unit id="83" resname="PasteStyle">          <source>Paste Style</source>          <target>Pegar estilo</target>        </trans-unit>        <trans-unit id="86" resname="CopyTextSettings">          <source>Copy Text Settings</source>          <target>Copiar la configuraci√≥n de texto</target>        </trans-unit>        <trans-unit id="87" resname="PasteTextSettings">          <source>Paste Text Settings</source>          <target>Pegar configuraci√≥n de texto </target>        </trans-unit>        <trans-unit id="87" resname="CopyMargins">          <source>Copy Margins</source>          <target>Copiar m√°rgenes</target>        </trans-unit>        <trans-unit id="88" resname="PasteMargins">          <source>Paste Margins</source>          <target>Pegar m√°rgenes</target>        </trans-unit>        <trans-unit id="89" resname="CopyTabulation">          <source>Copy Tabulation</source>          <target>Copiar tabulaci√≥n</target>        </trans-unit>        <trans-unit id="90" resname="PasteTabulation">          <source>Paste Tabulation</source>          <target>Pegar tabulaci√≥n</target>        </trans-unit>        <trans-unit id="91" resname="CopyFrame">          <source>Copy Frame</source>          <target>Copiar marco</target>        </trans-unit>        <trans-unit id="92" resname="PasteFrame">          <source>Paste Frame</source>          <target>Pegar marco</target>        </trans-unit>        <trans-unit id="93" resname="CopyBackground">          <source>Copy Background</source>          <target>Copiar fondo</target>        </trans-unit>        <trans-unit id="" resname="PasteBackground">          <source>Paste Background</source>          <target>Pegar fondo</target>        </trans-unit>      </group>      <group resname="Menu_ImportExport">        <trans-unit id="97" resname="NewEllipsis">          <source>New‚Ä¶</source>          <target>Nuevo...</target>        </trans-unit>        <trans-unit id="98" resname="ImportEllipsis">          <source>Import‚Ä¶</source>          <target>Importar...</target>        </trans-unit>        <trans-unit id="99" resname="ExportAs">          <source>Export as:</source>          <target>Exportar como:</target>        </trans-unit>        <trans-unit id="100" resname="HtmlEllipsis">          <source>HTML‚Ä¶</source>          <target>HTML‚Ä¶</target>        </trans-unit>        <trans-unit id="101" resname="4DWriteProEllipsis">          <source>4D Write Pro‚Ä¶</source>          <target>4D Write Pro</target>        </trans-unit>        <trans-unit id="UxW87OWPGPdnNHB/00tm4w" resname="WordEllipsis">          <source>Microsoft Word‚Ä¶</source>          <target>Microsoft Word‚Ä¶</target>        </trans-unit>        <trans-unit id="azodlWWrSTDq7NsEsKhs2w" resname="PdfEllipsis">          <source>PDF‚Ä¶</source>          <target>PDF...</target>        </trans-unit>        <trans-unit id="6Uw3JqUrx1zvQs/W032F0Q" resname="TextEllipsis">          <source>Text‚Ä¶</source>          <target>Text‚Ä¶</target>        </trans-unit>        <trans-unit id="HKtPq6HziMxcUM5TiHmLfQ" resname="HtmlMimeEllipsis">          <source>HTML Mime‚Ä¶</source>          <target>HTML Mime‚Ä¶</target>        </trans-unit>        <trans-unit id="6vzRUs/48oy0kosSPH+4IA" resname="clearEllipsis">          <source>Clear‚Ä¶</source>          <target>Borrar...</target>        </trans-unit>        <trans-unit id="giehscfoPnUFF9q+EyY2Fg" resname="4DWriteEllipsis">          <source>4D Write‚Ä¶</source>          <target>4D Write‚Ä¶</target>        </trans-unit>        <trans-unit id="6K4ODRIRH2gZNBJ27Zw7zA" resname="Import">          <source>Import</source>          <target>Importar</target>        </trans-unit>      </group>      <group resname="AlertsAndMessages">        <trans-unit id="102" resname="AreYouSure">          <source>Are you sure?</source>          <target>¬øEst√° seguro?</target>        </trans-unit>        <trans-unit id="104" resname="SelectADestination">          <source>Select a destination.</source>          <target>Seleccione un destino.</target>        </trans-unit>      </group>      <group resname="borderStyleNames">        <trans-unit id="1" resname="Solid">          <source>Solid</source>          <target>S√≥lido</target>        </trans-unit>        <trans-unit id="2" resname="Dotted">          <source>Dotted</source>          <target>Punteado</target>        </trans-unit>        <trans-unit id="3" resname="Dashed">          <source>Dashed</source>          <target>Guiones</target>        </trans-unit>        <trans-unit id="4" resname="Double">          <source>Double</source>          <target>Doble</target>        </trans-unit>        <trans-unit id="5" resname="Groove">          <source>Groove</source>          <target>Surco</target>        </trans-unit>        <trans-unit id="6" resname="Ridge">          <source>Ridge</source>          <target>Relieve</target>        </trans-unit>        <trans-unit id="7" resname="Inset">          <source>Inset</source>          <target>Bisel</target>        </trans-unit>        <trans-unit id="8" resname="Semi">          <source>Semi</source>          <target>Semi</target>        </trans-unit>        <trans-unit id="9" resname="Word">          <source>Word</source>          <target>Palabra</target>        </trans-unit>        <trans-unit id="231" resname="Outset">          <source>Outset</source>          <target>Sombra exterior</target>        </trans-unit>        <trans-unit id="232" resname="Hidden">          <source>Hidden</source>          <target>Oculto</target>        </trans-unit>      </group>      <group resname="BgndRepeatMode">        <trans-unit id="1" resname="None">          <source>None</source>          <target>Ninguno</target>        </trans-unit>        <trans-unit id="2" resname="Repeat">          <source>Repeat</source>          <target>Repetir</target>        </trans-unit>        <trans-unit id="3" resname="RepeatHor">          <source>Repeat Hor.</source>          <target>Repetir Hor.</target>        </trans-unit>        <trans-unit id="4" resname="RepeatVert">          <source>Repeat Vert.</source>          <target>Repetir Vert.</target>        </trans-unit>      </group>      <group resname="BgndClipMode">        <trans-unit id="1" resname="Border">          <source>Border</source>          <target>Borde</target>        </trans-unit>        <trans-unit id="2" resname="Padding">          <source>Padding</source>          <target>Relleno</target>        </trans-unit>        <trans-unit id="3" resname="Content">          <source>Content</source>          <target>Contenido</target>        </trans-unit>        <trans-unit id="4" resname="Paper">          <source>Paper</source>          <target>Papel</target>        </trans-unit>      </group>      <group resname="Tabulations">        <trans-unit id="1" resname="Left">          <source>Left</source>          <target>Izquierda</target>        </trans-unit>        <trans-unit id="2" resname="Right">          <source>Right</source>          <target>Derecha</target>        </trans-unit>        <trans-unit id="3" resname="Center">          <source>Center</source>          <target>Centro</target>        </trans-unit>        <trans-unit id="4" resname="Decimal">          <source>Decimal</source>          <target>Decimal</target>        </trans-unit>        <trans-unit id="5" resname="Bars">          <source>Bars</source>          <target>Barras</target>        </trans-unit>      </group>      <group resname="FontAlignVert">        <trans-unit id="1" resname="Baseline">          <source>Baseline</source>          <target>Base</target>        </trans-unit>        <trans-unit id="2" resname="Superscript">          <source>Superscript</source>          <target>Super√≠ndice</target>        </trans-unit>        <trans-unit id="3" resname="Subscript">          <source>Subscript</source>          <target>Sub√≠ndice</target>        </trans-unit>      </group>      <group resname="TextTransform">        <trans-unit id="1" resname="TextTransformNone">          <source>None</source>          <target>Ninguno</target>        </trans-unit>        <trans-unit id="2" resname="Capitalize">          <source>Capitalize</source>          <target>May√∫scula inicial</target>        </trans-unit>        <trans-unit id="3" resname="Lowercase">          <source>Lowercase</source>          <target>Min√∫sculas</target>        </trans-unit>        <trans-unit id="4" resname="Uppercase">          <source>Uppercase</source>          <target>May√∫sculas</target>        </trans-unit>        <trans-unit id="5" resname="SmallUppercase">          <source>Small uppercase</source>          <target>Versalitas</target>        </trans-unit>      </group>      <group resname="PaletteStylesheets">        <trans-unit id="169" resname="characterStylesheets">          <source>Character style sheets</source>          <target>Hojas de estilo de caracteres</target>        </trans-unit>        <trans-unit id="172" resname="rowStylesheets">          <source>Row style sheets</source>          <target>Hojas de estilo de fila</target>        </trans-unit>        <trans-unit id="173" resname="cellStylesheets">          <source>Cell style sheets</source>          <target>Hojas de estilo de celda</target>        </trans-unit>        <trans-unit id="173" resname="paragraphStylesheets">          <source>Paragraph style sheets</source>          <target>Hojas de estilo de p√°rrafo</target>        </trans-unit>        <trans-unit id="174" resname="tableStylesheets">          <source>Table style sheets</source>          <target>Hojas de estilo de tabla</target>        </trans-unit>        <trans-unit id="175" resname="imageStylesheets">          <source>Image style sheets</source>          <target>Hojas de estilo de imagen</target>        </trans-unit>        <trans-unit id="176" resname="newStylesheet">          <source>New style sheet</source>          <target>Nueva hoja de estilo</target>        </trans-unit>        <trans-unit id="177" resname="deleteStylesheet">          <source>Delete style sheet</source>          <target>Eliminar hoja de estilos</target>        </trans-unit>        <trans-unit id="178" resname="updateStylesheet">          <source>Update style sheet</source>          <target>Actualizar hoja de estilos</target>        </trans-unit>        <trans-unit id="179" resname="editStylesheet">          <source>Edit style sheet</source>          <target>Editar hoja de estilos</target>        </trans-unit>        <trans-unit id="180" resname="stylesheets">          <source>Style sheets</source>          <target>Hojas de estilos</target>        </trans-unit>        <trans-unit id="181" resname="applyStylesheet">          <source>Apply style sheet</source>          <target>Aplicar hoja de estilos</target>        </trans-unit>        <trans-unit id="216" resname="menuNewEmpty">          <source>New empty style sheet</source>          <target>Nueva hoja de estilo vac√≠a</target>        </trans-unit>        <trans-unit id="217" resname="menuNewFromSelection">          <source>New style sheet based on selection</source>          <target>Nueva hoja de estilos basada en la selecci√≥n</target>        </trans-unit>        <trans-unit id="218" resname="menuDuplicate">          <source>Duplicate</source>          <target>Duplicar</target>        </trans-unit>        <trans-unit id="219" resname="requestTitle">          <source>New style sheet name?</source>          <target>¬øNuevo nombre de hoja de estilo?</target>        </trans-unit>        <trans-unit id="220" resname="requestPlaceHolder">          <source>Style Sheet</source>          <target>Hoja de estilos</target>        </trans-unit>        <trans-unit id="221" resname="requestCreateLabel">          <source>Create</source>          <target>Crear</target>        </trans-unit>        <trans-unit id="222" resname="requestCancelLabel">          <source>Cancel</source>          <target>Cancelar</target>        </trans-unit>        <trans-unit id="223" resname="menuDeleteStylesheet">          <source>Delete "&lt;1&gt;" style sheet‚Ä¶</source>          <target>Eliminar la hoja de estilos "&lt;1&gt;"...</target>        </trans-unit>        <trans-unit id="224" resname="menuRemoveParagraphStylesheet">          <source>Remove paragraph stylesheet</source>          <target>Eliminar hoja de estilo de p√°rrafo</target>        </trans-unit>        <trans-unit id="226" resname="menuRemoveCharacterStyleshet">          <source>Remove character style sheets</source>          <target>Eliminar las hojas de estilo de caracteres</target>        </trans-unit>        <trans-unit id="242" resname="menuEditStylesheet">          <source>Edit '&lt;1&gt;' style sheet</source>          <target>Editar hoja de estilo '&lt;1&gt;'</target>        </trans-unit>        <trans-unit id="243" resname="menuEditDefault">          <source>Default values‚Ä¶</source>          <target>Valores por defecto...</target>        </trans-unit>        <trans-unit id="245" resname="confirmDeleteStylesheet">          <source>Delete "&lt;1&gt;" style sheet?</source>          <target>¬øEliminar la hoja de estilos "&lt;1&gt;"?</target>        </trans-unit>        <trans-unit id="UNLqBZ0kwRTrWB3TzdCdnA" resname="StyleSheetPlaceHolder">          <source>Style sheet name</source>          <target>Nombre de la hoja de estilo</target>        </trans-unit>      </group>      <group resname="StylesheetEditor">        <trans-unit id="180" resname="ssFontSize">          <source>Font size</source>          <target>Tama√±o</target>        </trans-unit>        <trans-unit id="181" resname="ssFont">          <source>Font</source>          <target>Fuente</target>        </trans-unit>        <trans-unit id="182" resname="ssFontFamily">          <source>Font familly</source>          <target>Familia tipogr√°fica</target>        </trans-unit>        <trans-unit id="183" resname="ssTextColor">          <source>Text color</source>          <target>Color de texto</target>        </trans-unit>        <trans-unit id="184" resname="ssBackgroundColor">          <source>Background color</source>          <target>Color de fondo</target>        </trans-unit>        <trans-unit id="185" resname="ssBold">          <source>Bold</source>          <target>Negrita</target>        </trans-unit>        <trans-unit id="186" resname="ssItalic">          <source>Italic</source>          <target>It√°lica</target>        </trans-unit>        <trans-unit id="187" resname="ssUnderlineStyle">          <source>Underline style</source>          <target>Estilo subrayado</target>        </trans-unit>        <trans-unit id="188" resname="ssUnderlineColor">          <source>Underline color</source>          <target>Color de subrayado</target>        </trans-unit>        <trans-unit id="189" resname="ssLinethroughStyle">          <source>Line through style</source>          <target>Estilo de tachado</target>        </trans-unit>        <trans-unit id="190" resname="ssLinethroughColor">          <source>Line through color</source>          <target>Color de tachado</target>        </trans-unit>        <trans-unit id="191" resname="ssShadowColor">          <source>Shadow color</source>          <target>Color de sombra</target>        </trans-unit>        <trans-unit id="192" resname="ssShadowOffet">          <source>Shadow offset</source>          <target>Desplazamiento de sombra</target>        </trans-unit>        <trans-unit id="193" resname="ssHorizontalAlign">          <source>Horizontal align</source>          <target>Alineaci√≥n horizontal</target>        </trans-unit>        <trans-unit id="194" resname="ssTextIndent">          <source>Text indent</source>          <target>Sangr√≠a de texto</target>        </trans-unit>        <trans-unit id="195" resname="ssLineHeight">          <source>Line height</source>          <target>Altura de la l√≠nea</target>        </trans-unit>        <trans-unit id="196" resname="ssVerticalAlign">          <source>Vertical align</source>          <target>Alineaci√≥n vertical</target>        </trans-unit>        <trans-unit id="197" resname="ssTabs">          <source>Tabs</source>          <target>Tabulaciones</target>        </trans-unit>        <trans-unit id="198" resname="ssDefaultTab">          <source>Default tab</source>          <target>Tabulaci√≥n predeterminada</target>        </trans-unit>        <trans-unit id="199" resname="ssListStyleType">          <source>List style</source>          <target>Estilo de lista</target>        </trans-unit>        <trans-unit id="200" resname="ssMarginLeft">          <source>Margin left</source>          <target>Margen izquierdo</target>        </trans-unit>        <trans-unit id="201" resname="ssMarginTop">          <source>Margin top</source>          <target>Margen superior</target>        </trans-unit>        <trans-unit id="202" resname="ssMarginRight">          <source>Margin right</source>          <target>Margen derecho</target>        </trans-unit>        <trans-unit id="203" resname="ssMarginBottom">          <source>Margin bottom</source>          <target>Margen inferior</target>        </trans-unit>        <trans-unit id="204" resname="ssPaddingLeft">          <source>Padding left</source>          <target>Espaciado izquierdo</target>        </trans-unit>        <trans-unit id="205" resname="ssPaddingTop">          <source>Padding top</source>          <target>Espaciado superior</target>        </trans-unit>        <trans-unit id="206" resname="ssPaddingRight">          <source>Padding right</source>          <target>Espaciado derecho</target>        </trans-unit>        <trans-unit id="207" resname="ssPaddingBottom">          <source>Padding bottom</source>          <target>Espaciado inferior</target>        </trans-unit>        <trans-unit id="208" resname="ssBorderStyle">          <source>Border style</source>          <target>Estilo de borde</target>        </trans-unit>        <trans-unit id="209" resname="ssBorderWidth">          <source>Border width</source>          <target>Ancho del borde</target>        </trans-unit>        <trans-unit id="210" resname="ssBorderColor">          <source>Border color</source>          <target>Color del borde</target>        </trans-unit>        <trans-unit id="211" resname="ssBorderRadius">          <source>Border radius</source>          <target>Radio de borde</target>        </trans-unit>        <trans-unit id="212" resname="ssNameColon">          <source>Name:</source>          <target>Nombre:</target>        </trans-unit>        <trans-unit id="213" resname="ssFonts">          <source>Fonts</source>          <target>Fuentes</target>        </trans-unit>        <trans-unit id="214" resname="ssParagraphs">          <source>Paragraphs</source>          <target>P√°rrafos</target>        </trans-unit>        <trans-unit id="215" resname="ssMarginsBorders">          <source>Margins &amp; borders</source>          <target>M√°rgenes y bordes</target>        </trans-unit>        <trans-unit id="226" resname="ssTransform">          <source>Transform</source>          <target>Transformar</target>        </trans-unit>        <trans-unit id="227" resname="ssAlignLeft">          <source>Left aligned</source>          <target>Alineado a la izquierda</target>        </trans-unit>        <trans-unit id="228" resname="ssAlignCenter">          <source>Centered</source>          <target>Centrado</target>        </trans-unit>        <trans-unit id="230" resname="ssAlignJustified">          <source>Justified</source>          <target>Justificado</target>        </trans-unit>        <trans-unit id="231" resname="ssAlignRight">          <source>Right aligned</source>          <target>Alineado a la derecha</target>        </trans-unit>        <trans-unit id="233" resname="ssAlignBase">          <source>Base line</source>          <target>L√≠nea base</target>        </trans-unit>        <trans-unit id="234" resname="ssAlignTop">          <source>Top</source>          <target>Arriba</target>        </trans-unit>        <trans-unit id="235" resname="ssAlignBottom">          <source>Bottom</source>          <target>Abajo</target>        </trans-unit>        <trans-unit id="236" resname="ssAlignMiddle">          <source>Middle</source>          <target>Centro</target>        </trans-unit>        <trans-unit id="237" resname="ssAlignSuperscript">          <source>Superscript</source>          <target>Super√≠ndice</target>        </trans-unit>        <trans-unit id="238" resname="ssAlignSubscript">          <source>Subscript</source>          <target>Sub√≠ndice</target>        </trans-unit>        <trans-unit id="239" resname="ssAlignDefault">          <source>Default</source>          <target>Por defecto</target>        </trans-unit>      </group>      <group resname="Misc">        <trans-unit id="240" resname="ok">          <source>OK</source>          <target>Aceptar</target>        </trans-unit>        <trans-unit id="241" resname="cancel">          <source>Cancel</source>          <target>Cancelar</target>        </trans-unit>        <trans-unit id="244" resname="delete">          <source>Delete</source>          <target>Borrar</target>        </trans-unit>        <trans-unit id="7mnro3rRCakLRVI5zALjKg" resname="clear">          <source>Clear</source>          <target>Borrar</target>        </trans-unit>        <trans-unit id="ZHzfpo82912nh75LjvWUsw" resname="Yes">          <source>Yes</source>          <target>S√≠</target>        </trans-unit>        <trans-unit id="algTRD9sqjDsayCBIx1jig" resname="No">          <source>No</source>          <target>No</target>        </trans-unit>        <trans-unit id="w9Ubp6P1lgN2t/CN86DsjA" resname="globalColon">          <source>Global:</source>          <target state="new">Global:</target>        </trans-unit>        <trans-unit id="VwA3fUqhePqW7/qptbnsfw" resname="detailsColon">          <source>Details:</source>          <target state="new">Details:</target>        </trans-unit>      </group>      <group resname="PaletteFindReplace">        <trans-unit id="250" resname="CaseSensitive">          <source>Case sensitive</source>          <target>Sensible a may√∫sculas</target>        </trans-unit>        <trans-unit id="272" resname="ErrorEmptyFind">          <source>The "find" property can not be an empty string.</source>          <target>La propiedad "find" no puede ser una cadena vac√≠a.</target>        </trans-unit>        <trans-unit id="264" resname="ErrorMissingAction">          <source>The "action" property is mandatory.</source>          <target>La propiedad "action" es obligatoria.</target>        </trans-unit>        <trans-unit id="263" resname="ErrorMissingDocument">          <source>The "document" property is mandatory.</source>          <target>La propiedad "document" es obligatoria.</target>        </trans-unit>        <trans-unit id="266" resname="ErrorMissingFind">          <source>The "find" property is mandatory.</source>          <target>La propiedad "find" es obligatoria.</target>        </trans-unit>        <trans-unit id="265" resname="ErrorMissingSelection">          <source>The "selection" property is mandatory.</source>          <target>La propiedad "selection" es obligatoria.</target>        </trans-unit>        <trans-unit id="270" resname="ErrorTypeAction">          <source>The "action" property must be of the text type.</source>          <target>La propiedad "action" debe ser de tipo texto.</target>        </trans-unit>        <trans-unit id="273" resname="ErrorTypeCaseSensitive">          <source>The "caseSensitive" property must be of the boolean type.</source>          <target>La propiedad "caseSensitive" debe ser de tipo booleano.</target>        </trans-unit>        <trans-unit id="268" resname="ErrorTypeDocument">          <source>The "document" property must be of the object type.</source>          <target>La propiedad "document" debe ser de tipo objeto.</target>        </trans-unit>        <trans-unit id="271" resname="ErrorTypeFind">          <source>The "find" property must be of the text type.</source>          <target>La propiedad "find" debe ser de tipo de texto.</target>        </trans-unit>        <trans-unit id="276" resname="ErrorTypeFullWord">          <source>The "fullWord" property must be of the boolean type.</source>          <target>La propiedad "fullWord" debe ser de tipo booleano.</target>        </trans-unit>        <trans-unit id="275" resname="ErrorTypeKeepCharStyle">          <source>The "keepCharStyle" property must be of the boolean type.</source>          <target>La propiedad "keepCharStyle" debe ser de tipo booleano.</target>        </trans-unit>        <trans-unit id="272" resname="ErrorTypeReplace">          <source>The "replace" property must be of the text type.</source>          <target>La propiedad "replace" debe ser de tipo texto.</target>        </trans-unit>        <trans-unit id="269" resname="ErrorTypeSelection">          <source>The "selection" property must be of the object type.</source>          <target>La propiedad "selection" debe ser de tipo objeto.</target>        </trans-unit>        <trans-unit id="248" resname="Find">          <source>Find</source>          <target>Buscar</target>        </trans-unit>        <trans-unit id="247" resname="FindColon">          <source>Find:</source>          <target>Buscar:</target>        </trans-unit>        <trans-unit id="251" resname="FindFirst">          <source>First</source>          <target>Primero</target>        </trans-unit>        <trans-unit id="254" resname="FindLast">          <source>Last</source>          <target>√öltimo</target>        </trans-unit>        <trans-unit id="252" resname="FindNext">          <source>Next</source>          <target>Siguiente</target>        </trans-unit>        <trans-unit id="253" resname="FindPrevious">          <source>Previous</source>          <target>Anterior</target>        </trans-unit>        <trans-unit id="262" resname="FindElipsis">          <source>Find‚Ä¶</source>          <target>Buscar...</target>        </trans-unit>        <trans-unit id="260" resname="FullWord">          <source>Full words only</source>          <target>S√≥lo palabras completas</target>        </trans-unit>        <trans-unit id="259" resname="KeepCharStyle">          <source>Keep each character style</source>          <target>Mantener cada estilo de car√°cter</target>        </trans-unit>        <trans-unit id="261" resname="Option">          <source>Option</source>          <target>Opci√≥n</target>        </trans-unit>        <trans-unit id="249" resname="Options">          <source>Options</source>          <target>Opciones</target>        </trans-unit>        <trans-unit id="255" resname="Replace">          <source>Replace</source>          <target>Reemplazar</target>        </trans-unit>        <trans-unit id="262" resname="ReplaceAll">          <source>Replace all</source>          <target>Reemplazar todos</target>        </trans-unit>        <trans-unit id="262" resname="ReplaceAllMessage">          <source>Replace "&amp;1" by "&amp;2"‚Ä¶</source>          <target>Reemplazar "&amp;1" por "&amp;2"...</target>        </trans-unit>        <trans-unit id="257" resname="ReplaceAndNext">          <source>Replace and find</source>          <target>Reemplazar y encontrar</target>        </trans-unit>        <trans-unit id="256" resname="ReplaceByColon">          <source>Replace by:</source>          <target>Reemplazar por:</target>        </trans-unit>        <trans-unit id="276" resname="ErrorUnknownAction">          <source>This action is unknown.</source>          <target>Esta acci√≥n es desconocida</target>        </trans-unit>        <trans-unit id="fllZberc5UmVoY77eN6hWg" resname="AccentSensitive">          <source>Accent sensitive</source>          <target>Sensible a los acentos</target>        </trans-unit>        <trans-unit id="mWfZe71n2prS1bwT5Kl/7Q" resname="KanaSensitive">          <source>Kana sensitive</source>          <target>Sensible a kana</target>        </trans-unit>        <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="WidthSensitive">          <source>Width sensitive</source>          <target>Sensible al ancho</target>        </trans-unit>        <trans-unit id="msIfGk9Zlbu60aimbEHQOw" resname="OccurrencesReplaced">          <source>&lt;x&gt; occurrences have been replaced.</source>          <target>&lt;x&gt;ocurrencias han sido reemplazadas.</target>        </trans-unit>        <trans-unit id="ZUDcR0S8puBf1AHiVHqHWw" resname="SearchOptions">          <source>Search options</source>          <target>Opciones de b√∫squeda</target>        </trans-unit>        <trans-unit id="kzbkcXohhISsex2WHJcFtw" resname="ReplaceOptions">          <source>Replace options</source>          <target>Opciones de reemplazo</target>        </trans-unit>        <trans-unit id="emHWvgg7g+0idYuJ+FxPwA" resname="ReplaceBy">          <source>Replace by</source>          <target>Reemplazar por</target>        </trans-unit>        <trans-unit id="lp5g7Q738nbVfrHPkzSBPQ" resname="IncludeHeadersAndFooters">          <source>Include headers and footers</source>          <target>Incluir encabezados y pies de p√°gina</target>        </trans-unit>        <trans-unit id="pZv3LaV+16Uw8EoSBOzxLA" resname="KeyboardBased">          <source>Search based on '&lt;1&gt;' keyboard </source>          <target>B√∫squeda basada en el teclado '&lt;1&gt;'</target>        </trans-unit>        <trans-unit id="4TFSNZU8Z6IMoq+NekNNIg" resname="OccurencesColon">          <source>Occurences:</source>          <target>Ocurrencias:</target>        </trans-unit>        <trans-unit id="Q8D13uFpth/PNUBxsK/oVw" resname="ReplacementsColon">          <source>Replacements:</source>          <target>Reemplazos:</target>        </trans-unit>      </group>      <group resname="PaletteTables">        <trans-unit id="277" resname="InsertAbove">          <source>Insert above</source>          <target>Insertar arriba</target>        </trans-unit>        <trans-unit id="278" resname="InsertBelow">          <source>Insert below</source>          <target>Insertar abajo</target>        </trans-unit>        <trans-unit id="279" resname="InsertLeft">          <source>Insert to the left</source>          <target>Insertar a la izquierda</target>        </trans-unit>        <trans-unit id="280" resname="InsertRight">          <source>Insert to the right</source>          <target>Insertar a la derecha</target>        </trans-unit>        <trans-unit id="281" resname="DeleteRow">          <source>Delete row</source>          <target>Borrar fila</target>        </trans-unit>        <trans-unit id="282" resname="DeleteRows">          <source>Delete &lt;n&gt; rows</source>          <target>Borrar &lt;n&gt; filas</target>        </trans-unit>        <trans-unit id="283" resname="DeleteColumn">          <source>Delete column</source>          <target>Borrar columna</target>        </trans-unit>        <trans-unit id="284" resname="DeleteColumns">          <source>Delete &lt;n&gt; columns</source>          <target>Borrar &lt;n&gt; columnas</target>        </trans-unit>        <trans-unit id="285" resname="DeleteCell">          <source>Delete cell</source>          <target>Borrar celda</target>        </trans-unit>        <trans-unit id="286" resname="DeleteCells">          <source>Delete &lt;n&gt; cells</source>          <target>Borrar &lt;n&gt; celdas</target>        </trans-unit>        <trans-unit id="287" resname="LabelRows">          <source>Rows</source>          <target>Filas</target>        </trans-unit>        <trans-unit id="288" resname="LabelColumns">          <source>Columns</source>          <target>Columnas</target>        </trans-unit>        <trans-unit id="289" resname="LabelCells">          <source>Cells</source>          <target>Celdas</target>        </trans-unit>        <trans-unit id="292" resname="Table">          <source>Table</source>          <target>Tabla</target>        </trans-unit>        <trans-unit id="293" resname="InsertTable">          <source>Insert table</source>          <target>Insertar tabla</target>        </trans-unit>        <trans-unit id="294" resname="LabelTable">          <source>Table</source>          <target>Tabla</target>        </trans-unit>        <trans-unit id="VHydT13fVdf+VH5qRRUFtg" resname="menuBorderStyle">          <source>Border Style</source>          <target>Estilo de borde</target>        </trans-unit>        <trans-unit id="7AGgS68d0BFBl1GG+3azQg" resname="menuBorderColor">          <source>Border Color</source>          <target>Color del borde</target>        </trans-unit>        <trans-unit id="kT56lwRqNZR4oGajuxhnHw" resname="menuBorderWidth">          <source>Border Width</source>          <target>Ancho del borde</target>        </trans-unit>        <trans-unit id="tFPMp9gQRDEBJw1gPLRxvw" resname="menuBackgroundColor">          <source>Background Color</source>          <target>Color de fondo</target>        </trans-unit>        <trans-unit id="YgIrOc1RS48st5bY52f5Qg" resname="menuAlignment">          <source>Alignment</source>          <target>Alineaci√≥n</target>        </trans-unit>        <trans-unit id="g+8wWMzDK4ns8WHG4G5Sqw" resname="menuMargins">          <source>Margins</source>          <target>M√°rgenes</target>        </trans-unit>        <trans-unit id="8xZmKn9MYRUmni9D/b9OOQ" resname="menuPadding">          <source>Padding</source>          <target>Relleno</target>        </trans-unit>        <trans-unit id="+Y1p0tp8GEUMHQs6gtRtQQ" resname="menuWidth">          <source>Width</source>          <target>Ancho</target>        </trans-unit>        <trans-unit id="a158s7yXqD9Zom4FNjAAkw" resname="menuHeight">          <source>Height</source>          <target>Altura</target>        </trans-unit>        <trans-unit id="YPG7PurBVvBgKMU6kaMxFQ" resname="menuVerticalAlignment">          <source>Vertical Alignment</source>          <target>Alineaci√≥n vertical</target>        </trans-unit>        <trans-unit id="WdntTS/LhHFkvUQujjopMQ" resname="menuInsertTable">          <source>Insert Table</source>          <target>Insertar tabla</target>        </trans-unit>        <trans-unit id="dXc0WnW6WSXYVOsmA0j/+g" resname="Cell">          <source>Cell</source>          <target>Celda</target>        </trans-unit>        <trans-unit id="ZM4XpS2XvZltITmEG4voHg" resname="Row">          <source>Row</source>          <target>L√≠nea</target>        </trans-unit>        <trans-unit id="9YY74EqftqLxbArojeDu/w" resname="Properties">          <source>Properties</source>          <target>Propiedades</target>        </trans-unit>        <trans-unit id="CBa5QNoUGYvlYOhE9ONZzg" resname="SetDatasourceEllipsis">          <source>Set datasource‚Ä¶</source>          <target>Definir la fuente...</target>        </trans-unit>      </group>      <group resname="PaletteProtect">        <trans-unit id="QRCHOUVOvU1y6dkzlbGq5A" resname="protectParagraphs">          <source>Paragraphs</source>          <target>P√°rrafos</target>        </trans-unit>        <trans-unit id="4LD6NBpIo5AuPj8w7cER4A" resname="protectionEnabled">          <source>Protection enabled</source>          <target>Protecci√≥n activada</target>        </trans-unit>        <trans-unit id="pIhODmU+jdAnjW8ddEq9Tw" resname="protection">          <source>Protection</source>          <target>Protecci√≥n</target>        </trans-unit>        <trans-unit id="Qe608vHPHLO3bJNBCH7p1A" resname="protectRows">          <source>Rows</source>          <target>Filas</target>        </trans-unit>        <trans-unit id="BAPDa661YLnM9DcVXyWXOw" resname="protectTables">          <source>Tables</source>          <target>Tablas</target>        </trans-unit>        <trans-unit id="03iEJ+It6O69xY6j0lz6Qg" resname="protectCells">          <source>Cells</source>          <target>Celdas</target>        </trans-unit>      </group>      <group resname="Errors">        <trans-unit id="GwNqq+FAlrv+V8fYd7geXA" resname="missingPointer">          <source>The pointer on 4D Write Pro document is missing.</source>          <target>Falta el puntero en el documento 4D Write Pro.</target>        </trans-unit>        <trans-unit id="nx2miGaaD+xCPQKlY//Q+g" resname="nilPointer">          <source>The pointer on 4D Write Pro document is nil.</source>          <target>El puntero en el documento 4D Write Pro es nulo.</target>        </trans-unit>        <trans-unit id="2UM2PhxkLdT3NCFN+uzEJA" resname="thisTypeOfDocumentCantBeImported">          <source>This type of document can't be imported.</source>          <target>Este tipo de documento no se puede importar.</target>        </trans-unit>      </group>      <group resname="DialogExport">        <trans-unit id="seROCZqSCuxQqqVcq1uboA" resname="exportPDF">          <source>PDF Export</source>          <target>Exportar PDF</target>        </trans-unit>        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgrounds">          <source>Backgrounds</source>          <target>Fondos</target>        </trans-unit>        <trans-unit id="2zaxAplGAgJvGg5f+KnwOA" resname="headers">          <source>Headers</source>          <target>Encabezados</target>        </trans-unit>        <trans-unit id="GbCtfYrp9W6n/xYbqhxNkQ" resname="footers">          <source>Footers</source>          <target>Pies</target>        </trans-unit>        <trans-unit id="tMZO5KyH1Qe77I7HSLR6og" resname="htmlWysiwyg">          <source>HTML "WYSIWYG"</source>          <target>HTML "WYSIWIG"</target>        </trans-unit>        <trans-unit id="7yp1Rkz6KWEs2pehpSqJoA" resname="recomputeFormulas">          <source>Recompute formulas</source>          <target>Recalcular las f√≥rmulas</target>        </trans-unit>        <trans-unit id="6u1E8KwGXapCFqeIJkqYQA" resname="Screen">          <source>Screen</source>          <target>Pantalla</target>        </trans-unit>        <trans-unit id="gVQaYSHGiwZBwAt4P5iaYw" resname="print">          <source>Print</source>          <target>Impresi√≥n</target>        </trans-unit>        <trans-unit id="rfCY4nYj4m3OHuYW++DWlA" resname="maxPictureDPI">          <source>Maximum DPI for pictures:</source>          <target>DPI m√°ximo para las im√°genes:</target>        </trans-unit>        <trans-unit id="EuJJLbs1LD5q4/WlL7w0XA" resname="cidHostDomainName">          <source>CID Host domain name:</source>          <target>Nombre de dominio CID:</target>        </trans-unit>        <trans-unit id="J+Sxu8o5HUf7ju4qU4EfMQ" resname="optimizedFor">          <source>Optimized for:</source>          <target>Optimizado para:</target>        </trans-unit>        <trans-unit id="G9BJhwrgI8ZjjK+PvIb0oA" resname="exportOptions">          <source>Export options</source>          <target>Opciones de exportaci√≥n</target>        </trans-unit>        <trans-unit id="STSER3qbzZIUcH0uINw3MA" resname="ExportEllipsis">          <source>Export‚Ä¶</source>          <target>Exportar‚Ä¶</target>        </trans-unit>        <trans-unit id="fMOz7wl6MpDwxlU77dYxUA" resname="InfoScreen">          <source>Document size will be smaller and any pictures will be compressed to "jpg" or "png"</source>          <target>El tama√±o del documento ser√° reducido y las im√°genes se comprimir√°n en "jpg" o "png"</target>        </trans-unit>        <trans-unit id="SD+Y7dnDCOmvJ94LKms7CQ" resname="InfoPrint">          <source>Document size will be bigger and any pictures will be keep their original "codec".</source>          <target>El tama√±o del documento ser√° m√°s grande y las im√°genes mantendr√°n su "c√≥dec" original.</target>        </trans-unit>        <trans-unit id="M/by8K2LDXD/OhCDfGnX+Q" resname="InfoFormulas">          <source>When selected, all formulas will be recomputed before export.When not selected, only formulas that have never been evaluated will be computed.</source>          <target>Cuando se selecciona, todas las f√≥rmulas se volver√°n a calcular antes de la exportaci√≥n.Cuando no se selecciona, solo se calcular√°n las f√≥rmulas que nunca se han evaluado.</target>        </trans-unit>        <trans-unit id="6LkWY9PvfM8ea1sA6vSrBw" resname="ExportComma">          <source>Export:</source>          <target>Export:</target>        </trans-unit>        <trans-unit id="caQYk8btXcl+pUBojuXPoQ" resname="InfoEmbedPictures">          <source>With this option, the generated SVG document will be standalone but its size will increase</source>          <target>Con esta opci√≥n, el documento SVG generado ser√° aut√≥nomo pero su tama√±o aumentar√°</target>        </trans-unit>        <trans-unit id="Jm3zqgXEMB//3tACqAcZ0A" resname="InfoExportPictures">          <source>This option allows you to export the images of your document to an external "images" folder. The SVG file will be lighter.</source>          <target>Esta opci√≥n permite exportar las im√°genes de su documento a una carpeta "im√°genes" externa. El archivo SVG ser√° m√°s ligero.</target>        </trans-unit>        <trans-unit id="l5yK2FqhagnuTfX+7DfKjA" resname="InfoCreateFolder">          <source>A folder will be created and will contain the SVG file and the pictures folder if needed.</source>          <target>Se crear√° una carpeta que contendr√° el archivo SVG y la carpeta "im√°genes" si es necesario.</target>        </trans-unit>        <trans-unit id="h60zhveTCxSBSmc8ly911Q" resname="EmbedImages">          <source>Embed document pictures</source>          <target>Incluir im√°genes de documentos</target>        </trans-unit>        <trans-unit id="EyvZbU4fegiD39MW7BvMNQ" resname="ExportImages">          <source>Export images from document</source>          <target>Exportar im√°genes del documento</target>        </trans-unit>        <trans-unit id="ftw1H7xGhhRTkqQ2O2LLGg" resname="EnableGoogleFonts">          <source>Enable Google fonts substitution</source>          <target>Activar la sustituci√≥n Google fonts</target>        </trans-unit>        <trans-unit id="NqxkQgc34W90eQYBmYkkvg" resname="InfoGoogleFonts">          <source>This option adds a Google font import directive.Use this option if the fonts in your document are not cross-platform.</source>          <target>Esta opci√≥n agrega una directiva de importaci√≥n de fuentes Google.Utilice esta opci√≥n si las fuentes de su documento no son multiplataforma.</target>        </trans-unit>        <trans-unit id="KRk/LGj7Cj0IKqbAD1+m2Q" resname="PagesComma">          <source>Pages:</source>          <target>P√°ginas:</target>        </trans-unit>        <trans-unit id="9rxyF4rWKl6cSTgcq13Plw" resname="ConfirmImageFolder">          <source>An "Images" folder already exists there!Would you like to replace it?</source>          <target>Ya existe una carpeta "Images" ¬øLe gustar√≠a reemplazarla?</target>        </trans-unit>        <trans-unit id="ZYahIeSDiz5Tz/hjbW8C2A" resname="Overwrite">          <source>Overwrite</source>          <target>Sobrescribir</target>        </trans-unit>        <trans-unit id="gJPawW7rsig8FtISvxRypw" resname="All">          <source>All</source>          <target>Todos</target>        </trans-unit>        <trans-unit id="JYFMlsryz/0iGg7gUz7AUA" resname="FromComma">          <source>From:</source>          <target>De:</target>        </trans-unit>        <trans-unit id="vcXBxWYL/WBWSqCP8bp63A" resname="ToComma">          <source>to:</source>          <target>Hasta:</target>        </trans-unit>        <trans-unit id="RMDC+cSZBoQl5t/kVyWSGg" resname="svgEllipsis">          <source>SVG‚Ä¶</source>          <target>SVG‚Ä¶</target>        </trans-unit>        <trans-unit id="yXC6rMdaGMCwbJsOKcSU+Q" resname="htmlEllipsis">          <source>HTML‚Ä¶</source>          <target>HTML‚Ä¶</target>        </trans-unit>        <trans-unit id="DlMn8kPNE6u2c2tRr8jppA" resname="FileNamePrompt">          <source>Name of the file to be created</source>          <target>Nombre del archivo a crear</target>        </trans-unit>        <trans-unit id="9AHHUOIbvZ1JaXXlXU4VWQ" resname="FolderNamePrompt">          <source>Name of the folder to be created</source>          <target>Nombre de la carpeta a crear</target>        </trans-unit>        <trans-unit id="y32E8D1pr6wrutx/5zbK/A" resname="infoEmptyPictures">          <source>Check this box if you want to export empty pictures returned by formulas.</source>          <target>Seleccione esta casilla si desea exportar las im√°genes vac√≠as devueltas por las f√≥rmulas.</target>        </trans-unit>        <trans-unit id="gzqU0lQaIqbShE0dEr/AwA" resname="optionsComma">          <source>Options:</source>          <target>Opciones:</target>        </trans-unit>        <trans-unit id="ILaNpHjjQPifHiTlQjUIGg" resname="blackFrame">          <source>Black frame for empty pictures</source>          <target>Marco negro para las im√°genes vac√≠as</target>        </trans-unit>      </group>      <group resname="PaletteImportExport"/>      <group resname="textArea">        <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">          <source>Erase the document</source>          <target>Borrar el documento</target>        </trans-unit>        <trans-unit id="FlHVoUXe7QVKBS23F0ny5Q" resname="BeforeDocument">          <source>at the beginning</source>          <target>al principio</target>        </trans-unit>        <trans-unit id="v2qONMZHKzxZtNap9RsfFw" resname="AfterDocument">          <source>at the end</source>          <target>al final</target>        </trans-unit>        <trans-unit id="ewuKg1WiWojJOtdoz3wpqg" resname="ReplaceSelection">          <source>at cursor position</source>          <target>en la posici√≥n del cursor</target>        </trans-unit>        <trans-unit id="kRahCITb8zTZzcaUFp2q0Q" resname="ImportOptions">          <source>Import options</source>          <target>Opciones de importaci√≥n</target>        </trans-unit>        <trans-unit id="/ZwYY2UXzYETIAVO1G2dvA" resname="InfoErase">          <source>The document will be replaced</source>          <target>El documento ser√° sustituido</target>        </trans-unit>        <trans-unit id="OEeH+VlZg5xuxWvUjW1P1A" resname="InfoBefore">          <source>After the first header (if any)</source>          <target>Despu√©s del primer encabezado (si existe)</target>        </trans-unit>        <trans-unit id="KGyZW8NNWI/ZTRVopYvVHw" resname="InforAfter">          <source>Before the last footer (if any)</source>          <target>Antes del √∫ltimo pie de p√°gina (si existe)</target>        </trans-unit>        <trans-unit id="ERLyD4OELj5tXGKqcoTmNQ" resname="InfoReplaceSelection">          <source>(or replace current selection)</source>          <target>(o reemplazar la selecci√≥n actual)</target>        </trans-unit>        <trans-unit id="fUY1y/mfq8YIayhWmfKZeg" resname="SelectFile">          <source>Select file to import‚Ä¶</source>          <target>Seleccionar el archivo a importar...</target>        </trans-unit>        <trans-unit id="ceXUiqKwcVAUS6ay3ug5xQ" resname="ReplaceDocument">          <source>Replace the current document</source>          <target>Reemplazar el documento actual</target>        </trans-unit>        <trans-unit id="NFtFcqXg4EZ1lxL/0wtdpw" resname="InfoReplaceDocument">          <source>The full document will be replaced including headers and footers.</source>          <target>El documento completo ser√° reemplazado incluyendo los encabezados y pies de p√°gina.</target>        </trans-unit>        <trans-unit id="V9QRc48mupZaPsRVherBRQ" resname="InfoNotImported">          <source>The headers, footers and anchored pictures will not be imported.</source>          <target>Las im√°genes ancladas, los encabezados y las notas al pie no se importar√°n.</target>        </trans-unit>        <trans-unit id="n4aL7HhXL+o5ruwGL/guAQ" resname="InsertInTheDocument">          <source>Insert in the document‚Ä¶</source>          <target>Insertar en el documento...</target>        </trans-unit>        <trans-unit id="+siVncaV7S9ujx1b+dIgiA" resname="SelectDocumentOfType">          <source>Select a document (.txt, .4wp or .4w7)</source>          <target>Seleccione un documento (.txt, .4wp o .4w7)</target>        </trans-unit>        <trans-unit id="ovkE8m6t9hOAvs5WY9nA7A" resname="ConfirmClear">          <source>This action will remove all content from the document.</source>          <target>Esta acci√≥n borrar√° todo el documento.</target>        </trans-unit>        <trans-unit id="DU4JNkbLHrgf3m8pAIaC6Q" resname="ClearEllipsis">          <source>Clear‚Ä¶</source>          <target>Borrar...</target>        </trans-unit>        <trans-unit id="PLXw3AoYuswFhizuV35Zgg" resname="Clear">          <source>Clear</source>          <target>Borrar</target>        </trans-unit>        <trans-unit id="DZMDM6LbSQUK7XnLqvm8+g" resname="Freeze">          <source/>          <target/>        </trans-unit>        <trans-unit id="3KMV7oT2tuLS05721O0Waw" resname="SectionNumber">          <source>Section number</source>          <target>N√∫mero de secci√≥n</target>        </trans-unit>      </group>      <group resname="DialogImportLog">        <trans-unit id="A4sgoBTWcmhTBII7qTJgAQ" resname="HeaderInfo">          <source>Some differences may appear in the imported document compared to the original.</source>          <target>Pueden aparecer algunas diferencias en el documento importado en comparaci√≥n con el original.</target>        </trans-unit>        <trans-unit id="sOiTU6STg6XmKEoEewJ0Cw" resname="BrowseTheImportLog">          <source>Would you like to browse the import log?</source>          <target>¬øLe gustar√≠a navegar por el historial de importaci√≥n?</target>        </trans-unit>        <trans-unit id="cfsKcFg01whY9Os6iiMC0Q" resname="HoverOverTheLines">          <source>Hover over the lines for more information</source>          <target>Pase el rat√≥n sobre las l√≠neas para m√°s informaci√≥n</target>        </trans-unit>        <trans-unit id="gXld70IPpB0lJKIP67qp/Q" resname="ImportLog">          <source>Import log</source>          <target>Historial de importaci√≥n</target>        </trans-unit>      </group>      <group resname="DialogPictureSettings">        <trans-unit id="nyFYGQNHQerfVfW24a7oeQ" resname="MarginsHyphen">          <source>Margins:</source>          <target>M√°rgenes:</target>        </trans-unit>        <trans-unit id="wL0rIpQnidAkY6wndHrvDg" resname="PaddingHyphen">          <source>Padding:</source>          <target>Relleno:</target>        </trans-unit>        <trans-unit id="PiyV+E6B2BOy4GNsS6PbpQ" resname="FormulaAndURL">          <source>Formula and URL</source>          <target>F√≥rmula y URL</target>        </trans-unit>        <trans-unit id="wRMExlUUxWxkESUYigSjbQ" resname="FormulaHyphen">          <source>Formula:</source>          <target>F√≥rmula:</target>        </trans-unit>        <trans-unit id="LLLtQzZjWPEMU5jxnvSvmw" resname="URLhyphen">          <source>URL:</source>          <target>URL:</target>        </trans-unit>        <trans-unit id="tX1lPAf1vFI1IN4iTPThbQ" resname="AlternateTextHyphen">          <source>Alternate text:</source>          <target>Texto alternativo:</target>        </trans-unit>        <trans-unit id="lUrF6H2gRySYCSMqQIxzdA" resname="PagesAndSections">          <source>Pages and sections</source>          <target>P√°ginas y secciones</target>        </trans-unit>        <trans-unit id="lHXUAc0Aid8ZFUFZrz/6ew" resname="Alignments">          <source>Alignments</source>          <target>Alineaciones</target>        </trans-unit>        <trans-unit id="zRIujmEncGp6o57fw558gQ" resname="HorizontalHyphen">          <source>Horizontal alignment:</source>          <target>Alineaci√≥n horizontal:</target>        </trans-unit>        <trans-unit id="8LsAUIhSSfbN0OJ6Lw53Tg" resname="VerticalHyphen">          <source>Vertical alignment:</source>          <target>Alineaci√≥n vertical:</target>        </trans-unit>        <trans-unit id="OeBtEIyH9SPbvssc58l4CQ" resname="OriginHyphen">          <source>Origin:</source>          <target>Origen:</target>        </trans-unit>        <trans-unit id="catAtKcAEEEZdYnyhfv67Q" resname="OffsetHyphen">          <source>Offset:</source>          <target>Intervalo:</target>        </trans-unit>        <trans-unit id="65ama9WrvtHLrbrdjVJfaQ" resname="LayoutHyphen">          <source>Layout:</source>          <target>Posici√≥n:</target>        </trans-unit>        <trans-unit id="E7Im6nkWi6aJJv3eGzlZYA" resname="PageHyphen">          <source>Page:</source>          <target>P√°gina:</target>        </trans-unit>        <trans-unit id="jWqVmNI+1acCwuigWZHmPg" resname="SectionHyphen">          <source>Section:</source>          <target>Secci√≥n:</target>        </trans-unit>        <trans-unit id="UsV1y7NogpqYqFKGqBnpdQ" resname="SectionNumberHyphen">          <source>Section number:</source>          <target>N√∫mero de secci√≥n:</target>        </trans-unit>        <trans-unit id="HA6gCicHrNfGJXvIau+4aw" resname="PageNumberHyphen">          <source>Page number:</source>          <target>N√∫mero de p√°gina:</target>        </trans-unit>        <trans-unit id="8zcpBgEZdV1mEBmM17EvNQ" resname="EditEllipsis">          <source>Edit‚Ä¶</source>          <target>Editar‚Ä¶</target>        </trans-unit>        <trans-unit id="d8Pz/T0Mn8VIE4BrsRYx7Q" resname="Clear">          <source>Clear</source>          <target>Borrar</target>        </trans-unit>        <trans-unit id="2iXsmivw0on7vNRnbY3/MQ" resname="Freeze">          <source>Freeze</source>          <target>Congelar</target>        </trans-unit>        <trans-unit id="Yum8Y38jHqiWZ72k7Jr0uQ" resname="PictureSettings">          <source>Picture settings</source>          <target>Par√°metros imagen</target>        </trans-unit>        <trans-unit id="lP5Wk5MEdkpNOiSJgn9p8A" resname="OriginalSize">          <source>Original size</source>          <target>Tama√±o original</target>        </trans-unit>        <trans-unit id="Qk23GVWVSIVC55yKGMhYaQ" resname="PictureFormat">          <source>Picture format:</source>          <target>Formato de imagen:</target>        </trans-unit>        <trans-unit id="fBvnMsjh2EReTO1gRxu7sw" resname="LeftPages">          <source>Left pages</source>          <target>P√°ginas izquierdas</target>        </trans-unit>        <trans-unit id="mFFDsjPq2TAu2gzl5XM0mQ" resname="FirstPage">          <source>First page</source>          <target>Primera P√°gina</target>        </trans-unit>        <trans-unit id="khX9wIKnpJFDIWvtbHJpCg" resname="RightPages">          <source>Right pages</source>          <target>P√°ginas derechas</target>        </trans-unit>        <trans-unit id="QR7rFC0zJIwfzEn9E+IYRA" resname="PageNumber">          <source>Page number</source>          <target>N√∫mero de p√°gina</target>        </trans-unit>        <trans-unit id="ynXAPxhJMkNpcwRliQMXvg" resname="insertImageURL">          <source>Insert an image URL‚Ä¶</source>          <target>Insertar URL de una imagen...</target>        </trans-unit>        <trans-unit id="m3a/CgZ8NS600XAnT/CuFA" resname="insertImageFormula">          <source>Insert an image formula‚Ä¶</source>          <target>Insertar una f√≥rmula imagen...</target>        </trans-unit>        <trans-unit id="PkaSe6J+O4IfvlHou7auvA" resname="editImageURL">          <source>Edit image URL‚Ä¶</source>          <target>Editar el URL de la imagen...</target>        </trans-unit>        <trans-unit id="00lbTfGC7req5VFUsKJClQ" resname="editImageFormula">          <source>Edit image formula</source>          <target>Editar la f√≥rmula de la imagen</target>        </trans-unit>        <trans-unit id="fol28Q4W1QaiCmasz8InLQ" resname="WidthColon">          <source>Width:</source>          <target>Ancho:</target>        </trans-unit>        <trans-unit id="gRUAqvqF/1uDA6gPAG35KQ" resname="HeightColon">          <source>Height:</source>          <target>Altura:</target>        </trans-unit>        <trans-unit id="kTXJQBET6xQGp0xvCmrDSg" resname="Propagate">          <source>Propagate</source>          <target>Propagar</target>        </trans-unit>      </group>      <group resname="Menu_Paragraph">        <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">          <source>Reset paragraph font attributes</source>          <target>Reinicializar los atributos de fuente de p√°rrafo</target>        </trans-unit>      </group>      <group resname="Menu_DocInfo">        <trans-unit id="KIsUNyYrj7evpWMAyBfemg" resname="title">          <source>Title</source>          <target>T√≠tulo</target>        </trans-unit>        <trans-unit id="O3s/HchQTWSZ/UcjrtMpWg" resname="author">          <source>author</source>          <target>Autor</target>        </trans-unit>        <trans-unit id="Au2W7hEQE5ZfKI1rvAnUww" resname="subject">          <source>Subject</source>          <target>Asunto</target>        </trans-unit>        <trans-unit id="s9AD0G6fIMkDCStHS2ysnw" resname="company">          <source>Company</source>          <target>Empresa</target>        </trans-unit>        <trans-unit id="QBkunZ9iy6al8OgBj45hjQ" resname="notes">          <source>Notes</source>          <target>Notas</target>        </trans-unit>        <trans-unit id="+/lt/JavD2HppAAJysR5rg" resname="creationDate">          <source>Creation date</source>          <target>Fecha de creaci√≥n</target>        </trans-unit>        <trans-unit id="wqkPw22mAeFQtMi7rOGTuA" resname="modificationDate">          <source>Modification date</source>          <target>Fecha de modificaci√≥n</target>        </trans-unit>      </group>      <group resname="Menu_Freeze">        <trans-unit id="YJ8st5NVYk9iAGILx5O23A" resname="FreezeDocument">          <source>Freeze document</source>          <target>Congelar el documento</target>        </trans-unit>        <trans-unit id="BsGWfaI7WPuzFCPnZEPaog" resname="FreezeSelection">          <source>Freeze selection</source>          <target>Congelar la selecci√≥n</target>        </trans-unit>        <trans-unit id="a21/ILiIHT15NrT6WxTPpA" resname="FreezeTables">          <source>Freeze tables</source>          <target>Congelar las tablas</target>        </trans-unit>      </group>      <group resname="Menu_Compute">        <trans-unit id="G1qriI3TB4C8on9assC28g" resname="ComputeSelection">          <source>Compute selection</source>          <target>Evaluar la selecci√≥n</target>        </trans-unit>        <trans-unit id="X0cFWvYLS2IWq/9nLRCxPg" resname="ComputeDocument">          <source>Compute document</source>          <target>Evaluar el documento</target>        </trans-unit>        <trans-unit id="bK4KIBvTGBVXEffFIfIYkg" resname="ComputeTables">          <source>Compute tables</source>          <target>Evaluar las tablas</target>        </trans-unit>      </group>    </body>  </file></xliff>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+Translation file.
+This file is distributed under the same license as the product package.-->
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+
+  <file datatype="x-STR#" original="undefined" source-language="en" target-language="es">
+    <header>
+      <prop-group name="Xliff-Editor.4dbase">
+        <prop prop-type="version">2.0</prop>
+      </prop-group>
+    </header>
+    <body>
+      <group id="0" resname="Palette_0">
+        <trans-unit id="999" resname="Document">
+          <source>Document</source>
+          <target>Documento</target>
+        </trans-unit>
+        <trans-unit id="2" resname="FontStyle">
+          <source>Font Style</source>
+          <target>Estilo de fuente</target>
+        </trans-unit>
+        <trans-unit id="3" resname="MarginsAlignments">
+          <source>Margins &amp; Alignments</source>
+          <target>Márgenes y alineación</target>
+        </trans-unit>
+        <trans-unit id="5" resname="Frames">
+          <source>Frames</source>
+          <target>Marcos</target>
+        </trans-unit>
+        <trans-unit id="6" resname="Sizes">
+          <source>Sizes</source>
+          <target>Tamaños</target>
+        </trans-unit>
+        <trans-unit id="7" resname="Tabulations">
+          <source>Tabulations</source>
+          <target>Tabulaciones</target>
+        </trans-unit>
+        <trans-unit id="8" resname="Background">
+          <source>Background</source>
+          <target>Fondo</target>
+        </trans-unit>
+        <trans-unit id="9" resname="Information">
+          <source>Information</source>
+          <target>Información</target>
+        </trans-unit>
+        <trans-unit id="290" resname="FindAndReplace">
+          <source>Find and replace</source>
+          <target>Buscar y reemplazar</target>
+        </trans-unit>
+        <trans-unit id="291" resname="Tables">
+          <source>Tables</source>
+          <target>Tablas</target>
+        </trans-unit>
+        <trans-unit id="/h5RnHFGXRGnCZiYU/DhZQ" resname="ImportExport">
+          <source>Import Export</source>
+          <target>Import Export</target>
+        </trans-unit>
+      </group>
+      <group resname="Palette_alignment">
+        <trans-unit id="9" resname="HorAlignColon">
+          <source>Hor. Align.:</source>
+          <target>Alin. Hor.:</target>
+        </trans-unit>
+        <trans-unit id="10" resname="VertAlignColon">
+          <source>Vert. Align.:</source>
+          <target>Alin. Vert.:</target>
+        </trans-unit>
+        <trans-unit id="11" resname="FirstIndentationColon">
+          <source>1st indent.:</source>
+          <target>1ra sangría:</target>
+        </trans-unit>
+        <trans-unit id="13" resname="BackgroundColon">
+          <source>Background:</source>
+          <target>Fondo:</target>
+        </trans-unit>
+        <trans-unit id="14" resname="BordersColon">
+          <source>Borders:</source>
+          <target>Bordes:</target>
+        </trans-unit>
+        <trans-unit id="15" resname="Text">
+          <source>Text</source>
+          <target>Texto</target>
+        </trans-unit>
+        <trans-unit id="16" resname="Margins">
+          <source>Margins</source>
+          <target>Márgenes</target>
+        </trans-unit>
+        <trans-unit id="17" resname="Lists">
+          <source>Lists</source>
+          <target>Listas</target>
+        </trans-unit>
+        <trans-unit id="25" resname="LineHeightColon">
+          <source>Line Height:</source>
+          <target>Alto línea:</target>
+        </trans-unit>
+        <trans-unit id="84" resname="StyleColon0">
+          <source>Style:</source>
+          <target>Estilo:</target>
+        </trans-unit>
+        <trans-unit id="2HRYy6hkMPJ7DgLcWpD6cQ" resname="ParagraphBackgroundColor">
+          <source>Paragraph background color</source>
+          <target>Color de fondo de párrafo</target>
+        </trans-unit>
+        <trans-unit id="J/YshwyIKycFvHMMljmKyA" resname="CopyRuler">
+          <source>Copy ruler</source>
+          <target>Copiar la regla</target>
+        </trans-unit>
+        <trans-unit id="TbhlTOVpXGK5g/2set0oGw" resname="PasteRuler">
+          <source>Paste ruler</source>
+          <target>Pegar la regla</target>
+        </trans-unit>
+        <trans-unit id="JP6IFI5cuF2FnMhVrQ8ukw" resname="IncreaseIndent">
+          <source>Increase indent</source>
+          <target>Aumentar la indentación</target>
+        </trans-unit>
+        <trans-unit id="MzVx3kZk0LyQrDAWjJAUrA" resname="DecreaseIndent">
+          <source>Decrease indent</source>
+          <target>Disminuir la indentación</target>
+        </trans-unit>
+        <trans-unit id="jOdgvUoCqlAAvJ9MNLCnTQ" resname="insert">
+          <source>Insert</source>
+          <target>Insertar</target>
+        </trans-unit>
+        <trans-unit id="f1S2oecx6Pl/gFkJV86S4A" resname="columns">
+          <source>Columns</source>
+          <target>Columnas</target>
+        </trans-unit>
+        <trans-unit id="VmvGVTTjR+qrSCge2mVPfw" resname="numberHiphen">
+          <source>Number:</source>
+          <target>Número:</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteBackgrounds">
+        <trans-unit id="18" resname="BackgroundPicture">
+          <source>Background Picture</source>
+          <target>Imagen de fondo</target>
+        </trans-unit>
+        <trans-unit id="19" resname="PictureOrURL">
+          <source>Picture:
+(or URL)</source>
+          <target>Imagen:
+(o URL)</target>
+        </trans-unit>
+        <trans-unit id="20" resname="RepeatColon">
+          <source>Repeat:</source>
+          <target>Repetir:</target>
+        </trans-unit>
+        <trans-unit id="21" resname="Clip">
+          <source>Clip:</source>
+          <target>Recortar:</target>
+        </trans-unit>
+        <trans-unit id="22" resname="Origin">
+          <source>Origin:</source>
+          <target>Origen:</target>
+        </trans-unit>
+        <trans-unit id="23" resname="HorizontalSize">
+          <source>Horizontal Size:</source>
+          <target>Tamaño horizontal:</target>
+        </trans-unit>
+        <trans-unit id="24" resname="VerticalSize">
+          <source>Vertical Size:</source>
+          <target>Tamaño vertical:</target>
+        </trans-unit>
+        <trans-unit id="25" resname="PositionColon">
+          <source>Position:</source>
+          <target>Posición:</target>
+        </trans-unit>
+        <trans-unit id="sg9lHFhI0LqrVxCysNWY7g" resname="MoveHyphen">
+          <source>Move:</source>
+          <target>Mover:</target>
+        </trans-unit>
+        <trans-unit id="yWaHkpmXJEV+bnWMCVsAVg" resname="PageHyphen">
+          <source>Page:</source>
+          <target>Página:</target>
+        </trans-unit>
+        <trans-unit id="33fb+8NhEANEWmPAFLSQjg" resname="SectionHyphen">
+          <source>Section:</source>
+          <target>Sección:</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Picture">
+          <source>Picture</source>
+          <target>Imagen</target>
+        </trans-unit>
+        <trans-unit id="xZf5yixaHWdVwEkN2lFVkg" resname="AdvancedSettingsEllipsis">
+          <source>Advanced settings…</source>
+          <target>Ajustes avanzados...</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteFonts">
+        <trans-unit id="26" resname="FontColon">
+          <source>Font:</source>
+          <target>Fuente:</target>
+        </trans-unit>
+        <trans-unit id="28" resname="SizeColon">
+          <source>Size:</source>
+          <target>Tamaño:</target>
+        </trans-unit>
+        <trans-unit id="30" resname="BackgroundColon">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit id="31" resname="Bold">
+          <source>Bold</source>
+          <target>Negrita</target>
+        </trans-unit>
+        <trans-unit id="32" resname="Italic">
+          <source>Italic</source>
+          <target>Itálica</target>
+        </trans-unit>
+        <trans-unit id="33" resname="Linethrough">
+          <source>Linethrough</source>
+          <target>Tachado</target>
+        </trans-unit>
+        <trans-unit id="34" resname="Underline">
+          <source>Underline</source>
+          <target>Subrayado</target>
+        </trans-unit>
+        <trans-unit id="34" resname="LineColon">
+          <source>Line:</source>
+          <target>línea:</target>
+        </trans-unit>
+        <trans-unit id="35" resname="ColorColon:">
+          <source>Color:</source>
+          <target>Color:</target>
+        </trans-unit>
+        <trans-unit id="36" resname="Shadows">
+          <source>Shadows</source>
+          <target>Sombras</target>
+        </trans-unit>
+        <trans-unit id="37" resname="Shadow">
+          <source>Shadow</source>
+          <target>Sombra</target>
+        </trans-unit>
+        <trans-unit id="38" resname="OffsetColon">
+          <source>Offset:</source>
+          <target>Intervalo:</target>
+        </trans-unit>
+        <trans-unit id="95" resname="StyleColon1">
+          <source>Style:</source>
+          <target>Estilo:</target>
+        </trans-unit>
+        <trans-unit id="96" resname="TransformColon">
+          <source>Transform:</source>
+          <target>Transformar:</target>
+        </trans-unit>
+        <trans-unit id="U+//oc3/u1IXrlP6L4mWAQ" resname="SpecialCharacters">
+          <source>Special characters</source>
+          <target>Caracteres especiales</target>
+        </trans-unit>
+        <trans-unit id="SSmzUaLxeO3nXDjxyyb0gg" resname="SoftHyphen">
+          <source>Soft hyphen:</source>
+          <target>Guión condicional:</target>
+        </trans-unit>
+        <trans-unit id="eAIqOo9+b5XNQn3YeW33eg" resname="FontsElipsis">
+          <source>Fonts…</source>
+          <target>Fuentes...</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteFrame">
+        <trans-unit id="39" resname="SidesColon">
+          <source>Sides:</source>
+          <target>Bordes:</target>
+        </trans-unit>
+        <trans-unit id="42" resname="ColorColon">
+          <source>Color:</source>
+          <target>Color:</target>
+        </trans-unit>
+        <trans-unit id="43" resname="RadiusColon">
+          <source>Radius:</source>
+          <target>Radio:</target>
+        </trans-unit>
+        <trans-unit id="44" resname="Frame">
+          <source>Frame</source>
+          <target>Marco</target>
+        </trans-unit>
+        <trans-unit id="45" resname="Padding">
+          <source>Padding</source>
+          <target>Relleno</target>
+        </trans-unit>
+        <trans-unit id="95" resname="WidthColon">
+          <source>Width:</source>
+          <target>Ancho:</target>
+        </trans-unit>
+        <trans-unit id="96" resname="StyleColon2">
+          <source>Style:</source>
+          <target>Estilo:</target>
+        </trans-unit>
+        <trans-unit id="97" resname="IndentationColon">
+          <source>Indentation:</source>
+          <target>Indentación:</target>
+        </trans-unit>
+        <trans-unit id="98" resname="Outside">
+          <source>Outside</source>
+          <target>Fuera</target>
+        </trans-unit>
+        <trans-unit id="99" resname="Inside">
+          <source>Inside</source>
+          <target>Dentro</target>
+        </trans-unit>
+        <trans-unit id="100" resname="ApplyToColon">
+          <source>Apply to:</source>
+          <target>Aplica a:</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteInformation">
+        <trans-unit id="46" resname="4dExpression">
+          <source>4D Expression</source>
+          <target>Expresión 4D</target>
+        </trans-unit>
+        <trans-unit id="47" resname="InsertColon">
+          <source>Insert:</source>
+          <target>Insertar:</target>
+        </trans-unit>
+        <trans-unit id="48" resname="Date">
+          <source>Date</source>
+          <target>Fecha</target>
+        </trans-unit>
+        <trans-unit id="49" resname="ExpressionColon">
+          <source>Expression:</source>
+          <target>Expresión:</target>
+        </trans-unit>
+        <trans-unit id="51" resname="LabelColon">
+          <source>Label:</source>
+          <target>Etiqueta:</target>
+        </trans-unit>
+        <trans-unit id="52" resname="LinkColon">
+          <source>Link:</source>
+          <target>Enlace:</target>
+        </trans-unit>
+        <trans-unit id="50" resname="URL">
+          <source>URL</source>
+          <target>URL</target>
+        </trans-unit>
+        <trans-unit id="51" resname="TitleColon">
+          <source>Title:</source>
+          <target>Título:</target>
+        </trans-unit>
+        <trans-unit id="52" resname="SubjectColon">
+          <source>Subject:</source>
+          <target>Asunto:</target>
+        </trans-unit>
+        <trans-unit id="53" resname="AuthorColon">
+          <source>Author:</source>
+          <target>Autor:</target>
+        </trans-unit>
+        <trans-unit id="54" resname="CompanyColon">
+          <source>Company:</source>
+          <target>Empresa:</target>
+        </trans-unit>
+        <trans-unit id="55" resname="NotesColon">
+          <source>Notes:</source>
+          <target>Notas:</target>
+        </trans-unit>
+        <trans-unit id="56" resname="CreatedColon">
+          <source>Created:</source>
+          <target>Creado:</target>
+        </trans-unit>
+        <trans-unit id="57" resname="ModifiedColon">
+          <source>Modified:</source>
+          <target>Modificado:</target>
+        </trans-unit>
+        <trans-unit id="60" resname="Compute">
+          <source>Compute</source>
+          <target>Calcular</target>
+        </trans-unit>
+        <trans-unit id="63" resname="Freeze">
+          <source>Freeze</source>
+          <target>Congelar</target>
+        </trans-unit>
+        <trans-unit id="64" resname="SelectionOnly">
+          <source>Selection only</source>
+          <target>Selección sólo</target>
+        </trans-unit>
+        <trans-unit id="64" resname="Expression">
+          <source>Expression</source>
+          <target>Expresión</target>
+        </trans-unit>
+        <trans-unit id="67" resname="Set">
+          <source>Set</source>
+          <target>Aplicar</target>
+        </trans-unit>
+        <trans-unit id="96" resname="Document1">
+          <source>Document</source>
+          <target>Documento</target>
+        </trans-unit>
+        <trans-unit id="v0KYZg1/E5YU2xvWP3exVA" resname="NoTableAvailable">
+          <source>No table available. The formula editor can not be open.</source>
+          <target>No hay tabla disponible. El editor de fórmulas no puede estar abierto.</target>
+        </trans-unit>
+        <trans-unit id="BTTvdZt/pKnIFwe7yAa5iQ" resname="DisplayExpressions">
+          <source>Display expressions</source>
+          <target>Mostrar las expresiones</target>
+        </trans-unit>
+        <trans-unit id="HJEapLue/aA7XG3UPAUXjw" resname="DisplayColon">
+          <source>Display:</source>
+          <target>Mostrar:</target>
+        </trans-unit>
+        <trans-unit id="Qx7gCjGjc14eNrDImk5B/A" resname="FormulasColon">
+          <source>Formulas:</source>
+          <target>Fórmulas:</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteSizes">
+        <trans-unit id="68" resname="Paragraph">
+          <source>Paragraph</source>
+          <target>Párrafo</target>
+        </trans-unit>
+        <trans-unit id="70" resname="SetWidth">
+          <source>Set width</source>
+          <target>Ajuste de ancho</target>
+        </trans-unit>
+        <trans-unit id="71" resname="VariableWidth">
+          <source>Variable width</source>
+          <target>Ancho variable</target>
+        </trans-unit>
+        <trans-unit id="74" resname="minWidthColon">
+          <source>Min width:</source>
+          <target>Ancho mínimo:</target>
+        </trans-unit>
+        <trans-unit id="75" resname="minHeightColon">
+          <source>Min height:</source>
+          <target>Altura mínima:</target>
+        </trans-unit>
+        <trans-unit id="0" resname="WidthColon">
+          <source>Width:</source>
+          <target>Ancho:</target>
+        </trans-unit>
+        <trans-unit id="74" resname="HeightColon">
+          <source>Height:</source>
+          <target>Altura:</target>
+        </trans-unit>
+        <trans-unit id="75" resname="AltTextColon">
+          <source>Alternate text:</source>
+          <target>Texto alternativo:</target>
+        </trans-unit>
+        <trans-unit id="76" resname="ZeroAuto">
+          <source>(0 = Auto)</source>
+          <target>(0 = Auto)</target>
+        </trans-unit>
+        <trans-unit id="83" resname="UnitColon">
+          <source>Unit:</source>
+          <target>Unidad:</target>
+        </trans-unit>
+        <trans-unit id="Ozjo60l1QOY5Jt3l4nm2BA" resname="display">
+          <source>Display</source>
+          <target>Monitor</target>
+        </trans-unit>
+        <trans-unit id="6mdklHugZWAmT19d8JTRBQ" resname="modeHyphen">
+          <source>Mode:</source>
+          <target>Modo:</target>
+        </trans-unit>
+        <trans-unit id="aP7rDxq6XdlIr1OxlgkisQ" resname="elementsHyphen">
+          <source>Elements:</source>
+          <target>Elementos:</target>
+        </trans-unit>
+        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="pictures">
+          <source>Zoom:</source>
+          <target>Zoom:</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteTabulations">
+        <trans-unit id="77" resname="defaultTabColon">
+          <source>Default tab:</source>
+          <target>Tab. por defecto:</target>
+        </trans-unit>
+        <trans-unit id="77" resname="TypeColon">
+          <source>Type:</source>
+          <target>Tipo:</target>
+        </trans-unit>
+        <trans-unit id="80" resname="Type">
+          <source>Type</source>
+          <target>Tipo</target>
+        </trans-unit>
+        <trans-unit id="81" resname="Position">
+          <source>Position</source>
+          <target>Posición</target>
+        </trans-unit>
+        <trans-unit id="82" resname="tipDeleteTab">
+          <source>Delete tabulation</source>
+          <target>Eliminar tabulación</target>
+        </trans-unit>
+        <trans-unit id="83" resname="tipNewTab">
+          <source>New tabulation</source>
+          <target>Nueva tabulación</target>
+        </trans-unit>
+        <trans-unit id="84" resname="DefaultLeadingChar">
+          <source>Default leading char.:</source>
+          <target>Carácter inicial por defecto:</target>
+        </trans-unit>
+        <trans-unit id="85" resname="LeadingChar">
+          <source>Leading char.</source>
+          <target>Car. inicial</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteBookmarks">
+        <trans-unit id="1" resname="Bookmarks">
+          <source>Bookmarks</source>
+          <target>Marcadores</target>
+        </trans-unit>
+        <trans-unit id="2" resname="NewBookmark">
+          <source>New Bookmark</source>
+          <target>Nuevo marcador</target>
+        </trans-unit>
+        <trans-unit id="3" resname="tipRedefineBookmark">
+          <source>Redefine bookmark "[1]"</source>
+          <target>Redefinir el marcador "[1]"</target>
+        </trans-unit>
+        <trans-unit id="4" resname="tipDeleteBookmark">
+          <source>Delete bookmark "[1]"</source>
+          <target>Eliminar marcador "[1]"</target>
+        </trans-unit>
+        <trans-unit id="5" resname="tipNewBookmark">
+          <source>New bookmark</source>
+          <target>Nuevo marcador</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_CopyPaste">
+        <trans-unit id="82" resname="CopyStyle">
+          <source>Copy Style</source>
+          <target>Copiar estilo</target>
+        </trans-unit>
+        <trans-unit id="83" resname="PasteStyle">
+          <source>Paste Style</source>
+          <target>Pegar estilo</target>
+        </trans-unit>
+        <trans-unit id="86" resname="CopyTextSettings">
+          <source>Copy Text Settings</source>
+          <target>Copiar la configuración de texto</target>
+        </trans-unit>
+        <trans-unit id="87" resname="PasteTextSettings">
+          <source>Paste Text Settings</source>
+          <target>Pegar configuración de texto </target>
+        </trans-unit>
+        <trans-unit id="87" resname="CopyMargins">
+          <source>Copy Margins</source>
+          <target>Copiar márgenes</target>
+        </trans-unit>
+        <trans-unit id="88" resname="PasteMargins">
+          <source>Paste Margins</source>
+          <target>Pegar márgenes</target>
+        </trans-unit>
+        <trans-unit id="89" resname="CopyTabulation">
+          <source>Copy Tabulation</source>
+          <target>Copiar tabulación</target>
+        </trans-unit>
+        <trans-unit id="90" resname="PasteTabulation">
+          <source>Paste Tabulation</source>
+          <target>Pegar tabulación</target>
+        </trans-unit>
+        <trans-unit id="91" resname="CopyFrame">
+          <source>Copy Frame</source>
+          <target>Copiar marco</target>
+        </trans-unit>
+        <trans-unit id="92" resname="PasteFrame">
+          <source>Paste Frame</source>
+          <target>Pegar marco</target>
+        </trans-unit>
+        <trans-unit id="93" resname="CopyBackground">
+          <source>Copy Background</source>
+          <target>Copiar fondo</target>
+        </trans-unit>
+        <trans-unit id="" resname="PasteBackground">
+          <source>Paste Background</source>
+          <target>Pegar fondo</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_ImportExport">
+        <trans-unit id="97" resname="NewEllipsis">
+          <source>New…</source>
+          <target>Nuevo...</target>
+        </trans-unit>
+        <trans-unit id="98" resname="ImportEllipsis">
+          <source>Import…</source>
+          <target>Importar...</target>
+        </trans-unit>
+        <trans-unit id="99" resname="ExportAs">
+          <source>Export as:</source>
+          <target>Exportar como:</target>
+        </trans-unit>
+        <trans-unit id="100" resname="HtmlEllipsis">
+          <source>HTML…</source>
+          <target>HTML…</target>
+        </trans-unit>
+        <trans-unit id="101" resname="4DWriteProEllipsis">
+          <source>4D Write Pro…</source>
+          <target>4D Write Pro</target>
+        </trans-unit>
+        <trans-unit id="UxW87OWPGPdnNHB/00tm4w" resname="WordEllipsis">
+          <source>Microsoft Word…</source>
+          <target>Microsoft Word…</target>
+        </trans-unit>
+        <trans-unit id="azodlWWrSTDq7NsEsKhs2w" resname="PdfEllipsis">
+          <source>PDF…</source>
+          <target>PDF...</target>
+        </trans-unit>
+        <trans-unit id="6Uw3JqUrx1zvQs/W032F0Q" resname="TextEllipsis">
+          <source>Text…</source>
+          <target>Text…</target>
+        </trans-unit>
+        <trans-unit id="HKtPq6HziMxcUM5TiHmLfQ" resname="HtmlMimeEllipsis">
+          <source>HTML Mime…</source>
+          <target>HTML Mime…</target>
+        </trans-unit>
+        <trans-unit id="6vzRUs/48oy0kosSPH+4IA" resname="clearEllipsis">
+          <source>Clear…</source>
+          <target>Borrar...</target>
+        </trans-unit>
+        <trans-unit id="giehscfoPnUFF9q+EyY2Fg" resname="4DWriteEllipsis">
+          <source>4D Write…</source>
+          <target>4D Write…</target>
+        </trans-unit>
+        <trans-unit id="6K4ODRIRH2gZNBJ27Zw7zA" resname="Import">
+          <source>Import</source>
+          <target>Importar</target>
+        </trans-unit>
+      </group>
+      <group resname="AlertsAndMessages">
+        <trans-unit id="102" resname="AreYouSure">
+          <source>Are you sure?</source>
+          <target>¿Está seguro?</target>
+        </trans-unit>
+        <trans-unit id="104" resname="SelectADestination">
+          <source>Select a destination.</source>
+          <target>Seleccione un destino.</target>
+        </trans-unit>
+      </group>
+      <group resname="borderStyleNames">
+        <trans-unit id="1" resname="Solid">
+          <source>Solid</source>
+          <target>Sólido</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Dotted">
+          <source>Dotted</source>
+          <target>Punteado</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Dashed">
+          <source>Dashed</source>
+          <target>Guiones</target>
+        </trans-unit>
+        <trans-unit id="4" resname="Double">
+          <source>Double</source>
+          <target>Doble</target>
+        </trans-unit>
+        <trans-unit id="5" resname="Groove">
+          <source>Groove</source>
+          <target>Surco</target>
+        </trans-unit>
+        <trans-unit id="6" resname="Ridge">
+          <source>Ridge</source>
+          <target>Relieve</target>
+        </trans-unit>
+        <trans-unit id="7" resname="Inset">
+          <source>Inset</source>
+          <target>Bisel</target>
+        </trans-unit>
+        <trans-unit id="8" resname="Semi">
+          <source>Semi</source>
+          <target>Semi</target>
+        </trans-unit>
+        <trans-unit id="9" resname="Word">
+          <source>Word</source>
+          <target>Palabra</target>
+        </trans-unit>
+        <trans-unit id="231" resname="Outset">
+          <source>Outset</source>
+          <target>Sombra exterior</target>
+        </trans-unit>
+        <trans-unit id="232" resname="Hidden">
+          <source>Hidden</source>
+          <target>Oculto</target>
+        </trans-unit>
+      </group>
+      <group resname="BgndRepeatMode">
+        <trans-unit id="1" resname="None">
+          <source>None</source>
+          <target>Ninguno</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Repeat">
+          <source>Repeat</source>
+          <target>Repetir</target>
+        </trans-unit>
+        <trans-unit id="3" resname="RepeatHor">
+          <source>Repeat Hor.</source>
+          <target>Repetir Hor.</target>
+        </trans-unit>
+        <trans-unit id="4" resname="RepeatVert">
+          <source>Repeat Vert.</source>
+          <target>Repetir Vert.</target>
+        </trans-unit>
+      </group>
+      <group resname="BgndClipMode">
+        <trans-unit id="1" resname="Border">
+          <source>Border</source>
+          <target>Borde</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Padding">
+          <source>Padding</source>
+          <target>Relleno</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Content">
+          <source>Content</source>
+          <target>Contenido</target>
+        </trans-unit>
+        <trans-unit id="4" resname="Paper">
+          <source>Paper</source>
+          <target>Papel</target>
+        </trans-unit>
+      </group>
+      <group resname="Tabulations">
+        <trans-unit id="1" resname="Left">
+          <source>Left</source>
+          <target>Izquierda</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Right">
+          <source>Right</source>
+          <target>Derecha</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Center">
+          <source>Center</source>
+          <target>Centro</target>
+        </trans-unit>
+        <trans-unit id="4" resname="Decimal">
+          <source>Decimal</source>
+          <target>Decimal</target>
+        </trans-unit>
+        <trans-unit id="5" resname="Bars">
+          <source>Bars</source>
+          <target>Barras</target>
+        </trans-unit>
+      </group>
+      <group resname="FontAlignVert">
+        <trans-unit id="1" resname="Baseline">
+          <source>Baseline</source>
+          <target>Base</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Superscript">
+          <source>Superscript</source>
+          <target>Superíndice</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Subscript">
+          <source>Subscript</source>
+          <target>Subíndice</target>
+        </trans-unit>
+      </group>
+      <group resname="TextTransform">
+        <trans-unit id="1" resname="TextTransformNone">
+          <source>None</source>
+          <target>Ninguno</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Capitalize">
+          <source>Capitalize</source>
+          <target>Mayúscula inicial</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Lowercase">
+          <source>Lowercase</source>
+          <target>Minúsculas</target>
+        </trans-unit>
+        <trans-unit id="4" resname="Uppercase">
+          <source>Uppercase</source>
+          <target>Mayúsculas</target>
+        </trans-unit>
+        <trans-unit id="5" resname="SmallUppercase">
+          <source>Small uppercase</source>
+          <target>Versalitas</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteStylesheets">
+        <trans-unit id="169" resname="characterStylesheets">
+          <source>Character style sheets</source>
+          <target>Hojas de estilo de caracteres</target>
+        </trans-unit>
+        <trans-unit id="172" resname="rowStylesheets">
+          <source>Row style sheets</source>
+          <target>Hojas de estilo de fila</target>
+        </trans-unit>
+        <trans-unit id="173" resname="cellStylesheets">
+          <source>Cell style sheets</source>
+          <target>Hojas de estilo de celda</target>
+        </trans-unit>
+        <trans-unit id="173" resname="paragraphStylesheets">
+          <source>Paragraph style sheets</source>
+          <target>Hojas de estilo de párrafo</target>
+        </trans-unit>
+        <trans-unit id="174" resname="tableStylesheets">
+          <source>Table style sheets</source>
+          <target>Hojas de estilo de tabla</target>
+        </trans-unit>
+        <trans-unit id="175" resname="imageStylesheets">
+          <source>Image style sheets</source>
+          <target>Hojas de estilo de imagen</target>
+        </trans-unit>
+        <trans-unit id="176" resname="newStylesheet">
+          <source>New style sheet</source>
+          <target>Nueva hoja de estilo</target>
+        </trans-unit>
+        <trans-unit id="177" resname="deleteStylesheet">
+          <source>Delete style sheet</source>
+          <target>Eliminar hoja de estilos</target>
+        </trans-unit>
+        <trans-unit id="178" resname="updateStylesheet">
+          <source>Update style sheet</source>
+          <target>Actualizar hoja de estilos</target>
+        </trans-unit>
+        <trans-unit id="179" resname="editStylesheet">
+          <source>Edit style sheet</source>
+          <target>Editar hoja de estilos</target>
+        </trans-unit>
+        <trans-unit id="180" resname="stylesheets">
+          <source>Style sheets</source>
+          <target>Hojas de estilos</target>
+        </trans-unit>
+        <trans-unit id="181" resname="applyStylesheet">
+          <source>Apply style sheet</source>
+          <target>Aplicar hoja de estilos</target>
+        </trans-unit>
+        <trans-unit id="216" resname="menuNewEmpty">
+          <source>New empty style sheet</source>
+          <target>Nueva hoja de estilo vacía</target>
+        </trans-unit>
+        <trans-unit id="217" resname="menuNewFromSelection">
+          <source>New style sheet based on selection</source>
+          <target>Nueva hoja de estilos basada en la selección</target>
+        </trans-unit>
+        <trans-unit id="218" resname="menuDuplicate">
+          <source>Duplicate</source>
+          <target>Duplicar</target>
+        </trans-unit>
+        <trans-unit id="219" resname="requestTitle">
+          <source>New style sheet name?</source>
+          <target>¿Nuevo nombre de hoja de estilo?</target>
+        </trans-unit>
+        <trans-unit id="220" resname="requestPlaceHolder">
+          <source>Style Sheet</source>
+          <target>Hoja de estilos</target>
+        </trans-unit>
+        <trans-unit id="221" resname="requestCreateLabel">
+          <source>Create</source>
+          <target>Crear</target>
+        </trans-unit>
+        <trans-unit id="222" resname="requestCancelLabel">
+          <source>Cancel</source>
+          <target>Cancelar</target>
+        </trans-unit>
+        <trans-unit id="223" resname="menuDeleteStylesheet">
+          <source>Delete "&lt;1&gt;" style sheet…</source>
+          <target>Eliminar la hoja de estilos "&lt;1&gt;"...</target>
+        </trans-unit>
+        <trans-unit id="224" resname="menuRemoveParagraphStylesheet">
+          <source>Remove paragraph stylesheet</source>
+          <target>Eliminar hoja de estilo de párrafo</target>
+        </trans-unit>
+        <trans-unit id="226" resname="menuRemoveCharacterStyleshet">
+          <source>Remove character style sheets</source>
+          <target>Eliminar las hojas de estilo de caracteres</target>
+        </trans-unit>
+        <trans-unit id="242" resname="menuEditStylesheet">
+          <source>Edit '&lt;1&gt;' style sheet</source>
+          <target>Editar hoja de estilo '&lt;1&gt;'</target>
+        </trans-unit>
+        <trans-unit id="243" resname="menuEditDefault">
+          <source>Default values…</source>
+          <target>Valores por defecto...</target>
+        </trans-unit>
+        <trans-unit id="245" resname="confirmDeleteStylesheet">
+          <source>Delete "&lt;1&gt;" style sheet?</source>
+          <target>¿Eliminar la hoja de estilos "&lt;1&gt;"?</target>
+        </trans-unit>
+        <trans-unit id="UNLqBZ0kwRTrWB3TzdCdnA" resname="StyleSheetPlaceHolder">
+          <source>Style sheet name</source>
+          <target>Nombre de la hoja de estilo</target>
+        </trans-unit>
+      </group>
+      <group resname="StylesheetEditor">
+        <trans-unit id="180" resname="ssFontSize">
+          <source>Font size</source>
+          <target>Tamaño</target>
+        </trans-unit>
+        <trans-unit id="181" resname="ssFont">
+          <source>Font</source>
+          <target>Fuente</target>
+        </trans-unit>
+        <trans-unit id="182" resname="ssFontFamily">
+          <source>Font familly</source>
+          <target>Familia tipográfica</target>
+        </trans-unit>
+        <trans-unit id="183" resname="ssTextColor">
+          <source>Text color</source>
+          <target>Color de texto</target>
+        </trans-unit>
+        <trans-unit id="184" resname="ssBackgroundColor">
+          <source>Background color</source>
+          <target>Color de fondo</target>
+        </trans-unit>
+        <trans-unit id="185" resname="ssBold">
+          <source>Bold</source>
+          <target>Negrita</target>
+        </trans-unit>
+        <trans-unit id="186" resname="ssItalic">
+          <source>Italic</source>
+          <target>Itálica</target>
+        </trans-unit>
+        <trans-unit id="187" resname="ssUnderlineStyle">
+          <source>Underline style</source>
+          <target>Estilo subrayado</target>
+        </trans-unit>
+        <trans-unit id="188" resname="ssUnderlineColor">
+          <source>Underline color</source>
+          <target>Color de subrayado</target>
+        </trans-unit>
+        <trans-unit id="189" resname="ssLinethroughStyle">
+          <source>Line through style</source>
+          <target>Estilo de tachado</target>
+        </trans-unit>
+        <trans-unit id="190" resname="ssLinethroughColor">
+          <source>Line through color</source>
+          <target>Color de tachado</target>
+        </trans-unit>
+        <trans-unit id="191" resname="ssShadowColor">
+          <source>Shadow color</source>
+          <target>Color de sombra</target>
+        </trans-unit>
+        <trans-unit id="192" resname="ssShadowOffet">
+          <source>Shadow offset</source>
+          <target>Desplazamiento de sombra</target>
+        </trans-unit>
+        <trans-unit id="193" resname="ssHorizontalAlign">
+          <source>Horizontal align</source>
+          <target>Alineación horizontal</target>
+        </trans-unit>
+        <trans-unit id="194" resname="ssTextIndent">
+          <source>Text indent</source>
+          <target>Sangría de texto</target>
+        </trans-unit>
+        <trans-unit id="195" resname="ssLineHeight">
+          <source>Line height</source>
+          <target>Altura de la línea</target>
+        </trans-unit>
+        <trans-unit id="196" resname="ssVerticalAlign">
+          <source>Vertical align</source>
+          <target>Alineación vertical</target>
+        </trans-unit>
+        <trans-unit id="197" resname="ssTabs">
+          <source>Tabs</source>
+          <target>Tabulaciones</target>
+        </trans-unit>
+        <trans-unit id="198" resname="ssDefaultTab">
+          <source>Default tab</source>
+          <target>Tabulación predeterminada</target>
+        </trans-unit>
+        <trans-unit id="199" resname="ssListStyleType">
+          <source>List style</source>
+          <target>Estilo de lista</target>
+        </trans-unit>
+        <trans-unit id="200" resname="ssMarginLeft">
+          <source>Margin left</source>
+          <target>Margen izquierdo</target>
+        </trans-unit>
+        <trans-unit id="201" resname="ssMarginTop">
+          <source>Margin top</source>
+          <target>Margen superior</target>
+        </trans-unit>
+        <trans-unit id="202" resname="ssMarginRight">
+          <source>Margin right</source>
+          <target>Margen derecho</target>
+        </trans-unit>
+        <trans-unit id="203" resname="ssMarginBottom">
+          <source>Margin bottom</source>
+          <target>Margen inferior</target>
+        </trans-unit>
+        <trans-unit id="204" resname="ssPaddingLeft">
+          <source>Padding left</source>
+          <target>Espaciado izquierdo</target>
+        </trans-unit>
+        <trans-unit id="205" resname="ssPaddingTop">
+          <source>Padding top</source>
+          <target>Espaciado superior</target>
+        </trans-unit>
+        <trans-unit id="206" resname="ssPaddingRight">
+          <source>Padding right</source>
+          <target>Espaciado derecho</target>
+        </trans-unit>
+        <trans-unit id="207" resname="ssPaddingBottom">
+          <source>Padding bottom</source>
+          <target>Espaciado inferior</target>
+        </trans-unit>
+        <trans-unit id="208" resname="ssBorderStyle">
+          <source>Border style</source>
+          <target>Estilo de borde</target>
+        </trans-unit>
+        <trans-unit id="209" resname="ssBorderWidth">
+          <source>Border width</source>
+          <target>Ancho del borde</target>
+        </trans-unit>
+        <trans-unit id="210" resname="ssBorderColor">
+          <source>Border color</source>
+          <target>Color del borde</target>
+        </trans-unit>
+        <trans-unit id="211" resname="ssBorderRadius">
+          <source>Border radius</source>
+          <target>Radio de borde</target>
+        </trans-unit>
+        <trans-unit id="212" resname="ssNameColon">
+          <source>Name:</source>
+          <target>Nombre:</target>
+        </trans-unit>
+        <trans-unit id="213" resname="ssFonts">
+          <source>Fonts</source>
+          <target>Fuentes</target>
+        </trans-unit>
+        <trans-unit id="214" resname="ssParagraphs">
+          <source>Paragraphs</source>
+          <target>Párrafos</target>
+        </trans-unit>
+        <trans-unit id="215" resname="ssMarginsBorders">
+          <source>Margins &amp; borders</source>
+          <target>Márgenes y bordes</target>
+        </trans-unit>
+        <trans-unit id="226" resname="ssTransform">
+          <source>Transform</source>
+          <target>Transformar</target>
+        </trans-unit>
+        <trans-unit id="227" resname="ssAlignLeft">
+          <source>Left aligned</source>
+          <target>Alineado a la izquierda</target>
+        </trans-unit>
+        <trans-unit id="228" resname="ssAlignCenter">
+          <source>Centered</source>
+          <target>Centrado</target>
+        </trans-unit>
+        <trans-unit id="230" resname="ssAlignJustified">
+          <source>Justified</source>
+          <target>Justificado</target>
+        </trans-unit>
+        <trans-unit id="231" resname="ssAlignRight">
+          <source>Right aligned</source>
+          <target>Alineado a la derecha</target>
+        </trans-unit>
+        <trans-unit id="233" resname="ssAlignBase">
+          <source>Base line</source>
+          <target>Línea base</target>
+        </trans-unit>
+        <trans-unit id="234" resname="ssAlignTop">
+          <source>Top</source>
+          <target>Arriba</target>
+        </trans-unit>
+        <trans-unit id="235" resname="ssAlignBottom">
+          <source>Bottom</source>
+          <target>Abajo</target>
+        </trans-unit>
+        <trans-unit id="236" resname="ssAlignMiddle">
+          <source>Middle</source>
+          <target>Centro</target>
+        </trans-unit>
+        <trans-unit id="237" resname="ssAlignSuperscript">
+          <source>Superscript</source>
+          <target>Superíndice</target>
+        </trans-unit>
+        <trans-unit id="238" resname="ssAlignSubscript">
+          <source>Subscript</source>
+          <target>Subíndice</target>
+        </trans-unit>
+        <trans-unit id="239" resname="ssAlignDefault">
+          <source>Default</source>
+          <target>Por defecto</target>
+        </trans-unit>
+      </group>
+      <group resname="Misc">
+        <trans-unit id="240" resname="ok">
+          <source>OK</source>
+          <target>Aceptar</target>
+        </trans-unit>
+        <trans-unit id="241" resname="cancel">
+          <source>Cancel</source>
+          <target>Cancelar</target>
+        </trans-unit>
+        <trans-unit id="244" resname="delete">
+          <source>Delete</source>
+          <target>Borrar</target>
+        </trans-unit>
+        <trans-unit id="7mnro3rRCakLRVI5zALjKg" resname="clear">
+          <source>Clear</source>
+          <target>Borrar</target>
+        </trans-unit>
+        <trans-unit id="ZHzfpo82912nh75LjvWUsw" resname="Yes">
+          <source>Yes</source>
+          <target>Sí</target>
+        </trans-unit>
+        <trans-unit id="algTRD9sqjDsayCBIx1jig" resname="No">
+          <source>No</source>
+          <target>No</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteFindReplace">
+        <trans-unit id="250" resname="CaseSensitive">
+          <source>Case sensitive</source>
+          <target>Sensible a mayúsculas</target>
+        </trans-unit>
+        <trans-unit id="272" resname="ErrorEmptyFind">
+          <source>The "find" property can not be an empty string.</source>
+          <target>La propiedad "find" no puede ser una cadena vacía.</target>
+        </trans-unit>
+        <trans-unit id="264" resname="ErrorMissingAction">
+          <source>The "action" property is mandatory.</source>
+          <target>La propiedad "action" es obligatoria.</target>
+        </trans-unit>
+        <trans-unit id="263" resname="ErrorMissingDocument">
+          <source>The "document" property is mandatory.</source>
+          <target>La propiedad "document" es obligatoria.</target>
+        </trans-unit>
+        <trans-unit id="266" resname="ErrorMissingFind">
+          <source>The "find" property is mandatory.</source>
+          <target>La propiedad "find" es obligatoria.</target>
+        </trans-unit>
+        <trans-unit id="265" resname="ErrorMissingSelection">
+          <source>The "selection" property is mandatory.</source>
+          <target>La propiedad "selection" es obligatoria.</target>
+        </trans-unit>
+        <trans-unit id="270" resname="ErrorTypeAction">
+          <source>The "action" property must be of the text type.</source>
+          <target>La propiedad "action" debe ser de tipo texto.</target>
+        </trans-unit>
+        <trans-unit id="273" resname="ErrorTypeCaseSensitive">
+          <source>The "caseSensitive" property must be of the boolean type.</source>
+          <target>La propiedad "caseSensitive" debe ser de tipo booleano.</target>
+        </trans-unit>
+        <trans-unit id="268" resname="ErrorTypeDocument">
+          <source>The "document" property must be of the object type.</source>
+          <target>La propiedad "document" debe ser de tipo objeto.</target>
+        </trans-unit>
+        <trans-unit id="271" resname="ErrorTypeFind">
+          <source>The "find" property must be of the text type.</source>
+          <target>La propiedad "find" debe ser de tipo de texto.</target>
+        </trans-unit>
+        <trans-unit id="276" resname="ErrorTypeFullWord">
+          <source>The "fullWord" property must be of the boolean type.</source>
+          <target>La propiedad "fullWord" debe ser de tipo booleano.</target>
+        </trans-unit>
+        <trans-unit id="275" resname="ErrorTypeKeepCharStyle">
+          <source>The "keepCharStyle" property must be of the boolean type.</source>
+          <target>La propiedad "keepCharStyle" debe ser de tipo booleano.</target>
+        </trans-unit>
+        <trans-unit id="272" resname="ErrorTypeReplace">
+          <source>The "replace" property must be of the text type.</source>
+          <target>La propiedad "replace" debe ser de tipo texto.</target>
+        </trans-unit>
+        <trans-unit id="269" resname="ErrorTypeSelection">
+          <source>The "selection" property must be of the object type.</source>
+          <target>La propiedad "selection" debe ser de tipo objeto.</target>
+        </trans-unit>
+        <trans-unit id="248" resname="Find">
+          <source>Find</source>
+          <target>Buscar</target>
+        </trans-unit>
+        <trans-unit id="247" resname="FindColon">
+          <source>Find:</source>
+          <target>Buscar:</target>
+        </trans-unit>
+        <trans-unit id="251" resname="FindFirst">
+          <source>First</source>
+          <target>Primero</target>
+        </trans-unit>
+        <trans-unit id="254" resname="FindLast">
+          <source>Last</source>
+          <target>Último</target>
+        </trans-unit>
+        <trans-unit id="252" resname="FindNext">
+          <source>Next</source>
+          <target>Siguiente</target>
+        </trans-unit>
+        <trans-unit id="253" resname="FindPrevious">
+          <source>Previous</source>
+          <target>Anterior</target>
+        </trans-unit>
+        <trans-unit id="262" resname="FindElipsis">
+          <source>Find…</source>
+          <target>Buscar...</target>
+        </trans-unit>
+        <trans-unit id="260" resname="FullWord">
+          <source>Full words only</source>
+          <target>Sólo palabras completas</target>
+        </trans-unit>
+        <trans-unit id="259" resname="KeepCharStyle">
+          <source>Keep each character style</source>
+          <target>Mantener cada estilo de carácter</target>
+        </trans-unit>
+        <trans-unit id="261" resname="Option">
+          <source>Option</source>
+          <target>Opción</target>
+        </trans-unit>
+        <trans-unit id="249" resname="Options">
+          <source>Options</source>
+          <target>Opciones</target>
+        </trans-unit>
+        <trans-unit id="255" resname="Replace">
+          <source>Replace</source>
+          <target>Reemplazar</target>
+        </trans-unit>
+        <trans-unit id="262" resname="ReplaceAll">
+          <source>Replace all</source>
+          <target>Reemplazar todos</target>
+        </trans-unit>
+        <trans-unit id="262" resname="ReplaceAllMessage">
+          <source>Replace "&amp;1" by "&amp;2"…</source>
+          <target>Reemplazar "&amp;1" por "&amp;2"...</target>
+        </trans-unit>
+        <trans-unit id="257" resname="ReplaceAndNext">
+          <source>Replace and find</source>
+          <target>Reemplazar y encontrar</target>
+        </trans-unit>
+        <trans-unit id="256" resname="ReplaceByColon">
+          <source>Replace by:</source>
+          <target>Reemplazar por:</target>
+        </trans-unit>
+        <trans-unit id="276" resname="ErrorUnknownAction">
+          <source>This action is unknown.</source>
+          <target>Esta acción es desconocida</target>
+        </trans-unit>
+        <trans-unit id="fllZberc5UmVoY77eN6hWg" resname="AccentSensitive">
+          <source>Accent sensitive</source>
+          <target>Sensible a los acentos</target>
+        </trans-unit>
+        <trans-unit id="mWfZe71n2prS1bwT5Kl/7Q" resname="KanaSensitive">
+          <source>Kana sensitive</source>
+          <target>Sensible a kana</target>
+        </trans-unit>
+        <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="WidthSensitive">
+          <source>Width sensitive</source>
+          <target>Sensible al ancho</target>
+        </trans-unit>
+        <trans-unit id="msIfGk9Zlbu60aimbEHQOw" resname="OccurrencesReplaced">
+          <source>&lt;x&gt; occurrences have been replaced.</source>
+          <target>&lt;x&gt;ocurrencias han sido reemplazadas.</target>
+        </trans-unit>
+        <trans-unit id="ZUDcR0S8puBf1AHiVHqHWw" resname="SearchOptions">
+          <source>Search options</source>
+          <target>Opciones de búsqueda</target>
+        </trans-unit>
+        <trans-unit id="kzbkcXohhISsex2WHJcFtw" resname="ReplaceOptions">
+          <source>Replace options</source>
+          <target>Opciones de reemplazo</target>
+        </trans-unit>
+        <trans-unit id="emHWvgg7g+0idYuJ+FxPwA" resname="ReplaceBy">
+          <source>Replace by</source>
+          <target>Reemplazar por</target>
+        </trans-unit>
+        <trans-unit id="lp5g7Q738nbVfrHPkzSBPQ" resname="IncludeHeadersAndFooters">
+          <source>Include headers and footers</source>
+          <target>Incluir encabezados y pies de página</target>
+        </trans-unit>
+        <trans-unit id="pZv3LaV+16Uw8EoSBOzxLA" resname="KeyboardBased">
+          <source>Search based on '&lt;1&gt;' keyboard </source>
+          <target>Búsqueda basada en el teclado '&lt;1&gt;'</target>
+        </trans-unit>
+        <trans-unit id="4TFSNZU8Z6IMoq+NekNNIg" resname="OccurencesColon">
+          <source>Occurences:</source>
+          <target>Ocurrencias:</target>
+        </trans-unit>
+        <trans-unit id="Q8D13uFpth/PNUBxsK/oVw" resname="ReplacementsColon">
+          <source>Replacements:</source>
+          <target>Reemplazos:</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteTables">
+        <trans-unit id="277" resname="InsertAbove">
+          <source>Insert above</source>
+          <target>Insertar arriba</target>
+        </trans-unit>
+        <trans-unit id="278" resname="InsertBelow">
+          <source>Insert below</source>
+          <target>Insertar abajo</target>
+        </trans-unit>
+        <trans-unit id="279" resname="InsertLeft">
+          <source>Insert to the left</source>
+          <target>Insertar a la izquierda</target>
+        </trans-unit>
+        <trans-unit id="280" resname="InsertRight">
+          <source>Insert to the right</source>
+          <target>Insertar a la derecha</target>
+        </trans-unit>
+        <trans-unit id="281" resname="DeleteRow">
+          <source>Delete row</source>
+          <target>Borrar fila</target>
+        </trans-unit>
+        <trans-unit id="282" resname="DeleteRows">
+          <source>Delete &lt;n&gt; rows</source>
+          <target>Borrar &lt;n&gt; filas</target>
+        </trans-unit>
+        <trans-unit id="283" resname="DeleteColumn">
+          <source>Delete column</source>
+          <target>Borrar columna</target>
+        </trans-unit>
+        <trans-unit id="284" resname="DeleteColumns">
+          <source>Delete &lt;n&gt; columns</source>
+          <target>Borrar &lt;n&gt; columnas</target>
+        </trans-unit>
+        <trans-unit id="285" resname="DeleteCell">
+          <source>Delete cell</source>
+          <target>Borrar celda</target>
+        </trans-unit>
+        <trans-unit id="286" resname="DeleteCells">
+          <source>Delete &lt;n&gt; cells</source>
+          <target>Borrar &lt;n&gt; celdas</target>
+        </trans-unit>
+        <trans-unit id="287" resname="LabelRows">
+          <source>Rows</source>
+          <target>Filas</target>
+        </trans-unit>
+        <trans-unit id="288" resname="LabelColumns">
+          <source>Columns</source>
+          <target>Columnas</target>
+        </trans-unit>
+        <trans-unit id="289" resname="LabelCells">
+          <source>Cells</source>
+          <target>Celdas</target>
+        </trans-unit>
+        <trans-unit id="292" resname="Table">
+          <source>Table</source>
+          <target>Tabla</target>
+        </trans-unit>
+        <trans-unit id="293" resname="InsertTable">
+          <source>Insert table</source>
+          <target>Insertar tabla</target>
+        </trans-unit>
+        <trans-unit id="294" resname="LabelTable">
+          <source>Table</source>
+          <target>Tabla</target>
+        </trans-unit>
+        <trans-unit id="VHydT13fVdf+VH5qRRUFtg" resname="menuBorderStyle">
+          <source>Border Style</source>
+          <target>Estilo de borde</target>
+        </trans-unit>
+        <trans-unit id="7AGgS68d0BFBl1GG+3azQg" resname="menuBorderColor">
+          <source>Border Color</source>
+          <target>Color del borde</target>
+        </trans-unit>
+        <trans-unit id="kT56lwRqNZR4oGajuxhnHw" resname="menuBorderWidth">
+          <source>Border Width</source>
+          <target>Ancho del borde</target>
+        </trans-unit>
+        <trans-unit id="tFPMp9gQRDEBJw1gPLRxvw" resname="menuBackgroundColor">
+          <source>Background Color</source>
+          <target>Color de fondo</target>
+        </trans-unit>
+        <trans-unit id="YgIrOc1RS48st5bY52f5Qg" resname="menuAlignment">
+          <source>Alignment</source>
+          <target>Alineación</target>
+        </trans-unit>
+        <trans-unit id="g+8wWMzDK4ns8WHG4G5Sqw" resname="menuMargins">
+          <source>Margins</source>
+          <target>Márgenes</target>
+        </trans-unit>
+        <trans-unit id="8xZmKn9MYRUmni9D/b9OOQ" resname="menuPadding">
+          <source>Padding</source>
+          <target>Relleno</target>
+        </trans-unit>
+        <trans-unit id="+Y1p0tp8GEUMHQs6gtRtQQ" resname="menuWidth">
+          <source>Width</source>
+          <target>Ancho</target>
+        </trans-unit>
+        <trans-unit id="a158s7yXqD9Zom4FNjAAkw" resname="menuHeight">
+          <source>Height</source>
+          <target>Altura</target>
+        </trans-unit>
+        <trans-unit id="YPG7PurBVvBgKMU6kaMxFQ" resname="menuVerticalAlignment">
+          <source>Vertical Alignment</source>
+          <target>Alineación vertical</target>
+        </trans-unit>
+        <trans-unit id="WdntTS/LhHFkvUQujjopMQ" resname="menuInsertTable">
+          <source>Insert Table</source>
+          <target>Insertar tabla</target>
+        </trans-unit>
+        <trans-unit id="dXc0WnW6WSXYVOsmA0j/+g" resname="Cell">
+          <source>Cell</source>
+          <target>Celda</target>
+        </trans-unit>
+        <trans-unit id="ZM4XpS2XvZltITmEG4voHg" resname="Row">
+          <source>Row</source>
+          <target>Línea</target>
+        </trans-unit>
+        <trans-unit id="9YY74EqftqLxbArojeDu/w" resname="Properties">
+          <source>Properties</source>
+          <target>Propiedades</target>
+        </trans-unit>
+        <trans-unit id="CBa5QNoUGYvlYOhE9ONZzg" resname="SetDatasourceEllipsis">
+          <source>Set datasource…</source>
+          <target>Definir la fuente...</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteProtect">
+        <trans-unit id="QRCHOUVOvU1y6dkzlbGq5A" resname="protectParagraphs">
+          <source>Paragraphs</source>
+          <target>Párrafos</target>
+        </trans-unit>
+        <trans-unit id="4LD6NBpIo5AuPj8w7cER4A" resname="protectionEnabled">
+          <source>Protection enabled</source>
+          <target>Protección activada</target>
+        </trans-unit>
+        <trans-unit id="pIhODmU+jdAnjW8ddEq9Tw" resname="protection">
+          <source>Protection</source>
+          <target>Protección</target>
+        </trans-unit>
+        <trans-unit id="Qe608vHPHLO3bJNBCH7p1A" resname="protectRows">
+          <source>Rows</source>
+          <target>Filas</target>
+        </trans-unit>
+        <trans-unit id="BAPDa661YLnM9DcVXyWXOw" resname="protectTables">
+          <source>Tables</source>
+          <target>Tablas</target>
+        </trans-unit>
+        <trans-unit id="03iEJ+It6O69xY6j0lz6Qg" resname="protectCells">
+          <source>Cells</source>
+          <target>Celdas</target>
+        </trans-unit>
+      </group>
+      <group resname="Errors">
+        <trans-unit id="GwNqq+FAlrv+V8fYd7geXA" resname="missingPointer">
+          <source>The pointer on 4D Write Pro document is missing.</source>
+          <target>Falta el puntero en el documento 4D Write Pro.</target>
+        </trans-unit>
+        <trans-unit id="nx2miGaaD+xCPQKlY//Q+g" resname="nilPointer">
+          <source>The pointer on 4D Write Pro document is nil.</source>
+          <target>El puntero en el documento 4D Write Pro es nulo.</target>
+        </trans-unit>
+        <trans-unit id="2UM2PhxkLdT3NCFN+uzEJA" resname="thisTypeOfDocumentCantBeImported">
+          <source>This type of document can't be imported.</source>
+          <target>Este tipo de documento no se puede importar.</target>
+        </trans-unit>
+      </group>
+      <group resname="DialogExport">
+        <trans-unit id="seROCZqSCuxQqqVcq1uboA" resname="exportPDF">
+          <source>PDF Export</source>
+          <target>Exportar PDF</target>
+        </trans-unit>
+        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgrounds">
+          <source>Backgrounds</source>
+          <target>Fondos</target>
+        </trans-unit>
+        <trans-unit id="2zaxAplGAgJvGg5f+KnwOA" resname="headers">
+          <source>Headers</source>
+          <target>Encabezados</target>
+        </trans-unit>
+        <trans-unit id="GbCtfYrp9W6n/xYbqhxNkQ" resname="footers">
+          <source>Footers</source>
+          <target>Pies</target>
+        </trans-unit>
+        <trans-unit id="tMZO5KyH1Qe77I7HSLR6og" resname="htmlWysiwyg">
+          <source>HTML "WYSIWYG"</source>
+          <target>HTML "WYSIWIG"</target>
+        </trans-unit>
+        <trans-unit id="7yp1Rkz6KWEs2pehpSqJoA" resname="recomputeFormulas">
+          <source>Recompute formulas</source>
+          <target>Recalcular las fórmulas</target>
+        </trans-unit>
+        <trans-unit id="6u1E8KwGXapCFqeIJkqYQA" resname="Screen">
+          <source>Screen</source>
+          <target>Pantalla</target>
+        </trans-unit>
+        <trans-unit id="gVQaYSHGiwZBwAt4P5iaYw" resname="print">
+          <source>Print</source>
+          <target>Impresión</target>
+        </trans-unit>
+        <trans-unit id="rfCY4nYj4m3OHuYW++DWlA" resname="maxPictureDPI">
+          <source>Maximum DPI for pictures:</source>
+          <target>DPI máximo para las imágenes:</target>
+        </trans-unit>
+        <trans-unit id="EuJJLbs1LD5q4/WlL7w0XA" resname="cidHostDomainName">
+          <source>CID Host domain name:</source>
+          <target>Nombre de dominio CID:</target>
+        </trans-unit>
+        <trans-unit id="J+Sxu8o5HUf7ju4qU4EfMQ" resname="optimizedFor">
+          <source>Optimized for:</source>
+          <target>Optimizado para:</target>
+        </trans-unit>
+        <trans-unit id="G9BJhwrgI8ZjjK+PvIb0oA" resname="exportOptions">
+          <source>Export options</source>
+          <target>Opciones de exportación</target>
+        </trans-unit>
+        <trans-unit id="STSER3qbzZIUcH0uINw3MA" resname="ExportEllipsis">
+          <source>Export…</source>
+          <target>Exportar…</target>
+        </trans-unit>
+        <trans-unit id="fMOz7wl6MpDwxlU77dYxUA" resname="InfoScreen">
+          <source>Document size will be smaller and any pictures will be compressed to "jpg" or "png"</source>
+          <target>El tamaño del documento será reducido y las imágenes se comprimirán en "jpg" o "png"</target>
+        </trans-unit>
+        <trans-unit id="SD+Y7dnDCOmvJ94LKms7CQ" resname="InfoPrint">
+          <source>Document size will be bigger and any pictures will be keep their original "codec".</source>
+          <target>El tamaño del documento será más grande y las imágenes mantendrán su "códec" original.</target>
+        </trans-unit>
+        <trans-unit id="M/by8K2LDXD/OhCDfGnX+Q" resname="InfoFormulas">
+          <source>When selected, all formulas will be recomputed before export.
+
+When not selected, only formulas that have never been evaluated will be computed.</source>
+          <target>Cuando se selecciona, todas las fórmulas se volverán a calcular antes de la exportación.
+
+Cuando no se selecciona, solo se calcularán las fórmulas que nunca se han evaluado.</target>
+        </trans-unit>
+        <trans-unit id="6LkWY9PvfM8ea1sA6vSrBw" resname="ExportComma">
+          <source>Export:</source>
+          <target>Export:</target>
+        </trans-unit>
+        <trans-unit id="caQYk8btXcl+pUBojuXPoQ" resname="InfoEmbedPictures">
+          <source>With this option, the generated SVG document will be standalone but its size will increase</source>
+          <target>Con esta opción, el documento SVG generado será autónomo pero su tamaño aumentará</target>
+        </trans-unit>
+        <trans-unit id="Jm3zqgXEMB//3tACqAcZ0A" resname="InfoExportPictures">
+          <source>This option allows you to export the images of your document to an external "images" folder. The SVG file will be lighter.</source>
+          <target>Esta opción permite exportar las imágenes de su documento a una carpeta "imágenes" externa. El archivo SVG será más ligero.</target>
+        </trans-unit>
+        <trans-unit id="l5yK2FqhagnuTfX+7DfKjA" resname="InfoCreateFolder">
+          <source>A folder will be created and will contain the SVG file and the pictures folder if needed.</source>
+          <target>Se creará una carpeta que contendrá el archivo SVG y la carpeta "imágenes" si es necesario.</target>
+        </trans-unit>
+        <trans-unit id="h60zhveTCxSBSmc8ly911Q" resname="EmbedImages">
+          <source>Embed document pictures</source>
+          <target>Incluir imágenes de documentos</target>
+        </trans-unit>
+        <trans-unit id="EyvZbU4fegiD39MW7BvMNQ" resname="ExportImages">
+          <source>Export images from document</source>
+          <target>Exportar imágenes del documento</target>
+        </trans-unit>
+        <trans-unit id="ftw1H7xGhhRTkqQ2O2LLGg" resname="EnableGoogleFonts">
+          <source>Enable Google fonts substitution</source>
+          <target>Activar la sustitución Google fonts</target>
+        </trans-unit>
+        <trans-unit id="NqxkQgc34W90eQYBmYkkvg" resname="InfoGoogleFonts">
+          <source>This option adds a Google font import directive.
+Use this option if the fonts in your document are not cross-platform.</source>
+          <target>Esta opción agrega una directiva de importación de fuentes Google.
+Utilice esta opción si las fuentes de su documento no son multiplataforma.</target>
+        </trans-unit>
+        <trans-unit id="KRk/LGj7Cj0IKqbAD1+m2Q" resname="PagesComma">
+          <source>Pages:</source>
+          <target>Páginas:</target>
+        </trans-unit>
+        <trans-unit id="9rxyF4rWKl6cSTgcq13Plw" resname="ConfirmImageFolder">
+          <source>An "Images" folder already exists there!
+Would you like to replace it?</source>
+          <target>Ya existe una carpeta "Images" 
+¿Le gustaría reemplazarla?</target>
+        </trans-unit>
+        <trans-unit id="ZYahIeSDiz5Tz/hjbW8C2A" resname="Overwrite">
+          <source>Overwrite</source>
+          <target>Sobrescribir</target>
+        </trans-unit>
+        <trans-unit id="gJPawW7rsig8FtISvxRypw" resname="All">
+          <source>All</source>
+          <target>Todos</target>
+        </trans-unit>
+        <trans-unit id="JYFMlsryz/0iGg7gUz7AUA" resname="FromComma">
+          <source>From:</source>
+          <target>De:</target>
+        </trans-unit>
+        <trans-unit id="vcXBxWYL/WBWSqCP8bp63A" resname="ToComma">
+          <source>to:</source>
+          <target>Hasta:</target>
+        </trans-unit>
+        <trans-unit id="RMDC+cSZBoQl5t/kVyWSGg" resname="svgEllipsis">
+          <source>SVG…</source>
+          <target>SVG…</target>
+        </trans-unit>
+        <trans-unit id="yXC6rMdaGMCwbJsOKcSU+Q" resname="htmlEllipsis">
+          <source>HTML…</source>
+          <target>HTML…</target>
+        </trans-unit>
+        <trans-unit id="DlMn8kPNE6u2c2tRr8jppA" resname="FileNamePrompt">
+          <source>Name of the file to be created</source>
+          <target>Nombre del archivo a crear</target>
+        </trans-unit>
+        <trans-unit id="9AHHUOIbvZ1JaXXlXU4VWQ" resname="FolderNamePrompt">
+          <source>Name of the folder to be created</source>
+          <target>Nombre de la carpeta a crear</target>
+        </trans-unit>
+        <trans-unit id="y32E8D1pr6wrutx/5zbK/A" resname="infoEmptyPictures">
+          <source>Check this box if you want to export empty pictures returned by formulas.</source>
+          <target>Seleccione esta casilla si desea exportar las imágenes vacías devueltas por las fórmulas.</target>
+        </trans-unit>
+        <trans-unit id="gzqU0lQaIqbShE0dEr/AwA" resname="optionsComma">
+          <source>Options:</source>
+          <target>Opciones:</target>
+        </trans-unit>
+        <trans-unit id="ILaNpHjjQPifHiTlQjUIGg" resname="blackFrame">
+          <source>Black frame for empty pictures</source>
+          <target>Marco negro para las imágenes vacías</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteImportExport"/>
+      <group resname="textArea">
+        <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
+          <source>Erase the document</source>
+          <target>Borrar el documento</target>
+        </trans-unit>
+        <trans-unit id="FlHVoUXe7QVKBS23F0ny5Q" resname="BeforeDocument">
+          <source>at the beginning</source>
+          <target>al principio</target>
+        </trans-unit>
+        <trans-unit id="v2qONMZHKzxZtNap9RsfFw" resname="AfterDocument">
+          <source>at the end</source>
+          <target>al final</target>
+        </trans-unit>
+        <trans-unit id="ewuKg1WiWojJOtdoz3wpqg" resname="ReplaceSelection">
+          <source>at cursor position</source>
+          <target>en la posición del cursor</target>
+        </trans-unit>
+        <trans-unit id="kRahCITb8zTZzcaUFp2q0Q" resname="ImportOptions">
+          <source>Import options</source>
+          <target>Opciones de importación</target>
+        </trans-unit>
+        <trans-unit id="/ZwYY2UXzYETIAVO1G2dvA" resname="InfoErase">
+          <source>The document will be replaced</source>
+          <target>El documento será sustituido</target>
+        </trans-unit>
+        <trans-unit id="OEeH+VlZg5xuxWvUjW1P1A" resname="InfoBefore">
+          <source>After the first header (if any)</source>
+          <target>Después del primer encabezado (si existe)</target>
+        </trans-unit>
+        <trans-unit id="KGyZW8NNWI/ZTRVopYvVHw" resname="InforAfter">
+          <source>Before the last footer (if any)</source>
+          <target>Antes del último pie de página (si existe)</target>
+        </trans-unit>
+        <trans-unit id="ERLyD4OELj5tXGKqcoTmNQ" resname="InfoReplaceSelection">
+          <source>(or replace current selection)</source>
+          <target>(o reemplazar la selección actual)</target>
+        </trans-unit>
+        <trans-unit id="fUY1y/mfq8YIayhWmfKZeg" resname="SelectFile">
+          <source>Select file to import…</source>
+          <target>Seleccionar el archivo a importar...</target>
+        </trans-unit>
+        <trans-unit id="ceXUiqKwcVAUS6ay3ug5xQ" resname="ReplaceDocument">
+          <source>Replace the current document</source>
+          <target>Reemplazar el documento actual</target>
+        </trans-unit>
+        <trans-unit id="NFtFcqXg4EZ1lxL/0wtdpw" resname="InfoReplaceDocument">
+          <source>The full document will be replaced including headers and footers.</source>
+          <target>El documento completo será reemplazado incluyendo los encabezados y pies de página.</target>
+        </trans-unit>
+        <trans-unit id="V9QRc48mupZaPsRVherBRQ" resname="InfoNotImported">
+          <source>The headers, footers and anchored pictures will not be imported.</source>
+          <target>Las imágenes ancladas, los encabezados y las notas al pie no se importarán.</target>
+        </trans-unit>
+        <trans-unit id="n4aL7HhXL+o5ruwGL/guAQ" resname="InsertInTheDocument">
+          <source>Insert in the document…</source>
+          <target>Insertar en el documento...</target>
+        </trans-unit>
+        <trans-unit id="+siVncaV7S9ujx1b+dIgiA" resname="SelectDocumentOfType">
+          <source>Select a document (.txt, .4wp or .4w7)</source>
+          <target>Seleccione un documento (.txt, .4wp o .4w7)</target>
+        </trans-unit>
+        <trans-unit id="ovkE8m6t9hOAvs5WY9nA7A" resname="ConfirmClear">
+          <source>This action will remove all content from the document.</source>
+          <target>Esta acción borrará todo el documento.</target>
+        </trans-unit>
+        <trans-unit id="DU4JNkbLHrgf3m8pAIaC6Q" resname="ClearEllipsis">
+          <source>Clear…</source>
+          <target>Borrar...</target>
+        </trans-unit>
+        <trans-unit id="PLXw3AoYuswFhizuV35Zgg" resname="Clear">
+          <source>Clear</source>
+          <target>Borrar</target>
+        </trans-unit>
+        <trans-unit id="DZMDM6LbSQUK7XnLqvm8+g" resname="Freeze">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit id="3KMV7oT2tuLS05721O0Waw" resname="SectionNumber">
+          <source>Section number</source>
+          <target>Número de sección</target>
+        </trans-unit>
+      </group>
+      <group resname="DialogImportLog">
+        <trans-unit id="A4sgoBTWcmhTBII7qTJgAQ" resname="HeaderInfo">
+          <source>Some differences may appear in the imported document compared to the original.</source>
+          <target>Pueden aparecer algunas diferencias en el documento importado en comparación con el original.</target>
+        </trans-unit>
+        <trans-unit id="sOiTU6STg6XmKEoEewJ0Cw" resname="BrowseTheImportLog">
+          <source>Would you like to browse the import log?</source>
+          <target>¿Le gustaría navegar por el historial de importación?</target>
+        </trans-unit>
+        <trans-unit id="cfsKcFg01whY9Os6iiMC0Q" resname="HoverOverTheLines">
+          <source>Hover over the lines for more information</source>
+          <target>Pase el ratón sobre las líneas para más información</target>
+        </trans-unit>
+        <trans-unit id="gXld70IPpB0lJKIP67qp/Q" resname="ImportLog">
+          <source>Import log</source>
+          <target>Historial de importación</target>
+        </trans-unit>
+      </group>
+      <group resname="DialogPictureSettings">
+        <trans-unit id="nyFYGQNHQerfVfW24a7oeQ" resname="MarginsHyphen">
+          <source>Margins:</source>
+          <target>Márgenes:</target>
+        </trans-unit>
+        <trans-unit id="wL0rIpQnidAkY6wndHrvDg" resname="PaddingHyphen">
+          <source>Padding:</source>
+          <target>Relleno:</target>
+        </trans-unit>
+        <trans-unit id="PiyV+E6B2BOy4GNsS6PbpQ" resname="FormulaAndURL">
+          <source>Formula and URL</source>
+          <target>Fórmula y URL</target>
+        </trans-unit>
+        <trans-unit id="wRMExlUUxWxkESUYigSjbQ" resname="FormulaHyphen">
+          <source>Formula:</source>
+          <target>Fórmula:</target>
+        </trans-unit>
+        <trans-unit id="LLLtQzZjWPEMU5jxnvSvmw" resname="URLhyphen">
+          <source>URL:</source>
+          <target>URL:</target>
+        </trans-unit>
+        <trans-unit id="tX1lPAf1vFI1IN4iTPThbQ" resname="AlternateTextHyphen">
+          <source>Alternate text:</source>
+          <target>Texto alternativo:</target>
+        </trans-unit>
+        <trans-unit id="lUrF6H2gRySYCSMqQIxzdA" resname="PagesAndSections">
+          <source>Pages and sections</source>
+          <target>Páginas y secciones</target>
+        </trans-unit>
+        <trans-unit id="lHXUAc0Aid8ZFUFZrz/6ew" resname="Alignments">
+          <source>Alignments</source>
+          <target>Alineaciones</target>
+        </trans-unit>
+        <trans-unit id="zRIujmEncGp6o57fw558gQ" resname="HorizontalHyphen">
+          <source>Horizontal alignment:</source>
+          <target>Alineación horizontal:</target>
+        </trans-unit>
+        <trans-unit id="8LsAUIhSSfbN0OJ6Lw53Tg" resname="VerticalHyphen">
+          <source>Vertical alignment:</source>
+          <target>Alineación vertical:</target>
+        </trans-unit>
+        <trans-unit id="OeBtEIyH9SPbvssc58l4CQ" resname="OriginHyphen">
+          <source>Origin:</source>
+          <target>Origen:</target>
+        </trans-unit>
+        <trans-unit id="catAtKcAEEEZdYnyhfv67Q" resname="OffsetHyphen">
+          <source>Offset:</source>
+          <target>Intervalo:</target>
+        </trans-unit>
+        <trans-unit id="65ama9WrvtHLrbrdjVJfaQ" resname="LayoutHyphen">
+          <source>Layout:</source>
+          <target>Posición:</target>
+        </trans-unit>
+        <trans-unit id="E7Im6nkWi6aJJv3eGzlZYA" resname="PageHyphen">
+          <source>Page:</source>
+          <target>Página:</target>
+        </trans-unit>
+        <trans-unit id="jWqVmNI+1acCwuigWZHmPg" resname="SectionHyphen">
+          <source>Section:</source>
+          <target>Sección:</target>
+        </trans-unit>
+        <trans-unit id="UsV1y7NogpqYqFKGqBnpdQ" resname="SectionNumberHyphen">
+          <source>Section number:</source>
+          <target>Número de sección:</target>
+        </trans-unit>
+        <trans-unit id="HA6gCicHrNfGJXvIau+4aw" resname="PageNumberHyphen">
+          <source>Page number:</source>
+          <target>Número de página:</target>
+        </trans-unit>
+        <trans-unit id="8zcpBgEZdV1mEBmM17EvNQ" resname="EditEllipsis">
+          <source>Edit…</source>
+          <target>Editar…</target>
+        </trans-unit>
+        <trans-unit id="d8Pz/T0Mn8VIE4BrsRYx7Q" resname="Clear">
+          <source>Clear</source>
+          <target>Borrar</target>
+        </trans-unit>
+        <trans-unit id="2iXsmivw0on7vNRnbY3/MQ" resname="Freeze">
+          <source>Freeze</source>
+          <target>Congelar</target>
+        </trans-unit>
+        <trans-unit id="Yum8Y38jHqiWZ72k7Jr0uQ" resname="PictureSettings">
+          <source>Picture settings</source>
+          <target>Parámetros imagen</target>
+        </trans-unit>
+        <trans-unit id="lP5Wk5MEdkpNOiSJgn9p8A" resname="OriginalSize">
+          <source>Original size</source>
+          <target>Tamaño original</target>
+        </trans-unit>
+        <trans-unit id="Qk23GVWVSIVC55yKGMhYaQ" resname="PictureFormat">
+          <source>Picture format:</source>
+          <target>Formato de imagen:</target>
+        </trans-unit>
+        <trans-unit id="fBvnMsjh2EReTO1gRxu7sw" resname="LeftPages">
+          <source>Left pages</source>
+          <target>Páginas izquierdas</target>
+        </trans-unit>
+        <trans-unit id="mFFDsjPq2TAu2gzl5XM0mQ" resname="FirstPage">
+          <source>First page</source>
+          <target>Primera Página</target>
+        </trans-unit>
+        <trans-unit id="khX9wIKnpJFDIWvtbHJpCg" resname="RightPages">
+          <source>Right pages</source>
+          <target>Páginas derechas</target>
+        </trans-unit>
+        <trans-unit id="QR7rFC0zJIwfzEn9E+IYRA" resname="PageNumber">
+          <source>Page number</source>
+          <target>Número de página</target>
+        </trans-unit>
+        <trans-unit id="ynXAPxhJMkNpcwRliQMXvg" resname="insertImageURL">
+          <source>Insert an image URL…</source>
+          <target>Insertar URL de una imagen...</target>
+        </trans-unit>
+        <trans-unit id="m3a/CgZ8NS600XAnT/CuFA" resname="insertImageFormula">
+          <source>Insert an image formula…</source>
+          <target>Insertar una fórmula imagen...</target>
+        </trans-unit>
+        <trans-unit id="PkaSe6J+O4IfvlHou7auvA" resname="editImageURL">
+          <source>Edit image URL…</source>
+          <target>Editar el URL de la imagen...</target>
+        </trans-unit>
+        <trans-unit id="00lbTfGC7req5VFUsKJClQ" resname="editImageFormula">
+          <source>Edit image formula</source>
+          <target>Editar la fórmula de la imagen</target>
+        </trans-unit>
+        <trans-unit id="fol28Q4W1QaiCmasz8InLQ" resname="WidthColon">
+          <source>Width:</source>
+          <target>Ancho:</target>
+        </trans-unit>
+        <trans-unit id="gRUAqvqF/1uDA6gPAG35KQ" resname="HeightColon">
+          <source>Height:</source>
+          <target>Altura:</target>
+        </trans-unit>
+        <trans-unit id="kTXJQBET6xQGp0xvCmrDSg" resname="Propagate">
+          <source>Propagate</source>
+          <target>Propagar</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_Paragraph">
+        <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
+          <source>Reset paragraph font attributes</source>
+          <target>Reinicializar los atributos de fuente de párrafo</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_DocInfo">
+        <trans-unit id="KIsUNyYrj7evpWMAyBfemg" resname="title">
+          <source>Title</source>
+          <target>Título</target>
+        </trans-unit>
+        <trans-unit id="O3s/HchQTWSZ/UcjrtMpWg" resname="author">
+          <source>author</source>
+          <target>Autor</target>
+        </trans-unit>
+        <trans-unit id="Au2W7hEQE5ZfKI1rvAnUww" resname="subject">
+          <source>Subject</source>
+          <target>Asunto</target>
+        </trans-unit>
+        <trans-unit id="s9AD0G6fIMkDCStHS2ysnw" resname="company">
+          <source>Company</source>
+          <target>Empresa</target>
+        </trans-unit>
+        <trans-unit id="QBkunZ9iy6al8OgBj45hjQ" resname="notes">
+          <source>Notes</source>
+          <target>Notas</target>
+        </trans-unit>
+        <trans-unit id="+/lt/JavD2HppAAJysR5rg" resname="creationDate">
+          <source>Creation date</source>
+          <target>Fecha de creación</target>
+        </trans-unit>
+        <trans-unit id="wqkPw22mAeFQtMi7rOGTuA" resname="modificationDate">
+          <source>Modification date</source>
+          <target>Fecha de modificación</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_Freeze">
+        <trans-unit id="YJ8st5NVYk9iAGILx5O23A" resname="FreezeDocument">
+          <source>Freeze document</source>
+          <target>Congelar el documento</target>
+        </trans-unit>
+        <trans-unit id="BsGWfaI7WPuzFCPnZEPaog" resname="FreezeSelection">
+          <source>Freeze selection</source>
+          <target>Congelar la selección</target>
+        </trans-unit>
+        <trans-unit id="a21/ILiIHT15NrT6WxTPpA" resname="FreezeTables">
+          <source>Freeze tables</source>
+          <target>Congelar las tablas</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_Compute">
+        <trans-unit id="G1qriI3TB4C8on9assC28g" resname="ComputeSelection">
+          <source>Compute selection</source>
+          <target>Evaluar la selección</target>
+        </trans-unit>
+        <trans-unit id="X0cFWvYLS2IWq/9nLRCxPg" resname="ComputeDocument">
+          <source>Compute document</source>
+          <target>Evaluar el documento</target>
+        </trans-unit>
+        <trans-unit id="bK4KIBvTGBVXEffFIfIYkg" resname="ComputeTables">
+          <source>Compute tables</source>
+          <target>Evaluar las tablas</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+
+</xliff>
