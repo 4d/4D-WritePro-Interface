@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Tabulations",
@@ -182,13 +182,13 @@
 				},
 				"Text": {
 					"type": "text",
-					"top": 0,
+					"top": 20,
 					"left": 10,
 					"width": 41,
-					"height": 440,
+					"height": 420,
 					"visibility": "hidden",
 					"stroke": "#AAAAAA",
-					"textAlign": "center",
+					"textAlign": "right",
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 28,
 					"textAngle": 270,
@@ -235,5 +235,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 25
+	"geometryStamp": 29
 }

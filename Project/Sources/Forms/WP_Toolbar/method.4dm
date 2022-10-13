@@ -64,6 +64,7 @@ Case of
 		
 		// ++see on timer
 		
+		oForm.comboFontSizes:=New object:C1471("values"; New collection:C1472(9; 10; 11; 12; 13; 14; 16; 18; 20; 24; 28; 32); "value"; 9)
 		
 		// temporarly
 		OBJECT SET ENABLED:C1123(*; "ssType3"; False:C215)
@@ -97,7 +98,7 @@ Case of
 		
 		UI_setApplyTo
 		
-		//SET TIMER(-1)
+		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Resize:K2:27)
 		oForm.redrawTabs:=True:C214
@@ -129,6 +130,7 @@ Case of
 							
 							WP_GetFormulas
 							WP_GetFontInfo(Form:C1466.selection)  // font, size, weight, textcolor  (common method with font palette)
+							oForm.comboFontSizes.currentValue:=oForm.fontSize
 							
 							
 							$page:=FORM Get current page:C276(*)

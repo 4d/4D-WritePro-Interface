@@ -1,8 +1,8 @@
 //%attributes = {"invisible":true}
-#DECLARE($range : Object; $check : Boolean)
 
 //C_OBJECT($1)
 //C_BOOLEAN($2)  // check if not empty selection
+#DECLARE($range : Object; $check : Boolean)
 
 var $index : Integer
 

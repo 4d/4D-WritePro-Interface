@@ -1154,31 +1154,6 @@
 					"action": "paragraph/margin",
 					"class": "Palette"
 				},
-				"Rect2": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 590,
-					"visibility": "hidden",
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 8
-				},
-				"Text": {
-					"type": "text",
-					"top": 0,
-					"left": 10,
-					"width": 40,
-					"height": 528,
-					"visibility": "hidden",
-					"stroke": "#AAAAAA",
-					"textAlign": "center",
-					"fontFamily": ".Helvetica Neue DeskInterface",
-					"fontSize": 28,
-					"textAngle": 270,
-					"text": "4D WritePro Alignments"
-				},
 				"Popup_applyMarginsTo": {
 					"type": "dropdown",
 					"top": 246,
@@ -1222,6 +1197,31 @@
 					"height": 13,
 					"fontTheme": "additional",
 					"textAlign": "right"
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 20,
+					"left": 10,
+					"width": 40,
+					"height": 528,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4D WritePro Alignments"
 				}
 			},
 			"entryOrder": [
@@ -1276,10 +1276,6 @@
 				"bAlign5",
 				"bAlign6",
 				"bAlign7"
-			],
-			"Group24": [
-				"rb1",
-				"rb2"
 			],
 			"Group35": [
 				"TargetSelector1",
@@ -1336,5 +1332,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 2858
+	"geometryStamp": 2864
 }

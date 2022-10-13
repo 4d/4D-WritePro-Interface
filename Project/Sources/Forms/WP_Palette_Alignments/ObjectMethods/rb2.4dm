@@ -1,7 +1,7 @@
 
-C_LONGINT:C283($color)
-C_OBJECT:C1216($oCurrent)
-$oCurrent:=WP_FillCurrent 
+//C_LONGINT($color)
+//C_OBJECT($oCurrent)
+//$oCurrent:=WP_FillCurrent
 
-OBJECT GET RGB COLORS:C1074(*;"backgroundColor";$Color;$Color)
-WP_SetBackgroundColor ($oCurrent;$color)
+//OBJECT GET RGB COLORS(*; "backgroundColor"; $Color; $Color)
+//WP_SetBackgroundColor($oCurrent; $color)

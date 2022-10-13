@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Information",
@@ -793,13 +793,13 @@
 				},
 				"Text": {
 					"type": "text",
-					"top": 0,
+					"top": 20,
 					"left": 10,
 					"width": 41,
-					"height": 620,
+					"height": 600,
 					"visibility": "hidden",
 					"stroke": "#AAAAAA",
-					"textAlign": "center",
+					"textAlign": "right",
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 28,
 					"textAngle": 270,
@@ -875,5 +875,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1075
+	"geometryStamp": 1079
 }

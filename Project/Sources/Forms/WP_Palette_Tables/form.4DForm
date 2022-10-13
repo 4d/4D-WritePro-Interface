@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Frames",
@@ -409,13 +409,13 @@
 				},
 				"Text": {
 					"type": "text",
-					"top": 0,
+					"top": 20,
 					"left": 10,
 					"width": 41,
-					"height": 538,
+					"height": 518,
 					"visibility": "hidden",
 					"stroke": "#AAAAAA",
-					"textAlign": "center",
+					"textAlign": "right",
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 28,
 					"textAngle": 270,
@@ -444,7 +444,6 @@
 			"View 7": {},
 			"View 8": {},
 			"View 9": {
-				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text"
@@ -456,5 +455,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 71
+	"geometryStamp": 75
 }

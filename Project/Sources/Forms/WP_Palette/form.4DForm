@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"shared": true,
 	"inheritedForm": "",
@@ -474,13 +474,13 @@
 				},
 				"Text": {
 					"type": "text",
-					"top": 0,
+					"top": 20,
 					"left": 10,
 					"width": 60,
-					"height": 650,
+					"height": 630,
 					"visibility": "hidden",
 					"stroke": "#AAAAAA",
-					"textAlign": "center",
+					"textAlign": "right",
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 50,
 					"textAngle": 270,
@@ -514,5 +514,5 @@
 			}
 		}
 	},
-	"geometryStamp": 522
+	"geometryStamp": 526
 }

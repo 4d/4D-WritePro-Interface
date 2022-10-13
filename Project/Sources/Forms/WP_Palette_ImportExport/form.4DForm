@@ -445,13 +445,13 @@
 				},
 				"Text": {
 					"type": "text",
-					"top": 0,
+					"top": 20,
 					"left": 10,
 					"width": 41,
-					"height": 590,
+					"height": 570,
 					"visibility": "hidden",
 					"stroke": "#AAAAAA",
-					"textAlign": "center",
+					"textAlign": "right",
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 28,
 					"textAngle": 270,
@@ -502,5 +502,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 322
+	"geometryStamp": 326
 }

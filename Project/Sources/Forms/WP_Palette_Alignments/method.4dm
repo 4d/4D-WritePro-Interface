@@ -35,12 +35,12 @@ Case of
 		(OBJECT Get pointer:C1124(Object named:K67:5; "rb1"))->:=1
 		(OBJECT Get pointer:C1124(Object named:K67:5; "rb2"))->:=0
 		
-		(OBJECT Get pointer:C1124(Object named:K67:5; "MarginLeft"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "MarginTop"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "MarginRight"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "MarginBottom"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "marginHorizontalRuler"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "marginVerticalRuler"))->:=0
+		//(OBJECT Get pointer(Object named; "MarginLeft"))->:=0
+		//(OBJECT Get pointer(Object named; "MarginTop"))->:=0
+		//(OBJECT Get pointer(Object named; "MarginRight"))->:=0
+		//(OBJECT Get pointer(Object named; "MarginBottom"))->:=0
+		//(OBJECT Get pointer(Object named; "marginHorizontalRuler"))->:=0
+		//(OBJECT Get pointer(Object named; "marginVerticalRuler"))->:=0
 		
 		(OBJECT Get pointer:C1124(Object named:K67:5; "textLineHeightRuler"))->:=100
 		
@@ -137,7 +137,8 @@ Case of
 				
 			End if 
 			
-			WP_GetMargins($oCurrent; wk margin:K81:10)
+			// WP_GetMargins removed and replaced by standard actions
+			//WP_GetMargins($oCurrent; wk margin)
 			
 		End if 
 		

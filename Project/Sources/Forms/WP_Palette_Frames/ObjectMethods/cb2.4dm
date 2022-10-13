@@ -1,11 +1,11 @@
-C_OBJECT:C1216($oCurrent)
-$oCurrent:=WP_FillCurrent 
+//C_OBJECT($oCurrent)
+//$oCurrent:=WP_FillCurrent
 
-If (Self:C308->=2)
-	Self:C308->:=0
-End if 
+//If (Self->=2)
+//Self->:=0
+//End if 
 
 
-WP_SetFrame ($oCurrent;wk border style:K81:29)
-WP_SetFrame ($oCurrent;wk border width:K81:39)
-WP_SetFrame ($oCurrent;wk border color:K81:34)
+//WP_SetFrame($oCurrent; wk border style)
+//WP_SetFrame($oCurrent; wk border width)
+//WP_SetFrame($oCurrent; wk border color)

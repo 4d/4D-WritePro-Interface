@@ -48,7 +48,7 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 				
 			Else 
 				
-				If (UI_isProtected)
+				If (UI_isProtected & ($page#1))  // 2022 oct 13 (TEST) don't manage focus on page 1 because fontSize is focusable
 					
 					// Disable everyting (followed by exceptions)
 					

@@ -30,16 +30,6 @@
 		null,
 		{
 			"objects": {
-				"Background": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 620,
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 0
-				},
 				"Separator4": {
 					"type": "rectangle",
 					"top": 15,
@@ -189,20 +179,6 @@
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
-				"Text": {
-					"type": "text",
-					"top": 0,
-					"left": 10,
-					"width": 41,
-					"height": 258,
-					"visibility": "hidden",
-					"stroke": "#AAAAAA",
-					"textAlign": "center",
-					"fontFamily": ".Helvetica Neue DeskInterface",
-					"fontSize": 28,
-					"textAngle": 270,
-					"text": "4DWP Protection"
-				},
 				"cbTableProtected1": {
 					"type": "checkbox",
 					"top": 190,
@@ -244,6 +220,30 @@
 					"height": 32,
 					"picture": "/RESOURCES/Images/TBcommon/Protection/textareaProtected_32.png",
 					"pictureFormat": "truncatedTopLeft"
+				},
+				"Background": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 0
+				},
+				"Text": {
+					"type": "text",
+					"top": 20,
+					"left": 10,
+					"width": 41,
+					"height": 428,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4DWP Protection"
 				}
 			}
 		}
@@ -261,7 +261,6 @@
 			"View 7": {},
 			"View 8": {},
 			"View 9": {
-				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text"
@@ -269,5 +268,5 @@
 			}
 		}
 	},
-	"geometryStamp": 193
+	"geometryStamp": 212
 }

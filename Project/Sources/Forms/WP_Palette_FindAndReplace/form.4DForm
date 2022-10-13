@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"shared": true,
 	"windowTitle": "Sizes",
@@ -437,13 +437,13 @@
 				},
 				"Text": {
 					"type": "text",
-					"top": 0,
+					"top": 20,
 					"left": 10,
 					"width": 41,
-					"height": 500,
+					"height": 480,
 					"visibility": "hidden",
 					"stroke": "#AAAAAA",
-					"textAlign": "center",
+					"textAlign": "right",
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 28,
 					"textAngle": 270,
@@ -495,7 +495,7 @@
 			}
 		}
 	},
-	"geometryStamp": 1955,
+	"geometryStamp": 1959,
 	"$4d": {
 		"version": "1",
 		"kind": "form"

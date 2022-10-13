@@ -1,8 +1,8 @@
-C_OBJECT:C1216($oCurrent)
-C_POINTER:C301($ptr)
-$oCurrent:=WP_FillCurrent 
+//C_OBJECT($oCurrent)
+//C_POINTER($ptr)
+//$oCurrent:=WP_FillCurrent
 
-$ptr:=OBJECT Get pointer:C1124(Object named:K67:5;"borderWidthInput")
-$ptr->:=Self:C308->
+//$ptr:=OBJECT Get pointer(Object named; "borderWidthInput")
+//$ptr->:=Self->
 
-WP_SetFrame ($oCurrent;wk border width:K81:39)
+//WP_SetFrame($oCurrent; wk border width)

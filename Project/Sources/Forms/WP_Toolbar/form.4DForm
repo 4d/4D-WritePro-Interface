@@ -789,7 +789,7 @@
 				"Image2": {
 					"type": "picture",
 					"top": 30,
-					"left": 350,
+					"left": 360,
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
@@ -798,7 +798,7 @@
 				"btn_copy": {
 					"type": "button",
 					"top": 59,
-					"left": 410,
+					"left": 420,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:copy",
@@ -815,7 +815,7 @@
 				"btn_cut": {
 					"type": "button",
 					"top": 59,
-					"left": 380,
+					"left": 390,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:cut",
@@ -832,7 +832,7 @@
 				"btn_paste": {
 					"type": "button",
 					"top": 59,
-					"left": 350,
+					"left": 360,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:paste",
@@ -849,7 +849,7 @@
 					"type": "dropdown",
 					"top": 30,
 					"left": 10,
-					"width": 150,
+					"width": 160,
 					"height": 20,
 					"dataSource": "WP_FontFamilly",
 					"focusable": false,
@@ -862,7 +862,7 @@
 				"cbBold": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 70,
+					"left": 80,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:bold",
@@ -885,7 +885,7 @@
 				"cbItalic": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 100,
+					"left": 110,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:italic",
@@ -908,7 +908,7 @@
 				"btn_underline": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 130,
+					"left": 140,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:underline",
@@ -931,7 +931,7 @@
 				"btn_strikethrough": {
 					"type": "checkbox",
 					"top": 60,
-					"left": 160,
+					"left": 170,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:strikethrough",
@@ -948,7 +948,7 @@
 				"btn_shadowColor": {
 					"type": "button",
 					"top": 260,
-					"left": 316,
+					"left": 326,
 					"width": 24,
 					"height": 24,
 					"tooltip": ":xliff:shadowColor",
@@ -965,7 +965,7 @@
 				"btn_colorShowDialog": {
 					"type": "button",
 					"top": 60,
-					"left": 246,
+					"left": 256,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:textColor",
@@ -982,7 +982,7 @@
 				"Line12": {
 					"type": "line",
 					"top": 60,
-					"left": 200,
+					"left": 210,
 					"height": 24,
 					"stroke": "#888888",
 					"width": 0,
@@ -991,7 +991,7 @@
 				"btn_backgroundColor": {
 					"type": "button",
 					"top": 60,
-					"left": 216,
+					"left": 226,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:backgroundColor",
@@ -1022,7 +1022,7 @@
 				"btn_alignLeft": {
 					"type": "checkbox",
 					"top": 59,
-					"left": 460,
+					"left": 470,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignLeft",
@@ -1036,7 +1036,7 @@
 				"btn_alignCenter": {
 					"type": "checkbox",
 					"top": 59,
-					"left": 490,
+					"left": 500,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:center",
@@ -1050,7 +1050,7 @@
 				"btn_alignRight": {
 					"type": "checkbox",
 					"top": 59,
-					"left": 520,
+					"left": 530,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignRight",
@@ -1064,7 +1064,7 @@
 				"btn_alignJustify": {
 					"type": "checkbox",
 					"top": 59,
-					"left": 550,
+					"left": 560,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:justify",
@@ -1092,7 +1092,7 @@
 				"btn_undo": {
 					"type": "button",
 					"top": 30,
-					"left": 520,
+					"left": 530,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:undo",
@@ -1106,7 +1106,7 @@
 				"btn_info": {
 					"type": "button",
 					"top": 30,
-					"left": 550,
+					"left": 560,
 					"width": 30,
 					"height": 24,
 					"action": "",
@@ -1125,8 +1125,8 @@
 				"TB_FontSize": {
 					"type": "dropdown",
 					"top": 61,
-					"left": 10,
-					"width": 55,
+					"left": 997,
+					"width": 65,
 					"height": 20,
 					"tooltip": ":xliff:size",
 					"focusable": false,
@@ -1135,7 +1135,7 @@
 				"Line6": {
 					"type": "line",
 					"top": 30,
-					"left": 340,
+					"left": 350,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -1144,7 +1144,7 @@
 				"Line13": {
 					"type": "line",
 					"top": 30,
-					"left": 450,
+					"left": 460,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -1153,7 +1153,7 @@
 				"Line4": {
 					"type": "line",
 					"top": 30,
-					"left": 590,
+					"left": 600,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -1162,7 +1162,7 @@
 				"Popup Dropdown List2": {
 					"type": "dropdown",
 					"top": 30,
-					"left": 375,
+					"left": 385,
 					"width": 70,
 					"height": 20,
 					"tooltip": ":xliff:lists",
@@ -1222,7 +1222,7 @@
 				"Stylesheet_Type2": {
 					"type": "radio",
 					"top": 26,
-					"left": 630,
+					"left": 640,
 					"width": 30,
 					"height": 30,
 					"dataSource": "oForm.styleSheet.btnType[1]",
@@ -1242,7 +1242,7 @@
 				"Stylesheet_Type1": {
 					"type": "radio",
 					"top": 26,
-					"left": 600,
+					"left": 610,
 					"width": 30,
 					"height": 30,
 					"dataSource": "oForm.styleSheet.btnType[0]",
@@ -1260,7 +1260,7 @@
 				"Stylesheet_Names": {
 					"type": "dropdown",
 					"top": 60,
-					"left": 610,
+					"left": 620,
 					"width": 165,
 					"height": 20,
 					"focusable": false,
@@ -1287,7 +1287,7 @@
 				"btn_colorShowDialog1": {
 					"type": "button",
 					"top": 60,
-					"left": 276,
+					"left": 286,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:ParagraphBackgroundColor",
@@ -1304,7 +1304,7 @@
 				"btn_colorShowDialog2": {
 					"type": "button",
 					"top": 60,
-					"left": 306,
+					"left": 316,
 					"width": 30,
 					"height": 24,
 					"action": "",
@@ -1325,7 +1325,7 @@
 				"fontStyle": {
 					"type": "dropdown",
 					"top": 30,
-					"left": 170,
+					"left": 180,
 					"width": 160,
 					"height": 20,
 					"dataSource": "WP_fontStyle",
@@ -1341,7 +1341,7 @@
 					"type": "button",
 					"text": "",
 					"top": 30,
-					"left": 490,
+					"left": 500,
 					"width": 30,
 					"height": 24,
 					"events": [
@@ -1360,7 +1360,7 @@
 					"type": "button",
 					"text": "",
 					"top": 30,
-					"left": 460,
+					"left": 470,
 					"width": 30,
 					"height": 24,
 					"events": [
@@ -1378,7 +1378,7 @@
 					"type": "button",
 					"text": "•",
 					"top": 215,
-					"left": 200,
+					"left": 210,
 					"width": 12,
 					"height": 10,
 					"events": [
@@ -1410,6 +1410,20 @@
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 44,
 					"text": "4D Write Pro Toolbar"
+				},
+				"cbox_FontSize": {
+					"type": "combo",
+					"left": 10,
+					"top": 61,
+					"width": 65,
+					"height": 22,
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "oForm.comboFontSizes",
+					"method": "ObjectMethods/cbox_FontSize.4dm"
 				}
 			}
 		},
@@ -4162,5 +4176,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6044
+	"geometryStamp": 6096
 }
