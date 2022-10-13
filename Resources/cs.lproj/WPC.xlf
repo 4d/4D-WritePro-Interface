@@ -1090,6 +1090,14 @@ This file is distributed under the same license as the product package.-->
           <source>No</source>
           <target>Ne</target>
         </trans-unit>
+        <trans-unit id="4Z4RwzyWeP/Lva2PJqZkIw" resname="detailsColon">
+          <source>Details:</source>
+          <target state="new">Details:</target>
+        </trans-unit>
+        <trans-unit id="KNV1Z0ClwSorv7H0yJnEIQ" resname="globalColon">
+          <source>Global:</source>
+          <target state="new">Global:</target>
+        </trans-unit>
       </group>
       <group resname="PaletteFindReplace">
         <trans-unit id="250" resname="CaseSensitive">
