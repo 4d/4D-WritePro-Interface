@@ -545,7 +545,7 @@
 				},
 				"tabBtn_Images": {
 					"type": "button",
-					"text": ":xliff:images",
+					"text": ":xliff:PictureAndTextboxes",
 					"top": 0,
 					"left": 320,
 					"width": 52,
@@ -1019,7 +1019,7 @@
 					"textPlacement": "center",
 					"style": "toolbar"
 				},
-				"btn_alignLeft": {
+				"btn_alignTextLeft": {
 					"type": "checkbox",
 					"top": 59,
 					"left": 470,
@@ -1033,7 +1033,7 @@
 					"textPlacement": "center",
 					"style": "toolbar"
 				},
-				"btn_alignCenter": {
+				"btn_alignTextCenter": {
 					"type": "checkbox",
 					"top": 59,
 					"left": 500,
@@ -1047,7 +1047,7 @@
 					"textPlacement": "center",
 					"style": "toolbar"
 				},
-				"btn_alignRight": {
+				"btn_alignTextRight": {
 					"type": "checkbox",
 					"top": 59,
 					"left": 530,
@@ -1061,7 +1061,7 @@
 					"textPlacement": "center",
 					"style": "toolbar"
 				},
-				"btn_alignJustify": {
+				"btn_alignTextJustify": {
 					"type": "checkbox",
 					"top": 59,
 					"left": 560,
@@ -1388,6 +1388,20 @@
 					"method": "ObjectMethods/Button3.4dm",
 					"focusable": false
 				},
+				"cbox_FontSize": {
+					"type": "combo",
+					"left": 10,
+					"top": 61,
+					"width": 65,
+					"height": 22,
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "oForm.comboFontSizes",
+					"method": "ObjectMethods/cbox_FontSize.4dm"
+				},
 				"Rect2": {
 					"type": "rectangle",
 					"top": 0,
@@ -1410,20 +1424,6 @@
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 44,
 					"text": "4D Write Pro Toolbar"
-				},
-				"cbox_FontSize": {
-					"type": "combo",
-					"left": 10,
-					"top": 61,
-					"width": 65,
-					"height": 22,
-					"events": [
-						"onClick",
-						"onDataChange"
-					],
-					"dataSourceTypeHint": "object",
-					"dataSource": "oForm.comboFontSizes",
-					"method": "ObjectMethods/cbox_FontSize.4dm"
 				}
 			}
 		},
@@ -2011,7 +2011,8 @@
 					"action": "insertTextBox",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/Insert/textarea_24.png",
-					"iconFrames": 4
+					"iconFrames": 4,
+					"tooltip": ":xliff:InsertTextBox"
 				},
 				"btn_textAreaBackgroundColor": {
 					"type": "button",
@@ -2641,7 +2642,7 @@
 					"width": 50,
 					"height": 50,
 					"tooltip": ":xliff:imageInline",
-					"action": "anchorLayout?value=inline",
+					"action": "image/anchorLayout?value=inline",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/imageInLine_48.png",
 					"iconFrames": 4,
@@ -2654,7 +2655,7 @@
 					"width": 50,
 					"height": 50,
 					"tooltip": ":xliff:imageInFront",
-					"action": "anchorLayout?value=front",
+					"action": "image/anchorLayout?value=front",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/imageOverText_48.png",
 					"iconFrames": 4,
@@ -2667,116 +2668,89 @@
 					"width": 45,
 					"height": 50,
 					"tooltip": ":xliff:imageBehind",
-					"action": "anchorLayout?value=behind",
+					"action": "image/anchorLayout?value=behind",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/imageBehindText_48.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"Line43": {
-					"type": "line",
-					"top": 30,
-					"left": 160,
-					"height": 50,
-					"stroke": "#888888",
-					"width": 0,
-					"startPoint": "topLeft"
-				},
-				"btn_alignCenter1": {
+				"btn_imageAlignCenter": {
 					"type": "checkbox",
 					"top": 56,
 					"left": 350,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignCenter",
-					"action": "anchorHorizontalAlign?value=middle",
+					"action": "image/anchorHorizontalAlign?value=center",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/alignCenter_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_alignLeft1": {
+				"btn_imageAlignLeft": {
 					"type": "checkbox",
 					"top": 56,
 					"left": 320,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignLeft",
-					"action": "anchorHorizontalAlign?value=left",
+					"action": "image/anchorHorizontalAlign?value=left",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/alignLeft_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_alignRight1": {
+				"btn_imageAlignRight": {
 					"type": "checkbox",
 					"top": 56,
 					"left": 380,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignRight",
-					"action": "anchorHorizontalAlign?value=right",
+					"action": "image/anchorHorizontalAlign?value=right",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/alignRight_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_alignMiddle": {
+				"btn_imageAlignMiddle": {
 					"type": "checkbox",
 					"top": 28,
 					"left": 350,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignCenter",
-					"action": "anchorVerticalAlign?value=center",
+					"action": "image/anchorVerticalAlign?value=middle",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/alignMiddle_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_alignTop": {
+				"btn_imageAlignTop": {
 					"type": "checkbox",
 					"top": 28,
 					"left": 320,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignTop",
-					"action": "anchorVerticalAlign?value=Top",
+					"action": "image/anchorVerticalAlign?value=Top",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/alignTop_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_alignBottom": {
+				"btn_imageAlignBottom": {
 					"type": "checkbox",
 					"top": 28,
 					"left": 380,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignBottom",
-					"action": "anchorVerticalAlign?value=bottom",
+					"action": "image/anchorVerticalAlign?value=bottom",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/alignBottom_24.png",
 					"iconFrames": 4,
 					"style": "toolbar"
-				},
-				"Line44": {
-					"type": "line",
-					"top": 30,
-					"left": 425,
-					"height": 50,
-					"stroke": "#888888",
-					"width": 0,
-					"startPoint": "topLeft"
-				},
-				"Line45": {
-					"type": "line",
-					"top": 30,
-					"left": 305,
-					"height": 50,
-					"stroke": "#888888",
-					"width": 0,
-					"startPoint": "topLeft"
 				},
 				"Popup_anchorToPage": {
 					"type": "dropdown",
@@ -2803,15 +2777,6 @@
 					"events": [
 						"onDataChange"
 					]
-				},
-				"Line42": {
-					"type": "line",
-					"top": 30,
-					"left": 545,
-					"height": 50,
-					"stroke": "#888888",
-					"width": 0,
-					"startPoint": "topLeft"
 				},
 				"3D Button72": {
 					"type": "button",
@@ -2855,7 +2820,7 @@
 					"iconFrames": 4,
 					"textPlacement": "center"
 				},
-				"btn_PictInfo1": {
+				"btn_imageMoveToBack": {
 					"type": "button",
 					"text": "",
 					"top": 30,
@@ -2869,10 +2834,10 @@
 					"icon": "/RESOURCES/Images/Toolbar1/Images/onBack_48.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
-					"action": "moveToBack",
+					"action": "image/moveToBack",
 					"tooltip": ":xliff:movetoBack"
 				},
-				"btn_PictInfo2": {
+				"btn_imageMoveToFront": {
 					"type": "button",
 					"text": "",
 					"top": 30,
@@ -2887,7 +2852,92 @@
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"tooltip": ":xliff:moveToFront",
-					"action": "moveToFront"
+					"action": "image/moveToFront"
+				},
+				"Line70": {
+					"type": "line",
+					"top": 30,
+					"left": 160,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"Line43": {
+					"type": "line",
+					"top": 30,
+					"left": 305,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"Line45": {
+					"type": "line",
+					"top": 30,
+					"left": 425,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"Line44": {
+					"type": "line",
+					"top": 30,
+					"left": 555,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"Line42": {
+					"type": "line",
+					"top": 30,
+					"left": 625,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"btn_insertTextArea1": {
+					"type": "button",
+					"text": "",
+					"top": 30,
+					"left": 635,
+					"width": 50,
+					"height": 50,
+					"events": [],
+					"style": "toolbar",
+					"action": "insertTextBox",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBcommon/Insert/textarea_48.png",
+					"iconFrames": 4,
+					"tooltip": ":xliff:InsertTextBox"
+				},
+				"btn_textAreaBackgroundColor1": {
+					"type": "button",
+					"text": "",
+					"top": 60,
+					"left": 689,
+					"width": 40,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"action": "textBox/backgroundColor/showDialog",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/BackgroundColor_24.png",
+					"iconFrames": 4
+				},
+				"Line71": {
+					"type": "line",
+					"top": 30,
+					"left": 735,
+					"height": 50,
+					"stroke": "#888888",
+					"width": 0,
+					"startPoint": "topLeft"
 				}
 			}
 		},
@@ -4176,5 +4226,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6096
+	"geometryStamp": 6238
 }

@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 
 ARRAY TEXT:C222(WP_applyTo; 0)
 

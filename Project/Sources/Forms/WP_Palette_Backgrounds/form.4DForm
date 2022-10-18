@@ -613,7 +613,7 @@
 						"onBeginDragOver"
 					]
 				},
-				"anchorPage": {
+				"Popup_anchorPage": {
 					"type": "dropdown",
 					"top": 185,
 					"left": 85,
@@ -626,7 +626,7 @@
 						"onDataChange"
 					]
 				},
-				"anchorSection": {
+				"Popup_anchorSection": {
 					"type": "dropdown",
 					"top": 210,
 					"left": 85,
@@ -729,9 +729,9 @@
 					"stroke": "#FFFFFF",
 					"textAlign": "center",
 					"fontTheme": "additional",
-					"text": ":xliff:Picture"
+					"text": ":xliff:PictureAndTextboxes"
 				},
-				"Position2": {
+				"Popup_anchorVerticalAlign": {
 					"type": "dropdown",
 					"left": 85,
 					"top": 72,
@@ -740,10 +740,10 @@
 					"events": [
 						"onDataChange"
 					],
-					"action": "anchorVerticalAlign",
+					"action": "image/anchorVerticalAlign",
 					"focusable": false
 				},
-				"Position3": {
+				"Popup_anchorHorizontalAlign": {
 					"type": "dropdown",
 					"left": 85,
 					"top": 100,
@@ -752,10 +752,10 @@
 					"events": [
 						"onDataChange"
 					],
-					"action": "anchorHorizontalAlign",
+					"action": "image/anchorHorizontalAlign",
 					"focusable": false
 				},
-				"Position1": {
+				"Popup_anchorLayout": {
 					"type": "dropdown",
 					"left": 85,
 					"top": 44,
@@ -764,7 +764,7 @@
 					"events": [
 						"onDataChange"
 					],
-					"action": "anchorLayout",
+					"action": "image/anchorLayout",
 					"focusable": false
 				},
 				"lbl_Picture1": {
@@ -778,7 +778,7 @@
 					"text": ":xliff:SectionHyphen",
 					"fontTheme": "additional"
 				},
-				"btn_PictInfo1": {
+				"btn_imageMoveToBack": {
 					"type": "button",
 					"text": "",
 					"top": 132,
@@ -792,10 +792,10 @@
 					"icon": "/RESOURCES/Images/Toolbar1/Images/onBack_32.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
-					"action": "moveToBack",
+					"action": "image/moveToBack",
 					"tooltip": ":xliff:movetoBack"
 				},
-				"btn_PictInfo2": {
+				"btn_imageMoveToFront": {
 					"type": "button",
 					"text": "",
 					"top": 132,
@@ -810,7 +810,7 @@
 					"iconFrames": 4,
 					"textPlacement": "center",
 					"tooltip": ":xliff:moveToFront",
-					"action": "moveToFront"
+					"action": "image/moveToFront"
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -851,11 +851,11 @@
 				"bgndRepeatModeVal",
 				"bgndClipVal",
 				"bgndOriginVal",
-				"Position1",
-				"Position2",
-				"Position3",
-				"anchorPage",
-				"anchorSection",
+				"Popup_anchorLayout",
+				"Popup_anchorVerticalAlign",
+				"Popup_anchorHorizontalAlign",
+				"Popup_anchorPage",
+				"Popup_anchorSection",
 				"btn_PictInfo",
 				"TargetSelector1",
 				"TargetSelector2",
@@ -880,8 +880,8 @@
 				"btnAction",
 				"bgndSizeVert",
 				"bgndSizeVertUnit",
-				"btn_PictInfo1",
-				"btn_PictInfo2"
+				"btn_imageMoveToBack",
+				"btn_imageMoveToFront"
 			]
 		}
 	],
@@ -923,5 +923,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1086
+	"geometryStamp": 1093
 }

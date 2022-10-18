@@ -9,7 +9,6 @@ If (UI_isProtected(False:C215))  // false means do NOT take focus into account
 	
 Else 
 	
-	
 	C_OBJECT:C1216($form)
 	
 	$range:=Form:C1466.selection
@@ -34,6 +33,10 @@ Else
 	Else 
 		OBJECT SET ENABLED:C1123(*; "btn_PictInfo"; False:C215)
 	End if 
+	
+	
+	TB_setAutomaticActions("PicturesAndTextboxes")
+	
 	
 End if 
 

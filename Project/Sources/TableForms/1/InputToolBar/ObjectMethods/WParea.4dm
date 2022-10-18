@@ -1,6 +1,20 @@
 WP UpdateWidget("WPtoolbar"; "WParea")
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 WP ContextualMenu(New collection:C1472("pictureSettings"; "formulaSettings"))
 
 

@@ -186,6 +186,10 @@ This file is distributed under the same license as the product package.-->
           <source>Advanced settings…</source>
           <target>Configurações avançadas...</target>
         </trans-unit>
+        <trans-unit id="dOtz4kYVKAUCtHPmPtDbdw" resname="PictureAndTextboxes">
+          <source>Picture &amp; textboxes</source>
+          <target state="new">Picture &amp; textboxes</target>
+        </trans-unit>
       </group>
       <group resname="PaletteFonts">
         <trans-unit id="26" resname="FontColon">

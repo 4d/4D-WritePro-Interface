@@ -246,3 +246,9 @@ C_OBJECT:C1216(WP UpdateWidget_OLD; $3)
 
 //UI_GetApplyTo
 C_TEXT:C284(UI_GetApplyTo; $0)
+
+//WP_BackToArea
+C_TEXT:C284(WP_BackToArea; $1)
+
+//TB_setAutomaticActions
+C_TEXT:C284(TB_setAutomaticActions; $1)

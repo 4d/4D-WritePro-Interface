@@ -472,6 +472,10 @@ This file is distributed under the same license as the product package.-->
           <source>Column settings</source>
           <target>Options de colonnes</target>
         </trans-unit>
+        <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">
+          <source>Insert a text box</source>
+          <target>Insérer une zone de texte</target>
+        </trans-unit>
       </group>
       <group resname="Tabs">
         <trans-unit id="24" resname="borders">

@@ -470,6 +470,10 @@
           <source>Column settings</source>
           <target>カラム設定</target>
         </trans-unit>
+        <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">
+          <source>Insert a text box</source>
+          <target state="new">Insert a text box</target>
+        </trans-unit>
       </group>
       <group resname="Tabs">
         <trans-unit id="24" resname="borders">

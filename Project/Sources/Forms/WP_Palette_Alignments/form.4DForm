@@ -664,7 +664,7 @@
 						"onClick"
 					]
 				},
-				"btn_alignLeft": {
+				"btn_alignTextLeft": {
 					"type": "radio",
 					"top": 35,
 					"left": 88,
@@ -679,11 +679,11 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btn_alignLeft.4dm",
+					"method": "ObjectMethods/btn_alignTextLeft.4dm",
 					"radioGroup": "H_Align",
 					"tooltip": ":xliff:alignLeft"
 				},
-				"btn_alignCenter": {
+				"btn_alignTextCenter": {
 					"type": "radio",
 					"top": 35,
 					"left": 125,
@@ -698,11 +698,11 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btn_alignCenter.4dm",
+					"method": "ObjectMethods/btn_alignTextCenter.4dm",
 					"radioGroup": "H_Align",
 					"tooltip": ":xliff:center"
 				},
-				"btn_alignRight": {
+				"btn_alignTextRight": {
 					"type": "radio",
 					"top": 35,
 					"left": 162,
@@ -717,11 +717,11 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btn_alignRight.4dm",
+					"method": "ObjectMethods/btn_alignTextRight.4dm",
 					"radioGroup": "H_Align",
 					"tooltip": ":xliff:alignRight"
 				},
-				"btn_alignJustify": {
+				"btn_alignTextJustify": {
 					"type": "radio",
 					"top": 35,
 					"left": 200,
@@ -736,7 +736,7 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btn_alignJustify.4dm",
+					"method": "ObjectMethods/btn_alignTextJustify.4dm",
 					"radioGroup": "H_Align",
 					"tooltip": ":xliff:justify"
 				},
@@ -1233,10 +1233,10 @@
 				"textLineHeightRuler",
 				"backgroundColor",
 				"TextLineHeightUnit",
-				"btn_alignLeft",
-				"btn_alignCenter",
-				"btn_alignRight",
-				"btn_alignJustify",
+				"btn_alignTextLeft",
+				"btn_alignTextCenter",
+				"btn_alignTextRight",
+				"btn_alignTextJustify",
 				"MarginTop",
 				"MarginLeft",
 				"MarginRight",
@@ -1267,10 +1267,10 @@
 	"editor": {
 		"groups": {
 			"Group": [
-				"btn_alignLeft",
-				"btn_alignCenter",
-				"btn_alignRight",
-				"btn_alignJustify"
+				"btn_alignTextLeft",
+				"btn_alignTextCenter",
+				"btn_alignTextRight",
+				"btn_alignTextJustify"
 			],
 			"Group1": [
 				"bAlign5",
@@ -1332,5 +1332,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 2864
+	"geometryStamp": 2868
 }

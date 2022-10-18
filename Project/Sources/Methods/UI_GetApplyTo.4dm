@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 #DECLARE()->$applyTo : Text
 
 // read the "applyTo"
