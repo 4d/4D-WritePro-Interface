@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"windowTitle": "4D Write Pro",
 	"windowMinWidth": 320,
@@ -490,7 +490,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 56,
+	"geometryStamp": 60,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

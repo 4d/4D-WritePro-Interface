@@ -21,13 +21,19 @@ If ($withMenu)
 	
 	$menuRef:=Create menu:C408
 	APPEND MENU ITEM:C411($menuRef; Get localized string:C991("bordersStyle"))
+	//APPEND MENU ITEM($menuRef; ak standard action title)
 	SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; $applyTo+"/borderStyle"+$where)
 	
 	APPEND MENU ITEM:C411($menuRef; Get localized string:C991("bordersColor"))
+	//APPEND MENU ITEM($menuRef; ak standard action title)
 	SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; $applyTo+"/borderColor"+$where)
 	
 	APPEND MENU ITEM:C411($menuRef; Get localized string:C991("borderWidth"))
+	//APPEND MENU ITEM($menuRef; ak standard action title)
 	SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; $applyTo+"/borderWidth"+$where)
+	
+	APPEND MENU ITEM:C411($menuRef; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; $applyTo+"/backgroundColor"+$where)
 	
 	$select:=Dynamic pop up menu:C1006($menuRef)
 	
