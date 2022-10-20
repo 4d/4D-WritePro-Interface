@@ -30,6 +30,16 @@
 		null,
 		{
 			"objects": {
+				"Background": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 0
+				},
 				"Separator4": {
 					"type": "rectangle",
 					"top": 15,
@@ -168,17 +178,6 @@
 					"method": "ObjectMethods/cbCellProtected.4dm",
 					"threeState": true
 				},
-				"Rect2": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 250,
-					"visibility": "hidden",
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 0
-				},
 				"cbTableProtected1": {
 					"type": "checkbox",
 					"top": 190,
@@ -190,9 +189,9 @@
 					"events": [
 						"onClick"
 					],
-					"dataSource": "Form:C1466.textBoxProtected",
+					"dataSource": "Form:C1466.textboxProtected",
 					"method": "ObjectMethods/cbTableProtected1.4dm",
-					"threeState": true
+					"threeState": false
 				},
 				"decor3": {
 					"type": "picture",
@@ -221,12 +220,13 @@
 					"picture": "/RESOURCES/Images/TBcommon/Protection/textareaProtected_32.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
-				"Background": {
+				"Rect2": {
 					"type": "rectangle",
 					"top": 0,
 					"left": 0,
 					"width": 260,
 					"height": 620,
+					"visibility": "hidden",
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
 					"borderRadius": 0
@@ -253,14 +253,29 @@
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
-			"View 2": {},
-			"View 3": {},
-			"View 4": {},
-			"View 5": {},
-			"View 6": {},
-			"View 7": {},
-			"View 8": {},
+			"View 2": {
+				"visible": false
+			},
+			"View 3": {
+				"visible": false
+			},
+			"View 4": {
+				"visible": false
+			},
+			"View 5": {
+				"visible": false
+			},
+			"View 6": {
+				"visible": false
+			},
+			"View 7": {
+				"visible": false
+			},
+			"View 8": {
+				"visible": false
+			},
 			"View 9": {
+				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text"
@@ -268,5 +283,5 @@
 			}
 		}
 	},
-	"geometryStamp": 212
+	"geometryStamp": 249
 }

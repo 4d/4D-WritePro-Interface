@@ -78,6 +78,14 @@ If ($range.type#2)  // anchored picture (check added 2021/01/13 by RL)
 	
 	Form:C1466.cellProtected:=$protection
 	
+	
+	//----------------- text box --------------------
+	
+	If ($range#Null:C1517) && (OB Is defined:C1231($range; "container")) && ($range.container.type=300)  // 300 == wk type text box
+		WP GET ATTRIBUTES:C1345($range.container; wk protected:K81:306; $protection)
+		Form:C1466.textboxProtected:=$protection
+	End if 
+	
 Else 
 	
 	Form:C1466.tableProtected:=0

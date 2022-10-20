@@ -252,3 +252,7 @@ C_TEXT:C284(WP_BackToArea; $1)
 
 //TB_setAutomaticActions
 C_TEXT:C284(TB_setAutomaticActions; $1)
+
+//WP_SetTextboxProtection
+C_OBJECT:C1216(WP_SetTextboxProtection; $1)
+C_LONGINT:C283(WP_SetTextboxProtection; $2)

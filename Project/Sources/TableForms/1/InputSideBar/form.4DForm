@@ -3,7 +3,7 @@
 	"windowTitle": "4D Write Pro",
 	"windowMinWidth": 320,
 	"windowMinHeight": 350,
-	"width": 940,
+	"width": 1300,
 	"height": 1000,
 	"markerBody": 217,
 	"markerBreak": 217,
@@ -243,7 +243,7 @@
 					"left": 750,
 					"width": 70,
 					"height": 20,
-					"sizingX": "fixed",
+					"sizingX": "move",
 					"sizingY": "move",
 					"action": "cancel",
 					"shortcutKey": "[Esc]",
@@ -260,7 +260,7 @@
 					"left": 830,
 					"width": 70,
 					"height": 20,
-					"sizingX": "fixed",
+					"sizingX": "move",
 					"sizingY": "move",
 					"action": "accept",
 					"shortcutKey": "[Enter]",
@@ -317,11 +317,12 @@
 					"events": [
 						"onClick"
 					],
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"fontWeight": "bold"
 				},
 				"Button14": {
 					"type": "button",
-					"top": 878,
+					"top": 868,
 					"left": 35,
 					"width": 141,
 					"height": 21,
@@ -332,7 +333,8 @@
 					"events": [
 						"onClick"
 					],
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"fontWeight": "bold"
 				},
 				"Button12": {
 					"type": "button",
@@ -351,9 +353,9 @@
 				},
 				"Variable1": {
 					"type": "input",
-					"top": 913,
-					"left": 103,
-					"width": 73,
+					"top": 901,
+					"left": 104,
+					"width": 72,
 					"height": 17,
 					"sizingY": "move",
 					"dataSource": "templateID",
@@ -364,7 +366,8 @@
 					"events": [
 						"onDataChange"
 					],
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"fontWeight": "bold"
 				},
 				"Texte": {
 					"type": "text",
@@ -379,8 +382,8 @@
 				},
 				"Button16": {
 					"type": "button",
-					"top": 911,
-					"left": 217,
+					"top": 909,
+					"left": 237,
 					"width": 127,
 					"height": 21,
 					"sizingY": "move",
@@ -421,20 +424,20 @@
 				},
 				"Input": {
 					"type": "input",
-					"left": 616,
-					"top": 913,
-					"width": 135,
-					"height": 65,
+					"left": 922,
+					"top": 80,
+					"width": 360,
+					"height": 657,
 					"dataSource": "dummyObject",
 					"dataSourceTypeHint": "object",
-					"sizingY": "move",
-					"sizingX": "fixed"
+					"sizingY": "grow",
+					"sizingX": "move"
 				},
 				"Input1": {
 					"type": "input",
-					"left": 620,
-					"top": 872,
-					"width": 114,
+					"left": 603,
+					"top": 890,
+					"width": 127,
 					"height": 17,
 					"sizingX": "move",
 					"sizingY": "move",
@@ -443,7 +446,7 @@
 				"Button15": {
 					"type": "button",
 					"text": "Find",
-					"top": 869,
+					"top": 856,
 					"left": 750,
 					"width": 148,
 					"height": 20,
@@ -457,8 +460,8 @@
 				"Button18": {
 					"type": "button",
 					"text": "Set decimal tab",
-					"top": 909,
-					"left": 752,
+					"top": 887,
+					"left": 750,
 					"width": 148,
 					"height": 20,
 					"events": [
@@ -482,6 +485,68 @@
 						"onClick"
 					],
 					"sizingX": "fixed"
+				},
+				"Button21": {
+					"type": "button",
+					"text": "txtbox width",
+					"top": 785,
+					"left": 606,
+					"width": 124,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"action": "textbox/width?value=5cm",
+					"sizingX": "move",
+					"sizingY": "move",
+					"focusable": false
+				},
+				"Button22": {
+					"type": "button",
+					"text": "txtbox height",
+					"top": 815,
+					"left": 606,
+					"width": 124,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"action": "textbox/height?value=3cm",
+					"sizingX": "move",
+					"sizingY": "move",
+					"focusable": false
+				},
+				"Button23": {
+					"type": "button",
+					"text": "txtbox attributes",
+					"top": 757,
+					"left": 1033,
+					"width": 149,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"action": "",
+					"sizingX": "move",
+					"sizingY": "move",
+					"focusable": false,
+					"method": "ObjectMethods/Button23.4dm"
+				},
+				"Button24": {
+					"type": "button",
+					"text": "SET",
+					"top": 799,
+					"left": 1033,
+					"width": 149,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"action": "",
+					"sizingX": "move",
+					"sizingY": "move",
+					"focusable": false,
+					"method": "ObjectMethods/Button24.4dm"
 				}
 			}
 		}
@@ -490,7 +555,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 60,
+	"geometryStamp": 111,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

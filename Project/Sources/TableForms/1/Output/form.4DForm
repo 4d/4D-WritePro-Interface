@@ -8,32 +8,7 @@
 		67
 	],
 	"markerFooter": 106,
-	"events": [
-		"onLoad",
-		"onValidate",
-		"onClick",
-		"onHeader",
-		"onPrintingBreak",
-		"onPrintingFooter",
-		"onDisplayDetail",
-		"onOutsideCall",
-		"onDoubleClick",
-		"onDrop",
-		"onMenuSelect",
-		"onPluginArea",
-		"onDataChange",
-		"onDragOver",
-		"onPrintingDetail",
-		"onOpenDetail",
-		"onCloseDetail",
-		"onTimer",
-		"onAfterKeystroke",
-		"onLoadRecord",
-		"onAfterEdit",
-		"onBeginDragOver",
-		"onBoundVariableChange",
-		"onPageChange"
-	],
+	"events": [],
 	"pageFormat": {
 		"paperName": "A4",
 		"paperWidth": "595pt",
@@ -43,6 +18,16 @@
 		null,
 		{
 			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 943,
+					"height": 338,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "transparent"
+				},
 				"Picture3": {
 					"type": "picture",
 					"top": -5,
@@ -61,15 +46,6 @@
 					"height": 17,
 					"sizingX": "grow",
 					"text": "ID : "
-				},
-				"Rectangle4": {
-					"type": "rectangle",
-					"top": 19,
-					"left": 0,
-					"width": 528,
-					"height": 205,
-					"sizingX": "grow",
-					"stroke": "transparent"
 				},
 				"S1_Field": {
 					"type": "input",
@@ -131,14 +107,6 @@
 					"height": 49,
 					"stroke": "#A8A8A8"
 				},
-				"Line6": {
-					"type": "line",
-					"top": -5,
-					"left": 528,
-					"height": 49,
-					"sizingX": "move",
-					"stroke": "#A8A8A8"
-				},
 				"Text": {
 					"type": "text",
 					"text": "{\"Pays\";\"Region\";\"Ville\";\"Quartier\"}",
@@ -150,7 +118,7 @@
 			}
 		}
 	],
-	"geometryStamp": 143,
+	"geometryStamp": 154,
 	"$4d": {
 		"version": "1",
 		"kind": "form"
@@ -161,5 +129,6 @@
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"method": "method.4dm"
 }

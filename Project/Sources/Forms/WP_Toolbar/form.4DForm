@@ -1124,8 +1124,8 @@
 				},
 				"TB_FontSize": {
 					"type": "dropdown",
-					"top": 61,
-					"left": 997,
+					"top": 89,
+					"left": 1126,
 					"width": 65,
 					"height": 20,
 					"tooltip": ":xliff:size",
@@ -3706,22 +3706,23 @@
 					"width": 0,
 					"startPoint": "topLeft"
 				},
-				"Button6": {
-					"type": "button",
-					"text": "",
+				"cbTextboxProtected": {
+					"type": "checkbox",
 					"top": 40,
-					"left": 310,
+					"left": 300,
 					"width": 40,
 					"height": 40,
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBcommon/Protection/textareaProtected_32.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"dataSource": "Form:C1466.textboxProtected",
+					"method": "ObjectMethods/cbTextboxProtected.4dm",
 					"events": [
 						"onClick"
 					],
-					"style": "toolbar",
-					"action": "",
-					"focusable": false,
-					"method": "ObjectMethods/Button6.4dm",
-					"icon": "/RESOURCES/Images/TBcommon/Protection/textareaProtected_32.png",
-					"iconFrames": 4
+					"tooltip": ":xliff:protectCell"
 				}
 			}
 		},
@@ -4226,5 +4227,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6238
+	"geometryStamp": 6251
 }
