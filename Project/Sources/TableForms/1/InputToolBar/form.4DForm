@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"windowTitle": "4D Write Pro",
 	"markerBody": 217,
@@ -356,7 +356,7 @@
 				"Button11": {
 					"type": "button",
 					"text": "SET EXPRESSION",
-					"top": 172,
+					"top": 148,
 					"left": 957,
 					"width": 137,
 					"height": 28,
@@ -372,7 +372,7 @@
 				"Button18": {
 					"type": "button",
 					"text": "SET URL",
-					"top": 220,
+					"top": 186,
 					"left": 957,
 					"width": 137,
 					"height": 28,
@@ -388,7 +388,7 @@
 				"Button19": {
 					"type": "button",
 					"text": "PICT SETTINGS",
-					"top": 268,
+					"top": 225,
 					"left": 957,
 					"width": 137,
 					"height": 28,
@@ -617,6 +617,40 @@
 					"focusable": false,
 					"stroke": "#da70d6",
 					"sizingY": "fixed"
+				},
+				"Button28": {
+					"type": "button",
+					"text": "Textbox position",
+					"top": 268,
+					"left": 957,
+					"width": 137,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button28.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"stroke": "#008000",
+					"fontWeight": "normal",
+					"sizingY": "fixed"
+				},
+				"Button29": {
+					"type": "button",
+					"text": "WP Get frame",
+					"top": 311,
+					"left": 957,
+					"width": 137,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button29.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"stroke": "#008000",
+					"fontWeight": "normal",
+					"sizingY": "fixed"
 				}
 			},
 			"entryOrder": [
@@ -657,7 +691,9 @@
 				"Button24",
 				"WParea",
 				"WPtoolbar",
-				"Button27"
+				"Button27",
+				"Button28",
+				"Button29"
 			]
 		},
 		{
@@ -669,7 +705,7 @@
 		"kind": "form"
 	},
 	"method": "method.4dm",
-	"geometryStamp": 364,
+	"geometryStamp": 371,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

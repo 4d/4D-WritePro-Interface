@@ -24,10 +24,10 @@ Case of
 		(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector2"))->:=1  //paragraph by default
 		(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector3"))->:=0
 		
-		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignLeft"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignCenter"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignRight"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignJustify"))->:=0
+		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignTextLeft"))->:=0
+		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignTextCenter"))->:=0
+		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignTextRight"))->:=0
+		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignTextJustify"))->:=0
 		
 		(OBJECT Get pointer:C1124(Object named:K67:5; "textIndentRuler"))->:=0
 		(OBJECT Get pointer:C1124(Object named:K67:5; "textIndentInput"))->:=0
