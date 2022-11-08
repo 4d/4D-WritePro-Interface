@@ -32,7 +32,7 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 		Case of 
 				
 			: ($page=5)  // image
-				UI_PaletteImage
+				UI_PaletteImage(True:C214)  // means take focus into account (nothing is focusable in the toolbar)
 				
 			: ($page=9)  // page 9 is special case
 				

@@ -1,13 +1,18 @@
 //%attributes = {"invisible":true}
+#DECLARE($focus : Boolean)  // toolbar = true, sidebar = false
+
 C_OBJECT:C1216($range)
 C_COLLECTION:C1488($elements)
 
-If (UI_isProtected(False:C215))  // false means do NOT take focus into account
+If (UI_isProtected($focus))  // false means do NOT take focus into account
 	
 	OBJECT SET ENABLED:C1123(*; "@"; False:C215)
 	OBJECT SET ENTERABLE:C238(*; "@"; False:C215)
 	
 Else 
+	
+	OBJECT SET ENABLED:C1123(*; "@"; True:C214)  // RL 08/11/2022
+	OBJECT SET ENTERABLE:C238(*; "@"; True:C214)  // RL 08/11/2022
 	
 	C_OBJECT:C1216($form)
 	
@@ -29,9 +34,9 @@ Else
 	End if 
 	
 	If (Not:C34(Undefined:C82($form.picture)))
-		OBJECT SET ENABLED:C1123(*; "btn_PictInfo"; True:C214)
+		OBJECT SET ENABLED:C1123(*; "btn_PictInfo@"; True:C214)
 	Else 
-		OBJECT SET ENABLED:C1123(*; "btn_PictInfo"; False:C215)
+		OBJECT SET ENABLED:C1123(*; "btn_PictInfo@"; False:C215)
 	End if 
 	
 	

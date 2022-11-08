@@ -82,7 +82,7 @@ Case of
 		End if 
 		
 		UI_PaletteBackgrounds
-		UI_PaletteImage
+		UI_PaletteImage(False:C215)  // some items in the palette are focusable, so must ignore focus
 		
 		If ($setupOK) & ($typeSelection#2)
 			

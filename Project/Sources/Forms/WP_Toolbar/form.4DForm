@@ -1475,7 +1475,7 @@
 					"tooltip": ":xliff:insertPicture",
 					"action": "",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Insert/Images_32.png",
+					"icon": "/RESOURCES/Images/TBcommon/Insert/Images_32.png",
 					"iconFrames": 4,
 					"style": "toolbar",
 					"method": "ObjectMethods/btn_insertImage.4dm",
@@ -2638,7 +2638,7 @@
 				"btn_imageInline": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 55,
+					"left": 255,
 					"width": 50,
 					"height": 50,
 					"tooltip": ":xliff:imageInline",
@@ -2651,7 +2651,7 @@
 				"btn_imageInFront": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 105,
+					"left": 305,
 					"width": 50,
 					"height": 50,
 					"tooltip": ":xliff:imageInFront",
@@ -2664,7 +2664,7 @@
 				"btn_imageBehind": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 10,
+					"left": 210,
 					"width": 45,
 					"height": 50,
 					"tooltip": ":xliff:imageBehind",
@@ -2677,7 +2677,7 @@
 				"btn_imageAlignCenter": {
 					"type": "checkbox",
 					"top": 56,
-					"left": 350,
+					"left": 550,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignCenter",
@@ -2690,7 +2690,7 @@
 				"btn_imageAlignLeft": {
 					"type": "checkbox",
 					"top": 56,
-					"left": 320,
+					"left": 520,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignLeft",
@@ -2703,7 +2703,7 @@
 				"btn_imageAlignRight": {
 					"type": "checkbox",
 					"top": 56,
-					"left": 380,
+					"left": 580,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignRight",
@@ -2716,7 +2716,7 @@
 				"btn_imageAlignMiddle": {
 					"type": "checkbox",
 					"top": 28,
-					"left": 350,
+					"left": 550,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignCenter",
@@ -2729,7 +2729,7 @@
 				"btn_imageAlignTop": {
 					"type": "checkbox",
 					"top": 28,
-					"left": 320,
+					"left": 520,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignTop",
@@ -2742,7 +2742,7 @@
 				"btn_imageAlignBottom": {
 					"type": "checkbox",
 					"top": 28,
-					"left": 380,
+					"left": 580,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignBottom",
@@ -2755,7 +2755,7 @@
 				"Popup_anchorToPage": {
 					"type": "dropdown",
 					"top": 32,
-					"left": 210,
+					"left": 410,
 					"width": 80,
 					"height": 17,
 					"tooltip": ":xliff:anchorToPage",
@@ -2768,7 +2768,7 @@
 				"Popup-anchorToSection": {
 					"type": "dropdown",
 					"top": 60,
-					"left": 210,
+					"left": 410,
 					"width": 80,
 					"height": 17,
 					"tooltip": ":xliff:AnchorToSection",
@@ -2781,7 +2781,7 @@
 				"3D Button72": {
 					"type": "button",
 					"top": 28,
-					"left": 170,
+					"left": 370,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:anchorToPage",
@@ -2793,7 +2793,7 @@
 				"3D Button76": {
 					"type": "button",
 					"top": 56,
-					"left": 170,
+					"left": 370,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:AnchorToSection",
@@ -2806,7 +2806,7 @@
 					"type": "button",
 					"text": "",
 					"top": 30,
-					"left": 565,
+					"left": 765,
 					"width": 50,
 					"height": 50,
 					"events": [
@@ -2824,7 +2824,7 @@
 					"type": "button",
 					"text": "",
 					"top": 30,
-					"left": 435,
+					"left": 635,
 					"width": 50,
 					"height": 50,
 					"events": [],
@@ -2841,7 +2841,7 @@
 					"type": "button",
 					"text": "",
 					"top": 30,
-					"left": 495,
+					"left": 695,
 					"width": 50,
 					"height": 50,
 					"events": [],
@@ -2857,7 +2857,7 @@
 				"Line70": {
 					"type": "line",
 					"top": 30,
-					"left": 160,
+					"left": 360,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2866,7 +2866,7 @@
 				"Line43": {
 					"type": "line",
 					"top": 30,
-					"left": 305,
+					"left": 505,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2875,7 +2875,7 @@
 				"Line45": {
 					"type": "line",
 					"top": 30,
-					"left": 425,
+					"left": 625,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2884,7 +2884,7 @@
 				"Line44": {
 					"type": "line",
 					"top": 30,
-					"left": 555,
+					"left": 755,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2893,7 +2893,7 @@
 				"Line42": {
 					"type": "line",
 					"top": 30,
-					"left": 625,
+					"left": 825,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2903,7 +2903,7 @@
 					"type": "button",
 					"text": "",
 					"top": 30,
-					"left": 635,
+					"left": 5,
 					"width": 50,
 					"height": 50,
 					"events": [],
@@ -2918,7 +2918,7 @@
 					"type": "button",
 					"text": "",
 					"top": 60,
-					"left": 689,
+					"left": 59,
 					"width": 40,
 					"height": 20,
 					"events": [
@@ -2932,14 +2932,62 @@
 				},
 				"Line71": {
 					"type": "line",
+					"top": 40,
+					"left": 105,
+					"height": 30,
+					"stroke": "#888888",
+					"width": 1,
+					"startPoint": "topLeft"
+				},
+				"btn_insertImage1": {
+					"type": "button",
 					"top": 30,
-					"left": 735,
+					"left": 120,
+					"width": 60,
+					"height": 50,
+					"tooltip": ":xliff:insertPicture",
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBcommon/Insert/Images_48.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/btn_insertImage1.4dm",
+					"popupPlacement": "linked",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line72": {
+					"type": "line",
+					"top": 30,
+					"left": 195,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
 					"startPoint": "topLeft"
 				}
-			}
+			},
+			"entryOrder": [
+				"btn_insertTextArea1",
+				"btn_textAreaBackgroundColor1",
+				"btn_insertImage1",
+				"btn_imageBehind",
+				"btn_imageInline",
+				"btn_imageInFront",
+				"3D Button72",
+				"Popup_anchorToPage",
+				"3D Button76",
+				"Popup-anchorToSection",
+				"btn_imageAlignTop",
+				"btn_imageAlignMiddle",
+				"btn_imageAlignBottom",
+				"btn_imageAlignLeft",
+				"btn_imageAlignCenter",
+				"btn_imageAlignRight",
+				"btn_imageMoveToBack",
+				"btn_imageMoveToFront",
+				"btn_PictInfo"
+			]
 		},
 		{
 			"objects": {
@@ -4227,5 +4275,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6251
+	"geometryStamp": 6434
 }
