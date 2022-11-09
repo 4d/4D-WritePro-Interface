@@ -521,17 +521,31 @@
 		"views": {
 			"View 1": {},
 			"View 2": {
+				"visible": false,
 				"objects": [
 					"Background"
 				]
 			},
-			"Grid": {},
-			"View 4": {},
-			"View 5": {},
-			"View 6": {},
-			"View 7": {},
-			"View 8": {},
-			"View 9": {
+			"Grid": {
+				"visible": false
+			},
+			"View 4": {
+				"visible": false
+			},
+			"View 5": {
+				"visible": false
+			},
+			"View 6": {
+				"visible": false
+			},
+			"View 7": {
+				"visible": false
+			},
+			"View 8": {
+				"visible": false
+			},
+			"Front": {
+				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text"

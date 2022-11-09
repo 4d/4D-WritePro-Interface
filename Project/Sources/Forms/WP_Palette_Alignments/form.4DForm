@@ -25,6 +25,15 @@
 		null,
 		{
 			"objects": {
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 240,
+					"width": 1,
+					"height": 620,
+					"visibility": "hidden",
+					"stroke": "#da70d6"
+				},
 				"Background": {
 					"type": "rectangle",
 					"top": 0,
@@ -1060,15 +1069,6 @@
 					"text": ":xliff:numberHiphen",
 					"fontTheme": "additional"
 				},
-				"Line4": {
-					"type": "line",
-					"top": 0,
-					"left": 240,
-					"width": 1,
-					"height": 620,
-					"visibility": "hidden",
-					"stroke": "#da70d6"
-				},
 				"IconBgnd1": {
 					"type": "rectangle",
 					"top": 509,
@@ -1085,17 +1085,17 @@
 					"left": 26,
 					"width": 29,
 					"height": 24,
-					"action": "",
+					"action": "insertTextBox",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/Insert/textarea_24.png",
 					"iconFrames": 4,
 					"style": "toolbar",
 					"popupPlacement": "separated",
 					"events": [
-						"onClick",
 						"onAlternateClick"
 					],
-					"method": "ObjectMethods/btn_insertTextArea.4dm"
+					"method": "ObjectMethods/btn_insertTextArea.4dm",
+					"tooltip": ":xliff:InsertTextBox"
 				},
 				"Line5": {
 					"type": "line",

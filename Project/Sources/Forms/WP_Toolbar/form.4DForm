@@ -1689,7 +1689,7 @@
 				"Line5": {
 					"type": "line",
 					"top": 30,
-					"left": 625,
+					"left": 635,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -1896,7 +1896,7 @@
 				"btn_insertTime1": {
 					"type": "button",
 					"top": 30,
-					"left": 585,
+					"left": 645,
 					"width": 30,
 					"height": 24,
 					"focusable": false,
@@ -1912,7 +1912,7 @@
 				"btn_insertTime2": {
 					"type": "button",
 					"top": 60,
-					"left": 585,
+					"left": 645,
 					"width": 30,
 					"height": 24,
 					"focusable": false,
@@ -2002,33 +2002,21 @@
 				"btn_insertTextArea": {
 					"type": "button",
 					"text": "",
-					"top": 30,
-					"left": 635,
+					"top": 35,
+					"left": 585,
 					"width": 40,
-					"height": 24,
-					"events": [],
+					"height": 40,
+					"events": [
+						"onAlternateClick"
+					],
 					"style": "toolbar",
 					"action": "insertTextBox",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/Insert/textarea_24.png",
 					"iconFrames": 4,
-					"tooltip": ":xliff:InsertTextBox"
-				},
-				"btn_textAreaBackgroundColor": {
-					"type": "button",
-					"text": "",
-					"top": 60,
-					"left": 635,
-					"width": 40,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"style": "toolbar",
-					"action": "textBox/backgroundColor/showDialog",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Home/BackgroundColor_24.png",
-					"iconFrames": 4
+					"tooltip": ":xliff:InsertTextBox",
+					"popupPlacement": "separated",
+					"icon": "/RESOURCES/Images/TBcommon/Insert/textarea_32.png",
+					"method": "ObjectMethods/btn_insertTextArea.4dm"
 				}
 			},
 			"entryOrder": [
@@ -2064,8 +2052,7 @@
 				"btn_insertTime3",
 				"btn_visibleEmptyImages",
 				"btn_displayAsSymbol",
-				"btn_insertTextArea",
-				"btn_textAreaBackgroundColor"
+				"btn_insertTextArea"
 			]
 		},
 		{
@@ -2638,7 +2625,7 @@
 				"btn_imageInline": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 255,
+					"left": 225,
 					"width": 50,
 					"height": 50,
 					"tooltip": ":xliff:imageInline",
@@ -2651,7 +2638,7 @@
 				"btn_imageInFront": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 305,
+					"left": 275,
 					"width": 50,
 					"height": 50,
 					"tooltip": ":xliff:imageInFront",
@@ -2664,7 +2651,7 @@
 				"btn_imageBehind": {
 					"type": "checkbox",
 					"top": 30,
-					"left": 210,
+					"left": 180,
 					"width": 45,
 					"height": 50,
 					"tooltip": ":xliff:imageBehind",
@@ -2677,7 +2664,7 @@
 				"btn_imageAlignCenter": {
 					"type": "checkbox",
 					"top": 56,
-					"left": 550,
+					"left": 520,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignCenter",
@@ -2690,7 +2677,7 @@
 				"btn_imageAlignLeft": {
 					"type": "checkbox",
 					"top": 56,
-					"left": 520,
+					"left": 490,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignLeft",
@@ -2703,7 +2690,7 @@
 				"btn_imageAlignRight": {
 					"type": "checkbox",
 					"top": 56,
-					"left": 580,
+					"left": 550,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignRight",
@@ -2716,7 +2703,7 @@
 				"btn_imageAlignMiddle": {
 					"type": "checkbox",
 					"top": 28,
-					"left": 550,
+					"left": 520,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignCenter",
@@ -2729,7 +2716,7 @@
 				"btn_imageAlignTop": {
 					"type": "checkbox",
 					"top": 28,
-					"left": 520,
+					"left": 490,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignTop",
@@ -2742,7 +2729,7 @@
 				"btn_imageAlignBottom": {
 					"type": "checkbox",
 					"top": 28,
-					"left": 580,
+					"left": 550,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:alignBottom",
@@ -2755,7 +2742,7 @@
 				"Popup_anchorToPage": {
 					"type": "dropdown",
 					"top": 32,
-					"left": 410,
+					"left": 380,
 					"width": 80,
 					"height": 17,
 					"tooltip": ":xliff:anchorToPage",
@@ -2768,7 +2755,7 @@
 				"Popup-anchorToSection": {
 					"type": "dropdown",
 					"top": 60,
-					"left": 410,
+					"left": 380,
 					"width": 80,
 					"height": 17,
 					"tooltip": ":xliff:AnchorToSection",
@@ -2781,7 +2768,7 @@
 				"3D Button72": {
 					"type": "button",
 					"top": 28,
-					"left": 370,
+					"left": 340,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:anchorToPage",
@@ -2793,7 +2780,7 @@
 				"3D Button76": {
 					"type": "button",
 					"top": 56,
-					"left": 370,
+					"left": 340,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:AnchorToSection",
@@ -2806,7 +2793,7 @@
 					"type": "button",
 					"text": "",
 					"top": 30,
-					"left": 765,
+					"left": 735,
 					"width": 50,
 					"height": 50,
 					"events": [
@@ -2824,7 +2811,7 @@
 					"type": "button",
 					"text": "",
 					"top": 30,
-					"left": 635,
+					"left": 605,
 					"width": 50,
 					"height": 50,
 					"events": [],
@@ -2841,7 +2828,7 @@
 					"type": "button",
 					"text": "",
 					"top": 30,
-					"left": 695,
+					"left": 665,
 					"width": 50,
 					"height": 50,
 					"events": [],
@@ -2857,7 +2844,7 @@
 				"Line70": {
 					"type": "line",
 					"top": 30,
-					"left": 360,
+					"left": 330,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2866,7 +2853,7 @@
 				"Line43": {
 					"type": "line",
 					"top": 30,
-					"left": 505,
+					"left": 475,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2875,7 +2862,7 @@
 				"Line45": {
 					"type": "line",
 					"top": 30,
-					"left": 625,
+					"left": 595,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2884,7 +2871,7 @@
 				"Line44": {
 					"type": "line",
 					"top": 30,
-					"left": 755,
+					"left": 725,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2893,7 +2880,7 @@
 				"Line42": {
 					"type": "line",
 					"top": 30,
-					"left": 825,
+					"left": 795,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2904,36 +2891,24 @@
 					"text": "",
 					"top": 30,
 					"left": 5,
-					"width": 50,
+					"width": 60,
 					"height": 50,
-					"events": [],
+					"events": [
+						"onAlternateClick"
+					],
 					"style": "toolbar",
 					"action": "insertTextBox",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/Insert/textarea_48.png",
 					"iconFrames": 4,
-					"tooltip": ":xliff:InsertTextBox"
-				},
-				"btn_textAreaBackgroundColor1": {
-					"type": "button",
-					"text": "",
-					"top": 60,
-					"left": 59,
-					"width": 40,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"style": "toolbar",
-					"action": "textBox/backgroundColor/showDialog",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Home/BackgroundColor_24.png",
-					"iconFrames": 4
+					"tooltip": ":xliff:InsertTextBox",
+					"popupPlacement": "separated",
+					"method": "ObjectMethods/btn_insertTextArea1.4dm"
 				},
 				"Line71": {
 					"type": "line",
 					"top": 40,
-					"left": 105,
+					"left": 75,
 					"height": 30,
 					"stroke": "#888888",
 					"width": 1,
@@ -2942,7 +2917,7 @@
 				"btn_insertImage1": {
 					"type": "button",
 					"top": 30,
-					"left": 120,
+					"left": 90,
 					"width": 60,
 					"height": 50,
 					"tooltip": ":xliff:insertPicture",
@@ -2960,7 +2935,7 @@
 				"Line72": {
 					"type": "line",
 					"top": 30,
-					"left": 195,
+					"left": 165,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2969,7 +2944,6 @@
 			},
 			"entryOrder": [
 				"btn_insertTextArea1",
-				"btn_textAreaBackgroundColor1",
 				"btn_insertImage1",
 				"btn_imageBehind",
 				"btn_imageInline",
@@ -4275,5 +4249,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6434
+	"geometryStamp": 6488
 }
