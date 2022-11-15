@@ -433,16 +433,6 @@
 					"sizingY": "grow",
 					"sizingX": "move"
 				},
-				"Input1": {
-					"type": "input",
-					"left": 603,
-					"top": 890,
-					"width": 127,
-					"height": 17,
-					"sizingX": "move",
-					"sizingY": "move",
-					"dataSource": "Form:C1466.find"
-				},
 				"Button15": {
 					"type": "button",
 					"text": "Find",
@@ -535,7 +525,7 @@
 				"Button24": {
 					"type": "button",
 					"text": "SET",
-					"top": 799,
+					"top": 787,
 					"left": 1033,
 					"width": 149,
 					"height": 22,
@@ -547,6 +537,50 @@
 					"sizingY": "move",
 					"focusable": false,
 					"method": "ObjectMethods/Button24.4dm"
+				},
+				"Mimic": {
+					"type": "button",
+					"text": "MimicMenu v2",
+					"top": 40,
+					"left": 922,
+					"width": 149,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"action": "",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"focusable": false,
+					"method": "ObjectMethods/Mimic.4dm"
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"left": 1091,
+					"top": 43,
+					"width": 108,
+					"height": 19,
+					"events": [
+						"onDataChange"
+					],
+					"action": "paragraph/textAlign",
+					"focusable": false
+				},
+				"Mimic1": {
+					"type": "button",
+					"text": "MimicMenu v1",
+					"top": 10,
+					"left": 922,
+					"width": 149,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"action": "",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"focusable": false,
+					"method": "ObjectMethods/Mimic1.4dm"
 				}
 			}
 		}
@@ -555,7 +589,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 111,
+	"geometryStamp": 145,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

@@ -46,8 +46,8 @@
 				},
 				"Rectangle1": {
 					"type": "rectangle",
-					"top": 305,
-					"left": 84,
+					"top": 330,
+					"left": 561,
 					"width": 150,
 					"height": 100,
 					"strokeWidth": 1,
@@ -1107,8 +1107,8 @@
 				},
 				"popMarginTop": {
 					"type": "dropdown",
-					"top": 309,
-					"left": 127,
+					"top": 330,
+					"left": 92,
 					"width": 64,
 					"height": 18,
 					"tooltip": ":xliff:marginTop",
@@ -1118,8 +1118,8 @@
 				},
 				"popMarginBottom": {
 					"type": "dropdown",
-					"top": 384,
-					"left": 127,
+					"top": 380,
+					"left": 91,
 					"width": 64,
 					"height": 18,
 					"tooltip": ":xliff:marginBottom",
@@ -1129,8 +1129,8 @@
 				},
 				"popMarginLeft": {
 					"type": "dropdown",
-					"top": 346,
-					"left": 90,
+					"top": 380,
+					"left": 177,
 					"width": 64,
 					"height": 18,
 					"tooltip": ":xliff:marginLeft",
@@ -1140,8 +1140,8 @@
 				},
 				"popMarginRight": {
 					"type": "dropdown",
-					"top": 346,
-					"left": 166,
+					"top": 330,
+					"left": 177,
 					"width": 64,
 					"height": 18,
 					"tooltip": ":xliff:marginRight",
@@ -1155,7 +1155,6 @@
 					"left": 86,
 					"width": 64,
 					"height": 18,
-					"tooltip": ":xliff:marginTop",
 					"focusable": false,
 					"action": "paragraph/margin",
 					"class": "Palette"
@@ -1203,6 +1202,42 @@
 					"height": 13,
 					"fontTheme": "additional",
 					"textAlign": "right"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 355,
+					"left": 86,
+					"width": 24,
+					"height": 24,
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginBottom_24.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 305,
+					"left": 86,
+					"width": 24,
+					"height": 24,
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginTop_24.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"Static Picture3": {
+					"type": "picture",
+					"top": 355,
+					"left": 176,
+					"width": 24,
+					"height": 24,
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginLeft_24.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"Static Picture4": {
+					"type": "picture",
+					"top": 305,
+					"left": 176,
+					"width": 24,
+					"height": 24,
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginRight_24.png",
+					"pictureFormat": "truncatedTopLeft"
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -1338,5 +1373,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 2889
+	"geometryStamp": 2982
 }

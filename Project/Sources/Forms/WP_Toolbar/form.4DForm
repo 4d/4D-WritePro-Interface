@@ -2194,7 +2194,7 @@
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/MarginLeft_24.png"
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginLeft_24.png"
 				},
 				"Image9": {
 					"type": "picture",
@@ -2203,7 +2203,7 @@
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/MarginRight_24.png"
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginRight_24.png"
 				},
 				"Image10": {
 					"type": "picture",
@@ -2212,7 +2212,7 @@
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/MarginTop_24.png"
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginTop_24.png"
 				},
 				"Image11": {
 					"type": "picture",
@@ -2221,7 +2221,7 @@
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/MarginBottom_24.png"
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginBottom_24.png"
 				},
 				"Image12": {
 					"type": "picture",
@@ -2230,7 +2230,7 @@
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/PaddingLeft_24.png"
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/PaddingLeft_24.png"
 				},
 				"Image13": {
 					"type": "picture",
@@ -2239,7 +2239,7 @@
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/PaddingRight_24.png"
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/PaddingRight_24.png"
 				},
 				"Image14": {
 					"type": "picture",
@@ -2248,7 +2248,7 @@
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/PaddingTop_24.png"
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/PaddingTop_24.png"
 				},
 				"Image16": {
 					"type": "picture",
@@ -2257,7 +2257,7 @@
 					"width": 24,
 					"height": 24,
 					"pictureFormat": "truncatedTopLeft",
-					"picture": "/RESOURCES/Images/Toolbar1/PageLayout/PaddingBottom_24.png"
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/PaddingBottom_24.png"
 				},
 				"Bouton": {
 					"type": "button",
@@ -2418,7 +2418,7 @@
 					"tooltip": ":xliff:borderLeft",
 					"action": "borderStyle",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderLeft_24.png",
+					"icon": "/RESOURCES/Images/TBcommon/PageLayout/BorderLeft_24.png",
 					"iconFrames": 4,
 					"popupPlacement": "separated",
 					"textPlacement": "center",
@@ -2438,7 +2438,7 @@
 					"tooltip": ":xliff:borderBottom",
 					"action": "borderStyle",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/Borderbottom_24.png",
+					"icon": "/RESOURCES/Images/TBcommon/PageLayout/Borderbottom_24.png",
 					"iconFrames": 4,
 					"popupPlacement": "separated",
 					"textPlacement": "center",
@@ -2458,7 +2458,7 @@
 					"tooltip": ":xliff:borderTop",
 					"action": "borderStyle",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderTop_24.png",
+					"icon": "/RESOURCES/Images/TBcommon/PageLayout/BorderTop_24.png",
 					"iconFrames": 4,
 					"popupPlacement": "separated",
 					"textPlacement": "center",
@@ -2478,7 +2478,7 @@
 					"tooltip": ":xliff:borderRight",
 					"action": "paragraph/borderStyle",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/PageLayout/BorderRight_24.png",
+					"icon": "/RESOURCES/Images/TBcommon/PageLayout/BorderRight_24.png",
 					"iconFrames": 4,
 					"popupPlacement": "separated",
 					"style": "toolbar",

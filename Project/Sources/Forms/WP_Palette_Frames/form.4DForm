@@ -38,28 +38,6 @@
 					"borderRadius": 0,
 					"sizingX": "fixed"
 				},
-				"Rectangle1": {
-					"type": "rectangle",
-					"top": 305,
-					"left": 84,
-					"width": 150,
-					"height": 100,
-					"strokeWidth": 1,
-					"borderRadius": 6,
-					"fill": "transparent",
-					"stroke": "automatic"
-				},
-				"Rectangle": {
-					"type": "rectangle",
-					"top": 145,
-					"left": 84,
-					"width": 150,
-					"height": 60,
-					"strokeWidth": 1,
-					"borderRadius": 6,
-					"fill": "transparent",
-					"stroke": "automatic"
-				},
 				"Separator1": {
 					"type": "rectangle",
 					"top": 40,
@@ -689,8 +667,8 @@
 				},
 				"popPaddingTop": {
 					"type": "dropdown",
-					"top": 311,
-					"left": 127,
+					"top": 330,
+					"left": 86,
 					"width": 64,
 					"height": 18,
 					"tooltip": ":xliff:paddingTop",
@@ -700,8 +678,8 @@
 				},
 				"popPaddingBottom": {
 					"type": "dropdown",
-					"top": 382,
-					"left": 127,
+					"top": 380,
+					"left": 86,
 					"width": 64,
 					"height": 18,
 					"tooltip": ":xliff:paddingBottom",
@@ -711,8 +689,8 @@
 				},
 				"popPaddingLeft": {
 					"type": "dropdown",
-					"top": 346,
-					"left": 86,
+					"top": 380,
+					"left": 165,
 					"width": 64,
 					"height": 18,
 					"tooltip": ":xliff:paddingLeft",
@@ -722,7 +700,7 @@
 				},
 				"popPaddingRight": {
 					"type": "dropdown",
-					"top": 346,
+					"top": 330,
 					"left": 165,
 					"width": 64,
 					"height": 18,
@@ -745,8 +723,8 @@
 				"btnBorderStyleAll": {
 					"type": "button",
 					"top": 69,
-					"left": 115,
-					"width": 30,
+					"left": 135,
+					"width": 40,
 					"height": 30,
 					"tooltip": ":xliff:bordersAll",
 					"action": "",
@@ -764,8 +742,8 @@
 				"btnBorderStyleNone": {
 					"type": "button",
 					"top": 69,
-					"left": 80,
-					"width": 30,
+					"left": 86,
+					"width": 40,
 					"height": 30,
 					"tooltip": ":xliff:bordersNone",
 					"action": "paragraph/borderStyle?value=none",
@@ -776,16 +754,16 @@
 				},
 				"btnBorderStyleLeft1": {
 					"type": "button",
-					"top": 165,
-					"left": 82,
-					"width": 20,
-					"height": 20,
+					"top": 144,
+					"left": 165,
+					"width": 40,
+					"height": 30,
 					"tooltip": ":xliff:borderLeft",
 					"action": "borderStyle",
 					"focusable": false,
-					"icon": "",
-					"iconFrames": 1,
-					"popupPlacement": "none",
+					"icon": "/RESOURCES/Images/TBcommon/PageLayout/BorderLeft_24.png",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
 					"textPlacement": "center",
 					"style": "toolbar",
 					"method": "ObjectMethods/btnBorderStyleLeft1.4dm",
@@ -793,21 +771,21 @@
 						"onClick",
 						"onAlternateClick"
 					],
-					"text": "▾",
+					"text": "",
 					"fontSize": 20
 				},
 				"btnBorderStyleBottom1": {
 					"type": "button",
-					"top": 183,
-					"left": 149,
-					"width": 20,
-					"height": 20,
+					"top": 176,
+					"left": 86,
+					"width": 40,
+					"height": 30,
 					"tooltip": ":xliff:borderBottom",
 					"action": "borderStyle",
 					"focusable": false,
-					"icon": "",
-					"iconFrames": 1,
-					"popupPlacement": "none",
+					"icon": "/RESOURCES/Images/TBcommon/PageLayout/BorderBottom_24.png",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
 					"textPlacement": "center",
 					"style": "toolbar",
 					"method": "ObjectMethods/btnBorderStyleBottom1.4dm",
@@ -815,21 +793,21 @@
 						"onClick",
 						"onAlternateClick"
 					],
-					"text": "▾",
+					"text": "",
 					"fontSize": 20
 				},
 				"btnBorderStyleTop1": {
 					"type": "button",
-					"top": 141,
-					"left": 149,
-					"width": 20,
-					"height": 20,
+					"top": 144,
+					"left": 86,
+					"width": 40,
+					"height": 30,
 					"tooltip": ":xliff:borderTop",
 					"action": "borderStyle",
 					"focusable": false,
-					"icon": "",
-					"iconFrames": 1,
-					"popupPlacement": "none",
+					"icon": "/RESOURCES/Images/TBcommon/PageLayout/BorderTop_24.png",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
 					"textPlacement": "center",
 					"style": "toolbar",
 					"method": "ObjectMethods/btnBorderStyleTop1.4dm",
@@ -837,28 +815,29 @@
 						"onClick",
 						"onAlternateClick"
 					],
-					"text": "▾",
+					"text": "",
 					"fontSize": 20
 				},
 				"btnBorderStyleRight1": {
 					"type": "button",
-					"top": 165,
-					"left": 215,
-					"width": 20,
-					"height": 20,
+					"top": 176,
+					"left": 165,
+					"width": 40,
+					"height": 30,
 					"tooltip": ":xliff:borderRight",
 					"action": "paragraph/borderStyle",
 					"focusable": false,
-					"icon": "",
-					"iconFrames": 1,
+					"icon": "/RESOURCES/Images/TBcommon/PageLayout/BorderRight_24.png",
+					"iconFrames": 4,
 					"style": "toolbar",
 					"method": "ObjectMethods/btnBorderStyleRight1.4dm",
 					"events": [
 						"onClick",
 						"onAlternateClick"
 					],
-					"text": "▾",
-					"fontSize": 20
+					"text": "",
+					"fontSize": 20,
+					"popupPlacement": "linked"
 				},
 				"popRadius": {
 					"type": "dropdown",
@@ -933,6 +912,42 @@
 					"height": 13,
 					"fontTheme": "additional",
 					"textAlign": "right"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 355,
+					"left": 86,
+					"width": 30,
+					"height": 24,
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginBottom_24.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 305,
+					"left": 86,
+					"width": 30,
+					"height": 24,
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginTop_24.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"Static Picture3": {
+					"type": "picture",
+					"top": 355,
+					"left": 165,
+					"width": 30,
+					"height": 24,
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginLeft_24.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"Static Picture4": {
+					"type": "picture",
+					"top": 305,
+					"left": 165,
+					"width": 30,
+					"height": 24,
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginRight_24.png",
+					"pictureFormat": "truncatedTopLeft"
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -1049,5 +1064,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1497
+	"geometryStamp": 1570
 }
