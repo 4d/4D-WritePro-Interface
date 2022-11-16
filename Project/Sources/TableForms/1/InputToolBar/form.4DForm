@@ -620,7 +620,7 @@
 				},
 				"Button28": {
 					"type": "button",
-					"text": "Textbox position",
+					"text": "Textbox",
 					"top": 268,
 					"left": 957,
 					"width": 137,
@@ -705,7 +705,7 @@
 		"kind": "form"
 	},
 	"method": "method.4dm",
-	"geometryStamp": 371,
+	"geometryStamp": 374,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

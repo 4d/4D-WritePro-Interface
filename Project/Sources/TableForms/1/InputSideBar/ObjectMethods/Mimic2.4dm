@@ -16,6 +16,8 @@ var $menuParagraphPadding : Text
 var $menuParagraphBorders : Text
 var $menuParagraphBackground : Text
 
+var $menuImage : Text
+
 var $menuSection : Text
 var $menuSectionMargins : Text
 var $menuSectionPadding : Text
@@ -24,14 +26,16 @@ var $menuSectionColumns : Text
 var $menuSectionBackground : Text
 
 var $menuStyle : Text
+
 var $menuTable : Text
+var $menuTableRow : Text
+var $menuTableColumn : Text
+var $menuTableCell : Text
 
 var $mainMenu : Text
-
-
 var $result : Text
 
-// prepare missing labels for main menus (not automatic, with submenus)
+// prepare localised labels for main menu items (not standard actions, but with detailed submenus)
 
 $label:=New object:C1471()
 $label.color:=Get action info:C1442("borderColor").title
@@ -51,14 +55,19 @@ $label.paddings:=Get action info:C1442("padding").title
 $label.borders:=Get action info:C1442("borders").title
 $label.background:=Get action info:C1442("background").title
 
-
 $label.document:=Get action info:C1442("doc").title
 $label.paragraph:=Get action info:C1442("paragraph").title
 $label.table:=Get action info:C1442("table").title
+$label.row:=Get action info:C1442("table/row").title
+$label.column:=Get action info:C1442("table/column").title
+$label.cell:=Get action info:C1442("table/cell").title
+
 $label.section:=Get action info:C1442("section").title
-
-
-
+$label.columns:=Get action info:C1442("section/columns").title
+If ($label.columns="")  // bug shall be fixed
+	$label.columns:="Columns"
+End if 
+$label.image:=Get action info:C1442("image").title
 
 
 //--------------------------------------------- D O C U M E N T ---------------------------------------------------------------------
@@ -240,12 +249,16 @@ If (True:C214)
 	
 	For ($i; 1; 7)
 		$_paragraphBordersSubmenu{$i}:=Create menu:C408
+		
 		APPEND MENU ITEM:C411($_paragraphBordersSubmenu{$i}; $label.style)
 		SET MENU ITEM PROPERTY:C973($_paragraphBordersSubmenu{$i}; -1; Associated standard action:K56:1; $prefix+"borderStyle"+$_paragraphBordersSubmenuTargets{$i})
+		
 		APPEND MENU ITEM:C411($_paragraphBordersSubmenu{$i}; $label.color)
 		SET MENU ITEM PROPERTY:C973($_paragraphBordersSubmenu{$i}; -1; Associated standard action:K56:1; $prefix+"borderColor"+$_paragraphBordersSubmenuTargets{$i})
+		
 		APPEND MENU ITEM:C411($_paragraphBordersSubmenu{$i}; $label.width)
 		SET MENU ITEM PROPERTY:C973($_paragraphBordersSubmenu{$i}; -1; Associated standard action:K56:1; $prefix+"borderWidth"+$_paragraphBordersSubmenuTargets{$i})
+		
 	End for 
 	
 	APPEND MENU ITEM:C411($menuParagraphBorders; $label.top; $_paragraphBordersSubmenu{1})
@@ -305,8 +318,8 @@ If (True:C214)
 	APPEND MENU ITEM:C411($menuParagraph; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuParagraph; -1; Associated standard action:K56:1; "direction")
 	
-	APPEND MENU ITEM:C411($menuParagraph; " ??? tab stop offset ???")
-	APPEND MENU ITEM:C411($menuParagraph; " ??? tab stop type ???")
+	//APPEND MENU ITEM($menuParagraph; " ??? tab stop offset ???")
+	//APPEND MENU ITEM($menuParagraph; " ??? tab stop type ???")
 	
 	APPEND MENU ITEM:C411($menuParagraph; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuParagraph; -1; Associated standard action:K56:1; "listStyleType")
@@ -335,11 +348,99 @@ If (True:C214)
 	
 End if 
 
+//----------------------------------------- I M A G E -------------------------------------------------------------------------
+
+If (True:C214)
+	$prefix:="image/"
+	
+	$menuImage:=Create menu:C408
+	
+	APPEND MENU ITEM:C411($menuImage; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuImage; -1; Associated standard action:K56:1; $prefix+"styleSheet")
+	
+	APPEND MENU ITEM:C411($menuImage; "-")
+	
+	APPEND MENU ITEM:C411($menuImage; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuImage; -1; Associated standard action:K56:1; $prefix+"margin")
+	
+	APPEND MENU ITEM:C411($menuImage; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuImage; -1; Associated standard action:K56:1; $prefix+"padding")
+	
+	APPEND MENU ITEM:C411($menuImage; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuImage; -1; Associated standard action:K56:1; $prefix+"width")
+	
+	APPEND MENU ITEM:C411($menuImage; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuImage; -1; Associated standard action:K56:1; $prefix+"height")
+	
+	APPEND MENU ITEM:C411($menuImage; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuImage; -1; Associated standard action:K56:1; $prefix+"borders")  // TWO submenus
+	
+	APPEND MENU ITEM:C411($menuImage; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuImage; -1; Associated standard action:K56:1; $prefix+"displayMode")
+	
+	APPEND MENU ITEM:C411($menuImage; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuImage; -1; Associated standard action:K56:1; $prefix+"anchorLayout")
+	
+	APPEND MENU ITEM:C411($menuImage; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuImage; -1; Associated standard action:K56:1; $prefix+"background")  // TWO submenus
+	
+End if 
+
 //----------------------------------------- T A B L E-------------------------------------------------------------------------
 
 If (True:C214)
-	$prefix:="table/"
 	
+	//------------ T A B L E  R O W ------------
+	$menuTableRow:=Create menu:C408
+	$prefix:="row/"
+	APPEND MENU ITEM:C411($menuTableRow; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTableRow; -1; Associated standard action:K56:1; $prefix+"height")
+	
+	APPEND MENU ITEM:C411($menuTableRow; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTableRow; -1; Associated standard action:K56:1; $prefix+"verticalAlign")
+	
+	APPEND MENU ITEM:C411($menuTableRow; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTableRow; -1; Associated standard action:K56:1; $prefix+"background")
+	
+	APPEND MENU ITEM:C411($menuTableRow; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTableRow; -1; Associated standard action:K56:1; $prefix+"borders")  // simplified  version compared to paragraph and section
+	
+	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"avoidPageBreakInside")
+	
+	//------------ T A B L E  C O L U M N ------------
+	$menuTableColumn:=Create menu:C408
+	$prefix:="column/"
+	
+	APPEND MENU ITEM:C411($menuTableColumn; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTableColumn; -1; Associated standard action:K56:1; $prefix+"width")
+	
+	APPEND MENU ITEM:C411($menuTableColumn; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTableColumn; -1; Associated standard action:K56:1; $prefix+"verticalAlign")
+	
+	APPEND MENU ITEM:C411($menuTableColumn; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTableColumn; -1; Associated standard action:K56:1; $prefix+"background")
+	
+	APPEND MENU ITEM:C411($menuTableColumn; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTableColumn; -1; Associated standard action:K56:1; $prefix+"borders")  // simplified  version compared to paragraph and section
+	
+	
+	//------------ T A B L E   C E L L ------------
+	$menuTableCell:=Create menu:C408
+	$prefix:="cell/"
+	
+	APPEND MENU ITEM:C411($menuTableCell; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTableCell; -1; Associated standard action:K56:1; $prefix+"verticalAlign")
+	
+	APPEND MENU ITEM:C411($menuTableCell; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTableCell; -1; Associated standard action:K56:1; $prefix+"background")
+	
+	APPEND MENU ITEM:C411($menuTableCell; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTableCell; -1; Associated standard action:K56:1; $prefix+"borders")  // simplified  version compared to paragraph and section
+	
+	
+	//------------    T  A  B  L  E   ------------
+	$prefix:="table/"
 	$menuTable:=Create menu:C408
 	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"tableAlign")
@@ -348,8 +449,36 @@ If (True:C214)
 	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"margins")
 	
 	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
-	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"borders")
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"background")
 	
+	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"borders")  // simplified  version compared to paragraph and section
+	
+	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"avoidPageBreakInside")
+	
+	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"headerRowCount")
+	
+	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"headerRowCount")
+	
+	APPEND MENU ITEM:C411($menuTable; $label.row; $menuTableRow)
+	APPEND MENU ITEM:C411($menuTable; $label.column; $menuTableColumn)
+	APPEND MENU ITEM:C411($menuTable; $label.cell; $menuTableCell)
+	
+	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"insertRowAbove")
+	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"insertRowBelow")
+	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"insertColumnToTheLeft")
+	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"insertColumnToTheRight")
+	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"deleteRows")
+	APPEND MENU ITEM:C411($menuTable; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menuTable; -1; Associated standard action:K56:1; $prefix+"deleteColumns")
 	
 End if 
 
@@ -362,33 +491,47 @@ If (True:C214)
 	$menuSectionMargins:=Create menu:C408
 	APPEND MENU ITEM:C411($menuSectionMargins; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionMargins; -1; Associated standard action:K56:1; $prefix+"marginTop")
+	
 	APPEND MENU ITEM:C411($menuSectionMargins; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionMargins; -1; Associated standard action:K56:1; $prefix+"marginRight")
+	
 	APPEND MENU ITEM:C411($menuSectionMargins; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionMargins; -1; Associated standard action:K56:1; $prefix+"marginBottom")
+	
 	APPEND MENU ITEM:C411($menuSectionMargins; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionMargins; -1; Associated standard action:K56:1; $prefix+"marginLeft")
+	
 	APPEND MENU ITEM:C411($menuSectionMargins; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionMargins; -1; Associated standard action:K56:1; $prefix+"marginTopBottom")
+	
 	APPEND MENU ITEM:C411($menuSectionMargins; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionMargins; -1; Associated standard action:K56:1; $prefix+"marginLeftRight")
-	APPEND MENU ITEM:C411($menuSectionMargins; ak standard action title:K76:83)  // affiche "Paddings" au lieu de "All"
+	
+	APPEND MENU ITEM:C411($menuSectionMargins; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionMargins; -1; Associated standard action:K56:1; $prefix+"margin")
+	
+	
 	
 	$menuSectionPadding:=Create menu:C408
 	APPEND MENU ITEM:C411($menuSectionPadding; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionPadding; -1; Associated standard action:K56:1; $prefix+"paddingTop")
+	
 	APPEND MENU ITEM:C411($menuSectionPadding; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionPadding; -1; Associated standard action:K56:1; $prefix+"paddingRight")
+	
 	APPEND MENU ITEM:C411($menuSectionPadding; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionPadding; -1; Associated standard action:K56:1; $prefix+"paddingBottom")
+	
 	APPEND MENU ITEM:C411($menuSectionPadding; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionPadding; -1; Associated standard action:K56:1; $prefix+"paddingLeft")
+	
 	APPEND MENU ITEM:C411($menuSectionPadding; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionPadding; -1; Associated standard action:K56:1; $prefix+"paddingTopBottom")
+	
 	APPEND MENU ITEM:C411($menuSectionPadding; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionPadding; -1; Associated standard action:K56:1; $prefix+"paddingLeftRight")
-	APPEND MENU ITEM:C411($menuSectionPadding; ak standard action title:K76:83)  // affiche "Paddings" au lieu de "All paddings"
+	
+	APPEND MENU ITEM:C411($menuSectionPadding; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuSectionPadding; -1; Associated standard action:K56:1; $prefix+"padding")
 	
 	$menuSectionBorders:=Create menu:C408
@@ -405,15 +548,12 @@ If (True:C214)
 	For ($i; 1; 7)
 		$_sectionBordersSubmenu{$i}:=Create menu:C408
 		APPEND MENU ITEM:C411($_sectionBordersSubmenu{$i}; $label.style)
-		//APPEND MENU ITEM($_sectionBordersSubmenu{$i}; ak standard action title)
 		SET MENU ITEM PROPERTY:C973($_sectionBordersSubmenu{$i}; -1; Associated standard action:K56:1; $prefix+"borderStyle"+$_sectionBordersSubmenuTargets{$i})
 		
 		APPEND MENU ITEM:C411($_sectionBordersSubmenu{$i}; $label.color)
-		//APPEND MENU ITEM($_sectionBordersSubmenu{$i}; ak standard action title)
 		SET MENU ITEM PROPERTY:C973($_sectionBordersSubmenu{$i}; -1; Associated standard action:K56:1; $prefix+"borderColor"+$_sectionBordersSubmenuTargets{$i})
 		
 		APPEND MENU ITEM:C411($_sectionBordersSubmenu{$i}; $label.width)
-		//APPEND MENU ITEM($_sectionBordersSubmenu{$i}; ak standard action title)
 		SET MENU ITEM PROPERTY:C973($_sectionBordersSubmenu{$i}; -1; Associated standard action:K56:1; $prefix+"borderWidth"+$_sectionBordersSubmenuTargets{$i})
 	End for 
 	
@@ -495,7 +635,7 @@ If (True:C214)
 	SET MENU ITEM PROPERTY:C973($menuStyle; -1; Associated standard action:K56:1; "fontItalic")
 	
 	//APPEND MENU ITEM($menuStyle; ak standard action title)
-	//SET MENU ITEM PROPERTY($menuStyle; -1; Associated standard action; "fontUnderline")  // more details below if needed
+	//SET MENU ITEM PROPERTY($menuStyle; -1; Associated standard action; "fontUnderline")  // OR more details below if needed
 	
 	APPEND MENU ITEM:C411($menuStyle; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuStyle; -1; Associated standard action:K56:1; wk text underline style:K81:73)
@@ -503,7 +643,7 @@ If (True:C214)
 	SET MENU ITEM PROPERTY:C973($menuStyle; -1; Associated standard action:K56:1; wk text underline color:K81:74)
 	
 	//APPEND MENU ITEM($menuStyle; ak standard action title)
-	//SET MENU ITEM PROPERTY($menuStyle; -1; Associated standard action; "fontLinethrough") // more details below if needed
+	//SET MENU ITEM PROPERTY($menuStyle; -1; Associated standard action; "fontLinethrough") // OR more details below if needed
 	
 	APPEND MENU ITEM:C411($menuStyle; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuStyle; -1; Associated standard action:K56:1; wk text linethrough style:K81:75)
@@ -511,17 +651,16 @@ If (True:C214)
 	SET MENU ITEM PROPERTY:C973($menuStyle; -1; Associated standard action:K56:1; wk text linethrough color:K81:76)
 	
 	
-	//APPEND MENU ITEM($menuStyle; Get localized string("subscript"))
+	
 	APPEND MENU ITEM:C411($menuStyle; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuStyle; -1; Associated standard action name:K28:8; "fontSubscript")
-	//APPEND MENU ITEM($menuStyle; Get localized string("superscript"))
+	
 	APPEND MENU ITEM:C411($menuStyle; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuStyle; -1; Associated standard action name:K28:8; "fontSuperscript")
 	
 	APPEND MENU ITEM:C411($menuStyle; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuStyle; -1; Associated standard action name:K28:8; "textShadowColor")
-	//APPEND MENU ITEM($menuRef; ak standard action title)
-	//SET MENU ITEM PROPERTY($menuRef; -1; Associated standard action name; "textShadowColor/showdialog")
+	
 	APPEND MENU ITEM:C411($menuStyle; ak standard action title:K76:83)
 	SET MENU ITEM PROPERTY:C973($menuStyle; -1; Associated standard action name:K28:8; "textShadowOffset")
 	
@@ -553,13 +692,6 @@ If (True:C214)
 End if 
 
 
-//SET MENU ITEM PROPERTY($mainMenu; -1; Associated standard action; wk text underline style)
-//APPEND MENU ITEM($mainMenu; ak standard action title)
-//SET MENU ITEM PROPERTY($mainMenu; -1; Associated standard action; wk text underline color)
-
-
-
-
 //------------------------------------------M A I N ------------------------------------------------------------------------
 
 
@@ -579,6 +711,7 @@ APPEND MENU ITEM:C411($mainMenu; "-")
 
 APPEND MENU ITEM:C411($mainMenu; $label.document; $menuDocument)
 APPEND MENU ITEM:C411($mainMenu; $label.paragraph; $menuParagraph)
+APPEND MENU ITEM:C411($mainMenu; $label.image; $menuImage)
 APPEND MENU ITEM:C411($mainMenu; $label.table; $menuTable)
 APPEND MENU ITEM:C411($mainMenu; $label.section; $menuSection)
 
@@ -616,10 +749,7 @@ SET MENU ITEM PROPERTY:C973($mainMenu; -1; Associated standard action:K56:1; "ba
 $result:=Dynamic pop up menu:C1006($mainMenu)
 
 
-
-
-
-// ------------------------   Realease menus to avoid memory leaks   ------------------------
+// ------------------------   Realease ALL (!) menus to avoid memory leaks   ------------------------
 
 RELEASE MENU:C978($menuDocument)
 RELEASE MENU:C978($menuDocumentMargins)
@@ -634,6 +764,10 @@ RELEASE MENU:C978($menuParagraphBorders)
 RELEASE MENU:C978($menuParagraphBackground)
 
 RELEASE MENU:C978($menuTable)
+RELEASE MENU:C978($menuTableRow)
+RELEASE MENU:C978($menuTableColumn)
+RELEASE MENU:C978($menuTableCell)
+
 
 RELEASE MENU:C978($menuSection)
 RELEASE MENU:C978($menuSectionMargins)

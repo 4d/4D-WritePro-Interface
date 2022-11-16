@@ -21,6 +21,34 @@
 //$label.background:=Get action info("background").title
 
 
+//$label.document:=Get action info("doc").title
+//$label.paragraph:=Get action info("paragraph").title
+//$label.table:=Get action info("table").title
+//$label.section:=Get action info("section").title
+
+//$string:=Get action info("table/row").title
+//$string:=Get action info("table/column").title
+//$string:=Get action info("table/cell").title
+
+//$string:=Get action info("borderStyleTop").title
+//$string:=Get action info("borderStyle").title
+
+//$string:=Get action info("borderColorTop").title
+//$string:=Get action info("borderColor").title
+
+//$string:=Get action info("borderWidthTop").title
+//$string:=Get action info("borderWidth").title
+
+
+//$string:=Get action info("marginTop").title
+//$string:=Get action info("margin").title
+
+//$string:=Get action info("paddingTop").title
+//$string:=Get action info("padding").title
+
+
+
+
 
 
 

@@ -919,7 +919,7 @@
 					"left": 86,
 					"width": 30,
 					"height": 24,
-					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginBottom_24.png",
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/PaddingBottom_24.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
 				"Static Picture2": {
@@ -928,7 +928,7 @@
 					"left": 86,
 					"width": 30,
 					"height": 24,
-					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginTop_24.png",
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/PaddingTop_24.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
 				"Static Picture3": {
@@ -937,7 +937,7 @@
 					"left": 165,
 					"width": 30,
 					"height": 24,
-					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginLeft_24.png",
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/PaddingLeft_24.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
 				"Static Picture4": {
@@ -946,7 +946,7 @@
 					"left": 165,
 					"width": 30,
 					"height": 24,
-					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginRight_24.png",
+					"picture": "/RESOURCES/Images/TBcommon/PageLayout/PaddingRight_24.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
 				"Rect2": {

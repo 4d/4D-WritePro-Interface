@@ -538,7 +538,7 @@
 					"focusable": false,
 					"method": "ObjectMethods/Button24.4dm"
 				},
-				"Mimic": {
+				"Mimic2": {
 					"type": "button",
 					"text": "MimicMenu v2",
 					"top": 40,
@@ -552,12 +552,12 @@
 					"sizingX": "fixed",
 					"sizingY": "fixed",
 					"focusable": false,
-					"method": "ObjectMethods/Mimic.4dm"
+					"method": "ObjectMethods/Mimic2.4dm"
 				},
 				"Popup Dropdown List": {
 					"type": "dropdown",
-					"left": 1091,
-					"top": 43,
+					"left": 1156,
+					"top": 10,
 					"width": 108,
 					"height": 19,
 					"events": [
@@ -589,7 +589,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 145,
+	"geometryStamp": 158,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
