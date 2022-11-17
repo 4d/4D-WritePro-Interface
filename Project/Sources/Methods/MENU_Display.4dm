@@ -173,19 +173,32 @@ Case of
 	: ($content="TextBox")
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/borderColor")
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/height")
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/borderWidth")
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/width")
+		
+		APPEND MENU ITEM:C411($menu; "-")
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/borderStyle")
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/verticalAlign")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/margin")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/padding")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/borders")
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/backgroundColor")
 		
+		APPEND MENU ITEM:C411($menu; "-")
+		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/borderRadius")
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/anchorLayout2")
 		
 End case 
 
