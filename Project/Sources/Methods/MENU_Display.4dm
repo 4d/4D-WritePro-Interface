@@ -200,6 +200,11 @@ Case of
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/anchorLayout2")
 		
+		APPEND MENU ITEM:C411($menu; "-")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/remove")
+		
 End case 
 
 $action:=Dynamic pop up menu:C1006($menu)

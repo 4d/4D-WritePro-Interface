@@ -14,3 +14,5 @@ If (False:C215)
 End if 
 
 WP UpdateWidget("WPwidget"; "WParea")  //; $WP_skin)
+
+//dummyObject:=WP Selection range(*; "WParea")

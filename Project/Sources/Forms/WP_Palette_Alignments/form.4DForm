@@ -1087,7 +1087,7 @@
 					"height": 24,
 					"action": "insertTextBox",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/Insert/textarea_24.png",
+					"icon": "/RESOURCES/Images/TBcommon/Insert/InsertTextBox_24.png",
 					"iconFrames": 4,
 					"style": "toolbar",
 					"popupPlacement": "separated",

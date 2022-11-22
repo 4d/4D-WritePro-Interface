@@ -2015,7 +2015,7 @@
 					"iconFrames": 4,
 					"tooltip": ":xliff:InsertTextBox",
 					"popupPlacement": "separated",
-					"icon": "/RESOURCES/Images/TBcommon/Insert/textarea_32.png",
+					"icon": "/RESOURCES/Images/TBcommon/Insert/InsertTextBox_32.png",
 					"method": "ObjectMethods/btn_insertTextArea.4dm"
 				}
 			},
@@ -2899,7 +2899,7 @@
 					"style": "toolbar",
 					"action": "insertTextBox",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/Insert/textarea_48.png",
+					"icon": "/RESOURCES/Images/TBcommon/Insert/InsertTextBox_48.png",
 					"iconFrames": 4,
 					"tooltip": ":xliff:InsertTextBox",
 					"popupPlacement": "separated",

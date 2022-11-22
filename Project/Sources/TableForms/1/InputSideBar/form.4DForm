@@ -509,8 +509,8 @@
 				"Button23": {
 					"type": "button",
 					"text": "txtbox attributes",
-					"top": 757,
-					"left": 1033,
+					"top": 926,
+					"left": 1109,
 					"width": 149,
 					"height": 22,
 					"events": [
@@ -525,8 +525,8 @@
 				"Button24": {
 					"type": "button",
 					"text": "SET",
-					"top": 787,
-					"left": 1033,
+					"top": 956,
+					"left": 1109,
 					"width": 149,
 					"height": 22,
 					"events": [
@@ -589,7 +589,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 158,
+	"geometryStamp": 194,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
