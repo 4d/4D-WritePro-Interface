@@ -977,7 +977,8 @@
 					"style": "toolbar",
 					"events": [
 						"onClick"
-					]
+					],
+					"method": "ObjectMethods/btn_colorShowDialog.4dm"
 				},
 				"Line12": {
 					"type": "line",
@@ -1003,7 +1004,8 @@
 					"style": "toolbar",
 					"events": [
 						"onClick"
-					]
+					],
+					"method": "ObjectMethods/btn_backgroundColor.4dm"
 				},
 				"btn_clear": {
 					"type": "button",
@@ -1299,7 +1301,8 @@
 					"style": "toolbar",
 					"events": [
 						"onClick"
-					]
+					],
+					"method": "ObjectMethods/btn_colorShowDialog1.4dm"
 				},
 				"btn_colorShowDialog2": {
 					"type": "button",
