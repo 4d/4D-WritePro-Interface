@@ -6,7 +6,7 @@ var $range : Object
 
 // Standard actions based on drop-down list
 // read the "applyTo"
-$applyTo:=UI_GetApplyTo
+$applyTo:=UI_GetApplyTo  // might change for picturesAndTextboxes, see below ! ∆∆∆
 
 
 
@@ -44,7 +44,7 @@ Case of
 			
 			If (Not:C34(Undefined:C82($range.container)))\
 				 && (Not:C34(Undefined:C82($range.container.type)))\
-				 && ($range.container.type=300)  // 300 = wk type text box
+				 && ($range.container.type=300)  // 300 = wk type text box   ∆∆∆
 				$applyTo:="textBox"
 			Else 
 				$applyTo:="image"
@@ -70,6 +70,9 @@ Case of
 			// both
 			OBJECT SET ACTION:C1259(*; "btn_imageMoveToBack"; $applyTo+"/moveToBack")
 			OBJECT SET ACTION:C1259(*; "btn_imageMoveToFront"; $applyTo+"/moveToFront")
+			
+			OBJECT SET ACTION:C1259(*; "Popup_anchorToPage"; $applyTo+"/anchorPage")
+			OBJECT SET ACTION:C1259(*; "Popup_anchorToSection"; $applyTo+"/anchorSection")
 			
 		End if 
 		

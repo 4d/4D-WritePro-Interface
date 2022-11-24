@@ -90,6 +90,14 @@ Case of
 		OBJECT SET HELP TIP:C1181(*; "btn_displayAsSymbol"; Get action info:C1442("displayFormulaAsSymbol").title)
 		
 		
+		OBJECT SET HELP TIP:C1181(*; "btn_imageBehind"; Get action info:C1442("anchorLayout?value=behind").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_imageInline"; Get action info:C1442("anchorLayout?value=inline").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_imageInFront"; Get action info:C1442("anchorLayout?value=front").title)
+		
+		
+		
+		
+		
 		If (Form:C1466#Null:C1517)
 			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)
 		End if 

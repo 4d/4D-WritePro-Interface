@@ -2508,7 +2508,7 @@
 					"height": 20,
 					"tooltip": ":xliff:columnsCount",
 					"focusable": false,
-					"action": "section/columnCount"
+					"action": "columnCount"
 				},
 				"Popup_columnSpacing": {
 					"type": "dropdown",
@@ -2631,7 +2631,7 @@
 					"left": 225,
 					"width": 50,
 					"height": 50,
-					"tooltip": ":xliff:imageInline",
+					"tooltip": "based on action.title",
 					"action": "image/anchorLayout?value=inline",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/imageInLine_48.png",
@@ -2644,7 +2644,7 @@
 					"left": 275,
 					"width": 50,
 					"height": 50,
-					"tooltip": ":xliff:imageInFront",
+					"tooltip": "based on action.title",
 					"action": "image/anchorLayout?value=front",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/imageOverText_48.png",
@@ -2657,7 +2657,7 @@
 					"left": 180,
 					"width": 45,
 					"height": 50,
-					"tooltip": ":xliff:imageBehind",
+					"tooltip": "based on action.title",
 					"action": "image/anchorLayout?value=behind",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/imageBehindText_48.png",
@@ -2750,12 +2750,12 @@
 					"height": 17,
 					"tooltip": ":xliff:anchorToPage",
 					"focusable": false,
-					"action": "anchorPage",
+					"action": "image/anchorPage",
 					"events": [
 						"onDataChange"
 					]
 				},
-				"Popup-anchorToSection": {
+				"Popup_anchorToSection": {
 					"type": "dropdown",
 					"top": 60,
 					"left": 380,
@@ -2763,7 +2763,7 @@
 					"height": 17,
 					"tooltip": ":xliff:AnchorToSection",
 					"focusable": false,
-					"action": "anchorSection",
+					"action": "image/anchorSection",
 					"events": [
 						"onDataChange"
 					]
@@ -2954,7 +2954,7 @@
 				"3D Button72",
 				"Popup_anchorToPage",
 				"3D Button76",
-				"Popup-anchorToSection",
+				"Popup_anchorToSection",
 				"btn_imageAlignTop",
 				"btn_imageAlignMiddle",
 				"btn_imageAlignBottom",
@@ -4252,5 +4252,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6490
+	"geometryStamp": 6494
 }

@@ -613,7 +613,7 @@
 						"onBeginDragOver"
 					]
 				},
-				"Popup_anchorPage": {
+				"Popup_anchorToPage": {
 					"type": "dropdown",
 					"top": 185,
 					"left": 85,
@@ -626,7 +626,7 @@
 						"onDataChange"
 					]
 				},
-				"Popup_anchorSection": {
+				"Popup_anchorToSection": {
 					"type": "dropdown",
 					"top": 210,
 					"left": 85,
@@ -854,8 +854,8 @@
 				"Popup_anchorLayout",
 				"Popup_anchorVerticalAlign",
 				"Popup_anchorHorizontalAlign",
-				"Popup_anchorPage",
-				"Popup_anchorSection",
+				"Popup_anchorToPage",
+				"Popup_anchorToSection",
 				"btn_PictInfo",
 				"TargetSelector1",
 				"TargetSelector2",
@@ -923,5 +923,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1093
+	"geometryStamp": 1095
 }
