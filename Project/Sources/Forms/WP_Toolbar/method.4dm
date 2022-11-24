@@ -98,7 +98,19 @@ Case of
 		
 		UI_setApplyTo
 		
+		Case of 
+			: (FORM Get current page:C276(*)=3)
+				TB_setAutomaticActions("Margins")
+				TB_setAutomaticActions("Paddings")
+				
+			: (FORM Get current page:C276(*)=4)
+				TB_setAutomaticActions("BordersAndRadius")
+		End case 
+		
 		SET TIMER:C645(-1)
+		
+		
+		
 		
 	: (Form event code:C388=On Resize:K2:27)
 		oForm.redrawTabs:=True:C214

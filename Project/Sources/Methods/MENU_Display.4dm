@@ -194,7 +194,14 @@ Case of
 		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/borders")
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/backgroundColor")
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/background")
+		
+		//APPEND MENU ITEM($menu; ak standard action title)
+		//SET MENU ITEM PROPERTY($menu; -1; Associated standard action name; "textBox/backgroundImage/showDialog")
+		
+		//APPEND MENU ITEM($menu; ak standard action title)
+		//SET MENU ITEM PROPERTY($menu; -1; Associated standard action name; "textBox/backgroundImage?value=none")
+		
 		
 		APPEND MENU ITEM:C411($menu; "-")
 		
@@ -214,7 +221,7 @@ Case of
 		APPEND MENU ITEM:C411($menuLayer; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menuLayer; -1; Associated standard action name:K28:8; "textBox/moveToFront")
 		
-		APPEND MENU ITEM:C411($menu; "Layer"; $menuLayer)
+		APPEND MENU ITEM:C411($menu; "Layer"; $menuLayer)  //to be replaced by standard action
 		
 		$menuAnchor:=Create menu:C408
 		
@@ -233,22 +240,12 @@ Case of
 		APPEND MENU ITEM:C411($menuAnchor; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menuAnchor; -1; Associated standard action name:K28:8; "textBox/anchorSection")
 		
-		APPEND MENU ITEM:C411($menu; "Anchor settings"; $menuAnchor)
+		APPEND MENU ITEM:C411($menu; "Anchor settings"; $menuAnchor)  //to be replaced by standard action
 		
-		APPEND MENU ITEM:C411($menu; "-")
+		//APPEND MENU ITEM($menu; "-")
 		
-		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/remove")
-		
-		
-		
-		APPEND MENU ITEM:C411($menu; "-")
-		
-		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/anchorLayout")  //2")
-		
-		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/anchorLayout2")  //2")
+		//APPEND MENU ITEM($menu; ak standard action title)
+		//SET MENU ITEM PROPERTY($menu; -1; Associated standard action name; "textBox/remove")
 		
 		
 End case 
