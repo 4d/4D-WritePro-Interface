@@ -97,10 +97,10 @@ Else
 	OBJECT SET FORMAT:C236(*; "textIndentInput"; numFormat+" "+unitName)
 	
 	//OBJECT SET FORMAT(*; "margin@"; numFormat+" "+unitName)
-	OBJECT SET FORMAT:C236(*; "marginTop"; numFormat+" "+unitName)
-	OBJECT SET FORMAT:C236(*; "marginLeft"; numFormat+" "+unitName)
-	OBJECT SET FORMAT:C236(*; "marginBottom"; numFormat+" "+unitName)
-	OBJECT SET FORMAT:C236(*; "marginRight"; numFormat+" "+unitName)
+	//OBJECT SET FORMAT(*; "marginTop"; numFormat+" "+unitName)
+	//OBJECT SET FORMAT(*; "marginLeft"; numFormat+" "+unitName)
+	//OBJECT SET FORMAT(*; "marginBottom"; numFormat+" "+unitName)
+	//OBJECT SET FORMAT(*; "marginRight"; numFormat+" "+unitName)
 	
 	//ACI0098389  2018/07/10
 	

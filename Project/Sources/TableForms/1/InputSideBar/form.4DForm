@@ -581,6 +581,21 @@
 					"sizingY": "fixed",
 					"focusable": false,
 					"method": "ObjectMethods/Mimic1.4dm"
+				},
+				"Button25": {
+					"type": "button",
+					"top": 847,
+					"left": 616,
+					"width": 107,
+					"height": 26,
+					"sizingY": "move",
+					"text": "MenuTextBox",
+					"focusable": false,
+					"method": "ObjectMethods/Button25.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed"
 				}
 			}
 		}
@@ -589,7 +604,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 194,
+	"geometryStamp": 230,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

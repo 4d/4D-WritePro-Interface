@@ -23,47 +23,9 @@ Case of
 		OBJECT SET RGB COLORS:C628(*; "TargetSelector2"; 0x00FFFFFF; 0x00FFFFFF)
 		OBJECT SET RGB COLORS:C628(*; "TargetSelector3"; 0x00FFFFFF; 0x00FFFFFF)
 		
-		//(OBJECT Get pointer(Object named; "CB1"))->:=0
-		//(OBJECT Get pointer(Object named; "CB2"))->:=0
-		//(OBJECT Get pointer(Object named; "CB3"))->:=0
-		//(OBJECT Get pointer(Object named; "CB4"))->:=0
 		
-		//(OBJECT Get pointer(Object named; "rb1"))->:=1
-		//(OBJECT Get pointer(Object named; "rb2"))->:=0
-		//(OBJECT Get pointer(Object named; "rb3"))->:=0
-		
-		//$ptrArrayNames:=OBJECT Get pointer(Object named; "borderStyleNames")
-		//$ptrArrayValues:=OBJECT Get pointer(Object named; "borderStyleValues")
-		
-		//ARRAY TEXT($ptrArrayNames->; 0)
-		//ARRAY LONGINT($ptrArrayValues->; 0)
-		
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Solid"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Dotted"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Dashed"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Double"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Groove"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Ridge"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Inset"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Outset"))
-		
-		//APPEND TO ARRAY($ptrArrayValues->; wk solid)
-		//APPEND TO ARRAY($ptrArrayValues->; wk dotted)
-		//APPEND TO ARRAY($ptrArrayValues->; wk dashed)
-		//APPEND TO ARRAY($ptrArrayValues->; wk double)
-		//APPEND TO ARRAY($ptrArrayValues->; wk groove)
-		//APPEND TO ARRAY($ptrArrayValues->; wk ridge)
-		//APPEND TO ARRAY($ptrArrayValues->; wk inset)
-		//APPEND TO ARRAY($ptrArrayValues->; wk outset)
-		
-		//$ptrArrayNames->:=1
-		//$ptrArrayValues->:=1
-		
-		//(OBJECT Get pointer(Object named; "borderWidthRuler"))->:=1
-		//(OBJECT Get pointer(Object named; "borderWidthInput"))->:=1
-		
-		//(OBJECT Get pointer(Object named; "borderRadiusRuler"))->:=0
-		//(OBJECT Get pointer(Object named; "borderRadiusinput"))->:=0
+		TB_setAutomaticActions("Paddings")
+		TB_setAutomaticActions("BordersAndRadius")
 		
 		oForm.skinAppliedSub:=UI_ApplySkin
 		

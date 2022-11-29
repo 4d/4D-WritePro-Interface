@@ -225,8 +225,8 @@
 				},
 				"marginVerticalRuler": {
 					"type": "ruler",
-					"top": 319,
-					"left": 977,
+					"top": 317,
+					"left": 772,
 					"width": 12,
 					"height": 60,
 					"max": 100,
@@ -239,8 +239,8 @@
 				},
 				"marginHorizontalRuler": {
 					"type": "ruler",
-					"top": 374,
-					"left": 1022,
+					"top": 372,
+					"left": 817,
 					"width": 155,
 					"height": 12,
 					"max": 100,
@@ -254,8 +254,8 @@
 				},
 				"MarginTop": {
 					"type": "input",
-					"top": 318,
-					"left": 1077,
+					"top": 316,
+					"left": 872,
 					"width": 45,
 					"height": 14,
 					"dataSourceTypeHint": "number",
@@ -273,8 +273,8 @@
 				},
 				"MarginLeft": {
 					"type": "input",
-					"top": 334,
-					"left": 1012,
+					"top": 332,
+					"left": 807,
 					"width": 45,
 					"height": 14,
 					"dataSourceTypeHint": "number",
@@ -292,8 +292,8 @@
 				},
 				"MarginRight": {
 					"type": "input",
-					"top": 334,
-					"left": 1142,
+					"top": 332,
+					"left": 937,
 					"width": 45,
 					"height": 14,
 					"dataSourceTypeHint": "number",
@@ -311,8 +311,8 @@
 				},
 				"MarginBottom": {
 					"type": "input",
-					"top": 348,
-					"left": 1077,
+					"top": 346,
+					"left": 872,
 					"width": 45,
 					"height": 14,
 					"dataSourceTypeHint": "number",
@@ -1373,5 +1373,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 2982
+	"geometryStamp": 2983
 }

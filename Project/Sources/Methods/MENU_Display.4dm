@@ -5,7 +5,6 @@
 //var $0 : Text
 
 var $menu; $action; $item : Text
-var $menuLayer; $menuAnchor : Text
 var $_menuItems; $_tables : Collection
 var $o : Object
 
@@ -196,64 +195,25 @@ Case of
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/background")
 		
-		//APPEND MENU ITEM($menu; ak standard action title)
-		//SET MENU ITEM PROPERTY($menu; -1; Associated standard action name; "textBox/backgroundImage/showDialog")
-		
-		//APPEND MENU ITEM($menu; ak standard action title)
-		//SET MENU ITEM PROPERTY($menu; -1; Associated standard action name; "textBox/backgroundImage?value=none")
-		
-		
 		APPEND MENU ITEM:C411($menu; "-")
 		
 		
-		$menuLayer:=Create menu:C408
-		//$menuLayerLabel:=Get action info("textBox/anchorLayout").title
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/anchoring")
 		
-		APPEND MENU ITEM:C411($menuLayer; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menuLayer; -1; Associated standard action name:K28:8; "textBox/anchorLayout?value=behind")
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/layer")
 		
-		APPEND MENU ITEM:C411($menuLayer; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menuLayer; -1; Associated standard action name:K28:8; "textBox/anchorLayout?value=front")
+		APPEND MENU ITEM:C411($menu; "-")
 		
-		APPEND MENU ITEM:C411($menuLayer; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menuLayer; -1; Associated standard action name:K28:8; "textBox/moveToBack")
-		
-		APPEND MENU ITEM:C411($menuLayer; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menuLayer; -1; Associated standard action name:K28:8; "textBox/moveToFront")
-		
-		APPEND MENU ITEM:C411($menu; "Layer"; $menuLayer)  //to be replaced by standard action
-		
-		$menuAnchor:=Create menu:C408
-		
-		APPEND MENU ITEM:C411($menuAnchor; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menuAnchor; -1; Associated standard action name:K28:8; "textBox/anchorOrigin")
-		
-		APPEND MENU ITEM:C411($menuAnchor; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menuAnchor; -1; Associated standard action name:K28:8; "textBox/anchorVerticalAlign")
-		
-		APPEND MENU ITEM:C411($menuAnchor; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menuAnchor; -1; Associated standard action name:K28:8; "textBox/anchorHorizontalAlign")
-		
-		APPEND MENU ITEM:C411($menuAnchor; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menuAnchor; -1; Associated standard action name:K28:8; "textBox/anchorPage")
-		
-		APPEND MENU ITEM:C411($menuAnchor; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menuAnchor; -1; Associated standard action name:K28:8; "textBox/anchorSection")
-		
-		APPEND MENU ITEM:C411($menu; "Anchor settings"; $menuAnchor)  //to be replaced by standard action
-		
-		//APPEND MENU ITEM($menu; "-")
-		
-		//APPEND MENU ITEM($menu; ak standard action title)
-		//SET MENU ITEM PROPERTY($menu; -1; Associated standard action name; "textBox/remove")
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/remove")
 		
 		
 End case 
 
 $action:=Dynamic pop up menu:C1006($menu)
 RELEASE MENU:C978($menu)
-RELEASE MENU:C978($menuLayer)
-RELEASE MENU:C978($menuAnchor)
 
 
 

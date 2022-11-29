@@ -47,40 +47,9 @@ Case of
 		CLEAR VARIABLE:C89(oSettings1)
 		CLEAR VARIABLE:C89(oSettings2)
 		
+		TB_setAutomaticActions("Margins")
+		
 		//----------------------------------------------------------------
-		
-		//$ptrArrayNames:=OBJECT Get pointer(Object named; "listStyleNames")
-		//$ptrArrayValues:=OBJECT Get pointer(Object named; "listStyleValues")
-		
-		//ARRAY TEXT($ptrArrayNames->; 0)
-		//ARRAY LONGINT($ptrArrayValues->; 0)
-		
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("None"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Disc"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Circle"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Square"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("HollowSquare"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Diamond"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Club"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("123"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("010203"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("abcLow"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("abcCAP"))
-		//APPEND TO ARRAY($ptrArrayNames->; Get localized string("Roman"))
-		
-		//APPEND TO ARRAY($ptrArrayValues->; wk none)
-		//APPEND TO ARRAY($ptrArrayValues->; wk disc)
-		//APPEND TO ARRAY($ptrArrayValues->; wk circle)
-		//APPEND TO ARRAY($ptrArrayValues->; wk square)
-		//APPEND TO ARRAY($ptrArrayValues->; wk hollow square)
-		//APPEND TO ARRAY($ptrArrayValues->; wk diamond)
-		//APPEND TO ARRAY($ptrArrayValues->; wk club)
-		//APPEND TO ARRAY($ptrArrayValues->; wk decimal)
-		//APPEND TO ARRAY($ptrArrayValues->; wk decimal leading zero)
-		//APPEND TO ARRAY($ptrArrayValues->; wk lower latin)
-		//APPEND TO ARRAY($ptrArrayValues->; wk upper latin)
-		//APPEND TO ARRAY($ptrArrayValues->; wk upper roman)
-		
 		
 		
 		$ptrTextLineHeightUnit:=OBJECT Get pointer:C1124(Object named:K67:5; "TextLineHeightUnit")
