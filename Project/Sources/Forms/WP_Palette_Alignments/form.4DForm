@@ -203,7 +203,6 @@
 					"class": "Palette",
 					"focusable": false,
 					"radioGroup": "Group24",
-					"method": "ObjectMethods/rb1.4dm",
 					"events": [
 						"onClick"
 					]
@@ -218,7 +217,6 @@
 					"class": "Palette",
 					"focusable": false,
 					"radioGroup": "Group24",
-					"method": "ObjectMethods/rb2.4dm",
 					"events": [
 						"onClick"
 					]
@@ -231,7 +229,6 @@
 					"height": 60,
 					"max": 100,
 					"graduationStep": 5,
-					"method": "ObjectMethods/marginVerticalRuler.4dm",
 					"events": [
 						"onDataChange"
 					],
@@ -245,7 +242,6 @@
 					"height": 12,
 					"max": 100,
 					"graduationStep": 5,
-					"method": "ObjectMethods/marginHorizontalRuler.4dm",
 					"events": [
 						"onDataChange"
 					],
@@ -265,7 +261,6 @@
 					"numberFormat": "##,###,##0;-;0",
 					"dragging": "none",
 					"dropping": "custom",
-					"method": "ObjectMethods/MarginTop.4dm",
 					"events": [
 						"onGettingFocus",
 						"onDataChange"
@@ -284,7 +279,6 @@
 					"numberFormat": "##,###,##0;-;0",
 					"dragging": "none",
 					"dropping": "custom",
-					"method": "ObjectMethods/MarginLeft.4dm",
 					"events": [
 						"onGettingFocus",
 						"onDataChange"
@@ -303,7 +297,6 @@
 					"numberFormat": "##,###,##0;-;0",
 					"dragging": "none",
 					"dropping": "custom",
-					"method": "ObjectMethods/MarginRight.4dm",
 					"events": [
 						"onGettingFocus",
 						"onDataChange"
@@ -322,7 +315,6 @@
 					"numberFormat": "##,###,##0;-;0",
 					"dragging": "none",
 					"dropping": "custom",
-					"method": "ObjectMethods/MarginBottom.4dm",
 					"events": [
 						"onGettingFocus",
 						"onDataChange"

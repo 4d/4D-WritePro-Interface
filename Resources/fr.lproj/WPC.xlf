@@ -166,6 +166,10 @@ This file is distributed under the same license as the product package.-->
           <source>Position:</source>
           <target>Position :</target>
         </trans-unit>
+        <trans-unit id="26" resname="PositionsColon">
+          <source>Positions:</source>
+          <target>Positions :</target>
+        </trans-unit>
         <trans-unit id="sg9lHFhI0LqrVxCysNWY7g" resname="MoveHyphen">
           <source>Move:</source>
           <target>Déplacer:</target>
@@ -181,6 +185,22 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Picture">
           <source>Picture</source>
           <target>Image</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="PictureHyphen">
+          <source>Picture:</source>
+          <target>Image :</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Apply">
+          <source>Apply</source>
+          <target>Appliquer</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Clear">
+          <source>Clear</source>
+          <target>Effacer</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="InsertHyphen">
+          <source>Insert:</source>
+          <target>Insérer :</target>
         </trans-unit>
         <trans-unit id="xZf5yixaHWdVwEkN2lFVkg" resname="AdvancedSettingsEllipsis">
           <source>Advanced settings…</source>
@@ -627,6 +647,32 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="104" resname="SelectADestination">
           <source>Select a destination.</source>
           <target>Selectionner une destination.</target>
+        </trans-unit>
+      </group>
+      <group resname="ListUnits">
+        <trans-unit id="1" resname="cm">
+          <source>cm</source>
+          <target>cm</target>
+        </trans-unit>
+        <trans-unit id="2" resname="mm">
+          <source>mm</source>
+          <target>mm</target>
+        </trans-unit>
+        <trans-unit id="3" resname="inches">
+          <source>inches</source>
+          <target>pouces</target>
+        </trans-unit>
+        <trans-unit id="4" resname="pt">
+          <source>pt</source>
+          <target>pt</target>
+        </trans-unit>
+        <trans-unit id="5" resname="auto">
+          <source>auto</source>
+          <target>auto</target>
+        </trans-unit>
+        <trans-unit id="6" resname="pct">
+          <source>%</source>
+          <target>%</target>
         </trans-unit>
       </group>
       <group resname="borderStyleNames">

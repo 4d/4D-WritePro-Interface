@@ -76,6 +76,17 @@ Case of
 			
 		End if 
 		
+		
+	: ($UItarget="background")
+		
+		// sidebar WP_Palette_Background
+		
+		OBJECT SET ACTION:C1259(*; "Popup_backgroundPositionH"; $applyTo+"/backgroundPositionH")
+		OBJECT SET ACTION:C1259(*; "Popup_backgroundPositionV"; $applyTo+"/backgroundPositionV")
+		OBJECT SET ACTION:C1259(*; "Popup_backgroundRepeat"; $applyTo+"/backgroundRepeat")
+		OBJECT SET ACTION:C1259(*; "Popup_backgroundClip"; $applyTo+"/backgroundClip")
+		OBJECT SET ACTION:C1259(*; "Popup_backgroundOrigin"; $applyTo+"/backgroundOrigin")
+		
 	Else 
 		
 		

@@ -37,18 +37,9 @@
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
-				"Separator4": {
-					"type": "rectangle",
-					"top": 340,
-					"left": 85,
-					"width": 150,
-					"height": 60,
-					"stroke": "transparent",
-					"borderRadius": 4
-				},
 				"Separator2": {
 					"type": "rectangle",
-					"top": 281,
+					"top": 321,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -56,19 +47,10 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"Separator1": {
-					"type": "rectangle",
-					"top": 411,
-					"left": 85,
-					"width": 150,
-					"height": 60,
-					"stroke": "transparent",
-					"borderRadius": 4
-				},
 				"TargetSelector1": {
 					"type": "radio",
-					"top": 306,
-					"left": 80,
+					"top": 353,
+					"left": 344,
 					"width": 24,
 					"height": 24,
 					"sizingX": "move",
@@ -87,8 +69,8 @@
 				},
 				"TargetSelector2": {
 					"type": "radio",
-					"top": 306,
-					"left": 145,
+					"top": 353,
+					"left": 409,
 					"width": 24,
 					"height": 24,
 					"sizingX": "move",
@@ -107,8 +89,8 @@
 				},
 				"TargetSelector3": {
 					"type": "radio",
-					"top": 306,
-					"left": 210,
+					"top": 353,
+					"left": 474,
 					"width": 24,
 					"height": 24,
 					"sizingX": "move",
@@ -127,7 +109,7 @@
 				},
 				"sepLbl_backgroundPicture": {
 					"type": "text",
-					"top": 281,
+					"top": 321,
 					"left": 40,
 					"width": 180,
 					"height": 13,
@@ -139,7 +121,7 @@
 				},
 				"lbl_Repeat": {
 					"type": "text",
-					"top": 483,
+					"top": 487,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -148,22 +130,9 @@
 					"text": ":xliff:RepeatColon",
 					"fontTheme": "additional"
 				},
-				"bgndRepeatMode": {
-					"type": "dropdown",
-					"top": 481,
-					"left": 85,
-					"width": 150,
-					"height": 18,
-					"focusable": false,
-					"class": "Palette",
-					"method": "ObjectMethods/bgndRepeatMode.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
 				"lbl_Clip": {
 					"type": "text",
-					"top": 508,
+					"top": 512,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -172,22 +141,9 @@
 					"text": ":xliff:Clip",
 					"fontTheme": "additional"
 				},
-				"bgndClip": {
-					"type": "dropdown",
-					"top": 506,
-					"left": 85,
-					"width": 150,
-					"height": 18,
-					"focusable": false,
-					"class": "Palette",
-					"method": "ObjectMethods/bgndClip.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
 				"lbl_Origin": {
 					"type": "text",
-					"top": 533,
+					"top": 537,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -195,19 +151,6 @@
 					"textAlign": "right",
 					"text": ":xliff:Origin",
 					"fontTheme": "additional"
-				},
-				"bgndOrigin": {
-					"type": "dropdown",
-					"top": 531,
-					"left": 85,
-					"width": 150,
-					"height": 18,
-					"focusable": false,
-					"class": "Palette",
-					"method": "ObjectMethods/bgndOrigin.4dm",
-					"events": [
-						"onDataChange"
-					]
 				},
 				"bgndSizeHor": {
 					"type": "input",
@@ -265,275 +208,46 @@
 				},
 				"lbl_Picture": {
 					"type": "text",
-					"top": 343,
+					"top": 393,
 					"left": 0,
 					"width": 80,
-					"height": 26,
+					"height": 16,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:PictureOrURL",
+					"text": ":xliff:PictureHyphen",
 					"fontTheme": "additional"
 				},
 				"bgndPictPreview": {
 					"type": "input",
-					"top": 341,
-					"left": 86,
-					"width": 148,
-					"height": 58,
+					"top": 381,
+					"left": 90,
+					"width": 40,
+					"height": 40,
 					"dataSourceTypeHint": "picture",
 					"fontTheme": "additional",
 					"focusable": false,
-					"borderStyle": "none",
-					"enterable": false,
+					"borderStyle": "system",
+					"enterable": true,
 					"contextMenu": "none",
 					"pictureFormat": "proportionalCenter",
 					"dragging": "custom",
-					"method": "ObjectMethods/bgndPictPreview.4dm",
 					"events": [
 						"onDrop",
 						"onDataChange",
 						"onBeginDragOver"
 					],
-					"fill": "transparent"
-				},
-				"bgndRepeatModeVal": {
-					"type": "dropdown",
-					"top": 468,
-					"left": 323,
-					"width": 140,
-					"height": 18,
-					"focusable": false,
-					"fontTheme": "main",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"bgndClipVal": {
-					"type": "dropdown",
-					"top": 493,
-					"left": 323,
-					"width": 140,
-					"height": 18,
-					"focusable": false,
-					"fontTheme": "main",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"bgndOriginVal": {
-					"type": "dropdown",
-					"top": 518,
-					"left": 323,
-					"width": 140,
-					"height": 18,
-					"focusable": false,
-					"fontTheme": "main",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"rbPos11": {
-					"type": "radio",
-					"top": 411,
-					"left": 86,
-					"width": 18,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 13,
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_TopLeft.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"radioGroup": "Group17",
-					"method": "ObjectMethods/rbPos11.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"rbPos12": {
-					"type": "radio",
-					"top": 411,
-					"left": 153,
-					"width": 18,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 13,
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_Top.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"radioGroup": "Group17",
-					"method": "ObjectMethods/rbPos12.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"rbPos13": {
-					"type": "radio",
-					"top": 411,
-					"left": 216,
-					"width": 18,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 13,
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_TopRight.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"radioGroup": "Group17",
-					"method": "ObjectMethods/rbPos13.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"rbPos21": {
-					"type": "radio",
-					"top": 431,
-					"left": 86,
-					"width": 18,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 13,
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_Left.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"radioGroup": "Group17",
-					"method": "ObjectMethods/rbPos21.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"rbPos22": {
-					"type": "radio",
-					"top": 431,
-					"left": 152,
-					"width": 20,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 13,
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_Center.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"radioGroup": "Group17",
-					"method": "ObjectMethods/rbPos22.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"rbPos23": {
-					"type": "radio",
-					"top": 431,
-					"left": 216,
-					"width": 18,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 13,
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_Right.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"radioGroup": "Group17",
-					"method": "ObjectMethods/rbPos23.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"rbPos31": {
-					"type": "radio",
-					"top": 451,
-					"left": 86,
-					"width": 18,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 13,
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_BottomLeft.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"radioGroup": "Group17",
-					"method": "ObjectMethods/rbPos31.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"rbPos32": {
-					"type": "radio",
-					"top": 451,
-					"left": 153,
-					"width": 18,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 13,
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_Bottom.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"radioGroup": "Group17",
-					"method": "ObjectMethods/rbPos32.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"rbPos33": {
-					"type": "radio",
-					"top": 451,
-					"left": 216,
-					"width": 18,
-					"height": 20,
-					"fontFamily": "System Font Regular",
-					"fontSize": 13,
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_BottomRight.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"radioGroup": "Group17",
-					"method": "ObjectMethods/rbPos33.4dm",
-					"events": [
-						"onClick"
-					]
+					"fill": "automatic"
 				},
 				"lbl_Position": {
 					"type": "text",
-					"top": 413,
+					"top": 437,
 					"left": 0,
 					"width": 80,
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:PositionColon",
+					"text": ":xliff:PositionsColon",
 					"fontTheme": "additional"
-				},
-				"bgndPictURL": {
-					"type": "input",
-					"top": 340,
-					"left": 85,
-					"width": 150,
-					"height": 60,
-					"fontTheme": "additional",
-					"focusable": false,
-					"fill": "transparent",
-					"enterable": false,
-					"dragging": "none",
-					"dropping": "custom",
-					"method": "ObjectMethods/bgndPictURL.4dm",
-					"events": [
-						"onClick",
-						"onDrop",
-						"onDataChange",
-						"onBeginDragOver"
-					],
-					"borderStyle": "none"
 				},
 				"bgndSizeHorUnit": {
 					"type": "dropdown",
@@ -561,21 +275,6 @@
 						"onDataChange"
 					]
 				},
-				"btn_Rubber": {
-					"type": "button",
-					"top": 376,
-					"left": 210,
-					"width": 24,
-					"height": 24,
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/Rubber.png",
-					"iconFrames": 4,
-					"style": "custom",
-					"method": "ObjectMethods/btn_Rubber.4dm",
-					"events": [
-						"onClick"
-					]
-				},
 				"btnAction": {
 					"type": "button",
 					"top": 586,
@@ -592,30 +291,9 @@
 						"onClick"
 					]
 				},
-				"bgndPictPreviewCopy": {
-					"type": "input",
-					"top": 340,
-					"left": 323,
-					"width": 140,
-					"height": 60,
-					"dataSourceTypeHint": "picture",
-					"fontTheme": "additional",
-					"focusable": false,
-					"borderStyle": "none",
-					"enterable": false,
-					"contextMenu": "none",
-					"pictureFormat": "proportionalCenter",
-					"dragging": "custom",
-					"method": "ObjectMethods/bgndPictPreviewCopy.4dm",
-					"events": [
-						"onDrop",
-						"onDataChange",
-						"onBeginDragOver"
-					]
-				},
 				"Popup_anchorToPage": {
 					"type": "dropdown",
-					"top": 185,
+					"top": 225,
 					"left": 85,
 					"width": 150,
 					"height": 17,
@@ -628,7 +306,7 @@
 				},
 				"Popup_anchorToSection": {
 					"type": "dropdown",
-					"top": 210,
+					"top": 250,
 					"left": 85,
 					"width": 150,
 					"height": 17,
@@ -642,10 +320,10 @@
 				"btn_PictInfo": {
 					"type": "button",
 					"text": ":xliff:AdvancedSettingsEllipsis",
-					"top": 250,
-					"left": 20,
-					"width": 220,
-					"height": 20,
+					"top": 290,
+					"left": 85,
+					"width": 150,
+					"height": 18,
 					"events": [
 						"onClick"
 					],
@@ -655,7 +333,7 @@
 				},
 				"Line1": {
 					"type": "line",
-					"top": 240,
+					"top": 280,
 					"left": 40,
 					"width": 200,
 					"height": 1,
@@ -663,7 +341,7 @@
 				},
 				"Line3": {
 					"type": "line",
-					"top": 175,
+					"top": 215,
 					"left": 40,
 					"width": 200,
 					"height": 1,
@@ -671,7 +349,7 @@
 				},
 				"Line4": {
 					"type": "line",
-					"top": 130,
+					"top": 170,
 					"left": 40,
 					"width": 200,
 					"height": 1,
@@ -679,7 +357,7 @@
 				},
 				"lbl_Picture2": {
 					"type": "text",
-					"top": 142,
+					"top": 182,
 					"left": 0,
 					"width": 80,
 					"height": 16,
@@ -690,7 +368,7 @@
 				},
 				"lbl_Position1": {
 					"type": "text",
-					"top": 47,
+					"top": 91,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -701,7 +379,7 @@
 				},
 				"lbl_Picture3": {
 					"type": "text",
-					"top": 187,
+					"top": 227,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -734,7 +412,7 @@
 				"Popup_anchorVerticalAlign": {
 					"type": "dropdown",
 					"left": 85,
-					"top": 72,
+					"top": 114,
 					"width": 150,
 					"height": 18,
 					"events": [
@@ -746,7 +424,7 @@
 				"Popup_anchorHorizontalAlign": {
 					"type": "dropdown",
 					"left": 85,
-					"top": 100,
+					"top": 140,
 					"width": 150,
 					"height": 18,
 					"events": [
@@ -758,7 +436,7 @@
 				"Popup_anchorLayout": {
 					"type": "dropdown",
 					"left": 85,
-					"top": 44,
+					"top": 88,
 					"width": 150,
 					"height": 18,
 					"events": [
@@ -769,7 +447,7 @@
 				},
 				"lbl_Picture1": {
 					"type": "text",
-					"top": 212,
+					"top": 252,
 					"left": 0,
 					"width": 80,
 					"height": 13,
@@ -781,7 +459,7 @@
 				"btn_imageMoveToBack": {
 					"type": "button",
 					"text": "",
-					"top": 132,
+					"top": 172,
 					"left": 110,
 					"width": 40,
 					"height": 40,
@@ -798,7 +476,7 @@
 				"btn_imageMoveToFront": {
 					"type": "button",
 					"text": "",
-					"top": 132,
+					"top": 172,
 					"left": 150,
 					"width": 40,
 					"height": 40,
@@ -845,12 +523,186 @@
 					"height": 620,
 					"visibility": "hidden",
 					"stroke": "#da70d6"
+				},
+				"Popup_backgroundPositionV": {
+					"type": "dropdown",
+					"top": 460,
+					"left": 86,
+					"width": 150,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"events": [
+						"onDataChange"
+					],
+					"action": "backgroundPositionV"
+				},
+				"Popup_backgroundPositionH": {
+					"type": "dropdown",
+					"top": 435,
+					"left": 86,
+					"width": 150,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"events": [
+						"onDataChange"
+					],
+					"action": "backgroundPositionH"
+				},
+				"Popup_backgroundRepeat": {
+					"type": "dropdown",
+					"top": 484,
+					"left": 86,
+					"width": 150,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"events": [
+						"onDataChange"
+					],
+					"action": "backgroundRepeat"
+				},
+				"Popup_backgroundClip": {
+					"type": "dropdown",
+					"top": 509,
+					"left": 86,
+					"width": 150,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"events": [
+						"onDataChange"
+					],
+					"action": "backgroundClip"
+				},
+				"Popup_backgroundOrigin": {
+					"type": "dropdown",
+					"top": 534,
+					"left": 86,
+					"width": 150,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"events": [
+						"onDataChange"
+					],
+					"action": "backgroundOrigin"
+				},
+				"Popup_applyMarginsTo": {
+					"type": "dropdown",
+					"top": 350,
+					"left": 85,
+					"width": 150,
+					"height": 18,
+					"dataSource": "WP_applyTo",
+					"focusable": false,
+					"method": "ObjectMethods/Popup_applyMarginsTo.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"class": "Palette"
+				},
+				"lbl_Text": {
+					"type": "text",
+					"top": 353,
+					"left": 0,
+					"width": 80,
+					"height": 13,
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": ":xliff:ApplyToColon",
+					"fontWeight": "normal"
+				},
+				"xbtn_Clear": {
+					"type": "button",
+					"text": ":xliff:Clear",
+					"top": 406,
+					"left": 150,
+					"width": 85,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"stroke": "automatic",
+					"focusable": false,
+					"method": "ObjectMethods/xbtn_Clear.4dm"
+				},
+				"xbtn_Apply": {
+					"type": "button",
+					"text": ":xliff:Apply",
+					"top": 382,
+					"left": 150,
+					"width": 85,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"stroke": "automatic",
+					"focusable": false,
+					"method": "ObjectMethods/xbtn_Apply.4dm"
+				},
+				"btn_insertImage": {
+					"type": "button",
+					"top": 36,
+					"left": 110,
+					"width": 40,
+					"height": 40,
+					"tooltip": ":xliff:insertPicture",
+					"action": "",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBcommon/Insert/Images_32.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/btn_insertImage.4dm",
+					"popupPlacement": "linked",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_insertTextArea": {
+					"type": "button",
+					"text": "",
+					"top": 36,
+					"left": 170,
+					"width": 40,
+					"height": 40,
+					"events": [
+						"onAlternateClick"
+					],
+					"style": "toolbar",
+					"action": "insertTextBox",
+					"focusable": false,
+					"iconFrames": 4,
+					"tooltip": ":xliff:InsertTextBox",
+					"popupPlacement": "separated",
+					"icon": "/RESOURCES/Images/TBcommon/Insert/InsertTextBox_32.png",
+					"method": "ObjectMethods/btn_insertTextArea.4dm"
+				},
+				"lbl_Position2": {
+					"type": "text",
+					"top": 50,
+					"left": 0,
+					"width": 80,
+					"height": 13,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:InsertHyphen",
+					"fontTheme": "additional"
+				},
+				"lbl_Picture4": {
+					"type": "text",
+					"top": 293,
+					"left": 0,
+					"width": 80,
+					"height": 16,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:PictureHyphen",
+					"fontTheme": "additional"
 				}
 			},
 			"entryOrder": [
-				"bgndRepeatModeVal",
-				"bgndClipVal",
-				"bgndOriginVal",
 				"Popup_anchorLayout",
 				"Popup_anchorVerticalAlign",
 				"Popup_anchorHorizontalAlign",
@@ -861,44 +713,27 @@
 				"TargetSelector2",
 				"TargetSelector3",
 				"bgndPictPreview",
-				"bgndPictURL",
-				"btn_Rubber",
-				"rbPos11",
-				"rbPos12",
-				"rbPos13",
-				"rbPos21",
-				"rbPos22",
-				"rbPos23",
-				"rbPos31",
-				"rbPos32",
-				"rbPos33",
-				"bgndRepeatMode",
-				"bgndClip",
-				"bgndOrigin",
 				"bgndSizeHor",
 				"bgndSizeHorUnit",
 				"btnAction",
 				"bgndSizeVert",
 				"bgndSizeVertUnit",
 				"btn_imageMoveToBack",
-				"btn_imageMoveToFront"
+				"btn_imageMoveToFront",
+				"Popup_backgroundPositionV",
+				"Popup_backgroundPositionH",
+				"Popup_backgroundRepeat",
+				"Popup_backgroundClip",
+				"Popup_backgroundOrigin",
+				"Popup_applyMarginsTo",
+				"xbtn_Clear",
+				"xbtn_Apply",
+				"btn_insertImage",
+				"btn_insertTextArea"
 			]
 		}
 	],
 	"editor": {
-		"groups": {
-			"Group17": [
-				"rbPos11",
-				"rbPos12",
-				"rbPos13",
-				"rbPos21",
-				"rbPos22",
-				"rbPos23",
-				"rbPos31",
-				"rbPos32",
-				"rbPos33"
-			]
-		},
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
@@ -923,5 +758,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1095
+	"geometryStamp": 1442
 }

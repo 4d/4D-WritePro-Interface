@@ -183,8 +183,8 @@ Case of
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/verticalAlign")
 		
-		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/margin")
+		//APPEND MENU ITEM($menu; ak standard action title)
+		//SET MENU ITEM PROPERTY($menu; -1; Associated standard action name; "textBox/margin")
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/padding")

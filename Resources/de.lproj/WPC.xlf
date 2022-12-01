@@ -628,6 +628,32 @@ This file is distributed under the same license as the product package.-->
           <target>Wählen Sie ein Ziel.</target>
         </trans-unit>
       </group>
+            <group resname="ListUnits">
+        <trans-unit id="1" resname="cm">
+          <source>cm</source>
+          <target>cm</target>
+        </trans-unit>
+        <trans-unit id="2" resname="mm">
+          <source>mm</source>
+          <target>mm</target>
+        </trans-unit>
+        <trans-unit id="3" resname="inches">
+          <source>inches</source>
+          <target>Zoll</target>
+        </trans-unit>
+        <trans-unit id="4" resname="pt">
+          <source>pt</source>
+          <target>pt</target>
+        </trans-unit>
+        <trans-unit id="5" resname="auto">
+          <source>auto</source>
+          <target>auto</target>
+        </trans-unit>
+        <trans-unit id="6" resname="pct">
+          <source>%</source>
+          <target>%</target>
+        </trans-unit>
+      </group>
       <group resname="borderStyleNames">
         <trans-unit id="1" resname="Solid">
           <source>Solid</source>
