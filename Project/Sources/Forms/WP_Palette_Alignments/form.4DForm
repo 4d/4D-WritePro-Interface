@@ -854,31 +854,6 @@
 					"picture": "/RESOURCES/Images/TBcommon/PageLayout/MarginRight_24.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
-				"Rect2": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 620,
-					"visibility": "hidden",
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 8
-				},
-				"Text": {
-					"type": "text",
-					"top": 20,
-					"left": 10,
-					"width": 40,
-					"height": 528,
-					"visibility": "hidden",
-					"stroke": "#AAAAAA",
-					"textAlign": "right",
-					"fontFamily": ".Helvetica Neue DeskInterface",
-					"fontSize": 28,
-					"textAngle": 270,
-					"text": "4D WritePro Alignments"
-				},
 				"btn_alignTextLeft": {
 					"type": "checkbox",
 					"top": 36,
@@ -1110,6 +1085,31 @@
 					"width": 10,
 					"height": 20,
 					"visibility": "hidden"
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 20,
+					"left": 10,
+					"width": 40,
+					"height": 528,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4D WritePro Alignments"
 				}
 			},
 			"entryOrder": [
@@ -1194,7 +1194,6 @@
 			"View 7": {},
 			"View 8": {},
 			"TITLE": {
-				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text"
