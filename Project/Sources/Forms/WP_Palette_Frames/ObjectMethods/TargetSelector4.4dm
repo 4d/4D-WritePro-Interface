@@ -1,3 +1,0 @@
-
-CLEAR VARIABLE:C89(oSettings1)
-SET TIMER:C645(-1)

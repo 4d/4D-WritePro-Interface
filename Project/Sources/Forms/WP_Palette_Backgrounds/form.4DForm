@@ -47,66 +47,6 @@
 					"stroke": "transparent",
 					"borderRadius": 4
 				},
-				"TargetSelector1": {
-					"type": "radio",
-					"top": 353,
-					"left": 344,
-					"width": 24,
-					"height": 24,
-					"sizingX": "move",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/file.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Sidebar/Selector.png",
-					"radioGroup": "Groupe15",
-					"method": "ObjectMethods/TargetSelector1.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"TargetSelector2": {
-					"type": "radio",
-					"top": 353,
-					"left": 409,
-					"width": 24,
-					"height": 24,
-					"sizingX": "move",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/paragraph.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Sidebar/Selector.png",
-					"radioGroup": "Groupe15",
-					"method": "ObjectMethods/TargetSelector2.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"TargetSelector3": {
-					"type": "radio",
-					"top": 353,
-					"left": 474,
-					"width": 24,
-					"height": 24,
-					"sizingX": "move",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/picture.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Sidebar/Selector.png",
-					"radioGroup": "Groupe15",
-					"method": "ObjectMethods/TargetSelector3.4dm",
-					"events": [
-						"onClick"
-					]
-				},
 				"sepLbl_backgroundPicture": {
 					"type": "text",
 					"top": 321,
@@ -490,31 +430,6 @@
 					"tooltip": ":xliff:moveToFront",
 					"action": "image/moveToFront"
 				},
-				"Rect2": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 620,
-					"visibility": "hidden",
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 8
-				},
-				"Text": {
-					"type": "text",
-					"top": 20,
-					"left": 10,
-					"width": 41,
-					"height": 600,
-					"visibility": "hidden",
-					"stroke": "#AAAAAA",
-					"textAlign": "right",
-					"fontFamily": ".Helvetica Neue DeskInterface",
-					"fontSize": 28,
-					"textAngle": 270,
-					"text": "4D WritePro Backgrounds"
-				},
 				"Line2": {
 					"type": "line",
 					"top": 0,
@@ -700,6 +615,31 @@
 					"textAlign": "right",
 					"text": ":xliff:PictureHyphen",
 					"fontTheme": "additional"
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 20,
+					"left": 10,
+					"width": 41,
+					"height": 600,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4D WritePro Backgrounds"
 				}
 			},
 			"entryOrder": [
@@ -709,9 +649,6 @@
 				"Popup_anchorToPage",
 				"Popup_anchorToSection",
 				"btn_PictInfo",
-				"TargetSelector1",
-				"TargetSelector2",
-				"TargetSelector3",
 				"bgndPictPreview",
 				"bgndSizeHor",
 				"bgndSizeHorUnit",
@@ -758,5 +695,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1442
+	"geometryStamp": 1443
 }

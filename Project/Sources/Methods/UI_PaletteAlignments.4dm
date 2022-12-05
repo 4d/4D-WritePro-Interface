@@ -28,9 +28,6 @@ Else
 			OBJECT SET ENTERABLE:C238(*; "@"; False:C215)  // desable everything except below
 			OBJECT SET VISIBLE:C603(*; "backgroundColor"; False:C215)  // fake text behing the color picker button
 			
-			OBJECT SET ENABLED:C1123(*; "TargetSelector4"; True:C214)
-			(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector4"))->:=1
-			
 			OBJECT SET ENABLED:C1123(*; "margin@"; True:C214)
 			OBJECT SET ENTERABLE:C238(*; "margin@"; True:C214)
 			
@@ -43,41 +40,6 @@ Else
 			OBJECT SET VISIBLE:C603(*; "backgroundColor"; True:C214)  // fake text behing the color picker button
 			OBJECT SET ENTERABLE:C238(*; "backgroundColor"; False:C215)  //visible but not enterable
 			
-			OBJECT SET ENABLED:C1123(*; "btn_etc"; False:C215)  // only for paragraphs
-			
-			OBJECT SET ENABLED:C1123(*; "TargetSelector4"; False:C215)  // target4 disabled
-			(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector4"))->:=0
-			
-			
-			Case of 
-				: ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector1"))->=1)  // document
-					
-					OBJECT SET ENABLED:C1123(*; "textIndent@"; True:C214)
-					OBJECT SET ENABLED:C1123(*; "lineHeight@"; True:C214)
-					OBJECT SET ENABLED:C1123(*; "listStyleNames"; True:C214)
-					OBJECT SET ENABLED:C1123(*; "bAlign@"; True:C214)
-					
-					OBJECT SET ENABLED:C1123(*; "bAlign5"; False:C215)
-					OBJECT SET ENABLED:C1123(*; "bAlign6"; False:C215)
-					OBJECT SET ENABLED:C1123(*; "bAlign7"; False:C215)
-					
-				: ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector2"))->=1)  // paragraph
-					
-					OBJECT SET ENABLED:C1123(*; "textIndent@"; True:C214)
-					OBJECT SET ENABLED:C1123(*; "lineHeight@"; True:C214)
-					OBJECT SET ENABLED:C1123(*; "listStyleNames"; True:C214)
-					OBJECT SET ENABLED:C1123(*; "bAlign@"; True:C214)
-					
-					OBJECT SET ENABLED:C1123(*; "btn_etc"; True:C214)
-					
-				: ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector3"))->=1)  // picture (inline)
-					
-					OBJECT SET ENABLED:C1123(*; "textIndent@"; False:C215)
-					OBJECT SET ENABLED:C1123(*; "lineHeight@"; False:C215)
-					OBJECT SET ENABLED:C1123(*; "listStyleNames"; False:C215)
-					OBJECT SET ENABLED:C1123(*; "bAlign@"; False:C215)
-					
-			End case 
 			
 			If (Not:C34(Undefined:C82(oSettings1)))
 				If (Not:C34(OB Is empty:C1297(oSettings1)))
@@ -96,13 +58,7 @@ Else
 	
 	OBJECT SET FORMAT:C236(*; "textIndentInput"; numFormat+" "+unitName)
 	
-	//OBJECT SET FORMAT(*; "margin@"; numFormat+" "+unitName)
-	//OBJECT SET FORMAT(*; "marginTop"; numFormat+" "+unitName)
-	//OBJECT SET FORMAT(*; "marginLeft"; numFormat+" "+unitName)
-	//OBJECT SET FORMAT(*; "marginBottom"; numFormat+" "+unitName)
-	//OBJECT SET FORMAT(*; "marginRight"; numFormat+" "+unitName)
 	
-	//ACI0098389  2018/07/10
 	
 	$ptrTextLineHeightUnit:=OBJECT Get pointer:C1124(Object named:K67:5; "TextLineHeightUnit")
 	$format:=OBJECT Get format:C894(*; "textLineHeightRuler")

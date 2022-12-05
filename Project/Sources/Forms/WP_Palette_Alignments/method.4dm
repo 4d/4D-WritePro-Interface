@@ -20,9 +20,9 @@ Case of
 		
 		OBJECT SET STYLE SHEET:C1257(*; "@"; Automatic style sheet_additional:K14:14)
 		
-		(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector1"))->:=0
-		(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector2"))->:=1  //paragraph by default
-		(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector3"))->:=0
+		//(OBJECT Get pointer(Object named; "TargetSelector1"))->:=0
+		//(OBJECT Get pointer(Object named; "TargetSelector2"))->:=1  //paragraph by default
+		//(OBJECT Get pointer(Object named; "TargetSelector3"))->:=0
 		
 		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignTextLeft"))->:=0
 		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignTextCenter"))->:=0
@@ -78,36 +78,9 @@ Case of
 		
 		If ($setupOK)
 			
-			$oCurrent:=WP_FillCurrent
-			
-			If ($typeSelection#2)
-				
-				Case of 
-					: ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector1"))->=1)
-						$case:=1
-					: ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector2"))->=1)
-						$case:=2
-					: ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector3"))->=1)
-						$case:=3
-				End case 
-				
-				If ($case=2)
-					WP_GetParagraphVertAlign($oCurrent)
-				End if 
-				
-				If ($case#3)
-					WP_GetTextAlign($oCurrent)
-					WP_GetTextIndent($oCurrent)
-					WP_GetTextLineHeight($oCurrent)
-					//WP_GetListStyle($oCurrent)  // automatic action
-				End if 
-				
-				WP_GetBackgroundColor($oCurrent)
-				
-			End if 
-			
-			// WP_GetMargins removed and replaced by standard actions
-			//WP_GetMargins($oCurrent; wk margin)
+			WP_GetTextIndent(Form:C1466.paragraphRange)
+			WP_GetTextLineHeight(Form:C1466.paragraphRange)
+			WP_GetBackgroundColor(Form:C1466.paragraphRange)
 			
 		End if 
 		

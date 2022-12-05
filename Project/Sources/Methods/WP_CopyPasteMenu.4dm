@@ -206,11 +206,12 @@ Case of
 					: ($Parameter="Copy1")
 						
 						APPEND TO ARRAY:C911($_attributes; wk background color:K81:20)
-						If ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector3"))->#1)
-							APPEND TO ARRAY:C911($_attributes; wk text align:K81:49)
-							APPEND TO ARRAY:C911($_attributes; wk list style type:K81:55)
-							APPEND TO ARRAY:C911($_attributes; wk text indent:K81:52)
-						End if 
+						
+						//If ((OBJECT Get pointer(Object named; "TargetSelector3"))->#1)
+						APPEND TO ARRAY:C911($_attributes; wk text align:K81:49)
+						APPEND TO ARRAY:C911($_attributes; wk list style type:K81:55)
+						APPEND TO ARRAY:C911($_attributes; wk text indent:K81:52)
+						//End if 
 						
 						CLEAR VARIABLE:C89(oSettings1)
 						C_OBJECT:C1216(oSettings1)
@@ -220,16 +221,16 @@ Case of
 							Case of 
 								: ($_attributes{$i}=wk line height:K81:51)
 									
-									If ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector3"))->#1)
-										
-										WP GET ATTRIBUTES:C1345($oCurrent; wk layout unit:K81:78; $unit)  // memo current unit
-										WP SET ATTRIBUTES:C1342($oCurrent; wk layout unit:K81:78; wk unit percent:K81:139)  // tempo set to %
-										WP GET ATTRIBUTES:C1345($oCurrent; wk line height:K81:51; $numValue)  // set the line height (in %)
-										WP SET ATTRIBUTES:C1342($oCurrent; wk layout unit:K81:78; $unit)  // back to current unit
-										
-									Else 
-										$numValue:=wk mixed:K81:89
-									End if 
+									//If ((OBJECT Get pointer(Object named; "TargetSelector3"))->#1)
+									
+									WP GET ATTRIBUTES:C1345($oCurrent; wk layout unit:K81:78; $unit)  // memo current unit
+									WP SET ATTRIBUTES:C1342($oCurrent; wk layout unit:K81:78; wk unit percent:K81:139)  // tempo set to %
+									WP GET ATTRIBUTES:C1345($oCurrent; wk line height:K81:51; $numValue)  // set the line height (in %)
+									WP SET ATTRIBUTES:C1342($oCurrent; wk layout unit:K81:78; $unit)  // back to current unit
+									
+									//Else 
+									//$numValue:=wk mixed
+									//End if 
 									
 								Else 
 									WP GET ATTRIBUTES:C1345($oCurrent; $_attributes{$i}; $numValue)

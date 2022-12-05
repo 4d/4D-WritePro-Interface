@@ -39,7 +39,7 @@
 				},
 				"IconBgnd2": {
 					"type": "rectangle",
-					"top": 538,
+					"top": 477,
 					"left": 210,
 					"width": 40,
 					"height": 22,
@@ -49,7 +49,7 @@
 				},
 				"IconBgnd1": {
 					"type": "rectangle",
-					"top": 538,
+					"top": 477,
 					"left": 160,
 					"width": 40,
 					"height": 22,
@@ -59,7 +59,7 @@
 				},
 				"fontFamilly": {
 					"type": "dropdown",
-					"top": 10,
+					"top": 11,
 					"left": 85,
 					"width": 140,
 					"height": 18,
@@ -73,7 +73,7 @@
 				},
 				"fontStyle": {
 					"type": "dropdown",
-					"top": 35,
+					"top": 39,
 					"left": 85,
 					"width": 140,
 					"height": 18,
@@ -87,8 +87,8 @@
 				},
 				"fontLongName": {
 					"type": "dropdown",
-					"top": 34,
-					"left": 305,
+					"top": 35,
+					"left": 420,
 					"width": 140,
 					"height": 18,
 					"dataSource": "WP_fontLongName",
@@ -100,7 +100,7 @@
 				},
 				"fontSizeRuler": {
 					"type": "ruler",
-					"top": 64,
+					"top": 70,
 					"left": 85,
 					"width": 95,
 					"height": 12,
@@ -117,7 +117,7 @@
 				},
 				"ColorSample": {
 					"type": "input",
-					"top": 93,
+					"top": 97,
 					"left": 86,
 					"width": 98,
 					"height": 14,
@@ -139,7 +139,7 @@
 				},
 				"BackgroundColor": {
 					"type": "input",
-					"top": 123,
+					"top": 125,
 					"left": 86,
 					"width": 98,
 					"height": 14,
@@ -211,7 +211,7 @@
 				},
 				"LinethroughColor": {
 					"type": "input",
-					"top": 236,
+					"top": 233,
 					"left": 136,
 					"width": 88,
 					"height": 14,
@@ -232,7 +232,7 @@
 				},
 				"cbUnderline": {
 					"type": "checkbox",
-					"top": 262,
+					"top": 260,
 					"left": 85,
 					"width": 140,
 					"height": 16,
@@ -250,7 +250,7 @@
 				},
 				"UnderlineColor": {
 					"type": "input",
-					"top": 306,
+					"top": 301,
 					"left": 136,
 					"width": 88,
 					"height": 14,
@@ -273,7 +273,7 @@
 				},
 				"shadowOffsetRuler": {
 					"type": "ruler",
-					"top": 445,
+					"top": 406,
 					"left": 135,
 					"width": 45,
 					"height": 12,
@@ -290,7 +290,7 @@
 				},
 				"ColorShadow": {
 					"type": "input",
-					"top": 467,
+					"top": 425,
 					"left": 136,
 					"width": 88,
 					"height": 14,
@@ -311,7 +311,7 @@
 				},
 				"InvisibleBackground": {
 					"type": "picture",
-					"top": 124,
+					"top": 126,
 					"left": 87,
 					"width": 96,
 					"height": 12,
@@ -321,7 +321,7 @@
 				},
 				"Separator1": {
 					"type": "rectangle",
-					"top": 400,
+					"top": 357,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -331,7 +331,7 @@
 				},
 				"sepLbl_Shadows": {
 					"type": "text",
-					"top": 400,
+					"top": 358,
 					"left": 25,
 					"width": 210,
 					"height": 13,
@@ -343,7 +343,7 @@
 				},
 				"fontSizeInput": {
 					"type": "input",
-					"top": 64,
+					"top": 69,
 					"left": 190,
 					"width": 35,
 					"height": 14,
@@ -361,7 +361,7 @@
 				},
 				"shadowOffsetInput": {
 					"type": "input",
-					"top": 444,
+					"top": 405,
 					"left": 190,
 					"width": 35,
 					"height": 14,
@@ -379,7 +379,7 @@
 				},
 				"lbl_Font": {
 					"type": "text",
-					"top": 11,
+					"top": 13,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -389,7 +389,7 @@
 				},
 				"lbl_Color": {
 					"type": "text",
-					"top": 92,
+					"top": 97,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -399,7 +399,7 @@
 				},
 				"lbl_Size": {
 					"type": "text",
-					"top": 62,
+					"top": 69,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -409,7 +409,7 @@
 				},
 				"lbl_Style2": {
 					"type": "text",
-					"top": 282,
+					"top": 281,
 					"left": 15,
 					"width": 115,
 					"height": 14,
@@ -419,7 +419,7 @@
 				},
 				"lbl_Color1": {
 					"type": "text",
-					"top": 306,
+					"top": 301,
 					"left": 15,
 					"width": 115,
 					"height": 14,
@@ -429,7 +429,7 @@
 				},
 				"lbl_Color2": {
 					"type": "text",
-					"top": 467,
+					"top": 425,
 					"left": 65,
 					"width": 65,
 					"height": 14,
@@ -439,7 +439,7 @@
 				},
 				"lbl_Offset": {
 					"type": "text",
-					"top": 443,
+					"top": 405,
 					"left": 65,
 					"width": 65,
 					"height": 14,
@@ -449,7 +449,7 @@
 				},
 				"lbl_Background": {
 					"type": "text",
-					"top": 122,
+					"top": 125,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -459,7 +459,7 @@
 				},
 				"lbl_Style1": {
 					"type": "text",
-					"top": 152,
+					"top": 153,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -467,19 +467,9 @@
 					"textAlign": "right",
 					"text": ":xliff:StyleColon0"
 				},
-				"lbl_VertAlign": {
-					"type": "text",
-					"top": 342,
-					"left": 0,
-					"width": 80,
-					"height": 14,
-					"class": "Palette",
-					"textAlign": "right",
-					"text": ":xliff:VertAlignColon"
-				},
 				"lbl_Transform": {
 					"type": "text",
-					"top": 367,
+					"top": 329,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -489,7 +479,7 @@
 				},
 				"btnAction": {
 					"type": "button",
-					"top": 465,
+					"top": 417,
 					"left": 0,
 					"width": 30,
 					"height": 30,
@@ -505,7 +495,7 @@
 				},
 				"SampleFrame4": {
 					"type": "rectangle",
-					"top": 92,
+					"top": 96,
 					"left": 85,
 					"width": 100,
 					"height": 16,
@@ -515,7 +505,7 @@
 				},
 				"SampleFrame2": {
 					"type": "rectangle",
-					"top": 122,
+					"top": 124,
 					"left": 85,
 					"width": 100,
 					"height": 16,
@@ -525,7 +515,7 @@
 				},
 				"SampleFrame3": {
 					"type": "rectangle",
-					"top": 305,
+					"top": 300,
 					"left": 135,
 					"width": 90,
 					"height": 16,
@@ -534,7 +524,7 @@
 				},
 				"SampleFrame1": {
 					"type": "rectangle",
-					"top": 466,
+					"top": 424,
 					"left": 135,
 					"width": 90,
 					"height": 16,
@@ -544,7 +534,7 @@
 				},
 				"FakeFocusFontColor": {
 					"type": "picture",
-					"top": 95,
+					"top": 99,
 					"left": 190,
 					"width": 10,
 					"height": 10,
@@ -553,7 +543,7 @@
 				},
 				"FakeFocusBackgroundColor": {
 					"type": "picture",
-					"top": 126,
+					"top": 127,
 					"left": 190,
 					"width": 10,
 					"height": 10,
@@ -563,7 +553,7 @@
 				},
 				"FakeFocusUnderlineColor": {
 					"type": "picture",
-					"top": 308,
+					"top": 303,
 					"left": 230,
 					"width": 10,
 					"height": 10,
@@ -573,7 +563,7 @@
 				},
 				"FakeFocusShadowColor": {
 					"type": "picture",
-					"top": 469,
+					"top": 427,
 					"left": 230,
 					"width": 10,
 					"height": 10,
@@ -583,7 +573,7 @@
 				},
 				"MultiFontColor": {
 					"type": "picture",
-					"top": 94,
+					"top": 98,
 					"left": 87,
 					"width": 96,
 					"height": 12,
@@ -593,7 +583,7 @@
 				},
 				"MultiUnderlineColor": {
 					"type": "picture",
-					"top": 307,
+					"top": 302,
 					"left": 138,
 					"width": 84,
 					"height": 12,
@@ -603,7 +593,7 @@
 				},
 				"MultiShadowColor": {
 					"type": "picture",
-					"top": 468,
+					"top": 426,
 					"left": 138,
 					"width": 84,
 					"height": 12,
@@ -613,7 +603,7 @@
 				},
 				"btnInvisible4": {
 					"type": "button",
-					"top": 465,
+					"top": 423,
 					"left": 134,
 					"width": 92,
 					"height": 18,
@@ -625,7 +615,7 @@
 				},
 				"btnInvisible1": {
 					"type": "button",
-					"top": 91,
+					"top": 95,
 					"left": 85,
 					"width": 100,
 					"height": 18,
@@ -637,7 +627,7 @@
 				},
 				"btnInvisible3": {
 					"type": "button",
-					"top": 304,
+					"top": 299,
 					"left": 134,
 					"width": 92,
 					"height": 18,
@@ -649,7 +639,7 @@
 				},
 				"MultiBackgroundColor": {
 					"type": "picture",
-					"top": 124,
+					"top": 126,
 					"left": 87,
 					"width": 96,
 					"height": 12,
@@ -659,7 +649,7 @@
 				},
 				"btnInvisible2": {
 					"type": "button",
-					"top": 121,
+					"top": 123,
 					"left": 85,
 					"width": 100,
 					"height": 18,
@@ -671,7 +661,7 @@
 				},
 				"lbl_Font1": {
 					"type": "text",
-					"top": 36,
+					"top": 41,
 					"left": 0,
 					"width": 80,
 					"height": 14,
@@ -681,7 +671,7 @@
 				},
 				"lbl_Style3": {
 					"type": "text",
-					"top": 212,
+					"top": 213,
 					"left": 15,
 					"width": 115,
 					"height": 14,
@@ -691,7 +681,7 @@
 				},
 				"lbl_Color3": {
 					"type": "text",
-					"top": 236,
+					"top": 233,
 					"left": 15,
 					"width": 115,
 					"height": 14,
@@ -701,7 +691,7 @@
 				},
 				"SampleFrame5": {
 					"type": "rectangle",
-					"top": 235,
+					"top": 232,
 					"left": 135,
 					"width": 90,
 					"height": 16,
@@ -710,7 +700,7 @@
 				},
 				"FakeFocusLinethroughColor": {
 					"type": "picture",
-					"top": 238,
+					"top": 235,
 					"left": 230,
 					"width": 10,
 					"height": 10,
@@ -720,7 +710,7 @@
 				},
 				"MultiLinethroughColor": {
 					"type": "picture",
-					"top": 237,
+					"top": 234,
 					"left": 138,
 					"width": 84,
 					"height": 12,
@@ -730,7 +720,7 @@
 				},
 				"btnInvisible5": {
 					"type": "button",
-					"top": 234,
+					"top": 231,
 					"left": 134,
 					"width": 92,
 					"height": 18,
@@ -742,7 +732,7 @@
 				},
 				"Separator2": {
 					"type": "rectangle",
-					"top": 510,
+					"top": 453,
 					"left": 5,
 					"width": 250,
 					"height": 15,
@@ -752,7 +742,7 @@
 				},
 				"sepLbl_SpecialChars": {
 					"type": "text",
-					"top": 510,
+					"top": 454,
 					"left": 25,
 					"width": 210,
 					"height": 13,
@@ -764,7 +754,7 @@
 				},
 				"lbl_SoftHyphen": {
 					"type": "text",
-					"top": 542,
+					"top": 482,
 					"left": 0,
 					"width": 150,
 					"height": 13,
@@ -775,7 +765,7 @@
 				},
 				"btn_InsertSH": {
 					"type": "button",
-					"top": 541,
+					"top": 480,
 					"left": 165,
 					"width": 30,
 					"height": 16,
@@ -791,7 +781,7 @@
 				},
 				"btn_RemoveSH": {
 					"type": "button",
-					"top": 541,
+					"top": 480,
 					"left": 215,
 					"width": 30,
 					"height": 16,
@@ -807,7 +797,7 @@
 				},
 				"STD_underlineStyles": {
 					"type": "dropdown",
-					"top": 280,
+					"top": 279,
 					"left": 136,
 					"width": 90,
 					"height": 18,
@@ -818,7 +808,7 @@
 				},
 				"STD_LinethroughStyle": {
 					"type": "dropdown",
-					"top": 210,
+					"top": 211,
 					"left": 136,
 					"width": 90,
 					"height": 18,
@@ -827,22 +817,9 @@
 					"events": [],
 					"action": "textLinethroughStyle"
 				},
-				"STD_verticalAlign": {
-					"type": "dropdown",
-					"top": 340,
-					"left": 85,
-					"width": 140,
-					"height": 18,
-					"focusable": false,
-					"class": "Palette",
-					"events": [
-						"onDataChange"
-					],
-					"action": "verticalAlign"
-				},
 				"STD_textTransform": {
 					"type": "dropdown",
-					"top": 365,
+					"top": 327,
 					"left": 85,
 					"width": 140,
 					"height": 18,
@@ -855,7 +832,7 @@
 				},
 				"cbShadow1": {
 					"type": "checkbox",
-					"top": 422,
+					"top": 384,
 					"left": 85,
 					"width": 140,
 					"height": 16,
@@ -893,32 +870,205 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Fonts"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 38,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 66,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 94,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 122,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 150,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 170,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 210,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 230,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle9": {
+					"type": "rectangle",
+					"top": 258,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle10": {
+					"type": "rectangle",
+					"top": 278,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle11": {
+					"type": "rectangle",
+					"top": 298,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle12": {
+					"type": "rectangle",
+					"top": 326,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle13": {
+					"type": "rectangle",
+					"top": 354,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle14": {
+					"type": "rectangle",
+					"top": 382,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle15": {
+					"type": "rectangle",
+					"top": 402,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle16": {
+					"type": "rectangle",
+					"top": 422,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle17": {
+					"type": "rectangle",
+					"top": 450,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle18": {
+					"type": "rectangle",
+					"top": 478,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle19": {
+					"type": "rectangle",
+					"top": 498,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
+				},
+				"Rectangle20": {
+					"type": "rectangle",
+					"top": 190,
+					"left": 290,
+					"width": 10,
+					"height": 20,
+					"visibility": "hidden"
 				}
 			},
 			"entryOrder": [
 				"fontFamilly",
 				"fontStyle",
-				"fontLongName",
 				"fontSizeRuler",
+				"fontSizeInput",
+				"btnInvisible1",
 				"ColorSample",
+				"btnInvisible2",
 				"BackgroundColor",
 				"cbBold",
 				"cbItalic",
 				"cbLinethrough",
+				"STD_LinethroughStyle",
+				"btnInvisible5",
 				"LinethroughColor",
 				"cbUnderline",
+				"STD_underlineStyles",
+				"btnInvisible3",
 				"UnderlineColor",
+				"STD_textTransform",
+				"cbShadow1",
 				"shadowOffsetRuler",
+				"shadowOffsetInput",
+				"btnAction",
+				"btnInvisible4",
 				"ColorShadow",
 				"btn_InsertSH",
 				"btn_RemoveSH",
-				"fontSizeInput",
-				"shadowOffsetInput",
-				"STD_underlineStyles",
-				"STD_LinethroughStyle",
-				"STD_verticalAlign",
-				"STD_textTransform",
-				"cbShadow1"
+				"fontLongName"
 			]
 		}
 	],
@@ -927,13 +1077,30 @@
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
-			"Frames": {},
-			"Grid": {},
-			"FakeFocus": {},
-			"SampleFrames": {},
-			"Boutons Invisibles": {},
-			"Static pictures": {},
-			"View 8": {},
+			"Frames": {
+				"visible": false,
+				"objects": [
+					"background"
+				]
+			},
+			"Grid": {
+				"visible": false
+			},
+			"FakeFocus": {
+				"visible": false
+			},
+			"SampleFrames": {
+				"visible": false
+			},
+			"Boutons Invisibles": {
+				"visible": false
+			},
+			"Static pictures": {
+				"visible": false
+			},
+			"View 8": {
+				"visible": false
+			},
 			"View 9": {
 				"visible": false,
 				"objects": [
@@ -947,5 +1114,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 817
+	"geometryStamp": 1301
 }

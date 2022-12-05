@@ -31,7 +31,7 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 480,
+					"height": 620,
 					"fill": "#CCCCCC",
 					"stroke": "transparent",
 					"borderRadius": 0
@@ -270,35 +270,6 @@
 					"fontTheme": "additional",
 					"text": ":xliff:Document"
 				},
-				"previousValue": {
-					"type": "input",
-					"top": 103,
-					"left": 363,
-					"width": 115,
-					"height": 17,
-					"visibility": "hidden",
-					"dataSourceTypeHint": "number",
-					"stroke": "#0000CD",
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"enterable": false,
-					"contextMenu": "none",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"Text1": {
-					"type": "text",
-					"top": 85,
-					"left": 302,
-					"width": 149,
-					"height": 17,
-					"textAlign": "right",
-					"text": "//ACI0097045"
-				},
 				"btn_pageModePage": {
 					"type": "checkbox",
 					"top": 40,
@@ -511,6 +482,87 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Sizes"
+				},
+				"lbl_Align1": {
+					"type": "text",
+					"top": 481,
+					"left": 10,
+					"width": 100,
+					"height": 13,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:VertAlignColon",
+					"fontTheme": "additional"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 510,
+					"left": 30,
+					"width": 200,
+					"stroke": "#696969",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"STD_verticalAlign": {
+					"type": "dropdown",
+					"top": 480,
+					"left": 115,
+					"width": 120,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"events": [
+						"onDataChange"
+					],
+					"action": "verticalAlign"
+				},
+				"btn_alignTop": {
+					"type": "checkbox",
+					"text": "",
+					"top": 465,
+					"left": 373,
+					"width": 30,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"icon": "/RESOURCES/Images/Sidebar/AlignTop_24.png",
+					"iconFrames": 4,
+					"action": "verticalAlign?value=top",
+					"focusable": false
+				},
+				"btn_alignMiddle": {
+					"type": "checkbox",
+					"text": "",
+					"top": 465,
+					"left": 413,
+					"width": 30,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"icon": "/RESOURCES/Images/Sidebar/AlignMiddle_24.png",
+					"iconFrames": 4,
+					"action": "verticalAlign?value=middle",
+					"focusable": false
+				},
+				"btn_alignBottom": {
+					"type": "checkbox",
+					"text": "",
+					"top": 465,
+					"left": 443,
+					"width": 30,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"style": "toolbar",
+					"icon": "/RESOURCES/Images/Sidebar/AlignBottom_24.png",
+					"iconFrames": 4,
+					"action": "verticalAlign?value=bottom",
+					"focusable": false
 				}
 			}
 		}
@@ -521,7 +573,6 @@
 		"views": {
 			"View 1": {},
 			"View 2": {
-				"visible": false,
 				"objects": [
 					"Background"
 				]
@@ -557,5 +608,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 369
+	"geometryStamp": 526
 }

@@ -12,6 +12,13 @@ $applyTo:=UI_GetApplyTo  // might change for picturesAndTextboxes, see below ! â
 
 Case of 
 		
+		//: ($UItarget="Alignments"
+		
+		//OBJECT SET ACTION(*; "btn_alignTextLeft"; $applyTo+"/textAlign?value=left")
+		//OBJECT SET ACTION(*; "btn_alignTextCenter"; $applyTo+"/textAlign?value=center")
+		//OBJECT SET ACTION(*; "btn_alignTextRight"; $applyTo+"/textAlign?value=right")
+		//OBJECT SET ACTION(*; "btn_alignTextJustify"; $applyTo+"/textAlign?value=justify")
+		
 	: ($UItarget="Margins")
 		
 		// page 3 of WP_toolbar, and WP_PaletteAlignments

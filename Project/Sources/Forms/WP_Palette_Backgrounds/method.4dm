@@ -18,10 +18,6 @@ Case of
 		
 		OBJECT SET STYLE SHEET:C1257(*; "@"; Automatic style sheet_additional:K14:14)
 		
-		(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector1"))->:=0  // doc
-		(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector2"))->:=1  //paragraph by default
-		(OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector3"))->:=0  // pict
-		
 		TB_setAutomaticActions("background")
 		
 		$ptrArrayNames:=OBJECT Get pointer:C1124(Object named:K67:5; "bgndSizeHorUnit")
@@ -70,11 +66,6 @@ Case of
 			WP_GetBackgroundSize($oCurrent)
 			
 		End if 
-		
-		//: (Form event=On Close Box)
-		//CANCEL
-		//_paletteState{$paletteID}:=0
-		//CALL PROCESS(Current process)
 		
 End case 
 

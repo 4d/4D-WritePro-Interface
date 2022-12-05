@@ -107,13 +107,6 @@ End if
 
 areaName:=Form:C1466.areaName
 
-//Case of 
-//: ($o.areaName#Null)
-//areaName:=$o.areaName
-//: ($o.zoneName#Null)
-//areaName:=$o.zoneName
-//End case 
-
 If (Form:C1466.masterTable#Null:C1517)
 	masterTable:=Form:C1466.masterTable
 End if 

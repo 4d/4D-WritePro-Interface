@@ -8,23 +8,25 @@ var $applyTo : Text
 
 If (Count parameters:C259=0)  // as before
 	
-	$typeSelection:=Form:C1466.selection.type
+	$current:=Form:C1466.paragraphRange
 	
-	Case of 
-			
-		: ($typeSelection=2)  // background image
-			$current:=Form:C1466.selection  // ??
-			
-		: ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector1"))->=1)
-			$current:=Form:C1466.selection[wk owner:K81:168]
-			
-		: ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector2"))->=1)
-			$current:=Form:C1466.paragraphRange
-			
-		: ((OBJECT Get pointer:C1124(Object named:K67:5; "TargetSelector3"))->=1)
-			$current:=Form:C1466.imageRange
-			
-	End case 
+	//$typeSelection:=Form.selection.type
+	
+	//Case of 
+	
+	//: ($typeSelection=2)  // background image
+	//$current:=Form.selection  // ??
+	
+	//: ((OBJECT Get pointer(Object named; "TargetSelector1"))->=1)
+	//$current:=Form.selection[wk owner]
+	
+	//: ((OBJECT Get pointer(Object named; "TargetSelector2"))->=1)
+	//$current:=Form.paragraphRange
+	
+	//: ((OBJECT Get pointer(Object named; "TargetSelector3"))->=1)
+	//$current:=Form.imageRange
+	
+	//End case 
 	
 	
 Else   //$checkObject = "popup"

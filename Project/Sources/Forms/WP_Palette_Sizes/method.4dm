@@ -17,7 +17,7 @@ Case of
 			oForm:=New object:C1471
 		End if 
 		
-		OBJECT SET ENABLED:C1123(*; "TargetSelector@"; False:C215)  // fake buttons on the right side
+		//OBJECT SET ENABLED(*; "TargetSelector@"; False)  // fake buttons on the right side
 		
 		(OBJECT Get pointer:C1124(Object named:K67:5; "rbWidthOption1"))->:=1  //set width by default
 		(OBJECT Get pointer:C1124(Object named:K67:5; "rbWidthOption2"))->:=0
@@ -46,16 +46,7 @@ Case of
 		
 		If ($setupOK) & ($typeSelection#2)
 			
-			// removed from dialog, standard action instead (userUnit)
-			// WP_GetUserUnit(Form.selection[wk owner])
-			
 			WP_GetSizes(Form:C1466.paragraphRange; "paragraph")
-			
-			// removed from dial, no more info for pictures v19R5 01/02/2022)
-			// WP_GetSizes(Form.imageRange; "picture")  //ACI0100269
-			
-			// removed from dial, no more info for pictures v19R5 14/02/2022)
-			// WP_GetImageUrl(Form.imageRange)  //ACI0100269
 			
 		End if 
 		

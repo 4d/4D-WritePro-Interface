@@ -32,7 +32,7 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 440,
+					"height": 620,
 					"fill": "#C8C8C8",
 					"stroke": "transparent",
 					"borderRadius": 0,
@@ -62,348 +62,6 @@
 					"fontTheme": "additional",
 					"sizingX": "fixed"
 				},
-				"FrameRect": {
-					"type": "rectangle",
-					"top": 393,
-					"left": 665,
-					"width": 130,
-					"height": 41,
-					"fill": "transparent",
-					"stroke": "#696969",
-					"sizingX": "fixed"
-				},
-				"Invisible Button1": {
-					"type": "button",
-					"top": 401,
-					"left": 671,
-					"width": 117,
-					"height": 26,
-					"display": false,
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
-				},
-				"borderStyleNames": {
-					"type": "dropdown",
-					"top": 156,
-					"left": 637,
-					"width": 140,
-					"height": 18,
-					"focusable": false,
-					"class": "Palette",
-					"events": [
-						"onDataChange"
-					],
-					"sizingX": "fixed"
-				},
-				"borderStyleValues": {
-					"type": "dropdown",
-					"top": 156,
-					"left": 849,
-					"width": 140,
-					"height": 18,
-					"focusable": false,
-					"fontTheme": "main",
-					"events": [
-						"onDataChange"
-					],
-					"sizingX": "fixed"
-				},
-				"borderWidthRuler": {
-					"type": "ruler",
-					"top": 186,
-					"left": 637,
-					"width": 95,
-					"height": 12,
-					"dataSourceTypeHint": "number",
-					"min": 1,
-					"max": 10,
-					"graduationStep": 1,
-					"events": [
-						"onDataChange"
-					],
-					"focusable": false,
-					"sizingX": "fixed"
-				},
-				"borderRadiusRuler": {
-					"type": "ruler",
-					"top": 261,
-					"left": 648,
-					"width": 95,
-					"height": 11,
-					"dataSourceTypeHint": "number",
-					"max": 20,
-					"graduationStep": 5,
-					"events": [
-						"onDataChange"
-					],
-					"focusable": false,
-					"sizingX": "fixed"
-				},
-				"borderWidthInput": {
-					"type": "input",
-					"top": 186,
-					"left": 742,
-					"width": 35,
-					"height": 14,
-					"dataSourceTypeHint": "number",
-					"class": "Palette",
-					"contextMenu": "none",
-					"numberFormat": "#####0 pt",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					],
-					"sizingX": "fixed"
-				},
-				"borderRadiusInput": {
-					"type": "input",
-					"top": 261,
-					"left": 753,
-					"width": 35,
-					"height": 14,
-					"dataSourceTypeHint": "number",
-					"class": "Palette",
-					"contextMenu": "none",
-					"numberFormat": "#####0 pt",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					],
-					"sizingX": "fixed"
-				},
-				"lbl_Style": {
-					"type": "text",
-					"top": 156,
-					"left": 552,
-					"width": 80,
-					"height": 14,
-					"class": "Palette",
-					"textAlign": "right",
-					"text": ":xliff:StyleColon2",
-					"sizingX": "fixed"
-				},
-				"lbl_Width": {
-					"type": "text",
-					"top": 184,
-					"left": 552,
-					"width": 80,
-					"height": 14,
-					"class": "Palette",
-					"textAlign": "right",
-					"text": ":xliff:WidthColon",
-					"sizingX": "fixed"
-				},
-				"lbl_Color": {
-					"type": "text",
-					"top": 214,
-					"left": 552,
-					"width": 80,
-					"height": 14,
-					"class": "Palette",
-					"textAlign": "right",
-					"text": ":xliff:ColorColon",
-					"sizingX": "fixed"
-				},
-				"lbl_Radius": {
-					"type": "text",
-					"top": 259,
-					"left": 563,
-					"width": 80,
-					"height": 14,
-					"class": "Palette",
-					"textAlign": "right",
-					"text": ":xliff:RadiusColon",
-					"sizingX": "fixed"
-				},
-				"lbl_ApplyTo": {
-					"type": "text",
-					"top": 405,
-					"left": 572,
-					"width": 80,
-					"height": 14,
-					"class": "Palette",
-					"textAlign": "right",
-					"text": ":xliff:SidesColon",
-					"sizingX": "fixed"
-				},
-				"cb2": {
-					"type": "checkbox",
-					"top": 383,
-					"left": 721,
-					"width": 18,
-					"height": 20,
-					"focusable": false,
-					"threeState": true,
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
-				},
-				"cb1": {
-					"type": "checkbox",
-					"top": 403,
-					"left": 657,
-					"width": 20,
-					"height": 20,
-					"focusable": false,
-					"threeState": true,
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
-				},
-				"cb3": {
-					"type": "checkbox",
-					"top": 403,
-					"left": 785,
-					"width": 20,
-					"height": 20,
-					"focusable": false,
-					"threeState": true,
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
-				},
-				"cb4": {
-					"type": "checkbox",
-					"top": 423,
-					"left": 721,
-					"width": 18,
-					"height": 20,
-					"focusable": false,
-					"threeState": true,
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
-				},
-				"TargetSelector1": {
-					"type": "radio",
-					"top": 10,
-					"left": 710,
-					"width": 24,
-					"height": 24,
-					"sizingX": "fixed",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/file.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Sidebar/Selector.png",
-					"radioGroup": "Group15",
-					"method": "ObjectMethods/TargetSelector1.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"TargetSelector2": {
-					"type": "radio",
-					"top": 10,
-					"left": 775,
-					"width": 24,
-					"height": 24,
-					"sizingX": "fixed",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/paragraph.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Sidebar/Selector.png",
-					"radioGroup": "Group15",
-					"method": "ObjectMethods/TargetSelector2.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"TargetSelector3": {
-					"type": "radio",
-					"top": 10,
-					"left": 840,
-					"width": 24,
-					"height": 24,
-					"sizingX": "fixed",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/picture.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Sidebar/Selector.png",
-					"radioGroup": "Group15",
-					"method": "ObjectMethods/TargetSelector3.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"TargetSelector4": {
-					"type": "radio",
-					"top": 10,
-					"left": 906,
-					"width": 24,
-					"height": 24,
-					"sizingX": "fixed",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/BackgroundPicture.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "/RESOURCES/Images/Sidebar/Selector.png",
-					"radioGroup": "Group15",
-					"method": "ObjectMethods/TargetSelector4.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"rb1": {
-					"type": "radio",
-					"top": 63,
-					"left": 1096,
-					"width": 147,
-					"height": 14,
-					"text": "All",
-					"focusable": false,
-					"radioGroup": "Group5",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
-				},
-				"rb2": {
-					"type": "radio",
-					"top": 83,
-					"left": 1096,
-					"width": 147,
-					"height": 14,
-					"text": "Outside only",
-					"focusable": false,
-					"radioGroup": "Group5",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
-				},
-				"rb3": {
-					"type": "radio",
-					"top": 103,
-					"left": 1096,
-					"width": 147,
-					"height": 14,
-					"text": "Inside only",
-					"focusable": false,
-					"radioGroup": "Group5",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
-				},
 				"btnAction": {
 					"type": "button",
 					"top": 405,
@@ -416,71 +74,6 @@
 					"popupPlacement": "linked",
 					"style": "custom",
 					"method": "ObjectMethods/btnAction.4dm",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
-				},
-				"borderColor": {
-					"type": "input",
-					"top": 213,
-					"left": 648,
-					"width": 96,
-					"height": 14,
-					"fill": "#FFEECC",
-					"borderStyle": "none",
-					"enterable": false,
-					"allowFontColorPicker": true,
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onLosingFocus",
-						"onGettingFocus",
-						"onAfterEdit"
-					],
-					"fontFamily": "Arial",
-					"fontSize": 2,
-					"sizingX": "fixed"
-				},
-				"SampleFrame3": {
-					"type": "rectangle",
-					"top": 214,
-					"left": 820,
-					"width": 98,
-					"height": 16,
-					"fill": "transparent",
-					"stroke": "#404040",
-					"borderRadius": 4,
-					"sizingX": "fixed"
-				},
-				"FakeFocusBorderColor": {
-					"type": "picture",
-					"top": 217,
-					"left": 742,
-					"width": 10,
-					"height": 10,
-					"visibility": "hidden",
-					"pictureFormat": "scaled",
-					"picture": "/RESOURCES/Images/Rainbow.png",
-					"sizingX": "fixed"
-				},
-				"MultiFrameColor": {
-					"type": "picture",
-					"top": 215,
-					"left": 378,
-					"width": 92,
-					"height": 12,
-					"pictureFormat": "tiled",
-					"picture": "/RESOURCES/Images/Mixed.png",
-					"sizingX": "fixed"
-				},
-				"btnInvisible3": {
-					"type": "button",
-					"top": 211,
-					"left": 482,
-					"width": 100,
-					"height": 18,
-					"display": false,
 					"events": [
 						"onClick"
 					],
@@ -509,119 +102,6 @@
 					"text": ":xliff:Padding",
 					"fontTheme": "additional",
 					"sizingX": "fixed"
-				},
-				"paddingVerticalRuler": {
-					"type": "ruler",
-					"top": 487,
-					"left": 605,
-					"width": 12,
-					"height": 60,
-					"dataSourceTypeHint": "number",
-					"max": 100,
-					"graduationStep": 5,
-					"events": [
-						"onDataChange"
-					],
-					"focusable": false,
-					"sizingX": "fixed"
-				},
-				"paddingHorizontalRuler": {
-					"type": "ruler",
-					"top": 542,
-					"left": 650,
-					"width": 155,
-					"height": 12,
-					"dataSourceTypeHint": "number",
-					"max": 100,
-					"graduationStep": 5,
-					"events": [
-						"onDataChange"
-					],
-					"focusable": false,
-					"sizingX": "fixed"
-				},
-				"PaddingTop": {
-					"type": "input",
-					"top": 486,
-					"left": 705,
-					"width": 45,
-					"height": 14,
-					"dataSourceTypeHint": "number",
-					"class": "Palette",
-					"textAlign": "center",
-					"contextMenu": "none",
-					"numberFormat": "##,###,##0;-;0",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onGettingFocus",
-						"onDataChange"
-					],
-					"sizingX": "fixed"
-				},
-				"PaddingLeft": {
-					"type": "input",
-					"top": 502,
-					"left": 640,
-					"width": 45,
-					"height": 14,
-					"dataSourceTypeHint": "number",
-					"class": "Palette",
-					"textAlign": "center",
-					"contextMenu": "none",
-					"numberFormat": "##,###,##0;-;0",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onGettingFocus",
-						"onDataChange"
-					],
-					"sizingX": "fixed"
-				},
-				"PaddingRight": {
-					"type": "input",
-					"top": 502,
-					"left": 770,
-					"width": 45,
-					"height": 14,
-					"dataSourceTypeHint": "number",
-					"class": "Palette",
-					"textAlign": "center",
-					"contextMenu": "none",
-					"numberFormat": "##,###,##0;-;0",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onGettingFocus",
-						"onDataChange"
-					],
-					"sizingX": "fixed"
-				},
-				"PaddingBottom": {
-					"type": "input",
-					"top": 516,
-					"left": 705,
-					"width": 45,
-					"height": 14,
-					"dataSourceTypeHint": "number",
-					"class": "Palette",
-					"textAlign": "center",
-					"contextMenu": "none",
-					"numberFormat": "##,###,##0;-;0",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onGettingFocus",
-						"onDataChange"
-					],
-					"sizingX": "fixed"
-				},
-				"Line1": {
-					"type": "line",
-					"top": 619,
-					"left": 265,
-					"width": 461,
-					"height": 1
 				},
 				"Popup_applyMarginsTo": {
 					"type": "dropdown",
@@ -671,7 +151,7 @@
 				},
 				"popPaddingLeft": {
 					"type": "dropdown",
-					"top": 380,
+					"top": 330,
 					"left": 165,
 					"width": 64,
 					"height": 18,
@@ -682,7 +162,7 @@
 				},
 				"popPaddingRight": {
 					"type": "dropdown",
-					"top": 330,
+					"top": 380,
 					"left": 165,
 					"width": 64,
 					"height": 18,
@@ -836,15 +316,6 @@
 					"tooltip": ":xliff:Radius",
 					"class": "Palette"
 				},
-				"Text1": {
-					"type": "text",
-					"text": "▾",
-					"top": 40,
-					"left": 1015,
-					"width": 21,
-					"height": 29,
-					"fontSize": 24
-				},
 				"Text2": {
 					"type": "text",
 					"text": ":xliff:globalColon",
@@ -915,7 +386,7 @@
 				},
 				"Static Picture3": {
 					"type": "picture",
-					"top": 355,
+					"top": 305,
 					"left": 165,
 					"width": 30,
 					"height": 24,
@@ -924,7 +395,7 @@
 				},
 				"Static Picture4": {
 					"type": "picture",
-					"top": 305,
+					"top": 355,
 					"left": 165,
 					"width": 30,
 					"height": 24,
@@ -958,26 +429,6 @@
 				}
 			},
 			"entryOrder": [
-				"borderStyleNames",
-				"borderStyleValues",
-				"borderWidthRuler",
-				"borderRadiusRuler",
-				"cb2",
-				"cb1",
-				"cb3",
-				"cb4",
-				"rb1",
-				"rb2",
-				"rb3",
-				"borderColor",
-				"paddingVerticalRuler",
-				"paddingHorizontalRuler",
-				"borderWidthInput",
-				"borderRadiusInput",
-				"PaddingTop",
-				"PaddingLeft",
-				"PaddingRight",
-				"PaddingBottom",
 				"Popup_applyMarginsTo",
 				"popPaddingTop",
 				"popPaddingBottom",
@@ -995,14 +446,6 @@
 		}
 	],
 	"editor": {
-		"groups": {
-			"Group15": [
-				"TargetSelector1",
-				"TargetSelector2",
-				"TargetSelector3",
-				"TargetSelector4"
-			]
-		},
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
@@ -1015,22 +458,9 @@
 				]
 			},
 			"View 3": {},
-			"Static pict": {
-				"objects": [
-					"MultiFrameColor"
-				]
-			},
-			"Frames": {
-				"objects": [
-					"SampleFrame3"
-				]
-			},
-			"Invisible": {
-				"objects": [
-					"FakeFocusBorderColor",
-					"btnInvisible3"
-				]
-			},
+			"Static pict": {},
+			"Frames": {},
+			"Invisible": {},
 			"View 7": {},
 			"View 8": {},
 			"View 9": {
@@ -1046,5 +476,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1574
+	"geometryStamp": 1618
 }
