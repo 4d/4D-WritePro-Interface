@@ -15,6 +15,25 @@ If (Contextual click:C713)
 		
 		Case of 
 				
+				
+			: ($item="tableSettings")
+				
+				
+				$ok:=False:C215
+				Case of 
+						
+					: (Not:C34(Undefined:C82($range.start))) && (Not:C34(Undefined:C82($range.end)))  // it's a range
+						If (WP Get elements:C1550($range; wk type table:K81:222).length>=1)
+							$ok:=True:C214
+						End if 
+						
+				End case 
+				
+				If ($ok)
+					APPEND MENU ITEM:C411($menu; "Table settings")
+					SET MENU ITEM PARAMETER:C1004($menu; -1; "tableSettings")
+				End if 
+				
 			: ($item="pictureSettings")
 				
 				
@@ -75,6 +94,10 @@ If (Contextual click:C713)
 				
 			: ($parameter="formulaSettings")
 				WP FormulaSettings()
+				
+			: ($parameter="tableSettings")
+				WP TableSettings()
+				
 		End case 
 	End if 
 	

@@ -351,7 +351,7 @@
 					"enterable": true,
 					"showSelection": true,
 					"keyboardDialect": "fr-be",
-					"contextMenu": "automatic"
+					"contextMenu": "none"
 				},
 				"Button11": {
 					"type": "button",

@@ -1,0 +1,98 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"WriteProArea": {
+					"type": "write",
+					"left": 0,
+					"top": 0,
+					"width": 680,
+					"height": 465,
+					"events": [
+						"onDataChange",
+						"onSelectionChange",
+						"onAfterEdit"
+					],
+					"contextMenu": "none",
+					"showHeaders": false,
+					"showFooters": false,
+					"showBackground": false,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"layoutMode": "embedded",
+					"dataSource": "wpTableDoc",
+					"enterable": true,
+					"focusable": true,
+					"hideFocusRing": true,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WriteProArea.4dm"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 680,
+					"left": 480,
+					"width": 90,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":xliff:cancel",
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm"
+				},
+				"Button7": {
+					"type": "button",
+					"top": 680,
+					"left": 580,
+					"width": 100,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": ":xliff:ok",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				}
+			}
+		}
+	],
+	"geometryStamp": 14,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
