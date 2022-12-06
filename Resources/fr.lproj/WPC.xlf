@@ -207,7 +207,7 @@ This file is distributed under the same license as the product package.-->
           <target>Réglages avancés…</target>
         </trans-unit>
         <trans-unit id="dOtz4kYVKAUCtHPmPtDbdw" resname="PictureAndTextboxes">
-          <source>Picture &amp; textboxes</source>
+          <source>Pictures &amp; text boxes</source>
           <target>Images &amp; zones de texte</target>
         </trans-unit>
       </group>
