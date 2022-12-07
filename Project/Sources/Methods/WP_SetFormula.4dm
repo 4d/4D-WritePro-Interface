@@ -56,33 +56,33 @@ If (Count parameters:C259=0)  // component context
 			If ($trueExpression#"")
 				
 				
-				//Case of 
-				//: (True) 
-				
-				$formula:=Formula from string:C1601($trueExpression)
-				If (Form:C1466.selection.type#2)  // not an anchored picture
-					WP INSERT FORMULA:C1703(Form:C1466.selection; $formula; wk replace:K81:177)  // direct insert from the component (should work properly starting with 279284)
-				Else 
-					Form:C1466.selection.imageFormula:=$formula
-				End if 
-				
-				//: (False)  // insert the formula in the host database context
-				//CALL FORM(Current form window; Current method name; Form.selection; $trueExpression)  // this MUST be executed in the host form
-				
-				//: (False)  // excute a hostdatabase formula to create the formula (L.E. Suggestion) // does NOT work either
-				
-				//If (Not(Undefined(Form.callback)))
-				//$formula:=Form.callback.call(Null; $trueExpression)
-				//If (Form.selection.type#2)  // not an anchored picture
-				//WP INSERT FORMULA(Form.selection; $formula; wk replace)
-				//Else 
-				//Form.selection.imageFormula:=$formula
-				//End if 
-				//Else 
-				//ALERT("No callback defined. Expression can't be inserted")
-				//End if 
-				
-				//End case 
+				Case of 
+						//: (false) 
+						
+						//  //$formula:=Formula from string($trueExpression)
+						//  //If (Form.selection.type#2)  // not an anchored picture
+						//  //WP INSERT FORMULA(Form.selection; $formula; wk replace)  // direct insert from the component (should work properly starting with 279284)
+						//  //Else 
+						//  //Form.selection.imageFormula:=$formula
+						//  //End if 
+						
+					: (True:C214)  // insert the formula in the host database context
+						CALL FORM:C1391(Current form window:C827; Current method name:C684; Form:C1466.selection; $trueExpression)  // this MUST be executed in the host form
+						
+						//: (False)  // excute a hostdatabase formula to create the formula (L.E. Suggestion)   // does NOT work either
+						
+						//If (Not(Undefined(Form.callback)))
+						//$formula:=Form.callback.call(Null; $trueExpression)
+						//If (Form.selection.type#2)  // not an anchored picture
+						//WP INSERT FORMULA(Form.selection; $formula; wk replace)
+						//Else 
+						//Form.selection.imageFormula:=$formula
+						//End if 
+						//Else 
+						//ALERT("No callback defined. Expression can't be inserted")
+						//End if 
+						
+				End case 
 				
 			End if 
 			
