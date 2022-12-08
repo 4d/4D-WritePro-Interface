@@ -19,11 +19,11 @@ APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("TextBoxes"))  //{8} 
 APPEND TO ARRAY:C911(WP_applyTo; "-")  //9
 
 APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("Table"))  //10
-APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("Cell"))  //11
+APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("LabelCells"))  //11
 
 
 //If (FORM Get current page(*)=4)
-APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("Row"))  //12
+APPEND TO ARRAY:C911(WP_applyTo; Get localized string:C991("LabelRows"))  //12
 //End if 
 
 // default value = paragraph

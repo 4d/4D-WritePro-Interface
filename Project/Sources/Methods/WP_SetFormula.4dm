@@ -100,8 +100,10 @@ Else   // host database context
 	
 	$formula:=Formula from string:C1601($trueExpression)
 	If ($WPrange.type#2)  // not an anchored picture
+		
 		WP INSERT FORMULA:C1703($WPrange; $formula; wk replace:K81:177)
-	Else 
+		
+	Else   // si anchored picture, update the attribute
 		$WPrange.imageFormula:=$formula
 	End if 
 	

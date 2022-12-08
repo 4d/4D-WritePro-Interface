@@ -1434,7 +1434,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="ZM4XpS2XvZltITmEG4voHg" resname="Row">
           <source>Row</source>
-          <target>Propriétés</target>
+          <target>Ligne</target>
         </trans-unit>
         <trans-unit id="9YY74EqftqLxbArojeDu/w" resname="Properties">
           <source>Properties</source>
