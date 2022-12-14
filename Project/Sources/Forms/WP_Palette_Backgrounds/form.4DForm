@@ -194,7 +194,7 @@
 					"top": 563,
 					"left": 170,
 					"width": 65,
-					"height": 18,
+					"height": 19,
 					"focusable": false,
 					"class": "Palette",
 					"method": "ObjectMethods/bgndSizeHorUnit.4dm",
@@ -207,7 +207,7 @@
 					"top": 589,
 					"left": 170,
 					"width": 65,
-					"height": 18,
+					"height": 19,
 					"focusable": false,
 					"class": "Palette",
 					"method": "ObjectMethods/bgndSizeVertUnit.4dm",
@@ -236,7 +236,7 @@
 					"top": 225,
 					"left": 85,
 					"width": 150,
-					"height": 17,
+					"height": 18,
 					"tooltip": ":xliff:anchorToPage",
 					"focusable": false,
 					"action": "anchorPage",
@@ -249,7 +249,7 @@
 					"top": 250,
 					"left": 85,
 					"width": 150,
-					"height": 17,
+					"height": 18,
 					"tooltip": ":xliff:AnchorToSection",
 					"focusable": false,
 					"action": "anchorSection",
@@ -263,7 +263,7 @@
 					"top": 290,
 					"left": 85,
 					"width": 150,
-					"height": 18,
+					"height": 19,
 					"events": [
 						"onClick"
 					],
@@ -354,7 +354,7 @@
 					"left": 85,
 					"top": 114,
 					"width": 150,
-					"height": 18,
+					"height": 19,
 					"events": [
 						"onDataChange"
 					],
@@ -366,7 +366,7 @@
 					"left": 85,
 					"top": 140,
 					"width": 150,
-					"height": 18,
+					"height": 19,
 					"events": [
 						"onDataChange"
 					],
@@ -378,7 +378,7 @@
 					"left": 85,
 					"top": 88,
 					"width": 150,
-					"height": 18,
+					"height": 19,
 					"events": [
 						"onDataChange"
 					],
@@ -444,7 +444,7 @@
 					"top": 460,
 					"left": 86,
 					"width": 150,
-					"height": 18,
+					"height": 19,
 					"focusable": false,
 					"class": "Palette",
 					"events": [
@@ -457,7 +457,7 @@
 					"top": 435,
 					"left": 86,
 					"width": 150,
-					"height": 18,
+					"height": 19,
 					"focusable": false,
 					"class": "Palette",
 					"events": [
@@ -470,7 +470,7 @@
 					"top": 484,
 					"left": 86,
 					"width": 150,
-					"height": 18,
+					"height": 19,
 					"focusable": false,
 					"class": "Palette",
 					"events": [
@@ -483,7 +483,7 @@
 					"top": 509,
 					"left": 86,
 					"width": 150,
-					"height": 18,
+					"height": 19,
 					"focusable": false,
 					"class": "Palette",
 					"events": [
@@ -496,7 +496,7 @@
 					"top": 534,
 					"left": 86,
 					"width": 150,
-					"height": 18,
+					"height": 19,
 					"focusable": false,
 					"class": "Palette",
 					"events": [
@@ -509,7 +509,7 @@
 					"top": 350,
 					"left": 85,
 					"width": 150,
-					"height": 18,
+					"height": 19,
 					"dataSource": "WP_applyTo",
 					"focusable": false,
 					"method": "ObjectMethods/Popup_applyMarginsTo.4dm",
@@ -535,7 +535,7 @@
 					"top": 406,
 					"left": 150,
 					"width": 85,
-					"height": 18,
+					"height": 19,
 					"events": [
 						"onClick"
 					],
@@ -549,7 +549,7 @@
 					"top": 382,
 					"left": 150,
 					"width": 85,
-					"height": 18,
+					"height": 19,
 					"events": [
 						"onClick"
 					],
@@ -695,5 +695,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1443
+	"geometryStamp": 1550
 }

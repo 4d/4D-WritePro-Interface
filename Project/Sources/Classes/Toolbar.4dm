@@ -160,7 +160,7 @@ Function activate($btnName : Text)
 		OBJECT SET RGB COLORS:C628(*; "tabBtn_"+$btn; This:C1470.separatorFontColor; This:C1470.separatorFontColor)
 	End for each 
 	
-	OBJECT SET FONT STYLE:C166(*; "tabBtn_"+$btnName; Bold:K14:2)
+	//OBJECT SET FONT STYLE(*; "tabBtn_"+$btnName; Bold)
 	
 	OBJECT SET RGB COLORS:C628(*; "tabRect_"+$btnName; This:C1470.backgroundColor; This:C1470.backgroundColor)
 	OBJECT SET RGB COLORS:C628(*; "tabBtn_"+$btnName; This:C1470.fontColor; This:C1470.fontColor)
@@ -169,6 +169,7 @@ Function redraw()
 	This:C1470._alignButtons()
 	
 	//////////////////// PRIVATE FUNCTIONS ///////////////////////////
+	
 Function _alignButtons
 	
 	

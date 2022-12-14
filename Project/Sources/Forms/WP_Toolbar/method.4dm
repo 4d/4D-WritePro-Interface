@@ -35,14 +35,14 @@ Case of
 			"ImportExport"; \
 			"FindAndReplace")
 		
-		For each ($buttonName; $_buttonNames)
-			OBJECT SET FONT STYLE:C166(*; "tabBtn_"+$buttonName; Bold:K14:2)  // Temporary to be sure they fit in space
-		End for each 
+		//For each ($buttonName; $_buttonNames)
+		//OBJECT SET FONT STYLE(*; "tabBtn_"+$buttonName; Bold)  // Temporary to be sure they fit in space
+		//End for each 
 		
 		oForm.ToolbarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")  // create CLASS
 		
 		//oForm.ToolbarTabs.setButtonSizes(50; 20)  // width (temp) and height (fixed)
-		oForm.ToolbarTabs.setLabelMargins(6; 6)  //2px label margins
+		oForm.ToolbarTabs.setLabelMargins(5; 5)  //2px label margins
 		oForm.ToolbarTabs.setButtonMargins(0; 0; 3; 0)  // left - top - right - bottom
 		oForm.ToolbarTabs.pageIndexes:=New collection:C1472(1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11)
 		
