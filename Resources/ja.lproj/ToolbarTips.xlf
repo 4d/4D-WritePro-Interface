@@ -1,1 +1,573 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?><!--Translation file.This file is distributed under the same license as the product package.--><xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">  <file datatype="plaintext" original="Undefined" source-language="en" target-language="ja">    <header>      <prop-group name="Xliff-Editor.4dbase">        <prop prop-type="version">2.0</prop>      </prop-group>    </header>    <body>      <group resname="Tips">        <trans-unit id="84" resname="alignBottom">          <source>Align bottom</source>          <target>‰∏ãÊèÉ„Åà</target>        </trans-unit>        <trans-unit id="85" resname="alignCenter">          <source>Align center</source>          <target>‰∏≠Â§ÆÊèÉ„Åà</target>        </trans-unit>        <trans-unit id="28" resname="alignLeft">          <source>Align left</source>          <target>Â∑¶ÊèÉ„Åà</target>        </trans-unit>        <trans-unit id="86" resname="alignMiddle">          <source>Align middle</source>          <target>‰∏≠Â§ÆÊèÉ„Åà</target>        </trans-unit>        <trans-unit id="30" resname="alignRight">          <source>Align right</source>          <target>Âè≥ÊèÉ„Åà</target>        </trans-unit>        <trans-unit id="83" resname="alignTop">          <source>Align top</source>          <target>‰∏äÊèÉ„Åà</target>        </trans-unit>        <trans-unit id="88" resname="anchorToPage">          <source>Anchor to page</source>          <target>„Éö„Éº„Ç∏„Å´„Ç¢„É≥„Ç´„Éº„Åô„Çã</target>        </trans-unit>        <trans-unit id="89" resname="AnchorToSection">          <source>Anchor to section</source>          <target>„Çª„ÇØ„Ç∑„Éß„É≥„Å´„Ç¢„É≥„Ç´„Éº„Åô„Çã</target>        </trans-unit>        <trans-unit id="95" resname="autoCorrection">          <source>Auto correction</source>          <target>Ëá™ÂãïË£úÊ≠£</target>        </trans-unit>        <trans-unit id="101" resname="autoDashSubstitutionsEnabled">          <source>Auto dash substitutions enabled</source>          <target>Ëá™Âãï„ÉÄ„ÉÉ„Ç∑„É•ÁΩÆÊèõ„ÅåÊúâÂäπÂåñ„Åï„Çå„Å¶„ÅÑ„Åæ„Åô</target>        </trans-unit>        <trans-unit id="99" resname="autoLanguageEnabled">          <source>Auto language enabled</source>          <target>Ëá™ÂãïË®ÄË™ûË≠òÂà•„ÅåÊúâÂäπÂåñ„Åï„Çå„Å¶„ÅÑ„Åæ„Åô</target>        </trans-unit>        <trans-unit id="100" resname="autoQuoteSubstitutionsEnabled">          <source>Auto quote substitutions enabled</source>          <target>Ëá™ÂãïÂºïÁî®Á¨¶ÁΩÆÊèõ„ÅåÊúâÂäπÂåñ„Åï„Çå„Å¶„ÅÑ„Åæ„Åô</target>        </trans-unit>        <trans-unit id="13" resname="backgroundColor">          <source>Background color</source>          <target>ËÉåÊôØËâ≤</target>        </trans-unit>        <trans-unit id="C8Wsy43/ujRB778hdZvH1w" resname="bold">          <source>Bold</source>          <target>Â§™Â≠ó</target>        </trans-unit>        <trans-unit id="80" resname="borderBottom">          <source>Bottom border</source>          <target>‰∏ãÂ¢ÉÁïåÁ∑ö</target>        </trans-unit>        <trans-unit id="77" resname="borderLeft">          <source>Left border</source>          <target>Â∑¶Â¢ÉÁïåÁ∑ö</target>        </trans-unit>        <trans-unit id="78" resname="borderRight">          <source>Right border</source>          <target>Âè≥Â¢ÉÁïåÁ∑ö</target>        </trans-unit>        <trans-unit id="75" resname="bordersAll">          <source>Borders</source>          <target>Â¢ÉÁïåÁ∑ö</target>        </trans-unit>        <trans-unit id="83" resname="bordersColor">          <source>Borders color</source>          <target>Â¢ÉÁïåÁ∑ö„Ç´„É©„Éº</target>        </trans-unit>        <trans-unit id="85" resname="bordersNone">          <source>No borders</source>          <target>Â¢ÉÁïåÁ∑ö„Å™„Åó</target>        </trans-unit>        <trans-unit id="86" resname="bordersStyle">          <source>Border style</source>          <target>Â¢ÉÁïåÁ∑ö„Çπ„Çø„Ç§„É´</target>        </trans-unit>        <trans-unit id="79" resname="borderTop">          <source>Top border</source>          <target>‰∏äÂ¢ÉÁïåÁ∑ö</target>        </trans-unit>        <trans-unit id="108" resname="borderWidth">          <source>Border width</source>          <target>Â¢ÉÁïåÁ∑öÂπÖ</target>        </trans-unit>        <trans-unit id="29" resname="center">          <source>Center</source>          <target>‰∏≠Â§Æ</target>        </trans-unit>        <trans-unit id="20" resname="clear">          <source>Clear</source>          <target>Ê∂àÂéª</target>        </trans-unit>        <trans-unit id="37" resname="columnRuleColor">          <source>Column rule color</source>          <target>Âå∫Âàá„ÇäÁ∑ö„Ç´„É©„Éº</target>        </trans-unit>        <trans-unit id="35" resname="columnRuleStyle">          <source>Column rule style</source>          <target>Âå∫Âàá„ÇäÁ∑ö„Çπ„Çø„Ç§„É´</target>        </trans-unit>        <trans-unit id="36" resname="columnRuleWidth">          <source>Column rule width</source>          <target>Âå∫Âàá„ÇäÁ∑öÂπÖ</target>        </trans-unit>        <trans-unit id="32" resname="columnsCount">          <source>Column count</source>          <target>„Ç´„É©„É†Êï∞</target>        </trans-unit>        <trans-unit id="33" resname="columnsSpacing">          <source>Columns spacing</source>          <target>„Ç´„É©„É†„Çπ„Éö„Éº„Çπ</target>        </trans-unit>        <trans-unit id="49" resname="compute4Dexpressions">          <source>Compute 4D expressions</source>          <target>4DÂºè„ÇíË®àÁÆó</target>        </trans-unit>        <trans-unit id="17" resname="copy">          <source>Copy</source>          <target>„Ç≥„Éî„Éº</target>        </trans-unit>        <trans-unit id="16" resname="cut">          <source>Cut</source>          <target>„Ç´„ÉÉ„Éà</target>        </trans-unit>        <trans-unit id="108" resname="enableGrammar">          <source>Enable grammar</source>          <target>ÊñáÊ≥ï„ÉÅ„Çß„ÉÉ„ÇØ„ÇíÊúâÂäπÂåñ</target>        </trans-unit>        <trans-unit id="90" resname="enableSpell">          <source>Spellcheck</source>          <target>„Çπ„Éö„É´„ÉÅ„Çß„ÉÉ„ÇØ</target>        </trans-unit>        <trans-unit id="97" resname="enableSubstitution">          <source>Activate system substitution</source>          <target>„Ç∑„Çπ„ÉÜ„É†„ÅÆÁΩÆÊèõ„ÇíÊúâÂäπÂåñ</target>        </trans-unit>        <trans-unit id="18" resname="fontSizeDown">          <source>Font size down</source>          <target>„Éï„Ç©„É≥„Éà„Çµ„Ç§„Ç∫Á∏ÆÂ∞è</target>        </trans-unit>        <trans-unit id="15" resname="fontSizeUp">          <source>Font size up</source>          <target>„Éï„Ç©„É≥„Éà„Çµ„Ç§„Ç∫Êã°Â§ß</target>        </trans-unit>        <trans-unit id="96" resname="forgetIgnore">          <source>Forget/Ignore</source>          <target>ËæûÊõ∏„Åã„ÇâÊ∂àÂéª/ÁÑ°Ë¶ñ</target>        </trans-unit>        <trans-unit id="47" resname="freeze4DExpressions">          <source>Freeze 4D expressions</source>          <target>4DÂºè„ÇíÂõ∫ÂÆöÂåñ</target>        </trans-unit>        <trans-unit id="91" resname="ignore">          <source>Ignore</source>          <target>ÁÑ°Ë¶ñ</target>        </trans-unit>        <trans-unit id="50" resname="insertColumnBreak">          <source>Insert column break</source>          <target>„Ç´„É©„É†„Éñ„É¨„Éº„ÇØ„ÇíÊåøÂÖ•</target>        </trans-unit>        <trans-unit id="43" resname="insertDate">          <source>Insert date</source>          <target>Êó•‰ªò„ÇíÊåøÂÖ•</target>        </trans-unit>        <trans-unit id="45" resname="insertExpression">          <source>Insert 4D expression</source>          <target>4DÂºè„ÇíÊåøÂÖ•</target>        </trans-unit>        <trans-unit id="51" resname="insertPageBreak">          <source>Insert page break</source>          <target>Êîπ„Éö„Éº„Ç∏„ÇíÊåøÂÖ•</target>        </trans-unit>        <trans-unit id="42" resname="insertPageCount">          <source>Insert page count</source>          <target>„Éö„Éº„Ç∏Êï∞„ÇíÊåøÂÖ•</target>        </trans-unit>        <trans-unit id="41" resname="insertPageNumber">          <source>Insert page number</source>          <target>„Éö„Éº„Ç∏Áï™Âè∑„ÇíÊåøÂÖ•</target>        </trans-unit>        <trans-unit id="55" resname="insertPicture">          <source>Insert picture‚Ä¶</source>          <target>„Éî„ÇØ„ÉÅ„É£„Éº„ÇíÊåøÂÖ•‚Ä¶</target>        </trans-unit>        <trans-unit id="54" resname="insertSectionbreak">          <source>Insert section break</source>          <target>„Çª„ÇØ„Ç∑„Éß„É≥„Éñ„É¨„Éº„ÇØ„ÇíÊåøÂÖ•</target>        </trans-unit>        <trans-unit id="44" resname="InsertTime">          <source>Insert time</source>          <target>ÊôÇÈñì„ÇíÊåøÂÖ•</target>        </trans-unit>        <trans-unit id="cEo5vs49yB1ZwEbYr1xONw" resname="italic">          <source>Italic</source>          <target>„Ç§„Çø„É™„ÉÉ„ÇØ</target>        </trans-unit>        <trans-unit id="31" resname="justify">          <source>Justify</source>          <target>ÂùáÁ≠âÊèÉ„Åà</target>        </trans-unit>        <trans-unit id="94" resname="learn">          <source>Add to dictionary</source>          <target>ËæûÊõ∏„Å´ËøΩÂä†</target>        </trans-unit>        <trans-unit id="19" resname="lists">          <source>Lists</source>          <target>„É™„Çπ„Éà</target>        </trans-unit>        <trans-unit id="64" resname="marginBottom">          <source>Bottom margin</source>          <target>‰∏ã„Éû„Éº„Ç∏„É≥</target>        </trans-unit>        <trans-unit id="62" resname="marginLeft">          <source>Left margin</source>          <target>Â∑¶„Éû„Éº„Ç∏„É≥</target>        </trans-unit>        <trans-unit id="61" resname="marginRight">          <source>Right margin</source>          <target>Âè≥„Éû„Éº„Ç∏„É≥</target>        </trans-unit>        <trans-unit id="63" resname="marginTop">          <source>Top margin</source>          <target>‰∏ä„Éû„Éº„Ç∏„É≥</target>        </trans-unit>        <trans-unit id="40" resname="modeDraft">          <source>Draft mode</source>          <target>‰∏ãÊõ∏„Åç„É¢„Éº„Éâ</target>        </trans-unit>        <trans-unit id="39" resname="modeEmbedded">          <source>Web mode</source>          <target>Web„É¢„Éº„Éâ</target>        </trans-unit>        <trans-unit id="38" resname="modePage">          <source>Page mode</source>          <target>„Éö„Éº„Ç∏„É¢„Éº„Éâ</target>        </trans-unit>        <trans-unit id="86" resname="movetoBack">          <source>Move to back</source>          <target>ËÉåÂæå„Å´ÁßªÂãï</target>        </trans-unit>        <trans-unit id="87" resname="moveToFront">          <source>Move to front</source>          <target>ÂâçÈù¢„Å´ÁßªÂãï</target>        </trans-unit>        <trans-unit id="73" resname="paddingBottom">          <source>Bottom padding</source>          <target>‰∏ã„Éë„ÉÉ„Éá„Ç£„É≥„Ç∞</target>        </trans-unit>        <trans-unit id="71" resname="paddingLeft">          <source>Left padding</source>          <target>Â∑¶„Éë„ÉÉ„Éá„Ç£„É≥„Ç∞</target>        </trans-unit>        <trans-unit id="70" resname="paddingRight">          <source>Right padding</source>          <target>Âè≥„Éë„ÉÉ„Éá„Ç£„É≥„Ç∞</target>        </trans-unit>        <trans-unit id="72" resname="paddingTop">          <source>Top padding</source>          <target>‰∏ä„Éë„ÉÉ„Éá„Ç£„É≥„Ç∞</target>        </trans-unit>        <trans-unit id="107" resname="pageOrientation">          <source>Page orientation</source>          <target>„Éö„Éº„Ç∏ÊñπÂêë</target>        </trans-unit>        <trans-unit id="106" resname="pageSize">          <source>Page size</source>          <target>„Éö„Éº„Ç∏„Çµ„Ç§„Ç∫</target>        </trans-unit>        <trans-unit id="87" resname="paragraphs">          <source>Paragraphs</source>          <target>ÊÆµËêΩ</target>        </trans-unit>        <trans-unit id="15" resname="paste">          <source>Paste</source>          <target>„Éö„Éº„Çπ„Éà</target>        </trans-unit>        <trans-unit id="103" resname="preview">          <source>Preview</source>          <target>„Éó„É¨„Éì„É•„Éº</target>        </trans-unit>        <trans-unit id="105" resname="print">          <source>Print</source>          <target>Âç∞Âà∑</target>        </trans-unit>        <trans-unit id="26" resname="redo">          <source>Redo</source>          <target>„ÇÑ„ÇäÁõ¥„Åó</target>        </trans-unit>        <trans-unit id="98" resname="removeSubstitution">          <source>Remove substitutions</source>          <target>Ëá™ÂãïÁΩÆÊèõ„ÇíÂâäÈô§</target>        </trans-unit>        <trans-unit id="24" resname="selectAll">          <source>Select all</source>          <target>„Åô„Åπ„Å¶„ÇíÈÅ∏Êäû</target>        </trans-unit>        <trans-unit id="12" resname="shadowColor">          <source>Shadow color</source>          <target>„Ç∑„É£„Éâ„Ç¶„Ç´„É©„Éº</target>        </trans-unit>        <trans-unit id="48" resname="showHide4Dexpressions">          <source>Show / hide 4D expressions</source>          <target>4DÂºè„ÇíË°®Á§∫/ÈùûË°®Á§∫</target>        </trans-unit>        <trans-unit id="57" resname="showHideFooters">          <source>Show / hide footers</source>          <target>„Éï„ÉÉ„Çø„Éº„ÇíË°®Á§∫/ÈùûË°®Á§∫</target>        </trans-unit>        <trans-unit id="53" resname="showHideFrames">          <source>Show / hide frames</source>          <target>„Éï„É¨„Éº„É†„ÇíË°®Á§∫/ÈùûË°®Á§∫</target>        </trans-unit>        <trans-unit id="56" resname="showHideHeaders">          <source>Show / hide headers</source>          <target>„Éò„ÉÉ„ÉÄ„Éº„ÇíË°®Á§∫/ÈùûË°®Á§∫</target>        </trans-unit>        <trans-unit id="54" resname="showHideHiddenChars">          <source>Show / hide hidden chars</source>          <target>ÈùûË°®Á§∫ÊñáÂ≠ó„ÇíË°®Á§∫/ÈùûË°®Á§∫</target>        </trans-unit>        <trans-unit id="56" resname="showHideHiddenHorizontalRuler">          <source>Show / hide horizontal ruler</source>          <target>Ê∞¥Âπ≥„É´„Éº„É©„Éº„ÇíË°®Á§∫/ÈùûË°®Á§∫</target>        </trans-unit>        <trans-unit id="57" resname="showHideHiddenVerticalRuler">          <source>Show / hide vertical ruler</source>          <target>ÂûÇÁõ¥„É´„Éº„É©„Éº„ÇíË°®Á§∫/ÈùûË°®Á§∫</target>        </trans-unit>        <trans-unit id="108" resname="size">          <source>Size</source>          <target>„Çµ„Ç§„Ç∫</target>        </trans-unit>        <trans-unit id="102" resname="spellDialog">          <source>Spell dialog</source>          <target>„Çπ„Éö„É´„ÉÄ„Ç§„Ç¢„É≠„Ç∞</target>        </trans-unit>        <trans-unit id="FF84ifbM0/hfJWYZADoijw" resname="strikethrough">          <source>Strikethrough</source>          <target>Êâì„Å°Ê∂à„ÅóÁ∑ö</target>        </trans-unit>        <trans-unit id="nvL9AHzG+Ay7K5oDe3+3PA" resname="subscript">          <source>Subscript</source>          <target>‰∏ã„Å§„ÅçÊñáÂ≠ó</target>        </trans-unit>        <trans-unit id="110" resname="substitutions">          <source>Show / hide substitutions</source>          <target>Ëá™ÂãïÁΩÆÊèõ„ÇíË°®Á§∫/ÈùûË°®Á§∫</target>        </trans-unit>        <trans-unit id="11" resname="superscript">          <source>Superscript</source>          <target>‰∏ä„Å§„ÅçÊñáÂ≠ó</target>        </trans-unit>        <trans-unit id="14" resname="textColor">          <source>Text Color</source>          <target>„ÉÜ„Ç≠„Çπ„Éà„Ç´„É©„Éº</target>        </trans-unit>        <trans-unit id="CJ3FnhEpbQLw70i97DXISA" resname="underline">          <source>Underline</source>          <target>‰∏ãÁ∑ö</target>        </trans-unit>        <trans-unit id="82" resname="undo">          <source>Undo</source>          <target>Âèñ„ÇäÊ∂à„Åó</target>        </trans-unit>        <trans-unit id="93" resname="unlearn">          <source>Remove from dictionary</source>          <target>ËæûÊõ∏„Åã„ÇâÂâäÈô§</target>        </trans-unit>        <trans-unit id="81" resname="zoom">          <source>Zoom</source>          <target>„Ç∫„Éº„É†</target>        </trans-unit>        <trans-unit id="PjDICmJfB+IqPGQcyvXkNA" resname="protectParagraph">          <source>Protect paragraph</source>          <target>ÊÆµËêΩ„Çí„Éó„É≠„ÉÜ„ÇØ„Éà„Åô„Çã</target>        </trans-unit>        <trans-unit id="hGxsyWJ4OuFZ0mdV7Aw1hA" resname="protectTable">          <source>Protect table</source>          <target>Ë°®„Çí„Éó„É≠„ÉÜ„ÇØ„Éà„Åô„Çã</target>        </trans-unit>        <trans-unit id="PtipgXThmjnu0yKMcKTmBw" resname="protectRow">          <source>Protect row</source>          <target>Ë°å„Çí„Éó„É≠„ÉÜ„ÇØ„Éà„Åô„Çã</target>        </trans-unit>        <trans-unit id="XIc4CBvMQWzefZfhtU+Fog" resname="protectCell">          <source>Protect cell</source>          <target>„Çª„É´„Çí„Éó„É≠„ÉÜ„ÇØ„Éà„Åô„Çã</target>        </trans-unit>        <trans-unit id="WTkM05EEsc772zfzDM6Jwg" resname="protectDocument">          <source>Enable document protection</source>          <target>„Éâ„Ç≠„É•„É°„É≥„Éà„ÅÆ„Éó„É≠„ÉÜ„ÇØ„Ç∑„Éß„É≥„ÇíÊúâÂäπÂåñ</target>        </trans-unit>        <trans-unit id="f4FmDAwxzQUZfL8FuuLc0g" resname="import">          <source>Import</source>          <target>Ë™≠„ÅøËæº„Åø</target>        </trans-unit>        <trans-unit id="5J6VhIDdsPnJrL/4yXzTHw" resname="export">          <source>Export</source>          <target>Êõ∏„ÅçÂá∫„Åó</target>        </trans-unit>        <trans-unit id="/CMBzGF25LWzqcDFGiS6sA" resname="InsertSoftHyphen">          <source>Insert soft hyphen</source>          <target>„ÇΩ„Éï„Éà„Éè„Ç§„Éï„É≥„ÇíÊåøÂÖ•</target>        </trans-unit>        <trans-unit id="ZLC852EL1drI+I11mR0Tvg" resname="RemoveSoftHyphen">          <source>Remove soft hyphen</source>          <target>„ÇΩ„Éï„Éà„Éè„Ç§„Éï„É≥„ÇíÂâäÈô§</target>        </trans-unit>        <trans-unit id="nkUFnYv0Dk1wv6yHCjjgqQ" resname="insertContinuousPageBreak">          <source>Insert continuous page break</source>          <target>Á∂ôÁ∂ö„Åó„ÅüÊîπ„Éö„Éº„Ç∏„ÇíÊåøÂÖ•</target>        </trans-unit>        <trans-unit id="4CkYikT+ULlL5PCYMO32fA" resname="edit">          <source>Edit</source>          <target>Á∑®ÈõÜ</target>        </trans-unit>        <trans-unit id="QOb/KgQRLtlJ9bxSHsL+hQ" resname="paragraphSettings">          <source>Paragraph settings</source>          <target>ÊÆµËêΩË®≠ÂÆö</target>        </trans-unit>        <trans-unit id="qVqquxTVolQoqo/2HDQchQ" resname="DocumentInfo">          <source>Document information</source>          <target>„Éâ„Ç≠„É•„É°„É≥„ÉàÊÉÖÂ†±</target>        </trans-unit>        <trans-unit id="xB2/MofqT/+E9+utQApmQA" resname="MoreTextSettings">          <source>More text settings</source>          <target>Ë©≥Á¥∞„Å™„ÉÜ„Ç≠„Çπ„ÉàË®≠ÂÆö</target>        </trans-unit>        <trans-unit id="usmFit13wk3qE3iKTaF/YA" resname="Radius">          <source>Radius</source>          <target>ÂçäÂæÑ</target>        </trans-unit>        <trans-unit id="YHVwqX8XI8m8DMYdgvHX3Q" resname="InsertDocumentInfo">          <source>Insert document information</source>          <target>„Éâ„Ç≠„É•„É°„É≥„ÉàÊÉÖÂ†±„ÇíÊåøÂÖ•</target>        </trans-unit>        <trans-unit id="hnQ1aCT77wrAYUrIuNJaDg" resname="ColumnSettings">          <source>Column settings</source>          <target>„Ç´„É©„É†Ë®≠ÂÆö</target>        </trans-unit>        <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">          <source>Insert a text box</source>          <target state="new">Insert a text box</target>        </trans-unit>      </group>      <group resname="Tabs">        <trans-unit id="24" resname="borders">          <source>Borders</source>          <target>Â¢ÉÁïåÁ∑ö</target>        </trans-unit>        <trans-unit id="21" resname="Home">          <source>Home</source>          <target>„Éõ„Éº„É†</target>        </trans-unit>        <trans-unit id="26" resname="images">          <source>Images</source>          <target>ÁîªÂÉè</target>        </trans-unit>        <trans-unit id="22" resname="insertAndView">          <source>Insert &amp; View</source>          <target>ÊåøÂÖ• &amp; „Éì„É•„Éº</target>        </trans-unit>        <trans-unit id="25" resname="margins">          <source>Margins</source>          <target>„Éû„Éº„Ç∏„É≥</target>        </trans-unit>        <trans-unit id="27" resname="print">          <source>Print</source>          <target>Âç∞Âà∑</target>        </trans-unit>        <trans-unit id="28" resname="spell">          <source>Spell &amp; Gram.</source>          <target>„Çπ„Éö„É´ &amp; ÊñáÊ≥ï</target>        </trans-unit>        <trans-unit id="5Z6VRDjZQZ7WPdlb+giy5g" resname="protection">          <source>Protection</source>          <target>„Éó„É≠„ÉÜ„ÇØ„Ç∑„Éß„É≥</target>        </trans-unit>        <trans-unit id="1u02Lw6NTI7jpeJX1CLp2A" resname="importExport">          <source>Import Export</source>          <target>Ë™≠„ÅøËæº„Åø Êõ∏„ÅçÂá∫„Åó</target>        </trans-unit>        <trans-unit id="TklbnlJH6IlPhKZlBsEMkg" resname="bookmarks">          <source>Bookmarks</source>          <target>„Éñ„ÉÉ„ÇØ„Éû„Éº„ÇØ</target>        </trans-unit>        <trans-unit id="jommi73R0Dp87QF5h4UANw" resname="formulaInfo">          <source>Formulas and information</source>          <target>„Éï„Ç©„Éº„Éü„É•„É©„Å®ÊÉÖÂ†±</target>        </trans-unit>        <trans-unit id="NKCIqThMk09ZY+qSWR4zRw" resname="background">          <source>Background</source>          <target>ËÉåÊôØ</target>        </trans-unit>        <trans-unit id="sFQsGsLwXPZnU/DjSqlmsw" resname="unitsAndSizes">          <source>Units and sizes</source>          <target>Âçò‰Ωç„Å®„Çµ„Ç§„Ç∫</target>        </trans-unit>        <trans-unit id="27FB4/hz8xoNjYSQHbk5cg" resname="tabulations">          <source>Tabulations</source>          <target>„Çø„ÉñÂàÜ„Åë</target>        </trans-unit>      </group>      <group resname="Labels">        <trans-unit id="57" resname="applyMarginsTo">          <source>Apply margins and padding to‚Ä¶</source>          <target>„Éû„Éº„Ç∏„É≥„Å®„Éë„ÉÉ„Éá„Ç£„É≥„Ç∞„ÇíÈÅ©Áî®‚Ä¶</target>        </trans-unit>        <trans-unit id="59" resname="sections">          <source>Sections</source>          <target>„Çª„ÇØ„Ç∑„Éß„É≥</target>        </trans-unit>        <trans-unit id="60" resname="pictures">          <source>Pictures</source>          <target>„Éî„ÇØ„ÉÅ„É£„Éº</target>        </trans-unit>        <trans-unit id="74" resname="applyBordersTo">          <source>Apply borders to‚Ä¶</source>          <target>Â¢ÉÁïåÁ∑ö„ÇíÈÅ©Áî®‚Ä¶</target>        </trans-unit>        <trans-unit id="zBez708L9OKugb+NacL/wg" resname="document">          <source>Document</source>          <target>„Éâ„Ç≠„É•„É°„É≥„Éà</target>        </trans-unit>        <trans-unit id="6XaBEYjv65KnAQo0lgIBJA" resname="headers">          <source>Headers</source>          <target>„Éò„ÉÉ„ÉÄ„Éº</target>        </trans-unit>        <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">          <source>Footers</source>          <target>„Éï„ÉÉ„Çø„Éº</target>        </trans-unit>        <trans-unit id="an7Gfwv2eaZPtYEu4Dtf2A" resname="TextBoxes">          <source>Text boxes</source>          <target state="new">Text boxes</target>        </trans-unit>      </group>    </body>  </file></xliff>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--Translation file.This file is distributed under the same license as the product package.-->
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+
+  <file datatype="plaintext" original="Undefined" source-language="en" target-language="ja">
+    <header>
+      <prop-group name="Xliff-Editor.4dbase">
+        <prop prop-type="version">2.0</prop>
+      </prop-group>
+    </header>
+    <body>
+      <group resname="Tips">
+        <trans-unit id="84" resname="alignBottom">
+          <source>Align bottom</source>
+          <target>下揃え</target>
+        </trans-unit>
+        <trans-unit id="85" resname="alignCenter">
+          <source>Align center</source>
+          <target>中央揃え</target>
+        </trans-unit>
+        <trans-unit id="28" resname="alignLeft">
+          <source>Align left</source>
+          <target>左揃え</target>
+        </trans-unit>
+        <trans-unit id="86" resname="alignMiddle">
+          <source>Align middle</source>
+          <target>中央揃え</target>
+        </trans-unit>
+        <trans-unit id="30" resname="alignRight">
+          <source>Align right</source>
+          <target>右揃え</target>
+        </trans-unit>
+        <trans-unit id="83" resname="alignTop">
+          <source>Align top</source>
+          <target>上揃え</target>
+        </trans-unit>
+        <trans-unit id="88" resname="anchorToPage">
+          <source>Anchor to page</source>
+          <target>ページにアンカーする</target>
+        </trans-unit>
+        <trans-unit id="89" resname="AnchorToSection">
+          <source>Anchor to section</source>
+          <target>セクションにアンカーする</target>
+        </trans-unit>
+        <trans-unit id="95" resname="autoCorrection">
+          <source>Auto correction</source>
+          <target>自動補正</target>
+        </trans-unit>
+        <trans-unit id="101" resname="autoDashSubstitutionsEnabled">
+          <source>Auto dash substitutions enabled</source>
+          <target>自動ダッシュ置換が有効化されています</target>
+        </trans-unit>
+        <trans-unit id="99" resname="autoLanguageEnabled">
+          <source>Auto language enabled</source>
+          <target>自動言語識別が有効化されています</target>
+        </trans-unit>
+        <trans-unit id="100" resname="autoQuoteSubstitutionsEnabled">
+          <source>Auto quote substitutions enabled</source>
+          <target>自動引用符置換が有効化されています</target>
+        </trans-unit>
+        <trans-unit id="13" resname="backgroundColor">
+          <source>Background color</source>
+          <target>背景色</target>
+        </trans-unit>
+        <trans-unit id="C8Wsy43/ujRB778hdZvH1w" resname="bold">
+          <source>Bold</source>
+          <target>太字</target>
+        </trans-unit>
+        <trans-unit id="80" resname="borderBottom">
+          <source>Bottom border</source>
+          <target>下境界線</target>
+        </trans-unit>
+        <trans-unit id="77" resname="borderLeft">
+          <source>Left border</source>
+          <target>左境界線</target>
+        </trans-unit>
+        <trans-unit id="78" resname="borderRight">
+          <source>Right border</source>
+          <target>右境界線</target>
+        </trans-unit>
+        <trans-unit id="75" resname="bordersAll">
+          <source>Borders</source>
+          <target>境界線</target>
+        </trans-unit>
+        <trans-unit id="83" resname="bordersColor">
+          <source>Borders color</source>
+          <target>境界線カラー</target>
+        </trans-unit>
+        <trans-unit id="85" resname="bordersNone">
+          <source>No borders</source>
+          <target>境界線なし</target>
+        </trans-unit>
+        <trans-unit id="86" resname="bordersStyle">
+          <source>Border style</source>
+          <target>境界線スタイル</target>
+        </trans-unit>
+        <trans-unit id="79" resname="borderTop">
+          <source>Top border</source>
+          <target>上境界線</target>
+        </trans-unit>
+        <trans-unit id="108" resname="borderWidth">
+          <source>Border width</source>
+          <target>境界線幅</target>
+        </trans-unit>
+        <trans-unit id="29" resname="center">
+          <source>Center</source>
+          <target>中央</target>
+        </trans-unit>
+        <trans-unit id="20" resname="clear">
+          <source>Clear</source>
+          <target>消去</target>
+        </trans-unit>
+        <trans-unit id="37" resname="columnRuleColor">
+          <source>Column rule color</source>
+          <target>区切り線カラー</target>
+        </trans-unit>
+        <trans-unit id="35" resname="columnRuleStyle">
+          <source>Column rule style</source>
+          <target>区切り線スタイル</target>
+        </trans-unit>
+        <trans-unit id="36" resname="columnRuleWidth">
+          <source>Column rule width</source>
+          <target>区切り線幅</target>
+        </trans-unit>
+        <trans-unit id="32" resname="columnsCount">
+          <source>Column count</source>
+          <target>カラム数</target>
+        </trans-unit>
+        <trans-unit id="33" resname="columnsSpacing">
+          <source>Columns spacing</source>
+          <target>カラムスペース</target>
+        </trans-unit>
+        <trans-unit id="49" resname="compute4Dexpressions">
+          <source>Compute 4D expressions</source>
+          <target>4D式を計算</target>
+        </trans-unit>
+        <trans-unit id="17" resname="copy">
+          <source>Copy</source>
+          <target>コピー</target>
+        </trans-unit>
+        <trans-unit id="16" resname="cut">
+          <source>Cut</source>
+          <target>カット</target>
+        </trans-unit>
+        <trans-unit id="108" resname="enableGrammar">
+          <source>Enable grammar</source>
+          <target>文法チェックを有効化</target>
+        </trans-unit>
+        <trans-unit id="90" resname="enableSpell">
+          <source>Spellcheck</source>
+          <target>スペルチェック</target>
+        </trans-unit>
+        <trans-unit id="97" resname="enableSubstitution">
+          <source>Activate system substitution</source>
+          <target>システムの置換を有効化</target>
+        </trans-unit>
+        <trans-unit id="18" resname="fontSizeDown">
+          <source>Font size down</source>
+          <target>フォントサイズ縮小</target>
+        </trans-unit>
+        <trans-unit id="15" resname="fontSizeUp">
+          <source>Font size up</source>
+          <target>フォントサイズ拡大</target>
+        </trans-unit>
+        <trans-unit id="96" resname="forgetIgnore">
+          <source>Forget/Ignore</source>
+          <target>辞書から消去/無視</target>
+        </trans-unit>
+        <trans-unit id="47" resname="freeze4DExpressions">
+          <source>Freeze 4D expressions</source>
+          <target>4D式を固定化</target>
+        </trans-unit>
+        <trans-unit id="91" resname="ignore">
+          <source>Ignore</source>
+          <target>無視</target>
+        </trans-unit>
+        <trans-unit id="78" resname="imageBehind">
+          <source>Image behind text</source>
+          <target>テキストの背景に画像</target>
+        </trans-unit>
+        <trans-unit id="80" resname="imageInFront">
+          <source>Image in front of text</source>
+          <target>テキストの前面に画像</target>
+        </trans-unit>
+        <trans-unit id="79" resname="imageInline">
+          <source>Image inline with text</source>
+          <target>テキストインライン画像</target>
+        </trans-unit>
+        <trans-unit id="50" resname="insertColumnBreak">
+          <source>Insert column break</source>
+          <target>カラムブレークを挿入</target>
+        </trans-unit>
+        <trans-unit id="43" resname="insertDate">
+          <source>Insert date</source>
+          <target>日付を挿入</target>
+        </trans-unit>
+        <trans-unit id="45" resname="insertExpression">
+          <source>Insert 4D expression</source>
+          <target>4D式を挿入</target>
+        </trans-unit>
+        <trans-unit id="51" resname="insertPageBreak">
+          <source>Insert page break</source>
+          <target>改ページを挿入</target>
+        </trans-unit>
+        <trans-unit id="42" resname="insertPageCount">
+          <source>Insert page count</source>
+          <target>ページ数を挿入</target>
+        </trans-unit>
+        <trans-unit id="41" resname="insertPageNumber">
+          <source>Insert page number</source>
+          <target>ページ番号を挿入</target>
+        </trans-unit>
+        <trans-unit id="55" resname="insertPicture">
+          <source>Insert picture…</source>
+          <target>ピクチャーを挿入…</target>
+        </trans-unit>
+        <trans-unit id="54" resname="insertSectionbreak">
+          <source>Insert section break</source>
+          <target>セクションブレークを挿入</target>
+        </trans-unit>
+        <trans-unit id="44" resname="InsertTime">
+          <source>Insert time</source>
+          <target>時間を挿入</target>
+        </trans-unit>
+        <trans-unit id="cEo5vs49yB1ZwEbYr1xONw" resname="italic">
+          <source>Italic</source>
+          <target>イタリック</target>
+        </trans-unit>
+        <trans-unit id="31" resname="justify">
+          <source>Justify</source>
+          <target>均等揃え</target>
+        </trans-unit>
+        <trans-unit id="94" resname="learn">
+          <source>Add to dictionary</source>
+          <target>辞書に追加</target>
+        </trans-unit>
+        <trans-unit id="19" resname="lists">
+          <source>Lists</source>
+          <target>リスト</target>
+        </trans-unit>
+        <trans-unit id="64" resname="marginBottom">
+          <source>Bottom margin</source>
+          <target>下マージン</target>
+        </trans-unit>
+        <trans-unit id="62" resname="marginLeft">
+          <source>Left margin</source>
+          <target>左マージン</target>
+        </trans-unit>
+        <trans-unit id="61" resname="marginRight">
+          <source>Right margin</source>
+          <target>右マージン</target>
+        </trans-unit>
+        <trans-unit id="63" resname="marginTop">
+          <source>Top margin</source>
+          <target>上マージン</target>
+        </trans-unit>
+        <trans-unit id="40" resname="modeDraft">
+          <source>Draft mode</source>
+          <target>下書きモード</target>
+        </trans-unit>
+        <trans-unit id="39" resname="modeEmbedded">
+          <source>Web mode</source>
+          <target>Webモード</target>
+        </trans-unit>
+        <trans-unit id="38" resname="modePage">
+          <source>Page mode</source>
+          <target>ページモード</target>
+        </trans-unit>
+        <trans-unit id="86" resname="movetoBack">
+          <source>Move to back</source>
+          <target>背後に移動</target>
+        </trans-unit>
+        <trans-unit id="87" resname="moveToFront">
+          <source>Move to front</source>
+          <target>前面に移動</target>
+        </trans-unit>
+        <trans-unit id="73" resname="paddingBottom">
+          <source>Bottom padding</source>
+          <target>下パッディング</target>
+        </trans-unit>
+        <trans-unit id="71" resname="paddingLeft">
+          <source>Left padding</source>
+          <target>左パッディング</target>
+        </trans-unit>
+        <trans-unit id="70" resname="paddingRight">
+          <source>Right padding</source>
+          <target>右パッディング</target>
+        </trans-unit>
+        <trans-unit id="72" resname="paddingTop">
+          <source>Top padding</source>
+          <target>上パッディング</target>
+        </trans-unit>
+        <trans-unit id="107" resname="pageOrientation">
+          <source>Page orientation</source>
+          <target>ページ方向</target>
+        </trans-unit>
+        <trans-unit id="106" resname="pageSize">
+          <source>Page size</source>
+          <target>ページサイズ</target>
+        </trans-unit>
+        <trans-unit id="87" resname="paragraphs">
+          <source>Paragraphs</source>
+          <target>段落</target>
+        </trans-unit>
+        <trans-unit id="15" resname="paste">
+          <source>Paste</source>
+          <target>ペースト</target>
+        </trans-unit>
+        <trans-unit id="103" resname="preview">
+          <source>Preview</source>
+          <target>プレビュー</target>
+        </trans-unit>
+        <trans-unit id="105" resname="print">
+          <source>Print</source>
+          <target>印刷</target>
+        </trans-unit>
+        <trans-unit id="26" resname="redo">
+          <source>Redo</source>
+          <target>やり直し</target>
+        </trans-unit>
+        <trans-unit id="98" resname="removeSubstitution">
+          <source>Remove substitutions</source>
+          <target>自動置換を削除</target>
+        </trans-unit>
+        <trans-unit id="24" resname="selectAll">
+          <source>Select all</source>
+          <target>すべてを選択</target>
+        </trans-unit>
+        <trans-unit id="12" resname="shadowColor">
+          <source>Shadow color</source>
+          <target>シャドウカラー</target>
+        </trans-unit>
+        <trans-unit id="48" resname="showHide4Dexpressions">
+          <source>Show / hide 4D expressions</source>
+          <target>4D式を表示/非表示</target>
+        </trans-unit>
+        <trans-unit id="57" resname="showHideFooters">
+          <source>Show / hide footers</source>
+          <target>フッターを表示/非表示</target>
+        </trans-unit>
+        <trans-unit id="53" resname="showHideFrames">
+          <source>Show / hide frames</source>
+          <target>フレームを表示/非表示</target>
+        </trans-unit>
+        <trans-unit id="56" resname="showHideHeaders">
+          <source>Show / hide headers</source>
+          <target>ヘッダーを表示/非表示</target>
+        </trans-unit>
+        <trans-unit id="54" resname="showHideHiddenChars">
+          <source>Show / hide hidden chars</source>
+          <target>非表示文字を表示/非表示</target>
+        </trans-unit>
+        <trans-unit id="56" resname="showHideHiddenHorizontalRuler">
+          <source>Show / hide horizontal ruler</source>
+          <target>水平ルーラーを表示/非表示</target>
+        </trans-unit>
+        <trans-unit id="57" resname="showHideHiddenVerticalRuler">
+          <source>Show / hide vertical ruler</source>
+          <target>垂直ルーラーを表示/非表示</target>
+        </trans-unit>
+        <trans-unit id="108" resname="size">
+          <source>Size</source>
+          <target>サイズ</target>
+        </trans-unit>
+        <trans-unit id="102" resname="spellDialog">
+          <source>Spell dialog</source>
+          <target>スペルダイアログ</target>
+        </trans-unit>
+        <trans-unit id="FF84ifbM0/hfJWYZADoijw" resname="strikethrough">
+          <source>Strikethrough</source>
+          <target>打ち消し線</target>
+        </trans-unit>
+        <trans-unit id="nvL9AHzG+Ay7K5oDe3+3PA" resname="subscript">
+          <source>Subscript</source>
+          <target>下つき文字</target>
+        </trans-unit>
+        <trans-unit id="110" resname="substitutions">
+          <source>Show / hide substitutions</source>
+          <target>自動置換を表示/非表示</target>
+        </trans-unit>
+        <trans-unit id="11" resname="superscript">
+          <source>Superscript</source>
+          <target>上つき文字</target>
+        </trans-unit>
+        <trans-unit id="14" resname="textColor">
+          <source>Text Color</source>
+          <target>テキストカラー</target>
+        </trans-unit>
+        <trans-unit id="CJ3FnhEpbQLw70i97DXISA" resname="underline">
+          <source>Underline</source>
+          <target>下線</target>
+        </trans-unit>
+        <trans-unit id="82" resname="undo">
+          <source>Undo</source>
+          <target>取り消し</target>
+        </trans-unit>
+        <trans-unit id="93" resname="unlearn">
+          <source>Remove from dictionary</source>
+          <target>辞書から削除</target>
+        </trans-unit>
+        <trans-unit id="81" resname="zoom">
+          <source>Zoom</source>
+          <target>ズーム</target>
+        </trans-unit>
+        <trans-unit id="PjDICmJfB+IqPGQcyvXkNA" resname="protectParagraph">
+          <source>Protect paragraph</source>
+          <target>段落をプロテクトする</target>
+        </trans-unit>
+        <trans-unit id="hGxsyWJ4OuFZ0mdV7Aw1hA" resname="protectTable">
+          <source>Protect table</source>
+          <target>表をプロテクトする</target>
+        </trans-unit>
+        <trans-unit id="PtipgXThmjnu0yKMcKTmBw" resname="protectRow">
+          <source>Protect row</source>
+          <target>行をプロテクトする</target>
+        </trans-unit>
+        <trans-unit id="XIc4CBvMQWzefZfhtU+Fog" resname="protectCell">
+          <source>Protect cell</source>
+          <target>セルをプロテクトする</target>
+        </trans-unit>
+        <trans-unit id="WTkM05EEsc772zfzDM6Jwg" resname="protectDocument">
+          <source>Enable document protection</source>
+          <target>ドキュメントのプロテクションを有効化</target>
+        </trans-unit>
+        <trans-unit id="f4FmDAwxzQUZfL8FuuLc0g" resname="import">
+          <source>Import</source>
+          <target>読み込み</target>
+        </trans-unit>
+        <trans-unit id="5J6VhIDdsPnJrL/4yXzTHw" resname="export">
+          <source>Export</source>
+          <target>書き出し</target>
+        </trans-unit>
+        <trans-unit id="/CMBzGF25LWzqcDFGiS6sA" resname="InsertSoftHyphen">
+          <source>Insert soft hyphen</source>
+          <target>ソフトハイフンを挿入</target>
+        </trans-unit>
+        <trans-unit id="ZLC852EL1drI+I11mR0Tvg" resname="RemoveSoftHyphen">
+          <source>Remove soft hyphen</source>
+          <target>ソフトハイフンを削除</target>
+        </trans-unit>
+        <trans-unit id="nkUFnYv0Dk1wv6yHCjjgqQ" resname="insertContinuousPageBreak">
+          <source>Insert continuous page break</source>
+          <target>継続した改ページを挿入</target>
+        </trans-unit>
+        <trans-unit id="4CkYikT+ULlL5PCYMO32fA" resname="edit">
+          <source>Edit</source>
+          <target>編集</target>
+        </trans-unit>
+        <trans-unit id="QOb/KgQRLtlJ9bxSHsL+hQ" resname="paragraphSettings">
+          <source>Paragraph settings</source>
+          <target>段落設定</target>
+        </trans-unit>
+        <trans-unit id="qVqquxTVolQoqo/2HDQchQ" resname="DocumentInfo">
+          <source>Document information</source>
+          <target>ドキュメント情報</target>
+        </trans-unit>
+        <trans-unit id="xB2/MofqT/+E9+utQApmQA" resname="MoreTextSettings">
+          <source>More text settings</source>
+          <target>詳細なテキスト設定</target>
+        </trans-unit>
+        <trans-unit id="usmFit13wk3qE3iKTaF/YA" resname="Radius">
+          <source>Radius</source>
+          <target>半径</target>
+        </trans-unit>
+        <trans-unit id="YHVwqX8XI8m8DMYdgvHX3Q" resname="InsertDocumentInfo">
+          <source>Insert document information</source>
+          <target>ドキュメント情報を挿入</target>
+        </trans-unit>
+        <trans-unit id="hnQ1aCT77wrAYUrIuNJaDg" resname="ColumnSettings">
+          <source>Column settings</source>
+          <target>カラム設定</target>
+        </trans-unit>
+        <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">
+          <source>Insert a text box</source>
+          <target state="new">Insert a text box</target>
+        </trans-unit>
+      </group>
+      <group resname="Tabs">
+        <trans-unit id="24" resname="borders">
+          <source>Borders</source>
+          <target>境界線</target>
+        </trans-unit>
+        <trans-unit id="21" resname="Home">
+          <source>Home</source>
+          <target>ホーム</target>
+        </trans-unit>
+        <trans-unit id="26" resname="images">
+          <source>Images</source>
+          <target>画像</target>
+        </trans-unit>
+        <trans-unit id="22" resname="insertAndView">
+          <source>Insert &amp; View</source>
+          <target>挿入 &amp; ビュー</target>
+        </trans-unit>
+        <trans-unit id="25" resname="margins">
+          <source>Margins</source>
+          <target>マージン</target>
+        </trans-unit>
+        <trans-unit id="27" resname="print">
+          <source>Print</source>
+          <target>印刷</target>
+        </trans-unit>
+        <trans-unit id="28" resname="spell">
+          <source>Spell &amp; Gram.</source>
+          <target>スペル &amp; 文法</target>
+        </trans-unit>
+        <trans-unit id="5Z6VRDjZQZ7WPdlb+giy5g" resname="protection">
+          <source>Protection</source>
+          <target>プロテクション</target>
+        </trans-unit>
+        <trans-unit id="1u02Lw6NTI7jpeJX1CLp2A" resname="importExport">
+          <source>Import Export</source>
+          <target>読み込み 書き出し</target>
+        </trans-unit>
+        <trans-unit id="TklbnlJH6IlPhKZlBsEMkg" resname="bookmarks">
+          <source>Bookmarks</source>
+          <target>ブックマーク</target>
+        </trans-unit>
+        <trans-unit id="jommi73R0Dp87QF5h4UANw" resname="formulaInfo">
+          <source>Formulas and information</source>
+          <target>フォーミュラと情報</target>
+        </trans-unit>
+        <trans-unit id="NKCIqThMk09ZY+qSWR4zRw" resname="background">
+          <source>Background</source>
+          <target>背景</target>
+        </trans-unit>
+        <trans-unit id="sFQsGsLwXPZnU/DjSqlmsw" resname="unitsAndSizes">
+          <source>Units and sizes</source>
+          <target>単位とサイズ</target>
+        </trans-unit>
+        <trans-unit id="27FB4/hz8xoNjYSQHbk5cg" resname="tabulations">
+          <source>Tabulations</source>
+          <target>タブ分け</target>
+        </trans-unit>
+      </group>
+      <group resname="Labels">
+        <trans-unit id="57" resname="applyMarginsTo">
+          <source>Apply margins and padding to…</source>
+          <target>マージンとパッディングを適用…</target>
+        </trans-unit>
+        <trans-unit id="59" resname="sections">
+          <source>Sections</source>
+          <target>セクション</target>
+        </trans-unit>
+        <trans-unit id="60" resname="pictures">
+          <source>Pictures</source>
+          <target>ピクチャー</target>
+        </trans-unit>
+        <trans-unit id="74" resname="applyBordersTo">
+          <source>Apply borders to…</source>
+          <target>境界線を適用…</target>
+        </trans-unit>
+        <trans-unit id="zBez708L9OKugb+NacL/wg" resname="document">
+          <source>Document</source>
+          <target>ドキュメント</target>
+        </trans-unit>
+        <trans-unit id="6XaBEYjv65KnAQo0lgIBJA" resname="headers">
+          <source>Headers</source>
+          <target>ヘッダー</target>
+        </trans-unit>
+        <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">
+          <source>Footers</source>
+          <target>フッター</target>
+        </trans-unit>
+        <trans-unit id="an7Gfwv2eaZPtYEu4Dtf2A" resname="TextBoxes">
+          <source>Text boxes</source>
+          <target state="new">Text boxes</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+
+</xliff>

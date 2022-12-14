@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="4D WritePro Interface" uuid="94CC57D4DD674D83A19AD1955D22A833" collation_locale="fr">
+<base name="4D WritePro Interface" uuid="94CC57D4DD674D83A19AD1955D22A833" collation_locale="en">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="SAMPLE" uuid="FCDC2942AAC24F1C8E119520A0C6B44B" id="1">
 		<field name="ID" uuid="25E1AC17AE3D4D5FBED8BEFDB6E6B6DC" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
