@@ -1,1 +1,1791 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?><!--Translation file.This file is distributed under the same license as the product package.--><xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">  <file datatype="x-STR#" original="undefined" source-language="en" target-language="ja">    <header>      <prop-group name="Xliff-Editor.4dbase">        <prop prop-type="version">2.0</prop>      </prop-group>    </header>    <body>      <group id="0" resname="Palette_0">        <trans-unit id="999" resname="Document">          <source>Document</source>          <target>ドキュメント</target>        </trans-unit>        <trans-unit id="2" resname="FontStyle">          <source>Font Style</source>          <target>フォントスタイル</target>        </trans-unit>        <trans-unit id="3" resname="MarginsAlignments">          <source>Margins &amp; Alignments</source>          <target>余白 &amp; 行揃え</target>        </trans-unit>        <trans-unit id="5" resname="Frames">          <source>Frames</source>          <target>枠線</target>        </trans-unit>        <trans-unit id="6" resname="Sizes">          <source>Sizes</source>          <target>サイズ</target>        </trans-unit>        <trans-unit id="7" resname="Tabulations">          <source>Tabulations</source>          <target>タブ区切り</target>        </trans-unit>        <trans-unit id="8" resname="Background">          <source>Background</source>          <target>背景</target>        </trans-unit>        <trans-unit id="9" resname="Information">          <source>Information</source>          <target>インフォメーション</target>        </trans-unit>        <trans-unit id="290" resname="FindAndReplace">          <source>Find and replace</source>          <target>検索と置換</target>        </trans-unit>        <trans-unit id="291" resname="Tables">          <source>Tables</source>          <target>テーブル</target>        </trans-unit>        <trans-unit id="/h5RnHFGXRGnCZiYU/DhZQ" resname="ImportExport">          <source>Import Export</source>          <target>読み込み 書き出し</target>        </trans-unit>      </group>      <group resname="Palette_alignment">        <trans-unit id="9" resname="HorAlignColon">          <source>Hor. Align.:</source>          <target>横揃え:</target>        </trans-unit>        <trans-unit id="10" resname="VertAlignColon">          <source>Vert. Align.:</source>          <target>縦揃え:</target>        </trans-unit>        <trans-unit id="11" resname="FirstIndentationColon">          <source>1st indentation:</source>          <target>第1インデント:</target>        </trans-unit>        <trans-unit id="13" resname="BackgroundColon">          <source>Background:</source>          <target>背景:</target>        </trans-unit>        <trans-unit id="14" resname="BordersColon">          <source>Borders:</source>          <target>境界線:</target>        </trans-unit>        <trans-unit id="15" resname="Text">          <source>Text</source>          <target>テキスト</target>        </trans-unit>        <trans-unit id="16" resname="Margins">          <source>Margins</source>          <target>余白</target>        </trans-unit>        <trans-unit id="17" resname="Lists">          <source>Lists</source>          <target>リスト</target>        </trans-unit>        <trans-unit id="25" resname="LineHeightColon">          <source>Line Height:</source>          <target>行の高さ:</target>        </trans-unit>        <trans-unit id="84" resname="StyleColon0">          <source>Style:</source>          <target>スタイル:</target>        </trans-unit>        <trans-unit id="2HRYy6hkMPJ7DgLcWpD6cQ" resname="ParagraphBackgroundColor">          <source>Paragraph background color</source>          <target>段落背景色</target>        </trans-unit>        <trans-unit id="J/YshwyIKycFvHMMljmKyA" resname="CopyRuler">          <source>Copy ruler</source>          <target>ルーラーをコピー</target>        </trans-unit>        <trans-unit id="TbhlTOVpXGK5g/2set0oGw" resname="PasteRuler">          <source>Paste ruler</source>          <target>ルーラーをペースト</target>        </trans-unit>        <trans-unit id="JP6IFI5cuF2FnMhVrQ8ukw" resname="IncreaseIndent">          <source>Increase indent</source>          <target>インデント増加</target>        </trans-unit>        <trans-unit id="MzVx3kZk0LyQrDAWjJAUrA" resname="DecreaseIndent">          <source>Decrease indent</source>          <target>インデント現象</target>        </trans-unit>      </group>      <group resname="PaletteBackgrounds">        <trans-unit id="18" resname="BackgroundPicture">          <source>Background Picture</source>          <target>背景ピクチャー</target>        </trans-unit>        <trans-unit id="19" resname="PictureOrURL">          <source>Picture:(or URL)</source>          <target>ピクチャー:(またはURL)</target>        </trans-unit>        <trans-unit id="20" resname="RepeatColon">          <source>Repeat:</source>          <target>繰り返し:</target>        </trans-unit>        <trans-unit id="21" resname="Clip">          <source>Clip:</source>          <target>Clip:</target>        </trans-unit>        <trans-unit id="22" resname="Origin">          <source>Origin:</source>          <target>Origin:</target>        </trans-unit>        <trans-unit id="23" resname="HorizontalSize">          <source>Horizontal Size:</source>          <target>縦方向サイズ:</target>        </trans-unit>        <trans-unit id="24" resname="VerticalSize">          <source>Vertical Size:</source>          <target>横方向サイズ:</target>        </trans-unit>        <trans-unit id="25" resname="PositionColon">          <source>Position:</source>          <target>位置:</target>        </trans-unit>        <trans-unit id="sg9lHFhI0LqrVxCysNWY7g" resname="MoveHyphen">          <source>Move:</source>          <target>移動する:</target>        </trans-unit>        <trans-unit id="yWaHkpmXJEV+bnWMCVsAVg" resname="PageHyphen">          <source>Page:</source>          <target>ページ:</target>        </trans-unit>        <trans-unit id="33fb+8NhEANEWmPAFLSQjg" resname="SectionHyphen">          <source>Section:</source>          <target>セクション:</target>        </trans-unit>        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Picture">          <source>Picture</source>          <target>ピクチャ</target>        </trans-unit>        <trans-unit id="xZf5yixaHWdVwEkN2lFVkg" resname="AdvancedSettingsEllipsis">          <source>Advanced settings…</source>          <target>詳細設定…</target>        </trans-unit>      </group>      <group resname="PaletteFonts">        <trans-unit id="26" resname="FontColon">          <source>Font:</source>          <target>フォント:</target>        </trans-unit>        <trans-unit id="28" resname="SizeColon">          <source>Size:</source>          <target>サイズ:</target>        </trans-unit>        <trans-unit id="30" resname="BackgroundColon">          <source/>          <target/>        </trans-unit>        <trans-unit id="31" resname="Bold">          <source>Bold</source>          <target>ボールド</target>        </trans-unit>        <trans-unit id="32" resname="Italic">          <source>Italic</source>          <target>イタリック</target>        </trans-unit>        <trans-unit id="33" resname="Linethrough">          <source>Linethrough</source>          <target>打ち消し線</target>        </trans-unit>        <trans-unit id="34" resname="Underline">          <source>Underline</source>          <target>下線</target>        </trans-unit>        <trans-unit id="34" resname="LineColon">          <source>Line:</source>          <target>下線タイプ:</target>        </trans-unit>        <trans-unit id="35" resname="ColorColon:">          <source>Color:</source>          <target>カラー:</target>        </trans-unit>        <trans-unit id="36" resname="Shadows">          <source>Shadows</source>          <target>シャドウ</target>        </trans-unit>        <trans-unit id="37" resname="Shadow">          <source>Shadow</source>          <target>シャドウを使用</target>        </trans-unit>        <trans-unit id="38" resname="OffsetColon">          <source>Offset:</source>          <target>オフセット:</target>        </trans-unit>        <trans-unit id="95" resname="StyleColon1">          <source>Style:</source>          <target>スタイル:</target>        </trans-unit>        <trans-unit id="96" resname="TransformColon">          <source>Transform:</source>          <target>変換:</target>        </trans-unit>        <trans-unit id="U+//oc3/u1IXrlP6L4mWAQ" resname="SpecialCharacters">          <source>Special characters</source>          <target>特殊文字</target>        </trans-unit>        <trans-unit id="SSmzUaLxeO3nXDjxyyb0gg" resname="SoftHyphen">          <source>Soft hyphen:</source>          <target>ソフトハイフン:</target>        </trans-unit>        <trans-unit id="eAIqOo9+b5XNQn3YeW33eg" resname="FontsElipsis">          <source>Fonts…</source>          <target>フォント…</target>        </trans-unit>      </group>      <group resname="PaletteFrame">        <trans-unit id="39" resname="SidesColon">          <source>Sides:</source>          <target>方向:</target>        </trans-unit>        <trans-unit id="42" resname="ColorColon">          <source>Color:</source>          <target>カラー:</target>        </trans-unit>        <trans-unit id="43" resname="RadiusColon">          <source>Radius:</source>          <target>半径:</target>        </trans-unit>        <trans-unit id="44" resname="Frame">          <source>Frame</source>          <target>枠線</target>        </trans-unit>        <trans-unit id="45" resname="Padding">          <source>Padding</source>          <target>パッド</target>        </trans-unit>        <trans-unit id="95" resname="WidthColon">          <source>Width:</source>          <target>幅:</target>        </trans-unit>        <trans-unit id="96" resname="StyleColon2">          <source>Style:</source>          <target>スタイル:</target>        </trans-unit>        <trans-unit id="97" resname="IndentationColon">          <source>Indentation:</source>          <target>インデント:</target>        </trans-unit>        <trans-unit id="98" resname="Outside">          <source>Outside</source>          <target>外側</target>        </trans-unit>        <trans-unit id="99" resname="Inside">          <source>Inside</source>          <target>内側</target>        </trans-unit>        <trans-unit id="100" resname="ApplyToColon">          <source>Apply to:</source>          <target>適用対象:</target>        </trans-unit>      </group>      <group resname="PaletteInformation">        <trans-unit id="46" resname="4dExpression">          <source>4D Expression</source>          <target>4D式</target>        </trans-unit>        <trans-unit id="47" resname="InsertColon">          <source>Insert:</source>          <target>挿入:</target>        </trans-unit>        <trans-unit id="48" resname="Date">          <source>Date</source>          <target>日付</target>        </trans-unit>        <trans-unit id="49" resname="ExpressionColon">          <source>Expression:</source>          <target>式:</target>        </trans-unit>        <trans-unit id="50" resname="DisplayCollon">          <source>Display:</source>          <target>値/式の表示:</target>        </trans-unit>        <trans-unit id="51" resname="LabelColon">          <source>Label:</source>          <target>ラベル:</target>        </trans-unit>        <trans-unit id="52" resname="LinkColon">          <source>Link:</source>          <target>リンク:</target>        </trans-unit>        <trans-unit id="50" resname="URL">          <source>URL</source>          <target>URL</target>        </trans-unit>        <trans-unit id="51" resname="TitleColon">          <source>Title:</source>          <target>タイトル:</target>        </trans-unit>        <trans-unit id="52" resname="SubjectColon">          <source>Subject:</source>          <target>主題:</target>        </trans-unit>        <trans-unit id="53" resname="AuthorColon">          <source>Author:</source>          <target>作成者:</target>        </trans-unit>        <trans-unit id="54" resname="CompanyColon">          <source>Company:</source>          <target>会社:</target>        </trans-unit>        <trans-unit id="55" resname="NotesColon">          <source>Notes:</source>          <target>注記:</target>        </trans-unit>        <trans-unit id="56" resname="CreatedColon">          <source>Created:</source>          <target>作成日:</target>        </trans-unit>        <trans-unit id="57" resname="ModifiedColon">          <source>Modified:</source>          <target>変更日:</target>        </trans-unit>        <trans-unit id="58" resname="ActionsColon">          <source>Actions:</source>          <target>アクション:</target>        </trans-unit>        <trans-unit id="60" resname="Compute">          <source>Compute</source>          <target>再計算</target>        </trans-unit>        <trans-unit id="63" resname="Freeze">          <source>Freeze</source>          <target>評価</target>        </trans-unit>        <trans-unit id="64" resname="SelectionOnly">          <source>Selection only</source>          <target>選択部分のみ</target>        </trans-unit>        <trans-unit id="64" resname="Expression">          <source>Expression</source>          <target>式</target>        </trans-unit>        <trans-unit id="65" resname="Values">          <source>Values</source>          <target>値</target>        </trans-unit>        <trans-unit id="66" resname="Expressions">          <source>Expressions</source>          <target>式</target>        </trans-unit>        <trans-unit id="67" resname="Set">          <source>Set</source>          <target>リンク設定</target>        </trans-unit>        <trans-unit id="96" resname="Document1">          <source>Document</source>          <target>ドキュメント情報</target>        </trans-unit>        <trans-unit id="v0KYZg1/E5YU2xvWP3exVA" resname="NoTableAvailable">          <source>No table available. The formula editor can not be open.</source>          <target>利用できるテーブルがありません。フォーミュラエディターを開くことができません。</target>        </trans-unit>      </group>      <group resname="PaletteSizes">        <trans-unit id="68" resname="Paragraph">          <source>Paragraph</source>          <target>段落</target>        </trans-unit>        <trans-unit id="69" resname="Picture">          <source>Picture</source>          <target>ピクチャー</target>        </trans-unit>        <trans-unit id="70" resname="SetWidth">          <source>Set width</source>          <target>固定幅</target>        </trans-unit>        <trans-unit id="71" resname="VariableWidth">          <source>Variable width</source>          <target>可変幅</target>        </trans-unit>        <trans-unit id="74" resname="minWidthColon">          <source>Min width:</source>          <target>最小幅:</target>        </trans-unit>        <trans-unit id="75" resname="minHeightColon">          <source>Min height:</source>          <target>最小高さ:</target>        </trans-unit>        <trans-unit id="0" resname="WidthColon">          <source>Width:</source>          <target>幅:</target>        </trans-unit>        <trans-unit id="77" resname="AltTextColon">          <source>Alt. Text</source>          <target>代替テキスト</target>        </trans-unit>        <trans-unit id="74" resname="HeightColon">          <source>Height:</source>          <target>高さ:</target>        </trans-unit>        <trans-unit id="75" resname="AltText">          <source>Alternate text</source>          <target>代替テキスト</target>        </trans-unit>        <trans-unit id="76" resname="ZeroAuto">          <source>(0 = Auto)</source>          <target>(0 = Auto)</target>        </trans-unit>        <trans-unit id="83" resname="UnitColon">          <source>Unit:</source>          <target>単位:</target>        </trans-unit>      </group>      <group resname="PaletteTabulations">        <trans-unit id="77" resname="defaultTabColon">          <source>Default tab:</source>          <target>デフォルトタブ:</target>        </trans-unit>        <trans-unit id="77" resname="TypeColon">          <source>Type:</source>          <target>タイプ:</target>        </trans-unit>        <trans-unit id="80" resname="Type">          <source>Type</source>          <target>タイプ</target>        </trans-unit>        <trans-unit id="81" resname="Position">          <source>Position</source>          <target>距離</target>        </trans-unit>        <trans-unit id="82" resname="tipDeleteTab">          <source>Delete tabulation</source>          <target>タブ区切りを削除</target>        </trans-unit>        <trans-unit id="83" resname="tipNewTab">          <source>New tabulation</source>          <target>新しいタブ区切り</target>        </trans-unit>        <trans-unit id="84" resname="DefaultLeadingChar">          <source>Default leading char.</source>          <target>デフォルトのリード文字</target>        </trans-unit>        <trans-unit id="85" resname="LeadingChar">          <source>Leading char.</source>          <target>リード文字</target>        </trans-unit>      </group>      <group resname="PaletteBookmarks">        <trans-unit id="1" resname="Bookmarks">          <source>Bookmarks</source>          <target>ブックマーク</target>        </trans-unit>        <trans-unit id="2" resname="NewBookmark">          <source>New Bookmark</source>          <target>新規ブックマーク</target>        </trans-unit>        <trans-unit id="3" resname="tipRedefineBookmark">          <source>Redefine bookmark "[1]"</source>          <target>ブックマーク"[1]"を再定義する</target>        </trans-unit>        <trans-unit id="4" resname="tipDeleteBookmark">          <source>Delete bookmark "[1]"</source>          <target>ブックマーク"[1]"を削除する</target>        </trans-unit>        <trans-unit id="5" resname="tipNewBookmark">          <source>New bookmark</source>          <target>新しいブックマーク</target>        </trans-unit>      </group>      <group resname="Menu_CopyPaste">        <trans-unit id="82" resname="CopyStyle">          <source>Copy Style</source>          <target>スタイルをコピー</target>        </trans-unit>        <trans-unit id="83" resname="PasteStyle">          <source>Paste Style</source>          <target>スタイルを貼り付け</target>        </trans-unit>        <trans-unit id="86" resname="CopyTextSettings">          <source>Copy Text Settings</source>          <target>テキスト設定をコピー</target>        </trans-unit>        <trans-unit id="87" resname="PasteTextSettings">          <source>Paste Text Settings</source>          <target>テキスト設定を貼り付け</target>        </trans-unit>        <trans-unit id="87" resname="CopyMargins">          <source>Copy Margins</source>          <target>余白をコピー</target>        </trans-unit>        <trans-unit id="88" resname="PasteMargins">          <source>Paste Margins</source>          <target>余白を貼り付け</target>        </trans-unit>        <trans-unit id="89" resname="CopyTabulation">          <source>Copy Tabulation</source>          <target>タブ区切りをコピー</target>        </trans-unit>        <trans-unit id="90" resname="PasteTabulation">          <source>Paste Tabulation</source>          <target>タブ区切りを貼り付け</target>        </trans-unit>        <trans-unit id="91" resname="CopyFrame">          <source>Copy Frame</source>          <target>枠線をコピー</target>        </trans-unit>        <trans-unit id="92" resname="PasteFrame">          <source>Paste Frame</source>          <target>枠線を貼り付け</target>        </trans-unit>        <trans-unit id="93" resname="CopyBackground">          <source>Copy Background</source>          <target>背景をコピー</target>        </trans-unit>        <trans-unit id="" resname="PasteBackground">          <source>Paste Background</source>          <target>背景を貼り付け</target>        </trans-unit>      </group>      <group resname="Menu_ImportExport">        <trans-unit id="97" resname="NewEllipsis">          <source>New…</source>          <target>新規…</target>        </trans-unit>        <trans-unit id="98" resname="ImportEllipsis">          <source>Import…</source>          <target>読み込み…</target>        </trans-unit>        <trans-unit id="99" resname="ExportAs">          <source>Export as:</source>          <target>書き出し形式:</target>        </trans-unit>        <trans-unit id="100" resname="HtmlEllipsis">          <source>HTML…</source>          <target>HTML形式…</target>        </trans-unit>        <trans-unit id="101" resname="4DWriteProEllipsis">          <source>4D Write Pro…</source>          <target>4D Write Pro 形式…</target>        </trans-unit>        <trans-unit id="UxW87OWPGPdnNHB/00tm4w" resname="WordEllipsis">          <source>Microsoft Word…</source>          <target>Microsoft Word文書…</target>        </trans-unit>        <trans-unit id="azodlWWrSTDq7NsEsKhs2w" resname="PdfEllipsis">          <source>PDF…</source>          <target>PDF文書…</target>        </trans-unit>        <trans-unit id="6Uw3JqUrx1zvQs/W032F0Q" resname="TextEllipsis">          <source>Text…</source>          <target>テキスト形式…</target>        </trans-unit>        <trans-unit id="HKtPq6HziMxcUM5TiHmLfQ" resname="HtmlMimeEllipsis">          <source>HTML Mime…</source>          <target>HTML Mime形式…</target>        </trans-unit>        <trans-unit id="6vzRUs/48oy0kosSPH+4IA" resname="clearEllipsis">          <source>Clear…</source>          <target>消去…</target>        </trans-unit>        <trans-unit id="giehscfoPnUFF9q+EyY2Fg" resname="4DWriteEllipsis">          <source>4D Write…</source>          <target>4D Write 形式…</target>        </trans-unit>        <trans-unit id="6K4ODRIRH2gZNBJ27Zw7zA" resname="Import">          <source>Import</source>          <target>読み込み</target>        </trans-unit>      </group>      <group resname="AlertsAndMessages">        <trans-unit id="102" resname="AreYouSure">          <source>Are you sure?</source>          <target>本当によろしいですか？</target>        </trans-unit>        <trans-unit id="104" resname="SelectADestination">          <source>Select a destination.</source>          <target>保存先を選択</target>        </trans-unit>      </group>      <group resname="ListStyleNames">        <trans-unit id="1" resname="None">          <source>None</source>          <target>なし</target>        </trans-unit>        <trans-unit id="2" resname="Disc">          <source>Disc</source>          <target>ディスク</target>        </trans-unit>        <trans-unit id="3" resname="Circle">          <source>Circle</source>          <target>円</target>        </trans-unit>        <trans-unit id="4" resname="Square">          <source>Square</source>          <target>正方形</target>        </trans-unit>        <trans-unit id="5" resname="HollowSquare">          <source>Hollow square</source>          <target>穴あき正方形</target>        </trans-unit>        <trans-unit id="6" resname="Diamond">          <source>Diamond</source>          <target>ダイヤ</target>        </trans-unit>        <trans-unit id="7" resname="Club">          <source>Club</source>          <target>クラブ</target>        </trans-unit>        <trans-unit id="8" resname="123">          <source>1 2 3</source>          <target>1 2 3</target>        </trans-unit>        <trans-unit id="9" resname="010203">          <source>01 02 03</source>          <target>01 02 03</target>        </trans-unit>        <trans-unit id="10" resname="abcLow">          <source>a b c</source>          <target>a b c</target>        </trans-unit>        <trans-unit id="11" resname="abcCAP">          <source>A B C</source>          <target>A B C</target>        </trans-unit>        <trans-unit id="12" resname="Roman">          <source>I II III</source>          <target>I II III</target>        </trans-unit>      </group>      <group resname="ListUnits">        <trans-unit id="1" resname="cm">          <source>cm</source>          <target>cm</target>        </trans-unit>        <trans-unit id="2" resname="mm">          <source>mm</source>          <target>mm</target>        </trans-unit>        <trans-unit id="3" resname="inches">          <source>inches</source>          <target>インチ</target>        </trans-unit>        <trans-unit id="4" resname="pt">          <source>pt</source>          <target>pt</target>        </trans-unit>        <trans-unit id="5" resname="auto">          <source>auto</source>          <target>auto</target>        </trans-unit>        <trans-unit id="6" resname="pct">          <source>%</source>          <target>%</target>        </trans-unit>      </group>      <group resname="borderStyleNames">        <trans-unit id="1" resname="Solid">          <source>Solid</source>          <target>単線</target>        </trans-unit>        <trans-unit id="2" resname="Dotted">          <source>Dotted</source>          <target>点線</target>        </trans-unit>        <trans-unit id="3" resname="Dashed">          <source>Dashed</source>          <target>破線</target>        </trans-unit>        <trans-unit id="4" resname="Double">          <source>Double</source>          <target>二重線</target>        </trans-unit>        <trans-unit id="5" resname="Groove">          <source>Groove</source>          <target>溝付き線</target>        </trans-unit>        <trans-unit id="6" resname="Ridge">          <source>Ridge</source>          <target>リッジ</target>        </trans-unit>        <trans-unit id="7" resname="Inset">          <source>Inset</source>          <target>インセット</target>        </trans-unit>        <trans-unit id="8" resname="Semi">          <source>Semi</source>          <target>薄い線</target>        </trans-unit>        <trans-unit id="9" resname="Word">          <source>Word</source>          <target>単語線</target>        </trans-unit>        <trans-unit id="231" resname="Outset">          <source>Outset</source>          <target>アウトセット</target>        </trans-unit>        <trans-unit id="232" resname="Hidden">          <source>Hidden</source>          <target>非表示</target>        </trans-unit>      </group>      <group resname="BgndRepeatMode">        <trans-unit id="1" resname="None">          <source>None</source>          <target>なし</target>        </trans-unit>        <trans-unit id="2" resname="Repeat">          <source>Repeat</source>          <target>繰り返す</target>        </trans-unit>        <trans-unit id="3" resname="RepeatHor">          <source>Repeat Hor.</source>          <target>水平に繰り返す</target>        </trans-unit>        <trans-unit id="4" resname="RepeatVert">          <source>Repeat Vert.</source>          <target>垂直に繰り返す</target>        </trans-unit>      </group>      <group resname="BgndClipMode">        <trans-unit id="1" resname="Border">          <source>Border</source>          <target>ボーダー</target>        </trans-unit>        <trans-unit id="2" resname="Padding">          <source>Padding</source>          <target>パッド</target>        </trans-unit>        <trans-unit id="3" resname="Content">          <source>Content</source>          <target>コンテンツ</target>        </trans-unit>        <trans-unit id="4" resname="Paper">          <source>Paper</source>          <target>用紙</target>        </trans-unit>      </group>      <group resname="Tabulations">        <trans-unit id="1" resname="Left">          <source>Left</source>          <target>左</target>        </trans-unit>        <trans-unit id="2" resname="Right">          <source>Right</source>          <target>右</target>        </trans-unit>        <trans-unit id="3" resname="Center">          <source>Center</source>          <target>センター</target>        </trans-unit>        <trans-unit id="4" resname="Decimal">          <source>Decimal</source>          <target>デシマル</target>        </trans-unit>        <trans-unit id="5" resname="Bars">          <source>Bars</source>          <target>棒</target>        </trans-unit>      </group>      <group resname="FontAlignVert">        <trans-unit id="1" resname="Baseline">          <source>Baseline</source>          <target>ベースLINE</target>        </trans-unit>        <trans-unit id="2" resname="Superscript">          <source>Superscript</source>          <target>上付き</target>        </trans-unit>        <trans-unit id="3" resname="Subscript">          <source>Subscript</source>          <target>下付き</target>        </trans-unit>      </group>      <group resname="TextTransform">        <trans-unit id="1" resname="TextTransformNone">          <source>None</source>          <target>変換なし</target>        </trans-unit>        <trans-unit id="2" resname="Capitalize">          <source>Capitalize</source>          <target>先頭を大文字</target>        </trans-unit>        <trans-unit id="3" resname="Lowercase">          <source>Lowercase</source>          <target>全て小文字</target>        </trans-unit>        <trans-unit id="4" resname="Uppercase">          <source>Uppercase</source>          <target>全て大文字</target>        </trans-unit>        <trans-unit id="5" resname="SmallUppercase">          <source>Small uppercase</source>          <target>全て小さな大文字</target>        </trans-unit>      </group>      <group resname="PaletteStylesheets">        <trans-unit id="169" resname="characterStylesheets">          <source>Character style sheets</source>          <target>文字スタイルシート</target>        </trans-unit>        <trans-unit id="172" resname="rowStylesheets">          <source>Row style sheets</source>          <target>行スタイルシート</target>        </trans-unit>        <trans-unit id="173" resname="cellStylesheets">          <source>Cell style sheets</source>          <target>セルスタイルシート</target>        </trans-unit>        <trans-unit id="173" resname="paragraphStylesheets">          <source>Paragraph style sheets</source>          <target>段落スタイルシート</target>        </trans-unit>        <trans-unit id="174" resname="tableStylesheets">          <source>Table style sheets</source>          <target>テーブルスタイルシート</target>        </trans-unit>        <trans-unit id="175" resname="imageStylesheets">          <source>Image style sheets</source>          <target>画像スタイルシート</target>        </trans-unit>        <trans-unit id="176" resname="newStylesheet">          <source>New style sheet</source>          <target>新規スタイルシート</target>        </trans-unit>        <trans-unit id="177" resname="deleteStylesheet">          <source>Delete style sheet</source>          <target>スタイルシートを削除</target>        </trans-unit>        <trans-unit id="178" resname="updateStylesheet">          <source>Update style sheet</source>          <target>スタイルシートを更新</target>        </trans-unit>        <trans-unit id="179" resname="editStylesheet">          <source>Edit style sheet</source>          <target>スタイルシートを編集</target>        </trans-unit>        <trans-unit id="180" resname="stylesheets">          <source>Style sheets</source>          <target>スタイルシート</target>        </trans-unit>        <trans-unit id="181" resname="applyStylesheet">          <source>Apply style sheet</source>          <target>スタイルシートを適用</target>        </trans-unit>        <trans-unit id="216" resname="menuNewEmpty">          <source>New empty style sheet</source>          <target>新しい空のスタイルシート</target>        </trans-unit>        <trans-unit id="217" resname="menuNewFromSelection">          <source>New style sheet based on selection</source>          <target>セレクションに基づいた新しいスタイルシート</target>        </trans-unit>        <trans-unit id="218" resname="menuDuplicate">          <source>Duplicate</source>          <target>複製する</target>        </trans-unit>        <trans-unit id="219" resname="requestTitle">          <source>New style sheet name?</source>          <target>新規スタイルシート名</target>        </trans-unit>        <trans-unit id="220" resname="requestPlaceHolder">          <source>Style Sheet</source>          <target>スタイルシート</target>        </trans-unit>        <trans-unit id="221" resname="requestCreateLabel">          <source>Create</source>          <target>作成</target>        </trans-unit>        <trans-unit id="222" resname="requestCancelLabel">          <source>Cancel</source>          <target>キャンセル</target>        </trans-unit>        <trans-unit id="223" resname="menuDeleteStylesheet">          <source>Delete "&lt;1&gt;" style sheet…</source>          <target>"&lt;1&gt;"のスタイルシートを削除…</target>        </trans-unit>        <trans-unit id="224" resname="menuRemoveParagraphStylesheet">          <source>Remove paragraph stylesheet</source>          <target>段落スタイルシートを削除</target>        </trans-unit>        <trans-unit id="226" resname="menuRemoveCharacterStyleshet">          <source>Remove character style sheets</source>          <target>文字スタイルシートを削除</target>        </trans-unit>        <trans-unit id="242" resname="menuEditStylesheet">          <source>Edit '&lt;1&gt;' style sheet</source>          <target>'&lt;1&gt;'のスタイルシートを編集</target>        </trans-unit>        <trans-unit id="243" resname="menuEditDefault">          <source>Default values…</source>          <target>デフォルト値…</target>        </trans-unit>        <trans-unit id="245" resname="confirmDeleteStylesheet">          <source>Delete "&lt;1&gt;" style sheet?</source>          <target>"&lt;1&gt;"のスタイルシートを削除しますか?</target>        </trans-unit>        <trans-unit id="UNLqBZ0kwRTrWB3TzdCdnA" resname="StyleSheetPlaceHolder">          <source>Style sheet name</source>          <target>スタイルシート名</target>        </trans-unit>      </group>      <group resname="StylesheetEditor">        <trans-unit id="180" resname="ssFontSize">          <source>Font size</source>          <target>フォントサイズ</target>        </trans-unit>        <trans-unit id="181" resname="ssFont">          <source>Font</source>          <target>フォント</target>        </trans-unit>        <trans-unit id="182" resname="ssFontFamily">          <source>Font familly</source>          <target>フォントファミリー</target>        </trans-unit>        <trans-unit id="183" resname="ssTextColor">          <source>Text color</source>          <target>テキストカラー</target>        </trans-unit>        <trans-unit id="184" resname="ssBackgroundColor">          <source>Background color</source>          <target>背景色</target>        </trans-unit>        <trans-unit id="185" resname="ssBold">          <source>Bold</source>          <target>ボールド</target>        </trans-unit>        <trans-unit id="186" resname="ssItalic">          <source>Italic</source>          <target>イタリック</target>        </trans-unit>        <trans-unit id="187" resname="ssUnderlineStyle">          <source>Underline style</source>          <target>下線付きスタイル</target>        </trans-unit>        <trans-unit id="188" resname="ssUnderlineColor">          <source>Underline color</source>          <target>下線カラー</target>        </trans-unit>        <trans-unit id="189" resname="ssLinethroughStyle">          <source>Line through style</source>          <target>打ち消し線スタイル</target>        </trans-unit>        <trans-unit id="190" resname="ssLinethroughColor">          <source>Line through color</source>          <target>打ち消し線カラー</target>        </trans-unit>        <trans-unit id="191" resname="ssShadowColor">          <source>Shadow color</source>          <target>シャドウカラー</target>        </trans-unit>        <trans-unit id="192" resname="ssShadowOffet">          <source>Shadow offset</source>          <target>シャドウオフセット</target>        </trans-unit>        <trans-unit id="193" resname="ssHorizontalAlign">          <source>Horizontal align</source>          <target>水平方向揃え</target>        </trans-unit>        <trans-unit id="194" resname="ssTextIndent">          <source>Text indent</source>          <target>テキストインデント</target>        </trans-unit>        <trans-unit id="195" resname="ssLineHeight">          <source>Line height</source>          <target>行の高さ</target>        </trans-unit>        <trans-unit id="196" resname="ssVerticalAlign">          <source>Vertical align</source>          <target>垂直方向揃え</target>        </trans-unit>        <trans-unit id="197" resname="ssTabs">          <source>Tabs</source>          <target>タブ</target>        </trans-unit>        <trans-unit id="198" resname="ssDefaultTab">          <source>Default tab</source>          <target>デフォルトのタブ</target>        </trans-unit>        <trans-unit id="199" resname="ssListStyleType">          <source>List style</source>          <target>リストスタイル</target>        </trans-unit>        <trans-unit id="200" resname="ssMarginLeft">          <source>Margin left</source>          <target>左余白</target>        </trans-unit>        <trans-unit id="201" resname="ssMarginTop">          <source>Margin top</source>          <target>上余白</target>        </trans-unit>        <trans-unit id="202" resname="ssMarginRight">          <source>Margin right</source>          <target>右余白</target>        </trans-unit>        <trans-unit id="203" resname="ssMarginBottom">          <source>Margin bottom</source>          <target>下余白</target>        </trans-unit>        <trans-unit id="204" resname="ssPaddingLeft">          <source>Padding left</source>          <target>左パディング</target>        </trans-unit>        <trans-unit id="205" resname="ssPaddingTop">          <source>Padding top</source>          <target>上パディング</target>        </trans-unit>        <trans-unit id="206" resname="ssPaddingRight">          <source>Padding right</source>          <target>右パディング</target>        </trans-unit>        <trans-unit id="207" resname="ssPaddingBottom">          <source>Padding bottom</source>          <target>下パディング</target>        </trans-unit>        <trans-unit id="208" resname="ssBorderStyle">          <source>Border style</source>          <target>境界線スタイル</target>        </trans-unit>        <trans-unit id="209" resname="ssBorderWidth">          <source>Border width</source>          <target>境界線幅</target>        </trans-unit>        <trans-unit id="210" resname="ssBorderColor">          <source>Border color</source>          <target>境界線カラー</target>        </trans-unit>        <trans-unit id="211" resname="ssBorderRadius">          <source>Border radius</source>          <target>境界線半径</target>        </trans-unit>        <trans-unit id="212" resname="ssNameColon">          <source>Name:</source>          <target>名前:</target>        </trans-unit>        <trans-unit id="213" resname="ssFonts">          <source>Fonts</source>          <target>フォント</target>        </trans-unit>        <trans-unit id="214" resname="ssParagraphs">          <source>Paragraphs</source>          <target>段落</target>        </trans-unit>        <trans-unit id="215" resname="ssMarginsBorders">          <source>Margins &amp; borders</source>          <target>余白 &amp; 境界線</target>        </trans-unit>        <trans-unit id="226" resname="ssTransform">          <source>Transform</source>          <target>変換</target>        </trans-unit>        <trans-unit id="227" resname="ssAlignLeft">          <source>Left aligned</source>          <target>左揃え</target>        </trans-unit>        <trans-unit id="228" resname="ssAlignCenter">          <source>Centered</source>          <target>中央揃え</target>        </trans-unit>        <trans-unit id="230" resname="ssAlignJustified">          <source>Justified</source>          <target>均等揃え</target>        </trans-unit>        <trans-unit id="231" resname="ssAlignRight">          <source>Right aligned</source>          <target>右揃え</target>        </trans-unit>        <trans-unit id="233" resname="ssAlignBase">          <source>Base line</source>          <target>ベースライン</target>        </trans-unit>        <trans-unit id="234" resname="ssAlignTop">          <source>Top</source>          <target>上</target>        </trans-unit>        <trans-unit id="235" resname="ssAlignBottom">          <source>Bottom</source>          <target>下</target>        </trans-unit>        <trans-unit id="236" resname="ssAlignMiddle">          <source>Middle</source>          <target>中央</target>        </trans-unit>        <trans-unit id="237" resname="ssAlignSuperscript">          <source>Superscript</source>          <target>上付き文字</target>        </trans-unit>        <trans-unit id="238" resname="ssAlignSubscript">          <source>Subscript</source>          <target>下付き文字</target>        </trans-unit>        <trans-unit id="239" resname="ssAlignDefault">          <source>Default</source>          <target>デフォルト</target>        </trans-unit>      </group>      <group resname="Misc">        <trans-unit id="240" resname="ok">          <source>OK</source>          <target>OK</target>        </trans-unit>        <trans-unit id="241" resname="cancel">          <source>Cancel</source>          <target>キャンセル</target>        </trans-unit>        <trans-unit id="244" resname="delete">          <source>Delete</source>          <target>削除</target>        </trans-unit>        <trans-unit id="7mnro3rRCakLRVI5zALjKg" resname="clear">          <source>Clear</source>          <target>消去</target>        </trans-unit>        <trans-unit id="ZHzfpo82912nh75LjvWUsw" resname="Yes">          <source>Yes</source>          <target>はい</target>        </trans-unit>        <trans-unit id="algTRD9sqjDsayCBIx1jig" resname="No">          <source>No</source>          <target>いいえ</target>        </trans-unit>      </group>      <group resname="PaletteFindReplace">        <trans-unit id="250" resname="CaseSensitive">          <source>Case sensitive</source>          <target>大文字と小文字を区別</target>        </trans-unit>        <trans-unit id="272" resname="ErrorEmptyFind">          <source>The "find" property can not be an empty string.</source>          <target>"find"プロパティを空の文字列にすることはできません。</target>        </trans-unit>        <trans-unit id="264" resname="ErrorMissingAction">          <source>The "action" property is mandatory.</source>          <target>"action"プロパティは必須です。</target>        </trans-unit>        <trans-unit id="263" resname="ErrorMissingDocument">          <source>The "document" property is mandatory.</source>          <target>"document"プロパティは必須です。</target>        </trans-unit>        <trans-unit id="266" resname="ErrorMissingFind">          <source>The "find" property is mandatory.</source>          <target>"find"プロパティは必須です。</target>        </trans-unit>        <trans-unit id="265" resname="ErrorMissingSelection">          <source>The "selection" property is mandatory.</source>          <target>"selection"プロパティは必須です。</target>        </trans-unit>        <trans-unit id="270" resname="ErrorTypeAction">          <source>The "action" property must be of the text type.</source>          <target>"action"プロパティはテキスト型でなければなりません。</target>        </trans-unit>        <trans-unit id="273" resname="ErrorTypeCaseSensitive">          <source>The "caseSensitive" property must be of the boolean type.</source>          <target>"caseSensitive"プロパティはブール型でなければなりません。</target>        </trans-unit>        <trans-unit id="268" resname="ErrorTypeDocument">          <source>The "document" property must be of the object type.</source>          <target>"document"プロパティはオブジェクト型でなければなりません。</target>        </trans-unit>        <trans-unit id="271" resname="ErrorTypeFind">          <source>The "find" property must be of the text type.</source>          <target>"find"プロパティはテキスト型でなければなりません。</target>        </trans-unit>        <trans-unit id="276" resname="ErrorTypeFullWord">          <source>The "fullWord" property must be of the boolean type.</source>          <target>"fullWord"プロパティはブール型でなければなりません。</target>        </trans-unit>        <trans-unit id="275" resname="ErrorTypeKeepCharStyle">          <source>The "keepCharStyle" property must be of the boolean type.</source>          <target>"keepCharStyle"プロパティはブール型でなければなりません。</target>        </trans-unit>        <trans-unit id="272" resname="ErrorTypeReplace">          <source>The "replace" property must be of the text type.</source>          <target>"replace"プロパティはテキスト型でなければなりません。</target>        </trans-unit>        <trans-unit id="269" resname="ErrorTypeSelection">          <source>The "selection" property must be of the object type.</source>          <target>"selection"プロパティはオブジェクト型でなければなりません。</target>        </trans-unit>        <trans-unit id="248" resname="Find">          <source>Find</source>          <target>検索</target>        </trans-unit>        <trans-unit id="247" resname="FindColon">          <source>Find:</source>          <target>検索:</target>        </trans-unit>        <trans-unit id="251" resname="FindFirst">          <source>First</source>          <target>先頭へ</target>        </trans-unit>        <trans-unit id="254" resname="FindLast">          <source>Last</source>          <target>最後へ</target>        </trans-unit>        <trans-unit id="252" resname="FindNext">          <source>Next</source>          <target>次へ</target>        </trans-unit>        <trans-unit id="253" resname="FindPrevious">          <source>Previous</source>          <target>前へ</target>        </trans-unit>        <trans-unit id="262" resname="FindSlashReplace">          <source>Find/Replace</source>          <target>検索/置換</target>        </trans-unit>        <trans-unit id="260" resname="FullWord">          <source>Full words only</source>          <target>完全な単語のみ</target>        </trans-unit>        <trans-unit id="259" resname="KeepCharStyle">          <source>Keep each character style</source>          <target>それぞれの文字スタイルを維持する</target>        </trans-unit>        <trans-unit id="261" resname="Option">          <source>Option</source>          <target>オプション</target>        </trans-unit>        <trans-unit id="249" resname="Options">          <source>Options</source>          <target>オプション</target>        </trans-unit>        <trans-unit id="255" resname="Replace">          <source>Replace</source>          <target>置換する</target>        </trans-unit>        <trans-unit id="262" resname="ReplaceAll">          <source>Replace all</source>          <target>全て置換する</target>        </trans-unit>        <trans-unit id="262" resname="ReplaceAllMessage">          <source>Replace "&amp;1" by "&amp;2"…</source>          <target>"&amp;1"を"&amp;2"で置き換える…</target>        </trans-unit>        <trans-unit id="257" resname="ReplaceAndNext">          <source>Replace and find</source>          <target>置換して次を検索</target>        </trans-unit>        <trans-unit id="256" resname="ReplaceByColon">          <source>Replace by:</source>          <target>次で置換する:</target>        </trans-unit>        <trans-unit id="276" resname="ErrorUnknownAction">          <source>This action is unknown.</source>          <target>未知のアクションです。</target>        </trans-unit>        <trans-unit id="fllZberc5UmVoY77eN6hWg" resname="AccentSensitive">          <source>Accent sensitive</source>          <target>アクセント記号の有無を区別</target>        </trans-unit>        <trans-unit id="mWfZe71n2prS1bwT5Kl/7Q" resname="KanaSensitive">          <source>Kana sensitive</source>          <target>ひらがな/カタカナを区別</target>        </trans-unit>        <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="WidthSensitive">          <source>Width sensitive</source>          <target>全角/半角を区別</target>        </trans-unit>        <trans-unit id="msIfGk9Zlbu60aimbEHQOw" resname="OccurrencesReplaced">          <source>&lt;x&gt; occurrences have been replaced.</source>          <target>&lt;x&gt; 件を置換しました。</target>        </trans-unit>        <trans-unit id="ZUDcR0S8puBf1AHiVHqHWw" resname="SearchOptions">          <source>Search options</source>          <target>検索オプション</target>        </trans-unit>        <trans-unit id="kzbkcXohhISsex2WHJcFtw" resname="ReplaceOptions">          <source>Replace options</source>          <target>置換オプション</target>        </trans-unit>        <trans-unit id="emHWvgg7g+0idYuJ+FxPwA" resname="ReplaceBy">          <source>Replace by</source>          <target>置き換え</target>        </trans-unit>        <trans-unit id="lp5g7Q738nbVfrHPkzSBPQ" resname="IncludeHeadersAndFooters">          <source>Include headers and footers</source>          <target>ヘッダーとフッターを含める</target>        </trans-unit>        <trans-unit id="pZv3LaV+16Uw8EoSBOzxLA" resname="KeyboardBased">          <source>Search based on '&lt;1&gt;' keyboard </source>          <target>'&lt;1&gt;' キーボードを使用して検索</target>        </trans-unit>        <trans-unit id="4TFSNZU8Z6IMoq+NekNNIg" resname="OccurencesColon">          <source>Occurences:</source>          <target>オカレンス:</target>        </trans-unit>        <trans-unit id="Q8D13uFpth/PNUBxsK/oVw" resname="ReplacementsColon">          <source>Replacements:</source>          <target>置き換え数:</target>        </trans-unit>      </group>      <group resname="PaletteTables">        <trans-unit id="277" resname="InsertAbove">          <source>Insert above</source>          <target>上に挿入する</target>        </trans-unit>        <trans-unit id="278" resname="InsertBelow">          <source>Insert below</source>          <target>下に挿入する</target>        </trans-unit>        <trans-unit id="279" resname="InsertLeft">          <source>Insert to the left</source>          <target>左に挿入する</target>        </trans-unit>        <trans-unit id="280" resname="InsertRight">          <source>Insert to the right</source>          <target>右に挿入する</target>        </trans-unit>        <trans-unit id="281" resname="DeleteRow">          <source>Delete row</source>          <target>行を削除</target>        </trans-unit>        <trans-unit id="282" resname="DeleteRows">          <source>Delete &lt;n&gt; rows</source>          <target>&lt;n&gt;行を削除</target>        </trans-unit>        <trans-unit id="283" resname="DeleteColumn">          <source>Delete column</source>          <target>列を削除</target>        </trans-unit>        <trans-unit id="284" resname="DeleteColumns">          <source>Delete &lt;n&gt; columns</source>          <target>&lt;n&gt;列を削除</target>        </trans-unit>        <trans-unit id="285" resname="DeleteCell">          <source>Delete cell</source>          <target>セルを削除</target>        </trans-unit>        <trans-unit id="286" resname="DeleteCells">          <source>Delete &lt;n&gt; cells</source>          <target>&lt;n&gt;個のセルを削除</target>        </trans-unit>        <trans-unit id="287" resname="LabelRows">          <source>Rows</source>          <target>行</target>        </trans-unit>        <trans-unit id="288" resname="LabelColumns">          <source>Columns</source>          <target>列</target>        </trans-unit>        <trans-unit id="289" resname="LabelCells">          <source>Cells</source>          <target>セル</target>        </trans-unit>        <trans-unit id="292" resname="Table">          <source>Table</source>          <target>表</target>        </trans-unit>        <trans-unit id="293" resname="InsertTable">          <source>Insert table</source>          <target>表を挿入</target>        </trans-unit>        <trans-unit id="294" resname="LabelTable">          <source>Table</source>          <target>表</target>        </trans-unit>        <trans-unit id="VHydT13fVdf+VH5qRRUFtg" resname="menuBorderStyle">          <source>Border Style</source>          <target>境界線スタイル</target>        </trans-unit>        <trans-unit id="7AGgS68d0BFBl1GG+3azQg" resname="menuBorderColor">          <source>Border Color</source>          <target>境界線カラー</target>        </trans-unit>        <trans-unit id="kT56lwRqNZR4oGajuxhnHw" resname="menuBorderWidth">          <source>Border Width</source>          <target>境界線幅</target>        </trans-unit>        <trans-unit id="tFPMp9gQRDEBJw1gPLRxvw" resname="menuBackgroundColor">          <source>Background Color</source>          <target>背景色</target>        </trans-unit>        <trans-unit id="YgIrOc1RS48st5bY52f5Qg" resname="menuAlignment">          <source>Alignment</source>          <target>揃え</target>        </trans-unit>        <trans-unit id="g+8wWMzDK4ns8WHG4G5Sqw" resname="menuMargins">          <source>Margins</source>          <target>余白</target>        </trans-unit>        <trans-unit id="8xZmKn9MYRUmni9D/b9OOQ" resname="menuPadding">          <source>Padding</source>          <target>パッディング</target>        </trans-unit>        <trans-unit id="+Y1p0tp8GEUMHQs6gtRtQQ" resname="menuWidth">          <source>Width</source>          <target>幅</target>        </trans-unit>        <trans-unit id="a158s7yXqD9Zom4FNjAAkw" resname="menuHeight">          <source>Height</source>          <target>高さ</target>        </trans-unit>        <trans-unit id="YPG7PurBVvBgKMU6kaMxFQ" resname="menuVerticalAlignment">          <source>Vertical Alignment</source>          <target>縦方向揃え</target>        </trans-unit>        <trans-unit id="WdntTS/LhHFkvUQujjopMQ" resname="menuInsertTable">          <source>Insert Table</source>          <target>表を挿入</target>        </trans-unit>        <trans-unit id="dXc0WnW6WSXYVOsmA0j/+g" resname="Cell">          <source>Cell</source>          <target>セル</target>        </trans-unit>        <trans-unit id="ZM4XpS2XvZltITmEG4voHg" resname="Row">          <source>Row</source>          <target>行</target>        </trans-unit>        <trans-unit id="9YY74EqftqLxbArojeDu/w" resname="Properties">          <source>Properties</source>          <target>プロパティ</target>        </trans-unit>      </group>      <group resname="PaletteProtect">        <trans-unit id="QRCHOUVOvU1y6dkzlbGq5A" resname="protectParagraphs">          <source>Paragraphs</source>          <target>段落</target>        </trans-unit>        <trans-unit id="4LD6NBpIo5AuPj8w7cER4A" resname="protectionEnabled">          <source>Protection enabled</source>          <target>プロテクション有効</target>        </trans-unit>        <trans-unit id="pIhODmU+jdAnjW8ddEq9Tw" resname="protection">          <source>Protection</source>          <target>プロテクション</target>        </trans-unit>        <trans-unit id="Qe608vHPHLO3bJNBCH7p1A" resname="protectRows">          <source>Rows</source>          <target>行</target>        </trans-unit>        <trans-unit id="BAPDa661YLnM9DcVXyWXOw" resname="protectTables">          <source>Tables</source>          <target>表</target>        </trans-unit>        <trans-unit id="03iEJ+It6O69xY6j0lz6Qg" resname="protectCells">          <source>Cells</source>          <target>セル</target>        </trans-unit>      </group>      <group resname="Errors">        <trans-unit id="GwNqq+FAlrv+V8fYd7geXA" resname="missingPointer">          <source>The pointer on 4D Write Pro document is missing.</source>          <target>4D Write Pro ドキュメントへのポインターが見つかりません。</target>        </trans-unit>        <trans-unit id="nx2miGaaD+xCPQKlY//Q+g" resname="nilPointer">          <source>The pointer on 4D Write Pro document is nil.</source>          <target>4D Write Pro ドキュメントへのポインターがnilポインターです。</target>        </trans-unit>        <trans-unit id="2UM2PhxkLdT3NCFN+uzEJA" resname="thisTypeOfDocumentCantBeImported">          <source>This type of document can't be imported.</source>          <target>このドキュメントは読み込めない形式です。</target>        </trans-unit>      </group>      <group resname="DialogExport">        <trans-unit id="seROCZqSCuxQqqVcq1uboA" resname="exportPDF">          <source>PDF Export</source>          <target>PDF 書き出し</target>        </trans-unit>        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="background">          <source>Background</source>          <target>背景</target>        </trans-unit>        <trans-unit id="2zaxAplGAgJvGg5f+KnwOA" resname="headers">          <source>Headers</source>          <target>ヘッダー</target>        </trans-unit>        <trans-unit id="GbCtfYrp9W6n/xYbqhxNkQ" resname="footers">          <source>Footers</source>          <target>フッター</target>        </trans-unit>        <trans-unit id="tMZO5KyH1Qe77I7HSLR6og" resname="htmlWysiwyg">          <source>HTML "WYSIWYG"</source>          <target>HTML "WYSIWYG"</target>        </trans-unit>        <trans-unit id="th+uJGqJE/aRdxxSHhxRlg" resname="htmlPrettyPrint">          <source>"Pretty print"</source>          <target>"整形済みフォーマット"</target>        </trans-unit>        <trans-unit id="7yp1Rkz6KWEs2pehpSqJoA" resname="recomputeFormulas">          <source>Recompute formulas</source>          <target>フォーミュラを再計算</target>        </trans-unit>        <trans-unit id="6u1E8KwGXapCFqeIJkqYQA" resname="Screen">          <source>Screen</source>          <target>スクリーン</target>        </trans-unit>        <trans-unit id="gVQaYSHGiwZBwAt4P5iaYw" resname="print">          <source>Print</source>          <target>印刷</target>        </trans-unit>        <trans-unit id="rfCY4nYj4m3OHuYW++DWlA" resname="maxPictureDPI">          <source>Maximum DPI for pictures:</source>          <target>ピクチャーのDPI上限:</target>        </trans-unit>        <trans-unit id="EuJJLbs1LD5q4/WlL7w0XA" resname="cidHostDomainName">          <source>CID Host domain name:</source>          <target>CIDホストドメイン名:</target>        </trans-unit>        <trans-unit id="J+Sxu8o5HUf7ju4qU4EfMQ" resname="optimizedFor">          <source>Optimized for:</source>          <target>最適化対象:</target>        </trans-unit>        <trans-unit id="G9BJhwrgI8ZjjK+PvIb0oA" resname="exportOptions">          <source>Export options</source>          <target>書き出しオプション</target>        </trans-unit>        <trans-unit id="STSER3qbzZIUcH0uINw3MA" resname="ExportEllipsis">          <source>Export…</source>          <target>書き出し…</target>        </trans-unit>        <trans-unit id="fMOz7wl6MpDwxlU77dYxUA" resname="InfoScreen">          <source>Document size will be smaller and any pictures will be compressed to "jpg" or "png"</source>          <target>ドキュメントサイズは小さくなり、ピクチャーは全て"jpg"または"png"に圧縮されます。</target>        </trans-unit>        <trans-unit id="SD+Y7dnDCOmvJ94LKms7CQ" resname="InfoPrint">          <source>Document size will be bigger and any pictures will be keep their original "codec".</source>          <target>ドキュメントサイズは大きくなり、ピクチャーは全て元のコーデックを維持します。</target>        </trans-unit>        <trans-unit id="M/by8K2LDXD/OhCDfGnX+Q" resname="InfoFormulas">          <source>When selected, all formulas will be recomputed before export.When not selected, only formulas that have never been evaluated will be computed.</source>          <target>選択している場合、全てのフォーミュラは書き出す前に再計算されます。選択してない場合、まだ一度も評価されていないフォーミュラのみが計算されます。</target>        </trans-unit>        <trans-unit id="DpRVy4keJdQU2SqZwEacYg" resname="FormulasComma">          <source>Formulas:</source>          <target>フォーミュラ:</target>        </trans-unit>        <trans-unit id="TLfxhPbY2ZRWaf3J3RyOcw" resname="htmlEllipsis">          <source>HTML…</source>          <target>HTML…</target>        </trans-unit>        <trans-unit id="jqxt3L4zVABvifyA9e+8sA" resname="InfoPrettyPrint">          <source>This option generates a document with more human-readable source code and increases document size.</source>          <target>このオプションを選択するとより読みやすいソースコードを生成し、ドキュメントサイズは大きくなります。</target>        </trans-unit>        <trans-unit id="6LkWY9PvfM8ea1sA6vSrBw" resname="ExportComma">          <source>Export:</source>          <target>書き出し:</target>        </trans-unit>      </group>      <group resname="DialogImport">        <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">          <source>Erase the document</source>          <target>ドキュメントを消去</target>        </trans-unit>        <trans-unit id="FlHVoUXe7QVKBS23F0ny5Q" resname="BeforeDocument">          <source>at the beginning</source>          <target>先頭に</target>        </trans-unit>        <trans-unit id="v2qONMZHKzxZtNap9RsfFw" resname="AfterDocument">          <source>at the end</source>          <target>最後に</target>        </trans-unit>        <trans-unit id="ewuKg1WiWojJOtdoz3wpqg" resname="ReplaceSelection">          <source>at cursor position</source>          <target>カーソルの位置に</target>        </trans-unit>        <trans-unit id="kRahCITb8zTZzcaUFp2q0Q" resname="ImportOptions">          <source>Import options</source>          <target>読み込みオプション</target>        </trans-unit>        <trans-unit id="/ZwYY2UXzYETIAVO1G2dvA" resname="InfoErase">          <source>The document will be replaced</source>          <target>ドキュメントは上書きされます</target>        </trans-unit>        <trans-unit id="OEeH+VlZg5xuxWvUjW1P1A" resname="InfoBefore">          <source>After the first header (if any)</source>          <target>最初のヘッダー(あれば)の後</target>        </trans-unit>        <trans-unit id="KGyZW8NNWI/ZTRVopYvVHw" resname="InforAfter">          <source>Before the last footer (if any)</source>          <target>最後のフッター(あれば)の前</target>        </trans-unit>        <trans-unit id="ERLyD4OELj5tXGKqcoTmNQ" resname="InfoReplaceSelection">          <source>(or replace current selection)</source>          <target>(あるいはカレントの選択範囲を置き換えます)</target>        </trans-unit>        <trans-unit id="fUY1y/mfq8YIayhWmfKZeg" resname="SelectFile">          <source>Select file to import…</source>          <target>読み込むファイルを選択…</target>        </trans-unit>        <trans-unit id="ceXUiqKwcVAUS6ay3ug5xQ" resname="ReplaceDocument">          <source>Replace the current document</source>          <target>カレントのドキュメントを置き換え</target>        </trans-unit>        <trans-unit id="NFtFcqXg4EZ1lxL/0wtdpw" resname="InfoReplaceDocument">          <source>The full document will be replaced including headers and footers.</source>          <target>ヘッダーとフッターを含め、ドキュメント全体が置き換えられます。</target>        </trans-unit>        <trans-unit id="V9QRc48mupZaPsRVherBRQ" resname="InfoNotImported">          <source>The headers, footers and anchored pictures will not be imported.</source>          <target>ヘッダー、フッター、アンカーされたピクチャーは読み込まれません。</target>        </trans-unit>        <trans-unit id="n4aL7HhXL+o5ruwGL/guAQ" resname="InsertInTheDocument">          <source>Insert in the document…</source>          <target>ドキュメント内に挿入…</target>        </trans-unit>        <trans-unit id="+siVncaV7S9ujx1b+dIgiA" resname="SelectDocumentOfType">          <source>Select a document (.txt, .4wp or .4w7)</source>          <target>ドキュメントを選択して下さい(.txt/.4wp/.4w7)</target>        </trans-unit>        <trans-unit id="ovkE8m6t9hOAvs5WY9nA7A" resname="ConfirmClear">          <source>This action will remove all content from the document.</source>          <target>このアクションはドキュメントの全コンテンツを削除します。</target>        </trans-unit>        <trans-unit id="DU4JNkbLHrgf3m8pAIaC6Q" resname="ClearEllipsis">          <source>Clear…</source>          <target>消去…</target>        </trans-unit>        <trans-unit id="PLXw3AoYuswFhizuV35Zgg" resname="Clear">          <source>Clear</source>          <target>消去する</target>        </trans-unit>        <trans-unit id="DZMDM6LbSQUK7XnLqvm8+g" resname="Freeze">          <source/>          <target/>        </trans-unit>        <trans-unit id="3KMV7oT2tuLS05721O0Waw" resname="SectionNumber">          <source>Section number</source>          <target>セクション番号</target>        </trans-unit>      </group>      <group resname="DialogImportLog">        <trans-unit id="A4sgoBTWcmhTBII7qTJgAQ" resname="HeaderInfo">          <source>Some differences may appear in the imported document compared to the original.</source>          <target>読み込まれたドキュメントには一部オリジナルと見た目が違う部分がある可能性があります。</target>        </trans-unit>        <trans-unit id="sOiTU6STg6XmKEoEewJ0Cw" resname="BrowseTheImportLog">          <source>Would you like to browse the import log?</source>          <target>読み込みログを開きますか?</target>        </trans-unit>        <trans-unit id="cfsKcFg01whY9Os6iiMC0Q" resname="HoverOverTheLines">          <source>Hover over the lines for more information</source>          <target>詳細については行の上をホバーしてください。</target>        </trans-unit>        <trans-unit id="gXld70IPpB0lJKIP67qp/Q" resname="ImportLog">          <source>Import log</source>          <target>読み込みログ</target>        </trans-unit>      </group>      <group resname="DialogPictureSettings">        <trans-unit id="nyFYGQNHQerfVfW24a7oeQ" resname="Margins">          <source>Margins:</source>          <target>余白:</target>        </trans-unit>        <trans-unit id="wL0rIpQnidAkY6wndHrvDg" resname="Padding">         <source>Padding:</source>         <target>パッディング:</target>        </trans-unit>        <trans-unit id="PiyV+E6B2BOy4GNsS6PbpQ" resname="FormulaAndURL">          <source>Formula and URL</source>          <target>フォーミュラとURL</target>        </trans-unit>        <trans-unit id="wRMExlUUxWxkESUYigSjbQ" resname="FormulaHyphen">          <source>Formula:</source>          <target>フォーミュラ:</target>        </trans-unit>        <trans-unit id="LLLtQzZjWPEMU5jxnvSvmw" resname="URLhyphen">          <source>URL:</source>          <target>URL:</target>        </trans-unit>        <trans-unit id="tX1lPAf1vFI1IN4iTPThbQ" resname="AlternateText">         <source>Alternate text:</source>         <target>代替テキスト:</target>        </trans-unit>        <trans-unit id="lUrF6H2gRySYCSMqQIxzdA" resname="PagesAndSections">          <source>Pages and sections</source>          <target>ページとセクション</target>        </trans-unit>        <trans-unit id="lHXUAc0Aid8ZFUFZrz/6ew" resname="Alignments">          <source>Alignments</source>          <target>揃え</target>        </trans-unit>        <trans-unit id="zRIujmEncGp6o57fw558gQ" resname="HorizontalHyphen">          <source>Horizontal:</source>          <target>横方向:</target>        </trans-unit>        <trans-unit id="8LsAUIhSSfbN0OJ6Lw53Tg" resname="VerticalHyphen">          <source>Vertical:</source>          <target>縦方向:</target>        </trans-unit>        <trans-unit id="OeBtEIyH9SPbvssc58l4CQ" resname="OriginHyphen">          <source>Origin:</source>          <target>原点:</target>        </trans-unit>        <trans-unit id="catAtKcAEEEZdYnyhfv67Q" resname="OffsetHyphen">          <source>Offset:</source>          <target>オフセット:</target>        </trans-unit>        <trans-unit id="65ama9WrvtHLrbrdjVJfaQ" resname="LayoutHyphen">          <source>Layout:</source>          <target>レイアウト:</target>        </trans-unit>        <trans-unit id="E7Im6nkWi6aJJv3eGzlZYA" resname="PageHyphen">          <source>Page:</source>          <target>ページ:</target>        </trans-unit>        <trans-unit id="jWqVmNI+1acCwuigWZHmPg" resname="SectionHyphen">          <source>Section:</source>          <target>セクション:</target>        </trans-unit>        <trans-unit id="UsV1y7NogpqYqFKGqBnpdQ" resname="SectionNumberHyphen">          <source>Section number:</source>          <target>セクション番号:</target>        </trans-unit>        <trans-unit id="HA6gCicHrNfGJXvIau+4aw" resname="PageNumberHyphen">          <source>Page number:</source>          <target>ページ番号:</target>        </trans-unit>        <trans-unit id="8zcpBgEZdV1mEBmM17EvNQ" resname="EditEllipsis">          <source>Edit…</source>          <target>編集…</target>        </trans-unit>        <trans-unit id="d8Pz/T0Mn8VIE4BrsRYx7Q" resname="Clear">          <source>Clear</source>          <target>クリア</target>        </trans-unit>        <trans-unit id="2iXsmivw0on7vNRnbY3/MQ" resname="Freeze">          <source>Freeze</source>          <target>固定化</target>        </trans-unit>        <trans-unit id="Yum8Y38jHqiWZ72k7Jr0uQ" resname="PictureSettings">          <source>Picture settings</source>          <target>ピクチャ設定</target>        </trans-unit>        <trans-unit id="lP5Wk5MEdkpNOiSJgn9p8A" resname="OriginalSize">          <source>Original size</source>          <target>元のサイズ</target>        </trans-unit>        <trans-unit id="Qk23GVWVSIVC55yKGMhYaQ" resname="PictureFormat">          <source>Picture format:</source>          <target>ピクチャーフォーマット:</target>        </trans-unit>        <trans-unit id="fBvnMsjh2EReTO1gRxu7sw" resname="LeftPages">          <source>Left pages</source>          <target>左ページ</target>        </trans-unit>        <trans-unit id="mFFDsjPq2TAu2gzl5XM0mQ" resname="FirstPage">          <source>First page</source>          <target>最初のページ</target>        </trans-unit>        <trans-unit id="khX9wIKnpJFDIWvtbHJpCg" resname="RightPages">          <source>Right pages</source>          <target>右ページ</target>        </trans-unit>        <trans-unit id="QR7rFC0zJIwfzEn9E+IYRA" resname="PageNumber">          <source>Page number</source>          <target>ページ番号</target>        </trans-unit>      </group>    </body>  </file></xliff>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+Translation file.
+This file is distributed under the same license as the product package.-->
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+
+  <file datatype="x-STR#" original="undefined" source-language="en" target-language="ja">
+    <header>
+      <prop-group name="Xliff-Editor.4dbase">
+        <prop prop-type="version">2.0</prop>
+      </prop-group>
+    </header>
+    <body>
+      <group id="0" resname="Palette_0">
+        <trans-unit id="999" resname="Document">
+          <source>Document</source>
+          <target>ドキュメント</target>
+        </trans-unit>
+        <trans-unit id="2" resname="FontStyle">
+          <source>Font Style</source>
+          <target>フォントスタイル</target>
+        </trans-unit>
+        <trans-unit id="3" resname="MarginsAlignments">
+          <source>Margins &amp; Alignments</source>
+          <target>余白 &amp; 行揃え</target>
+        </trans-unit>
+        <trans-unit id="5" resname="Frames">
+          <source>Frames</source>
+          <target>枠線</target>
+        </trans-unit>
+        <trans-unit id="6" resname="Sizes">
+          <source>Sizes</source>
+          <target>サイズ</target>
+        </trans-unit>
+        <trans-unit id="7" resname="Tabulations">
+          <source>Tabulations</source>
+          <target>タブ区切り</target>
+        </trans-unit>
+        <trans-unit id="8" resname="Background">
+          <source>Background</source>
+          <target>背景</target>
+        </trans-unit>
+        <trans-unit id="9" resname="Information">
+          <source>Information</source>
+          <target>インフォメーション</target>
+        </trans-unit>
+        <trans-unit id="290" resname="FindAndReplace">
+          <source>Find and replace</source>
+          <target>検索と置換</target>
+        </trans-unit>
+        <trans-unit id="291" resname="Tables">
+          <source>Tables</source>
+          <target>表</target>
+        </trans-unit>
+        <trans-unit id="/h5RnHFGXRGnCZiYU/DhZQ" resname="ImportExport">
+          <source>Import Export</source>
+          <target>読み込み 書き出し</target>
+        </trans-unit>
+      </group>
+      <group resname="Palette_alignment">
+        <trans-unit id="9" resname="HorAlignColon">
+          <source>Hor. Align.:</source>
+          <target>横揃え:</target>
+        </trans-unit>
+        <trans-unit id="10" resname="VertAlignColon">
+          <source>Vert. Align.:</source>
+          <target>縦揃え:</target>
+        </trans-unit>
+        <trans-unit id="11" resname="FirstIndentationColon">
+          <source>1st indentation:</source>
+          <target>第1インデント:</target>
+        </trans-unit>
+        <trans-unit id="13" resname="BackgroundColon">
+          <source>Background:</source>
+          <target>背景:</target>
+        </trans-unit>
+        <trans-unit id="14" resname="BordersColon">
+          <source>Borders:</source>
+          <target>境界線:</target>
+        </trans-unit>
+        <trans-unit id="15" resname="Text">
+          <source>Text</source>
+          <target>テキスト</target>
+        </trans-unit>
+        <trans-unit id="16" resname="Margins">
+          <source>Margins</source>
+          <target>余白</target>
+        </trans-unit>
+        <trans-unit id="17" resname="Lists">
+          <source>Lists</source>
+          <target>リスト</target>
+        </trans-unit>
+        <trans-unit id="25" resname="LineHeightColon">
+          <source>Line Height:</source>
+          <target>行の高さ:</target>
+        </trans-unit>
+        <trans-unit id="84" resname="StyleColon0">
+          <source>Style:</source>
+          <target>スタイル:</target>
+        </trans-unit>
+        <trans-unit id="2HRYy6hkMPJ7DgLcWpD6cQ" resname="ParagraphBackgroundColor">
+          <source>Paragraph background color</source>
+          <target>段落背景色</target>
+        </trans-unit>
+        <trans-unit id="J/YshwyIKycFvHMMljmKyA" resname="CopyRuler">
+          <source>Copy ruler</source>
+          <target>ルーラーをコピー</target>
+        </trans-unit>
+        <trans-unit id="TbhlTOVpXGK5g/2set0oGw" resname="PasteRuler">
+          <source>Paste ruler</source>
+          <target>ルーラーをペースト</target>
+        </trans-unit>
+        <trans-unit id="JP6IFI5cuF2FnMhVrQ8ukw" resname="IncreaseIndent">
+          <source>Increase indent</source>
+          <target>インデント増加</target>
+        </trans-unit>
+        <trans-unit id="MzVx3kZk0LyQrDAWjJAUrA" resname="DecreaseIndent">
+          <source>Decrease indent</source>
+          <target>インデント現象</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteBackgrounds">
+        <trans-unit id="18" resname="BackgroundPicture">
+          <source>Background Picture</source>
+          <target>背景ピクチャー</target>
+        </trans-unit>
+        <trans-unit id="19" resname="PictureOrURL">
+          <source>Picture:
+(or URL)</source>
+          <target>ピクチャー:
+(またはURL)</target>
+        </trans-unit>
+        <trans-unit id="20" resname="RepeatColon">
+          <source>Repeat:</source>
+          <target>繰り返し:</target>
+        </trans-unit>
+        <trans-unit id="21" resname="Clip">
+          <source>Clip:</source>
+          <target>Clip:</target>
+        </trans-unit>
+        <trans-unit id="22" resname="Origin">
+          <source>Origin:</source>
+          <target>Origin:</target>
+        </trans-unit>
+        <trans-unit id="23" resname="HorizontalSize">
+          <source>Horizontal Size:</source>
+          <target>縦方向サイズ:</target>
+        </trans-unit>
+        <trans-unit id="24" resname="VerticalSize">
+          <source>Vertical Size:</source>
+          <target>横方向サイズ:</target>
+        </trans-unit>
+        <trans-unit id="25" resname="PositionColon">
+          <source>Position:</source>
+          <target>位置:</target>
+        </trans-unit>
+        <trans-unit id="sg9lHFhI0LqrVxCysNWY7g" resname="MoveHyphen">
+          <source>Move:</source>
+          <target>移動する:</target>
+        </trans-unit>
+        <trans-unit id="yWaHkpmXJEV+bnWMCVsAVg" resname="PageHyphen">
+          <source>Page:</source>
+          <target>ページ:</target>
+        </trans-unit>
+        <trans-unit id="33fb+8NhEANEWmPAFLSQjg" resname="SectionHyphen">
+          <source>Section:</source>
+          <target>セクション:</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Picture">
+          <source>Picture</source>
+          <target>ピクチャ</target>
+        </trans-unit>
+        <trans-unit id="xZf5yixaHWdVwEkN2lFVkg" resname="AdvancedSettingsEllipsis">
+          <source>Advanced settings…</source>
+          <target>詳細設定…</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteFonts">
+        <trans-unit id="26" resname="FontColon">
+          <source>Font:</source>
+          <target>フォント:</target>
+        </trans-unit>
+        <trans-unit id="28" resname="SizeColon">
+          <source>Size:</source>
+          <target>サイズ:</target>
+        </trans-unit>
+        <trans-unit id="30" resname="BackgroundColon">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit id="31" resname="Bold">
+          <source>Bold</source>
+          <target>ボールド</target>
+        </trans-unit>
+        <trans-unit id="32" resname="Italic">
+          <source>Italic</source>
+          <target>イタリック</target>
+        </trans-unit>
+        <trans-unit id="33" resname="Linethrough">
+          <source>Linethrough</source>
+          <target>打ち消し線</target>
+        </trans-unit>
+        <trans-unit id="34" resname="Underline">
+          <source>Underline</source>
+          <target>下線</target>
+        </trans-unit>
+        <trans-unit id="34" resname="LineColon">
+          <source>Line:</source>
+          <target>下線タイプ:</target>
+        </trans-unit>
+        <trans-unit id="35" resname="ColorColon:">
+          <source>Color:</source>
+          <target>カラー:</target>
+        </trans-unit>
+        <trans-unit id="36" resname="Shadows">
+          <source>Shadows</source>
+          <target>シャドウ</target>
+        </trans-unit>
+        <trans-unit id="37" resname="Shadow">
+          <source>Shadow</source>
+          <target>シャドウを使用</target>
+        </trans-unit>
+        <trans-unit id="38" resname="OffsetColon">
+          <source>Offset:</source>
+          <target>オフセット:</target>
+        </trans-unit>
+        <trans-unit id="95" resname="StyleColon1">
+          <source>Style:</source>
+          <target>スタイル:</target>
+        </trans-unit>
+        <trans-unit id="96" resname="TransformColon">
+          <source>Transform:</source>
+          <target>変換:</target>
+        </trans-unit>
+        <trans-unit id="U+//oc3/u1IXrlP6L4mWAQ" resname="SpecialCharacters">
+          <source>Special characters</source>
+          <target>特殊文字</target>
+        </trans-unit>
+        <trans-unit id="SSmzUaLxeO3nXDjxyyb0gg" resname="SoftHyphen">
+          <source>Soft hyphen:</source>
+          <target>ソフトハイフン:</target>
+        </trans-unit>
+        <trans-unit id="eAIqOo9+b5XNQn3YeW33eg" resname="FontsElipsis">
+          <source>Fonts…</source>
+          <target>フォント…</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteFrame">
+        <trans-unit id="39" resname="SidesColon">
+          <source>Sides:</source>
+          <target>方向:</target>
+        </trans-unit>
+        <trans-unit id="42" resname="ColorColon">
+          <source>Color:</source>
+          <target>カラー:</target>
+        </trans-unit>
+        <trans-unit id="43" resname="RadiusColon">
+          <source>Radius:</source>
+          <target>半径:</target>
+        </trans-unit>
+        <trans-unit id="44" resname="Frame">
+          <source>Frame</source>
+          <target>枠線</target>
+        </trans-unit>
+        <trans-unit id="45" resname="Padding">
+          <source>Padding</source>
+          <target>パッド</target>
+        </trans-unit>
+        <trans-unit id="95" resname="WidthColon">
+          <source>Width:</source>
+          <target>幅:</target>
+        </trans-unit>
+        <trans-unit id="96" resname="StyleColon2">
+          <source>Style:</source>
+          <target>スタイル:</target>
+        </trans-unit>
+        <trans-unit id="97" resname="IndentationColon">
+          <source>Indentation:</source>
+          <target>インデント:</target>
+        </trans-unit>
+        <trans-unit id="98" resname="Outside">
+          <source>Outside</source>
+          <target>外側</target>
+        </trans-unit>
+        <trans-unit id="99" resname="Inside">
+          <source>Inside</source>
+          <target>内側</target>
+        </trans-unit>
+        <trans-unit id="100" resname="ApplyToColon">
+          <source>Apply to:</source>
+          <target>適用対象:</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteInformation">
+        <trans-unit id="46" resname="4dExpression">
+          <source>4D Expression</source>
+          <target>4D式</target>
+        </trans-unit>
+        <trans-unit id="47" resname="InsertColon">
+          <source>Insert:</source>
+          <target>挿入:</target>
+        </trans-unit>
+        <trans-unit id="48" resname="Date">
+          <source>Date</source>
+          <target>日付</target>
+        </trans-unit>
+        <trans-unit id="49" resname="ExpressionColon">
+          <source>Expression:</source>
+          <target>式:</target>
+        </trans-unit>
+        <trans-unit id="50" resname="DisplayCollon">
+          <source>Display:</source>
+          <target>値/式の表示:</target>
+        </trans-unit>
+        <trans-unit id="51" resname="LabelColon">
+          <source>Label:</source>
+          <target>ラベル:</target>
+        </trans-unit>
+        <trans-unit id="52" resname="LinkColon">
+          <source>Link:</source>
+          <target>リンク:</target>
+        </trans-unit>
+        <trans-unit id="50" resname="URL">
+          <source>URL</source>
+          <target>URL</target>
+        </trans-unit>
+        <trans-unit id="51" resname="TitleColon">
+          <source>Title:</source>
+          <target>タイトル:</target>
+        </trans-unit>
+        <trans-unit id="52" resname="SubjectColon">
+          <source>Subject:</source>
+          <target>主題:</target>
+        </trans-unit>
+        <trans-unit id="53" resname="AuthorColon">
+          <source>Author:</source>
+          <target>作成者:</target>
+        </trans-unit>
+        <trans-unit id="54" resname="CompanyColon">
+          <source>Company:</source>
+          <target>会社:</target>
+        </trans-unit>
+        <trans-unit id="55" resname="NotesColon">
+          <source>Notes:</source>
+          <target>注記:</target>
+        </trans-unit>
+        <trans-unit id="56" resname="CreatedColon">
+          <source>Created:</source>
+          <target>作成日:</target>
+        </trans-unit>
+        <trans-unit id="57" resname="ModifiedColon">
+          <source>Modified:</source>
+          <target>変更日:</target>
+        </trans-unit>
+        <trans-unit id="58" resname="ActionsColon">
+          <source>Actions:</source>
+          <target>アクション:</target>
+        </trans-unit>
+        <trans-unit id="60" resname="Compute">
+          <source>Compute</source>
+          <target>再計算</target>
+        </trans-unit>
+        <trans-unit id="63" resname="Freeze">
+          <source>Freeze</source>
+          <target>評価</target>
+        </trans-unit>
+        <trans-unit id="64" resname="SelectionOnly">
+          <source>Selection only</source>
+          <target>選択部分のみ</target>
+        </trans-unit>
+        <trans-unit id="64" resname="Expression">
+          <source>Expression</source>
+          <target>式</target>
+        </trans-unit>
+        <trans-unit id="65" resname="Values">
+          <source>Values</source>
+          <target>値</target>
+        </trans-unit>
+        <trans-unit id="66" resname="Expressions">
+          <source>Expressions</source>
+          <target>式</target>
+        </trans-unit>
+        <trans-unit id="67" resname="Set">
+          <source>Set</source>
+          <target>リンク設定</target>
+        </trans-unit>
+        <trans-unit id="96" resname="Document1">
+          <source>Document</source>
+          <target>ドキュメント情報</target>
+        </trans-unit>
+        <trans-unit id="v0KYZg1/E5YU2xvWP3exVA" resname="NoTableAvailable">
+          <source>No table available. The formula editor can not be open.</source>
+          <target>利用できるテーブルがありません。フォーミュラエディターを開くことができません。</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteSizes">
+        <trans-unit id="68" resname="Paragraph">
+          <source>Paragraph</source>
+          <target>段落</target>
+        </trans-unit>
+        <trans-unit id="69" resname="Picture">
+          <source>Picture</source>
+          <target>ピクチャー</target>
+        </trans-unit>
+        <trans-unit id="70" resname="SetWidth">
+          <source>Set width</source>
+          <target>固定幅</target>
+        </trans-unit>
+        <trans-unit id="71" resname="VariableWidth">
+          <source>Variable width</source>
+          <target>可変幅</target>
+        </trans-unit>
+        <trans-unit id="74" resname="minWidthColon">
+          <source>Min width:</source>
+          <target>最小幅:</target>
+        </trans-unit>
+        <trans-unit id="75" resname="minHeightColon">
+          <source>Min height:</source>
+          <target>最小高さ:</target>
+        </trans-unit>
+        <trans-unit id="0" resname="WidthColon">
+          <source>Width:</source>
+          <target>幅:</target>
+        </trans-unit>
+        <trans-unit id="77" resname="AltTextColon">
+          <source>Alt. Text</source>
+          <target>代替テキスト</target>
+        </trans-unit>
+        <trans-unit id="74" resname="HeightColon">
+          <source>Height:</source>
+          <target>高さ:</target>
+        </trans-unit>
+        <trans-unit id="75" resname="AltText">
+          <source>Alternate text</source>
+          <target>代替テキスト</target>
+        </trans-unit>
+        <trans-unit id="76" resname="ZeroAuto">
+          <source>(0 = Auto)</source>
+          <target>(0 = Auto)</target>
+        </trans-unit>
+        <trans-unit id="83" resname="UnitColon">
+          <source>Unit:</source>
+          <target>単位:</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteTabulations">
+        <trans-unit id="77" resname="defaultTabColon">
+          <source>Default tab:</source>
+          <target>デフォルトタブ:</target>
+        </trans-unit>
+        <trans-unit id="77" resname="TypeColon">
+          <source>Type:</source>
+          <target>タイプ:</target>
+        </trans-unit>
+        <trans-unit id="80" resname="Type">
+          <source>Type</source>
+          <target>タイプ</target>
+        </trans-unit>
+        <trans-unit id="81" resname="Position">
+          <source>Position</source>
+          <target>距離</target>
+        </trans-unit>
+        <trans-unit id="82" resname="tipDeleteTab">
+          <source>Delete tabulation</source>
+          <target>タブ区切りを削除</target>
+        </trans-unit>
+        <trans-unit id="83" resname="tipNewTab">
+          <source>New tabulation</source>
+          <target>新しいタブ区切り</target>
+        </trans-unit>
+        <trans-unit id="84" resname="DefaultLeadingChar">
+          <source>Default leading char.</source>
+          <target>デフォルトのリード文字</target>
+        </trans-unit>
+        <trans-unit id="85" resname="LeadingChar">
+          <source>Leading char.</source>
+          <target>リード文字</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteBookmarks">
+        <trans-unit id="1" resname="Bookmarks">
+          <source>Bookmarks</source>
+          <target>ブックマーク</target>
+        </trans-unit>
+        <trans-unit id="2" resname="NewBookmark">
+          <source>New Bookmark</source>
+          <target>新規ブックマーク</target>
+        </trans-unit>
+        <trans-unit id="3" resname="tipRedefineBookmark">
+          <source>Redefine bookmark "[1]"</source>
+          <target>ブックマーク"[1]"を再定義する</target>
+        </trans-unit>
+        <trans-unit id="4" resname="tipDeleteBookmark">
+          <source>Delete bookmark "[1]"</source>
+          <target>ブックマーク"[1]"を削除する</target>
+        </trans-unit>
+        <trans-unit id="5" resname="tipNewBookmark">
+          <source>New bookmark</source>
+          <target>新しいブックマーク</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_CopyPaste">
+        <trans-unit id="82" resname="CopyStyle">
+          <source>Copy Style</source>
+          <target>スタイルをコピー</target>
+        </trans-unit>
+        <trans-unit id="83" resname="PasteStyle">
+          <source>Paste Style</source>
+          <target>スタイルを貼り付け</target>
+        </trans-unit>
+        <trans-unit id="86" resname="CopyTextSettings">
+          <source>Copy Text Settings</source>
+          <target>テキスト設定をコピー</target>
+        </trans-unit>
+        <trans-unit id="87" resname="PasteTextSettings">
+          <source>Paste Text Settings</source>
+          <target>テキスト設定を貼り付け</target>
+        </trans-unit>
+        <trans-unit id="87" resname="CopyMargins">
+          <source>Copy Margins</source>
+          <target>余白をコピー</target>
+        </trans-unit>
+        <trans-unit id="88" resname="PasteMargins">
+          <source>Paste Margins</source>
+          <target>余白を貼り付け</target>
+        </trans-unit>
+        <trans-unit id="89" resname="CopyTabulation">
+          <source>Copy Tabulation</source>
+          <target>タブ区切りをコピー</target>
+        </trans-unit>
+        <trans-unit id="90" resname="PasteTabulation">
+          <source>Paste Tabulation</source>
+          <target>タブ区切りを貼り付け</target>
+        </trans-unit>
+        <trans-unit id="91" resname="CopyFrame">
+          <source>Copy Frame</source>
+          <target>枠線をコピー</target>
+        </trans-unit>
+        <trans-unit id="92" resname="PasteFrame">
+          <source>Paste Frame</source>
+          <target>枠線を貼り付け</target>
+        </trans-unit>
+        <trans-unit id="93" resname="CopyBackground">
+          <source>Copy Background</source>
+          <target>背景をコピー</target>
+        </trans-unit>
+        <trans-unit id="" resname="PasteBackground">
+          <source>Paste Background</source>
+          <target>背景を貼り付け</target>
+        </trans-unit>
+      </group>
+      <group resname="Menu_ImportExport">
+        <trans-unit id="97" resname="NewEllipsis">
+          <source>New…</source>
+          <target>新規…</target>
+        </trans-unit>
+        <trans-unit id="98" resname="ImportEllipsis">
+          <source>Import…</source>
+          <target>読み込み…</target>
+        </trans-unit>
+        <trans-unit id="99" resname="ExportAs">
+          <source>Export as:</source>
+          <target>書き出し形式:</target>
+        </trans-unit>
+        <trans-unit id="100" resname="HtmlEllipsis">
+          <source>HTML…</source>
+          <target>HTML形式…</target>
+        </trans-unit>
+        <trans-unit id="101" resname="4DWriteProEllipsis">
+          <source>4D Write Pro…</source>
+          <target>4D Write Pro 形式…</target>
+        </trans-unit>
+        <trans-unit id="UxW87OWPGPdnNHB/00tm4w" resname="WordEllipsis">
+          <source>Microsoft Word…</source>
+          <target>Microsoft Word文書…</target>
+        </trans-unit>
+        <trans-unit id="azodlWWrSTDq7NsEsKhs2w" resname="PdfEllipsis">
+          <source>PDF…</source>
+          <target>PDF文書…</target>
+        </trans-unit>
+        <trans-unit id="6Uw3JqUrx1zvQs/W032F0Q" resname="TextEllipsis">
+          <source>Text…</source>
+          <target>テキスト形式…</target>
+        </trans-unit>
+        <trans-unit id="HKtPq6HziMxcUM5TiHmLfQ" resname="HtmlMimeEllipsis">
+          <source>HTML Mime…</source>
+          <target>HTML Mime形式…</target>
+        </trans-unit>
+        <trans-unit id="6vzRUs/48oy0kosSPH+4IA" resname="clearEllipsis">
+          <source>Clear…</source>
+          <target>消去…</target>
+        </trans-unit>
+        <trans-unit id="giehscfoPnUFF9q+EyY2Fg" resname="4DWriteEllipsis">
+          <source>4D Write…</source>
+          <target>4D Write 形式…</target>
+        </trans-unit>
+        <trans-unit id="6K4ODRIRH2gZNBJ27Zw7zA" resname="Import">
+          <source>Import</source>
+          <target>読み込み</target>
+        </trans-unit>
+      </group>
+      <group resname="AlertsAndMessages">
+        <trans-unit id="102" resname="AreYouSure">
+          <source>Are you sure?</source>
+          <target>本当によろしいですか？</target>
+        </trans-unit>
+        <trans-unit id="104" resname="SelectADestination">
+          <source>Select a destination.</source>
+          <target>保存先を選択</target>
+        </trans-unit>
+      </group>
+      <group resname="ListStyleNames">
+        <trans-unit id="1" resname="None">
+          <source>None</source>
+          <target>なし</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Disc">
+          <source>Disc</source>
+          <target>ディスク</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Circle">
+          <source>Circle</source>
+          <target>円</target>
+        </trans-unit>
+        <trans-unit id="4" resname="Square">
+          <source>Square</source>
+          <target>正方形</target>
+        </trans-unit>
+        <trans-unit id="5" resname="HollowSquare">
+          <source>Hollow square</source>
+          <target>穴あき正方形</target>
+        </trans-unit>
+        <trans-unit id="6" resname="Diamond">
+          <source>Diamond</source>
+          <target>ダイヤ</target>
+        </trans-unit>
+        <trans-unit id="7" resname="Club">
+          <source>Club</source>
+          <target>クラブ</target>
+        </trans-unit>
+        <trans-unit id="8" resname="123">
+          <source>1 2 3</source>
+          <target>1 2 3</target>
+        </trans-unit>
+        <trans-unit id="9" resname="010203">
+          <source>01 02 03</source>
+          <target>01 02 03</target>
+        </trans-unit>
+        <trans-unit id="10" resname="abcLow">
+          <source>a b c</source>
+          <target>a b c</target>
+        </trans-unit>
+        <trans-unit id="11" resname="abcCAP">
+          <source>A B C</source>
+          <target>A B C</target>
+        </trans-unit>
+        <trans-unit id="12" resname="Roman">
+          <source>I II III</source>
+          <target>I II III</target>
+        </trans-unit>
+      </group>
+      <group resname="ListUnits">
+        <trans-unit id="1" resname="cm">
+          <source>cm</source>
+          <target>cm</target>
+        </trans-unit>
+        <trans-unit id="2" resname="mm">
+          <source>mm</source>
+          <target>mm</target>
+        </trans-unit>
+        <trans-unit id="3" resname="inches">
+          <source>inches</source>
+          <target>インチ</target>
+        </trans-unit>
+        <trans-unit id="4" resname="pt">
+          <source>pt</source>
+          <target>pt</target>
+        </trans-unit>
+        <trans-unit id="5" resname="auto">
+          <source>auto</source>
+          <target>auto</target>
+        </trans-unit>
+        <trans-unit id="6" resname="pct">
+          <source>%</source>
+          <target>%</target>
+        </trans-unit>
+      </group>
+      <group resname="borderStyleNames">
+        <trans-unit id="1" resname="Solid">
+          <source>Solid</source>
+          <target>単線</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Dotted">
+          <source>Dotted</source>
+          <target>点線</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Dashed">
+          <source>Dashed</source>
+          <target>破線</target>
+        </trans-unit>
+        <trans-unit id="4" resname="Double">
+          <source>Double</source>
+          <target>二重線</target>
+        </trans-unit>
+        <trans-unit id="5" resname="Groove">
+          <source>Groove</source>
+          <target>溝付き線</target>
+        </trans-unit>
+        <trans-unit id="6" resname="Ridge">
+          <source>Ridge</source>
+          <target>リッジ</target>
+        </trans-unit>
+        <trans-unit id="7" resname="Inset">
+          <source>Inset</source>
+          <target>インセット</target>
+        </trans-unit>
+        <trans-unit id="8" resname="Semi">
+          <source>Semi</source>
+          <target>薄い線</target>
+        </trans-unit>
+        <trans-unit id="9" resname="Word">
+          <source>Word</source>
+          <target>単語線</target>
+        </trans-unit>
+        <trans-unit id="231" resname="Outset">
+          <source>Outset</source>
+          <target>アウトセット</target>
+        </trans-unit>
+        <trans-unit id="232" resname="Hidden">
+          <source>Hidden</source>
+          <target>非表示</target>
+        </trans-unit>
+      </group>
+      <group resname="BgndRepeatMode">
+        <trans-unit id="1" resname="None">
+          <source>None</source>
+          <target>なし</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Repeat">
+          <source>Repeat</source>
+          <target>繰り返す</target>
+        </trans-unit>
+        <trans-unit id="3" resname="RepeatHor">
+          <source>Repeat Hor.</source>
+          <target>水平に繰り返す</target>
+        </trans-unit>
+        <trans-unit id="4" resname="RepeatVert">
+          <source>Repeat Vert.</source>
+          <target>垂直に繰り返す</target>
+        </trans-unit>
+      </group>
+      <group resname="BgndClipMode">
+        <trans-unit id="1" resname="Border">
+          <source>Border</source>
+          <target>ボーダー</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Padding">
+          <source>Padding</source>
+          <target>パッド</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Content">
+          <source>Content</source>
+          <target>コンテンツ</target>
+        </trans-unit>
+        <trans-unit id="4" resname="Paper">
+          <source>Paper</source>
+          <target>用紙</target>
+        </trans-unit>
+      </group>
+      <group resname="Tabulations">
+        <trans-unit id="1" resname="Left">
+          <source>Left</source>
+          <target>左</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Right">
+          <source>Right</source>
+          <target>右</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Center">
+          <source>Center</source>
+          <target>センター</target>
+        </trans-unit>
+        <trans-unit id="4" resname="Decimal">
+          <source>Decimal</source>
+          <target>デシマル</target>
+        </trans-unit>
+        <trans-unit id="5" resname="Bars">
+          <source>Bars</source>
+          <target>棒</target>
+        </trans-unit>
+      </group>
+      <group resname="FontAlignVert">
+        <trans-unit id="1" resname="Baseline">
+          <source>Baseline</source>
+          <target>ベースLINE</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Superscript">
+          <source>Superscript</source>
+          <target>上付き</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Subscript">
+          <source>Subscript</source>
+          <target>下付き</target>
+        </trans-unit>
+      </group>
+      <group resname="TextTransform">
+        <trans-unit id="1" resname="TextTransformNone">
+          <source>None</source>
+          <target>変換なし</target>
+        </trans-unit>
+        <trans-unit id="2" resname="Capitalize">
+          <source>Capitalize</source>
+          <target>先頭を大文字</target>
+        </trans-unit>
+        <trans-unit id="3" resname="Lowercase">
+          <source>Lowercase</source>
+          <target>全て小文字</target>
+        </trans-unit>
+        <trans-unit id="4" resname="Uppercase">
+          <source>Uppercase</source>
+          <target>全て大文字</target>
+        </trans-unit>
+        <trans-unit id="5" resname="SmallUppercase">
+          <source>Small uppercase</source>
+          <target>全て小さな大文字</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteStylesheets">
+        <trans-unit id="169" resname="characterStylesheets">
+          <source>Character style sheets</source>
+          <target>文字スタイルシート</target>
+        </trans-unit>
+        <trans-unit id="172" resname="rowStylesheets">
+          <source>Row style sheets</source>
+          <target>行スタイルシート</target>
+        </trans-unit>
+        <trans-unit id="173" resname="cellStylesheets">
+          <source>Cell style sheets</source>
+          <target>セルスタイルシート</target>
+        </trans-unit>
+        <trans-unit id="173" resname="paragraphStylesheets">
+          <source>Paragraph style sheets</source>
+          <target>段落スタイルシート</target>
+        </trans-unit>
+        <trans-unit id="174" resname="tableStylesheets">
+          <source>Table style sheets</source>
+          <target>テーブルスタイルシート</target>
+        </trans-unit>
+        <trans-unit id="175" resname="imageStylesheets">
+          <source>Image style sheets</source>
+          <target>画像スタイルシート</target>
+        </trans-unit>
+        <trans-unit id="176" resname="newStylesheet">
+          <source>New style sheet</source>
+          <target>新規スタイルシート</target>
+        </trans-unit>
+        <trans-unit id="177" resname="deleteStylesheet">
+          <source>Delete style sheet</source>
+          <target>スタイルシートを削除</target>
+        </trans-unit>
+        <trans-unit id="178" resname="updateStylesheet">
+          <source>Update style sheet</source>
+          <target>スタイルシートを更新</target>
+        </trans-unit>
+        <trans-unit id="179" resname="editStylesheet">
+          <source>Edit style sheet</source>
+          <target>スタイルシートを編集</target>
+        </trans-unit>
+        <trans-unit id="180" resname="stylesheets">
+          <source>Style sheets</source>
+          <target>スタイルシート</target>
+        </trans-unit>
+        <trans-unit id="181" resname="applyStylesheet">
+          <source>Apply style sheet</source>
+          <target>スタイルシートを適用</target>
+        </trans-unit>
+        <trans-unit id="216" resname="menuNewEmpty">
+          <source>New empty style sheet</source>
+          <target>新しい空のスタイルシート</target>
+        </trans-unit>
+        <trans-unit id="217" resname="menuNewFromSelection">
+          <source>New style sheet based on selection</source>
+          <target>セレクションに基づいた新しいスタイルシート</target>
+        </trans-unit>
+        <trans-unit id="218" resname="menuDuplicate">
+          <source>Duplicate</source>
+          <target>複製する</target>
+        </trans-unit>
+        <trans-unit id="219" resname="requestTitle">
+          <source>New style sheet name?</source>
+          <target>新規スタイルシート名</target>
+        </trans-unit>
+        <trans-unit id="220" resname="requestPlaceHolder">
+          <source>Style Sheet</source>
+          <target>スタイルシート</target>
+        </trans-unit>
+        <trans-unit id="221" resname="requestCreateLabel">
+          <source>Create</source>
+          <target>作成</target>
+        </trans-unit>
+        <trans-unit id="222" resname="requestCancelLabel">
+          <source>Cancel</source>
+          <target>キャンセル</target>
+        </trans-unit>
+        <trans-unit id="223" resname="menuDeleteStylesheet">
+          <source>Delete "&lt;1&gt;" style sheet…</source>
+          <target>"&lt;1&gt;"のスタイルシートを削除…</target>
+        </trans-unit>
+        <trans-unit id="224" resname="menuRemoveParagraphStylesheet">
+          <source>Remove paragraph stylesheet</source>
+          <target>段落スタイルシートを削除</target>
+        </trans-unit>
+        <trans-unit id="226" resname="menuRemoveCharacterStyleshet">
+          <source>Remove character style sheets</source>
+          <target>文字スタイルシートを削除</target>
+        </trans-unit>
+        <trans-unit id="242" resname="menuEditStylesheet">
+          <source>Edit '&lt;1&gt;' style sheet</source>
+          <target>'&lt;1&gt;'のスタイルシートを編集</target>
+        </trans-unit>
+        <trans-unit id="243" resname="menuEditDefault">
+          <source>Default values…</source>
+          <target>デフォルト値…</target>
+        </trans-unit>
+        <trans-unit id="245" resname="confirmDeleteStylesheet">
+          <source>Delete "&lt;1&gt;" style sheet?</source>
+          <target>"&lt;1&gt;"のスタイルシートを削除しますか?</target>
+        </trans-unit>
+        <trans-unit id="UNLqBZ0kwRTrWB3TzdCdnA" resname="StyleSheetPlaceHolder">
+          <source>Style sheet name</source>
+          <target>スタイルシート名</target>
+        </trans-unit>
+      </group>
+      <group resname="StylesheetEditor">
+        <trans-unit id="180" resname="ssFontSize">
+          <source>Font size</source>
+          <target>フォントサイズ</target>
+        </trans-unit>
+        <trans-unit id="181" resname="ssFont">
+          <source>Font</source>
+          <target>フォント</target>
+        </trans-unit>
+        <trans-unit id="182" resname="ssFontFamily">
+          <source>Font familly</source>
+          <target>フォントファミリー</target>
+        </trans-unit>
+        <trans-unit id="183" resname="ssTextColor">
+          <source>Text color</source>
+          <target>テキストカラー</target>
+        </trans-unit>
+        <trans-unit id="184" resname="ssBackgroundColor">
+          <source>Background color</source>
+          <target>背景色</target>
+        </trans-unit>
+        <trans-unit id="185" resname="ssBold">
+          <source>Bold</source>
+          <target>ボールド</target>
+        </trans-unit>
+        <trans-unit id="186" resname="ssItalic">
+          <source>Italic</source>
+          <target>イタリック</target>
+        </trans-unit>
+        <trans-unit id="187" resname="ssUnderlineStyle">
+          <source>Underline style</source>
+          <target>下線付きスタイル</target>
+        </trans-unit>
+        <trans-unit id="188" resname="ssUnderlineColor">
+          <source>Underline color</source>
+          <target>下線カラー</target>
+        </trans-unit>
+        <trans-unit id="189" resname="ssLinethroughStyle">
+          <source>Line through style</source>
+          <target>打ち消し線スタイル</target>
+        </trans-unit>
+        <trans-unit id="190" resname="ssLinethroughColor">
+          <source>Line through color</source>
+          <target>打ち消し線カラー</target>
+        </trans-unit>
+        <trans-unit id="191" resname="ssShadowColor">
+          <source>Shadow color</source>
+          <target>シャドウカラー</target>
+        </trans-unit>
+        <trans-unit id="192" resname="ssShadowOffet">
+          <source>Shadow offset</source>
+          <target>シャドウオフセット</target>
+        </trans-unit>
+        <trans-unit id="193" resname="ssHorizontalAlign">
+          <source>Horizontal align</source>
+          <target>水平方向揃え</target>
+        </trans-unit>
+        <trans-unit id="194" resname="ssTextIndent">
+          <source>Text indent</source>
+          <target>テキストインデント</target>
+        </trans-unit>
+        <trans-unit id="195" resname="ssLineHeight">
+          <source>Line height</source>
+          <target>行の高さ</target>
+        </trans-unit>
+        <trans-unit id="196" resname="ssVerticalAlign">
+          <source>Vertical align</source>
+          <target>垂直方向揃え</target>
+        </trans-unit>
+        <trans-unit id="197" resname="ssTabs">
+          <source>Tabs</source>
+          <target>タブ</target>
+        </trans-unit>
+        <trans-unit id="198" resname="ssDefaultTab">
+          <source>Default tab</source>
+          <target>デフォルトのタブ</target>
+        </trans-unit>
+        <trans-unit id="199" resname="ssListStyleType">
+          <source>List style</source>
+          <target>リストスタイル</target>
+        </trans-unit>
+        <trans-unit id="200" resname="ssMarginLeft">
+          <source>Margin left</source>
+          <target>左余白</target>
+        </trans-unit>
+        <trans-unit id="201" resname="ssMarginTop">
+          <source>Margin top</source>
+          <target>上余白</target>
+        </trans-unit>
+        <trans-unit id="202" resname="ssMarginRight">
+          <source>Margin right</source>
+          <target>右余白</target>
+        </trans-unit>
+        <trans-unit id="203" resname="ssMarginBottom">
+          <source>Margin bottom</source>
+          <target>下余白</target>
+        </trans-unit>
+        <trans-unit id="204" resname="ssPaddingLeft">
+          <source>Padding left</source>
+          <target>左パディング</target>
+        </trans-unit>
+        <trans-unit id="205" resname="ssPaddingTop">
+          <source>Padding top</source>
+          <target>上パディング</target>
+        </trans-unit>
+        <trans-unit id="206" resname="ssPaddingRight">
+          <source>Padding right</source>
+          <target>右パディング</target>
+        </trans-unit>
+        <trans-unit id="207" resname="ssPaddingBottom">
+          <source>Padding bottom</source>
+          <target>下パディング</target>
+        </trans-unit>
+        <trans-unit id="208" resname="ssBorderStyle">
+          <source>Border style</source>
+          <target>境界線スタイル</target>
+        </trans-unit>
+        <trans-unit id="209" resname="ssBorderWidth">
+          <source>Border width</source>
+          <target>境界線幅</target>
+        </trans-unit>
+        <trans-unit id="210" resname="ssBorderColor">
+          <source>Border color</source>
+          <target>境界線カラー</target>
+        </trans-unit>
+        <trans-unit id="211" resname="ssBorderRadius">
+          <source>Border radius</source>
+          <target>境界線半径</target>
+        </trans-unit>
+        <trans-unit id="212" resname="ssNameColon">
+          <source>Name:</source>
+          <target>名前:</target>
+        </trans-unit>
+        <trans-unit id="213" resname="ssFonts">
+          <source>Fonts</source>
+          <target>フォント</target>
+        </trans-unit>
+        <trans-unit id="214" resname="ssParagraphs">
+          <source>Paragraphs</source>
+          <target>段落</target>
+        </trans-unit>
+        <trans-unit id="215" resname="ssMarginsBorders">
+          <source>Margins &amp; borders</source>
+          <target>余白 &amp; 境界線</target>
+        </trans-unit>
+        <trans-unit id="226" resname="ssTransform">
+          <source>Transform</source>
+          <target>変換</target>
+        </trans-unit>
+        <trans-unit id="227" resname="ssAlignLeft">
+          <source>Left aligned</source>
+          <target>左揃え</target>
+        </trans-unit>
+        <trans-unit id="228" resname="ssAlignCenter">
+          <source>Centered</source>
+          <target>中央揃え</target>
+        </trans-unit>
+        <trans-unit id="230" resname="ssAlignJustified">
+          <source>Justified</source>
+          <target>均等揃え</target>
+        </trans-unit>
+        <trans-unit id="231" resname="ssAlignRight">
+          <source>Right aligned</source>
+          <target>右揃え</target>
+        </trans-unit>
+        <trans-unit id="233" resname="ssAlignBase">
+          <source>Base line</source>
+          <target>ベースライン</target>
+        </trans-unit>
+        <trans-unit id="234" resname="ssAlignTop">
+          <source>Top</source>
+          <target>上</target>
+        </trans-unit>
+        <trans-unit id="235" resname="ssAlignBottom">
+          <source>Bottom</source>
+          <target>下</target>
+        </trans-unit>
+        <trans-unit id="236" resname="ssAlignMiddle">
+          <source>Middle</source>
+          <target>中央</target>
+        </trans-unit>
+        <trans-unit id="237" resname="ssAlignSuperscript">
+          <source>Superscript</source>
+          <target>上付き文字</target>
+        </trans-unit>
+        <trans-unit id="238" resname="ssAlignSubscript">
+          <source>Subscript</source>
+          <target>下付き文字</target>
+        </trans-unit>
+        <trans-unit id="239" resname="ssAlignDefault">
+          <source>Default</source>
+          <target>デフォルト</target>
+        </trans-unit>
+      </group>
+      <group resname="Misc">
+        <trans-unit id="240" resname="ok">
+          <source>OK</source>
+          <target>OK</target>
+        </trans-unit>
+        <trans-unit id="241" resname="cancel">
+          <source>Cancel</source>
+          <target>キャンセル</target>
+        </trans-unit>
+        <trans-unit id="244" resname="delete">
+          <source>Delete</source>
+          <target>削除</target>
+        </trans-unit>
+        <trans-unit id="7mnro3rRCakLRVI5zALjKg" resname="clear">
+          <source>Clear</source>
+          <target>消去</target>
+        </trans-unit>
+        <trans-unit id="ZHzfpo82912nh75LjvWUsw" resname="Yes">
+          <source>Yes</source>
+          <target>はい</target>
+        </trans-unit>
+        <trans-unit id="algTRD9sqjDsayCBIx1jig" resname="No">
+          <source>No</source>
+          <target>いいえ</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteFindReplace">
+        <trans-unit id="250" resname="CaseSensitive">
+          <source>Case sensitive</source>
+          <target>大文字と小文字を区別</target>
+        </trans-unit>
+        <trans-unit id="272" resname="ErrorEmptyFind">
+          <source>The "find" property can not be an empty string.</source>
+          <target>"find"プロパティを空の文字列にすることはできません。</target>
+        </trans-unit>
+        <trans-unit id="264" resname="ErrorMissingAction">
+          <source>The "action" property is mandatory.</source>
+          <target>"action"プロパティは必須です。</target>
+        </trans-unit>
+        <trans-unit id="263" resname="ErrorMissingDocument">
+          <source>The "document" property is mandatory.</source>
+          <target>"document"プロパティは必須です。</target>
+        </trans-unit>
+        <trans-unit id="266" resname="ErrorMissingFind">
+          <source>The "find" property is mandatory.</source>
+          <target>"find"プロパティは必須です。</target>
+        </trans-unit>
+        <trans-unit id="265" resname="ErrorMissingSelection">
+          <source>The "selection" property is mandatory.</source>
+          <target>"selection"プロパティは必須です。</target>
+        </trans-unit>
+        <trans-unit id="270" resname="ErrorTypeAction">
+          <source>The "action" property must be of the text type.</source>
+          <target>"action"プロパティはテキスト型でなければなりません。</target>
+        </trans-unit>
+        <trans-unit id="273" resname="ErrorTypeCaseSensitive">
+          <source>The "caseSensitive" property must be of the boolean type.</source>
+          <target>"caseSensitive"プロパティはブール型でなければなりません。</target>
+        </trans-unit>
+        <trans-unit id="268" resname="ErrorTypeDocument">
+          <source>The "document" property must be of the object type.</source>
+          <target>"document"プロパティはオブジェクト型でなければなりません。</target>
+        </trans-unit>
+        <trans-unit id="271" resname="ErrorTypeFind">
+          <source>The "find" property must be of the text type.</source>
+          <target>"find"プロパティはテキスト型でなければなりません。</target>
+        </trans-unit>
+        <trans-unit id="276" resname="ErrorTypeFullWord">
+          <source>The "fullWord" property must be of the boolean type.</source>
+          <target>"fullWord"プロパティはブール型でなければなりません。</target>
+        </trans-unit>
+        <trans-unit id="275" resname="ErrorTypeKeepCharStyle">
+          <source>The "keepCharStyle" property must be of the boolean type.</source>
+          <target>"keepCharStyle"プロパティはブール型でなければなりません。</target>
+        </trans-unit>
+        <trans-unit id="272" resname="ErrorTypeReplace">
+          <source>The "replace" property must be of the text type.</source>
+          <target>"replace"プロパティはテキスト型でなければなりません。</target>
+        </trans-unit>
+        <trans-unit id="269" resname="ErrorTypeSelection">
+          <source>The "selection" property must be of the object type.</source>
+          <target>"selection"プロパティはオブジェクト型でなければなりません。</target>
+        </trans-unit>
+        <trans-unit id="248" resname="Find">
+          <source>Find</source>
+          <target>検索</target>
+        </trans-unit>
+        <trans-unit id="247" resname="FindColon">
+          <source>Find:</source>
+          <target>検索:</target>
+        </trans-unit>
+        <trans-unit id="251" resname="FindFirst">
+          <source>First</source>
+          <target>先頭へ</target>
+        </trans-unit>
+        <trans-unit id="254" resname="FindLast">
+          <source>Last</source>
+          <target>最後へ</target>
+        </trans-unit>
+        <trans-unit id="252" resname="FindNext">
+          <source>Next</source>
+          <target>次へ</target>
+        </trans-unit>
+        <trans-unit id="253" resname="FindPrevious">
+          <source>Previous</source>
+          <target>前へ</target>
+        </trans-unit>
+        <trans-unit id="262" resname="FindSlashReplace">
+          <source>Find/Replace</source>
+          <target>検索/置換</target>
+        </trans-unit>
+        <trans-unit id="260" resname="FullWord">
+          <source>Full words only</source>
+          <target>完全な単語のみ</target>
+        </trans-unit>
+        <trans-unit id="259" resname="KeepCharStyle">
+          <source>Keep each character style</source>
+          <target>それぞれの文字スタイルを維持する</target>
+        </trans-unit>
+        <trans-unit id="261" resname="Option">
+          <source>Option</source>
+          <target>オプション</target>
+        </trans-unit>
+        <trans-unit id="249" resname="Options">
+          <source>Options</source>
+          <target>オプション</target>
+        </trans-unit>
+        <trans-unit id="255" resname="Replace">
+          <source>Replace</source>
+          <target>置換する</target>
+        </trans-unit>
+        <trans-unit id="262" resname="ReplaceAll">
+          <source>Replace all</source>
+          <target>全て置換する</target>
+        </trans-unit>
+        <trans-unit id="262" resname="ReplaceAllMessage">
+          <source>Replace "&amp;1" by "&amp;2"…</source>
+          <target>"&amp;1"を"&amp;2"で置き換える…</target>
+        </trans-unit>
+        <trans-unit id="257" resname="ReplaceAndNext">
+          <source>Replace and find</source>
+          <target>置換して次を検索</target>
+        </trans-unit>
+        <trans-unit id="256" resname="ReplaceByColon">
+          <source>Replace by:</source>
+          <target>次で置換する:</target>
+        </trans-unit>
+        <trans-unit id="276" resname="ErrorUnknownAction">
+          <source>This action is unknown.</source>
+          <target>未知のアクションです。</target>
+        </trans-unit>
+        <trans-unit id="fllZberc5UmVoY77eN6hWg" resname="AccentSensitive">
+          <source>Accent sensitive</source>
+          <target>アクセント記号の有無を区別</target>
+        </trans-unit>
+        <trans-unit id="mWfZe71n2prS1bwT5Kl/7Q" resname="KanaSensitive">
+          <source>Kana sensitive</source>
+          <target>ひらがな/カタカナを区別</target>
+        </trans-unit>
+        <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="WidthSensitive">
+          <source>Width sensitive</source>
+          <target>全角/半角を区別</target>
+        </trans-unit>
+        <trans-unit id="msIfGk9Zlbu60aimbEHQOw" resname="OccurrencesReplaced">
+          <source>&lt;x&gt; occurrences have been replaced.</source>
+          <target>&lt;x&gt; 件を置換しました。</target>
+        </trans-unit>
+        <trans-unit id="ZUDcR0S8puBf1AHiVHqHWw" resname="SearchOptions">
+          <source>Search options</source>
+          <target>検索オプション</target>
+        </trans-unit>
+        <trans-unit id="kzbkcXohhISsex2WHJcFtw" resname="ReplaceOptions">
+          <source>Replace options</source>
+          <target>置換オプション</target>
+        </trans-unit>
+        <trans-unit id="emHWvgg7g+0idYuJ+FxPwA" resname="ReplaceBy">
+          <source>Replace by</source>
+          <target>置き換え</target>
+        </trans-unit>
+        <trans-unit id="lp5g7Q738nbVfrHPkzSBPQ" resname="IncludeHeadersAndFooters">
+          <source>Include headers and footers</source>
+          <target>ヘッダーとフッターを含める</target>
+        </trans-unit>
+        <trans-unit id="pZv3LaV+16Uw8EoSBOzxLA" resname="KeyboardBased">
+          <source>Search based on '&lt;1&gt;' keyboard </source>
+          <target>'&lt;1&gt;' キーボードを使用して検索</target>
+        </trans-unit>
+        <trans-unit id="4TFSNZU8Z6IMoq+NekNNIg" resname="OccurencesColon">
+          <source>Occurences:</source>
+          <target>オカレンス:</target>
+        </trans-unit>
+        <trans-unit id="Q8D13uFpth/PNUBxsK/oVw" resname="ReplacementsColon">
+          <source>Replacements:</source>
+          <target>置き換え数:</target>
+        </trans-unit>
+
+      </group>
+      <group resname="PaletteTables">
+        <trans-unit id="277" resname="InsertAbove">
+          <source>Insert above</source>
+          <target>上に挿入する</target>
+        </trans-unit>
+        <trans-unit id="278" resname="InsertBelow">
+          <source>Insert below</source>
+          <target>下に挿入する</target>
+        </trans-unit>
+        <trans-unit id="279" resname="InsertLeft">
+          <source>Insert to the left</source>
+          <target>左に挿入する</target>
+        </trans-unit>
+        <trans-unit id="280" resname="InsertRight">
+          <source>Insert to the right</source>
+          <target>右に挿入する</target>
+        </trans-unit>
+        <trans-unit id="281" resname="DeleteRow">
+          <source>Delete row</source>
+          <target>行を削除</target>
+        </trans-unit>
+        <trans-unit id="282" resname="DeleteRows">
+          <source>Delete &lt;n&gt; rows</source>
+          <target>&lt;n&gt;行を削除</target>
+        </trans-unit>
+        <trans-unit id="283" resname="DeleteColumn">
+          <source>Delete column</source>
+          <target>列を削除</target>
+        </trans-unit>
+        <trans-unit id="284" resname="DeleteColumns">
+          <source>Delete &lt;n&gt; columns</source>
+          <target>&lt;n&gt;列を削除</target>
+        </trans-unit>
+        <trans-unit id="285" resname="DeleteCell">
+          <source>Delete cell</source>
+          <target>セルを削除</target>
+        </trans-unit>
+        <trans-unit id="286" resname="DeleteCells">
+          <source>Delete &lt;n&gt; cells</source>
+          <target>&lt;n&gt;個のセルを削除</target>
+        </trans-unit>
+        <trans-unit id="287" resname="LabelRows">
+          <source>Rows</source>
+          <target>行</target>
+        </trans-unit>
+        <trans-unit id="288" resname="LabelColumns">
+          <source>Columns</source>
+          <target>列</target>
+        </trans-unit>
+        <trans-unit id="289" resname="LabelCells">
+          <source>Cells</source>
+          <target>セル</target>
+        </trans-unit>
+        <trans-unit id="292" resname="Table">
+          <source>Table</source>
+          <target>表</target>
+        </trans-unit>
+        <trans-unit id="293" resname="InsertTable">
+          <source>Insert table</source>
+          <target>表を挿入</target>
+        </trans-unit>
+        <trans-unit id="294" resname="LabelTable">
+          <source>Table</source>
+          <target>表</target>
+        </trans-unit>
+        <trans-unit id="VHydT13fVdf+VH5qRRUFtg" resname="menuBorderStyle">
+          <source>Border Style</source>
+          <target>境界線スタイル</target>
+        </trans-unit>
+        <trans-unit id="7AGgS68d0BFBl1GG+3azQg" resname="menuBorderColor">
+          <source>Border Color</source>
+          <target>境界線カラー</target>
+        </trans-unit>
+        <trans-unit id="kT56lwRqNZR4oGajuxhnHw" resname="menuBorderWidth">
+          <source>Border Width</source>
+          <target>境界線幅</target>
+        </trans-unit>
+        <trans-unit id="tFPMp9gQRDEBJw1gPLRxvw" resname="menuBackgroundColor">
+          <source>Background Color</source>
+          <target>背景色</target>
+        </trans-unit>
+        <trans-unit id="YgIrOc1RS48st5bY52f5Qg" resname="menuAlignment">
+          <source>Alignment</source>
+          <target>揃え</target>
+        </trans-unit>
+        <trans-unit id="g+8wWMzDK4ns8WHG4G5Sqw" resname="menuMargins">
+          <source>Margins</source>
+          <target>余白</target>
+        </trans-unit>
+        <trans-unit id="8xZmKn9MYRUmni9D/b9OOQ" resname="menuPadding">
+          <source>Padding</source>
+          <target>パッディング</target>
+        </trans-unit>
+        <trans-unit id="+Y1p0tp8GEUMHQs6gtRtQQ" resname="menuWidth">
+          <source>Width</source>
+          <target>幅</target>
+        </trans-unit>
+        <trans-unit id="a158s7yXqD9Zom4FNjAAkw" resname="menuHeight">
+          <source>Height</source>
+          <target>高さ</target>
+        </trans-unit>
+        <trans-unit id="YPG7PurBVvBgKMU6kaMxFQ" resname="menuVerticalAlignment">
+          <source>Vertical Alignment</source>
+          <target>縦方向揃え</target>
+        </trans-unit>
+        <trans-unit id="WdntTS/LhHFkvUQujjopMQ" resname="menuInsertTable">
+          <source>Insert Table</source>
+          <target>表を挿入</target>
+        </trans-unit>
+        <trans-unit id="dXc0WnW6WSXYVOsmA0j/+g" resname="Cell">
+          <source>Cell</source>
+          <target>セル</target>
+        </trans-unit>
+        <trans-unit id="ZM4XpS2XvZltITmEG4voHg" resname="Row">
+          <source>Row</source>
+          <target>行</target>
+        </trans-unit>
+        <trans-unit id="9YY74EqftqLxbArojeDu/w" resname="Properties">
+          <source>Properties</source>
+          <target>プロパティ</target>
+        </trans-unit>
+      </group>
+      <group resname="PaletteProtect">
+        <trans-unit id="QRCHOUVOvU1y6dkzlbGq5A" resname="protectParagraphs">
+          <source>Paragraphs</source>
+          <target>段落</target>
+        </trans-unit>
+        <trans-unit id="4LD6NBpIo5AuPj8w7cER4A" resname="protectionEnabled">
+          <source>Protection enabled</source>
+          <target>プロテクション有効</target>
+        </trans-unit>
+        <trans-unit id="pIhODmU+jdAnjW8ddEq9Tw" resname="protection">
+          <source>Protection</source>
+          <target>プロテクション</target>
+        </trans-unit>
+        <trans-unit id="Qe608vHPHLO3bJNBCH7p1A" resname="protectRows">
+          <source>Rows</source>
+          <target>行</target>
+        </trans-unit>
+        <trans-unit id="BAPDa661YLnM9DcVXyWXOw" resname="protectTables">
+          <source>Tables</source>
+          <target>表</target>
+        </trans-unit>
+        <trans-unit id="03iEJ+It6O69xY6j0lz6Qg" resname="protectCells">
+          <source>Cells</source>
+          <target>セル</target>
+        </trans-unit>
+      </group>
+      <group resname="Errors">
+        <trans-unit id="GwNqq+FAlrv+V8fYd7geXA" resname="missingPointer">
+          <source>The pointer on 4D Write Pro document is missing.</source>
+          <target>4D Write Pro ドキュメントへのポインターが見つかりません。</target>
+        </trans-unit>
+        <trans-unit id="nx2miGaaD+xCPQKlY//Q+g" resname="nilPointer">
+          <source>The pointer on 4D Write Pro document is nil.</source>
+          <target>4D Write Pro ドキュメントへのポインターがnilポインターです。</target>
+        </trans-unit>
+        <trans-unit id="2UM2PhxkLdT3NCFN+uzEJA" resname="thisTypeOfDocumentCantBeImported">
+          <source>This type of document can't be imported.</source>
+          <target>このドキュメントは読み込めない形式です。</target>
+        </trans-unit>
+      </group>
+      <group resname="DialogExport">
+        <trans-unit id="seROCZqSCuxQqqVcq1uboA" resname="exportPDF">
+          <source>PDF Export</source>
+          <target>PDF 書き出し</target>
+        </trans-unit>
+        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="background">
+          <source>Background</source>
+          <target>背景</target>
+        </trans-unit>
+        <trans-unit id="2zaxAplGAgJvGg5f+KnwOA" resname="headers">
+          <source>Headers</source>
+          <target>ヘッダー</target>
+        </trans-unit>
+        <trans-unit id="GbCtfYrp9W6n/xYbqhxNkQ" resname="footers">
+          <source>Footers</source>
+          <target>フッター</target>
+        </trans-unit>
+        <trans-unit id="tMZO5KyH1Qe77I7HSLR6og" resname="htmlWysiwyg">
+          <source>HTML "WYSIWYG"</source>
+          <target>HTML "WYSIWYG"</target>
+        </trans-unit>
+        <trans-unit id="th+uJGqJE/aRdxxSHhxRlg" resname="htmlPrettyPrint">
+          <source>"Pretty print"</source>
+          <target>"整形済みフォーマット"</target>
+        </trans-unit>
+        <trans-unit id="7yp1Rkz6KWEs2pehpSqJoA" resname="recomputeFormulas">
+          <source>Recompute formulas</source>
+          <target>フォーミュラを再計算</target>
+        </trans-unit>
+        <trans-unit id="6u1E8KwGXapCFqeIJkqYQA" resname="Screen">
+          <source>Screen</source>
+          <target>スクリーン</target>
+        </trans-unit>
+        <trans-unit id="gVQaYSHGiwZBwAt4P5iaYw" resname="print">
+          <source>Print</source>
+          <target>印刷</target>
+        </trans-unit>
+        <trans-unit id="rfCY4nYj4m3OHuYW++DWlA" resname="maxPictureDPI">
+          <source>Maximum DPI for pictures:</source>
+          <target>ピクチャーのDPI上限:</target>
+        </trans-unit>
+        <trans-unit id="EuJJLbs1LD5q4/WlL7w0XA" resname="cidHostDomainName">
+          <source>CID Host domain name:</source>
+          <target>CIDホストドメイン名:</target>
+        </trans-unit>
+        <trans-unit id="J+Sxu8o5HUf7ju4qU4EfMQ" resname="optimizedFor">
+          <source>Optimized for:</source>
+          <target>最適化対象:</target>
+        </trans-unit>
+        <trans-unit id="G9BJhwrgI8ZjjK+PvIb0oA" resname="exportOptions">
+          <source>Export options</source>
+          <target>書き出しオプション</target>
+        </trans-unit>
+        <trans-unit id="STSER3qbzZIUcH0uINw3MA" resname="ExportEllipsis">
+          <source>Export…</source>
+          <target>書き出し…</target>
+        </trans-unit>
+        <trans-unit id="fMOz7wl6MpDwxlU77dYxUA" resname="InfoScreen">
+          <source>Document size will be smaller and any pictures will be compressed to "jpg" or "png"</source>
+          <target>ドキュメントサイズは小さくなり、ピクチャーは全て"jpg"または"png"に圧縮されます。</target>
+        </trans-unit>
+        <trans-unit id="SD+Y7dnDCOmvJ94LKms7CQ" resname="InfoPrint">
+          <source>Document size will be bigger and any pictures will be keep their original "codec".</source>
+          <target>ドキュメントサイズは大きくなり、ピクチャーは全て元のコーデックを維持します。</target>
+        </trans-unit>
+        <trans-unit id="M/by8K2LDXD/OhCDfGnX+Q" resname="InfoFormulas">
+          <source>When selected, all formulas will be recomputed before export.
+
+When not selected, only formulas that have never been evaluated will be computed.</source>
+          <target>選択している場合、全てのフォーミュラは書き出す前に再計算されます。
+
+選択してない場合、まだ一度も評価されていないフォーミュラのみが計算されます。</target>
+        </trans-unit>
+        <trans-unit id="DpRVy4keJdQU2SqZwEacYg" resname="FormulasComma">
+          <source>Formulas:</source>
+          <target>フォーミュラ:</target>
+        </trans-unit>
+        <trans-unit id="TLfxhPbY2ZRWaf3J3RyOcw" resname="htmlEllipsis">
+          <source>HTML…</source>
+          <target>HTML…</target>
+        </trans-unit>
+        <trans-unit id="jqxt3L4zVABvifyA9e+8sA" resname="InfoPrettyPrint">
+          <source>This option generates a document with more human-readable source code and increases document size.</source>
+          <target>このオプションを選択するとより読みやすいソースコードを生成し、ドキュメントサイズは大きくなります。</target>
+        </trans-unit>
+        <trans-unit id="6LkWY9PvfM8ea1sA6vSrBw" resname="ExportComma">
+          <source>Export:</source>
+          <target>書き出し:</target>
+        </trans-unit>
+      </group>
+      <group resname="DialogImport">
+        <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
+          <source>Erase the document</source>
+          <target>ドキュメントを消去</target>
+        </trans-unit>
+        <trans-unit id="FlHVoUXe7QVKBS23F0ny5Q" resname="BeforeDocument">
+          <source>at the beginning</source>
+          <target>先頭に</target>
+        </trans-unit>
+        <trans-unit id="v2qONMZHKzxZtNap9RsfFw" resname="AfterDocument">
+          <source>at the end</source>
+          <target>最後に</target>
+        </trans-unit>
+        <trans-unit id="ewuKg1WiWojJOtdoz3wpqg" resname="ReplaceSelection">
+          <source>at cursor position</source>
+          <target>カーソルの位置に</target>
+        </trans-unit>
+        <trans-unit id="kRahCITb8zTZzcaUFp2q0Q" resname="ImportOptions">
+          <source>Import options</source>
+          <target>読み込みオプション</target>
+        </trans-unit>
+        <trans-unit id="/ZwYY2UXzYETIAVO1G2dvA" resname="InfoErase">
+          <source>The document will be replaced</source>
+          <target>ドキュメントは上書きされます</target>
+        </trans-unit>
+        <trans-unit id="OEeH+VlZg5xuxWvUjW1P1A" resname="InfoBefore">
+          <source>After the first header (if any)</source>
+          <target>最初のヘッダー(あれば)の後</target>
+        </trans-unit>
+        <trans-unit id="KGyZW8NNWI/ZTRVopYvVHw" resname="InforAfter">
+          <source>Before the last footer (if any)</source>
+          <target>最後のフッター(あれば)の前</target>
+        </trans-unit>
+        <trans-unit id="ERLyD4OELj5tXGKqcoTmNQ" resname="InfoReplaceSelection">
+          <source>(or replace current selection)</source>
+          <target>(あるいはカレントの選択範囲を置き換えます)</target>
+        </trans-unit>
+        <trans-unit id="fUY1y/mfq8YIayhWmfKZeg" resname="SelectFile">
+          <source>Select file to import…</source>
+          <target>読み込むファイルを選択…</target>
+        </trans-unit>
+        <trans-unit id="ceXUiqKwcVAUS6ay3ug5xQ" resname="ReplaceDocument">
+          <source>Replace the current document</source>
+          <target>カレントのドキュメントを置き換え</target>
+        </trans-unit>
+        <trans-unit id="NFtFcqXg4EZ1lxL/0wtdpw" resname="InfoReplaceDocument">
+          <source>The full document will be replaced including headers and footers.</source>
+          <target>ヘッダーとフッターを含め、ドキュメント全体が置き換えられます。</target>
+        </trans-unit>
+        <trans-unit id="V9QRc48mupZaPsRVherBRQ" resname="InfoNotImported">
+          <source>The headers, footers and anchored pictures will not be imported.</source>
+          <target>ヘッダー、フッター、アンカーされたピクチャーは読み込まれません。</target>
+        </trans-unit>
+        <trans-unit id="n4aL7HhXL+o5ruwGL/guAQ" resname="InsertInTheDocument">
+          <source>Insert in the document…</source>
+          <target>ドキュメント内に挿入…</target>
+        </trans-unit>
+        <trans-unit id="+siVncaV7S9ujx1b+dIgiA" resname="SelectDocumentOfType">
+          <source>Select a document (.txt, .4wp or .4w7)</source>
+          <target>ドキュメントを選択して下さい(.txt/.4wp/.4w7)</target>
+        </trans-unit>
+        <trans-unit id="ovkE8m6t9hOAvs5WY9nA7A" resname="ConfirmClear">
+          <source>This action will remove all content from the document.</source>
+          <target>このアクションはドキュメントの全コンテンツを削除します。</target>
+        </trans-unit>
+        <trans-unit id="DU4JNkbLHrgf3m8pAIaC6Q" resname="ClearEllipsis">
+          <source>Clear…</source>
+          <target>消去…</target>
+        </trans-unit>
+        <trans-unit id="PLXw3AoYuswFhizuV35Zgg" resname="Clear">
+          <source>Clear</source>
+          <target>消去する</target>
+        </trans-unit>
+        <trans-unit id="DZMDM6LbSQUK7XnLqvm8+g" resname="Freeze">
+          <source/>
+          <target/>
+        </trans-unit>
+        <trans-unit id="3KMV7oT2tuLS05721O0Waw" resname="SectionNumber">
+          <source>Section number</source>
+          <target>セクション番号</target>
+        </trans-unit>
+
+      </group>
+      <group resname="DialogImportLog">
+        <trans-unit id="A4sgoBTWcmhTBII7qTJgAQ" resname="HeaderInfo">
+          <source>Some differences may appear in the imported document compared to the original.</source>
+          <target>読み込まれたドキュメントには一部オリジナルと見た目が違う部分がある可能性があります。</target>
+        </trans-unit>
+        <trans-unit id="sOiTU6STg6XmKEoEewJ0Cw" resname="BrowseTheImportLog">
+          <source>Would you like to browse the import log?</source>
+          <target>読み込みログを開きますか?</target>
+        </trans-unit>
+        <trans-unit id="cfsKcFg01whY9Os6iiMC0Q" resname="HoverOverTheLines">
+          <source>Hover over the lines for more information</source>
+          <target>詳細については行の上をホバーしてください。</target>
+        </trans-unit>
+        <trans-unit id="gXld70IPpB0lJKIP67qp/Q" resname="ImportLog">
+          <source>Import log</source>
+          <target>読み込みログ</target>
+        </trans-unit>
+      </group>
+      <group resname="DialogPictureSettings">
+        <trans-unit id="nyFYGQNHQerfVfW24a7oeQ" resname="Margins">
+          <source>Margins:</source>
+          <target>余白:</target>
+        </trans-unit>
+        <trans-unit id="wL0rIpQnidAkY6wndHrvDg" resname="Padding">
+         <source>Padding:</source>
+         <target>パッディング:</target>
+        </trans-unit>
+        <trans-unit id="PiyV+E6B2BOy4GNsS6PbpQ" resname="FormulaAndURL">
+          <source>Formula and URL</source>
+          <target>フォーミュラとURL</target>
+        </trans-unit>
+        <trans-unit id="wRMExlUUxWxkESUYigSjbQ" resname="FormulaHyphen">
+          <source>Formula:</source>
+          <target>フォーミュラ:</target>
+        </trans-unit>
+        <trans-unit id="LLLtQzZjWPEMU5jxnvSvmw" resname="URLhyphen">
+          <source>URL:</source>
+          <target>URL:</target>
+        </trans-unit>
+        <trans-unit id="tX1lPAf1vFI1IN4iTPThbQ" resname="AlternateText">
+         <source>Alternate text:</source>
+         <target>代替テキスト:</target>
+        </trans-unit>
+        <trans-unit id="lUrF6H2gRySYCSMqQIxzdA" resname="PagesAndSections">
+          <source>Pages and sections</source>
+          <target>ページとセクション</target>
+        </trans-unit>
+        <trans-unit id="lHXUAc0Aid8ZFUFZrz/6ew" resname="Alignments">
+          <source>Alignments</source>
+          <target>揃え</target>
+        </trans-unit>
+        <trans-unit id="zRIujmEncGp6o57fw558gQ" resname="HorizontalHyphen">
+          <source>Horizontal:</source>
+          <target>横方向:</target>
+        </trans-unit>
+        <trans-unit id="8LsAUIhSSfbN0OJ6Lw53Tg" resname="VerticalHyphen">
+          <source>Vertical:</source>
+          <target>縦方向:</target>
+        </trans-unit>
+        <trans-unit id="OeBtEIyH9SPbvssc58l4CQ" resname="OriginHyphen">
+          <source>Origin:</source>
+          <target>原点:</target>
+        </trans-unit>
+        <trans-unit id="catAtKcAEEEZdYnyhfv67Q" resname="OffsetHyphen">
+          <source>Offset:</source>
+          <target>オフセット:</target>
+        </trans-unit>
+        <trans-unit id="65ama9WrvtHLrbrdjVJfaQ" resname="LayoutHyphen">
+          <source>Layout:</source>
+          <target>レイアウト:</target>
+        </trans-unit>
+        <trans-unit id="E7Im6nkWi6aJJv3eGzlZYA" resname="PageHyphen">
+          <source>Page:</source>
+          <target>ページ:</target>
+        </trans-unit>
+        <trans-unit id="jWqVmNI+1acCwuigWZHmPg" resname="SectionHyphen">
+          <source>Section:</source>
+          <target>セクション:</target>
+        </trans-unit>
+        <trans-unit id="UsV1y7NogpqYqFKGqBnpdQ" resname="SectionNumberHyphen">
+          <source>Section number:</source>
+          <target>セクション番号:</target>
+        </trans-unit>
+        <trans-unit id="HA6gCicHrNfGJXvIau+4aw" resname="PageNumberHyphen">
+          <source>Page number:</source>
+          <target>ページ番号:</target>
+        </trans-unit>
+        <trans-unit id="8zcpBgEZdV1mEBmM17EvNQ" resname="EditEllipsis">
+          <source>Edit…</source>
+          <target>編集…</target>
+        </trans-unit>
+        <trans-unit id="d8Pz/T0Mn8VIE4BrsRYx7Q" resname="Clear">
+          <source>Clear</source>
+          <target>クリア</target>
+        </trans-unit>
+        <trans-unit id="2iXsmivw0on7vNRnbY3/MQ" resname="Freeze">
+          <source>Freeze</source>
+          <target>固定化</target>
+        </trans-unit>
+        <trans-unit id="Yum8Y38jHqiWZ72k7Jr0uQ" resname="PictureSettings">
+          <source>Picture settings</source>
+          <target>ピクチャ設定</target>
+        </trans-unit>
+        <trans-unit id="lP5Wk5MEdkpNOiSJgn9p8A" resname="OriginalSize">
+          <source>Original size</source>
+          <target>元のサイズ</target>
+        </trans-unit>
+        <trans-unit id="Qk23GVWVSIVC55yKGMhYaQ" resname="PictureFormat">
+          <source>Picture format:</source>
+          <target>ピクチャーフォーマット:</target>
+        </trans-unit>
+        <trans-unit id="fBvnMsjh2EReTO1gRxu7sw" resname="LeftPages">
+          <source>Left pages</source>
+          <target>左ページ</target>
+        </trans-unit>
+        <trans-unit id="mFFDsjPq2TAu2gzl5XM0mQ" resname="FirstPage">
+          <source>First page</source>
+          <target>最初のページ</target>
+        </trans-unit>
+        <trans-unit id="khX9wIKnpJFDIWvtbHJpCg" resname="RightPages">
+          <source>Right pages</source>
+          <target>右ページ</target>
+        </trans-unit>
+        <trans-unit id="QR7rFC0zJIwfzEn9E+IYRA" resname="PageNumber">
+          <source>Page number</source>
+          <target>ページ番号</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+
+</xliff>
