@@ -50,7 +50,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="291" resname="Tables">
           <source>Tables</source>
-          <target>テーブル</target>
+          <target>表</target>
         </trans-unit>
         <trans-unit id="/h5RnHFGXRGnCZiYU/DhZQ" resname="ImportExport">
           <source>Import Export</source>
