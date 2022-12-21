@@ -1895,7 +1895,7 @@ When not selected, only formulas that have never been evaluated will be computed
         </trans-unit>
         <trans-unit id="BsGWfaI7WPuzFCPnZEPaog" resname="FreezeSelection">
           <source>Freeze selection</source>
-          <target>選択範囲を固定化するう</target>
+          <target>選択範囲を固定化する</target>
         </trans-unit>
         <trans-unit id="a21/ILiIHT15NrT6WxTPpA" resname="FreezeTables">
           <source>Freeze tables</source>
