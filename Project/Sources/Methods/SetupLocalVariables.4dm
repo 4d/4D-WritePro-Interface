@@ -32,8 +32,8 @@ If (Form:C1466.selection#Null:C1517)
 	
 	
 	Form:C1466.document:=Form:C1466.selection.owner
+	Form:C1466.body:=WP Get body:C1516(Form:C1466.document)
 	$typeSelection:=Form:C1466.selection.type
-	
 	Case of 
 			
 		: ($typeSelection=0)
@@ -52,8 +52,8 @@ If (Form:C1466.selection#Null:C1517)
 			
 	End case 
 	
-	Form:C1466.document:=Form:C1466.selection[wk owner:K81:168]
-	Form:C1466.body:=WP Get body:C1516(Form:C1466.document)
+	Form:C1466.context:=WP Get data context:C1787(Form:C1466.document)
+	
 	
 	WP GET ATTRIBUTES:C1345(Form:C1466.document; wk layout unit:K81:78; userUnit)
 	

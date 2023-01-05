@@ -1,4 +1,9 @@
 //%attributes = {"invisible":true}
+ARRAY TEXT:C222(tCol0; 0)
+ARRAY TEXT:C222(tCol1; 0)
+ARRAY TEXT:C222(tCol2; 0)
+ARRAY TEXT:C222(tCol3; 0)
+ARRAY TEXT:C222(tCol4; 0)
 ARRAY TEXT:C222(WP_applyTo; 0)
 ARRAY TEXT:C222(WP_FontFamilly; 0)
 ARRAY TEXT:C222(WP_fontFamillyJapanese; 0)
