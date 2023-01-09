@@ -52,30 +52,72 @@ Case of
 		Form:C1466.local.MemopageIndexTo:=Form:C1466.pageIndexTo
 		
 		Case of 
-			: (Form:C1466.extra.extension="txt") | (Form:C1466.extra.extension="docx")
-				$limit:="Limit_P0"
+			: (Form:C1466.extra.extension="txt")
+				$limit:="Limit_P1"
 				FORM GOTO PAGE:C247(1)
+				
+				OBJECT SET VISIBLE:C603(*; "cbVisibleEmptyImages"; False:C215)
+				
+				OBJECT SET VISIBLE:C603(*; "lbl_Export"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "cbVisibleBackground"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "cbVisibleHeaders"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "cbVisibleFooters"; False:C215)
+				// more objects but below
+				
+			: (Form:C1466.extra.extension="docx")
+				
+				OBJECT SET VISIBLE:C603(*; "cbVisibleHeaders"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "cbVisibleFooters"; False:C215)
 				
 				OBJECT SET VISIBLE:C603(*; "lblOptimized"; False:C215)
 				OBJECT SET VISIBLE:C603(*; "rbScreen"; False:C215)
 				OBJECT SET VISIBLE:C603(*; "rbPrint"; False:C215)
-				
-				If (Form:C1466.extra.extension="txt")
-					OBJECT SET VISIBLE:C603(*; "cbVisibleEmptyImages"; False:C215)
-				End if 
+				// more objects but below
 				
 				
-			: (Form:C1466.extra.extension="html") | (Form:C1466.extra.extension="mht")
-				$limit:="Limit_P1"
+				
+				$limit:="Limit_P2"
 				FORM GOTO PAGE:C247(2)
 				
-			: (Form:C1466.extra.extension="pdf")
-				$limit:="Limit_P2"
+			: (Form:C1466.extra.extension="html") | (Form:C1466.extra.extension="mht")
+				$limit:="Limit_P3"
 				FORM GOTO PAGE:C247(3)
 				
-			: (Form:C1466.extra.extension="svg")
-				$limit:="Limit_P3"
+				Form:C1466.visibleBody:=True:C214
+				OBJECT SET VISIBLE:C603(*; "cbVisibleBody"; True:C214)
+				OBJECT SET ENABLED:C1123(*; "cbVisibleBody"; False:C215)
+				
+				OBJECT SET VISIBLE:C603(*; "cbVisibleBackground"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "cbVisibleHeaders"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "cbVisibleFooters"; False:C215)
+				
+				//OBJECT SET VISIBLE(*; "lbl_maxDPI"; False)
+				//OBJECT SET VISIBLE(*; "InputDPI"; False)
+				
+				OBJECT SET VISIBLE:C603(*; "lbl_Pages"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "rbAll"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "rbFrom"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "lbl_to"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "InputFrom"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "InputTo"; False:C215)
+				
+				// more objects but below
+				
+			: (Form:C1466.extra.extension="pdf")
+				$limit:="Limit_P4"
 				FORM GOTO PAGE:C247(4)
+				
+				OBJECT SET VISIBLE:C603(*; "lbl_Pages"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "rbAll"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "rbFrom"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "lbl_to"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "InputFrom"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "InputTo"; False:C215)
+				
+				
+			: (Form:C1466.extra.extension="svg")
+				$limit:="Limit_P5"
+				FORM GOTO PAGE:C247(5)
 				
 				If (Form:C1466.embeddedPictures=True:C214)
 					Form:C1466.local.rbEmbedPictures:=1

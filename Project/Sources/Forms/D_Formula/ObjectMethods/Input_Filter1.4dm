@@ -11,10 +11,6 @@ If (Form:C1466.local.filter#"")
 	$keywords:=Split string:C1554(Form:C1466.local.filter; " ")
 	Form:C1466.displayedHList.filter($keywords)
 	
-	
-	
-	
-	
 	$n:=Form:C1466.displayedHList.countItems()
 	If ($n>0)
 		// select the first one which is NOT a sublist parent

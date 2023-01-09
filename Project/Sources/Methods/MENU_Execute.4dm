@@ -189,6 +189,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						$options:=New object:C1471
 						$options[wk visible empty images:K81:369]:=False:C215  // new 19R6 (false by default)
+						$options[wk visible background:K81:289]:=True:C214  // new v20 (true by default - was forced to true before)
 						$options.extra:=New object:C1471
 						$options.extra.windowTitle:="Docx Export"
 						$options.extra.extension:=$extension

@@ -1490,9 +1490,9 @@ This file is distributed under the same license as the product package.-->
           <source>PDF Export</source>
           <target>PDF Export</target>
         </trans-unit>
-        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgrounds">
-          <source>Backgrounds</source>
-          <target>Backgrounds</target>
+        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgroundAndTextBoxes">
+          <source>Background and text boxes</source>
+          <target>Background and text boxes</target>
         </trans-unit>
         <trans-unit id="2zaxAplGAgJvGg5f+KnwOA" resname="headers">
           <source>Headers</source>
@@ -1502,6 +1502,10 @@ This file is distributed under the same license as the product package.-->
           <source>Footers</source>
           <target>Footers</target>
         </trans-unit>
+        <trans-unit id="GbCtfYrp9W6n/xYbqhxNkQ" resname="body">
+          <source>Body</source>
+          <target>Body</target>
+        </trans-unit>        
         <trans-unit id="tMZO5KyH1Qe77I7HSLR6og" resname="htmlWysiwyg">
           <source>HTML "WYSIWYG"</source>
           <target>HTML "WYSIWYG"</target>
