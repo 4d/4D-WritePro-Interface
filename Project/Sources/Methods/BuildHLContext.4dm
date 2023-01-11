@@ -46,9 +46,26 @@ Case of
 					End if 
 					
 					If ($fill)
-						$subList:=BuildHLContext($dataClass; $attributeName; $attributeName; $itemRef+1; 0)  // first call the attribute name is NOT translated but msut be sent TWICE
 						
-						$HList.append(" "+$attributeName; $itemRef; $subList.hlist; False:C215)  //
+						// at this level, the presense of attribute (entity) name is not mandatory in the translation file, just used for translation if found
+						// ex : "driver1" is a "people" entity and "people" has already been validated above.
+						// just check if driver1 is translated too or not.
+						// if not, doesn't matter, 
+						
+						If (Undefined:C82(Form:C1466.local.tables))
+							$attributeNameTranslated:=$attributeName  // NO translation/ no filter
+						Else 
+							$p:=Form:C1466.local.tables.indexOf($attributeName)  // check if translated
+							If ($p>=0)
+								$attributeNameTranslated:=Form:C1466.local.tablesTranslated[$p]
+							Else 
+								$attributeNameTranslated:=$attributeName  // NOT fond = not translated (does not matter)
+							End if 
+						End if 
+						
+						$subList:=BuildHLContext($dataClass; $attributeName; $attributeNameTranslated; $itemRef+1; 0)  // first call the attribute name may NOT be translated
+						
+						$HList.append(" "+$attributeNameTranslated; $itemRef; $subList.hlist; False:C215)  //
 						//$HList.setParameter($itemRef; Additional text; String($itemRef))  // TEMPO FOR DEBUG 
 						$HList.setProperties($itemRef; False:C215; Bold:K14:2; $picturePath)
 						
