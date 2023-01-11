@@ -1888,6 +1888,58 @@ Souhaitez-vous le remplacer ?</target>
           <target>Propager</target>
         </trans-unit>
       </group>
+
+      <group resname="DialogFormula">
+        <trans-unit id="xx" resname="currentDate">
+          <source>Current date</source>
+          <target>Date du jour</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="currentTime">
+          <source>Current time</source>
+          <target>Heure courante</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="formulaNameColon">
+          <source>Formula name:</source>
+          <target>Nom de la formule :</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="formulaSourceColon">
+          <source>Formula source:</source>
+          <target>Source de la formule :</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="standardFormatsColon">
+          <source>Standard formats:</source>
+          <target>Formats standards :</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="editFormatColon">
+          <source>Edit format:</source>
+          <target>Édition du format :</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="returnedNullValueColon">
+          <source>Returned value if NULL:</source>
+          <target>Valeur retournée si NULL :</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="standard">
+          <source>Standard</source>
+          <target>Standard</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="advanced">
+          <source>Advanced</source>
+          <target>Avancé</target>
+        </trans-unit> 
+        <trans-unit id="xx" resname="insert">
+          <source>Insert</source>
+          <target>Insérer</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="insertAndClose">
+          <source>Insert and close</source>
+          <target>Insérer et fermer</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="close">
+          <source>Close</source>
+          <target>Fermer</target>
+        </trans-unit>        
+      </group>
+
       <group resname="Menu_Paragraph">
         <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
           <source>Reset paragraph font attributes</source>

@@ -1886,6 +1886,58 @@ Would you like to replace it?</target>
           <target>Propagate</target>
         </trans-unit>
       </group>
+
+      <group resname="DialogFormula">
+        <trans-unit id="xx" resname="currentDate">
+          <source>Current date</source>
+          <target>currentDate</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="currentTime">
+          <source>Current time</source>
+          <target>Current time</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="formulaNameColon">
+          <source>Formula name:</source>
+          <target>Formula name:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="formulaSourceColon">
+          <source>Formula source:</source>
+          <target>Formula source:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="standardFormatsColon">
+          <source>Standard formats:</source>
+          <target>Standard formats:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="editFormatColon">
+          <source>Edit format:</source>
+          <target>Edit format:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="returnedNullValueColon">
+          <source>Returned value if NULL:</source>
+          <target>Returned value if NULL:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="standard">
+          <source>Standard</source>
+          <target>Standard</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="advanced">
+          <source>Advanced</source>
+          <target>Advanced</target>
+        </trans-unit> 
+        <trans-unit id="xx" resname="insert">
+          <source>Insert</source>
+          <target>Insert</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="insertAndClose">
+          <source>Insert and close</source>
+          <target>Insert and close</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="close">
+          <source>Close</source>
+          <target>Close</target>
+        </trans-unit>        
+      </group>
+
       <group resname="Menu_Paragraph">
         <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
           <source>Reset paragraph font attributes</source>
