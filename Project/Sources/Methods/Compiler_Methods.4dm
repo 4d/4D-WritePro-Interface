@@ -228,3 +228,9 @@ C_OBJECT:C1216(WP_SetFontSize; $1)
 C_LONGINT:C283(WP_SetFontSize; $2)
 C_OBJECT:C1216(WP_GetBackgroundSize; $1)
 C_BOOLEAN:C305(UI_PaletteImage; $1)
+
+//BuildHLStaticContext
+C_OBJECT:C1216(BuildHLStaticContext; $0)
+C_OBJECT:C1216(BuildHLStaticContext; $1)
+C_TEXT:C284(BuildHLStaticContext; $2)
+C_LONGINT:C283(BuildHLStaticContext; $3)

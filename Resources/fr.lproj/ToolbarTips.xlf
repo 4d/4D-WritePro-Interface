@@ -498,7 +498,7 @@ This file is distributed under the same license as the product package.-->
           <source>Margins</source>
           <target>Marges</target>
         </trans-unit>
-        <trans-unit id="27" resname="printing">
+        <trans-unit id="27" resname="print">
           <source>Print</source>
           <target>Impression</target>
         </trans-unit>

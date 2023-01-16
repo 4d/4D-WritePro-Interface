@@ -109,36 +109,81 @@ Case of
 		End if 
 		
 		
-		If (Undefined:C82(Form:C1466.context))  // no context at all
-			// create one if undefined
-			Form:C1466.context:=New object:C1471
-			For each ($dataClassName; ds:C1482)
-				Form:C1466.context[$dataClassName]:=ds:C1482[$dataClassName].all().first()
-			End for each 
-			
-		Else 
-			// check if the context contains entities
-			$context:=Form:C1466.context
-			$count:=0
-			For each ($attributeName; $context)
-				If (Value type:C1509($context[$attributeName])=Is object:K8:27)
-					$class:=OB Class:C1730($context[$attributeName])  // ex : PeopleEntity or CompanyEntity
-					If (Not:C34(Undefined:C82($class.superclass))) && ($class.superclass.name="Entity")
-						$count:=$count+1
-					End if 
-				End if 
-			End for each 
-			
-			If ($count=0)  // the context contains only allowed or hidden table names
+		//If (Undefined(Form.context))  // no context at all
+		//// create one if undefined
+		//Form.context:=New object
+		//For each ($dataClassName; ds)
+		//Form.context[$dataClassName]:=ds[$dataClassName].all().first()
+		//End for each 
+		
+		//Else 
+		//// check if the context contains entities
+		//$context:=Form.context
+		//$count:=0
+		//For each ($attributeName; $context)
+		//If (Value type($context[$attributeName])=Is object)
+		//$class:=OB Class($context[$attributeName])  // ex : PeopleEntity or CompanyEntity
+		//If (Not(Undefined($class.superclass))) && ($class.superclass.name="Entity")
+		//$count:=$count+1
+		//End if 
+		//End if 
+		//End for each 
+		
+		//If ($count=0)  // the context contains only allowed or hidden table names
+		//For each ($dataClassName; ds)
+		//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
+			 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+		//Form.context[$dataClassName]:=ds[$dataClassName].all().first()
+		//End if 
+		//End for each 
+		//End if 
+		
+		//End if 
+		
+		Case of 
+			: (Undefined:C82(Form:C1466.context))  // no context at all
+				
+				// create one if undefined
+				Form:C1466.context:=New object:C1471
 				For each ($dataClassName; ds:C1482)
-					If ((Undefined:C82(Form:C1466.context.allowedTables)) || (Form:C1466.context.allowedTables.length=0) || (Form:C1466.context.allowedTables.indexOf($dataClassName)>=0))\
-						 && ((Undefined:C82(Form:C1466.context.hiddenTables)) || (Form:C1466.context.hiddenTables.length=0) || (Form:C1466.context.hiddenTables.indexOf($dataClassName)<0))
-						Form:C1466.context[$dataClassName]:=ds:C1482[$dataClassName].all().first()
+					Form:C1466.context[$dataClassName]:=ds:C1482[$dataClassName].all().first()
+				End for each 
+				
+			: (Not:C34(Undefined:C82(Form:C1466.context.type))) && (Form:C1466.context.type="static")
+				
+				
+			: (True:C214)
+				
+				// check if the context contains entities
+				$context:=Form:C1466.context
+				$count:=0
+				For each ($attributeName; $context)
+					If (Value type:C1509($context[$attributeName])=Is object:K8:27)
+						$class:=OB Class:C1730($context[$attributeName])  // ex : PeopleEntity or CompanyEntity
+						If (Not:C34(Undefined:C82($class.superclass))) && ($class.superclass#Null:C1517) && ($class.superclass.name="Entity")
+							$count:=$count+1
+						End if 
 					End if 
 				End for each 
-			End if 
-			
+				
+				If ($count=0)  // the context contains only allowed or hidden table names
+					For each ($dataClassName; ds:C1482)
+						If ((Undefined:C82(Form:C1466.context.allowedTables)) || (Form:C1466.context.allowedTables.length=0) || (Form:C1466.context.allowedTables.indexOf($dataClassName)>=0))\
+							 && ((Undefined:C82(Form:C1466.context.hiddenTables)) || (Form:C1466.context.hiddenTables.length=0) || (Form:C1466.context.hiddenTables.indexOf($dataClassName)<0))
+							Form:C1466.context[$dataClassName]:=ds:C1482[$dataClassName].all().first()
+						End if 
+					End for each 
+				End if 
+				
+		End case 
+		
+		
+		If (Not:C34(Undefined:C82(Form:C1466.context.type))) && (Form:C1466.context.type="static")
+			Form:C1466.contextHList:=BuildHLStaticContext(Form:C1466.context)
+		Else 
+			Form:C1466.contextHList:=BuildHLContext(Form:C1466.context)
 		End if 
+		
 		
 		
 		Form:C1466.contextHList:=BuildHLContext(Form:C1466.context)
