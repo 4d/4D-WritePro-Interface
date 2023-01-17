@@ -474,7 +474,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">
           <source>Insert a text box</source>
-          <target>Fextfeld einfügen</target>
+          <target>Textfeld einfügen</target>
         </trans-unit>
       </group>
       <group resname="Tabs">
