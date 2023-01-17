@@ -166,6 +166,10 @@ This file is distributed under the same license as the product package.-->
           <source>Position:</source>
           <target>位置:</target>
         </trans-unit>
+        <trans-unit id="26" resname="PositionsColon">
+          <source>Positions:</source>
+          <target>位置:</target>
+        </trans-unit>
         <trans-unit id="sg9lHFhI0LqrVxCysNWY7g" resname="MoveHyphen">
           <source>Move:</source>
           <target>移動する:</target>
@@ -182,13 +186,29 @@ This file is distributed under the same license as the product package.-->
           <source>Picture</source>
           <target>ピクチャ</target>
         </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="PictureHyphen">
+          <source>Picture:</source>
+          <target>ピクチャ:</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Apply">
+          <source>Apply</source>
+          <target>適用</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Clear">
+          <source>Clear</source>
+          <target>消去</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="InsertHyphen">
+          <source>Insert:</source>
+          <target>挿入:</target>
+        </trans-unit>
         <trans-unit id="xZf5yixaHWdVwEkN2lFVkg" resname="AdvancedSettingsEllipsis">
           <source>Advanced settings…</source>
           <target>詳細設定…</target>
         </trans-unit>
         <trans-unit id="dOtz4kYVKAUCtHPmPtDbdw" resname="PictureAndTextboxes">
           <source>Picture &amp; textboxes</source>
-          <target state="new">Picture &amp; textboxes</target>
+          <target>ピクチャ &amp; テキストボックス</target>
         </trans-unit>
       </group>
       <group resname="PaletteFonts">
@@ -458,7 +478,7 @@ This file is distributed under the same license as the product package.-->
           <source>Elements:</source>
           <target>要素:</target>
         </trans-unit>
-        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="pictures">
+        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="zoomHyphen">
           <source>Zoom:</source>
           <target>ズーム:</target>
         </trans-unit>
@@ -1470,9 +1490,9 @@ This file is distributed under the same license as the product package.-->
           <source>PDF Export</source>
           <target>PDF 書き出し</target>
         </trans-unit>
-        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgrounds">
-          <source>Backgrounds</source>
-          <target>背景</target>
+        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgroundAndTextBoxes">
+          <source>Background and text boxes</source>
+          <target>背景とテキストボックス</target>
         </trans-unit>
         <trans-unit id="2zaxAplGAgJvGg5f+KnwOA" resname="headers">
           <source>Headers</source>
@@ -1481,6 +1501,10 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="GbCtfYrp9W6n/xYbqhxNkQ" resname="footers">
           <source>Footers</source>
           <target>フッター</target>
+        </trans-unit>
+        <trans-unit id="GbCtfYrp9W6n/xYbqhxNkQ" resname="body">
+          <source>Body</source>
+          <target>本文</target>
         </trans-unit>
         <trans-unit id="tMZO5KyH1Qe77I7HSLR6og" resname="htmlWysiwyg">
           <source>HTML "WYSIWYG"</source>
@@ -1624,7 +1648,7 @@ When not selected, only formulas that have never been evaluated will be computed
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
-      <group resname="textArea">
+      <group resname="DialogImport">
         <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
           <source>Erase the document</source>
           <target>ドキュメントを消去</target>
@@ -1862,6 +1886,58 @@ When not selected, only formulas that have never been evaluated will be computed
           <target>プロパゲート</target>
         </trans-unit>
       </group>
+
+      <group resname="DialogFormula">
+        <trans-unit id="xx" resname="currentDate">
+          <source>Current date</source>
+          <target>今日の日付</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="currentTime">
+          <source>Current time</source>
+          <target>現在時刻</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="formulaNameColon">
+          <source>Formula name:</source>
+          <target>フォーミュラ名:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="formulaSourceColon">
+          <source>Formula source:</source>
+          <target>フォーミュラソース:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="standardFormatsColon">
+          <source>Standard formats:</source>
+          <target>標準の表示形式:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="editFormatColon">
+          <source>Edit format:</source>
+          <target>表示形式編集:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="returnedNullValueColon">
+          <source>Returned value if NULL:</source>
+          <target>NULL時に返される値:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="standard">
+          <source>Standard</source>
+          <target>標準</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="advanced">
+          <source>Advanced</source>
+          <target>上級者向け</target>
+        </trans-unit> 
+        <trans-unit id="xx" resname="insert">
+          <source>Insert</source>
+          <target>挿入</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="insertAndClose">
+          <source>Insert and close</source>
+          <target>挿入して閉じる</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="close">
+          <source>Close</source>
+          <target>閉じる</target>
+        </trans-unit>        
+      </group>
+
       <group resname="Menu_Paragraph">
         <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
           <source>Reset paragraph font attributes</source>
@@ -1928,5 +2004,4 @@ When not selected, only formulas that have never been evaluated will be computed
       </group>
     </body>
   </file>
-
 </xliff>
