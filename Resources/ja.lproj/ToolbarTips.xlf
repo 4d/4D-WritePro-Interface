@@ -472,7 +472,7 @@
         </trans-unit>
         <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">
           <source>Insert a text box</source>
-          <target state="new">Insert a text box</target>
+          <target>テキストボックスを挿入</target>
         </trans-unit>
       </group>
       <group resname="Tabs">
@@ -564,10 +564,9 @@
         </trans-unit>
         <trans-unit id="an7Gfwv2eaZPtYEu4Dtf2A" resname="TextBoxes">
           <source>Text boxes</source>
-          <target state="new">Text boxes</target>
+          <target>テキストボックス</target>
         </trans-unit>
       </group>
     </body>
   </file>
-
 </xliff>
