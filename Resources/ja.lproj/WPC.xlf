@@ -166,6 +166,10 @@ This file is distributed under the same license as the product package.-->
           <source>Position:</source>
           <target>位置:</target>
         </trans-unit>
+        <trans-unit id="26" resname="PositionsColon">
+          <source>Positions:</source>
+          <target>位置:</target>
+        </trans-unit>
         <trans-unit id="sg9lHFhI0LqrVxCysNWY7g" resname="MoveHyphen">
           <source>Move:</source>
           <target>移動する:</target>
@@ -182,13 +186,29 @@ This file is distributed under the same license as the product package.-->
           <source>Picture</source>
           <target>ピクチャ</target>
         </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="PictureHyphen">
+          <source>Picture:</source>
+          <target>ピクチャー:</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Apply">
+          <source>Apply</source>
+          <target>適用</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Clear">
+          <source>Clear</source>
+          <target>消去</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="InsertHyphen">
+          <source>Insert:</source>
+          <target>挿入:</target>
+        </trans-unit>
         <trans-unit id="xZf5yixaHWdVwEkN2lFVkg" resname="AdvancedSettingsEllipsis">
           <source>Advanced settings…</source>
           <target>詳細設定…</target>
         </trans-unit>
         <trans-unit id="dOtz4kYVKAUCtHPmPtDbdw" resname="PictureAndTextboxes">
           <source>Picture &amp; textboxes</source>
-          <target state="new">Picture &amp; textboxes</target>
+          <target>ピクチャー &amp; テキストボックス</target>
         </trans-unit>
       </group>
       <group resname="PaletteFonts">
@@ -458,7 +478,7 @@ This file is distributed under the same license as the product package.-->
           <source>Elements:</source>
           <target>要素:</target>
         </trans-unit>
-        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="pictures">
+        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="zoomHyphen">
           <source>Zoom:</source>
           <target>ズーム:</target>
         </trans-unit>
