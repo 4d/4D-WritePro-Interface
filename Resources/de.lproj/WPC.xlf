@@ -139,7 +139,8 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="19" resname="PictureOrURL">
           <source>Picture:
 (or URL)</source>
-          <target>Bild: (oder URL)</target>
+          <target>Bild: 
+(oder URL)</target>
         </trans-unit>
         <trans-unit id="20" resname="RepeatColon">
           <source>Repeat:</source>
@@ -165,6 +166,10 @@ This file is distributed under the same license as the product package.-->
           <source>Position:</source>
           <target>Position:</target>
         </trans-unit>
+        <trans-unit id="26" resname="PositionsColon">
+          <source>Positions:</source>
+          <target>Positionen:</target>
+        </trans-unit>
         <trans-unit id="sg9lHFhI0LqrVxCysNWY7g" resname="MoveHyphen">
           <source>Move:</source>
           <target>Bewegen:</target>
@@ -180,6 +185,22 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Picture">
           <source>Picture</source>
           <target>Bild</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="PictureHyphen">
+          <source>Picture:</source>
+          <target>Bilder:</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Apply">
+          <source>Apply</source>
+          <target>Anwenden</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Clear">
+          <source>Clear</source>
+          <target>Löschen</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="InsertHyphen">
+          <source>Insert:</source>
+          <target>Einsetzen:</target>
         </trans-unit>
         <trans-unit id="xZf5yixaHWdVwEkN2lFVkg" resname="AdvancedSettingsEllipsis">
           <source>Advanced settings…</source>
@@ -457,7 +478,7 @@ This file is distributed under the same license as the product package.-->
           <source>Elements:</source>
           <target>Elemente:</target>
         </trans-unit>
-        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="pictures">
+        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="zoomHyphen">
           <source>Zoom:</source>
           <target>Zoom:</target>
         </trans-unit>
@@ -1469,7 +1490,7 @@ This file is distributed under the same license as the product package.-->
           <source>PDF Export</source>
           <target>PDF Export</target>
         </trans-unit>
-        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="background">
+        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgrounds">
           <source>Background</source>
           <target>Hintergründe</target>
         </trans-unit>
@@ -1623,7 +1644,7 @@ Soll er ersetzt werden?</target>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
-      <group resname="textArea">
+      <group resname="DialogImport">
         <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
           <source>Erase the document</source>
           <target>Dokument löschen</target>

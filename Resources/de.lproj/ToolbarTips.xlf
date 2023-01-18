@@ -258,11 +258,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="40" resname="modeDraft">
           <source>Draft mode</source>
-          <target>Draft Modus</target>
+          <target>Vorschau Modus</target>
         </trans-unit>
         <trans-unit id="39" resname="modeEmbedded">
           <source>Web mode</source>
-          <target>Eingebunden Modus</target>
+          <target>Eingebundener Modus</target>
         </trans-unit>
         <trans-unit id="38" resname="modePage">
           <source>Page mode</source>
@@ -350,7 +350,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="54" resname="showHideHiddenChars">
           <source>Show / hide hidden chars</source>
-          <target>Zeige / Verstecke verstekcte Zeichen</target>
+          <target>Zeige / Verstecke Sonderzeichen</target>
         </trans-unit>
         <trans-unit id="56" resname="showHideHiddenHorizontalRuler">
           <source>Show / hide horizontal ruler</source>
