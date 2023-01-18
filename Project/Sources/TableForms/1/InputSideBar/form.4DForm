@@ -596,6 +596,21 @@
 						"onClick"
 					],
 					"sizingX": "fixed"
+				},
+				"Button30": {
+					"type": "button",
+					"text": "set NOT enterable",
+					"top": 829,
+					"left": 922,
+					"width": 160,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button30.4dm",
+					"sizingY": "move",
+					"focusable": false,
+					"sizingX": "move"
 				}
 			}
 		}
@@ -604,7 +619,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 230,
+	"geometryStamp": 233,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

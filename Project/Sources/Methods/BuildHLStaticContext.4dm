@@ -13,20 +13,23 @@ var $o : Object
 var $fill; $append : Boolean
 
 
-
-$picturePath:="path:/RESOURCES/Images/Colors/FrontColor_7.png"
-
+If (Count parameters:C259=1)
+	$picturePath:="path:/RESOURCES/Images/Colors/FrontColor_7.png"
+	$itemRef:=1000
+End if 
 
 $HList:=cs:C1710.HList.new()
-$itemRef:=1000
-For each ($attributeName; $context)  // driver1, driver2, departureAgency, arrivalAggency
+
+
+
+For each ($attributeName; $context)
 	
 	If (Value type:C1509($context[$attributeName])=Is object:K8:27)
 		
 		$subList:=BuildHLStaticContext($context[$attributeName]; $attributeName; $itemRef+1)
 		
 		$HList.append($attributeName; $itemRef; $subList.hlist; False:C215)  //
-		//$HList.setParameter($itemRef; Additional text; String($itemRef))  // TEMPO FOR DEBUG 
+		$HList.setParameter($itemRef; Additional text:K28:7; String:C10($itemRef))  // TEMPO FOR DEBUG 
 		//$HList.setProperties($itemRef; False; Bold; $picturePath)
 		
 		$itemRef:=$itemRef+$subList.countItems()+1
@@ -34,7 +37,21 @@ For each ($attributeName; $context)  // driver1, driver2, departureAgency, arriv
 	Else 
 		// not an object !
 		
+		
 		$HList.append($attributeName; $itemRef)
+		
+		$o:=New object:C1471
+		$o.type:=Is text:K8:3
+		$o.formulaSource:="This.data."+$contextName+"."+$attributeName
+		$o.name:=$contextName+"."+$attributeName
+		
+		$json:=JSON Stringify:C1217($o; *)  //  ";*" TEMPO FOR DEBUG 
+		
+		$HList.setParameter($itemRef; "JSON"; $json)
+		$HList.setParameter($itemRef; "SOURCE"; $o.formulaSource)
+		$HList.setParameter($itemRef; Additional text:K28:7; String:C10($itemRef))  // TEMPO FOR DEBUG 
+		
+		$itemRef:=$itemRef+1
 		
 	End if 
 End for each 

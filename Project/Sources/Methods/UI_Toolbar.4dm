@@ -1,7 +1,7 @@
 //%attributes = {"invisible":true}
 
 C_LONGINT:C283($page)
-C_BOOLEAN:C305($protectedDoc)
+C_BOOLEAN:C305($protected)
 
 OBJECT SET ENABLED:C1123(*; "@"; False:C215)  //ACI0100560
 OBJECT SET ENTERABLE:C238(*; "@"; False:C215)  //ACI0100560
@@ -29,6 +29,7 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 		
 		$page:=FORM Get current page:C276(*)
 		
+		//specific cases first
 		Case of 
 				
 			: ($page=5)  // image
@@ -44,11 +45,17 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 				
 			: ($page=11)  // page 11 find and replace
 				
-				UI_PaletteFindAndReplace
+				UI_PaletteFindAndReplace  //ACI0103628 - see method too
 				
 			Else 
+				// general cases after
+				If ($page=1) || ($page=11)  // both pages have enterable areas
+					$protected:=UI_isProtected(False:C215)  // 2022 oct 13 (TEST) don't manage focus on page 1 because fontSize is focusable
+				Else 
+					$protected:=UI_isProtected(True:C214)
+				End if 
 				
-				If (UI_isProtected & ($page#1))  // 2022 oct 13 (TEST) don't manage focus on page 1 because fontSize is focusable
+				If ($protected)
 					
 					// Disable everyting (followed by exceptions)
 					
@@ -68,6 +75,9 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 							
 							OBJECT SET ENABLED:C1123(*; "@"; True:C214)
 							OBJECT SET ENABLED:C1123(*; "@"; True:C214)
+							
+						: ($page=11)  // except page 11 find and replace
+							
 							
 					End case 
 					
@@ -89,21 +99,16 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 							UI_Tables("Toolbar")
 							
 							
+							
 					End case 
 					
 				End if 
 				
 		End case 
 		
-		
-		
-		
-		
-		
-		
-		// the local protection button is ALWAYS based on global document protection
-		WP GET ATTRIBUTES:C1345(Form:C1466.selection.owner; wk protection enabled:K81:307; $protectedDoc)
-		OBJECT SET ENABLED:C1123(*; "btnProtected"; Not:C34($protectedDoc))
+		//// the local protection button is ALWAYS based on global document protection
+		//WP GET ATTRIBUTES(Form.selection.owner; wk protection enabled; $protected)
+		//OBJECT SET ENABLED(*; "btnProtected"; Not($protected))
 		
 		
 	End if 

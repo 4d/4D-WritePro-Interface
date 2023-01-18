@@ -29,7 +29,7 @@ Case of
 			
 			If (Value type:C1509($context[$attributeName])=Is object:K8:27)
 				$class:=OB Class:C1730($context[$attributeName])  // ex : PeopleEntity or CompanyEntity
-				If (Not:C34(Undefined:C82($class.superclass))) && ($class.superclass.name="Entity")
+				If (Not:C34(Undefined:C82($class.superclass))) && ($class.superclass#Null:C1517) && ($class.superclass.name="Entity")
 					
 					$dataClass:=$context[$attributeName].getDataClass()
 					$dataClassName:=$dataClass.getInfo().name  // at this level, container is the context of the dialog

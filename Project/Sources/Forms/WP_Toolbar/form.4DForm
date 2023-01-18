@@ -845,7 +845,7 @@
 						"onClick"
 					]
 				},
-				"WP": {
+				"fontFamilly": {
 					"type": "dropdown",
 					"top": 30,
 					"left": 10,
@@ -853,7 +853,7 @@
 					"height": 20,
 					"dataSource": "WP_FontFamilly",
 					"focusable": false,
-					"method": "ObjectMethods/WP.4dm",
+					"method": "ObjectMethods/fontFamilly.4dm",
 					"events": [
 						"onDataChange"
 					],
@@ -4048,7 +4048,7 @@
 					"textAlign": "left",
 					"fontWeight": "normal"
 				},
-				"btnFindPrevious11": {
+				"btnFindPrevious": {
 					"type": "button",
 					"top": 30,
 					"left": 320,
@@ -4061,7 +4061,7 @@
 					"icon": "",
 					"iconFrames": 4,
 					"textPlacement": "right",
-					"method": "ObjectMethods/btnFindPrevious11.4dm",
+					"method": "ObjectMethods/btnFindPrevious.4dm",
 					"events": [
 						"onClick"
 					],
@@ -4070,7 +4070,7 @@
 					"fontSize": 16,
 					"stroke": "automatic"
 				},
-				"btnFindPrevious12": {
+				"btnFindNext": {
 					"type": "button",
 					"top": 30,
 					"left": 380,
@@ -4083,7 +4083,7 @@
 					"icon": "",
 					"iconFrames": 4,
 					"textPlacement": "right",
-					"method": "ObjectMethods/btnFindPrevious12.4dm",
+					"method": "ObjectMethods/btnFindNext.4dm",
 					"events": [
 						"onClick"
 					],
@@ -4203,8 +4203,8 @@
 				"btnReplaceSingleAndFind",
 				"btnOptions",
 				"occurencesCount",
-				"btnFindPrevious11",
-				"btnFindPrevious12",
+				"btnFindPrevious",
+				"btnFindNext",
 				"tempoMessage",
 				"ReplacementCount",
 				"message"
@@ -4252,5 +4252,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6494
+	"geometryStamp": 6497
 }

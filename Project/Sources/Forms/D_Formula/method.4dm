@@ -2,6 +2,8 @@ var $file : 4D:C1709.File
 var $dictionnary; $context; $class : Object
 var $dataClassName; $attributeName; $lang : Text
 var $i; $p; $count : Integer
+var $static : Boolean
+
 
 Case of 
 		
@@ -46,10 +48,6 @@ Case of
 			Form:C1466.local.attributes:=$dictionnary.fields.extract("original")
 			Form:C1466.local.attributesTranslated:=$dictionnary.fields.extract("translation")
 		End if 
-		
-		
-		
-		
 		
 		
 		// FORMATS FOR DROP DOWN WIDGETS
@@ -132,7 +130,7 @@ Case of
 		//If ($count=0)  // the context contains only allowed or hidden table names
 		//For each ($dataClassName; ds)
 		//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
-			 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+																		 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
 		//Form.context[$dataClassName]:=ds[$dataClassName].all().first()
 		//End if 
 		//End for each 
@@ -148,11 +146,9 @@ Case of
 				For each ($dataClassName; ds:C1482)
 					Form:C1466.context[$dataClassName]:=ds:C1482[$dataClassName].all().first()
 				End for each 
+				$static:=False:C215
 				
-			: (Not:C34(Undefined:C82(Form:C1466.context.type))) && (Form:C1466.context.type="static")
-				
-				
-			: (True:C214)
+			: (True:C214)  // there is a context; check what kind of context !
 				
 				// check if the context contains entities
 				$context:=Form:C1466.context
@@ -166,27 +162,34 @@ Case of
 					End if 
 				End for each 
 				
-				If ($count=0)  // the context contains only allowed or hidden table names
-					For each ($dataClassName; ds:C1482)
-						If ((Undefined:C82(Form:C1466.context.allowedTables)) || (Form:C1466.context.allowedTables.length=0) || (Form:C1466.context.allowedTables.indexOf($dataClassName)>=0))\
-							 && ((Undefined:C82(Form:C1466.context.hiddenTables)) || (Form:C1466.context.hiddenTables.length=0) || (Form:C1466.context.hiddenTables.indexOf($dataClassName)<0))
-							Form:C1466.context[$dataClassName]:=ds:C1482[$dataClassName].all().first()
-						End if 
-					End for each 
+				If ($count=0)
+					$static:=True:C214  // use the context "as it"
+				Else 
+					$static:=False:C215  // build list based on ORDA
 				End if 
+				
+				
+				//If ($count=0)  // the context contains only allowed or hidden table names
+				//For each ($dataClassName; ds)
+				//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
+										 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+				
+				//// Add allwowed classes to the context
+				////Form.context[$dataClassName]:=ds[$dataClassName].all().first()
+				
+				//End if 
+				//End for each 
+				//End if 
 				
 		End case 
 		
-		
-		If (Not:C34(Undefined:C82(Form:C1466.context.type))) && (Form:C1466.context.type="static")
+		If ($static)
 			Form:C1466.contextHList:=BuildHLStaticContext(Form:C1466.context)
 		Else 
 			Form:C1466.contextHList:=BuildHLContext(Form:C1466.context)
 		End if 
 		
-		
-		
-		Form:C1466.contextHList:=BuildHLContext(Form:C1466.context)
+		//Form.contextHList:=BuildHLContext(Form.context)
 		Form:C1466.displayedHList:=Form:C1466.contextHList.clone()  //Copy list(Form.contextHList)
 		Form:C1466.displayedHList.formObject:="DisplayedHL"
 		
