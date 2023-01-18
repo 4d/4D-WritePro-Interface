@@ -474,7 +474,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">
           <source>Insert a text box</source>
-          <target state="new">Insert a text box</target>
+          <target>Vložit textové pole</target>
         </trans-unit>
       </group>
       <group resname="Tabs">
@@ -566,7 +566,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="an7Gfwv2eaZPtYEu4Dtf2A" resname="TextBoxes">
           <source>Text boxes</source>
-          <target state="new">Text boxes</target>
+          <target>Textová pole</target>
         </trans-unit>
       </group>
     </body>
