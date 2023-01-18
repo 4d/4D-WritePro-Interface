@@ -234,3 +234,6 @@ C_OBJECT:C1216(BuildHLStaticContext; $0)
 C_OBJECT:C1216(BuildHLStaticContext; $1)
 C_TEXT:C284(BuildHLStaticContext; $2)
 C_LONGINT:C283(BuildHLStaticContext; $3)
+
+//WP_TableMenu
+C_TEXT:C284(WP_TableMenu; $0)

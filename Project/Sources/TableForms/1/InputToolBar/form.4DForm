@@ -590,8 +590,8 @@
 				},
 				"Button26": {
 					"type": "button",
-					"top": 805,
-					"left": 358,
+					"top": 795,
+					"left": 1165,
 					"width": 154,
 					"height": 26,
 					"sizingY": "move",
@@ -681,9 +681,9 @@
 				"Button30": {
 					"type": "button",
 					"text": "set NOT enterable",
-					"top": 855,
-					"left": 360,
-					"width": 160,
+					"top": 826,
+					"left": 1165,
+					"width": 154,
 					"height": 24,
 					"events": [
 						"onClick"
@@ -691,6 +691,20 @@
 					"method": "ObjectMethods/Button30.4dm",
 					"sizingY": "move",
 					"focusable": false
+				},
+				"Button31": {
+					"type": "button",
+					"top": 859,
+					"left": 1165,
+					"width": 154,
+					"height": 26,
+					"sizingY": "move",
+					"text": "Set break",
+					"focusable": false,
+					"method": "ObjectMethods/Button31.4dm",
+					"events": [
+						"onClick"
+					]
 				}
 			},
 			"entryOrder": [
@@ -735,7 +749,8 @@
 				"Radio Button3",
 				"Button23",
 				"Button24",
-				"Button30"
+				"Button30",
+				"Button31"
 			]
 		},
 		{
@@ -747,7 +762,7 @@
 		"kind": "form"
 	},
 	"method": "method.4dm",
-	"geometryStamp": 406,
+	"geometryStamp": 412,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

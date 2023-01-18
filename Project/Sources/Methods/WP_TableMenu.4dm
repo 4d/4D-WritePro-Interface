@@ -1,29 +1,15 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($1; $applyTo)
+#DECLARE($applyTo : Text)->$choice : Text  // $applyTo = "insertTable", "table", "row"; column or "cell"
 
-C_BOOLEAN:C305($isTable)
+var $headerRowCount; $i : Integer
+var $range; $table; $folder; $template; $rows; $formula; $wpTable : Object
+var $isTable : Boolean
+var $files; $_templates; $_icons; $tables : Collection
+var $4Dtable : Pointer
+var $path; $menu; $choice; $where; $formulaText : Text
 
-C_COLLECTION:C1488($files)
-C_COLLECTION:C1488($_templates; $_icons)
 
-C_LONGINT:C283($i)
-
-C_OBJECT:C1216($folder)
-C_OBJECT:C1216($template)
-C_OBJECT:C1216($rows)
-C_OBJECT:C1216($formula; $wpTable)
-
-C_POINTER:C301($4Dtable)
-
-C_TEXT:C284($path)
-C_TEXT:C284($menu)
-C_TEXT:C284($choice)
-C_TEXT:C284($where)
-C_TEXT:C284($formulaText)
-
-$applyTo:=$1  // "insertTable", "table", "row"; column or "cell"
 $where:=""
-
 
 $rows:=WP Table get rows:C1475(Form:C1466.selection)
 If ($rows=Null:C1517)
@@ -147,6 +133,42 @@ Else
 				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "row/avoidPageBreakInside")
 				
+				// add "set break…" if possible
+				
+				If (Not:C34(Undefined:C82(Form:C1466.selection)))
+					$range:=Form:C1466.selection
+					If ($range.type#2)  // anchored picture
+						
+						$tables:=WP Get elements:C1550($range; wk type table:K81:222)
+						Case of 
+							: ($tables.length=0)
+								//ALERT("select a table first")
+							: ($tables.length>1)
+								//ALERT("select a single table first")
+							: ($tables.length=1)  // == else
+								rows:=WP Table get rows:C1475($range)
+								If (rows.rowCount>1)
+									//ALERT("select a single row first")
+								Else 
+									$table:=$tables[0]
+									WP GET ATTRIBUTES:C1345($table; wk header row count:K81:364; $headerRowCount)
+									If (rows.firstRow<=$headerRowCount)
+										//ALERT("select a row below the header")
+									Else 
+										// ok ! 
+										APPEND MENU ITEM:C411($menu; "-")
+										APPEND MENU ITEM:C411($menu; ".Set break attribute")
+										SET MENU ITEM PARAMETER:C1004($menu; -1; "SetBreak")
+									End if 
+								End if 
+						End case 
+					Else 
+						//ALERT("This is a picture, not")
+					End if 
+					// bug
+				End if 
+				
+				
 				
 				
 			: ($applyTo="column")
@@ -216,6 +238,8 @@ Else
 					// aucune table valide
 				End if 
 				
+			: ($choice="SetBreak")
+				ALERT:C41("work in progress…")
 				
 		End case 
 		
