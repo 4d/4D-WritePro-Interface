@@ -1470,9 +1470,9 @@ This file is distributed under the same license as the product package.-->
           <source>PDF Export</source>
           <target>PDF Export</target>
         </trans-unit>
-        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgrounds">
-          <source>Backgrounds</source>
-          <target>Pozadí</target>
+        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgroundAndTextBoxes">
+          <source>Background and text boxes</source>
+          <target>Pozadí a textová pole</target>
         </trans-unit>
         <trans-unit id="2zaxAplGAgJvGg5f+KnwOA" resname="headers">
           <source>Headers</source>
@@ -1481,6 +1481,10 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="GbCtfYrp9W6n/xYbqhxNkQ" resname="footers">
           <source>Footers</source>
           <target>Zápatí</target>
+        </trans-unit>
+        <trans-unit id="GbCtfYrp9W6n/xYbqhxNkQ" resname="body">
+          <source>Body</source>
+          <target>Tělo</target>
         </trans-unit>
         <trans-unit id="tMZO5KyH1Qe77I7HSLR6og" resname="htmlWysiwyg">
           <source>HTML "WYSIWIG"</source>
@@ -1862,6 +1866,58 @@ Chcete ji nahradit?</target>
           <target>Rozšířit</target>
         </trans-unit>
       </group>
+      
+      <group resname="DialogFormula">
+        <trans-unit id="xx" resname="currentDate">
+          <source>Current date</source>
+          <target>Platné datum</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="currentTime">
+          <source>Current time</source>
+          <target>Platný čas</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="formulaNameColon">
+          <source>Formula name:</source>
+          <target>Název výrazu:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="formulaSourceColon">
+          <source>Formula source:</source>
+          <target>Zdroj výrazu:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="standardFormatsColon">
+          <source>Standard formats:</source>
+          <target>Standardní formáty:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="editFormatColon">
+          <source>Edit format:</source>
+          <target>Upravit formát:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="returnedNullValueColon">
+          <source>Returned value if NULL:</source>
+          <target>Návratová hodnoty jestliže NULL:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="standard">
+          <source>Standard</source>
+          <target>Standard</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="advanced">
+          <source>Advanced</source>
+          <target>Pokročilé</target>
+        </trans-unit> 
+        <trans-unit id="xx" resname="insert">
+          <source>Insert</source>
+          <target>Vložit</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="insertAndClose">
+          <source>Insert and close</source>
+          <target>Vložit a uzavřít</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="close">
+          <source>Close</source>
+          <target>Uzavřít</target>
+        </trans-unit>        
+      </group>
+      
       <group resname="Menu_Paragraph">
         <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
           <source>Reset paragraph font attributes</source>
