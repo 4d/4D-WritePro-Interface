@@ -158,7 +158,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="18" resname="fontSizeDown">
           <source>Font size down</source>
-          <target>Schriftgröße</target>
+          <target>Schriftgröße verkleinern</target>
         </trans-unit>
         <trans-unit id="15" resname="fontSizeUp">
           <source>Font size up</source>
@@ -286,11 +286,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="70" resname="paddingRight">
           <source>Right padding</source>
-          <target>Abstand oben</target>
+          <target>Abstand rechts</target>
         </trans-unit>
         <trans-unit id="72" resname="paddingTop">
           <source>Top padding</source>
-          <target>Abstand rechts</target>
+          <target>Abstand oben</target>
         </trans-unit>
         <trans-unit id="107" resname="pageOrientation">
           <source>Page orientation</source>

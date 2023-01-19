@@ -278,7 +278,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="eAIqOo9+b5XNQn3YeW33eg" resname="FontsElipsis">
           <source>Fonts…</source>
-          <target>Fonts…</target>
+          <target>Schriftarten…</target>
         </trans-unit>
       </group>
       <group resname="PaletteFrame">
@@ -882,7 +882,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="220" resname="requestPlaceHolder">
           <source>Style Sheet</source>
-          <target>SStilvorlage</target>
+          <target>Stilvorlage</target>
         </trans-unit>
         <trans-unit id="221" resname="requestCreateLabel">
           <source>Create</source>
