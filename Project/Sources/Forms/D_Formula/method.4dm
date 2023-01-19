@@ -53,16 +53,16 @@ Case of
 		// FORMATS FOR DROP DOWN WIDGETS
 		
 		Form:C1466.local.dateFormats:=New object:C1471
-		Form:C1466.local.dateFormats.values:=New collection:C1472("System date short"; "System date abbreviated"; "System date long"; "Date RFC 1123"; "Internal date abbreviated"; "Internal date short"; "Internal date short special"; "Internal date long"; "iso date"; "Blank if null")
+		Form:C1466.local.dateFormats.values:=New collection:C1472("System date short"; "System date abbreviated"; "System date long"; "Date RFC 1123"; "Internal date abbreviated"; "Internal date short"; "Internal date short special"; "Internal date long"; "iso date")
 		Form:C1466.local.dateFormats.index:=0
 		Form:C1466.local.dateFormats.type:=Is date:K8:7
-		Form:C1466.local.dateFormats.apply4D:=New collection:C1472(System date short:K1:1; System date abbreviated:K1:2; System date long:K1:3; Date RFC 1123:K1:11; Internal date abbreviated:K1:6; Internal date short:K1:7; Internal date short special:K1:4; Internal date long:K1:5; ISO date:K1:8; Blank if null date:K1:9)
+		Form:C1466.local.dateFormats.apply4D:=New collection:C1472(System date short:K1:1; System date abbreviated:K1:2; System date long:K1:3; Date RFC 1123:K1:11; Internal date abbreviated:K1:6; Internal date short:K1:7; Internal date short special:K1:4; Internal date long:K1:5; ISO date:K1:8)
 		
 		Form:C1466.local.timeFormats:=New object:C1471
-		Form:C1466.local.timeFormats.values:=New collection:C1472("HH MM"; "MM SS"; "HH MM SS"; "HH MM AM PM"; "System time short"; "System time long abbreviated"; "System time long"; "Hour min"; "Min sec"; "Hour min sec"; "ISO time"; "Blank if null time")
+		Form:C1466.local.timeFormats.values:=New collection:C1472("HH MM"; "MM SS"; "HH MM SS"; "HH MM AM PM"; "System time short"; "System time long abbreviated"; "System time long"; "Hour min"; "Min sec"; "Hour min sec"; "ISO time")
 		Form:C1466.local.timeFormats.index:=0
 		Form:C1466.local.timeFormats.type:=Is time:K8:8
-		Form:C1466.local.timeFormats.apply4D:=New collection:C1472(HH MM:K7:2; MM SS:K7:6; HH MM SS:K7:1; HH MM AM PM:K7:5; System time short:K7:9; System time long abbreviated:K7:10; System time long:K7:11; Hour min:K7:4; Min sec:K7:7; Hour min sec:K7:3; ISO time:K7:8; Blank if null time:K7:12)
+		Form:C1466.local.timeFormats.apply4D:=New collection:C1472(HH MM:K7:2; MM SS:K7:6; HH MM SS:K7:1; HH MM AM PM:K7:5; System time short:K7:9; System time long abbreviated:K7:10; System time long:K7:11; Hour min:K7:4; Min sec:K7:7; Hour min sec:K7:3; ISO time:K7:8)
 		
 		Form:C1466.local.numberFormats:=New object:C1471
 		Form:C1466.local.numberFormats.values:=New collection:C1472("###,##0.00"; "###,##0"; "###,##0.00"; "#####0"; "##0.00%"; "##0%")
@@ -143,7 +143,7 @@ Case of
 		//If ($count=0)  // the context contains only allowed or hidden table names
 		//For each ($dataClassName; ds)
 		//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
-																					 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+																								 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
 		//Form.context[$dataClassName]:=ds[$dataClassName].all().first()
 		//End if 
 		//End for each 
@@ -185,7 +185,7 @@ Case of
 				//If ($count=0)  // the context contains only allowed or hidden table names
 				//For each ($dataClassName; ds)
 				//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
-															 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+																				 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
 				
 				//// Add allwowed classes to the context
 				////Form.context[$dataClassName]:=ds[$dataClassName].all().first()
