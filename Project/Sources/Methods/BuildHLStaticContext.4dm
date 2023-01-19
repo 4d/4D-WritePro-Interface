@@ -20,8 +20,6 @@ End if
 
 $HList:=cs:C1710.HList.new()
 
-
-
 For each ($attributeName; $context)
 	
 	If (Value type:C1509($context[$attributeName])=Is object:K8:27)
@@ -73,6 +71,12 @@ For each ($attributeName; $context)
 End for each 
 
 
+
+If ($formula="")  //end of level 1
+	If ($HList.countItems(False:C215)=1)  // visible only
+		$HList.expandItem(1)
+	End if 
+End if 
 
 //If ($HList.countItems()=1)
 //$HList.expandItem(1)

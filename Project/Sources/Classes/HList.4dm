@@ -29,7 +29,7 @@ Function expandItem($id : Integer)
 	var $isExpanded : Boolean
 	
 	GET LIST ITEM:C378(This:C1470.hlist; $id; $itemRef; $itemText; $sublist; $isExpanded)
-	If ($sublist#0) && ($isExpanded)
+	If ($sublist#0) && (Not:C34($isExpanded))
 		SET LIST ITEM:C385(This:C1470.hlist; $itemRef; $itemText; $itemRef; $sublist; True:C214)
 	End if 
 	
@@ -73,10 +73,17 @@ Function setProperties($itemRef : Integer; $enterable : Boolean; $style : Intege
 	
 	
 	
-Function countItems()->$count : Integer
+Function countItems($visible : Boolean)->$count : Integer
 	
-	$count:=Count list items:C380(This:C1470.hlist; *)
+	If (Count parameters:C259=0)
+		$visible:=True:C214
+	End if 
 	
+	If ($visible)
+		$count:=Count list items:C380(This:C1470.hlist; *)  // ALL
+	Else 
+		$count:=Count list items:C380(This:C1470.hlist)  // Visible only
+	End if 
 	
 	
 Function filter($filter : Collection)

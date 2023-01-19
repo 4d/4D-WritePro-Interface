@@ -74,11 +74,13 @@ Case of
 		Form:C1466.local.numberAndTimeFormats:=New object:C1471
 		Form:C1466.local.numberAndTimeFormats.values:=New collection:C1472(\
 			"###,##0.00"; "###,##0"; "###,##0.00"; "#####0"; "##0.00%"; "##0%"; \
+			"(-"; \
 			"HH MM"; "MM SS"; "HH MM SS"; "HH MM AM PM"; "System time short"; "System time long abbreviated"; "System time long"; "Hour min"; "Min sec"; "Hour min sec"; "ISO time")
 		Form:C1466.local.numberAndTimeFormats.index:=0
 		Form:C1466.local.numberAndTimeFormats.type:=Is integer:K8:5  // means TIME OR NUMERIC
 		Form:C1466.local.numberAndTimeFormats.apply4D:=New collection:C1472(\
 			"###,###,###,##0.00"; "###,###,###,##0"; "###########0.00"; "###########0"; "###,##0.00%"; "###,##0%"; \
+			"xx"; \
 			HH MM:K7:2; MM SS:K7:6; HH MM SS:K7:1; HH MM AM PM:K7:5; System time short:K7:9; System time long abbreviated:K7:10; System time long:K7:11; Hour min:K7:4; Min sec:K7:7; Hour min sec:K7:3; ISO time:K7:8)
 		
 		
@@ -100,24 +102,6 @@ Case of
 		Form:C1466.local.booleanFormats.index:=0
 		Form:C1466.local.booleanFormats.type:=Is boolean:K8:9
 		Form:C1466.local.booleanFormats.apply4D:=New collection:C1472("true;false"; "yes;no"; "Mr;Mz")
-		
-		
-		Form:C1466.local.links:=New object:C1471
-		If (Undefined:C82(Form:C1466.context.linksLevels))
-			Form:C1466.local.links.values:=New collection:C1472(0; 1; 2; 3; 4; 5)
-			Form:C1466.local.links.index:=0
-		Else 
-			If (Form:C1466.context.linksLevels>0)
-				Form:C1466.local.links.values:=New collection:C1472
-				For ($i; 0; Form:C1466.context.linksLevels)
-					Form:C1466.local.links.values.push($i)
-				End for 
-				Form:C1466.local.links.index:=Form:C1466.context.linksLevels
-			Else 
-				OBJECT SET VISIBLE:C603(*; "lbl_links"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "DD_links"; False:C215)
-			End if 
-		End if 
 		
 		
 		//If (Undefined(Form.context))  // no context at all
@@ -143,7 +127,7 @@ Case of
 		//If ($count=0)  // the context contains only allowed or hidden table names
 		//For each ($dataClassName; ds)
 		//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
-																											 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+																																				 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
 		//Form.context[$dataClassName]:=ds[$dataClassName].all().first()
 		//End if 
 		//End for each 
@@ -176,7 +160,7 @@ Case of
 				End for each 
 				
 				If ($count=0)
-					$static:=True:C214  // use the context "as it"
+					$static:=True:C214  // use the context "as it" 
 				Else 
 					$static:=False:C215  // build list based on ORDA
 				End if 
@@ -185,7 +169,7 @@ Case of
 				//If ($count=0)  // the context contains only allowed or hidden table names
 				//For each ($dataClassName; ds)
 				//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
-																									 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+																																								 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
 				
 				//// Add allwowed classes to the context
 				////Form.context[$dataClassName]:=ds[$dataClassName].all().first()
@@ -196,15 +180,64 @@ Case of
 				
 		End case 
 		
+		
 		If ($static)
+			
 			Form:C1466.contextHList:=BuildHLStaticContext(Form:C1466.context)
+			
+			OBJECT SET VISIBLE:C603(*; "lbl_links"; False:C215)
+			OBJECT SET VISIBLE:C603(*; "DD_links"; False:C215)
+			
 		Else 
+			
+			Form:C1466.local.links:=New object:C1471
+			
+			If (Undefined:C82(Form:C1466.context.maxRelationLevels))
+				Form:C1466.local.links.values:=New collection:C1472(0; 1; 2; 3; 4; 5)
+				Form:C1466.local.links.index:=0
+			Else 
+				
+				If (Form:C1466.context.maxRelationLevels>0)
+					Form:C1466.local.links.values:=New collection:C1472
+					For ($i; 0; Form:C1466.context.maxRelationLevels)
+						Form:C1466.local.links.values.push($i)
+					End for 
+					Form:C1466.local.links.index:=Form:C1466.context.maxRelationLevels
+				Else 
+					Form:C1466.local.links.values.push(0)
+					Form:C1466.local.links.index:=0  // used in BuildHLContext
+					
+					OBJECT SET VISIBLE:C603(*; "lbl_links"; False:C215)
+					OBJECT SET VISIBLE:C603(*; "DD_links"; False:C215)
+				End if 
+			End if 
+			
 			Form:C1466.contextHList:=BuildHLContext(Form:C1466.context)
+			
 		End if 
 		
 		//Form.contextHList:=BuildHLContext(Form.context)
 		Form:C1466.displayedHList:=Form:C1466.contextHList.clone()  //Copy list(Form.contextHList)
 		Form:C1466.displayedHList.formObject:="DisplayedHL"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		// edit current formula if any
 		If (Not:C34(Undefined:C82(Form:C1466.formulaSource)))
