@@ -39,6 +39,9 @@ Case of
 			: ($formatType=Is boolean:K8:9)
 				Form:C1466.local.displayedFormats:=Form:C1466.local.booleanFormats
 				
+			: ($formatType=Is integer:K8:5)  // TIME OR NUMERIC for static contexts
+				Form:C1466.local.displayedFormats:=Form:C1466.local.numberAndTimeFormats
+				
 		End case 
 		
 		Form:C1466.fullFormat:=Form:C1466.local.displayedFormats.apply4D[Form:C1466.local.displayedFormats.index]
@@ -60,7 +63,7 @@ Case of
 			: ($formatType=Is time:K8:8)
 				Form:C1466.local.formatSample:=String:C10(Current time:C178; Form:C1466.local.displayedFormats.apply4D[Form:C1466.local.displayedFormats.index])
 				
-			: ($formatType=Is real:K8:4)
+			: ($formatType=Is real:K8:4) | (($formatType=Is integer:K8:5) & (Value type:C1509(Form:C1466.fullFormat)=Is text:K8:3))
 				
 				If (Position:C15("%"; Form:C1466.fullFormat)>0)
 					Form:C1466.local.formatSample:=String:C10(4.567; Form:C1466.fullFormat)
@@ -88,6 +91,12 @@ Case of
 				OBJECT SET VISIBLE:C603(*; "lbl_EditFormat"; True:C214)
 				OBJECT SET VISIBLE:C603(*; "Input_fullFormat"; True:C214)
 				
+			: ($formatType=Is integer:K8:5)  // must be a TIME; (static contexts). Numeric cases have been managed with "is real" above
+				
+				Form:C1466.local.formatSample:=String:C10(Current time:C178; Form:C1466.local.displayedFormats.apply4D[Form:C1466.local.displayedFormats.index])
+				OBJECT SET VISIBLE:C603(*; "lbl_EditFormat"; False:C215)
+				OBJECT SET VISIBLE:C603(*; "Input_fullFormat"; False:C215)
+				
 		End case 
 		
 		
@@ -95,16 +104,30 @@ Case of
 		
 	: ($action="cleanup")
 		
-		$visible:=(Form:C1466.formulaSource#"") && ((Form:C1466.local.type=Is real:K8:4) || (Form:C1466.local.type=Is text:K8:3) || (Form:C1466.local.type=Is picture:K8:10) || (Form:C1466.local.type=Is date:K8:7) || (Form:C1466.local.type=Is time:K8:8) || (Form:C1466.local.type=Is boolean:K8:9))
+		$visible:=(Form:C1466.formulaSource#"") && ((Form:C1466.local.type=Is real:K8:4) || (Form:C1466.local.type=Is integer:K8:5) || (Form:C1466.local.type=Is text:K8:3) || (Form:C1466.local.type=Is picture:K8:10) || (Form:C1466.local.type=Is date:K8:7) || (Form:C1466.local.type=Is time:K8:8) || (Form:C1466.local.type=Is boolean:K8:9))
 		
 		OBJECT SET VISIBLE:C603(*; "lbl_StandardFormat"; $visible)
 		OBJECT SET VISIBLE:C603(*; "DD_formats"; $visible)
 		
-		$visible:=(Form:C1466.formulaSource#"") && ((Form:C1466.local.type=Is real:K8:4) || (Form:C1466.local.type=Is text:K8:3) || (Form:C1466.local.type=Is boolean:K8:9))
+		
+		Case of 
+			: (Form:C1466.formulaSource#"") && ((Form:C1466.local.type=Is real:K8:4) || (Form:C1466.local.type=Is text:K8:3) || (Form:C1466.local.type=Is boolean:K8:9))
+				
+				$visible:=True:C214
+				
+			: (Form:C1466.formulaSource#"") && (Form:C1466.local.type=Is integer:K8:5)  // special case : interger means time OR numéric
+				
+				If (Value type:C1509(Form:C1466.fullFormat)=Is text:K8:3)  // format is text but value is a number
+					$visible:=True:C214
+				Else   // time
+					$visible:=False:C215
+				End if 
+			Else 
+				$visible:=False:C215
+		End case 
 		
 		OBJECT SET VISIBLE:C603(*; "Input_fullFormat"; $visible)
 		OBJECT SET VISIBLE:C603(*; "lbl_EditFormat"; $visible)
-		
 		
 		
 		OBJECT SET VISIBLE:C603(*; "btn_ClearFilter"; (Form:C1466.local.filter#""))

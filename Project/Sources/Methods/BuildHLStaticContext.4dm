@@ -1,7 +1,7 @@
 //%attributes = {}
 //#DECLARE($context : Object; $contextName : Text; $linksLevel : Integer)->$returnedContextList : Collection
 
-#DECLARE($context : Object; $contextName : Text; $itemRef : Integer)->$HList : cs:C1710.HList
+#DECLARE($context : Object; $contextName : Text; $formula : Text; $itemRef : Integer)->$HList : cs:C1710.HList
 
 var $icon : Picture
 var $picturePath; $attributeName; $dataClassName; $attributeNameTranslated; $json; $relatedDataClassName; $nextContextName : Text
@@ -11,7 +11,7 @@ var $subList : cs:C1710.HList
 var $itemRef; $p; $type : Integer
 var $o : Object
 var $fill; $append : Boolean
-
+var $nextFormula : Text
 
 If (Count parameters:C259=1)
 	$picturePath:="path:/RESOURCES/Images/Colors/FrontColor_7.png"
@@ -26,7 +26,13 @@ For each ($attributeName; $context)
 	
 	If (Value type:C1509($context[$attributeName])=Is object:K8:27)
 		
-		$subList:=BuildHLStaticContext($context[$attributeName]; $attributeName; $itemRef+1)
+		If ($formula="")
+			$nextFormula:=$attributeName
+		Else 
+			$nextFormula:=$formula+"."+$attributeName
+		End if 
+		
+		$subList:=BuildHLStaticContext($context[$attributeName]; $attributeName; $nextFormula; $itemRef+1)
 		
 		$HList.append($attributeName; $itemRef; $subList.hlist; False:C215)  //
 		$HList.setParameter($itemRef; Additional text:K28:7; String:C10($itemRef))  // TEMPO FOR DEBUG 
@@ -37,22 +43,32 @@ For each ($attributeName; $context)
 	Else 
 		// not an object !
 		
-		
-		$HList.append($attributeName; $itemRef)
-		
-		$o:=New object:C1471
-		$o.type:=Is text:K8:3
-		$o.formulaSource:="This.data."+$contextName+"."+$attributeName
-		$o.name:=$contextName+"."+$attributeName
-		
-		$json:=JSON Stringify:C1217($o; *)  //  ";*" TEMPO FOR DEBUG 
-		
-		$HList.setParameter($itemRef; "JSON"; $json)
-		$HList.setParameter($itemRef; "SOURCE"; $o.formulaSource)
-		$HList.setParameter($itemRef; Additional text:K28:7; String:C10($itemRef))  // TEMPO FOR DEBUG 
-		
-		$itemRef:=$itemRef+1
-		
+		$type:=Value type:C1509($context[$attributeName])
+		If ($type#Is collection:K8:32)
+			
+			If ($type=Is real:K8:4)
+				$type:=Is integer:K8:5  // means TIME OR NUMERIC for formating
+			End if 
+			
+			$HList.append($attributeName; $itemRef)
+			
+			$o:=New object:C1471
+			
+			$o.type:=$type
+			$o.formulaSource:="This.data."+$formula+"."+$attributeName
+			$o.name:=$formula+"."+$attributeName
+			
+			$json:=JSON Stringify:C1217($o; *)  //  ";*" TEMPO FOR DEBUG 
+			
+			$HList.setParameter($itemRef; "JSON"; $json)
+			$HList.setParameter($itemRef; "SOURCE"; $o.formulaSource)
+			$HList.setParameter($itemRef; Additional text:K28:7; String:C10($itemRef))  // TEMPO FOR DEBUG 
+			
+			$itemRef:=$itemRef+1
+			
+		Else 
+			
+		End if 
 	End if 
 End for each 
 

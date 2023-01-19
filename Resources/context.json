@@ -11,8 +11,11 @@
 			"country": "U.S.A.",
 			"continent": "North America",
 			"hireDate": "2014-10-19",
+			"age": 36,
+			"salary": 3080.50,
 			"worksFrom": 28800,
 			"worksTo": 61200,
+			"drivingLicense":"xty 784 gfr 745 t5h",
 			"portrait": null,
 			"company": {
 				"name": "Zoulou Bart Blue",
@@ -33,8 +36,11 @@
 			"country": "U.S.A.",
 			"continent": "North America",
 			"hireDate": "2013-01-30",
+			"age": 40,
+			"salary": 3250.75,
 			"worksFrom": 28800,
 			"worksTo": 61200,
+			"drivingLicense":"hft 871 ert 147 t7s",
 			"portrait": null,
 			"company": {
 				"name": "Zoulou Bart Blue",
