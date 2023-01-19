@@ -74,12 +74,12 @@ Case of
 		Form:C1466.local.numberAndTimeFormats:=New object:C1471
 		Form:C1466.local.numberAndTimeFormats.values:=New collection:C1472(\
 			"###,##0.00"; "###,##0"; "###,##0.00"; "#####0"; "##0.00%"; "##0%"; \
-			"HH MM"; "MM SS"; "HH MM SS"; "HH MM AM PM"; "System time short"; "System time long abbreviated"; "System time long"; "Hour min"; "Min sec"; "Hour min sec"; "ISO time"; "Blank if null time")
+			"HH MM"; "MM SS"; "HH MM SS"; "HH MM AM PM"; "System time short"; "System time long abbreviated"; "System time long"; "Hour min"; "Min sec"; "Hour min sec"; "ISO time")
 		Form:C1466.local.numberAndTimeFormats.index:=0
 		Form:C1466.local.numberAndTimeFormats.type:=Is integer:K8:5  // means TIME OR NUMERIC
 		Form:C1466.local.numberAndTimeFormats.apply4D:=New collection:C1472(\
 			"###,###,###,##0.00"; "###,###,###,##0"; "###########0.00"; "###########0"; "###,##0.00%"; "###,##0%"; \
-			HH MM:K7:2; MM SS:K7:6; HH MM SS:K7:1; HH MM AM PM:K7:5; System time short:K7:9; System time long abbreviated:K7:10; System time long:K7:11; Hour min:K7:4; Min sec:K7:7; Hour min sec:K7:3; ISO time:K7:8; Blank if null time:K7:12)
+			HH MM:K7:2; MM SS:K7:6; HH MM SS:K7:1; HH MM AM PM:K7:5; System time short:K7:9; System time long abbreviated:K7:10; System time long:K7:11; Hour min:K7:4; Min sec:K7:7; Hour min sec:K7:3; ISO time:K7:8)
 		
 		
 		
@@ -143,7 +143,7 @@ Case of
 		//If ($count=0)  // the context contains only allowed or hidden table names
 		//For each ($dataClassName; ds)
 		//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
-																								 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+																											 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
 		//Form.context[$dataClassName]:=ds[$dataClassName].all().first()
 		//End if 
 		//End for each 
@@ -185,7 +185,7 @@ Case of
 				//If ($count=0)  // the context contains only allowed or hidden table names
 				//For each ($dataClassName; ds)
 				//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
-																				 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+																									 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
 				
 				//// Add allwowed classes to the context
 				////Form.context[$dataClassName]:=ds[$dataClassName].all().first()
