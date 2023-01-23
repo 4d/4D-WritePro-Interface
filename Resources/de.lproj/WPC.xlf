@@ -796,7 +796,7 @@ This file is distributed under the same license as the product package.-->
       <group resname="TextTransform">
         <trans-unit id="1" resname="TextTransformNone">
           <source>None</source>
-          <target>Nicht</target>
+          <target>Nichts</target>
         </trans-unit>
         <trans-unit id="2" resname="Capitalize">
           <source>Capitalize</source>
