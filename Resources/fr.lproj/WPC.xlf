@@ -2004,6 +2004,26 @@ Souhaitez-vous le remplacer ?</target>
           <target>Évaluer les tables</target>
         </trans-unit>
       </group>
+
+      <group resname="Menu_SetTableBreak">
+        <trans-unit id="Menu_SetTableBreak_1" resname="DefineAsBreakRow">
+          <source>Define as break row…</source>
+          <target>Définir comme rupture…</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_2" resname="RemoveBreak">
+          <source>Remove break</source>
+          <target>Supprimer la rupture</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_3" resname="EnterBreakName">
+          <source>Enter the name of the attribute to use as break</source>
+          <target>Entrez le nom de l'attribut servant de rupture</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_4" resname="SetBreak">
+          <source>Set break</source>
+          <target>Définir la rupture</target>
+        </trans-unit>
+      </group>
+      
     </body>
   </file>
 

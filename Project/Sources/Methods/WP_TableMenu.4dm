@@ -6,7 +6,7 @@ var $range; $table; $folder; $template; $rows; $formula; $wpTable : Object
 var $isTable : Boolean
 var $files; $_templates; $_icons; $tables : Collection
 var $4Dtable : Pointer
-var $path; $menu; $choice; $where; $formulaText : Text
+var $path; $menu; $choice; $where; $formulaText; $propertyName : Text
 
 
 $where:=""
@@ -133,6 +133,7 @@ Else
 				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "row/avoidPageBreakInside")
 				
+				
 				// add "set break…" if possible
 				
 				If (Not:C34(Undefined:C82(Form:C1466.selection)))
@@ -156,9 +157,20 @@ Else
 										//ALERT("select a row below the header")
 									Else 
 										// ok ! 
+										
 										APPEND MENU ITEM:C411($menu; "-")
-										APPEND MENU ITEM:C411($menu; ".Set break attribute")
+										// set break
+										APPEND MENU ITEM:C411($menu; Get localized string:C991("DefineAsBreakRow"))
 										SET MENU ITEM PARAMETER:C1004($menu; -1; "SetBreak")
+										
+										// remove break (if any)
+										WP GET ATTRIBUTES:C1345(rows; "breakPropertyName"; $propertyName)
+										If ($propertyName#"")
+											APPEND MENU ITEM:C411($menu; Get localized string:C991("RemoveBreak"))
+											SET MENU ITEM PARAMETER:C1004($menu; -1; "RemoveBreak")
+										End if 
+										
+										
 									End if 
 								End if 
 						End case 
@@ -239,8 +251,17 @@ Else
 				End if 
 				
 			: ($choice="SetBreak")
-				ALERT:C41("work in progress…")
+				$propertyName:=Request:C163(Get localized string:C991("EnterBreakName"); $propertyName; Get localized string:C991("SetBreak"); Get localized string:C991("cancel"))
+				If (ok=1)
+					If ($propertyName#"")
+						WP SET ATTRIBUTES:C1342(rows; "breakPropertyName"; $propertyName)
+					Else 
+						WP RESET ATTRIBUTES:C1344(rows; "breakPropertyName")
+					End if 
+				End if 
 				
+			: ($choice="RemoveBreak")
+				WP RESET ATTRIBUTES:C1344(rows; "breakPropertyName")
 		End case 
 		
 	End if   // is table
