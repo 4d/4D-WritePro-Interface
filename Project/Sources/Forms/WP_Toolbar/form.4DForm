@@ -1239,7 +1239,8 @@
 					"method": "ObjectMethods/Stylesheet_Type2.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"tooltip": ":xliff:characterStylesheets"
 				},
 				"Stylesheet_Type1": {
 					"type": "radio",
@@ -1257,7 +1258,8 @@
 					"method": "ObjectMethods/Stylesheet_Type1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"tooltip": ":xliff:paragraphStylesheets"
 				},
 				"Stylesheet_Names": {
 					"type": "dropdown",
@@ -1966,11 +1968,12 @@
 					"left": 720,
 					"width": 30,
 					"height": 24,
-					"action": "",
+					"action": "visibleEmptyImages",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/HideEmptyImages_24.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"tooltip": "based on action.title (see\"onload\")"
 				},
 				"btn_displayAsSymbol": {
 					"type": "checkbox",
@@ -1982,7 +1985,8 @@
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/4D/DisplayAsSymbol_24.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"tooltip": "see\"onload\""
 				},
 				"Line1": {
 					"type": "line",
@@ -2631,7 +2635,7 @@
 					"left": 225,
 					"width": 50,
 					"height": 50,
-					"tooltip": "based on action.title",
+					"tooltip": "based on action.title (see\"onload\")",
 					"action": "image/anchorLayout?value=inline",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/imageInLine_48.png",
@@ -2644,7 +2648,7 @@
 					"left": 275,
 					"width": 50,
 					"height": 50,
-					"tooltip": "based on action.title",
+					"tooltip": "based on action.title (see\"onload\")",
 					"action": "image/anchorLayout?value=front",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/imageOverText_48.png",
@@ -2657,7 +2661,7 @@
 					"left": 180,
 					"width": 45,
 					"height": 50,
-					"tooltip": "based on action.title",
+					"tooltip": "based on action.title (see\"onload\")",
 					"action": "image/anchorLayout?value=behind",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Images/imageBehindText_48.png",
@@ -3067,7 +3071,8 @@
 					"method": "ObjectMethods/btnPrintPreview1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"tooltip": ":xliff:PrintSettings"
 				},
 				"Popup_pageOrientation1": {
 					"type": "dropdown",
@@ -3075,7 +3080,6 @@
 					"left": 770,
 					"width": 90,
 					"height": 22,
-					"tooltip": ":xliff:pageOrientation",
 					"focusable": false,
 					"action": "userUnit"
 				},

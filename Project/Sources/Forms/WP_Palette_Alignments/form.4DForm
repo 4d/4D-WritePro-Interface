@@ -1146,7 +1146,7 @@
 		}
 	],
 	"editor": {
-		"activeView": "Back",
+		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
@@ -1177,6 +1177,7 @@
 				]
 			},
 			"Back": {
+				"visible": false,
 				"objects": [
 					"Background"
 				]
@@ -1194,6 +1195,7 @@
 			"View 7": {},
 			"View 8": {},
 			"TITLE": {
+				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text"

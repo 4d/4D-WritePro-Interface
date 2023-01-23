@@ -568,6 +568,16 @@ This file is distributed under the same license as the product package.-->
           <source>Text boxes</source>
           <target>Zones de texte</target>
         </trans-unit>
+
+        <trans-unit id="xxx" resname="PrintSettings">
+          <source>Print settings…</source>
+          <target>Paramères d'impression…</target>
+        </trans-unit>
+        <trans-unit id="xxx" resname="DisplayEmptyPictures">
+          <source>Display empty pictures</source>
+          <target>Afficher les images vides</target>
+        </trans-unit>
+
       </group>
     </body>
   </file>

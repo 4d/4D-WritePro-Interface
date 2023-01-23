@@ -95,7 +95,8 @@
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/HideEmptyImages_24.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"tooltip": "see\"OnLoad\""
 				},
 				"rbWidthOption1": {
 					"type": "radio",
@@ -453,7 +454,6 @@
 					"left": 115,
 					"width": 100,
 					"height": 18,
-					"tooltip": ":xliff:pageOrientation",
 					"focusable": false,
 					"action": "userUnit",
 					"class": "Palette"

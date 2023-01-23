@@ -351,7 +351,8 @@
 			"View 6": {},
 			"View 7": {},
 			"View 8": {},
-			"View 9": {
+			"BACK": {
+				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text"
