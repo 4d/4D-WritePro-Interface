@@ -430,7 +430,8 @@
 					"method": "ObjectMethods/btnPrintPreview1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"tooltip": ":xliff:PrintSettings"
 				},
 				"Rect2": {
 					"type": "rectangle",
