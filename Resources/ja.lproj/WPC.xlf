@@ -148,11 +148,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="21" resname="Clip">
           <source>Clip:</source>
-          <target>Clip:</target>
+          <target>クリップ枠:</target>
         </trans-unit>
         <trans-unit id="22" resname="Origin">
           <source>Origin:</source>
-          <target>Origin:</target>
+          <target>原点:</target>
         </trans-unit>
         <trans-unit id="23" resname="HorizontalSize">
           <source>Horizontal Size:</source>
@@ -1142,11 +1142,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="4Z4RwzyWeP/Lva2PJqZkIw" resname="detailsColon">
           <source>Details:</source>
-          <target state="new">Details:</target>
+          <target>詳細設定:</target>
         </trans-unit>
         <trans-unit id="KNV1Z0ClwSorv7H0yJnEIQ" resname="globalColon">
           <source>Global:</source>
-          <target state="new">Global:</target>
+          <target>全体設定:</target>
         </trans-unit>
       </group>
       <group resname="PaletteFindReplace">
