@@ -566,8 +566,14 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="an7Gfwv2eaZPtYEu4Dtf2A" resname="TextBoxes">
           <source>Text boxes</source>
-          <target state="new">Text boxes</target>
+          <target>Textfelder</target>
         </trans-unit>
+
+        <trans-unit id="xxx" resname="PrintSettings">
+          <source>Print settings…</source>
+          <target>Seiteneinrichtung…</target>
+        </trans-unit>
+
       </group>
     </body>
   </file>

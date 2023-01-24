@@ -2002,7 +2002,28 @@ Soll er ersetzt werden?</target>
           <target>Tabellen neu berechnen</target>
         </trans-unit>
       </group>
+
+      <group resname="Menu_SetTableBreak">
+        <trans-unit id="Menu_SetTableBreak_1" resname="DefineAsBreakRow">
+          <source>Define as break row…</source>
+          <target>Als Umbruchszeile festlegen…</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_2" resname="RemoveBreak">
+          <source>Remove break</source>
+          <target>Umbruchszeile entfernen</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_3" resname="EnterBreakName">
+          <source>Enter the name of the attribute to use as break</source>
+          <target>Geben Sie den Namen des Attributes ein, das den Umbruch festlegt:</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_4" resname="SetBreak">
+          <source>Set</source>
+          <target>Setzen</target>
+        </trans-unit>
+      </group>
+
     </body>
   </file>
 
 </xliff>
+‚
