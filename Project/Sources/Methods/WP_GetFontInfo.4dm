@@ -48,6 +48,9 @@ If (Not:C34(OB Is empty:C1297($range)))
 	
 	If ($redraw)
 		
+		If (Shift down:C543)
+			TRACE:C157
+		End if 
 		
 		
 		WP GET ATTRIBUTES:C1345($range; wk font family:K81:65; $fontFamily)
@@ -83,7 +86,9 @@ If (Not:C34(OB Is empty:C1297($range)))
 			Else 
 				WP_fontStyle{0}:=$font  // just for display, not selectable !
 				WP_fontLongName{0}:=$font
-				WP_fontFamilly:=0
+				
+				WP_fontStyle:=0
+				//WP_fontFamilly:=0
 			End if 
 			
 			

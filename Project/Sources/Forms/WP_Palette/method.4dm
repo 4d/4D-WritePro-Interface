@@ -59,6 +59,11 @@ Case of
 		
 		UI_Selector(oForm.SidebarTabs.buttonNames[0])
 		
+		
+		oForm.eventCode:=-1  //  no need to test "undefined" see WP_SetListFont
+		oForm.eventForcedCode:=-1  //  no need to test "undefined" see WP_SetListFont
+		
+		
 		oForm.skinAppliedMain:=UI_ApplySkin
 		
 		If (Form:C1466#Null:C1517)

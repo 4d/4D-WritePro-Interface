@@ -36,14 +36,14 @@ Case of
 			"FindAndReplace")
 		
 		//For each ($buttonName; $_buttonNames)
-		//OBJECT SET FONT STYLE(*; "tabBtn_"+$buttonName; Bold)  // Temporary to be sure they fit in space
+		//OBJECT SET FONT STYLE(*; "tabBtn_"+$buttonName; Bold)  // Temporary to be sure they fit in space // Removed ACI0103537 - JAPANESE BUG
 		//End for each 
 		
 		oForm.ToolbarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")  // create CLASS
 		
 		//oForm.ToolbarTabs.setButtonSizes(50; 20)  // width (temp) and height (fixed)
-		oForm.ToolbarTabs.setLabelMargins(5; 5)  //2px label margins
-		oForm.ToolbarTabs.setButtonMargins(0; 0; 3; 0)  // left - top - right - bottom
+		oForm.ToolbarTabs.setLabelMargins(2; 2)  //2px label margins
+		oForm.ToolbarTabs.setButtonMargins(2; 0; 2; 0)  // left - top - right - bottom
 		oForm.ToolbarTabs.pageIndexes:=New collection:C1472(1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11)
 		
 		oForm.ToolbarTabs.activate($_buttonNames[0])
@@ -65,6 +65,10 @@ Case of
 		// ++see on timer
 		
 		oForm.comboFontSizes:=New object:C1471("values"; New collection:C1472(9; 10; 11; 12; 13; 14; 16; 18; 20; 24; 28; 32); "value"; 9)
+		
+		oForm.eventCode:=-1  //  no need to test "undefined" see WP_SetListFont
+		oForm.eventForcedCode:=-1  //  no need to test "undefined" see WP_SetListFont
+		
 		
 		// temporarly
 		OBJECT SET ENABLED:C1123(*; "ssType3"; False:C215)

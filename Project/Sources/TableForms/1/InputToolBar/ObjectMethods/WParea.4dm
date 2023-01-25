@@ -20,5 +20,9 @@ WP ContextualMenu(New collection:C1472("pictureSettings"; "formulaSettings"; "ta
 
 //End if 
 
+//vEvent:=FORM Event.description+" "+String(Random)
+
+
+
 
 

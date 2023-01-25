@@ -160,7 +160,7 @@ Function activate($btnName : Text)
 		OBJECT SET RGB COLORS:C628(*; "tabBtn_"+$btn; This:C1470.separatorFontColor; This:C1470.separatorFontColor)
 	End for each 
 	
-	//OBJECT SET FONT STYLE(*; "tabBtn_"+$btnName; Bold)
+	//OBJECT SET FONT STYLE(*; "tabBtn_"+$btnName; Bold) //// Removed ACI0103537 - JAPANESE BUG
 	
 	OBJECT SET RGB COLORS:C628(*; "tabRect_"+$btnName; This:C1470.backgroundColor; This:C1470.backgroundColor)
 	OBJECT SET RGB COLORS:C628(*; "tabBtn_"+$btnName; This:C1470.fontColor; This:C1470.fontColor)

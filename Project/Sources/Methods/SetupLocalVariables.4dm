@@ -28,6 +28,10 @@ If (Form:C1466.skin#Null:C1517)
 	oForm.skinAppliedSub:=False:C215  // will force skin to apply again
 End if 
 
+If (Not:C34(Undefined:C82(Form:C1466.eventCode)))  //2023/01/25 by RL
+	oForm.eventCode:=Form:C1466.eventCode
+End if 
+
 If (Form:C1466.selection#Null:C1517)
 	
 	
