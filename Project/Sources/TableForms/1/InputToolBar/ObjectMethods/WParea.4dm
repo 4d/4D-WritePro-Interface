@@ -20,5 +20,9 @@ If (Form event code:C388=On Double Clicked:K2:5) | (Shift down:C543)  // shift d
 	
 End if 
 
+//vEvent:=FORM Event.description+" "+String(Random)
+
+
+
 
 
