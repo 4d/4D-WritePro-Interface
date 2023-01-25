@@ -1,4 +1,4 @@
-﻿{
+{
 	"$4d": {
 		"version": "1",
 		"kind": "form"
@@ -136,7 +136,12 @@
 					"height": 17,
 					"dataSource": "Form:C1466.pictSettings[wk margin top:K81:13]",
 					"textAlign": "center",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					],
+					"method": "ObjectMethods/margin1.4dm"
 				},
 				"padding1": {
 					"type": "input",
@@ -146,7 +151,12 @@
 					"height": 17,
 					"dataSource": "Form:C1466.pictSettings[wk padding top:K81:18]",
 					"textAlign": "center",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"method": "ObjectMethods/padding1.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
 				},
 				"marginsLabel": {
 					"type": "text",
@@ -206,6 +216,7 @@
 					"textAlign": "center",
 					"method": "ObjectMethods/pictureWidthHeight1.4dm",
 					"events": [
+						"onGettingFocus",
 						"onDataChange"
 					]
 				},
@@ -219,6 +230,7 @@
 					"textAlign": "center",
 					"method": "ObjectMethods/pictureWidthHeight2.4dm",
 					"events": [
+						"onGettingFocus",
 						"onDataChange"
 					]
 				},
@@ -357,7 +369,12 @@
 					"height": 17,
 					"dataSource": "Form:C1466.pictSettings[wk margin bottom:K81:14]",
 					"textAlign": "center",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"method": "ObjectMethods/margin4.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
 				},
 				"margin2": {
 					"type": "input",
@@ -367,7 +384,12 @@
 					"height": 17,
 					"dataSource": "Form:C1466.pictSettings[wk margin left:K81:11]",
 					"textAlign": "center",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"method": "ObjectMethods/margin2.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
 				},
 				"padding2": {
 					"type": "input",
@@ -377,7 +399,12 @@
 					"height": 17,
 					"dataSource": "Form:C1466.pictSettings[wk padding left:K81:16]",
 					"textAlign": "center",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"method": "ObjectMethods/padding2.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
 				},
 				"padding4": {
 					"type": "input",
@@ -387,7 +414,12 @@
 					"height": 17,
 					"dataSource": "Form:C1466.pictSettings[wk padding bottom:K81:19]",
 					"textAlign": "center",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"method": "ObjectMethods/padding4.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
 				},
 				"btnReport1": {
 					"type": "button",
@@ -431,7 +463,12 @@
 					"height": 17,
 					"dataSource": "Form:C1466.pictSettings[wk margin right:K81:12]",
 					"textAlign": "center",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"method": "ObjectMethods/margin3.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
 				},
 				"padding3": {
 					"type": "input",
@@ -441,7 +478,12 @@
 					"height": 17,
 					"dataSource": "Form:C1466.pictSettings[wk padding right:K81:17]",
 					"textAlign": "center",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"method": "ObjectMethods/padding3.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
 				},
 				"LinkLine": {
 					"type": "picture",
@@ -607,7 +649,11 @@
 					"height": 17,
 					"dataSource": "Form:C1466.pictSettings[wk anchor vertical offset:K81:238]",
 					"textAlign": "center",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"method": "ObjectMethods/OffsetVertical.4dm",
+					"events": [
+						"onGettingFocus"
+					]
 				},
 				"Popup Dropdown List1": {
 					"type": "dropdown",
@@ -643,7 +689,11 @@
 					"height": 17,
 					"dataSource": "Form:C1466.pictSettings[wk anchor horizontal offset:K81:236]",
 					"textAlign": "center",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"method": "ObjectMethods/OffsetHorizontal.4dm",
+					"events": [
+						"onGettingFocus"
+					]
 				},
 				"Text": {
 					"type": "text",
@@ -748,6 +798,7 @@
 					"textAlign": "center",
 					"method": "ObjectMethods/anchorPageNumberInput.4dm",
 					"events": [
+						"onGettingFocus",
 						"onDataChange"
 					],
 					"dataSourceTypeHint": "integer",
@@ -772,6 +823,7 @@
 					"textAlign": "center",
 					"method": "ObjectMethods/anchorSectionNumberInput.4dm",
 					"events": [
+						"onGettingFocus",
 						"onDataChange"
 					],
 					"dataSourceTypeHint": "integer",
