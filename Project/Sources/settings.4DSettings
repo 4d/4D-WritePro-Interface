@@ -23,7 +23,7 @@
 		</interface>
 		<general component_classStore_name="" startup_environnement="0"/>
 		<database>
-			<misc use_ast_interpreter="false"/>
+			<misc use_ast_interpreter="false" win_form_text_directwrite="true"/>
 			<cache flush_buffer_delay="20s"/>
 		</database>
 		<server>
