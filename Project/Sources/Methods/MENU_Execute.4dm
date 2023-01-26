@@ -139,7 +139,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						$options:=New object:C1471
 						$options.extra:=New object:C1471
 						$options.extra.extension:=$extension
-						$options.extra.windowTitle:="Text Export"
+						$options.extra.windowTitle:=Get localized string:C991("TextExport")
 						$options.extra.form:="D_Export"
 						
 					: ($action="exportHTML")
@@ -149,7 +149,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						$options:=New object:C1471
 						$options.extra:=New object:C1471
-						$options.extra.windowTitle:="HTML Export"
+						$options.extra.windowTitle:=Get localized string:C991("HTMLExport")
 						$options.extra.extension:=$extension
 						$options.extra.form:="D_Export"
 						
@@ -165,7 +165,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						$options:=New object:C1471
 						$options.extra:=New object:C1471
-						$options.extra.windowTitle:="HTML Mime Export"
+						$options.extra.windowTitle:=Get localized string:C991("HTMLMimeExport")
 						$options.extra.extension:=$extension
 						$options.extra.form:="D_Export"
 						
@@ -189,9 +189,9 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						$options:=New object:C1471
 						$options[wk visible empty images:K81:369]:=False:C215  // new 19R6 (false by default)
-						$options[wk visible background:K81:289]:=True:C214  // new v20 (true by default - was forced to true before)
+						$options[wk visible background and anchored elements:K81:289]:=True:C214  // new v20 (true by default - was forced to true before)
 						$options.extra:=New object:C1471
-						$options.extra.windowTitle:="Docx Export"
+						$options.extra.windowTitle:=Get localized string:C991("WordExport")
 						$options.extra.extension:=$extension
 						$options.extra.form:="D_Export"
 						
@@ -201,11 +201,11 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						$options:=New object:C1471
 						$options.extra:=New object:C1471
-						$options.extra.windowTitle:="PDF Export"
+						$options.extra.windowTitle:=Get localized string:C991("PDFExport")
 						$options.extra.extension:=$extension
 						$options.extra.form:="D_Export"
 						
-						$options[wk visible background:K81:289]:=True:C214
+						$options[wk visible background and anchored elements:K81:289]:=True:C214
 						$options[wk visible headers:K81:287]:=True:C214
 						$options[wk visible footers:K81:288]:=True:C214
 						$options[wk visible empty images:K81:369]:=False:C215  // new 19R6 (false by default)
@@ -221,11 +221,11 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						$options:=New object:C1471
 						$options.extra:=New object:C1471
-						$options.extra.windowTitle:="SVG Export"
+						$options.extra.windowTitle:=Get localized string:C991("SVGExport")
 						$options.extra.extension:=$extension
 						$options.extra.form:="D_Export"
 						
-						$options[wk visible background:K81:289]:=True:C214
+						$options[wk visible background and anchored elements:K81:289]:=True:C214
 						$options[wk visible headers:K81:287]:=True:C214
 						$options[wk visible footers:K81:288]:=True:C214
 						$options[wk visible empty images:K81:369]:=False:C215  // new 19R6 (false by default)
@@ -274,7 +274,6 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 					Else 
 						$title:=Get localized string:C991("FileNamePrompt")
 					End if 
-					
 					
 					$docName:=Select document:C905(""; ""; $title; File name entry:K24:17)
 					

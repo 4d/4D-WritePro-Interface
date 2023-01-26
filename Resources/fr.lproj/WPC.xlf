@@ -2024,6 +2024,34 @@ Souhaitez-vous le remplacer ?</target>
         </trans-unit>
       </group>
       
+        <group resname="ExportWindowTitle">
+        <trans-unit id="ExportWindowTitle_1" resname="TextExport">
+          <source>Text export</source>
+          <target>Export text</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_2" resname="HTMLExport">
+          <source>HTML export</source>
+          <target>Export HTML</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_3" resname="HTMLMimeExport">
+          <source>HTML Mime export</source>
+          <target>Export HTML Mime</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_4" resname="WordExport">
+          <source>Microsoft Word export</source>
+          <target>Export Microsft Word</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_5" resname="PDFExport">
+          <source>PDF export</source>
+          <target>Export PDF</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_6" resname="SVGExport">
+          <source>SVG export</source>
+          <target>Export SVG</target>
+        </trans-unit>        
+      </group>
+
+
     </body>
   </file>
 
