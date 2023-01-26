@@ -1,7 +1,8 @@
 //%attributes = {"invisible":true}
 #DECLARE($range : Object)  // $range:  a text range 
 
-var $paragraphFont : Text
+var $paragraphFont; $listFont : Text
+var $listType : Integer
 
 $range:=WP Paragraph range:C1346($range)  // transform into § range
 
