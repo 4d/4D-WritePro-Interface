@@ -1964,7 +1964,7 @@ Souhaitez-vous le remplacer ?</target>
         </trans-unit>
         <trans-unit id="ExportWindowTitle_4" resname="WordExport">
           <source>Microsoft Word export</source>
-          <target>Export Microsft Word</target>
+          <target>Export Microsoft Word</target>
         </trans-unit>
         <trans-unit id="ExportWindowTitle_5" resname="PDFExport">
           <source>PDF export</source>
