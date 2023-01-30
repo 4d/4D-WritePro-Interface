@@ -1981,6 +1981,52 @@ Chcete ji nahradit?</target>
           <target>Vypočítat tabulky</target>
         </trans-unit>
       </group>
+      
+      <group resname="Menu_SetTableBreak">
+        <trans-unit id="Menu_SetTableBreak_1" resname="DefineAsBreakRow">
+          <source>Define as break row…</source>
+          <target>Definovat jako řádek zlomu…</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_2" resname="RemoveBreak">
+          <source>Remove break</source>
+          <target>Odstranit zlom</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_3" resname="EnterBreakName">
+          <source>Enter the name of the attribute to use as break:</source>
+          <target>Zadejte název vlastnosti k užití zlomu:</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_4" resname="SetBreak">
+          <source>Set</source>
+          <target>Nastavit</target>
+        </trans-unit>
+      </group>
+
+      <group resname="ExportWindowTitle">
+        <trans-unit id="ExportWindowTitle_1" resname="TextExport">
+          <source>Text export</source>
+          <target>Export textu</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_2" resname="HTMLExport">
+          <source>HTML export</source>
+          <target>HTML export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_3" resname="HTMLMimeExport">
+          <source>HTML Mime export</source>
+          <target>HTML Mime export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_4" resname="WordExport">
+          <source>Microsoft Word export</source>
+          <target>Microsoft Word export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_5" resname="PDFExport">
+          <source>PDF export</source>
+          <target>PDF export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_6" resname="SVGExport">
+          <source>SVG export</source>
+          <target>SVG export</target>
+        </trans-unit>        
+      </group>
     </body>
   </file>
 
