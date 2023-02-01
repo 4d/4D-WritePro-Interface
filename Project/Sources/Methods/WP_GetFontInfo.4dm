@@ -48,11 +48,6 @@ If (Not:C34(OB Is empty:C1297($range)))
 	
 	If ($redraw)
 		
-		If (Shift down:C543)
-			TRACE:C157
-		End if 
-		
-		
 		WP GET ATTRIBUTES:C1345($range; wk font family:K81:65; $fontFamily)
 		$p:=Find in array:C230(WP_fontFamilly; $fontFamily)
 		If ($p<0)
