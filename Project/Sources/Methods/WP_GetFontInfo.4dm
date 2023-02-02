@@ -91,7 +91,7 @@ If (Not:C34(OB Is empty:C1297($range)))
 			// font familly not found in array !
 			
 			WP_fontFamilly{0}:=$fontFamily  // just for display, not selectable !
-			WP_fontFamilly:=0
+			//WP_fontFamilly:=0
 			
 		End if 
 		

@@ -65,6 +65,11 @@ Case of
 		// ++see on timer
 		
 		
+		//ACI0103661 report to v19R7
+		oForm.eventCode:=-1  //  no need to test "undefined" see WP_SetListFont
+		oForm.eventForcedCode:=-1  //  no need to test "undefined" see WP_SetListFont
+		
+		
 		// temporarly
 		OBJECT SET ENABLED:C1123(*; "ssType3"; False:C215)
 		OBJECT SET ENABLED:C1123(*; "ssType4"; False:C215)

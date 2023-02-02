@@ -59,6 +59,9 @@ Case of
 		
 		UI_Selector(oForm.SidebarTabs.buttonNames[0])
 		
+		oForm.eventCode:=-1  //ACI0103661 report to v19R7
+		oForm.eventForcedCode:=-1  //ACI0103661 report to v19R7
+		
 		oForm.skinAppliedMain:=UI_ApplySkin
 		
 		If (Form:C1466#Null:C1517)
