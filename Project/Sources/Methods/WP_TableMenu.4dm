@@ -207,6 +207,10 @@ Else
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuVerticalAlignment"))
 				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/verticalAlign")
 				
+				APPEND MENU ITEM:C411($menu; "-")
+				APPEND MENU ITEM:C411($menu; "Merge cells")
+				APPEND MENU ITEM:C411($menu; "Unmerge cells")
+				
 				
 		End case 
 		
