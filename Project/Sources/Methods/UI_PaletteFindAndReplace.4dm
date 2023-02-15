@@ -56,25 +56,27 @@ Else
 	//OBJECT SET VISIBLE(*; "Replacement@"; oForm.FR.displayReplacements)
 	//OBJECT SET VISIBLE(*; "Occurences@"; Not(oForm.FR.displayReplacements))
 	
-	//for sidebar "find"
-	If (oForm.FR.find#"")
-		oForm.FR.messageoccurences:=Get localized string:C991("OccurencesColon")+" "+String:C10(oForm.FR.occurences)
-	Else 
-		oForm.FR.messageoccurences:=""
-	End if 
-	//for sidebar "replace"
-	If (oForm.FR.displayReplacements)
-		oForm.FR.messageReplacements:=Get localized string:C991("ReplacementsColon")+" "+String:C10(oForm.FR.replacements)
-	Else 
-		oForm.FR.messageReplacements:=""
-	End if 
-	
-	
-	If (oForm.FR.displayReplacements)
-		oForm.FR.message:=oForm.FR.messageReplacements
-		oForm.FR.displayReplacements:=False:C215  // next time occurences shall be displayed
-	Else 
-		oForm.FR.message:=oForm.FR.messageoccurences
-	End if 
-	
+End if   //ACI0103628 
+
+
+////for sidebar "find"
+If (oForm.FR.find#"")
+	oForm.FR.messageoccurences:=Get localized string:C991("OccurencesColon")+" "+String:C10(oForm.FR.occurences)
+Else 
+	oForm.FR.messageoccurences:=""
 End if 
+
+//for sidebar "replace"
+If (oForm.FR.displayReplacements)
+	oForm.FR.messageReplacements:=Get localized string:C991("ReplacementsColon")+" "+String:C10(oForm.FR.replacements)
+Else 
+	oForm.FR.messageReplacements:=""
+End if 
+
+If (oForm.FR.displayReplacements)
+	oForm.FR.message:=oForm.FR.messageReplacements
+	oForm.FR.displayReplacements:=False:C215  // next time occurences shall be displayed
+Else 
+	oForm.FR.message:=oForm.FR.messageoccurences
+End if 
+

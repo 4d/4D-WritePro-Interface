@@ -4034,24 +4034,6 @@
 					"height": 16,
 					"textAlign": "right"
 				},
-				"occurencesCount": {
-					"type": "input",
-					"left": 722,
-					"top": 361,
-					"width": 87,
-					"height": 17,
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"dataSource": "oForm.FR.occurences",
-					"stroke": "automatic",
-					"fontStyle": "normal",
-					"dataSourceTypeHint": "number",
-					"numberFormat": "###,##0;;0",
-					"textAlign": "left",
-					"fontWeight": "normal"
-				},
 				"btnFindPrevious": {
 					"type": "button",
 					"top": 30,
@@ -4095,15 +4077,6 @@
 					"style": "regular",
 					"fontSize": 16,
 					"stroke": "automatic"
-				},
-				"OccurencesLabel": {
-					"type": "text",
-					"text": ":xliff:OccurencesColon",
-					"top": 361,
-					"left": 547,
-					"width": 170,
-					"height": 16,
-					"textAlign": "right"
 				},
 				"tempoMessage": {
 					"type": "input",
@@ -4197,6 +4170,35 @@
 					"dataSourceTypeHint": "text",
 					"textAlign": "center",
 					"fontWeight": "normal"
+				},
+				"occurencesCount": {
+					"type": "input",
+					"left": 722,
+					"top": 361,
+					"width": 87,
+					"height": 17,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSource": "oForm.FR.occurences",
+					"stroke": "automatic",
+					"fontStyle": "normal",
+					"dataSourceTypeHint": "number",
+					"numberFormat": "###,##0;;0",
+					"textAlign": "left",
+					"fontWeight": "normal"
+				},
+				"OccurencesLabel": {
+					"type": "text",
+					"text": ":xliff:OccurencesColon",
+					"top": 361,
+					"left": 547,
+					"width": 170,
+					"height": 16,
+					"textAlign": "right",
+					"stroke": "automatic",
+					"fontWeight": "normal"
 				}
 			},
 			"entryOrder": [
@@ -4206,12 +4208,12 @@
 				"btnReplaceSingle",
 				"btnReplaceSingleAndFind",
 				"btnOptions",
-				"occurencesCount",
 				"btnFindPrevious",
 				"btnFindNext",
 				"tempoMessage",
 				"ReplacementCount",
-				"message"
+				"message",
+				"occurencesCount"
 			]
 		}
 	],
@@ -4222,12 +4224,11 @@
 				"Stylesheet_Type1"
 			]
 		},
-		"activeView": "View 1",
+		"activeView": "Hidden",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
 			"Hidden": {
-				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text2",
@@ -4256,5 +4257,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6497
+	"geometryStamp": 6499
 }

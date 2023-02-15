@@ -62,8 +62,6 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 					OBJECT SET ENABLED:C1123(*; "@"; False:C215)
 					OBJECT SET ENTERABLE:C238(*; "@"; False:C215)
 					
-					// Except TAB buttons
-					OBJECT SET ENABLED:C1123(*; "tab@"; True:C214)
 					
 					Case of 
 							
@@ -105,6 +103,10 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 				End if 
 				
 		End case 
+		
+		//  TAB BUTTONS ARE ALWAYS ENABLED.
+		OBJECT SET ENABLED:C1123(*; "tab@"; True:C214)
+		
 		
 		//// the local protection button is ALWAYS based on global document protection
 		//WP GET ATTRIBUTES(Form.selection.owner; wk protection enabled; $protected)
