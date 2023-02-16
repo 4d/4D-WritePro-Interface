@@ -4034,24 +4034,6 @@
 					"height": 16,
 					"textAlign": "right"
 				},
-				"occurencesCount": {
-					"type": "input",
-					"left": 722,
-					"top": 361,
-					"width": 87,
-					"height": 17,
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"dataSource": "oForm.FR.occurences",
-					"stroke": "automatic",
-					"fontStyle": "normal",
-					"dataSourceTypeHint": "number",
-					"numberFormat": "###,##0;;0",
-					"textAlign": "left",
-					"fontWeight": "normal"
-				},
 				"btnFindPrevious11": {
 					"type": "button",
 					"top": 30,
@@ -4095,15 +4077,6 @@
 					"style": "regular",
 					"fontSize": 16,
 					"stroke": "automatic"
-				},
-				"OccurencesLabel": {
-					"type": "text",
-					"text": ":xliff:OccurencesColon",
-					"top": 361,
-					"left": 547,
-					"width": 170,
-					"height": 16,
-					"textAlign": "right"
 				},
 				"tempoMessage": {
 					"type": "input",
@@ -4206,7 +4179,6 @@
 				"btnReplaceSingle",
 				"btnReplaceSingleAndFind",
 				"btnOptions",
-				"occurencesCount",
 				"btnFindPrevious11",
 				"btnFindPrevious12",
 				"tempoMessage",
@@ -4256,5 +4228,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6494
+	"geometryStamp": 6495
 }
