@@ -111,7 +111,7 @@
 					"stroke": "#FFFFFF",
 					"class": "Palette",
 					"textAlign": "center",
-					"text": "Document",
+					"text": ":xliff:document",
 					"fill": "transparent",
 					"fontTheme": "additional"
 				},
@@ -184,7 +184,7 @@
 					"left": 80,
 					"width": 110,
 					"height": 16,
-					"text": "Text boxes",
+					"text": ":xliff:TextBoxes",
 					"focusable": false,
 					"events": [
 						"onClick"
