@@ -4224,11 +4224,12 @@
 				"Stylesheet_Type1"
 			]
 		},
-		"activeView": "Hidden",
+		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
 			"Hidden": {
+				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text2",

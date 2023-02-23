@@ -1,0 +1,97 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"expression": {
+					"type": "input",
+					"left": 20,
+					"top": 60,
+					"width": 420,
+					"height": 17,
+					"dataSource": "Form:C1466.expression",
+					"events": [
+						"onAfterEdit"
+					],
+					"method": "ObjectMethods/expression.4dm",
+					"hideFocusRing": true
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 100,
+					"left": 240,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":xliff:cancel",
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"bOK": {
+					"type": "button",
+					"top": 100,
+					"left": 330,
+					"width": 110,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": ":xliff:SetBreak",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"label": {
+					"type": "input",
+					"left": 20,
+					"top": 25,
+					"width": 420,
+					"height": 17,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSource": "Form:C1466.label"
+				}
+			}
+		}
+	],
+	"geometryStamp": 109,
+	"width": 460,
+	"height": 140,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

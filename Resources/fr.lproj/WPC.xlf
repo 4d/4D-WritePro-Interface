@@ -2015,13 +2015,19 @@ Souhaitez-vous le remplacer ?</target>
           <target>Supprimer la rupture</target>
         </trans-unit>
         <trans-unit id="Menu_SetTableBreak_3" resname="EnterBreakName">
-          <source>Enter the name of the attribute to use as break:</source>
-          <target>Entrez le nom de l'attribut de rupture :</target>
+          <source>Enter the expression to use as break…</source>
+          <source>Entrez l'expression a utiliser comme rupture…</source>
         </trans-unit>
         <trans-unit id="Menu_SetTableBreak_4" resname="SetBreak">
           <source>Set</source>
           <target>Définir</target>
         </trans-unit>
+
+        <trans-unit id="Window_D_TinyFormula_1" resname="BreakFormula">
+          <source>Break formula</source>
+          <target>Formule de rupture</target>
+        </trans-unit>
+
       </group>
       
         <group resname="ExportWindowTitle">

@@ -1,8 +1,8 @@
 //%attributes = {"invisible":true}
 #DECLARE($applyTo : Text)->$choice : Text  // $applyTo = "insertTable", "table", "row"; column or "cell"
 
-var $headerRowCount; $i : Integer
-var $range; $table; $folder; $template; $rows; $formula; $wpTable : Object
+var $headerRowCount; $i; $win : Integer
+var $range; $table; $folder; $template; $rows; $formula; $wpTable; $o : Object
 var $isTable : Boolean
 var $files; $_templates; $_icons; $tables : Collection
 var $4Dtable : Pointer
@@ -255,10 +255,22 @@ Else
 				End if 
 				
 			: ($choice="SetBreak")
-				$propertyName:=Request:C163(Get localized string:C991("EnterBreakName"); $propertyName; Get localized string:C991("SetBreak"); Get localized string:C991("cancel"))
+				
+				$o:=New object:C1471
+				$o.label:=Get localized string:C991("EnterBreakName")
+				$o.windowTitle:=Get localized string:C991("BreakFormula")
+				$o.expression:="This.item."
+				$o.placeHolder:="This.item."
+				
+				$win:=Open form window:C675("D_TinyFormula"; Movable form dialog box:K39:8; Horizontally centered:K39:1; Vertically centered:K39:4; *)
+				DIALOG:C40("D_TinyFormula"; $o)
+				
+				//$propertyName:=Request(Get localized string("EnterBreakName"); $propertyName; Get localized string("SetBreak"); Get localized string("cancel"))
+				
 				If (ok=1)
-					If ($propertyName#"")
-						WP SET ATTRIBUTES:C1342(rows; "breakPropertyName"; $propertyName)
+					If ($o.expression#"")
+						WP SET ATTRIBUTES:C1342(rows; "breakPropertyName"; $o.expression)
+						//WP SET ATTRIBUTES(rows; "breakFormula"; $o.formula)
 					Else 
 						WP RESET ATTRIBUTES:C1344(rows; "breakPropertyName")
 					End if 
