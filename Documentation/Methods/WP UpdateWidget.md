@@ -10,7 +10,7 @@ WP UpdateWidget( widget name {; area name {;skin}})
 
 ## Description
 This method updates the widget when modifications have been made:
-- by programming (only one parameter needed)
+- by programming (only one parameter needed) (main events: on load, on getting focus, on losing focus, on selection change, on after edit)
 - using the area (two parameters needed)
 - a skin can be sent when using palettes (right widget)
 
