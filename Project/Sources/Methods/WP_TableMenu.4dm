@@ -2,11 +2,11 @@
 #DECLARE($applyTo : Text)->$choice : Text  // $applyTo = "insertTable", "table", "row"; column or "cell"
 
 var $headerRowCount; $i; $win : Integer
-var $range; $table; $folder; $template; $rows; $formula; $wpTable; $o : Object
+var $range; $table; $folder; $template; $rows; $formula; $wpTable; $o; $breakFormula : Object
 var $isTable : Boolean
 var $files; $_templates; $_icons; $tables : Collection
 var $4Dtable : Pointer
-var $path; $menu; $choice; $where; $formulaText; $propertyName : Text
+var $path; $menu; $choice; $where; $formulaSource : Text
 
 
 $where:=""
@@ -164,8 +164,8 @@ Else
 										SET MENU ITEM PARAMETER:C1004($menu; -1; "SetBreak")
 										
 										// remove break (if any)
-										WP GET ATTRIBUTES:C1345(rows; "breakPropertyName"; $propertyName)
-										If ($propertyName#"")
+										WP GET ATTRIBUTES:C1345(rows; wk break formula:K81:374; $breakFormula)
+										If ($breakFormula#Null:C1517)
 											APPEND MENU ITEM:C411($menu; Get localized string:C991("RemoveBreak"))
 											SET MENU ITEM PARAMETER:C1004($menu; -1; "RemoveBreak")
 										End if 
@@ -226,9 +226,9 @@ Else
 				WP GET ATTRIBUTES:C1345($wpTable; wk datasource:K81:367; $formula)
 				
 				If ($formula#Null:C1517)
-					$formulaText:=$formula.source
+					$formulaSource:=$formula.source
 				Else 
-					$formulaText:=""
+					$formulaSource:=""
 				End if 
 				
 				
@@ -239,11 +239,11 @@ Else
 				
 				If (Is table number valid:C999($i))
 					$4Dtable:=Table:C252($i)
-					EDIT FORMULA:C806($4Dtable->; $formulaText)
+					EDIT FORMULA:C806($4Dtable->; $formulaSource)
 					
 					If (ok=1)
-						If ($formulaText#"")
-							$formula:=Formula from string:C1601($formulaText)
+						If ($formulaSource#"")
+							$formula:=Formula from string:C1601($formulaSource)
 							WP SET ATTRIBUTES:C1342($wpTable; wk datasource:K81:367; $formula)
 						Else 
 							WP RESET ATTRIBUTES:C1344($wpTable; wk datasource:K81:367)
@@ -251,33 +251,35 @@ Else
 					End if 
 					
 				Else 
-					// aucune table valide
+					// no valid table
 				End if 
 				
 			: ($choice="SetBreak")
 				
+				WP GET ATTRIBUTES:C1345(rows; wk break formula:K81:374; $formula)
+				If ($formula#Null:C1517)
+					$formulaSource:=$formula.source
+				Else 
+					$formulaSource:=""
+				End if 
+				
 				$o:=New object:C1471
 				$o.label:=Get localized string:C991("EnterBreakName")
 				$o.windowTitle:=Get localized string:C991("BreakFormula")
-				$o.expression:="This.item."
+				$o.expression:="This.item."+$formulaSource
 				$o.placeHolder:="This.item."
 				
 				$win:=Open form window:C675("D_TinyFormula"; Movable form dialog box:K39:8; Horizontally centered:K39:1; Vertically centered:K39:4; *)
 				DIALOG:C40("D_TinyFormula"; $o)
 				
-				//$propertyName:=Request(Get localized string("EnterBreakName"); $propertyName; Get localized string("SetBreak"); Get localized string("cancel"))
-				
 				If (ok=1)
 					If ($o.expression#"")
-						WP SET ATTRIBUTES:C1342(rows; "breakPropertyName"; $o.expression)
-						//WP SET ATTRIBUTES(rows; "breakFormula"; $o.formula)
-					Else 
-						WP RESET ATTRIBUTES:C1344(rows; "breakPropertyName")
+						WP SET ATTRIBUTES:C1342(rows; wk break formula:K81:374; $o.formula)
 					End if 
 				End if 
 				
 			: ($choice="RemoveBreak")
-				WP RESET ATTRIBUTES:C1344(rows; "breakPropertyName")
+				WP RESET ATTRIBUTES:C1344(rows; wk break formula:K81:374)
 		End case 
 		
 	End if   // is table
