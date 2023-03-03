@@ -164,7 +164,7 @@ Else
 										SET MENU ITEM PARAMETER:C1004($menu; -1; "SetBreak")
 										
 										// remove break (if any)
-										WP GET ATTRIBUTES:C1345(rows; wk break formula:K81:374; $breakFormula)
+										WP GET ATTRIBUTES:C1345(rows; "breakFormula"; $breakFormula)
 										If ($breakFormula#Null:C1517)
 											APPEND MENU ITEM:C411($menu; Get localized string:C991("RemoveBreak"))
 											SET MENU ITEM PARAMETER:C1004($menu; -1; "RemoveBreak")
@@ -256,7 +256,7 @@ Else
 				
 			: ($choice="SetBreak")
 				
-				WP GET ATTRIBUTES:C1345(rows; wk break formula:K81:374; $formula)
+				WP GET ATTRIBUTES:C1345(rows; "breakFormula"; $formula)
 				If ($formula#Null:C1517)
 					$formulaSource:=$formula.source
 				Else 
@@ -274,12 +274,12 @@ Else
 				
 				If (ok=1)
 					If ($o.expression#"")
-						WP SET ATTRIBUTES:C1342(rows; wk break formula:K81:374; $o.formula)
+						WP SET ATTRIBUTES:C1342(rows; "breakFormula"; $o.formula)
 					End if 
 				End if 
 				
 			: ($choice="RemoveBreak")
-				WP RESET ATTRIBUTES:C1344(rows; wk break formula:K81:374)
+				WP RESET ATTRIBUTES:C1344(rows; "breakFormula")
 		End case 
 		
 	End if   // is table
