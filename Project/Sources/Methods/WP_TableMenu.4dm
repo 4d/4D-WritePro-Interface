@@ -260,13 +260,13 @@ Else
 				If ($formula#Null:C1517)
 					$formulaSource:=$formula.source
 				Else 
-					$formulaSource:=""
+					$formulaSource:="This.item."
 				End if 
 				
 				$o:=New object:C1471
 				$o.label:=Get localized string:C991("EnterBreakName")
 				$o.windowTitle:=Get localized string:C991("BreakFormula")
-				$o.expression:="This.item."+$formulaSource
+				$o.expression:=$formulaSource
 				$o.placeHolder:="This.item."
 				
 				$win:=Open form window:C675("D_TinyFormula"; Movable form dialog box:K39:8; Horizontally centered:K39:1; Vertically centered:K39:4; *)
