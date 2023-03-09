@@ -670,22 +670,6 @@
 					],
 					"focusable": false
 				},
-				"cbRecomputeFormulas1": {
-					"type": "checkbox",
-					"text": ".Create folder",
-					"top": 811,
-					"left": 223,
-					"width": 260,
-					"height": 17,
-					"events": [
-						"onClick"
-					],
-					"dataSource": "Form:C1466.createFolder",
-					"focusable": false,
-					"dataSourceTypeHint": "boolean",
-					"sizingY": "fixed",
-					"tooltip": ":xliff:InfoCreateFolder"
-				},
 				"Limit_P5": {
 					"type": "line",
 					"top": 524,
@@ -733,7 +717,7 @@
 	"width": 540,
 	"height": 600,
 	"method": "method.4dm",
-	"geometryStamp": 3281,
+	"geometryStamp": 3283,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
