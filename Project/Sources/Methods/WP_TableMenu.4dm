@@ -164,6 +164,7 @@ Else
 										SET MENU ITEM PARAMETER:C1004($menu; -1; "SetBreak")
 										
 										// remove break (if any)
+										
 										WP GET ATTRIBUTES:C1345(rows; "breakFormula"; $breakFormula)
 										If ($breakFormula#Null:C1517)
 											APPEND MENU ITEM:C411($menu; Get localized string:C991("RemoveBreak"))
@@ -217,71 +218,101 @@ Else
 		
 		$choice:=Dynamic pop up menu:C1006($menu)
 		//C_COLLECTION()
-		
-		Case of 
-			: ($choice="SetDatasource")
-				//ALERT("work in progress…")
-				
-				$wpTable:=WP Get elements:C1550(Form:C1466.selection; wk type table:K81:222)[0]
-				WP GET ATTRIBUTES:C1345($wpTable; wk datasource:K81:367; $formula)
-				
-				If ($formula#Null:C1517)
-					$formulaSource:=$formula.source
-				Else 
-					$formulaSource:=""
-				End if 
-				
-				
-				$i:=1
-				While (Not:C34(Is table number valid:C999($i))) & ($i<Get last table number:C254)
-					$i:=$i+1
-				End while 
-				
+		If ($choice#"")
+			
+			//$i:=1
+			//While (Not(Is table number valid($i))) & ($i<Get last table number)
+			//$i:=$i+1
+			//End while 
+			//If (Is table number valid($i))
+			//$4Dtable:=Table($i)
+			//End if 
+			
+			$i:=1
+			Repeat 
 				If (Is table number valid:C999($i))
 					$4Dtable:=Table:C252($i)
-					EDIT FORMULA:C806($4Dtable->; $formulaSource)
+					$i:=MAXLONG:K35:2
+				Else 
+					$i:=$i+1
+				End if 
+			Until ($i>Get last table number:C254)
+			
+			
+			Case of 
+				: ($choice="SetDatasource")
+					//ALERT("work in progress…")
 					
-					If (ok=1)
-						If ($formulaSource#"")
-							$formula:=Formula from string:C1601($formulaSource)
-							WP SET ATTRIBUTES:C1342($wpTable; wk datasource:K81:367; $formula)
-						Else 
-							WP RESET ATTRIBUTES:C1344($wpTable; wk datasource:K81:367)
+					$wpTable:=WP Get elements:C1550(Form:C1466.selection; wk type table:K81:222)[0]
+					WP GET ATTRIBUTES:C1345($wpTable; wk datasource:K81:367; $formula)
+					
+					If ($formula#Null:C1517)
+						$formulaSource:=$formula.source
+					Else 
+						$formulaSource:=""
+					End if 
+					
+					
+					If (Not:C34(Is nil pointer:C315($4Dtable)))
+						EDIT FORMULA:C806($4Dtable->; $formulaSource)
+						If (ok=1)
+							If ($formulaSource#"")
+								$formula:=Formula from string:C1601($formulaSource)
+								WP SET ATTRIBUTES:C1342($wpTable; wk datasource:K81:367; $formula)
+							Else 
+								WP RESET ATTRIBUTES:C1344($wpTable; wk datasource:K81:367)
+							End if 
 						End if 
 					End if 
 					
-				Else 
-					// no valid table
-				End if 
-				
-			: ($choice="SetBreak")
-				
-				WP GET ATTRIBUTES:C1345(rows; "breakFormula"; $formula)
-				If ($formula#Null:C1517)
-					$formulaSource:=$formula.source
-				Else 
-					$formulaSource:="This.item."
-				End if 
-				
-				$o:=New object:C1471
-				$o.label:=Get localized string:C991("EnterBreakName")
-				$o.windowTitle:=Get localized string:C991("BreakFormula")
-				$o.expression:=$formulaSource
-				$o.placeHolder:="This.item."
-				
-				$win:=Open form window:C675("D_TinyFormula"; Movable form dialog box:K39:8; Horizontally centered:K39:1; Vertically centered:K39:4; *)
-				DIALOG:C40("D_TinyFormula"; $o)
-				
-				If (ok=1)
-					If ($o.expression#"")
-						WP SET ATTRIBUTES:C1342(rows; "breakFormula"; $o.formula)
+				: ($choice="SetBreak")
+					
+					WP GET ATTRIBUTES:C1345(rows; "breakFormula"; $formula)
+					If ($formula#Null:C1517)
+						$formulaSource:=$formula.source
+					Else 
+						$formulaSource:="This.item."
 					End if 
-				End if 
-				
-			: ($choice="RemoveBreak")
-				WP RESET ATTRIBUTES:C1344(rows; "breakFormula")
-		End case 
-		
+					
+					If (False:C215)
+						
+						//$o:=New object
+						//$o.label:=Get localized string("EnterBreakName")
+						//$o.windowTitle:=Get localized string("BreakFormula")
+						//$o.expression:=$formulaSource
+						//$o.placeHolder:="This.item."
+						
+						//$win:=Open form window("D_TinyFormula"; Movable form dialog box; Horizontally centered; Vertically centered; *)
+						//DIALOG("D_TinyFormula"; $o)   // NOT 100% SAFE
+						
+						//If (ok=1)
+						//If ($o.expression#"")
+						//WP SET ATTRIBUTES(rows; "breakFormula"; $o.formula)
+						//End if 
+						//End if 
+						
+					Else 
+						If (Not:C34(Is nil pointer:C315($4Dtable)))
+							EDIT FORMULA:C806($4Dtable->; $formulaSource)
+							If (ok=1)
+								If ($formulaSource#"")
+									$formula:=Formula from string:C1601($formulaSource)
+									WP SET ATTRIBUTES:C1342(rows; "breakFormula"; $formula)
+								End if 
+							End if 
+						End if 
+						
+						
+					End if 
+					
+					
+					
+				: ($choice="RemoveBreak")
+					WP RESET ATTRIBUTES:C1344(rows; "breakFormula")
+			End case 
+			
+			
+		End if   // choice #""
 	End if   // is table
 End if 
 
