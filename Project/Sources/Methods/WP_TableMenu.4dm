@@ -209,9 +209,12 @@ Else
 				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/verticalAlign")
 				
 				APPEND MENU ITEM:C411($menu; "-")
-				APPEND MENU ITEM:C411($menu; "Merge cells")
-				APPEND MENU ITEM:C411($menu; "Unmerge cells")
 				
+				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "cell/merge")
+				
+				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "cell/split")
 				
 		End case 
 		
