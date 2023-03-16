@@ -1,4 +1,4 @@
-//%attributes = {"shared":true}
+//%attributes = {}
 #DECLARE($filter : Object)->$tableList : Object
 
 //$filter.fields : collection of field names

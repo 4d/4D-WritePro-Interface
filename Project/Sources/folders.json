@@ -186,8 +186,7 @@
 			"WP RemoveDocumentIndex",
 			"WP SetDocumentIndex",
 			"WP ShowTabPages",
-			"WP SwitchToolbar",
-			"WP UpdateWidget_OLD"
+			"WP SwitchToolbar"
 		]
 	},
 	"trash": {}

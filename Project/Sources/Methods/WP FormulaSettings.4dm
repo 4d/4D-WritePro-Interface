@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true}
+//%attributes = {"invisible":true,"shared":true}
 #DECLARE($range : Object)  // MUST be a range(of any kind)
 
 var $elements : Collection

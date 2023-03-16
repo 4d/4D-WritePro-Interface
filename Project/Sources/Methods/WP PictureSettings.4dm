@@ -1,4 +1,4 @@
-//%attributes = {"shared":true,"invisible":true}
+//%attributes = {"invisible":true,"shared":true}
 #DECLARE($object : Object)  // 
 
 var $form : Object
