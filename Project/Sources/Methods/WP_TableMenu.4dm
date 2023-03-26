@@ -208,13 +208,13 @@ Else
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuVerticalAlignment"))
 				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/verticalAlign")
 				
-				APPEND MENU ITEM:C411($menu; "-")
+				//APPEND MENU ITEM($menu; "-")
 				
-				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "cell/merge")
+				//APPEND MENU ITEM($menu; ak standard action title)
+				//SET MENU ITEM PROPERTY($menu; -1; Associated standard action; "cell/merge")
 				
-				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "cell/split")
+				//APPEND MENU ITEM($menu; ak standard action title)
+				//SET MENU ITEM PROPERTY($menu; -1; Associated standard action; "cell/split")
 				
 		End case 
 		
