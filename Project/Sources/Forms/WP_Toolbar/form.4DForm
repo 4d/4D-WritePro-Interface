@@ -3356,43 +3356,6 @@
 						"onClick"
 					],
 					"text": ""
-				},
-				"btnCellsMerge": {
-					"type": "button",
-					"top": 40,
-					"left": 1070,
-					"width": 40,
-					"height": 40,
-					"action": "cell/merge",
-					"class": "Palette",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/Tables/Merge_32.png",
-					"iconFrames": 4,
-					"textPlacement": "right",
-					"style": "custom",
-					"popupPlacement": "none",
-					"events": [
-						"onClick"
-					]
-				},
-				"btnCellsSplit": {
-					"type": "button",
-					"top": 40,
-					"left": 1110,
-					"width": 40,
-					"height": 40,
-					"action": "cell/split",
-					"class": "Palette",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/Tables/Split_32.png",
-					"iconFrames": 4,
-					"textPlacement": "right",
-					"style": "custom",
-					"popupPlacement": "none",
-					"events": [
-						"onClick"
-					],
-					"tooltip": ":xliff:Properties"
 				}
 			}
 		},
@@ -4295,5 +4258,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6597
+	"geometryStamp": 6598
 }
