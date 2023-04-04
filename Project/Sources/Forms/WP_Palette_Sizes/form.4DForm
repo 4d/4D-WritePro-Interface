@@ -26,16 +26,6 @@
 		null,
 		{
 			"objects": {
-				"Background": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 620,
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 0
-				},
 				"paragraphMinHeight": {
 					"type": "input",
 					"top": 447,
@@ -550,6 +540,16 @@
 					"action": "verticalAlign?value=bottom",
 					"focusable": false
 				},
+				"Background": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 0
+				},
 				"Text": {
 					"type": "text",
 					"top": 20,
@@ -568,7 +568,7 @@
 		}
 	],
 	"editor": {
-		"activeView": "View 1",
+		"activeView": "Front",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
@@ -596,7 +596,6 @@
 				"visible": false
 			},
 			"Front": {
-				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text"

@@ -1,1 +1,0 @@
-GOTO OBJECT:C206(*; "")
