@@ -2014,12 +2014,18 @@ Soll er ersetzt werden?</target>
         </trans-unit>
         <trans-unit id="Menu_SetTableBreak_3" resname="EnterBreakName">
           <source>Enter the name of the attribute to use as break</source>
-          <target>Geben Sie den Namen des Attributes ein, das den Umbruch festlegt:</target>
+          <target>Geben Sie den Ausdruck ein, um den Umbruch festzulegen:</target>
         </trans-unit>
         <trans-unit id="Menu_SetTableBreak_4" resname="SetBreak">
           <source>Set</source>
           <target>Setzen</target>
         </trans-unit>
+
+        <trans-unit id="Window_D_TinyFormula_1" resname="BreakFormula">
+          <source>Break formula</source>
+          <target>Umbruch-Formel</target>
+        </trans-unit>
+
       </group>
 
       <group resname="ExportWindowTitle">
