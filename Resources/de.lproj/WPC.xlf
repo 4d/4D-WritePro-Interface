@@ -2014,12 +2014,45 @@ Soll er ersetzt werden?</target>
         </trans-unit>
         <trans-unit id="Menu_SetTableBreak_3" resname="EnterBreakName">
           <source>Enter the name of the attribute to use as break</source>
-          <target>Geben Sie den Namen des Attributes ein, das den Umbruch festlegt:</target>
+          <target>Geben Sie den Ausdruck ein, um den Umbruch festzulegen:</target>
         </trans-unit>
         <trans-unit id="Menu_SetTableBreak_4" resname="SetBreak">
           <source>Set</source>
           <target>Setzen</target>
         </trans-unit>
+
+        <trans-unit id="Window_D_TinyFormula_1" resname="BreakFormula">
+          <source>Break formula</source>
+          <target>Umbruch-Formel</target>
+        </trans-unit>
+
+      </group>
+
+      <group resname="ExportWindowTitle">
+        <trans-unit id="ExportWindowTitle_1" resname="TextExport">
+          <source>Text export</source>
+          <target>Text Export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_2" resname="HTMLExport">
+          <source>HTML export</source>
+          <target>HTML Export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_3" resname="HTMLMimeExport">
+          <source>HTML Mime export</source>
+          <target>HTML Mime Export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_4" resname="WordExport">
+          <source>Microsoft Word export</source>
+          <target>Microsoft Word Export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_5" resname="PDFExport">
+          <source>PDF export</source>
+          <target>PDF Export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_6" resname="SVGExport">
+          <source>SVG export</source>
+          <target>SVG Export</target>
+        </trans-unit>        
       </group>
 
     </body>
