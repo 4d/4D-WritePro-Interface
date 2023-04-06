@@ -2022,6 +2022,33 @@ Soll er ersetzt werden?</target>
         </trans-unit>
       </group>
 
+      <group resname="ExportWindowTitle">
+        <trans-unit id="ExportWindowTitle_1" resname="TextExport">
+          <source>Text export</source>
+          <target>Text Export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_2" resname="HTMLExport">
+          <source>HTML export</source>
+          <target>HTML Export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_3" resname="HTMLMimeExport">
+          <source>HTML Mime export</source>
+          <target>HTML Mime Export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_4" resname="WordExport">
+          <source>Microsoft Word export</source>
+          <target>Microsoft Word Export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_5" resname="PDFExport">
+          <source>PDF export</source>
+          <target>PDF Export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_6" resname="SVGExport">
+          <source>SVG export</source>
+          <target>SVG Export</target>
+        </trans-unit>        
+      </group>
+
     </body>
   </file>
 
