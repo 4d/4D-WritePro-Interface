@@ -1,5 +1,5 @@
 var $file : 4D:C1709.File
-var $dictionnary; $context; $class : Object
+var $dictionnary; $context; $class; $ds : Object
 var $dataClassName; $attributeName; $lang : Text
 var $i; $p; $count : Integer
 var $static : Boolean
@@ -17,12 +17,6 @@ Case of
 		Form:C1466.displayedHList.clear()
 		
 	: (Form event code:C388=On Load:K2:1)
-		
-		ARRAY TEXT:C222(tCol0; 0)
-		ARRAY TEXT:C222(tCol1; 0)
-		ARRAY TEXT:C222(tCol2; 0)
-		ARRAY TEXT:C222(tCol3; 0)
-		ARRAY TEXT:C222(tCol4; 0)
 		
 		Form:C1466.local:=New object:C1471
 		
@@ -104,39 +98,9 @@ Case of
 		Form:C1466.local.booleanFormats.apply4D:=New collection:C1472("true;false"; "yes;no"; "Mr;Mz")
 		
 		
-		//If (Undefined(Form.context))  // no context at all
-		//// create one if undefined
-		//Form.context:=New object
-		//For each ($dataClassName; ds)
-		//Form.context[$dataClassName]:=ds[$dataClassName].all().first()
-		//End for each 
-		
-		//Else 
-		//// check if the context contains entities
-		//$context:=Form.context
-		//$count:=0
-		//For each ($attributeName; $context)
-		//If (Value type($context[$attributeName])=Is object)
-		//$class:=OB Class($context[$attributeName])  // ex : PeopleEntity or CompanyEntity
-		//If (Not(Undefined($class.superclass))) && ($class.superclass.name="Entity")
-		//$count:=$count+1
-		//End if 
-		//End if 
-		//End for each 
-		
-		//If ($count=0)  // the context contains only allowed or hidden table names
-		//For each ($dataClassName; ds)
-		//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
-																																				 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
-		//Form.context[$dataClassName]:=ds[$dataClassName].all().first()
-		//End if 
-		//End for each 
-		//End if 
-		
-		//End if 
 		
 		Case of 
-			: (Undefined:C82(Form:C1466.context))  // no context at all
+			: (Undefined:C82(Form:C1466.context)) || (Form:C1466.context=Null:C1517)  // no context at all or Null
 				
 				// create one if undefined
 				Form:C1466.context:=New object:C1471
@@ -145,9 +109,19 @@ Case of
 				End for each 
 				$static:=False:C215
 				
+			: (Not:C34(Undefined:C82(Form:C1466.context.dataStore)))
+				
+				$ds:=Form:C1466.context.dataStore
+				For each ($dataClassName; $ds)
+					Form:C1466.context[$dataClassName]:=$ds[$dataClassName].all().first()
+				End for each 
+				OB REMOVE:C1226(Form:C1466.context; "dataStore")
+				$static:=False:C215
+				
 			: (True:C214)  // there is a context; check what kind of context !
 				
 				// check if the context contains entities
+				
 				$context:=Form:C1466.context
 				$count:=0
 				For each ($attributeName; $context)
@@ -160,7 +134,7 @@ Case of
 				End for each 
 				
 				If ($count=0)
-					$static:=True:C214  // use the context "as it" 
+					$static:=True:C214  // use the context "as it" (no entities, use the context as a simple object)
 				Else 
 					$static:=False:C215  // build list based on ORDA
 				End if 
@@ -169,7 +143,7 @@ Case of
 				//If ($count=0)  // the context contains only allowed or hidden table names
 				//For each ($dataClassName; ds)
 				//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
-																																								 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+																																																																	 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
 				
 				//// Add allwowed classes to the context
 				////Form.context[$dataClassName]:=ds[$dataClassName].all().first()

@@ -22,12 +22,13 @@ Case of
 		
 		$picturePath:="path:/RESOURCES/Images/Colors/FrontColor_7.png"
 		
-		
 		$HList:=cs:C1710.HList.new()
 		$itemRef:=1000
 		For each ($attributeName; $context)  // driver1, driver2, departureAgency, arrivalAggency
 			
+			
 			If (Value type:C1509($context[$attributeName])=Is object:K8:27)
+				
 				$class:=OB Class:C1730($context[$attributeName])  // ex : PeopleEntity or CompanyEntity
 				If (Not:C34(Undefined:C82($class.superclass))) && ($class.superclass#Null:C1517) && ($class.superclass.name="Entity")
 					
@@ -64,12 +65,19 @@ Case of
 						End if 
 						
 						$subList:=BuildHLContext($dataClass; $attributeName; $attributeNameTranslated; $itemRef+1; 0)  // first call the attribute name may NOT be translated
+						If ($sublist#Null:C1517)
+							If ($sublist.countItems()>0)
+								$HList.append(" "+$attributeNameTranslated; $itemRef; $subList.hlist; False:C215)  //
+								//$HList.setParameter($itemRef; Additional text; String($itemRef))  // TEMPO FOR DEBUG 
+								$HList.setProperties($itemRef; False:C215; Bold:K14:2; $picturePath)
+								
+								$itemRef:=$itemRef+$subList.countItems()+1
+							Else 
+								$sublist.clear()  // otherwise memory leaks !
+							End if 
+							
+						End if 
 						
-						$HList.append(" "+$attributeNameTranslated; $itemRef; $subList.hlist; False:C215)  //
-						//$HList.setParameter($itemRef; Additional text; String($itemRef))  // TEMPO FOR DEBUG 
-						$HList.setProperties($itemRef; False:C215; Bold:K14:2; $picturePath)
-						
-						$itemRef:=$itemRef+$subList.countItems()+1
 					End if 
 				End if 
 				

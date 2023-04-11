@@ -17,7 +17,6 @@
 			"TOOL_HLStoRGB",
 			"TOOL_RGBtoHLS",
 			"UI_ApplySkin",
-			"UI_Palette",
 			"UI_PaletteAlignments",
 			"UI_PaletteFonts",
 			"UI_PaletteInfos",
@@ -105,15 +104,7 @@
 			"WP_Palette_FindAndReplace"
 		]
 	},
-	"Table Forms": {
-		"tables": [
-			"SAMPLE"
-		],
-		"forms": [
-			"[SAMPLE]InputToolBar",
-			"[SAMPLE]Output"
-		]
-	},
+	"Table Forms": {},
 	"TOOLBARS": {
 		"methods": [
 			"debug_ReformatButtons",

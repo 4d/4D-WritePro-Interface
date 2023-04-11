@@ -12,7 +12,7 @@ If (Form:C1466.selection#Null:C1517)  //from WP updateWidget
 	If ($_formulas.length>0)
 		$form.formulaSource:=$_formulas[0].formula.source
 	End if 
-	$form.context:=Form:C1466.context  //// see setuplocal variables
+	$form.context:=Form:C1466.context  //// see SetupLocalVariables Method
 	$form.areaName:=Form:C1466.areaName  // from WP updateWidget
 	$form.windowRef:=Current form window:C827
 	

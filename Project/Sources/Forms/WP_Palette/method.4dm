@@ -107,7 +107,6 @@ Case of
 			End if 
 		End if 
 		
-		//UI_Palette
 		
 		
 	: (Form event code:C388=On Unload:K2:2)

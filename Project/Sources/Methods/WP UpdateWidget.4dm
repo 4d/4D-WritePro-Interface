@@ -94,8 +94,8 @@ Case of
 					$send:=False:C215
 			End case 
 			
+			
 			If ($send)
-				
 				$p->:=$oWidgetUpdate  // shall trigger "on bound variable change" inside the widget
 				//$oWidget:=$oWidgetUpdate  // does NOT WORK
 			End if 
