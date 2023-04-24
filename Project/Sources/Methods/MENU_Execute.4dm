@@ -40,9 +40,9 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 					End if 
 				End if 
 				
-			: ($action="new") | ($action="clear")  // ACI0103839
+			: ($action="new") | ($action="clear")
 				
-				If (Not:C34(Is nil pointer:C315($ptr)))
+				If (Not:C34(Is nil pointer:C315($ptr)))  // ACI0103839
 					$ptr->:=WP New:C1317
 				Else 
 					fillArea(Form:C1466.areaName; WP New:C1317)
