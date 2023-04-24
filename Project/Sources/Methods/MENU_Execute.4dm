@@ -32,12 +32,20 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 				
 				CONFIRM:C162(Get localized string:C991("ConfirmClear"); Get localized string:C991("cancel"); Get localized string:C991("Clear"))  //"Are you sure?")
 				If (ok=0)  // OK = 1 = Cancel
-					$ptr->:=WP New:C1317
+					If (Not:C34(Is nil pointer:C315($ptr)))  // ACI0103839
+						$ptr->:=WP New:C1317
+					Else 
+						fillArea(Form:C1466.areaName; WP New:C1317)
+					End if 
 				End if 
 				
 			: ($action="new") | ($action="clear")
 				
-				$ptr->:=WP New:C1317
+				If (Not:C34(Is nil pointer:C315($ptr)))  // ACI0103839
+					$ptr->:=WP New:C1317
+				Else 
+					fillArea(Form:C1466.areaName; WP New:C1317)
+				End if 
 				
 			: ($action="import@")
 				

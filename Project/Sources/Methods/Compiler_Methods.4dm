@@ -217,3 +217,8 @@ C_OBJECT:C1216(WP_SetFontSize; $1)
 C_LONGINT:C283(WP_SetFontSize; $2)
 C_OBJECT:C1216(WP_GetBackgroundSize; $1)
 C_BOOLEAN:C305(UI_PaletteImage; $1)
+
+//fillArea
+C_TEXT:C284(fillArea; $1)
+C_OBJECT:C1216(fillArea; $2)
+C_LONGINT:C283(fillArea; $3)
