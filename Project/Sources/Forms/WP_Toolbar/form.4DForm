@@ -3217,7 +3217,7 @@
 				},
 				"lbl_Background": {
 					"type": "text",
-					"top": 31,
+					"top": 30,
 					"left": 540,
 					"width": 80,
 					"height": 16,
@@ -3273,7 +3273,7 @@
 				"Line57": {
 					"type": "line",
 					"top": 30,
-					"left": 590,
+					"left": 690,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -3299,25 +3299,24 @@
 					],
 					"tooltip": ":xliff:Properties"
 				},
-				"btnCellSettings": {
+				"btnCellMerge": {
 					"type": "button",
 					"top": 40,
 					"left": 540,
 					"width": 40,
 					"height": 40,
-					"action": "",
+					"action": "cell/merge",
 					"class": "Palette",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Tables/CellSettings_32.png",
+					"icon": "/RESOURCES/Images/TBcommon/Tables/split-merge/Merge_32.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
 					"style": "custom",
-					"popupPlacement": "linked",
+					"popupPlacement": "none",
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btnCellSettings.4dm",
-					"tooltip": ":xliff:Properties"
+					"tooltip": ":xliff:mergeCells"
 				},
 				"btnColumnSettings": {
 					"type": "button",
@@ -3392,6 +3391,45 @@
 					"events": [
 						"onClick"
 					],
+					"tooltip": ":xliff:Properties"
+				},
+				"btnCellUnmerge": {
+					"type": "button",
+					"top": 40,
+					"left": 585,
+					"width": 40,
+					"height": 40,
+					"action": "cell/split",
+					"class": "Palette",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBcommon/Tables/split-merge/Split_32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"popupPlacement": "none",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:unmergeCells"
+				},
+				"btnCellSettings": {
+					"type": "button",
+					"top": 40,
+					"left": 635,
+					"width": 40,
+					"height": 40,
+					"action": "",
+					"class": "Palette",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/CellSettings_32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"popupPlacement": "linked",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btnCellSettings.4dm",
 					"tooltip": ":xliff:Properties"
 				}
 			}
@@ -3788,7 +3826,7 @@
 					"events": [
 						"onClick"
 					],
-					"tooltip": ":xliff:protectCell"
+					"tooltip": ":xliff:protectTextArea"
 				}
 			}
 		},
@@ -4295,5 +4333,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6597
+	"geometryStamp": 6632
 }

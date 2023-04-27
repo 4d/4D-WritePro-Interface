@@ -420,6 +420,10 @@ This file is distributed under the same license as the product package.-->
           <source>Protect cell</source>
           <target>Protéger la cellule</target>
         </trans-unit>
+        <trans-unit id="xxx" resname="protectTextArea">
+          <source>Protect text area</source>
+          <target>Protéger la zone de texte</target>
+        </trans-unit>
         <trans-unit id="WTkM05EEsc772zfzDM6Jwg" resname="protectDocument">
           <source>Enable document protection</source>
           <target>Activer la protection du document</target>
@@ -475,6 +479,14 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">
           <source>Insert a text box</source>
           <target>Insérer une zone de texte</target>
+        </trans-unit>
+        <trans-unit id="xxx" resname="mergeCells">
+          <source>Merge cells</source>
+          <target>Fusionner les cellules</target>
+        </trans-unit>
+        <trans-unit id="xxx" resname="unmergeCells">
+          <source>Unmerge cells</source>
+          <target>Ne plus fusionner les cellules</target>
         </trans-unit>
       </group>
       <group resname="Tabs">
