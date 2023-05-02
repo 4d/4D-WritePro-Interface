@@ -3217,7 +3217,7 @@
 				},
 				"lbl_Background": {
 					"type": "text",
-					"top": 31,
+					"top": 30,
 					"left": 540,
 					"width": 80,
 					"height": 16,
@@ -3273,7 +3273,7 @@
 				"Line57": {
 					"type": "line",
 					"top": 30,
-					"left": 590,
+					"left": 600,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -3297,26 +3297,6 @@
 					"events": [
 						"onClick"
 					],
-					"tooltip": ":xliff:Properties"
-				},
-				"btnCellSettings": {
-					"type": "button",
-					"top": 40,
-					"left": 540,
-					"width": 40,
-					"height": 40,
-					"action": "",
-					"class": "Palette",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Tables/CellSettings_32.png",
-					"iconFrames": 4,
-					"textPlacement": "right",
-					"style": "custom",
-					"popupPlacement": "linked",
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btnCellSettings.4dm",
 					"tooltip": ":xliff:Properties"
 				},
 				"btnColumnSettings": {
@@ -3356,6 +3336,26 @@
 						"onClick"
 					],
 					"text": ""
+				},
+				"btnCellSettings": {
+					"type": "button",
+					"top": 40,
+					"left": 540,
+					"width": 40,
+					"height": 40,
+					"action": "",
+					"class": "Palette",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Tables/CellSettings_32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"popupPlacement": "linked",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btnCellSettings.4dm",
+					"tooltip": ":xliff:Properties"
 				}
 			}
 		},
@@ -4258,5 +4258,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6598
+	"geometryStamp": 6669
 }
