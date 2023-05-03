@@ -119,6 +119,8 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 								$range:=WP Text range:C1341($area; wk start text:K81:165; wk start text:K81:165)
 								WP INSERT DOCUMENT:C1411($range; $newDocument; wk replace:K81:177)
 								
+							: ($options.newDocument)
+								
 								If (Not:C34(Is nil pointer:C315($ptr)))  // ACI0103839
 									$ptr->:=$newDocument  // including hearder, footers, etc…
 								Else 
