@@ -26,6 +26,16 @@
 		null,
 		{
 			"objects": {
+				"Background": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 0
+				},
 				"paragraphMinHeight": {
 					"type": "input",
 					"top": 447,
@@ -540,16 +550,6 @@
 					"action": "verticalAlign?value=bottom",
 					"focusable": false
 				},
-				"Background": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 620,
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 0
-				},
 				"Text": {
 					"type": "text",
 					"top": 20,
@@ -568,7 +568,7 @@
 		}
 	],
 	"editor": {
-		"activeView": "Front",
+		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
@@ -577,25 +577,14 @@
 					"Background"
 				]
 			},
-			"Grid": {
-				"visible": false
-			},
-			"View 4": {
-				"visible": false
-			},
-			"View 5": {
-				"visible": false
-			},
-			"View 6": {
-				"visible": false
-			},
-			"View 7": {
-				"visible": false
-			},
-			"View 8": {
-				"visible": false
-			},
+			"Grid": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
 			"Front": {
+				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text"
@@ -607,5 +596,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 526
+	"geometryStamp": 527
 }

@@ -47,3 +47,6 @@ If (Not:C34((Is nil pointer:C315($ptrLabel)) | (Is nil pointer:C315($ptrURL))))
 	WP SET TEXT:C1574($range1; $ptrLabel->; wk replace:K81:177)
 	
 End if 
+
+
+
