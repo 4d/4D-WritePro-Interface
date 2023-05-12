@@ -2002,6 +2002,57 @@ When not selected, only formulas that have never been evaluated will be computed
           <target>表で計算を実行する</target>
         </trans-unit>
       </group>
+
+      <group resname="Menu_SetTableBreak">
+        <trans-unit id="Menu_SetTableBreak_1" resname="DefineAsBreakRow">
+          <source>Define as break row…</source>
+          <target>ブレーク行として定義…</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_2" resname="RemoveBreak">
+          <source>Remove break</source>
+          <target>ブレークを削除</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_3" resname="EnterBreakName">
+          <source>Enter the expression to use as break…</source>
+          <target>ブレーク行に使用する式を入力…</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_4" resname="SetBreak">
+          <source>Set</source>
+          <target>設定</target>
+        </trans-unit>
+        <trans-unit id="Window_D_TinyFormula_1" resname="BreakFormula">
+          <source>Break formula</source>
+          <target>ブレークのフォーミュラ</target>
+        </trans-unit>
+      </group>
+
+      <group resname="ExportWindowTitle">
+        <trans-unit id="ExportWindowTitle_1" resname="TextExport">
+          <source>Text export</source>
+          <target>テキスト書き出し</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_2" resname="HTMLExport">
+          <source>HTML export</source>
+          <target>HTML 書き出し</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_3" resname="HTMLMimeExport">
+          <source>HTML Mime export</source>
+          <target>HTML MIME 書き出し</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_4" resname="WordExport">
+          <source>Microsoft Word export</source>
+          <target>Microsoft Word 書き出し</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_5" resname="PDFExport">
+          <source>PDF export</source>
+          <target>PDF 書き出し</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_6" resname="SVGExport">
+          <source>SVG export</source>
+          <target>SVG 書き出し</target>
+        </trans-unit>        
+      </group>
+
     </body>
   </file>
 </xliff>
