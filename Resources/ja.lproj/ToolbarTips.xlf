@@ -418,6 +418,10 @@
           <source>Protect cell</source>
           <target>セルをプロテクトする</target>
         </trans-unit>
+        <trans-unit id="xxx" resname="protectTextArea">
+          <source>Protect text area</source>
+          <target>テキストエリアをプロテクトする</target>
+        </trans-unit>
         <trans-unit id="WTkM05EEsc772zfzDM6Jwg" resname="protectDocument">
           <source>Enable document protection</source>
           <target>ドキュメントのプロテクションを有効化</target>
@@ -474,6 +478,14 @@
           <source>Insert a text box</source>
           <target>テキストボックスを挿入</target>
         </trans-unit>
+        <trans-unit id="xxx" resname="mergeCells">
+          <source>Merge cells</source>
+          <target>セルを結合</target>
+        </trans-unit>
+        <trans-unit id="xxx" resname="unmergeCells">
+          <source>Unmerge cells</source>
+          <target>セルの結合を解除</target>
+        </trans-unit> 
       </group>
       <group resname="Tabs">
         <trans-unit id="24" resname="borders">
@@ -565,6 +577,10 @@
         <trans-unit id="an7Gfwv2eaZPtYEu4Dtf2A" resname="TextBoxes">
           <source>Text boxes</source>
           <target>テキストボックス</target>
+        </trans-unit>
+        <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">
+          <source>Footers</source>
+          <target>フッター</target>
         </trans-unit>
       </group>
     </body>
