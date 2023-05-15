@@ -1,4 +1,4 @@
 Form:C1466.local.filter:=""
 
-UI_Formula("resetlist")
-UI_Formula("cleanup")
+Form:C1466.wizard.formulaUI("resetlist")
+Form:C1466.wizard.formulaUI("cleanup")

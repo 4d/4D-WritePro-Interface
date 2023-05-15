@@ -1,0 +1,2 @@
+OB REMOVE:C1226(Form:C1466.currentRow; "font")
+SET TIMER:C645(-1)

@@ -1,6 +1,7 @@
-Form:C1466.local.filter:=""
-Form:C1466.contextHList.clear()
-Form:C1466.contextHList:=BuildHLContext(Form:C1466.context)
 
-UI_Formula("resetlist")
-UI_Formula("cleanup")
+Form:C1466.local.filter:=""
+Form:C1466.contextHList.reset()
+
+Form:C1466.contextHList:=Form:C1466.wizard.formulaBuildDynamic(Form:C1466.context)
+Form:C1466.wizard.formulaUI("resetlist")
+Form:C1466.wizard.formulaUI("cleanup")

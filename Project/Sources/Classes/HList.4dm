@@ -17,6 +17,10 @@ Function clear
 	
 	CLEAR LIST:C377(This:C1470.hlist; *)  // list and sublists
 	
+Function reset()
+	This:C1470.clear()
+	This:C1470.hlist:=New list:C375
+	
 Function clone()->$clone : Object
 	
 	$clone:=OB Copy:C1225(This:C1470)
@@ -51,7 +55,6 @@ Function expandAll
 		$i:=$i+1
 	End while 
 	
-	
 Function setParameter($itemRef : Integer; $paramName : Text; $paramValue : Text)
 	
 	SET LIST ITEM PARAMETER:C986(This:C1470.hlist; $itemRef; $paramName; $paramValue)
@@ -71,8 +74,6 @@ Function setProperties($itemRef : Integer; $enterable : Boolean; $style : Intege
 			ALERT:C41("incorrect number of  parameters in HList.setProperties() function.")
 	End case 
 	
-	
-	
 Function countItems($visible : Boolean)->$count : Integer
 	
 	If (Count parameters:C259=0)
@@ -84,7 +85,6 @@ Function countItems($visible : Boolean)->$count : Integer
 	Else 
 		$count:=Count list items:C380(This:C1470.hlist)  // Visible only
 	End if 
-	
 	
 Function filter($filter : Collection)
 	
@@ -156,7 +156,6 @@ Function filter($filter : Collection)
 			End if 
 		End for 
 	Until ($deleted=False:C215)
-	
 	
 Function findInParameter($paramName : Text; $paramValue : Text)
 	

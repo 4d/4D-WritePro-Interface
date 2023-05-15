@@ -2,7 +2,7 @@
 #DECLARE($applyTo : Text)->$choice : Text  // $applyTo = "insertTable", "table", "row"; column or "cell"
 
 var $headerRowCount; $i; $win : Integer
-var $range; $table; $folder; $template; $rows; $formula; $wpTable; $o; $breakFormula : Object
+var $range; $table; $folder; $template; $rows; $formula; $wpTable; $o; $breakFormula; $document : Object
 var $isTable : Boolean
 var $files; $_templates; $_icons; $tables : Collection
 var $4Dtable : Pointer
@@ -42,16 +42,29 @@ If ($applyTo="insertTable")
 					
 					$i:=$i+1
 				End for each 
+				
+				APPEND MENU ITEM:C411($menu; "-")  // separator
 			End if 
+			APPEND MENU ITEM:C411($menu; "Insert template")  //∆∆∆
+			SET MENU ITEM PARAMETER:C1004($menu; -1; "TableWizard")
+			
 			
 			$choice:=Dynamic pop up menu:C1006($menu)
 			RELEASE MENU:C978($menu)
 			
 			If ($choice#"")  // only for inserting tables
-				$i:=Num:C11($choice)
-				$path:=$_templates[$i].platformPath
-				WP INSERT DOCUMENT:C1411(Form:C1466.selection; WP Import document:C1318($path); wk append:K81:179)
-				SET TIMER:C645(-1)  // update interface
+				If ($choice="TableWizard")
+					$document:=WP_TableWizard
+					If (ok=1)
+						WP INSERT DOCUMENT:C1411(Form:C1466.selection; $document; wk replace:K81:177)
+					End if 
+				Else 
+					$i:=Num:C11($choice)
+					$path:=$_templates[$i].platformPath
+					WP INSERT DOCUMENT:C1411(Form:C1466.selection; WP Import document:C1318($path); wk append:K81:179)
+					SET TIMER:C645(-1)  // update interface
+				End if 
+				
 			End if 
 			
 		End if 

@@ -20,28 +20,7 @@ Case of
 		
 		Form:C1466.local:=New object:C1471
 		
-		// get localised names for tables and fields (if any)
-		
-		// get localised names for tables and fields (if any)
-		$lang:=Get database localization:C1009(Current localization:K5:22; *)
-		
-		$file:=File:C1566(Folder:C1567(fk resources folder:K87:11; *).path+$lang+".lproj/structureTranslation.json"; *)
-		If (Not:C34($file.exists))
-			$file:=File:C1566(Folder:C1567(fk resources folder:K87:11; *).path+"en.lproj/structureTranslation.json"; *)
-			If (Not:C34($file.exists))
-				$file:=File:C1566(Folder:C1567(fk resources folder:K87:11; *).path+"structureTranslation.json"; *)
-			End if 
-		End if 
-		
-		If ($file.exists)
-			$dictionnary:=JSON Parse:C1218($file.getText())
-			
-			Form:C1466.local.tables:=$dictionnary.tables.extract("original")
-			Form:C1466.local.tablesTranslated:=$dictionnary.tables.extract("translation")
-			
-			Form:C1466.local.attributes:=$dictionnary.fields.extract("original")
-			Form:C1466.local.attributesTranslated:=$dictionnary.fields.extract("translation")
-		End if 
+		Form:C1466.wizard:=cs:C1710.TableWizard.new()
 		
 		
 		// FORMATS FOR DROP DOWN WIDGETS
@@ -143,9 +122,9 @@ Case of
 				//If ($count=0)  // the context contains only allowed or hidden table names
 				//For each ($dataClassName; ds)
 				//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
-																																																																	 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+																																																																																																									 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
 				
-				//// Add allwowed classes to the context
+				//// Add allowed classes to the context
 				////Form.context[$dataClassName]:=ds[$dataClassName].all().first()
 				
 				//End if 
@@ -157,7 +136,10 @@ Case of
 		
 		If ($static)
 			
-			Form:C1466.contextHList:=BuildHLStaticContext(Form:C1466.context)
+			//Form.contextHList:=cs.HList.new()
+			//Form.contextHList.buildStatic(Form.context)  // *** buildStatic is based on the content of a regular object, NOT orda
+			
+			Form:C1466.contextHList:=Form:C1466.wizard.formulaBuildStatic(Form:C1466.context)
 			
 			OBJECT SET VISIBLE:C603(*; "lbl_links"; False:C215)
 			OBJECT SET VISIBLE:C603(*; "DD_links"; False:C215)
@@ -186,30 +168,14 @@ Case of
 				End if 
 			End if 
 			
-			Form:C1466.contextHList:=BuildHLContext(Form:C1466.context)
+			//Form.contextHList:=cs.HList.new()
+			//Form.contextHList.buildDynamic(Form.context)  // ***
+			Form:C1466.contextHList:=Form:C1466.wizard.formulaBuildDynamic(Form:C1466.context)
 			
 		End if 
 		
-		//Form.contextHList:=BuildHLContext(Form.context)
-		Form:C1466.displayedHList:=Form:C1466.contextHList.clone()  //Copy list(Form.contextHList)
+		Form:C1466.displayedHList:=Form:C1466.contextHList.clone()
 		Form:C1466.displayedHList.formObject:="DisplayedHL"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		
@@ -221,22 +187,15 @@ Case of
 			Case of 
 				: (Form:C1466.formulaSource="current date")
 					Form:C1466.formulaName:="current date"
-					UI_Formula("init"; Is date:K8:7)
+					Form:C1466.wizard.formulaUI("init"; Is date:K8:7)
 					
 				: (Form:C1466.formulaSource="current time")
 					Form:C1466.formulaName:="current time"
-					UI_Formula("init"; Is time:K8:8)
+					Form:C1466.wizard.formulaUI("init"; Is time:K8:8)
 					
 				Else 
 					
 					Form:C1466.displayedHList.findInParameter("SOURCE"; Form:C1466.formulaSource)
-					//$p:=Form.displayedFieldList.findIndex(Formula($1.value.formulaSource=$2); Form.formulaSource)
-					//If ($p>=0)
-					//$p:=$p+1
-					//Else 
-					//$p:=-1
-					//FORM GOTO PAGE(2)  // direct edit of complex formula
-					//End if 
 					
 			End case 
 		Else 
@@ -244,31 +203,13 @@ Case of
 			Form:C1466.formulaSource:=""
 		End if 
 		
-		//If ($p>0)
-		
-		//// select item in the listbox
-		//LISTBOX SELECT ROW(*; "LB_DisplayFieldList"; $p)
-		//OBJECT SET SCROLL POSITION(*; "LB_DisplayFieldList"; $p; *)
-		
-		//Form.current:=Form.displayedFieldList[$p-1]
-		
-		//Form.formulaSource:=Form.current.formulaSource
-		//Form.formulaName:=Replace string(Form.current.name; "."; " ")
-		
-		//UI_Formula("init"; Form.current.type)
-		
-		//Else 
-		
-		//LISTBOX SELECT ROW(*; "LB_DisplayFieldList"; 0; lk remove from selection)
-		
-		//End if 
 		
 		
 		Form:C1466.local.filter:=""
 		Form:C1466.local.formatSample:=""
 		Form:C1466.formulaSource:=""
 		
-		UI_Formula("cleanup")
+		Form:C1466.wizard.formulaUI("cleanup")
 		
 		// goto nowhere
 		GOTO OBJECT:C206(*; "")

@@ -107,7 +107,6 @@
 	"Table Forms": {},
 	"TOOLBARS": {
 		"methods": [
-			"debug_ReformatButtons",
 			"TB_GotoPage",
 			"TB_setAutomaticActions",
 			"TB_SwitchSkin"
