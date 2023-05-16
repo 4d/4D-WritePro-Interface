@@ -1338,7 +1338,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="281" resname="DeleteRow">
           <source>Delete row</source>
-          <target>Suppimer la ligne</target>
+          <target>Supprimer la ligne</target>
         </trans-unit>
         <trans-unit id="282" resname="DeleteRows">
           <source>Delete &lt;n&gt; rows</source>
