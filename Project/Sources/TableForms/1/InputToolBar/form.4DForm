@@ -707,6 +707,20 @@
 						"onClick"
 					],
 					"sizingX": "move"
+				},
+				"Button32": {
+					"type": "button",
+					"text": "Orientation",
+					"top": 817,
+					"left": 377,
+					"width": 130,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button32.4dm",
+					"sizingX": "fixed",
+					"sizingY": "move"
 				}
 			},
 			"entryOrder": [
@@ -752,7 +766,8 @@
 				"Button23",
 				"Button24",
 				"Button30",
-				"Button31"
+				"Button31",
+				"Button32"
 			]
 		},
 		{
@@ -764,7 +779,7 @@
 		"kind": "form"
 	},
 	"method": "method.4dm",
-	"geometryStamp": 420,
+	"geometryStamp": 424,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

@@ -688,8 +688,16 @@ Function templateUI($action : Text)
 			READ PICTURE FILE:C678(Get 4D folder:C485(Current resources folder:K5:16)+"Images"+Folder separator:K24:12+"drag.png"; $picture)
 		Else 
 			READ PICTURE FILE:C678(Get 4D folder:C485(Current resources folder:K5:16)+"Images"+Folder separator:K24:12+"drag_dark.png"; $picture)
+			
+			// dark only
+			OBJECT SET RGB COLORS:C628(*; "BackgroundA@"; "#141414"; "#141414")  // very dark grey
+			OBJECT SET RGB COLORS:C628(*; "BackgroundB@"; "#282828"; "#282828")  // a bit less dark grey
+			OBJECT SET RGB COLORS:C628(*; "separator@"; "lightGrey")  // vertical and horizontal lines
+			
 		End if 
 		Form:C1466.dragPicture:=$picture
+		
+		
 	End if 
 	
 	$enterable:=(Form:C1466.displayFormulas=1)
@@ -964,7 +972,7 @@ Function themeApply($area : Object; $areaName : Text)
 	
 	
 	var $o : Object
-	var $i; $p; $nbColumns; $maxRows; $row; $colStart; $breakStart; $breakEnd; $maxPadding; $paddingNum : Integer
+	var $i; $p; $nbColumns; $maxRows; $row; $colStart; $breakStart; $breakEnd; $maxPadding; $paddingNum; $tableWidth : Integer
 	var $table; $cols; $targetTemplate; $cells; $target; $range; $target : Object
 	var $description; $themeTarget : Text
 	
@@ -1070,7 +1078,11 @@ Function themeApply($area : Object; $areaName : Text)
 	$cols:=WP Table get columns:C1476($table; 1; MAXLONG:K35:2)
 	$nbColumns:=Form:C1466.template.columns.query("check=true").length  // based on formdata
 	
-	WP SET ATTRIBUTES:C1342($cols; wk width:K81:45; String:C10(Int:C8(508/$nbColumns)-2)+"pt")  // 20CM WIDE 508pt
+	
+	//***** *****
+	
+	$tableWidth:=Form:C1466.local.tableWidth
+	WP SET ATTRIBUTES:C1342($cols; wk width:K81:45; String:C10(Int:C8($tableWidth/$nbColumns)-2)+"pt")  // 20CM WIDE 508pt
 	
 	
 	WP SELECT:C1348(*; $areaName; 1; 1)
@@ -1458,7 +1470,7 @@ Function WP_BuildTable()->$area : Object
 	var $breakBefore; $labelHeader : Boolean
 	var $o; $previousContent : Object
 	var $table; $rows; $cols; $rowTemplate; $cells; $row; $range : Object
-	var $i; $id; $nbColumns; $nbRows; $rowStart; $colStart : Integer
+	var $i; $id; $nbColumns; $nbRows; $rowStart; $colStart; $tableWidth : Integer
 	var $insertedText; $description : Text
 	
 	
@@ -1513,8 +1525,10 @@ Function WP_BuildTable()->$area : Object
 	If ($nbColumns>1)  // insert rows (above) has inserted 1 column.
 		$cols:=WP Table insert columns:C1692($table; 1; $nbColumns-1)
 	End if 
+	
 	$cols:=WP Table get columns:C1476($table; 1; MAXLONG:K35:2)
-	WP SET ATTRIBUTES:C1342($cols; wk width:K81:45; String:C10(Int:C8(508/$nbColumns)-2)+"pt")  // 20CM WIDE 508pt
+	$tableWidth:=Form:C1466.local.tableWidth
+	WP SET ATTRIBUTES:C1342($cols; wk width:K81:45; String:C10(Int:C8($tableWidth/$nbColumns)-2)+"pt")  // 20CM WIDE 508pt
 	
 	
 	//  table attributes
@@ -1789,6 +1803,41 @@ Function WP_MemoTableContent()
 Function WP_GetPreviousContent($description : Text; $columnID : Integer)->$document : Object
 	
 	$document:=Form:C1466.memoCells.query("rowType = :1 and column = :2"; $description; $columnID).first().content
+	
+Function WP_GetMaxTableWidth->$width : Integer
+	
+	var $width; $left; $right; $orientation : Integer
+	var $section; $document : Object
+	var $unit : Text
+	
+	If (Undefined:C82(Form:C1466.range))
+		$width:=508  // pt = about 20cm
+	Else 
+		
+		$document:=Form:C1466.range.owner
+		WP GET ATTRIBUTES:C1345($document; wk layout unit:K81:78; $unit)  // memo unit
+		
+		WP SET ATTRIBUTES:C1342($document; wk layout unit:K81:78; wk unit pt:K81:136)
+		$section:=WP Get section:C1581(Form:C1466.range)
+		
+		WP GET ATTRIBUTES:C1345($section; wk page orientation:K81:264; $orientation)
+		If ($orientation=0)  // portrait
+			WP GET ATTRIBUTES:C1345($document; wk page width:K81:262; $width; wk page margin left:K81:266; $left; wk page margin right:K81:267; $right)
+		Else   // landscape
+			WP GET ATTRIBUTES:C1345($document; wk page height:K81:263; $width; wk page margin left:K81:266; $left; wk page margin right:K81:267; $right)
+		End if 
+		$width:=$width-$left-$right
+		
+		WP SET ATTRIBUTES:C1342($document; wk layout unit:K81:78; $unit)  // back to memo
+		
+		Case of 
+			: ($width<400)
+				$width:=400
+			: ($width>1000)
+				$width:=1000
+		End case 
+		
+	End if 
 	
 	
 	

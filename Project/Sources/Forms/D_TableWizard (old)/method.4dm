@@ -5,11 +5,6 @@ var $range; $table : Object
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
-		
-		
-		
-		
-		
 		Form:C1466.wizard:=cs:C1710.TableWizard.new()
 		Form:C1466.local:=New object:C1471
 		Form:C1466.local.tableWidth:=Form:C1466.wizard.WP_GetMaxTableWidth()
