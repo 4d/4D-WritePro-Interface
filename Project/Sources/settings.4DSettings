@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="21">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="24">
 	<com.4d>
 		<web>
 			<standalone_server>
@@ -9,7 +9,7 @@
 			</remote>
 		</web>
 		<compiler>
-			<options compilation_path="3" fat_binary="true" target="all"/>
+			<options compilation_path="3" fat_binary="true" syntax_file="false" target="all"/>
 			<typage default_for_button="2"/>
 		</compiler>
 		<interface>

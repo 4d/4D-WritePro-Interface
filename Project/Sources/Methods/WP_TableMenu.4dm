@@ -47,7 +47,7 @@ If ($applyTo="insertTable")
 			End if 
 			APPEND MENU ITEM:C411($menu; "Insert template")  //∆∆∆
 			SET MENU ITEM PARAMETER:C1004($menu; -1; "TableWizard")
-			
+			SET MENU ITEM ICON:C984($menu; -1; "File:Images/TableTemplate.png")
 			
 			$choice:=Dynamic pop up menu:C1006($menu)
 			RELEASE MENU:C978($menu)

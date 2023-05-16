@@ -294,7 +294,7 @@ Function formulaBuildStatic($context : Object; $contextName : Text; $formula : T
 	
 	
 	If (Count parameters:C259=1)
-		$picturePath:="path:/RESOURCES/Images/Colors/FrontColor_7.png"
+		$picturePath:="path:/RESOURCES/Images/HLbullet.png"
 		$itemRef:=1000
 	End if 
 	
@@ -379,7 +379,7 @@ Function formulaBuildDynamic($context : Object; $contextName : Text; $contextNam
 			
 		: (Count parameters:C259=1)
 			
-			$picturePath:="path:/RESOURCES/Images/Colors/FrontColor_7.png"
+			$picturePath:="path:/RESOURCES/Images/HLbullet.png"
 			$itemRef:=1000
 			For each ($attributeName; $context)  // driver1, driver2, departureAgency, arrivalAggency
 				
@@ -543,6 +543,26 @@ Function formulaBuildDynamic($context : Object; $contextName : Text; $contextNam
 			
 			
 	End case 
+	
+Function formulaInsert($insert : Object)  //$json : Text)
+	
+	//var $insert : Object
+	var $range : Object
+	
+	//$insert:=JSON Parse($json)
+	$range:=WP Selection range:C1340(*; $insert.areaName)
+	WP INSERT FORMULA:C1703($range; Formula from string:C1601($insert.source); wk replace:K81:177)
+	
+	If (Shift down:C543)
+		WP INSERT BREAK:C1413($range; wk paragraph break:K81:259; wk append:K81:179; wk include in range:K81:180)
+	Else 
+		WP SET TEXT:C1574($range; " "; wk append:K81:179; wk include in range:K81:180)
+	End if 
+	WP SELECT:C1348(*; $insert.areaName; $range.end; $range.end)
+	
+	
+	
+	
 	
 	
 	
@@ -729,7 +749,7 @@ Function themeSave($theme : Object; $fileName : Text)->$index : Integer  //posit
 	End if 
 	
 	If ($fileName#"")
-		$folder:=Folder:C1567("/RESOURCES/4DWP_Wizard/Themes/"; *)
+		$folder:=Folder:C1567("/RESOURCES/4DWP_Wizard/Themes/")
 		If (Not:C34($folder.exists))
 			$folder.create()
 		End if 
@@ -1553,7 +1573,7 @@ Function WP_BuildTable()->$area : Object
 						: ($description="break@")  // break
 							
 							$id:=Num:C11($description)-1
-							WP SET ATTRIBUTES:C1342($row; wk break formula:K81:374; Formula from string:C1601(Form:C1466.template.breaks[$id].source))
+							WP SET ATTRIBUTES:C1342($row; "breakFormula"; Formula from string:C1601(Form:C1466.template.breaks[$id].source))  //wk break formula
 							
 							If ($previousContent#Null:C1517)
 								WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)

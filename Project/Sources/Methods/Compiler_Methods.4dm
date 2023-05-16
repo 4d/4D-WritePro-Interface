@@ -232,3 +232,6 @@ C_OBJECT:C1216(Wizard_InsertFormula; $1)
 
 //WP_TableWizard
 C_OBJECT:C1216(WP_TableWizard; $0)
+
+//WP_TableWizardNew
+C_OBJECT:C1216(WP_TableWizardNew; $0)
