@@ -560,13 +560,6 @@ Function formulaInsert($insert : Object)  //$json : Text)
 	End if 
 	WP SELECT:C1348(*; $insert.areaName; $range.end; $range.end)
 	
-	
-	
-	
-	
-	
-	
-	
 Function templateGetList()->$collection : Collection
 	
 	var $folder : 4D:C1709.Folder
@@ -575,7 +568,6 @@ Function templateGetList()->$collection : Collection
 	If ($folder.exists)
 		$collection:=$folder.files(fk recursive:K87:7+fk ignore invisible:K87:22)
 	Else 
-		//$folder.create()
 		$collection:=New collection:C1472
 	End if 
 	
@@ -717,20 +709,28 @@ Function templateUI($action : Text)
 	
 	
 	
-	
-	
-	
 Function themeGetList()->$collection : Collection
 	
 	var $folder : 4D:C1709.Folder
 	var $theme : Object
+	var $o : Object
 	
+	// host database resources first
 	$folder:=Folder:C1567("/RESOURCES/4DWP_Wizard/Themes/"; *)
 	If ($folder.exists)
 		$collection:=$folder.files(fk recursive:K87:7+fk ignore invisible:K87:22).orderBy("name")
+		If ($collection.length>0)  // can be an empty folder
+			$o:=New object:C1471("name"; "-")  // fake file used as séparator in drop down list
+			$collection.push($o)
+		End if 
 	Else 
-		//$folder.create()
 		$collection:=New collection:C1472
+	End if 
+	
+	// followed by component resources
+	$folder:=Folder:C1567("/RESOURCES/4DWP_Wizard/Themes/")
+	If ($folder.exists)  // always unless resources are dammaged
+		$collection:=$collection.combine($folder.files(fk recursive:K87:7+fk ignore invisible:K87:22).orderBy("name"))
 	End if 
 	
 Function themeSave($theme : Object; $fileName : Text)->$index : Integer  //position in the list
