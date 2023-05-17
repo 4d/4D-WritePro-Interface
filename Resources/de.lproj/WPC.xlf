@@ -1938,6 +1938,68 @@ Soll er ersetzt werden?</target>
         </trans-unit>        
       </group>
 
+    <group resname="DialogTableWizard">
+
+        <trans-unit id="xx" resname="TemplatesColon">
+          <source>Templates:</source>
+          <target>Vorlagen:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ThemesColon">
+          <source>Themes:</source>
+          <target>Themen:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="Columns">
+          <source>Columns</source>
+          <target>Spalten</target>
+        </trans-unit>          
+        <trans-unit id="xx" resname="Rows">
+          <source>Rows</source>
+          <target>Zeilen</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="Display">
+          <source>Display</source>
+          <target>Anzeigen</target>
+        </trans-unit>            
+        <trans-unit id="xx" resname="HeadersColon">
+          <source>Header rows:</source>
+          <target>Kopfzeilen:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="BreaksAboveColon">
+          <source>Breaks above rows:</source>
+          <target>Umbrüche über der Zeiles:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DataRowColon">
+          <source>Data row:</source>
+          <target>Datenzeilen:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="BreaksBelowColon">
+          <source>Breaks below rows:</source>
+          <target>Umbrüche unter den Zeilen:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CarryOverColon">
+          <source>Carry over row:</source>
+          <target>Übertragszeile:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ExtraRowsColon">
+          <source>Extra rows:</source>
+          <target>Extra-Zeilen:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DisplayFormulas">
+          <source>Display formulas</source>
+          <target>Formeln anzeigen</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DisplayData">
+          <source>Display data</source>
+          <target>Daten anzeigen</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="Sample">
+          <source>Sample</source>
+          <target>Beispiel</target>
+        </trans-unit>
+
+      </group>
+
+
       <group resname="Menu_Paragraph">
         <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
           <source>Reset paragraph font attributes</source>
