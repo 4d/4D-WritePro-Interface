@@ -420,6 +420,10 @@ This file is distributed under the same license as the product package.-->
           <source>Protect cell</source>
           <target>Zelle schützen</target>
         </trans-unit>
+        <trans-unit id="xxx" resname="protectTextArea">
+          <source>Protect text area</source>
+          <target>Textbereich schützen</target>
+        </trans-unit>        
         <trans-unit id="WTkM05EEsc772zfzDM6Jwg" resname="protectDocument">
           <source>Enable document protection</source>
           <target>Dokument-Schutz aktivieren</target>
@@ -476,7 +480,15 @@ This file is distributed under the same license as the product package.-->
           <source>Insert a text box</source>
           <target>Textfeld einfügen</target>
         </trans-unit>
-      </group>
+        <trans-unit id="xxx" resname="mergeCells">
+          <source>Merge cells</source>
+          <target>Zellen zusammenfügen</target>
+        </trans-unit>
+        <trans-unit id="xxx" resname="unmergeCells">
+          <source>Unmerge cells</source>
+          <target>Zelle auftrennens</target>
+        </trans-unit>
+     </group>
       <group resname="Tabs">
         <trans-unit id="24" resname="borders">
           <source>Borders</source>
@@ -568,12 +580,10 @@ This file is distributed under the same license as the product package.-->
           <source>Text boxes</source>
           <target>Textfelder</target>
         </trans-unit>
-
-        <trans-unit id="xxx" resname="PrintSettings">
-          <source>Print settings…</source>
-          <target>Seiteneinrichtung…</target>
-        </trans-unit>
-
+        <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">
+          <source>Footers</source>
+          <target>Fußteile</target>
+        </trans-unit>         
       </group>
     </body>
   </file>
