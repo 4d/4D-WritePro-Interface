@@ -420,6 +420,10 @@ This file is distributed under the same license as the product package.-->
           <source>Protect cell</source>
           <target>Chránit buňku</target>
         </trans-unit>
+        <trans-unit id="xxx" resname="protectTextArea">
+          <source>Protect text area</source>
+          <target>Chránit textovou oblast</target>
+        </trans-unit>
         <trans-unit id="WTkM05EEsc772zfzDM6Jwg" resname="protectDocument">
           <source>Enable document protection</source>
           <target>Povolit ochranu dokumentu</target>
@@ -475,6 +479,14 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">
           <source>Insert a text box</source>
           <target>Vložit textové pole</target>
+        </trans-unit>
+        <trans-unit id="xxx" resname="mergeCells">
+          <source>Merge cells</source>
+          <target>Spojit buňky</target>
+        </trans-unit>
+        <trans-unit id="xxx" resname="unmergeCells">
+          <source>Unmerge cells</source>
+          <target>Rozpojit buňky</target>
         </trans-unit>
       </group>
       <group resname="Tabs">
@@ -568,9 +580,9 @@ This file is distributed under the same license as the product package.-->
           <source>Text boxes</source>
           <target>Textová pole</target>
         </trans-unit>
-        <trans-unit id="xxx" resname="PrintSettings">
-          <source>Print settings…</source>
-          <target>Nastavení tisku…</target>
+        <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">
+          <source>Footers</source>
+          <target>Zápatí</target>
         </trans-unit>
       </group>
     </body>
