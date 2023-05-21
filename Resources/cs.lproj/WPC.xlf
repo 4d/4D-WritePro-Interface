@@ -166,6 +166,10 @@ This file is distributed under the same license as the product package.-->
           <source>Position:</source>
           <target>Pozice:</target>
         </trans-unit>
+        <trans-unit id="26" resname="PositionsColon">
+          <source>Positions:</source>
+          <target>Pozice:</target>
+        </trans-unit>
         <trans-unit id="sg9lHFhI0LqrVxCysNWY7g" resname="MoveHyphen">
           <source>Move:</source>
           <target>Posunout:</target>
@@ -181,6 +185,22 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Picture">
           <source>Picture</source>
           <target>Obrázek</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="PictureHyphen">
+          <source>Picture:</source>
+          <target>Obrázek:</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Apply">
+          <source>Apply</source>
+          <target>Použít</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Clear">
+          <source>Clear</source>
+          <target>Odstranit</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="InsertHyphen">
+          <source>Insert:</source>
+          <target>Vložit:</target>
         </trans-unit>
         <trans-unit id="xZf5yixaHWdVwEkN2lFVkg" resname="AdvancedSettingsEllipsis">
           <source>Advanced settings…</source>
@@ -1992,13 +2012,19 @@ Chcete ji nahradit?</target>
           <target>Odstranit zlom</target>
         </trans-unit>
         <trans-unit id="Menu_SetTableBreak_3" resname="EnterBreakName">
-          <source>Enter the name of the attribute to use as break:</source>
-          <target>Zadejte název vlastnosti k užití zlomu:</target>
+          <source>Enter the expression to use as break…</source>
+          <target>Zadejte výraz, který chcete použít jako zlom…</target>
         </trans-unit>
         <trans-unit id="Menu_SetTableBreak_4" resname="SetBreak">
           <source>Set</source>
           <target>Nastavit</target>
         </trans-unit>
+        
+        <trans-unit id="Window_D_TinyFormula_1" resname="BreakFormula">
+          <source>Break formula</source>
+          <target>Výraz zlomu</target>
+        </trans-unit>
+        
       </group>
 
       <group resname="ExportWindowTitle">
