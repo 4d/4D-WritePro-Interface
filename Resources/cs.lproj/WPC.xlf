@@ -1937,6 +1937,69 @@ Chcete ji nahradit?</target>
           <target>Uzavřít</target>
         </trans-unit>        
       </group>
+      
+      <group resname="DialogTableWizard">
+
+        <trans-unit id="xx" resname="TemplatesColon">
+          <source>Templates:</source>
+          <target>Šablony:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ThemesColon">
+          <source>Themes:</source>
+          <target>Témata:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="Columns">
+          <source>Columns</source>
+          <target>Sloupce</target>
+        </trans-unit>          
+        <trans-unit id="xx" resname="Rows">
+          <source>Rows</source>
+          <target>Řádky</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="Display">
+          <source>Display</source>
+          <target>Zobrazit</target>
+        </trans-unit>            
+        <trans-unit id="xx" resname="HeadersColon">
+          <source>Header rows:</source>
+          <target>Řádky záhlaví:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="BreaksAboveColon">
+          <source>Breaks above rows:</source>
+          <target>Zlomy nad řádky:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DataRowColon">
+          <source>Data row:</source>
+          <target>Datový řádek:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="BreaksBelowColon">
+          <source>Breaks below rows:</source>
+          <target>Zlomy pod řádky:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CarryOverColon">
+          <source>Carry over row:</source>
+          <target>Přenést přes řádek:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ExtraRowsColon">
+          <source>Extra rows:</source>
+          <target>Extra řádky:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DisplayFormulas">
+          <source>Display formulas</source>
+          <target>Zobrazit vzorce</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DisplayData">
+          <source>Display data</source>
+          <target>Zobrazit data</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="Sample">
+          <source>Sample</source>
+          <target>Příklad</target>
+        </trans-unit>
+
+      </group>
+      
+      
       <group resname="Menu_Paragraph">
         <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
           <source>Reset paragraph font attributes</source>
