@@ -235,3 +235,9 @@ C_OBJECT:C1216(WP_TableWizard; $0)
 
 //WP_TableWizardNew
 C_OBJECT:C1216(WP_TableWizardNew; $0)
+
+//WP_SelectText
+C_BOOLEAN:C305(WP_SelectText; $0)
+
+//gotoArea
+C_BOOLEAN:C305(gotoArea; $0)
