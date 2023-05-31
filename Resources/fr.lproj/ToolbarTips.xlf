@@ -134,7 +134,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="49" resname="compute4Dexpressions">
           <source>Compute 4D expressions</source>
-          <target>Évaluler les expressions 4D</target>
+          <target>Évaluer les expressions 4D</target>
         </trans-unit>
         <trans-unit id="17" resname="copy">
           <source>Copy</source>
