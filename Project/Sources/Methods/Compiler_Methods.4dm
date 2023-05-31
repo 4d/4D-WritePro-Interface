@@ -222,3 +222,9 @@ C_BOOLEAN:C305(UI_PaletteImage; $1)
 C_TEXT:C284(fillArea; $1)
 C_OBJECT:C1216(fillArea; $2)
 C_LONGINT:C283(fillArea; $3)
+
+//WP_SelectText
+C_BOOLEAN:C305(WP_SelectText; $0)
+
+//gotoArea
+C_BOOLEAN:C305(gotoArea; $0)
