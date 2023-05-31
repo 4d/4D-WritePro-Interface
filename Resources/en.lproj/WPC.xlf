@@ -1948,17 +1948,17 @@ Would you like to replace it?</target>
           <source>Themes:</source>
           <target>Themes:</target>
         </trans-unit>
-        <trans-unit id="xx" resname="Columns">
-          <source>Columns</source>
-          <target>Columns</target>
+        <trans-unit id="xx" resname="ColumnsColon">
+          <source>Columns:</source>
+          <target>Columns:</target>
         </trans-unit>          
-        <trans-unit id="xx" resname="Rows">
-          <source>Rows</source>
-          <target>Rows</target>
+        <trans-unit id="xx" resname="RowsColon">
+          <source>Rows:</source>
+          <target>Rows:</target>
         </trans-unit>
-        <trans-unit id="xx" resname="Display">
-          <source>Display</source>
-          <target>Display</target>
+        <trans-unit id="xx" resname="DisplayColon">
+          <source>Display:</source>
+          <target>Display:</target>
         </trans-unit>            
         <trans-unit id="xx" resname="HeadersColon">
           <source>Header rows:</source>
