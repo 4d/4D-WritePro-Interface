@@ -182,7 +182,6 @@ Else
 		
 		Case of 
 			: ($choice="SetDatasource")
-				//ALERT("work in progress…")
 				
 				$wpTable:=WP Get elements:C1550(Form:C1466.selection; wk type table:K81:222)[0]
 				WP GET ATTRIBUTES:C1345($wpTable; wk datasource:K81:367; $formula)
