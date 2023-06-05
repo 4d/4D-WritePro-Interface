@@ -289,7 +289,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						$title:=Get localized string:C991("FileNamePrompt")
 					End if 
 					
-					$docName:=Select document:C905(""; $extension; $title; File name entry:K24:17)
+					$docName:=Select document:C905(""; $extension; $title; File name entry:K24:17)  // ACI0103976 $extension added 2013/06/01 by RL as a fix to Thomas Maul issue
 					
 					If (ok=1) & ($docName#"")
 						
@@ -308,24 +308,17 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 								$folderPath:=$folderPath+Folder separator:K24:12
 							End if 
 							
-							//If (False)
-							//$p:=Position("."; $docName)
-							//If ($p>0)
-							//$docName:=Substring($docName; 1; $p-1)
-							//End if 
-							//End if 
-							
 							For ($i; $options.pageIndexFrom; $options.pageIndexTo)
 								$options.pageIndex:=$i  //[wk page index]
 								$path:=$folderPath+$docName+String:C10($i)
-								WP EXPORT DOCUMENT:C1337($area; $path; $exportType; $options)  // $path added 2013/06/01 by RL as a fix to Thomas Maul issue
+								WP EXPORT DOCUMENT:C1337($area; $path; $exportType; $options)
 							End for 
 							
 						Else   // other exports
 							
 							$path:=document  // ACI0102385 
 							
-							//$file:=Path to object($path; fk platform path) // removed 2013/06/01 by RL; No need to add the extention, it IS already in the document name
+							//$file:=Path to object($path; fk platform path) // ACI0103976 removed 2013/06/01 by RL; No need to add the extention, it IS already in the document name
 							//$file.extension:=$extension
 							//$path:=$file.name+"."+$file.extension
 							
