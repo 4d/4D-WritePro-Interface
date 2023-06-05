@@ -288,7 +288,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						$title:=Get localized string:C991("FileNamePrompt")
 					End if 
 					
-					$docName:=Select document:C905(""; ""; $title; File name entry:K24:17)
+					$docName:=Select document:C905(""; $extension; $title; File name entry:K24:17)  // ACI0103976 $extension added 2013/06/01 by RL as a fix to Thomas Maul issue
 					
 					If (ok=1) & ($docName#"")
 						
@@ -307,12 +307,6 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 								$folderPath:=$folderPath+Folder separator:K24:12
 							End if 
 							
-							//If (False)
-							//$p:=Position("."; $docName)
-							//If ($p>0)
-							//$docName:=Substring($docName; 1; $p-1)
-							//End if 
-							//End if 
 							
 							For ($i; $options.pageIndexFrom; $options.pageIndexTo)
 								$options.pageIndex:=$i  //[wk page index]
@@ -323,9 +317,10 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						Else   // other exports
 							
 							$path:=document  // ACI0102385 
-							$file:=Path to object:C1547($path; fk platform path:K87:2)
-							$file.extension:=$extension
-							$path:=$file.name+"."+$file.extension
+							
+							//$file:=Path to object($path; fk platform path) // ACI0103976 removed 2013/06/01 by RL; No need to add the extention, it IS already in the document name
+							//$file.extension:=$extension
+							//$path:=$file.name+"."+$file.extension
 							
 							If ($exportType=-9999)
 								$rawText:=WP Get text:C1575($area; wk expressions as value:K81:255)
