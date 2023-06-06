@@ -169,7 +169,7 @@
 					"events": [
 						"onClick"
 					],
-					"layoutMode": "embedded",
+					"layoutMode": "draft",
 					"showHeaders": false,
 					"showFooters": false,
 					"showHorizontalRuler": false,
