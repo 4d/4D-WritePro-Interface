@@ -185,8 +185,8 @@
 					"type": "radio",
 					"text": ":xliff:DisplayFormulas",
 					"top": 485,
-					"left": 280,
-					"width": 200,
+					"left": 270,
+					"width": 220,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -202,8 +202,8 @@
 					"type": "radio",
 					"text": ":xliff:DisplayData",
 					"top": 509,
-					"left": 280,
-					"width": 200,
+					"left": 270,
+					"width": 220,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -630,7 +630,7 @@
 				},
 				"Texte11": {
 					"type": "text",
-					"text": "Zoom:",
+					"text": ":xliff:ZoomColon",
 					"top": 456,
 					"left": 250,
 					"width": 150,
@@ -639,19 +639,20 @@
 					"sizingX": "fixed",
 					"sizingY": "fixed"
 				},
-				"Case à cocher": {
+				"cb_horizontalRuler": {
 					"type": "checkbox",
-					"text": "Règle horizontale",
+					"text": "hruler (see templateUI)",
 					"top": 546,
-					"left": 280,
-					"width": 200,
+					"left": 270,
+					"width": 220,
 					"height": 18,
 					"events": [
 						"onClick"
 					],
 					"action": "visibleHorizontalRuler",
 					"enterable": true,
-					"focusable": false
+					"focusable": false,
+					"method": "ObjectMethods/cb_horizontalRuler.4dm"
 				},
 				"Ligne3": {
 					"type": "line",
@@ -799,7 +800,7 @@
 			}
 		}
 	],
-	"geometryStamp": 5202,
+	"geometryStamp": 5208,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

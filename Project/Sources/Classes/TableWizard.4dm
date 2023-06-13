@@ -689,7 +689,6 @@ Function templateUI($action : Text)
 		End if 
 		Form:C1466.dragPicture:=$picture
 		
-		
 	End if 
 	
 	$enterable:=(Form:C1466.displayFormulas=1)
@@ -706,7 +705,7 @@ Function templateUI($action : Text)
 		OBJECT SET ENABLED:C1123(*; $item; $enterable)
 	End for each 
 	
-	
+	OBJECT SET TITLE:C194(*; "cb_horizontalRuler"; Get action info:C1442("visibleHorizontalRuler").title)
 	
 	
 Function themeGetList()->$collection : Collection

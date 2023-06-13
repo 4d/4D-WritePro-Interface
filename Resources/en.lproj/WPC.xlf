@@ -1984,6 +1984,10 @@ Would you like to replace it?</target>
           <source>Extra rows:</source>
           <target>Extra rows:</target>
         </trans-unit>
+        <trans-unit id="xx" resname="ZoomColon">
+          <source>Zoom:</source>
+          <target>Zoom:</target>
+        </trans-unit>        
         <trans-unit id="xx" resname="DisplayFormulas">
           <source>Display formulas</source>
           <target>Display formulas</target>
@@ -1996,7 +2000,10 @@ Would you like to replace it?</target>
           <source>Sample</source>
           <target>Sample</target>
         </trans-unit>
-
+        <trans-unit id="xx" resname="AvailableFormulas">
+          <source>Available formulas…</source>
+          <target>Available formulas…</target>
+        </trans-unit>
       </group>
 
 
