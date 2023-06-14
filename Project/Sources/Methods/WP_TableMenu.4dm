@@ -45,7 +45,7 @@ If ($applyTo="insertTable")
 				
 				APPEND MENU ITEM:C411($menu; "-")  // separator
 			End if 
-			APPEND MENU ITEM:C411($menu; "Insert template")  //∆∆∆
+			APPEND MENU ITEM:C411($menu; " ")
 			SET MENU ITEM PARAMETER:C1004($menu; -1; "TableWizard")
 			SET MENU ITEM ICON:C984($menu; -1; "File:Images/TableTemplate.png")
 			

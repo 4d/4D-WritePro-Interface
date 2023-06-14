@@ -22,140 +22,40 @@
 		},
 		{
 			"objects": {
+				"TipButton3": {
+					"type": "button",
+					"text": " ",
+					"top": 333,
+					"left": 235,
+					"width": 270,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoDataRow",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipButton3.4dm"
+				},
 				"BackgroundB_1": {
 					"type": "rectangle",
-					"top": 20,
-					"left": 500,
-					"width": 620,
+					"top": 80,
+					"left": 510,
+					"width": 610,
 					"height": 540,
 					"fill": "#FFFFFF",
 					"stroke": "transparent",
 					"sizingX": "grow",
 					"sizingY": "grow"
 				},
-				"Ligne1": {
-					"type": "line",
-					"top": -51,
-					"left": 805,
-					"width": 10,
-					"height": 600,
-					"startPoint": "topLeft",
-					"visibility": "hidden",
-					"stroke": "#da70d6",
-					"strokeDashArray": [
-						6,
-						2
-					]
-				},
-				"Texte1": {
-					"type": "text",
-					"text": ":xliff:HeadersColon",
-					"top": 216,
-					"left": 250,
-					"width": 150,
-					"height": 16,
-					"textAlign": "right",
-					"sizingX": "fixed",
-					"sizingY": "fixed"
-				},
-				"dd_tableHeaders": {
-					"type": "dropdown",
-					"left": 410,
-					"top": 214,
-					"width": 65,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "Form:C1466.tableHeaders",
-					"focusable": false,
-					"sizingX": "fixed",
-					"method": "ObjectMethods/dd_tableHeaders.4dm",
-					"sizingY": "fixed"
-				},
-				"Texte2": {
-					"type": "text",
-					"text": ":xliff:BreaksAboveColon",
-					"top": 246,
-					"left": 250,
-					"width": 150,
-					"height": 16,
-					"textAlign": "right",
-					"sizingX": "fixed",
-					"sizingY": "fixed"
-				},
-				"dd_BreakAbove": {
-					"type": "dropdown",
-					"left": 410,
-					"top": 244,
-					"width": 65,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "Form:C1466.tableBreakAbove",
-					"focusable": false,
-					"sizingX": "fixed",
-					"method": "ObjectMethods/dd_BreakAbove.4dm",
-					"sizingY": "fixed"
-				},
-				"Texte3": {
-					"type": "text",
-					"text": ":xliff:BreaksBelowColon",
-					"top": 306,
-					"left": 250,
-					"width": 150,
-					"height": 16,
-					"textAlign": "right",
-					"sizingX": "fixed",
-					"sizingY": "fixed"
-				},
-				"dd_BreakBelow": {
-					"type": "dropdown",
-					"left": 410,
-					"top": 304,
-					"width": 65,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "Form:C1466.tableBreakBelow",
-					"focusable": false,
-					"sizingX": "fixed",
-					"method": "ObjectMethods/dd_BreakBelow.4dm",
-					"sizingY": "fixed"
-				},
-				"Texte4": {
-					"type": "text",
-					"text": ":xliff:CarryOverColon",
-					"top": 336,
-					"left": 250,
-					"width": 150,
-					"height": 16,
-					"textAlign": "right",
-					"sizingX": "fixed",
-					"sizingY": "fixed"
-				},
-				"dd_bcor": {
-					"type": "dropdown",
-					"left": 410,
-					"top": 334,
-					"width": 65,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "Form:C1466.tableBCOR",
-					"focusable": false,
-					"sizingX": "fixed",
-					"method": "ObjectMethods/dd_bcor.4dm",
-					"sizingY": "fixed"
-				},
 				"WParea": {
 					"type": "write",
-					"top": 20,
-					"left": 500,
-					"width": 620,
+					"top": 80,
+					"left": 510,
+					"width": 610,
 					"height": 540,
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -181,10 +81,222 @@
 					"showPageFrames": true,
 					"showReferences": true
 				},
+				"TipButton1": {
+					"type": "button",
+					"text": " ",
+					"top": 273,
+					"left": 235,
+					"width": 270,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoHeaderRows",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipButton1.4dm"
+				},
+				"TipButton2": {
+					"type": "button",
+					"text": " ",
+					"top": 303,
+					"left": 235,
+					"width": 270,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoSummaryRows",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipButton2.4dm"
+				},
+				"TipButton4": {
+					"type": "button",
+					"text": " ",
+					"top": 363,
+					"left": 235,
+					"width": 270,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoSummaryRows",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipButton4.4dm"
+				},
+				"TipButton5": {
+					"type": "button",
+					"text": " ",
+					"top": 393,
+					"left": 235,
+					"width": 270,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoCarryOverRow",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipButton5.4dm"
+				},
+				"TipButton6": {
+					"type": "button",
+					"text": " ",
+					"top": 423,
+					"left": 235,
+					"width": 270,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoExtraRows",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipButton6.4dm"
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": -51,
+					"left": 805,
+					"width": 10,
+					"height": 600,
+					"startPoint": "topLeft",
+					"visibility": "hidden",
+					"stroke": "#da70d6",
+					"strokeDashArray": [
+						6,
+						2
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"text": ":xliff:HeadersColon",
+					"top": 276,
+					"left": 235,
+					"width": 175,
+					"height": 16,
+					"textAlign": "right",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				},
+				"dd_tableHeaders": {
+					"type": "dropdown",
+					"left": 415,
+					"top": 274,
+					"width": 65,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.tableHeaders",
+					"focusable": false,
+					"sizingX": "fixed",
+					"method": "ObjectMethods/dd_tableHeaders.4dm",
+					"sizingY": "fixed",
+					"tooltip": ":xliff:InfoHeaderRows"
+				},
+				"Texte2": {
+					"type": "text",
+					"text": ":xliff:BreaksAboveColon",
+					"top": 306,
+					"left": 235,
+					"width": 175,
+					"height": 16,
+					"textAlign": "right",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				},
+				"dd_BreakAbove": {
+					"type": "dropdown",
+					"left": 415,
+					"top": 304,
+					"width": 65,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.tableBreakAbove",
+					"focusable": false,
+					"sizingX": "fixed",
+					"method": "ObjectMethods/dd_BreakAbove.4dm",
+					"sizingY": "fixed",
+					"tooltip": ":xliff:InfoSummaryRows"
+				},
+				"Texte3": {
+					"type": "text",
+					"text": ":xliff:BreaksBelowColon",
+					"top": 366,
+					"left": 235,
+					"width": 175,
+					"height": 16,
+					"textAlign": "right",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				},
+				"dd_BreakBelow": {
+					"type": "dropdown",
+					"left": 415,
+					"top": 364,
+					"width": 65,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.tableBreakBelow",
+					"focusable": false,
+					"sizingX": "fixed",
+					"method": "ObjectMethods/dd_BreakBelow.4dm",
+					"sizingY": "fixed",
+					"tooltip": ":xliff:InfoSummaryRows"
+				},
+				"Texte4": {
+					"type": "text",
+					"text": ":xliff:CarryOverColon",
+					"top": 396,
+					"left": 235,
+					"width": 175,
+					"height": 16,
+					"textAlign": "right",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				},
+				"dd_bcor": {
+					"type": "dropdown",
+					"left": 415,
+					"top": 394,
+					"width": 65,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.tableBCOR",
+					"focusable": false,
+					"sizingX": "fixed",
+					"method": "ObjectMethods/dd_bcor.4dm",
+					"sizingY": "fixed",
+					"tooltip": ":xliff:InfoCarryOverRow"
+				},
 				"rb_DisplayFormulas": {
 					"type": "radio",
 					"text": ":xliff:DisplayFormulas",
-					"top": 485,
+					"top": 545,
 					"left": 270,
 					"width": 220,
 					"height": 20,
@@ -201,7 +313,7 @@
 				"rb_DisplayValues": {
 					"type": "radio",
 					"text": ":xliff:DisplayData",
-					"top": 509,
+					"top": 569,
 					"left": 270,
 					"width": 220,
 					"height": 20,
@@ -218,9 +330,9 @@
 				"Texte12": {
 					"type": "text",
 					"text": ":xliff:ExtraRowsColon",
-					"top": 366,
-					"left": 250,
-					"width": 150,
+					"top": 426,
+					"left": 235,
+					"width": 175,
 					"height": 16,
 					"textAlign": "right",
 					"sizingX": "fixed",
@@ -228,8 +340,8 @@
 				},
 				"inExtraRows": {
 					"type": "input",
-					"left": 410,
-					"top": 366,
+					"left": 415,
+					"top": 426,
 					"width": 65,
 					"height": 17,
 					"dataSource": "Form:C1466.tableExtraRow",
@@ -239,14 +351,15 @@
 						"onDataChange"
 					],
 					"sizingY": "fixed",
-					"textAlign": "center"
+					"textAlign": "center",
+					"tooltip": ":xliff:InfoExtraRows"
 				},
 				"Texte14": {
 					"type": "text",
 					"text": ":xliff:DataRowColon",
-					"top": 276,
-					"left": 250,
-					"width": 150,
+					"top": 336,
+					"left": 235,
+					"width": 175,
 					"height": 16,
 					"textAlign": "right",
 					"sizingX": "fixed",
@@ -255,7 +368,7 @@
 				"LB_columns": {
 					"type": "listbox",
 					"left": 20,
-					"top": 210,
+					"top": 250,
 					"width": 210,
 					"height": 380,
 					"events": [
@@ -360,7 +473,7 @@
 				"dd_themeList": {
 					"type": "dropdown",
 					"left": 20,
-					"top": 115,
+					"top": 175,
 					"width": 450,
 					"height": 26,
 					"events": [
@@ -373,7 +486,7 @@
 				},
 				"btn_Cancel": {
 					"type": "button",
-					"top": 580,
+					"top": 640,
 					"left": 950,
 					"width": 80,
 					"height": 20,
@@ -390,7 +503,7 @@
 				},
 				"btn_OK": {
 					"type": "button",
-					"top": 580,
+					"top": 640,
 					"left": 1040,
 					"width": 80,
 					"height": 20,
@@ -409,7 +522,7 @@
 				"List Box": {
 					"type": "listbox",
 					"left": 1039,
-					"top": 934,
+					"top": 1064,
 					"width": 110,
 					"height": 230,
 					"events": [
@@ -444,7 +557,7 @@
 				"dd_templateList": {
 					"type": "dropdown",
 					"left": 20,
-					"top": 55,
+					"top": 115,
 					"width": 450,
 					"height": 26,
 					"events": [
@@ -458,7 +571,7 @@
 				"Zone de saisie": {
 					"type": "input",
 					"left": 41,
-					"top": 820,
+					"top": 950,
 					"width": 459,
 					"height": 395,
 					"dataSource": "Form:C1466.memoCells",
@@ -468,7 +581,7 @@
 				"List Box1": {
 					"type": "listbox",
 					"left": 879,
-					"top": 934,
+					"top": 1064,
 					"width": 110,
 					"height": 230,
 					"events": [
@@ -503,7 +616,7 @@
 				"Texte": {
 					"type": "text",
 					"text": "Form.columnIDs",
-					"top": 857,
+					"top": 987,
 					"left": 875,
 					"width": 109,
 					"height": 16,
@@ -513,7 +626,7 @@
 				"Texte5": {
 					"type": "text",
 					"text": "Form.description",
-					"top": 857,
+					"top": 987,
 					"left": 1035,
 					"width": 109,
 					"height": 16,
@@ -522,7 +635,7 @@
 				},
 				"Ligne": {
 					"type": "line",
-					"top": 844,
+					"top": 974,
 					"left": 41,
 					"width": 1120,
 					"height": 0,
@@ -530,8 +643,8 @@
 				},
 				"inTableData": {
 					"type": "input",
-					"left": 410,
-					"top": 276,
+					"left": 415,
+					"top": 336,
 					"width": 65,
 					"height": 17,
 					"dataSource": "Form:C1466.tableData",
@@ -542,12 +655,13 @@
 					"sizingY": "fixed",
 					"dataSourceTypeHint": "integer",
 					"borderStyle": "system",
-					"textAlign": "center"
+					"textAlign": "center",
+					"tooltip": ":xliff:InfoDataRow"
 				},
 				"Texte6": {
 					"type": "text",
 					"text": ":xliff:TemplatesColon",
-					"top": 30,
+					"top": 90,
 					"left": 20,
 					"width": 89,
 					"height": 16,
@@ -557,7 +671,7 @@
 				"Texte7": {
 					"type": "text",
 					"text": ":xliff:ThemesColon",
-					"top": 90,
+					"top": 150,
 					"left": 20,
 					"width": 89,
 					"height": 16,
@@ -567,7 +681,7 @@
 				"Texte8": {
 					"type": "text",
 					"text": ":xliff:ColumnsColon",
-					"top": 175,
+					"top": 235,
 					"left": 20,
 					"width": 80,
 					"height": 16,
@@ -577,7 +691,7 @@
 				"Texte9": {
 					"type": "text",
 					"text": ":xliff:RowsColon",
-					"top": 180,
+					"top": 240,
 					"left": 250,
 					"width": 139,
 					"height": 16,
@@ -586,7 +700,7 @@
 				},
 				"Separator2": {
 					"type": "line",
-					"top": 210,
+					"top": 250,
 					"left": 230,
 					"width": 0,
 					"height": 390,
@@ -595,7 +709,7 @@
 				},
 				"Ligne2": {
 					"type": "line",
-					"top": 230,
+					"top": 290,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -608,8 +722,8 @@
 				},
 				"Popup Liste déroulante": {
 					"type": "dropdown",
-					"left": 410,
-					"top": 452,
+					"left": 415,
+					"top": 512,
 					"width": 65,
 					"height": 20,
 					"events": [
@@ -621,7 +735,7 @@
 				"Texte10": {
 					"type": "text",
 					"text": ":xliff:DisplayColon",
-					"top": 415,
+					"top": 475,
 					"left": 250,
 					"width": 139,
 					"height": 16,
@@ -631,9 +745,9 @@
 				"Texte11": {
 					"type": "text",
 					"text": ":xliff:ZoomColon",
-					"top": 456,
-					"left": 250,
-					"width": 150,
+					"top": 516,
+					"left": 235,
+					"width": 175,
 					"height": 16,
 					"textAlign": "right",
 					"sizingX": "fixed",
@@ -642,7 +756,7 @@
 				"cb_horizontalRuler": {
 					"type": "checkbox",
 					"text": "hruler (see templateUI)",
-					"top": 546,
+					"top": 606,
 					"left": 270,
 					"width": 220,
 					"height": 18,
@@ -656,7 +770,7 @@
 				},
 				"Ligne3": {
 					"type": "line",
-					"top": 260,
+					"top": 320,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -669,7 +783,7 @@
 				},
 				"Ligne4": {
 					"type": "line",
-					"top": 290,
+					"top": 350,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -682,7 +796,7 @@
 				},
 				"Ligne5": {
 					"type": "line",
-					"top": 320,
+					"top": 380,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -695,7 +809,7 @@
 				},
 				"Ligne6": {
 					"type": "line",
-					"top": 350,
+					"top": 410,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -708,7 +822,7 @@
 				},
 				"Ligne7": {
 					"type": "line",
-					"top": 380,
+					"top": 440,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -721,7 +835,7 @@
 				},
 				"Ligne8": {
 					"type": "line",
-					"top": 410,
+					"top": 470,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -734,7 +848,7 @@
 				},
 				"Ligne9": {
 					"type": "line",
-					"top": 440,
+					"top": 500,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -747,7 +861,7 @@
 				},
 				"Ligne10": {
 					"type": "line",
-					"top": 470,
+					"top": 530,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -760,7 +874,7 @@
 				},
 				"Ligne11": {
 					"type": "line",
-					"top": 500,
+					"top": 560,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -773,7 +887,7 @@
 				},
 				"Ligne12": {
 					"type": "line",
-					"top": 530,
+					"top": 590,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -786,7 +900,7 @@
 				},
 				"Ligne13": {
 					"type": "line",
-					"top": 560,
+					"top": 620,
 					"left": 6,
 					"width": 652,
 					"height": 0,
@@ -796,11 +910,47 @@
 						2,
 						2
 					]
+				},
+				"Texte13": {
+					"type": "text",
+					"text": ":xliff:InfoMain",
+					"top": 24,
+					"left": 74,
+					"width": 410,
+					"height": 46,
+					"fontTheme": "main"
+				},
+				"Texte15": {
+					"type": "text",
+					"text": ":xliff:InfoContextualClic",
+					"top": 638,
+					"left": 539,
+					"width": 300,
+					"height": 39,
+					"fontTheme": "additional"
+				},
+				"Image statique2": {
+					"type": "picture",
+					"top": 638,
+					"left": 505,
+					"width": 24,
+					"height": 24,
+					"picture": "/RESOURCES/Images/TBcommon/Home/Information_24.png",
+					"pictureFormat": "truncatedTopLeft"
+				},
+				"Image statique3": {
+					"type": "picture",
+					"top": 15,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"picture": "/RESOURCES/Images/TBcommon/Home/Information_48.png",
+					"pictureFormat": "truncatedTopLeft"
 				}
 			}
 		}
 	],
-	"geometryStamp": 5208,
+	"geometryStamp": 5601,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
@@ -810,5 +960,5 @@
 	},
 	"method": "method.4dm",
 	"width": 1140,
-	"height": 620
+	"height": 680
 }

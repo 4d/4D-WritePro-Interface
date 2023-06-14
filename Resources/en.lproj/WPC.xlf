@@ -1965,16 +1965,16 @@ Would you like to replace it?</target>
           <target>Header rows:</target>
         </trans-unit>
         <trans-unit id="xx" resname="BreaksAboveColon">
-          <source>Breaks above rows:</source>
-          <target>Breaks above rows:</target>
+          <source>Summary rows above:</source>
+          <target>Summary rows above:</target>
         </trans-unit>
         <trans-unit id="xx" resname="DataRowColon">
           <source>Data row:</source>
           <target>Data row:</target>
         </trans-unit>
         <trans-unit id="xx" resname="BreaksBelowColon">
-          <source>Breaks below rows:</source>
-          <target>Breaks below rows:</target>
+          <source>Summary rows below:</source>
+          <target>Summary rows below:</target>
         </trans-unit>
         <trans-unit id="xx" resname="CarryOverColon">
           <source>Carry over row:</source>
@@ -2004,6 +2004,36 @@ Would you like to replace it?</target>
           <source>Available formulas…</source>
           <target>Available formulas…</target>
         </trans-unit>
+
+        <trans-unit id="xx" resname="InfoMain">
+          <source>This dialog allows you to insert a table in your document, the contents of which will be based on the database data.</source>
+          <target>This dialog allows you to insert a table in your document, the contents of which will be based on the database data.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoContextualClic">
+          <source>Use the contextual menu to insert additional formulas into the table.</source>
+          <target>Use the contextual menu to insert additional formulas into the table.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoHeaderRows">
+          <source>The header rows are replicated at each page break.</source>
+          <target>The header rows are replicated at each page break.</target>
+        </trans-unit>         
+        <trans-unit id="xx" resname="InfoDataRow">
+          <source>This row will be filled by each element of the database.</source>
+          <target>This row will be filled by each element of the database.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoSummaryRows">
+          <source>The summary rows are inserted each time the reference value defined for the row changes.</source>
+          <target>The summary rows are inserted each time the reference value defined for the row changes.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoCarryOverRow">
+          <source>The carry over row is inserted before each page break (if any).</source>
+          <target>The carry over row is inserted before each page break (if any).</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoExtraRows">
+          <source>The extra rows are inserted at the end of the table.</source>
+          <target>The extra rows are inserted at the end of the table.</target>
+        </trans-unit>
+
       </group>
 
 

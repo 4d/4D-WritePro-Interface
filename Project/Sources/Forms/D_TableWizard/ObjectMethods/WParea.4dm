@@ -37,8 +37,9 @@ Case of
 					Case of 
 						: ($description="break@")  // Break row
 							
-							
-							If ($cells.columnCount=1)
+							If ($cells.columnCount=1)\
+								 && (Not:C34(Undefined:C82(Form:C1466.template.breakFormulas)))\
+								 && (Form:C1466.template.breakFormulas.length>0)
 								APPEND MENU ITEM:C411($menu; "("+Get localized string:C991("AvailableFormulas"))  // ∆∆∆
 								
 								$i:=0
@@ -51,7 +52,9 @@ Case of
 							
 						: ($description="bcor")  // bcor
 							
-							If ($cells.columnCount=1)
+							If ($cells.columnCount=1)\
+								 && (Not:C34(Undefined:C82(Form:C1466.template.bcorFormulas)))\
+								 && (Form:C1466.template.bcorFormulas.length>0)
 								APPEND MENU ITEM:C411($menu; "("+Get localized string:C991("AvailableFormulas"))  // ∆∆∆
 								
 								$i:=0
@@ -63,7 +66,10 @@ Case of
 							End if 
 							
 						: ($description="extra@")  // extra row
-							If ($cells.columnCount=1)
+							
+							If ($cells.columnCount=1)\
+								 && (Not:C34(Undefined:C82(Form:C1466.template.extraFormulas)))\
+								 && (Form:C1466.template.extraFormulas.length>0)
 								APPEND MENU ITEM:C411($menu; "("+Get localized string:C991("AvailableFormulas"))  // ∆∆∆
 								$i:=0
 								For each ($item; Form:C1466.template.extraFormulas)
