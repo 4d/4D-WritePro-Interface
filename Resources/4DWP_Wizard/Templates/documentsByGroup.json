@@ -1,0 +1,49 @@
+{
+	"tableDataSource": "ds.Sample.all().orderBy(\"group asc\")",
+	
+	"columns": [
+		{
+			"check": true,
+			"header": "ID",
+			"source": "This.item.ID"
+		},
+		{
+			"check": true,
+			"header": "Title",
+			"source": "This.item.title"
+		},
+		{
+			"check": true,
+			"header": "Group",
+			"source": "This.item.group"
+		}
+	],
+	"breaks": [
+		{
+			"label": "Title",
+			"source": "This.item.group"
+		}
+	],
+	"breakFormulas": [
+		{
+			"label": "Count",
+			"source": "This.breakItems.count()"
+		},
+		{
+			"label": "Group",
+			"source": "This.item.group"
+		}
+	],
+	"bcorFormulas": [
+		{
+			"label": "Count",
+			"source": "This.tableData.count()"
+		}
+	],
+	"extraFormulas": [
+		{
+			"label": "Count",
+			"source": "This.tableData.count()"
+		}
+	]
+}

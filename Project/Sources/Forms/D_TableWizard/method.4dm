@@ -1,5 +1,6 @@
 var $o : Object
 var $range; $table : Object
+var $tables : Collection
 
 
 Case of 
@@ -20,7 +21,7 @@ Case of
 		Form:C1466.themeList:=Form:C1466.wizard.themeDropDownList(True:C214)  // True means translate (if any)
 		Form:C1466.theme:=Form:C1466.wizard.themeGet(0)
 		
-		Form:C1466.wizard.themeNormalize(Form:C1466.theme)
+		//Form.wizard.themeNormalize(Form.theme)
 		
 		
 		// DROP DOWNS
@@ -76,11 +77,14 @@ Case of
 				WP SELECT:C1348(Form:C1466.wp; $range.end; $range.end)
 				Form:C1466.local.timerAction:=""
 				
-				$table:=WP Get elements:C1550(Form:C1466.wp; wk type table:K81:222)[0]
-				WP SET ATTRIBUTES:C1342($table; wk protected:K81:306; wk false:K81:173)  // UNprotect table
-				WP SET ATTRIBUTES:C1342(Form:C1466.wp; wk protection enabled:K81:307; wk true:K81:174)  // protect everything (except table)
+				$tables:=WP Get elements:C1550(Form:C1466.wp; wk type table:K81:222)
+				If ($tables.length>0)
+					$table:=$tables[0]
+					WP SET ATTRIBUTES:C1342($table; wk protected:K81:306; wk false:K81:173)  // UNprotect table
+					WP SET ATTRIBUTES:C1342(Form:C1466.wp; wk protection enabled:K81:307; wk true:K81:174)  // protect everything (except table)
+				End if 
 				
-			Else 
+			Else   // othder cases
 				
 				Form:C1466.tableData:=Form:C1466.tableData
 				Form:C1466.tableExtraRow:=Form:C1466.tableExtraRow
@@ -96,8 +100,11 @@ Case of
 		
 	: (Form event code:C388=On Unload:K2:2)
 		
-		$table:=WP Get elements:C1550(Form:C1466.wp; wk type table:K81:222)[0]
-		WP SET ATTRIBUTES:C1342($table; wk protected:K81:306; wk true:K81:174)  // Protect table (default value)
+		$tables:=WP Get elements:C1550(Form:C1466.wp; wk type table:K81:222)
+		If ($tables.length>0)
+			$table:=$tables[0]
+			WP SET ATTRIBUTES:C1342($table; wk protected:K81:306; wk true:K81:174)  // Protect table (default value)
+		End if 
 		WP SET ATTRIBUTES:C1342(Form:C1466.wp; wk protection enabled:K81:307; wk false:K81:173)  // disable protection on document (useless, not taken into account after insertion in main document)
 		
 		OB REMOVE:C1226(Form:C1466; "local")

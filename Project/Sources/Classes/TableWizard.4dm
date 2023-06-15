@@ -566,7 +566,7 @@ Function templateGetList()->$collection : Collection
 	
 	$folder:=Folder:C1567("/RESOURCES/4DWP_Wizard/Templates/"; *)
 	If ($folder.exists)
-		$collection:=$folder.files(fk recursive:K87:7+fk ignore invisible:K87:22)
+		$collection:=$folder.files(fk recursive:K87:7+fk ignore invisible:K87:22).orderBy("name asc")
 	Else 
 		$collection:=New collection:C1472
 	End if 
@@ -708,6 +708,8 @@ Function templateUI($action : Text)
 	OBJECT SET TITLE:C194(*; "cb_horizontalRuler"; Get action info:C1442("visibleHorizontalRuler").title)
 	
 	
+	
+	
 Function themeGetList()->$collection : Collection
 	
 	var $folder : 4D:C1709.Folder
@@ -780,13 +782,13 @@ Function themeFillMissing($fillMe : Object; $reference : Object)
 		
 		$hardCoded:=New object:C1471
 		$hardCoded.alignment:=wk default:K81:160
-		$hardCoded.backgroundColor:="white"
+		$hardCoded.backgroundColor:="transparent"  //"white"
 		$hardCoded.borderColor:="black"
 		$hardCoded.borderStyle:=1
 		$hardCoded.borderWidth:="0.5pt"
 		$hardCoded.font:="Arial"
 		$hardCoded.fontFamily:="Arial"
-		$hardCoded.fontColor:="black"
+		$hardCoded.color:="black"
 		$hardCoded.fontSize:="12pt"
 		$hardCoded.padding:="2pt"
 		
@@ -866,7 +868,7 @@ Function themeToCollection($theme : Object; $listboxName : Text)->$collection : 
 	var $type; $atribute : Text
 	var $o : Object
 	
-	$_types:=New collection:C1472("default"; "table"; "header1"; "header2"; "header3"; "header4"; "header5"; "data"; "break1"; "break2"; "break3"; "break4"; "break5"; "bcor")
+	$_types:=New collection:C1472("default"; "table"; "rows"; "cells"; "header1"; "header2"; "header3"; "header4"; "header5"; "data"; "break1"; "break2"; "break3"; "break4"; "break5"; "bcor")
 	
 	//1st call, build collection
 	
@@ -971,120 +973,165 @@ Function themeApply($area : Object; $areaName : Text)
 	
 	
 	var $o : Object
-	var $i; $p; $nbColumns; $maxRows; $row; $colStart; $breakStart; $breakEnd; $maxPadding; $paddingNum; $tableWidth : Integer
-	var $table; $cols; $targetTemplate; $cells; $target; $range; $target : Object
-	var $description; $themeTarget : Text
+	var $i; $p; $nbColumns; $row; $colStart; $breakStart; $breakEnd; $maxPadding; $paddingNum; $tableWidth : Integer
+	var $tables; $targetNames; $attributes : Collection
+	var $table; $rows; $columns; $cells; $targetTemplate; $cells; $target; $range; $target : Object
+	var $description; $targetName; $attribute : Text
 	
-	$table:=WP Get elements:C1550($area; wk type table:K81:222)[0]
-	$maxRows:=WP Table get rows:C1475($table; 1; MAXLONG:K35:2).rowCount
-	
-	$maxPadding:=0
-	
-	//  --------------------- APPLY TABLE SETTINGS FIRST ---------------------
-	
-	$target:=$table
-	$themeTarget:="table"
-	
-	WP SET ATTRIBUTES:C1342($target; wk text align:K81:49; Form:C1466.theme[$themeTarget].alignment)
-	WP SET ATTRIBUTES:C1342($target; wk background color:K81:20; Form:C1466.theme[$themeTarget].backgroundColor)
-	WP SET ATTRIBUTES:C1342($target; wk border color:K81:34; Form:C1466.theme[$themeTarget].borderColor)
-	WP SET ATTRIBUTES:C1342($target; wk border style:K81:29; Form:C1466.theme[$themeTarget].borderStyle)
-	WP SET ATTRIBUTES:C1342($target; wk border width:K81:39; Form:C1466.theme[$themeTarget].borderWidth)
-	
-	WP SET ATTRIBUTES:C1342($target; wk font:K81:69; Form:C1466.theme[$themeTarget].font)
-	WP SET ATTRIBUTES:C1342($target; wk text color:K81:64; Form:C1466.theme[$themeTarget].fontColor)
-	WP SET ATTRIBUTES:C1342($target; wk font family:K81:65; Form:C1466.theme[$themeTarget].fontFamily)
-	WP SET ATTRIBUTES:C1342($target; wk font size:K81:66; Form:C1466.theme[$themeTarget].fontSize)
-	WP SET ATTRIBUTES:C1342($target; wk padding:K81:15; Form:C1466.theme[$themeTarget].padding)
-	
-	$paddingNum:=Num:C11(Form:C1466.theme[$themeTarget].padding)
-	If ($paddingNum>$maxPadding)
-		$maxPadding:=$paddingNum
+	$tables:=WP Get elements:C1550($area; wk type table:K81:222)
+	If ($tables.length>0)
+		
+		$table:=$tables[0]
+		$rows:=WP Table get rows:C1475($table; 1; MAXLONG:K35:2)
+		$cells:=WP Table get cells:C1477($table; 1; 1; MAXLONG:K35:2; MAXLONG:K35:2)
+		
+		$maxPadding:=0
+		
+		//  --------------------- APPLY DEFAULT/TABLE/ROWS/CELLS SETTINGS FIRST ---------------------
+		
+		
+		$targetNames:=["default"; "table"; "rows"; "cells"]
+		$attributes:=[wk font:K81:69; wk font size:K81:66; wk text color:K81:64; wk text align:K81:49; wk background color:K81:20; wk border width:K81:39; wk border color:K81:34; wk border style:K81:29; wk padding:K81:15]
+		
+		For each ($targetName; $targetNames)
+			
+			If (Not:C34(Undefined:C82(Form:C1466.theme[$targetName])))
+				
+				Case of 
+					: ($targetName="default")
+						$target:=$table
+					: ($targetName="table")
+						$target:=$table
+					: ($targetName="rows")
+						$target:=$rows
+					: ($targetName="cells")
+						$target:=$cells
+				End case 
+				
+				
+				For each ($attribute; $attributes)
+					
+					If (Not:C34(Undefined:C82(Form:C1466.theme[$targetName][$attribute])))
+						WP SET ATTRIBUTES:C1342($target; $attribute; Form:C1466.theme[$targetName][$attribute])
+					End if 
+					
+				End for each 
+				
+				If (Not:C34(Undefined:C82(Form:C1466.theme[$targetName].padding)))
+					$paddingNum:=Num:C11(Form:C1466.theme[$targetName].padding)
+					If ($paddingNum>$maxPadding)
+						$maxPadding:=$paddingNum
+					End if 
+				End if 
+				
+			End if 
+		End for each 
+		
+		
+		//$themeTarget:="table"
+		
+		//WP SET ATTRIBUTES($target; wk text align; Form.theme[$themeTarget].alignment)
+		//WP SET ATTRIBUTES($target; wk background color; Form.theme[$themeTarget].backgroundColor)
+		//WP SET ATTRIBUTES($target; wk border color; Form.theme[$themeTarget].borderColor)
+		//WP SET ATTRIBUTES($target; wk border style; Form.theme[$themeTarget].borderStyle)
+		//WP SET ATTRIBUTES($target; wk border width; Form.theme[$themeTarget].borderWidth)
+		
+		//WP SET ATTRIBUTES($target; wk font; Form.theme[$themeTarget].font)
+		//WP SET ATTRIBUTES($target; wk text color; Form.theme[$themeTarget].color)
+		//WP SET ATTRIBUTES($target; wk font family; Form.theme[$themeTarget].fontFamily)
+		//WP SET ATTRIBUTES($target; wk font size; Form.theme[$themeTarget].fontSize)
+		//WP SET ATTRIBUTES($target; wk padding; Form.theme[$themeTarget].padding)
+		
+		//  --------------------- THEN APPLY THEME SETTINGS FOR EACH ROW ---------------------
+		
+		$row:=1
+		
+		For each ($description; Form:C1466.description)
+			$target:=WP Table get rows:C1475($table; $row; 1)
+			
+			Case of 
+					
+				: ($description="header@")  // header(s)
+					$targetName:=$description
+					If (Undefined:C82(Form:C1466.theme[$targetName]))  // header'X' undefined, lets find header'X-1'
+						For ($i; Num:C11($targetName)-1; 1; -1)
+							$targetName:="header"+String:C10($i)
+							If (Not:C34(Undefined:C82(Form:C1466.theme[$targetName])))
+								$i:=0  // exit loop
+							End if 
+						End for 
+					End if 
+					If (Undefined:C82(Form:C1466.theme[$targetName]))  // in the worts case, if header1 is undefined, lets take header
+						$targetName:="header"
+					End if 
+					//$headerStart+=1
+					
+				: ($description="break@")  // breaks(s)
+					$targetName:=$description
+					If (Undefined:C82(Form:C1466.theme[$targetName]))  // break'X' undefined, lets find break'X-1'
+						For ($i; Num:C11($targetName)-1; 1; -1)
+							$targetName:="break"+String:C10($i)
+							If (Not:C34(Undefined:C82(Form:C1466.theme[$targetName])))
+								$i:=0  // exit loop
+							End if 
+						End for 
+					End if 
+					If (Undefined:C82(Form:C1466.theme[$targetName]))  // in the worts case, if break1 is undefined, lets take break
+						$targetName:="break"
+					End if 
+					
+				: ($description="data")  // data
+					$targetName:="data"
+					
+				: ($description="bcor")  // bcor
+					$targetName:="bcor"
+					
+				: ($description="extra@")  // extra
+					$targetName:="default"
+					
+			End case 
+			
+			
+			For each ($attribute; $attributes)
+				If (Not:C34(Undefined:C82(Form:C1466.theme[$targetName][$attribute])))
+					WP SET ATTRIBUTES:C1342($target; $attribute; Form:C1466.theme[$targetName][$attribute])
+				End if 
+			End for each 
+			
+			//WP SET ATTRIBUTES($target; wk text align; Form.theme[$themeTarget].alignment)
+			//WP SET ATTRIBUTES($target; wk background color; Form.theme[$themeTarget].backgroundColor)
+			//WP SET ATTRIBUTES($target; wk border color; Form.theme[$themeTarget].borderColor)
+			//WP SET ATTRIBUTES($target; wk border style; Form.theme[$themeTarget].borderStyle)
+			//WP SET ATTRIBUTES($target; wk border width; Form.theme[$themeTarget].borderWidth)
+			
+			//WP SET ATTRIBUTES($target; wk font; Form.theme[$themeTarget].font)
+			//WP SET ATTRIBUTES($target; wk text color; Form.theme[$themeTarget].color)
+			//WP SET ATTRIBUTES($target; wk font family; Form.theme[$themeTarget].fontFamily)
+			//WP SET ATTRIBUTES($target; wk font size; Form.theme[$themeTarget].fontSize)
+			//WP SET ATTRIBUTES($target; wk padding; Form.theme[$themeTarget].padding)
+			
+			If (Not:C34(Undefined:C82(Form:C1466.theme[$targetName].padding)))
+				$paddingNum:=Num:C11(Form:C1466.theme[$targetName].padding)
+				If ($paddingNum>$maxPadding)
+					$maxPadding:=$paddingNum
+				End if 
+			End if 
+			
+			$row:=$row+1
+			
+		End for each 
+		
+		$columns:=WP Table get columns:C1476($table; 1; MAXLONG:K35:2)
+		$nbColumns:=Form:C1466.template.columns.query("check=true").length  // based on formdata
+		
+		
+		//***** *****
+		
+		$tableWidth:=Form:C1466.local.tableWidth
+		WP SET ATTRIBUTES:C1342($columns; wk width:K81:45; String:C10(Int:C8($tableWidth/$nbColumns)-2)+"pt")  // 20CM WIDE 508pt
+		
+		WP SELECT:C1348(*; $areaName; 1; 1)
 	End if 
-	
-	//  --------------------- THEN APPLY THEME SETTINGS FOR EACH ROW ---------------------
-	
-	$row:=1
-	
-	For each ($description; Form:C1466.description)
-		$target:=WP Table get rows:C1475($table; $row; 1)
-		
-		Case of 
-				
-			: ($description="header@")  // header(s)
-				$themeTarget:=$description
-				If (Undefined:C82(Form:C1466.theme[$themeTarget]))  // header'X' undefined, lets find header'X-1'
-					For ($i; Num:C11($themeTarget)-1; 1; -1)
-						$themeTarget:="header"+String:C10($i)
-						If (Not:C34(Undefined:C82(Form:C1466.theme[$themeTarget])))
-							$i:=0  // exit loop
-						End if 
-					End for 
-				End if 
-				If (Undefined:C82(Form:C1466.theme[$themeTarget]))  // in the worts case, if header1 is undefined, lets take header
-					$themeTarget:="header"
-				End if 
-				//$headerStart+=1
-				
-			: ($description="break@")  // breaks(s)
-				$themeTarget:=$description
-				If (Undefined:C82(Form:C1466.theme[$themeTarget]))  // header'X' undefined, lets find header'X-1'
-					For ($i; Num:C11($themeTarget)-1; 1; -1)
-						$themeTarget:="break"+String:C10($i)
-						If (Not:C34(Undefined:C82(Form:C1466.theme[$themeTarget])))
-							$i:=0  // exit loop
-						End if 
-					End for 
-				End if 
-				If (Undefined:C82(Form:C1466.theme[$themeTarget]))  // in the worts case, if break1 is undefined, lets take break
-					$themeTarget:="break"
-				End if 
-				
-			: ($description="data")  // data
-				$themeTarget:="data"
-				
-			: ($description="bcor")  // bcor
-				$themeTarget:="bcor"
-				
-			: ($description="extra@")  // extra
-				$themeTarget:="default"
-				
-		End case 
-		
-		
-		WP SET ATTRIBUTES:C1342($target; wk text align:K81:49; Form:C1466.theme[$themeTarget].alignment)
-		WP SET ATTRIBUTES:C1342($target; wk background color:K81:20; Form:C1466.theme[$themeTarget].backgroundColor)
-		WP SET ATTRIBUTES:C1342($target; wk border color:K81:34; Form:C1466.theme[$themeTarget].borderColor)
-		WP SET ATTRIBUTES:C1342($target; wk border style:K81:29; Form:C1466.theme[$themeTarget].borderStyle)
-		WP SET ATTRIBUTES:C1342($target; wk border width:K81:39; Form:C1466.theme[$themeTarget].borderWidth)
-		
-		WP SET ATTRIBUTES:C1342($target; wk font:K81:69; Form:C1466.theme[$themeTarget].font)
-		WP SET ATTRIBUTES:C1342($target; wk text color:K81:64; Form:C1466.theme[$themeTarget].fontColor)
-		WP SET ATTRIBUTES:C1342($target; wk font family:K81:65; Form:C1466.theme[$themeTarget].fontFamily)
-		WP SET ATTRIBUTES:C1342($target; wk font size:K81:66; Form:C1466.theme[$themeTarget].fontSize)
-		WP SET ATTRIBUTES:C1342($target; wk padding:K81:15; Form:C1466.theme[$themeTarget].padding)
-		
-		
-		$paddingNum:=Num:C11(Form:C1466.theme[$themeTarget].padding)
-		If ($paddingNum>$maxPadding)
-			$maxPadding:=$paddingNum
-		End if 
-		
-		$row:=$row+1
-		
-	End for each 
-	
-	$cols:=WP Table get columns:C1476($table; 1; MAXLONG:K35:2)
-	$nbColumns:=Form:C1466.template.columns.query("check=true").length  // based on formdata
-	
-	
-	//***** *****
-	
-	$tableWidth:=Form:C1466.local.tableWidth
-	WP SET ATTRIBUTES:C1342($cols; wk width:K81:45; String:C10(Int:C8($tableWidth/$nbColumns)-2)+"pt")  // 20CM WIDE 508pt
-	
-	
-	WP SELECT:C1348(*; $areaName; 1; 1)
 	
 Function themeGet($index : Integer)->$theme : Object
 	
@@ -1190,9 +1237,9 @@ Function themeEdit($theme : Object)
 	End if 
 	
 	
-	If (Not:C34(Undefined:C82($theme.fontColor)))
-		Form:C1466.fontColor:=$theme.fontColor
-		Form:C1466.font_color:=cs:C1710.color.new($theme.fontColor)  //***
+	If (Not:C34(Undefined:C82($theme.color)))
+		Form:C1466.color:=$theme.color
+		Form:C1466.font_color:=cs:C1710.color.new($theme.color)  //***
 	Else 
 		
 	End if 
@@ -1320,7 +1367,7 @@ Function themeUI()
 	
 	
 	// color buttons
-	If (Not:C34(Undefined:C82(Form:C1466.currentRow.fontColor)))  // NOT the default value
+	If (Not:C34(Undefined:C82(Form:C1466.currentRow.color))) && (Form:C1466.currentRow.color#"transparent")  // NOT the default value
 		OBJECT SET RGB COLORS:C628(*; "btn_fontColor"; 0; Form:C1466.font_color.css.hexLong)
 		OBJECT SET VISIBLE:C603(*; "btn_defaultFontColor"; True:C214)
 		OBJECT SET FONT STYLE:C166(*; "lbl_fontColor"; Bold:K14:2)
@@ -1332,7 +1379,7 @@ Function themeUI()
 		OBJECT SET TITLE:C194(*; "btn_fontColor"; $inherit)
 	End if 
 	
-	If (Not:C34(Undefined:C82(Form:C1466.currentRow.backgroundColor)))  // NOT the default value
+	If (Not:C34(Undefined:C82(Form:C1466.currentRow.backgroundColor))) && (Form:C1466.currentRow.backgroundColor#"transparent")  // NOT the default value
 		OBJECT SET RGB COLORS:C628(*; "btn_backgroundColor"; 0; Form:C1466.background_color.css.hexLong)
 		OBJECT SET VISIBLE:C603(*; "btn_defaultBackground"; True:C214)
 		OBJECT SET FONT STYLE:C166(*; "lbl_background"; Bold:K14:2)
@@ -1344,7 +1391,7 @@ Function themeUI()
 		OBJECT SET TITLE:C194(*; "btn_backgroundColor"; $inherit)
 	End if 
 	
-	If (Not:C34(Undefined:C82(Form:C1466.currentRow.borderColor)))  // NOT the default value
+	If (Not:C34(Undefined:C82(Form:C1466.currentRow.borderColor))) && (Form:C1466.currentRow.borderColor#"transparent")  // NOT the default value
 		OBJECT SET RGB COLORS:C628(*; "btn_borderColor"; 0; Form:C1466.border_color.css.hexLong)
 		OBJECT SET VISIBLE:C603(*; "btn_defaultBorderColor"; True:C214)
 		OBJECT SET FONT STYLE:C166(*; "lbl_borderColor"; Bold:K14:2)
@@ -1474,155 +1521,165 @@ Function WP_BuildTable()->$area : Object
 	
 	
 	$area:=WP New:C1317
-	WP SET TEXT:C1574($area; "\r"; wk append:K81:179)  // otherwise the ƒ is not visible above the table
-	
-	// transparency and margins for INTERFACE
-	WP SET ATTRIBUTES:C1342($area; wk background color:K81:20; wk transparent:K81:134)
-	WP SET ATTRIBUTES:C1342($area; wk margin left:K81:11; "0cm"; wk margin right:K81:12; "0cm"; wk margin top:K81:13; "1cm")
-	// visible references by default
-	$o:=New object:C1471
-	$o[wk visible references:K81:286]:=True:C214
-	WP SET VIEW PROPERTIES:C1648(*; "WParea"; $o)
 	
 	$nbColumns:=Form:C1466.template.columns.query("check=true").length
-	Form:C1466.columnIDs:=Form:C1466.template.columns.query("check=true").extract("id")  // used to memorize position of contend added by contextual menu.
-	
-	
-	// BUILD DESCRIPTION COLLECTION 
-	Form:C1466.description:=New collection:C1472
-	For ($i; 1; Form:C1466.tableHeaders.index)
-		Form:C1466.description.push("header"+String:C10($i))  // Header(s)"
-	End for 
-	
-	For ($i; 1; Form:C1466.tableBreakAbove.index)
-		Form:C1466.description.push("break"+String:C10($i))  // break(s) above  // S1 S2 S3
-	End for 
-	
-	Form:C1466.description.push("data")  // data row
-	
-	For ($i; 1; Form:C1466.tableBreakBelow.index)
-		$id:=Form:C1466.tableBreakAbove.index+Form:C1466.tableBreakBelow.index+1-$i  //s6 s5 s4
-		Form:C1466.description.push("break"+String:C10($id))  // break(s) below
-	End for 
-	
-	If (Form:C1466.tableBCOR.index>0)
-		Form:C1466.description.push("bcor")  // bottom carry over
-	End if 
-	For ($i; 1; Form:C1466.tableExtraRow)
-		Form:C1466.description.push("extra"+String:C10($i))  // extra rows
-	End for 
-	$nbRows:=Form:C1466.description.length
-	// END BUILD DESCRIPTION COLLECTION 
-	
-	
-	$table:=WP Insert table:C1473($area; wk append:K81:179)
-	//WP SET TEXT($area; "\r"; wk append)
-	WP SET ATTRIBUTES:C1342($table; wk table align:K81:200; wk center:K81:99)
-	// INSERT COLUMNS
-	
-	$rows:=WP Table insert rows:C1691($table; 1; $nbRows)
-	If ($nbColumns>1)  // insert rows (above) has inserted 1 column.
-		$cols:=WP Table insert columns:C1692($table; 1; $nbColumns-1)
-	End if 
-	
-	$cols:=WP Table get columns:C1476($table; 1; MAXLONG:K35:2)
-	$tableWidth:=Form:C1466.local.tableWidth
-	WP SET ATTRIBUTES:C1342($cols; wk width:K81:45; String:C10(Int:C8($tableWidth/$nbColumns)-2)+"pt")  // 20CM WIDE 508pt
-	
-	
-	//  table attributes
-	If (Form:C1466.template.tableDataSource#Null:C1517)
-		WP SET ATTRIBUTES:C1342($table; wk datasource:K81:367; Formula from string:C1601(Form:C1466.template.tableDataSource))  //.call())
-	Else 
-		WP SET ATTRIBUTES:C1342($table; wk datasource:K81:367; Formula from string:C1601("TEST"))
-	End if 
-	
-	WP SET ATTRIBUTES:C1342($table; wk header row count:K81:364; Form:C1466.tableHeaders.index)  // number of row HEADERS are already known
-	WP SET ATTRIBUTES:C1342($table; wk bottom carry over row:K81:371; Form:C1466.tableBCOR.index)  // 1 = wk true, 0 = wk false
-	
-	
-	If (True:C214)
+	If ($nbColumns>0)
 		
-		$nbColumns:=Form:C1466.template.columns.length  // will test .check in the loop
+		WP SET TEXT:C1574($area; "\r"; wk append:K81:179)  // otherwise the ƒ is not visible above the table
 		
-		$breakBefore:=True:C214
-		$labelHeader:=True:C214
+		// transparency and margins for INTERFACE
+		WP SET ATTRIBUTES:C1342($area; wk background color:K81:20; wk transparent:K81:134)
+		WP SET ATTRIBUTES:C1342($area; wk margin left:K81:11; "0cm"; wk margin right:K81:12; "0cm"; wk margin top:K81:13; "1cm")
+		// visible references by default
+		$o:=New object:C1471
+		$o[wk visible references:K81:286]:=True:C214
+		WP SET VIEW PROPERTIES:C1648(*; "WParea"; $o)
 		
-		$colStart:=1
-		For ($i; 0; $nbColumns-1)  // columns of the template, not of the 4DWP table
-			If (Form:C1466.template.columns[$i].check)  // CHECKED or not ???
-				
-				
-				$rowStart:=1
-				For each ($description; Form:C1466.description)
-					$row:=WP Table get rows:C1475($table; $rowStart; 1)
-					//WP SET ATTRIBUTES($row; "id"; Form.description)
-					
-					$cells:=WP Table get cells:C1477($table; $colStart; $rowStart; 1; 1)
-					$range:=WP Text range:C1341($cells; wk start text:K81:165; wk end text:K81:164)
-					$previousContent:=This:C1470.WP_GetPreviousContent($description; Form:C1466.columnIDs[$colStart-1])
-					
-					Case of 
-							
-						: ($description="header@")
-							
-							If ($previousContent#Null:C1517)
-								WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
-							Else 
-								If ($description="header1")  // 1st header row has default value (title)
-									$insertedText:=Form:C1466.wizard.translate("attribute"; Form:C1466.template.columns[$i].header; True:C214)
-									WP SET TEXT:C1574($range; $insertedText; wk replace:K81:177)
-								End if 
-							End if 
-							
-						: ($description="data")  //  Data
-							
-							If ($previousContent#Null:C1517)
-								WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
-							Else 
-								WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.columns[$i].source); wk replace:K81:177)
-							End if 
-							
-						: ($description="break@")  // break
-							
-							$id:=Num:C11($description)-1
-							WP SET ATTRIBUTES:C1342($row; "breakFormula"; Formula from string:C1601(Form:C1466.template.breaks[$id].source))  //wk break formula
-							
-							If ($previousContent#Null:C1517)
-								WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
-							End if 
-							
-							
-						: ($description="bcor")  // bottom carry over row
-							If ($previousContent#Null:C1517)
-								WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
-							End if 
-							
-						: ($description="extra@")  // extra rows
-							If ($previousContent#Null:C1517)
-								WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
-							End if 
-							
-							
-					End case 
-					$rowStart:=$rowStart+1
-				End for each 
-				
-				$colStart:=$colStart+1
-			Else   // NOT CHECKED
-				
-			End if 
+		
+		Form:C1466.columnIDs:=Form:C1466.template.columns.query("check=true").extract("id")  // used to memorize position of contend added by contextual menu.
+		
+		
+		// BUILD DESCRIPTION COLLECTION 
+		Form:C1466.description:=New collection:C1472
+		For ($i; 1; Form:C1466.tableHeaders.index)
+			Form:C1466.description.push("header"+String:C10($i))  // Header(s)"
 		End for 
 		
+		For ($i; 1; Form:C1466.tableBreakAbove.index)
+			Form:C1466.description.push("break"+String:C10($i))  // break(s) above  // S1 S2 S3
+		End for 
+		
+		Form:C1466.description.push("data")  // data row
+		
+		For ($i; 1; Form:C1466.tableBreakBelow.index)
+			$id:=Form:C1466.tableBreakAbove.index+Form:C1466.tableBreakBelow.index+1-$i  //s6 s5 s4
+			Form:C1466.description.push("break"+String:C10($id))  // break(s) below
+		End for 
+		
+		If (Form:C1466.tableBCOR.index>0)
+			Form:C1466.description.push("bcor")  // bottom carry over
+		End if 
+		For ($i; 1; Form:C1466.tableExtraRow)
+			Form:C1466.description.push("extra"+String:C10($i))  // extra rows
+		End for 
+		$nbRows:=Form:C1466.description.length
+		// END BUILD DESCRIPTION COLLECTION 
+		
+		
+		$table:=WP Insert table:C1473($area; wk append:K81:179)
+		//WP SET TEXT($area; "\r"; wk append)
+		WP SET ATTRIBUTES:C1342($table; wk table align:K81:200; wk center:K81:99)
+		// INSERT COLUMNS
+		
+		$rows:=WP Table insert rows:C1691($table; 1; $nbRows)
+		If ($nbColumns>1)  // insert rows (above) has inserted 1 column.
+			$cols:=WP Table insert columns:C1692($table; 1; $nbColumns-1)
+		End if 
+		
+		$cols:=WP Table get columns:C1476($table; 1; MAXLONG:K35:2)
+		$tableWidth:=Form:C1466.local.tableWidth
+		WP SET ATTRIBUTES:C1342($cols; wk width:K81:45; String:C10(Int:C8($tableWidth/$nbColumns)-2)+"pt")  // 20CM WIDE 508pt
+		
+		
+		//  table attributes
+		If (Form:C1466.template.tableDataSource#Null:C1517)
+			WP SET ATTRIBUTES:C1342($table; wk datasource:K81:367; Formula from string:C1601(Form:C1466.template.tableDataSource))  //.call())
+		Else 
+			WP SET ATTRIBUTES:C1342($table; wk datasource:K81:367; Formula from string:C1601("TEST"))
+		End if 
+		
+		WP SET ATTRIBUTES:C1342($table; wk header row count:K81:364; Form:C1466.tableHeaders.index)  // number of row HEADERS are already known
+		WP SET ATTRIBUTES:C1342($table; wk bottom carry over row:K81:371; Form:C1466.tableBCOR.index)  // 1 = wk true, 0 = wk false
+		
+		
+		If (True:C214)
+			
+			$nbColumns:=Form:C1466.template.columns.length  // will test .check in the loop
+			
+			$breakBefore:=True:C214
+			$labelHeader:=True:C214
+			
+			$colStart:=1
+			For ($i; 0; $nbColumns-1)  // columns of the template, not of the 4DWP table
+				If (Form:C1466.template.columns[$i].check)  // CHECKED or not ???
+					
+					
+					$rowStart:=1
+					For each ($description; Form:C1466.description)
+						$row:=WP Table get rows:C1475($table; $rowStart; 1)
+						//WP SET ATTRIBUTES($row; "id"; Form.description)
+						
+						$cells:=WP Table get cells:C1477($table; $colStart; $rowStart; 1; 1)
+						$range:=WP Text range:C1341($cells; wk start text:K81:165; wk end text:K81:164)
+						$previousContent:=This:C1470.WP_GetPreviousContent($description; Form:C1466.columnIDs[$colStart-1])
+						
+						Case of 
+								
+							: ($description="header@")
+								
+								If ($previousContent#Null:C1517)
+									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+								Else 
+									If ($description="header1")  // 1st header row has default value (title)
+										$insertedText:=Form:C1466.wizard.translate("attribute"; Form:C1466.template.columns[$i].header; True:C214)
+										WP SET TEXT:C1574($range; $insertedText; wk replace:K81:177)
+									End if 
+								End if 
+								
+							: ($description="data")  //  Data
+								
+								If ($previousContent#Null:C1517)
+									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+								Else 
+									WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.columns[$i].source); wk replace:K81:177)
+								End if 
+								
+							: ($description="break@")  // break
+								
+								$id:=Num:C11($description)-1
+								WP SET ATTRIBUTES:C1342($row; "breakFormula"; Formula from string:C1601(Form:C1466.template.breaks[$id].source))  //wk break formula
+								
+								If ($previousContent#Null:C1517)
+									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+								End if 
+								
+								
+							: ($description="bcor")  // bottom carry over row
+								If ($previousContent#Null:C1517)
+									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+								End if 
+								
+							: ($description="extra@")  // extra rows
+								If ($previousContent#Null:C1517)
+									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+								End if 
+								
+								
+						End case 
+						$rowStart:=$rowStart+1
+					End for each 
+					
+					$colStart:=$colStart+1
+				Else   // NOT CHECKED
+					
+				End if 
+			End for 
+			
+		End if 
+		
 	End if 
+	
+	
 	
 Function WP_BuildThemeSample($template : Collection; $areaName : Text)->$document : Object
 	
 	
 	var $o : Object
+	var $attribute : Text
 	var $i; $nbColumns; $nbRows; $rowStart; $colStart; $breakStart; $breakEnd : Integer
-	var $table; $rows; $cols; $rowTemplate; $cells; $row; $range; $style; $default; $target : Object
+	var $table; $rows; $cols; $cells; $rowTemplate; $cells; $row; $range; $style; $tempStyle; $default; $target : Object
 	var $breakBefore : Boolean
+	var $attributes : Collection
 	
 	$document:=WP New:C1317
 	
@@ -1635,53 +1692,75 @@ Function WP_BuildThemeSample($template : Collection; $areaName : Text)->$documen
 	$o[wk visible references:K81:286]:=True:C214
 	WP SET VIEW PROPERTIES:C1648(*; $areaName; $o)
 	
-	
 	$nbColumns:=1
 	$nbRows:=$template.query("check = true").length-1  //
 	
 	//WP SET TEXT(Form.wp; "\r"; wk append)  // otherwise the ƒ is not visible
 	
-	$table:=WP Insert table:C1473($document; wk append:K81:179)
+	// Insert a table with 14 rows and two columns
+	$table:=WP Insert table:C1473($document; wk append:K81:179; wk exclude from range:K81:181; 2; 14)
 	WP SET ATTRIBUTES:C1342($table; wk table align:K81:200; wk middle:K81:101)
-	// INSERT 14 ROWS (and one column)
-	$rows:=WP Table insert rows:C1691($table; 1; 14)  //$nbRows)
-	$cols:=WP Table get columns:C1476($table; 1; MAXLONG:K35:2)
 	
-	WP SET ATTRIBUTES:C1342($cols; wk width:K81:45; "12cm")  // 8cm WIDE
+	$cols:=WP Table get columns:C1476($table; 1; MAXLONG:K35:2)
+	$rows:=WP Table get rows:C1475($table; 1; MAXLONG:K35:2)
+	$cells:=WP Table get cells:C1477($table; 1; 1; MAXLONG:K35:2; MAXLONG:K35:2)
+	
+	WP SET ATTRIBUTES:C1342($cols; wk width:K81:45; "6cm")  // 8cm WIDE
 	
 	$rowStart:=0
-	
 	For each ($style; $template)
 		
-		If ($style.type="default")
-			$default:=OB Copy:C1225($style)
+		If ($style.type="default") || ($style.type="table") || ($style.type="rows") || ($style.type="cells")
 			
-			Form:C1466.wizard.themeFillMissing($default)
+			Case of 
+				: ($style.type="default") && ($style.check)  //checked = true always
+					$tempStyle:=OB Copy:C1225($style)
+					This:C1470.themeFillMissing($tempStyle)  // filled by default values when missing
+					
+					//$tempDefault:=OB Copy($tempStyle)  // used in the three cases below
+					
+					$target:=$table
+					
+				: ($style.type="table") && ($style.check)
+					//$tempStyle:=$style  // same style, not a copy
+					$tempStyle:=OB Copy:C1225($style)
+					This:C1470.themeFillMissing($tempStyle)  //; $tempDefault)
+					$target:=$table
+					
+				: ($style.type="rows") && ($style.check)
+					//$tempStyle:=$style  // same style, not a copy
+					$tempStyle:=OB Copy:C1225($style)
+					This:C1470.themeFillMissing($tempStyle)  //; $tempDefault)
+					$target:=$rows
+					
+				: ($style.type="cells") && ($style.check)
+					//$tempStyle:=$style  // same style, not a copy
+					$tempStyle:=OB Copy:C1225($style)
+					This:C1470.themeFillMissing($tempStyle)  //; $tempDefault)
+					$target:=$cells
+					
+			End case 
 			
-			WP SET ATTRIBUTES:C1342($table; wk font:K81:69; $default.font)
-			WP SET ATTRIBUTES:C1342($table; wk font size:K81:66; $default.fontSize)
-			WP SET ATTRIBUTES:C1342($table; wk text color:K81:64; $default.fontColor)
-			WP SET ATTRIBUTES:C1342($table; wk text align:K81:49; $default.alignment)
-			WP SET ATTRIBUTES:C1342($table; wk background color:K81:20; $default.backgroundColor)
-			
-			WP SET ATTRIBUTES:C1342($table; wk border width:K81:39; $default.borderWidth)
-			WP SET ATTRIBUTES:C1342($table; wk border color:K81:34; $default.borderColor)
-			WP SET ATTRIBUTES:C1342($table; wk border style:K81:29; $default.borderStyle)
-			WP SET ATTRIBUTES:C1342($table; wk padding:K81:15; $default.padding)
+			If ($style.check)
+				$attributes:=[wk font:K81:69; wk font size:K81:66; wk text color:K81:64; wk text align:K81:49; wk background color:K81:20; wk border width:K81:39; wk border color:K81:34; wk border style:K81:29; wk padding:K81:15]
+				
+				For each ($attribute; $attributes)
+					If (Not:C34(Undefined:C82($tempStyle[$attribute])))
+						WP SET ATTRIBUTES:C1342($target; $attribute; $tempStyle[$attribute])
+					End if 
+				End for each 
+				
+			End if 
 			
 		Else 
 			
 			If ($style.check)
 				
-				
-				If ($style.type="table")
-					$target:=$table
-				Else 
-					If ($rowStart=0)
-						$rowStart:=1
-					End if 
-					$target:=WP Table get rows:C1475($table; $rowStart; 1)
+				If ($rowStart=0)
+					$rowStart:=1
 				End if 
+				$target:=WP Table get rows:C1475($table; $rowStart; 1)
+				
 				
 				If (Not:C34(Undefined:C82($style.font)))
 					WP SET ATTRIBUTES:C1342($target; wk font:K81:69; $style.font)
@@ -1691,8 +1770,8 @@ Function WP_BuildThemeSample($template : Collection; $areaName : Text)->$documen
 					WP SET ATTRIBUTES:C1342($target; wk font size:K81:66; $style.fontSize)
 				End if 
 				
-				If (Not:C34(Undefined:C82($style.fontColor)))
-					WP SET ATTRIBUTES:C1342($target; wk text color:K81:64; $style.fontColor)
+				If (Not:C34(Undefined:C82($style.color)))
+					WP SET ATTRIBUTES:C1342($target; wk text color:K81:64; $style.color)
 				End if 
 				
 				If (Not:C34(Undefined:C82($style.alignment)))
@@ -1719,7 +1798,7 @@ Function WP_BuildThemeSample($template : Collection; $areaName : Text)->$documen
 					WP SET ATTRIBUTES:C1342($target; wk padding:K81:15; $style.padding)
 				End if 
 				
-				If ($style.type#"table")
+				If ($style.type#"table") && ($style.type#"rows") && ($style.type#"cells")
 					WP SET TEXT:C1574($target; $style.type; wk replace:K81:177)
 				End if 
 				

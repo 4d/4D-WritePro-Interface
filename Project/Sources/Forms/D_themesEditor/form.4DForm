@@ -21,19 +21,28 @@
 		},
 		{
 			"objects": {
+				"Static Picture1": {
+					"type": "picture",
+					"top": 90,
+					"left": 640,
+					"width": 520,
+					"height": 430,
+					"picture": "Images/Static Picture1.png",
+					"pictureFormat": "scaled"
+				},
 				"Zone de groupe3": {
 					"type": "groupBox",
 					"text": "Rows",
 					"top": 60,
 					"left": 20,
 					"width": 190,
-					"height": 460,
+					"height": 480,
 					"sizingX": "fixed",
 					"sizingY": "fixed"
 				},
 				"Line8": {
 					"type": "line",
-					"top": 373,
+					"top": 383,
 					"left": 251,
 					"width": 404,
 					"height": 0,
@@ -42,7 +51,7 @@
 				},
 				"Line9": {
 					"type": "line",
-					"top": 405,
+					"top": 415,
 					"left": 251,
 					"width": 404,
 					"height": 0,
@@ -51,7 +60,7 @@
 				},
 				"Line10": {
 					"type": "line",
-					"top": 437,
+					"top": 447,
 					"left": 251,
 					"width": 404,
 					"height": 0,
@@ -60,7 +69,7 @@
 				},
 				"Line11": {
 					"type": "line",
-					"top": 469,
+					"top": 479,
 					"left": 251,
 					"width": 404,
 					"height": 0,
@@ -127,7 +136,7 @@
 					"top": 60,
 					"left": 230,
 					"width": 390,
-					"height": 260,
+					"height": 270,
 					"sizingX": "fixed",
 					"sizingY": "fixed"
 				},
@@ -137,7 +146,7 @@
 					"top": 60,
 					"left": 640,
 					"width": 520,
-					"height": 460,
+					"height": 480,
 					"sizingX": "fixed",
 					"sizingY": "fixed"
 				},
@@ -146,7 +155,7 @@
 					"top": 90,
 					"left": 640,
 					"width": 520,
-					"height": 410,
+					"height": 430,
 					"sizingX": "fixed",
 					"sizingY": "fixed",
 					"dataSource": "Form:C1466.wp",
@@ -262,7 +271,7 @@
 							"footer": {
 								"name": "Footer1"
 							},
-							"dataSource": "This:C1470.fontColor",
+							"dataSource": "This:C1470.color",
 							"verticalAlign": "middle",
 							"fontSize": 11,
 							"textAlign": "center",
@@ -419,7 +428,7 @@
 				},
 				"btn_saveAs": {
 					"type": "button",
-					"top": 540,
+					"top": 560,
 					"left": 442,
 					"width": 90,
 					"height": 20,
@@ -437,7 +446,7 @@
 				},
 				"btn_save": {
 					"type": "button",
-					"top": 540,
+					"top": 560,
 					"left": 542,
 					"width": 80,
 					"height": 20,
@@ -547,16 +556,16 @@
 				"Group Box1": {
 					"type": "groupBox",
 					"text": "Borders",
-					"top": 330,
+					"top": 340,
 					"left": 230,
 					"width": 390,
-					"height": 190,
+					"height": 200,
 					"sizingX": "fixed",
 					"sizingY": "fixed"
 				},
 				"dropdownBorderStyle": {
 					"type": "dropdown",
-					"top": 363,
+					"top": 373,
 					"left": 340,
 					"width": 140,
 					"height": 20,
@@ -575,7 +584,7 @@
 				"lbl_borderStyle": {
 					"type": "text",
 					"text": "Style:",
-					"top": 365,
+					"top": 375,
 					"left": 238,
 					"width": 95,
 					"height": 16,
@@ -586,7 +595,7 @@
 				"lbl_borderWidth": {
 					"type": "text",
 					"text": "Width:",
-					"top": 397,
+					"top": 407,
 					"left": 238,
 					"width": 95,
 					"height": 16,
@@ -597,7 +606,7 @@
 				"lbl_borderColor": {
 					"type": "text",
 					"text": "Color:",
-					"top": 429,
+					"top": 439,
 					"left": 238,
 					"width": 95,
 					"height": 16,
@@ -608,7 +617,7 @@
 				"lbl_padding": {
 					"type": "text",
 					"text": "Padding:",
-					"top": 461,
+					"top": 471,
 					"left": 238,
 					"width": 95,
 					"height": 16,
@@ -654,7 +663,7 @@
 				"btn_borderColor": {
 					"type": "button",
 					"text": "",
-					"top": 428,
+					"top": 438,
 					"left": 340,
 					"width": 60,
 					"height": 18,
@@ -671,7 +680,7 @@
 				"InputBorderWidth": {
 					"type": "input",
 					"left": 340,
-					"top": 397,
+					"top": 407,
 					"width": 30,
 					"height": 17,
 					"dataSource": "Form:C1466.borderWidth",
@@ -688,7 +697,7 @@
 				"InputPadding": {
 					"type": "input",
 					"left": 340,
-					"top": 461,
+					"top": 471,
 					"width": 30,
 					"height": 17,
 					"dataSource": "Form:C1466.padding",
@@ -705,7 +714,7 @@
 				"Text10": {
 					"type": "text",
 					"text": "(pt)",
-					"top": 397,
+					"top": 407,
 					"left": 374,
 					"width": 27,
 					"height": 16,
@@ -714,7 +723,7 @@
 				},
 				"unit": {
 					"type": "dropdown",
-					"top": 458,
+					"top": 468,
 					"left": 403,
 					"width": 77,
 					"height": 23,
@@ -790,9 +799,9 @@
 				"LB_collection": {
 					"type": "listbox",
 					"left": 40,
-					"top": 100,
+					"top": 80,
 					"width": 210,
-					"height": 414,
+					"height": 454,
 					"events": [
 						"onDrop",
 						"onDataChange",
@@ -936,7 +945,7 @@
 				"Btn_Copy": {
 					"type": "button",
 					"text": "Copy",
-					"top": 291,
+					"top": 301,
 					"left": 523,
 					"width": 41,
 					"height": 17,
@@ -949,7 +958,7 @@
 				"c": {
 					"type": "button",
 					"text": "Paste",
-					"top": 291,
+					"top": 301,
 					"left": 569,
 					"width": 41,
 					"height": 17,
@@ -1040,7 +1049,7 @@
 				"btn_defaultBorderStyle": {
 					"type": "button",
 					"text": "⇩",
-					"top": 364,
+					"top": 374,
 					"left": 560,
 					"width": 30,
 					"height": 18,
@@ -1053,7 +1062,7 @@
 				"btn_defaultBorderWidth": {
 					"type": "button",
 					"text": "⇩",
-					"top": 396,
+					"top": 406,
 					"left": 560,
 					"width": 30,
 					"height": 18,
@@ -1066,7 +1075,7 @@
 				"btn_defaultBorderColor": {
 					"type": "button",
 					"text": "⇩",
-					"top": 428,
+					"top": 438,
 					"left": 560,
 					"width": 30,
 					"height": 18,
@@ -1079,7 +1088,7 @@
 				"btn_defaultPadding": {
 					"type": "button",
 					"text": "⇩",
-					"top": 460,
+					"top": 470,
 					"left": 560,
 					"width": 30,
 					"height": 18,
@@ -1091,7 +1100,7 @@
 				},
 				"Button4": {
 					"type": "button",
-					"top": 540,
+					"top": 560,
 					"left": 1080,
 					"width": 80,
 					"height": 20,
@@ -1110,7 +1119,7 @@
 				"Btn_Copy1": {
 					"type": "button",
 					"text": "Copy",
-					"top": 491,
+					"top": 511,
 					"left": 523,
 					"width": 41,
 					"height": 17,
@@ -1123,7 +1132,7 @@
 				"c1": {
 					"type": "button",
 					"text": "Paste",
-					"top": 491,
+					"top": 511,
 					"left": 569,
 					"width": 41,
 					"height": 17,
@@ -1135,7 +1144,7 @@
 				},
 				"btn_newTheme": {
 					"type": "button",
-					"top": 540,
+					"top": 560,
 					"left": 232,
 					"width": 90,
 					"height": 20,
@@ -1154,7 +1163,7 @@
 			}
 		}
 	],
-	"geometryStamp": 4119,
+	"geometryStamp": 4146,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

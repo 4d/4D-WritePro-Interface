@@ -22,6 +22,17 @@
 		},
 		{
 			"objects": {
+				"BackgroundB_1": {
+					"type": "rectangle",
+					"top": 80,
+					"left": 510,
+					"width": 610,
+					"height": 540,
+					"fill": "#FFFFFF",
+					"stroke": "transparent",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
 				"TipButton3": {
 					"type": "button",
 					"text": " ",
@@ -39,17 +50,6 @@
 					"tooltip": ":xliff:InfoDataRow",
 					"style": "toolbar",
 					"method": "ObjectMethods/TipButton3.4dm"
-				},
-				"BackgroundB_1": {
-					"type": "rectangle",
-					"top": 80,
-					"left": 510,
-					"width": 610,
-					"height": 540,
-					"fill": "#FFFFFF",
-					"stroke": "transparent",
-					"sizingX": "grow",
-					"sizingY": "grow"
 				},
 				"WParea": {
 					"type": "write",
@@ -79,7 +79,8 @@
 					"showVerticalRuler": false,
 					"showBackground": true,
 					"showPageFrames": true,
-					"showReferences": true
+					"showReferences": true,
+					"dropping": "none"
 				},
 				"TipButton1": {
 					"type": "button",
@@ -927,7 +928,8 @@
 					"left": 539,
 					"width": 300,
 					"height": 39,
-					"fontTheme": "additional"
+					"fontTheme": "additional",
+					"sizingY": "move"
 				},
 				"Image statique2": {
 					"type": "picture",
@@ -936,7 +938,8 @@
 					"width": 24,
 					"height": 24,
 					"picture": "/RESOURCES/Images/TBcommon/Home/Information_24.png",
-					"pictureFormat": "truncatedTopLeft"
+					"pictureFormat": "truncatedTopLeft",
+					"sizingY": "move"
 				},
 				"Image statique3": {
 					"type": "picture",
@@ -950,7 +953,7 @@
 			}
 		}
 	],
-	"geometryStamp": 5601,
+	"geometryStamp": 5636,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

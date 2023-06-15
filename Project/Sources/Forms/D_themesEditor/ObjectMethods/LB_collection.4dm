@@ -11,7 +11,9 @@ Case of
 			LISTBOX SELECT ROW:C912(*; "LB_collection"; 1; lk replace selection:K53:1)
 		End if 
 		
+		SET TIMER:C645(-1)
 		
+	: (Form event code:C388=On Data Change:K2:15)  // check-uncheck
 		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Begin Drag Over:K2:44)

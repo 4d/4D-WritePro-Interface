@@ -1,0 +1,40 @@
+{
+	"tableDataSource": "ds.Sample.all().orderBy(\"ID asc\")",
+	
+	"columns": [
+		{
+			"check": true,
+			"header": "ID",
+			"source": "This.item.ID"
+		},
+		{
+			"check": true,
+			"header": "Title",
+			"source": "This.item.title"
+		}
+	],
+	"breaks": [
+		{
+			"label": "Title",
+			"source": "This.item.title"
+		}
+	],
+	"breakFormulas": [
+		{
+			"label": "Count",
+			"source": "This.breakItems.count(); \"###,##0\")"
+		}
+	],
+	"bcorFormulas": [
+		{
+			"label": "Count",
+			"source": "This.tableData.count(); \"###,##0\")"
+		}
+	],
+	"extraFormulas": [
+		{
+			"label": "Count",
+			"source": "This.tableData.count(); \"###,##0\")"
+		}
+	]
+}
