@@ -44,7 +44,9 @@ Case of
 		Form:C1466.tableBCOR.values:=New collection:C1472("No"; "Yes")
 		Form:C1466.tableBCOR.index:=0
 		
-		Form:C1466.tableExtraRow:=1
+		Form:C1466.tableExtraRows:=New object:C1471
+		Form:C1466.tableExtraRows.values:=New collection:C1472(0; 1; 2; 3; 4; 5)
+		Form:C1466.tableExtraRows.index:=0
 		
 		// DISPLAY MODE (Formulas / Data)
 		Form:C1466.displayFormulas:=1
@@ -68,8 +70,10 @@ Case of
 			: (Form:C1466.local.timerAction="BuildAll")
 				Form:C1466.wizard.WP_BuildAll(True:C214)
 				
-				Form:C1466.local.timerAction:="SelectEnd"
-				SET TIMER:C645(-1)
+				Form:C1466.local.timerAction:=""
+				
+				//Form.local.timerAction:="SelectEnd"
+				//SET TIMER(-1)
 				
 			: (Form:C1466.local.timerAction="SelectEnd")
 				
@@ -90,8 +94,10 @@ Case of
 				Form:C1466.tableExtraRow:=Form:C1466.tableExtraRow
 				Form:C1466.wizard.WP_BuildAll()
 				
-				Form:C1466.local.timerAction:="SelectEnd"
-				SET TIMER:C645(-1)
+				Form:C1466.local.timerAction:=""
+				
+				//Form.local.timerAction:="SelectEnd"
+				//SET TIMER(-1)
 				
 		End case 
 		

@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "template",
+    "description": "template schema for 4D Write Pro table wizard",
+    "definitions": {
+        "formula": {
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "label",
+                "source"
+            ]
+        }
+    },
+    "type": "object",
+      "properties": {
+        "tableDataSource": {
+          "description": "Formula of table data source",
+          "type": "string"
+        },
+        "columns": {
+          "description": "Collection of table columns",
+          "type": "array",
+          "items": {
+              "type": "object",
+                "properties": {
+                    "check": {
+                        "type": "boolean"
+                    },
+                    "header": {
+                        "type": "string"
+                    },
+                    "source": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                  "check",
+                  "header",
+                  "source"
+                ]
+          }
+        },
+        "breaks": {
+          "description": "Collection of break objects",
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/formula"
+          }
+        },
+        "breakFormulas": {
+          "description": "Collection of formula objects applicable to break rows",
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/formula"
+          }
+        },
+        "bcorFormulas": {
+          "description": "Collection of formula objects applicable to bottom carry-over rows",
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/formula"
+          }
+        },
+        "extraFormulas": {
+          "description": "Collection of formula objects applicable to extra rows ",
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/formula"
+          }
+        }
+    },
+      "required": [ "tableDataSource", "columns" ]
+}

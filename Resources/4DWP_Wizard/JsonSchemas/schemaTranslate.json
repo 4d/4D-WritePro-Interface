@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "translation",
+    "description": "translation schema for 4D Write Pro table wizard",
+    "definitions": {
+        "translated": {
+            "type": "object",
+            "properties": {
+                "original": {
+                    "type": "string"
+                },
+                "translation": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "original",
+                "translation"
+            ]
+        }
+    },
+    "type": "object",
+      "properties": {
+        "tables": {
+          "description": "Collection of translated table objects",
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/translated"
+          }
+        },
+        "fields": {
+          "description": "Collection of translated field objects",
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/translated"
+          }
+        },
+        "formulas": {
+          "description": "Collection of translated formulas objects",
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/translated"
+          }
+        },
+        "fileNames": {
+          "description": "Collection of translated fileNames objects",
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/translated"
+          }
+        }
+    }
+}

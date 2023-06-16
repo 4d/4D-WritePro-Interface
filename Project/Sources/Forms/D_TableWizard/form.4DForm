@@ -339,22 +339,6 @@
 					"sizingX": "fixed",
 					"sizingY": "fixed"
 				},
-				"inExtraRows": {
-					"type": "input",
-					"left": 415,
-					"top": 426,
-					"width": 65,
-					"height": 17,
-					"dataSource": "Form:C1466.tableExtraRow",
-					"sizingX": "fixed",
-					"method": "ObjectMethods/inExtraRows.4dm",
-					"events": [
-						"onDataChange"
-					],
-					"sizingY": "fixed",
-					"textAlign": "center",
-					"tooltip": ":xliff:InfoExtraRows"
-				},
 				"Texte14": {
 					"type": "text",
 					"text": ":xliff:DataRowColon",
@@ -488,7 +472,7 @@
 				"btn_Cancel": {
 					"type": "button",
 					"top": 640,
-					"left": 950,
+					"left": 930,
 					"width": 80,
 					"height": 20,
 					"sizingX": "move",
@@ -505,20 +489,24 @@
 				"btn_OK": {
 					"type": "button",
 					"top": 640,
-					"left": 1040,
-					"width": 80,
+					"left": 1020,
+					"width": 100,
 					"height": 20,
 					"sizingX": "move",
 					"sizingY": "move",
 					"dataSource": "",
 					"action": "accept",
-					"shortcutKey": "[Enter]",
-					"text": ":xliff:ok",
+					"shortcutKey": "[Return]",
+					"text": ":xliff:Insert",
 					"defaultButton": true,
 					"events": [
 						"onClick"
 					],
-					"focusable": false
+					"focusable": false,
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false
 				},
 				"List Box": {
 					"type": "listbox",
@@ -644,20 +632,21 @@
 				},
 				"inTableData": {
 					"type": "input",
-					"left": 415,
+					"left": 419,
 					"top": 336,
-					"width": 65,
+					"width": 58,
 					"height": 17,
 					"dataSource": "Form:C1466.tableData",
 					"enterable": false,
 					"focusable": false,
-					"fill": "transparent",
+					"fill": "#FFFFFF",
 					"sizingX": "fixed",
 					"sizingY": "fixed",
 					"dataSourceTypeHint": "integer",
-					"borderStyle": "system",
-					"textAlign": "center",
-					"tooltip": ":xliff:InfoDataRow"
+					"borderStyle": "none",
+					"textAlign": "left",
+					"tooltip": ":xliff:InfoDataRow",
+					"borderRadius": 4
 				},
 				"Texte6": {
 					"type": "text",
@@ -949,11 +938,27 @@
 					"height": 48,
 					"picture": "/RESOURCES/Images/TBcommon/Home/Information_48.png",
 					"pictureFormat": "truncatedTopLeft"
+				},
+				"dd_extra": {
+					"type": "dropdown",
+					"left": 415,
+					"top": 424,
+					"width": 65,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.tableExtraRows",
+					"focusable": false,
+					"sizingX": "fixed",
+					"method": "ObjectMethods/dd_extra.4dm",
+					"sizingY": "fixed",
+					"tooltip": ":xliff:InfoCarryOverRow"
 				}
 			}
 		}
 	],
-	"geometryStamp": 5636,
+	"geometryStamp": 5675,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

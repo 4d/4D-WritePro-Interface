@@ -1,0 +1,101 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "theme",
+    "description": "theme schema for 4D Write Pro table wizard",
+    "definitions": {
+        "style": {
+            "type": "object",
+            "properties": {
+                "alignment": {
+                    "type": "integer"
+                },
+                "backgroundColor": {
+                    "type": "string"
+                },
+                "borderColor": {
+                    "type": "string"
+                },
+                "borderStyle": {
+                    "type": "integer"
+                },
+                "borderWidth": {
+                    "type": "string"
+                },
+                "color": {
+                    "type": "string"
+                },
+                "font": {
+                    "type": "string"
+                },
+                "fontFamily": {
+                    "type": "string"
+                },
+                "fontSize": {
+                  "type": "string"
+                },
+                "padding": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "type": "object",
+      "properties": {
+        "default": {
+          "description": "Object containing the default style applicable to all rows.",
+          "$ref": "#/definitions/style"
+        },
+        "table": {
+          "description": "Object containing the style definition applicable to the table.",
+          "$ref": "#/definitions/style"
+        },
+        "header1": {
+          "description": "Object containing the style definition applicable to the first header row.",
+          "$ref": "#/definitions/style"
+        },
+        "header2": {
+          "description": "Object containing the style definition applicable to the second header row.",
+          "$ref": "#/definitions/style"
+        },
+        "header3": {
+          "description": "Object containing the style definition applicable to the third header row.",
+          "$ref": "#/definitions/style"
+        },
+        "header4": {
+          "description": "Object containing the style definition applicable to the fourth header row.",
+          "$ref": "#/definitions/style"
+        },
+        "header5": {
+          "description": "Object containing the style definition applicable to the fifth header row.",
+          "$ref": "#/definitions/style"
+        },
+        "data": {
+          "description": "Object containing the style definition applicable to the repeated data row.",
+          "$ref": "#/definitions/style"
+        },
+        "break1": {
+          "description": "Object containing the style definition applicable to the first break row.",
+          "$ref": "#/definitions/style"
+        },
+        "break2": {
+          "description": "Object containing the style definition applicable to the second break row.",
+          "$ref": "#/definitions/style"
+        },
+        "break3": {
+          "description": "Object containing the style definition applicable to the third break row.",
+          "$ref": "#/definitions/style"
+        },
+        "break4": {
+          "description": "Object containing the style definition applicable to the fourth break row.",
+          "$ref": "#/definitions/style"
+        },
+        "break5": {
+          "description": "Object containing the style definition applicable to the fifth break row.",
+          "$ref": "#/definitions/style"
+        },
+        "bcor": {
+          "description": "Object containing the style definition applicable to the bottom carry-over row.",
+          "$ref": "#/definitions/style"
+        }
+    }
+}

@@ -1,0 +1,2 @@
+//%attributes = {}
+ok:=0

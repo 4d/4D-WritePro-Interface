@@ -4,7 +4,7 @@ Class constructor($formName : Text)
 	var $folder : 4D:C1709.Folder
 	var $lang : Text
 	var $dictionnary; $theme : Object
-	
+	var $validated : Boolean
 	
 	// DICTIONNARY files
 	// get localized names for tables and fields (if any)
@@ -15,20 +15,25 @@ Class constructor($formName : Text)
 	End if 
 	
 	If ($file.exists)
-		$dictionnary:=JSON Parse:C1218($file.getText())
 		
-		This:C1470.tables:=$dictionnary.tables.extract("original")
-		This:C1470.tablesTranslated:=$dictionnary.tables.extract("translation")
+		// TEST JSON
+		$validated:=This:C1470.JSONvalidate("translate"; New collection:C1472($file))
 		
-		This:C1470.attributes:=$dictionnary.fields.extract("original")
-		This:C1470.attributesTranslated:=$dictionnary.fields.extract("translation")
-		
-		This:C1470.formulas:=$dictionnary.formulas.extract("original")
-		This:C1470.formulasTranslated:=$dictionnary.formulas.extract("translation")
-		
-		This:C1470.fileNames:=$dictionnary.fileNames.extract("original")
-		This:C1470.fileNamesTranslated:=$dictionnary.fileNames.extract("translation")
-		
+		If ($validated)
+			$dictionnary:=JSON Parse:C1218($file.getText())
+			
+			This:C1470.tables:=$dictionnary.tables.extract("original")
+			This:C1470.tablesTranslated:=$dictionnary.tables.extract("translation")
+			
+			This:C1470.attributes:=$dictionnary.fields.extract("original")
+			This:C1470.attributesTranslated:=$dictionnary.fields.extract("translation")
+			
+			This:C1470.formulas:=$dictionnary.formulas.extract("original")
+			This:C1470.formulasTranslated:=$dictionnary.formulas.extract("translation")
+			
+			This:C1470.fileNames:=$dictionnary.fileNames.extract("original")
+			This:C1470.fileNamesTranslated:=$dictionnary.fileNames.extract("translation")
+		End if 
 	End if 
 	
 	
@@ -92,6 +97,9 @@ Function translate($type : Text; $name : Text; $keepOriginal : Boolean)->$transl
 	If ($translation="") && ($keepOriginal)
 		$translation:=$name  // NOT translated
 	End if 
+	
+	
+	
 	
 	
 	
@@ -570,6 +578,10 @@ Function templateGetList()->$collection : Collection
 	Else 
 		$collection:=New collection:C1472
 	End if 
+	// TEST JSON
+	This:C1470.JSONvalidate("template"; $collection)
+	
+	
 	
 Function templateDropDownList()->$dropDownlist : Object
 	
@@ -708,18 +720,21 @@ Function templateUI($action : Text)
 	OBJECT SET TITLE:C194(*; "cb_horizontalRuler"; Get action info:C1442("visibleHorizontalRuler").title)
 	
 	
-	
-	
 Function themeGetList()->$collection : Collection
 	
 	var $folder : 4D:C1709.Folder
 	var $theme : Object
 	var $o : Object
+	var $validated : Boolean
 	
 	// host database resources first
 	$folder:=Folder:C1567("/RESOURCES/4DWP_Wizard/Themes/"; *)
 	If ($folder.exists)
 		$collection:=$folder.files(fk recursive:K87:7+fk ignore invisible:K87:22).orderBy("name")
+		
+		// TEST JSON (only for host database)
+		$validated:=This:C1470.JSONvalidate("theme"; $collection)
+		
 		If ($collection.length>0)  // can be an empty folder
 			$o:=New object:C1471("name"; "-")  // fake file used as séparator in drop down list
 			$collection.push($o)
@@ -733,6 +748,8 @@ Function themeGetList()->$collection : Collection
 	If ($folder.exists)  // always unless resources are dammaged
 		$collection:=$collection.combine($folder.files(fk recursive:K87:7+fk ignore invisible:K87:22).orderBy("name"))
 	End if 
+	
+	
 	
 Function themeSave($theme : Object; $fileName : Text)->$index : Integer  //position in the list
 	
@@ -970,7 +987,6 @@ Function themeMeta($row)->$meta : Object
 	$meta.disabled:=($row.type="default")  // || (This.type="data")
 	
 Function themeApply($area : Object; $areaName : Text)
-	
 	
 	var $o : Object
 	var $i; $p; $nbColumns; $row; $colStart; $breakStart; $breakEnd; $maxPadding; $paddingNum; $tableWidth : Integer
@@ -1468,11 +1484,6 @@ Function themeGetFont($fontFamily : Text)->$font : Object
 	
 	
 	
-	
-	
-	
-	
-	
 Function WP_BuildAll($resetBreaks : Boolean)  // true when template changes
 	
 	var $i : Integer
@@ -1509,6 +1520,7 @@ Function WP_BuildAll($resetBreaks : Boolean)  // true when template changes
 	
 	Form:C1466.wp:=This:C1470.WP_BuildTable()
 	This:C1470.themeApply(Form:C1466.wp; "WParea")
+	
 	
 Function WP_BuildTable()->$area : Object
 	
@@ -1559,7 +1571,7 @@ Function WP_BuildTable()->$area : Object
 		If (Form:C1466.tableBCOR.index>0)
 			Form:C1466.description.push("bcor")  // bottom carry over
 		End if 
-		For ($i; 1; Form:C1466.tableExtraRow)
+		For ($i; 1; Form:C1466.tableExtraRows.index)
 			Form:C1466.description.push("extra"+String:C10($i))  // extra rows
 		End for 
 		$nbRows:=Form:C1466.description.length
@@ -1916,6 +1928,64 @@ Function WP_GetMaxTableWidth->$width : Integer
 		End case 
 		
 	End if 
+	
+	
+	
+Function JSONvalidate($type : Text; $files : Collection)->$result : Boolean
+	
+	var $file : 4D:C1709.File
+	var $schema; $parsing; $tempObject : Object
+	var $methCurrent; $alert : Text
+	var $i : Integer
+	
+	Case of 
+		: ($type="translate")
+			$file:=File:C1566(Folder:C1567(fk resources folder:K87:11; *).path+"4DWP_Wizard/JsonSchemas/schemaTranslate.json")
+			
+		: ($type="template")
+			$file:=File:C1566(Folder:C1567(fk resources folder:K87:11; *).path+"4DWP_Wizard/JsonSchemas/schemaTemplate.json")
+			
+		: ($type="theme")
+			$file:=File:C1566(Folder:C1567(fk resources folder:K87:11; *).path+"4DWP_Wizard/JsonSchemas/schemaTheme.json")
+			
+	End case 
+	
+	$schema:=JSON Parse:C1218($file.getText())  // always OK (internal file, no need to check)
+	
+	$result:=True:C214  // lets be ontimistic !
+	$i:=$files.length-1
+	
+	$methCurrent:=Method called on error:C704
+	ON ERR CALL:C155("JSONparseError")
+	
+	For each ($file; $files.reverse()) Until ($result=False:C215)
+		
+		ok:=1
+		$alert:=""
+		$tempObject:=JSON Parse:C1218($file.getText())
+		If (ok=0)
+			$alert:=Get localized string:C991("JSONparseError")
+			$files.remove($i; 1)
+		Else 
+			$parsing:=JSON Validate:C1456($tempObject; $schema)
+			
+			If (Not:C34($parsing.success))
+				$alert:=Get localized string:C991("JSONvalidationError")
+				$files.remove($i; 1)
+			End if 
+		End if 
+		
+		If ($alert#"")
+			$alert:=Replace string:C233($alert; ":1"; $file.fullName)
+			ALERT:C41($alert)
+			$files.remove($i; 1)
+		End if 
+		
+		$i:=$i-1
+		
+	End for each 
+	
+	ON ERR CALL:C155($methCurrent)
 	
 	
 	

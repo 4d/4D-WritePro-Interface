@@ -2006,6 +2006,12 @@ Souhaitez-vous le remplacer ?</target>
           <source>Available formulas…</source>
           <target>Formules possibles…</target>
         </trans-unit>
+
+        <trans-unit id="xx" resname="Insert">
+          <source>Insert</source>
+          <target>Insérer</target>
+        </trans-unit>
+
         <trans-unit id="xx" resname="InfoMain">
           <source>This dialog allows you to insert a table in your document, the contents of which will be based on the database data.</source>
           <target>Ce dialogue permet d'insérer une table dans votre document dont le contenu sera basé sur les données de la base.</target>
@@ -2034,6 +2040,20 @@ Souhaitez-vous le remplacer ?</target>
           <source>The extra rows are inserted at the end of the table.</source>
           <target>Les lignes supplémentaires sont insérées en fin de table.</target>
         </trans-unit>
+
+        <trans-unit id="xx" resname="JSONparseError">
+          <source>The file ":1" is malformed.
+(JSON parsing error)</source>
+          <target>Le fichier ":1" is malformé.
+(Erreur de lecture JSON)</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="JSONvalidationError">
+          <source>The file ":1" is not valid.
+(JSON validation error)</source>
+          <target>Le fichier ":1" n'est pas valide.
+(Erreur de validation JSON)</target>
+        </trans-unit>
+
       </group>
 
       <group resname="Menu_Paragraph">

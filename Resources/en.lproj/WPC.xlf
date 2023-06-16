@@ -2005,6 +2005,11 @@ Would you like to replace it?</target>
           <target>Available formulas…</target>
         </trans-unit>
 
+        <trans-unit id="xx" resname="Insert">
+          <source>Insert</source>
+          <target>Insert</target>
+        </trans-unit>
+
         <trans-unit id="xx" resname="InfoMain">
           <source>This dialog allows you to insert a table in your document, the contents of which will be based on the database data.</source>
           <target>This dialog allows you to insert a table in your document, the contents of which will be based on the database data.</target>
@@ -2034,6 +2039,19 @@ Would you like to replace it?</target>
           <target>The extra rows are inserted at the end of the table.</target>
         </trans-unit>
 
+        <trans-unit id="xx" resname="JSONparseError">
+          <source>The file ":1" is malformed.
+(JSON parsing error)"</source>
+          <target>The file ":1" is malformed.
+(JSON parsing error)</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="JSONvalidationError">
+          <source>The file ":1" is not valid.
+(JSON validation error)</source>
+          <target>The file ":1" is not valid.
+(JSON validation error)</target>
+        </trans-unit>
+        
       </group>
 
 
