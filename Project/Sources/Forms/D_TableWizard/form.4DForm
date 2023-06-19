@@ -632,10 +632,10 @@
 				},
 				"inTableData": {
 					"type": "input",
-					"left": 419,
-					"top": 336,
-					"width": 58,
-					"height": 17,
+					"left": 420,
+					"top": 335,
+					"width": 55,
+					"height": 19,
 					"dataSource": "Form:C1466.tableData",
 					"enterable": false,
 					"focusable": false,
@@ -958,7 +958,7 @@
 			}
 		}
 	],
-	"geometryStamp": 5675,
+	"geometryStamp": 5688,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

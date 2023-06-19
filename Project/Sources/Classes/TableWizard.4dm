@@ -698,6 +698,8 @@ Function templateUI($action : Text)
 			OBJECT SET RGB COLORS:C628(*; "BackgroundB@"; "#282828"; "#282828")  // a bit less dark grey
 			OBJECT SET RGB COLORS:C628(*; "separator@"; "lightGrey")  // vertical and horizontal lines
 			
+			OBJECT SET RGB COLORS:C628(*; "inTableData"; "#D4D4D4"; "#656565")  //
+			
 		End if 
 		Form:C1466.dragPicture:=$picture
 		
