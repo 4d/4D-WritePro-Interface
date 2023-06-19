@@ -22,6 +22,100 @@
 		},
 		{
 			"objects": {
+				"TipButton6": {
+					"type": "button",
+					"text": " ",
+					"top": 422,
+					"left": 235,
+					"width": 270,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoExtraRows",
+					"style": "toolbar"
+				},
+				"TipButton5": {
+					"type": "button",
+					"text": " ",
+					"top": 392,
+					"left": 235,
+					"width": 270,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoCarryOverRow",
+					"style": "toolbar"
+				},
+				"TipButton4": {
+					"type": "button",
+					"text": " ",
+					"top": 362,
+					"left": 235,
+					"width": 270,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoSummaryRows",
+					"style": "toolbar"
+				},
+				"TipButton3": {
+					"type": "button",
+					"text": " ",
+					"top": 332,
+					"left": 235,
+					"width": 270,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoDataRow",
+					"style": "toolbar"
+				},
+				"TipButton2": {
+					"type": "button",
+					"text": " ",
+					"top": 302,
+					"left": 235,
+					"width": 270,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoSummaryRows",
+					"style": "toolbar"
+				},
+				"RectTableData": {
+					"type": "rectangle",
+					"top": 335,
+					"left": 416,
+					"width": 64,
+					"height": 20,
+					"borderRadius": 4,
+					"stroke": "#EBEBEB"
+				},
 				"BackgroundB_1": {
 					"type": "rectangle",
 					"top": 80,
@@ -32,24 +126,6 @@
 					"stroke": "transparent",
 					"sizingX": "grow",
 					"sizingY": "grow"
-				},
-				"TipButton3": {
-					"type": "button",
-					"text": " ",
-					"top": 333,
-					"left": 235,
-					"width": 270,
-					"height": 23,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
-					"iconFrames": 4,
-					"imageHugsTitle": false,
-					"textPlacement": "left",
-					"tooltip": ":xliff:InfoDataRow",
-					"style": "toolbar",
-					"method": "ObjectMethods/TipButton3.4dm"
 				},
 				"WParea": {
 					"type": "write",
@@ -82,102 +158,12 @@
 					"showReferences": true,
 					"dropping": "none"
 				},
-				"TipButton1": {
-					"type": "button",
-					"text": " ",
-					"top": 273,
-					"left": 235,
-					"width": 270,
-					"height": 23,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
-					"iconFrames": 4,
-					"imageHugsTitle": false,
-					"textPlacement": "left",
-					"tooltip": ":xliff:InfoHeaderRows",
-					"style": "toolbar",
-					"method": "ObjectMethods/TipButton1.4dm"
-				},
-				"TipButton2": {
-					"type": "button",
-					"text": " ",
-					"top": 303,
-					"left": 235,
-					"width": 270,
-					"height": 23,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
-					"iconFrames": 4,
-					"imageHugsTitle": false,
-					"textPlacement": "left",
-					"tooltip": ":xliff:InfoSummaryRows",
-					"style": "toolbar",
-					"method": "ObjectMethods/TipButton2.4dm"
-				},
-				"TipButton4": {
-					"type": "button",
-					"text": " ",
-					"top": 363,
-					"left": 235,
-					"width": 270,
-					"height": 23,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
-					"iconFrames": 4,
-					"imageHugsTitle": false,
-					"textPlacement": "left",
-					"tooltip": ":xliff:InfoSummaryRows",
-					"style": "toolbar",
-					"method": "ObjectMethods/TipButton4.4dm"
-				},
-				"TipButton5": {
-					"type": "button",
-					"text": " ",
-					"top": 393,
-					"left": 235,
-					"width": 270,
-					"height": 23,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
-					"iconFrames": 4,
-					"imageHugsTitle": false,
-					"textPlacement": "left",
-					"tooltip": ":xliff:InfoCarryOverRow",
-					"style": "toolbar",
-					"method": "ObjectMethods/TipButton5.4dm"
-				},
-				"TipButton6": {
-					"type": "button",
-					"text": " ",
-					"top": 423,
-					"left": 235,
-					"width": 270,
-					"height": 23,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
-					"iconFrames": 4,
-					"imageHugsTitle": false,
-					"textPlacement": "left",
-					"tooltip": ":xliff:InfoExtraRows",
-					"style": "toolbar",
-					"method": "ObjectMethods/TipButton6.4dm"
-				},
 				"Ligne1": {
 					"type": "line",
-					"top": -51,
-					"left": 805,
-					"width": 10,
-					"height": 600,
+					"top": 0,
+					"left": 815,
+					"width": 0,
+					"height": 680,
 					"startPoint": "topLeft",
 					"visibility": "hidden",
 					"stroke": "#da70d6",
@@ -633,13 +619,13 @@
 				"inTableData": {
 					"type": "input",
 					"left": 420,
-					"top": 335,
-					"width": 55,
-					"height": 19,
+					"top": 337,
+					"width": 16,
+					"height": 16,
 					"dataSource": "Form:C1466.tableData",
 					"enterable": false,
 					"focusable": false,
-					"fill": "#FFFFFF",
+					"fill": "transparent",
 					"sizingX": "fixed",
 					"sizingY": "fixed",
 					"dataSourceTypeHint": "integer",
@@ -939,7 +925,7 @@
 					"picture": "/RESOURCES/Images/TBcommon/Home/Information_48.png",
 					"pictureFormat": "truncatedTopLeft"
 				},
-				"dd_extra": {
+				"dd_extraRows": {
 					"type": "dropdown",
 					"left": 415,
 					"top": 424,
@@ -951,14 +937,31 @@
 					"dataSource": "Form:C1466.tableExtraRows",
 					"focusable": false,
 					"sizingX": "fixed",
-					"method": "ObjectMethods/dd_extra.4dm",
+					"method": "ObjectMethods/dd_extraRows.4dm",
 					"sizingY": "fixed",
 					"tooltip": ":xliff:InfoCarryOverRow"
+				},
+				"TipButton1": {
+					"type": "button",
+					"text": " ",
+					"top": 272,
+					"left": 235,
+					"width": 270,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/TBcommon/Home/InformationRollOver_24.png",
+					"iconFrames": 4,
+					"imageHugsTitle": false,
+					"textPlacement": "left",
+					"tooltip": ":xliff:InfoHeaderRows",
+					"style": "toolbar"
 				}
 			}
 		}
 	],
-	"geometryStamp": 5688,
+	"geometryStamp": 5897,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

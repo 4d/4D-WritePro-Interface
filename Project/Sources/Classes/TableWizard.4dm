@@ -698,15 +698,19 @@ Function templateUI($action : Text)
 			OBJECT SET RGB COLORS:C628(*; "BackgroundB@"; "#282828"; "#282828")  // a bit less dark grey
 			OBJECT SET RGB COLORS:C628(*; "separator@"; "lightGrey")  // vertical and horizontal lines
 			
-			OBJECT SET RGB COLORS:C628(*; "inTableData"; "#D4D4D4"; "#656565")  //
-			
+			OBJECT SET RGB COLORS:C628(*; "RectTableData"; "#141414"; "#656565")  //
+			OBJECT SET RGB COLORS:C628(*; "inTableData"; "#D4D4D4")
 		End if 
 		Form:C1466.dragPicture:=$picture
+		
+		If (Is Windows:C1573) | (Shift down:C543)
+			OBJECT SET CORNER RADIUS:C1323(*; "RectTableData"; 0)
+		End if 
 		
 	End if 
 	
 	$enterable:=(Form:C1466.displayFormulas=1)
-	$list:=New collection:C1472("LB_columns"; "dd_tableHeaders"; "dd_BreakAbove"; "dd_BreakBelow"; "dd_bcor"; "inExtraRows"; "WParea"; "dd_themeList"; "dd_templateList")
+	$list:=New collection:C1472("LB_columns"; "dd_tableHeaders"; "dd_BreakAbove"; "dd_BreakBelow"; "dd_bcor"; "WParea"; "dd_themeList"; "dd_templateList"; "dd_extraRows")
 	For each ($item; $list)
 		OBJECT SET ENTERABLE:C238(*; $item; $enterable)
 		OBJECT SET ENABLED:C1123(*; $item; $enterable)

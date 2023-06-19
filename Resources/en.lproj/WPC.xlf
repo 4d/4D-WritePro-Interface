@@ -2011,8 +2011,8 @@ Would you like to replace it?</target>
         </trans-unit>
 
         <trans-unit id="xx" resname="InfoMain">
-          <source>This dialog allows you to insert a table in your document, the contents of which will be based on the database data.</source>
-          <target>This dialog allows you to insert a table in your document, the contents of which will be based on the database data.</target>
+          <source>This dialog box allows you to insert a table in your document, the contents of which will be based on database data.</source>
+          <target>This dialog box allows you to insert a table in your document, the contents of which will be based on database data.</target>
         </trans-unit>
         <trans-unit id="xx" resname="InfoContextualClic">
           <source>Use the contextual menu to insert additional formulas into the table.</source>
@@ -2021,7 +2021,7 @@ Would you like to replace it?</target>
         <trans-unit id="xx" resname="InfoHeaderRows">
           <source>The header rows are replicated at each page break.</source>
           <target>The header rows are replicated at each page break.</target>
-        </trans-unit>         
+        </trans-unit>      
         <trans-unit id="xx" resname="InfoDataRow">
           <source>This row will be filled by each element of the database.</source>
           <target>This row will be filled by each element of the database.</target>
@@ -2035,19 +2035,19 @@ Would you like to replace it?</target>
           <target>The carry over row is inserted before each page break (if any).</target>
         </trans-unit>
         <trans-unit id="xx" resname="InfoExtraRows">
-          <source>The extra rows are inserted at the end of the table.</source>
-          <target>The extra rows are inserted at the end of the table.</target>
+          <source>The extra rows are added at the end of the table.</source>
+          <target>The extra rows are added at the end of the table.</target>
         </trans-unit>
-
+ 
         <trans-unit id="xx" resname="JSONparseError">
           <source>The file ":1" is malformed.
-(JSON parsing error)"</source>
-          <target>The file ":1" is malformed.
-(JSON parsing error)</target>
+(JSON parsing error)</source>
+          <target>Le fichier ":1" is malformé.
+(Erreur de lecture JSON)</target>
         </trans-unit>
         <trans-unit id="xx" resname="JSONvalidationError">
-          <source>The file ":1" is not valid.
-(JSON validation error)</source>
+          <source>The file ":1" is malformed.
+(JSON parsing error)</source>
           <target>The file ":1" is not valid.
 (JSON validation error)</target>
         </trans-unit>

@@ -2013,34 +2013,34 @@ Souhaitez-vous le remplacer ?</target>
         </trans-unit>
 
         <trans-unit id="xx" resname="InfoMain">
-          <source>This dialog allows you to insert a table in your document, the contents of which will be based on the database data.</source>
-          <target>Ce dialogue permet d'insérer une table dans votre document dont le contenu sera basé sur les données de la base.</target>
+          <source>This dialog box allows you to insert a table in your document, the contents of which will be based on database data.</source>
+          <target>Cette boîte de dialogue permet d'insérer dans votre document un tableau dont le contenu sera basé sur les données de la base.</target>
         </trans-unit>
         <trans-unit id="xx" resname="InfoContextualClic">
           <source>Use the contextual menu to insert additional formulas into the table.</source>
-          <target>Utilisez le menu contextuel pour insérer des formules supplémentaires dans la table.</target>
+          <target>Utilisez le menu contextuel pour insérer des formules supplémentaires dans le tableau.</target>
         </trans-unit>
         <trans-unit id="xx" resname="InfoHeaderRows">
           <source>The header rows are replicated at each page break.</source>
           <target>Les lignes d'en-têtes sont répliquées à chaque saut de page.</target>
-        </trans-unit>       
+        </trans-unit>      
         <trans-unit id="xx" resname="InfoDataRow">
           <source>This row will be filled by each element of the database.</source>
           <target>Cette ligne sera remplie par les éléments de la base de données.</target>
         </trans-unit>
         <trans-unit id="xx" resname="InfoSummaryRows">
           <source>The summary rows are inserted each time the reference value defined for the row changes.</source>
-          <target>Les lignes de sythèse sont affichée à chaque changement de la valeur de référence définie pour la ligne change.</target>
+          <target>Les lignes de synthèse sont insérées à chaque changement de la valeur de référence définie pour la ligne change.</target>
         </trans-unit>
         <trans-unit id="xx" resname="InfoCarryOverRow">
-          <source>The carry over rows is inserted before each page break (if any).</source>
+          <source>The carry over row is inserted before each page break (if any).</source>
           <target>La ligne de report est insérée avant chaque saut de page (s'il y en a).</target>
         </trans-unit>
         <trans-unit id="xx" resname="InfoExtraRows">
-          <source>The extra rows are inserted at the end of the table.</source>
-          <target>Les lignes supplémentaires sont insérées en fin de table.</target>
+          <source>The extra rows are added at the end of the table.</source>
+          <target>Les lignes supplémentaires sont ajoutées en fin de tableau.</target>
         </trans-unit>
-
+ 
         <trans-unit id="xx" resname="JSONparseError">
           <source>The file ":1" is malformed.
 (JSON parsing error)</source>
