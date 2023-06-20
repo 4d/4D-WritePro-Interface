@@ -2044,7 +2044,7 @@ Souhaitez-vous le remplacer ?</target>
         <trans-unit id="xx" resname="JSONparseError">
           <source>The file ":1" is malformed.
 (JSON parsing error)</source>
-          <target>Le fichier ":1" is malformé.
+          <target>Le fichier ":1" est malformé.
 (Erreur de lecture JSON)</target>
         </trans-unit>
         <trans-unit id="xx" resname="JSONvalidationError">

@@ -2042,12 +2042,12 @@ Would you like to replace it?</target>
         <trans-unit id="xx" resname="JSONparseError">
           <source>The file ":1" is malformed.
 (JSON parsing error)</source>
-          <target>Le fichier ":1" is malformé.
-(Erreur de lecture JSON)</target>
+          <target>>The file ":1" is malformed.
+(JSON parsing error)</target>
         </trans-unit>
         <trans-unit id="xx" resname="JSONvalidationError">
-          <source>The file ":1" is malformed.
-(JSON parsing error)</source>
+          <source>The file ":1" is not valid.
+(JSON validation error)</source>
           <target>The file ":1" is not valid.
 (JSON validation error)</target>
         </trans-unit>

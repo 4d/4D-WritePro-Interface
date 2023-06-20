@@ -994,8 +994,9 @@ Function themeMeta($row)->$meta : Object
 	
 Function themeApply($area : Object; $areaName : Text)
 	
+	var $apply : Boolean
 	var $o : Object
-	var $i; $p; $nbColumns; $row; $colStart; $breakStart; $breakEnd; $maxPadding; $paddingNum; $tableWidth : Integer
+	var $i; $p; $nbColumns; $row; $colStart; $breakStart; $breakEnd; $paddingNum; $tableWidth : Integer
 	var $tables; $targetNames; $attributes : Collection
 	var $table; $rows; $columns; $cells; $targetTemplate; $cells; $target; $range; $target : Object
 	var $description; $targetName; $attribute : Text
@@ -1007,10 +1008,9 @@ Function themeApply($area : Object; $areaName : Text)
 		$rows:=WP Table get rows:C1475($table; 1; MAXLONG:K35:2)
 		$cells:=WP Table get cells:C1477($table; 1; 1; MAXLONG:K35:2; MAXLONG:K35:2)
 		
-		$maxPadding:=0
+		//$maxPadding:=0
 		
 		//  --------------------- APPLY DEFAULT/TABLE/ROWS/CELLS SETTINGS FIRST ---------------------
-		
 		
 		$targetNames:=["default"; "table"; "rows"; "cells"]
 		$attributes:=[wk font:K81:69; wk font size:K81:66; wk text color:K81:64; wk text align:K81:49; wk background color:K81:20; wk border width:K81:39; wk border color:K81:34; wk border style:K81:29; wk padding:K81:15]
@@ -1039,12 +1039,12 @@ Function themeApply($area : Object; $areaName : Text)
 					
 				End for each 
 				
-				If (Not:C34(Undefined:C82(Form:C1466.theme[$targetName].padding)))
-					$paddingNum:=Num:C11(Form:C1466.theme[$targetName].padding)
-					If ($paddingNum>$maxPadding)
-						$maxPadding:=$paddingNum
-					End if 
-				End if 
+				//If (Not(Undefined(Form.theme[$targetName].padding)))
+				//$paddingNum:=Num(Form.theme[$targetName].padding)
+				//If ($paddingNum>$maxPadding)
+				//$maxPadding:=$paddingNum
+				//End if 
+				//End if 
 				
 			End if 
 		End for each 
@@ -1070,7 +1070,7 @@ Function themeApply($area : Object; $areaName : Text)
 		
 		For each ($description; Form:C1466.description)
 			$target:=WP Table get rows:C1475($table; $row; 1)
-			
+			$apply:=True:C214
 			Case of 
 					
 				: ($description="header@")  // header(s)
@@ -1084,7 +1084,7 @@ Function themeApply($area : Object; $areaName : Text)
 						End for 
 					End if 
 					If (Undefined:C82(Form:C1466.theme[$targetName]))  // in the worts case, if header1 is undefined, lets take header
-						$targetName:="header"
+						$targetName:="headers"
 					End if 
 					//$headerStart+=1
 					
@@ -1099,7 +1099,7 @@ Function themeApply($area : Object; $areaName : Text)
 						End for 
 					End if 
 					If (Undefined:C82(Form:C1466.theme[$targetName]))  // in the worts case, if break1 is undefined, lets take break
-						$targetName:="break"
+						$targetName:="breaks"
 					End if 
 					
 				: ($description="data")  // data
@@ -1108,17 +1108,25 @@ Function themeApply($area : Object; $areaName : Text)
 				: ($description="bcor")  // bcor
 					$targetName:="bcor"
 					
-				: ($description="extra@")  // extra
-					$targetName:="default"
-					
+				Else 
+					$apply:=False:C215
 			End case 
 			
-			
-			For each ($attribute; $attributes)
-				If (Not:C34(Undefined:C82(Form:C1466.theme[$targetName][$attribute])))
-					WP SET ATTRIBUTES:C1342($target; $attribute; Form:C1466.theme[$targetName][$attribute])
-				End if 
-			End for each 
+			If ($apply)
+				For each ($attribute; $attributes)
+					If (Not:C34(Undefined:C82(Form:C1466.theme[$targetName][$attribute])))
+						WP SET ATTRIBUTES:C1342($target; $attribute; Form:C1466.theme[$targetName][$attribute])
+					End if 
+				End for each 
+				
+				//If (Not(Undefined(Form.theme[$targetName].padding)))
+				//$paddingNum:=Num(Form.theme[$targetName].padding)
+				//If ($paddingNum>$maxPadding)
+				//$maxPadding:=$paddingNum
+				//End if 
+				//End if 
+				
+			End if 
 			
 			//WP SET ATTRIBUTES($target; wk text align; Form.theme[$themeTarget].alignment)
 			//WP SET ATTRIBUTES($target; wk background color; Form.theme[$themeTarget].backgroundColor)
@@ -1132,12 +1140,6 @@ Function themeApply($area : Object; $areaName : Text)
 			//WP SET ATTRIBUTES($target; wk font size; Form.theme[$themeTarget].fontSize)
 			//WP SET ATTRIBUTES($target; wk padding; Form.theme[$themeTarget].padding)
 			
-			If (Not:C34(Undefined:C82(Form:C1466.theme[$targetName].padding)))
-				$paddingNum:=Num:C11(Form:C1466.theme[$targetName].padding)
-				If ($paddingNum>$maxPadding)
-					$maxPadding:=$paddingNum
-				End if 
-			End if 
 			
 			$row:=$row+1
 			
