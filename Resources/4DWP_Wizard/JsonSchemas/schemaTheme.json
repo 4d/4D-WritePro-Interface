@@ -6,7 +6,7 @@
         "style": {
             "type": "object",
             "properties": {
-                "alignment": {
+                "textAlign": {
                     "type": "integer"
                 },
                 "backgroundColor": {
@@ -49,6 +49,14 @@
           "description": "Object containing the style definition applicable to the table.",
           "$ref": "#/definitions/style"
         },
+        "rows": {
+          "description": "Object containing the style definition applicable to all rows.",
+          "$ref": "#/definitions/style"
+        },
+        "cells": {
+          "description": "Object containing the style definition applicable to all cells.",
+          "$ref": "#/definitions/style"
+        },
         "header1": {
           "description": "Object containing the style definition applicable to the first header row.",
           "$ref": "#/definitions/style"
@@ -67,6 +75,10 @@
         },
         "header5": {
           "description": "Object containing the style definition applicable to the fifth header row.",
+          "$ref": "#/definitions/style"
+        },
+        "headers": {
+          "description": "Object containing the style definition applicable to the header rows if no specific header row is defined.",
           "$ref": "#/definitions/style"
         },
         "data": {
@@ -91,6 +103,10 @@
         },
         "break5": {
           "description": "Object containing the style definition applicable to the fifth break row.",
+          "$ref": "#/definitions/style"
+        },
+        "breaks": {
+          "description": "Object containing the style definition applicable to the break row, if no specific break row is defined.",
           "$ref": "#/definitions/style"
         },
         "bcor": {

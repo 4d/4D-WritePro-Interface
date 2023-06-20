@@ -1,1 +1,64 @@
-﻿{	"default": {		"backgroundColor": "#F0F0F0",		"borderColor": "#202020",		"borderStyle": 0,		"borderWidth": "0.5pt",		"font": "YuGothic Medium",		"color": "#101010",		"fontFamily": "YuGothic",		"fontSize": "9pt",		"padding": "2pt",		"alignment": 0	},	"table": {		"borderWidth": "2pt",		"borderColor": "#005810",		"borderStyle": 1	},	"header1": {		"backgroundColor": "#336655",		"color": "#F2F2F2",		"fontSize": "14pt",		"alignment": 2	},	"header2": {		"fontSize": "13pt",		"color": "#F2F2F2",		"backgroundColor": "#40806A",		"alignment": 2	},	"header3": {		"fontSize": "12pt",		"color": "#F2F2F2",		"backgroundColor": "#4C987E",		"alignment": 2	},	"data": {		"color": "#202020",		"fontSize": "10pt"	},	"break1": {		"fontSize": "14pt",		"color": "#F2F2F2",		"backgroundColor": "#336655",		"alignment": 1	},	"break2": {		"fontSize": "13pt",		"color": "#F2F2F2",		"backgroundColor": "#40806A",		"alignment": 1	},	"break3": {		"fontSize": "12pt",		"color": "#F2F2F2",		"backgroundColor": "#4C987E",		"alignment": 1	},	"bcor": {		"backgroundColor": "#B7E5D6",		"alignment": 2,		"fontSize": "10pt"	}}
+﻿{textAligntextAligntextAligntextAligntextAligntextAligntextAligntextAlign
+	"default": {
+		"backgroundColor": "#F0F0F0",
+		"borderColor": "#202020",
+		"borderStyle": 0,
+		"borderWidth": "0.5pt",
+		"font": "YuGothic Medium",
+		"color": "#101010",
+		"fontFamily": "YuGothic",
+		"fontSize": "9pt",
+		"padding": "2pt",
+		"alignment": 0
+	},
+	"table": {
+		"borderWidth": "2pt",
+		"borderColor": "#005810",
+		"borderStyle": 1
+	},
+	"header1": {
+		"backgroundColor": "#336655",
+		"color": "#F2F2F2",
+		"fontSize": "14pt",
+		"alignment": 2
+	},
+	"header2": {
+		"fontSize": "13pt",
+		"color": "#F2F2F2",
+		"backgroundColor": "#40806A",
+		"alignment": 2
+	},
+	"header3": {
+		"fontSize": "12pt",
+		"color": "#F2F2F2",
+		"backgroundColor": "#4C987E",
+		"alignment": 2
+	},
+	"data": {
+		"color": "#202020",
+		"fontSize": "10pt"
+	},
+	"break1": {
+		"fontSize": "14pt",
+		"color": "#F2F2F2",
+		"backgroundColor": "#336655",
+		"alignment": 1
+	},
+	"break2": {
+		"fontSize": "13pt",
+		"color": "#F2F2F2",
+		"backgroundColor": "#40806A",
+		"alignment": 1
+	},
+	"break3": {
+		"fontSize": "12pt",
+		"color": "#F2F2F2",
+		"backgroundColor": "#4C987E",
+		"alignment": 1
+	},
+	"bcor": {
+		"backgroundColor": "#B7E5D6",
+		"alignment": 2,
+		"fontSize": "10pt"
+	}
+}
