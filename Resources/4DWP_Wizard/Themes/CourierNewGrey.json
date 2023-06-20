@@ -1,4 +1,4 @@
-﻿{textAligntextAligntextAligntextAligntextAligntextAligntextAligntextAlign
+﻿{
 	"default": {
 		"backgroundColor": "#F0F0F0",
 		"borderColor": "#202020",
@@ -9,7 +9,7 @@
 		"fontFamily": "Courier New",
 		"fontSize": "9pt",
 		"padding": "2pt",
-		"alignment": 0
+		"textAlign": 0
 	},
 	"table": {
 		"borderWidth": "2pt",
@@ -25,19 +25,19 @@
 		"backgroundColor": "#666666",
 		"color": "#F2F2F2",
 		"fontSize": "14pt",
-		"alignment": 2
+		"textAlign": 2
 	},
 	"header2": {
 		"fontSize": "13pt",
 		"color": "#F2F2F2",
 		"backgroundColor": "#7F7F7F",
-		"alignment": 2
+		"textAlign": 2
 	},
 	"header3": {
 		"fontSize": "12pt",
 		"color": "#F2F2F2",
 		"backgroundColor": "#9A9A9A",
-		"alignment": 2
+		"textAlign": 2
 	},
 	"data": {
 		"color": "#202020",
@@ -47,23 +47,23 @@
 		"fontSize": "14pt",
 		"color": "#F2F2F2",
 		"backgroundColor": "#666666",
-		"alignment": 1
+		"textAlign": 1
 	},
 	"break2": {
 		"fontSize": "13pt",
 		"color": "#F2F2F2",
 		"backgroundColor": "#7F7F7F",
-		"alignment": 1
+		"textAlign": 1
 	},
 	"break3": {
 		"fontSize": "12pt",
 		"color": "#F2F2F2",
 		"backgroundColor": "#9A9A9A",
-		"alignment": 1
+		"textAlign": 1
 	},
 	"bcor": {
 		"backgroundColor": "#CDCDCD",
-		"alignment": 2,
+		"textAlign": 2,
 		"fontSize": "10pt"
 	}
 }

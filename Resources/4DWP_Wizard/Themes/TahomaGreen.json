@@ -1,4 +1,4 @@
-﻿{textAligntextAligntextAligntextAligntextAligntextAligntextAligntextAlign
+﻿{
 	"default": {
 		"backgroundColor": "#F0F0F0",
 		"borderStyle": 1,
@@ -7,7 +7,7 @@
 		"fontFamily": "Tahoma",
 		"fontSize": "9pt",
 		"padding": "2pt",
-		"alignment": 0
+		"textAlign": 0
 	},
 	"table": {
 		"borderWidth": "2pt",
@@ -23,19 +23,19 @@
 		"backgroundColor": "#336655",
 		"color": "#F2F2F2",
 		"fontSize": "14pt",
-		"alignment": 2
+		"textAlign": 2
 	},
 	"header2": {
 		"fontSize": "13pt",
 		"color": "#F2F2F2",
 		"backgroundColor": "#40806A",
-		"alignment": 2
+		"textAlign": 2
 	},
 	"header3": {
 		"fontSize": "12pt",
 		"color": "#F2F2F2",
 		"backgroundColor": "#4C987E",
-		"alignment": 2
+		"textAlign": 2
 	},
 	"data": {
 		"color": "#202020",
@@ -45,23 +45,23 @@
 		"fontSize": "14pt",
 		"color": "#F2F2F2",
 		"backgroundColor": "#336655",
-		"alignment": 1
+		"textAlign": 1
 	},
 	"break2": {
 		"fontSize": "13pt",
 		"color": "#F2F2F2",
 		"backgroundColor": "#40806A",
-		"alignment": 1
+		"textAlign": 1
 	},
 	"break3": {
 		"fontSize": "12pt",
 		"color": "#F2F2F2",
 		"backgroundColor": "#4C987E",
-		"alignment": 1
+		"textAlign": 1
 	},
 	"bcor": {
 		"backgroundColor": "#B7E5D6",
-		"alignment": 2,
+		"textAlign": 2,
 		"fontSize": "10pt"
 	}
 }

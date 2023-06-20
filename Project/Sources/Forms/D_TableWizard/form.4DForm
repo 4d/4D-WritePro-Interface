@@ -499,7 +499,7 @@
 					"sizingY": "move",
 					"dataSource": "",
 					"action": "accept",
-					"shortcutKey": "[Return]",
+					"shortcutKey": "",
 					"text": ":xliff:Insert",
 					"defaultButton": true,
 					"events": [
