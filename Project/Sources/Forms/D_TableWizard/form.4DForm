@@ -5,12 +5,13 @@
 	},
 	"windowSizingX": "variable",
 	"windowSizingY": "variable",
-	"windowMinWidth": 1140,
-	"windowMinHeight": 600,
+	"windowMinWidth": 1160,
+	"windowMinHeight": 680,
 	"windowMaxWidth": 32767,
 	"windowMaxHeight": 32767,
 	"events": [
 		"onLoad",
+		"onClick",
 		"onUnload",
 		"onTimer"
 	],
@@ -37,7 +38,8 @@
 					"imageHugsTitle": false,
 					"textPlacement": "left",
 					"tooltip": ":xliff:InfoExtraRows",
-					"style": "custom"
+					"style": "custom",
+					"focusable": false
 				},
 				"TipButton5": {
 					"type": "button",
@@ -54,7 +56,8 @@
 					"imageHugsTitle": false,
 					"textPlacement": "left",
 					"tooltip": ":xliff:InfoCarryOverRow",
-					"style": "custom"
+					"style": "custom",
+					"focusable": false
 				},
 				"TipButton4": {
 					"type": "button",
@@ -71,7 +74,8 @@
 					"imageHugsTitle": false,
 					"textPlacement": "left",
 					"tooltip": ":xliff:InfoSummaryRows",
-					"style": "custom"
+					"style": "custom",
+					"focusable": false
 				},
 				"TipButton3": {
 					"type": "button",
@@ -88,7 +92,8 @@
 					"imageHugsTitle": false,
 					"textPlacement": "left",
 					"tooltip": ":xliff:InfoDataRow",
-					"style": "custom"
+					"style": "custom",
+					"focusable": false
 				},
 				"TipButton2": {
 					"type": "button",
@@ -105,7 +110,8 @@
 					"imageHugsTitle": false,
 					"textPlacement": "left",
 					"tooltip": ":xliff:InfoSummaryRows",
-					"style": "custom"
+					"style": "custom",
+					"focusable": false
 				},
 				"TipButton1": {
 					"type": "button",
@@ -122,7 +128,8 @@
 					"imageHugsTitle": false,
 					"textPlacement": "left",
 					"tooltip": ":xliff:InfoHeaderRows",
-					"style": "custom"
+					"style": "custom",
+					"focusable": false
 				},
 				"Texte2": {
 					"type": "text",
@@ -192,43 +199,12 @@
 					"type": "rectangle",
 					"top": 80,
 					"left": 510,
-					"width": 610,
+					"width": 630,
 					"height": 540,
 					"fill": "#FFFFFF",
 					"stroke": "transparent",
 					"sizingX": "grow",
 					"sizingY": "grow"
-				},
-				"WParea": {
-					"type": "write",
-					"top": 80,
-					"left": 510,
-					"width": 610,
-					"height": 540,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"dataSource": "Form:C1466.wp",
-					"hideFocusRing": true,
-					"scrollbarVertical": "automatic",
-					"scrollbarHorizontal": "hidden",
-					"dpi": 0,
-					"borderStyle": "none",
-					"method": "ObjectMethods/WParea.4dm",
-					"events": [
-						"onClick"
-					],
-					"layoutMode": "draft",
-					"showHeaders": false,
-					"showFooters": false,
-					"showHorizontalRuler": false,
-					"enterable": true,
-					"focusable": false,
-					"contextMenu": "none",
-					"showVerticalRuler": false,
-					"showBackground": true,
-					"showPageFrames": true,
-					"showReferences": true,
-					"dropping": "none"
 				},
 				"Ligne1": {
 					"type": "line",
@@ -475,7 +451,7 @@
 				"btn_Cancel": {
 					"type": "button",
 					"top": 640,
-					"left": 930,
+					"left": 950,
 					"width": 80,
 					"height": 20,
 					"sizingX": "move",
@@ -492,7 +468,7 @@
 				"btn_OK": {
 					"type": "button",
 					"top": 640,
-					"left": 1020,
+					"left": 1040,
 					"width": 100,
 					"height": 20,
 					"sizingX": "move",
@@ -513,8 +489,8 @@
 				},
 				"List Box": {
 					"type": "listbox",
-					"left": 1039,
-					"top": 1064,
+					"left": 1004,
+					"top": 949,
 					"width": 110,
 					"height": 230,
 					"events": [
@@ -562,8 +538,8 @@
 				},
 				"Zone de saisie": {
 					"type": "input",
-					"left": 41,
-					"top": 950,
+					"left": 6,
+					"top": 835,
 					"width": 459,
 					"height": 395,
 					"dataSource": "Form:C1466.memoCells",
@@ -572,8 +548,8 @@
 				},
 				"List Box1": {
 					"type": "listbox",
-					"left": 879,
-					"top": 1064,
+					"left": 844,
+					"top": 949,
 					"width": 110,
 					"height": 230,
 					"events": [
@@ -608,8 +584,8 @@
 				"Texte": {
 					"type": "text",
 					"text": "Form.columnIDs",
-					"top": 987,
-					"left": 875,
+					"top": 872,
+					"left": 840,
 					"width": 109,
 					"height": 16,
 					"sizingX": "move",
@@ -618,8 +594,8 @@
 				"Texte5": {
 					"type": "text",
 					"text": "Form.description",
-					"top": 987,
-					"left": 1035,
+					"top": 872,
+					"left": 1000,
 					"width": 109,
 					"height": 16,
 					"sizingX": "move",
@@ -627,8 +603,8 @@
 				},
 				"Ligne": {
 					"type": "line",
-					"top": 974,
-					"left": 41,
+					"top": 859,
+					"left": 6,
 					"width": 1120,
 					"height": 0,
 					"visibility": "hidden"
@@ -758,8 +734,7 @@
 					],
 					"action": "visibleHorizontalRuler",
 					"enterable": true,
-					"focusable": false,
-					"method": "ObjectMethods/cb_horizontalRuler.4dm"
+					"focusable": false
 				},
 				"Ligne3": {
 					"type": "line",
@@ -916,10 +891,10 @@
 				"Texte15": {
 					"type": "text",
 					"text": ":xliff:InfoContextualClic",
-					"top": 638,
-					"left": 539,
-					"width": 300,
-					"height": 39,
+					"top": 635,
+					"left": 535,
+					"width": 280,
+					"height": 29,
 					"fontTheme": "additional",
 					"sizingY": "move"
 				},
@@ -957,11 +932,69 @@
 					"method": "ObjectMethods/dd_extraRows.4dm",
 					"sizingY": "fixed",
 					"tooltip": ":xliff:InfoCarryOverRow"
+				},
+				"WParea": {
+					"type": "write",
+					"top": 80,
+					"left": 510,
+					"width": 630,
+					"height": 540,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.wp",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "hidden",
+					"dpi": 72,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onClick"
+					],
+					"layoutMode": "draft",
+					"showHeaders": false,
+					"showFooters": false,
+					"showHorizontalRuler": false,
+					"enterable": true,
+					"focusable": false,
+					"contextMenu": "none",
+					"showVerticalRuler": false,
+					"showBackground": true,
+					"showPageFrames": false,
+					"showReferences": true,
+					"dropping": "none"
 				}
-			}
+			},
+			"entryOrder": [
+				"WParea",
+				"List Box",
+				"List Box1",
+				"dd_themeList",
+				"LB_columns",
+				"TipButton1",
+				"dd_tableHeaders",
+				"TipButton2",
+				"dd_BreakAbove",
+				"TipButton3",
+				"inTableData",
+				"TipButton4",
+				"dd_BreakBelow",
+				"TipButton5",
+				"dd_bcor",
+				"TipButton6",
+				"dd_extraRows",
+				"Popup Liste déroulante",
+				"rb_DisplayFormulas",
+				"rb_DisplayValues",
+				"cb_horizontalRuler",
+				"btn_Cancel",
+				"btn_OK",
+				"Zone de saisie",
+				"dd_templateList"
+			]
 		}
 	],
-	"geometryStamp": 5918,
+	"geometryStamp": 6037,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
@@ -970,6 +1003,6 @@
 		}
 	},
 	"method": "method.4dm",
-	"width": 1140,
+	"width": 1160,
 	"height": 680
 }

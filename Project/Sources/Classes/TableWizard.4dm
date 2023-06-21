@@ -686,6 +686,8 @@ Function templateUI($action : Text)
 	var $interface : Text
 	var $picture : Picture
 	
+	ARRAY LONGINT:C221($events; 0)
+	
 	If ($action="init")
 		$interface:=Get Application color scheme:C1763(*)
 		If ($interface="light")
@@ -710,11 +712,22 @@ Function templateUI($action : Text)
 	End if 
 	
 	$enterable:=(Form:C1466.displayFormulas=1)
-	$list:=New collection:C1472("LB_columns"; "dd_tableHeaders"; "dd_BreakAbove"; "dd_BreakBelow"; "dd_bcor"; "WParea"; "dd_themeList"; "dd_templateList"; "dd_extraRows")
+	$list:=New collection:C1472("LB_columns"; "dd_tableHeaders"; "dd_BreakAbove"; "dd_BreakBelow"; "dd_bcor"; "dd_themeList"; "dd_templateList"; "dd_extraRows")
 	For each ($item; $list)
 		OBJECT SET ENTERABLE:C238(*; $item; $enterable)
 		OBJECT SET ENABLED:C1123(*; $item; $enterable)
 	End for each 
+	
+	OBJECT SET ENTERABLE:C238(*; "WParea"; $enterable)  // WParea is NOT enterable but still enabled
+	
+	
+	COLLECTION TO ARRAY:C1562([On Begin Drag Over:K2:44; On Drop:K2:12; On Mouse Enter:K2:33; On Mouse Leave:K2:34; On Mouse Move:K2:35]; $events)
+	If ($enterable)
+		OBJECT SET EVENTS:C1239(*; "LB_columns"; $events; Enable events others unchanged:K42:38)
+	Else 
+		OBJECT SET EVENTS:C1239(*; "LB_columns"; $events; Disable events others unchanged:K42:39)
+	End if 
+	
 	
 	$enterable:=(Form:C1466.maxBreaks>0) & (Form:C1466.displayFormulas=1)
 	$list:=New collection:C1472("dd_BreakAbove"; "dd_BreakBelow")

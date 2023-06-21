@@ -55,6 +55,7 @@ Case of
 		$o:=New object:C1471
 		$o[wk visible references:K81:286]:=True:C214
 		$o[wk display formula as symbol:K81:368]:=True:C214
+		
 		WP SET VIEW PROPERTIES:C1648(*; "WParea"; $o)
 		
 		
@@ -117,3 +118,6 @@ Case of
 		
 End case 
 
+
+
+Form:C1466.name:=OBJECT Get name:C1087(Object with focus:K67:3)
