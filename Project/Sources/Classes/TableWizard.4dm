@@ -720,12 +720,20 @@ Function templateUI($action : Text)
 	
 	OBJECT SET ENTERABLE:C238(*; "WParea"; $enterable)  // WParea is NOT enterable but still enabled
 	
-	
+	// event for listbox on the left
 	COLLECTION TO ARRAY:C1562([On Begin Drag Over:K2:44; On Drop:K2:12; On Mouse Enter:K2:33; On Mouse Leave:K2:34; On Mouse Move:K2:35]; $events)
 	If ($enterable)
 		OBJECT SET EVENTS:C1239(*; "LB_columns"; $events; Enable events others unchanged:K42:38)
 	Else 
 		OBJECT SET EVENTS:C1239(*; "LB_columns"; $events; Disable events others unchanged:K42:39)
+	End if 
+	
+	// event for sample area
+	COLLECTION TO ARRAY:C1562([On Clicked:K2:4]; $events)
+	If ($enterable)
+		OBJECT SET EVENTS:C1239(*; "WParea"; $events; Enable events others unchanged:K42:38)
+	Else 
+		OBJECT SET EVENTS:C1239(*; "WParea"; $events; Disable events others unchanged:K42:39)
 	End if 
 	
 	
