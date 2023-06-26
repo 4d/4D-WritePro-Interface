@@ -2512,7 +2512,7 @@
 					"height": 20,
 					"tooltip": ":xliff:columnsCount",
 					"focusable": false,
-					"action": "columnCount"
+					"action": "section/columnCount"
 				},
 				"Popup_columnSpacing": {
 					"type": "dropdown",

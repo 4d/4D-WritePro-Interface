@@ -1,10 +1,9 @@
-C_COLLECTION:C1488($_buttonNames)
+// ACI0104036 : standard action in button "Popup_columnCount" :   columncount  -> section/columncount
 
+C_COLLECTION:C1488($_buttonNames)
 C_LONGINT:C283($typeSelection)
 C_LONGINT:C283($page)
-
 C_OBJECT:C1216($param)
-
 C_TEXT:C284($buttonName)
 
 
