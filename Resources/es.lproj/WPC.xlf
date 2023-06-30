@@ -166,6 +166,10 @@ This file is distributed under the same license as the product package.-->
           <source>Position:</source>
           <target>Posición:</target>
         </trans-unit>
+        <trans-unit id="26" resname="PositionsColon">
+          <source>Positions:</source>
+          <target>Posiciones:</target>
+        </trans-unit>
         <trans-unit id="sg9lHFhI0LqrVxCysNWY7g" resname="MoveHyphen">
           <source>Move:</source>
           <target>Mover:</target>
@@ -182,13 +186,29 @@ This file is distributed under the same license as the product package.-->
           <source>Picture</source>
           <target>Imagen</target>
         </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="PictureHyphen">
+          <source>Picture:</source>
+          <target>Imagen:</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Apply">
+          <source>Apply</source>
+          <target>Aplicar</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="Clear">
+          <source>Clear</source>
+          <target>Borrar</target>
+        </trans-unit>
+        <trans-unit id="tYGw5/ib9qWg+J1BxQyfBw" resname="InsertHyphen">
+          <source>Insert:</source>
+          <target>Insertar:</target>
+        </trans-unit>
         <trans-unit id="xZf5yixaHWdVwEkN2lFVkg" resname="AdvancedSettingsEllipsis">
           <source>Advanced settings…</source>
           <target>Ajustes avanzados...</target>
         </trans-unit>
         <trans-unit id="dOtz4kYVKAUCtHPmPtDbdw" resname="PictureAndTextboxes">
-          <source>Picture &amp; textboxes</source>
-          <target state="new">Picture &amp; textboxes</target>
+          <source>Pictures &amp; text boxes</source>
+          <target>Picture &amp; textboxes</target>
         </trans-unit>
       </group>
       <group resname="PaletteFonts">
@@ -458,7 +478,7 @@ This file is distributed under the same license as the product package.-->
           <source>Elements:</source>
           <target>Elementos:</target>
         </trans-unit>
-        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="pictures">
+        <trans-unit id="g85MxHB982KewW/4nsfyrA" resname="zoomHyphen">
           <source>Zoom:</source>
           <target>Zoom:</target>
         </trans-unit>
@@ -1122,11 +1142,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="4Z4RwzyWeP/Lva2PJqZkIw" resname="detailsColon">
           <source>Details:</source>
-          <target state="new">Details:</target>
+          <target>Details:</target>
         </trans-unit>
         <trans-unit id="KNV1Z0ClwSorv7H0yJnEIQ" resname="globalColon">
           <source>Global:</source>
-          <target state="new">Global:</target>
+          <target>Global:</target>
         </trans-unit>
       </group>
       <group resname="PaletteFindReplace">
@@ -1470,9 +1490,9 @@ This file is distributed under the same license as the product package.-->
           <source>PDF Export</source>
           <target>Exportar PDF</target>
         </trans-unit>
-        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgrounds">
-          <source>Backgrounds</source>
-          <target>Fondos</target>
+        <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgroundAndTextBoxes">
+          <source>Background and text boxes</source>
+          <target>Fondo y cajas de texto</target>
         </trans-unit>
         <trans-unit id="2zaxAplGAgJvGg5f+KnwOA" resname="headers">
           <source>Headers</source>
@@ -1482,6 +1502,10 @@ This file is distributed under the same license as the product package.-->
           <source>Footers</source>
           <target>Pies</target>
         </trans-unit>
+        <trans-unit id="GbCtfYrp9W6n/xYbqhxNkQ" resname="body">
+          <source>Body</source>
+          <target>Cuerpo</target>
+        </trans-unit>        
         <trans-unit id="tMZO5KyH1Qe77I7HSLR6og" resname="htmlWysiwyg">
           <source>HTML "WYSIWYG"</source>
           <target>HTML "WYSIWIG"</target>
@@ -1624,18 +1648,18 @@ Would you like to replace it?</source>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
-      <group resname="textArea">
+      <group resname="DialogImport">
         <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
           <source>Erase the document</source>
           <target>Borrar el documento</target>
         </trans-unit>
         <trans-unit id="FlHVoUXe7QVKBS23F0ny5Q" resname="BeforeDocument">
           <source>at the beginning</source>
-          <target>al principio</target>
+          <target>Al comienzo</target>
         </trans-unit>
         <trans-unit id="v2qONMZHKzxZtNap9RsfFw" resname="AfterDocument">
           <source>at the end</source>
-          <target>al final</target>
+          <target>Al final</target>
         </trans-unit>
         <trans-unit id="ewuKg1WiWojJOtdoz3wpqg" resname="ReplaceSelection">
           <source>at cursor position</source>
@@ -1713,7 +1737,7 @@ Would you like to replace it?</source>
         </trans-unit>
         <trans-unit id="sOiTU6STg6XmKEoEewJ0Cw" resname="BrowseTheImportLog">
           <source>Would you like to browse the import log?</source>
-          <target>¿Le gustaría navegar por el historial de importación?</target>
+          <target>¿Le gustaría navegar el historial de importación?</target>
         </trans-unit>
         <trans-unit id="cfsKcFg01whY9Os6iiMC0Q" resname="HoverOverTheLines">
           <source>Hover over the lines for more information</source>
@@ -1862,6 +1886,175 @@ Would you like to replace it?</source>
           <target>Propagar</target>
         </trans-unit>
       </group>
+
+      <group resname="DialogFormula">
+        <trans-unit id="xx" resname="currentDate">
+          <source>Current date</source>
+          <target>Fecha actual</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="currentTime">
+          <source>Current time</source>
+          <target>Hora actual</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="formulaNameColon">
+          <source>Formula name:</source>
+          <target>Nombre de la fórmula:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="formulaSourceColon">
+          <source>Formula source:</source>
+          <target>Fuente de la fórmula:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="standardFormatsColon">
+          <source>Standard formats:</source>
+          <target>Formatos estándar:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="editFormatColon">
+          <source>Edit format:</source>
+          <target>Edición del formato:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="returnedNullValueColon">
+          <source>Returned value if NULL:</source>
+          <target>Valor devuelto si NULL:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="standard">
+          <source>Standard</source>
+          <target>Estándar</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="advanced">
+          <source>Advanced</source>
+          <target>Parámetros avanzados</target>
+        </trans-unit> 
+        <trans-unit id="xx" resname="insert">
+          <source>Insert</source>
+          <target>Insertar</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="insertAndClose">
+          <source>Insert and close</source>
+          <target>Insertar y cerrar</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="close">
+          <source>Close</source>
+          <target>Cerrar</target>
+        </trans-unit>        
+      </group>
+
+      <group resname="DialogTableWizard">
+
+        <trans-unit id="xx" resname="TemplatesColon">
+          <source>Templates:</source>
+          <target>Plantillas:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ThemesColon">
+          <source>Themes:</source>
+          <target>Temas:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ColumnsColon">
+          <source>Columns:</source>
+          <target>Columnas:</target>
+        </trans-unit>          
+        <trans-unit id="xx" resname="RowsColon">
+          <source>Rows:</source>
+          <target>Lineas:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DisplayColon">
+          <source>Display:</source>
+          <target>Mostrar:</target>
+        </trans-unit>            
+        <trans-unit id="xx" resname="HeadersColon">
+          <source>Header rows:</source>
+          <target>Líneas de encabezado:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="BreaksAboveColon">
+          <source>Summary rows above:</source>
+          <target>Líneas de resumen arriba:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DataRowColon">
+          <source>Data row:</source>
+          <target>Línea de datos:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="BreaksBelowColon">
+          <source>Summary rows below:</source>
+          <target>Líneas de resumen abajo:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CarryOverColon">
+          <source>Carry over row:</source>
+          <target>Línea de aplazamiento:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ExtraRowsColon">
+          <source>Extra rows:</source>
+          <target>Líneas adicionales:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ZoomColon">
+          <source>Zoom:</source>
+          <target>Zoom:</target>
+        </trans-unit>        
+        <trans-unit id="xx" resname="DisplayFormulas">
+          <source>Display formulas</source>
+          <target>Mostrar fórmulas</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DisplayData">
+          <source>Display data</source>
+          <target>Mostrar datos</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="Sample">
+          <source>Sample</source>
+          <target>Ejemplo</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="AvailableFormulas">
+          <source>Available formulas…</source>
+          <target>Fórmulas disponibles...</target>
+        </trans-unit>
+
+        <trans-unit id="xx" resname="Insert">
+          <source>Insert</source>
+          <target>Insertar</target>
+        </trans-unit>
+
+        <trans-unit id="xx" resname="InfoMain">
+          <source>This dialog box allows you to insert a table in your document, the contents of which will be based on database data.</source>
+          <target>Este diálogo permite insertar una tabla en el documento cuyo contenido se basará en los datos de la base.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoContextualClic">
+          <source>Use the contextual menu to insert additional formulas into the table.</source>
+          <target>Utilice el menú contextual para insertar fórmulas adicionales en la tabla.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoHeaderRows">
+          <source>The header rows are replicated at each page break.</source>
+          <target>Las líneas de encabezado se replican en cada salto de página.</target>
+        </trans-unit>      
+        <trans-unit id="xx" resname="InfoDataRow">
+          <source>This row will be filled by each element of the database.</source>
+          <target>Esta línea será llenada por los elementos de la base.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoSummaryRows">
+          <source>The summary rows are inserted each time the reference value defined for the row changes.</source>
+          <target>Las líneas de resumen se insertan siempre que cambia el valor de referencia definido para la línea de cambio.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoCarryOverRow">
+          <source>The carry over row is inserted before each page break (if any).</source>
+          <target>La línea de arrastre se inserta antes de cada salto de página (si lo hay).</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoExtraRows">
+          <source>The extra rows are added at the end of the table.</source>
+          <target>Se agregan líneas adicionales al final de la tabla.</target>
+        </trans-unit>
+ 
+        <trans-unit id="xx" resname="JSONparseError">
+          <source>The file ":1" is malformed.
+(JSON parsing error)</source>
+          <target>El archivo ":1" está mal formado.
+(Error de lectura JSON)</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="JSONvalidationError">
+          <source>The file ":1" is not valid.
+(JSON validation error)</source>
+          <target>El archivo ":1" no es válido.
+(Error de validación JSON)</target>
+        </trans-unit>
+        
+      </group>
+
+
       <group resname="Menu_Paragraph">
         <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
           <source>Reset paragraph font attributes</source>
@@ -1926,6 +2119,59 @@ Would you like to replace it?</source>
           <target>Evaluar las tablas</target>
         </trans-unit>
       </group>
+
+      <group resname="Menu_SetTableBreak">
+        <trans-unit id="Menu_SetTableBreak_1" resname="DefineAsBreakRow">
+          <source>Define as break row…</source>
+          <target>Definir como ruptura...</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_2" resname="RemoveBreak">
+          <source>Remove break</source>
+          <target>Eliminar ruptura</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_3" resname="EnterBreakName">
+          <source>Enter the expression to use as break…</source>
+          <target>Introduzca la expresión que desea utilizar como ruptura...</target>
+        </trans-unit>
+        <trans-unit id="Menu_SetTableBreak_4" resname="SetBreak">
+          <source>Set</source>
+          <target>Definir</target>
+        </trans-unit>
+        
+        <trans-unit id="Window_D_TinyFormula_1" resname="BreakFormula">
+          <source>Break formula</source>
+          <target>Fórmula de ruptura</target>
+        </trans-unit>
+
+      </group>
+
+      <group resname="ExportWindowTitle">
+        <trans-unit id="ExportWindowTitle_1" resname="TextExport">
+          <source>Text export</source>
+          <target>Exportar texto</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_2" resname="HTMLExport">
+          <source>HTML export</source>
+          <target>Exportar HTML</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_3" resname="HTMLMimeExport">
+          <source>HTML Mime export</source>
+          <target>HTML Mime export</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_4" resname="WordExport">
+          <source>Microsoft Word export</source>
+          <target>Export. Microsoft Word</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_5" resname="PDFExport">
+          <source>PDF export</source>
+          <target>Exportación PDF</target>
+        </trans-unit>
+        <trans-unit id="ExportWindowTitle_6" resname="SVGExport">
+          <source>SVG export</source>
+          <target>Exportación SVG</target>
+        </trans-unit>        
+      </group>
+
     </body>
   </file>
 

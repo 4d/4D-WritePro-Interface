@@ -420,6 +420,10 @@ This file is distributed under the same license as the product package.-->
           <source>Protect cell</source>
           <target>Proteger celda</target>
         </trans-unit>
+        <trans-unit id="xxx" resname="protectTextArea">
+          <source>Protect text area</source>
+          <target>Proteger el área de texto</target>
+        </trans-unit>
         <trans-unit id="WTkM05EEsc772zfzDM6Jwg" resname="protectDocument">
           <source>Enable document protection</source>
           <target>Habilitar la protección del documento</target>
@@ -474,7 +478,15 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">
           <source>Insert a text box</source>
-          <target state="new">Insert a text box</target>
+          <target>Insert a text box</target>
+        </trans-unit>
+        <trans-unit id="xxx" resname="mergeCells">
+          <source>Merge cells</source>
+          <target>Combinar celdas</target>
+        </trans-unit>
+        <trans-unit id="xxx" resname="unmergeCells">
+          <source>Unmerge cells</source>
+          <target>Descombinar celdas</target>
         </trans-unit>
       </group>
       <group resname="Tabs">
@@ -566,7 +578,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="an7Gfwv2eaZPtYEu4Dtf2A" resname="TextBoxes">
           <source>Text boxes</source>
-          <target state="new">Text boxes</target>
+          <target>Text boxes</target>
+        </trans-unit>
+        <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">
+          <source>Footers</source>
+          <target>Pies</target>
         </trans-unit>
       </group>
     </body>
