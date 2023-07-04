@@ -1984,6 +1984,10 @@ Soll er ersetzt werden?</target>
           <source>Extra rows:</source>
           <target>Extra-Zeilen:</target>
         </trans-unit>
+        <trans-unit id="xx" resname="ZoomColon">
+          <source>Zoom:</source>
+          <target>Zoom:</target>
+        </trans-unit>
         <trans-unit id="xx" resname="DisplayFormulas">
           <source>Display formulas</source>
           <target>Formeln anzeigen</target>
@@ -1996,7 +2000,10 @@ Soll er ersetzt werden?</target>
           <source>Sample</source>
           <target>Beispiel</target>
         </trans-unit>
-
+        <trans-unit id="xx" resname="AvailableFormulas">
+          <source>Available formulas…</source>
+          <target>Verfügbare Formeln…</target>
+        </trans-unit>
       </group>
 
 
