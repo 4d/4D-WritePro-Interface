@@ -1966,7 +1966,7 @@ Soll er ersetzt werden?</target>
         </trans-unit>
         <trans-unit id="xx" resname="BreaksAboveColon">
           <source>Breaks above rows:</source>
-          <target>Umbrüche über der Zeiles:</target>
+          <target>Zwischensummen über den Zeilen:</target>
         </trans-unit>
         <trans-unit id="xx" resname="DataRowColon">
           <source>Data row:</source>
@@ -1974,7 +1974,7 @@ Soll er ersetzt werden?</target>
         </trans-unit>
         <trans-unit id="xx" resname="BreaksBelowColon">
           <source>Breaks below rows:</source>
-          <target>Umbrüche unter den Zeilen:</target>
+          <target>Zwischensumme unter den Zeilen:</target>
         </trans-unit>
         <trans-unit id="xx" resname="CarryOverColon">
           <source>Carry over row:</source>
@@ -2004,6 +2004,54 @@ Soll er ersetzt werden?</target>
           <source>Available formulas…</source>
           <target>Verfügbare Formeln…</target>
         </trans-unit>
+
+        <trans-unit id="xx" resname="Insert">
+          <source>Insert</source>
+          <target>Einsetzen</target>
+        </trans-unit>
+
+        <trans-unit id="xx" resname="InfoMain">
+          <source>This dialog allows you to insert a table in your document, the contents of which will be based on the database data.</source>
+          <target>Mit diesem Dialog können Sie eine Tabelle in Ihr Dokument einfügen, deren Inhalt auf den Daten der Datenbank basiert.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoContextualClic">
+          <source>Use the contextual menu to insert additional formulas into the table.</source>
+          <target>UÜber das Kontextmenü können Sie weitere Formeln in die Tabelle einfügen.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoHeaderRows">
+          <source>The header rows are replicated at each page break.</source>
+          <target>Die Kopfzeilen werden bei jedem Seitenumbruch wiederholt.</target>
+        </trans-unit>         
+        <trans-unit id="xx" resname="InfoDataRow">
+          <source>This row will be filled by each element of the database.</source>
+          <target>Diese Zeile wird mit jedem Element der Datenbank gefüllt.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoSummaryRows">
+          <source>The summary rows are inserted each time the reference value defined for the row changes.</source>
+          <target>Die Zwischensummenzeilen werden jedes Mal eingefügt, wenn sich der für die Zeile definierte Referenzwert ändert.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoCarryOverRow">
+          <source>The carry over row is inserted before each page break (if any).</source>
+          <target>Die Übertragszeile wird vor jedem Seitenumbruch eingefügt (falls vorhanden)..</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoExtraRows">
+          <source>The extra rows are inserted at the end of the table.</source>
+          <target>Die zusätzlichen Zeilen werden am Ende der Tabelle hinzugefügt.</target>
+        </trans-unit>
+
+         <trans-unit id="xx" resname="JSONparseError">
+          <source>The file ":1" is malformed.
+(JSON parsing error)</source>
+          <target>Die Datei ":1" ist fehlerhaft.
+(JSON Parsing Error)</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="JSONvalidationError">
+          <source>The file ":1" is malformed.
+(JSON parsing error)</source>
+          <target>Die Datei ":1" ist fehlerhaft.
+(JSON Validation Eigenschaftrror)</target>
+        </trans-unit>
+             
       </group>
 
 
