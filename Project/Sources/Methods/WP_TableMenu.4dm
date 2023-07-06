@@ -8,7 +8,6 @@ var $files; $_templates; $_icons; $tables : Collection
 var $4Dtable : Pointer
 var $path; $menu; $choice; $where; $formulaSource : Text
 
-
 $where:=""
 
 $rows:=WP Table get rows:C1475(Form:C1466.selection)

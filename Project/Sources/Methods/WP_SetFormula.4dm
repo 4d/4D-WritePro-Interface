@@ -95,7 +95,8 @@ If (Count parameters:C259=0)  // component context
 	End if 
 	
 	
-Else   // host database context
+Else   // host database context  ///  FAUX. ON EST TOUJOURS DANS LE CONTEXTE DU COMPOSANT :-////
+	
 	
 	
 	$formula:=Formula from string:C1601($trueExpression)
