@@ -444,9 +444,9 @@ This file is distributed under the same license as the product package.-->
           <source>Remove soft hyphen</source>
           <target>Retirer le trait d'union conditionnel</target>
         </trans-unit>
-        <trans-unit id="nkUFnYv0Dk1wv6yHCjjgqQ" resname="insertContinuousPageBreak">
-          <source>Insert continuous page break</source>
-          <target>Insérer un saut de page continu</target>
+        <trans-unit id="nkUFnYv0Dk1wv6yHCjjgqQ" resname="insertContinuousSectionBreak">
+          <source>Insert continuous section break</source>
+          <target>Insérer un saut de section continu</target>
         </trans-unit>
         <trans-unit id="4CkYikT+ULlL5PCYMO32fA" resname="edit">
           <source>Edit</source>

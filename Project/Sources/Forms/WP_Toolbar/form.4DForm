@@ -1936,7 +1936,7 @@
 					"left": 425,
 					"width": 40,
 					"height": 40,
-					"tooltip": ":xliff:insertContinuousPageBreak",
+					"tooltip": ":xliff:insertContinuousSectionBreak",
 					"action": "insertContinuousSectionBreak",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/ContinuousSectionBreak_32.png",

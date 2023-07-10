@@ -444,8 +444,8 @@ This file is distributed under the same license as the product package.-->
           <source>Remove soft hyphen</source>
           <target>Remover o h√≠fen de separa√ß√£o</target>
         </trans-unit>
-        <trans-unit id="nkUFnYv0Dk1wv6yHCjjgqQ" resname="insertContinuousPageBreak">
-          <source>Insert continuous page break</source>
+        <trans-unit id="nkUFnYv0Dk1wv6yHCjjgqQ" resname="insertContinuousSectionBreak">
+          <source>Insert continuous section break</source>
           <target>Insira uma quebra cont√≠nua da p√°gina</target>
         </trans-unit>
         <trans-unit id="4CkYikT+ULlL5PCYMO32fA" resname="edit">
