@@ -30,7 +30,7 @@
 			<table_ref uuid="FCDC2942AAC24F1C8E119520A0C6B44B" name="SAMPLE"/>
 		</field_ref>
 	</index>
-	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0" package_name="4D WritePro Interface" structure_file_name="4D WritePro Interface" data_file_path=":4D WritePro Interface.4DD">
+	<base_extra __stringCompHash="icu:72.1.0" __keywordBuildingHash="icu:72.1.0" package_name="4D WritePro Interface" structure_file_name="4D WritePro Interface" data_file_path=":4D WritePro Interface.4DD">
 		<journal_file journal_file_enabled="false"/>
 	</base_extra>
 </base>
