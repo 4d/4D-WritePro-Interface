@@ -86,26 +86,19 @@ If (Count parameters:C259=0)  // component context
 				
 			End if 
 			
-			
-			
 		End if 
 		
 	Else 
 		ALERT:C41(Get localized string:C991("NoTableAvailable"))
 	End if 
 	
-	
-Else   // host database context
-	
+Else 
 	
 	$formula:=Formula from string:C1601($trueExpression)
 	If ($WPrange.type#2)  // not an anchored picture
-		
 		WP INSERT FORMULA:C1703($WPrange; $formula; wk replace:K81:177)
-		
-	Else   // si anchored picture, update the attribute
+	Else   // if anchored picture, update the attribute
 		$WPrange.imageFormula:=$formula
 	End if 
-	
 	
 End if 
