@@ -2049,7 +2049,7 @@ Soll er ersetzt werden?</target>
           <source>The file ":1" is malformed.
 (JSON parsing error)</source>
           <target>Die Datei ":1" ist fehlerhaft.
-(JSON Validation Eigenschaftrror)</target>
+(JSON Validation Error)</target>
         </trans-unit>
              
       </group>
