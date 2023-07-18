@@ -234,7 +234,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="94" resname="learn">
           <source>Add to dictionary</source>
-          <target>Agregar al Diccionario</target>
+          <target>Agregar al diccionario</target>
         </trans-unit>
         <trans-unit id="19" resname="lists">
           <source>Lists</source>
@@ -266,7 +266,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="38" resname="modePage">
           <source>Page mode</source>
-          <target>Modo de página</target>
+          <target>Modo página</target>
         </trans-unit>
         <trans-unit id="86" resname="movetoBack">
           <source>Move to back</source>
@@ -282,7 +282,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="71" resname="paddingLeft">
           <source>Left padding</source>
-          <target>Relleno izquierdo</target>
+          <target>Margen interno izquierdo</target>
         </trans-unit>
         <trans-unit id="70" resname="paddingRight">
           <source>Right padding</source>
@@ -474,7 +474,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">
           <source>Insert a text box</source>
-          <target state="new">Insert a text box</target>
+          <target>Insert a text box</target>
         </trans-unit>
       </group>
       <group resname="Tabs">
@@ -562,12 +562,18 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">
           <source>Footers</source>
-          <target>Pies</target>
+          <target>Pies de Página</target>
         </trans-unit>
         <trans-unit id="an7Gfwv2eaZPtYEu4Dtf2A" resname="TextBoxes">
           <source>Text boxes</source>
-          <target state="new">Text boxes</target>
+          <target>Text boxes</target>
         </trans-unit>
+
+        <trans-unit id="xxx" resname="PrintSettings">
+          <source>Print settings…</source>
+          <target/>
+        </trans-unit>
+
       </group>
     </body>
   </file>
