@@ -22,7 +22,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="28" resname="alignLeft">
           <source>Align left</source>
-          <target>Alinhar √† esquerda</target>
+          <target>Alinhar à esquerda</target>
         </trans-unit>
         <trans-unit id="86" resname="alignMiddle">
           <source>Align middle</source>
@@ -30,35 +30,35 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="30" resname="alignRight">
           <source>Align right</source>
-          <target>Alinhar √† direita</target>
+          <target>Alinhar à direita</target>
         </trans-unit>
         <trans-unit id="83" resname="alignTop">
           <source>Align top</source>
-          <target>Alinhar √† parte superior</target>
+          <target>Alinhar a parte superior</target>
         </trans-unit>
         <trans-unit id="88" resname="anchorToPage">
           <source>Anchor to page</source>
-          <target>Ancorar a p√°gina</target>
+          <target>Âncora à página</target>
         </trans-unit>
         <trans-unit id="89" resname="AnchorToSection">
           <source>Anchor to section</source>
-          <target>Ancorar a se√ß√£o</target>
+          <target>Âncora à seção</target>
         </trans-unit>
         <trans-unit id="95" resname="autoCorrection">
           <source>Auto correction</source>
-          <target>Corre√ß√£o autom√°tica</target>
+          <target>Correção automática</target>
         </trans-unit>
         <trans-unit id="101" resname="autoDashSubstitutionsEnabled">
           <source>Auto dash substitutions enabled</source>
-          <target>Substitui√ß√£o autom√°tica de tra√ßo</target>
+          <target>Substituição automática de hífens</target>
         </trans-unit>
         <trans-unit id="99" resname="autoLanguageEnabled">
           <source>Auto language enabled</source>
-          <target>Detec√ß√£o autom√°tica de idioma</target>
+          <target>Detecção automática de idioma</target>
         </trans-unit>
         <trans-unit id="100" resname="autoQuoteSubstitutionsEnabled">
           <source>Auto quote substitutions enabled</source>
-          <target>Substitui√ß√£o autom√°tica de cita√ß√µes</target>
+          <target>Substituição automática de aspas</target>
         </trans-unit>
         <trans-unit id="13" resname="backgroundColor">
           <source>Background color</source>
@@ -130,11 +130,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="33" resname="columnsSpacing">
           <source>Columns spacing</source>
-          <target>Espa√ßo de colunas</target>
+          <target>Espaço da colunas</target>
         </trans-unit>
         <trans-unit id="49" resname="compute4Dexpressions">
           <source>Compute 4D expressions</source>
-          <target>Calcule express√µes 4D</target>
+          <target>Calcular expressões 4D</target>
         </trans-unit>
         <trans-unit id="17" resname="copy">
           <source>Copy</source>
@@ -146,15 +146,15 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="108" resname="enableGrammar">
           <source>Enable grammar</source>
-          <target>Corre√ß√£o gramatical</target>
+          <target>Correção gramatical</target>
         </trans-unit>
         <trans-unit id="90" resname="enableSpell">
           <source>Spellcheck</source>
-          <target>Verifica√ß√£o ortogr√°fica</target>
+          <target>Verificação ortográfica</target>
         </trans-unit>
         <trans-unit id="97" resname="enableSubstitution">
           <source>Activate system substitution</source>
-          <target>Ativar sistema de substitui√ß√µes</target>
+          <target>Ativar sistema de substituições</target>
         </trans-unit>
         <trans-unit id="18" resname="fontSizeDown">
           <source>Font size down</source>
@@ -170,7 +170,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="47" resname="freeze4DExpressions">
           <source>Freeze 4D expressions</source>
-          <target>Congelar express√µes 4D</target>
+          <target>Congelar expressões 4D</target>
         </trans-unit>
         <trans-unit id="91" resname="ignore">
           <source>Ignore</source>
@@ -178,15 +178,15 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="78" resname="imageBehind">
           <source>Image behind text</source>
-          <target/>
+          <target>Imagem atrás do texto</target>
         </trans-unit>
         <trans-unit id="80" resname="imageInFront">
           <source>Image in front of text</source>
-          <target/>
+          <target>Imagem na frente do texto</target>
         </trans-unit>
         <trans-unit id="79" resname="imageInline">
           <source>Image inline with text</source>
-          <target/>
+          <target>Imagem em linha com o texto</target>
         </trans-unit>
         <trans-unit id="50" resname="insertColumnBreak">
           <source>Insert column break</source>
@@ -198,19 +198,19 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="45" resname="insertExpression">
           <source>Insert 4D expression</source>
-          <target>Inserir express√£o 4D</target>
+          <target>Inserir expressão 4D</target>
         </trans-unit>
         <trans-unit id="51" resname="insertPageBreak">
           <source>Insert page break</source>
-          <target>Inserir uma quebra de p√°gina</target>
+          <target>Inserir quebra de página</target>
         </trans-unit>
         <trans-unit id="42" resname="insertPageCount">
           <source>Insert page count</source>
-          <target>Inserir n√∫mero de p√°ginas</target>
+          <target>Inserir número de páginas</target>
         </trans-unit>
         <trans-unit id="41" resname="insertPageNumber">
           <source>Insert page number</source>
-          <target>Inserir n√∫mero de p√°gina</target>
+          <target>Inserir número de página</target>
         </trans-unit>
         <trans-unit id="55" resname="insertPicture">
           <source>Insert picture…</source>
@@ -218,7 +218,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="54" resname="insertSectionbreak">
           <source>Insert section break</source>
-          <target>Inserir quebra de se√ß√£o</target>
+          <target>Inserir quebra de seção</target>
         </trans-unit>
         <trans-unit id="44" resname="InsertTime">
           <source>Insert time</source>
@@ -226,7 +226,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="cEo5vs49yB1ZwEbYr1xONw" resname="italic">
           <source>Italic</source>
-          <target>It√°lico</target>
+          <target>Itálico</target>
         </trans-unit>
         <trans-unit id="31" resname="justify">
           <source>Justify</source>
@@ -234,7 +234,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="94" resname="learn">
           <source>Add to dictionary</source>
-          <target>Adicionar ao dicion√°rio</target>
+          <target>Adicionar ao dicionário</target>
         </trans-unit>
         <trans-unit id="19" resname="lists">
           <source>Lists</source>
@@ -266,7 +266,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="38" resname="modePage">
           <source>Page mode</source>
-          <target>Modo de p√°gina</target>
+          <target>Modo página</target>
         </trans-unit>
         <trans-unit id="86" resname="movetoBack">
           <source>Move to back</source>
@@ -282,7 +282,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="71" resname="paddingLeft">
           <source>Left padding</source>
-          <target>Preenchimento √† esquerda</target>
+          <target>Margem interna esquerda</target>
         </trans-unit>
         <trans-unit id="70" resname="paddingRight">
           <source>Right padding</source>
@@ -294,15 +294,15 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="107" resname="pageOrientation">
           <source>Page orientation</source>
-          <target>Orienta√ß√£o da p√°gina</target>
+          <target>Orientação da página</target>
         </trans-unit>
         <trans-unit id="106" resname="pageSize">
           <source>Page size</source>
-          <target>Tamanho da p√°gina</target>
+          <target>Tamanho da página</target>
         </trans-unit>
         <trans-unit id="87" resname="paragraphs">
           <source>Paragraphs</source>
-          <target>Par√°grafos</target>
+          <target>Parágrafos</target>
         </trans-unit>
         <trans-unit id="15" resname="paste">
           <source>Paste</source>
@@ -322,7 +322,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="98" resname="removeSubstitution">
           <source>Remove substitutions</source>
-          <target>Remover substitui√ß√µes</target>
+          <target>Remover substituições</target>
         </trans-unit>
         <trans-unit id="24" resname="selectAll">
           <source>Select all</source>
@@ -334,11 +334,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="48" resname="showHide4Dexpressions">
           <source>Show / hide 4D expressions</source>
-          <target>Mostrar / ocultar express√µes 4D</target>
+          <target>Mostrar / ocultar expressões 4D</target>
         </trans-unit>
         <trans-unit id="57" resname="showHideFooters">
           <source>Show / hide footers</source>
-          <target>Mostrar / ocultar rodap√©s</target>
+          <target>Mostrar / ocultar rodapés</target>
         </trans-unit>
         <trans-unit id="53" resname="showHideFrames">
           <source>Show / hide frames</source>
@@ -346,7 +346,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="56" resname="showHideHeaders">
           <source>Show / hide headers</source>
-          <target>Mostrar / ocultar cabe√ßalhos</target>
+          <target>Mostrar / ocultar cabeçalhos</target>
         </trans-unit>
         <trans-unit id="54" resname="showHideHiddenChars">
           <source>Show / hide hidden chars</source>
@@ -354,11 +354,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="56" resname="showHideHiddenHorizontalRuler">
           <source>Show / hide horizontal ruler</source>
-          <target>Mostrar / ocultar r√©gua horizontal</target>
+          <target>Mostrar / ocultar régua horizontal</target>
         </trans-unit>
         <trans-unit id="57" resname="showHideHiddenVerticalRuler">
           <source>Show / hide vertical ruler</source>
-          <target>Mostrar/ocultar r√©gua vertical</target>
+          <target>Mostrar/ocultar régua vertical</target>
         </trans-unit>
         <trans-unit id="108" resname="size">
           <source>Size</source>
@@ -366,7 +366,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="102" resname="spellDialog">
           <source>Spell dialog</source>
-          <target>Di√°logo de ortografia</target>
+          <target>Diálogo de ortografia</target>
         </trans-unit>
         <trans-unit id="FF84ifbM0/hfJWYZADoijw" resname="strikethrough">
           <source>Strikethrough</source>
@@ -378,7 +378,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="110" resname="substitutions">
           <source>Show / hide substitutions</source>
-          <target>Mostrar / ocultar substitui√ß√µes</target>
+          <target>Mostrar / ocultar substituições</target>
         </trans-unit>
         <trans-unit id="11" resname="superscript">
           <source>Superscript</source>
@@ -398,7 +398,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="93" resname="unlearn">
           <source>Remove from dictionary</source>
-          <target>Remover do dicion√°rio</target>
+          <target>Remover do dicionário</target>
         </trans-unit>
         <trans-unit id="81" resname="zoom">
           <source>Zoom</source>
@@ -406,7 +406,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="PjDICmJfB+IqPGQcyvXkNA" resname="protectParagraph">
           <source>Protect paragraph</source>
-          <target>Proteger par√°grafo</target>
+          <target>Proteger parágrafo</target>
         </trans-unit>
         <trans-unit id="hGxsyWJ4OuFZ0mdV7Aw1hA" resname="protectTable">
           <source>Protect table</source>
@@ -418,7 +418,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="XIc4CBvMQWzefZfhtU+Fog" resname="protectCell">
           <source>Protect cell</source>
-          <target>Proteger c√©lula</target>
+          <target>Proteger célula</target>
         </trans-unit>
         <trans-unit id="xxx" resname="protectTextArea">
           <source>Protect text area</source>
@@ -426,7 +426,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="WTkM05EEsc772zfzDM6Jwg" resname="protectDocument">
           <source>Enable document protection</source>
-          <target>Habilitar a prote√ß√£o do documento</target>
+          <target>Ativar a proteção do documento</target>
         </trans-unit>
         <trans-unit id="f4FmDAwxzQUZfL8FuuLc0g" resname="import">
           <source>Import</source>
@@ -438,15 +438,15 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="/CMBzGF25LWzqcDFGiS6sA" resname="InsertSoftHyphen">
           <source>Insert soft hyphen</source>
-          <target>Inserir h√≠fen de separa√ß√£o</target>
+          <target>Inserir hífen de separação</target>
         </trans-unit>
         <trans-unit id="ZLC852EL1drI+I11mR0Tvg" resname="RemoveSoftHyphen">
           <source>Remove soft hyphen</source>
-          <target>Remover o h√≠fen de separa√ß√£o</target>
+          <target>Remover o hífen de separação</target>
         </trans-unit>
         <trans-unit id="nkUFnYv0Dk1wv6yHCjjgqQ" resname="insertContinuousSectionBreak">
           <source>Insert continuous section break</source>
-          <target>Insira uma quebra cont√≠nua da p√°gina</target>
+          <target>Inserir uma quebra de seção contínua</target>
         </trans-unit>
         <trans-unit id="4CkYikT+ULlL5PCYMO32fA" resname="edit">
           <source>Edit</source>
@@ -454,11 +454,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="QOb/KgQRLtlJ9bxSHsL+hQ" resname="paragraphSettings">
           <source>Paragraph settings</source>
-          <target>Op√ß√µes de par√°grafo</target>
+          <target>Opções de parágrafo</target>
         </trans-unit>
         <trans-unit id="qVqquxTVolQoqo/2HDQchQ" resname="DocumentInfo">
           <source>Document information</source>
-          <target>Informa√ß√µes do documento</target>
+          <target>Informações do documento</target>
         </trans-unit>
         <trans-unit id="xB2/MofqT/+E9+utQApmQA" resname="MoreTextSettings">
           <source>More text settings</source>
@@ -466,15 +466,15 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="usmFit13wk3qE3iKTaF/YA" resname="Radius">
           <source>Radius</source>
-          <target>R√°dio</target>
+          <target>Raio</target>
         </trans-unit>
         <trans-unit id="YHVwqX8XI8m8DMYdgvHX3Q" resname="InsertDocumentInfo">
           <source>Insert document information</source>
-          <target>Inserir informa√ß√µes do documento</target>
+          <target>Inserir informações do documento</target>
         </trans-unit>
         <trans-unit id="hnQ1aCT77wrAYUrIuNJaDg" resname="ColumnSettings">
           <source>Column settings</source>
-          <target>Op√ß√µes de coluna</target>
+          <target>Opções de coluna</target>
         </trans-unit>
         <trans-unit id="aLxletw0D4/OXIvBOmj7Ng" resname="InsertTextBox">
           <source>Insert a text box</source>
@@ -496,7 +496,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="21" resname="Home">
           <source>Home</source>
-          <target>Inic√≠o</target>
+          <target>Inicío</target>
         </trans-unit>
         <trans-unit id="26" resname="images">
           <source>Images</source>
@@ -520,7 +520,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="5Z6VRDjZQZ7WPdlb+giy5g" resname="protection">
           <source>Protection</source>
-          <target>Prote√ß√£o</target>
+          <target>Proteção</target>
         </trans-unit>
         <trans-unit id="1u02Lw6NTI7jpeJX1CLp2A" resname="importExport">
           <source>Import Export</source>
@@ -532,7 +532,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="jommi73R0Dp87QF5h4UANw" resname="formulaInfo">
           <source>Formulas and information</source>
-          <target>F√≥rmulas e informa√ß√µes</target>
+          <target>Fórmulas e informações</target>
         </trans-unit>
         <trans-unit id="NKCIqThMk09ZY+qSWR4zRw" resname="background">
           <source>Background</source>
@@ -540,11 +540,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="sFQsGsLwXPZnU/DjSqlmsw" resname="unitsAndSizes">
           <source>Units and sizes</source>
-          <target>Unidades e dimens√µes</target>
+          <target>Unidades e dimensões</target>
         </trans-unit>
         <trans-unit id="27FB4/hz8xoNjYSQHbk5cg" resname="tabulations">
           <source>Tabulations</source>
-          <target>Tabula√ß√µes</target>
+          <target>Tabulações</target>
         </trans-unit>
       </group>
       <group resname="Labels">
@@ -554,7 +554,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="59" resname="sections">
           <source>Sections</source>
-          <target>Se√ß√µes</target>
+          <target>Seções</target>
         </trans-unit>
         <trans-unit id="60" resname="pictures">
           <source>Pictures</source>
@@ -570,11 +570,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="6XaBEYjv65KnAQo0lgIBJA" resname="headers">
           <source>Headers</source>
-          <target>Cabe√ßalhos</target>
+          <target>Cabeçalhos</target>
         </trans-unit>
         <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">
           <source>Footers</source>
-          <target>Rodap√©s</target>
+          <target>Rodapés de página</target>
         </trans-unit>
         <trans-unit id="an7Gfwv2eaZPtYEu4Dtf2A" resname="TextBoxes">
           <source>Text boxes</source>
@@ -582,7 +582,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="vAD0jkGO0raw8N6nPnTvpA" resname="footers">
           <source>Footers</source>
-          <target>Rodap√©s</target>
+          <target>Rodapés de página</target>
         </trans-unit>
       </group>
     </body>

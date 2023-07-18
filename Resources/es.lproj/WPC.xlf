@@ -660,7 +660,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="3" resname="inches">
           <source>inches</source>
-          <target>Pulgadas</target>
+          <target>pulgadas</target>
         </trans-unit>
         <trans-unit id="4" resname="pt">
           <source>pt</source>
@@ -668,7 +668,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="5" resname="auto">
           <source>auto</source>
-          <target>Auto</target>
+          <target>auto</target>
         </trans-unit>
         <trans-unit id="6" resname="pct">
           <source>%</source>
