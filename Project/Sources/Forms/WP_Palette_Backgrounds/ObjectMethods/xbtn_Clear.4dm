@@ -14,4 +14,8 @@ If ($oCurrent#Null:C1517)
 	// reset attribute
 	WP_SetBackgroundPicture($oCurrent; $pict)
 	
+	// 
+	WP_GetBackgroundURL($oCurrent)
+	WP_GetBackgroundSize($oCurrent)
+	
 End if 

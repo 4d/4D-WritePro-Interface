@@ -640,6 +640,18 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Backgrounds"
+				},
+				"CSSUnits": {
+					"type": "dropdown",
+					"top": 578,
+					"left": 288,
+					"width": 65,
+					"height": 19,
+					"focusable": false,
+					"class": "Palette",
+					"events": [
+						"onDataChange"
+					]
 				}
 			},
 			"entryOrder": [
@@ -666,7 +678,8 @@
 				"xbtn_Clear",
 				"xbtn_Apply",
 				"btn_insertImage",
-				"btn_insertTextArea"
+				"btn_insertTextArea",
+				"CSSUnits"
 			]
 		}
 	],
@@ -695,5 +708,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1550
+	"geometryStamp": 1558
 }

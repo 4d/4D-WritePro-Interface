@@ -1,5 +1,5 @@
 
-C_POINTER:C301($ptrArrayNames; $ptrArrayValues)
+C_POINTER:C301($ptrArrayNames; $ptrArrayValues; $ptrCSS)
 C_LONGINT:C283($paletteID)
 C_BOOLEAN:C305($setupOK)
 C_OBJECT:C1216($oCurrent)
@@ -22,12 +22,18 @@ Case of
 		
 		$ptrArrayNames:=OBJECT Get pointer:C1124(Object named:K67:5; "bgndSizeHorUnit")
 		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("auto"))
+		
+		// two new values added 2023/07/19 by RL
+		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("cover"))
+		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("contain"))
+		
 		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("pct"))
 		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("mm"))
 		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("cm"))
 		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("inches"))
 		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("pt"))
 		$ptrArrayNames->:=1
+		
 		
 		$ptrArrayNames:=OBJECT Get pointer:C1124(Object named:K67:5; "bgndSizeVertUnit")
 		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("auto"))
@@ -37,6 +43,20 @@ Case of
 		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("inches"))
 		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("pt"))
 		$ptrArrayNames->:=1
+		
+		
+		// CSS array added 2023/07/19 by RL
+		$ptrCSS:=OBJECT Get pointer:C1124(Object named:K67:5; "CSSUnits")
+		APPEND TO ARRAY:C911($ptrCSS->; "auto")
+		APPEND TO ARRAY:C911($ptrCSS->; "cover")
+		APPEND TO ARRAY:C911($ptrCSS->; "contain")
+		APPEND TO ARRAY:C911($ptrCSS->; "%")
+		APPEND TO ARRAY:C911($ptrCSS->; "mm")
+		APPEND TO ARRAY:C911($ptrCSS->; "cm")
+		APPEND TO ARRAY:C911($ptrCSS->; "in")
+		APPEND TO ARRAY:C911($ptrCSS->; "pt")
+		
+		
 		
 		
 		oForm.skinAppliedSub:=UI_ApplySkin

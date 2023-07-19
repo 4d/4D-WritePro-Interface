@@ -241,3 +241,6 @@ C_BOOLEAN:C305(WP_SelectText; $0)
 
 //gotoArea
 C_BOOLEAN:C305(gotoArea; $0)
+
+//WP_SetBackgroundSize
+C_TEXT:C284(WP_SetBackgroundSize; $2)

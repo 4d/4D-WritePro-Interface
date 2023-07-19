@@ -667,12 +667,20 @@ This file is distributed under the same license as the product package.-->
           <target>pt</target>
         </trans-unit>
         <trans-unit id="5" resname="auto">
-          <source>auto</source>
-          <target>auto</target>
+          <source>Auto</source>
+          <target>Auto</target>
         </trans-unit>
         <trans-unit id="6" resname="pct">
           <source>%</source>
           <target>%</target>
+        </trans-unit>
+        <trans-unit id="7" resname="cover">
+          <source>Cover</source>
+          <target>Cover</target>
+        </trans-unit>
+        <trans-unit id="8" resname="contain">
+          <source>Contain</source>
+          <target>Contain</target>
         </trans-unit>
       </group>
       <group resname="borderStyleNames">
