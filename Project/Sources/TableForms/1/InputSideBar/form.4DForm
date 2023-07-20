@@ -353,9 +353,9 @@
 				},
 				"Variable1": {
 					"type": "input",
-					"top": 901,
-					"left": 104,
-					"width": 72,
+					"top": 909,
+					"left": 35,
+					"width": 141,
 					"height": 17,
 					"sizingY": "move",
 					"dataSource": "templateID",
@@ -382,8 +382,8 @@
 				},
 				"Button16": {
 					"type": "button",
-					"top": 909,
-					"left": 237,
+					"top": 918,
+					"left": 217,
 					"width": 127,
 					"height": 21,
 					"sizingY": "move",
@@ -596,21 +596,6 @@
 						"onClick"
 					],
 					"sizingX": "fixed"
-				},
-				"Button30": {
-					"type": "button",
-					"text": "set NOT enterable",
-					"top": 829,
-					"left": 922,
-					"width": 160,
-					"height": 24,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button30.4dm",
-					"sizingY": "move",
-					"focusable": false,
-					"sizingX": "move"
 				}
 			}
 		}
@@ -619,7 +604,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 233,
+	"geometryStamp": 239,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
