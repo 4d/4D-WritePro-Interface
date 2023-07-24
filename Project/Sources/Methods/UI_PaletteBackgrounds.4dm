@@ -1,5 +1,6 @@
 //%attributes = {"invisible":true}
-#DECLARE($changeWhat : Text)
+
+#DECLARE($changeWhat : Text)  // <ACI0104082>
 
 var $typeSelection : Integer
 var $index : Integer
@@ -40,7 +41,7 @@ Else
 	
 End if 
 
-
+// <ACI0104082>
 If (Count parameters:C259>0)
 	
 	OBJECT SET ENABLED:C1123(*; "verticalSizeUnits"; True:C214)
@@ -176,3 +177,4 @@ If (Count parameters:C259>0)
 	OBJECT SET VALUE:C1742($changeWhat; $size)
 	
 End if 
+// </ACI0104082>

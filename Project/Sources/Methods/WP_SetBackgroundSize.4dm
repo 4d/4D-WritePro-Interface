@@ -1,8 +1,9 @@
 //%attributes = {"invisible":true}
 #DECLARE($range : Object)
+
+// <ACI0104082>
 var $value1; $value2 : Real
 var $attribute1; $attribute2 : Text
-
 If (Not:C34(OB Is empty:C1297($range)))
 	
 	$value1:=OBJECT Get value:C1743("bgndSizeHor")
@@ -19,7 +20,5 @@ If (Not:C34(OB Is empty:C1297($range)))
 	
 	WP SET ATTRIBUTES:C1342($range; wk background width:K81:27; $attribute1; wk background height:K81:28; $attribute2)
 	
+	// </ACI0104082>
 End if 
-
-
-

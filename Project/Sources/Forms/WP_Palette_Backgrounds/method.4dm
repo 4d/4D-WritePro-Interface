@@ -20,9 +20,10 @@ Case of
 		
 		TB_setAutomaticActions("background")
 		
-		
+		// <ACI0104082>
 		oForm.bgndSizeHor:=0  // Input Hor.
 		oForm.bgndSizeVert:=0  // Input Vert.
+		
 		
 		oForm.horizontalSizeUnits:=New object:C1471  // Dropdown Hor.
 		
@@ -77,7 +78,7 @@ Case of
 		oForm.verticalSizeUnits.memoUnit:=""
 		
 		oForm.verticalSizeUnits.index:=0
-		
+		// </ACI0104082>
 		
 		
 		
