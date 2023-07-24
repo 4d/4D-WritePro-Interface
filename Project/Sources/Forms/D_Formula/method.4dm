@@ -1,6 +1,6 @@
-var $file : 4D:C1709.File
-var $dictionnary; $context; $class; $ds : Object
-var $dataClassName; $attributeName; $lang : Text
+
+var $context; $class; $ds : Object
+var $dataClassName; $attributeName : Text
 var $i; $p; $count : Integer
 var $static : Boolean
 
@@ -122,7 +122,7 @@ Case of
 				//If ($count=0)  // the context contains only allowed or hidden table names
 				//For each ($dataClassName; ds)
 				//If ((Undefined(Form.context.allowedTables)) || (Form.context.allowedTables.length=0) || (Form.context.allowedTables.indexOf($dataClassName)>=0))\
-																																																																																																									 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
+																																																																																																														 && ((Undefined(Form.context.hiddenTables)) || (Form.context.hiddenTables.length=0) || (Form.context.hiddenTables.indexOf($dataClassName)<0))
 				
 				//// Add allowed classes to the context
 				////Form.context[$dataClassName]:=ds[$dataClassName].all().first()

@@ -1,8 +1,8 @@
 //%attributes = {"invisible":true}
 #DECLARE($applyTo : Text)->$choice : Text  // $applyTo = "insertTable", "table", "row"; column or "cell"
 
-var $headerRowCount; $i; $win : Integer
-var $range; $table; $folder; $template; $rows; $formula; $wpTable; $o; $breakFormula; $document : Object
+var $headerRowCount; $i : Integer
+var $range; $table; $folder; $template; $rows; $formula; $wpTable; $breakFormula; $document : Object
 var $isTable : Boolean
 var $files; $_templates; $_icons; $tables : Collection
 var $4Dtable : Pointer

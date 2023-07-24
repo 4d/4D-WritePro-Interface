@@ -9,7 +9,7 @@ var $oWidgetUpdate : Object
 
 C_BOOLEAN:C305($send)
 //C_OBJECT($oWidget)  // variable used manage to the 4D WritePro Widget
-C_POINTER:C301($widgetPtr; $areaPtr)  // Pointers on the area and widget
+C_POINTER:C301($areaPtr)  // Pointers on the area and widget
 C_POINTER:C301($p)
 //C_TEXT($areaName; $widgetName)  // "4DWritePro area" and "4DWritePro widget" object names
 

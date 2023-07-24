@@ -1,6 +1,4 @@
 
-
-C_OBJECT:C1216($oCurrent)
 C_LONGINT:C283($color)
 
 Case of 

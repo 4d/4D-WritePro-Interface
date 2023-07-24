@@ -1,5 +1,5 @@
 //%attributes = {}
-var $range; $form; $context : Object
+var $form : Object
 var $_formulas : Collection
 var $win : Integer
 

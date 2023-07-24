@@ -1,6 +1,5 @@
 //WP UpdateWidget("WPtoolbar"; "WParea")
 
-var $updateTemplate : Boolean
 var $menu; $choice; $description : Text
 var $range; $cells; $item; $table : Object
 var $tables : Collection

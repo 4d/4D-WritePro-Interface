@@ -1,5 +1,3 @@
-
-C_POINTER:C301($ptrArrayNames; $ptrArrayValues; $ptrCSS)
 C_LONGINT:C283($paletteID)
 C_BOOLEAN:C305($setupOK)
 C_OBJECT:C1216($oCurrent)

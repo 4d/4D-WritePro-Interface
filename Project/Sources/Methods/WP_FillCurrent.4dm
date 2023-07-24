@@ -1,8 +1,6 @@
 //%attributes = {"invisible":true}
 #DECLARE($checkObject : Text)->$current : Object
 
-
-var $typeSelection : Integer
 var $applyTo : Text
 
 

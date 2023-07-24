@@ -1,13 +1,6 @@
-
-C_POINTER:C301($ptrArrayNames; $ptrArrayValues)
 C_POINTER:C301($ptrTextLineHeightUnit)
-
-C_LONGINT:C283($case)
 C_BOOLEAN:C305($setupOK)
-C_OBJECT:C1216($oCurrent)
-
 C_LONGINT:C283($typeSelection)
-
 
 $typeSelection:=Form:C1466.selection.type
 

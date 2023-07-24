@@ -8,7 +8,7 @@
 var $file : 4D:C1709.File
 var $tablesDictionnary; $tablesDictionnary; $result : Collection
 var $structure; $table; $field : Object
-var $tempCol; $tablesDictionnary; $fieldsDictionnary; $col; $remove : Collection
+var $tempCol; $tablesDictionnary; $fieldsDictionnary; $col : Collection
 var $dataclassName; $attributeName : Text
 var $value : Text
 var $i; $p : Integer

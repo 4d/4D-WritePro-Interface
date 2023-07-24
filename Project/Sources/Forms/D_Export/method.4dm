@@ -1,7 +1,6 @@
 
 var $x1; $y1; $x2; $y1; $height : Integer
 var $limit : Text
-var $userPref : cs:C1710.preferences
 
 Case of 
 	: (FORM Event:C1606.code=On Load:K2:1)

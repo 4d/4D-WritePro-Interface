@@ -1,7 +1,4 @@
 C_LONGINT:C283($color)
-C_LONGINT:C283($style)
-
-C_POINTER:C301($ptrStyleNames; $ptrStyleValues)
 
 Case of 
 	: (Form event code:C388=On Getting Focus:K2:7)

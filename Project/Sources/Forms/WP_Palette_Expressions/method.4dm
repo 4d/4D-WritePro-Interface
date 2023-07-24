@@ -1,9 +1,6 @@
 
 var $paletteID; $typeSelection : Integer
 var $setupOK : Boolean
-var $info : Object
-
-//var $p1; $p2 : Pointer
 
 $paletteID:=4
 $typeSelection:=Form:C1466.selection.type

@@ -1017,9 +1017,9 @@ Function themeApply($area : Object; $areaName : Text)
 	
 	var $apply : Boolean
 	var $o : Object
-	var $i; $p; $nbColumns; $row; $colStart; $breakStart; $breakEnd; $paddingNum; $tableWidth : Integer
+	var $i; $p; $nbColumns; $row; $colStart; $breakStart; $breakEnd; $tableWidth : Integer
 	var $tables; $targetNames; $attributes : Collection
-	var $table; $rows; $columns; $cells; $targetTemplate; $cells; $target; $range; $target : Object
+	var $table; $rows; $columns; $cells; $cells; $target; $range; $target : Object
 	var $description; $targetName; $attribute : Text
 	
 	$tables:=WP Get elements:C1550($area; wk type table:K81:222)
@@ -1718,7 +1718,7 @@ Function WP_BuildThemeSample($template : Collection; $areaName : Text)->$documen
 	var $o : Object
 	var $attribute : Text
 	var $i; $nbColumns; $nbRows; $rowStart; $colStart; $breakStart; $breakEnd : Integer
-	var $table; $rows; $cols; $cells; $rowTemplate; $cells; $row; $range; $style; $tempStyle; $default; $target : Object
+	var $table; $rows; $cols; $cells; $rowTemplate; $cells; $row; $range; $style; $tempStyle; $target : Object
 	var $breakBefore : Boolean
 	var $attributes : Collection
 	

@@ -1,5 +1,4 @@
-C_COLLECTION:C1488($col)
-C_OBJECT:C1216($formula)
+
 
 Case of 
 		

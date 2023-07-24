@@ -1,10 +1,8 @@
 //%attributes = {"invisible":true}
 #DECLARE()->$preferences : Object
 
-var $folder : 4D:C1709.Folder
 var $file : 4D:C1709.File
 var $databaseName : Text
-var $oPref : Object
 
 //var $path : Text  // posix path
 //var $pathName : Text  // plateform path

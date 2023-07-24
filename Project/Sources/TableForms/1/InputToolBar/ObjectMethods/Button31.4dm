@@ -1,10 +1,10 @@
 
 var $range; $table : Object
-var $tables; $rows : Collection
+var $tables : Collection
 var $headerRowCount : Integer
 
 
-$range:=WP Selection range:C1340([SAMPLE:1]WP:2)
+$range:=WP Selection range:C1340([Sample:1]wp:2)
 If ($range.type#2)  // anchored picture
 	
 	$tables:=WP Get elements:C1550($range; wk type table:K81:222)

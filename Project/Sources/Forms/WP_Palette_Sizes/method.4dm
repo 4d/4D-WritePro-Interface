@@ -2,9 +2,6 @@
 C_LONGINT:C283($paletteID)
 $paletteID:=4
 
-C_POINTER:C301($ptrArrayNames)
-C_POINTER:C301($ptrArrayValues)
-
 C_BOOLEAN:C305($setupOK)
 
 C_LONGINT:C283($typeSelection)

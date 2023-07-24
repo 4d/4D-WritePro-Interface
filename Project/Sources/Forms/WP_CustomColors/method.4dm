@@ -8,9 +8,6 @@ Case of
 		
 	: (Form event code:C388=On Load:K2:1)
 		
-		ARRAY OBJECT:C1221($_oFillColors; 0)
-		ARRAY TEXT:C222($_colors_t; 0)
-		
 		$path:=Get 4D folder:C485(Current resources folder:K5:16)+"Colors.svg"  //always exists, checked before calling the dialog
 		$ptr:=OBJECT Get pointer:C1124(Object named:K67:5; "SVGPalette")
 		READ PICTURE FILE:C678($path; $ptr->)
