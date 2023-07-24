@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
@@ -92,7 +92,7 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"contextMenu": "none",
-					"pictureFormat": "scaled",
+					"pictureFormat": "proportionalCenter",
 					"dragging": "none",
 					"method": "ObjectMethods/SVGPalette.4dm",
 					"events": [
@@ -156,6 +156,16 @@
 				"Rectangle1",
 				"Picture2"
 			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
 		}
-	}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 10
 }

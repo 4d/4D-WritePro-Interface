@@ -31,8 +31,16 @@ CONVERT COORDINATES:C1365($x; $y; XY Current form:K27:5; XY Main window:K27:8)
 
 wp_customColor:=-1  // default value when window is closed by outside click
 
-$win:=Open form window:C675("WP_CustomColors"; Pop up form window:K39:11; $x; $y)  //Pop up form window)
-DIALOG:C40("WP_CustomColors")
+If (Test path name:C476(Get 4D folder:C485(Current resources folder:K5:16)+"Colors.svg")=Is a document:K24:1)
+	
+	$win:=Open form window:C675("WP_CustomColors"; Pop up form window:K39:11; $x; $y)  //Pop up form window)
+	DIALOG:C40("WP_CustomColors")
+	
+Else 
+	
+	wp_customColor:=Select RGB color:C956(0x00808080)
+	
+End if 
 
 $0:=wp_customColor
 
