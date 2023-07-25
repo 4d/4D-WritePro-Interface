@@ -1,3 +1,3 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true}
 #DECLARE()->$wizard : cs:C1710.TableWizard
 $wizard:=cs:C1710.TableWizard.new()
