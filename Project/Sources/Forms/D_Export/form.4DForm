@@ -507,7 +507,7 @@
 					"textAlign": "center",
 					"visibility": "hidden"
 				},
-				"cbVisibleBody1": {
+				"cbVisibleBody": {
 					"type": "checkbox",
 					"text": ":xliff:body",
 					"top": 20,
@@ -521,7 +521,7 @@
 					"focusable": false,
 					"dataSourceTypeHint": "boolean",
 					"enterable": false,
-					"visibility": "hidden"
+					"visibility": "visible"
 				},
 				"cbRecomputeFormulas3": {
 					"type": "checkbox",
@@ -1552,7 +1552,7 @@
 	"width": 540,
 	"height": 520,
 	"method": "method.4dm",
-	"geometryStamp": 5025,
+	"geometryStamp": 5027,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
