@@ -55,25 +55,7 @@ Case of
 				$limit:="Limit_P1"
 				FORM GOTO PAGE:C247(1)
 				
-				OBJECT SET VISIBLE:C603(*; "cbVisibleEmptyImages"; False:C215)
-				
-				OBJECT SET VISIBLE:C603(*; "lbl_Export"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "cbVisibleBackground"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "cbVisibleHeaders"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "cbVisibleFooters"; False:C215)
-				// more objects but below
-				
 			: (Form:C1466.extra.extension="docx")
-				
-				OBJECT SET VISIBLE:C603(*; "cbVisibleHeaders"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "cbVisibleFooters"; False:C215)
-				
-				OBJECT SET VISIBLE:C603(*; "lblOptimized"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "rbScreen"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "rbPrint"; False:C215)
-				// more objects but below
-				
-				
 				
 				$limit:="Limit_P2"
 				FORM GOTO PAGE:C247(2)
@@ -83,36 +65,25 @@ Case of
 				FORM GOTO PAGE:C247(3)
 				
 				Form:C1466.visibleBody:=True:C214
-				OBJECT SET VISIBLE:C603(*; "cbVisibleBody"; True:C214)
 				OBJECT SET ENABLED:C1123(*; "cbVisibleBody"; False:C215)
-				
-				OBJECT SET VISIBLE:C603(*; "cbVisibleBackground"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "cbVisibleHeaders"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "cbVisibleFooters"; False:C215)
-				
-				//OBJECT SET VISIBLE(*; "lbl_maxDPI"; False)
-				//OBJECT SET VISIBLE(*; "InputDPI"; False)
-				
-				OBJECT SET VISIBLE:C603(*; "lbl_Pages"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "rbAll"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "rbFrom"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "lbl_to"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "InputFrom"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "InputTo"; False:C215)
-				
-				// more objects but below
 				
 			: (Form:C1466.extra.extension="pdf")
 				$limit:="Limit_P4"
 				FORM GOTO PAGE:C247(4)
 				
-				OBJECT SET VISIBLE:C603(*; "lbl_Pages"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "rbAll"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "rbFrom"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "lbl_to"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "InputFrom"; False:C215)
-				OBJECT SET VISIBLE:C603(*; "InputTo"; False:C215)
+				If (Form:C1466.pdfa=False:C215)
+					OBJECT SET ENABLED:C1123(*; "rbPDFA2"; False:C215)
+					OBJECT SET ENABLED:C1123(*; "rbPDFA3"; False:C215)
+				End if 
 				
+				Case of 
+					: (Form:C1466.pdfaType="A2")
+						Form:C1466.local.pdfa2:=1
+						Form:C1466.local.pdfa3:=0
+					: (Form:C1466.pdfaType="A3")
+						Form:C1466.local.pdfa2:=0
+						Form:C1466.local.pdfa3:=1
+				End case 
 				
 			: (Form:C1466.extra.extension="svg")
 				$limit:="Limit_P5"

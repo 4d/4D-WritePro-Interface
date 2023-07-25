@@ -1660,6 +1660,10 @@ Souhaitez-vous le remplacer ?</target>
           <source>Black frame for empty pictures</source>
           <target>Cadre noir pour les images vides</target>
         </trans-unit>
+        <trans-unit id="xxxx" resname="generatePDFA">
+          <source>Generate PDF/A</source>
+          <target>Générer du PDF/A</target>
+        </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
       <group resname="DialogImport">

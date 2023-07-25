@@ -1,4 +1,4 @@
-﻿Case of 
+Case of 
 	: (Form:C1466[wk max picture DPI:K81:316]<96)
 		Form:C1466[wk max picture DPI:K81:316]:=96
 	: (Form:C1466[wk max picture DPI:K81:316]>1440)
