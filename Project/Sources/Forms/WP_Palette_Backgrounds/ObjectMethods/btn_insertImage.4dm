@@ -49,8 +49,8 @@ If (Form:C1466.selection#Null:C1517)
 			
 		: ($result="insertFormula")
 			
-			//WP_Set4Dexpression
-			WP_SetFormula
+			WP_Set4Dexpression  //ACI0104098   back to ST Insert expression
+			//WP_SetFormula  
 	End case 
 	
 	RELEASE MENU:C978($menu)

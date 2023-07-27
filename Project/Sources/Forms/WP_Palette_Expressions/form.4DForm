@@ -169,34 +169,6 @@
 					"fontStyle": "italic",
 					"text": ":xliff:ModifiedColon"
 				},
-				"btnDate": {
-					"type": "button",
-					"top": 40,
-					"left": 544,
-					"width": 140,
-					"height": 19,
-					"text": ":xliff:Date",
-					"class": "Palette",
-					"focusable": false,
-					"method": "ObjectMethods/btnDate.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"btnExpression": {
-					"type": "button",
-					"top": 67,
-					"left": 408,
-					"width": 155,
-					"height": 19,
-					"text": ":xliff:Expression",
-					"class": "Palette",
-					"focusable": false,
-					"method": "ObjectMethods/btnExpression.4dm",
-					"events": [
-						"onClick"
-					]
-				},
 				"VirtualExpression": {
 					"type": "input",
 					"top": 126,
@@ -499,10 +471,10 @@
 				},
 				"TrueExpression": {
 					"type": "input",
-					"top": 106,
-					"left": 303,
+					"top": 97,
+					"left": 332,
 					"width": 130,
-					"height": 41,
+					"height": 15,
 					"class": "Palette",
 					"focusable": false,
 					"fill": "transparent",
@@ -685,18 +657,6 @@
 						"onClick"
 					]
 				},
-				"btn_showHide4Dexpressions": {
-					"type": "checkbox",
-					"top": 167,
-					"left": 405,
-					"width": 158,
-					"height": 24,
-					"tooltip": ":xliff:showHide4Dexpressions",
-					"action": "visibleReferences",
-					"focusable": false,
-					"style": "regular",
-					"text": ":xliff:DisplayExpressions"
-				},
 				"lbl_Expression1": {
 					"type": "text",
 					"top": 211,
@@ -807,8 +767,6 @@
 				}
 			},
 			"entryOrder": [
-				"btnDate",
-				"btnExpression",
 				"btnURL",
 				"Title",
 				"Subject",
@@ -829,7 +787,6 @@
 				"btnCompute1",
 				"btn_computeExpression",
 				"btn_freezeExpressions",
-				"btn_showHide4Dexpressions",
 				"btn_showHide4Dexpressions1",
 				"btn_displayAsSymbol",
 				"btn_insertExpression"
@@ -875,5 +832,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1079
+	"geometryStamp": 1084
 }
