@@ -668,12 +668,20 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="5" resname="auto">
           <source>auto</source>
-          <target>auto</target>
+          <target>Auto</target>
         </trans-unit>
         <trans-unit id="6" resname="pct">
           <source>%</source>
           <target>%</target>
         </trans-unit>
+        <trans-unit id="7" resname="cover">
+          <source>Cover</source>
+          <target>Cover</target>
+        </trans-unit>
+        <trans-unit id="8" resname="contain">
+          <source>Contain</source>
+          <target>Beinhaltet</target>
+        </trans-unit>        
       </group>
       <group resname="borderStyleNames">
         <trans-unit id="1" resname="Solid">
@@ -1645,6 +1653,10 @@ Soll er ersetzt werden?</target>
         <trans-unit id="ILaNpHjjQPifHiTlQjUIGg" resname="blackFrame">
           <source>Black frame for empty pictures</source>
           <target>Schwarzer Rahmen für leere Bilder</target>
+        </trans-unit>
+        <trans-unit id="xxxx" resname="generatePDFA">
+          <source>Generate PDF/A</source>
+          <target>Erzeuge PDF/A</target>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
