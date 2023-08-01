@@ -155,12 +155,12 @@ This file is distributed under the same license as the product package.-->
           <target>Origen:</target>
         </trans-unit>
         <trans-unit id="23" resname="HorizontalSize">
-          <source>Horizontal Size:</source>
-          <target>Tamaño horizontal:</target>
+          <source>Hor. Size:</source>
+          <target>Tamaño hor.:</target>
         </trans-unit>
         <trans-unit id="24" resname="VerticalSize">
-          <source>Vertical Size:</source>
-          <target>Tamaño vertical:</target>
+          <source>Vert. Size:</source>
+          <target>Tamaño vert.:</target>
         </trans-unit>
         <trans-unit id="25" resname="PositionColon">
           <source>Position:</source>
@@ -663,16 +663,28 @@ This file is distributed under the same license as the product package.-->
           <target>pulgadas</target>
         </trans-unit>
         <trans-unit id="4" resname="pt">
-          <source>pt</source>
-          <target>pt</target>
+          <source>Points</source>
+          <target>pts</target>
         </trans-unit>
         <trans-unit id="5" resname="auto">
-          <source>auto</source>
+          <source>Auto</source>
           <target>auto</target>
         </trans-unit>
         <trans-unit id="6" resname="pct">
           <source>%</source>
           <target>%</target>
+        </trans-unit>
+        <trans-unit id="7" resname="cover">
+          <source>Cover</source>
+          <target>Cubre</target>
+        </trans-unit>
+        <trans-unit id="8" resname="contain">
+          <source>Contain</source>
+          <target>Contiene</target>
+        </trans-unit>
+        <trans-unit id="9" resname="pixels">
+          <source>Pixels</source>
+          <target>píxeles</target>
         </trans-unit>
       </group>
       <group resname="borderStyleNames">
@@ -1645,6 +1657,10 @@ Would you like to replace it?</source>
         <trans-unit id="ILaNpHjjQPifHiTlQjUIGg" resname="blackFrame">
           <source>Black frame for empty pictures</source>
           <target>Marco negro para las imágenes vacías</target>
+        </trans-unit>
+        <trans-unit id="xxxx" resname="generatePDFA">
+          <source>Generate PDF/A</source>
+          <target>Generar PDF/A</target>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
