@@ -442,7 +442,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="nkUFnYv0Dk1wv6yHCjjgqQ" resname="insertContinuousSectionBreak">
           <source>Insert continuous section break</source>
-          <target>Insira uma quebra contínua da página</target>
+          <target>Inserir quebra de seção contínua</target>
         </trans-unit>
         <trans-unit id="4CkYikT+ULlL5PCYMO32fA" resname="edit">
           <source>Edit</source>
