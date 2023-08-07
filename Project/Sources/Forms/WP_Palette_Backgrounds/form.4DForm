@@ -95,8 +95,8 @@
 				"bgndSizeHor": {
 					"type": "input",
 					"top": 565,
-					"left": 125,
-					"width": 35,
+					"left": 95,
+					"width": 55,
 					"height": 14,
 					"class": "Palette",
 					"textAlign": "right",
@@ -105,14 +105,18 @@
 					"dropping": "custom",
 					"method": "ObjectMethods/bgndSizeHor.4dm",
 					"events": [
+						"onGettingFocus",
 						"onDataChange"
-					]
+					],
+					"dataSource": "oForm.bgndSizeHor",
+					"dataSourceTypeHint": "number",
+					"numberFormat": "####0.00;;"
 				},
 				"bgndSizeVert": {
 					"type": "input",
 					"top": 591,
-					"left": 125,
-					"width": 35,
+					"left": 95,
+					"width": 55,
 					"height": 14,
 					"class": "Palette",
 					"textAlign": "right",
@@ -121,14 +125,18 @@
 					"dropping": "custom",
 					"method": "ObjectMethods/bgndSizeVert.4dm",
 					"events": [
+						"onGettingFocus",
 						"onDataChange"
-					]
+					],
+					"dataSource": "oForm.bgndSizeVert",
+					"dataSourceTypeHint": "number",
+					"numberFormat": "####0.00;;"
 				},
 				"lbl_HorSize": {
 					"type": "text",
 					"top": 565,
 					"left": 10,
-					"width": 110,
+					"width": 80,
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
@@ -139,7 +147,7 @@
 					"type": "text",
 					"top": 591,
 					"left": 10,
-					"width": 110,
+					"width": 80,
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
@@ -189,31 +197,35 @@
 					"text": ":xliff:PositionsColon",
 					"fontTheme": "additional"
 				},
-				"bgndSizeHorUnit": {
+				"horizontalSizeUnits": {
 					"type": "dropdown",
 					"top": 563,
-					"left": 170,
-					"width": 65,
+					"left": 160,
+					"width": 75,
 					"height": 19,
 					"focusable": false,
 					"class": "Palette",
-					"method": "ObjectMethods/bgndSizeHorUnit.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"method": "ObjectMethods/horizontalSizeUnits.4dm",
+					"dataSourceTypeHint": "object",
+					"dataSource": "oForm.horizontalSizeUnits"
 				},
-				"bgndSizeVertUnit": {
+				"verticalSizeUnits": {
 					"type": "dropdown",
 					"top": 589,
-					"left": 170,
-					"width": 65,
+					"left": 160,
+					"width": 75,
 					"height": 19,
 					"focusable": false,
 					"class": "Palette",
-					"method": "ObjectMethods/bgndSizeVertUnit.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"method": "ObjectMethods/verticalSizeUnits.4dm",
+					"dataSourceTypeHint": "object",
+					"dataSource": "oForm.verticalSizeUnits"
 				},
 				"btnAction": {
 					"type": "button",
@@ -651,10 +663,10 @@
 				"btn_PictInfo",
 				"bgndPictPreview",
 				"bgndSizeHor",
-				"bgndSizeHorUnit",
+				"horizontalSizeUnits",
 				"btnAction",
 				"bgndSizeVert",
-				"bgndSizeVertUnit",
+				"verticalSizeUnits",
 				"btn_imageMoveToBack",
 				"btn_imageMoveToFront",
 				"Popup_backgroundPositionV",
@@ -695,5 +707,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1550
+	"geometryStamp": 1589
 }

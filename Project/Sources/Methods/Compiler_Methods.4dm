@@ -241,3 +241,6 @@ C_BOOLEAN:C305(WP_SelectText; $0)
 
 //gotoArea
 C_BOOLEAN:C305(gotoArea; $0)
+
+//UI_PaletteBackgrounds
+C_TEXT:C284(UI_PaletteBackgrounds; $1)

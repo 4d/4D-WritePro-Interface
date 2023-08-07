@@ -1,58 +1,50 @@
 //%attributes = {"invisible":true}
-C_OBJECT:C1216($1)
-C_OBJECT:C1216($range)
+#DECLARE($range : Object)
 
-C_POINTER:C301($ptrVal;$ptrUnit)
-C_TEXT:C284($size)
-C_TEXT:C284($sizeVal)
-C_TEXT:C284($sizeUnit)
-C_TEXT:C284($Char)
-
-C_LONGINT:C283($type;$i;$n;$p)
-
-$range:=$1
+var $refValue; $size; $sizeVal; $sizeUnit; $Char : Text
+var $refUnit : Object
+var $type; $i; $n : Integer
 
 If (Not:C34(OB Is empty:C1297($range)))
 	
-	For ($type;1;2)
+	For ($type; 1; 2)
 		
 		$sizeVal:=""
 		$sizeUnit:=""
 		
 		If ($type=1)
-			WP GET ATTRIBUTES:C1345($range;wk background width:K81:27;$size)
-			$ptrVal:=OBJECT Get pointer:C1124(Object named:K67:5;"bgndSizeHor")
-			$ptrUnit:=OBJECT Get pointer:C1124(Object named:K67:5;"bgndSizeHorUnit")
+			WP GET ATTRIBUTES:C1345($range; wk background width:K81:27; $size)
+			$refValue:="bgndSizeHor"  //Form.horizontalSizeValue
+			$refUnit:=oForm.horizontalSizeUnits
 		Else 
-			WP GET ATTRIBUTES:C1345($range;wk background height:K81:28;$size)
-			$ptrVal:=OBJECT Get pointer:C1124(Object named:K67:5;"bgndSizeVert")
-			$ptrUnit:=OBJECT Get pointer:C1124(Object named:K67:5;"bgndSizeVertUnit")
+			WP GET ATTRIBUTES:C1345($range; wk background height:K81:28; $size)
+			$refValue:="bgndSizeVert"  //Form.verticalSizeValue
+			$refUnit:=oForm.verticalSizeUnits
 		End if 
 		
-		
-		If ($size="auto")
-			$sizeVal:=""
-			$sizeUnit:="auto"
-		Else 
+		If ($size="auto") | ($size="cover") | ($size="contain")
+			
+			OBJECT SET VALUE:C1742($refValue; 0)
+			$refUnit.index:=$refUnit.css.indexOf($size)
+			$refUnit.memoUnit:=""
+			
+		Else   // ex 50%, 10mm, 2.5cm, 5in or 120pt
+			
 			$n:=Length:C16($size)
-			For ($i;1;$n)
+			For ($i; 1; $n)
 				$char:=$size[[$i]]
-				If ((($char>="0") & ($char<="9")) | (($char=".") | ($char=",")))
+				If (($char>="0") & ($char<="9")) | ($char=".")
 					$sizeVal:=$sizeVal+$char
 				Else 
-					$sizeUnit:=Substring:C12($size;$i)
+					$sizeUnit:=Substring:C12($size; $i)
 					$i:=$n
 				End if 
 			End for 
-		End if 
-		
-		$ptrVal->:=$sizeVal
-		
-		$p:=Find in array:C230($ptrUnit->;$sizeUnit)
-		If ($p>0)
-			$ptrUnit->:=$p
-		Else 
-			$ptrUnit->:=0
+			
+			OBJECT SET VALUE:C1742($refValue; Num:C11($sizeVal; "."))
+			$refUnit.index:=$refUnit.css.indexOf($sizeUnit)
+			$refUnit.memoUnit:=$refUnit.css[$refUnit.index]  // "%","mm","cm","in" or "pt"
+			
 		End if 
 		
 	End for 
