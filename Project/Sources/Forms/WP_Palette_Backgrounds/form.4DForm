@@ -652,24 +652,6 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Backgrounds"
-				},
-				"TrueExpression": {
-					"type": "input",
-					"top": 97,
-					"left": 332,
-					"width": 130,
-					"height": 15,
-					"class": "Palette",
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"enterable": false,
-					"contextMenu": "none",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					]
 				}
 			},
 			"entryOrder": [
@@ -696,8 +678,7 @@
 				"xbtn_Clear",
 				"xbtn_Apply",
 				"btn_insertImage",
-				"btn_insertTextArea",
-				"TrueExpression"
+				"btn_insertTextArea"
 			]
 		}
 	],
@@ -726,5 +707,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1588
+	"geometryStamp": 1589
 }

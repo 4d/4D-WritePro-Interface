@@ -3,7 +3,6 @@
 #DECLARE($areaName : Text; $range : Object)->$selected : Boolean
 
 var $i; $n; $p : Integer
-var $selected : Boolean
 
 ARRAY TEXT:C222($_objectNames; 0)
 

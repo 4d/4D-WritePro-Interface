@@ -12,7 +12,7 @@ var $area : Object
 
 var $ptr : Pointer
 
-var $prompt; $path; $action; $rawText; $extension; $form; $memoErrorMethod; $formName : Text
+var $prompt; $path; $rawText; $extension; $form; $memoErrorMethod; $formName : Text
 var $title; $docName; $folderPath; $propertyName; $url : Text
 
 var $pict : Picture  // empty pict to be used with URL
@@ -461,7 +461,8 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						//ACI0104098   back to expression
 						If (Form:C1466.selection.type=0)
-							WP_Set4Dexpression
+							//WP_Set4Dexpression
+							WP_SetFormula
 						Else 
 							WP_SetImageExpression
 						End if 

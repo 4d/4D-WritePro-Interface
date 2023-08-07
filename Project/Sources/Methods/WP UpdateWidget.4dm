@@ -63,7 +63,6 @@ Case of
 			
 			$oWidgetUpdate.eventCode:=Form event code:C388  // Added 2023/01/25 by RL for more accuracy in UI
 			
-			//$oWidgetUpdate.callback:=Formula(Formula from string($1))
 			//$oWidget.event:=FORM Event
 			
 			Case of 

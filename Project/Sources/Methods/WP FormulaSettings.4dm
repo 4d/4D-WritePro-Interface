@@ -5,7 +5,6 @@ var $elements : Collection
 var $case : Integer
 var $formulaSource : Text
 var $formula : Object
-var $range : Object
 
 If (Count parameters:C259=0)
 	$range:=WP Selection range:C1340(Self:C308->)
@@ -40,10 +39,10 @@ If ($formulaSource#"")
 		
 		Case of 
 			: ($case=1)
-				WP INSERT FORMULA:C1703($elements[0].range; Formula from string:C1601($formulaSource); wk replace:K81:177)
+				WP INSERT FORMULA:C1703($elements[0].range; Formula from string:C1601($formulaSource; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
 				
 			: ($case=2)
-				WP SET ATTRIBUTES:C1342($range; wk image formula:K81:305; Formula from string:C1601($formulaSource))
+				WP SET ATTRIBUTES:C1342($range; wk image formula:K81:305; Formula from string:C1601($formulaSource; 1))  // ∆∆∆ Feature 125
 				
 		End case 
 		

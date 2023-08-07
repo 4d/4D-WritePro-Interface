@@ -84,21 +84,18 @@ Case of
 					RELEASE MENU:C978($menu)
 					
 					Case of 
-						: ($choice="SetBreak_@")
-							ALERT:C41("set break")
-							//$row:=WP Table get rows(
 							
 						: ($choice="break_@")
 							$i:=Num:C11($choice)  // 0, 1, 2…
-							WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.breakFormulas[$i].source); wk replace:K81:177)
+							WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.breakFormulas[$i].source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
 							
 						: ($choice="bcor_@")
 							$i:=Num:C11($choice)  // 0, 1, 2…
-							WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.bcorFormulas[$i].source); wk replace:K81:177)
+							WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.bcorFormulas[$i].source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
 							
 						: ($choice="extra_@")
 							$i:=Num:C11($choice)  // 0, 1, 2…
-							WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.extraFormulas[$i].source); wk replace:K81:177)
+							WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.extraFormulas[$i].source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
 							
 					End case 
 					

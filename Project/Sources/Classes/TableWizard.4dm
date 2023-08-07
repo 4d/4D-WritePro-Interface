@@ -241,11 +241,11 @@ Function formulaUI($action : Text; $formatType : Integer; $insert : Object)
 			OBJECT SET ENABLED:C1123(*; "btn_Insert"; (Form:C1466.formulaSource#""))
 			
 			
-		: ($action="insertFormula")  // executed in parent form context
+		: ($action="insertFormula")
 			
 			
 			$range:=WP Selection range:C1340(*; $insert.areaName)
-			WP INSERT FORMULA:C1703($range; Formula from string:C1601($insert.source); wk replace:K81:177)
+			WP INSERT FORMULA:C1703($range; Formula from string:C1601($insert.source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
 			If ($insert.doNext="insertSpace")
 				If (Shift down:C543)
 					WP INSERT BREAK:C1413($range; wk paragraph break:K81:259; wk append:K81:179; wk include in range:K81:180)
@@ -295,7 +295,7 @@ Function formulaBuildStatic($context : Object; $contextName : Text; $formula : T
 	var $picturePath; $attributeName; $dataClassName; $attributeNameTranslated; $json; $relatedDataClassName; $nextContextName : Text
 	var $subList : cs:C1710.HList
 	
-	var $itemRef; $p; $type : Integer
+	var $p; $type : Integer
 	var $o : Object
 	var $fill; $append : Boolean
 	var $nextFormula : Text
@@ -372,7 +372,7 @@ Function formulaBuildDynamic($context : Object; $contextName : Text; $contextNam
 	
 	var $subList : cs:C1710.HList
 	
-	var $itemRef; $p; $type; $maxLinks : Integer
+	var $p; $type; $maxLinks : Integer
 	var $o : Object
 	var $class; $relatedDataClass : Object  //∆∆∆
 	var $dataClass : 4D:C1709.DataClass
@@ -559,7 +559,7 @@ Function formulaInsert($insert : Object)  //$json : Text)
 	
 	//$insert:=JSON Parse($json)
 	$range:=WP Selection range:C1340(*; $insert.areaName)
-	WP INSERT FORMULA:C1703($range; Formula from string:C1601($insert.source); wk replace:K81:177)
+	WP INSERT FORMULA:C1703($range; Formula from string:C1601($insert.source; 1); wk replace:K81:177)
 	
 	If (Shift down:C543)
 		WP INSERT BREAK:C1413($range; wk paragraph break:K81:259; wk append:K81:179; wk include in range:K81:180)
@@ -1624,9 +1624,9 @@ Function WP_BuildTable()->$area : Object
 		
 		//  table attributes
 		If (Form:C1466.template.tableDataSource#Null:C1517)
-			WP SET ATTRIBUTES:C1342($table; wk datasource:K81:367; Formula from string:C1601(Form:C1466.template.tableDataSource))  //.call())
+			WP SET ATTRIBUTES:C1342($table; wk datasource:K81:367; Formula from string:C1601(Form:C1466.template.tableDataSource; 1))  // ∆∆∆ Feature 125
 		Else 
-			WP SET ATTRIBUTES:C1342($table; wk datasource:K81:367; Formula from string:C1601("TEST"))
+			WP RESET ATTRIBUTES:C1344($table; wk datasource:K81:367)
 		End if 
 		
 		WP SET ATTRIBUTES:C1342($table; wk header row count:K81:364; Form:C1466.tableHeaders.index)  // number of row HEADERS are already known
@@ -1672,13 +1672,13 @@ Function WP_BuildTable()->$area : Object
 								If ($previousContent#Null:C1517)
 									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
 								Else 
-									WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.columns[$i].source); wk replace:K81:177)
+									WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.columns[$i].source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
 								End if 
 								
 							: ($description="break@")  // break
 								
 								$id:=Num:C11($description)-1
-								WP SET ATTRIBUTES:C1342($row; "breakFormula"; Formula from string:C1601(Form:C1466.template.breaks[$id].source))  //wk break formula
+								WP SET ATTRIBUTES:C1342($row; "breakFormula"; Formula from string:C1601(Form:C1466.template.breaks[$id].source; 1))  //wk break formula  // ∆∆∆ Feature 125
 								
 								If ($previousContent#Null:C1517)
 									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
@@ -1718,7 +1718,7 @@ Function WP_BuildThemeSample($template : Collection; $areaName : Text)->$documen
 	var $o : Object
 	var $attribute : Text
 	var $i; $nbColumns; $nbRows; $rowStart; $colStart; $breakStart; $breakEnd : Integer
-	var $table; $rows; $cols; $cells; $rowTemplate; $cells; $row; $range; $style; $tempStyle; $target : Object
+	var $table; $rows; $cols; $cells; $rowTemplate; $row; $range; $style; $tempStyle; $target : Object
 	var $breakBefore : Boolean
 	var $attributes : Collection
 	
@@ -1925,7 +1925,7 @@ Function WP_GetPreviousContent($description : Text; $columnID : Integer)->$docum
 	
 Function WP_GetMaxTableWidth->$width : Integer
 	
-	var $width; $left; $right; $orientation : Integer
+	var $left; $right; $orientation : Integer
 	var $section; $document : Object
 	var $unit : Text
 	

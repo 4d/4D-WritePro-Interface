@@ -6,7 +6,7 @@ var $range; $table; $folder; $template; $rows; $formula; $wpTable; $breakFormula
 var $isTable : Boolean
 var $files; $_templates; $_icons; $tables : Collection
 var $4Dtable : Pointer
-var $path; $menu; $choice; $where; $formulaSource : Text
+var $path; $menu; $where; $formulaSource : Text
 
 $where:=""
 
@@ -279,7 +279,7 @@ Else
 						EDIT FORMULA:C806($4Dtable->; $formulaSource)
 						If (ok=1)
 							If ($formulaSource#"")
-								$formula:=Formula from string:C1601($formulaSource)
+								$formula:=Formula from string:C1601($formulaSource; 1)  // ∆∆∆ Feature 125
 								WP SET ATTRIBUTES:C1342($wpTable; wk datasource:K81:367; $formula)
 							Else 
 								WP RESET ATTRIBUTES:C1344($wpTable; wk datasource:K81:367)
@@ -296,38 +296,15 @@ Else
 						$formulaSource:="This.item."
 					End if 
 					
-					If (False:C215)
-						
-						//$o:=New object
-						//$o.label:=Get localized string("EnterBreakName")
-						//$o.windowTitle:=Get localized string("BreakFormula")
-						//$o.expression:=$formulaSource
-						//$o.placeHolder:="This.item."
-						
-						//$win:=Open form window("D_TinyFormula"; Movable form dialog box; Horizontally centered; Vertically centered; *)
-						//DIALOG("D_TinyFormula"; $o)   // NOT 100% SAFE
-						
-						//If (ok=1)
-						//If ($o.expression#"")
-						//WP SET ATTRIBUTES(rows; "breakFormula"; $o.formula)
-						//End if 
-						//End if 
-						
-					Else 
-						If (Not:C34(Is nil pointer:C315($4Dtable)))
-							EDIT FORMULA:C806($4Dtable->; $formulaSource)
-							If (ok=1)
-								If ($formulaSource#"")
-									$formula:=Formula from string:C1601($formulaSource)
-									WP SET ATTRIBUTES:C1342(rows; "breakFormula"; $formula)
-								End if 
+					If (Not:C34(Is nil pointer:C315($4Dtable)))
+						EDIT FORMULA:C806($4Dtable->; $formulaSource)
+						If (ok=1)
+							If ($formulaSource#"")
+								$formula:=Formula from string:C1601($formulaSource; 1)  // ∆∆∆ Feature 125
+								WP SET ATTRIBUTES:C1342(rows; "breakFormula"; $formula)
 							End if 
 						End if 
-						
-						
 					End if 
-					
-					
 					
 				: ($choice="RemoveBreak")
 					WP RESET ATTRIBUTES:C1344(rows; "breakFormula")

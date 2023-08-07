@@ -17,7 +17,6 @@ Else
 	
 	// parent form context
 	var $i; $n; $p : Integer
-	var $selected : Boolean
 	
 	//{ACI0103944
 	ARRAY TEXT:C222($_objectNames; 0)

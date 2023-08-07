@@ -1,3 +1,4 @@
+//ACI0104098   code factorisation AND back to expression
 var $action : Text
 
 $action:=MENU_Display("Image")

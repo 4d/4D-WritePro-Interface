@@ -4,7 +4,7 @@
 //var $1; $content : Text
 //var $0 : Text
 
-var $menu; $action; $item; $url : Text
+var $menu; $item; $url : Text
 var $_menuItems; $_tables : Collection
 var $o : Object
 var $_formulas : Collection

@@ -137,11 +137,11 @@ Case of
 		OBJECT SET ENABLED:C1123(*; "btn_Insert"; (Form:C1466.formulaSource#""))
 		
 		
-	: ($action="insertFormula")  // executed in parent form context
+	: ($action="insertFormula")
 		
 		
 		$range:=WP Selection range:C1340(*; $insert.areaName)
-		WP INSERT FORMULA:C1703($range; Formula from string:C1601($insert.source); wk replace:K81:177)
+		WP INSERT FORMULA:C1703($range; Formula from string:C1601($insert.source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
 		If ($insert.doNext="insertSpace")
 			If (Shift down:C543)
 				WP INSERT BREAK:C1413($range; wk paragraph break:K81:259; wk append:K81:179; wk include in range:K81:180)

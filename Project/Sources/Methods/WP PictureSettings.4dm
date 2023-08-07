@@ -4,8 +4,6 @@
 var $form : Object
 var $elements : Collection
 var $win : Integer
-var $object : Object
-
 
 If (Count parameters:C259=0)
 	$object:=WP Selection range:C1340(Self:C308->)  // text range OR anchored picture

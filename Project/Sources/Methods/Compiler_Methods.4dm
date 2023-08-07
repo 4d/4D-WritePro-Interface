@@ -185,10 +185,12 @@ C_OBJECT:C1216(WP_GetProtections; $1)
 C_PICTURE:C286(zGetSamplePict; $0)
 C_PICTURE:C286(zGetSamplePictBW; $0)
 C_LONGINT:C283(RndRGB; $0)
-C_TEXT:C284(WP_Set4Dexpression; $1)
-C_TEXT:C284(WP_Set4Dexpression; $2)
-C_LONGINT:C283(WP_Set4Dexpression; $3)
-C_LONGINT:C283(WP_Set4Dexpression; $4)
+
+//C_TEXT(WP_Set4Dexpression; $1)
+//C_TEXT(WP_Set4Dexpression; $2)
+//C_LONGINT(WP_Set4Dexpression; $3)
+//C_LONGINT(WP_Set4Dexpression; $4)
+
 C_TEXT:C284(TOOL_IncrementString; $0)
 C_TEXT:C284(TOOL_IncrementString; $1)
 C_OBJECT:C1216(WP_SetParagraphProtection; $1)
@@ -230,5 +232,11 @@ C_OBJECT:C1216(WP_GetBackgroundSize; $1)
 C_BOOLEAN:C305(UI_PaletteImage; $1)
 
 //WP_xxxxSetFormula
-C_OBJECT:C1216(WP_xxxxSetFormula; $1)
-C_TEXT:C284(WP_xxxxSetFormula; $2)
+//C_OBJECT(WP_xxxxSetFormula; $1)
+//C_TEXT(WP_xxxxSetFormula; $2)
+
+//WP_xxx_Set4Dexpression
+C_TEXT:C284(WP_xxx_Set4Dexpression; $1)
+C_TEXT:C284(WP_xxx_Set4Dexpression; $2)
+C_LONGINT:C283(WP_xxx_Set4Dexpression; $3)
+C_LONGINT:C283(WP_xxx_Set4Dexpression; $4)

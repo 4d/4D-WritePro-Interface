@@ -6,8 +6,6 @@
 
 var $index : Integer
 
-C_OBJECT:C1216($range)
-C_BOOLEAN:C305($check)
 C_BOOLEAN:C305($redraw)
 
 C_LONGINT:C283($p)
