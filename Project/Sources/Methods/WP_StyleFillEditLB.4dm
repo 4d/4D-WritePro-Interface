@@ -1,12 +1,12 @@
 //%attributes = {"invisible":true}
-  //WP_StyleFillEditLB
+//WP_StyleFillEditLB
 
 C_LONGINT:C283($1)
 
 C_BOOLEAN:C305($translate)
 C_BOOLEAN:C305($forceCheck)
 
-  //C_TEXT($1;$category)
+//C_TEXT($1;$category)
 
 C_OBJECT:C1216($styleSheet)
 C_OBJECT:C1216($tempTarget)
@@ -23,23 +23,23 @@ C_LONGINT:C283($i)
 C_REAL:C285($val_r)
 
 C_TEXT:C284($displayStylesheetValue)
-C_TEXT:C284($displayNormalValue;$displayStylesheetValue)
+C_TEXT:C284($displayNormalValue)
 C_TEXT:C284($category)
 C_TEXT:C284($val_t)
 
-  //------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------
 
 If (Count parameters:C259=0)
-	GET LIST ITEM:C378(_StylesheetTabs;*;$page;$text)  //| *;itemRef;itemText{;sublist;expanded})
+	GET LIST ITEM:C378(_StylesheetTabs; *; $page; $text)  //| *;itemRef;itemText{;sublist;expanded})
 Else 
 	$page:=$1
 End if 
 
-$category:=Choose:C955($page;"bug";"fonts";"paragraphs";"margins")
+$category:=Choose:C955($page; "bug"; "fonts"; "paragraphs"; "margins")
 
 
 $styleSheet:=Form:C1466.stylesheet
-$normalStyleSheet:=WP Get style sheet:C1656(Form:C1466.stylesheet.owner;"Normal")
+$normalStyleSheet:=WP Get style sheet:C1656(Form:C1466.stylesheet.owner; "Normal")
 
 $col:=Form:C1466.tabs[$category]
 
@@ -49,7 +49,7 @@ If (Count parameters:C259<2)
 	
 Else 
 	
-	  // read attributes from SELECTION, not from stylesheet !
+	// read attributes from SELECTION, not from stylesheet !
 	
 	Case of 
 		: ($styleSheet.type=wk type paragraph:K81:191)
@@ -70,9 +70,9 @@ End if
 
 Form:C1466.edit:=$col
 
-  // 1st pass, ONLY to create check boxes and asign true or false
+// 1st pass, ONLY to create check boxes and asign true or false
 If (Form:C1466.edit[0].check=Null:C1517)
-	For each ($item;$col)
+	For each ($item; $col)
 		If (Not:C34(OB Is empty:C1297($item)))  // spacers for interface
 			If ($styleSheet[$item.property]#Null:C1517) & ($styleSheet.name#"Normal")  // the property exists in the style sheet
 				$item.check:=False:C215
@@ -84,11 +84,11 @@ If (Form:C1466.edit[0].check=Null:C1517)
 End if 
 
 
-  // Then read values for each property
-For each ($item;$col)
+// Then read values for each property
+For each ($item; $col)
 	If (Not:C34(OB Is empty:C1297($item)))  // spacers for interface
 		
-		For ($i;1;2)  // current style sheet, then "Normal" style sheet
+		For ($i; 1; 2)  // current style sheet, then "Normal" style sheet
 			
 			If ($i=1)
 				$tempTarget:=$target
@@ -100,16 +100,16 @@ For each ($item;$col)
 			
 			Case of 
 				: ($item.valueType=Is text:K8:3)
-					WP GET ATTRIBUTES:C1345($tempTarget;$item.property;$val_t)  // read the value in the style sheet
+					WP GET ATTRIBUTES:C1345($tempTarget; $item.property; $val_t)  // read the value in the style sheet
 					$temp.value:=$val_t
 				: ($item.valueType=Is real:K8:4)
-					WP GET ATTRIBUTES:C1345($tempTarget;$item.property;$val_r)  // read the value in the style sheet
+					WP GET ATTRIBUTES:C1345($tempTarget; $item.property; $val_r)  // read the value in the style sheet
 					$temp.value:=$val_r
 				: ($item.valueType=Is object:K8:27)
-					WP GET ATTRIBUTES:C1345($tempTarget;$item.property;$val_o)  // read the value in the style sheet
+					WP GET ATTRIBUTES:C1345($tempTarget; $item.property; $val_o)  // read the value in the style sheet
 					$temp.value:=$val_o
 				: ($item.valueType=Is collection:K8:32)
-					WP GET ATTRIBUTES:C1345($tempTarget;$item.property;$val_c)  // read the value in the style sheet
+					WP GET ATTRIBUTES:C1345($tempTarget; $item.property; $val_c)  // read the value in the style sheet
 					$temp.value:=$val_c
 			End case 
 			
@@ -128,18 +128,18 @@ For each ($item;$col)
 				: (Value type:C1509($item.value)=Is collection:K8:32) | (Value type:C1509($item.value)=Is object:K8:27)
 					$displayStylesheetValue:=JSON Stringify:C1217($item.value)
 					$displayNormalValue:=JSON Stringify:C1217($item.normalValue)
-					  //: ($item.property=wk font)
-					  //$displayStylesheetValue:=$item.value
-					  //ST SET ATTRIBUTES($displayStylesheetValue;ST Start text;ST End text;Attribute font name;$item.value)
+					//: ($item.property=wk font)
+					//$displayStylesheetValue:=$item.value
+					//ST SET ATTRIBUTES($displayStylesheetValue;ST Start text;ST End text;Attribute font name;$item.value)
 					
 				: ($item.property=wk text color:K81:64) | ($item.property=wk background color:K81:20) | ($item.property=wk text linethrough color:K81:76) | ($item.property=wk text underline color:K81:74) | ($item.property=wk text shadow color:K81:71) | ($item.property=wk border color:K81:34) | ($item.property=wk border color top:K81:37) | ($item.property=wk border color bottom:K81:38) | ($item.property=wk border color right:K81:36) | ($item.property=wk border color left:K81:35)
 					$displayStylesheetValue:="●"  //+String($styleSheet[$item.property])+"●"
-					ST SET ATTRIBUTES:C1093($displayStylesheetValue;ST Start text:K78:15;ST End text:K78:16;Attribute text color:K65:7;$item.value)
-					ST SET ATTRIBUTES:C1093($displayStylesheetValue;ST Start text:K78:15;ST End text:K78:16;Attribute text size:K65:6;16)
+					ST SET ATTRIBUTES:C1093($displayStylesheetValue; ST Start text:K78:15; ST End text:K78:16; Attribute text color:K65:7; $item.value)
+					ST SET ATTRIBUTES:C1093($displayStylesheetValue; ST Start text:K78:15; ST End text:K78:16; Attribute text size:K65:6; 16)
 					
 					$displayNormalValue:="●"
-					ST SET ATTRIBUTES:C1093($displayNormalValue;ST Start text:K78:15;ST End text:K78:16;Attribute text color:K65:7;$item.normalValue)
-					ST SET ATTRIBUTES:C1093($displayNormalValue;ST Start text:K78:15;ST End text:K78:16;Attribute text size:K65:6;16)
+					ST SET ATTRIBUTES:C1093($displayNormalValue; ST Start text:K78:15; ST End text:K78:16; Attribute text color:K65:7; $item.normalValue)
+					ST SET ATTRIBUTES:C1093($displayNormalValue; ST Start text:K78:15; ST End text:K78:16; Attribute text size:K65:6; 16)
 					
 				Else 
 					$translate:=True:C214
@@ -162,8 +162,8 @@ For each ($item;$col)
 					End case 
 					
 					If ($translate)
-						$displayStylesheetValue:=UI_TranslateConstant ($item.property;$item.value)
-						$displayNormalValue:=UI_TranslateConstant ($item.property;$item.normalValue)
+						$displayStylesheetValue:=UI_TranslateConstant($item.property; $item.value)
+						$displayNormalValue:=UI_TranslateConstant($item.property; $item.normalValue)
 					Else 
 						
 						If (Value type:C1509($item.value)=Is real:K8:4)
@@ -191,13 +191,13 @@ For each ($item;$col)
 					
 			End case 
 			
-			  //$label:=$item.label
+			//$label:=$item.label
 			If (Not:C34($item.check))
-				  //ST SET ATTRIBUTES($label;ST Start text;ST End text;Attribute text color;"#202020")
-				  //ST SET ATTRIBUTES($label;ST Start text;ST End text;Attribute italic style;1)
+				//ST SET ATTRIBUTES($label;ST Start text;ST End text;Attribute text color;"#202020")
+				//ST SET ATTRIBUTES($label;ST Start text;ST End text;Attribute italic style;1)
 				
-				  //ST SET ATTRIBUTES($displayStylesheetValue;ST Start text;ST End text;Attribute text color;"#808080")
-				  //ST SET ATTRIBUTES($value;ST Start text;ST End text;Attribute italic style;1)
+				//ST SET ATTRIBUTES($displayStylesheetValue;ST Start text;ST End text;Attribute text color;"#808080")
+				//ST SET ATTRIBUTES($value;ST Start text;ST End text;Attribute italic style;1)
 			End if 
 			
 			$item.displayStylesheetValue:=$displayStylesheetValue
@@ -207,7 +207,7 @@ For each ($item;$col)
 			$item.displayNormalValue:=""
 		End if 
 		
-		  //$valueType:=Value type($item.value)
+		//$valueType:=Value type($item.value)
 		If ($forceCheck)
 			
 			If ($item.displayNormalValue#$item.displayStylesheetValue)
@@ -217,18 +217,18 @@ For each ($item;$col)
 		End if 
 		
 	Else 
-		  //Form.edit.push(New object)  // spacers for interface
+		//Form.edit.push(New object)  // spacers for interface
 	End if 
 	
 End for each 
 
 
-  //For each ($item;$col)
-  //If (Not(OB Is empty($item)))  // spacers for interface
-  //If ($item.check)  // use NORMAL
-  //$item.display:=$item.displayNormalValue
-  //Else   // USE STYLE SHEET
-  //$item.display:=$item.displayStylesheetValue
-  //End if 
-  //End if 
-  //End for each 
+//For each ($item;$col)
+//If (Not(OB Is empty($item)))  // spacers for interface
+//If ($item.check)  // use NORMAL
+//$item.display:=$item.displayNormalValue
+//Else   // USE STYLE SHEET
+//$item.display:=$item.displayStylesheetValue
+//End if 
+//End if 
+//End for each 

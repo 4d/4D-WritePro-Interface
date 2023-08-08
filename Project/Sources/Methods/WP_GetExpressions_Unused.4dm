@@ -9,7 +9,6 @@ C_TEXT:C284($areaName)
 C_LONGINT:C283($start; $end)
 C_POINTER:C301($ptrLabel; $ptrURL; $ptrTrueExpression; $ptrVirtualExpression)
 
-C_LONGINT:C283($start; $end)
 C_LONGINT:C283($i; $n)
 ARRAY TEXT:C222($_objects; 0)
 ARRAY POINTER:C280($_variables; 0)

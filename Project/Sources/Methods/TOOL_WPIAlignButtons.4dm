@@ -1,17 +1,17 @@
 //%attributes = {"invisible":true}
-  //TOOL_AlignButtons (->$ArrayObjectNames;->$ArrayObjectLabels;"Left";"top";"Horizontal";"proportional";0;->$ArrayMargins;->$ArraySpaces;$ArrayHeight)
+//TOOL_AlignButtons (->$ArrayObjectNames;->$ArrayObjectLabels;"Left";"top";"Horizontal";"proportional";0;->$ArrayMargins;->$ArraySpaces;$ArrayHeight)
 
-  // modifiée par RL le 10 mai 2011  ∆∆∆
-  // sur WIN pour les JAPONAIS on AJOUTE 4 pixels SYSTEMATIQUEMENT
-  // finalement non… (mis en if(false))
+// modifiée par RL le 10 mai 2011  ∆∆∆
+// sur WIN pour les JAPONAIS on AJOUTE 4 pixels SYSTEMATIQUEMENT
+// finalement non… (mis en if(false))
 
 If (False:C215)  //EXEMPLE D'APPEL DE LA METHODE (Seul le premier parametre est obligatoire)
-	ARRAY TEXT:C222($_ObjectNames;5)
-	ARRAY TEXT:C222($_ObjectLabels;5)
-	ARRAY LONGINT:C221($_Margin;2)
-	ARRAY LONGINT:C221($_Space;2)
-	ARRAY LONGINT:C221($_Height;2)
-	ARRAY LONGINT:C221($_MinWidth;2)
+	ARRAY TEXT:C222($_ObjectNames; 5)
+	ARRAY TEXT:C222($_ObjectLabels; 5)
+	ARRAY LONGINT:C221($_Margin; 2)
+	ARRAY LONGINT:C221($_Space; 2)
+	ARRAY LONGINT:C221($_Height; 2)
+	ARRAY LONGINT:C221($_MinWidth; 2)
 	
 	
 	$_ObjectNames{1}:="Bouton1"
@@ -38,14 +38,14 @@ If (False:C215)  //EXEMPLE D'APPEL DE LA METHODE (Seul le premier parametre est 
 	$_MinWidth{1}:=50  //win
 	$_MinWidth{2}:=0
 	
-	TOOL_WPIAlignButtons (->$_ObjectNames;->$_ObjectLabels;Horizontally centered:K39:1;At the top:K39:5;"Horizontal";"Proportional";0;->$_Height;->$_Margin;->$_Space;->$_MinWidth)
+	TOOL_WPIAlignButtons(->$_ObjectNames; ->$_ObjectLabels; Horizontally centered:K39:1; At the top:K39:5; "Horizontal"; "Proportional"; 0; ->$_Height; ->$_Margin; ->$_Space; ->$_MinWidth)
 End if 
 
-  //mandatory parameters
+//mandatory parameters
 C_POINTER:C301($1)  //pointer on array of object names
 C_POINTER:C301($2)  //pointer on array of object labels
 
-  //optional parameters
+//optional parameters
 
 C_LONGINT:C283($3)  //horizontal reference (left;center;right)            `default : left (use 4D constants)
 C_LONGINT:C283($4)  //vertical reference (top;center;bottom)            `default : top (use 4D constants)
@@ -59,7 +59,7 @@ C_POINTER:C301($10)  //pointer on array of spaces (between buttons) (2 items : W
 C_POINTER:C301($11)  //min witdh of buttons
 C_POINTER:C301($12)  //rounded to… (i.e; to get buttons of size multiple of 10)
 
-  //variables de réafectation des parametres
+//variables de réafectation des parametres
 
 C_POINTER:C301($PtrArrayObjectNames)  //pointer on array of object names
 C_POINTER:C301($PtrArrayObjectLabels)  //pointer on array of object labels
@@ -75,21 +75,19 @@ C_LONGINT:C283($TextMargin)  //pointer on array of text margins (inside buttons)
 C_LONGINT:C283($ButtonSpace)  //pointer on array of spaces (between buttons) (2 items : Win/Mac, usualy 10/10)
 C_LONGINT:C283($ButtonHeight)  //pointer on array of button heights  (2 items : Win/Mac, usualy 23/20)
 C_LONGINT:C283($ButtonMinWidth)
-C_LONGINT:C283($RoundValue)
-C_LONGINT:C283($GlobalWidth;$GlobalHeight)
-C_LONGINT:C283($Offset_H;$Offset_V)
+C_LONGINT:C283($GlobalWidth; $GlobalHeight)
+C_LONGINT:C283($Offset_H; $Offset_V)
 
-  //Variables locales
+//Variables locales
 C_LONGINT:C283($Plateform)
-C_LONGINT:C283($i;$n)
-C_LONGINT:C283($RoundValue)
-C_LONGINT:C283($x1;$x2;$y1;$y2)
-C_LONGINT:C283($Left;$Top;$Right;$Bottom)
+C_LONGINT:C283($i; $n)
+C_LONGINT:C283($x1; $x2; $y1; $y2)
+C_LONGINT:C283($Left; $Top; $Right; $Bottom)
 
 _O_PLATFORM PROPERTIES:C365($Plateform)
-$Plateform:=Choose:C955($Plateform=Windows:K25:3;1;2)
+$Plateform:=Choose:C955($Plateform=Windows:K25:3; 1; 2)
 
-  // Gestion des paramètres
+// Gestion des paramètres
 
 $PtrArrayObjectNames:=$1
 
@@ -130,7 +128,7 @@ End if
 If (Count parameters:C259>=8)
 	$ButtonHeight:=$8->{$Plateform}
 Else 
-	$ButtonHeight:=Choose:C955($Plateform=1;23;20)
+	$ButtonHeight:=Choose:C955($Plateform=1; 23; 20)
 End if 
 
 If (Count parameters:C259>=9)
@@ -160,27 +158,27 @@ End if
 $n:=Size of array:C274($PtrArrayObjectNames->)
 
 $n:=Size of array:C274($PtrArrayObjectNames->)
-ARRAY LONGINT:C221($_btnWidth;$n)
+ARRAY LONGINT:C221($_btnWidth; $n)
 
-  //Cas le pire, il faut calculer la plus grande taille des boutons
+//Cas le pire, il faut calculer la plus grande taille des boutons
 
 If ($SizeMode="Fixed") & ($SizeValue=0)
 	
-	For ($i;1;$n;1)
+	For ($i; 1; $n; 1)
 		
 		If (Not:C34(Is nil pointer:C315($PtrArrayObjectLabels)))
 			
-			OBJECT SET TITLE:C194(*;$PtrArrayObjectNames->{$i};$PtrArrayObjectLabels->{$i})
+			OBJECT SET TITLE:C194(*; $PtrArrayObjectNames->{$i}; $PtrArrayObjectLabels->{$i})
 			
 		End if 
 		
 		If (False:C215)
 			$PtrRefVariable->:=$PtrArrayObjectLabels->{$i}
-			OBJECT GET BEST SIZE:C717($PtrRefVariable->;$x1;$y1)  // variable
+			OBJECT GET BEST SIZE:C717($PtrRefVariable->; $x1; $y1)  // variable
 			
 		Else 
 			
-			OBJECT GET BEST SIZE:C717(*;$PtrArrayObjectNames->{$i};$x1;$y1)  // nom d'objet
+			OBJECT GET BEST SIZE:C717(*; $PtrArrayObjectNames->{$i}; $x1; $y1)  // nom d'objet
 		End if 
 		
 		If ($x1>$SizeValue)
@@ -197,12 +195,12 @@ If ($SizeMode="Fixed") & ($SizeValue=0)
 	End if 
 End if 
 
-  //1ere "vraie" boucle pour calculer la taille définitive des boutons ET les moyennes
+//1ere "vraie" boucle pour calculer la taille définitive des boutons ET les moyennes
 
 $GlobalWidth:=0
 $GlobalHeight:=0
 
-For ($i;1;$n;1)
+For ($i; 1; $n; 1)
 	
 	If ($SizeMode="Fixed")
 		
@@ -212,41 +210,41 @@ For ($i;1;$n;1)
 		
 		If (Not:C34(Is nil pointer:C315($PtrArrayObjectLabels)))
 			
-			OBJECT SET TITLE:C194(*;$PtrArrayObjectNames->{$i};$PtrArrayObjectLabels->{$i})
+			OBJECT SET TITLE:C194(*; $PtrArrayObjectNames->{$i}; $PtrArrayObjectLabels->{$i})
 			
 		End if 
 		
 		If (False:C215)
 			$PtrRefVariable->:=$PtrArrayObjectLabels->{$i}
-			OBJECT GET BEST SIZE:C717($PtrRefVariable->;$x1;$y1)
+			OBJECT GET BEST SIZE:C717($PtrRefVariable->; $x1; $y1)
 			
 		Else 
 			
-			OBJECT GET BEST SIZE:C717(*;$PtrArrayObjectNames->{$i};$x1;$y1)
+			OBJECT GET BEST SIZE:C717(*; $PtrArrayObjectNames->{$i}; $x1; $y1)
 		End if 
 		
 		$_btnWidth{$i}:=$x1+(2*$TextMargin)
 		
-		  //Need to round to ?
+		//Need to round to ?
 		If ($RoundValue>1)
 			
 			$_btnWidth{$i}:=$RoundValue*Int:C8(($_btnWidth{$i}+1+$RoundValue)/$RoundValue)
 			
 		End if 
 		
-		  //minimum value for width ?
+		//minimum value for width ?
 		If ($_btnWidth{$i}<$ButtonMinWidth)
 			
 			$_btnWidth{$i}:=$ButtonMinWidth
 			
 		End if 
 		
-		  //If (False)
-		  //  // sur WIN pour les JAPONAIS on AJOUTE 4 pixels SYSTEMATIQUEMENT ∆∆∆
-		  //If (Get database localization="ja") & (Folder separator#":")  //   / ou \ je sais jamais donc j'ai mis # ":"
-		  //$_btnWidth{$i}:=$_btnWidth{$i}+4
-		  //End if
-		  //End if
+		//If (False)
+		//  // sur WIN pour les JAPONAIS on AJOUTE 4 pixels SYSTEMATIQUEMENT ∆∆∆
+		//If (Get database localization="ja") & (Folder separator#":")  //   / ou \ je sais jamais donc j'ai mis # ":"
+		//$_btnWidth{$i}:=$_btnWidth{$i}+4
+		//End if
+		//End if
 		
 	End if 
 	
@@ -262,107 +260,107 @@ If ($AlignementType="Horizontal")
 	
 	Case of 
 			
-			  //________________________________________
+			//________________________________________
 		: ($HorizontalAlign=On the left:K39:2)
 			
-			  //affecte la valeur $Left directement à partir de la GAUCHE du PREMIER objet
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{1};$Left;$y1;$x2;$y2)
+			//affecte la valeur $Left directement à partir de la GAUCHE du PREMIER objet
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{1}; $Left; $y1; $x2; $y2)
 			
-			  //________________________________________
+			//________________________________________
 		: ($HorizontalAlign=Horizontally centered:K39:1)
 			
-			  //on prend la gauche de l'objet 1 et la droite de l'objet n, on en fait la moyenne, puis on soustrait la demi-largeur globale
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{1};$Left;$y1;$x2;$y2)
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{$n};$x1;$y1;$Right;$y2)
-			$Left:=Round:C94(($Left+$Right-$GlobalWidth)/2;0)
+			//on prend la gauche de l'objet 1 et la droite de l'objet n, on en fait la moyenne, puis on soustrait la demi-largeur globale
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{1}; $Left; $y1; $x2; $y2)
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{$n}; $x1; $y1; $Right; $y2)
+			$Left:=Round:C94(($Left+$Right-$GlobalWidth)/2; 0)
 			
-			  //________________________________________
+			//________________________________________
 		: ($HorizontalAlign=On the right:K39:3)
 			
-			  //affecte la valeur $Left à partir de la DROITE du DERNIER objet moins la largeur globale
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{$n};$x1;$y1;$Right;$y2)
+			//affecte la valeur $Left à partir de la DROITE du DERNIER objet moins la largeur globale
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{$n}; $x1; $y1; $Right; $y2)
 			$Left:=$Right-$GlobalWidth  //affecte la valeur $Left en fonction de la droite - largeur globale
 			
-			  //________________________________________
+			//________________________________________
 	End case 
 	
 	Case of 
 			
-			  //________________________________________
+			//________________________________________
 		: ($VerticalAlign=At the top:K39:5)
 			
-			  //affecte la valeur $Top directement à partir de HAUT du PREMIER objet
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{1};$x1;$Top;$x2;$y2)
+			//affecte la valeur $Top directement à partir de HAUT du PREMIER objet
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{1}; $x1; $Top; $x2; $y2)
 			
-			  //________________________________________
+			//________________________________________
 		: ($VerticalAlign=Vertically centered:K39:4)
 			
-			  //affecte la valeur $Top à partir de moyenne du HAUT du PREMIER et du BAS du DERNIER objet moins la demi-Hauteur GLOBALE
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{1};$x1;$Top;$x2;$y2)
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{$n};$x1;$y1;$x2;$Bottom)
-			$Top:=Round:C94(($Top+$Bottom-$ButtonHeight)/2;0)
+			//affecte la valeur $Top à partir de moyenne du HAUT du PREMIER et du BAS du DERNIER objet moins la demi-Hauteur GLOBALE
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{1}; $x1; $Top; $x2; $y2)
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{$n}; $x1; $y1; $x2; $Bottom)
+			$Top:=Round:C94(($Top+$Bottom-$ButtonHeight)/2; 0)
 			
-			  //________________________________________
+			//________________________________________
 		: ($VerticalAlign=At the bottom:K39:6)
 			
-			  //affecte la valeur $Top à partir du BAS du DERNIER objet moins la Hauteur GLOBALE
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{$n};$x1;$y1;$x2;$Bottom)
+			//affecte la valeur $Top à partir du BAS du DERNIER objet moins la Hauteur GLOBALE
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{$n}; $x1; $y1; $x2; $Bottom)
 			$Top:=$Bottom-$ButtonHeight
 			
-			  //________________________________________
+			//________________________________________
 	End case 
 	
 Else   //alignement vertical des boutons
 	
 	Case of 
 			
-			  //________________________________________
+			//________________________________________
 		: ($HorizontalAlign=On the left:K39:2)
 			
-			  //affecte la valeur $HorizontalRef directement à partir de la GAUCHE du PREMIER objet
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{1};$HorizontalRef;$y1;$x2;$y2)
+			//affecte la valeur $HorizontalRef directement à partir de la GAUCHE du PREMIER objet
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{1}; $HorizontalRef; $y1; $x2; $y2)
 			
-			  //________________________________________
+			//________________________________________
 		: ($HorizontalAlign=Horizontally centered:K39:1)
 			
-			  //affecte la valeur $HorizontalRef à partir de moyenne de la gauche de l'objet 1 et la droite du dernier objet
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{1};$Left;$y1;$x2;$y2)
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{$n};$x1;$y1;$Right;$y2)
-			$HorizontalRef:=Round:C94(($Left+$Right)/2;0)
+			//affecte la valeur $HorizontalRef à partir de moyenne de la gauche de l'objet 1 et la droite du dernier objet
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{1}; $Left; $y1; $x2; $y2)
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{$n}; $x1; $y1; $Right; $y2)
+			$HorizontalRef:=Round:C94(($Left+$Right)/2; 0)
 			
-			  //________________________________________
+			//________________________________________
 		: ($HorizontalAlign=On the right:K39:3)
 			
-			  //affecte la valeur $HorizontalRef directement à partir de la DROITE du DERNIER objet
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{$n};$x1;$y1;$HorizontalRef;$y2)
+			//affecte la valeur $HorizontalRef directement à partir de la DROITE du DERNIER objet
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{$n}; $x1; $y1; $HorizontalRef; $y2)
 			
-			  //________________________________________
+			//________________________________________
 	End case 
 	
 	Case of 
 			
-			  //________________________________________
+			//________________________________________
 		: ($VerticalAlign=At the top:K39:5)
 			
-			  //affecte la valeur $Top directement à partir de HAUT du PREMIER objet
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{1};$x1;$Top;$x2;$y2)
+			//affecte la valeur $Top directement à partir de HAUT du PREMIER objet
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{1}; $x1; $Top; $x2; $y2)
 			
-			  //________________________________________
+			//________________________________________
 		: ($VerticalAlign=Vertically centered:K39:4)
 			
-			  //affecte la valeur $Top à partir de moyenne du HAUT du PREMIER et du BAS du DERNIER objet moins la demi-Hauteur de bouton
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{1};$x1;$Top;$x2;$y2)
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{$n};$x1;$y1;$x2;$Bottom)
-			$Top:=Round:C94(($Top+$Bottom-$GlobalHeight)/2;0)
+			//affecte la valeur $Top à partir de moyenne du HAUT du PREMIER et du BAS du DERNIER objet moins la demi-Hauteur de bouton
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{1}; $x1; $Top; $x2; $y2)
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{$n}; $x1; $y1; $x2; $Bottom)
+			$Top:=Round:C94(($Top+$Bottom-$GlobalHeight)/2; 0)
 			
-			  //________________________________________
+			//________________________________________
 		: ($VerticalAlign=At the bottom:K39:6)
 			
-			  //affecte la valeur $Top à partir du BAS du DERNIER objet moins la Hauteur de bouton
-			OBJECT GET COORDINATES:C663(*;$PtrArrayObjectNames->{$n};$x1;$y1;$x2;$Bottom)
+			//affecte la valeur $Top à partir du BAS du DERNIER objet moins la Hauteur de bouton
+			OBJECT GET COORDINATES:C663(*; $PtrArrayObjectNames->{$n}; $x1; $y1; $x2; $Bottom)
 			$Top:=$Bottom-$GlobalHeight
 			
-			  //________________________________________
+			//________________________________________
 	End case 
 End if 
 
@@ -370,9 +368,9 @@ If ($AlignementType="Horizontal")
 	
 	$Offset_H:=$Left
 	
-	For ($i;1;$n;1)
+	For ($i; 1; $n; 1)
 		
-		OBJECT MOVE:C664(*;$PtrArrayObjectNames->{$i};$Offset_H;$Top;$Offset_H+$_btnWidth{$i};$Top+$ButtonHeight;*)
+		OBJECT MOVE:C664(*; $PtrArrayObjectNames->{$i}; $Offset_H; $Top; $Offset_H+$_btnWidth{$i}; $Top+$ButtonHeight; *)
 		$Offset_H:=$Offset_H+$_btnWidth{$i}+$ButtonSpace
 		
 	End for 
@@ -381,26 +379,26 @@ Else   //alignement vertical des boutons
 	
 	$Offset_V:=$Top
 	
-	For ($i;1;$n;1)
+	For ($i; 1; $n; 1)
 		
 		Case of 
 				
-				  //________________________________________
+				//________________________________________
 			: ($HorizontalAlign=On the left:K39:2)
 				
-				OBJECT MOVE:C664(*;$PtrArrayObjectNames->{$i};$HorizontalRef;$Offset_V;$HorizontalRef+$_btnWidth{$i};$Offset_V+$ButtonHeight;*)
+				OBJECT MOVE:C664(*; $PtrArrayObjectNames->{$i}; $HorizontalRef; $Offset_V; $HorizontalRef+$_btnWidth{$i}; $Offset_V+$ButtonHeight; *)
 				
-				  //________________________________________
+				//________________________________________
 			: ($HorizontalAlign=Horizontally centered:K39:1)
 				
-				OBJECT MOVE:C664(*;$PtrArrayObjectNames->{$i};$HorizontalRef-($_btnWidth{$i}/2);$Offset_V;$HorizontalRef+($_btnWidth{$i}/2);$Offset_V+$ButtonHeight;*)
+				OBJECT MOVE:C664(*; $PtrArrayObjectNames->{$i}; $HorizontalRef-($_btnWidth{$i}/2); $Offset_V; $HorizontalRef+($_btnWidth{$i}/2); $Offset_V+$ButtonHeight; *)
 				
-				  //________________________________________
+				//________________________________________
 			: ($HorizontalAlign=On the right:K39:3)
 				
-				OBJECT MOVE:C664(*;$PtrArrayObjectNames->{$i};$HorizontalRef-$_btnWidth{$i};$Offset_V;$HorizontalRef;$Offset_V+$ButtonHeight;*)
+				OBJECT MOVE:C664(*; $PtrArrayObjectNames->{$i}; $HorizontalRef-$_btnWidth{$i}; $Offset_V; $HorizontalRef; $Offset_V+$ButtonHeight; *)
 				
-				  //________________________________________
+				//________________________________________
 		End case 
 		
 		$Offset_V:=$Offset_V+$ButtonHeight+$ButtonSpace

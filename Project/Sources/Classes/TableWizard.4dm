@@ -1,9 +1,8 @@
 Class constructor($formName : Text)
 	
 	var $file : 4D:C1709.File
-	var $folder : 4D:C1709.Folder
 	var $lang : Text
-	var $dictionnary; $theme : Object
+	var $dictionnary : Object
 	var $validated : Boolean
 	
 	// DICTIONNARY files
@@ -291,13 +290,11 @@ Function formulaUI($action : Text; $formatType : Integer; $insert : Object)
 	
 Function formulaBuildStatic($context : Object; $contextName : Text; $formula : Text; $itemRef : Integer)->$hlist : cs:C1710.HList
 	
-	var $icon : Picture
-	var $picturePath; $attributeName; $dataClassName; $attributeNameTranslated; $json; $relatedDataClassName; $nextContextName : Text
+	var $picturePath; $attributeName; $json : Text
 	var $subList : cs:C1710.HList
 	
-	var $p; $type : Integer
+	var $type : Integer
 	var $o : Object
-	var $fill; $append : Boolean
 	var $nextFormula : Text
 	
 	
@@ -366,17 +363,15 @@ Function formulaBuildStatic($context : Object; $contextName : Text; $formula : T
 	
 Function formulaBuildDynamic($context : Object; $contextName : Text; $contextNameTranslated : Text; $itemRef : Integer; $linksLevel : Integer)->$hlist : cs:C1710.HList
 	
-	
-	var $icon : Picture
 	var $picturePath; $attributeName; $dataClassName; $attributeNameTranslated; $dataClassNameTranslated; $json; $relatedDataClassName; $nextContextName; $nextContextNameTranslated : Text
 	
 	var $subList : cs:C1710.HList
 	
-	var $p; $type; $maxLinks : Integer
+	var $type; $maxLinks : Integer
 	var $o : Object
 	var $class; $relatedDataClass : Object  //∆∆∆
 	var $dataClass : 4D:C1709.DataClass
-	var $fill; $append : Boolean
+	var $append : Boolean
 	
 	
 	$hlist:=cs:C1710.HList.new()
@@ -750,7 +745,6 @@ Function templateUI($action : Text)
 Function themeGetList()->$collection : Collection
 	
 	var $folder : 4D:C1709.Folder
-	var $theme : Object
 	var $o : Object
 	var $validated : Boolean
 	
@@ -868,7 +862,6 @@ Function themeDropDownList($translate)->$dropDownList : Object
 Function themeNormalize($theme : Object)
 	
 	var $defaultValues : Object  // used localy to fill gaps when default attributes are missing
-	var $reference : Object  // default of default
 	var $mustHave : Collection
 	var $must; $type : Text
 	
@@ -1016,10 +1009,9 @@ Function themeMeta($row)->$meta : Object
 Function themeApply($area : Object; $areaName : Text)
 	
 	var $apply : Boolean
-	var $o : Object
-	var $i; $p; $nbColumns; $row; $colStart; $breakStart; $breakEnd; $tableWidth : Integer
+	var $i; $nbColumns; $row; $tableWidth : Integer
 	var $tables; $targetNames; $attributes : Collection
-	var $table; $rows; $columns; $cells; $cells; $target; $range; $target : Object
+	var $table; $rows; $columns; $cells; $target : Object
 	var $description; $targetName; $attribute : Text
 	
 	$tables:=WP Get elements:C1550($area; wk type table:K81:222)
@@ -1556,7 +1548,7 @@ Function WP_BuildTable()->$area : Object
 	
 	var $breakBefore; $labelHeader : Boolean
 	var $o; $previousContent : Object
-	var $table; $rows; $cols; $rowTemplate; $cells; $row; $range : Object
+	var $table; $rows; $cols; $cells; $row; $range : Object
 	var $i; $id; $nbColumns; $nbRows; $rowStart; $colStart; $tableWidth : Integer
 	var $insertedText; $description : Text
 	
@@ -1710,16 +1702,13 @@ Function WP_BuildTable()->$area : Object
 		
 	End if 
 	
-	
-	
 Function WP_BuildThemeSample($template : Collection; $areaName : Text)->$document : Object
 	
 	
 	var $o : Object
 	var $attribute : Text
-	var $i; $nbColumns; $nbRows; $rowStart; $colStart; $breakStart; $breakEnd : Integer
-	var $table; $rows; $cols; $cells; $rowTemplate; $row; $range; $style; $tempStyle; $target : Object
-	var $breakBefore : Boolean
+	var $nbColumns; $nbRows; $rowStart : Integer
+	var $table; $rows; $cols; $cells; $style; $tempStyle; $target : Object
 	var $attributes : Collection
 	
 	$document:=WP New:C1317

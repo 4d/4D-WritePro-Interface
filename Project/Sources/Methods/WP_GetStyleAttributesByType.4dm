@@ -3,7 +3,6 @@
 C_LONGINT:C283($1; $type)
 C_COLLECTION:C1488($0; $col)
 
-C_LONGINT:C283($type)
 C_BOOLEAN:C305($block1; $block2; $block3; $block4)
 
 $type:=$1

@@ -1,5 +1,5 @@
 
-var $x1; $y1; $x2; $y1; $height : Integer
+var $x1; $y1; $x2; $y2; $height : Integer
 var $limit : Text
 
 Case of 
