@@ -1,1 +1,1 @@
-Form:C1466.pdfaType:="A2"
+Form:C1466.pdfaVersion:="PDF/A-2"

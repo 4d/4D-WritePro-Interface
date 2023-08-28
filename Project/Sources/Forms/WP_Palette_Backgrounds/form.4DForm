@@ -652,6 +652,48 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Backgrounds"
+				},
+				"VirtualExpression": {
+					"type": "input",
+					"top": 74,
+					"left": 405,
+					"width": 220,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"stroke": "#800000",
+					"class": "Palette",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"TrueExpression": {
+					"type": "input",
+					"top": 110,
+					"left": 405,
+					"width": 220,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"stroke": "#800000",
+					"class": "Palette",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
 				}
 			},
 			"entryOrder": [
@@ -678,7 +720,9 @@
 				"xbtn_Clear",
 				"xbtn_Apply",
 				"btn_insertImage",
-				"btn_insertTextArea"
+				"btn_insertTextArea",
+				"VirtualExpression",
+				"TrueExpression"
 			]
 		}
 	],
@@ -707,5 +751,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1589
+	"geometryStamp": 1595
 }

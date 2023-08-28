@@ -228,10 +228,6 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						$options[wk optimized for:K81:317]:=wk screen:K81:319
 						$options[wk max picture DPI:K81:316]:=192
 						
-						$options.pdfa:=False:C215
-						$options.pdfaType:="A3"  // or A2
-						
-						
 					: ($action="exportSVG")  //SVG
 						
 						$extension:="svg"

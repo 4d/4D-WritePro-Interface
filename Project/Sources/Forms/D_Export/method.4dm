@@ -71,19 +71,13 @@ Case of
 				$limit:="Limit_P4"
 				FORM GOTO PAGE:C247(4)
 				
-				If (Form:C1466.pdfa=False:C215)
-					OBJECT SET ENABLED:C1123(*; "rbPDFA2"; False:C215)
-					OBJECT SET ENABLED:C1123(*; "rbPDFA3"; False:C215)
-				End if 
 				
-				Case of 
-					: (Form:C1466.pdfaType="A2")
-						Form:C1466.local.pdfa2:=1
-						Form:C1466.local.pdfa3:=0
-					: (Form:C1466.pdfaType="A3")
-						Form:C1466.local.pdfa2:=0
-						Form:C1466.local.pdfa3:=1
-				End case 
+				Form:C1466.local.pdfa:=0
+				Form:C1466.local.pdfa2:=0
+				Form:C1466.local.pdfa3:=1
+				
+				OBJECT SET ENABLED:C1123(*; "rbPDFA2"; False:C215)
+				OBJECT SET ENABLED:C1123(*; "rbPDFA3"; False:C215)
 				
 			: (Form:C1466.extra.extension="svg")
 				$limit:="Limit_P5"

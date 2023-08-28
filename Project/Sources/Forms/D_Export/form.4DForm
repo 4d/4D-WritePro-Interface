@@ -960,7 +960,7 @@
 					"events": [
 						"onClick"
 					],
-					"dataSource": "Form:C1466.pdfa",
+					"dataSource": "Form:C1466.local.pdfa",
 					"focusable": false,
 					"dataSourceTypeHint": "boolean",
 					"method": "ObjectMethods/cbPDFA.4dm"
