@@ -1,54 +1,24 @@
 //%attributes = {"invisible":true}
-C_OBJECT:C1216($1)
-C_OBJECT:C1216($range)
+#DECLARE($range : Object)
 
-C_TEXT:C284($size)
-C_TEXT:C284($sizeVal)
-C_TEXT:C284($sizeUnit)
-C_TEXT:C284($target)
-
-C_LONGINT:C283($type)
-
-C_POINTER:C301($ptrVal;$ptrUnit)
-
-$range:=$1
-
+// <ACI0104082>
+var $value1; $value2 : Real
+var $attribute1; $attribute2 : Text
 If (Not:C34(OB Is empty:C1297($range)))
 	
-	For ($type;1;2)
-		
-		If ($type=1)
-			$target:=wk background width:K81:27
-			$ptrVal:=OBJECT Get pointer:C1124(Object named:K67:5;"bgndSizeHor")
-			$ptrUnit:=OBJECT Get pointer:C1124(Object named:K67:5;"bgndSizeHorUnit")
-		Else 
-			$target:=wk background height:K81:28
-			$ptrVal:=OBJECT Get pointer:C1124(Object named:K67:5;"bgndSizeVert")
-			$ptrUnit:=OBJECT Get pointer:C1124(Object named:K67:5;"bgndSizeVertUnit")
-		End if 
-		
-		$sizeVal:=$ptrVal->
-		$sizeUnit:=$ptrUnit->{$ptrUnit->}
-		
-		If ($sizeUnit="auto")
-			$sizeVal:=""
-			  //$ptrVal->:=""
-		Else 
-			$sizeVal:=$ptrVal->
-			If ($sizeVal="")
-				$sizeVal:="10"
-				$ptrVal->:=$sizeVal
-			End if 
-		End if 
-		
-		$size:=$sizeVal+$sizeUnit
-		
-		WP SET ATTRIBUTES:C1342($range;$target;$size)
-		
-	End for 
+	$value1:=OBJECT Get value:C1743("bgndSizeHor")
+	If ($value1>0)
+		$attribute1:=String:C10($value1; "&xml")
+	End if 
+	$attribute1:=$attribute1+oForm.horizontalSizeUnits.css[oForm.horizontalSizeUnits.index]
 	
+	$value2:=OBJECT Get value:C1743("bgndSizeVert")
+	If ($value2>0)
+		$attribute2:=String:C10($value2; "&xml")
+	End if 
+	$attribute2:=$attribute2+oForm.verticalSizeUnits.css[oForm.verticalSizeUnits.index]
+	
+	WP SET ATTRIBUTES:C1342($range; wk background width:K81:27; $attribute1; wk background height:K81:28; $attribute2)
+	
+	// </ACI0104082>
 End if 
-
-
-
-

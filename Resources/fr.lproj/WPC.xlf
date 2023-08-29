@@ -155,12 +155,12 @@ This file is distributed under the same license as the product package.-->
           <target>Origine :</target>
         </trans-unit>
         <trans-unit id="23" resname="HorizontalSize">
-          <source>Horizontal Size:</source>
-          <target>Taille horizontale :</target>
+          <source>Hor. Size:</source>
+          <target>Taille hor. :</target>
         </trans-unit>
         <trans-unit id="24" resname="VerticalSize">
-          <source>Vertical Size:</source>
-          <target>Taille verticale :</target>
+          <source>Vert. Size:</source>
+          <target>Taille vert. :</target>
         </trans-unit>
         <trans-unit id="25" resname="PositionColon">
           <source>Position:</source>
@@ -673,6 +673,14 @@ This file is distributed under the same license as the product package.-->
         <trans-unit id="6" resname="pct">
           <source>%</source>
           <target>%</target>
+        </trans-unit>
+        <trans-unit id="7" resname="cover">
+          <source>Cover</source>
+          <target>Cover</target>
+        </trans-unit>
+        <trans-unit id="8" resname="contain">
+          <source>Contain</source>
+          <target>Contain</target>
         </trans-unit>
       </group>
       <group resname="borderStyleNames">

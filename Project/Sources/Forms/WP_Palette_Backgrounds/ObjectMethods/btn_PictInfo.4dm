@@ -1,1 +1,1 @@
-﻿WP PictureSettings(Form:C1466.selection)
+WP PictureSettings(Form:C1466.selection)

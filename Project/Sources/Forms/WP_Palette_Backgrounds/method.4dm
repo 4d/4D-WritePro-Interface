@@ -1,5 +1,3 @@
-
-C_POINTER:C301($ptrArrayNames; $ptrArrayValues)
 C_LONGINT:C283($paletteID)
 C_BOOLEAN:C305($setupOK)
 C_OBJECT:C1216($oCurrent)
@@ -20,23 +18,65 @@ Case of
 		
 		TB_setAutomaticActions("background")
 		
-		$ptrArrayNames:=OBJECT Get pointer:C1124(Object named:K67:5; "bgndSizeHorUnit")
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("auto"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("pct"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("mm"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("cm"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("inches"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("pt"))
-		$ptrArrayNames->:=1
+		// <ACI0104082>
+		oForm.bgndSizeHor:=0  // Input Hor.
+		oForm.bgndSizeVert:=0  // Input Vert.
 		
-		$ptrArrayNames:=OBJECT Get pointer:C1124(Object named:K67:5; "bgndSizeVertUnit")
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("auto"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("pct"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("mm"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("cm"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("inches"))
-		APPEND TO ARRAY:C911($ptrArrayNames->; Get localized string:C991("pt"))
-		$ptrArrayNames->:=1
+		oForm.horizontalSizeUnits:=New object:C1471  // Dropdown Hor.
+		
+		oForm.horizontalSizeUnits.values:=New collection:C1472()
+		oForm.horizontalSizeUnits.values.push(Get localized string:C991("auto"))
+		oForm.horizontalSizeUnits.values.push(Get localized string:C991("cover"))
+		oForm.horizontalSizeUnits.values.push(Get localized string:C991("contain"))
+		oForm.horizontalSizeUnits.values.push(Get localized string:C991("pct"))
+		oForm.horizontalSizeUnits.values.push(Get localized string:C991("mm"))
+		oForm.horizontalSizeUnits.values.push(Get localized string:C991("cm"))
+		oForm.horizontalSizeUnits.values.push(Get localized string:C991("inches"))
+		oForm.horizontalSizeUnits.values.push(Get localized string:C991("pt"))
+		oForm.horizontalSizeUnits.values.push(Get localized string:C991("pixels"))
+		
+		oForm.horizontalSizeUnits.css:=New collection:C1472()
+		oForm.horizontalSizeUnits.css.push("auto")
+		oForm.horizontalSizeUnits.css.push("cover")
+		oForm.horizontalSizeUnits.css.push("contain")
+		oForm.horizontalSizeUnits.css.push("%")
+		oForm.horizontalSizeUnits.css.push("mm")
+		oForm.horizontalSizeUnits.css.push("cm")
+		oForm.horizontalSizeUnits.css.push("in")
+		oForm.horizontalSizeUnits.css.push("pt")
+		oForm.horizontalSizeUnits.css.push("px")
+		
+		oForm.horizontalSizeUnits.memoUnit:=""
+		
+		oForm.horizontalSizeUnits.index:=0
+		
+		
+		
+		oForm.verticalSizeUnits:=New object:C1471  // Dropdown Vert.
+		
+		oForm.verticalSizeUnits.values:=New collection:C1472()
+		oForm.verticalSizeUnits.values.push(Get localized string:C991("auto"))
+		oForm.verticalSizeUnits.values.push(Get localized string:C991("pct"))
+		oForm.verticalSizeUnits.values.push(Get localized string:C991("mm"))
+		oForm.verticalSizeUnits.values.push(Get localized string:C991("cm"))
+		oForm.verticalSizeUnits.values.push(Get localized string:C991("inches"))
+		oForm.verticalSizeUnits.values.push(Get localized string:C991("pt"))
+		oForm.verticalSizeUnits.values.push(Get localized string:C991("pixels"))
+		
+		oForm.verticalSizeUnits.css:=New collection:C1472()
+		oForm.verticalSizeUnits.css.push("auto")
+		oForm.verticalSizeUnits.css.push("%")
+		oForm.verticalSizeUnits.css.push("mm")
+		oForm.verticalSizeUnits.css.push("cm")
+		oForm.verticalSizeUnits.css.push("in")
+		oForm.verticalSizeUnits.css.push("pt")
+		oForm.verticalSizeUnits.css.push("px")
+		
+		oForm.verticalSizeUnits.memoUnit:=""
+		
+		oForm.verticalSizeUnits.index:=0
+		// </ACI0104082>
+		
 		
 		
 		oForm.skinAppliedSub:=UI_ApplySkin

@@ -15,11 +15,11 @@ $toUnit:=$3
 
 If ($toUnit#$fromUnit) & ($value#0)
 	
-	WP SET ATTRIBUTES:C1342(oTempArea;wk layout unit:K81:78;$fromUnit)
-	WP SET ATTRIBUTES:C1342(oTempArea;wk text indent:K81:52;$value)  //wk line height
+	WP SET ATTRIBUTES:C1342(oTempArea; wk layout unit:K81:78; $fromUnit)
+	WP SET ATTRIBUTES:C1342(oTempArea; wk background width:K81:27; $value)  //wk line height   // <ACI0104082>
 	
-	WP SET ATTRIBUTES:C1342(oTempArea;wk layout unit:K81:78;$toUnit)
-	WP GET ATTRIBUTES:C1345(oTempArea;wk text indent:K81:52;$value)  //wk margin left
+	WP SET ATTRIBUTES:C1342(oTempArea; wk layout unit:K81:78; $toUnit)
+	WP GET ATTRIBUTES:C1345(oTempArea; wk background width:K81:27; $value)  //wk margin left    // <ACI0104082>
 	
 End if 
 
