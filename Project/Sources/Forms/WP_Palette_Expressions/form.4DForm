@@ -185,9 +185,9 @@
 				},
 				"btnExpression": {
 					"type": "button",
-					"top": 67,
-					"left": 408,
-					"width": 155,
+					"top": 69,
+					"left": 544,
+					"width": 140,
 					"height": 19,
 					"text": ":xliff:Expression",
 					"class": "Palette",
@@ -875,5 +875,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1079
+	"geometryStamp": 1081
 }
