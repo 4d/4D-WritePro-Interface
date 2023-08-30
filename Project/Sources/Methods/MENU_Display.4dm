@@ -4,9 +4,10 @@
 //var $1; $content : Text
 //var $0 : Text
 
-var $menu; $action; $item : Text
+var $menu; $item; $url : Text
 var $_menuItems; $_tables : Collection
 var $o : Object
+var $_formulas : Collection
 
 If (Count parameters:C259>=1)
 	$content:=$1
@@ -208,6 +209,39 @@ Case of
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "textBox/remove")
+		
+	: ($content="Image")  //ACI0104098
+		
+		If (Form:C1466.selection#Null:C1517)
+			
+			WP GET ATTRIBUTES:C1345(Form:C1466.selection; wk image url:K81:218; $url)
+			$_formulas:=WP Get formulas:C1702(Form:C1466.selection)
+			
+			If ($_formulas.length>0)
+				oForm.imageSource:=$_formulas[0].formula.source  // //ACI0104098
+				
+				APPEND MENU ITEM:C411($menu; Get localized string:C991("editImageFormula"))
+				SET MENU ITEM PARAMETER:C1004($menu; -1; "pictureInsertFormula")
+				
+			Else 
+				If ($url#"") & ($url#"data:@")
+					oForm.imageURL:=$url
+					APPEND MENU ITEM:C411($menu; Get localized string:C991("editImageURL"))
+					SET MENU ITEM PARAMETER:C1004($menu; -1; "pictureEditURL")
+				Else 
+					APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+					SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "insertImage")  // no ITEM PARAMETER IN THIS CASE
+					
+					APPEND MENU ITEM:C411($menu; Get localized string:C991("insertImageURL"))
+					SET MENU ITEM PARAMETER:C1004($menu; -1; "pictureInsertURL")
+					
+					APPEND MENU ITEM:C411($menu; Get localized string:C991("insertImageFormula"))
+					SET MENU ITEM PARAMETER:C1004($menu; -1; "pictureInsertFormula")
+				End if 
+			End if 
+			
+		End if 
+		
 		
 		
 End case 

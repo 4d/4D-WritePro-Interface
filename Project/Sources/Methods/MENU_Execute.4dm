@@ -13,7 +13,9 @@ var $area : Object
 var $ptr : Pointer
 
 var $prompt; $path; $action; $rawText; $extension; $form; $memoErrorMethod; $formName : Text
-var $title; $docName; $folderPath; $propertyName : Text
+var $title; $docName; $folderPath; $propertyName; $url : Text
+
+var $pict : Picture  // empty pict to be used with URL
 
 
 If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form:C1466; "area"))
@@ -432,6 +434,35 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						End for each 
 						
 				End case 
+			: ($action="picture@")  //ACI0104098
+				Case of 
+					: ($action="pictureInsertURL")
+						$url:=Request:C163(Get localized string:C991("URLhyphen"))
+						
+						If (ok=1)
+							WP INSERT PICTURE:C1437(Form:C1466.selection; $pict; wk replace:K81:177)
+							WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk image url:K81:218; $url)
+						End if 
+						
+					: ($action="pictureEditURL")
+						
+						$url:=oForm.imageURL
+						$url:=Request:C163(Get localized string:C991("URLhyphen"); $url)
+						If (ok=1)
+							WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk image url:K81:218; $url)
+						End if 
+						
+					: ($action="pictureInsertFormula")
+						
+						//ACI0104098   back to expression
+						If (Form:C1466.selection.type=0)
+							//WP_Set4Dexpression
+							WP_SetFormula
+						Else 
+							WP_SetImageExpression
+						End if 
+				End case 
+				
 		End case 
 		
 	Else 
