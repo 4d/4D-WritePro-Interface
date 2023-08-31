@@ -674,7 +674,19 @@ This file is distributed under the same license as the product package.-->
           <source>%</source>
           <target>%</target>
         </trans-unit>
-      </group>
+        <trans-unit id="7" resname="cover">
+          <source>Cover</source>
+          <target>カバー</target>
+        </trans-unit>
+        <trans-unit id="8" resname="contain">
+          <source>Contain</source>
+          <target>含む</target>
+        </trans-unit>
+        <trans-unit id="9" resname="pixels">
+          <source>Pixels</source>
+          <target>ピクセル</target>
+        </trans-unit>
+</group>
       <group resname="borderStyleNames">
         <trans-unit id="1" resname="Solid">
           <source>Solid</source>
@@ -1646,7 +1658,11 @@ When not selected, only formulas that have never been evaluated will be computed
           <source>Black frame for empty pictures</source>
           <target>空のピクチャーを黒枠で表示</target>
         </trans-unit>
-      </group>
+        <trans-unit id="xxxx" resname="generatePDFA">
+          <source>Generate PDF/A</source>
+          <target>PDF/A を生成</target>
+        </trans-unit>
+</group>
       <group resname="PaletteImportExport"/>
       <group resname="DialogImport">
         <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
@@ -1936,6 +1952,122 @@ When not selected, only formulas that have never been evaluated will be computed
           <source>Close</source>
           <target>閉じる</target>
         </trans-unit>        
+      </group>
+
+    <group resname="DialogTableWizard">
+
+        <trans-unit id="xx" resname="TemplatesColon">
+          <source>Templates:</source>
+          <target>テンプレート:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ThemesColon">
+          <source>Themes:</source>
+          <target>テーマ:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ColumnsColon">
+          <source>Columns:</source>
+          <target>列:</target>
+        </trans-unit>          
+        <trans-unit id="xx" resname="RowsColon">
+          <source>Rows:</source>
+          <target>行:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DisplayColon">
+          <source>Display:</source>
+          <target>表示:</target>
+        </trans-unit>            
+        <trans-unit id="xx" resname="HeadersColon">
+          <source>Header rows:</source>
+          <target>ヘッダー行:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="BreaksAboveColon">
+          <source>Summary rows above:</source>
+          <target>上の小計行:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DataRowColon">
+          <source>Data row:</source>
+          <target>データ行:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="BreaksBelowColon">
+          <source>Summary rows below:</source>
+          <target>下の小計行:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CarryOverColon">
+          <source>Carry over row:</source>
+          <target>キャリーオーバー行:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ExtraRowsColon">
+          <source>Extra rows:</source>
+          <target>追加行:</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ZoomColon">
+          <source>Zoom:</source>
+          <target>倍率:</target>
+        </trans-unit>        
+        <trans-unit id="xx" resname="DisplayFormulas">
+          <source>Display formulas</source>
+          <target>フォーミュラを表示</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="DisplayData">
+          <source>Display data</source>
+          <target>データを表示</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="Sample">
+          <source>Sample</source>
+          <target>サンプル</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="AvailableFormulas">
+          <source>Available formulas…</source>
+          <target>利用可能なフォーミュラ…</target>
+        </trans-unit>
+
+        <trans-unit id="xx" resname="Insert">
+          <source>Insert</source>
+          <target>挿入</target>
+        </trans-unit>
+
+        <trans-unit id="xx" resname="InfoMain">
+          <source>This dialog box allows you to insert a table in your document, the contents of which will be based on database data.</source>
+          <target>このダイアログボックスを使用すると、データベースのデータに基づいた表組をドキュメント内に挿入することができます。</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoContextualClic">
+          <source>Use the contextual menu to insert additional formulas into the table.</source>
+          <target>追加のフォーミュラを表組に挿入するにはコンテキストメニューを使用してください。</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoHeaderRows">
+          <source>The header rows are replicated at each page break.</source>
+          <target>ヘッダー行は各改ページごとに複製されます。</target>
+        </trans-unit>      
+        <trans-unit id="xx" resname="InfoDataRow">
+          <source>This row will be filled by each element of the database.</source>
+          <target>この行にはデータベースからのデータの各要素が入ります。</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoSummaryRows">
+          <source>The summary rows are inserted each time the reference value defined for the row changes.</source>
+          <target>小計行は、行に対して定義された参照値が変わるたびに挿入されます。</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoCarryOverRow">
+          <source>The carry over row is inserted before each page break (if any).</source>
+          <target>キャリーオーバー行は、各改ページの直前に(あれば)挿入されます。</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoExtraRows">
+          <source>The extra rows are added at the end of the table.</source>
+          <target>追加行は表組の最後に追加されます。</target>
+        </trans-unit>
+ 
+        <trans-unit id="xx" resname="JSONparseError">
+          <source>The file ":1" is malformed.
+(JSON parsing error)</source>
+          <target>>":1"のファイルが不整形です。
+(JSONパースエラー)</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="JSONvalidationError">
+          <source>The file ":1" is not valid.
+(JSON validation error)</source>
+          <target>":1"のファイルは有効ではありません。
+(JSON 評価エラー)</target>
+        </trans-unit>
+        
       </group>
 
       <group resname="Menu_Paragraph">
