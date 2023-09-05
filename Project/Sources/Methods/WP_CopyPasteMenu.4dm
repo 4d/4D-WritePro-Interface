@@ -45,15 +45,6 @@ Else
 	$hasPasteMenu2:=False:C215
 End if 
 
-//If ($context="FrameBackground")
-//$oSettings2:=(OBJECT Get pointer(Object named;"oSettings2"))->
-//If (Not(OB Is empty($oSettings2)))
-//$hasPasteMenu2:=True
-//Else 
-//$hasPasteMenu2:=False
-//End if 
-//End if 
-
 // get the RANGE according to context ----------------------------------------------------------------------------------------------
 
 Case of 
@@ -123,7 +114,7 @@ Case of
 	: ($context="Background")
 		
 		APPEND MENU ITEM:C411($menu; Get localized string:C991("CopyBackground"))
-		SET MENU ITEM PARAMETER:C1004($menu; -1; "Copy1")
+		SET MENU ITEM PARAMETER:C1004($menu; -1; "CopyBackground")  //<ACI0104195>
 		
 		If ($hasPasteMenu1)
 			APPEND MENU ITEM:C411($menu; "(-")
@@ -131,10 +122,12 @@ Case of
 		
 		If ($hasPasteMenu1)
 			APPEND MENU ITEM:C411($menu; Get localized string:C991("PasteBackground"))
-			SET MENU ITEM PARAMETER:C1004($menu; -1; "Paste1")
+			SET MENU ITEM PARAMETER:C1004($menu; -1; "PasteBackground")  //<ACI0104195>
+			
 		End if 
 		
 End case 
+
 
 // call the menu ------------------------------------------------------------------------------------------------------------------------------
 $Parameter:=Dynamic pop up menu:C1006($menu)
@@ -313,6 +306,11 @@ Case of
 				
 			: ($context="Background")
 				
+				$oCurrent:=Form:C1466.selection  // 2023/09/05 RL
+				If (Not:C34(Undefined:C82($oCurrent.container)))
+					$oCurrent:=$oCurrent.container
+				End if 
+				
 				CLEAR VARIABLE:C89(oSettings1)
 				
 				// numeric values 
@@ -335,6 +333,8 @@ Case of
 				ARRAY TEXT:C222($_attributes; 0)
 				APPEND TO ARRAY:C911($_attributes; wk background width:K81:27)
 				APPEND TO ARRAY:C911($_attributes; wk background height:K81:28)
+				APPEND TO ARRAY:C911($_attributes; wk background image url:K81:220)  // <ACI0104195>
+				
 				$n:=Size of array:C274($_attributes)
 				For ($i; 1; $n)
 					WP GET ATTRIBUTES:C1345($oCurrent; $_attributes{$i}; $textValue)
@@ -343,9 +343,6 @@ Case of
 					End if 
 				End for 
 				oSettings1:=oSettings1
-				
-				// +++
-				(OBJECT Get pointer:C1124(Object named:K67:5; "bgndPictPreviewCopy"))->:=(OBJECT Get pointer:C1124(Object named:K67:5; "bgndPictPreview"))->
 				
 				
 		End case 
@@ -360,6 +357,20 @@ Case of
 		Case of 
 			: ($Parameter="Paste1")
 				$oSettings:=oSettings1
+				
+			: ($Parameter="PasteBackground")  // <ACI0104195>
+				
+				$oSettings:=oSettings1
+				
+				$oCurrent:=Form:C1466.selection  // 2023/09/05 RL
+				If (Not:C34(Undefined:C82($oCurrent.container)))
+					$oCurrent:=$oCurrent.container
+				Else 
+					If ($oCurrent.type=wk type character:K81:296)
+						$oCurrent:=WP Paragraph range:C1346(Form:C1466.selection)
+					End if 
+				End if 
+				
 			: ($Parameter="Paste2")
 				$oSettings:=oSettings2
 		End case 
@@ -421,14 +432,6 @@ Case of
 			End for 
 		End if 
 		
-		If ($context="Background")
-			
-			//$ptrPreview:=(OBJECT Get pointer(Object named;"bgndPictPreview"))
-			$ptrPreviewCopy:=(OBJECT Get pointer:C1124(Object named:K67:5; "bgndPictPreviewCopy"))
-			//$ptrPreview->:=$ptrPreviewCopy->
-			WP_SetBackgroundPicture($oCurrent; $ptrPreviewCopy->)
-			
-		End if 
 		
 		SET TIMER:C645(-1)
 		

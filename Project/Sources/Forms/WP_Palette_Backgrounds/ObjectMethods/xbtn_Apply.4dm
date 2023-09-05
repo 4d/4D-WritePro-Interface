@@ -13,6 +13,7 @@ If ($oCurrent#Null:C1517)
 	
 Else 
 	
-	ALERT:C41("not available yet ffor this target")
+	BEEP:C151
+	//ALERT("Not available yet for this target")
 	
 End if 
