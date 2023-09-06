@@ -22,30 +22,39 @@ If (Not:C34(OB Is empty:C1297($range)))
 			$refUnit:=oForm.verticalSizeUnits
 		End if 
 		
-		If ($size="auto") | ($size="cover") | ($size="contain")
+		
+		// <ACI0104195> NOT multiple units
+		If ($size#"")
 			
-			OBJECT SET VALUE:C1742($refValue; 0)
-			$refUnit.index:=$refUnit.css.indexOf($size)
-			$refUnit.memoUnit:=""
+			// <ACI0104082>
+			If ($size="auto") | ($size="cover") | ($size="contain")
+				OBJECT SET VALUE:C1742($refValue; 0)
+				$refUnit.index:=$refUnit.css.indexOf($size)
+				$refUnit.memoUnit:=""
+			Else   // ex 50%, 10mm, 2.5cm, 5in or 120pt
+				
+				$n:=Length:C16($size)
+				For ($i; 1; $n)
+					$char:=$size[[$i]]
+					If (($char>="0") & ($char<="9")) | ($char=".")
+						$sizeVal:=$sizeVal+$char
+					Else 
+						$sizeUnit:=Substring:C12($size; $i)
+						$i:=$n
+					End if 
+				End for 
+				
+				OBJECT SET VALUE:C1742($refValue; Num:C11($sizeVal; "."))
+				$refUnit.index:=$refUnit.css.indexOf($sizeUnit)
+				$refUnit.memoUnit:=$refUnit.css[$refUnit.index]  // "%","mm","cm","in" or "pt"
+				
+			End if 
+			// </ACI0104082>
 			
-		Else   // ex 50%, 10mm, 2.5cm, 5in or 120pt
-			
-			$n:=Length:C16($size)
-			For ($i; 1; $n)
-				$char:=$size[[$i]]
-				If (($char>="0") & ($char<="9")) | ($char=".")
-					$sizeVal:=$sizeVal+$char
-				Else 
-					$sizeUnit:=Substring:C12($size; $i)
-					$i:=$n
-				End if 
-			End for 
-			
-			OBJECT SET VALUE:C1742($refValue; Num:C11($sizeVal; "."))
-			$refUnit.index:=$refUnit.css.indexOf($sizeUnit)
-			$refUnit.memoUnit:=$refUnit.css[$refUnit.index]  // "%","mm","cm","in" or "pt"
-			
+		Else 
+			// multiple units… do nothing.
 		End if 
+		// </ACI0104195>
 		
 	End for 
 	
