@@ -94,7 +94,6 @@
 					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_Top.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
-					"method": "ObjectMethods/btnInsertAboveRow.4dm",
 					"events": [
 						"onClick"
 					]
@@ -113,7 +112,6 @@
 					"icon": "/RESOURCES/Images/Sidebar/Arrow_Small_Bottom.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
-					"method": "ObjectMethods/btnInsertBelowRow.4dm",
 					"events": [
 						"onClick"
 					]
@@ -192,7 +190,6 @@
 					"icon": "/RESOURCES/Images/Sidebar/small_Trash.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
-					"method": "ObjectMethods/btnDeleteRows.4dm",
 					"events": [
 						"onClick"
 					]
@@ -444,6 +441,7 @@
 			"View 7": {},
 			"View 8": {},
 			"View 9": {
+				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text"
