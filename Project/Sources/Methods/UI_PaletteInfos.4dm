@@ -32,6 +32,10 @@ Else
 			OBJECT SET ENABLED:C1123(*; "btn_showHide4Dexpressions"; True:C214)
 			OBJECT SET ENTERABLE:C238(*; "btn_showHide4Dexpressions"; True:C214)
 			
+			// ACI0104129
+			OBJECT SET ENABLED:C1123(*; "btn_insertExpression"; True:C214)
+			OBJECT SET ENABLED:C1123(*; "btn_computeExpression"; True:C214)
+			OBJECT SET ENABLED:C1123(*; "btn_freezeExpressions"; True:C214)
 			
 		: ($typeSelection=0)
 			OBJECT SET ENABLED:C1123(*; "@"; True:C214)
