@@ -2987,66 +2987,66 @@
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_imageInFront2": {
+				"btn_ImageWrapTopBottom": {
 					"type": "checkbox",
 					"top": 28,
 					"left": 310,
 					"width": 30,
 					"height": 30,
 					"tooltip": "based on action.title (see\"onload\")",
-					"action": "",
+					"action": "image/anchorLayout?value=wrapTopBottom",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/textWrap/textWrapTopBottom_32.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_imageInFront3": {
+				"btn_imageWrapSquareLeft": {
 					"type": "checkbox",
 					"top": 56,
 					"left": 190,
 					"width": 30,
 					"height": 30,
 					"tooltip": "based on action.title (see\"onload\")",
-					"action": "",
+					"action": "image/anchorLayout?value=wrapSquareLeft",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/textWrap/textWrapSquareLeft_32.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_imageInFront4": {
+				"btn_imageWrapSquareRight": {
 					"type": "checkbox",
 					"top": 56,
 					"left": 230,
 					"width": 30,
 					"height": 30,
 					"tooltip": "based on action.title (see\"onload\")",
-					"action": "",
+					"action": "image/anchorLayout?value=wrapSquareRight",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/textWrap/textWrapSquareRight_32.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_imageInFront5": {
+				"btn_imageWrapSquare": {
 					"type": "checkbox",
 					"top": 56,
 					"left": 270,
 					"width": 30,
 					"height": 30,
 					"tooltip": "based on action.title (see\"onload\")",
-					"action": "",
+					"action": "image/anchorLayout?value=wrapSquare",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/textWrap/textWrapSquare_32.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_imageInFront6": {
+				"btn_imageWrapSquareLargest": {
 					"type": "checkbox",
 					"top": 56,
 					"left": 310,
 					"width": 30,
 					"height": 30,
 					"tooltip": "based on action.title (see\"onload\")",
-					"action": "",
+					"action": "image/anchorLayout?value=wrapSquareLargest",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/textWrap/textWrapSquareLargest_32.png",
 					"iconFrames": 4,
@@ -3179,11 +3179,11 @@
 				"btn_imageInline1",
 				"btn_imageInFront1",
 				"btn_imageBehind1",
-				"btn_imageInFront2",
-				"btn_imageInFront3",
-				"btn_imageInFront4",
-				"btn_imageInFront5",
-				"btn_imageInFront6",
+				"btn_ImageWrapTopBottom",
+				"btn_imageWrapSquareLeft",
+				"btn_imageWrapSquareRight",
+				"btn_imageWrapSquare",
+				"btn_imageWrapSquareLargest",
 				"btn_imageInline2",
 				"btn_imageInFront7",
 				"btn_imageBehind2",
@@ -4557,5 +4557,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6913
+	"geometryStamp": 6926
 }

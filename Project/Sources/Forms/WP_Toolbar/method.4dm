@@ -91,12 +91,16 @@ Case of
 		OBJECT SET HELP TIP:C1181(*; "btn_displayAsSymbol"; Get action info:C1442("displayFormulaAsSymbol").title)
 		
 		
-		OBJECT SET HELP TIP:C1181(*; "btn_imageBehind"; Get action info:C1442("anchorLayout?value=behind").title)
-		OBJECT SET HELP TIP:C1181(*; "btn_imageInline"; Get action info:C1442("anchorLayout?value=inline").title)
-		OBJECT SET HELP TIP:C1181(*; "btn_imageInFront"; Get action info:C1442("anchorLayout?value=front").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_imageBehind@"; Get action info:C1442("anchorLayout?value=behind").title)  //@ is temporary
+		OBJECT SET HELP TIP:C1181(*; "btn_imageInline@"; Get action info:C1442("anchorLayout?value=inline").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_imageInFront@"; Get action info:C1442("anchorLayout?value=front").title)
 		
 		
-		
+		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapTopBottom"; Get action info:C1442("anchorLayout?value=wrapTopBottom").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquare"; Get action info:C1442("anchorLayout?value=wrapSquare").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareLeft"; Get action info:C1442("anchorLayout?value=wrapSquareLeft").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareRight"; Get action info:C1442("anchorLayout?value=wrapSquareRight").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareLargest"; Get action info:C1442("anchorLayout?value=wrapSquareLargest").title)
 		
 		
 		If (Form:C1466#Null:C1517)
@@ -114,6 +118,8 @@ Case of
 				
 			: (FORM Get current page:C276(*)=4)
 				TB_setAutomaticActions("BordersAndRadius")
+				
+				
 		End case 
 		
 		SET TIMER:C645(-1)

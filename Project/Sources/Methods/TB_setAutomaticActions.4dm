@@ -58,9 +58,18 @@ Case of
 			End if 
 			
 			// toolbar
-			OBJECT SET ACTION:C1259(*; "btn_imageBehind"; $applyTo+"/anchorLayout?value=behind")
-			OBJECT SET ACTION:C1259(*; "btn_imageInline"; $applyTo+"/anchorLayout?value=inline")
-			OBJECT SET ACTION:C1259(*; "btn_imageInFront"; $applyTo+"/anchorLayout?value=front")
+			OBJECT SET ACTION:C1259(*; "btn_imageBehind@"; $applyTo+"/anchorLayout?value=behind")  // @ is temporary
+			OBJECT SET ACTION:C1259(*; "btn_imageInline@"; $applyTo+"/anchorLayout?value=inline")
+			OBJECT SET ACTION:C1259(*; "btn_imageInFront@"; $applyTo+"/anchorLayout?value=front")
+			
+			// 5 new modes
+			OBJECT SET ACTION:C1259(*; "btn_ImageWrapTopBottom"; $applyTo+"/anchorLayout?value=wrapTopBottom")
+			OBJECT SET ACTION:C1259(*; "btn_imageWrapSquareLeft"; $applyTo+"/anchorLayout?value=wrapSquareLeft")
+			OBJECT SET ACTION:C1259(*; "btn_imageWrapSquareRight"; $applyTo+"/anchorLayout?value=wrapSquareRight")
+			OBJECT SET ACTION:C1259(*; "btn_imageWrapSquare"; $applyTo+"/anchorLayout?value=wrapSquare")
+			OBJECT SET ACTION:C1259(*; "btn_imageWrapSquareLargest"; $applyTo+"/anchorLayout?value=wrapSquareLargest")
+			
+			
 			
 			OBJECT SET ACTION:C1259(*; "btn_imageAlignTop"; $applyTo+"/anchorVerticalAlign?value=Top")
 			OBJECT SET ACTION:C1259(*; "btn_imageAlignMiddle"; $applyTo+"/anchorVerticalAlign?value=middle")
