@@ -361,8 +361,8 @@
 				"Button": {
 					"type": "button",
 					"text": "LOREM",
-					"top": 477,
-					"left": 1246,
+					"top": 178,
+					"left": 1663,
 					"width": 138,
 					"height": 24,
 					"events": [
@@ -655,7 +655,7 @@
 				},
 				"cbBold1": {
 					"type": "checkbox",
-					"top": 338,
+					"top": 928,
 					"left": 10,
 					"width": 28,
 					"height": 24,
@@ -677,7 +677,7 @@
 				},
 				"cbItalic1": {
 					"type": "checkbox",
-					"top": 338,
+					"top": 928,
 					"left": 38,
 					"width": 28,
 					"height": 24,
@@ -699,7 +699,7 @@
 				},
 				"btn_underline1": {
 					"type": "checkbox",
-					"top": 338,
+					"top": 928,
 					"left": 66,
 					"width": 28,
 					"height": 24,
@@ -722,7 +722,7 @@
 				"Text4": {
 					"type": "text",
 					"text": "<<--  Always active even if visible only in tab 1\r(drawback : can't be disabled, but who cares ?)",
-					"top": 342,
+					"top": 932,
 					"left": 100,
 					"width": 371,
 					"height": 46,
@@ -731,7 +731,7 @@
 				},
 				"TB_SizeUp": {
 					"type": "button",
-					"top": 369,
+					"top": 959,
 					"left": 10,
 					"width": 30,
 					"height": 24,
@@ -753,7 +753,7 @@
 				},
 				"TB_SizeDown": {
 					"type": "button",
-					"top": 369,
+					"top": 959,
 					"left": 40,
 					"width": 30,
 					"height": 24,
@@ -947,8 +947,8 @@
 				},
 				"btn_shadowColor": {
 					"type": "button",
-					"top": 260,
-					"left": 326,
+					"top": 954,
+					"left": 447,
 					"width": 24,
 					"height": 24,
 					"tooltip": ":xliff:shadowColor",
@@ -1007,20 +1007,6 @@
 					],
 					"method": "ObjectMethods/btn_backgroundColor.4dm"
 				},
-				"btn_clear": {
-					"type": "button",
-					"top": 165,
-					"left": 1002,
-					"width": 30,
-					"height": 24,
-					"tooltip": ":xliff:clear",
-					"action": "clear",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Home/Clear_24.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "toolbar"
-				},
 				"btn_alignTextLeft": {
 					"type": "checkbox",
 					"top": 59,
@@ -1077,20 +1063,6 @@
 					"textPlacement": "center",
 					"style": "toolbar"
 				},
-				"btn_selectAll": {
-					"type": "button",
-					"top": 165,
-					"left": 1032,
-					"width": 30,
-					"height": 24,
-					"tooltip": ":xliff:selectAll",
-					"action": "selectAll",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Home/SelectAll_24.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "toolbar"
-				},
 				"btn_undo": {
 					"type": "button",
 					"top": 30,
@@ -1123,16 +1095,6 @@
 						"onClick"
 					],
 					"tooltip": ":xliff:DocumentInfo"
-				},
-				"TB_FontSize": {
-					"type": "dropdown",
-					"top": 89,
-					"left": 1126,
-					"width": 65,
-					"height": 20,
-					"tooltip": ":xliff:size",
-					"focusable": false,
-					"action": "fontSize"
 				},
 				"Line6": {
 					"type": "line",
@@ -1273,21 +1235,6 @@
 						"onDataChange"
 					]
 				},
-				"WP1": {
-					"type": "dropdown",
-					"top": 345,
-					"left": 760,
-					"width": 120,
-					"height": 17,
-					"dataSource": "WP_fontLongName",
-					"focusable": false,
-					"fontFamily": "System Font Regular",
-					"fontSize": 9,
-					"method": "ObjectMethods/WP1.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
 				"btn_colorShowDialog1": {
 					"type": "button",
 					"top": 60,
@@ -1382,10 +1329,10 @@
 				"Button3": {
 					"type": "button",
 					"text": "•",
-					"top": 215,
-					"left": 210,
-					"width": 12,
-					"height": 10,
+					"top": 957,
+					"left": 468,
+					"width": 22,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -2631,8 +2578,8 @@
 			"objects": {
 				"btn_imageInline": {
 					"type": "checkbox",
-					"top": 110,
-					"left": 280,
+					"top": 30,
+					"left": 235,
 					"width": 50,
 					"height": 50,
 					"tooltip": "based on action.title (see\"onload\")",
@@ -2644,8 +2591,8 @@
 				},
 				"btn_imageInFront": {
 					"type": "checkbox",
-					"top": 110,
-					"left": 330,
+					"top": 30,
+					"left": 285,
 					"width": 50,
 					"height": 50,
 					"tooltip": "based on action.title (see\"onload\")",
@@ -2657,8 +2604,8 @@
 				},
 				"btn_imageBehind": {
 					"type": "checkbox",
-					"top": 110,
-					"left": 230,
+					"top": 30,
+					"left": 185,
 					"width": 50,
 					"height": 50,
 					"tooltip": "based on action.title (see\"onload\")",
@@ -2950,7 +2897,7 @@
 				},
 				"btn_imageInline1": {
 					"type": "checkbox",
-					"top": 28,
+					"top": 206,
 					"left": 230,
 					"width": 30,
 					"height": 30,
@@ -2963,7 +2910,7 @@
 				},
 				"btn_imageInFront1": {
 					"type": "checkbox",
-					"top": 28,
+					"top": 206,
 					"left": 270,
 					"width": 30,
 					"height": 30,
@@ -2976,7 +2923,7 @@
 				},
 				"btn_imageBehind1": {
 					"type": "checkbox",
-					"top": 28,
+					"top": 206,
 					"left": 190,
 					"width": 30,
 					"height": 30,
@@ -2989,7 +2936,7 @@
 				},
 				"btn_ImageWrapTopBottom": {
 					"type": "checkbox",
-					"top": 28,
+					"top": 206,
 					"left": 310,
 					"width": 30,
 					"height": 30,
@@ -3002,7 +2949,7 @@
 				},
 				"btn_imageWrapSquareLeft": {
 					"type": "checkbox",
-					"top": 56,
+					"top": 234,
 					"left": 190,
 					"width": 30,
 					"height": 30,
@@ -3015,7 +2962,7 @@
 				},
 				"btn_imageWrapSquareRight": {
 					"type": "checkbox",
-					"top": 56,
+					"top": 234,
 					"left": 230,
 					"width": 30,
 					"height": 30,
@@ -3028,7 +2975,7 @@
 				},
 				"btn_imageWrapSquare": {
 					"type": "checkbox",
-					"top": 56,
+					"top": 234,
 					"left": 270,
 					"width": 30,
 					"height": 30,
@@ -3041,7 +2988,7 @@
 				},
 				"btn_imageWrapSquareLargest": {
 					"type": "checkbox",
-					"top": 56,
+					"top": 234,
 					"left": 310,
 					"width": 30,
 					"height": 30,
@@ -4557,5 +4504,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6926
+	"geometryStamp": 7027
 }

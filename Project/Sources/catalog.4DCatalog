@@ -21,13 +21,13 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<index kind="regular" uuid="888DA1EA0F304CC3892186D0409B2624" type="3">
-		<field_ref uuid="4869235E9E0C4292B6FFD5D2E0DFAE68" name="wp">
+	<index kind="regular" unique_keys="true" uuid="69C6A5247011466FA2A4EC22B9F9037C" type="1">
+		<field_ref uuid="25E1AC17AE3D4D5FBED8BEFDB6E6B6DC" name="ID">
 			<table_ref uuid="FCDC2942AAC24F1C8E119520A0C6B44B" name="Sample"/>
 		</field_ref>
 	</index>
-	<index kind="regular" unique_keys="true" uuid="FD3F23E2A24A4ADC8E1C10EB46B8C4FF" type="7">
-		<field_ref uuid="25E1AC17AE3D4D5FBED8BEFDB6E6B6DC" name="ID">
+	<index kind="regular" uuid="888DA1EA0F304CC3892186D0409B2624" type="3">
+		<field_ref uuid="4869235E9E0C4292B6FFD5D2E0DFAE68" name="wp">
 			<table_ref uuid="FCDC2942AAC24F1C8E119520A0C6B44B" name="Sample"/>
 		</field_ref>
 	</index>
