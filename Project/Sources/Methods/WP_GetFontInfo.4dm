@@ -18,14 +18,6 @@ C_LONGINT:C283($rangeStart; $rangeEnd)
 C_TEXT:C284($fontFamily)
 C_TEXT:C284($font)
 
-//$range:=$1
-
-//If (Count parameters>=2)
-//$check:=$2
-//Else 
-//$check:=False
-//End if 
-
 If (Count parameters:C259<2)
 	$check:=False:C215
 End if 
@@ -63,15 +55,8 @@ If (Not:C34(OB Is empty:C1297($range)))
 			
 			// Then rebuild the font style and long names arrays
 			$fontFamily:=WP_fontFamilly{$p}
-			ARRAY TEXT:C222(WP_fontStyle; 0)
-			ARRAY TEXT:C222(WP_fontLongName; 0)
-			FONT STYLE LIST:C1362($fontFamily; WP_fontStyle; WP_fontLongName)
 			
-			If (Size of array:C274(WP_fontStyle)=1)
-				OBJECT SET ENABLED:C1123(*; "fontStyle"; False:C215)
-			Else 
-				OBJECT SET ENABLED:C1123(*; "fontStyle"; True:C214)
-			End if 
+			WP_FillFontStyles($fontFamily)  //ACI0104450
 			
 			WP GET ATTRIBUTES:C1345($range; wk font:K81:69; $font)
 			$p:=Find in array:C230(WP_fontLongName; $font)

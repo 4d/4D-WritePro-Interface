@@ -231,3 +231,6 @@ C_BOOLEAN:C305(gotoArea; $0)
 
 //UI_PaletteBackgrounds
 C_TEXT:C284(UI_PaletteBackgrounds; $1)
+
+//WP_FillFontStyles
+C_TEXT:C284(WP_FillFontStyles; $1)
