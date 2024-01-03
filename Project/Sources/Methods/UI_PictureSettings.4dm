@@ -80,10 +80,10 @@ If ($p>0)
 	OBJECT SET FORMAT:C236(*; "lockerButton"; $format)
 End if 
 
-$p:=Find in array:C230(_displayFormatValues; Form:C1466.pictSettings[wk image display mode:K81:340])
-If ($p>0)
-	_displayFormatLabels:=$p
-End if 
+//$p:=Find in array(_displayFormatValues; Form.pictSettings[wk image display mode])
+//If ($p>0)
+//_displayFormatLabels:=$p
+//End if 
 
 //--------------------------------------------------------------------------
 
@@ -146,13 +146,16 @@ End if
 
 If (Form:C1466.pictSettings.anchored=True:C214)
 	
-	If (_anchorPage=5)  // specific page number
+	
+	
+	If (Form:C1466.anchorPage.index=4)  // specific page number
 		
 		//OBJECT SET VISIBLE(*; "anchorPageNumber@"; True)
 		OBJECT SET ENTERABLE:C238(*; "anchorPageNumber@"; True:C214)
 		OBJECT SET ENABLED:C1123(*; "anchorPageNumber@"; True:C214)
 		
-		_anchorSection:=1  // forces ALL sections
+		Form:C1466.anchorSection.index:=0
+		
 		OBJECT SET ENABLED:C1123(*; "anchorSectionDropDown"; False:C215)
 		
 	Else 
@@ -168,15 +171,14 @@ If (Form:C1466.pictSettings.anchored=True:C214)
 	
 	
 	Case of 
-		: (_anchorSection<=1)  //wk anchor all or empty array
+		: (Form:C1466.anchorSection.index<=0)  // wk anchor all or empty collection
 			//OBJECT SET VISIBLE(*; "anchorSectionNumber@"; False)
 			
 			OBJECT SET ENTERABLE:C238(*; "anchorSectionNumber@"; False:C215)
 			OBJECT SET ENABLED:C1123(*; "anchorSectionNumber@"; False:C215)
 			//Form.display.anchorSection:=0
 			
-			
-		: (_anchorSection=2)  // section number
+		: (Form:C1466.anchorSection.index=1)  // section number
 			//OBJECT SET VISIBLE(*; "anchorSectionNumber@"; True)
 			
 			OBJECT SET ENTERABLE:C238(*; "anchorSectionNumber@"; True:C214)

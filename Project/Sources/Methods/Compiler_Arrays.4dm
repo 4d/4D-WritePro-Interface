@@ -4,11 +4,6 @@ ARRAY TEXT:C222(WP_FontFamilly; 0)
 ARRAY TEXT:C222(WP_fontFamillyJapanese; 0)
 ARRAY TEXT:C222(WP_fontLongName; 0)
 ARRAY TEXT:C222(WP_fontStyle; 0)
-ARRAY TEXT:C222(_anchorHorizontalAlign; 0)
-ARRAY TEXT:C222(_anchorLayout; 0)
-ARRAY TEXT:C222(_anchorOrigin; 0)
-ARRAY TEXT:C222(_anchorPage; 0)
-ARRAY TEXT:C222(_anchorSection; 0)
-ARRAY TEXT:C222(_anchorVerticalAlign; 0)
-ARRAY TEXT:C222(_displayFormatLabels; 0)
-ARRAY TEXT:C222(_displayFormatValues; 0)
+
+
+

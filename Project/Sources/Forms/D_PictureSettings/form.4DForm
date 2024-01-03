@@ -20,15 +20,6 @@
 	"pages": [
 		{
 			"objects": {
-				"BackgroundA_4": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 700,
-					"height": 361,
-					"fill": "#F6F6F6",
-					"stroke": "transparent"
-				},
 				"BackgroundB_0": {
 					"type": "rectangle",
 					"top": 0,
@@ -36,6 +27,29 @@
 					"width": 700,
 					"height": 720,
 					"fill": "#FFFFFF",
+					"stroke": "transparent"
+				},
+				"pictureFormatList1": {
+					"type": "dropdown",
+					"left": 165,
+					"top": 385,
+					"width": 270,
+					"height": 24,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.displayFormat",
+					"dataSourceTypeHint": "integer",
+					"method": "ObjectMethods/pictureFormatList1.4dm",
+					"focusable": false
+				},
+				"BackgroundA_4": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 700,
+					"height": 361,
+					"fill": "#F6F6F6",
 					"stroke": "transparent"
 				},
 				"BackgroundA_5": {
@@ -245,20 +259,6 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button3.4dm",
-					"focusable": false
-				},
-				"pictureFormatList": {
-					"type": "dropdown",
-					"left": 165,
-					"top": 385,
-					"width": 270,
-					"height": 24,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "_displayFormatLabels",
-					"dataSourceTypeHint": "integer",
-					"method": "ObjectMethods/pictureFormatList.4dm",
 					"focusable": false
 				},
 				"formatLabel": {
@@ -600,23 +600,14 @@
 				"lockerButton",
 				"pictureWidthHeight1",
 				"Button3",
-				"pictureFormatList",
 				"alternateText",
 				"lockerButton1",
-				"lockerButton2"
+				"lockerButton2",
+				"pictureFormatList1"
 			]
 		},
 		{
 			"objects": {
-				"BackgroundA_2": {
-					"type": "rectangle",
-					"top": 660,
-					"left": 0,
-					"width": 800,
-					"height": 60,
-					"fill": "#F6F6F6",
-					"stroke": "transparent"
-				},
 				"rectPage1": {
 					"type": "rectangle",
 					"top": 0,
@@ -631,6 +622,29 @@
 					],
 					"strokeWidth": 2,
 					"visibility": "hidden"
+				},
+				"Popup Dropdown List1": {
+					"type": "dropdown",
+					"left": 166,
+					"top": 620,
+					"width": 185,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.anchorOrigin",
+					"method": "ObjectMethods/Popup Dropdown List1.4dm",
+					"focusable": false,
+					"dataSourceTypeHint": "object"
+				},
+				"BackgroundA_2": {
+					"type": "rectangle",
+					"top": 660,
+					"left": 0,
+					"width": 800,
+					"height": 60,
+					"fill": "#F6F6F6",
+					"stroke": "transparent"
 				},
 				"BackgroundA_1": {
 					"type": "rectangle",
@@ -654,32 +668,6 @@
 					"events": [
 						"onGettingFocus"
 					]
-				},
-				"Popup Dropdown List1": {
-					"type": "dropdown",
-					"left": 165,
-					"top": 590,
-					"width": 185,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "_anchorVerticalAlign",
-					"method": "ObjectMethods/Popup Dropdown List1.4dm",
-					"focusable": false
-				},
-				"Popup Dropdown List": {
-					"type": "dropdown",
-					"left": 165,
-					"top": 560,
-					"width": 185,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "_anchorHorizontalAlign",
-					"method": "ObjectMethods/Popup Dropdown List.4dm",
-					"focusable": false
 				},
 				"OffsetHorizontal": {
 					"type": "input",
@@ -713,19 +701,6 @@
 					"height": 16,
 					"textAlign": "right"
 				},
-				"Popup Dropdown List2": {
-					"type": "dropdown",
-					"left": 165,
-					"top": 620,
-					"width": 185,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "_anchorOrigin",
-					"method": "ObjectMethods/Popup Dropdown List2.4dm",
-					"focusable": false
-				},
 				"Text2": {
 					"type": "text",
 					"text": ":xliff:OriginHyphen",
@@ -735,19 +710,6 @@
 					"height": 16,
 					"textAlign": "right"
 				},
-				"anchorPageDropDown": {
-					"type": "dropdown",
-					"left": 165,
-					"top": 470,
-					"width": 180,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "_anchorPage",
-					"method": "ObjectMethods/anchorPageDropDown.4dm",
-					"focusable": false
-				},
 				"anchorPagelabel": {
 					"type": "text",
 					"text": ":xliff:PageHyphen",
@@ -756,19 +718,6 @@
 					"width": 150,
 					"height": 16,
 					"textAlign": "right"
-				},
-				"anchorSectionDropDown": {
-					"type": "dropdown",
-					"left": 500,
-					"top": 470,
-					"width": 160,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "_anchorSection",
-					"method": "ObjectMethods/anchorSectionDropDown.4dm",
-					"focusable": false
 				},
 				"anchorSectionLabel": {
 					"type": "text",
@@ -828,19 +777,6 @@
 					],
 					"dataSourceTypeHint": "integer",
 					"numberFormat": "#####0;;"
-				},
-				"Popup Dropdown List5": {
-					"type": "dropdown",
-					"left": 500,
-					"top": 620,
-					"width": 160,
-					"height": 20,
-					"events": [
-						"onDataChange"
-					],
-					"dataSource": "_anchorLayout",
-					"method": "ObjectMethods/Popup Dropdown List5.4dm",
-					"focusable": false
 				},
 				"Text5": {
 					"type": "text",
@@ -924,21 +860,93 @@
 					"height": 16,
 					"textAlign": "left",
 					"stroke": "#696969"
+				},
+				"Popup Dropdown List3": {
+					"type": "dropdown",
+					"left": 500,
+					"top": 620,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.anchorLayout",
+					"method": "ObjectMethods/Popup Dropdown List3.4dm",
+					"focusable": false,
+					"dataSourceTypeHint": "object"
+				},
+				"Popup Dropdown List4": {
+					"type": "dropdown",
+					"left": 165,
+					"top": 560,
+					"width": 185,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.anchorHorizontalAlign",
+					"method": "ObjectMethods/Popup Dropdown List4.4dm",
+					"focusable": false,
+					"dataSourceTypeHint": "object"
+				},
+				"Popup Dropdown List5": {
+					"type": "dropdown",
+					"left": 165,
+					"top": 590,
+					"width": 185,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.anchorVerticalAlign",
+					"method": "ObjectMethods/Popup Dropdown List5.4dm",
+					"focusable": false,
+					"dataSourceTypeHint": "object"
+				},
+				"anchorPageDropDown": {
+					"type": "dropdown",
+					"left": 165,
+					"top": 470,
+					"width": 180,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.anchorPage",
+					"method": "ObjectMethods/anchorPageDropDown.4dm",
+					"focusable": false,
+					"stroke": "automatic",
+					"dataSourceTypeHint": "object"
+				},
+				"anchorSectionDropDown": {
+					"type": "dropdown",
+					"left": 500,
+					"top": 470,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.anchorSection",
+					"method": "ObjectMethods/anchorSectionDropDown.4dm",
+					"focusable": false,
+					"stroke": "automatic",
+					"dataSourceTypeHint": "object"
 				}
 			},
 			"entryOrder": [
-				"OffsetVertical",
-				"Popup Dropdown List1",
-				"Popup Dropdown List",
-				"OffsetHorizontal",
-				"Popup Dropdown List2",
-				"anchorPageDropDown",
-				"anchorSectionDropDown",
 				"anchorPageNumberInput",
 				"anchorSectionNumberInput",
-				"Popup Dropdown List5",
+				"OffsetHorizontal",
+				"OffsetVertical",
+				"Popup Dropdown List3",
 				"Button2",
-				"Button7"
+				"Button7",
+				"Popup Dropdown List4",
+				"Popup Dropdown List5",
+				"Popup Dropdown List1",
+				"anchorPageDropDown",
+				"anchorSectionDropDown"
 			]
 		},
 		{
@@ -1006,7 +1014,7 @@
 			}
 		}
 	],
-	"geometryStamp": 11403,
+	"geometryStamp": 11511,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

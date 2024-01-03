@@ -1,0 +1,1 @@
+Form:C1466.pictSettings[wk anchor layout:K81:227]:=Form:C1466.anchorLayout.anchorValues[Form:C1466.anchorLayout.index]
