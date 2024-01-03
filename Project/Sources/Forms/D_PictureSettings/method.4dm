@@ -34,7 +34,7 @@ Case of
 			ARRAY TEXT:C222(_anchorOrigin; 3)
 			ARRAY TEXT:C222(_anchorPage; 5)  // 6 ?
 			
-			ARRAY TEXT:C222(_anchorLayout; 2)
+			ARRAY TEXT:C222(_anchorLayout; 7)
 			
 			
 			_anchorHorizontalAlign{1}:=Get action info:C1442("anchorHorizontalAlign?value=left").title  // "Left"
@@ -107,11 +107,29 @@ Case of
 			_anchorLayout{1}:=Get action info:C1442("anchorLayout?value=behind").title  // "Behind the text"
 			_anchorLayout{2}:=Get action info:C1442("anchorLayout?value=front").title  // "In front of the text"
 			
+			_anchorLayout{3}:=Get action info:C1442("anchorLayout?value=wrapTopBottom").title  // ""
+			_anchorLayout{4}:=Get action info:C1442("anchorLayout?value=wrapSquareLeft").title  // ""
+			_anchorLayout{5}:=Get action info:C1442("anchorLayout?value=wrapSquareRight").title  // "In front of the text"
+			_anchorLayout{6}:=Get action info:C1442("anchorLayout?value=wrapSquare").title  // "In front of the text"
+			_anchorLayout{7}:=Get action info:C1442("anchorLayout?value=wrapSquareLargest").title  // "In front of the text"
+			
 			Case of 
 				: (Form:C1466.pictSettings[wk anchor layout:K81:227]=wk behind text:K81:240)  // wk behind text-image is anchored, behind the text
 					_anchorLayout:=1
 				: (Form:C1466.pictSettings[wk anchor layout:K81:227]=wk in front of text:K81:241)  // wk in front of text - image is anchored, in front of the text
 					_anchorLayout:=2
+					
+					// new values v20 R5
+				: (Form:C1466.pictSettings[wk anchor layout:K81:227]=wk text wrap top bottom:K81:379)  // 
+					_anchorLayout:=3
+				: (Form:C1466.pictSettings[wk anchor layout:K81:227]=wk text wrap square left:K81:382)  // 
+					_anchorLayout:=4
+				: (Form:C1466.pictSettings[wk anchor layout:K81:227]=wk text wrap square right:K81:383)
+					_anchorLayout:=5
+				: (Form:C1466.pictSettings[wk anchor layout:K81:227]=wk text wrap square:K81:380)
+					_anchorLayout:=6
+				: (Form:C1466.pictSettings[wk anchor layout:K81:227]=wk text wrap square largest:K81:384)
+					_anchorLayout:=7
 			End case 
 			
 		End if 
