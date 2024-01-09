@@ -243,6 +243,32 @@ Case of
 			End if 
 			
 		End if 
+	: ($content="Sections")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "insertSectionBreak")
+		
+		APPEND MENU ITEM:C411($menu; "-")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "section/differentFirstPage")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "section/differentLeftRightPages")
+		
+	: ($content="ContinuousSections")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "insertContinuousSectionBreak")
+		
+		APPEND MENU ITEM:C411($menu; "-")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "section/differentFirstPage")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "section/differentLeftRightPages")
+		
 		
 End case 
 

@@ -1447,7 +1447,7 @@
 				},
 				"btn_insertPageBreak": {
 					"type": "button",
-					"top": 40,
+					"top": 30,
 					"left": 385,
 					"width": 40,
 					"height": 40,
@@ -1458,18 +1458,23 @@
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_insertSectiobBreak": {
+				"btn_insertSectionBreak": {
 					"type": "button",
-					"top": 40,
+					"top": 30,
 					"left": 465,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:insertSectionbreak",
-					"action": "insertSectionBreak",
+					"action": "",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/SectionBreak_32.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"popupPlacement": "separated",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_insertSectionBreak.4dm"
 				},
 				"btn_insertImage": {
 					"type": "button",
@@ -1774,7 +1779,7 @@
 				},
 				"btn_insertColumnBreak": {
 					"type": "button",
-					"top": 40,
+					"top": 30,
 					"left": 345,
 					"width": 40,
 					"height": 40,
@@ -1930,18 +1935,23 @@
 					"tooltip": ":xliff:RemoveSoftHyphen",
 					"action": "removeSoftHyphens"
 				},
-				"btn_insertPageBreak1": {
+				"btn_insertContinuousSectionBreak": {
 					"type": "button",
-					"top": 40,
+					"top": 30,
 					"left": 425,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:insertContinuousSectionBreak",
-					"action": "insertContinuousSectionBreak",
+					"action": "",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/ContinuousSectionBreak_32.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_insertContinuousSectionBreak.4dm",
+					"popupPlacement": "linked"
 				},
 				"btn_insertTime3": {
 					"type": "button",
@@ -2024,6 +2034,32 @@
 					"popupPlacement": "separated",
 					"icon": "/RESOURCES/Images/TBcommon/Insert/InsertTextBox_32.png",
 					"method": "ObjectMethods/btn_insertTextArea.4dm"
+				},
+				"cb_distinctFirstPage": {
+					"type": "checkbox",
+					"text": "differentFirstPage",
+					"top": 345,
+					"left": 452,
+					"width": 158,
+					"height": 11,
+					"events": [
+						"onClick"
+					],
+					"action": "section/differentFirstPage",
+					"dataSourceTypeHint": "boolean"
+				},
+				"cb_distinctLeftRightPage": {
+					"type": "checkbox",
+					"text": "differentLeftRightPages",
+					"top": 358,
+					"left": 452,
+					"width": 158,
+					"height": 11,
+					"events": [
+						"onClick"
+					],
+					"action": "section/differentLeftRightPages",
+					"dataSourceTypeHint": "boolean"
 				}
 			},
 			"entryOrder": [
@@ -2035,7 +2071,7 @@
 				"VirtualExpression",
 				"TrueExpression",
 				"btn_insertPageBreak",
-				"btn_insertSectiobBreak",
+				"btn_insertSectionBreak",
 				"btn_insertImage",
 				"btn_insertPageCount",
 				"btn_insertPageNumber",
@@ -2055,11 +2091,13 @@
 				"btn_showHide4Dexpressions",
 				"btn_insertColumnBreak",
 				"btn_visibleVerticalRuler",
-				"btn_insertPageBreak1",
+				"btn_insertContinuousSectionBreak",
 				"btn_insertTime3",
 				"btn_visibleEmptyImages",
 				"btn_displayAsSymbol",
-				"btn_insertTextArea"
+				"btn_insertTextArea",
+				"cb_distinctFirstPage",
+				"cb_distinctLeftRightPage"
 			]
 		},
 		{
@@ -4557,5 +4595,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 6926
+	"geometryStamp": 7042
 }

@@ -102,6 +102,8 @@ Case of
 		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareRight"; Get action info:C1442("anchorLayout?value=wrapSquareRight").title)
 		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareLargest"; Get action info:C1442("anchorLayout?value=wrapSquareLargest").title)
 		
+		OBJECT SET TITLE:C194(*; "cb_distinctFirstPage"; Get action info:C1442("section/differentFirstPage").title)
+		OBJECT SET TITLE:C194(*; "cb_distinctLeftRightPage"; Get action info:C1442("section/differentLeftRightPages").title)
 		
 		If (Form:C1466#Null:C1517)
 			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)

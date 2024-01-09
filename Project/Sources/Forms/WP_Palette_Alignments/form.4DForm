@@ -587,18 +587,23 @@
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_insertSectiobBreak": {
+				"btn_insertSectionBreak": {
 					"type": "button",
 					"top": 502,
 					"left": 208,
 					"width": 29,
 					"height": 24,
 					"tooltip": ":xliff:insertSectionbreak",
-					"action": "insertSectionBreak",
+					"action": "",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Sidebar/SectionBreak_24.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"popupPlacement": "separated",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_insertSectionBreak.4dm"
 				},
 				"btn_insertColumnBreak": {
 					"type": "button",
@@ -613,18 +618,23 @@
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
-				"btn_insertPageBreak1": {
+				"btn_insertContinousSectionBreak": {
 					"type": "button",
 					"top": 502,
 					"left": 148,
 					"width": 29,
 					"height": 24,
 					"tooltip": ":xliff:insertContinuousSectionBreak",
-					"action": "insertContinuousSectionBreak",
+					"action": "",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Sidebar/ContinuousSectionBreak_24.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_insertContinousSectionBreak.4dm",
+					"popupPlacement": "linked"
 				},
 				"Separator3": {
 					"type": "rectangle",
@@ -1126,9 +1136,9 @@
 				"textLineHeightInput",
 				"btn_etc",
 				"btn_insertPageBreak",
-				"btn_insertSectiobBreak",
+				"btn_insertSectionBreak",
 				"btn_insertColumnBreak",
-				"btn_insertPageBreak1",
+				"btn_insertContinousSectionBreak",
 				"Popup_columnCount",
 				"btn_etc1",
 				"Popup Dropdown List2",
@@ -1207,5 +1217,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 3373
+	"geometryStamp": 3379
 }
