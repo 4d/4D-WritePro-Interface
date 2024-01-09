@@ -514,7 +514,7 @@
 					"type": "button",
 					"text": "",
 					"top": 11,
-					"left": 780,
+					"left": 760,
 					"width": 30,
 					"height": 30,
 					"events": [
@@ -533,7 +533,7 @@
 					"type": "button",
 					"text": "",
 					"top": 61,
-					"left": 780,
+					"left": 760,
 					"width": 30,
 					"height": 30,
 					"events": [
@@ -654,34 +654,6 @@
 					"height": 90,
 					"fill": "#F6F6F6",
 					"stroke": "transparent"
-				},
-				"OffsetVertical": {
-					"type": "input",
-					"left": 500,
-					"top": 592,
-					"width": 80,
-					"height": 17,
-					"dataSource": "Form:C1466.pictSettings[wk anchor vertical offset:K81:238]",
-					"textAlign": "center",
-					"dataSourceTypeHint": "number",
-					"method": "ObjectMethods/OffsetVertical.4dm",
-					"events": [
-						"onGettingFocus"
-					]
-				},
-				"OffsetHorizontal": {
-					"type": "input",
-					"left": 500,
-					"top": 562,
-					"width": 80,
-					"height": 17,
-					"dataSource": "Form:C1466.pictSettings[wk anchor horizontal offset:K81:236]",
-					"textAlign": "center",
-					"dataSourceTypeHint": "number",
-					"method": "ObjectMethods/OffsetHorizontal.4dm",
-					"events": [
-						"onGettingFocus"
-					]
 				},
 				"Text": {
 					"type": "text",
@@ -932,13 +904,39 @@
 					"focusable": false,
 					"stroke": "automatic",
 					"dataSourceTypeHint": "object"
+				},
+				"OffsetVertical": {
+					"type": "input",
+					"left": 500,
+					"top": 592,
+					"width": 80,
+					"height": 17,
+					"dataSource": "Form:C1466.pictSettings[wk anchor vertical offset:K81:238]",
+					"textAlign": "center",
+					"dataSourceTypeHint": "number",
+					"method": "ObjectMethods/OffsetVertical.4dm",
+					"events": [
+						"onGettingFocus"
+					]
+				},
+				"OffsetHorizontal": {
+					"type": "input",
+					"left": 500,
+					"top": 562,
+					"width": 80,
+					"height": 17,
+					"dataSource": "Form:C1466.pictSettings[wk anchor horizontal offset:K81:236]",
+					"textAlign": "center",
+					"dataSourceTypeHint": "number",
+					"events": [
+						"onGettingFocus"
+					],
+					"method": "ObjectMethods/OffsetHorizontal.4dm"
 				}
 			},
 			"entryOrder": [
 				"anchorPageNumberInput",
 				"anchorSectionNumberInput",
-				"OffsetHorizontal",
-				"OffsetVertical",
 				"Popup Dropdown List3",
 				"Button2",
 				"Button7",
@@ -946,7 +944,9 @@
 				"Popup Dropdown List5",
 				"Popup Dropdown List1",
 				"anchorPageDropDown",
-				"anchorSectionDropDown"
+				"anchorSectionDropDown",
+				"OffsetVertical",
+				"OffsetHorizontal"
 			]
 		},
 		{
@@ -1014,7 +1014,7 @@
 			}
 		}
 	],
-	"geometryStamp": 11511,
+	"geometryStamp": 11517,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
