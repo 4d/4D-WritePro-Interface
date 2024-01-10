@@ -1470,7 +1470,7 @@
 					"icon": "/RESOURCES/Images/Toolbar1/Insert/SectionBreak_32.png",
 					"iconFrames": 4,
 					"style": "toolbar",
-					"popupPlacement": "separated",
+					"popupPlacement": "linked",
 					"events": [
 						"onClick"
 					],
