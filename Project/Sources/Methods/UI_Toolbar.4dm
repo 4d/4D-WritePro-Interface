@@ -48,6 +48,7 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 				UI_PaletteFindAndReplace  //ACI0103628 - see method too
 				
 			Else 
+				
 				// general cases after
 				If ($page=1) || ($page=11)  // both pages have enterable areas
 					$protected:=UI_isProtected(False:C215)  // 2022 oct 13 (TEST) don't manage focus on page 1 because fontSize is focusable
@@ -103,6 +104,9 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 				End if 
 				
 		End case 
+		
+		UI_ManageTextAreaButtons  // buttons btn_insertTextArea and btn_insertTextArea1 (page 2 and 5)
+		
 		
 		//  TAB BUTTONS ARE ALWAYS ENABLED.
 		OBJECT SET ENABLED:C1123(*; "tab@"; True:C214)

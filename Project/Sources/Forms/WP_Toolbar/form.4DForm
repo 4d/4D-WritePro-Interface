@@ -1447,7 +1447,7 @@
 				},
 				"btn_insertPageBreak": {
 					"type": "button",
-					"top": 30,
+					"top": 35,
 					"left": 385,
 					"width": 40,
 					"height": 40,
@@ -1460,7 +1460,7 @@
 				},
 				"btn_insertSectionBreak": {
 					"type": "button",
-					"top": 30,
+					"top": 35,
 					"left": 465,
 					"width": 40,
 					"height": 40,
@@ -1779,7 +1779,7 @@
 				},
 				"btn_insertColumnBreak": {
 					"type": "button",
-					"top": 30,
+					"top": 35,
 					"left": 345,
 					"width": 40,
 					"height": 40,
@@ -1937,7 +1937,7 @@
 				},
 				"btn_insertContinuousSectionBreak": {
 					"type": "button",
-					"top": 30,
+					"top": 35,
 					"left": 425,
 					"width": 40,
 					"height": 40,
@@ -2016,7 +2016,7 @@
 					"width": 0,
 					"startPoint": "topLeft"
 				},
-				"btn_insertTextArea": {
+				"btn_insertTextArea1": {
 					"type": "button",
 					"text": "",
 					"top": 35,
@@ -2027,13 +2027,13 @@
 						"onAlternateClick"
 					],
 					"style": "toolbar",
-					"action": "insertTextBox",
+					"action": "",
 					"focusable": false,
 					"iconFrames": 4,
 					"tooltip": ":xliff:InsertTextBox",
-					"popupPlacement": "separated",
+					"popupPlacement": "none",
 					"icon": "/RESOURCES/Images/TBcommon/Insert/InsertTextBox_32.png",
-					"method": "ObjectMethods/btn_insertTextArea.4dm"
+					"method": "ObjectMethods/btn_insertTextArea1.4dm"
 				},
 				"cb_distinctFirstPage": {
 					"type": "checkbox",
@@ -2095,7 +2095,7 @@
 				"btn_insertTime3",
 				"btn_visibleEmptyImages",
 				"btn_displayAsSymbol",
-				"btn_insertTextArea",
+				"btn_insertTextArea1",
 				"cb_distinctFirstPage",
 				"cb_distinctLeftRightPage"
 			]
@@ -2931,7 +2931,7 @@
 					"width": 0,
 					"startPoint": "topLeft"
 				},
-				"btn_insertTextArea1": {
+				"btn_insertTextArea2": {
 					"type": "button",
 					"text": "",
 					"top": 30,
@@ -2939,16 +2939,16 @@
 					"width": 60,
 					"height": 50,
 					"events": [
-						"onAlternateClick"
+						"onClick"
 					],
 					"style": "toolbar",
-					"action": "insertTextBox",
+					"action": "",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/Insert/InsertTextBox_48.png",
 					"iconFrames": 4,
 					"tooltip": ":xliff:InsertTextBox",
-					"popupPlacement": "separated",
-					"method": "ObjectMethods/btn_insertTextArea1.4dm"
+					"popupPlacement": "linked",
+					"method": "ObjectMethods/btn_insertTextArea2.4dm"
 				},
 				"Line71": {
 					"type": "line",
@@ -3196,7 +3196,7 @@
 				}
 			},
 			"entryOrder": [
-				"btn_insertTextArea1",
+				"btn_insertTextArea2",
 				"btn_insertImage1",
 				"btn_imageBehind",
 				"btn_imageInline",
@@ -4595,5 +4595,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 7042
+	"geometryStamp": 7050
 }

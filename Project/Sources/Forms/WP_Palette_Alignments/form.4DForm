@@ -599,7 +599,7 @@
 					"icon": "/RESOURCES/Images/Sidebar/SectionBreak_24.png",
 					"iconFrames": 4,
 					"style": "toolbar",
-					"popupPlacement": "separated",
+					"popupPlacement": "linked",
 					"events": [
 						"onClick"
 					],

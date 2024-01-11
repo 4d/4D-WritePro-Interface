@@ -595,14 +595,14 @@
 					"width": 40,
 					"height": 40,
 					"events": [
-						"onAlternateClick"
+						"onClick"
 					],
 					"style": "toolbar",
-					"action": "insertTextBox",
+					"action": "",
 					"focusable": false,
 					"iconFrames": 4,
 					"tooltip": ":xliff:InsertTextBox",
-					"popupPlacement": "separated",
+					"popupPlacement": "linked",
 					"icon": "/RESOURCES/Images/TBcommon/Insert/InsertTextBox_32.png",
 					"method": "ObjectMethods/btn_insertTextArea.4dm"
 				},

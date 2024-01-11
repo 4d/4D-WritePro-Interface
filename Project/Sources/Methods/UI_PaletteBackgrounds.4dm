@@ -178,3 +178,5 @@ If (Count parameters:C259>0)
 	
 End if 
 // </ACI0104082>
+
+UI_ManageTextAreaButtons
