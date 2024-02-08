@@ -248,10 +248,14 @@ Case of
 			End if 
 			
 		End if 
-	: ($content="Sections")
+	: ($content="Sections") | ($content="ContinuousSections")
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "insertSectionBreak")
+		If ($content="Sections")
+			SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "insertSectionBreak")
+		Else   //($content="ContinuousSections")
+			SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "insertContinuousSectionBreak")
+		End if 
 		
 		APPEND MENU ITEM:C411($menu; "-")
 		
@@ -261,19 +265,13 @@ Case of
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "section/differentLeftRightPages")
 		
-	: ($content="ContinuousSections")
-		
-		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "insertContinuousSectionBreak")
-		
 		APPEND MENU ITEM:C411($menu; "-")
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "section/differentFirstPage")
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "header/remove")
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "section/differentLeftRightPages")
-		
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "footer/remove")
 		
 End case 
 

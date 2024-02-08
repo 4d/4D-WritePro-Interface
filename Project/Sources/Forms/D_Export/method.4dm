@@ -1,3 +1,6 @@
+// ACI ACI0104566
+// Form.visibleHeaders et Form.visibleFooters checkboxes removed from the WORD export panel
+// (these options are always true for word)
 
 var $x1; $y1; $x2; $y2; $height : Integer
 var $limit : Text

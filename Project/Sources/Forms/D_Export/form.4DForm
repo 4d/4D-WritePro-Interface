@@ -170,7 +170,7 @@
 			"objects": {
 				"BackgroundB_2": {
 					"type": "rectangle",
-					"top": 90,
+					"top": 40,
 					"left": 0,
 					"width": 830,
 					"height": 70,
@@ -179,7 +179,7 @@
 				},
 				"BackgroundA_2": {
 					"type": "rectangle",
-					"top": 160,
+					"top": 310,
 					"left": 0,
 					"width": 830,
 					"height": 60,
@@ -191,7 +191,7 @@
 					"top": 0,
 					"left": 0,
 					"width": 830,
-					"height": 90,
+					"height": 50,
 					"fill": "#F2F2F2",
 					"stroke": "transparent"
 				},
@@ -211,7 +211,7 @@
 				},
 				"Button6": {
 					"type": "button",
-					"top": 180,
+					"top": 130,
 					"left": 290,
 					"width": 90,
 					"height": 20,
@@ -226,7 +226,7 @@
 				},
 				"Button7": {
 					"type": "button",
-					"top": 180,
+					"top": 130,
 					"left": 400,
 					"width": 120,
 					"height": 20,
@@ -245,10 +245,10 @@
 				"Text11": {
 					"type": "text",
 					"text": "DOCX",
-					"top": 0,
+					"top": -9,
 					"left": 560,
 					"width": 263,
-					"height": 95,
+					"height": 45,
 					"fontSize": 80,
 					"stroke": "#ffd700",
 					"textAlign": "right",
@@ -256,7 +256,7 @@
 				},
 				"Limit_P2": {
 					"type": "line",
-					"top": 220,
+					"top": 170,
 					"left": 0,
 					"width": 1000,
 					"height": 1,
@@ -270,7 +270,7 @@
 				"cbRecomputeFormulas2": {
 					"type": "checkbox",
 					"text": ":xliff:recomputeFormulas",
-					"top": 110,
+					"top": 60,
 					"left": 220,
 					"width": 300,
 					"height": 17,
@@ -285,7 +285,7 @@
 				"Text2": {
 					"type": "text",
 					"text": ":xliff:optionsComma",
-					"top": 110,
+					"top": 60,
 					"left": 30,
 					"width": 180,
 					"height": 17,
@@ -294,7 +294,7 @@
 				"cbVisibleEmptyImages1": {
 					"type": "checkbox",
 					"text": ":xliff:blackFrame",
-					"top": 130,
+					"top": 80,
 					"left": 220,
 					"width": 300,
 					"height": 17,
@@ -334,8 +334,8 @@
 					"type": "checkbox",
 					"text": ":xliff:headers",
 					"top": 40,
-					"left": 220,
-					"width": 300,
+					"left": 880,
+					"width": 130,
 					"height": 17,
 					"events": [
 						"onClick"
@@ -348,8 +348,8 @@
 					"type": "checkbox",
 					"text": ":xliff:footers",
 					"top": 60,
-					"left": 220,
-					"width": 300,
+					"left": 880,
+					"width": 130,
 					"height": 17,
 					"events": [
 						"onClick"
@@ -374,7 +374,7 @@
 				},
 				"Line13": {
 					"type": "line",
-					"top": 160,
+					"top": 170,
 					"left": 0,
 					"width": 880,
 					"height": 0,
@@ -1552,7 +1552,7 @@
 	"width": 540,
 	"height": 520,
 	"method": "method.4dm",
-	"geometryStamp": 5027,
+	"geometryStamp": 5178,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

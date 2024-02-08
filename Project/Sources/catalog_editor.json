@@ -1,0 +1,29 @@
+{
+	"tables": {
+		"Sample": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "41.5",
+				"top": "16.453125",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6,
+			"fields": {
+				"wp": {
+					"color": {
+						"red": "255",
+						"green": "255",
+						"blue": "255",
+						"alpha": "0"
+					}
+				}
+			}
+		}
+	}
+}
