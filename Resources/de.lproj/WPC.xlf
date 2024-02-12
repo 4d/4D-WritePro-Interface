@@ -648,6 +648,10 @@ This file is distributed under the same license as the product package.-->
           <source>Select a destination.</source>
           <target>Wählen Sie ein Ziel.</target>
         </trans-unit>
+        <trans-unit id="105" resname="ConfirmFreeze">
+          <source>If you proceed, dynamic references and expressions will no longer exist in the document and will be replaced by static values.</source>
+          <target>Wenn Sie fortfahren, werden dynamische Verweise und Ausdrücke im Dokument nicht mehr existieren und durch statische Werte ersetzt.</target>
+        </trans-unit>    
       </group>
             <group resname="ListUnits">
         <trans-unit id="1" resname="cm">
