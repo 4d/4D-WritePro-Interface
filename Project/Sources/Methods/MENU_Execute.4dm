@@ -401,21 +401,25 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 				WP INSERT FORMULA:C1703(Form:C1466.selection; $formula; wk replace:K81:177)
 				
 			: ($action="freeze@")
-				Case of 
-					: ($action="freezeDocument")
-						WP FREEZE FORMULAS:C1708(Form:C1466.document; wk do not recompute expressions:K81:312)
-						
-					: ($action="freezeSelection")
-						WP FREEZE FORMULAS:C1708(Form:C1466.selection; wk do not recompute expressions:K81:312)
-						
-					: ($action="freezeTables")
-						
-						$_tables:=WP_GetTablesWithDataSource
-						For each ($table; $_tables)
-							WP FREEZE FORMULAS:C1708($table; wk do not recompute expressions:K81:312)
-						End for each 
-						
-				End case 
+				
+				CONFIRM:C162(Get localized string:C991("ConfirmFreeze"))
+				If (ok=1)
+					Case of 
+						: ($action="freezeDocument")
+							WP FREEZE FORMULAS:C1708(Form:C1466.document; wk do not recompute expressions:K81:312)
+							
+						: ($action="freezeSelection")
+							WP FREEZE FORMULAS:C1708(Form:C1466.selection; wk do not recompute expressions:K81:312)
+							
+						: ($action="freezeTables")
+							
+							$_tables:=WP_GetTablesWithDataSource
+							For each ($table; $_tables)
+								WP FREEZE FORMULAS:C1708($table; wk do not recompute expressions:K81:312)
+							End for each 
+							
+					End case 
+				End if 
 				
 			: ($action="compute@")
 				Case of 
