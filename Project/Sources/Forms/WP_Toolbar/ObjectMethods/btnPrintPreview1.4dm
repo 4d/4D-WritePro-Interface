@@ -1,4 +1,4 @@
-var $orientation : Integer
+var $orientation; $height; $width : Integer
 var $document : Object
 var $width_s; $height_s : Text
 var $paper : Text
@@ -34,6 +34,16 @@ If ($document#Null:C1517)
 		$width_s:=String:C10($_widths{$p}; "####0pt")
 		$height_s:=String:C10($_heights{$p}; "####0pt")
 		WP SET ATTRIBUTES:C1342($document; wk page width:K81:262; $width_s; wk page height:K81:263; $height_s)
+		
+	Else   // ACI0104569
+		
+		GET PRINT OPTION:C734(Paper option:K47:1; $height; $width)
+		// values in px not in pt but it's the same on macOS
+		// no need to check because on windows $p above seems to be always >0
+		$width_s:=String:C10($height; "####0pt")
+		$height_s:=String:C10($width; "####0pt")
+		WP SET ATTRIBUTES:C1342($document; wk page width:K81:262; $width_s; wk page height:K81:263; $height_s)
+		
 	End if 
 	
 End if 
