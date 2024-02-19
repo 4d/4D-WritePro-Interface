@@ -73,6 +73,8 @@ Else
 	oForm.FR.messageReplacements:=""
 End if 
 
+
+
 If (oForm.FR.displayReplacements)
 	oForm.FR.message:=oForm.FR.messageReplacements
 	oForm.FR.displayReplacements:=False:C215  // next time occurences shall be displayed

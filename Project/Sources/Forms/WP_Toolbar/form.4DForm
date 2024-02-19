@@ -459,8 +459,8 @@
 				"Button": {
 					"type": "button",
 					"text": "LOREM",
-					"top": 477,
-					"left": 1246,
+					"top": 671,
+					"left": 742,
 					"width": 138,
 					"height": 24,
 					"events": [
@@ -473,7 +473,8 @@
 					"shortcutKey": "l",
 					"method": "ObjectMethods/Button.4dm",
 					"focusable": false,
-					"sizingX": "move"
+					"sizingX": "move",
+					"sizingY": "move"
 				},
 				"tabRect_Home": {
 					"type": "rectangle",
@@ -742,7 +743,7 @@
 				},
 				"cbBold1": {
 					"type": "checkbox",
-					"top": 338,
+					"top": 656,
 					"left": 10,
 					"width": 28,
 					"height": 24,
@@ -760,11 +761,12 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "b"
+					"shortcutKey": "b",
+					"sizingY": "move"
 				},
 				"cbItalic1": {
 					"type": "checkbox",
-					"top": 338,
+					"top": 656,
 					"left": 38,
 					"width": 28,
 					"height": 24,
@@ -782,11 +784,12 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "i"
+					"shortcutKey": "i",
+					"sizingY": "move"
 				},
 				"btn_underline1": {
 					"type": "checkbox",
-					"top": 338,
+					"top": 656,
 					"left": 66,
 					"width": 28,
 					"height": 24,
@@ -804,21 +807,23 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "u"
+					"shortcutKey": "u",
+					"sizingY": "move"
 				},
 				"Text4": {
 					"type": "text",
 					"text": "<<--  Always active even if visible only in tab 1\r(drawback : can't be disabled, but who cares ?)",
-					"top": 342,
+					"top": 660,
 					"left": 100,
 					"width": 371,
 					"height": 46,
 					"fontWeight": "bold",
-					"stroke": "#ffd700"
+					"stroke": "#ffd700",
+					"sizingY": "move"
 				},
 				"TB_SizeUp": {
 					"type": "button",
-					"top": 369,
+					"top": 687,
 					"left": 10,
 					"width": 30,
 					"height": 24,
@@ -836,11 +841,12 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "+"
+					"shortcutKey": "+",
+					"sizingY": "move"
 				},
 				"TB_SizeDown": {
 					"type": "button",
-					"top": 369,
+					"top": 687,
 					"left": 40,
 					"width": 30,
 					"height": 24,
@@ -858,7 +864,8 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "-"
+					"shortcutKey": "-",
+					"sizingY": "move"
 				}
 			}
 		},
@@ -1032,23 +1039,6 @@
 						"onClick"
 					]
 				},
-				"btn_shadowColor": {
-					"type": "button",
-					"top": 260,
-					"left": 326,
-					"width": 24,
-					"height": 24,
-					"tooltip": ":xliff:shadowColor",
-					"action": "textShadowColor/showDialog",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Home/ShadowColor_24.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "toolbar",
-					"events": [
-						"onClick"
-					]
-				},
 				"btn_colorShowDialog": {
 					"type": "button",
 					"top": 60,
@@ -1096,8 +1086,8 @@
 				},
 				"btn_clear": {
 					"type": "button",
-					"top": 165,
-					"left": 1002,
+					"top": 742,
+					"left": 1054,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:clear",
@@ -1166,8 +1156,8 @@
 				},
 				"btn_selectAll": {
 					"type": "button",
-					"top": 165,
-					"left": 1032,
+					"top": 742,
+					"left": 1084,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:selectAll",
@@ -1213,9 +1203,9 @@
 				},
 				"TB_FontSize": {
 					"type": "dropdown",
-					"top": 89,
-					"left": 1126,
-					"width": 65,
+					"top": 702,
+					"left": 1054,
+					"width": 120,
 					"height": 20,
 					"tooltip": ":xliff:size",
 					"focusable": false,
@@ -1362,10 +1352,10 @@
 				},
 				"WP1": {
 					"type": "dropdown",
-					"top": 345,
-					"left": 760,
+					"top": 671,
+					"left": 1054,
 					"width": 120,
-					"height": 17,
+					"height": 21,
 					"dataSource": "WP_fontLongName",
 					"focusable": false,
 					"fontFamily": "System Font Regular",
@@ -1469,16 +1459,17 @@
 				"Button3": {
 					"type": "button",
 					"text": "•",
-					"top": 215,
-					"left": 210,
-					"width": 12,
-					"height": 10,
+					"top": 786,
+					"left": 1054,
+					"width": 62,
+					"height": 40,
 					"events": [
 						"onClick"
 					],
 					"style": "custom",
 					"method": "ObjectMethods/Button3.4dm",
-					"focusable": false
+					"focusable": false,
+					"borderStyle": "dotted"
 				},
 				"cbox_FontSize": {
 					"type": "combo",
@@ -1523,8 +1514,8 @@
 			"objects": {
 				"Text3": {
 					"type": "groupBox",
-					"top": 121,
-					"left": 1205,
+					"top": 671,
+					"left": 1138,
 					"width": 251,
 					"height": 176,
 					"sizingX": "move",
@@ -1897,8 +1888,8 @@
 				},
 				"URLlabel": {
 					"type": "input",
-					"top": 232,
-					"left": 1230,
+					"top": 782,
+					"left": 1163,
 					"width": 130,
 					"height": 13,
 					"sizingX": "move",
@@ -1917,8 +1908,8 @@
 				},
 				"URLurl": {
 					"type": "input",
-					"top": 247,
-					"left": 1230,
+					"top": 797,
+					"left": 1163,
 					"width": 130,
 					"height": 45,
 					"sizingX": "move",
@@ -1937,8 +1928,8 @@
 				},
 				"VirtualExpression": {
 					"type": "input",
-					"top": 147,
-					"left": 1220,
+					"top": 697,
+					"left": 1153,
 					"width": 220,
 					"height": 23,
 					"sizingX": "move",
@@ -1958,8 +1949,8 @@
 				},
 				"TrueExpression": {
 					"type": "input",
-					"top": 183,
-					"left": 1220,
+					"top": 733,
+					"left": 1153,
 					"width": 220,
 					"height": 23,
 					"sizingX": "move",
@@ -2121,32 +2112,6 @@
 					"popupPlacement": "none",
 					"icon": "/RESOURCES/Images/TBcommon/Insert/InsertTextBox_32.png",
 					"method": "ObjectMethods/btn_insertTextArea1.4dm"
-				},
-				"cb_distinctFirstPage": {
-					"type": "checkbox",
-					"text": "differentFirstPage",
-					"top": 345,
-					"left": 452,
-					"width": 158,
-					"height": 11,
-					"events": [
-						"onClick"
-					],
-					"action": "section/differentFirstPage",
-					"dataSourceTypeHint": "boolean"
-				},
-				"cb_distinctLeftRightPage": {
-					"type": "checkbox",
-					"text": "differentLeftRightPages",
-					"top": 358,
-					"left": 452,
-					"width": 158,
-					"height": 11,
-					"events": [
-						"onClick"
-					],
-					"action": "section/differentLeftRightPages",
-					"dataSourceTypeHint": "boolean"
 				}
 			},
 			"entryOrder": [
@@ -2182,9 +2147,7 @@
 				"btn_insertTime3",
 				"btn_visibleEmptyImages",
 				"btn_displayAsSymbol",
-				"btn_insertTextArea1",
-				"cb_distinctFirstPage",
-				"cb_distinctLeftRightPage"
+				"btn_insertTextArea1"
 			]
 		},
 		{
@@ -2754,45 +2717,6 @@
 		},
 		{
 			"objects": {
-				"btn_imageInline": {
-					"type": "checkbox",
-					"top": 110,
-					"left": 280,
-					"width": 50,
-					"height": 50,
-					"tooltip": "based on action.title (see\"onload\")",
-					"action": "image/anchorLayout?value=inline",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/Images/imageInLine_48.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"btn_imageInFront": {
-					"type": "checkbox",
-					"top": 110,
-					"left": 330,
-					"width": 50,
-					"height": 50,
-					"tooltip": "based on action.title (see\"onload\")",
-					"action": "image/anchorLayout?value=front",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/Images/imageOverText_48.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"btn_imageBehind": {
-					"type": "checkbox",
-					"top": 110,
-					"left": 230,
-					"width": 50,
-					"height": 50,
-					"tooltip": "based on action.title (see\"onload\")",
-					"action": "image/anchorLayout?value=behind",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/Images/imageBehindText_48.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
 				"btn_imageAlignCenter": {
 					"type": "checkbox",
 					"top": 56,
@@ -3285,9 +3209,6 @@
 			"entryOrder": [
 				"btn_insertTextArea2",
 				"btn_insertImage1",
-				"btn_imageBehind",
-				"btn_imageInline",
-				"btn_imageInFront",
 				"3D Button72",
 				"Popup_anchorToPage",
 				"3D Button76",
@@ -4311,66 +4232,6 @@
 					"fontWeight": "normal",
 					"placeholder": ""
 				},
-				"win_replaceLeft1": {
-					"type": "picture",
-					"top": 300,
-					"left": 497,
-					"width": 30,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_left.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
-				"mac_replaceCenter3": {
-					"type": "picture",
-					"top": 300,
-					"left": 527,
-					"width": 120,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_middle.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
-				"win_replaceRight1": {
-					"type": "picture",
-					"top": 300,
-					"left": 647,
-					"width": 30,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_right.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
-				"win_replaceLeft": {
-					"type": "picture",
-					"top": 294,
-					"left": 7,
-					"width": 30,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_left.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
-				"mac_replaceCenter1": {
-					"type": "picture",
-					"top": 294,
-					"left": 37,
-					"width": 120,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_middle.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
-				"win_replaceRight": {
-					"type": "picture",
-					"top": 294,
-					"left": 157,
-					"width": 30,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_right.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
 				"btnReplaceAll": {
 					"type": "button",
 					"top": 60,
@@ -4502,52 +4363,6 @@
 					"fontSize": 16,
 					"stroke": "automatic"
 				},
-				"tempoMessage": {
-					"type": "input",
-					"left": 1011,
-					"top": 42,
-					"width": 230,
-					"height": 22,
-					"enterable": false,
-					"focusable": false,
-					"fill": "automatic",
-					"borderStyle": "none",
-					"dataSource": "oForm.FR.message",
-					"stroke": "automatic",
-					"fontStyle": "normal",
-					"dataSourceTypeHint": "text",
-					"textAlign": "center",
-					"fontWeight": "normal",
-					"contextMenu": "none",
-					"visibility": "hidden"
-				},
-				"ReplacementCount": {
-					"type": "input",
-					"left": 722,
-					"top": 391,
-					"width": 87,
-					"height": 17,
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"dataSource": "oForm.FR.replacements",
-					"stroke": "automatic",
-					"fontStyle": "normal",
-					"dataSourceTypeHint": "number",
-					"numberFormat": "###,##0;;0",
-					"textAlign": "left",
-					"fontWeight": "normal"
-				},
-				"ReplacementLabel": {
-					"type": "text",
-					"text": "Replacements:",
-					"top": 391,
-					"left": 547,
-					"width": 170,
-					"height": 16,
-					"textAlign": "right"
-				},
 				"OptionRect": {
 					"type": "rectangle",
 					"top": 30,
@@ -4594,35 +4409,6 @@
 					"dataSourceTypeHint": "text",
 					"textAlign": "center",
 					"fontWeight": "normal"
-				},
-				"occurencesCount": {
-					"type": "input",
-					"left": 722,
-					"top": 361,
-					"width": 87,
-					"height": 17,
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"dataSource": "oForm.FR.occurences",
-					"stroke": "automatic",
-					"fontStyle": "normal",
-					"dataSourceTypeHint": "number",
-					"numberFormat": "###,##0;;0",
-					"textAlign": "left",
-					"fontWeight": "normal"
-				},
-				"OccurencesLabel": {
-					"type": "text",
-					"text": ":xliff:OccurencesColon",
-					"top": 361,
-					"left": 547,
-					"width": 170,
-					"height": 16,
-					"textAlign": "right",
-					"stroke": "automatic",
-					"fontWeight": "normal"
 				}
 			},
 			"entryOrder": [
@@ -4634,10 +4420,7 @@
 				"btnOptions",
 				"btnFindPrevious",
 				"btnFindNext",
-				"tempoMessage",
-				"ReplacementCount",
-				"message",
-				"occurencesCount"
+				"message"
 			]
 		}
 	],
@@ -4656,31 +4439,31 @@
 				"visible": false,
 				"objects": [
 					"Rect2",
-					"Text2",
-					"tempoMessage",
-					"ReplacementCount",
-					"ReplacementLabel",
-					"OptionRect",
-					"message"
+					"Text2"
 				]
 			},
 			"View 3": {
-				"objects": [
-					"win_replaceLeft1",
-					"mac_replaceCenter3",
-					"win_replaceRight1",
-					"win_replaceLeft",
-					"mac_replaceCenter1",
-					"win_replaceRight"
-				]
+				"visible": false
 			},
-			"View 4": {},
-			"View 5": {},
-			"View 7": {},
-			"View 6": {},
-			"View 8": {},
-			"View 9": {}
+			"View 4": {
+				"visible": false
+			},
+			"View 5": {
+				"visible": false
+			},
+			"View 7": {
+				"visible": false
+			},
+			"View 6": {
+				"visible": false
+			},
+			"View 8": {
+				"visible": false
+			},
+			"View 9": {
+				"visible": false
+			}
 		}
 	},
-	"geometryStamp": 7074
+	"geometryStamp": 7165
 }
