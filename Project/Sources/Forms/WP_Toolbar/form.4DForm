@@ -1383,8 +1383,8 @@
 			"objects": {
 				"Text3": {
 					"type": "groupBox",
-					"top": 121,
-					"left": 1205,
+					"top": 264,
+					"left": 1672,
 					"width": 251,
 					"height": 176,
 					"sizingX": "move",
@@ -1752,8 +1752,8 @@
 				},
 				"URLlabel": {
 					"type": "input",
-					"top": 232,
-					"left": 1230,
+					"top": 375,
+					"left": 1697,
 					"width": 130,
 					"height": 13,
 					"sizingX": "move",
@@ -1772,8 +1772,8 @@
 				},
 				"URLurl": {
 					"type": "input",
-					"top": 247,
-					"left": 1230,
+					"top": 390,
+					"left": 1697,
 					"width": 130,
 					"height": 45,
 					"sizingX": "move",
@@ -1792,8 +1792,8 @@
 				},
 				"VirtualExpression": {
 					"type": "input",
-					"top": 147,
-					"left": 1220,
+					"top": 290,
+					"left": 1687,
 					"width": 220,
 					"height": 23,
 					"sizingX": "move",
@@ -1813,8 +1813,8 @@
 				},
 				"TrueExpression": {
 					"type": "input",
-					"top": 183,
-					"left": 1220,
+					"top": 326,
+					"left": 1687,
 					"width": 220,
 					"height": 23,
 					"sizingX": "move",
@@ -2013,7 +2013,7 @@
 			"objects": {
 				"popPaddingTop": {
 					"type": "dropdown",
-					"top": 32,
+					"top": 30,
 					"left": 620,
 					"width": 80,
 					"height": 20,
@@ -2023,7 +2023,7 @@
 				},
 				"popPaddingBottom": {
 					"type": "dropdown",
-					"top": 60,
+					"top": 58,
 					"left": 620,
 					"width": 80,
 					"height": 20,
@@ -2033,7 +2033,7 @@
 				},
 				"popPaddingLeft": {
 					"type": "dropdown",
-					"top": 32,
+					"top": 30,
 					"left": 520,
 					"width": 80,
 					"height": 20,
@@ -2043,7 +2043,7 @@
 				},
 				"popPaddingRight": {
 					"type": "dropdown",
-					"top": 60,
+					"top": 58,
 					"left": 520,
 					"width": 80,
 					"height": 20,
@@ -2071,7 +2071,7 @@
 				},
 				"popMarginTop": {
 					"type": "dropdown",
-					"top": 32,
+					"top": 30,
 					"left": 350,
 					"width": 80,
 					"height": 20,
@@ -2081,7 +2081,7 @@
 				},
 				"popMarginBottom": {
 					"type": "dropdown",
-					"top": 60,
+					"top": 58,
 					"left": 350,
 					"width": 80,
 					"height": 20,
@@ -2091,7 +2091,7 @@
 				},
 				"popMarginLeft": {
 					"type": "dropdown",
-					"top": 32,
+					"top": 30,
 					"left": 250,
 					"width": 80,
 					"height": 20,
@@ -2101,7 +2101,7 @@
 				},
 				"popMarginRight": {
 					"type": "dropdown",
-					"top": 60,
+					"top": 58,
 					"left": 250,
 					"width": 80,
 					"height": 20,
@@ -2895,110 +2895,6 @@
 					"width": 0,
 					"startPoint": "topLeft"
 				},
-				"btn_imageInline1": {
-					"type": "checkbox",
-					"top": 206,
-					"left": 230,
-					"width": 30,
-					"height": 30,
-					"tooltip": "based on action.title (see\"onload\")",
-					"action": "image/anchorLayout?value=inline",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/textWrap/imageInLine_32.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"btn_imageInFront1": {
-					"type": "checkbox",
-					"top": 206,
-					"left": 270,
-					"width": 30,
-					"height": 30,
-					"tooltip": "based on action.title (see\"onload\")",
-					"action": "image/anchorLayout?value=front",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/textWrap/imageOverText_32.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"btn_imageBehind1": {
-					"type": "checkbox",
-					"top": 206,
-					"left": 190,
-					"width": 30,
-					"height": 30,
-					"tooltip": "based on action.title (see\"onload\")",
-					"action": "image/anchorLayout?value=behind",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/textWrap/imageBehindText_32.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"btn_ImageWrapTopBottom": {
-					"type": "checkbox",
-					"top": 206,
-					"left": 310,
-					"width": 30,
-					"height": 30,
-					"tooltip": "based on action.title (see\"onload\")",
-					"action": "image/anchorLayout?value=wrapTopBottom",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/textWrap/textWrapTopBottom_32.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"btn_imageWrapSquareLeft": {
-					"type": "checkbox",
-					"top": 234,
-					"left": 190,
-					"width": 30,
-					"height": 30,
-					"tooltip": "based on action.title (see\"onload\")",
-					"action": "image/anchorLayout?value=wrapSquareLeft",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/textWrap/textWrapSquareLeft_32.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"btn_imageWrapSquareRight": {
-					"type": "checkbox",
-					"top": 234,
-					"left": 230,
-					"width": 30,
-					"height": 30,
-					"tooltip": "based on action.title (see\"onload\")",
-					"action": "image/anchorLayout?value=wrapSquareRight",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/textWrap/textWrapSquareRight_32.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"btn_imageWrapSquare": {
-					"type": "checkbox",
-					"top": 234,
-					"left": 270,
-					"width": 30,
-					"height": 30,
-					"tooltip": "based on action.title (see\"onload\")",
-					"action": "image/anchorLayout?value=wrapSquare",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/textWrap/textWrapSquare_32.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
-				"btn_imageWrapSquareLargest": {
-					"type": "checkbox",
-					"top": 234,
-					"left": 310,
-					"width": 30,
-					"height": 30,
-					"tooltip": "based on action.title (see\"onload\")",
-					"action": "image/anchorLayout?value=wrapSquareLargest",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/TBcommon/textWrap/textWrapSquareLargest_32.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
 				"btn_imageInline2": {
 					"type": "checkbox",
 					"top": 439,
@@ -3123,14 +3019,6 @@
 				"btn_imageMoveToBack",
 				"btn_imageMoveToFront",
 				"btn_PictInfo",
-				"btn_imageInline1",
-				"btn_imageInFront1",
-				"btn_imageBehind1",
-				"btn_ImageWrapTopBottom",
-				"btn_imageWrapSquareLeft",
-				"btn_imageWrapSquareRight",
-				"btn_imageWrapSquare",
-				"btn_imageWrapSquareLargest",
 				"btn_imageInline2",
 				"btn_imageInFront7",
 				"btn_imageBehind2",
@@ -4133,66 +4021,6 @@
 					"fontWeight": "normal",
 					"placeholder": ""
 				},
-				"win_replaceLeft1": {
-					"type": "picture",
-					"top": 300,
-					"left": 497,
-					"width": 30,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_left.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
-				"mac_replaceCenter3": {
-					"type": "picture",
-					"top": 300,
-					"left": 527,
-					"width": 120,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_middle.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
-				"win_replaceRight1": {
-					"type": "picture",
-					"top": 300,
-					"left": 647,
-					"width": 30,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_right.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
-				"win_replaceLeft": {
-					"type": "picture",
-					"top": 294,
-					"left": 7,
-					"width": 30,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_left.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
-				"mac_replaceCenter1": {
-					"type": "picture",
-					"top": 294,
-					"left": 37,
-					"width": 120,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_middle.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
-				"win_replaceRight": {
-					"type": "picture",
-					"top": 294,
-					"left": 157,
-					"width": 30,
-					"height": 30,
-					"picture": "/RESOURCES/Images/images.WIN/searchBox/searchbox_right.png",
-					"visibility": "hidden",
-					"sizingX": "fixed"
-				},
 				"btnReplaceAll": {
 					"type": "button",
 					"top": 60,
@@ -4324,52 +4152,6 @@
 					"fontSize": 16,
 					"stroke": "automatic"
 				},
-				"tempoMessage": {
-					"type": "input",
-					"left": 1011,
-					"top": 42,
-					"width": 230,
-					"height": 22,
-					"enterable": false,
-					"focusable": false,
-					"fill": "automatic",
-					"borderStyle": "none",
-					"dataSource": "oForm.FR.message",
-					"stroke": "automatic",
-					"fontStyle": "normal",
-					"dataSourceTypeHint": "text",
-					"textAlign": "center",
-					"fontWeight": "normal",
-					"contextMenu": "none",
-					"visibility": "hidden"
-				},
-				"ReplacementCount": {
-					"type": "input",
-					"left": 722,
-					"top": 391,
-					"width": 87,
-					"height": 17,
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"dataSource": "oForm.FR.replacements",
-					"stroke": "automatic",
-					"fontStyle": "normal",
-					"dataSourceTypeHint": "number",
-					"numberFormat": "###,##0;;0",
-					"textAlign": "left",
-					"fontWeight": "normal"
-				},
-				"ReplacementLabel": {
-					"type": "text",
-					"text": "Replacements:",
-					"top": 391,
-					"left": 547,
-					"width": 170,
-					"height": 16,
-					"textAlign": "right"
-				},
 				"OptionRect": {
 					"type": "rectangle",
 					"top": 30,
@@ -4416,35 +4198,6 @@
 					"dataSourceTypeHint": "text",
 					"textAlign": "center",
 					"fontWeight": "normal"
-				},
-				"occurencesCount": {
-					"type": "input",
-					"left": 722,
-					"top": 361,
-					"width": 87,
-					"height": 17,
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"dataSource": "oForm.FR.occurences",
-					"stroke": "automatic",
-					"fontStyle": "normal",
-					"dataSourceTypeHint": "number",
-					"numberFormat": "###,##0;;0",
-					"textAlign": "left",
-					"fontWeight": "normal"
-				},
-				"OccurencesLabel": {
-					"type": "text",
-					"text": ":xliff:OccurencesColon",
-					"top": 361,
-					"left": 547,
-					"width": 170,
-					"height": 16,
-					"textAlign": "right",
-					"stroke": "automatic",
-					"fontWeight": "normal"
 				}
 			},
 			"entryOrder": [
@@ -4456,10 +4209,7 @@
 				"btnOptions",
 				"btnFindPrevious",
 				"btnFindNext",
-				"tempoMessage",
-				"ReplacementCount",
-				"message",
-				"occurencesCount"
+				"message"
 			]
 		}
 	],
@@ -4478,24 +4228,10 @@
 				"visible": false,
 				"objects": [
 					"Rect2",
-					"Text2",
-					"tempoMessage",
-					"ReplacementCount",
-					"ReplacementLabel",
-					"OptionRect",
-					"message"
+					"Text2"
 				]
 			},
-			"View 3": {
-				"objects": [
-					"win_replaceLeft1",
-					"mac_replaceCenter3",
-					"win_replaceRight1",
-					"win_replaceLeft",
-					"mac_replaceCenter1",
-					"win_replaceRight"
-				]
-			},
+			"View 3": {},
 			"View 4": {},
 			"View 5": {},
 			"View 7": {},
@@ -4504,5 +4240,5 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 7027
+	"geometryStamp": 7033
 }
