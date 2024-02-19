@@ -1,4 +1,4 @@
-var $orientation : Integer
+var $orientation; $height; $width : Integer  // ACI0104569
 var $document : Object
 var $width_s; $height_s : Text
 var $paper : Text
