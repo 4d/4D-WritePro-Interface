@@ -584,6 +584,10 @@ This file is distributed under the same license as the product package.-->
           <source>Footers</source>
           <target>Rodapés de página</target>
         </trans-unit>
+        <trans-unit id="xxx" resname="PrintSettings">
+          <source>Print settings…</source>
+          <target>Configurações de impressão...</target>
+        </trans-unit>
       </group>
     </body>
   </file>
