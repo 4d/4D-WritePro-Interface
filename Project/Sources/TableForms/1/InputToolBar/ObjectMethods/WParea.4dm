@@ -23,9 +23,9 @@ WP ContextualMenu(New collection:C1472("pictureSettings"; "formulaSettings"; "ta
 //vEvent:=FORM Event.description+" "+String(Random)
 
 
-If (Form event code:C388=On After Edit:K2:43) & (Shift down:C543)
-	TRACE:C157
-End if 
+//If (Form event code=On After Edit) & (Shift down)
+//TRACE
+//End if 
 
 
 

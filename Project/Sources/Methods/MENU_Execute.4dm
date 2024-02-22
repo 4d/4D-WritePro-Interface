@@ -128,6 +128,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 								Else 
 									fillArea(Form:C1466.areaName; $newDocument)
 								End if 
+								Form:C1466.selection:=WP Text range:C1341($newDocument; wk start text:K81:165; wk start text:K81:165)
 								
 							: ($options.afterDocument)
 								$range:=WP Text range:C1341($area; wk end text:K81:164; wk start text:K81:165)
