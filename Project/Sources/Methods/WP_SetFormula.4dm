@@ -51,7 +51,7 @@ If (Not:C34(Is nil pointer:C315($ptr)))
 		
 		If ($trueExpression#"")
 			
-			$formula:=Formula from string:C1601($trueExpression; 1)
+			$formula:=Formula from string:C1601($trueExpression; 1)  // 1 = sk execute in host database
 			If (Form:C1466.selection.type#2)  // not an anchored picture
 				WP INSERT FORMULA:C1703(Form:C1466.selection; $formula; wk replace:K81:177)
 			Else   // si anchored picture, update the attribute
