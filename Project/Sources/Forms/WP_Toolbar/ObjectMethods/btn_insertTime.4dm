@@ -1,3 +1,4 @@
 If (Form:C1466.selection#Null:C1517)
-	WP INSERT FORMULA:C1703(Form:C1466.selection; Formula:C1597(String:C10(Current time:C178; System time short:K7:9)); wk replace:K81:177)
+	//WP INSERT FORMULA(Form.selection; Formula(String(Current time; System time short)); wk replace)
+	MENU_Execute("DocumentCurrentTime")  // ACI0104620
 End if 

@@ -1,4 +1,5 @@
 If (Form:C1466.selection#Null:C1517)
-	WP INSERT FORMULA:C1703(Form:C1466.selection; Formula:C1597(This:C1470.pageCount); wk replace:K81:177)
+	//WP INSERT FORMULA(Form.selection; Formula(This.pageCount); wk replace)
+	MENU_Execute("DocumentPageCount")  // ACI0104620
 End if 
 
