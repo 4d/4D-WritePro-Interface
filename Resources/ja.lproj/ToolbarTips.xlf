@@ -582,6 +582,10 @@
           <source>Footers</source>
           <target>フッター</target>
         </trans-unit>
+        <trans-unit id="xxx" resname="PrintSettings">
+          <source>Print settings…</source>
+          <target>印刷設定…</target>
+        </trans-unit>
       </group>
     </body>
   </file>
