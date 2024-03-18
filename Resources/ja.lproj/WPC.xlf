@@ -155,11 +155,11 @@ This file is distributed under the same license as the product package.-->
           <target>原点:</target>
         </trans-unit>
         <trans-unit id="23" resname="HorizontalSize">
-          <source>Horizontal Size:</source>
+          <source>Hor. Size:</source>
           <target>縦方向サイズ:</target>
         </trans-unit>
         <trans-unit id="24" resname="VerticalSize">
-          <source>Vertical Size:</source>
+          <source>Vert. Size:</source>
           <target>横方向サイズ:</target>
         </trans-unit>
         <trans-unit id="25" resname="PositionColon">
@@ -648,6 +648,10 @@ This file is distributed under the same license as the product package.-->
           <source>Select a destination.</source>
           <target>保存先を選択</target>
         </trans-unit>
+        <trans-unit id="105" resname="ConfirmFreeze">
+          <source>If you proceed, dynamic references and expressions will no longer exist in the document and will be replaced by static values.</source>
+          <target>これを進めると、ドキュメント内から動的な参照と式はなくなり静的な値に置き換えられます。</target>
+        </trans-unit>
       </group>
       <group resname="ListUnits">
         <trans-unit id="1" resname="cm">
@@ -663,8 +667,8 @@ This file is distributed under the same license as the product package.-->
           <target>インチ</target>
         </trans-unit>
         <trans-unit id="4" resname="pt">
-          <source>pt</source>
-          <target>pt</target>
+          <source>Points</source>
+          <target>ポイント</target>
         </trans-unit>
         <trans-unit id="5" resname="auto">
           <source>auto</source>
