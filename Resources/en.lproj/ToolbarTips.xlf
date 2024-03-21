@@ -197,8 +197,8 @@ This file is distributed under the same license as the product package.-->
           <target>Insert date</target>
         </trans-unit>
         <trans-unit id="45" resname="insertExpression">
-          <source>Insert 4D expression</source>
-          <target>Insert 4D expression</target>
+          <source>Insert or edit 4D expression</source>
+          <target>Insert or edit 4D expression</target>
         </trans-unit>
         <trans-unit id="51" resname="insertPageBreak">
           <source>Insert page break</source>

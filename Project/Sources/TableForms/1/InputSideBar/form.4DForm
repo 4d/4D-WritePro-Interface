@@ -142,7 +142,7 @@
 					"contextMenu": "automatic",
 					"showSelection": true,
 					"enterable": true,
-					"showHiddenChars": true,
+					"showHiddenChars": false,
 					"keyboardDialect": "fr-ca"
 				},
 				"WPwidget": {

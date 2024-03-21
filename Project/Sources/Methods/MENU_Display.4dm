@@ -70,9 +70,11 @@ Case of
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; wk line height:K81:51)
 		
-		
 		APPEND MENU ITEM:C411($menu; Get localized string:C991("resetFontAttributes"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "ResetCharacterAttributes")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)  // added by RL 2024/03/21
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "tabDecimalSeparator")
 		
 		
 	: ($content="InsertFormula")
