@@ -45,20 +45,20 @@ This file is distributed under the same license as the product package.-->
           <target>Anchor to section</target>
         </trans-unit>
         <trans-unit id="95" resname="autoCorrection">
-          <source>Auto correction</source>
-          <target>Auto correction</target>
+          <source>Automatic correction</source>
+          <target>Automatic correction</target>
         </trans-unit>
         <trans-unit id="101" resname="autoDashSubstitutionsEnabled">
-          <source>Auto dash substitutions enabled</source>
-          <target>Auto dash substitutions enabled</target>
+          <source>Replace -- with —</source>
+          <target>Replace -- with —</target>
         </trans-unit>
         <trans-unit id="99" resname="autoLanguageEnabled">
-          <source>Auto language enabled</source>
-          <target>Auto language enabled</target>
+          <source>Enable automatic language detection</source>
+          <target>Enable automatic language detection</target>
         </trans-unit>
         <trans-unit id="100" resname="autoQuoteSubstitutionsEnabled">
-          <source>Auto quote substitutions enabled</source>
-          <target>Auto quote substitutions enabled</target>
+          <source>Use smart quotes</source>
+          <target>Use smart quotes</target>
         </trans-unit>
         <trans-unit id="13" resname="backgroundColor">
           <source>Background color</source>
@@ -145,12 +145,12 @@ This file is distributed under the same license as the product package.-->
           <target>Cut</target>
         </trans-unit>
         <trans-unit id="108" resname="enableGrammar">
-          <source>Enable grammar</source>
-          <target>Enable grammar</target>
+          <source>Check grammar with spelling</source>
+          <target>Check grammar with spelling</target>
         </trans-unit>
         <trans-unit id="90" resname="enableSpell">
-          <source>Spellcheck</source>
-          <target>Spellcheck</target>
+          <source>Enable spellcheck</source>
+          <target>Enable spellcheck</target>
         </trans-unit>
         <trans-unit id="97" resname="enableSubstitution">
           <source>Activate system substitution</source>
@@ -165,16 +165,16 @@ This file is distributed under the same license as the product package.-->
           <target>Font size up</target>
         </trans-unit>
         <trans-unit id="96" resname="forgetIgnore">
-          <source>Forget/Ignore</source>
-          <target>Forget/Ignore</target>
+          <source>Clear the list of ignored words</source>
+          <target>Clear the list of ignored words</target>
         </trans-unit>
         <trans-unit id="47" resname="freeze4DExpressions">
           <source>Freeze 4D expressions</source>
           <target>Freeze 4D expressions</target>
         </trans-unit>
         <trans-unit id="91" resname="ignore">
-          <source>Ignore</source>
-          <target>Ignore</target>
+          <source>Ignore the word</source>
+          <target>Ignore the word</target>
         </trans-unit>
         <trans-unit id="78" resname="imageBehind">
           <source>Image behind text</source>
@@ -321,8 +321,8 @@ This file is distributed under the same license as the product package.-->
           <target>Redo</target>
         </trans-unit>
         <trans-unit id="98" resname="removeSubstitution">
-          <source>Remove substitutions</source>
-          <target>Remove substitutions</target>
+          <source>Ignore system substitution</source>
+          <target>Ignore system substitution</target>
         </trans-unit>
         <trans-unit id="24" resname="selectAll">
           <source>Select all</source>
@@ -365,8 +365,8 @@ This file is distributed under the same license as the product package.-->
           <target>Size</target>
         </trans-unit>
         <trans-unit id="102" resname="spellDialog">
-          <source>Spell dialog</source>
-          <target>Spell dialog</target>
+          <source>Show the spell Checking dialog</source>
+          <target>Show the spell Checking dialog</target>
         </trans-unit>
         <trans-unit id="FF84ifbM0/hfJWYZADoijw" resname="strikethrough">
           <source>Strikethrough</source>
@@ -377,8 +377,8 @@ This file is distributed under the same license as the product package.-->
           <target>Subscript</target>
         </trans-unit>
         <trans-unit id="110" resname="substitutions">
-          <source>Show / hide substitutions</source>
-          <target>Show / hide substitutions</target>
+          <source>Indicate substitution</source>
+          <target>Indicate substitution</target>
         </trans-unit>
         <trans-unit id="11" resname="superscript">
           <source>Superscript</source>

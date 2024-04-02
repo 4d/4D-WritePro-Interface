@@ -1,6 +1,17 @@
 WP UpdateWidget("WPtoolbar"; "WParea")
 
-WP ContextualMenu(New collection:C1472("pictureSettings"; "formulaSettings"; "tableSettings"))
+//WP ContextualMenu(New collection("pictureSettings"; "formulaSettings"; "tableSettings"))
+
+
+If (Form event code:C388=On Clicked:K2:4) && (Contextual click:C713)
+	$menu:=Create menu:C408
+	APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+	SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "spell")
+	
+	$result:=Dynamic pop up menu:C1006($menu)
+	RELEASE MENU:C978($menu)
+	
+End if 
 
 //If (Form event code=On Double Clicked) | (Shift down)  // shift down to allow anchored picture selection (test)
 

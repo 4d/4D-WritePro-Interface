@@ -333,15 +333,16 @@
 					"sizingY": "grow",
 					"dataSource": "[SAMPLE:1]WP:2",
 					"hideFocusRing": true,
-					"spellcheck": false,
+					"spellcheck": true,
 					"scrollbarVertical": "automatic",
 					"scrollbarHorizontal": "automatic",
 					"dpi": 0,
-					"showVerticalRuler": false,
+					"showVerticalRuler": true,
 					"borderStyle": "none",
 					"method": "ObjectMethods/WParea.4dm",
 					"events": [
 						"onLoad",
+						"onClick",
 						"onLosingFocus",
 						"onGettingFocus",
 						"onSelectionChange",
@@ -350,7 +351,10 @@
 					"enterable": true,
 					"showSelection": true,
 					"keyboardDialect": "fr-be",
-					"contextMenu": "automatic"
+					"contextMenu": "none",
+					"showHeaders": true,
+					"showFooters": true,
+					"showHorizontalRuler": true
 				},
 				"Button11": {
 					"type": "button",
