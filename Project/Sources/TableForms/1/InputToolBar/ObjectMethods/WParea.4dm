@@ -1,3 +1,5 @@
+var $menu; $result : Text
+
 WP UpdateWidget("WPtoolbar"; "WParea")
 
 //WP ContextualMenu(New collection("pictureSettings"; "formulaSettings"; "tableSettings"))
