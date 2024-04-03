@@ -49,15 +49,15 @@ This file is distributed under the same license as the product package.-->
           <target>Autokorrektur</target>
         </trans-unit>
         <trans-unit id="101" resname="autoDashSubstitutionsEnabled">
-          <source>Auto dash substitutions enabled</source>
-          <target>Bindestrich automatisch ersetzen</target>
+          <source>Replace -- with —</source>
+          <target>Ersetze -- mit -</target>
         </trans-unit>
         <trans-unit id="99" resname="autoLanguageEnabled">
-          <source>Auto language enabled</source>
-          <target>Automatische Sprache aktiviert</target>
+          <source>Enable automatic language detection</source>
+          <target>Automatische Spracheerkennung aktivieren</target>
         </trans-unit>
         <trans-unit id="100" resname="autoQuoteSubstitutionsEnabled">
-          <source>Auto quote substitutions enabled</source>
+          <source>Use smart quotes/source>
           <target>Anführungszeichen automatisch ersetzen</target>
         </trans-unit>
         <trans-unit id="13" resname="backgroundColor">
