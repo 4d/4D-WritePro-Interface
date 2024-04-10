@@ -57,7 +57,7 @@ This file is distributed under the same license as the product package.-->
           <target>Automatische Spracheerkennung aktivieren</target>
         </trans-unit>
         <trans-unit id="100" resname="autoQuoteSubstitutionsEnabled">
-          <source>Use smart quotes/source>
+          <source>Use smart quotes</source>
           <target>Anführungszeichen automatisch ersetzen</target>
         </trans-unit>
         <trans-unit id="13" resname="backgroundColor">
