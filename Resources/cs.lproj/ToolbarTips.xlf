@@ -45,20 +45,20 @@ This file is distributed under the same license as the product package.-->
           <target>Ukotvit na oddíl</target>
         </trans-unit>
         <trans-unit id="95" resname="autoCorrection">
-          <source>Auto correction</source>
-          <target>Automatické opravy</target>
+          <source>Automatic correction</source>
+          <target>Automatická korekce</target>
         </trans-unit>
         <trans-unit id="101" resname="autoDashSubstitutionsEnabled">
-          <source>Auto dash substitutions enabled</source>
-          <target>Auto náhrada pomlčky povolena</target>
+          <source>Replace -- with —</source>
+          <target>Nahradit -- za —</target>
         </trans-unit>
         <trans-unit id="99" resname="autoLanguageEnabled">
-          <source>Auto language enabled</source>
-          <target>Automaticky jazyk povoleno</target>
+          <source>Enable automatic language detection</source>
+          <target>Povolit automatickou detekci jazyka</target>
         </trans-unit>
         <trans-unit id="100" resname="autoQuoteSubstitutionsEnabled">
-          <source>Auto quote substitutions enabled</source>
-          <target>Auto náhrada uvozovek povolena</target>
+          <source>Use smart quotes</source>
+          <target>Použít chytré uvozovky</target>
         </trans-unit>
         <trans-unit id="13" resname="backgroundColor">
           <source>Background color</source>
@@ -145,12 +145,12 @@ This file is distributed under the same license as the product package.-->
           <target>Vyjmout</target>
         </trans-unit>
         <trans-unit id="108" resname="enableGrammar">
-          <source>Enable grammar</source>
-          <target>Povolit gramatiku</target>
+          <source>Check grammar with spelling</source>
+          <target>Ověřit gramatiku pomocí pravopisu</target>
         </trans-unit>
         <trans-unit id="90" resname="enableSpell">
-          <source>Spellcheck</source>
-          <target>Kontrola pravopisu</target>
+          <source>Enable spellcheck</source>
+          <target>Povolit kontrolu pravopisu</target>
         </trans-unit>
         <trans-unit id="97" resname="enableSubstitution">
           <source>Activate system substitution</source>
@@ -165,16 +165,16 @@ This file is distributed under the same license as the product package.-->
           <target>Zvětšit písmo</target>
         </trans-unit>
         <trans-unit id="96" resname="forgetIgnore">
-          <source>Forget/Ignore</source>
-          <target>Zapomenout/Ignorovat</target>
+          <source>Clear the list of ignored words</source>
+          <target>Vymažte seznam ignorovaných slov</target>
         </trans-unit>
         <trans-unit id="47" resname="freeze4DExpressions">
           <source>Freeze 4D expressions</source>
           <target>Zmrazit 4D výrazy</target>
         </trans-unit>
         <trans-unit id="91" resname="ignore">
-          <source>Ignore</source>
-          <target>Ignorovat</target>
+          <source>Ignore the word</source>
+          <target>Ignorovat slovo</target>
         </trans-unit>
         <trans-unit id="78" resname="imageBehind">
           <source>Image behind text</source>
@@ -321,8 +321,8 @@ This file is distributed under the same license as the product package.-->
           <target>Znovu</target>
         </trans-unit>
         <trans-unit id="98" resname="removeSubstitution">
-          <source>Remove substitutions</source>
-          <target>Odstranit náhrady</target>
+          <source>Ignore system substitution</source>
+          <target>Ignorovat substituci systému</target>
         </trans-unit>
         <trans-unit id="24" resname="selectAll">
           <source>Select all</source>
@@ -365,8 +365,8 @@ This file is distributed under the same license as the product package.-->
           <target>Velikost</target>
         </trans-unit>
         <trans-unit id="102" resname="spellDialog">
-          <source>Spell dialog</source>
-          <target>Dialog pravopisu</target>
+          <source>Show the spell Checking dialog</source>
+          <target>Zobrazit dialogové okno Kontrola pravopisu</target>
         </trans-unit>
         <trans-unit id="FF84ifbM0/hfJWYZADoijw" resname="strikethrough">
           <source>Strikethrough</source>
@@ -377,8 +377,8 @@ This file is distributed under the same license as the product package.-->
           <target>Dolní index</target>
         </trans-unit>
         <trans-unit id="110" resname="substitutions">
-          <source>Show / hide substitutions</source>
-          <target>Zobrazit / skrýt náhrady</target>
+          <source>Indicate substitution</source>
+          <target>Indikovat náhrady</target>
         </trans-unit>
         <trans-unit id="11" resname="superscript">
           <source>Superscript</source>
