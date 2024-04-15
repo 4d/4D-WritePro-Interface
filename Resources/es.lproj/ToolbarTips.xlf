@@ -45,20 +45,20 @@ This file is distributed under the same license as the product package.-->
           <target>Anclar a sección</target>
         </trans-unit>
         <trans-unit id="95" resname="autoCorrection">
-          <source>Auto correction</source>
+          <source>Automatic correction</source>
           <target>Corrección automática</target>
         </trans-unit>
         <trans-unit id="101" resname="autoDashSubstitutionsEnabled">
-          <source>Auto dash substitutions enabled</source>
-          <target>Sustitución automática de guiones</target>
+          <source>Replace -- with —</source>
+          <target>Remplazar -- por —</target>
         </trans-unit>
         <trans-unit id="99" resname="autoLanguageEnabled">
-          <source>Auto language enabled</source>
-          <target>Detección automática de idioma</target>
+          <source>Enable automatic language detection</source>
+          <target>Activar la detección automática de idioma</target>
         </trans-unit>
         <trans-unit id="100" resname="autoQuoteSubstitutionsEnabled">
-          <source>Auto quote substitutions enabled</source>
-          <target>Sustitución automática de las comillas</target>
+          <source>Use smart quotes</source>
+          <target>Utilizar comillas inteligentes</target>
         </trans-unit>
         <trans-unit id="13" resname="backgroundColor">
           <source>Background color</source>
@@ -145,12 +145,12 @@ This file is distributed under the same license as the product package.-->
           <target>Cortar</target>
         </trans-unit>
         <trans-unit id="108" resname="enableGrammar">
-          <source>Enable grammar</source>
-          <target>Corrección gramatical</target>
+          <source>Check grammar with spelling</source>
+          <target>Revisar la gramática con ortografía</target>
         </trans-unit>
         <trans-unit id="90" resname="enableSpell">
-          <source>Spellcheck</source>
-          <target>Revisión ortográfica</target>
+          <source>Enable spellcheck</source>
+          <target>Activar el corrector ortográfico</target>
         </trans-unit>
         <trans-unit id="97" resname="enableSubstitution">
           <source>Activate system substitution</source>
@@ -165,16 +165,16 @@ This file is distributed under the same license as the product package.-->
           <target>Aumentar el tamaño</target>
         </trans-unit>
         <trans-unit id="96" resname="forgetIgnore">
-          <source>Forget/Ignore</source>
-          <target>Olvidar/ignorar</target>
+          <source>Clear the list of ignored words</source>
+          <target>Borrar la lista de palabras ignoradas</target>
         </trans-unit>
         <trans-unit id="47" resname="freeze4DExpressions">
           <source>Freeze 4D expressions</source>
           <target>Congelar expresiones 4D</target>
         </trans-unit>
         <trans-unit id="91" resname="ignore">
-          <source>Ignore</source>
-          <target>Ignorar</target>
+          <source>Ignore the word</source>
+          <target>Ignorar la palabra</target>
         </trans-unit>
         <trans-unit id="78" resname="imageBehind">
           <source>Image behind text</source>
@@ -197,8 +197,8 @@ This file is distributed under the same license as the product package.-->
           <target>Insertar fecha</target>
         </trans-unit>
         <trans-unit id="45" resname="insertExpression">
-          <source>Insert 4D expression</source>
-          <target>Insertar expresión 4D</target>
+          <source>Insert or edit 4D expression</source>
+          <target>Insertar o editar expresión 4D</target>
         </trans-unit>
         <trans-unit id="51" resname="insertPageBreak">
           <source>Insert page break</source>
@@ -321,8 +321,8 @@ This file is distributed under the same license as the product package.-->
           <target>Rehacer</target>
         </trans-unit>
         <trans-unit id="98" resname="removeSubstitution">
-          <source>Remove substitutions</source>
-          <target>Eliminar las sustituciones</target>
+          <source>Ignore system substitution</source>
+          <target>Ignorar la sustitución sistema</target>
         </trans-unit>
         <trans-unit id="24" resname="selectAll">
           <source>Select all</source>
@@ -365,8 +365,8 @@ This file is distributed under the same license as the product package.-->
           <target>Tamaño</target>
         </trans-unit>
         <trans-unit id="102" resname="spellDialog">
-          <source>Spell dialog</source>
-          <target>Diálogo de ortografía</target>
+          <source>Show the spell Checking dialog</source>
+          <target>Mostrar el diálogo Corrector ortográfico</target>
         </trans-unit>
         <trans-unit id="FF84ifbM0/hfJWYZADoijw" resname="strikethrough">
           <source>Strikethrough</source>
@@ -377,8 +377,8 @@ This file is distributed under the same license as the product package.-->
           <target>Subíndice</target>
         </trans-unit>
         <trans-unit id="110" resname="substitutions">
-          <source>Show / hide substitutions</source>
-          <target>Mostrar / ocultar las sustituciones</target>
+          <source>Indicate substitution</source>
+          <target>Indicar sustitución</target>
         </trans-unit>
         <trans-unit id="11" resname="superscript">
           <source>Superscript</source>
