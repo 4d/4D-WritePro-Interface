@@ -524,7 +524,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="1u02Lw6NTI7jpeJX1CLp2A" resname="importExport">
           <source>Import Export</source>
-          <target state="new">Import Export</target>
+          <target>Import Export</target>
         </trans-unit>
         <trans-unit id="TklbnlJH6IlPhKZlBsEMkg" resname="bookmarks">
           <source>Bookmarks</source>
