@@ -686,6 +686,10 @@ This file is distributed under the same license as the product package.-->
           <source>Contain</source>
           <target>Beinhaltet</target>
         </trans-unit>        
+        <trans-unit id="9" resname="pixels">
+          <source>Pixels</source>
+          <target>Pixels</target>
+        </trans-unit>
       </group>
       <group resname="borderStyleNames">
         <trans-unit id="1" resname="Solid">
