@@ -9,7 +9,6 @@
 	"markerFooter": 680,
 	"events": [
 		"onLoad",
-		"onUnload",
 		"onTimer",
 		"onResize",
 		"onBoundVariableChange"
