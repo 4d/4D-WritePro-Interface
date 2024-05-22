@@ -23,11 +23,11 @@ If ($applyTo="insertTable")
 	
 	If ($isTable=False:C215)  // insert a table submenu 
 		
-		$path:=Get 4D folder:C485(Current resources folder:K5:16)+"table_templates"
-		If (Test path name:C476($path)=Is a folder:K24:2)
+		$path:=Get 4D folder:C485(Dossier Resources courant:K5:16)+"table_templates"
+		If (Test path name:C476($path)=Est un dossier:K24:2)
 			
-			$folder:=Folder:C1567($path; fk platform path:K87:2)
-			$files:=$folder.files(fk ignore invisible:K87:22)
+			$folder:=Folder:C1567($path; fk chemin plateforme:K87:2)
+			$files:=$folder.files(fk ignorer invisibles:K87:22)
 			$_templates:=$files.query("extension = :1"; ".4wp").orderBy("path")  //.extract("path")
 			$_icons:=$files.query("extension = :1"; ".png").orderBy("path")  //.extract("path")
 			If ($_templates.length=$_icons.length)
@@ -90,20 +90,20 @@ Else
 		// Common except for culumns
 		If ($applyTo#"column")
 			APPEND MENU ITEM:C411($menu; Get localized string:C991("menuBorderStyle"))
-			SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/borderStyle"+$where)
+			SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/borderStyle"+$where)
 			
 			APPEND MENU ITEM:C411($menu; Get localized string:C991("menuBorderColor"))
-			SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/borderColor"+$where)
+			SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/borderColor"+$where)
 			
 			APPEND MENU ITEM:C411($menu; Get localized string:C991("menuBorderWidth"))
-			SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/borderWidth"+$where)
+			SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/borderWidth"+$where)
 			
 			APPEND MENU ITEM:C411($menu; "-")
 		End if 
 		
 		// Common
 		APPEND MENU ITEM:C411($menu; Get localized string:C991("menuBackgroundColor"))
-		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/backgroundColor"+$where)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/backgroundColor"+$where)
 		
 		
 		
@@ -112,22 +112,24 @@ Else
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuMargins"))
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/margin")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/margin")
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuAlignment"))
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/tableAlign")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/tableAlign")
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "table/avoidPageBreakInside")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; "table/avoidPageBreakInside")
 				
 				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "headerRowCount")  //a remplacer par constante
+				SET MENU ITEM PROPERTY:C973($menu; -1; Action standard associée:K56:1; "headerRowCount")  //à remplacer par constante
 				
 				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "bottomCarryOverRow")  //a remplacer par constante
+				SET MENU ITEM PROPERTY:C973($menu; -1; Action standard associée:K56:1; "bottomCarryOverRow")  //à remplacer par constante
 				
+				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+				SET MENU ITEM PROPERTY:C973($menu; -1; Action standard associée:K56:1; "emptyDatasource")  //à remplacer par constante
 				
 				
 				APPEND MENU ITEM:C411($menu; "-")
@@ -138,19 +140,19 @@ Else
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuPadding"))
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/padding")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/padding")
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuVerticalAlignment"))
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/verticalAlign")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/verticalAlign")
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuHeight"))
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/height")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/height")
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; "row/avoidPageBreakInside")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; "row/avoidPageBreakInside")
 				
 				
 				// add "set break…" if possible
@@ -207,33 +209,33 @@ Else
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuPadding"))
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/padding")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/padding")
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuVerticalAlignment"))
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/verticalAlign")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/verticalAlign")
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuWidth"))
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/width")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/width")
 				
 				
 			: ($applyTo="cell")
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuPadding"))
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/padding")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/padding")
 				
 				APPEND MENU ITEM:C411($menu; Get localized string:C991("menuVerticalAlignment"))
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action name:K28:8; $applyTo+"/verticalAlign")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Associer action standard:K28:8; $applyTo+"/verticalAlign")
 				
 				APPEND MENU ITEM:C411($menu; "-")
 				
 				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "cell/merge")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Action standard associée:K56:1; "cell/merge")
 				
 				APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
-				SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "cell/split")
+				SET MENU ITEM PROPERTY:C973($menu; -1; Action standard associée:K56:1; "cell/split")
 				
 		End case 
 		

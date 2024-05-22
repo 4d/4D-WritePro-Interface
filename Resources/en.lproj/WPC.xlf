@@ -2072,6 +2072,27 @@ Would you like to replace it?</target>
 (JSON validation error)</target>
         </trans-unit>
         
+        <trans-unit id="xx" resname="TE_EmptyDatasource">
+          <source>If the datasource is empty…</source>
+          <target>If the datasource is empty…</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_ShowDataRow">
+          <source>Show data row</source>
+          <target>Show data row</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_HideDataRow">
+          <source>Hide data row</source>
+          <target>Hide data row</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_HideTable">
+          <source>Hide table</source>
+          <target>Hide table</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_ShowPlaceholder">
+          <source>Show placeholder row</source>
+          <target>Show placeholder row</target>
+        </trans-unit>
+
       </group>
 
 

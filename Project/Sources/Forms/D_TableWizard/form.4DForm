@@ -23,12 +23,38 @@
 		},
 		{
 			"objects": {
+				"Ligne12": {
+					"type": "line",
+					"top": 590,
+					"left": 6,
+					"width": 652,
+					"height": 0,
+					"visibility": "hidden",
+					"stroke": "#da70d6",
+					"strokeDashArray": [
+						2,
+						2
+					]
+				},
+				"Ligne13": {
+					"type": "line",
+					"top": 620,
+					"left": 6,
+					"width": 652,
+					"height": 0,
+					"visibility": "hidden",
+					"stroke": "#da70d6",
+					"strokeDashArray": [
+						2,
+						2
+					]
+				},
 				"TipButton6": {
 					"type": "button",
 					"text": " ",
 					"top": 422,
-					"left": 230,
-					"width": 276,
+					"left": 240,
+					"width": 270,
 					"height": 26,
 					"events": [
 						"onClick"
@@ -45,8 +71,8 @@
 					"type": "button",
 					"text": " ",
 					"top": 392,
-					"left": 230,
-					"width": 276,
+					"left": 240,
+					"width": 270,
 					"height": 26,
 					"events": [
 						"onClick"
@@ -63,8 +89,8 @@
 					"type": "button",
 					"text": " ",
 					"top": 362,
-					"left": 230,
-					"width": 276,
+					"left": 240,
+					"width": 270,
 					"height": 26,
 					"events": [
 						"onClick"
@@ -81,8 +107,8 @@
 					"type": "button",
 					"text": " ",
 					"top": 332,
-					"left": 230,
-					"width": 276,
+					"left": 240,
+					"width": 270,
 					"height": 26,
 					"events": [
 						"onClick"
@@ -99,8 +125,8 @@
 					"type": "button",
 					"text": " ",
 					"top": 302,
-					"left": 230,
-					"width": 276,
+					"left": 240,
+					"width": 270,
 					"height": 26,
 					"events": [
 						"onClick"
@@ -117,8 +143,8 @@
 					"type": "button",
 					"text": " ",
 					"top": 272,
-					"left": 230,
-					"width": 276,
+					"left": 240,
+					"width": 270,
 					"height": 26,
 					"events": [
 						"onClick"
@@ -136,7 +162,7 @@
 					"text": ":xliff:BreaksAboveColon",
 					"top": 306,
 					"left": 235,
-					"width": 175,
+					"width": 180,
 					"height": 16,
 					"textAlign": "right",
 					"sizingX": "fixed",
@@ -147,7 +173,7 @@
 					"text": ":xliff:BreaksBelowColon",
 					"top": 366,
 					"left": 235,
-					"width": 175,
+					"width": 180,
 					"height": 16,
 					"textAlign": "right",
 					"sizingX": "fixed",
@@ -158,7 +184,7 @@
 					"text": ":xliff:CarryOverColon",
 					"top": 396,
 					"left": 235,
-					"width": 175,
+					"width": 180,
 					"height": 16,
 					"textAlign": "right",
 					"sizingX": "fixed",
@@ -169,7 +195,7 @@
 					"text": ":xliff:ExtraRowsColon",
 					"top": 426,
 					"left": 235,
-					"width": 175,
+					"width": 180,
 					"height": 16,
 					"textAlign": "right",
 					"sizingX": "fixed",
@@ -180,7 +206,7 @@
 					"text": ":xliff:DataRowColon",
 					"top": 336,
 					"left": 235,
-					"width": 175,
+					"width": 180,
 					"height": 16,
 					"textAlign": "right",
 					"sizingX": "fixed",
@@ -189,7 +215,7 @@
 				"RectTableData": {
 					"type": "rectangle",
 					"top": 335,
-					"left": 416,
+					"left": 421,
 					"width": 64,
 					"height": 20,
 					"borderRadius": 4,
@@ -225,7 +251,7 @@
 					"text": ":xliff:HeadersColon",
 					"top": 276,
 					"left": 235,
-					"width": 175,
+					"width": 180,
 					"height": 16,
 					"textAlign": "right",
 					"sizingX": "fixed",
@@ -233,7 +259,7 @@
 				},
 				"dd_tableHeaders": {
 					"type": "dropdown",
-					"left": 415,
+					"left": 420,
 					"top": 274,
 					"width": 65,
 					"height": 20,
@@ -249,7 +275,7 @@
 				},
 				"dd_BreakAbove": {
 					"type": "dropdown",
-					"left": 415,
+					"left": 420,
 					"top": 304,
 					"width": 65,
 					"height": 20,
@@ -265,7 +291,7 @@
 				},
 				"dd_BreakBelow": {
 					"type": "dropdown",
-					"left": 415,
+					"left": 420,
 					"top": 364,
 					"width": 65,
 					"height": 20,
@@ -281,7 +307,7 @@
 				},
 				"dd_bcor": {
 					"type": "dropdown",
-					"left": 415,
+					"left": 420,
 					"top": 394,
 					"width": 65,
 					"height": 20,
@@ -611,9 +637,9 @@
 				},
 				"inTableData": {
 					"type": "input",
-					"left": 420,
+					"left": 425,
 					"top": 337,
-					"width": 16,
+					"width": 56,
 					"height": 16,
 					"dataSource": "Form:C1466.tableData",
 					"enterable": false,
@@ -691,7 +717,7 @@
 				},
 				"Popup Liste déroulante": {
 					"type": "dropdown",
-					"left": 415,
+					"left": 420,
 					"top": 512,
 					"width": 65,
 					"height": 20,
@@ -704,7 +730,7 @@
 				"Texte10": {
 					"type": "text",
 					"text": ":xliff:DisplayColon",
-					"top": 475,
+					"top": 515,
 					"left": 250,
 					"width": 139,
 					"height": 16,
@@ -853,32 +879,6 @@
 						2
 					]
 				},
-				"Ligne12": {
-					"type": "line",
-					"top": 590,
-					"left": 6,
-					"width": 652,
-					"height": 0,
-					"visibility": "hidden",
-					"stroke": "#da70d6",
-					"strokeDashArray": [
-						2,
-						2
-					]
-				},
-				"Ligne13": {
-					"type": "line",
-					"top": 620,
-					"left": 6,
-					"width": 652,
-					"height": 0,
-					"visibility": "hidden",
-					"stroke": "#da70d6",
-					"strokeDashArray": [
-						2,
-						2
-					]
-				},
 				"Texte13": {
 					"type": "text",
 					"text": ":xliff:InfoMain",
@@ -919,7 +919,7 @@
 				},
 				"dd_extraRows": {
 					"type": "dropdown",
-					"left": 415,
+					"left": 420,
 					"top": 424,
 					"width": 65,
 					"height": 20,
@@ -931,7 +931,7 @@
 					"sizingX": "fixed",
 					"method": "ObjectMethods/dd_extraRows.4dm",
 					"sizingY": "fixed",
-					"tooltip": ":xliff:InfoCarryOverRow"
+					"tooltip": ":xliff:InfoExtraRows"
 				},
 				"WParea": {
 					"type": "write",
@@ -963,6 +963,34 @@
 					"showPageFrames": false,
 					"showReferences": true,
 					"dropping": "none"
+				},
+				"dd_placeholder": {
+					"type": "dropdown",
+					"left": 255,
+					"top": 474,
+					"width": 230,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.tablePlaceholder",
+					"focusable": false,
+					"sizingX": "fixed",
+					"method": "ObjectMethods/dd_placeholder.4dm",
+					"sizingY": "fixed",
+					"tooltip": ":xliff:InfoCarryOverRow",
+					"action": ""
+				},
+				"Texte16": {
+					"type": "text",
+					"text": ":xliff:TE_EmptyDatasource",
+					"top": 456,
+					"left": 245,
+					"width": 190,
+					"height": 16,
+					"textAlign": "left",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				}
 			},
 			"entryOrder": [
@@ -990,11 +1018,12 @@
 				"btn_Cancel",
 				"btn_OK",
 				"Zone de saisie",
-				"dd_templateList"
+				"dd_templateList",
+				"dd_placeholder"
 			]
 		}
 	],
-	"geometryStamp": 6037,
+	"geometryStamp": 6207,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

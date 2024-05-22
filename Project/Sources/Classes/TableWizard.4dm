@@ -1121,6 +1121,9 @@ Function themeApply($area : Object; $areaName : Text)
 				: ($description="bcor")  // bcor
 					$targetName:="bcor"
 					
+				: ($description="placeholder")  // placeholder
+					$targetName:="placeholder"
+					
 				Else 
 					$apply:=False:C215
 			End case 
@@ -1592,6 +1595,11 @@ Function WP_BuildTable()->$area : Object
 		If (Form:C1466.tableBCOR.index>0)
 			Form:C1466.description.push("bcor")  // bottom carry over
 		End if 
+		
+		If (Form:C1466.tablePlaceholder.index=3)
+			Form:C1466.description.push("placeholder")  // bottom carry over
+		End if 
+		
 		For ($i; 1; Form:C1466.tableExtraRows.index)
 			Form:C1466.description.push("extra"+String:C10($i))  // extra rows
 		End for 
@@ -1623,6 +1631,8 @@ Function WP_BuildTable()->$area : Object
 		
 		WP SET ATTRIBUTES:C1342($table; wk header row count:K81:364; Form:C1466.tableHeaders.index)  // number of row HEADERS are already known
 		WP SET ATTRIBUTES:C1342($table; wk bottom carry over row:K81:371; Form:C1466.tableBCOR.index)  // 1 = wk true, 0 = wk false
+		
+		WP SET ATTRIBUTES:C1342($table; wk empty datasource:K81:385; Form:C1466.tablePlaceholder.attributeValues[Form:C1466.tablePlaceholder.index])
 		
 		
 		If (True:C214)
@@ -1687,6 +1697,10 @@ Function WP_BuildTable()->$area : Object
 									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
 								End if 
 								
+							: ($description="placeholder")  // placeholder
+								If ($previousContent#Null:C1517)
+									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+								End if 
 								
 						End case 
 						$rowStart:=$rowStart+1

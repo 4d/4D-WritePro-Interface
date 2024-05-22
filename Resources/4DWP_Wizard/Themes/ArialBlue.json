@@ -66,5 +66,12 @@
 		"borderColor": "#ACB0C0",
 		"textAlign": 2,
 		"fontSize": "10pt"
+	},
+	"placeholder": {
+		"color": "#202020",
+		"fontSize": "10pt",
+		"backgroundColor": "yellow"
 	}
 }
+
+

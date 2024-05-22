@@ -48,6 +48,24 @@ Case of
 		Form:C1466.tableExtraRows.values:=New collection:C1472(0; 1; 2; 3; 4; 5)
 		Form:C1466.tableExtraRows.index:=0
 		
+		// 4D 20 R6
+		Form:C1466.tablePlaceholder:=New object:C1471
+		
+		Form:C1466.tablePlaceholder.values:=New collection:C1472
+		Form:C1466.tablePlaceholder.values.push(Get localized string:C991("TE_ShowDataRow"))
+		Form:C1466.tablePlaceholder.values.push(Get localized string:C991("TE_HideDataRow"))
+		Form:C1466.tablePlaceholder.values.push(Get localized string:C991("TE_HideTable"))
+		Form:C1466.tablePlaceholder.values.push(Get localized string:C991("TE_ShowPlaceholder"))
+		
+		Form:C1466.tablePlaceholder.attributeValues:=New collection:C1472
+		Form:C1466.tablePlaceholder.attributeValues.push("showDataRow")
+		Form:C1466.tablePlaceholder.attributeValues.push("hideDataRow")
+		Form:C1466.tablePlaceholder.attributeValues.push("hideTable")
+		Form:C1466.tablePlaceholder.attributeValues.push("showPlaceholderRow")
+		
+		Form:C1466.tablePlaceholder.index:=0
+		
+		
 		// DISPLAY MODE (Formulas / Data)
 		Form:C1466.displayFormulas:=1
 		Form:C1466.displayData:=0

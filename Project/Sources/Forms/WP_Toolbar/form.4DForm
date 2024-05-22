@@ -28,17 +28,6 @@
 	"pages": [
 		{
 			"objects": {
-				"Background": {
-					"type": "rectangle",
-					"top": 20,
-					"left": 0,
-					"width": 880,
-					"height": 70,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"fill": "#E0E0E0",
-					"stroke": "transparent"
-				},
 				"TabArea": {
 					"type": "rectangle",
 					"top": 0,
@@ -866,6 +855,17 @@
 					"shortcutAlt": false,
 					"shortcutKey": "-",
 					"sizingY": "move"
+				},
+				"Background": {
+					"type": "rectangle",
+					"top": 20,
+					"left": 0,
+					"width": 880,
+					"height": 70,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#E0E0E0",
+					"stroke": "transparent"
 				}
 			}
 		},
