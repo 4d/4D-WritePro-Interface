@@ -45,5 +45,23 @@
 			"label": "Count",
 			"source": "This.tableData.count()"
 		}
+	],
+	"placeholderFormulas": [
+		{
+			"label": "Count",
+			"source": "This.tableData.count()"
+		},
+		{
+			"label": "Page number",
+			"source": "This.pageNumber"
+		},
+		{
+			"label": "Page count",
+			"source": "This.pageCount"
+		},
+		{
+			"label": "Current date",
+			"source": "Current date"
+		}		
 	]
 }

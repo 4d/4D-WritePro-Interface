@@ -78,6 +78,20 @@ Case of
 								End for each 
 							End if 
 							
+						: ($description="placeholder")  // placeholder
+							
+							If ($cells.columnCount=1)\
+								 && (Not:C34(Undefined:C82(Form:C1466.template.extraFormulas)))\
+								 && (Form:C1466.template.extraFormulas.length>0)
+								APPEND MENU ITEM:C411($menu; "("+Get localized string:C991("AvailableFormulas"))  // ∆∆∆
+								$i:=0
+								For each ($item; Form:C1466.template.placeholderFormulas)
+									APPEND MENU ITEM:C411($menu; Form:C1466.wizard.translate("formula"; $item.label; True:C214))
+									SET MENU ITEM PARAMETER:C1004($menu; -1; "placeholder_"+String:C10($i))
+									$i:=$i+1
+								End for each 
+							End if 
+							
 					End case 
 					
 					$choice:=Dynamic pop up menu:C1006($menu)
@@ -96,6 +110,11 @@ Case of
 						: ($choice="extra_@")
 							$i:=Num:C11($choice)  // 0, 1, 2…
 							WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.extraFormulas[$i].source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
+							
+						: ($choice="placeholder_@")
+							$i:=Num:C11($choice)  // 0, 1, 2…
+							WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.placeholderFormulas[$i].source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
+							
 							
 					End case 
 					
