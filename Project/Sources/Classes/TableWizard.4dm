@@ -1632,7 +1632,7 @@ Function WP_BuildTable()->$area : Object
 		WP SET ATTRIBUTES:C1342($table; wk header row count:K81:364; Form:C1466.tableHeaders.index)  // number of row HEADERS are already known
 		WP SET ATTRIBUTES:C1342($table; wk bottom carry over row:K81:371; Form:C1466.tableBCOR.index)  // 1 = wk true, 0 = wk false
 		
-		WP SET ATTRIBUTES:C1342($table; wk empty datasource:K81:385; Form:C1466.tablePlaceholder.attributeValues[Form:C1466.tablePlaceholder.index])
+		WP SET ATTRIBUTES:C1342($table; "emptyDatasource"; Form:C1466.tablePlaceholder.attributeValues[Form:C1466.tablePlaceholder.index])
 		
 		
 		If (True:C214)
