@@ -112,6 +112,11 @@ Case of
 		
 	: (Form event code:C388=On Unload:K2:2)
 		//CLEAR VARIABLE(oForm)  // don't clear it, it may still be used in other windows in the same process
-		oForm:=New object:C1471  // just make it smaller (!)
+		
+		//oForm:=New object  //commented on 2024-05-13 (ACI0104798) 
+		//{
+		// finally don't clear at all (RL 2024-05-13)
+		// oForm should be renamed Form.local but too many occurences (RL 2024-05-13)
+		//}
 		
 End case 
