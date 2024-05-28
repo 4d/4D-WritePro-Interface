@@ -2072,6 +2072,27 @@ Gostaria de substituí-la?</target>
 (Erro de validação JSON)</target>
         </trans-unit>
         
+        <trans-unit id="xx" resname="TE_EmptyDatasource">
+          <source>If the datasource is empty…</source>
+          <target>Se a fonte de dados estiver vazia...</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_ShowDataRow">
+          <source>Show data row</source>
+          <target>Mostrar linha de dados</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_HideDataRow">
+          <source>Hide data row</source>
+          <target>Ocultar linha de dados</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_HideTable">
+          <source>Hide table</source>
+          <target>Ocultar tabela</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_ShowPlaceholder">
+          <source>Show placeholder row</source>
+          <target>Mostrar linha de espaço reservado</target>
+        </trans-unit>
+
       </group>
 
 
