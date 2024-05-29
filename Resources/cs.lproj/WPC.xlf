@@ -2060,16 +2060,16 @@ Chcete ji nahradit?</target>
         </trans-unit>
  
         <trans-unit id="xx" resname="JSONparseError">
-          <source>Soubor ":1" je zdeformovaný.
+          <source>Soubor ":1" is malformed.
 (JSON parsing error)</source>
           <target>>Soubor ":1" je zdeformovaný.
-(JSON parsing error)</target>
+(JSON chyba parsování)</target>
         </trans-unit>
         <trans-unit id="xx" resname="JSONvalidationError">
-          <source>Soubor ":1" je neplatný.
+          <source>Soubor ":1" is not valid.
 (JSON validation error)</source>
           <target>Soubor ":1" je neplatný.
-(JSON validation error)</target>
+(JSON chyba validace)</target>
         </trans-unit>
         
         <trans-unit id="xx" resname="TE_EmptyDatasource">
