@@ -664,19 +664,31 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="3" resname="inches">
           <source>inches</source>
-          <target>palce</target>
+          <target>Palce</target>
         </trans-unit>
         <trans-unit id="4" resname="pt">
-          <source>pt</source>
-          <target>pt</target>
+          <source>Points</source>
+          <target>Body</target>
         </trans-unit>
         <trans-unit id="5" resname="auto">
           <source>auto</source>
-          <target>auto</target>
+          <target>Auto</target>
         </trans-unit>
         <trans-unit id="6" resname="pct">
           <source>%</source>
           <target>%</target>
+        </trans-unit>
+        <trans-unit id="7" resname="cover">
+          <source>Cover</source>
+          <target>Obálka</target>
+        </trans-unit>
+        <trans-unit id="8" resname="contain">
+          <source>Contain</source>
+          <target>Obsahuje</target>
+        </trans-unit>
+        <trans-unit id="9" resname="pixels">
+          <source>Pixels</source>
+          <target>Pixely</target>
         </trans-unit>
       </group>
       <group resname="borderStyleNames">
@@ -1650,6 +1662,10 @@ Chcete ji nahradit?</target>
           <source>Black frame for empty pictures</source>
           <target>Černý rámeček pro prázdné obrázky</target>
         </trans-unit>
+         <trans-unit id="xxxx" resname="generatePDFA">
+          <source>Generate PDF/A</source>
+          <target>Generovat PDF/A</target>
+        </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
       <group resname="textArea">
@@ -1953,32 +1969,32 @@ Chcete ji nahradit?</target>
           <target>Témata:</target>
         </trans-unit>
         <trans-unit id="xx" resname="Columns">
-          <source>Columns</source>
-          <target>Sloupce</target>
+          <source>Columns:</source>
+          <target>Sloupce:</target>
         </trans-unit>          
         <trans-unit id="xx" resname="Rows">
-          <source>Rows</source>
-          <target>Řádky</target>
+          <source>Rows:</source>
+          <target>Řádky:</target>
         </trans-unit>
         <trans-unit id="xx" resname="Display">
-          <source>Display</source>
-          <target>Zobrazit</target>
+          <source>Display:</source>
+          <target>Zobrazit:</target>
         </trans-unit>            
         <trans-unit id="xx" resname="HeadersColon">
           <source>Header rows:</source>
           <target>Řádky záhlaví:</target>
         </trans-unit>
         <trans-unit id="xx" resname="BreaksAboveColon">
-          <source>Breaks above rows:</source>
-          <target>Zlomy nad řádky:</target>
+          <source>Summary rows above:</source>
+          <target>Souhrnné řádky výše:</target>
         </trans-unit>
         <trans-unit id="xx" resname="DataRowColon">
           <source>Data row:</source>
           <target>Datový řádek:</target>
         </trans-unit>
         <trans-unit id="xx" resname="BreaksBelowColon">
-          <source>Breaks below rows:</source>
-          <target>Zlomy pod řádky:</target>
+          <source>Summary rows below:</source>
+          <target>Souhrnné řádky níže:</target>
         </trans-unit>
         <trans-unit id="xx" resname="CarryOverColon">
           <source>Carry over row:</source>
@@ -1988,6 +2004,10 @@ Chcete ji nahradit?</target>
           <source>Extra rows:</source>
           <target>Extra řádky:</target>
         </trans-unit>
+        <trans-unit id="xx" resname="ZoomColon">
+          <source>Zoom:</source>
+          <target>Zvětšení:</target>
+        </trans-unit>  
         <trans-unit id="xx" resname="DisplayFormulas">
           <source>Display formulas</source>
           <target>Zobrazit vzorce</target>
@@ -2000,7 +2020,78 @@ Chcete ji nahradit?</target>
           <source>Sample</source>
           <target>Příklad</target>
         </trans-unit>
+        <trans-unit id="xx" resname="AvailableFormulas">
+          <source>Available formulas…</source>
+          <target>Dostupné vzorce…</target>
+        </trans-unit>
 
+        <trans-unit id="xx" resname="Insert">
+          <source>Insert</source>
+          <target>Vložit</target>
+        </trans-unit>
+
+        <trans-unit id="xx" resname="InfoMain">
+          <source>This dialog box allows you to insert a table in your document, the contents of which will be based on database data.</source>
+          <target>Toto dialogové okno umožňuje vložit do dokumentu tabulku, jejíž obsah bude založen na datech databáze.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoContextualClic">
+          <source>Use the contextual menu to insert additional formulas into the table.</source>
+          <target>Pomocí kontextové nabídky můžete do tabulky vložit další vzorce.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoHeaderRows">
+          <source>The header rows are replicated at each page break.</source>
+          <target>Řádky záhlaví se replikují při každém konci stránky.</target>
+        </trans-unit>      
+        <trans-unit id="xx" resname="InfoDataRow">
+          <source>This row will be filled by each element of the database.</source>
+          <target>Tento řádek bude vyplněn každým prvkem databáze.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoSummaryRows">
+          <source>The summary rows are inserted each time the reference value defined for the row changes.</source>
+          <target>Souhrnné řádky jsou vloženy pokaždé, když se referenční hodnota definovaná pro řádek změní.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoCarryOverRow">
+          <source>The carry over row is inserted before each page break (if any).</source>
+          <target>Řádek přenosu je vložen před každý konec stránky (pokud existuje).</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="InfoExtraRows">
+          <source>The extra rows are added at the end of the table.</source>
+          <target>Extra řádky jsou přidány na konec tabulky.</target>
+        </trans-unit>
+ 
+        <trans-unit id="xx" resname="JSONparseError">
+          <source>Soubor ":1" je zdeformovaný.
+(JSON parsing error)</source>
+          <target>>Soubor ":1" je zdeformovaný.
+(JSON parsing error)</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="JSONvalidationError">
+          <source>Soubor ":1" je neplatný.
+(JSON validation error)</source>
+          <target>Soubor ":1" je neplatný.
+(JSON validation error)</target>
+        </trans-unit>
+        
+        <trans-unit id="xx" resname="TE_EmptyDatasource">
+          <source>If the datasource is empty…</source>
+          <target>Jestliže je zdroj dat prázdný…</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_ShowDataRow">
+          <source>Show data row</source>
+          <target>Zobrazit řádek dat</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_HideDataRow">
+          <source>Hide data row</source>
+          <target>Uschovat řádek dat</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_HideTable">
+          <source>Hide table</source>
+          <target>Uschovat tabulku</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="TE_ShowPlaceholder">
+          <source>Show placeholder row</source>
+          <target>Zobrazit zástupný řádek</target>
+        </trans-unit>
       </group>
       
       
