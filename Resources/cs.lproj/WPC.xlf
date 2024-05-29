@@ -155,12 +155,12 @@ This file is distributed under the same license as the product package.-->
           <target>Zdroj:</target>
         </trans-unit>
         <trans-unit id="23" resname="HorizontalSize">
-          <source>Horizontal Size:</source>
-          <target>Vodorovná velikost:</target>
+          <source>Hor. Size:</source>
+          <target>Vodor. vel.:</target>
         </trans-unit>
         <trans-unit id="24" resname="VerticalSize">
-          <source>Vertical Size:</source>
-          <target>Svislá velikost:</target>
+          <source>Vert. Size:</source>
+          <target>Svislá vel.:</target>
         </trans-unit>
         <trans-unit id="25" resname="PositionColon">
           <source>Position:</source>
@@ -208,7 +208,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="dOtz4kYVKAUCtHPmPtDbdw" resname="PictureAndTextboxes">
           <source>Picture &amp; textboxes</source>
-          <target state="new">Picture &amp; textboxes</target>
+          <target>Obrázky &amp; textová pole</target>
         </trans-unit>
       </group>
       <group resname="PaletteFonts">
@@ -1158,11 +1158,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="4Z4RwzyWeP/Lva2PJqZkIw" resname="detailsColon">
           <source>Details:</source>
-          <target state="new">Details:</target>
+          <target>Podrobný:</target>
         </trans-unit>
         <trans-unit id="KNV1Z0ClwSorv7H0yJnEIQ" resname="globalColon">
           <source>Global:</source>
-          <target state="new">Global:</target>
+          <target>Globální:</target>
         </trans-unit>
       </group>
       <group resname="PaletteFindReplace">
@@ -1523,8 +1523,8 @@ This file is distributed under the same license as the product package.-->
           <target>Tělo</target>
         </trans-unit>
         <trans-unit id="tMZO5KyH1Qe77I7HSLR6og" resname="htmlWysiwyg">
-          <source>HTML "WYSIWIG"</source>
-          <target>HTML "WYSIWIG"</target>
+          <source>HTML "WYSIWYG"</source>
+          <target>HTML "WYSIWYG"</target>
         </trans-unit>
         <trans-unit id="7yp1Rkz6KWEs2pehpSqJoA" resname="recomputeFormulas">
           <source>Recompute formulas</source>
@@ -1559,11 +1559,11 @@ This file is distributed under the same license as the product package.-->
           <target>Export…</target>
         </trans-unit>
         <trans-unit id="fMOz7wl6MpDwxlU77dYxUA" resname="InfoScreen">
-          <source>The document size will be smaller and the pictures will be compressed into "jpg" or "png"</source>
+          <source>Document size will be smaller and the pictures will be compressed into "jpg" or "png"</source>
           <target>Velikost dokumentu bude menší a obrázky budou komprimovány do "jpg" nebo "png"</target>
         </trans-unit>
         <trans-unit id="SD+Y7dnDCOmvJ94LKms7CQ" resname="InfoPrint">
-          <source>The document size will be bigger and the pictures will be keep their original "codec".</source>
+          <source>Document size will be bigger and the pictures will be keep their original "codec".</source>
           <target>Velikost obrázku bude větší a obrázky budou drženy ve svých originálních "codec".</target>
         </trans-unit>
         <trans-unit id="M/by8K2LDXD/OhCDfGnX+Q" resname="InfoFormulas">
@@ -1668,7 +1668,7 @@ Chcete ji nahradit?</target>
         </trans-unit>
       </group>
       <group resname="PaletteImportExport"/>
-      <group resname="textArea">
+      <group resname="DialogImport">
         <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
           <source>Erase the document</source>
           <target>Vymazat dokument</target>
@@ -1702,24 +1702,24 @@ Chcete ji nahradit?</target>
           <target>Před poslední zápatí (pokud existuje)</target>
         </trans-unit>
         <trans-unit id="ERLyD4OELj5tXGKqcoTmNQ" resname="InfoReplaceSelection">
-          <source>(or insert at the cursor position)</source>
-          <target>(nebo vložte na pozici kurzoru)</target>
+          <source>(or replace current selection)</source>
+          <target>(nebo nahradit platný výběr)</target>
         </trans-unit>
         <trans-unit id="fUY1y/mfq8YIayhWmfKZeg" resname="SelectFile">
           <source>Select file to import…</source>
           <target>Vybrat soubor pro import…</target>
         </trans-unit>
         <trans-unit id="ceXUiqKwcVAUS6ay3ug5xQ" resname="ReplaceDocument">
-          <source>Replace document</source>
-          <target>Nahradit dokument</target>
+          <source>Replace the current document</source>
+          <target>Nahradit platný dokument</target>
         </trans-unit>
         <trans-unit id="NFtFcqXg4EZ1lxL/0wtdpw" resname="InfoReplaceDocument">
           <source>The full document will be replaced including headers and footers.</source>
           <target>Bude nahrazen celý dokument včetně zaáhlaví a zápatí.</target>
         </trans-unit>
         <trans-unit id="V9QRc48mupZaPsRVherBRQ" resname="InfoNotImported">
-          <source>Note: The headers, footers and anchored pictures will not be imported.</source>
-          <target>Poznámka: Záhlaví, zápatí a ukotvené obrázky nebudou importovány.</target>
+          <source>The headers, footers and anchored pictures will not be imported.</source>
+          <target>Záhlaví, zápatí a ukotvené obrázky nebudou importovány.</target>
         </trans-unit>
         <trans-unit id="n4aL7HhXL+o5ruwGL/guAQ" resname="InsertInTheDocument">
           <source>Insert in the document…</source>
