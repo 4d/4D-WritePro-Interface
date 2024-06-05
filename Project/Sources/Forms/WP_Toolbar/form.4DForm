@@ -28,17 +28,6 @@
 	"pages": [
 		{
 			"objects": {
-				"Background": {
-					"type": "rectangle",
-					"top": 20,
-					"left": 0,
-					"width": 880,
-					"height": 70,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"fill": "#E0E0E0",
-					"stroke": "transparent"
-				},
 				"TabArea": {
 					"type": "rectangle",
 					"top": 0,
@@ -49,412 +38,6 @@
 					"stroke": "transparent",
 					"fill": "#ffb6c1",
 					"sizingX": "grow"
-				},
-				"Line": {
-					"type": "line",
-					"top": 0,
-					"left": 10,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line10": {
-					"type": "line",
-					"top": 0,
-					"left": 40,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line15": {
-					"type": "line",
-					"top": 0,
-					"left": 70,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line17": {
-					"type": "line",
-					"top": 0,
-					"left": 100,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line18": {
-					"type": "line",
-					"top": 0,
-					"left": 130,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line19": {
-					"type": "line",
-					"top": -2,
-					"left": 160,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line20": {
-					"type": "line",
-					"top": 0,
-					"left": 190,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line22": {
-					"type": "line",
-					"top": 0,
-					"left": 220,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line23": {
-					"type": "line",
-					"top": 0,
-					"left": 250,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line25": {
-					"type": "line",
-					"top": 0,
-					"left": 280,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line26": {
-					"type": "line",
-					"top": 0,
-					"left": 310,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line27": {
-					"type": "line",
-					"top": 0,
-					"left": 340,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line28": {
-					"type": "line",
-					"top": 0,
-					"left": 370,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line29": {
-					"type": "line",
-					"top": 0,
-					"left": 400,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line30": {
-					"type": "line",
-					"top": 0,
-					"left": 430,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line31": {
-					"type": "line",
-					"top": 0,
-					"left": 460,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line32": {
-					"type": "line",
-					"top": 0,
-					"left": 490,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line33": {
-					"type": "line",
-					"top": 0,
-					"left": 520,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line34": {
-					"type": "line",
-					"top": 0,
-					"left": 550,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line35": {
-					"type": "line",
-					"top": 0,
-					"left": 580,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line36": {
-					"type": "line",
-					"top": 0,
-					"left": 610,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line37": {
-					"type": "line",
-					"top": 0,
-					"left": 640,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line38": {
-					"type": "line",
-					"top": 0,
-					"left": 670,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line39": {
-					"type": "line",
-					"top": 0,
-					"left": 700,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line40": {
-					"type": "line",
-					"top": 0,
-					"left": 730,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line41": {
-					"type": "line",
-					"top": 0,
-					"left": 760,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line48": {
-					"type": "line",
-					"top": 0,
-					"left": 790,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line51": {
-					"type": "line",
-					"top": 0,
-					"left": 820,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
-				},
-				"Line52": {
-					"type": "line",
-					"top": 0,
-					"left": 850,
-					"height": 90,
-					"visibility": "hidden",
-					"stroke": "#FFFFFF",
-					"width": 0,
-					"startPoint": "topLeft",
-					"strokeDashArray": [
-						2,
-						6
-					]
 				},
 				"Button": {
 					"type": "button",
@@ -866,6 +449,423 @@
 					"shortcutAlt": false,
 					"shortcutKey": "-",
 					"sizingY": "move"
+				},
+				"Background": {
+					"type": "rectangle",
+					"top": 20,
+					"left": 0,
+					"width": 880,
+					"height": 70,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#E0E0E0",
+					"stroke": "transparent"
+				},
+				"Line": {
+					"type": "line",
+					"top": 0,
+					"left": 10,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line10": {
+					"type": "line",
+					"top": 0,
+					"left": 40,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line17": {
+					"type": "line",
+					"top": 0,
+					"left": 100,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line18": {
+					"type": "line",
+					"top": 0,
+					"left": 130,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line19": {
+					"type": "line",
+					"top": -2,
+					"left": 160,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line20": {
+					"type": "line",
+					"top": 0,
+					"left": 190,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line23": {
+					"type": "line",
+					"top": 0,
+					"left": 250,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line25": {
+					"type": "line",
+					"top": 0,
+					"left": 280,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line27": {
+					"type": "line",
+					"top": 0,
+					"left": 340,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line28": {
+					"type": "line",
+					"top": 0,
+					"left": 370,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line30": {
+					"type": "line",
+					"top": 0,
+					"left": 430,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line32": {
+					"type": "line",
+					"top": 0,
+					"left": 490,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line33": {
+					"type": "line",
+					"top": 0,
+					"left": 520,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line35": {
+					"type": "line",
+					"top": 0,
+					"left": 580,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line36": {
+					"type": "line",
+					"top": 0,
+					"left": 610,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line38": {
+					"type": "line",
+					"top": 0,
+					"left": 670,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line40": {
+					"type": "line",
+					"top": 0,
+					"left": 730,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line41": {
+					"type": "line",
+					"top": 0,
+					"left": 760,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line51": {
+					"type": "line",
+					"top": 0,
+					"left": 820,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line15": {
+					"type": "line",
+					"top": 0,
+					"left": 70,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line22": {
+					"type": "line",
+					"top": 0,
+					"left": 220,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line26": {
+					"type": "line",
+					"top": 0,
+					"left": 310,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line29": {
+					"type": "line",
+					"top": 0,
+					"left": 400,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line31": {
+					"type": "line",
+					"top": 0,
+					"left": 460,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line34": {
+					"type": "line",
+					"top": 0,
+					"left": 550,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line37": {
+					"type": "line",
+					"top": 0,
+					"left": 640,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line39": {
+					"type": "line",
+					"top": 0,
+					"left": 700,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line48": {
+					"type": "line",
+					"top": 0,
+					"left": 790,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				},
+				"Line52": {
+					"type": "line",
+					"top": 0,
+					"left": 850,
+					"height": 90,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"width": 0,
+					"startPoint": "topLeft",
+					"strokeDashArray": [
+						2,
+						6
+					]
 				}
 			}
 		},
@@ -4463,5 +4463,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7166
+	"geometryStamp": 7174
 }
