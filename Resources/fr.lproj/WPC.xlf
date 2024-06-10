@@ -2076,7 +2076,7 @@ Souhaitez-vous le remplacer ?</target>
 
         <trans-unit id="xx" resname="TE_EmptyDatasource">
           <source>If the datasource is empty…</source>
-          <target>Si la datasource est vide…</target>
+          <target>Si la source de données est vide…</target>
         </trans-unit>
         <trans-unit id="xx" resname="TE_ShowDataRow">
           <source>Show data row</source>

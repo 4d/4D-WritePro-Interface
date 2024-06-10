@@ -986,7 +986,7 @@
 					"text": ":xliff:TE_EmptyDatasource",
 					"top": 456,
 					"left": 245,
-					"width": 190,
+					"width": 240,
 					"height": 16,
 					"textAlign": "left",
 					"sizingX": "fixed",
@@ -1023,7 +1023,7 @@
 			]
 		}
 	],
-	"geometryStamp": 6207,
+	"geometryStamp": 6225,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
