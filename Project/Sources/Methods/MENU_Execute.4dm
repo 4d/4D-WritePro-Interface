@@ -374,31 +374,49 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 			: ($action="document@")
 				
 				
+				// ACI0104620 formula from string instead of formula in all cases
 				Case of 
 					: ($action="documentTitle")
-						$formula:=Formula:C1597(This:C1470.title)
+						//$formula:=Formula(This.title)  //  BEFORE ACI0104620
+						$formula:=Formula from string:C1601("This.title"; sk execute in host database:K88:5)
 						
 					: ($action="documentAuthor")
-						$formula:=Formula:C1597(This:C1470.author)
+						$formula:=Formula from string:C1601("This.author"; sk execute in host database:K88:5)
 						
 					: ($action="documentSubject")
-						$formula:=Formula:C1597(This:C1470.subject)
+						$formula:=Formula from string:C1601("This.subject"; sk execute in host database:K88:5)
 						
 					: ($action="documentCompany")
-						$formula:=Formula:C1597(This:C1470.company)
+						$formula:=Formula from string:C1601("This.company"; sk execute in host database:K88:5)
 						
 					: ($action="documentNotes")
-						$formula:=Formula:C1597(This:C1470.notes)
+						$formula:=Formula from string:C1601("This.notes"; sk execute in host database:K88:5)
 						
 					: ($action="documentCreationStamp")
-						$formula:=Formula:C1597(This:C1470.dateCreation)
+						$formula:=Formula from string:C1601("This.dateCreation"; sk execute in host database:K88:5)
 						
 					: ($action="documentModificationStamp")
-						$formula:=Formula:C1597(This:C1470.dateModified)
+						$formula:=Formula from string:C1601("This.dateModified"; sk execute in host database:K88:5)
+						
+						
+						
+						// ACI0104620 four cases added below (calls from buttons in both bars)
+						
+					: ($action="documentPageNumber")
+						$formula:=Formula from string:C1601("This.pageNumber"; sk execute in host database:K88:5)
+						
+					: ($action="documentPageCount")
+						$formula:=Formula from string:C1601("This.pageCount"; sk execute in host database:K88:5)
+						
+					: ($action="documentCurrentDate")
+						//String(Current date; System date short)
+						$formula:=Formula from string:C1601("String:C10(Current date:C33; 1)"; sk execute in host database:K88:5)  //1=System date short
+						
+					: ($action="documentCurrentTime")
+						//String(Current time; System time short)  
+						$formula:=Formula from string:C1601("String:C10(Current time:C178; 9)"; sk execute in host database:K88:5)  //9=System time short
 						
 				End case 
-				
-				WP INSERT FORMULA:C1703(Form:C1466.selection; $formula; wk replace:K81:177)
 				
 			: ($action="freeze@")
 				Case of 
