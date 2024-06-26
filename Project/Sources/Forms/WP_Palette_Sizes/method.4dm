@@ -23,6 +23,7 @@ Case of
 		
 		//tip for HideEmptyImages
 		OBJECT SET HELP TIP:C1181(*; "btn_visibleEmptyImages"; Get action info:C1442("visibleEmptyImages").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_visibleTableBorders"; Get action info:C1442("visibleTableBorders").title)  // 20R6
 		
 		
 		If (Form:C1466#Null:C1517)

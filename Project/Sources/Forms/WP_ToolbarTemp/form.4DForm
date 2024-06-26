@@ -2112,6 +2112,18 @@
 					"popupPlacement": "none",
 					"icon": "/RESOURCES/Images/TBcommon/Insert/InsertTextBox_32.png",
 					"method": "ObjectMethods/btn_insertTextArea1.4dm"
+				},
+				"btn_visibleTableBorders": {
+					"type": "checkbox",
+					"top": 30,
+					"left": 840,
+					"width": 30,
+					"height": 24,
+					"action": "visibleTableBorders",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/TableBorders_24.png",
+					"iconFrames": 4,
+					"style": "toolbar"
 				}
 			},
 			"entryOrder": [
@@ -2147,7 +2159,8 @@
 				"btn_insertTime3",
 				"btn_visibleEmptyImages",
 				"btn_displayAsSymbol",
-				"btn_insertTextArea1"
+				"btn_insertTextArea1",
+				"btn_visibleTableBorders"
 			]
 		},
 		{
@@ -4474,5 +4487,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7722
+	"geometryStamp": 7734
 }

@@ -77,6 +77,8 @@ Case of
 			OBJECT SET VISIBLE:C603(*; "mac_@"; True:C214)
 		Else 
 			OBJECT SET VISIBLE:C603(*; "win_@"; True:C214)
+			OBJECT SET VISIBLE:C603(*; "btn_mac_@"; False:C215)  // RL 2024/03/28  (spell check page)
+			OBJECT SET VISIBLE:C603(*; "sep_Mac_@"; False:C215)  // RL 2024/03/28  (spell check page)
 		End if 
 		
 		
@@ -101,6 +103,7 @@ Case of
 		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareLeft"; Get action info:C1442("anchorLayout?value=wrapSquareLeft").title)
 		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareRight"; Get action info:C1442("anchorLayout?value=wrapSquareRight").title)
 		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareLargest"; Get action info:C1442("anchorLayout?value=wrapSquareLargest").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_visibleTableBorders"; Get action info:C1442("visibleTableBorders").title)  // 20R6
 		
 		OBJECT SET TITLE:C194(*; "cb_distinctFirstPage"; Get action info:C1442("section/differentFirstPage").title)
 		OBJECT SET TITLE:C194(*; "cb_distinctLeftRightPage"; Get action info:C1442("section/differentLeftRightPages").title)

@@ -563,6 +563,18 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Sizes"
+				},
+				"btn_visibleTableBorders": {
+					"type": "checkbox",
+					"top": 130,
+					"left": 204,
+					"width": 36,
+					"height": 24,
+					"action": "visibleTableBorders",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/View/TableBorders_24.png",
+					"iconFrames": 4,
+					"style": "toolbar"
 				}
 			}
 		}
@@ -608,5 +620,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 526
+	"geometryStamp": 536
 }
