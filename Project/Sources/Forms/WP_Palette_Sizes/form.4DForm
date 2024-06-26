@@ -36,6 +36,51 @@
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
+				"lbl_Align1": {
+					"type": "text",
+					"top": 481,
+					"left": 10,
+					"width": 100,
+					"height": 13,
+					"class": "Palette",
+					"textAlign": "right",
+					"text": ":xliff:VertAlignColon",
+					"fontTheme": "additional"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 510,
+					"left": 30,
+					"width": 200,
+					"stroke": "#696969",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"STD_verticalAlign": {
+					"type": "dropdown",
+					"top": 480,
+					"left": 115,
+					"width": 120,
+					"height": 18,
+					"focusable": false,
+					"class": "Palette",
+					"events": [
+						"onDataChange"
+					],
+					"action": "verticalAlign"
+				},
+				"btn_visibleTableBorders": {
+					"type": "checkbox",
+					"top": 130,
+					"left": 204,
+					"width": 36,
+					"height": 24,
+					"action": "visibleTableBorders",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBcommon/View/TableBorders_24.png",
+					"iconFrames": 4,
+					"style": "toolbar"
+				},
 				"paragraphMinHeight": {
 					"type": "input",
 					"top": 447,
@@ -458,50 +503,6 @@
 					"action": "userUnit",
 					"class": "Palette"
 				},
-				"Rect2": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 480,
-					"visibility": "hidden",
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 0
-				},
-				"lbl_Align1": {
-					"type": "text",
-					"top": 481,
-					"left": 10,
-					"width": 100,
-					"height": 13,
-					"class": "Palette",
-					"textAlign": "right",
-					"text": ":xliff:VertAlignColon",
-					"fontTheme": "additional"
-				},
-				"Line3": {
-					"type": "line",
-					"top": 510,
-					"left": 30,
-					"width": 200,
-					"stroke": "#696969",
-					"height": 0,
-					"startPoint": "topLeft"
-				},
-				"STD_verticalAlign": {
-					"type": "dropdown",
-					"top": 480,
-					"left": 115,
-					"width": 120,
-					"height": 18,
-					"focusable": false,
-					"class": "Palette",
-					"events": [
-						"onDataChange"
-					],
-					"action": "verticalAlign"
-				},
 				"btn_alignTop": {
 					"type": "checkbox",
 					"text": "",
@@ -550,6 +551,17 @@
 					"action": "verticalAlign?value=bottom",
 					"focusable": false
 				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 0
+				},
 				"Text": {
 					"type": "text",
 					"top": 20,
@@ -563,18 +575,6 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Sizes"
-				},
-				"btn_visibleTableBorders": {
-					"type": "checkbox",
-					"top": 130,
-					"left": 204,
-					"width": 36,
-					"height": 24,
-					"action": "visibleTableBorders",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/View/TableBorders_24.png",
-					"iconFrames": 4,
-					"style": "toolbar"
 				}
 			}
 		}
@@ -583,12 +583,10 @@
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
-			"View 1": {},
-			"View 2": {
-				"objects": [
-					"Background"
-				]
+			"Backgroud": {
+				"selectable": false
 			},
+			"View 1": {},
 			"Grid": {
 				"visible": false
 			},
@@ -620,5 +618,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 536
+	"geometryStamp": 628
 }
