@@ -2,6 +2,7 @@ Class constructor()
 	This:C1470.document:=WP New:C1317
 	
 	
+	
 Function setText($newText : Text; $textPosition : Integer; $rangeUpdate : Integer)
 	If (Count parameters:C259<3)
 		$rangeUpdate:=wk include in range:K81:180
@@ -14,8 +15,11 @@ Function getText($expressions : Integer)->$text : Text
 	End if 
 	$text:=WP Get text:C1575(This:C1470.document; $expressions)
 	
-Function textRange($start : Integer; $end : Integer)->$range : Object
-	$range:=WP Text range:C1341(This:C1470.document; $start; $end)
+	
+	
+Function textRange($start : Integer; $end : Integer)->$result : cs:C1710.WPrange
+	$result:=cs:C1710.WPrange.new()
+	$result.range:=WP Text range:C1341(This:C1470.document; $start; $end)
 	
 	
 	

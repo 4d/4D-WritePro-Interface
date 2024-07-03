@@ -9,8 +9,14 @@ Class constructor($target : Object; $index : Integer)
 	End case 
 	
 	
-Function newHeader()->$header : Object
-	$header:=WP New header:C1586(This:C1470.section)
+	
+	
+Function newHeader()->$header : cs:C1710.WPelement
+	$header:=cs:C1710.WPelement.new()
+	$header.header:=WP New header:C1586(This:C1470.section)
 	
 Function newFooter($section : Object)->$footer : Object
-	$footer:=WP New footer:C1587(This:C1470.section)
+	$footer:=cs:C1710.WPelement.new()
+	$footer.footer:=WP New footer:C1587(This:C1470.section)
+	
+	
