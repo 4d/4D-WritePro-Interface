@@ -41,7 +41,7 @@ Case of
 		Form:C1466.tableBreakBelow.index:=0
 		
 		Form:C1466.tableBCOR:=New object:C1471
-		Form:C1466.tableBCOR.values:=New collection:C1472("No"; "Yes")
+		Form:C1466.tableBCOR.values:=New collection:C1472(Get localized string:C991("No"); Get localized string:C991("Yes"))  // TM request 2024/07/10
 		Form:C1466.tableBCOR.index:=0
 		
 		Form:C1466.tableExtraRows:=New object:C1471
