@@ -1,4 +1,4 @@
-Class constructor($element : 4D:C1709.WriteElement)
+Class constructor($element : Object)  //4D.WriteElement)
 	This:C1470.element:=$element
 	This:C1470.document:=This:C1470.element.owner
 	

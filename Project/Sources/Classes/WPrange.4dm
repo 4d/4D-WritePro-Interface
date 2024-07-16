@@ -1,4 +1,4 @@
-Class constructor($range : 4D:C1709.WriteRange)
+Class constructor($range : Object)  //4D.WriteRange)
 	This:C1470.range:=$range
 	This:C1470.document:=This:C1470.range.owner
 	

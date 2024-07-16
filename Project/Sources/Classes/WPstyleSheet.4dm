@@ -1,4 +1,4 @@
-Class constructor($styleSheet : 4D:C1709.WriteStyleSheet)
+Class constructor($styleSheet : Object)  //4D.WriteStyleSheet)
 	This:C1470.styleSheet:=$styleSheet
 	
 	

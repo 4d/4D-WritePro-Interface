@@ -1,13 +1,13 @@
 Class constructor($target : Object; $index : Integer)
 	
-	Case of 
-		: (OB Instance of:C1731($target; 4D:C1709.WriteSection))  // regular call, from cs.WRdocument
-			This:C1470.section:=$target
-			
-		: (OB Instance of:C1731($target; 4D:C1709.WriteDocument))  // direct call, from 4D Code
-			This:C1470.section:=WP Get section:C1581($target; $index)
-			
-	End case 
+	//Case of 
+	//: (OB Instance of($target; 4D.WriteSection))  // regular call, from cs.WRdocument
+	//This.section:=$target
+	
+	//: (OB Instance of($target; 4D.WriteDocument))  // direct call, from 4D Code
+	//This.section:=WP Get section($target; $index)
+	
+	//End case 
 	
 	//mark:-PAGE COUNT  (CALCULATED ATTRIBUTE)
 	

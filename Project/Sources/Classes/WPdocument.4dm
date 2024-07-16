@@ -1,4 +1,4 @@
-Class constructor($document : 4D:C1709.WriteDocument)
+Class constructor($document : Object)  //4D.WriteDocument)
 	
 	If (Count parameters:C259=0)
 		This:C1470.document:=WP New:C1317
@@ -328,7 +328,7 @@ Function getPosition($layout : Integer)->$information : Object
 	//mark:-STYLE SHEET
 	
 Function newStyleSheet($styleSheetType : Integer; $styleSheetName : Text)->$styleSheet : cs:C1710.WPstyleSheet
-	var $stylesheet4D : 4D:C1709.WriteStyleSheet
+	var $stylesheet4D : Object  //4D.WriteStyleSheet
 	
 	$stylesheet4D:=WP New style sheet:C1650(This:C1470.document; $styleSheetType; $styleSheetName)
 	$styleSheet:=cs:C1710.WPstyleSheet.new(stylesheet4D)
