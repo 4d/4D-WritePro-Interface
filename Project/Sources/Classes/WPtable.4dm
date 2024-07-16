@@ -2,36 +2,28 @@
 
 Class extends WPelement
 
-Class constructor($table : 4D:C1709.WriteElement)
+Class constructor($table : Object)  //4D.WriteElement)
 	
 	Super:C1705($table)
 	This:C1470.table:=$table
 	
 	
-Function appendRow
+	//Function appendRow
 	
-Function deleteColumns
+	//Function deleteColumns
 	
-Function deleteRows
+	//Function deleteRows
 	
-Function getCells
+	//Function getCells
 	
-Function getColumns
+	//Function getColumns
 	
-Function getRows
+	//Function getRows
 	
-Function insertColumns
+	//Function insertColumns
 	
-Function insertRows
+	//Function insertRows
 	
 	
 	
-	//WP Table append row
-	//WP TABLE DELETE COLUMNS
-	//WP TABLE DELETE ROWS
-	//WP Table get cells
-	//WP Table get columns
-	//WP Table get rows
-	//WP Table insert columns
-	//WP Table insert rows
 	

@@ -180,7 +180,7 @@ Function getBody()->$body : cs:C1710.WPelement  // ∆∆∆
 	//mark:-HEADERS AND FOOTERS
 	
 Function getHeader($sectionIndex : Integer; $subSectionType : Integer)->$header : cs:C1710.WPelement
-	var $docHeader : 4D:C1709.WriteElement
+	var $docHeader : Object  //4D.WriteElement
 	Case of 
 		: (Count parameters:C259=1)
 			$docHeader:=WP Get header:C1503(This:C1470.document; $sectionIndex)
@@ -192,7 +192,7 @@ Function getHeader($sectionIndex : Integer; $subSectionType : Integer)->$header 
 	End if 
 	
 Function getFooter($sectionIndex : Integer; $subSectionType : Integer)->$footer : cs:C1710.WPelement
-	var $docFooter : 4D:C1709.WriteElement
+	var $docFooter : Object  //4D.WriteElement
 	Case of 
 		: (Count parameters:C259=1)
 			$docFooter:=WP Get footer:C1504(This:C1470.document; $sectionIndex)
