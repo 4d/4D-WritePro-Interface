@@ -32,24 +32,30 @@ Case of
 		
 		// UI_PaletteFonts moved from here…
 		
-		If ($setupOK) & ($typeSelection#2)
+		If ($setupOK)  //splitted in two lines by RL on 2024/07/16
+			If ($typeSelection#2)
+				
+				WP_GetFontInfo(Form:C1466.selection)  // font, size, weight, textcolor
+				
+				WP_GetBackgroundColor(Form:C1466.selection)
+				
+				WP_GetTextUnderline(Form:C1466.selection)
+				
+				//WP_GetFontVertAlign(Form.selection)
+				
+				//WP_GetTextTransform(Form.selection)
+				
+				WP_GetTextShadow(Form:C1466.selection)
+			End if 
 			
-			WP_GetFontInfo(Form:C1466.selection)  // font, size, weight, textcolor
+			// …to here
+			UI_PaletteFonts
 			
-			WP_GetBackgroundColor(Form:C1466.selection)
-			
-			WP_GetTextUnderline(Form:C1466.selection)
-			
-			//WP_GetFontVertAlign(Form.selection)
-			
-			//WP_GetTextTransform(Form.selection)
-			
-			WP_GetTextShadow(Form:C1466.selection)
-			
+		Else 
+			//something wrong with setup (ex: cursor was in the header and header has been deleted)
+			// Do nothing until $setup is OK (on next click inside the area)
 		End if 
 		
-		// …to here
-		UI_PaletteFonts
 		
 		//: (Form event=On Close Box)
 		

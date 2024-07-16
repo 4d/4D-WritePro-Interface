@@ -32,7 +32,7 @@ If (Not:C34(Undefined:C82(Form:C1466.eventCode)))  //2023/01/25 by RL
 	oForm.eventCode:=Form:C1466.eventCode
 End if 
 
-If (Form:C1466.selection#Null:C1517)
+If (Form:C1466.selection#Null:C1517) && (Not:C34(Undefined:C82(Form:C1466.selection.owner)))  // second condition added by RL on 2024/07/16
 	
 	
 	Form:C1466.document:=Form:C1466.selection.owner

@@ -1,0 +1,745 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"WParea": {
+					"type": "write",
+					"top": 21,
+					"left": 17,
+					"width": 660,
+					"height": 680,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.wp",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"WPwidget": {
+					"type": "subform",
+					"top": 21,
+					"left": 697,
+					"width": 260,
+					"height": 680,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"detailForm": "WP_Palette",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Button": {
+					"type": "button",
+					"text": "With parameter",
+					"top": 61,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"focusable": false
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Without parameter",
+					"top": 94,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm",
+					"focusable": false
+				},
+				"Button2": {
+					"type": "button",
+					"text": "new bookmark",
+					"top": 143,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm",
+					"focusable": false
+				},
+				"Button3": {
+					"type": "button",
+					"text": "Get bookmarks",
+					"top": 174,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm",
+					"focusable": false
+				},
+				"Button4": {
+					"type": "button",
+					"text": "Bookmark range",
+					"top": 224,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm",
+					"focusable": false
+				},
+				"Button5": {
+					"type": "button",
+					"text": "PAGE COUNT(DOC)",
+					"top": 274,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button5.4dm",
+					"focusable": false
+				},
+				"Button6": {
+					"type": "button",
+					"text": "PAGE COUNT(SECTION 2)",
+					"top": 299,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button6.4dm",
+					"focusable": false
+				},
+				"Button7": {
+					"type": "button",
+					"text": "Get sectionS",
+					"top": 344,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button7.4dm",
+					"focusable": false
+				},
+				"Button8": {
+					"type": "button",
+					"text": "new TEXTBOX",
+					"top": 381,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button8.4dm",
+					"focusable": false
+				},
+				"Button9": {
+					"type": "button",
+					"text": "Find all",
+					"top": 594,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button9.4dm",
+					"focusable": false
+				},
+				"Button10": {
+					"type": "button",
+					"text": "Get formulas",
+					"top": 662,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button10.4dm",
+					"focusable": false
+				},
+				"Button11": {
+					"type": "button",
+					"text": "Get BREAKS",
+					"top": 696,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button11.4dm",
+					"focusable": false
+				},
+				"Button12": {
+					"type": "button",
+					"text": "Get elements",
+					"top": 730,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button12.4dm",
+					"focusable": false
+				},
+				"Button13": {
+					"type": "button",
+					"text": "PREPEND",
+					"top": 465,
+					"left": 985,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button13.4dm",
+					"focusable": false
+				},
+				"Button14": {
+					"type": "button",
+					"text": "REPLACE",
+					"top": 496,
+					"left": 985,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button14.4dm",
+					"focusable": false
+				},
+				"Button15": {
+					"type": "button",
+					"text": "APPEND picture APP",
+					"top": 527,
+					"left": 985,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button15.4dm",
+					"focusable": false
+				},
+				"Text": {
+					"type": "text",
+					"text": "DOC",
+					"top": 441,
+					"left": 990,
+					"width": 54,
+					"height": 16
+				},
+				"Button16": {
+					"type": "button",
+					"text": "PREPEND",
+					"top": 465,
+					"left": 1074,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button16.4dm",
+					"focusable": false
+				},
+				"Button17": {
+					"type": "button",
+					"text": "REPLACE",
+					"top": 496,
+					"left": 1074,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button17.4dm",
+					"focusable": false
+				},
+				"Button18": {
+					"type": "button",
+					"text": "APPEND picture APP",
+					"top": 527,
+					"left": 1074,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button18.4dm",
+					"focusable": false
+				},
+				"Text1": {
+					"type": "text",
+					"text": "SECTION",
+					"top": 441,
+					"left": 1079,
+					"width": 64,
+					"height": 16
+				},
+				"Button19": {
+					"type": "button",
+					"text": "PREPEND",
+					"top": 465,
+					"left": 1163,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button19.4dm",
+					"focusable": false
+				},
+				"Button20": {
+					"type": "button",
+					"text": "REPLACE",
+					"top": 496,
+					"left": 1163,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button20.4dm",
+					"focusable": false
+				},
+				"Button21": {
+					"type": "button",
+					"text": "APPEND picture APP",
+					"top": 527,
+					"left": 1163,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button21.4dm",
+					"focusable": false
+				},
+				"Text2": {
+					"type": "text",
+					"text": "RANGE",
+					"top": 441,
+					"left": 1168,
+					"width": 64,
+					"height": 16
+				},
+				"Button22": {
+					"type": "button",
+					"text": "PREPEND",
+					"top": 465,
+					"left": 1253,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button22.4dm",
+					"focusable": false
+				},
+				"Button23": {
+					"type": "button",
+					"text": "REPLACE",
+					"top": 496,
+					"left": 1253,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button23.4dm",
+					"focusable": false
+				},
+				"Button24": {
+					"type": "button",
+					"text": "APPEND picture APP",
+					"top": 527,
+					"left": 1253,
+					"width": 77,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button24.4dm",
+					"focusable": false
+				},
+				"Text3": {
+					"type": "text",
+					"text": "ELEMENT",
+					"top": 441,
+					"left": 1258,
+					"width": 64,
+					"height": 16
+				},
+				"Button25": {
+					"type": "button",
+					"text": "insert table DOC",
+					"top": 21,
+					"left": 1375,
+					"width": 127,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button25.4dm",
+					"focusable": false
+				},
+				"Button26": {
+					"type": "button",
+					"text": "insert table section",
+					"top": 21,
+					"left": 1513,
+					"width": 167,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button26.4dm",
+					"focusable": false
+				},
+				"Button27": {
+					"type": "button",
+					"text": "insert table range",
+					"top": 54,
+					"left": 1375,
+					"width": 127,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button27.4dm",
+					"focusable": false
+				},
+				"Button28": {
+					"type": "button",
+					"text": "insert table elem",
+					"top": 54,
+					"left": 1513,
+					"width": 167,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button28.4dm",
+					"focusable": false
+				},
+				"Button30": {
+					"type": "button",
+					"text": "Get/Delete header",
+					"top": 299,
+					"left": 1375,
+					"width": 260,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button30.4dm",
+					"focusable": false
+				},
+				"Button31": {
+					"type": "button",
+					"text": "Get/Delete footer",
+					"top": 329,
+					"left": 1375,
+					"width": 260,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button31.4dm",
+					"focusable": false
+				},
+				"Button32": {
+					"type": "button",
+					"text": "Get/Delete header 1st",
+					"top": 369,
+					"left": 1375,
+					"width": 260,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button32.4dm",
+					"focusable": false
+				},
+				"Button33": {
+					"type": "button",
+					"text": "Get/Delete footer 1st",
+					"top": 399,
+					"left": 1375,
+					"width": 260,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button33.4dm",
+					"focusable": false
+				},
+				"Button34": {
+					"type": "button",
+					"text": "Get/Delete header left",
+					"top": 439,
+					"left": 1375,
+					"width": 260,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button34.4dm",
+					"focusable": false
+				},
+				"Button35": {
+					"type": "button",
+					"text": "Get/Delete footer left",
+					"top": 469,
+					"left": 1375,
+					"width": 260,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button35.4dm",
+					"focusable": false
+				},
+				"Button36": {
+					"type": "button",
+					"text": "Get/Delete header right",
+					"top": 509,
+					"left": 1375,
+					"width": 260,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button36.4dm",
+					"focusable": false
+				},
+				"Button37": {
+					"type": "button",
+					"text": "Get/Delete footer right",
+					"top": 539,
+					"left": 1375,
+					"width": 260,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button37.4dm",
+					"focusable": false
+				},
+				"Button38": {
+					"type": "button",
+					"text": "Delete sub first page",
+					"top": 673,
+					"left": 1392,
+					"width": 150,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button38.4dm",
+					"focusable": false
+				},
+				"Button39": {
+					"type": "button",
+					"text": "Delete sub right page",
+					"top": 702,
+					"left": 1392,
+					"width": 150,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button39.4dm",
+					"focusable": false
+				},
+				"Button40": {
+					"type": "button",
+					"text": "Delete sub left page",
+					"top": 731,
+					"left": 1392,
+					"width": 150,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button40.4dm",
+					"focusable": false
+				},
+				"Button41": {
+					"type": "button",
+					"text": "Delete sec;first page",
+					"top": 673,
+					"left": 1562,
+					"width": 150,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button41.4dm",
+					"focusable": false
+				},
+				"Button42": {
+					"type": "button",
+					"text": "Delete sec;right page",
+					"top": 702,
+					"left": 1562,
+					"width": 150,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button42.4dm",
+					"focusable": false
+				},
+				"Button43": {
+					"type": "button",
+					"text": "Delete sec;left page",
+					"top": 731,
+					"left": 1562,
+					"width": 150,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button43.4dm",
+					"focusable": false
+				},
+				"Button44": {
+					"type": "button",
+					"text": "New sub first page",
+					"top": 143,
+					"left": 1374,
+					"width": 150,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button44.4dm",
+					"focusable": false
+				},
+				"Button45": {
+					"type": "button",
+					"text": "New sub right page",
+					"top": 172,
+					"left": 1374,
+					"width": 150,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button45.4dm",
+					"focusable": false
+				},
+				"Button46": {
+					"type": "button",
+					"text": "New sub left page",
+					"top": 201,
+					"left": 1374,
+					"width": 150,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button46.4dm",
+					"focusable": false
+				},
+				"Button47": {
+					"type": "button",
+					"text": "NEW",
+					"top": 21,
+					"left": 1005,
+					"width": 307,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button47.4dm",
+					"focusable": false,
+					"fontWeight": "bold"
+				},
+				"Button48": {
+					"type": "button",
+					"text": "New H/F first page",
+					"top": 143,
+					"left": 1544,
+					"width": 150,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button48.4dm",
+					"focusable": false
+				}
+			}
+		}
+	],
+	"geometryStamp": 288,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
