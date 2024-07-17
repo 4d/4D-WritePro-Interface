@@ -1,13 +1,7 @@
-Class constructor($target : Object; $index : Integer)
+Class constructor($target : Object; $index : Integer)  // $target is a 4D_WriteSection
 	
-	//Case of 
-	//: (OB Instance of($target; 4D.WriteSection))  // regular call, from cs.WRdocument
-	//This.section:=$target
+	This:C1470.section:=$target
 	
-	//: (OB Instance of($target; 4D.WriteDocument))  // direct call, from 4D Code
-	//This.section:=WP Get section($target; $index)
-	
-	//End case 
 	
 	//mark:-PAGE COUNT  (CALCULATED ATTRIBUTE)
 	
@@ -42,18 +36,6 @@ Function newFooter($section : Object)->$footer : Object
 	
 	//mark:-SUBSECTION
 	
-	//Function getSection()->$section : cs.WPsection
-	//$section:=cs.WPsection.new(WP Get section(This.section))
-	
-	//Function getSections()->$sections : Collection
-	
-	//var $i; $n : Integer
-	//$sections:=WP Get sections(This.section)
-	//$n:=$sections.length-1
-	//For ($i; 0; $n)
-	//$sections[$i]:=cs.WPsection.new($sections[$i])
-	//End for 
-	
 Function getSubsection($subsectionType : Integer)->$subsection : cs:C1710.WPsection
 	$subsection:=cs:C1710.WPsection.new(WP Get subsection:C1582(This:C1470.section; $subsectionType))
 	
@@ -68,7 +50,6 @@ Function getLinks()->$links : Collection
 	
 Function setLink($linkObject)
 	WP SET LINK:C1642(This:C1470.section; $linkObject)
-	
 	
 	
 	//mark:-FORMULAS
@@ -91,7 +72,7 @@ Function freezeFormulas($recompute : Integer)
 Function getFormulas()->$formulas : Collection
 	var $i; $n : Integer
 	$formulas:=WP Get formulas:C1702(This:C1470.section)
-	// REPLACE ALL 4D.WriteRange by cs.WPrange
+	// REPLACE ALL _Range by cs.WPrange
 	$n:=$formulas.length-1
 	For ($i; 0; $n)
 		$formulas[$i].range:=cs:C1710.WPrange.new($formulas[$i].range)
@@ -181,30 +162,33 @@ Function findAll($searchValue : Text; $searchCondition : Integer; $replaceValue 
 		: (Count parameters:C259=3)
 			$rangeCollection:=WP Find all:C1755(This:C1470.section; $searchValue; $searchCondition; $replaceValue)
 	End case 
-	// REPLACE ALL 4D.WriteRange by cs.WPrange
+	// REPLACE ALL 4D_WriteRange by cs.WPrange
 	$n:=$rangeCollection.length-1
 	For ($i; 0; $n)
 		$rangeCollection[$i]:=cs:C1710.WPrange.new($rangeCollection[$i])
 	End for 
 	
 Function findNext($searchAfter : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
+	
 	var $result : Object
+	
 	If (OB Instance of:C1731($searchAfter; cs:C1710.WPrange))
-		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D.WriteRange
+		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D_WriteRange
 	End if 
+	
 	Case of 
 		: (Count parameters:C259=3)
 			$result:=WP Find next:C1764(This:C1470.section; $searchAfter; $searchValue; $searchCondition)
 		: (Count parameters:C259=4)
 			$result:=WP Find next:C1764(This:C1470.section; $searchAfter; $searchValue; $searchCondition; $replaceValue)
 	End case 
-	// replace 4D.WriteRange by cs.WPrange
+	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
 	
 Function findPrevious($searchAfter : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
 	var $result : Object
 	If (OB Instance of:C1731($searchAfter; cs:C1710.WPrange))
-		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D.WriteRange
+		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D_WriteRange
 	End if 
 	Case of 
 		: (Count parameters:C259=3)
@@ -212,7 +196,7 @@ Function findPrevious($searchAfter : Object; $searchValue : Text; $searchConditi
 		: (Count parameters:C259=4)
 			$result:=WP Find previous:C1765(This:C1470.section; $searchAfter; $searchValue; $searchCondition; $replaceValue)
 	End case 
-	// replace 4D.WriteRange by cs.WPrange
+	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
 	
 	//mark:-GET ELEMENTS
@@ -224,7 +208,7 @@ Function getElements($elementType : Integer)->$elements : Collection
 		: (Count parameters:C259=1)
 			$elements:=WP Get elements:C1550(This:C1470.section; $elementType)
 	End case 
-	// replace 4D.WriteElement by cs.WPelement
+	// replace 4D_WriteElement by cs.WPelement
 	var $i; $n : Integer
 	$n:=$elements.length-1
 	For ($i; 0; $n)
@@ -301,3 +285,11 @@ Function delete($subsectionType)
 			
 	End case 
 	
+	
+	//mark:- INSERT DOCUMENT
+	
+Function insertDocument($wpDoc : Object; $mode : Integer; $rangeUpdate : Integer)
+	If (Count parameters:C259<3)
+		$rangeUpdate:=wk include in range:K81:180
+	End if 
+	WP INSERT DOCUMENT:C1411(This:C1470.section; $wpDoc; $mode; $rangeUpdate)

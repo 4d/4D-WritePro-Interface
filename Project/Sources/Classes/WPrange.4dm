@@ -1,4 +1,4 @@
-Class constructor($range : Object)  //4D.WriteRange)
+Class constructor($range : Object)  //4D_WriteRange)
 	This:C1470.range:=$range
 	This:C1470.document:=This:C1470.range.owner
 	
@@ -45,7 +45,7 @@ Function freezeFormulas($recompute : Integer)
 Function getFormulas()->$formulas : Collection
 	var $i; $n : Integer
 	$formulas:=WP Get formulas:C1702(This:C1470.range)
-	// REPLACE ALL 4D.WriteRange by cs.WPrange
+	// REPLACE ALL 4D_WriteRange by cs.WPrange
 	$n:=$formulas.length-1
 	For ($i; 0; $n)
 		$formulas[$i].range:=cs:C1710.WPrange.new($formulas[$i].range)
@@ -151,7 +151,7 @@ Function findAll($searchValue : Text; $searchCondition : Integer; $replaceValue 
 		: (Count parameters:C259=3)
 			$rangeCollection:=WP Find all:C1755(This:C1470.range; $searchValue; $searchCondition; $replaceValue)
 	End case 
-	// REPLACE ALL 4D.WriteRange by cs.WPrange
+	// REPLACE ALL 4D_WriteRange by cs.WPrange
 	$n:=$rangeCollection.length-1
 	For ($i; 0; $n)
 		$rangeCollection[$i]:=cs:C1710.WPrange.new($rangeCollection[$i])
@@ -160,7 +160,7 @@ Function findAll($searchValue : Text; $searchCondition : Integer; $replaceValue 
 Function findNext($searchAfter : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
 	var $result : Object
 	If (OB Instance of:C1731($searchAfter; cs:C1710.WPrange))
-		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D.WriteRange
+		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D_WriteRange
 	End if 
 	Case of 
 		: (Count parameters:C259=3)
@@ -168,13 +168,13 @@ Function findNext($searchAfter : Object; $searchValue : Text; $searchCondition :
 		: (Count parameters:C259=4)
 			$result:=WP Find next:C1764(This:C1470.range; $searchAfter; $searchValue; $searchCondition; $replaceValue)
 	End case 
-	// replace 4D.WriteRange by cs.WPrange
+	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
 	
 Function findPrevious($searchAfter : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
 	var $result : Object
 	If (OB Instance of:C1731($searchAfter; cs:C1710.WPrange))
-		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D.WriteRange
+		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D_WriteRange
 	End if 
 	Case of 
 		: (Count parameters:C259=3)
@@ -182,7 +182,7 @@ Function findPrevious($searchAfter : Object; $searchValue : Text; $searchConditi
 		: (Count parameters:C259=4)
 			$result:=WP Find previous:C1765(This:C1470.range; $searchAfter; $searchValue; $searchCondition; $replaceValue)
 	End case 
-	// replace 4D.WriteRange by cs.WPrange
+	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
 	
 	//mark:-GET ELEMENTS
@@ -194,7 +194,7 @@ Function getElements($elementType : Integer)->$elements : Collection
 		: (Count parameters:C259=1)
 			$elements:=WP Get elements:C1550(This:C1470.range; $elementType)
 	End case 
-	// replace 4D.WriteElement by cs.WPelement
+	// replace 4D_WriteElement by cs.WPelement
 	var $i; $n : Integer
 	$n:=$elements.length-1
 	For ($i; 0; $n)
@@ -259,3 +259,10 @@ Function insertTable($mode : Integer; $rangeUpdate : Integer; $nbCols : Integer;
 	
 	$table:=cs:C1710.WPtable.new(WP Insert table:C1473(This:C1470.range; $mode; $rangeUpdate; $nbCols; $nbRows))
 	
+	//mark:- INSERT DOCUMENT
+	
+Function insertDocument($wpDoc : Object; $mode : Integer; $rangeUpdate : Integer)
+	If (Count parameters:C259<3)
+		$rangeUpdate:=wk include in range:K81:180
+	End if 
+	WP INSERT DOCUMENT:C1411(This:C1470.range; $wpDoc; $mode; $rangeUpdate)

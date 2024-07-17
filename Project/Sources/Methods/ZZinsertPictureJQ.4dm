@@ -38,9 +38,6 @@
 //$image:=$images[0]
 //End if 
 
-
 //return $image
-
-
 
 

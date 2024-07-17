@@ -1,4 +1,4 @@
-Class constructor($document : Object)  //4D.WriteDocument)
+Class constructor($document : Object)  // 4D_WriteDocument)
 	
 	If (Count parameters:C259=0)
 		This:C1470.document:=WP New:C1317
@@ -79,7 +79,7 @@ Function setFrame($frameSelector : Integer; $textBoxID : Text)
 			WP SET FRAME:C1518(This:C1470.document; $frameSelector)
 	End case 
 	
-	//  GET LINKS -- SET LINK
+	//mark:-GET LINKS -- SET LINK
 	
 Function getLinks()->$links : Collection
 	$links:=WP Get links:C1643(This:C1470.document)
@@ -113,7 +113,7 @@ Function freezeFormulas($recompute : Integer)
 Function getFormulas()->$formulas : Collection
 	var $i; $n : Integer
 	$formulas:=WP Get formulas:C1702(This:C1470.document)
-	// REPLACE ALL 4D.WriteRange by cs.WPrange
+	// REPLACE ALL 4D_WriteRange by cs.WPrange
 	$n:=$formulas.length-1
 	For ($i; 0; $n)
 		$formulas[$i].range:=cs:C1710.WPrange.new($formulas[$i].range)
@@ -130,7 +130,7 @@ Function getBreaks($breakType : Integer)->$breaks : Collection  //of integers
 		: (Count parameters:C259>=1)
 			$breaks:=WP Get breaks:C1768(This:C1470.document; $breakType)
 	End case 
-	// REPLACE ALL 4D.WriteRange by cs.WPrange
+	// REPLACE ALL 4D_WriteRange by cs.WPrange
 	$n:=$breaks.length-1
 	For ($i; 0; $n)
 		$breaks[$i]:=cs:C1710.WPrange.new($breaks[$i])
@@ -180,7 +180,7 @@ Function getBody()->$body : cs:C1710.WPelement  // ∆∆∆
 	//mark:-HEADERS AND FOOTERS
 	
 Function getHeader($sectionIndex : Integer; $subSectionType : Integer)->$header : cs:C1710.WPelement
-	var $docHeader : Object  //4D.WriteElement
+	var $docHeader : Object  //4D_WriteElement
 	Case of 
 		: (Count parameters:C259=1)
 			$docHeader:=WP Get header:C1503(This:C1470.document; $sectionIndex)
@@ -192,7 +192,7 @@ Function getHeader($sectionIndex : Integer; $subSectionType : Integer)->$header 
 	End if 
 	
 Function getFooter($sectionIndex : Integer; $subSectionType : Integer)->$footer : cs:C1710.WPelement
-	var $docFooter : Object  //4D.WriteElement
+	var $docFooter : Object  //4D_WriteElement
 	Case of 
 		: (Count parameters:C259=1)
 			$docFooter:=WP Get footer:C1504(This:C1470.document; $sectionIndex)
@@ -219,19 +219,16 @@ Function getBookmarks($withRanges : Boolean)->$bookmarks : Collection  // of tex
 	$bookmarks:=New collection:C1472
 	If ($withRanges)
 		For ($i; 1; Size of array:C274($bookmarkNames))
-			$range:=cs:C1710.WPrange.new(WP Bookmark range:C1416(This:C1470.document; $bookmarkNames{$i}))  // ∆∆∆ transform 4D.WriteRange into cs.WRrange
+			$range:=cs:C1710.WPrange.new(WP Bookmark range:C1416(This:C1470.document; $bookmarkNames{$i}))  // ∆∆∆ transform 4D_WriteRange into cs.WRrange
 			$bookmarks.push({name: $bookmarkNames{$i}; range: $range})
 		End for 
 	Else 
 		ARRAY TO COLLECTION:C1563($bookmarks; $bookmarkNames)
 	End if 
 	
-Function newBookmark($range : Object; $name : Text)
+Function newBookmark($range : cs:C1710.WPrange; $name : Text)
 	
-	If (OB Instance of:C1731($range; cs:C1710.WPrange))
-		$range:=$range.range  //cs.WPrange -> 4D.WriteRange
-	End if 
-	WP NEW BOOKMARK:C1415($range; $name)
+	WP NEW BOOKMARK:C1415($range.range; $name)
 	
 	
 Function deleteBookmarks($bookmarks : Variant)
@@ -262,7 +259,7 @@ Function findAll($searchValue : Text; $searchCondition : Integer; $replaceValue 
 		: (Count parameters:C259=3)
 			$rangeCollection:=WP Find all:C1755(This:C1470.document; $searchValue; $searchCondition; $replaceValue)
 	End case 
-	// REPLACE ALL 4D.WriteRange by cs.WPrange
+	// REPLACE ALL 4D_WriteRange by cs.WPrange
 	$n:=$rangeCollection.length-1
 	For ($i; 0; $n)
 		$rangeCollection[$i]:=cs:C1710.WPrange.new($rangeCollection[$i])
@@ -271,7 +268,7 @@ Function findAll($searchValue : Text; $searchCondition : Integer; $replaceValue 
 Function findNext($searchAfter : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
 	var $result : Object
 	If (OB Instance of:C1731($searchAfter; cs:C1710.WPrange))
-		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D.WriteRange
+		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D_WriteRange
 	End if 
 	Case of 
 		: (Count parameters:C259=3)
@@ -279,13 +276,13 @@ Function findNext($searchAfter : Object; $searchValue : Text; $searchCondition :
 		: (Count parameters:C259=4)
 			$result:=WP Find next:C1764(This:C1470.document; $searchAfter; $searchValue; $searchCondition; $replaceValue)
 	End case 
-	// replace 4D.WriteRange by cs.WPrange
+	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
 	
 Function findPrevious($searchAfter : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
 	var $result : Object
 	If (OB Instance of:C1731($searchAfter; cs:C1710.WPrange))
-		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D.WriteRange
+		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D_WriteRange
 	End if 
 	Case of 
 		: (Count parameters:C259=3)
@@ -293,7 +290,7 @@ Function findPrevious($searchAfter : Object; $searchValue : Text; $searchConditi
 		: (Count parameters:C259=4)
 			$result:=WP Find previous:C1765(This:C1470.document; $searchAfter; $searchValue; $searchCondition; $replaceValue)
 	End case 
-	// replace 4D.WriteRange by cs.WPrange
+	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
 	
 	//mark:-GET ELEMENTS
@@ -308,7 +305,7 @@ Function getElements($elementType : Integer)->$elements : Collection
 		: (Count parameters:C259=1)
 			$elements:=WP Get elements:C1550(This:C1470.document; $elementType)
 	End case 
-	// replace 4D.WriteElement by cs.WPelement
+	// replace 4D_WriteElement by cs.WPelement
 	var $i; $n : Integer
 	$n:=$elements.length-1
 	For ($i; 0; $n)
@@ -324,14 +321,6 @@ Function getPosition($layout : Integer)->$information : Object
 		: (Count parameters:C259=1)
 			$information:=WP Get position:C1577(This:C1470.document; $layout)
 	End case 
-	
-	//mark:-STYLE SHEET
-	
-Function newStyleSheet($styleSheetType : Integer; $styleSheetName : Text)->$styleSheet : cs:C1710.WPstyleSheet
-	var $stylesheet4D : Object  //4D.WriteStyleSheet
-	
-	$stylesheet4D:=WP New style sheet:C1650(This:C1470.document; $styleSheetType; $styleSheetName)
-	$styleSheet:=cs:C1710.WPstyleSheet.new(stylesheet4D)
 	
 	
 	//mark:-PRINT
@@ -368,6 +357,19 @@ Function insertPicture($picture : Picture; $insertMode : Integer)->$pictureEleme
 	
 	$pictureElement:=cs:C1710.WPelement.new(WP Get elements:C1550($range; wk type image:K81:192)[0])
 	
+	
+Function newAnchoredPicture($picture : Variant)->$pictureElement : cs:C1710.WPelement
+	
+	Case of 
+		: (Count parameters:C259=0)
+			$pictureElement:=cs:C1710.WPelement.new(WP Add picture:C1536(This:C1470.document))
+		: (Count parameters:C259=1)
+			$pictureElement:=cs:C1710.WPelement.new(WP Add picture:C1536(This:C1470.document; $picture))
+	End case 
+	
+	
+	
+	
 	//mark:-TABLES
 	
 Function insertTable($mode : Integer; $rangeUpdate : Integer; $nbCols : Integer; $nbRows : Integer)->$table : cs:C1710.WPtable
@@ -381,5 +383,83 @@ Function insertTable($mode : Integer; $rangeUpdate : Integer; $nbCols : Integer;
 	End case 
 	
 	$table:=cs:C1710.WPtable.new(WP Insert table:C1473(This:C1470.document; $mode; $rangeUpdate; $nbCols; $nbRows))
+	
+	//mark:-IMPORT EXPORT INSERT
+	
+Function exportDocument($filePath : Text; $format : Integer; $option : Object)
+	
+	Case of 
+		: (Count parameters:C259=1)
+			WP EXPORT DOCUMENT:C1337(This:C1470.document; $filePath)
+			
+		: (Count parameters:C259=2)
+			WP EXPORT DOCUMENT:C1337(This:C1470.document; $filePath; $format)
+			
+		: (Count parameters:C259=3)
+			WP EXPORT DOCUMENT:C1337(This:C1470.document; $filePath; $format; $option)
+			
+	End case 
+	
+Function exportVariable($format : Integer; $option : Object)->$exported : Variant
+	
+	// if $format = html or SVG, destination shall be TEXT, otherwise it will be BLOB
+	var $destination : Variant
+	Case of 
+			
+		: (Count parameters:C259=1)
+			WP EXPORT VARIABLE:C1319(This:C1470.document; $destination; $format)
+			
+		: (Count parameters:C259=2)
+			WP EXPORT DOCUMENT:C1337(This:C1470.document; $destination; $format; $option)
+			
+	End case 
+	$exported:=$destination
+	
+	
+Function importDocument($filePath : Text; $option : Variant)
+	
+	var $importedDoc : Object
+	Case of 
+		: (Count parameters:C259=1)
+			$importedDoc:=WP Import document:C1318($filePath)
+			
+		: (Count parameters:C259=2)
+			$importedDoc:=WP Import document:C1318($filePath; $option)
+			
+	End case 
+	This:C1470.document:=$importedDoc
+	
+Function insertDocument($wpDoc : Object; $mode : Integer; $rangeUpdate : Integer)
+	If (Count parameters:C259<3)
+		$rangeUpdate:=wk include in range:K81:180
+	End if 
+	WP INSERT DOCUMENT:C1411(This:C1470.document; $wpDoc; $mode; $rangeUpdate)
+	
+	
+	//mark:-STYLE SHEET(S)
+	
+Function newStyleSheet($styleSheetType : Integer; $styleSheetName : Text)->$styleSheet : cs:C1710.WPstyleSheet
+	
+	$styleSheet:=cs:C1710.WPstyleSheet.new(WP New style sheet:C1650(This:C1470.document; $styleSheetType; $styleSheetName))
+	
+Function getStyleSheet($styleSheetName : Text)->$styleSheet : cs:C1710.WPstyleSheet
+	
+	$styleSheet:=cs:C1710.WPstyleSheet.new(WP Get style sheet:C1656(This:C1470.document; $styleSheetName))
+	
+Function getStyleSheets($styleSheetType : Integer)->$styleSheets : Collection
+	
+	var $i; $n : Integer
+	
+	$styleSheets:=WP Get style sheets:C1655(This:C1470.document; $styleSheetType)
+	$n:=$styleSheets.length-1
+	For ($i; 0; $n)
+		$styleSheets[$i]:=cs:C1710.WPstyleSheet.new($styleSheets[$i])
+	End for 
+	
+Function importStyleSheets($sourceDocument : cs:C1710.WPdocument)
+	
+	WP IMPORT STYLE SHEETS:C1673(This:C1470.document; $sourceDocument)
+	
+	
 	
 	

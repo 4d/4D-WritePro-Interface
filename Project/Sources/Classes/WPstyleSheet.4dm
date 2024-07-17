@@ -1,10 +1,8 @@
-Class constructor($styleSheet : Object)  //4D.WriteStyleSheet)
+Class constructor($styleSheet : Object)  //4D_WriteStyleSheet)
 	This:C1470.styleSheet:=$styleSheet
 	
 	
-	
-	
-	// ATTRIBUTES
+	//mark:-ATTRIBUTES
 	
 Function resetAttributes($attributeNames : Collection)  // collection of attribute names (strings)
 	
@@ -32,3 +30,13 @@ Function getAttributes($attributeNames : Collection)->$attributes : Object  // c
 		WP GET ATTRIBUTES:C1345(This:C1470.styleSheet; $attributeName; $attributeValue)
 		$attributes[$attributeName]:=$attributeValue
 	End for each 
+	
+	
+	//mark:-DELETE
+Function delete()
+	
+	WP DELETE STYLE SHEET:C1652(This:C1470.styleSheet)
+	
+	
+	
+	

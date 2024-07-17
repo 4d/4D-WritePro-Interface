@@ -720,26 +720,53 @@
 				},
 				"Button48": {
 					"type": "button",
-					"text": "New H/F first page",
+					"text": "New Head/Foot 1st page",
 					"top": 143,
 					"left": 1544,
-					"width": 150,
+					"width": 180,
 					"height": 25,
 					"events": [
 						"onClick"
 					],
 					"method": "ObjectMethods/Button48.4dm",
 					"focusable": false
+				},
+				"Button29": {
+					"type": "button",
+					"text": "New Head/Foot left page",
+					"top": 173,
+					"left": 1544,
+					"width": 180,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button29.4dm",
+					"focusable": false
+				},
+				"Button49": {
+					"type": "button",
+					"text": "New Head/Foot left page",
+					"top": 203,
+					"left": 1544,
+					"width": 180,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button49.4dm",
+					"focusable": false
 				}
 			}
 		}
 	],
-	"geometryStamp": 288,
+	"geometryStamp": 296,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"method": "method.4dm"
 }
