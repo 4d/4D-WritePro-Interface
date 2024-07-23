@@ -85,7 +85,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button1": {
 					"type": "button",
@@ -98,7 +99,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button1.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button2": {
 					"type": "button",
@@ -111,7 +113,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button2.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button3": {
 					"type": "button",
@@ -124,7 +127,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button3.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button4": {
 					"type": "button",
@@ -137,7 +141,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button4.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button5": {
 					"type": "button",
@@ -150,7 +155,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button5.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button6": {
 					"type": "button",
@@ -163,7 +169,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button6.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button7": {
 					"type": "button",
@@ -176,7 +183,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button7.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button8": {
 					"type": "button",
@@ -189,7 +197,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button8.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button9": {
 					"type": "button",
@@ -202,7 +211,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button9.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button10": {
 					"type": "button",
@@ -215,7 +225,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button10.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button11": {
 					"type": "button",
@@ -228,7 +239,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button11.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button12": {
 					"type": "button",
@@ -241,7 +253,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button12.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button13": {
 					"type": "button",
@@ -254,7 +267,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button13.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button14": {
 					"type": "button",
@@ -267,7 +281,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button14.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button15": {
 					"type": "button",
@@ -280,7 +295,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button15.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Text": {
 					"type": "text",
@@ -288,7 +304,8 @@
 					"top": 441,
 					"left": 990,
 					"width": 54,
-					"height": 16
+					"height": 16,
+					"sizingX": "move"
 				},
 				"Button16": {
 					"type": "button",
@@ -301,7 +318,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button16.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button17": {
 					"type": "button",
@@ -314,7 +332,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button17.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button18": {
 					"type": "button",
@@ -327,7 +346,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button18.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Text1": {
 					"type": "text",
@@ -335,7 +355,8 @@
 					"top": 441,
 					"left": 1079,
 					"width": 64,
-					"height": 16
+					"height": 16,
+					"sizingX": "move"
 				},
 				"Button19": {
 					"type": "button",
@@ -348,7 +369,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button19.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button20": {
 					"type": "button",
@@ -361,7 +383,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button20.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button21": {
 					"type": "button",
@@ -374,7 +397,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button21.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Text2": {
 					"type": "text",
@@ -382,7 +406,8 @@
 					"top": 441,
 					"left": 1168,
 					"width": 64,
-					"height": 16
+					"height": 16,
+					"sizingX": "move"
 				},
 				"Button22": {
 					"type": "button",
@@ -395,7 +420,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button22.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button23": {
 					"type": "button",
@@ -408,7 +434,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button23.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button24": {
 					"type": "button",
@@ -421,7 +448,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button24.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Text3": {
 					"type": "text",
@@ -429,7 +457,8 @@
 					"top": 441,
 					"left": 1258,
 					"width": 64,
-					"height": 16
+					"height": 16,
+					"sizingX": "move"
 				},
 				"Button25": {
 					"type": "button",
@@ -442,7 +471,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button25.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button26": {
 					"type": "button",
@@ -455,7 +485,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button26.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button27": {
 					"type": "button",
@@ -468,7 +499,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button27.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button28": {
 					"type": "button",
@@ -481,7 +513,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button28.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button30": {
 					"type": "button",
@@ -494,7 +527,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button30.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button31": {
 					"type": "button",
@@ -507,7 +541,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button31.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button32": {
 					"type": "button",
@@ -520,7 +555,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button32.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button33": {
 					"type": "button",
@@ -533,7 +569,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button33.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button34": {
 					"type": "button",
@@ -546,7 +583,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button34.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button35": {
 					"type": "button",
@@ -559,7 +597,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button35.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button36": {
 					"type": "button",
@@ -572,7 +611,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button36.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button37": {
 					"type": "button",
@@ -585,7 +625,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button37.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button38": {
 					"type": "button",
@@ -598,7 +639,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button38.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button39": {
 					"type": "button",
@@ -611,7 +653,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button39.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button40": {
 					"type": "button",
@@ -624,7 +667,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button40.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button41": {
 					"type": "button",
@@ -637,7 +681,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button41.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button42": {
 					"type": "button",
@@ -650,7 +695,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button42.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button43": {
 					"type": "button",
@@ -663,7 +709,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button43.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button44": {
 					"type": "button",
@@ -676,7 +723,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button44.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button45": {
 					"type": "button",
@@ -689,7 +737,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button45.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button46": {
 					"type": "button",
@@ -702,7 +751,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button46.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button47": {
 					"type": "button",
@@ -716,7 +766,8 @@
 					],
 					"method": "ObjectMethods/Button47.4dm",
 					"focusable": false,
-					"fontWeight": "bold"
+					"fontWeight": "bold",
+					"sizingX": "move"
 				},
 				"Button48": {
 					"type": "button",
@@ -729,7 +780,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button48.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button29": {
 					"type": "button",
@@ -742,7 +794,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button29.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button49": {
 					"type": "button",
@@ -755,12 +808,697 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button49.4dm",
+					"focusable": false,
+					"sizingX": "move"
+				},
+				"Button50": {
+					"type": "button",
+					"text": "getElements\\rappend row (loop)",
+					"top": 134,
+					"left": 1795,
+					"width": 187,
+					"height": 42,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button50.4dm",
+					"sizingX": "move",
 					"focusable": false
+				},
+				"Button51": {
+					"type": "button",
+					"text": "insertTable\\rappend row\\rgetColumns\\rsetAttributes",
+					"top": 22,
+					"left": 1794,
+					"width": 188,
+					"height": 102,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button51.4dm",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Button52": {
+					"type": "button",
+					"text": "Insert cols(1)",
+					"top": 224,
+					"left": 1794,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button52.4dm",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Button53": {
+					"type": "button",
+					"text": "Insert rows(1)",
+					"top": 250,
+					"left": 1794,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button53.4dm",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Button54": {
+					"type": "button",
+					"text": "Delete cols(1)",
+					"top": 294,
+					"left": 1794,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button54.4dm",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Button55": {
+					"type": "button",
+					"text": "Delete rows(1)",
+					"top": 320,
+					"left": 1794,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button55.4dm",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Button56": {
+					"type": "button",
+					"text": "Get cols()",
+					"top": 364,
+					"left": 1794,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button56.4dm",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Button57": {
+					"type": "button",
+					"text": "Get rows()",
+					"top": 387,
+					"left": 1794,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button57.4dm",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Button58": {
+					"type": "button",
+					"text": "Get cells()",
+					"top": 411,
+					"left": 1795,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button58.4dm",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Button59": {
+					"type": "button",
+					"text": "Split()",
+					"top": 447,
+					"left": 1794,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button59.4dm",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Button60": {
+					"type": "button",
+					"text": "Merge()",
+					"top": 471,
+					"left": 1795,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button60.4dm",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Text4": {
+					"type": "text",
+					"text": "DOC",
+					"top": 198,
+					"left": 1810,
+					"width": 65,
+					"height": 16,
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"Button61": {
+					"type": "button",
+					"text": "Insert cols(1)",
+					"top": 227,
+					"left": 1931,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button61.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Button62": {
+					"type": "button",
+					"text": "Insert rows(1)",
+					"top": 253,
+					"left": 1931,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button62.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Button63": {
+					"type": "button",
+					"text": "Delete cols(1)",
+					"top": 297,
+					"left": 1931,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button63.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Button64": {
+					"type": "button",
+					"text": "Delete rows(1)",
+					"top": 323,
+					"left": 1931,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button64.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Button65": {
+					"type": "button",
+					"text": "Get cols()",
+					"top": 367,
+					"left": 1931,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button65.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Button66": {
+					"type": "button",
+					"text": "Get rows()",
+					"top": 390,
+					"left": 1931,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button66.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Button67": {
+					"type": "button",
+					"text": "Get cells()",
+					"top": 414,
+					"left": 1932,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button67.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Button68": {
+					"type": "button",
+					"text": "Split()",
+					"top": 450,
+					"left": 1931,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button68.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Button69": {
+					"type": "button",
+					"text": "Merge()",
+					"top": 474,
+					"left": 1932,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button69.4dm",
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Text5": {
+					"type": "text",
+					"text": "SECTION",
+					"top": 201,
+					"left": 1947,
+					"width": 65,
+					"height": 16,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Button70": {
+					"type": "button",
+					"text": "Insert cols(1)",
+					"top": 227,
+					"left": 2055,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button70.4dm",
+					"fontWeight": "normal"
+				},
+				"Button71": {
+					"type": "button",
+					"text": "Insert rows(1)",
+					"top": 253,
+					"left": 2055,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button71.4dm",
+					"fontWeight": "normal"
+				},
+				"Button72": {
+					"type": "button",
+					"text": "Delete cols(1)",
+					"top": 297,
+					"left": 2055,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button72.4dm",
+					"fontWeight": "normal"
+				},
+				"Button73": {
+					"type": "button",
+					"text": "Delete rows(1)",
+					"top": 323,
+					"left": 2055,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button73.4dm",
+					"fontWeight": "normal"
+				},
+				"Button74": {
+					"type": "button",
+					"text": "Get cols()",
+					"top": 367,
+					"left": 2055,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button74.4dm",
+					"fontWeight": "normal"
+				},
+				"Button75": {
+					"type": "button",
+					"text": "Get rows()",
+					"top": 390,
+					"left": 2055,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button75.4dm",
+					"fontWeight": "normal"
+				},
+				"Button76": {
+					"type": "button",
+					"text": "Get cells()",
+					"top": 414,
+					"left": 2056,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button76.4dm",
+					"fontWeight": "normal"
+				},
+				"Button77": {
+					"type": "button",
+					"text": "Split()",
+					"top": 450,
+					"left": 2055,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button77.4dm",
+					"fontWeight": "normal"
+				},
+				"Button78": {
+					"type": "button",
+					"text": "Merge()",
+					"top": 474,
+					"left": 2056,
+					"width": 103,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button78.4dm",
+					"fontWeight": "normal"
+				},
+				"Text6": {
+					"type": "text",
+					"text": "RANGE",
+					"top": 201,
+					"left": 2071,
+					"width": 65,
+					"height": 16,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Button79": {
+					"type": "button",
+					"text": "Insert cols(2;2)",
+					"top": 227,
+					"left": 2175,
+					"width": 163,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button79.4dm",
+					"fontWeight": "normal"
+				},
+				"Button80": {
+					"type": "button",
+					"text": "Insert rows(3;2)",
+					"top": 253,
+					"left": 2175,
+					"width": 163,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button80.4dm",
+					"fontWeight": "normal"
+				},
+				"Button81": {
+					"type": "button",
+					"text": "Delete cols(2;2)",
+					"top": 297,
+					"left": 2175,
+					"width": 163,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button81.4dm",
+					"fontWeight": "normal"
+				},
+				"Button82": {
+					"type": "button",
+					"text": "Delete rows(3;2)",
+					"top": 323,
+					"left": 2175,
+					"width": 163,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button82.4dm",
+					"fontWeight": "normal"
+				},
+				"Button83": {
+					"type": "button",
+					"text": "Get cols(2; 2)",
+					"top": 367,
+					"left": 2175,
+					"width": 163,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button83.4dm",
+					"fontWeight": "normal"
+				},
+				"Button84": {
+					"type": "button",
+					"text": "Get rows(2; 2)",
+					"top": 390,
+					"left": 2175,
+					"width": 163,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button84.4dm",
+					"fontWeight": "normal"
+				},
+				"Button85": {
+					"type": "button",
+					"text": "Get cells(2;2;2;2)",
+					"top": 414,
+					"left": 2176,
+					"width": 163,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button85.4dm",
+					"fontWeight": "normal"
+				},
+				"Button86": {
+					"type": "button",
+					"text": "Split(2;2;2;2)",
+					"top": 450,
+					"left": 2175,
+					"width": 163,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button86.4dm",
+					"fontWeight": "normal"
+				},
+				"Button87": {
+					"type": "button",
+					"text": "Merge(2;2;2;2)",
+					"top": 474,
+					"left": 2176,
+					"width": 163,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button87.4dm",
+					"fontWeight": "normal"
+				},
+				"Text7": {
+					"type": "text",
+					"text": "TABLE",
+					"top": 201,
+					"left": 2191,
+					"width": 65,
+					"height": 16,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"fontStyle": "normal",
+					"stroke": "automatic"
+				},
+				"Button88": {
+					"type": "button",
+					"text": "Split()",
+					"top": 527,
+					"left": 2176,
+					"width": 163,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button88.4dm",
+					"fontWeight": "normal"
+				},
+				"Button89": {
+					"type": "button",
+					"text": "Merge()",
+					"top": 551,
+					"left": 2177,
+					"width": 163,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"focusable": false,
+					"fontStyle": "normal",
+					"stroke": "automatic",
+					"method": "ObjectMethods/Button89.4dm",
+					"fontWeight": "normal"
 				}
 			}
 		}
 	],
-	"geometryStamp": 296,
+	"geometryStamp": 499,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

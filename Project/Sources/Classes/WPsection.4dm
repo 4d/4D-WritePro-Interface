@@ -202,17 +202,21 @@ Function findPrevious($searchAfter : Object; $searchValue : Text; $searchConditi
 	//mark:-GET ELEMENTS
 	
 Function getElements($elementType : Integer)->$elements : Collection
+	var $i; $n : Integer
 	Case of 
 		: (Count parameters:C259=0)
 			$elements:=WP Get elements:C1550(This:C1470.section)
 		: (Count parameters:C259=1)
 			$elements:=WP Get elements:C1550(This:C1470.section; $elementType)
 	End case 
-	// replace 4D_WriteElement by cs.WPelement
-	var $i; $n : Integer
+	// replace 4D_WriteElement by cs.WPelement or cs.WPtable
 	$n:=$elements.length-1
 	For ($i; 0; $n)
-		$elements[$i]:=cs:C1710.WPelement.new($elements[$i])
+		If ($elementType=wk type table:K81:222)  // table specificaly requested
+			$elements[$i]:=cs:C1710.WPtable.new($elements[$i])
+		Else 
+			$elements[$i]:=cs:C1710.WPelement.new($elements[$i])
+		End if 
 	End for 
 	
 	//mark:-GET POSITION
@@ -242,20 +246,6 @@ Function insertPicture($picture : Picture; $insertMode : Integer)->$pictureEleme
 		: ($insertMode=wk append:K81:179)
 			$pictureElement:=cs:C1710.WPelement.new($pictElements[$pictElements.length-1])
 	End case 
-	
-	//mark:-TABLES
-	
-Function insertTable($mode : Integer; $rangeUpdate : Integer; $nbCols : Integer; $nbRows : Integer)->$table : cs:C1710.WPtable
-	
-	Case of 
-		: (Count parameters:C259=0)
-			$mode:=wk append:K81:179
-			$rangeUpdate:=wk include in range:K81:180
-		: (Count parameters:C259=1)
-			$rangeUpdate:=wk include in range:K81:180
-	End case 
-	
-	$table:=cs:C1710.WPtable.new(WP Insert table:C1473(This:C1470.section; $mode; $rangeUpdate; $nbCols; $nbRows))
 	
 	//mark:-DELETE
 	
@@ -293,3 +283,56 @@ Function insertDocument($wpDoc : Object; $mode : Integer; $rangeUpdate : Integer
 		$rangeUpdate:=wk include in range:K81:180
 	End if 
 	WP INSERT DOCUMENT:C1411(This:C1470.section; $wpDoc; $mode; $rangeUpdate)
+	
+	
+	
+	//mark:-TABLE INSERT
+	
+Function insertTable($mode : Integer; $rangeUpdate : Integer; $nbCols : Integer; $nbRows : Integer)->$table : cs:C1710.WPtable
+	
+	Case of 
+		: (Count parameters:C259=0)
+			$mode:=wk append:K81:179
+			$rangeUpdate:=wk include in range:K81:180
+		: (Count parameters:C259=1)
+			$rangeUpdate:=wk include in range:K81:180
+	End case 
+	
+	$table:=cs:C1710.WPtable.new(WP Insert table:C1473(This:C1470.section; $mode; $rangeUpdate; $nbCols; $nbRows))
+	
+	//mark:-TABLES DELETE ROWS & COLUMNS
+	
+Function tableDeleteColumns()  // all tables will be deleted
+	WP TABLE DELETE COLUMNS:C1694(This:C1470.section)
+	
+Function tableDeleteRows()  // all tables will be deleted
+	WP TABLE DELETE ROWS:C1693(This:C1470.section)
+	
+	//mark:-TABLE GET CELLS, ROWS & COLUMNS
+	
+Function tableGetCells()->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table get cells:C1477(This:C1470.section))
+	
+Function tableGetColumns()->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table get columns:C1476(This:C1470.section))
+	
+Function tableGetRows()->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table get rows:C1475(This:C1470.section))
+	
+	
+	//mark:-TABLE INSERT ROWS & COLUMNS
+	
+Function tableInsertColumns($columnCount : Integer)->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table insert columns:C1692(This:C1470.section; $columnCount))
+	
+Function tableInsertRows($rowCount : Integer)->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table insert rows:C1691(This:C1470.section; $rowCount))
+	
+	
+	//mark:-TABLE SPLIT & MERGE
+	
+Function tableSplitCells()
+	WP TABLE SPLIT CELLS:C1816(This:C1470.section)  // all tables will be n x n
+	
+Function tableMergeCells()  // all tables will be 1x1
+	WP TABLE MERGE CELLS:C1815(This:C1470.section)

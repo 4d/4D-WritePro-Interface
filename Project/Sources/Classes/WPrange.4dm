@@ -188,17 +188,21 @@ Function findPrevious($searchAfter : Object; $searchValue : Text; $searchConditi
 	//mark:-GET ELEMENTS
 	
 Function getElements($elementType : Integer)->$elements : Collection
+	var $i; $n : Integer
 	Case of 
 		: (Count parameters:C259=0)
 			$elements:=WP Get elements:C1550(This:C1470.range)
 		: (Count parameters:C259=1)
 			$elements:=WP Get elements:C1550(This:C1470.range; $elementType)
 	End case 
-	// replace 4D_WriteElement by cs.WPelement
-	var $i; $n : Integer
+	// replace 4D_WriteElement by cs.WPelement or cs.WPtable
 	$n:=$elements.length-1
 	For ($i; 0; $n)
-		$elements[$i]:=cs:C1710.WPelement.new($elements[$i])
+		If ($elementType=wk type table:K81:222)  // table specificaly requested
+			$elements[$i]:=cs:C1710.WPtable.new($elements[$i])
+		Else 
+			$elements[$i]:=cs:C1710.WPelement.new($elements[$i])
+		End if 
 	End for 
 	
 	//mark:-GET POSITION
@@ -266,3 +270,40 @@ Function insertDocument($wpDoc : Object; $mode : Integer; $rangeUpdate : Integer
 		$rangeUpdate:=wk include in range:K81:180
 	End if 
 	WP INSERT DOCUMENT:C1411(This:C1470.range; $wpDoc; $mode; $rangeUpdate)
+	
+	//mark:-TABLES DELETE ROWS & COLUMNS
+	
+Function tableDeleteColumns()  // all tables will be deleted
+	WP TABLE DELETE COLUMNS:C1694(This:C1470.range)
+	
+Function tableDeleteRows()  // all tables will be deleted
+	WP TABLE DELETE ROWS:C1693(This:C1470.range)
+	
+	//mark:-TABLE GET CELLS, ROWS & COLUMNS
+	
+Function tableGetCells()->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table get cells:C1477(This:C1470.range))
+	
+Function tableGetColumns()->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table get columns:C1476(This:C1470.range))
+	
+Function tableGetRows()->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table get rows:C1475(This:C1470.range))
+	
+	
+	//mark:-TABLE INSERT ROWS & COLUMNS
+	
+Function tableInsertColumns($columnCount : Integer)->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table insert columns:C1692(This:C1470.range; $columnCount))
+	
+Function tableInsertRows($rowCount : Integer)->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table insert rows:C1691(This:C1470.range; $rowCount))
+	
+	
+	//mark:-TABLE SPLIT & MERGE
+	
+Function tableSplitCells()
+	WP TABLE SPLIT CELLS:C1816(This:C1470.range)  // all tables will be n x n
+	
+Function tableMergeCells()  // all tables will be 1x1
+	WP TABLE MERGE CELLS:C1815(This:C1470.range)

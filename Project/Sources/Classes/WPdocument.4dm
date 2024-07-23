@@ -56,8 +56,11 @@ Function get pageCount()->$count : Integer
 	$count:=WP Get page count:C1412(This:C1470.document)
 	
 	
-Function selectionRange()->$range : cs:C1710.WPrange
-	$range:=WP Selection range:C1340(This:C1470.document)
+Function selectionRange($name : Text)->$range : cs:C1710.WPrange
+	If (Count parameters:C259=1)
+		$range:=cs:C1710.WPrange.new(WP Selection range:C1340(*; $name))
+	End if 
+	
 	
 	//mark:-GET FRAME -- GET FRAME
 	
@@ -299,17 +302,21 @@ Function getElementByID($id : Text)->$element : cs:C1710.WPelement
 	$element:=WP Get element by ID:C1549(This:C1470.document; $id)
 	
 Function getElements($elementType : Integer)->$elements : Collection
+	var $i; $n : Integer
 	Case of 
 		: (Count parameters:C259=0)
 			$elements:=WP Get elements:C1550(This:C1470.document)
 		: (Count parameters:C259=1)
 			$elements:=WP Get elements:C1550(This:C1470.document; $elementType)
 	End case 
-	// replace 4D_WriteElement by cs.WPelement
-	var $i; $n : Integer
+	//replace 4D_WriteElement by cs.WPelement or cs.WPtable
 	$n:=$elements.length-1
 	For ($i; 0; $n)
-		$elements[$i]:=cs:C1710.WPelement.new($elements[$i])
+		If ($elementType=wk type table:K81:222)  // table specificaly requested
+			$elements[$i]:=cs:C1710.WPtable.new($elements[$i])
+		Else 
+			$elements[$i]:=cs:C1710.WPelement.new($elements[$i])
+		End if 
 	End for 
 	
 	//mark:-GET POSITION
@@ -366,23 +373,6 @@ Function newAnchoredPicture($picture : Variant)->$pictureElement : cs:C1710.WPel
 		: (Count parameters:C259=1)
 			$pictureElement:=cs:C1710.WPelement.new(WP Add picture:C1536(This:C1470.document; $picture))
 	End case 
-	
-	
-	
-	
-	//mark:-TABLES
-	
-Function insertTable($mode : Integer; $rangeUpdate : Integer; $nbCols : Integer; $nbRows : Integer)->$table : cs:C1710.WPtable
-	
-	Case of 
-		: (Count parameters:C259=0)
-			$mode:=wk append:K81:179
-			$rangeUpdate:=wk include in range:K81:180
-		: (Count parameters:C259=1)
-			$rangeUpdate:=wk include in range:K81:180
-	End case 
-	
-	$table:=cs:C1710.WPtable.new(WP Insert table:C1473(This:C1470.document; $mode; $rangeUpdate; $nbCols; $nbRows))
 	
 	//mark:-IMPORT EXPORT INSERT
 	
@@ -459,6 +449,57 @@ Function getStyleSheets($styleSheetType : Integer)->$styleSheets : Collection
 Function importStyleSheets($sourceDocument : cs:C1710.WPdocument)
 	
 	WP IMPORT STYLE SHEETS:C1673(This:C1470.document; $sourceDocument)
+	
+	
+	//mark:-TABLES INSERT
+	
+Function insertTable($mode : Integer; $rangeUpdate : Integer; $nbCols : Integer; $nbRows : Integer)->$table : cs:C1710.WPtable
+	
+	Case of 
+		: (Count parameters:C259=0)
+			$mode:=wk append:K81:179
+			$rangeUpdate:=wk include in range:K81:180
+		: (Count parameters:C259=1)
+			$rangeUpdate:=wk include in range:K81:180
+	End case 
+	$table:=cs:C1710.WPtable.new(WP Insert table:C1473(This:C1470.document; $mode; $rangeUpdate; $nbCols; $nbRows))
+	
+	//mark:-TABLES DELETE ROWS & COLUMNS
+	
+Function tableDeleteColumns()  // all tables will be deleted
+	WP TABLE DELETE COLUMNS:C1694(This:C1470.document)
+	
+Function tableDeleteRows()  // all tables will be deleted
+	WP TABLE DELETE ROWS:C1693(This:C1470.document)
+	
+	//mark:-TABLE GET CELLS, ROWS & COLUMNS
+	
+Function tableGetCells()->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table get cells:C1477(This:C1470.document))
+	
+Function tableGetColumns()->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table get columns:C1476(This:C1470.document))
+	
+Function tableGetRows()->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table get rows:C1475(This:C1470.document))
+	
+	
+	//mark:-TABLE INSERT ROWS & COLUMNS
+	
+Function tableInsertColumns($columnCount : Integer)->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table insert columns:C1692(This:C1470.document; $columnCount))
+	
+Function tableInsertRows($rowCount : Integer)->$range : cs:C1710.WPrange
+	$range:=cs:C1710.WPrange.new(WP Table insert rows:C1691(This:C1470.document; $rowCount))
+	
+	
+	//mark:-TABLE SPLIT & MERGE
+	
+Function tableSplitCells()
+	WP TABLE SPLIT CELLS:C1816(This:C1470.document)  // all tables will be n x n
+	
+Function tableMergeCells()  // all tables will be 1x1
+	WP TABLE MERGE CELLS:C1815(This:C1470.document)
 	
 	
 	

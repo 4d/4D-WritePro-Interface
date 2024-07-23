@@ -230,17 +230,21 @@ Function findPrevious($searchAfter : Object; $searchValue : Text; $searchConditi
 	//mark:-GET ELEMENTS
 	
 Function getElements($elementType : Integer)->$elements : Collection
+	var $i; $n : Integer
 	Case of 
 		: (Count parameters:C259=0)
 			$elements:=WP Get elements:C1550(This:C1470.element)
 		: (Count parameters:C259=1)
 			$elements:=WP Get elements:C1550(This:C1470.element; $elementType)
 	End case 
-	// replace 4D_WriteElement by cs.WPelement
-	var $i; $n : Integer
+	// replace 4D_WriteElement by cs.WPelement or cs.WPtable
 	$n:=$elements.length-1
 	For ($i; 0; $n)
-		$elements[$i]:=cs:C1710.WPelement.new($elements[$i])
+		If ($elementType=wk type table:K81:222)  // table specificaly requested
+			$elements[$i]:=cs:C1710.WPtable.new($elements[$i])
+		Else 
+			$elements[$i]:=cs:C1710.WPelement.new($elements[$i])
+		End if 
 	End for 
 	
 	//mark:-GET POSITION
