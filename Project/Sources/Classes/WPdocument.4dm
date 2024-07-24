@@ -85,7 +85,11 @@ Function setFrame($frameSelector : Integer; $textBoxID : Text)
 	//mark:-GET LINKS -- SET LINK
 	
 Function getLinks()->$links : Collection
+	var $link : Object
 	$links:=WP Get links:C1643(This:C1470.document)
+	For each ($link; $links)
+		$link.range:=cs:C1710.WPrange.new($link.range)  // transform 4D_WriteRange to cs.WPrange
+	End for each 
 	
 Function setLink($linkObject)
 	WP SET LINK:C1642(This:C1470.document; $linkObject)
@@ -93,7 +97,7 @@ Function setLink($linkObject)
 	
 	//mark:-NEW TEXT BOX 
 	
-Function newTextBox($pageNumber : Integer)->$textBox : cs:C1710.WPelement  //∆∆∆
+Function newTextBox($pageNumber : Integer)->$textBox : cs:C1710.WPelement
 	$textBox:=cs:C1710.WPelement.new(WP New text box:C1797(This:C1470.document; $pageNumber))
 	
 	//mark:-FORMULAS
@@ -125,7 +129,7 @@ Function getFormulas()->$formulas : Collection
 	
 	//mark:-BREAKS
 	
-Function getBreaks($breakType : Integer)->$breaks : Collection  //of integers
+Function getBreaks($breakType : Integer)->$breaks : Collection
 	var $i; $n : Integer
 	Case of 
 		: (Count parameters:C259=0)
@@ -174,10 +178,11 @@ Function getAttributes($attributeNames : Collection)->$attributes : Object  // c
 		$attributes[$attributeName]:=$attributeValue
 	End for each 
 	
-	// GET BODY
 	
-Function getBody()->$body : cs:C1710.WPelement  // ∆∆∆
-	$body:=WP Get body:C1516(This:C1470.document)
+	//mark:-BODY
+	
+Function getBody()->$body : cs:C1710.WPelement
+	$body:=cs:C1710.WPelement.new(WP Get body:C1516(This:C1470.document))
 	
 	
 	//mark:-HEADERS AND FOOTERS
@@ -282,16 +287,16 @@ Function findNext($searchAfter : Object; $searchValue : Text; $searchCondition :
 	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
 	
-Function findPrevious($searchAfter : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
+Function findPrevious($searchBefore : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
 	var $result : Object
-	If (OB Instance of:C1731($searchAfter; cs:C1710.WPrange))
-		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D_WriteRange
+	If (OB Instance of:C1731($searchBefore; cs:C1710.WPrange))
+		$searchBefore:=$searchBefore.range  //cs.WPrange -> 4D_WriteRange
 	End if 
 	Case of 
 		: (Count parameters:C259=3)
-			$result:=WP Find previous:C1765(This:C1470.document; $searchAfter; $searchValue; $searchCondition)
+			$result:=WP Find previous:C1765(This:C1470.document; $searchBefore; $searchValue; $searchCondition)
 		: (Count parameters:C259=4)
-			$result:=WP Find previous:C1765(This:C1470.document; $searchAfter; $searchValue; $searchCondition; $replaceValue)
+			$result:=WP Find previous:C1765(This:C1470.document; $searchBefore; $searchValue; $searchCondition; $replaceValue)
 	End case 
 	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
@@ -322,12 +327,10 @@ Function getElements($elementType : Integer)->$elements : Collection
 	//mark:-GET POSITION
 	
 Function getPosition($layout : Integer)->$information : Object
-	Case of 
-		: (Count parameters:C259=0)
-			$information:=WP Get position:C1577(This:C1470.document)
-		: (Count parameters:C259=1)
-			$information:=WP Get position:C1577(This:C1470.document; $layout)
-	End case 
+	If (Count parameters:C259=0)
+		$layout:=wk 4D Write Pro layout:K81:176
+	End if 
+	$information:=WP Get position:C1577(This:C1470.document; $layout)
 	
 	
 	//mark:-PRINT
@@ -450,6 +453,8 @@ Function importStyleSheets($sourceDocument : cs:C1710.WPdocument)
 	
 	WP IMPORT STYLE SHEETS:C1673(This:C1470.document; $sourceDocument)
 	
+Function deleteStyleSheet($styleSheetName : Text)
+	WP DELETE STYLE SHEET:C1652(This:C1470.document; $styleSheetName)
 	
 	//mark:-TABLES INSERT
 	
@@ -502,5 +507,11 @@ Function tableMergeCells()  // all tables will be 1x1
 	WP TABLE MERGE CELLS:C1815(This:C1470.document)
 	
 	
+	//mark:-CONTEXTS
 	
+Function setDataContext($context : Object)
+	WP SET DATA CONTEXT:C1786(This:C1470.document; $context)
+	
+Function getDataContext()->$context : Object
+	$context:=WP Get data context:C1787(This:C1470.document)
 	

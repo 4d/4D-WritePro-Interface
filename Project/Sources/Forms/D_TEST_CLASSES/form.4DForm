@@ -203,10 +203,10 @@
 				"Button9": {
 					"type": "button",
 					"text": "Find all",
-					"top": 594,
+					"top": 718,
 					"left": 1005,
 					"width": 307,
-					"height": 25,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -217,10 +217,10 @@
 				"Button10": {
 					"type": "button",
 					"text": "Get formulas",
-					"top": 662,
+					"top": 744,
 					"left": 1005,
 					"width": 307,
-					"height": 25,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -231,10 +231,10 @@
 				"Button11": {
 					"type": "button",
 					"text": "Get BREAKS",
-					"top": 696,
+					"top": 772,
 					"left": 1005,
 					"width": 307,
-					"height": 25,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -245,10 +245,10 @@
 				"Button12": {
 					"type": "button",
 					"text": "Get elements",
-					"top": 730,
+					"top": 800,
 					"left": 1005,
 					"width": 307,
-					"height": 25,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -259,7 +259,7 @@
 				"Button13": {
 					"type": "button",
 					"text": "PREPEND",
-					"top": 465,
+					"top": 495,
 					"left": 985,
 					"width": 77,
 					"height": 25,
@@ -273,7 +273,7 @@
 				"Button14": {
 					"type": "button",
 					"text": "REPLACE",
-					"top": 496,
+					"top": 526,
 					"left": 985,
 					"width": 77,
 					"height": 25,
@@ -287,7 +287,7 @@
 				"Button15": {
 					"type": "button",
 					"text": "APPEND picture APP",
-					"top": 527,
+					"top": 557,
 					"left": 985,
 					"width": 77,
 					"height": 25,
@@ -301,7 +301,7 @@
 				"Text": {
 					"type": "text",
 					"text": "DOC",
-					"top": 441,
+					"top": 471,
 					"left": 990,
 					"width": 54,
 					"height": 16,
@@ -310,7 +310,7 @@
 				"Button16": {
 					"type": "button",
 					"text": "PREPEND",
-					"top": 465,
+					"top": 495,
 					"left": 1074,
 					"width": 77,
 					"height": 25,
@@ -324,7 +324,7 @@
 				"Button17": {
 					"type": "button",
 					"text": "REPLACE",
-					"top": 496,
+					"top": 526,
 					"left": 1074,
 					"width": 77,
 					"height": 25,
@@ -338,7 +338,7 @@
 				"Button18": {
 					"type": "button",
 					"text": "APPEND picture APP",
-					"top": 527,
+					"top": 557,
 					"left": 1074,
 					"width": 77,
 					"height": 25,
@@ -352,7 +352,7 @@
 				"Text1": {
 					"type": "text",
 					"text": "SECTION",
-					"top": 441,
+					"top": 471,
 					"left": 1079,
 					"width": 64,
 					"height": 16,
@@ -361,7 +361,7 @@
 				"Button19": {
 					"type": "button",
 					"text": "PREPEND",
-					"top": 465,
+					"top": 495,
 					"left": 1163,
 					"width": 77,
 					"height": 25,
@@ -375,7 +375,7 @@
 				"Button20": {
 					"type": "button",
 					"text": "REPLACE",
-					"top": 496,
+					"top": 526,
 					"left": 1163,
 					"width": 77,
 					"height": 25,
@@ -389,7 +389,7 @@
 				"Button21": {
 					"type": "button",
 					"text": "APPEND picture APP",
-					"top": 527,
+					"top": 557,
 					"left": 1163,
 					"width": 77,
 					"height": 25,
@@ -403,7 +403,7 @@
 				"Text2": {
 					"type": "text",
 					"text": "RANGE",
-					"top": 441,
+					"top": 471,
 					"left": 1168,
 					"width": 64,
 					"height": 16,
@@ -412,7 +412,7 @@
 				"Button22": {
 					"type": "button",
 					"text": "PREPEND",
-					"top": 465,
+					"top": 495,
 					"left": 1253,
 					"width": 77,
 					"height": 25,
@@ -426,7 +426,7 @@
 				"Button23": {
 					"type": "button",
 					"text": "REPLACE",
-					"top": 496,
+					"top": 526,
 					"left": 1253,
 					"width": 77,
 					"height": 25,
@@ -440,7 +440,7 @@
 				"Button24": {
 					"type": "button",
 					"text": "APPEND picture APP",
-					"top": 527,
+					"top": 557,
 					"left": 1253,
 					"width": 77,
 					"height": 25,
@@ -454,7 +454,7 @@
 				"Text3": {
 					"type": "text",
 					"text": "ELEMENT",
-					"top": 441,
+					"top": 471,
 					"left": 1258,
 					"width": 64,
 					"height": 16,
@@ -674,7 +674,7 @@
 					"type": "button",
 					"text": "Delete sec;first page",
 					"top": 673,
-					"left": 1562,
+					"left": 1572,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -688,7 +688,7 @@
 					"type": "button",
 					"text": "Delete sec;right page",
 					"top": 702,
-					"left": 1562,
+					"left": 1572,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -702,7 +702,7 @@
 					"type": "button",
 					"text": "Delete sec;left page",
 					"top": 731,
-					"left": 1562,
+					"left": 1572,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -1494,11 +1494,77 @@
 					"stroke": "automatic",
 					"method": "ObjectMethods/Button89.4dm",
 					"fontWeight": "normal"
+				},
+				"Text8": {
+					"type": "text",
+					"text": "PICTURES",
+					"top": 437,
+					"left": 983,
+					"width": 339,
+					"height": 16,
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"Button90": {
+					"type": "button",
+					"text": "DELETE 3RD INLINE PICTURE",
+					"top": 602,
+					"left": 985,
+					"width": 345,
+					"height": 19,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button90.4dm",
+					"focusable": false,
+					"sizingX": "move"
+				},
+				"Button92": {
+					"type": "button",
+					"text": "DELETE 3RD ANCHORED PICTURE",
+					"top": 624,
+					"left": 985,
+					"width": 345,
+					"height": 19,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button92.4dm",
+					"focusable": false,
+					"sizingX": "move"
+				},
+				"Button93": {
+					"type": "button",
+					"text": "DELETE 1st picture (anchored or not)",
+					"top": 646,
+					"left": 985,
+					"width": 345,
+					"height": 19,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button93.4dm",
+					"focusable": false,
+					"sizingX": "move"
+				},
+				"Button91": {
+					"type": "button",
+					"text": "Get Links",
+					"top": 830,
+					"left": 1005,
+					"width": 307,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button91.4dm",
+					"focusable": false,
+					"sizingX": "move"
 				}
 			}
 		}
 	],
-	"geometryStamp": 499,
+	"geometryStamp": 557,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

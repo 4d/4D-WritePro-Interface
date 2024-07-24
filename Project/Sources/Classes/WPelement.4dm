@@ -25,7 +25,7 @@ Function delete()
 		: (This:C1470.element.type=300)  // textbox
 			WP DELETE TEXT BOX:C1798(This:C1470.element)
 			
-		: (This:C1470.element.type=3)
+		: (This:C1470.element.type=3)  // header or footer
 			
 			Case of 
 				: (This:C1470.element.styleSheet="@firstHeader")  // first header
@@ -57,12 +57,19 @@ Function delete()
 					
 			End case 
 			
+		: (This:C1470.element.type=2)  // inline picture
+			WP DELETE PICTURE:C1701(This:C1470.element)
+			
 	End case 
 	
 	//mark:-GET LINKS -- SET LINK
 	
 Function getLinks()->$links : Collection
+	var $link : Object
 	$links:=WP Get links:C1643(This:C1470.element)
+	For each ($link; $links)
+		$link.range:=cs:C1710.WPrange.new($link.range)  // transform 4D_WriteRange to cs.WPrange
+	End for each 
 	
 Function setLink($linkObject)
 	WP SET LINK:C1642(This:C1470.element; $linkObject)
@@ -115,10 +122,10 @@ Function insertBreak($breakType : Integer; $mode : Integer; $rangeUpdate : Integ
 	//mark:-HEADERS AND FOOTERS
 	
 Function getHeader()->$header : cs:C1710.WPelement
-	$header:=WP Get header:C1503(This:C1470.element)
+	$header:=cs:C1710.WPelement.new(WP Get header:C1503(This:C1470.element))
 	
 Function getFooter()->$footer : cs:C1710.WPelement
-	$footer:=WP Get footer:C1504(This:C1470.element)
+	$footer:=cs:C1710.WPelement.new(WP Get footer:C1504(This:C1470.element))
 	
 	
 	//mark:-ATTRIBUTES
@@ -213,16 +220,16 @@ Function findNext($searchAfter : Object; $searchValue : Text; $searchCondition :
 	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
 	
-Function findPrevious($searchAfter : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
+Function findPrevious($searchBefore : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
 	var $result : Object
-	If (OB Instance of:C1731($searchAfter; cs:C1710.WPrange))
-		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D_WriteRange
+	If (OB Instance of:C1731($searchBefore; cs:C1710.WPrange))
+		$searchBefore:=$searchBefore.range  //cs.WPrange -> 4D_WriteRange
 	End if 
 	Case of 
 		: (Count parameters:C259=3)
-			$result:=WP Find previous:C1765(This:C1470.element; $searchAfter; $searchValue; $searchCondition)
+			$result:=WP Find previous:C1765(This:C1470.element; $searchBefore; $searchValue; $searchCondition)
 		: (Count parameters:C259=4)
-			$result:=WP Find previous:C1765(This:C1470.element; $searchAfter; $searchValue; $searchCondition; $replaceValue)
+			$result:=WP Find previous:C1765(This:C1470.element; $searchBefore; $searchValue; $searchCondition; $replaceValue)
 	End case 
 	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
@@ -250,13 +257,10 @@ Function getElements($elementType : Integer)->$elements : Collection
 	//mark:-GET POSITION
 	
 Function getPosition($layout : Integer)->$information : Object
-	Case of 
-		: (Count parameters:C259=0)
-			$information:=WP Get position:C1577(This:C1470.element)
-		: (Count parameters:C259=1)
-			$information:=WP Get position:C1577(This:C1470.element; $layout)
-	End case 
-	
+	If (Count parameters:C259=0)
+		$layout:=wk 4D Write Pro layout:K81:176
+	End if 
+	$information:=WP Get position:C1577(This:C1470.element; $layout)
 	
 	//mark:-PICTURE
 	

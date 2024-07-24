@@ -30,8 +30,16 @@ Function setText($newText : Text; $textPosition : Integer; $rangeUpdate : Intege
 Function newHeader()->$header : cs:C1710.WPelement
 	$header:=cs:C1710.WPelement.new(WP New header:C1586(This:C1470.section))
 	
-Function newFooter($section : Object)->$footer : Object
+Function getHeader()->$header : cs:C1710.WPelement
+	$header:=cs:C1710.WPelement.new(WP Get header:C1503(This:C1470.section))
+	
+	
+Function newFooter()->$footer : cs:C1710.WPelement
 	$footer:=cs:C1710.WPelement.new(WP New footer:C1587(This:C1470.section))
+	
+Function getFooter()->$footer : cs:C1710.WPelement
+	$footer:=cs:C1710.WPelement.new(WP Get footer:C1504(This:C1470.section))
+	
 	
 	
 	//mark:-SUBSECTION
@@ -46,7 +54,12 @@ Function newSubsection($subsectionType : Integer)->$subsection : cs:C1710.WPsect
 	//mark:-GET LINKS -- SET LINK
 	
 Function getLinks()->$links : Collection
+	var $link : Object
 	$links:=WP Get links:C1643(This:C1470.section)
+	For each ($link; $links)
+		$link.range:=cs:C1710.WPrange.new($link.range)  // transform 4D_WriteRange to cs.WPrange
+	End for each 
+	
 	
 Function setLink($linkObject)
 	WP SET LINK:C1642(This:C1470.section; $linkObject)
@@ -94,16 +107,6 @@ Function insertBreak($breakType : Integer; $mode : Integer; $rangeUpdate : Integ
 		$rangeUpdate:=wk include in range:K81:180
 	End if 
 	WP INSERT BREAK:C1413(This:C1470.section; $mode; $rangeUpdate)
-	
-	
-	//mark:-HEADERS AND FOOTERS
-	
-Function getHeader()->$header : cs:C1710.WPelement
-	$header:=WP Get header:C1503(This:C1470.section)
-	
-Function getFooter()->$footer : cs:C1710.WPelement
-	$footer:=WP Get footer:C1504(This:C1470.section)
-	
 	
 	//mark:-ATTRIBUTES
 	
@@ -185,16 +188,16 @@ Function findNext($searchAfter : Object; $searchValue : Text; $searchCondition :
 	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
 	
-Function findPrevious($searchAfter : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
+Function findPrevious($searchBefore : Object; $searchValue : Text; $searchCondition : Integer; $replaceValue : Text)->$range : cs:C1710.WPrange
 	var $result : Object
-	If (OB Instance of:C1731($searchAfter; cs:C1710.WPrange))
-		$searchAfter:=$searchAfter.range  //cs.WPrange -> 4D_WriteRange
+	If (OB Instance of:C1731($searchBefore; cs:C1710.WPrange))
+		$searchBefore:=$searchBefore.range  //cs.WPrange -> 4D_WriteRange
 	End if 
 	Case of 
 		: (Count parameters:C259=3)
-			$result:=WP Find previous:C1765(This:C1470.section; $searchAfter; $searchValue; $searchCondition)
+			$result:=WP Find previous:C1765(This:C1470.section; $searchBefore; $searchValue; $searchCondition)
 		: (Count parameters:C259=4)
-			$result:=WP Find previous:C1765(This:C1470.section; $searchAfter; $searchValue; $searchCondition; $replaceValue)
+			$result:=WP Find previous:C1765(This:C1470.section; $searchBefore; $searchValue; $searchCondition; $replaceValue)
 	End case 
 	// replace 4D_WriteRange by cs.WPrange
 	$range:=cs:C1710.WPrange($result)
@@ -222,12 +225,11 @@ Function getElements($elementType : Integer)->$elements : Collection
 	//mark:-GET POSITION
 	
 Function getPosition($layout : Integer)->$information : Object
-	Case of 
-		: (Count parameters:C259=0)
-			$information:=WP Get position:C1577(This:C1470.section)
-		: (Count parameters:C259=1)
-			$information:=WP Get position:C1577(This:C1470.section; $layout)
-	End case 
+	If (Count parameters:C259=0)
+		$layout:=wk 4D Write Pro layout:K81:176
+	End if 
+	$information:=WP Get position:C1577(This:C1470.section; $layout)
+	
 	
 	//mark:-PICTURE
 	
@@ -255,7 +257,7 @@ Function delete($subsectionType)
 	Case of 
 		: (Count parameters:C259=0)
 			
-			If (Not:C34(Undefined:C82(This:C1470.section.parent)))
+			If (Not:C34(Undefined:C82(This:C1470.section.parent)))  // subsection type
 				Case of 
 					: (This:C1470.section.type=1)  // first page
 						$subsectionType:=wk first page:K81:203
@@ -265,13 +267,15 @@ Function delete($subsectionType)
 						$subsectionType:=wk right page:K81:205
 				End case 
 				WP DELETE SUBSECTION:C1584(This:C1470.section.parent; $subsectionType)
-			Else 
+			Else   //section type
 				//WP DELETE SECTION(This.section) // in the future
 			End if 
 			
-		: (Count parameters:C259=1)
+		: (Count parameters:C259=1)  // to be used with sections only, not subsections
 			
-			WP DELETE SUBSECTION:C1584(This:C1470.section; $subsectionType)
+			If (Undefined:C82(This:C1470.section.parent))  //section type
+				WP DELETE SUBSECTION:C1584(This:C1470.section; $subsectionType)
+			End if 
 			
 	End case 
 	
