@@ -190,13 +190,9 @@ Function getAttributes($attributeNames : Collection)->$attributes : Object  // c
 	End for each 
 	
 	
-<<<<<<< Updated upstream
-	//mark:-BODY
 	
-Function getBody()->$body : cs:C1710.WPelement
-=======
+	//mark:-BODY
 Function getBody()->$body : cs:C1710.WPelement  // ∆∆∆
->>>>>>> Stashed changes
 	$body:=cs:C1710.WPelement.new(WP Get body:C1516(This:C1470.document))
 	
 	
