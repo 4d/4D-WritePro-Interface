@@ -37,3 +37,14 @@ Else
 	OBJECT SET ENTERABLE:C238(*; "LinethroughColor"; False:C215)
 	
 End if 
+
+
+// ACI0104990 Pat Bensky
+Case of 
+	: (oForm.fontSize=Int:C8(oForm.fontSize))
+		OBJECT SET FORMAT:C236(*; "fontSizeInput"; "###0;-###0;0")
+	: ((oForm.fontSize*10)=Int:C8(oForm.fontSize*10))
+		OBJECT SET FORMAT:C236(*; "fontSizeInput"; "###0.0;-###0.0;0")
+	Else 
+		OBJECT SET FORMAT:C236(*; "fontSizeInput"; "###0.00;-###0.0;00")
+End case 

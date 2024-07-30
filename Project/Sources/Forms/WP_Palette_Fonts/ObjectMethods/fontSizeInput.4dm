@@ -1,11 +1,8 @@
 
-C_LONGINT:C283($fontSize)
-
-If (oForm.fontSize<=0)  // check <=0  (must be >=1)
+If (oForm.fontSize<1)  // check < 1  (must be >=1)
 	oForm.fontSize:=1
 End if 
-$fontSize:=oForm.fontSize
 
-WP_SetFontSize(Form:C1466.selection; $fontSize)
+WP_SetFontSize(Form:C1466.selection; oForm.fontSize)
 
-//(OBJECT Get pointer(Object named;"fontSizeRuler"))->:=Self->  // report value into ruler
+UI_PaletteFonts  // ACI0104990 Pat Bensky

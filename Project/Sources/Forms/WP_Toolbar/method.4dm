@@ -164,7 +164,6 @@ Case of
 							WP_GetFontInfo(Form:C1466.selection)  // font, size, weight, textcolor  (common method with font palette)
 							oForm.comboFontSizes.currentValue:=oForm.fontSize
 							
-							
 							$page:=FORM Get current page:C276(*)
 							Case of 
 									
