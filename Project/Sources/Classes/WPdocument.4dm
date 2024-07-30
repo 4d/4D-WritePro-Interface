@@ -56,10 +56,21 @@ Function get pageCount()->$count : Integer
 	$count:=WP Get page count:C1412(This:C1470.document)
 	
 	
-Function selectionRange($name : Text)->$range : cs:C1710.WPrange
+	//mark:-INTERFACE
+	
+Function selectionRange($areaName : Text)->$range : cs:C1710.WPrange
 	If (Count parameters:C259=1)
-		$range:=cs:C1710.WPrange.new(WP Selection range:C1340(*; $name))
+		$range:=cs:C1710.WPrange.new(WP Selection range:C1340(*; $areaName))
 	End if 
+	
+Function setViewProperties($areaName : Text; $properties : Object)
+	WP SET VIEW PROPERTIES:C1648(*; $areaName; $properties)
+	
+Function getViewProperties($name : Text)->$properties : Object
+	$properties:=WP Get view properties:C1649(*; $name)
+	
+Function select($areaName : Text; $startRange : Integer; $endRange : Integer)
+	WP SELECT:C1348(*; $areaName; $startRange; $endRange)
 	
 	
 	//mark:-GET FRAME -- GET FRAME
@@ -179,9 +190,13 @@ Function getAttributes($attributeNames : Collection)->$attributes : Object  // c
 	End for each 
 	
 	
+<<<<<<< Updated upstream
 	//mark:-BODY
 	
 Function getBody()->$body : cs:C1710.WPelement
+=======
+Function getBody()->$body : cs:C1710.WPelement  // ∆∆∆
+>>>>>>> Stashed changes
 	$body:=cs:C1710.WPelement.new(WP Get body:C1516(This:C1470.document))
 	
 	

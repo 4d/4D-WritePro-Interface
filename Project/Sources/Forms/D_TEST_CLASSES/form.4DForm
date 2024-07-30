@@ -32,16 +32,30 @@
 	"destination": "detailScreen",
 	"pages": [
 		{
-			"objects": {}
-		},
-		{
 			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"text": "Tab control",
+					"top": 10,
+					"left": 20,
+					"width": 1540,
+					"height": 860,
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"A",
+						"B",
+						"C",
+						"D",
+						"E"
+					],
+					"action": "gotoPage"
+				},
 				"WParea": {
 					"type": "write",
-					"top": 21,
-					"left": 17,
+					"top": 50,
+					"left": 40,
 					"width": 660,
-					"height": 680,
+					"height": 800,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "Form:C1466.wp",
@@ -60,10 +74,10 @@
 				},
 				"WPwidget": {
 					"type": "subform",
-					"top": 21,
-					"left": 697,
+					"top": 51,
+					"left": 717,
 					"width": 260,
-					"height": 680,
+					"height": 800,
 					"sizingX": "move",
 					"sizingY": "grow",
 					"detailForm": "WP_Palette",
@@ -73,12 +87,16 @@
 					"doubleClickInEmptyAreaAction": "addSubrecord",
 					"selectionMode": "multiple",
 					"printFrame": "variable"
-				},
+				}
+			}
+		},
+		{
+			"objects": {
 				"Button": {
 					"type": "button",
 					"text": "With parameter",
-					"top": 61,
-					"left": 1005,
+					"top": 101,
+					"left": 1055,
 					"width": 307,
 					"height": 25,
 					"events": [
@@ -91,8 +109,8 @@
 				"Button1": {
 					"type": "button",
 					"text": "Without parameter",
-					"top": 94,
-					"left": 1005,
+					"top": 134,
+					"left": 1055,
 					"width": 307,
 					"height": 25,
 					"events": [
@@ -105,8 +123,8 @@
 				"Button2": {
 					"type": "button",
 					"text": "new bookmark",
-					"top": 143,
-					"left": 1005,
+					"top": 183,
+					"left": 1055,
 					"width": 307,
 					"height": 25,
 					"events": [
@@ -119,8 +137,8 @@
 				"Button3": {
 					"type": "button",
 					"text": "Get bookmarks",
-					"top": 174,
-					"left": 1005,
+					"top": 214,
+					"left": 1055,
 					"width": 307,
 					"height": 25,
 					"events": [
@@ -133,8 +151,8 @@
 				"Button4": {
 					"type": "button",
 					"text": "Bookmark range",
-					"top": 224,
-					"left": 1005,
+					"top": 264,
+					"left": 1055,
 					"width": 307,
 					"height": 25,
 					"events": [
@@ -147,8 +165,8 @@
 				"Button5": {
 					"type": "button",
 					"text": "PAGE COUNT(DOC)",
-					"top": 274,
-					"left": 1005,
+					"top": 314,
+					"left": 1055,
 					"width": 307,
 					"height": 25,
 					"events": [
@@ -161,8 +179,8 @@
 				"Button6": {
 					"type": "button",
 					"text": "PAGE COUNT(SECTION 2)",
-					"top": 299,
-					"left": 1005,
+					"top": 339,
+					"left": 1055,
 					"width": 307,
 					"height": 25,
 					"events": [
@@ -175,8 +193,8 @@
 				"Button7": {
 					"type": "button",
 					"text": "Get sectionS",
-					"top": 344,
-					"left": 1005,
+					"top": 384,
+					"left": 1055,
 					"width": 307,
 					"height": 25,
 					"events": [
@@ -189,8 +207,8 @@
 				"Button8": {
 					"type": "button",
 					"text": "new TEXTBOX",
-					"top": 381,
-					"left": 1005,
+					"top": 421,
+					"left": 1055,
 					"width": 307,
 					"height": 25,
 					"events": [
@@ -203,8 +221,13 @@
 				"Button9": {
 					"type": "button",
 					"text": "Find all",
+<<<<<<< Updated upstream
 					"top": 718,
 					"left": 1005,
+=======
+					"top": 674,
+					"left": 1055,
+>>>>>>> Stashed changes
 					"width": 307,
 					"height": 20,
 					"events": [
@@ -217,8 +240,13 @@
 				"Button10": {
 					"type": "button",
 					"text": "Get formulas",
+<<<<<<< Updated upstream
 					"top": 744,
 					"left": 1005,
+=======
+					"top": 742,
+					"left": 1055,
+>>>>>>> Stashed changes
 					"width": 307,
 					"height": 20,
 					"events": [
@@ -231,8 +259,13 @@
 				"Button11": {
 					"type": "button",
 					"text": "Get BREAKS",
+<<<<<<< Updated upstream
 					"top": 772,
 					"left": 1005,
+=======
+					"top": 776,
+					"left": 1055,
+>>>>>>> Stashed changes
 					"width": 307,
 					"height": 20,
 					"events": [
@@ -245,8 +278,13 @@
 				"Button12": {
 					"type": "button",
 					"text": "Get elements",
+<<<<<<< Updated upstream
 					"top": 800,
 					"left": 1005,
+=======
+					"top": 810,
+					"left": 1055,
+>>>>>>> Stashed changes
 					"width": 307,
 					"height": 20,
 					"events": [
@@ -259,8 +297,13 @@
 				"Button13": {
 					"type": "button",
 					"text": "PREPEND",
+<<<<<<< Updated upstream
 					"top": 495,
 					"left": 985,
+=======
+					"top": 545,
+					"left": 1035,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -273,8 +316,13 @@
 				"Button14": {
 					"type": "button",
 					"text": "REPLACE",
+<<<<<<< Updated upstream
 					"top": 526,
 					"left": 985,
+=======
+					"top": 576,
+					"left": 1035,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -287,8 +335,13 @@
 				"Button15": {
 					"type": "button",
 					"text": "APPEND picture APP",
+<<<<<<< Updated upstream
 					"top": 557,
 					"left": 985,
+=======
+					"top": 607,
+					"left": 1035,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -301,8 +354,13 @@
 				"Text": {
 					"type": "text",
 					"text": "DOC",
+<<<<<<< Updated upstream
 					"top": 471,
 					"left": 990,
+=======
+					"top": 521,
+					"left": 1040,
+>>>>>>> Stashed changes
 					"width": 54,
 					"height": 16,
 					"sizingX": "move"
@@ -310,8 +368,13 @@
 				"Button16": {
 					"type": "button",
 					"text": "PREPEND",
+<<<<<<< Updated upstream
 					"top": 495,
 					"left": 1074,
+=======
+					"top": 545,
+					"left": 1124,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -324,8 +387,13 @@
 				"Button17": {
 					"type": "button",
 					"text": "REPLACE",
+<<<<<<< Updated upstream
 					"top": 526,
 					"left": 1074,
+=======
+					"top": 576,
+					"left": 1124,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -338,8 +406,13 @@
 				"Button18": {
 					"type": "button",
 					"text": "APPEND picture APP",
+<<<<<<< Updated upstream
 					"top": 557,
 					"left": 1074,
+=======
+					"top": 607,
+					"left": 1124,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -352,8 +425,13 @@
 				"Text1": {
 					"type": "text",
 					"text": "SECTION",
+<<<<<<< Updated upstream
 					"top": 471,
 					"left": 1079,
+=======
+					"top": 521,
+					"left": 1129,
+>>>>>>> Stashed changes
 					"width": 64,
 					"height": 16,
 					"sizingX": "move"
@@ -361,8 +439,13 @@
 				"Button19": {
 					"type": "button",
 					"text": "PREPEND",
+<<<<<<< Updated upstream
 					"top": 495,
 					"left": 1163,
+=======
+					"top": 545,
+					"left": 1213,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -375,8 +458,13 @@
 				"Button20": {
 					"type": "button",
 					"text": "REPLACE",
+<<<<<<< Updated upstream
 					"top": 526,
 					"left": 1163,
+=======
+					"top": 576,
+					"left": 1213,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -389,8 +477,13 @@
 				"Button21": {
 					"type": "button",
 					"text": "APPEND picture APP",
+<<<<<<< Updated upstream
 					"top": 557,
 					"left": 1163,
+=======
+					"top": 607,
+					"left": 1213,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -403,8 +496,13 @@
 				"Text2": {
 					"type": "text",
 					"text": "RANGE",
+<<<<<<< Updated upstream
 					"top": 471,
 					"left": 1168,
+=======
+					"top": 521,
+					"left": 1218,
+>>>>>>> Stashed changes
 					"width": 64,
 					"height": 16,
 					"sizingX": "move"
@@ -412,8 +510,13 @@
 				"Button22": {
 					"type": "button",
 					"text": "PREPEND",
+<<<<<<< Updated upstream
 					"top": 495,
 					"left": 1253,
+=======
+					"top": 545,
+					"left": 1303,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -426,8 +529,13 @@
 				"Button23": {
 					"type": "button",
 					"text": "REPLACE",
+<<<<<<< Updated upstream
 					"top": 526,
 					"left": 1253,
+=======
+					"top": 576,
+					"left": 1303,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -440,8 +548,13 @@
 				"Button24": {
 					"type": "button",
 					"text": "APPEND picture APP",
+<<<<<<< Updated upstream
 					"top": 557,
 					"left": 1253,
+=======
+					"top": 607,
+					"left": 1303,
+>>>>>>> Stashed changes
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -454,73 +567,51 @@
 				"Text3": {
 					"type": "text",
 					"text": "ELEMENT",
+<<<<<<< Updated upstream
 					"top": 471,
 					"left": 1258,
+=======
+					"top": 521,
+					"left": 1308,
+>>>>>>> Stashed changes
 					"width": 64,
 					"height": 16,
 					"sizingX": "move"
 				},
-				"Button25": {
+				"Button47": {
 					"type": "button",
-					"text": "insert table DOC",
-					"top": 21,
-					"left": 1375,
-					"width": 127,
+					"text": "NEW",
+					"top": 61,
+					"left": 1055,
+					"width": 307,
 					"height": 25,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button25.4dm",
+					"method": "ObjectMethods/Button47.4dm",
 					"focusable": false,
+					"fontWeight": "bold",
 					"sizingX": "move"
 				},
-				"Button26": {
-					"type": "button",
-					"text": "insert table section",
-					"top": 21,
-					"left": 1513,
-					"width": 167,
-					"height": 25,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button26.4dm",
-					"focusable": false,
-					"sizingX": "move"
-				},
-				"Button27": {
-					"type": "button",
-					"text": "insert table range",
-					"top": 54,
-					"left": 1375,
-					"width": 127,
-					"height": 25,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button27.4dm",
-					"focusable": false,
-					"sizingX": "move"
-				},
-				"Button28": {
-					"type": "button",
-					"text": "insert table elem",
-					"top": 54,
-					"left": 1513,
-					"width": 167,
-					"height": 25,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button28.4dm",
-					"focusable": false,
-					"sizingX": "move"
-				},
+				"Text8": {
+					"type": "text",
+					"text": "IMAGES",
+					"top": 481,
+					"left": 1032,
+					"width": 339,
+					"height": 16,
+					"fontWeight": "bold",
+					"textAlign": "center"
+				}
+			}
+		},
+		{
+			"objects": {
 				"Button30": {
 					"type": "button",
 					"text": "Get/Delete header",
-					"top": 299,
-					"left": 1375,
+					"top": 339,
+					"left": 1115,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -533,8 +624,8 @@
 				"Button31": {
 					"type": "button",
 					"text": "Get/Delete footer",
-					"top": 329,
-					"left": 1375,
+					"top": 369,
+					"left": 1115,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -547,8 +638,8 @@
 				"Button32": {
 					"type": "button",
 					"text": "Get/Delete header 1st",
-					"top": 369,
-					"left": 1375,
+					"top": 409,
+					"left": 1115,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -561,8 +652,8 @@
 				"Button33": {
 					"type": "button",
 					"text": "Get/Delete footer 1st",
-					"top": 399,
-					"left": 1375,
+					"top": 439,
+					"left": 1115,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -575,8 +666,8 @@
 				"Button34": {
 					"type": "button",
 					"text": "Get/Delete header left",
-					"top": 439,
-					"left": 1375,
+					"top": 479,
+					"left": 1115,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -589,8 +680,8 @@
 				"Button35": {
 					"type": "button",
 					"text": "Get/Delete footer left",
-					"top": 469,
-					"left": 1375,
+					"top": 509,
+					"left": 1115,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -603,8 +694,8 @@
 				"Button36": {
 					"type": "button",
 					"text": "Get/Delete header right",
-					"top": 509,
-					"left": 1375,
+					"top": 549,
+					"left": 1115,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -617,8 +708,8 @@
 				"Button37": {
 					"type": "button",
 					"text": "Get/Delete footer right",
-					"top": 539,
-					"left": 1375,
+					"top": 579,
+					"left": 1115,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -631,8 +722,8 @@
 				"Button38": {
 					"type": "button",
 					"text": "Delete sub first page",
-					"top": 673,
-					"left": 1392,
+					"top": 713,
+					"left": 1132,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -645,8 +736,8 @@
 				"Button39": {
 					"type": "button",
 					"text": "Delete sub right page",
-					"top": 702,
-					"left": 1392,
+					"top": 742,
+					"left": 1132,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -659,8 +750,8 @@
 				"Button40": {
 					"type": "button",
 					"text": "Delete sub left page",
-					"top": 731,
-					"left": 1392,
+					"top": 771,
+					"left": 1132,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -673,8 +764,13 @@
 				"Button41": {
 					"type": "button",
 					"text": "Delete sec;first page",
+<<<<<<< Updated upstream
 					"top": 673,
 					"left": 1572,
+=======
+					"top": 713,
+					"left": 1302,
+>>>>>>> Stashed changes
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -687,8 +783,13 @@
 				"Button42": {
 					"type": "button",
 					"text": "Delete sec;right page",
+<<<<<<< Updated upstream
 					"top": 702,
 					"left": 1572,
+=======
+					"top": 742,
+					"left": 1302,
+>>>>>>> Stashed changes
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -701,8 +802,13 @@
 				"Button43": {
 					"type": "button",
 					"text": "Delete sec;left page",
+<<<<<<< Updated upstream
 					"top": 731,
 					"left": 1572,
+=======
+					"top": 771,
+					"left": 1302,
+>>>>>>> Stashed changes
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -715,8 +821,8 @@
 				"Button44": {
 					"type": "button",
 					"text": "New sub first page",
-					"top": 143,
-					"left": 1374,
+					"top": 183,
+					"left": 1114,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -729,8 +835,8 @@
 				"Button45": {
 					"type": "button",
 					"text": "New sub right page",
-					"top": 172,
-					"left": 1374,
+					"top": 212,
+					"left": 1114,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -743,8 +849,8 @@
 				"Button46": {
 					"type": "button",
 					"text": "New sub left page",
-					"top": 201,
-					"left": 1374,
+					"top": 241,
+					"left": 1114,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -754,26 +860,11 @@
 					"focusable": false,
 					"sizingX": "move"
 				},
-				"Button47": {
-					"type": "button",
-					"text": "NEW",
-					"top": 21,
-					"left": 1005,
-					"width": 307,
-					"height": 25,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button47.4dm",
-					"focusable": false,
-					"fontWeight": "bold",
-					"sizingX": "move"
-				},
 				"Button48": {
 					"type": "button",
 					"text": "New Head/Foot 1st page",
-					"top": 143,
-					"left": 1544,
+					"top": 183,
+					"left": 1284,
 					"width": 180,
 					"height": 25,
 					"events": [
@@ -786,8 +877,8 @@
 				"Button29": {
 					"type": "button",
 					"text": "New Head/Foot left page",
-					"top": 173,
-					"left": 1544,
+					"top": 213,
+					"left": 1284,
 					"width": 180,
 					"height": 25,
 					"events": [
@@ -800,8 +891,8 @@
 				"Button49": {
 					"type": "button",
 					"text": "New Head/Foot left page",
-					"top": 203,
-					"left": 1544,
+					"top": 243,
+					"left": 1284,
 					"width": 180,
 					"height": 25,
 					"events": [
@@ -810,12 +901,72 @@
 					"method": "ObjectMethods/Button49.4dm",
 					"focusable": false,
 					"sizingX": "move"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button25": {
+					"type": "button",
+					"text": "insert table DOC",
+					"top": 119,
+					"left": 1225,
+					"width": 127,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button25.4dm",
+					"focusable": false,
+					"sizingX": "move"
+				},
+				"Button26": {
+					"type": "button",
+					"text": "insert table section",
+					"top": 119,
+					"left": 1363,
+					"width": 167,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button26.4dm",
+					"focusable": false,
+					"sizingX": "move"
+				},
+				"Button27": {
+					"type": "button",
+					"text": "insert table range",
+					"top": 152,
+					"left": 1225,
+					"width": 127,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button27.4dm",
+					"focusable": false,
+					"sizingX": "move"
+				},
+				"Button28": {
+					"type": "button",
+					"text": "insert table elem",
+					"top": 152,
+					"left": 1363,
+					"width": 167,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button28.4dm",
+					"focusable": false,
+					"sizingX": "move"
 				},
 				"Button50": {
 					"type": "button",
 					"text": "getElements\\rappend row (loop)",
-					"top": 134,
-					"left": 1795,
+					"top": 231,
+					"left": 998,
 					"width": 187,
 					"height": 42,
 					"events": [
@@ -828,8 +979,8 @@
 				"Button51": {
 					"type": "button",
 					"text": "insertTable\\rappend row\\rgetColumns\\rsetAttributes",
-					"top": 22,
-					"left": 1794,
+					"top": 119,
+					"left": 997,
 					"width": 188,
 					"height": 102,
 					"events": [
@@ -842,8 +993,8 @@
 				"Button52": {
 					"type": "button",
 					"text": "Insert cols(1)",
-					"top": 224,
-					"left": 1794,
+					"top": 321,
+					"left": 997,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -856,8 +1007,8 @@
 				"Button53": {
 					"type": "button",
 					"text": "Insert rows(1)",
-					"top": 250,
-					"left": 1794,
+					"top": 347,
+					"left": 997,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -870,8 +1021,8 @@
 				"Button54": {
 					"type": "button",
 					"text": "Delete cols(1)",
-					"top": 294,
-					"left": 1794,
+					"top": 391,
+					"left": 997,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -884,8 +1035,8 @@
 				"Button55": {
 					"type": "button",
 					"text": "Delete rows(1)",
-					"top": 320,
-					"left": 1794,
+					"top": 417,
+					"left": 997,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -898,8 +1049,8 @@
 				"Button56": {
 					"type": "button",
 					"text": "Get cols()",
-					"top": 364,
-					"left": 1794,
+					"top": 461,
+					"left": 997,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -912,8 +1063,8 @@
 				"Button57": {
 					"type": "button",
 					"text": "Get rows()",
-					"top": 387,
-					"left": 1794,
+					"top": 484,
+					"left": 997,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -926,8 +1077,8 @@
 				"Button58": {
 					"type": "button",
 					"text": "Get cells()",
-					"top": 411,
-					"left": 1795,
+					"top": 508,
+					"left": 998,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -940,8 +1091,8 @@
 				"Button59": {
 					"type": "button",
 					"text": "Split()",
-					"top": 447,
-					"left": 1794,
+					"top": 544,
+					"left": 997,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -954,8 +1105,8 @@
 				"Button60": {
 					"type": "button",
 					"text": "Merge()",
-					"top": 471,
-					"left": 1795,
+					"top": 568,
+					"left": 998,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -968,8 +1119,8 @@
 				"Text4": {
 					"type": "text",
 					"text": "DOC",
-					"top": 198,
-					"left": 1810,
+					"top": 295,
+					"left": 1013,
 					"width": 65,
 					"height": 16,
 					"fontWeight": "bold",
@@ -978,8 +1129,8 @@
 				"Button61": {
 					"type": "button",
 					"text": "Insert cols(1)",
-					"top": 227,
-					"left": 1931,
+					"top": 324,
+					"left": 1134,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -994,8 +1145,8 @@
 				"Button62": {
 					"type": "button",
 					"text": "Insert rows(1)",
-					"top": 253,
-					"left": 1931,
+					"top": 350,
+					"left": 1134,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1010,8 +1161,8 @@
 				"Button63": {
 					"type": "button",
 					"text": "Delete cols(1)",
-					"top": 297,
-					"left": 1931,
+					"top": 394,
+					"left": 1134,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1026,8 +1177,8 @@
 				"Button64": {
 					"type": "button",
 					"text": "Delete rows(1)",
-					"top": 323,
-					"left": 1931,
+					"top": 420,
+					"left": 1134,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1042,8 +1193,8 @@
 				"Button65": {
 					"type": "button",
 					"text": "Get cols()",
-					"top": 367,
-					"left": 1931,
+					"top": 464,
+					"left": 1134,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1058,8 +1209,8 @@
 				"Button66": {
 					"type": "button",
 					"text": "Get rows()",
-					"top": 390,
-					"left": 1931,
+					"top": 487,
+					"left": 1134,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1074,8 +1225,8 @@
 				"Button67": {
 					"type": "button",
 					"text": "Get cells()",
-					"top": 414,
-					"left": 1932,
+					"top": 511,
+					"left": 1135,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1090,8 +1241,8 @@
 				"Button68": {
 					"type": "button",
 					"text": "Split()",
-					"top": 450,
-					"left": 1931,
+					"top": 547,
+					"left": 1134,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1106,8 +1257,8 @@
 				"Button69": {
 					"type": "button",
 					"text": "Merge()",
-					"top": 474,
-					"left": 1932,
+					"top": 571,
+					"left": 1135,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1122,8 +1273,8 @@
 				"Text5": {
 					"type": "text",
 					"text": "SECTION",
-					"top": 201,
-					"left": 1947,
+					"top": 298,
+					"left": 1150,
 					"width": 65,
 					"height": 16,
 					"fontWeight": "bold",
@@ -1134,8 +1285,8 @@
 				"Button70": {
 					"type": "button",
 					"text": "Insert cols(1)",
-					"top": 227,
-					"left": 2055,
+					"top": 324,
+					"left": 1258,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1151,8 +1302,8 @@
 				"Button71": {
 					"type": "button",
 					"text": "Insert rows(1)",
-					"top": 253,
-					"left": 2055,
+					"top": 350,
+					"left": 1258,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1168,8 +1319,8 @@
 				"Button72": {
 					"type": "button",
 					"text": "Delete cols(1)",
-					"top": 297,
-					"left": 2055,
+					"top": 394,
+					"left": 1258,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1185,8 +1336,8 @@
 				"Button73": {
 					"type": "button",
 					"text": "Delete rows(1)",
-					"top": 323,
-					"left": 2055,
+					"top": 420,
+					"left": 1258,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1202,8 +1353,8 @@
 				"Button74": {
 					"type": "button",
 					"text": "Get cols()",
-					"top": 367,
-					"left": 2055,
+					"top": 464,
+					"left": 1258,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1219,8 +1370,8 @@
 				"Button75": {
 					"type": "button",
 					"text": "Get rows()",
-					"top": 390,
-					"left": 2055,
+					"top": 487,
+					"left": 1258,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1236,8 +1387,8 @@
 				"Button76": {
 					"type": "button",
 					"text": "Get cells()",
-					"top": 414,
-					"left": 2056,
+					"top": 511,
+					"left": 1259,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1253,8 +1404,8 @@
 				"Button77": {
 					"type": "button",
 					"text": "Split()",
-					"top": 450,
-					"left": 2055,
+					"top": 547,
+					"left": 1258,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1270,8 +1421,8 @@
 				"Button78": {
 					"type": "button",
 					"text": "Merge()",
-					"top": 474,
-					"left": 2056,
+					"top": 571,
+					"left": 1259,
 					"width": 103,
 					"height": 22,
 					"events": [
@@ -1287,8 +1438,8 @@
 				"Text6": {
 					"type": "text",
 					"text": "RANGE",
-					"top": 201,
-					"left": 2071,
+					"top": 298,
+					"left": 1274,
 					"width": 65,
 					"height": 16,
 					"fontWeight": "bold",
@@ -1299,8 +1450,8 @@
 				"Button79": {
 					"type": "button",
 					"text": "Insert cols(2;2)",
-					"top": 227,
-					"left": 2175,
+					"top": 324,
+					"left": 1378,
 					"width": 163,
 					"height": 22,
 					"events": [
@@ -1316,8 +1467,8 @@
 				"Button80": {
 					"type": "button",
 					"text": "Insert rows(3;2)",
-					"top": 253,
-					"left": 2175,
+					"top": 350,
+					"left": 1378,
 					"width": 163,
 					"height": 22,
 					"events": [
@@ -1333,8 +1484,8 @@
 				"Button81": {
 					"type": "button",
 					"text": "Delete cols(2;2)",
-					"top": 297,
-					"left": 2175,
+					"top": 394,
+					"left": 1378,
 					"width": 163,
 					"height": 22,
 					"events": [
@@ -1350,8 +1501,8 @@
 				"Button82": {
 					"type": "button",
 					"text": "Delete rows(3;2)",
-					"top": 323,
-					"left": 2175,
+					"top": 420,
+					"left": 1378,
 					"width": 163,
 					"height": 22,
 					"events": [
@@ -1367,8 +1518,8 @@
 				"Button83": {
 					"type": "button",
 					"text": "Get cols(2; 2)",
-					"top": 367,
-					"left": 2175,
+					"top": 464,
+					"left": 1378,
 					"width": 163,
 					"height": 22,
 					"events": [
@@ -1384,8 +1535,8 @@
 				"Button84": {
 					"type": "button",
 					"text": "Get rows(2; 2)",
-					"top": 390,
-					"left": 2175,
+					"top": 487,
+					"left": 1378,
 					"width": 163,
 					"height": 22,
 					"events": [
@@ -1401,8 +1552,8 @@
 				"Button85": {
 					"type": "button",
 					"text": "Get cells(2;2;2;2)",
-					"top": 414,
-					"left": 2176,
+					"top": 511,
+					"left": 1379,
 					"width": 163,
 					"height": 22,
 					"events": [
@@ -1418,8 +1569,8 @@
 				"Button86": {
 					"type": "button",
 					"text": "Split(2;2;2;2)",
-					"top": 450,
-					"left": 2175,
+					"top": 547,
+					"left": 1378,
 					"width": 163,
 					"height": 22,
 					"events": [
@@ -1435,8 +1586,8 @@
 				"Button87": {
 					"type": "button",
 					"text": "Merge(2;2;2;2)",
-					"top": 474,
-					"left": 2176,
+					"top": 571,
+					"left": 1379,
 					"width": 163,
 					"height": 22,
 					"events": [
@@ -1452,8 +1603,8 @@
 				"Text7": {
 					"type": "text",
 					"text": "TABLE",
-					"top": 201,
-					"left": 2191,
+					"top": 298,
+					"left": 1394,
 					"width": 65,
 					"height": 16,
 					"fontWeight": "bold",
@@ -1464,8 +1615,8 @@
 				"Button88": {
 					"type": "button",
 					"text": "Split()",
-					"top": 527,
-					"left": 2176,
+					"top": 624,
+					"left": 1379,
 					"width": 163,
 					"height": 22,
 					"events": [
@@ -1481,8 +1632,8 @@
 				"Button89": {
 					"type": "button",
 					"text": "Merge()",
-					"top": 551,
-					"left": 2177,
+					"top": 648,
+					"left": 1380,
 					"width": 163,
 					"height": 22,
 					"events": [
@@ -1562,9 +1713,192 @@
 					"sizingX": "move"
 				}
 			}
+		},
+		{
+			"objects": {
+				"Button90": {
+					"type": "button",
+					"text": "Set view properties (4D WP)",
+					"top": 56,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button90.4dm",
+					"focusable": false
+				},
+				"Button92": {
+					"type": "button",
+					"text": "Set view properties (\"area\";properties)",
+					"top": 102,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button92.4dm",
+					"focusable": false
+				},
+				"Button91": {
+					"type": "button",
+					"text": "Get view properties (\"area\") ->properties",
+					"top": 132,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button91.4dm",
+					"focusable": false
+				},
+				"Button93": {
+					"type": "button",
+					"text": "Selection range 4DWP",
+					"top": 206,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button93.4dm",
+					"focusable": false
+				},
+				"Button94": {
+					"type": "button",
+					"text": "Selection range WPdocument",
+					"top": 239,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button94.4dm",
+					"focusable": false
+				},
+				"Button95": {
+					"type": "button",
+					"text": "Select 4D",
+					"top": 299,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button95.4dm",
+					"focusable": false
+				},
+				"Button96": {
+					"type": "button",
+					"text": "SELECT WPdocument",
+					"top": 332,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button96.4dm",
+					"focusable": false
+				},
+				"Button97": {
+					"type": "button",
+					"text": "SELECT in Body   (4D)",
+					"top": 396,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button97.4dm",
+					"focusable": false,
+					"stroke": "automatic"
+				},
+				"Button98": {
+					"type": "button",
+					"text": "SELECT WPelement",
+					"top": 427,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button98.4dm",
+					"focusable": false,
+					"stroke": "automatic"
+				},
+				"Button99": {
+					"type": "button",
+					"text": "SELECT in Header   (4D)",
+					"top": 486,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button99.4dm",
+					"focusable": false,
+					"stroke": "automatic"
+				},
+				"Button100": {
+					"type": "button",
+					"text": "SELECT WPelement",
+					"top": 517,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button100.4dm",
+					"focusable": false,
+					"stroke": "automatic"
+				},
+				"Button101": {
+					"type": "button",
+					"text": "SELECT in Section   (4D)",
+					"top": 576,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button101.4dm",
+					"focusable": false,
+					"stroke": "automatic"
+				},
+				"Button102": {
+					"type": "button",
+					"text": "SELECT WPsection({$from;$to})",
+					"top": 607,
+					"left": 1025,
+					"width": 479,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button102.4dm",
+					"focusable": false,
+					"stroke": "automatic"
+				}
+			}
 		}
 	],
+<<<<<<< Updated upstream
 	"geometryStamp": 557,
+=======
+	"geometryStamp": 765,
+>>>>>>> Stashed changes
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

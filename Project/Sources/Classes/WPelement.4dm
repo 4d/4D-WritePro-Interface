@@ -317,3 +317,16 @@ Function insertDocument($wpDoc : Object; $mode : Integer; $rangeUpdate : Integer
 		$rangeUpdate:=wk include in range:K81:180
 	End if 
 	WP INSERT DOCUMENT:C1411(This:C1470.element; $wpDoc; $mode; $rangeUpdate)
+	
+	
+	
+	//mark:-INTERFACE
+	
+Function select($startRange : Integer; $endRange : Integer)
+	Case of 
+		: (Count parameters:C259=0)
+			WP SELECT:C1348(This:C1470.element)
+		: (Count parameters:C259=2)
+			WP SELECT:C1348(This:C1470.element; $startRange; $endRange)
+	End case 
+	

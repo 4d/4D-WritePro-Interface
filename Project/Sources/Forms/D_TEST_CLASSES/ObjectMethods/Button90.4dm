@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 var $wp : cs:C1710.WPdocument
 var $pictElem : cs:C1710.WPelement
@@ -12,3 +13,16 @@ If ($pictures.length>=3)
 	$pictures[2].delete()
 	
 End if 
+=======
+var $properties : Object
+
+If (Shift down:C543)
+	$properties:={visibleHorizontalRuler: True:C214; visibleVerticalRuler: False:C215}
+Else 
+	$properties:={visibleHorizontalRuler: False:C215; visibleVerticalRuler: True:C214}
+End if 
+
+//$doc:=cs.WPdocument.new()
+
+WP SET VIEW PROPERTIES:C1648(*; "WParea"; $properties)
+>>>>>>> Stashed changes

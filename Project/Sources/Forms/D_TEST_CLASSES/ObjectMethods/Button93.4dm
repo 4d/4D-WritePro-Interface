@@ -1,4 +1,5 @@
 
+<<<<<<< Updated upstream
 var $wp : cs:C1710.WPdocument
 var $pictElem : cs:C1710.WPelement
 var $picture : Picture
@@ -12,3 +13,10 @@ If ($pictures.length>=1)
 	$pictures[0].delete()
 	
 End if 
+=======
+var $range : Object
+
+$range:=WP Selection range:C1340(*; "WParea")
+ALERT:C41(JSON Stringify:C1217($range; *))
+
+>>>>>>> Stashed changes

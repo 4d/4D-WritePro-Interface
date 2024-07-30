@@ -340,3 +340,15 @@ Function tableSplitCells()
 	
 Function tableMergeCells()  // all tables will be 1x1
 	WP TABLE MERGE CELLS:C1815(This:C1470.section)
+	
+	
+	//mark:-INTERFACE
+	
+Function select($startRange : Integer; $endRange : Integer)
+	Case of 
+		: (Count parameters:C259=0)
+			WP SELECT:C1348(This:C1470.section)
+		: (Count parameters:C259=2)
+			WP SELECT:C1348(This:C1470.section; $startRange; $endRange)
+	End case 
+	
