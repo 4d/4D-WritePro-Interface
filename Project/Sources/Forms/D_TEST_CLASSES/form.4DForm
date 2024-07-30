@@ -221,13 +221,8 @@
 				"Button9": {
 					"type": "button",
 					"text": "Find all",
-<<<<<<< Updated upstream
 					"top": 718,
 					"left": 1005,
-=======
-					"top": 674,
-					"left": 1055,
->>>>>>> Stashed changes
 					"width": 307,
 					"height": 20,
 					"events": [
@@ -240,13 +235,8 @@
 				"Button10": {
 					"type": "button",
 					"text": "Get formulas",
-<<<<<<< Updated upstream
 					"top": 744,
 					"left": 1005,
-=======
-					"top": 742,
-					"left": 1055,
->>>>>>> Stashed changes
 					"width": 307,
 					"height": 20,
 					"events": [
@@ -259,13 +249,8 @@
 				"Button11": {
 					"type": "button",
 					"text": "Get BREAKS",
-<<<<<<< Updated upstream
 					"top": 772,
 					"left": 1005,
-=======
-					"top": 776,
-					"left": 1055,
->>>>>>> Stashed changes
 					"width": 307,
 					"height": 20,
 					"events": [
@@ -278,13 +263,8 @@
 				"Button12": {
 					"type": "button",
 					"text": "Get elements",
-<<<<<<< Updated upstream
 					"top": 800,
 					"left": 1005,
-=======
-					"top": 810,
-					"left": 1055,
->>>>>>> Stashed changes
 					"width": 307,
 					"height": 20,
 					"events": [
@@ -297,13 +277,8 @@
 				"Button13": {
 					"type": "button",
 					"text": "PREPEND",
-<<<<<<< Updated upstream
 					"top": 495,
-					"left": 985,
-=======
-					"top": 545,
-					"left": 1035,
->>>>>>> Stashed changes
+					"left": 1005,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -316,13 +291,8 @@
 				"Button14": {
 					"type": "button",
 					"text": "REPLACE",
-<<<<<<< Updated upstream
 					"top": 526,
-					"left": 985,
-=======
-					"top": 576,
-					"left": 1035,
->>>>>>> Stashed changes
+					"left": 1005,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -335,13 +305,8 @@
 				"Button15": {
 					"type": "button",
 					"text": "APPEND picture APP",
-<<<<<<< Updated upstream
 					"top": 557,
-					"left": 985,
-=======
-					"top": 607,
-					"left": 1035,
->>>>>>> Stashed changes
+					"left": 1005,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -354,13 +319,8 @@
 				"Text": {
 					"type": "text",
 					"text": "DOC",
-<<<<<<< Updated upstream
 					"top": 471,
-					"left": 990,
-=======
-					"top": 521,
-					"left": 1040,
->>>>>>> Stashed changes
+					"left": 1010,
 					"width": 54,
 					"height": 16,
 					"sizingX": "move"
@@ -368,13 +328,8 @@
 				"Button16": {
 					"type": "button",
 					"text": "PREPEND",
-<<<<<<< Updated upstream
 					"top": 495,
-					"left": 1074,
-=======
-					"top": 545,
-					"left": 1124,
->>>>>>> Stashed changes
+					"left": 1094,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -387,13 +342,8 @@
 				"Button17": {
 					"type": "button",
 					"text": "REPLACE",
-<<<<<<< Updated upstream
 					"top": 526,
-					"left": 1074,
-=======
-					"top": 576,
-					"left": 1124,
->>>>>>> Stashed changes
+					"left": 1094,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -406,13 +356,8 @@
 				"Button18": {
 					"type": "button",
 					"text": "APPEND picture APP",
-<<<<<<< Updated upstream
 					"top": 557,
-					"left": 1074,
-=======
-					"top": 607,
-					"left": 1124,
->>>>>>> Stashed changes
+					"left": 1094,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -425,13 +370,8 @@
 				"Text1": {
 					"type": "text",
 					"text": "SECTION",
-<<<<<<< Updated upstream
 					"top": 471,
-					"left": 1079,
-=======
-					"top": 521,
-					"left": 1129,
->>>>>>> Stashed changes
+					"left": 1099,
 					"width": 64,
 					"height": 16,
 					"sizingX": "move"
@@ -439,13 +379,8 @@
 				"Button19": {
 					"type": "button",
 					"text": "PREPEND",
-<<<<<<< Updated upstream
 					"top": 495,
-					"left": 1163,
-=======
-					"top": 545,
-					"left": 1213,
->>>>>>> Stashed changes
+					"left": 1183,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -458,13 +393,8 @@
 				"Button20": {
 					"type": "button",
 					"text": "REPLACE",
-<<<<<<< Updated upstream
 					"top": 526,
-					"left": 1163,
-=======
-					"top": 576,
-					"left": 1213,
->>>>>>> Stashed changes
+					"left": 1183,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -477,13 +407,8 @@
 				"Button21": {
 					"type": "button",
 					"text": "APPEND picture APP",
-<<<<<<< Updated upstream
 					"top": 557,
-					"left": 1163,
-=======
-					"top": 607,
-					"left": 1213,
->>>>>>> Stashed changes
+					"left": 1183,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -496,13 +421,8 @@
 				"Text2": {
 					"type": "text",
 					"text": "RANGE",
-<<<<<<< Updated upstream
 					"top": 471,
-					"left": 1168,
-=======
-					"top": 521,
-					"left": 1218,
->>>>>>> Stashed changes
+					"left": 1188,
 					"width": 64,
 					"height": 16,
 					"sizingX": "move"
@@ -510,13 +430,8 @@
 				"Button22": {
 					"type": "button",
 					"text": "PREPEND",
-<<<<<<< Updated upstream
 					"top": 495,
-					"left": 1253,
-=======
-					"top": 545,
-					"left": 1303,
->>>>>>> Stashed changes
+					"left": 1273,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -529,13 +444,8 @@
 				"Button23": {
 					"type": "button",
 					"text": "REPLACE",
-<<<<<<< Updated upstream
 					"top": 526,
-					"left": 1253,
-=======
-					"top": 576,
-					"left": 1303,
->>>>>>> Stashed changes
+					"left": 1273,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -548,13 +458,8 @@
 				"Button24": {
 					"type": "button",
 					"text": "APPEND picture APP",
-<<<<<<< Updated upstream
 					"top": 557,
-					"left": 1253,
-=======
-					"top": 607,
-					"left": 1303,
->>>>>>> Stashed changes
+					"left": 1273,
 					"width": 77,
 					"height": 25,
 					"events": [
@@ -567,13 +472,8 @@
 				"Text3": {
 					"type": "text",
 					"text": "ELEMENT",
-<<<<<<< Updated upstream
 					"top": 471,
-					"left": 1258,
-=======
-					"top": 521,
-					"left": 1308,
->>>>>>> Stashed changes
+					"left": 1278,
 					"width": 64,
 					"height": 16,
 					"sizingX": "move"
@@ -597,7 +497,7 @@
 					"type": "text",
 					"text": "IMAGES",
 					"top": 481,
-					"left": 1032,
+					"left": 1052,
 					"width": 339,
 					"height": 16,
 					"fontWeight": "bold",
@@ -610,8 +510,8 @@
 				"Button30": {
 					"type": "button",
 					"text": "Get/Delete header",
-					"top": 339,
-					"left": 1115,
+					"top": 209,
+					"left": 1005,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -624,8 +524,8 @@
 				"Button31": {
 					"type": "button",
 					"text": "Get/Delete footer",
-					"top": 369,
-					"left": 1115,
+					"top": 239,
+					"left": 1005,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -638,8 +538,8 @@
 				"Button32": {
 					"type": "button",
 					"text": "Get/Delete header 1st",
-					"top": 409,
-					"left": 1115,
+					"top": 279,
+					"left": 1005,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -652,8 +552,8 @@
 				"Button33": {
 					"type": "button",
 					"text": "Get/Delete footer 1st",
-					"top": 439,
-					"left": 1115,
+					"top": 309,
+					"left": 1005,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -666,8 +566,8 @@
 				"Button34": {
 					"type": "button",
 					"text": "Get/Delete header left",
-					"top": 479,
-					"left": 1115,
+					"top": 349,
+					"left": 1005,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -680,8 +580,8 @@
 				"Button35": {
 					"type": "button",
 					"text": "Get/Delete footer left",
-					"top": 509,
-					"left": 1115,
+					"top": 379,
+					"left": 1005,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -694,8 +594,8 @@
 				"Button36": {
 					"type": "button",
 					"text": "Get/Delete header right",
-					"top": 549,
-					"left": 1115,
+					"top": 419,
+					"left": 1005,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -708,8 +608,8 @@
 				"Button37": {
 					"type": "button",
 					"text": "Get/Delete footer right",
-					"top": 579,
-					"left": 1115,
+					"top": 449,
+					"left": 1005,
 					"width": 260,
 					"height": 25,
 					"events": [
@@ -722,8 +622,8 @@
 				"Button38": {
 					"type": "button",
 					"text": "Delete sub first page",
-					"top": 713,
-					"left": 1132,
+					"top": 583,
+					"left": 1022,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -736,8 +636,8 @@
 				"Button39": {
 					"type": "button",
 					"text": "Delete sub right page",
-					"top": 742,
-					"left": 1132,
+					"top": 612,
+					"left": 1022,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -750,8 +650,8 @@
 				"Button40": {
 					"type": "button",
 					"text": "Delete sub left page",
-					"top": 771,
-					"left": 1132,
+					"top": 641,
+					"left": 1022,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -764,13 +664,8 @@
 				"Button41": {
 					"type": "button",
 					"text": "Delete sec;first page",
-<<<<<<< Updated upstream
-					"top": 673,
-					"left": 1572,
-=======
-					"top": 713,
-					"left": 1302,
->>>>>>> Stashed changes
+					"top": 583,
+					"left": 1244,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -783,13 +678,8 @@
 				"Button42": {
 					"type": "button",
 					"text": "Delete sec;right page",
-<<<<<<< Updated upstream
-					"top": 702,
-					"left": 1572,
-=======
-					"top": 742,
-					"left": 1302,
->>>>>>> Stashed changes
+					"top": 612,
+					"left": 1244,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -802,13 +692,8 @@
 				"Button43": {
 					"type": "button",
 					"text": "Delete sec;left page",
-<<<<<<< Updated upstream
-					"top": 731,
-					"left": 1572,
-=======
-					"top": 771,
-					"left": 1302,
->>>>>>> Stashed changes
+					"top": 641,
+					"left": 1244,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -821,8 +706,8 @@
 				"Button44": {
 					"type": "button",
 					"text": "New sub first page",
-					"top": 183,
-					"left": 1114,
+					"top": 53,
+					"left": 1004,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -835,8 +720,8 @@
 				"Button45": {
 					"type": "button",
 					"text": "New sub right page",
-					"top": 212,
-					"left": 1114,
+					"top": 82,
+					"left": 1004,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -849,8 +734,8 @@
 				"Button46": {
 					"type": "button",
 					"text": "New sub left page",
-					"top": 241,
-					"left": 1114,
+					"top": 111,
+					"left": 1004,
 					"width": 150,
 					"height": 25,
 					"events": [
@@ -863,8 +748,8 @@
 				"Button48": {
 					"type": "button",
 					"text": "New Head/Foot 1st page",
-					"top": 183,
-					"left": 1284,
+					"top": 53,
+					"left": 1174,
 					"width": 180,
 					"height": 25,
 					"events": [
@@ -877,8 +762,8 @@
 				"Button29": {
 					"type": "button",
 					"text": "New Head/Foot left page",
-					"top": 213,
-					"left": 1284,
+					"top": 83,
+					"left": 1174,
 					"width": 180,
 					"height": 25,
 					"events": [
@@ -891,8 +776,8 @@
 				"Button49": {
 					"type": "button",
 					"text": "New Head/Foot left page",
-					"top": 243,
-					"left": 1284,
+					"top": 113,
+					"left": 1174,
 					"width": 180,
 					"height": 25,
 					"events": [
@@ -1894,11 +1779,7 @@
 			}
 		}
 	],
-<<<<<<< Updated upstream
-	"geometryStamp": 557,
-=======
-	"geometryStamp": 765,
->>>>>>> Stashed changes
+	"geometryStamp": 584,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
