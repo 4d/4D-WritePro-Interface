@@ -311,3 +311,10 @@ Function tableSplitCells()
 	
 Function tableMergeCells()  // all tables will be 1x1
 	WP TABLE MERGE CELLS:C1815(This:C1470.range)
+	
+	//mark:-UTILITIES
+	
+Function isFontStyleSUpported($fontStyle : Text)->$supported : Boolean
+	$supported:=WP Is font style supported:C1363(This:C1470.range; $fontStyle)
+	
+	

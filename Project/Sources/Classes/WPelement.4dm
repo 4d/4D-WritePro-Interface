@@ -330,3 +330,8 @@ Function select($startRange : Integer; $endRange : Integer)
 			WP SELECT:C1348(This:C1470.element; $startRange; $endRange)
 	End case 
 	
+	//mark:-UTILITIES
+	
+Function isFontStyleSUpported($fontStyle : Text)->$supported : Boolean
+	$supported:=WP Is font style supported:C1363(This:C1470.element; $fontStyle)
+	

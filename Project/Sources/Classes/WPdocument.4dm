@@ -433,7 +433,7 @@ Function importDocument($filePath : Text; $option : Variant)
 	End case 
 	This:C1470.document:=$importedDoc
 	
-Function insertDocument($wpDoc : Object; $mode : Integer; $rangeUpdate : Integer)
+Function insertBody($wpDoc : Object; $mode : Integer; $rangeUpdate : Integer)
 	If (Count parameters:C259<3)
 		$rangeUpdate:=wk include in range:K81:180
 	End if 
