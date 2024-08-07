@@ -1532,7 +1532,7 @@
 					"tooltip": ":xliff:insertPageBreak",
 					"action": "insertPageBreak",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Insert/PageBreak_32.png",
+					"icon": "/RESOURCES/Images/TBcommon/Insert/PageBreak_32.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
@@ -1545,7 +1545,7 @@
 					"tooltip": ":xliff:insertSectionbreak",
 					"action": "",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Insert/SectionBreak_32.png",
+					"icon": "/RESOURCES/Images/TBcommon/Insert/SectionBreak_32.png",
 					"iconFrames": 4,
 					"style": "toolbar",
 					"popupPlacement": "linked",
@@ -1864,7 +1864,7 @@
 					"tooltip": ":xliff:insertColumnBreak",
 					"action": "insertColumnBreak",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Insert/columnBreak_32.png",
+					"icon": "/RESOURCES/Images/TBcommon/Insert/columnBreak_32.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				},
@@ -2022,7 +2022,7 @@
 					"tooltip": ":xliff:insertContinuousSectionBreak",
 					"action": "",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Insert/ContinuousSectionBreak_32.png",
+					"icon": "/RESOURCES/Images/TBcommon/Insert/ContinuousSectionBreak_32.png",
 					"iconFrames": 4,
 					"style": "toolbar",
 					"events": [
