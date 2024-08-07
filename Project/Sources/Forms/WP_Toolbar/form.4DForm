@@ -1526,8 +1526,8 @@
 				"btn_insertPageBreak": {
 					"type": "button",
 					"top": 35,
-					"left": 385,
-					"width": 40,
+					"left": 380,
+					"width": 35,
 					"height": 40,
 					"tooltip": ":xliff:insertPageBreak",
 					"action": "insertPageBreak",
@@ -1539,7 +1539,7 @@
 				"btn_insertSectionBreak": {
 					"type": "button",
 					"top": 35,
-					"left": 465,
+					"left": 455,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:insertSectionbreak",
@@ -1557,7 +1557,7 @@
 				"btn_insertImage": {
 					"type": "button",
 					"top": 35,
-					"left": 525,
+					"left": 545,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:insertPicture",
@@ -1785,8 +1785,8 @@
 				},
 				"Line3": {
 					"type": "line",
-					"top": 30,
-					"left": 575,
+					"top": 110,
+					"left": 590,
 					"height": 50,
 					"stroke": "#696969",
 					"width": 0,
@@ -1859,7 +1859,7 @@
 					"type": "button",
 					"top": 35,
 					"left": 345,
-					"width": 40,
+					"width": 35,
 					"height": 40,
 					"tooltip": ":xliff:insertColumnBreak",
 					"action": "insertColumnBreak",
@@ -1871,7 +1871,7 @@
 				"Line50": {
 					"type": "line",
 					"top": 30,
-					"left": 515,
+					"left": 540,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2016,7 +2016,7 @@
 				"btn_insertContinuousSectionBreak": {
 					"type": "button",
 					"top": 35,
-					"left": 425,
+					"left": 415,
 					"width": 40,
 					"height": 40,
 					"tooltip": ":xliff:insertContinuousSectionBreak",
@@ -2098,8 +2098,8 @@
 					"type": "button",
 					"text": "",
 					"top": 35,
-					"left": 585,
-					"width": 40,
+					"left": 595,
+					"width": 35,
 					"height": 40,
 					"events": [
 						"onAlternateClick"
@@ -2122,6 +2122,18 @@
 					"action": "visibleTableBorders",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/View/TableBorders_24.png",
+					"iconFrames": 4,
+					"style": "toolbar"
+				},
+				"btn_removeSection": {
+					"type": "button",
+					"top": 35,
+					"left": 495,
+					"width": 35,
+					"height": 40,
+					"action": "section/remove",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/TBcommon/Insert/DeleteSection_32.png",
 					"iconFrames": 4,
 					"style": "toolbar"
 				}
@@ -2160,7 +2172,8 @@
 				"btn_visibleEmptyImages",
 				"btn_displayAsSymbol",
 				"btn_insertTextArea1",
-				"btn_visibleTableBorders"
+				"btn_visibleTableBorders",
+				"btn_removeSection"
 			]
 		},
 		{
@@ -2279,7 +2292,7 @@
 				"Line46": {
 					"type": "line",
 					"top": 30,
-					"left": 205,
+					"left": 200,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -2511,7 +2524,7 @@
 				"Line47": {
 					"type": "line",
 					"top": 30,
-					"left": 210,
+					"left": 200,
 					"height": 50,
 					"stroke": "#888888",
 					"width": 0,
@@ -4495,5 +4508,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7253
+	"geometryStamp": 7351
 }

@@ -13,10 +13,6 @@ Case of
 		
 		OBJECT SET STYLE SHEET:C1257(*; "@"; Automatic style sheet_additional:K14:14)
 		
-		//(OBJECT Get pointer(Object named; "TargetSelector1"))->:=0
-		//(OBJECT Get pointer(Object named; "TargetSelector2"))->:=1  //paragraph by default
-		//(OBJECT Get pointer(Object named; "TargetSelector3"))->:=0
-		
 		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignTextLeft"))->:=0
 		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignTextCenter"))->:=0
 		(OBJECT Get pointer:C1124(Object named:K67:5; "btn_alignTextRight"))->:=0
@@ -28,17 +24,13 @@ Case of
 		(OBJECT Get pointer:C1124(Object named:K67:5; "rb1"))->:=1
 		(OBJECT Get pointer:C1124(Object named:K67:5; "rb2"))->:=0
 		
-		//(OBJECT Get pointer(Object named; "MarginLeft"))->:=0
-		//(OBJECT Get pointer(Object named; "MarginTop"))->:=0
-		//(OBJECT Get pointer(Object named; "MarginRight"))->:=0
-		//(OBJECT Get pointer(Object named; "MarginBottom"))->:=0
-		//(OBJECT Get pointer(Object named; "marginHorizontalRuler"))->:=0
-		//(OBJECT Get pointer(Object named; "marginVerticalRuler"))->:=0
-		
 		(OBJECT Get pointer:C1124(Object named:K67:5; "textLineHeightRuler"))->:=100
 		
 		CLEAR VARIABLE:C89(oSettings1)
 		CLEAR VARIABLE:C89(oSettings2)
+		
+		
+		OBJECT SET HELP TIP:C1181(*; "btn_removeSection@"; Get action info:C1442("section/remove").title)
 		
 		TB_setAutomaticActions("Margins")
 		

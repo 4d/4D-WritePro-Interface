@@ -58,7 +58,7 @@
 				"IconBgnd14": {
 					"type": "rectangle",
 					"top": 498,
-					"left": 205,
+					"left": 159,
 					"width": 35,
 					"height": 32,
 					"fill": "#FFFFFF",
@@ -68,7 +68,7 @@
 				"IconBgnd15": {
 					"type": "rectangle",
 					"top": 498,
-					"left": 145,
+					"left": 113,
 					"width": 35,
 					"height": 32,
 					"fill": "#FFFFFF",
@@ -78,7 +78,7 @@
 				"IconBgnd16": {
 					"type": "rectangle",
 					"top": 498,
-					"left": 85,
+					"left": 67,
 					"width": 35,
 					"height": 32,
 					"fill": "#FFFFFF",
@@ -88,7 +88,7 @@
 				"IconBgnd17": {
 					"type": "rectangle",
 					"top": 498,
-					"left": 25,
+					"left": 21,
 					"width": 35,
 					"height": 32,
 					"fill": "#FFFFFF",
@@ -577,7 +577,7 @@
 				"btn_insertPageBreak": {
 					"type": "button",
 					"top": 502,
-					"left": 88,
+					"left": 70,
 					"width": 29,
 					"height": 24,
 					"tooltip": ":xliff:insertPageBreak",
@@ -590,7 +590,7 @@
 				"btn_insertSectionBreak": {
 					"type": "button",
 					"top": 502,
-					"left": 208,
+					"left": 162,
 					"width": 29,
 					"height": 24,
 					"tooltip": ":xliff:insertSectionbreak",
@@ -608,7 +608,7 @@
 				"btn_insertColumnBreak": {
 					"type": "button",
 					"top": 502,
-					"left": 28,
+					"left": 24,
 					"width": 29,
 					"height": 24,
 					"tooltip": ":xliff:insertColumnBreak",
@@ -621,7 +621,7 @@
 				"btn_insertContinousSectionBreak": {
 					"type": "button",
 					"top": 502,
-					"left": 148,
+					"left": 116,
 					"width": 29,
 					"height": 24,
 					"tooltip": ":xliff:insertContinuousSectionBreak",
@@ -1120,6 +1120,33 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Alignments"
+				},
+				"IconBgnd1": {
+					"type": "rectangle",
+					"top": 498,
+					"left": 205,
+					"width": 35,
+					"height": 32,
+					"fill": "#FFFFFF",
+					"stroke": "#c0c0c0",
+					"borderRadius": 0
+				},
+				"btn_removeSection": {
+					"type": "button",
+					"top": 502,
+					"left": 208,
+					"width": 29,
+					"height": 24,
+					"tooltip": "see onload",
+					"action": "section/remove",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Sidebar/DeleteSection_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"popupPlacement": "none",
+					"events": [
+						"onClick"
+					]
 				}
 			},
 			"entryOrder": [
@@ -1151,7 +1178,8 @@
 				"btn_alignTextLeft",
 				"btn_alignTextCenter",
 				"btn_alignTextRight",
-				"btn_alignTextJustify"
+				"btn_alignTextJustify",
+				"btn_removeSection"
 			]
 		}
 	],
@@ -1217,5 +1245,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 3379
+	"geometryStamp": 3421
 }

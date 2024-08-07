@@ -96,6 +96,7 @@ Case of
 		OBJECT SET HELP TIP:C1181(*; "btn_imageBehind@"; Get action info:C1442("anchorLayout?value=behind").title)  //@ is temporary
 		OBJECT SET HELP TIP:C1181(*; "btn_imageInline@"; Get action info:C1442("anchorLayout?value=inline").title)
 		OBJECT SET HELP TIP:C1181(*; "btn_imageInFront@"; Get action info:C1442("anchorLayout?value=front").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_removeSection@"; Get action info:C1442("section/remove").title)
 		
 		
 		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapTopBottom"; Get action info:C1442("anchorLayout?value=wrapTopBottom").title)
