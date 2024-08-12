@@ -36,15 +36,12 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 				UI_PaletteImage(True:C214)  // means take focus into account (nothing is focusable in the toolbar)
 				
 			: ($page=9)  // page 9 is special case
-				
 				UI_PaletteProtect  // common with palettes
 				
 			: ($page=10)  // page 10 is also special case
-				
 				UI_PaletteImportExport  //
 				
 			: ($page=11)  // page 11 find and replace
-				
 				UI_PaletteFindAndReplace  //ACI0103628 - see method too
 				
 			Else 
@@ -109,9 +106,10 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 						: ($page=7)
 							UI_Tables("Toolbar")
 							
-							
-							
 					End case 
+					
+					
+					
 					
 				End if 
 				

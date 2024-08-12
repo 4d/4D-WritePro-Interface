@@ -9,6 +9,7 @@ var $newDocument; $range : Object
 var $position; $attribute : Object
 var $formula; $table : Object
 var $area : Object
+var $section; $subSectionFirst; $subSectionLeft; $subSectionRight : Object
 
 var $ptr : Pointer
 
@@ -16,6 +17,7 @@ var $prompt; $path; $rawText; $extension; $form; $memoErrorMethod; $formName : T
 var $title; $docName; $folderPath; $propertyName; $url : Text
 
 var $pict : Picture  // empty pict to be used with URL
+
 
 
 If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form:C1466; "area"))
@@ -486,6 +488,43 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						Else 
 							WP_SetImageExpression
 						End if 
+						
+				End case 
+			: ($action="sectionReset@")
+				
+				$section:=WP Get section:C1581(Form:C1466.selection)
+				$subSectionFirst:=WP Get subsection:C1582($section; wk first page:K81:203)
+				$subSectionLeft:=WP Get subsection:C1582($section; wk left page:K81:204)
+				$subSectionRight:=WP Get subsection:C1582($section; wk right page:K81:205)
+				
+				Case of 
+					: ($action="sectionReset")
+						WP RESET ATTRIBUTES:C1344($section)
+						
+					: ($action="sectionResetAll")
+						WP RESET ATTRIBUTES:C1344($section)
+						If ($subSectionFirst#Null:C1517)
+							WP RESET ATTRIBUTES:C1344($subSectionFirst)
+						End if 
+						If ($subSectionLeft#Null:C1517)
+							WP RESET ATTRIBUTES:C1344($subSectionLeft)
+						End if 
+						If ($subSectionRight#Null:C1517)
+							WP RESET ATTRIBUTES:C1344($subSectionRight)
+						End if 
+						
+					: ($action="sectionResetFirstPage")
+						WP RESET ATTRIBUTES:C1344($subSectionFirst)
+						
+					: ($action="sectionResetLeftRightPage")
+						WP RESET ATTRIBUTES:C1344($subSectionLeft)
+						WP RESET ATTRIBUTES:C1344($subSectionRight)
+						
+					: ($action="sectionResetLeftPage")
+						WP RESET ATTRIBUTES:C1344($subSectionLeft)
+						
+					: ($action="sectionResetRightPage")
+						WP RESET ATTRIBUTES:C1344($subSectionRight)
 						
 				End case 
 				

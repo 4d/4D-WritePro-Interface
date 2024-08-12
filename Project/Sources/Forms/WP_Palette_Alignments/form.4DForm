@@ -585,7 +585,8 @@
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Sidebar/PageBreak_24.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "custom",
+					"events": []
 				},
 				"btn_insertSectionBreak": {
 					"type": "button",
@@ -598,7 +599,7 @@
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Sidebar/SectionBreak_24.png",
 					"iconFrames": 4,
-					"style": "toolbar",
+					"style": "custom",
 					"popupPlacement": "linked",
 					"events": [
 						"onClick"
@@ -616,7 +617,8 @@
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Sidebar/columnBreak_24.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "custom",
+					"events": []
 				},
 				"btn_insertContinousSectionBreak": {
 					"type": "button",
@@ -629,7 +631,7 @@
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Sidebar/ContinuousSectionBreak_24.png",
 					"iconFrames": 4,
-					"style": "toolbar",
+					"style": "custom",
 					"events": [
 						"onClick"
 					],
@@ -1137,16 +1139,17 @@
 					"left": 208,
 					"width": 29,
 					"height": 24,
-					"tooltip": "see onload",
-					"action": "section/remove",
+					"action": "",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Sidebar/DeleteSection_24.png",
 					"iconFrames": 4,
-					"style": "toolbar",
-					"popupPlacement": "none",
+					"style": "custom",
+					"popupPlacement": "linked",
 					"events": [
 						"onClick"
-					]
+					],
+					"tooltip": ":xliff:DeleteOrResetSections",
+					"method": "ObjectMethods/btn_removeSection.4dm"
 				}
 			},
 			"entryOrder": [
@@ -1245,5 +1248,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 3421
+	"geometryStamp": 3424
 }

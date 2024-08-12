@@ -2129,13 +2129,19 @@
 					"type": "button",
 					"top": 35,
 					"left": 495,
-					"width": 35,
+					"width": 45,
 					"height": 40,
-					"action": "section/remove",
+					"action": "",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/Insert/DeleteSection_32.png",
 					"iconFrames": 4,
-					"style": "toolbar"
+					"style": "toolbar",
+					"popupPlacement": "linked",
+					"method": "ObjectMethods/btn_removeSection.4dm",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:DeleteOrResetSections"
 				}
 			},
 			"entryOrder": [
@@ -4508,5 +4514,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7351
+	"geometryStamp": 7352
 }

@@ -8,6 +8,7 @@ var $menu; $item; $url : Text
 var $_menuItems; $_tables : Collection
 var $o : Object
 var $_formulas : Collection
+var $section; $subSectionFirst; $subSectionLeft; $subSectionRight : Object
 
 If (Count parameters:C259>=1)
 	$content:=$1
@@ -274,6 +275,48 @@ Case of
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "footer/remove")
+		
+	: ($content="DeleteSections")
+		
+		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
+		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "section/remove")
+		
+		If (Form:C1466.selection#Null:C1517)  // always
+			
+			APPEND MENU ITEM:C411($menu; "-")
+			
+			$section:=WP Get section:C1581(Form:C1466.selection)
+			$subSectionFirst:=WP Get subsection:C1582($section; wk first page:K81:203)
+			$subSectionLeft:=WP Get subsection:C1582($section; wk left page:K81:204)
+			$subSectionRight:=WP Get subsection:C1582($section; wk right page:K81:205)
+			
+			If ($subSectionFirst#Null:C1517) || ($subSectionLeft#Null:C1517)
+				APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetSectionAndSubsections"))
+				SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionResetAll")
+			End if 
+			
+			APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetSection"))
+			SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionReset")
+			
+			APPEND MENU ITEM:C411($menu; "-")
+			
+			If ($subSectionFirst#Null:C1517)
+				APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetFirstPage"))
+				SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionResetFirstPage")
+			End if 
+			
+			If ($subSectionLeft#Null:C1517)  // && ($subSectionRight#Null) // second condition always true if first is true
+				APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetLeftAndRightPages"))
+				SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionResetLeftRightPage")
+				
+				APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetLeftPage"))
+				SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionResetLeftPage")
+				
+				APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetRightPage"))
+				SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionResetRightPage")
+			End if 
+			
+		End if 
 		
 End case 
 

@@ -29,9 +29,6 @@ Case of
 		CLEAR VARIABLE:C89(oSettings1)
 		CLEAR VARIABLE:C89(oSettings2)
 		
-		
-		OBJECT SET HELP TIP:C1181(*; "btn_removeSection@"; Get action info:C1442("section/remove").title)
-		
 		TB_setAutomaticActions("Margins")
 		
 		//----------------------------------------------------------------
