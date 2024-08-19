@@ -49,6 +49,18 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 				
 			Else 
 				
+				If ($page=1)
+					// ACI0104990 Pat Bensky
+					Case of 
+						: (oForm.fontSize=Int:C8(oForm.fontSize))
+							OBJECT SET FORMAT:C236(*; "cbox_FontSize"; "###0;-###0;0")
+						: ((oForm.fontSize*10)=Int:C8(oForm.fontSize*10))
+							OBJECT SET FORMAT:C236(*; "cbox_FontSize"; "###0.0;-###0.0;0")
+						Else 
+							OBJECT SET FORMAT:C236(*; "cbox_FontSize"; "###0.00;-###0.0;00")
+					End case 
+				End if 
+				
 				// general cases after
 				If ($page=1) || ($page=11)  // both pages have enterable areas
 					$protected:=UI_isProtected(False:C215)  // 2022 oct 13 (TEST) don't manage focus on page 1 because fontSize is focusable

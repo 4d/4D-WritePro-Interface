@@ -226,8 +226,6 @@ C_BOOLEAN:C305(WP_SetDocumentProtection; $2)
 C_OBJECT:C1216(WP_SetBackgroundPicture; $1)
 C_PICTURE:C286(WP_SetBackgroundPicture; $2)
 C_TEXT:C284(WP_Ruler; $1)
-C_OBJECT:C1216(WP_SetFontSize; $1)
-C_LONGINT:C283(WP_SetFontSize; $2)
 C_OBJECT:C1216(WP_GetBackgroundSize; $1)
 C_BOOLEAN:C305(UI_PaletteImage; $1)
 
