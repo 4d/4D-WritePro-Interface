@@ -12,11 +12,14 @@ C_BOOLEAN:C305($redraw)
 
 C_LONGINT:C283($p)
 C_LONGINT:C283($frameColor)
-C_LONGINT:C283($fontSize; $color)
+C_LONGINT:C283($color)
+
 C_LONGINT:C283($rangeStart; $rangeEnd)
 
 C_TEXT:C284($fontFamily)
 C_TEXT:C284($font)
+
+var $fontSize : Real  // ACI0104990 Pat Bensky
 
 If (Count parameters:C259<2)
 	$check:=False:C215
