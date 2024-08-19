@@ -20,7 +20,18 @@ If (Not:C34((Is nil pointer:C315($ptrLabel)) | (Is nil pointer:C315($ptrURL))))
 	$_URLs:=WP Get links:C1643(Form:C1466.selection)
 	If ($_URLs.length>0)
 		
-		$ptrURL->:=$_URLs[0].url
+		// ACI0105031 "Case of" added by RL on 2024/08/19 to distinguish url from method4D
+		Case of 
+			: (Not:C34(Undefined:C82($_URLs[0].url)))
+				$ptrURL->:=$_URLs[0].url
+				
+			: (Not:C34(Undefined:C82($_URLs[0].method)))
+				$ptrURL->:="method4D:"+$_URLs[0].method
+				If (Not:C34(Undefined:C82($_URLs[0].parameter)))
+					$ptrURL->+="?parameter='"+$_URLs[0].parameter+"'"
+				End if 
+				
+		End case 
 		
 		// Label based on selected text (may be shorter or longer than URL)
 		$label1:=WP Get text:C1575(Form:C1466.selection)

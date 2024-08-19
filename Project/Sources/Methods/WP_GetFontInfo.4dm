@@ -18,13 +18,6 @@ C_TEXT:C284($font)
 
 var $fontSize : Real  // ACI0104990 Pat Bensky
 
-//$range:=$1
-
-//If (Count parameters>=2)
-//$check:=$2
-//Else 
-//$check:=False
-//End if 
 
 If (Count parameters:C259<2)
 	$check:=False:C215

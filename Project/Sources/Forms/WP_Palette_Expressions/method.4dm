@@ -32,7 +32,7 @@ Case of
 		
 		If ($setupOK) & ($typeSelection#2)
 			WP_GetDocInfos(Form:C1466.selection[wk owner:K81:168])
-			WP_GetURL
+			WP_GetURL  //ACI0105031
 			WP_GetFormulas
 		End if 
 		
