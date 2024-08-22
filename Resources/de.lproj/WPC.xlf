@@ -2213,6 +2213,33 @@ Soll er ersetzt werden?</target>
         </trans-unit>        
       </group>
 
+       <group resname="ResetSectionOptions">
+        <trans-unit id="ResetSections1" resname="ResetSectionAndSubsections">
+          <source>Reset section and subsections</source>
+          <target>Sektion und Untersektionen zurücksetzen</target>
+        </trans-unit>
+        <trans-unit id="ResetSections2" resname="ResetSection">
+          <source>Reset section</source>
+          <target>Sektion zurücksetzen</target>
+        </trans-unit>
+        <trans-unit id="ResetSections3" resname="ResetFirstPage">
+          <source>Reset first page</source>
+          <target>Erste Seite zurücksetzen</target>
+        </trans-unit>
+        <trans-unit id="ResetSections4" resname="ResetLeftAndRightPages">
+          <source>Reset left and right pages</source>
+          <target>Linke und rechte Seite zurücksetzen</target>
+        </trans-unit>
+        <trans-unit id="ResetSections5" resname="ResetLeftPage">
+          <source>Reset left pages</source>
+          <target>Linke Seiten zurücksetzen</target>
+        </trans-unit>
+        <trans-unit id="ResetSections6" resname="ResetRightPage">
+          <source>Reset right pages</source>
+          <target>Rechte Seiten zurücksetzen</target>
+        </trans-unit>
+       </group>
+
     </body>
   </file>
 
