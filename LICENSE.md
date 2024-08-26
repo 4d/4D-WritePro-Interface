@@ -76,7 +76,7 @@ Consequently to distribute a Modified Software according to the provision of sec
 
 ### 5.3 RIGHT OF DISTRIBUTION
 
-In particular, the right of distribution includes the right to publish, transmit and communicate the Modified Software to the general public on any or all medium, and by any or all means, and the right to market, either in consideration of a fee, or 
+In particular, the right of distribution includes the right to publish, transmit and communicate the Modified Software to the general public on any or all medium, and by any or all means, and the right to market, either in consideration of a fee, or free of charge, one or more copies of the Modified Software by any means. 
 
 #### 5.3.1 DISTRIBUTION OF SOFTWARE WITHOUT MODIFICATION
 
@@ -90,7 +90,7 @@ In the event the creation of the Modified Software, the Licensee undertakes that
 
 * the resulting Modified Software will be governed by this Agreement, being understood that such Agreement shall be integrated in the Modified Software the Integrated Contributions in the resulting Modified Software will be clearly identified and documented,
 * the Licensee will allow effective access to the source code of the Modified Software, at a minimum during the entire period of distribution of the Derivative Software, such that such modifications may be carried over in a subsequent version of the Software.
-* the Modified Software must be renamed to exclude any reference to 4D. For example, it is expressly prohibited to distribute a Modified Software named “4D SVG”; Licensee shall rename the Modified Software such as “Name of the Licensee SVG”. Consequently, Licensee is expressly forbidden to use 4D’s product name in general to promote his modified work.
+* the Modified Software must be renamed to exclude any reference to 4D. For example, it is expressly prohibited to distribute a Modified Software named “4D Write Pro Interface”; Licensee shall rename the Modified Software such as “Name of the Licensee Write Pro Interface”. Consequently, Licensee is expressly forbidden to use 4D’s product name in general to promote his modified work.
   
 ## Article 6 - INTELLECTUAL PROPERTY
 
