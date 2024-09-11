@@ -2213,6 +2213,33 @@ When not selected, only formulas that have never been evaluated will be computed
         </trans-unit>        
       </group>
 
+       <group resname="ResetSectionOptions">
+        <trans-unit id="ResetSections1" resname="ResetSectionAndSubsections">
+          <source>Reset section and subsections</source>
+          <target>セクションとサブセクションをリセット</target>
+        </trans-unit>
+        <trans-unit id="ResetSections2" resname="ResetSection">
+          <source>Reset section</source>
+          <target>セクションをリセット</target>
+        </trans-unit>
+        <trans-unit id="ResetSections3" resname="ResetFirstPage">
+          <source>Reset first page</source>
+          <target>最初のページをリセット</target>
+        </trans-unit>
+        <trans-unit id="ResetSections4" resname="ResetLeftAndRightPages">
+          <source>Reset left and right pages</source>
+          <target>左ページと右ページをリセット</target>
+        </trans-unit>
+        <trans-unit id="ResetSections5" resname="ResetLeftPage">
+          <source>Reset left pages</source>
+          <target>左ページをリセット</target>
+        </trans-unit>
+        <trans-unit id="ResetSections6" resname="ResetRightPage">
+          <source>Reset right pages</source>
+          <target>右ページをリセット</target>
+        </trans-unit>
+       </group>
+
     </body>
   </file>
 </xliff>
