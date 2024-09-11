@@ -544,6 +544,10 @@
           <source>Tabulations</source>
           <target>タブ分け</target>
         </trans-unit>
+       <trans-unit id="DeleteOrResetSections" resname="DeleteOrResetSections">
+          <source>Delete or reset sections</source>
+          <target>セクションの削除またはリセット</target>
+        </trans-unit>
       </group>
       <group resname="Labels">
         <trans-unit id="57" resname="applyMarginsTo">
