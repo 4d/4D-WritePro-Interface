@@ -546,6 +546,10 @@ This file is distributed under the same license as the product package.-->
           <source>Tabulations</source>
           <target>Tabulaciones</target>
         </trans-unit>
+        <trans-unit id="DeleteOrResetSections" resname="DeleteOrResetSections">
+          <source>Delete or reset sections</source>
+          <target>Eliminar o restablecer secciones</target>
+        </trans-unit>
       </group>
       <group resname="Labels">
         <trans-unit id="57" resname="applyMarginsTo">

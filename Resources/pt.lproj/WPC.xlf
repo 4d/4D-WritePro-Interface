@@ -2213,6 +2213,33 @@ Gostaria de substituí-la?</target>
         </trans-unit>        
       </group>
 
+       <group resname="ResetSectionOptions">
+        <trans-unit id="ResetSections1" resname="ResetSectionAndSubsections">
+          <source>Reset section and subsections</source>
+          <target>Redefinir seção e subseções</target>
+        </trans-unit>
+        <trans-unit id="ResetSections2" resname="ResetSection">
+          <source>Reset section</source>
+          <target>Seção de redefinição</target>
+        </trans-unit>
+        <trans-unit id="ResetSections3" resname="ResetFirstPage">
+          <source>Reset first page</source>
+          <target>Redefinir a primeira página</target>
+        </trans-unit>
+        <trans-unit id="ResetSections4" resname="ResetLeftAndRightPages">
+          <source>Reset left and right pages</source>
+          <target>Redefinir páginas esquerda e direita</target>
+        </trans-unit>
+        <trans-unit id="ResetSections5" resname="ResetLeftPage">
+          <source>Reset left pages</source>
+          <target>Redefinir páginas esquerdas</target>
+        </trans-unit>
+        <trans-unit id="ResetSections6" resname="ResetRightPage">
+          <source>Reset right pages</source>
+          <target>Redefinir páginas direitas</target>
+        </trans-unit>
+       </group>
+
     </body>
   </file>
 
