@@ -207,7 +207,7 @@ This file is distributed under the same license as the product package.-->
           <target>詳細設定…</target>
         </trans-unit>
         <trans-unit id="dOtz4kYVKAUCtHPmPtDbdw" resname="PictureAndTextboxes">
-          <source>Picture &amp; textboxes</source>
+          <source>Pictures &amp; text boxes</source>
           <target>ピクチャ &amp; テキストボックス</target>
         </trans-unit>
       </group>
@@ -1604,9 +1604,9 @@ When not selected, only formulas that have never been evaluated will be computed
         </trans-unit>
         <trans-unit id="NqxkQgc34W90eQYBmYkkvg" resname="InfoGoogleFonts">
           <source>This option adds a Google font import directive.
- Use this option if the fonts in your document are not cross-platform.</source>
+Use this option if the fonts in your document are not cross-platform.</source>
           <target>このオプションはGoogle フォントimport ディレクティブを追加します。
- ドキュメント内のフォントがクロスプラットフォーム対応でない場合にはこのオプションを使用して下さい。</target>
+ドキュメント内のフォントがクロスプラットフォーム対応でない場合にはこのオプションを使用して下さい。</target>
         </trans-unit>
         <trans-unit id="KRk/LGj7Cj0IKqbAD1+m2Q" resname="PagesComma">
           <source>Pages:</source>
@@ -1614,9 +1614,9 @@ When not selected, only formulas that have never been evaluated will be computed
         </trans-unit>
         <trans-unit id="9rxyF4rWKl6cSTgcq13Plw" resname="ConfirmImageFolder">
           <source>An "Images" folder already exists there!
- Would you like to replace it?</source>
+Would you like to replace it?</source>
           <target>"Images" フォルダが既にここに存在します!
- 上書きしますか?</target>
+上書きしますか?</target>
         </trans-unit>
         <trans-unit id="ZYahIeSDiz5Tz/hjbW8C2A" resname="Overwrite">
           <source>Overwrite</source>
