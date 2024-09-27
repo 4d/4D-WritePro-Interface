@@ -43,20 +43,20 @@
           <target>セクションにアンカーする</target>
         </trans-unit>
         <trans-unit id="95" resname="autoCorrection">
-          <source>Auto correction</source>
+          <source>Automatic correction</source>
           <target>自動補正</target>
         </trans-unit>
         <trans-unit id="101" resname="autoDashSubstitutionsEnabled">
-          <source>Auto dash substitutions enabled</source>
-          <target>自動ダッシュ置換が有効化されています</target>
+          <source>Replace -- with —</source>
+          <target>-- を — で置き換える</target>
         </trans-unit>
         <trans-unit id="99" resname="autoLanguageEnabled">
-          <source>Auto language enabled</source>
-          <target>自動言語識別が有効化されています</target>
+          <source>Enable automatic language detection</source>
+          <target>自動言語識別を有効化する</target>
         </trans-unit>
         <trans-unit id="100" resname="autoQuoteSubstitutionsEnabled">
-          <source>Auto quote substitutions enabled</source>
-          <target>自動引用符置換が有効化されています</target>
+          <source>Use smart quotes</source>
+          <target>スマート引用符を使用</target>
         </trans-unit>
         <trans-unit id="13" resname="backgroundColor">
           <source>Background color</source>
@@ -143,12 +143,12 @@
           <target>カット</target>
         </trans-unit>
         <trans-unit id="108" resname="enableGrammar">
-          <source>Enable grammar</source>
-          <target>文法チェックを有効化</target>
+          <source>Check grammar with spelling</source>
+          <target>文法とスペルをチェック</target>
         </trans-unit>
         <trans-unit id="90" resname="enableSpell">
-          <source>Spellcheck</source>
-          <target>スペルチェック</target>
+          <source>Enable spellcheck</source>
+          <target>スペルチェックを有効化</target>
         </trans-unit>
         <trans-unit id="97" resname="enableSubstitution">
           <source>Activate system substitution</source>
@@ -163,16 +163,16 @@
           <target>フォントサイズ拡大</target>
         </trans-unit>
         <trans-unit id="96" resname="forgetIgnore">
-          <source>Forget/Ignore</source>
-          <target>辞書から消去/無視</target>
+          <source>Clear the list of ignored words</source>
+          <target>無視した単語の一覧を消去</target>
         </trans-unit>
         <trans-unit id="47" resname="freeze4DExpressions">
           <source>Freeze 4D expressions</source>
           <target>4D式を固定化</target>
         </trans-unit>
         <trans-unit id="91" resname="ignore">
-          <source>Ignore</source>
-          <target>無視</target>
+          <source>Ignore the word</source>
+          <target>単語を無視</target>
         </trans-unit>
         <trans-unit id="78" resname="imageBehind">
           <source>Image behind text</source>
@@ -195,8 +195,8 @@
           <target>日付を挿入</target>
         </trans-unit>
         <trans-unit id="45" resname="insertExpression">
-          <source>Insert 4D expression</source>
-          <target>4D式を挿入</target>
+          <source>Insert or edit 4D expression</source>
+          <target>4D式を挿入または編集</target>
         </trans-unit>
         <trans-unit id="51" resname="insertPageBreak">
           <source>Insert page break</source>
@@ -319,8 +319,8 @@
           <target>やり直し</target>
         </trans-unit>
         <trans-unit id="98" resname="removeSubstitution">
-          <source>Remove substitutions</source>
-          <target>自動置換を削除</target>
+          <source>Ignore system substitution</source>
+          <target>システムによる置換を無視</target>
         </trans-unit>
         <trans-unit id="24" resname="selectAll">
           <source>Select all</source>
@@ -363,8 +363,8 @@
           <target>サイズ</target>
         </trans-unit>
         <trans-unit id="102" resname="spellDialog">
-          <source>Spell dialog</source>
-          <target>スペルダイアログ</target>
+          <source>Show the spell Checking dialog</source>
+          <target>スペルチェックダイアログを表示</target>
         </trans-unit>
         <trans-unit id="FF84ifbM0/hfJWYZADoijw" resname="strikethrough">
           <source>Strikethrough</source>
@@ -375,8 +375,8 @@
           <target>下つき文字</target>
         </trans-unit>
         <trans-unit id="110" resname="substitutions">
-          <source>Show / hide substitutions</source>
-          <target>自動置換を表示/非表示</target>
+          <source>Indicate substitution</source>
+          <target>自動置換を表示</target>
         </trans-unit>
         <trans-unit id="11" resname="superscript">
           <source>Superscript</source>
