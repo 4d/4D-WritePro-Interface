@@ -575,6 +575,35 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Sizes"
+				},
+				"previousValue": {
+					"type": "input",
+					"top": 103,
+					"left": 363,
+					"width": 115,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000CD",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 85,
+					"left": 302,
+					"width": 149,
+					"height": 17,
+					"textAlign": "right",
+					"text": "//ACI0097045"
 				}
 			}
 		}
@@ -618,5 +647,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 628
+	"geometryStamp": 629
 }
