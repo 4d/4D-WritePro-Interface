@@ -5,7 +5,7 @@ var $windowID : Integer
 
 If (Count parameters:C259=0)
 	// alert (An API key is needed)
-	$apiKey:="XXXXXXX"
+	$apiKey:="XXXX"
 	
 	//Else 
 	

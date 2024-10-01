@@ -2,8 +2,12 @@
 #DECLARE($aiParameters : Object)
 
 var $openAI : cs:C1710.ai.openAI
+
 $openAI:=cs:C1710.ai.openAI.new($aiParameters.apiKey)  // PRIVATE KEY
 
+var $formPrompt : Text
+var $formVisionUrl : Text
+var $function : Text
 
 var $textGenerationParam : Object
 var $imageGenerationParam : Object
