@@ -38,6 +38,16 @@
 //$textBox.delete()
 
 
+//aiPref:=New object
+//aiPref.apiKey:="xxx"
+//$json:=JSON Stringify(aiPref; *)
+//$file:=File(Folder(fk resources folder).path+"aiPref.json")
+
+//$file.setText($json)
+
+
+
+
 
 
 
