@@ -1,0 +1,66 @@
+﻿{
+	"chatThems": [
+		{
+			"title": "The World\\Motors Show",
+			"icon": "cars.png",
+			"prompt": "Generate a formal invitation for the ”World Motor Show” 2025"
+		},
+		{
+			"title": "Wedding\\invitation",
+			"icon": "wedding.png",
+			"prompt": "Generate a funny invitation for the wedding of PAUL and VIRGINIE"
+		},
+		{
+			"title": "Hi-Tech\\Show",
+			"icon": "hiTech.png",
+			"prompt": "Generate geek invitation for the hi-tech show 2025"
+		},
+		{
+			"title": "Lawyers\\Congress",
+			"icon": "lawyers.png",
+			"prompt": "Generate a formal invitation for lawyers congress of Chicago"
+		},
+		{
+			"title": "DIY Store\\Opening",
+			"icon": "DIY.png",
+			"prompt": "Generates an invitation to the opening of the “Maxi-DYI\\” store."
+		},
+		{
+			"title": "Gardening\\Skills",
+			"icon": "garden.png",
+			"prompt": "Generate an advertising for the new book “Have fun gardening"
+		}],
+	"imageThems": [
+			{
+				"title": "Cars",
+				"icon": "car.png",
+				"prompt": "Yellow car"
+			},
+			{
+				"title": "Money",
+				"icon": "money.png",
+				"prompt": "Bills and coins"
+			},
+			{
+				"title": "Computers",
+				"icon": "computers.png",
+				"prompt": "Computer, screen and mouse"
+			},
+			{
+				"title": "Farm",
+				"icon": "farm.png",
+				"prompt": "Farm at the country"
+			},
+			{
+				"title": "House",
+				"icon": "house.png",
+				"prompt": "house with a garden"
+			},
+			{
+				"title": "Trucks",
+				"icon": "truck.png",
+				"prompt": "Trucks on the road"
+			}
+		]
+
+}

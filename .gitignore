@@ -79,3 +79,5 @@ DEV/
 # Added by user
 #--------------------------------
 Project/Sources/dependencies.json
+Resources/aiPref.json
+Resources/AI/aiPref.json
