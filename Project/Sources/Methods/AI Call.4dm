@@ -30,11 +30,11 @@ var $threadParam : Object
 
 var $formInupt : Text
 
-$formPrompt:=Form:C1466.prompt
-$formVisionUrl:=Form:C1466.url
+//$formPrompt:=Form.prompt
+//$formVisionUrl:=Form.url
 
 
-//$ddList:=Form.ddownList
+//$ddList:=Form.tabs
 
 $function:=$aiParameters.function
 
@@ -42,11 +42,12 @@ Case of
 		
 	: ($function="Chat")  // CHAT -----------------------------------------------------------------
 		
-		$textGenerationParam:=New object:C1471(\
-			"userPrompt"; $formPrompt; \
-			"systemPrompt"; ""; \
-			"openAiChatContext"; 5; \
-			"model"; "")  // cheap 4o-mini
+		$textGenerationParam:=New object:C1471()
+		$textGenerationParam.userPrompt:=$aiParameters.prompt
+		$textGenerationParam.systemPrompt:=""
+		$textGenerationParam.openAiChatContext:=5
+		$textGenerationParam.model:=""  // cheap 4o-mini
+		
 		$openAI.textGeneration($textGenerationParam; Formula:C1597(AI_CallBack($1.last().content; $aiParameters)))
 		
 	: ($function="Reset Context")  // RESET CHAT CONTEXT -----------------------------------------------------------------
@@ -57,9 +58,9 @@ Case of
 		
 		$imageGenerationParam:=New object:C1471(\
 			"userPrompt"; $formPrompt; \
-			"model"; "dall-e-2"; \
+			"model"; "dall-e-3"; \
 			"quantity"; 1; \
-			"downloadImage"; True:C214; \
+			"downloadImage"; False:C215; \
 			"size"; "")
 		$openAI.imageGeneration($imageGenerationParam; Formula:C1597(AI_CallBack($1.join(" || "); $aiParameters)))
 		

@@ -1,23 +1,27 @@
-var $path : Text
+var $path; $target; $format : Text
 var $them : Object
 var $thems : Collection
-var $btnID : Integer
-var $target : Text
-var $format : Text
+var $btnID; $p; $rnd : Integer
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
-		Form:C1466.ddownList:=New object:C1471
+		Form:C1466.local:=New object:C1471
 		
-		Form:C1466.ddownList.values:=["Chat"; "Images"]  //; "Vision"; "Moderation"]
-		Form:C1466.ddownList.index:=0
+		Form:C1466.local.tabs:=New object:C1471
+		Form:C1466.local.tabs.values:=["Chat"; "Images"]  //; "Vision"; "Moderation"]
+		Form:C1466.local.tabs.index:=0
+		
+		Form:C1466.otherThems:=New object:C1471
 		
 		$path:=File:C1566(Folder:C1567(fk resources folder:K87:11).path+"AI/templateAI.4wp").platformPath
 		Form:C1466.WPai:=WP Import document:C1318($path)
 		
 		Form:C1466.aiThems:=JSON Parse:C1218(File:C1566(Folder:C1567(fk resources folder:K87:11).path+"AI/aiThems.json").getText())
 		
+		Form:C1466.otherThems:=CollectionToDropDown(Form:C1466.aiThems.otherThems)
+		
+		Form:C1466.timerAction:="UpdateButtons"  //+UpdateotherThems"
 		SET TIMER:C645(-1)
 		
 	: (Form event code:C388=On Timer:K2:25)
@@ -25,55 +29,63 @@ Case of
 		SET TIMER:C645(0)
 		
 		Case of 
+			: (Form:C1466.timerAction="UpdateButtons@")
 				
-			: (Form:C1466.ddownList.index=0)  // "Chat"
-				OBJECT SET VISIBLE:C603(*; "Prompt"; True:C214)
-				OBJECT SET VISIBLE:C603(*; "WParea"; True:C214)
-				//OBJECT SET VISIBLE(*; "ImageArea"; False)
-				//OBJECT SET VISIBLE(*; "VisionUrl"; False)
+				If (Form:C1466.tabs.index=0)
+					Form:C1466.buttonThems:=Form:C1466.aiThems.chatThems.copy()
+				Else 
+					Form:C1466.buttonThems:=Form:C1466.aiThems.imageThems.copy()
+				End if 
 				
-				//: (Form.ddownList.index=1)  //"Reset Context"
-				//OBJECT SET VISIBLE(*; "Prompt"; False)
-				//OBJECT SET VISIBLE(*; "VisionUrl"; False)
+				While (Form:C1466.buttonThems.length>6)
+					$rnd:=Random:C100%Form:C1466.buttonThems.length
+					Form:C1466.buttonThems.remove($rnd; 1)
+				End while 
+				For each ($them; Form:C1466.buttonThems)
+					$them.random:=Random:C100
+				End for each 
+				Form:C1466.buttonThems.orderBy("random asc")
 				
-			: (Form:C1466.ddownList.index=1)  //"Image"
-				OBJECT SET VISIBLE:C603(*; "Prompt"; True:C214)
-				//OBJECT SET VISIBLE(*; "WParea"; False)
-				//OBJECT SET VISIBLE(*; "ImageArea"; True)
+				// reformat buttons
 				
-				OBJECT SET VISIBLE:C603(*; "VisionUrl"; False:C215)
+				$btnID:=1
+				For each ($them; Form:C1466.buttonThems)
+					
+					$target:="btnThem"+String:C10($btnID)
+					$format:=$them.title+";path:/RESOURCES/Images/AI/"+$them.icon
+					OBJECT SET FORMAT:C236(*; $target; $format)
+					
+					$btnID+=1
+				End for each 
 				
-			: (Form:C1466.ddownList.index=2)  //"Vision"
-				OBJECT SET VISIBLE:C603(*; "Prompt"; True:C214)
-				OBJECT SET VISIBLE:C603(*; "VisionUrl"; True:C214)
 				
-			: (Form:C1466.ddownList.index=3)  //"Moderation"
-				OBJECT SET VISIBLE:C603(*; "Prompt"; True:C214)
-				OBJECT SET VISIBLE:C603(*; "VisionUrl"; False:C215)
+			: (Form:C1466.timerAction="UpdateotherThems")
+				
+				var $aiParameters : Object
+				
+				$aiParameters:=New object:C1471
+				
+				$aiParameters.apiKey:=Form:C1466.apiKey
+				$aiParameters.windowID:=Form:C1466.windowID
+				
+				$aiParameters.function:="chat"
+				$aiParameters.callbackAction:="rebuild thems"
+				
+				$aiParameters.prompt:=Form:C1466.aiThems.themsPrompt
+				
+				Form:C1466.answer:=""
+				OBJECT SET VISIBLE:C603(*; "waitGears"; True:C214)
+				AI Call($aiParameters)
+				
 				
 		End case 
 		
-		
-		If (Form:C1466.ddownList.index=0)
-			$thems:=Form:C1466.aiThems.chatThems
+		$p:=Position:C15("+"; Form:C1466.timerAction)
+		If ($p>0)
+			Form:C1466.timerAction:=Substring:C12(Form:C1466.timerAction; $p+1)
+			SET TIMER:C645(-1)
 		Else 
-			$thems:=Form:C1466.aiThems.imageThems
+			Form:C1466.timerAction:=""  // should be already ""
 		End if 
-		
-		// reformat buttons
-		
-		$btnID:=1
-		For each ($them; $thems)
-			
-			$target:="btnThem"+String:C10($btnID)
-			$format:=$them.title+";path:/RESOURCES/Images/AI/"+$them.icon
-			OBJECT SET FORMAT:C236(*; $target; $format)
-			
-			$btnID+=1
-		End for each 
-		
-		
-		
-		
 		
 End case 

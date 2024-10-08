@@ -1,9 +1,24 @@
 ﻿{
 	"chatThems": [
 		{
+			"title": "Aquarium dreams",
+			"icon": "Aquarium.png",
+			"prompt": "Discover the world of aquaristics and become an expert in fresh or salt water!"
+		},
+		{
+			"title": "The art of\\pastry",
+			"icon": "Cakes.png",
+			"prompt": "Take part in a pastry-making course with the greatest pastry chefs of Paris!"
+		},
+		{
 			"title": "The World\\Motors Show",
-			"icon": "cars.png",
+			"icon": "Cars.png",
 			"prompt": "Generate a formal invitation for the ”World Motor Show” 2025"
+		},
+		{
+			"title": "The London\\Computer Show",
+			"icon": "Computers.png",
+			"prompt": "Generates an invitation to the London Computer Show."
 		},
 		{
 			"title": "Wedding\\invitation",
@@ -29,38 +44,188 @@
 			"title": "Gardening\\Skills",
 			"icon": "garden.png",
 			"prompt": "Generate an advertising for the new book “Have fun gardening"
-		}],
+		},
+		{
+			"title": "Piano\\lessons",
+			"icon": "PianoLessons.png",
+			"prompt": "Generate a private piano lesson advert"
+		},
+		{
+			"title": "Have fun\\with electronics",
+			"icon": "Electronics.png",
+			"prompt": "Avertise the new book ”have fun with electronics”"
+		},
+		{
+			"title": "Indoor games\\between neighbours",
+			"icon": "IndoorGame.png",
+			"prompt": "Avertise for indoor games between neighbours"
+		}	
+	],
 	"imageThems": [
 			{
 				"title": "Cars",
-				"icon": "car.png",
-				"prompt": "Yellow car"
+				"icon": "Car.png",
+				"prompt": "Draw me a yellow car"
 			},
 			{
 				"title": "Money",
-				"icon": "money.png",
-				"prompt": "Bills and coins"
+				"icon": "Money.png",
+				"prompt": "Draw me bills and coins"
+			},
+			{
+				"title": "Home\\Cinema",
+				"icon": "HomeCinema.png",
+				"prompt": "Draw me a small home cinema theater"
 			},
 			{
 				"title": "Computers",
-				"icon": "computers.png",
-				"prompt": "Computer, screen and mouse"
+				"icon": "Computers.png",
+				"prompt": "Draw me Computer, screen and mouse"
+			},
+			{
+				"title": "Indoor games",
+				"icon": "IndoorGame.png",
+				"prompt": "Draw me men playing indoor games"
+			},
+			{
+				"title": "Outdoor games",
+				"icon": "OutdoorGame.png",
+				"prompt": "Draw me women playing outdoor games"
 			},
 			{
 				"title": "Farm",
 				"icon": "farm.png",
-				"prompt": "Farm at the country"
+				"prompt": "Draw me a farm at the country"
 			},
 			{
 				"title": "House",
 				"icon": "house.png",
-				"prompt": "house with a garden"
+				"prompt": "Draw me a tiny house with a nice garden"
 			},
 			{
 				"title": "Trucks",
 				"icon": "truck.png",
-				"prompt": "Trucks on the road"
+				"prompt": "Draw me large trucks on the road"
+			},
+			{
+				"title": "Gardens",
+				"icon": "Garden.png",
+				"prompt": "Draw me an exotic garden"
+			},
+			{
+				"title": "High tech",
+				"icon": "HiTech.png",
+				"prompt": "Draw me an High-Tech device"
+			},
+			{
+				"title": "Electronics",
+				"icon": "Electronics.png",
+				"prompt": "Draw me an electronic board"
 			}
-		]
+		],
+	"otherThems": [
+		{
+			"name": "Sustainability",
+			"icon": "earth.png",
+			"prompt": "Learn about sustainability and protecting our planet."
+		},
+		{
+			"name": "Climate Change",
+			"icon": "climate.png",
+			"prompt": "Explore the impacts of climate change and ways to combat it."
+		},
+		{
+			"name": "Renewable Energy",
+			"icon": "solar.png",
+			"prompt": "Discover the benefits of solar, wind, and other renewable energy sources."
+		},
+		{
+			"name": "Conservation",
+			"icon": "conservation.png",
+			"prompt": "Understand the importance of conserving wildlife and natural habitats."
+		},
+		{
+			"name": "Waste Management",
+			"icon": "recycle.png",
+			"prompt": "Learn effective strategies for reducing, reusing, and recycling waste."
+		},
+		{
+			"name": "Water Conservation",
+			"icon": "water.png",
+			"prompt": "Discover techniques to conserve water and protect this precious resource."
+		},
+		{
+			"name": "Sustainable Agriculture",
+			"icon": "agriculture.png",
+			"prompt": "Explore practices that promote sustainable farming and food security."
+		},
+		{
+			"name": "Biodiversity",
+			"icon": "biodiversity.png",
+			"prompt": "Learn about the importance of biodiversity and protecting ecosystems."
+		},
+		{
+			"name": "Eco-friendly Living",
+			"icon": "eco.png",
+			"prompt": "Adopt lifestyle changes that reduce your environmental footprint."
+		},
+		{
+			"name": "Urban Development",
+			"icon": "urban.png",
+			"prompt": "Investigate sustainable urban planning and green city design."
+		},
+		{
+			"name": "Environmental Justice",
+			"icon": "justice.png",
+			"prompt": "Understand the relationship between social justice and environmental issues."
+		},
+		{
+			"name": "Sustainable Transportation",
+			"icon": "transportation.png",
+			"prompt": "Explore the benefits of public transit and alternative modes of transportation."
+		},
+		{
+			"name": "Climate Advocacy",
+			"icon": "advocacy.png",
+			"prompt": "Learn how to advocate for climate policies and promote awareness."
+		},
+		{
+			"name": "Ocean Protection",
+			"icon": "ocean.png",
+			"prompt": "Discover the importance of protecting our oceans and marine life."
+		},
+		{
+			"name": "Green Technology",
+			"icon": "technology.png",
+			"prompt": "Explore innovations that promote sustainability and environmental care."
+		},
+		{
+			"name": "Pollution Prevention",
+			"icon": "pollution.png",
+			"prompt": "Learn about ways to reduce air, water, and soil pollution."
+		},
+		{
+			"name": "Community Gardening",
+			"icon": "garden.png",
+			"prompt": "Engage with community initiatives to promote local food growth."
+		},
+		{
+			"name": "Climate Resilience",
+			"icon": "resilience.png",
+			"prompt": "Explore strategies for building resilience against climate impacts."
+		},
+		{
+			"name": "Sustainable Fashion",
+			"icon": "fashion.png",
+			"prompt": "Discover eco-friendly fashion choices that minimize environmental impact."
+		},
+		{
+			"name": "Global Initiatives",
+			"icon": "global.png",
+			"prompt": "Learn about international efforts to address environmental challenges."
+		}
+	],
+		
+	"themsPrompt" : "Generate a JSON collection containing 20 themes, where each theme is an object with three attributes: name, icon (like earth.png) and prompt."
 
 }

@@ -1,1 +1,3 @@
-SET TIMER:C645(-1)
+
+Form:C1466.prompt:=Form:C1466.otherThems.prompts[Form:C1466.otherThems.index]
+

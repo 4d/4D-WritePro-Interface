@@ -1,15 +1,16 @@
 //%attributes = {}
 #DECLARE($content : Text; $parameters : Object)
 
-var $range : Object
 var $_breaks : Collection
+var $tempoThems : Collection
+var $result; $p : Integer
+var $range : Object
 var $break : Object
-var $picture : Picture
 var $elem : Object
-var $result : Integer
+var $picture : Picture
 
 Case of 
-	: ($parameters.function="chat")
+	: ($parameters.callbackAction="chat")
 		
 		$content:=Replace string:C233($content; "**"; "")
 		
@@ -31,7 +32,7 @@ Case of
 		Form:C1466.answer:=$content
 		
 		
-	: ($parameters.function="images")
+	: ($parameters.callbackAction="images")
 		
 		$result:=HTTP Get:C1157($content; $picture)
 		Form:C1466.image:=$picture
@@ -46,6 +47,45 @@ Case of
 		$range:=WP Text range:C1341(Form:C1466.WPai; 1; 2)
 		$elem:=WP Get elements:C1550($range; wk type image:K81:192)[0]
 		WP SET ATTRIBUTES:C1342($elem; wk width:K81:45; "16cm")
+		
+		
+	: ($parameters.callbackAction="rebuild thems")
+		
+		$p:=Position:C15("["; $content)
+		If ($p>0)
+			$content:=Substring:C12($content; $p)
+			$p:=Position:C15("]"; $content)
+			If ($p>0)
+				$content:=Substring:C12($content; 1; $p)
+			End if 
+			
+			// TEMP
+/*
+Form.prompt:=Form.aiThems.themsPrompt
+			
+// insert the answer at the beginning
+WP INSERT BREAK(Form.WPai; wk paragraph break; wk prepend)
+WP SET TEXT(Form.WPai; $content; wk prepend)
+			
+$range:=WP Text range(Form.WPai; 1; Length($content))
+WP SET ATTRIBUTES($range; wk style sheet; "Answer")
+			
+			
+$_breaks:=WP Get breaks($range; wk paragraph break)
+For each ($break; $_breaks)
+$range:=WP Text range(Form.WPai; $break.start; $break.end)
+WP INSERT BREAK($range; wk line break; wk replace)
+End for each 
+*/
+			
+			Try
+				$tempoThems:=JSON Parse:C1218($content)
+				Form:C1466.otherThems:=CollectionToDropDown($tempoThems)
+			Catch
+				ALERT:C41("More themes generation failed")
+			End try
+			
+		End if 
 		
 End case 
 
