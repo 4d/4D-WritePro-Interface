@@ -6,6 +6,9 @@ var $btnID; $p; $rnd : Integer
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
+		Form:C1466.prompt:=""
+		OBJECT SET ENABLED:C1123(*; "btnGenerate"; False:C215)
+		
 		Form:C1466.local:=New object:C1471
 		
 		Form:C1466.local.tabs:=New object:C1471
@@ -28,10 +31,12 @@ Case of
 		
 		SET TIMER:C645(0)
 		
+		OBJECT SET ENABLED:C1123(*; "btnGenerate"; (Form:C1466.prompt#""))
+		
 		Case of 
 			: (Form:C1466.timerAction="UpdateButtons@")
 				
-				If (Form:C1466.tabs.index=0)
+				If (Form:C1466.local.tabs.index=0)
 					Form:C1466.buttonThems:=Form:C1466.aiThems.chatThems.copy()
 				Else 
 					Form:C1466.buttonThems:=Form:C1466.aiThems.imageThems.copy()

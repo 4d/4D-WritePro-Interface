@@ -42,7 +42,7 @@
 		},
 		{
 			"title": "Gardening\\Skills",
-			"icon": "garden.png",
+			"icon": "gardening.png",
 			"prompt": "Generate an advertising for the new book “Have fun gardening"
 		},
 		{
@@ -57,20 +57,80 @@
 		},
 		{
 			"title": "Indoor games\\between neighbours",
-			"icon": "IndoorGame.png",
+			"icon": "IndoorGames.png",
 			"prompt": "Avertise for indoor games between neighbours"
-		}	
+		},
+		{
+			"title": "Biodiversity",
+			"icon": "Biodiversity.png",
+			"prompt": "Learn about the importance of biodiversity and protecting ecosystems."
+		},
+		{
+			"title": "Climate change",
+			"icon": "ClimateChange.png",
+			"prompt": "Explore the impacts of climate change and ways to combat it."
+		},
+		{
+			"title": "Renewable energy",
+			"icon": "RenewableEnergy.png",
+			"prompt": "Discover the benefits of solar, wind, and other renewable energy sources."
+		},
+		{
+			"title": "Sustainable fashion",
+			"icon": "SustainableFashion.png",
+			"prompt": "Discover eco-friendly fashion choices that minimize environmental impact."
+		},
+		{
+			"title": "Urban development",
+			"icon": "UrbanDevelopment.png",
+			"prompt": "Investigate sustainable urban planning and green city design."
+		},
+		{
+			"title": "Waste management",
+			"icon": "WasteManagement.png",
+			"prompt": "Learn effective strategies for reducing, reusing, and recycling waste."
+		},
+		{
+			"title": "Water conservation",
+			"icon": "WaterConservation.png",
+			"prompt": "Discover techniques to conserve water and protect this precious resource."
+		},
+		{
+			"title": "Ocean protection",
+			"icon": "OceanProtection.png",
+			"prompt": "Discover the importance of protecting our oceans and marine life."
+		},
+		{
+			"title": "Green technology",
+			"icon": "GreenTechnology.png",
+			"prompt": "Explore innovations that promote sustainability and environmental care."
+		},
+		{
+			"title": "Environmental justice",
+			"icon": "EnvironmentalJustice.png",
+			"prompt": "Understand the relationship between social justice and environmental issues."
+		},
+		{
+			"title": "Conservation",
+			"icon": "Conservation.png",
+			"prompt": "Understand the importance of conserving wildlife and natural habitats."
+		},
+		{
+			"title": "EcoFriendlyLiving",
+			"icon": "EcoFriendlyLiving.png",
+			"prompt": "Adopt lifestyle changes that reduce your environmental footprint."
+		}
 	],
 	"imageThems": [
 			{
 				"title": "Cars",
 				"icon": "Car.png",
-				"prompt": "Draw me a yellow car"
+				"prompt": "Yellow cars are my favourite"
 			},
 			{
 				"title": "Money",
 				"icon": "Money.png",
-				"prompt": "Draw me bills and coins"
+				"prompt": "I want tons of notes and coins"
 			},
 			{
 				"title": "Home\\Cinema",
@@ -80,17 +140,17 @@
 			{
 				"title": "Computers",
 				"icon": "Computers.png",
-				"prompt": "Draw me Computer, screen and mouse"
+				"prompt": "Computers can be scary"
 			},
 			{
 				"title": "Indoor games",
-				"icon": "IndoorGame.png",
-				"prompt": "Draw me men playing indoor games"
+				"icon": "IndoorGames.png",
+				"prompt": "Indoor games are quiet"
 			},
 			{
 				"title": "Outdoor games",
-				"icon": "OutdoorGame.png",
-				"prompt": "Draw me women playing outdoor games"
+				"icon": "OutdoorGames.png",
+				"prompt": "Outdoor games are fun"
 			},
 			{
 				"title": "Farm",
@@ -100,27 +160,88 @@
 			{
 				"title": "House",
 				"icon": "house.png",
-				"prompt": "Draw me a tiny house with a nice garden"
+				"prompt": "I'd like a little house with a nice garden"
 			},
 			{
 				"title": "Trucks",
 				"icon": "truck.png",
-				"prompt": "Draw me large trucks on the road"
+				"prompt": "There were a lot of big lorries on the road"
 			},
 			{
 				"title": "Gardens",
-				"icon": "Garden.png",
-				"prompt": "Draw me an exotic garden"
+				"icon": "ExoticGarden.png",
+				"prompt": "Exotic gardens are so peaceful…"
 			},
 			{
 				"title": "High tech",
 				"icon": "HiTech.png",
-				"prompt": "Draw me an High-Tech device"
+				"prompt": "High-Tech devices are fascinating!"
 			},
 			{
 				"title": "Electronics",
 				"icon": "Electronics.png",
-				"prompt": "Draw me an electronic board"
+				"prompt": "Electronic boards are full of surprises"
+			},
+			{
+				"title": "Pair of shoes",
+				"icon": "PairOfShoes.png",
+				"prompt": "My shoes are old, I need a new pair!"
+			},
+			{
+				"title": "Bunch of flowers",
+				"icon": "BunchOfFlowers.png",
+				"prompt": "Draw a bunch of flowers for a birthday"
+			},
+			{
+				"title": "Funny hats",
+				"icon": "FunnyHat.png",
+				"prompt": "Draw me a hat for a party"
+			},
+			{
+				"title": "Walking band",
+				"icon": "WalkingBand.png",
+				"prompt": "The brass bands are happy"
+			},
+			{
+				"title": "Mechanical music",
+				"icon": "PianoRoll.png",
+				"prompt": "I love mechanical musical instruments"
+			},
+			{
+				"title": "Seabeds",
+				"icon": "Seabeds.png",
+				"prompt": "The seabed is magnificent"
+			},
+
+			{
+				"title": "Photographic equipment",
+				"icon": "PhotographicEquipment.png",
+				"prompt": "Draw me a set of professional photographic equipment"
+			},
+			{
+				"title": "Glasses",
+				"icon": "Glasses.png",
+				"prompt": "I need glasses"
+			},
+			{
+				"title": "Esoteric Hi-Fi",
+				"icon": "EsotericHiFi.png",
+				"prompt": "I'd love an expensive HiFi system"
+			},
+			{
+				"title": "Sparkling Water",
+				"icon": "SparklingWater.png",
+				"prompt": "I'm thirsty, I need a bottle of sparkling water"
+			},
+			{
+				"title": "Sandwitch",
+				"icon": "Sandwitch.png",
+				"prompt": "I'm hungry, i want a huge sandwitch !"
+			},
+			{
+				"title": "Street Bar",
+				"icon": "StreetBar.png",
+				"prompt": "Let's have a drink tonight"
 			}
 		],
 	"otherThems": [

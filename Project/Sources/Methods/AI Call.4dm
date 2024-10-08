@@ -56,12 +56,13 @@ Case of
 		
 	: ($function="Images")  //IMAGE -----------------------------------------------------------------
 		
-		$imageGenerationParam:=New object:C1471(\
-			"userPrompt"; $formPrompt; \
-			"model"; "dall-e-3"; \
-			"quantity"; 1; \
-			"downloadImage"; False:C215; \
-			"size"; "")
+		$imageGenerationParam:=New object:C1471
+		$imageGenerationParam.userPrompt:=$aiParameters.prompt
+		$imageGenerationParam.size:=$aiParameters.size
+		$imageGenerationParam.model:="dall-e-3"  // or "dall-e-2"
+		$imageGenerationParam.quantity:=1
+		$imageGenerationParam.downloadImage:=False:C215
+		
 		$openAI.imageGeneration($imageGenerationParam; Formula:C1597(AI_CallBack($1.join(" || "); $aiParameters)))
 		
 	: ($function="Vision")  //VISION -----------------------------------------------------------------

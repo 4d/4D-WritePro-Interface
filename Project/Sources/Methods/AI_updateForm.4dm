@@ -7,7 +7,8 @@ var $result; $p : Integer
 var $range : Object
 var $break : Object
 var $elem : Object
-var $picture : Picture
+var $picture; $pictureL; $pictureS : Picture
+var $filePath : Text
 
 Case of 
 	: ($parameters.callbackAction="chat")
@@ -86,6 +87,19 @@ End for each
 			End try
 			
 		End if 
+		
+	: ($parameters.callbackAction="icon")
+		
+		$result:=HTTP Get:C1157($content; $picture)
+		CREATE THUMBNAIL:C679($picture; $pictureL; 256; 256; Scaled to fit proportional:K6:5)
+		CREATE THUMBNAIL:C679($picture; $pictureS; 128; 128; Scaled to fit proportional:K6:5)
+		
+		$filePath:=File:C1566(Folder:C1567(fk resources folder:K87:11).path+"Images/AI/"+$parameters.prompt+"@2x.png").platformPath
+		WRITE PICTURE FILE:C680($filePath; $pictureL; ".png")
+		
+		$filePath:=File:C1566(Folder:C1567(fk resources folder:K87:11).path+"Images/AI/"+$parameters.prompt+".png").platformPath
+		WRITE PICTURE FILE:C680($filePath; $pictureS; ".png")
+		
 		
 End case 
 
