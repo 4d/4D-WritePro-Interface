@@ -548,7 +548,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
        <trans-unit id="DeleteOrResetSections" resname="DeleteOrResetSections">
           <source>Delete or reset sections</source>
-          <target>Smažte nebo resetujte sekce</target>
+          <target>Smažte nebo obnovte sekce</target>
         </trans-unit>
       </group>
       <group resname="Labels">
