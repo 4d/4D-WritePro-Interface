@@ -2,8 +2,8 @@
 // modifiée le 10/oct 2018 par RL
 // ACI0098592
 
-C_LONGINT:C283($grey)
-C_LONGINT:C283($typeSelection)
+var $grey : Integer
+var $typeSelection : Integer
 
 If (UI_isProtected(False:C215))  // false means don't take focus into account
 	
@@ -57,6 +57,6 @@ Else
 	//OBJECT SET ENTERABLE(*;"Expression";False) // RL 2019/12/02
 	OBJECT SET ENTERABLE:C238(*; "VirtualExpression"; False:C215)  // RL 2019/12/02
 	
-	OBJECT SET HELP TIP:C1181(*; "btn_displayAsSymbol"; Get action info:C1442("displayFormulaAsSymbol").title)
+	OBJECT SET HELP TIP:C1181(*; "btn_displayAsSymbol"; Action info:C1442("displayFormulaAsSymbol").title)
 	
 End if 
