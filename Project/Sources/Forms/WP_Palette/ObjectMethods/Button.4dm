@@ -1,4 +1,4 @@
-C_TEXT:C284($path)
+var $path : Text
 
 If (Form:C1466#Null:C1517)  //ACI0100560
 	If (Not:C34(Undefined:C82(Form:C1466.selection)))  //ACI0100560

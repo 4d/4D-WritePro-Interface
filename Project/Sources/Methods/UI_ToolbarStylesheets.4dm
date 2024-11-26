@@ -1,19 +1,7 @@
 //%attributes = {"invisible":true}
-C_POINTER:C301($ptrStylesheetNames)
-C_LONGINT:C283($p)
-C_TEXT:C284($name)
-
-
-
-//If (UI_isProtected)
-
-//OBJECT SET ENABLED(*; "@"; False)
-//OBJECT SET ENTERABLE(*; "@"; False)
-
-//Else 
-
-
-//OBJECT SET ENABLED(*; "decor@"; False)
+var $ptrStylesheetNames : Pointer
+var $p : Integer
+var $name : Text
 
 If (Form:C1466.selection.type=wk type image:K81:192)
 	
@@ -39,12 +27,4 @@ Else
 		OBJECT SET ENABLED:C1123(*; "Stylesheet_btnDelete"; True:C214)
 	End if 
 	
-	//If ($name="")
-	//OBJECT SET ENABLED(*;"Stylesheet_btnEdit";False)
-	//Else 
-	//OBJECT SET ENABLED(*;"Stylesheet_btnEdit";True)
-	//End if 
-	
 End if 
-
-//End if 

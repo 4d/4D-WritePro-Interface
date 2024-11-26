@@ -1,4 +1,5 @@
-C_OBJECT:C1216($oCurrent)
+var $oCurrent : Object
+
 $oCurrent:=WP_FillCurrent("popup")
 
 UI_PaletteBackgrounds(OBJECT Get name:C1087(Object current:K67:2))

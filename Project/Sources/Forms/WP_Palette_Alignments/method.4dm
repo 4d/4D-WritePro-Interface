@@ -1,6 +1,6 @@
-C_POINTER:C301($ptrTextLineHeightUnit)
-C_BOOLEAN:C305($setupOK)
-C_LONGINT:C283($typeSelection)
+var $ptrTextLineHeightUnit : Pointer
+var $setupOK : Boolean
+var $typeSelection : Boolean
 
 $typeSelection:=Form:C1466.selection.type
 

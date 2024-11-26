@@ -1,6 +1,6 @@
-C_LONGINT:C283($paletteID)
-C_BOOLEAN:C305($setupOK)
-C_LONGINT:C283($typeSelection)
+_O_C_LONGINT:C283($paletteID)
+var $setupOK : Boolean
+_O_C_LONGINT:C283($typeSelection)
 
 $paletteID:=1
 $typeSelection:=Form:C1466.selection.type

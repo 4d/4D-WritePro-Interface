@@ -1,10 +1,9 @@
-C_LONGINT:C283($paletteID)
-C_BOOLEAN:C305($setupOK)
-C_OBJECT:C1216($oCurrent)
+var $paletteID; $typeSelection : Integer
+var $setupOK : Boolean
+var $oCurrent : Object
 
 $paletteID:=5
 
-C_LONGINT:C283($typeSelection)
 $typeSelection:=Form:C1466.selection.type
 
 Case of 
@@ -26,15 +25,15 @@ Case of
 		oForm.horizontalSizeUnits:=New object:C1471  // Dropdown Hor.
 		
 		oForm.horizontalSizeUnits.values:=New collection:C1472()
-		oForm.horizontalSizeUnits.values.push(Get localized string:C991("auto"))
-		oForm.horizontalSizeUnits.values.push(Get localized string:C991("cover"))
-		oForm.horizontalSizeUnits.values.push(Get localized string:C991("contain"))
-		oForm.horizontalSizeUnits.values.push(Get localized string:C991("pct"))
-		oForm.horizontalSizeUnits.values.push(Get localized string:C991("mm"))
-		oForm.horizontalSizeUnits.values.push(Get localized string:C991("cm"))
-		oForm.horizontalSizeUnits.values.push(Get localized string:C991("inches"))
-		oForm.horizontalSizeUnits.values.push(Get localized string:C991("pt"))
-		oForm.horizontalSizeUnits.values.push(Get localized string:C991("pixels"))
+		oForm.horizontalSizeUnits.values.push(Localized string:C991("auto"))
+		oForm.horizontalSizeUnits.values.push(Localized string:C991("cover"))
+		oForm.horizontalSizeUnits.values.push(Localized string:C991("contain"))
+		oForm.horizontalSizeUnits.values.push(Localized string:C991("pct"))
+		oForm.horizontalSizeUnits.values.push(Localized string:C991("mm"))
+		oForm.horizontalSizeUnits.values.push(Localized string:C991("cm"))
+		oForm.horizontalSizeUnits.values.push(Localized string:C991("inches"))
+		oForm.horizontalSizeUnits.values.push(Localized string:C991("pt"))
+		oForm.horizontalSizeUnits.values.push(Localized string:C991("pixels"))
 		
 		oForm.horizontalSizeUnits.css:=New collection:C1472()
 		oForm.horizontalSizeUnits.css.push("auto")
@@ -56,13 +55,13 @@ Case of
 		oForm.verticalSizeUnits:=New object:C1471  // Dropdown Vert.
 		
 		oForm.verticalSizeUnits.values:=New collection:C1472()
-		oForm.verticalSizeUnits.values.push(Get localized string:C991("auto"))
-		oForm.verticalSizeUnits.values.push(Get localized string:C991("pct"))
-		oForm.verticalSizeUnits.values.push(Get localized string:C991("mm"))
-		oForm.verticalSizeUnits.values.push(Get localized string:C991("cm"))
-		oForm.verticalSizeUnits.values.push(Get localized string:C991("inches"))
-		oForm.verticalSizeUnits.values.push(Get localized string:C991("pt"))
-		oForm.verticalSizeUnits.values.push(Get localized string:C991("pixels"))
+		oForm.verticalSizeUnits.values.push(Localized string:C991("auto"))
+		oForm.verticalSizeUnits.values.push(Localized string:C991("pct"))
+		oForm.verticalSizeUnits.values.push(Localized string:C991("mm"))
+		oForm.verticalSizeUnits.values.push(Localized string:C991("cm"))
+		oForm.verticalSizeUnits.values.push(Localized string:C991("inches"))
+		oForm.verticalSizeUnits.values.push(Localized string:C991("pt"))
+		oForm.verticalSizeUnits.values.push(Localized string:C991("pixels"))
 		
 		oForm.verticalSizeUnits.css:=New collection:C1472()
 		oForm.verticalSizeUnits.css.push("auto")

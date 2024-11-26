@@ -1,7 +1,7 @@
 //%attributes = {"invisible":true}
 
-C_LONGINT:C283($page)
-C_BOOLEAN:C305($protected)
+var $page : Integer
+var $protected : Boolean
 
 OBJECT SET ENABLED:C1123(*; "@"; False:C215)  //ACI0100560
 OBJECT SET ENTERABLE:C238(*; "@"; False:C215)  //ACI0100560

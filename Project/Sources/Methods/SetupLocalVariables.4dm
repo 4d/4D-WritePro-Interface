@@ -1,20 +1,17 @@
 //%attributes = {"invisible":true}
-C_BOOLEAN:C305($0)
-C_BOOLEAN:C305($ok)
 
-C_LONGINT:C283($typeSelection)
+#DECLARE()->$result : Boolean
 
-C_OBJECT:C1216(oTempArea)
+var $ok : Boolean
 
-//C_OBJECT(skin)
+var $typeSelection : Integer
 
-C_TEXT:C284(userUnit)  //•
-C_TEXT:C284(numFormat)  //•
-C_TEXT:C284(unitName)  //•
-
-C_POINTER:C301(masterTable)  // 27 sept 2018 (was not used before ?)
-
-C_REAL:C285(maxTabValue)
+var oTempArea : Object
+var userUnit : Text  //•
+var numFormat : Text  //•
+var unitName : Text  //•
+var masterTable : Pointer  // 27 sept 2018 (was not used before ?)
+var maxTabValue : Real
 
 If (OB Is empty:C1297(oTempArea))
 	oTempArea:=WP New:C1317
@@ -59,7 +56,7 @@ If (Form:C1466.selection#Null:C1517) && (Not:C34(Undefined:C82(Form:C1466.select
 	Form:C1466.context:=WP Get data context:C1787(Form:C1466.document)
 	
 	
-	WP GET ATTRIBUTES:C1345(Form:C1466.document; wk layout unit:K81:78; userUnit)
+	WP Get attributes:C1345(Form:C1466.document; wk layout unit:K81:78; userUnit)
 	
 	//userUnit:=wk unit cm
 	Case of 
@@ -115,4 +112,4 @@ If (Form:C1466.masterTable#Null:C1517)
 	masterTable:=Form:C1466.masterTable
 End if 
 
-$0:=$ok
+$result:=$ok

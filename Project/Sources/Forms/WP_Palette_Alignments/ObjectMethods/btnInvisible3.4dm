@@ -1,9 +1,7 @@
-
-C_LONGINT:C283($color)
-C_OBJECT:C1216($oCurrent)
+var $color : Integer
+var $oCurrent : Object
 
 $oCurrent:=Form:C1466.paragraphRange
-
 $color:=Call_CustomColorPalette(True:C214; "backgroundColor")
 
 Case of 

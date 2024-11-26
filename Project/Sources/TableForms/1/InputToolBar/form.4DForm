@@ -725,6 +725,14 @@
 					"method": "ObjectMethods/Button32.4dm",
 					"sizingX": "fixed",
 					"sizingY": "move"
+				},
+				"Text": {
+					"type": "text",
+					"text": "$hue",
+					"top": -9,
+					"left": 51,
+					"width": 31,
+					"height": 17
 				}
 			},
 			"entryOrder": [
@@ -783,7 +791,7 @@
 		"kind": "form"
 	},
 	"method": "method.4dm",
-	"geometryStamp": 424,
+	"geometryStamp": 425,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

@@ -1,11 +1,10 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($1; $widgetType)
+#DECLARE($widgetType : Text)
 
-C_OBJECT:C1216($rows; $columns)
-C_BOOLEAN:C305($result)
-C_TEXT:C284($title)
+var $rows; $columns : Object
+var $result : Boolean
+var $title : Text
 
-$widgetType:=$1
 
 If (UI_isProtected)
 	
@@ -44,9 +43,9 @@ Else
 			
 			//wk first row + wk row count
 			If ($rows[wk row count:K81:197]<=1)
-				$title:=Get localized string:C991("DeleteRow")
+				$title:=Localized string:C991("DeleteRow")
 			Else 
-				$title:=Get localized string:C991("DeleteRows")
+				$title:=Localized string:C991("DeleteRows")
 				$title:=Replace string:C233($title; "<n>"; String:C10($rows[wk row count:K81:197]))
 			End if 
 			If ($widgetType="sidebar")
@@ -57,9 +56,9 @@ Else
 			
 		Else 
 			If ($widgetType="sidebar")
-				OBJECT SET TITLE:C194(*; "btnDeleteRows"; Get localized string:C991("DeleteRow"))
+				OBJECT SET TITLE:C194(*; "btnDeleteRows"; Localized string:C991("DeleteRow"))
 			Else 
-				OBJECT SET HELP TIP:C1181(*; "btnDeleteRows"; Get localized string:C991("DeleteRow"))
+				OBJECT SET HELP TIP:C1181(*; "btnDeleteRows"; Localized string:C991("DeleteRow"))
 			End if 
 			
 			//OBJECT SET ENABLED(*;"btnDeleteRows";False)
@@ -76,9 +75,9 @@ Else
 			
 			//wk first column + wk column count
 			If ($columns[wk column count:K81:199]<=1)
-				$title:=Get localized string:C991("DeleteColumn")
+				$title:=Localized string:C991("DeleteColumn")
 			Else 
-				$title:=Get localized string:C991("DeleteColumns")
+				$title:=Localized string:C991("DeleteColumns")
 				$title:=Replace string:C233($title; "<n>"; String:C10($columns[wk column count:K81:199]))
 			End if 
 			If ($widgetType="sidebar")
@@ -89,9 +88,9 @@ Else
 			
 		Else 
 			If ($widgetType="sidebar")
-				OBJECT SET TITLE:C194(*; "btnDeleteColumns"; Get localized string:C991("DeleteColumn"))
+				OBJECT SET TITLE:C194(*; "btnDeleteColumns"; Localized string:C991("DeleteColumn"))
 			Else 
-				OBJECT SET HELP TIP:C1181(*; "btnDeleteColumns"; Get localized string:C991("DeleteColumn"))
+				OBJECT SET HELP TIP:C1181(*; "btnDeleteColumns"; Localized string:C991("DeleteColumn"))
 			End if 
 			
 		End if 

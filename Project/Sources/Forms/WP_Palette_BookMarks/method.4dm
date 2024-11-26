@@ -1,11 +1,11 @@
-C_LONGINT:C283(wp_tabList)
+_O_C_LONGINT:C283(wp_tabList)
 
-C_BOOLEAN:C305($setupOK)
+var $setupOK : Boolean
 
-C_LONGINT:C283($paletteID)
+_O_C_LONGINT:C283($paletteID)
 $paletteID:=3
 
-C_LONGINT:C283($typeSelection)
+_O_C_LONGINT:C283($typeSelection)
 $typeSelection:=Form:C1466.selection.type
 
 Case of 

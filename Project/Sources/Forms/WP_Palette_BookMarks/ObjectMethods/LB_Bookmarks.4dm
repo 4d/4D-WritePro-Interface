@@ -1,6 +1,6 @@
-C_OBJECT:C1216($document)
-C_POINTER:C301($ptrListbox; $ptrNames)
-C_LONGINT:C283($p)
+var $document : Object
+var $ptrListbox; $ptrNames : Pointer
+var $p : Integer
 
 $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_Bookmarks")
 $ptrNames:=OBJECT Get pointer:C1124(Object named:K67:5; "lb_bookmarkNames")

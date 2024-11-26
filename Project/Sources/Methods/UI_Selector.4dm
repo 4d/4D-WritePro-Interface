@@ -1,12 +1,10 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($1; $btnName)
-C_LONGINT:C283($id; $p)
-C_TEXT:C284($subform)
-C_TEXT:C284($btn)
+#DECLARE($btnName : Text)
 
-If (Count parameters:C259=1)
-	$btnName:=$1
-Else 
+var $id; $p : Integer
+var $subform; $btn : Text
+
+If (Count parameters:C259<1)
 	$btnName:=OBJECT Get name:C1087(Object current:K67:2)  // physical button name ("btn_Home")
 End if 
 
@@ -14,9 +12,6 @@ $p:=Position:C15("_"; $btnName)
 If ($p>0)
 	$btnName:=Substring:C12($btnName; $p+1)  // logical button name ("Home")
 End if 
-
-
-
 
 $id:=oForm.SidebarTabs.allButtonNames.indexOf($btnName)  //ACI0101694
 

@@ -1,11 +1,7 @@
 //%attributes = {"invisible":true}
+#DECLARE($type : Integer)->$col : Collection
 
-C_LONGINT:C283($1; $type)
-C_COLLECTION:C1488($0; $col)
-
-C_BOOLEAN:C305($block1; $block2; $block3; $block4)
-
-$type:=$1
+var $block1; $block2; $block3; $block4 : Boolean
 
 Case of 
 	: ($type=wk type default:K81:190)  // character
@@ -115,5 +111,4 @@ If ($block4)  //  borders (style, width color, radius)
 	
 End if 
 
-$0:=$col
 

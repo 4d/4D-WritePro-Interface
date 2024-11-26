@@ -1,10 +1,8 @@
+var $setupOK : Boolean
+var $paletteID; $typeSelection : Integer
 
-C_LONGINT:C283($paletteID)
 $paletteID:=4
 
-C_BOOLEAN:C305($setupOK)
-
-C_LONGINT:C283($typeSelection)
 $typeSelection:=Form:C1466.selection.type
 
 Case of 
@@ -22,8 +20,8 @@ Case of
 		oForm.skinAppliedSub:=UI_ApplySkin
 		
 		//tip for HideEmptyImages
-		OBJECT SET HELP TIP:C1181(*; "btn_visibleEmptyImages"; Get action info:C1442("visibleEmptyImages").title)
-		OBJECT SET HELP TIP:C1181(*; "btn_visibleTableBorders"; Get action info:C1442("visibleTableBorders").title)  // 20R6
+		OBJECT SET HELP TIP:C1181(*; "btn_visibleEmptyImages"; Action info:C1442("visibleEmptyImages").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_visibleTableBorders"; Action info:C1442("visibleTableBorders").title)  // 20R6
 		
 		
 		If (Form:C1466#Null:C1517)

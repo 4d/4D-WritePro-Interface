@@ -1,4 +1,4 @@
-C_LONGINT:C283($fontSize)
+var $fontSize : Integer
 
 $fontSize:=oForm.fontSize
 WP_SetFontSize(Form:C1466.selection; $fontSize)

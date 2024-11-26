@@ -1,17 +1,9 @@
 //%attributes = {"invisible":true}
-C_OBJECT:C1216($1)
-C_OBJECT:C1216($range)
+#DECLARE($range : Object)
 
+var $color; $frameColor; $i : Integer
+var $colorAttribute; $widgetColor; $widgetMultiColor : Text
 
-C_LONGINT:C283($color)
-C_LONGINT:C283($frameColor)
-C_LONGINT:C283($i)
-
-C_TEXT:C284($colorAttribute)
-C_TEXT:C284($widgetColor)
-C_TEXT:C284($widgetMultiColor)
-
-$range:=$1
 $frameColor:=0x00404040
 
 If (Not:C34(OB Is empty:C1297($range)))
@@ -33,9 +25,9 @@ If (Not:C34(OB Is empty:C1297($range)))
 		End if 
 		
 		
-		WP GET ATTRIBUTES:C1345($range; $colorAttribute; $color)
+		WP Get attributes:C1345($range; $colorAttribute; $color)
 		If ($color=-1)  // automatic
-			WP GET ATTRIBUTES:C1345($range; wk text color:K81:64; $color)  // lets display as text color (maybe mixed too…)
+			WP Get attributes:C1345($range; wk text color:K81:64; $color)  // lets display as text color (maybe mixed too…)
 		End if 
 		
 		If ($color=wk mixed:K81:89)

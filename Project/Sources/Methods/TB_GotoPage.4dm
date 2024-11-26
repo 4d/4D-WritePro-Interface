@@ -1,11 +1,9 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($1; $btnName)
-C_LONGINT:C283($id)
-C_LONGINT:C283($page; $p)
+#DECLARE($btnName : Text)
 
-If (Count parameters:C259=1)
-	$btnName:=$1
-Else 
+var $id; $page; $p : Integer
+
+If (Count parameters:C259=0)
 	$btnName:=OBJECT Get name:C1087(Object current:K67:2)  // physical button name ("btn_Home")
 End if 
 

@@ -244,10 +244,10 @@ Function formulaUI($action : Text; $formatType : Integer; $insert : Object)
 			
 			
 			$range:=WP Selection range:C1340(*; $insert.areaName)
-			WP INSERT FORMULA:C1703($range; Formula from string:C1601($insert.source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
+			WP Insert formula:C1703($range; Formula from string:C1601($insert.source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
 			If ($insert.doNext="insertSpace")
 				If (Shift down:C543)
-					WP INSERT BREAK:C1413($range; wk paragraph break:K81:259; wk append:K81:179; wk include in range:K81:180)
+					WP Insert break:C1413($range; wk paragraph break:K81:259; wk append:K81:179; wk include in range:K81:180)
 				Else 
 					WP SET TEXT:C1574($range; " "; wk append:K81:179; wk include in range:K81:180)
 				End if 
@@ -554,10 +554,10 @@ Function formulaInsert($insert : Object)  //$json : Text)
 	
 	//$insert:=JSON Parse($json)
 	$range:=WP Selection range:C1340(*; $insert.areaName)
-	WP INSERT FORMULA:C1703($range; Formula from string:C1601($insert.source; 1); wk replace:K81:177)
+	WP Insert formula:C1703($range; Formula from string:C1601($insert.source; 1); wk replace:K81:177)
 	
 	If (Shift down:C543)
-		WP INSERT BREAK:C1413($range; wk paragraph break:K81:259; wk append:K81:179; wk include in range:K81:180)
+		WP Insert break:C1413($range; wk paragraph break:K81:259; wk append:K81:179; wk include in range:K81:180)
 	Else 
 		WP SET TEXT:C1574($range; " "; wk append:K81:179; wk include in range:K81:180)
 	End if 
@@ -739,7 +739,7 @@ Function templateUI($action : Text)
 		OBJECT SET ENABLED:C1123(*; $item; $enterable)
 	End for each 
 	
-	OBJECT SET TITLE:C194(*; "cb_horizontalRuler"; Get action info:C1442("visibleHorizontalRuler").title)
+	OBJECT SET TITLE:C194(*; "cb_horizontalRuler"; Action info:C1442("visibleHorizontalRuler").title)
 	
 	
 Function themeGetList()->$collection : Collection
@@ -1472,17 +1472,17 @@ Function themeUI()
 Function themeGetFontFamily()->$fontFamilly : Object
 	
 	
-	C_OBJECT:C1216($o; $wp)
-	C_LONGINT:C283($i)
+	var $o; $wp : Object
+	var $i : Integer
 	
 	ARRAY TEXT:C222($_fontFamily; 0)
 	FONT LIST:C460($_fontFamily)  // no enough for japaneese! check below
-	$o:=Get system info:C1571
+	$o:=System info:C1571
 	If ($o.osLanguage="ja")
 		$wp:=WP New:C1317
 		For ($i; 1; Size of array:C274($_fontFamily))
 			WP SET ATTRIBUTES:C1342($wp; wk font family:K81:65; $_fontFamily{$i})
-			WP GET ATTRIBUTES:C1345($wp; wk font family:K81:65; $_fontFamily{$i})
+			WP Get attributes:C1345($wp; wk font family:K81:65; $_fontFamily{$i})
 		End for 
 	End if 
 	
@@ -1661,7 +1661,7 @@ Function WP_BuildTable()->$area : Object
 							: ($description="header@")
 								
 								If ($previousContent#Null:C1517)
-									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+									WP Insert document body:C1411($range; $previousContent; wk replace:K81:177)
 								Else 
 									If ($description="header1")  // 1st header row has default value (title)
 										$insertedText:=Form:C1466.wizard.translate("attribute"; Form:C1466.template.columns[$i].header; True:C214)
@@ -1672,9 +1672,9 @@ Function WP_BuildTable()->$area : Object
 							: ($description="data")  //  Data
 								
 								If ($previousContent#Null:C1517)
-									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+									WP Insert document body:C1411($range; $previousContent; wk replace:K81:177)
 								Else 
-									WP INSERT FORMULA:C1703($range; Formula from string:C1601(Form:C1466.template.columns[$i].source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
+									WP Insert formula:C1703($range; Formula from string:C1601(Form:C1466.template.columns[$i].source; 1); wk replace:K81:177)  // ∆∆∆ Feature 125
 								End if 
 								
 							: ($description="break@")  // break
@@ -1683,23 +1683,23 @@ Function WP_BuildTable()->$area : Object
 								WP SET ATTRIBUTES:C1342($row; "breakFormula"; Formula from string:C1601(Form:C1466.template.breaks[$id].source; 1))  //wk break formula  // ∆∆∆ Feature 125
 								
 								If ($previousContent#Null:C1517)
-									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+									WP Insert document body:C1411($range; $previousContent; wk replace:K81:177)
 								End if 
 								
 								
 							: ($description="bcor")  // bottom carry over row
 								If ($previousContent#Null:C1517)
-									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+									WP Insert document body:C1411($range; $previousContent; wk replace:K81:177)
 								End if 
 								
 							: ($description="extra@")  // extra rows
 								If ($previousContent#Null:C1517)
-									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+									WP Insert document body:C1411($range; $previousContent; wk replace:K81:177)
 								End if 
 								
 							: ($description="placeholder")  // placeholder
 								If ($previousContent#Null:C1517)
-									WP INSERT DOCUMENT:C1411($range; $previousContent; wk replace:K81:177)
+									WP Insert document body:C1411($range; $previousContent; wk replace:K81:177)
 								End if 
 								
 						End case 
@@ -1937,16 +1937,16 @@ Function WP_GetMaxTableWidth->$width : Integer
 	Else 
 		
 		$document:=Form:C1466.range.owner
-		WP GET ATTRIBUTES:C1345($document; wk layout unit:K81:78; $unit)  // memo unit
+		WP Get attributes:C1345($document; wk layout unit:K81:78; $unit)  // memo unit
 		
 		WP SET ATTRIBUTES:C1342($document; wk layout unit:K81:78; wk unit pt:K81:136)
 		$section:=WP Get section:C1581(Form:C1466.range)
 		
-		WP GET ATTRIBUTES:C1345($section; wk page orientation:K81:264; $orientation)
+		WP Get attributes:C1345($section; wk page orientation:K81:264; $orientation)
 		If ($orientation=0)  // portrait
-			WP GET ATTRIBUTES:C1345($document; wk page width:K81:262; $width; wk page margin left:K81:266; $left; wk page margin right:K81:267; $right)
+			WP Get attributes:C1345($document; wk page width:K81:262; $width; wk page margin left:K81:266; $left; wk page margin right:K81:267; $right)
 		Else   // landscape
-			WP GET ATTRIBUTES:C1345($document; wk page height:K81:263; $width; wk page margin left:K81:266; $left; wk page margin right:K81:267; $right)
+			WP Get attributes:C1345($document; wk page height:K81:263; $width; wk page margin left:K81:266; $left; wk page margin right:K81:267; $right)
 		End if 
 		$width:=$width-$left-$right
 		
@@ -1996,13 +1996,13 @@ Function JSONvalidate($type : Text; $files : Collection)->$result : Boolean
 		$alert:=""
 		$tempObject:=JSON Parse:C1218($file.getText())
 		If (ok=0)
-			$alert:=Get localized string:C991("JSONparseError")
+			$alert:=Localized string:C991("JSONparseError")
 			$files.remove($i; 1)
 		Else 
 			$parsing:=JSON Validate:C1456($tempObject; $schema)
 			
 			If (Not:C34($parsing.success))
-				$alert:=Get localized string:C991("JSONvalidationError")
+				$alert:=Localized string:C991("JSONvalidationError")
 				$files.remove($i; 1)
 			End if 
 		End if 

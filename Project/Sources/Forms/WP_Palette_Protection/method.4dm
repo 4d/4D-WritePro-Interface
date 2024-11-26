@@ -1,4 +1,4 @@
-C_BOOLEAN:C305($setupOK)
+var $setupOK : Boolean
 
 //$paletteID:=11
 

@@ -1,21 +1,10 @@
 //%attributes = {"invisible":true}
-C_BOOLEAN:C305($0)
+#DECLARE()->$skinApplied : Boolean
 
-C_BOOLEAN:C305($skinApplied)
-
-C_REAL:C285($H)
-C_REAL:C285($S)
-C_REAL:C285($L)
-
-C_LONGINT:C283($color; $fontColor; $separatorColor; $backgroundColor; $separatorFontColor; $iconBackground; $iconBorder)
-C_LONGINT:C283($fontSize)
-
-C_TEXT:C284($font)
-C_TEXT:C284($skinName)
-C_TEXT:C284($name)
-
-C_OBJECT:C1216($skin)
-
+var $color; $fontColor; $fontSize; $separatorColor; $backgroundColor; $separatorFontColor; $iconBackground; $iconBorder : Integer
+var $H; $S; $L : Real
+var $font; $skinName; $name : Text
+var $skin : Object
 
 // Default values based on app
 // CF Toolbar constructor
@@ -185,11 +174,8 @@ Else   // side bar mode
 	
 End if 
 
-
-
 $skinApplied:=True:C214
 
-$0:=$skinApplied
 
 
 

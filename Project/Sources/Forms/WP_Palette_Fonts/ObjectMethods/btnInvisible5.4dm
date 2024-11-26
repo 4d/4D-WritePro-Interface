@@ -1,4 +1,4 @@
-C_LONGINT:C283($color)
+var $color : Integer
 
 $color:=Call_CustomColorPalette(False:C215; "UnderlineColor")  // false means do not allow transparency"
 

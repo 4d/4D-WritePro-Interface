@@ -1,4 +1,4 @@
-C_BOOLEAN:C305($setupOK)
+var $setupOK : Boolean
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)

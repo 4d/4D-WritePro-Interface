@@ -1,20 +1,16 @@
 //%attributes = {"invisible":true}
-C_OBJECT:C1216($1)
-C_OBJECT:C1216($range)
+#DECLARE($range : Object)
 
-C_TEXT:C284($url)
-C_TEXT:C284($codec)
-C_POINTER:C301($ptr)
-C_LONGINT:C283($p)
+var $url; $codec : Text
+var $ptr : Pointer
+var $p : Integer
 
-C_BLOB:C604($blob)
-C_PICTURE:C286($picture)
-
-$range:=$1
+var $blob : Blob
+var $picture : Picture
 
 If (Not:C34(OB Is empty:C1297($range)))
 	
-	WP GET ATTRIBUTES:C1345($range; wk background image:K81:21; $url)
+	WP Get attributes:C1345($range; wk background image:K81:21; $url)
 	
 	Case of 
 		: ($url="data:image/@")

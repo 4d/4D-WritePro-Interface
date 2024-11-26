@@ -1,19 +1,17 @@
 //%attributes = {"invisible":true}
-C_BOOLEAN:C305($1)
-C_TEXT:C284($2)
+#DECLARE($wp_allowTransparency : Boolean; $objectName : Text)->$customColor : Integer
 
-C_LONGINT:C283($0)
-
-C_LONGINT:C283($x1; $y1; $x2; $y2)
-C_LONGINT:C283($x; $y; $z)
-C_LONGINT:C283($win)
-C_TEXT:C284($objectName)
+var $x1; $y1; $x2; $y2 : Integer
+var $x; $y; $z : Integer
+var $win : Integer
 
 If (Count parameters:C259>=1)
-	wp_allowTransparency:=$1
+	wp_allowTransparency:=$wp_allowTransparency
+	
 	If (Count parameters:C259>=2)
 		$objectName:=$2
 	End if 
+	
 Else 
 	wp_allowTransparency:=True:C214
 End if 
@@ -24,25 +22,21 @@ If ($objectName#"")
 	$y:=$y2
 	$x:=$x-100+(($x2-$x1)/2)  // half width of the WP_CustomColors form
 Else 
-	GET MOUSE:C468($x; $y; $z)
+	MOUSE POSITION:C468($x; $y; $z)
 End if 
 
 CONVERT COORDINATES:C1365($x; $y; XY Current form:K27:5; XY Main window:K27:8)
 
-wp_customColor:=-1  // default value when window is closed by outside click
+$customColor:=-1  // default value when window is closed by outside click
 
 If (Test path name:C476(Get 4D folder:C485(Current resources folder:K5:16)+"Colors.svg")=Is a document:K24:1)
 	
 	$win:=Open form window:C675("WP_CustomColors"; Pop up form window:K39:11; $x; $y)  //Pop up form window)
 	DIALOG:C40("WP_CustomColors")
 	
+	$customColor:=wp_customColor
 Else 
-	
-	wp_customColor:=Select RGB color:C956(0x00808080)
-	
+	$customColor:=Select RGB color:C956(0x00808080)
 End if 
-
-$0:=wp_customColor
-
 
 

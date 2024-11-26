@@ -1,17 +1,15 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($1; $shiftMode)
+#DECLARE($shiftMode : Text)
 
 // shift right
 
-C_REAL:C285($leftMargin; $rightMargin; $pageWidth; $pageHeight; $pageLeftMargin; $pageRightMargin; $shift)
-C_LONGINT:C283($orientation; $direction)
-C_TEXT:C284($unit)
-C_OBJECT:C1216($paragraph; $section)
-C_COLLECTION:C1488($_paragraphs)
+var $leftMargin; $rightMargin; $pageWidth; $pageHeight; $pageLeftMargin; $pageRightMargin; $shift : Real
+var $orientation; $direction : Integer
+var $unit : Text
+var $paragraph; $section : Object
+var $_paragraphs : Collection
 
-$shiftMode:=$1
-
-WP GET ATTRIBUTES:C1345(Form:C1466.selection; wk layout unit:K81:78; $unit)
+WP Get attributes:C1345(Form:C1466.selection; wk layout unit:K81:78; $unit)
 Case of 
 	: ($unit="cm")
 		$shift:=1
@@ -24,7 +22,7 @@ Case of
 End case 
 
 $paragraph:=WP Paragraph range:C1346(Form:C1466.selection)
-WP GET ATTRIBUTES:C1345($paragraph; wk margin left:K81:11; $leftMargin; wk margin right:K81:12; $rightMargin)
+WP Get attributes:C1345($paragraph; wk margin left:K81:11; $leftMargin; wk margin right:K81:12; $rightMargin)
 
 If ($leftMargin=wk mixed:K81:89) | ($rightMargin=wk mixed:K81:89)
 	$_paragraphs:=WP Get elements:C1550(Form:C1466.selection; wk type paragraph:K81:191)  // collection of paragraph elements
@@ -34,10 +32,10 @@ End if
 
 For each ($paragraph; $_paragraphs)
 	
-	WP GET ATTRIBUTES:C1345($paragraph; wk margin left:K81:11; $leftMargin; wk margin right:K81:12; $rightMargin; wk direction:K81:50; $direction)
+	WP Get attributes:C1345($paragraph; wk margin left:K81:11; $leftMargin; wk margin right:K81:12; $rightMargin; wk direction:K81:50; $direction)
 	
 	$section:=WP Get section:C1581($paragraph)
-	WP GET ATTRIBUTES:C1345($section; \
+	WP Get attributes:C1345($section; \
 		wk page width:K81:262; $pageWidth; \
 		wk page height:K81:263; $pageHeight; \
 		wk page orientation:K81:264; $orientation; \
@@ -81,8 +79,5 @@ For each ($paragraph; $_paragraphs)
 			WP SET ATTRIBUTES:C1342($paragraph; wk margin right:K81:12; $rightMargin)
 			
 	End case 
-	
-	
-	
 	
 End for each 

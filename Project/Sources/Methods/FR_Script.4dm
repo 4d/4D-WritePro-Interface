@@ -1,41 +1,29 @@
 //%attributes = {"invisible":true}
-var $1; $action : Text
+#DECLARE($action : Text)->$nbOccurences : Integer
 
-var $options; $nbOccurences : Integer
+var $options : Integer
 var $range; $target : Object
 var $rangeCollection : Collection
 
-
-var $0 : Integer  // nb of occurences found
-
-
-$action:=$1
 $options:=0
-
 If (Not:C34(oForm.FR.caseSensitive))
 	$options:=$options+wk case insensitive:K81:329
 End if 
-
 If (Not:C34(oForm.FR.diacriticSensitive))
 	$options:=$options+wk diacritic insensitive:K81:330
 End if 
-
 If (Not:C34(oForm.FR.kanaSensitive))
 	$options:=$options+wk kana insensitive:K81:331
 End if 
-
 If (Not:C34(oForm.FR.widthSensitive))
 	$options:=$options+wk width insensitive:K81:332
 End if 
-
 If (oForm.FR.fullWord)
 	$options:=$options+wk whole word:K81:333  //ak whole word (32) 
 End if 
-
 If (oForm.FR.keepCharStyle=True:C214)
 	$options:=$options+wk keep character style:K81:337  //wk keep character style (262144)
 End if 
-
 If (oForm.FR.keyboardBased)
 	$options:=$options+wk use keyboard language:K81:338
 End if 
@@ -102,5 +90,4 @@ Case of
 		oForm.FR.displayReplacements:=True:C214
 End case 
 
-$0:=$nbOccurences
 

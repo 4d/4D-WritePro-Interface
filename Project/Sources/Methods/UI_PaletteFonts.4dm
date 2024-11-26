@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-C_LONGINT:C283($typeSelection)
+var $typeSelection : Integer
 
 If (UI_isProtected(False:C215))  // false means don't take focus into account
 	

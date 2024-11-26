@@ -1,11 +1,11 @@
-C_LONGINT:C283(wp_tabList)
+_O_C_LONGINT:C283(wp_tabList)
 
-C_BOOLEAN:C305($setupOK)
+var $setupOK : Boolean
 
-C_LONGINT:C283($paletteID)
+_O_C_LONGINT:C283($paletteID)
 $paletteID:=3
 
-C_LONGINT:C283($typeSelection)
+_O_C_LONGINT:C283($typeSelection)
 $typeSelection:=Form:C1466.selection.type
 
 
@@ -34,11 +34,11 @@ Case of
 		
 		CLEAR LIST:C377(wp_tabList; *)
 		wp_tabList:=New list:C375
-		APPEND TO LIST:C376(wp_tabList; Get localized string:C991("Left"); 0)
-		APPEND TO LIST:C376(wp_tabList; Get localized string:C991("Right"); 1)
-		APPEND TO LIST:C376(wp_tabList; Get localized string:C991("Center"); 2)
-		APPEND TO LIST:C376(wp_tabList; Get localized string:C991("Decimal"); 3)
-		APPEND TO LIST:C376(wp_tabList; Get localized string:C991("Bars"); 4)
+		APPEND TO LIST:C376(wp_tabList; Localized string:C991("Left"); 0)
+		APPEND TO LIST:C376(wp_tabList; Localized string:C991("Right"); 1)
+		APPEND TO LIST:C376(wp_tabList; Localized string:C991("Center"); 2)
+		APPEND TO LIST:C376(wp_tabList; Localized string:C991("Decimal"); 3)
+		APPEND TO LIST:C376(wp_tabList; Localized string:C991("Bars"); 4)
 		
 		OBJECT SET LIST BY REFERENCE:C1266(*; "lb_types"; Required list:K42:20; wp_tabList)
 		

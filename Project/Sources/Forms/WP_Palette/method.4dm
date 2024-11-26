@@ -1,11 +1,11 @@
 
-C_COLLECTION:C1488($_buttonNames)
-C_BOOLEAN:C305($setupOK)
-C_LONGINT:C283($width)
-C_OBJECT:C1216($o)
-C_POINTER:C301($ptrSource; $ptrTarget)
+var $_buttonNames : Collection
+var $setupOK : Boolean
+var $width : Integer
+var $o : Object
+var $ptrSource; $ptrTarget : Pointer
 
-C_OBJECT:C1216(oForm)
+//C_OBJECT(oForm)
 
 
 Case of 

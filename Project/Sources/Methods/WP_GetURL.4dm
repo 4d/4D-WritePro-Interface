@@ -1,8 +1,7 @@
 //%attributes = {"invisible":true}
-C_POINTER:C301($ptrLabel; $ptrURL)
-C_TEXT:C284($label1; $label2)
-C_COLLECTION:C1488($_URLs)
-
+var $ptrLabel; $ptrURL : Pointer
+var $label1; $label2 : Text
+var $_URLs : Collection
 
 $ptrLabel:=OBJECT Get pointer:C1124(Object named:K67:5; "URLlabel")
 If (Not:C34(Is nil pointer:C315($ptrLabel)))
@@ -13,7 +12,6 @@ $ptrURL:=OBJECT Get pointer:C1124(Object named:K67:5; "URLurl")
 If (Not:C34(Is nil pointer:C315($ptrURL)))
 	$ptrURL->:=""
 End if 
-
 
 If (Not:C34((Is nil pointer:C315($ptrLabel)) | (Is nil pointer:C315($ptrURL))))
 	

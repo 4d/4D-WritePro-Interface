@@ -1,83 +1,67 @@
 //%attributes = {"invisible":true}
-  //$Color:=Color_HSL_to_RGB ($Hue;$Saturation;$Light)
+//$color:=Color_HSL_to_RGB ($hue;$saturation;$Light{;$ptrRed;$ptrBlue;$ptrGreen})
 
-C_LONGINT:C283($1;$2;$3)
-C_POINTER:C301($4;$5;$6)  // optionnal
-C_LONGINT:C283($0)
+#DECLARE($hue : Integer; $luminosity : Integer; $saturation : Integer; $ptrRed : Pointer; $ptrBlue : Pointer; $ptrGreen : Pointer)->$color : Integer
 
-C_LONGINT:C283($Hue;$Saturation;$Luminosity)
-C_LONGINT:C283($Red;$Green;$Blue)
-C_LONGINT:C283($Min;$Max;$Delta)
-C_LONGINT:C283($Color)
-
-C_POINTER:C301($ptrRed;$ptrGreen;$ptrBlue)
+var $Red; $Green; $Blue : Integer
+var $Min; $Max; $Delta : Integer
 
 
-While ($Hue<0)
-	$Hue:=360-$Hue
+While ($hue<0)
+	$hue:=360-$hue
 End while 
 
-$Hue:=$1%360  //0 à 360°
+$hue:=$hue%360  //0 à 360°
 
-
-$Luminosity:=$2  //0 à 100%
-$Saturation:=$3  //0 à 100%
-
-$Max:=$Luminosity*255/100  //RGB vont de 0 à 255
-$Min:=$Max*((100-$Saturation)/100)
+$Max:=$luminosity*255/100  //RGB vont de 0 à 255
+$Min:=$Max*((100-$saturation)/100)
 $Delta:=$Max-$Min
 
 Case of 
 		
-	: ($Hue>=300)
-		$Hue:=$Hue-300
+	: ($hue>=300)
+		$hue:=$hue-300
 		$Red:=$Max
 		$Green:=$Min
-		$Blue:=$Max-($Delta*($Hue/60))  //Bleu décroissant
+		$Blue:=$Max-($Delta*($hue/60))  //Bleu décroissant
 		
-	: ($Hue>=240)
-		$Hue:=$Hue-240
+	: ($hue>=240)
+		$hue:=$hue-240
 		$Blue:=$Max
 		$Green:=$Min
-		$Red:=$Min+($Delta*($Hue/60))  //Rouge croissant
+		$Red:=$Min+($Delta*($hue/60))  //Rouge croissant
 		
-	: ($Hue>=180)
-		$Hue:=$Hue-180
+	: ($hue>=180)
+		$hue:=$hue-180
 		$Blue:=$Max
 		$Red:=$Min
-		$Green:=$Max-($Delta*($Hue/60))  //Vert décroissant
+		$Green:=$Max-($Delta*($hue/60))  //Vert décroissant
 		
-	: ($Hue>=120)
-		$Hue:=$Hue-120
+	: ($hue>=120)
+		$hue:=$hue-120
 		$Green:=$Max
 		$Red:=$Min
-		$Blue:=$Min+($Delta*($Hue/60))  //bleu croissant
+		$Blue:=$Min+($Delta*($hue/60))  //bleu croissant
 		
-	: ($Hue>=60)
-		$Hue:=$Hue-60
+	: ($hue>=60)
+		$hue:=$hue-60
 		$Green:=$Max
 		$Blue:=$Min
-		$Red:=$Max-($Delta*($Hue/60))  //Rouge décroissant
+		$Red:=$Max-($Delta*($hue/60))  //Rouge décroissant
 		
-	: ($Hue>=0)
-		$Hue:=$Hue-0  //pour la symétrie des autres cas :-)
+	: ($hue>=0)
+		$hue:=$hue-0  //pour la symétrie des autres cas :-)
 		$Red:=$Max
 		$Blue:=$Min
-		$Green:=$Min+($Delta*($Hue/60))  //vert croissant
+		$Green:=$Min+($Delta*($hue/60))  //vert croissant
 		
 End case 
 
 If (Count parameters:C259>=6)
-	
-	$ptrRed:=$4
-	$ptrGreen:=$5
-	$ptrBlue:=$6
-	
 	$ptrRed->:=$Red
 	$ptrGreen->:=$Green
 	$ptrBlue->:=$Blue
-	
 End if 
 
-$Color:=($red << 16)+($Green << 8)+$Blue
-$0:=$Color
+$color:=($red << 16)+($Green << 8)+$Blue
+

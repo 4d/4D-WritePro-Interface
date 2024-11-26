@@ -1,6 +1,6 @@
 //%attributes = {"invisible":true}
-var $1 : Collection
-var $col : Collection
+#DECLARE($col : Collection)
+
 var $i; $p : Integer
 
 If (Count parameters:C259=0)
@@ -15,11 +15,6 @@ If (Count parameters:C259=0)
 	
 Else 
 	
-	$col:=$1
-	
-	//$col2:=$col1.distinct()
-	//If ($col1.length#$col2.length)  // there are some doubles
-	
 	$i:=0
 	While ($i<($col.length-1))
 		$p:=$col.indexOf($col[$i]; $i+1)
@@ -31,8 +26,6 @@ Else
 		End if 
 		
 	End while 
-	
-	//End if 
 	
 End if 
 

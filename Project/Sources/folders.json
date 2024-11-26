@@ -37,7 +37,6 @@
 			"WP_GetTextLineHeight",
 			"WP_GetTextTransform",
 			"WP_GetTextUnderline",
-			"WP_Set4Ddate",
 			"WP_SetAlign",
 			"WP_SetBackgroundColor",
 			"WP_SetBackgroundPicture",
@@ -89,7 +88,6 @@
 			"RndRGB",
 			"TOOL_ColorRgbLongToColorRgbText",
 			"TOOL_ColorRgbTextToColorRgbLong",
-			"TOOL_WPIAlignButtons",
 			"TrapError",
 			"UI_PaletteBackgrounds",
 			"UI_PaletteBookMarks",
@@ -117,9 +115,6 @@
 	},
 	"WP_Private": {
 		"methods": [
-			"_and",
-			"_bool",
-			"_or",
 			"MENU_Display",
 			"MENU_Execute",
 			"UI_isProtected",

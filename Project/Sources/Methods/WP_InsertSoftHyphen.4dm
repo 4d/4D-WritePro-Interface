@@ -1,7 +1,7 @@
 //%attributes = {"invisible":true}
-C_BOOLEAN:C305($insert)
-C_TEXT:C284($softHyphen; $previousChar; $nextChar)
-C_OBJECT:C1216($document; $range; $paragraphRange)
+var $insert : Boolean
+var $softHyphen; $previousChar; $nextChar : Text
+var $document; $range; $paragraphRange : Object
 
 $insert:=True:C214  // lets be OPTIMISTIC
 

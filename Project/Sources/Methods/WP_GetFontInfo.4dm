@@ -1,30 +1,17 @@
 //%attributes = {"invisible":true}
-
-//C_OBJECT($1)
-//C_BOOLEAN($2)  // check if not empty selection
 #DECLARE($range : Object; $check : Boolean)
 
 var $index : Integer
-
-C_BOOLEAN:C305($redraw)
-
-C_LONGINT:C283($p)
-C_LONGINT:C283($frameColor)
-C_LONGINT:C283($color)
-C_LONGINT:C283($rangeStart; $rangeEnd)
-
-C_TEXT:C284($fontFamily)
-C_TEXT:C284($font)
-
+var $redraw : Boolean
+var $p; $frameColor; $color; $rangeStart; $rangeEnd : Integer
+var $fontFamily; $font : Text
 var $fontSize : Real  // ACI0104990 Pat Bensky
-
 
 If (Count parameters:C259<2)
 	$check:=False:C215
 End if 
 
 $frameColor:=0x00404040
-
 
 If (Not:C34(OB Is empty:C1297($range)))
 	
@@ -38,16 +25,14 @@ If (Not:C34(OB Is empty:C1297($range)))
 		$redraw:=True:C214
 	End if 
 	
-	
 	If ($redraw)
 		
-		WP GET ATTRIBUTES:C1345($range; wk font family:K81:65; $fontFamily)
+		WP Get attributes:C1345($range; wk font family:K81:65; $fontFamily)
 		$p:=Find in array:C230(WP_fontFamilly; $fontFamily)
 		If ($p<0)
 			// second chance for japanese :-)
 			$p:=Find in array:C230(WP_fontFamillyJapanese; $fontFamily)
 		End if 
-		
 		
 		If ($p>0) & ($p<=Size of array:C274(WP_fontFamilly))
 			
@@ -59,7 +44,7 @@ If (Not:C34(OB Is empty:C1297($range)))
 			
 			WP_FillFontStyles($fontFamily)  //ACI0104450
 			
-			WP GET ATTRIBUTES:C1345($range; wk font:K81:69; $font)
+			WP Get attributes:C1345($range; wk font:K81:69; $font)
 			$p:=Find in array:C230(WP_fontLongName; $font)
 			If ($p>0) & ($p<=Size of array:C274(WP_fontLongName))
 				WP_fontStyle:=$p
@@ -72,7 +57,6 @@ If (Not:C34(OB Is empty:C1297($range)))
 				//WP_fontFamilly:=0
 			End if 
 			
-			
 		Else 
 			// font familly not found in array !
 			
@@ -81,12 +65,10 @@ If (Not:C34(OB Is empty:C1297($range)))
 			
 		End if 
 		
-		
-		
 		If (Not:C34(Undefined:C82(oForm.fonts)))
 			//New font button
 			
-			WP GET ATTRIBUTES:C1345($range; wk font:K81:69; $font; wk font family:K81:65; $fontFamily)
+			WP Get attributes:C1345($range; wk font:K81:69; $font; wk font family:K81:65; $fontFamily)
 			$index:=oForm.fonts.names.indexOf($font)
 			If ($index>0)
 				OBJECT SET TITLE:C194(*; "btnFonts"; oForm.fonts.families[$index]+" "+oForm.fonts.styles[$index])
@@ -100,15 +82,11 @@ If (Not:C34(OB Is empty:C1297($range)))
 			End if 
 		End if 
 		
-		
-		
-		
 		// Get the size (always in pt)
-		WP GET ATTRIBUTES:C1345($range; wk font size:K81:66; $fontSize)
+		WP Get attributes:C1345($range; wk font size:K81:66; $fontSize)
 		If ($fontSize#wk mixed:K81:89)
 			oForm.fontSize:=$fontSize
 		End if 
-		
 		
 		// standard action since 2022 march 17th
 		
@@ -126,10 +104,7 @@ If (Not:C34(OB Is empty:C1297($range)))
 		//oForm.cbBold:=2
 		//End if 
 		
-		
-		
-		
-		WP GET ATTRIBUTES:C1345($range; wk text color:K81:64; $color)
+		WP Get attributes:C1345($range; wk text color:K81:64; $color)
 		If ($color=wk mixed:K81:89)
 			OBJECT SET VISIBLE:C603(*; "MultiFontColor"; True:C214)
 			OBJECT SET RGB COLORS:C628(*; "ColorSample"; $frameColor; 0x00FFFFFF)

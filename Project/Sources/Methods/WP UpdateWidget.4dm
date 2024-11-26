@@ -7,25 +7,18 @@ var $oWidget; $oArea : Variant
 var $typeWidget; $typeArea : Integer
 var $oWidgetUpdate : Object
 
-C_BOOLEAN:C305($send)
-//C_OBJECT($oWidget)  // variable used manage to the 4D WritePro Widget
-C_POINTER:C301($areaPtr)  // Pointers on the area and widget
-C_POINTER:C301($p)
-//C_TEXT($areaName; $widgetName)  // "4DWritePro area" and "4DWritePro widget" object names
+var $send : Boolean
+var $areaPtr; $p : Pointer  // Pointers on the area and widget
 
 Case of 
 	: (Count parameters:C259=1)
 		
-		//$widgetName:=$1
 		$p:=OBJECT Get pointer:C1124(Object named:K67:5; $widgetName)
 		If (Not:C34(Is nil pointer:C315($p)))
 			$p->:=$p->
 		End if 
 		
 	: (Count parameters:C259>=2)
-		
-		//$widgetName:=$1
-		//$areaName:=$2
 		
 		$p:=OBJECT Get pointer:C1124(Object named:K67:5; $widgetName)
 		

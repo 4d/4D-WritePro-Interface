@@ -1,23 +1,14 @@
 //%attributes = {"invisible":true}
-C_COLLECTION:C1488($_attributes)
-
-C_LONGINT:C283($stylesheetType)
-C_LONGINT:C283($n)
-
-C_OBJECT:C1216($source; $o)
-C_OBJECT:C1216($stylesheet)
-C_OBJECT:C1216($document)
-C_OBJECT:C1216($styleSheet)
-
-C_POINTER:C301($ptrListbox; $ptrStylesheetNames)
-
-C_TEXT:C284($stylesheetName)
+var $_attributes : Collection
+var $stylesheetType; $n : Integer
+var $source; $o; $stylesheet; $document; $styleSheet : Object
+var $ptrListbox; $ptrStylesheetNames : Pointer
+var $stylesheetName : Text
 
 $stylesheetType:=WP_GetStylesheetType  // paragraph, char, picture, table, row or cell
 
 $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")
 $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
-
 
 Case of 
 	: (Form event code:C388=On Clicked:K2:4)

@@ -1,4 +1,4 @@
-C_BOOLEAN:C305($setupOK)
+var $setupOK : Boolean
 
 //$paletteID:=11
 
@@ -9,11 +9,11 @@ Case of
 			oForm:=New object:C1471
 		End if 
 		
-		OBJECT SET TITLE:C194(*; "btnInsertTable"; Get localized string:C991("InsertTable")+" "+Char:C90(9660))
-		OBJECT SET TITLE:C194(*; "btnTableSettings"; Get localized string:C991("Properties")+" "+Char:C90(9660))
-		OBJECT SET TITLE:C194(*; "btnRowSettings"; Get localized string:C991("Properties")+" "+Char:C90(9660))
-		OBJECT SET TITLE:C194(*; "btnColumnSettings"; Get localized string:C991("Properties")+" "+Char:C90(9660))
-		OBJECT SET TITLE:C194(*; "btnCellSettings"; Get localized string:C991("Properties")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*; "btnInsertTable"; Localized string:C991("InsertTable")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*; "btnTableSettings"; Localized string:C991("Properties")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*; "btnRowSettings"; Localized string:C991("Properties")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*; "btnColumnSettings"; Localized string:C991("Properties")+" "+Char:C90(9660))
+		OBJECT SET TITLE:C194(*; "btnCellSettings"; Localized string:C991("Properties")+" "+Char:C90(9660))
 		
 		oForm.skinAppliedSub:=UI_ApplySkin
 		

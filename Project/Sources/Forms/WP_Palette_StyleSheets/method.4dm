@@ -1,6 +1,6 @@
 //C_LONGINT(wp_tabList)
 
-C_BOOLEAN:C305($setupOK)
+var $setupOK : Boolean
 
 //C_LONGINT($paletteID)
 //$paletteID:=3

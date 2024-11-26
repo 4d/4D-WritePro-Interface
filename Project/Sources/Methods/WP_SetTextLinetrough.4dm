@@ -1,13 +1,5 @@
 //%attributes = {"invisible":true}
-C_OBJECT:C1216($1)
-C_LONGINT:C283($2)
-
-
-C_OBJECT:C1216($range)
-C_LONGINT:C283($color)
-
-$range:=$1
-$color:=$2
+#DECLARE($range : Object; $color : Integer)
 
 If (Not:C34(OB Is empty:C1297($range)))
 	

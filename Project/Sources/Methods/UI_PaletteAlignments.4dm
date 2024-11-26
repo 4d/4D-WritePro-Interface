@@ -1,9 +1,9 @@
 //%attributes = {"invisible":true}
 //ACI0098389 (new item added)
 
-C_POINTER:C301($ptrTextLineHeightUnit)
-C_TEXT:C284($format)
-C_LONGINT:C283($typeSelection)
+var $ptrTextLineHeightUnit : Pointer
+var $format : Text
+var $typeSelection : Integer
 
 
 If (UI_isProtected(False:C215))  // false means don't take focus into account

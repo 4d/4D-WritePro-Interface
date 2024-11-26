@@ -1,8 +1,7 @@
 //%attributes = {"invisible":true}
-C_POINTER:C301($ptr)
-C_LONGINT:C283($p)
-C_TEXT:C284($tip)
-C_LONGINT:C283($typeSelection)
+var $ptr : Pointer
+var $p; $typeSelection : Integer
+var $tip : Text
 
 If (UI_isProtected(False:C215))  // false means don't take focus into account
 	
@@ -31,11 +30,11 @@ Else
 				
 				$ptr:=OBJECT Get pointer:C1124(Object named:K67:5; "lb_bookmarkNames")
 				
-				$tip:=Get localized string:C991("tipDeleteBookmark")
+				$tip:=Localized string:C991("tipDeleteBookmark")
 				$tip:=Replace string:C233($tip; "[1]"; $ptr->{$p})  // $bookmarkName might be ""
 				OBJECT SET HELP TIP:C1181(*; "btnRemove"; $tip)
 				
-				$tip:=Get localized string:C991("tipRedefineBookmark")
+				$tip:=Localized string:C991("tipRedefineBookmark")
 				$tip:=Replace string:C233($tip; "[1]"; $ptr->{$p})  // $bookmarkName might be ""
 				OBJECT SET HELP TIP:C1181(*; "btnReload"; $tip)
 				

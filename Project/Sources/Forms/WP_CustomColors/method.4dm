@@ -1,6 +1,6 @@
-C_LONGINT:C283($x1; $y1; $x2; $y2; $memoX2)
-C_TEXT:C284($path)
-C_POINTER:C301($ptr)
+var $x1; $y1; $x2; $y2; $memoX2 : Integer
+var $path : Text
+var $ptr : Pointer
 
 Case of 
 	: (Form event code:C388=On Deactivate:K2:10)

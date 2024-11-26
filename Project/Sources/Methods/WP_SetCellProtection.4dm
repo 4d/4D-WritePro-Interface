@@ -1,11 +1,7 @@
 //%attributes = {"invisible":true}
-C_OBJECT:C1216($1; $textRange)
-C_LONGINT:C283($2; $protection)
+#DECLARE($textRange : Object; $protection : Integer)
 
-C_OBJECT:C1216($cells)
-
-$textRange:=$1
-$protection:=$2
+var $cells : Object
 
 $cells:=WP Table get cells:C1477($textRange)
 If ($cells#Null:C1517)

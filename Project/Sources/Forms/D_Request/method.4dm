@@ -1,6 +1,6 @@
 //dial created 2020/06/03 to fix the ACI0100879
 
-C_LONGINT:C283($width; $height; $x1; $x2; $y1; $y2)
+var $width; $height; $x1; $x2; $y1; $y2 : Integer
 
 Case of 
 	: (FORM Event:C1606.code=On Load:K2:1)

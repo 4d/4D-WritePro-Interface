@@ -1,15 +1,11 @@
 //%attributes = {"invisible":true}
 //ACI0099141 fixed 29/01/2019 by RL  (WP SwitchToolbar intead of WP SwichToolbar, without "t")
 
-C_TEXT:C284($1)
-C_TEXT:C284($NewfolderName)
+#DECLARE($NewFolderName : Text)
 
-C_LONGINT:C283($i; $n; $p; $length)
-C_TEXT:C284($start)
+var $i; $n; $p; $length : Integer
+var $start; $format; $folderName : Text
 
-C_TEXT:C284($format; $folderName; $NewFolderName)
-
-$NewFolderName:=$1
 
 ARRAY TEXT:C222($_formObjects; 0)
 FORM GET OBJECTS:C898($_formObjects)

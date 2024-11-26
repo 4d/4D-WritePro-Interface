@@ -1,18 +1,10 @@
 //%attributes = {"invisible":true}
+#DECLARE($range : Object; $heightValue : Real)
+
 //ACI0098389 (new item added)
 
-C_OBJECT:C1216($1)
-C_REAL:C285($2)
-C_TEXT:C284($3)
-
-C_OBJECT:C1216($range)
-C_REAL:C285($heightValue)
-C_TEXT:C284($heightValue_t)
-C_POINTER:C301($ptrTextLineHeightUnit)
-
-$range:=$1
-$heightValue:=$2
-
+var $heightValue_t : Text
+var $ptrTextLineHeightUnit : Pointer
 
 If (Not:C34(OB Is empty:C1297($range)))
 	

@@ -1,29 +1,17 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($1)
+#DECLARE($context : Text)
 
-C_BOOLEAN:C305($hasPasteMenu1)
-C_BOOLEAN:C305($hasPasteMenu2)
 
-C_LONGINT:C283($i; $n; $type)
+var $hasPasteMenu1; $hasPasteMenu2 : Boolean
 
-C_TEXT:C284($menu)
-C_TEXT:C284($Parameter)
-C_TEXT:C284($textValue)
-C_TEXT:C284($context)
-C_TEXT:C284($unit)
-C_TEXT:C284($attribute)
+var $i; $n; $type : Integer
+var $menu; $Parameter; $textValue; $unit; $attribute : Text
+var $numValue : Real
+var $oSettings; $oCurrent : Object
+var $ptrPreviewCopy : Pointer
 
-C_REAL:C285($numValue)
+var oSettings1; oSettings2 : Object
 
-C_OBJECT:C1216($oSettings)
-C_OBJECT:C1216($oCurrent)
-
-C_OBJECT:C1216(oSettings1)
-C_OBJECT:C1216(oSettings2)
-
-C_POINTER:C301($ptrPreviewCopy)
-
-$context:=$1
 
 If (Not:C34(Undefined:C82(oSettings1)))
 	If (Not:C34(OB Is empty:C1297(oSettings1)))
@@ -60,60 +48,60 @@ $menu:=Create menu:C408
 Case of 
 	: ($context="fontFamilly")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("CopyStyle"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("CopyStyle"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "Copy1")
 		If ($hasPasteMenu1)
 			APPEND MENU ITEM:C411($menu; "(-")
-			APPEND MENU ITEM:C411($menu; Get localized string:C991("PasteStyle"))
+			APPEND MENU ITEM:C411($menu; Localized string:C991("PasteStyle"))
 			SET MENU ITEM PARAMETER:C1004($menu; -1; "Paste1")
 		End if 
 		
 	: ($context="AlignmentsAndMargins")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("CopyTextSettings"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("CopyTextSettings"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "Copy1")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("CopyMargins"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("CopyMargins"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "Copy2")
 		
 		If (($hasPasteMenu1) | ($hasPasteMenu2))
 			APPEND MENU ITEM:C411($menu; "(-")
 		End if 
 		If ($hasPasteMenu1)
-			APPEND MENU ITEM:C411($menu; Get localized string:C991("PasteTextSettings"))
+			APPEND MENU ITEM:C411($menu; Localized string:C991("PasteTextSettings"))
 			SET MENU ITEM PARAMETER:C1004($menu; -1; "Paste1")
 		End if 
 		If ($hasPasteMenu2)
-			APPEND MENU ITEM:C411($menu; Get localized string:C991("PasteMargins"))
+			APPEND MENU ITEM:C411($menu; Localized string:C991("PasteMargins"))
 			SET MENU ITEM PARAMETER:C1004($menu; -1; "Paste2")
 		End if 
 		
 	: ($context="Tabulations")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("CopyTabulation"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("CopyTabulation"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "Copy1")
 		If ($hasPasteMenu1)
 			APPEND MENU ITEM:C411($menu; "(-")
-			APPEND MENU ITEM:C411($menu; Get localized string:C991("PasteTabulation"))
+			APPEND MENU ITEM:C411($menu; Localized string:C991("PasteTabulation"))
 			SET MENU ITEM PARAMETER:C1004($menu; -1; "Paste1")
 		End if 
 		
 	: ($context="Frame")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("CopyFrame"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("CopyFrame"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "Copy1")
 		
 		If (($hasPasteMenu1) | ($hasPasteMenu2))
 			APPEND MENU ITEM:C411($menu; "(-")
 		End if 
 		If ($hasPasteMenu1)
-			APPEND MENU ITEM:C411($menu; Get localized string:C991("PasteFrame"))
+			APPEND MENU ITEM:C411($menu; Localized string:C991("PasteFrame"))
 			SET MENU ITEM PARAMETER:C1004($menu; -1; "Paste1")
 		End if 
 		
 	: ($context="Background")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("CopyBackground"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("CopyBackground"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "CopyBackground")  //<ACI0104195>
 		
 		If ($hasPasteMenu1)
@@ -121,7 +109,7 @@ Case of
 		End if 
 		
 		If ($hasPasteMenu1)
-			APPEND MENU ITEM:C411($menu; Get localized string:C991("PasteBackground"))
+			APPEND MENU ITEM:C411($menu; Localized string:C991("PasteBackground"))
 			SET MENU ITEM PARAMETER:C1004($menu; -1; "PasteBackground")  //<ACI0104195>
 			
 		End if 
@@ -165,7 +153,7 @@ Case of
 				APPEND TO ARRAY:C911($_attributes; wk text shadow offset:K81:72)
 				
 				CLEAR VARIABLE:C89(oSettings1)
-				C_OBJECT:C1216(oSettings1)
+				oSettings1:=New object:C1471
 				$n:=Size of array:C274($_attributes)
 				
 				For ($i; 1; $n)
@@ -173,17 +161,17 @@ Case of
 					Case of 
 						: ($_attributes{$i}=wk font family:K81:65) | ($_attributes{$i}=wk font:K81:69)  //2020/06/02   ACI0100924
 							
-							WP GET ATTRIBUTES:C1345($oCurrent; $_attributes{$i}; $textValue)
+							WP Get attributes:C1345($oCurrent; $_attributes{$i}; $textValue)
 							OB SET:C1220(oSettings1; $_attributes{$i}; $textValue)
 							
 						: ($_attributes{$i}=wk text shadow offset:K81:72)
 							
-							WP GET ATTRIBUTES:C1345($oCurrent; $_attributes{$i}; $_numValues1)
+							WP Get attributes:C1345($oCurrent; $_attributes{$i}; $_numValues1)
 							OB SET ARRAY:C1227(oSettings1; $_attributes{$i}; $_numValues1)
 							
 						Else 
 							
-							WP GET ATTRIBUTES:C1345($oCurrent; $_attributes{$i}; $numValue)
+							WP Get attributes:C1345($oCurrent; $_attributes{$i}; $numValue)
 							If ($numValue#wk mixed:K81:89)
 								OB SET:C1220(oSettings1; $_attributes{$i}; $numValue)
 							End if 
@@ -207,7 +195,7 @@ Case of
 						//End if 
 						
 						CLEAR VARIABLE:C89(oSettings1)
-						C_OBJECT:C1216(oSettings1)
+						oSettings1:=New object:C1471
 						$n:=Size of array:C274($_attributes)
 						For ($i; 1; $n)
 							
@@ -216,9 +204,9 @@ Case of
 									
 									//If ((OBJECT Get pointer(Object named; "TargetSelector3"))->#1)
 									
-									WP GET ATTRIBUTES:C1345($oCurrent; wk layout unit:K81:78; $unit)  // memo current unit
+									WP Get attributes:C1345($oCurrent; wk layout unit:K81:78; $unit)  // memo current unit
 									WP SET ATTRIBUTES:C1342($oCurrent; wk layout unit:K81:78; wk unit percent:K81:139)  // tempo set to %
-									WP GET ATTRIBUTES:C1345($oCurrent; wk line height:K81:51; $numValue)  // set the line height (in %)
+									WP Get attributes:C1345($oCurrent; wk line height:K81:51; $numValue)  // set the line height (in %)
 									WP SET ATTRIBUTES:C1342($oCurrent; wk layout unit:K81:78; $unit)  // back to current unit
 									
 									//Else 
@@ -226,7 +214,7 @@ Case of
 									//End if 
 									
 								Else 
-									WP GET ATTRIBUTES:C1345($oCurrent; $_attributes{$i}; $numValue)
+									WP Get attributes:C1345($oCurrent; $_attributes{$i}; $numValue)
 									
 							End case 
 							
@@ -244,10 +232,10 @@ Case of
 						APPEND TO ARRAY:C911($_attributes; wk margin bottom:K81:14)
 						
 						CLEAR VARIABLE:C89(oSettings2)
-						C_OBJECT:C1216(oSettings2)
+						oSettings2:=New object:C1471
 						$n:=Size of array:C274($_attributes)
 						For ($i; 1; $n)
-							WP GET ATTRIBUTES:C1345($oCurrent; $_attributes{$i}; $numValue)
+							WP Get attributes:C1345($oCurrent; $_attributes{$i}; $numValue)
 							If ($numValue#wk mixed:K81:89)
 								OB SET:C1220(oSettings2; $_attributes{$i}; $numValue)
 							End if 
@@ -296,7 +284,7 @@ Case of
 				CLEAR VARIABLE:C89(oSettings1)
 				$n:=Size of array:C274($_attributes)
 				For ($i; 1; $n)
-					WP GET ATTRIBUTES:C1345($oCurrent; $_attributes{$i}; $numValue)
+					WP Get attributes:C1345($oCurrent; $_attributes{$i}; $numValue)
 					If ($numValue#wk mixed:K81:89)
 						OB SET:C1220(oSettings1; $_attributes{$i}; $numValue)
 					End if 
@@ -323,7 +311,7 @@ Case of
 				
 				$n:=Size of array:C274($_attributes)
 				For ($i; 1; $n)
-					WP GET ATTRIBUTES:C1345($oCurrent; $_attributes{$i}; $numValue)
+					WP Get attributes:C1345($oCurrent; $_attributes{$i}; $numValue)
 					If ($numValue#wk mixed:K81:89)
 						OB SET:C1220(oSettings1; $_attributes{$i}; $numValue)
 					End if 
@@ -337,7 +325,7 @@ Case of
 				
 				$n:=Size of array:C274($_attributes)
 				For ($i; 1; $n)
-					WP GET ATTRIBUTES:C1345($oCurrent; $_attributes{$i}; $textValue)
+					WP Get attributes:C1345($oCurrent; $_attributes{$i}; $textValue)
 					If ($textValue#"")
 						OB SET:C1220(oSettings1; $_attributes{$i}; $textValue)
 					End if 
@@ -409,7 +397,7 @@ Case of
 						
 					: ($attribute=wk line height:K81:51)
 						
-						WP GET ATTRIBUTES:C1345($oCurrent; wk layout unit:K81:78; $unit)
+						WP Get attributes:C1345($oCurrent; wk layout unit:K81:78; $unit)
 						WP SET ATTRIBUTES:C1342($oCurrent; wk layout unit:K81:78; wk unit percent:K81:139)
 						WP SET ATTRIBUTES:C1342($oCurrent; wk line height:K81:51; $numValue)
 						WP SET ATTRIBUTES:C1342($oCurrent; wk layout unit:K81:78; $unit)

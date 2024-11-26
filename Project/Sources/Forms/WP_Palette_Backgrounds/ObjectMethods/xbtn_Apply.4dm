@@ -1,7 +1,7 @@
 
-C_PICTURE:C286($pict)
-C_POINTER:C301($ptr)
-C_OBJECT:C1216($oCurrent)
+var $pict : Picture
+var $ptr : Pointer
+var $oCurrent : Object
 
 $oCurrent:=WP_FillCurrent("popup")
 

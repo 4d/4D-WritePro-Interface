@@ -1,21 +1,11 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($1)
-C_BOOLEAN:C305($2)
-
+#DECLARE($where : Text; $withMenu : Boolean)
 
 //C_LONGINT($menu)
-C_TEXT:C284($applyTo)
-C_TEXT:C284($select)
-C_TEXT:C284($where)
-C_TEXT:C284($menuRef)
-C_BOOLEAN:C305($withMenu)
-
-$where:=$1
-$withMenu:=$2
+var $applyTo; $select; $menuRef : Text
 
 // read the "applyTo"
 $applyTo:=UI_GetApplyTo
-
 
 If ($withMenu)
 	
@@ -25,15 +15,15 @@ If ($withMenu)
 	////APPEND MENU ITEM($menuRef; ak standard action title)
 	//SET MENU ITEM PROPERTY($menuRef; -1; Associated standard action name; $applyTo+"/borderStyle"+$where+"?value=solid")
 	
-	APPEND MENU ITEM:C411($menuRef; Get localized string:C991("bordersStyle"))
+	APPEND MENU ITEM:C411($menuRef; Localized string:C991("bordersStyle"))
 	//APPEND MENU ITEM($menuRef; ak standard action title)
 	SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; $applyTo+"/borderStyle"+$where)
 	
-	APPEND MENU ITEM:C411($menuRef; Get localized string:C991("bordersColor"))
+	APPEND MENU ITEM:C411($menuRef; Localized string:C991("bordersColor"))
 	//APPEND MENU ITEM($menuRef; ak standard action title)
 	SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; $applyTo+"/borderColor"+$where)
 	
-	APPEND MENU ITEM:C411($menuRef; Get localized string:C991("borderWidth"))
+	APPEND MENU ITEM:C411($menuRef; Localized string:C991("borderWidth"))
 	//APPEND MENU ITEM($menuRef; ak standard action title)
 	SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; $applyTo+"/borderWidth"+$where)
 	

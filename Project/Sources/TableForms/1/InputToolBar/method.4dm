@@ -1,3 +1,4 @@
+
 Case of 
 		
 	: (Form event code:C388=On Load:K2:1)
@@ -20,7 +21,7 @@ Case of
 		SET ALLOWED METHODS:C805($_AllowedMethods)
 		
 		
-		C_OBJECT:C1216($WP_skin)
+		_O_C_OBJECT:C1216($WP_skin)
 		$WP_skin:=New object:C1471
 		
 		If (FORM Get color scheme:C1761="light")

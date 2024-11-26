@@ -1,8 +1,7 @@
 //%attributes = {"invisible":true}
 
-C_POINTER:C301($ptrTrueExpression; $ptrVirtualExpression)
-C_TEXT:C284($virtualExpression; $trueExpression)
-
+var $ptrTrueExpression; $ptrVirtualExpression : Pointer
+var $virtualExpression; $trueExpression : Text
 var $_formulas : Collection
 
 $ptrTrueExpression:=OBJECT Get pointer:C1124(Object named:K67:5; "TrueExpression")
@@ -14,7 +13,6 @@ $ptrVirtualExpression:=OBJECT Get pointer:C1124(Object named:K67:5; "VirtualExpr
 If (Not:C34(Is nil pointer:C315($ptrVirtualExpression)))
 	$ptrVirtualExpression->:=""
 End if 
-
 
 If (Not:C34((Is nil pointer:C315($ptrTrueExpression)) | (Is nil pointer:C315($ptrVirtualExpression))))
 	
@@ -35,6 +33,5 @@ If (Not:C34((Is nil pointer:C315($ptrTrueExpression)) | (Is nil pointer:C315($pt
 			
 		End if 
 	End if 
-	
 	
 End if 

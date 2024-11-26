@@ -1,7 +1,7 @@
 
 //ACI0098389 (new item added)
 
-C_LONGINT:C283($textLineHeight)
+var $textLineHeight : Integer
 
 If (Self:C308->=1)  //%
 	$textLineHeight:=100

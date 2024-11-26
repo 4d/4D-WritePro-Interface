@@ -1,8 +1,7 @@
+var $setupOK : Boolean
+var $paletteID : Integer
 
-C_BOOLEAN:C305($setupOK)
-C_LONGINT:C283($paletteID)
 $paletteID:=10
-
 
 Case of 
 		

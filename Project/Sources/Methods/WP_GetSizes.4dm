@@ -1,17 +1,9 @@
 //%attributes = {"invisible":true}
 //WP_GetSizes
-C_OBJECT:C1216($1)
-//C_TEXT($2)
+#DECLARE($range : Object)
 
-C_OBJECT:C1216($range)
-
-C_LONGINT:C283($i; $n)
-
-$range:=$1
-//$context:=$2
-
-C_REAL:C285($height; $minHeight)
-C_REAL:C285($width; $minWidth)
+var $i; $n : Integer
+var $height; $minHeight; $width; $minWidth : Real
 
 ARRAY POINTER:C280($_ptr; 0)
 APPEND TO ARRAY:C911($_ptr; ->$height)  // not used anymore
@@ -33,9 +25,9 @@ If (Not:C34(OB Is empty:C1297($range)))
 	//: ($context="paragraph")
 	
 	$_ptr{1}->:=0
-	WP GET ATTRIBUTES:C1345($range; wk width:K81:45; $_ptr{2}->)
-	WP GET ATTRIBUTES:C1345($range; wk min height:K81:48; $_ptr{3}->)
-	WP GET ATTRIBUTES:C1345($range; wk min width:K81:47; $_ptr{4}->)
+	WP Get attributes:C1345($range; wk width:K81:45; $_ptr{2}->)
+	WP Get attributes:C1345($range; wk min height:K81:48; $_ptr{3}->)
+	WP Get attributes:C1345($range; wk min width:K81:47; $_ptr{4}->)
 	
 	//End case 
 	
@@ -81,7 +73,6 @@ If (Not:C34(OB Is empty:C1297($range)))
 			(OBJECT Get pointer:C1124(Object named:K67:5; "rbWidthOption2"))->:=0
 			
 	End case 
-	
 	
 	//End case 
 	

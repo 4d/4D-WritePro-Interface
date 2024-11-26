@@ -1,8 +1,8 @@
 //%attributes = {"invisible":true}
 
-C_TEXT:C284($virtualExpression; $trueExpression)
-C_LONGINT:C283($n)
-C_POINTER:C301($ptr)
+var $virtualExpression; $trueExpression : Text
+var $n : Integer
+var $ptr : Pointer
 
 ARRAY TEXT:C222($_titles; 0)
 ARRAY LONGINT:C221($_nums; 0)
@@ -53,7 +53,7 @@ If (Not:C34(Is nil pointer:C315($ptr)))
 			
 			$formula:=Formula from string:C1601($trueExpression; 1)  // 1 = sk execute in host database
 			If (Form:C1466.selection.type#2)  // not an anchored picture
-				WP INSERT FORMULA:C1703(Form:C1466.selection; $formula; wk replace:K81:177)
+				WP Insert formula:C1703(Form:C1466.selection; $formula; wk replace:K81:177)
 			Else   // si anchored picture, update the attribute
 				Form:C1466.selection.imageFormula:=$formula
 			End if 
@@ -63,7 +63,7 @@ If (Not:C34(Is nil pointer:C315($ptr)))
 	End if 
 	
 Else 
-	ALERT:C41(Get localized string:C991("NoTableAvailable"))
+	ALERT:C41(Localized string:C991("NoTableAvailable"))
 End if 
 
 

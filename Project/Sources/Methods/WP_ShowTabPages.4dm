@@ -33,15 +33,12 @@ Possible values inside collection for toolbar
 
 */
 
-C_COLLECTION:C1488($1; $_tabs)
+#DECLARE($_tabs : Collection)
 
-C_LONGINT:C283($width; $height; $nbPages)
+var $width; $height; $nbPages : Integer
+var $typeForm; $buttonName; $className : Text
 
-C_TEXT:C284($typeForm)
-C_TEXT:C284($buttonName)
-C_TEXT:C284($className)
 
-$_tabs:=$1
 distinctKeepOrder($_tabs)  //.distinct()
 
 FORM GET PROPERTIES:C674(Current form name:C1298; $width; $height; $nbPages)

@@ -1,18 +1,8 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($text; $char)
 
-C_OBJECT:C1216($range; $charRange; $document)
-C_LONGINT:C283($start; $end)
-C_LONGINT:C283($i; $n)
-
-//$objectName:=OBJECT Get name(Object with focus)
-//$ptr:=OBJECT Get pointer(Object named;$objectName)
-//If (Value type($ptr->)=Is object)
-
-//$memoErrorMethod:=Method called on error
-//ON ERR CALL("WP_IgnoreError")
-//$range:=WP Selection range(*;$objectName)  // the object might NOT be a 4DWP document
-//ON ERR CALL($memoErrorMethod)
+var $text; $char : Text
+var $range; $charRange; $document : Object
+var $start; $end; $i; $n : Integer
 
 If (Form:C1466.selection#Null:C1517)
 	
@@ -28,7 +18,6 @@ If (Form:C1466.selection#Null:C1517)
 			End if 
 			
 			$end:=$range.end+1
-			
 			$range:=WP Text range:C1341($document; $start; $end)
 			
 		End if 
@@ -48,5 +37,5 @@ If (Form:C1466.selection#Null:C1517)
 	End if 
 End if 
 
-//End if 
+
 

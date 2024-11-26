@@ -1,17 +1,17 @@
 //%attributes = {"invisible":true}
 //Method created 2020/06/03 to fix the ACI0100879
 
-var $1; $2; $3; $4; $5; $0 : Text
+#DECLARE($title : Text; $value : Text; $labelOk : Text; $labelCancel : Text; $placeHolder : Text)->$answer : Text
 
 var $o : Object
 var $x1; $y1; $x2; $y2; $win : Integer
 
 $o:=New object:C1471
-$o.title:=$1
-$o.value:=$2
-$o.labelOk:=$3
-$o.labelCancel:=$4
-$o.placeHolder:=$5
+$o.title:=$title
+$o.value:=$value
+$o.labelOk:=$labelOk
+$o.labelCancel:=$labelCancel
+$o.placeHolder:=$placeHolder
 $o.windowTitle:=""
 
 GET WINDOW RECT:C443($x1; $y1; $x2; $y2)
@@ -28,8 +28,8 @@ End if
 DIALOG:C40("D_Request"; $o)
 
 If (ok=1)
-	$0:=$o.value
+	$answer:=$o.value
 Else 
-	$0:=""
+	$answer:=""
 End if 
 

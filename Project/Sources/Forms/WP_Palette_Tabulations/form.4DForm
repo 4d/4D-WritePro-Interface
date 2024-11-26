@@ -476,7 +476,7 @@
 				"bTabType4"
 			]
 		},
-		"activeView": "View 9",
+		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
@@ -500,6 +500,7 @@
 			"View 7": {},
 			"View 8": {},
 			"View 9": {
+				"visible": false,
 				"objects": [
 					"Rect2",
 					"Text"

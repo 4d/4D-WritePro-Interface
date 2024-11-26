@@ -1,6 +1,6 @@
 //%attributes = {"invisible":true}
-C_OBJECT:C1216($document)
-C_BOOLEAN:C305($docProtected)
+var $document : Object
+var $docProtected : Boolean
 
 If (UI_isProtected(True:C214))  // // ACI0103075 //true means take focus into account
 	
@@ -17,7 +17,7 @@ Else
 	
 	
 	$document:=Form:C1466.selection.owner
-	WP GET ATTRIBUTES:C1345($document; wk protection enabled:K81:307; $docProtected)
+	WP Get attributes:C1345($document; wk protection enabled:K81:307; $docProtected)
 	
 	If ($docProtected)
 		

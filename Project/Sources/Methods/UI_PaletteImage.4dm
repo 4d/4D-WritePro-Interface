@@ -1,8 +1,9 @@
 //%attributes = {"invisible":true}
 #DECLARE($focus : Boolean)  // toolbar = true, sidebar = false
 
-C_OBJECT:C1216($range)
-C_COLLECTION:C1488($elements)
+var $range; $form : Object
+var $elements : Collection
+
 
 If (UI_isProtected($focus))  // false means do NOT take focus into account
 	
@@ -14,7 +15,6 @@ Else
 	OBJECT SET ENABLED:C1123(*; "@"; True:C214)  // RL 08/11/2022
 	OBJECT SET ENTERABLE:C238(*; "@"; True:C214)  // RL 08/11/2022
 	
-	C_OBJECT:C1216($form)
 	
 	$range:=Form:C1466.selection
 	
@@ -39,9 +39,7 @@ Else
 		OBJECT SET ENABLED:C1123(*; "btn_PictInfo@"; False:C215)
 	End if 
 	
-	
 	TB_setAutomaticActions("PicturesAndTextboxes")
-	
 	
 End if 
 

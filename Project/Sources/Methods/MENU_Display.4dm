@@ -1,18 +1,13 @@
 //%attributes = {"invisible":true}
 #DECLARE($content : Text)->$action : Text
 
-//var $1; $content : Text
-//var $0 : Text
-
 var $menu; $item; $url : Text
 var $_menuItems; $_tables : Collection
 var $o : Object
 var $_formulas : Collection
 var $section; $subSectionFirst; $subSectionLeft; $subSectionRight : Object
 
-If (Count parameters:C259>=1)
-	$content:=$1
-Else   // test
+If (Count parameters:C259<1)
 	$content:="export"  //"new/import/export"
 End if 
 
@@ -36,25 +31,25 @@ $menu:=Create menu:C408  // create IMPORT submenu first
 Case of 
 	: ($content="export")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("4DWriteProEllipsis"))  //"As .4dwp Document")
+		APPEND MENU ITEM:C411($menu; Localized string:C991("4DWriteProEllipsis"))  //"As .4dwp Document")
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "export4dwritePro")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("WordEllipsis"))  //"As .docx document")
+		APPEND MENU ITEM:C411($menu; Localized string:C991("WordEllipsis"))  //"As .docx document")
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "exportDocx")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("HtmlEllipsis"))  //"As .html Document")
+		APPEND MENU ITEM:C411($menu; Localized string:C991("HtmlEllipsis"))  //"As .html Document")
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "exportHTML")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("HtmlMimeEllipsis"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("HtmlMimeEllipsis"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "exportHTMLmime")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("PdfEllipsis"))  //"As .pdf document")
+		APPEND MENU ITEM:C411($menu; Localized string:C991("PdfEllipsis"))  //"As .pdf document")
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "exportPDF")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("TextEllipsis"))  //"As .text Document")
+		APPEND MENU ITEM:C411($menu; Localized string:C991("TextEllipsis"))  //"As .text Document")
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "exportText")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("svgEllipsis"))  //"As .svg Document")
+		APPEND MENU ITEM:C411($menu; Localized string:C991("svgEllipsis"))  //"As .svg Document")
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "exportSVG")
 		
 	: ($content="paragraphSettings")
@@ -71,7 +66,7 @@ Case of
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 		SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; wk line height:K81:51)
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("resetFontAttributes"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("resetFontAttributes"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "ResetCharacterAttributes")
 		
 		APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)  // added by RL 2024/03/21
@@ -79,55 +74,55 @@ Case of
 		
 		
 	: ($content="InsertFormula")
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("title"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("title"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "documentTitle")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("author"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("author"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "documentAuthor")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("subject"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("subject"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "documentSubject")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("company"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("company"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "documentCompany")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("notes"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("notes"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "documentNotes")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("creationDate"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("creationDate"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "documentCreationStamp")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("modificationDate"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("modificationDate"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "documentModificationStamp")
 		
 	: ($content="FreezeFormulas")
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("FreezeDocument"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("FreezeDocument"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "freezeDocument")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("FreezeSelection"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("FreezeSelection"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "freezeSelection")
 		
 		$_tables:=WP_GetTablesWithDataSource
 		If ($_tables.length>0)
-			APPEND MENU ITEM:C411($menu; Get localized string:C991("FreezeTables"))
+			APPEND MENU ITEM:C411($menu; Localized string:C991("FreezeTables"))
 			SET MENU ITEM PARAMETER:C1004($menu; -1; "freezeTables")
 		Else 
-			APPEND MENU ITEM:C411($menu; "("+Get localized string:C991("FreezeTables"))
+			APPEND MENU ITEM:C411($menu; "("+Localized string:C991("FreezeTables"))
 		End if 
 		
 	: ($content="ComputeFormulas")
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("ComputeDocument"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("ComputeDocument"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "computeDocument")
 		
-		APPEND MENU ITEM:C411($menu; Get localized string:C991("ComputeSelection"))
+		APPEND MENU ITEM:C411($menu; Localized string:C991("ComputeSelection"))
 		SET MENU ITEM PARAMETER:C1004($menu; -1; "computeSelection")
 		
 		$_tables:=WP_GetTablesWithDataSource
 		If ($_tables.length>0)
-			APPEND MENU ITEM:C411($menu; Get localized string:C991("ComputeTables"))
+			APPEND MENU ITEM:C411($menu; Localized string:C991("ComputeTables"))
 			SET MENU ITEM PARAMETER:C1004($menu; -1; "computeTables")
 		Else 
-			APPEND MENU ITEM:C411($menu; "("+Get localized string:C991("ComputeTables"))
+			APPEND MENU ITEM:C411($menu; "("+Localized string:C991("ComputeTables"))
 		End if 
 		
 		//: ($content="DisplayFormulas")
@@ -161,7 +156,7 @@ Case of
 			If ($item="-")
 				APPEND MENU ITEM:C411($menu; "-")
 			Else 
-				$o:=Get action info:C1442($item)
+				$o:=Action info:C1442($item)
 				If ($o.enabled)
 					APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 					SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; $item)  // <----only when action is possible
@@ -224,28 +219,28 @@ Case of
 		
 		If (Form:C1466.selection#Null:C1517)
 			
-			WP GET ATTRIBUTES:C1345(Form:C1466.selection; wk image url:K81:218; $url)
+			WP Get attributes:C1345(Form:C1466.selection; wk image url:K81:218; $url)
 			$_formulas:=WP Get formulas:C1702(Form:C1466.selection)
 			
 			If ($_formulas.length>0)
 				oForm.imageSource:=$_formulas[0].formula.source  // //ACI0104098
 				
-				APPEND MENU ITEM:C411($menu; Get localized string:C991("editImageFormula"))
+				APPEND MENU ITEM:C411($menu; Localized string:C991("editImageFormula"))
 				SET MENU ITEM PARAMETER:C1004($menu; -1; "pictureInsertFormula")
 				
 			Else 
 				If ($url#"") & ($url#"data:@")
 					oForm.imageURL:=$url
-					APPEND MENU ITEM:C411($menu; Get localized string:C991("editImageURL"))
+					APPEND MENU ITEM:C411($menu; Localized string:C991("editImageURL"))
 					SET MENU ITEM PARAMETER:C1004($menu; -1; "pictureEditURL")
 				Else 
 					APPEND MENU ITEM:C411($menu; ak standard action title:K76:83)
 					SET MENU ITEM PROPERTY:C973($menu; -1; Associated standard action:K56:1; "insertImage")  // no ITEM PARAMETER IN THIS CASE
 					
-					APPEND MENU ITEM:C411($menu; Get localized string:C991("insertImageURL"))
+					APPEND MENU ITEM:C411($menu; Localized string:C991("insertImageURL"))
 					SET MENU ITEM PARAMETER:C1004($menu; -1; "pictureInsertURL")
 					
-					APPEND MENU ITEM:C411($menu; Get localized string:C991("insertImageFormula"))
+					APPEND MENU ITEM:C411($menu; Localized string:C991("insertImageFormula"))
 					SET MENU ITEM PARAMETER:C1004($menu; -1; "pictureInsertFormula")
 				End if 
 			End if 
@@ -291,28 +286,28 @@ Case of
 			$subSectionRight:=WP Get subsection:C1582($section; wk right page:K81:205)
 			
 			If ($subSectionFirst#Null:C1517) || ($subSectionLeft#Null:C1517)
-				APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetSectionAndSubsections"))
+				APPEND MENU ITEM:C411($menu; Localized string:C991("ResetSectionAndSubsections"))
 				SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionResetAll")
 			End if 
 			
-			APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetSection"))
+			APPEND MENU ITEM:C411($menu; Localized string:C991("ResetSection"))
 			SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionReset")
 			
 			APPEND MENU ITEM:C411($menu; "-")
 			
 			If ($subSectionFirst#Null:C1517)
-				APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetFirstPage"))
+				APPEND MENU ITEM:C411($menu; Localized string:C991("ResetFirstPage"))
 				SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionResetFirstPage")
 			End if 
 			
 			If ($subSectionLeft#Null:C1517)  // && ($subSectionRight#Null) // second condition always true if first is true
-				APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetLeftAndRightPages"))
+				APPEND MENU ITEM:C411($menu; Localized string:C991("ResetLeftAndRightPages"))
 				SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionResetLeftRightPage")
 				
-				APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetLeftPage"))
+				APPEND MENU ITEM:C411($menu; Localized string:C991("ResetLeftPage"))
 				SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionResetLeftPage")
 				
-				APPEND MENU ITEM:C411($menu; Get localized string:C991("ResetRightPage"))
+				APPEND MENU ITEM:C411($menu; Localized string:C991("ResetRightPage"))
 				SET MENU ITEM PARAMETER:C1004($menu; -1; "sectionResetRightPage")
 			End if 
 			
@@ -322,7 +317,3 @@ End case
 
 $action:=Dynamic pop up menu:C1006($menu)
 RELEASE MENU:C978($menu)
-
-
-
-//$0:=$action

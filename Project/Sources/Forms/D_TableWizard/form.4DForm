@@ -373,7 +373,7 @@
 					"listboxType": "collection",
 					"dataSource": "Form:C1466.template.columns",
 					"rowHeight": "26px",
-					"metaSource": "metaWizzard(This:C1470.backgroundColor; This:C1470.fontColor)",
+					"metaSource": "",
 					"sizingX": "fixed",
 					"currentItemSource": "Form:C1466.currentRow",
 					"selectionMode": "single",
@@ -991,6 +991,14 @@
 					"textAlign": "left",
 					"sizingX": "fixed",
 					"sizingY": "fixed"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Note : metaWizzard(This.backgroundColor; This.fontColor) : removed from column \"LB_columns\"",
+					"top": 716,
+					"left": 6,
+					"width": 619,
+					"height": 16
 				}
 			},
 			"entryOrder": [
@@ -1023,7 +1031,7 @@
 			]
 		}
 	],
-	"geometryStamp": 6225,
+	"geometryStamp": 6228,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

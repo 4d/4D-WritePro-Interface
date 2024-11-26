@@ -1,28 +1,17 @@
 //%attributes = {"invisible":true}
-C_REAL:C285($1)  // value
-C_TEXT:C284($2)  // from
-C_TEXT:C284($3)  // to
+#DECLARE($value : Real; $fromUnit : Text; $toUnit : Text)->$result : Real
 
-C_REAL:C285($0)
-
-C_REAL:C285($value)
-C_TEXT:C284($fromUnit)
-C_TEXT:C284($toUnit)
-
-$value:=$1
-$fromUnit:=$2
-$toUnit:=$3
-
-If ($toUnit#$fromUnit) & ($value#0)
-	
-	WP SET ATTRIBUTES:C1342(oTempArea; wk layout unit:K81:78; $fromUnit)
-	WP SET ATTRIBUTES:C1342(oTempArea; wk background width:K81:27; $value)  //wk line height   // <ACI0104082>
-	
-	WP SET ATTRIBUTES:C1342(oTempArea; wk layout unit:K81:78; $toUnit)
-	WP GET ATTRIBUTES:C1345(oTempArea; wk background width:K81:27; $value)  //wk margin left    // <ACI0104082>
-	
+If ($toUnit#$fromUnit)
+	If ($value#0)
+		
+		WP SET ATTRIBUTES:C1342(oTempArea; wk layout unit:K81:78; $fromUnit)
+		WP SET ATTRIBUTES:C1342(oTempArea; wk background width:K81:27; $result)  //wk line height   // <ACI0104082>
+		
+		WP SET ATTRIBUTES:C1342(oTempArea; wk layout unit:K81:78; $toUnit)
+		WP Get attributes:C1345(oTempArea; wk background width:K81:27; $result)  //wk margin left    // <ACI0104082>
+	Else 
+		$result:=0
+	End if 
+Else 
+	$result:=$value
 End if 
-
-$0:=$value
-
-

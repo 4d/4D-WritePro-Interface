@@ -1,5 +1,5 @@
 
-C_LONGINT:C283($color)
+var $color : Integer
 
 Case of 
 	: (Form event code:C388=On Getting Focus:K2:7)

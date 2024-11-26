@@ -1,12 +1,13 @@
 //%attributes = {"invisible":true}
-var $1; $document; $header; $footer : Object
+#DECLARE($document : Object)
+
+var $header; $footer : Object
 var $text : Text
 var $i; $sections : Integer
 var $words : Collection
 
 ARRAY TEXT:C222($_words; 0)
 
-$document:=$1
 $text:=WP Get text:C1575(WP Get body:C1516($document); wk expressions as space:K81:257)
 $sections:=WP Get sections:C1580($document).length
 

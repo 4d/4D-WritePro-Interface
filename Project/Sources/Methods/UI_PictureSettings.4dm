@@ -1,13 +1,7 @@
 //%attributes = {"invisible":true}
-C_BOOLEAN:C305($GotoPage2)
-
-C_LONGINT:C283($p)
-C_LONGINT:C283($x1; $y1; $x2; $y2; $memoX; $memoY)
-C_LONGINT:C283($width; $height)
-
-C_TEXT:C284($Unit; $format; $format1; $format2)
-C_TEXT:C284($find; $replace)
-
+var $GotoPage2 : Boolean
+var $p; $x1; $y1; $x2; $y2; $memoX; $memoY; $width; $height : Integer
+var $Unit; $format; $format1; $format2; $find; $replace : Text
 
 If (Form event code:C388=On Load:K2:1)
 	If (FORM Get color scheme:C1761="dark")
@@ -28,7 +22,7 @@ If (Form event code:C388=On Load:K2:1)
 	End if 
 End if 
 
-WP GET ATTRIBUTES:C1345(Form:C1466.picture.owner; wk layout unit:K81:78; $Unit)
+WP Get attributes:C1345(Form:C1466.picture.owner; wk layout unit:K81:78; $Unit)
 
 Case of 
 	: ($Unit="mm")

@@ -1,38 +1,17 @@
 //%attributes = {"invisible":true}
-//WP_StyleFillEditLB
+#DECLARE($page : Integer)
 
-C_LONGINT:C283($1)
-
-C_BOOLEAN:C305($translate)
-C_BOOLEAN:C305($forceCheck)
-
-//C_TEXT($1;$category)
-
-C_OBJECT:C1216($styleSheet)
-C_OBJECT:C1216($tempTarget)
-C_OBJECT:C1216($item)
-C_OBJECT:C1216($temp)
-C_OBJECT:C1216($target)
-C_OBJECT:C1216($normalStyleSheet)
-C_OBJECT:C1216($val_o)
-C_COLLECTION:C1488($col)
-C_COLLECTION:C1488($val_c)
-
-C_LONGINT:C283($i)
-
-C_REAL:C285($val_r)
-
-C_TEXT:C284($displayStylesheetValue)
-C_TEXT:C284($displayNormalValue)
-C_TEXT:C284($category)
-C_TEXT:C284($val_t)
+var $translate; $forceCheck : Boolean
+var $styleSheet; $tempTarget; $item; $temp; $target; $normalStyleSheet; $val_o : Object
+var $col; $val_c : Collection
+var $i : Integer
+var $val_r : Real
+var $displayStylesheetValue; $displayNormalValue; $category; $val_t : Text
 
 //------------------------------------------------------------------------------------------
 
 If (Count parameters:C259=0)
 	GET LIST ITEM:C378(_StylesheetTabs; *; $page; $text)  //| *;itemRef;itemText{;sublist;expanded})
-Else 
-	$page:=$1
 End if 
 
 $category:=Choose:C955($page; "bug"; "fonts"; "paragraphs"; "margins")
@@ -100,16 +79,16 @@ For each ($item; $col)
 			
 			Case of 
 				: ($item.valueType=Is text:K8:3)
-					WP GET ATTRIBUTES:C1345($tempTarget; $item.property; $val_t)  // read the value in the style sheet
+					WP Get attributes:C1345($tempTarget; $item.property; $val_t)  // read the value in the style sheet
 					$temp.value:=$val_t
 				: ($item.valueType=Is real:K8:4)
-					WP GET ATTRIBUTES:C1345($tempTarget; $item.property; $val_r)  // read the value in the style sheet
+					WP Get attributes:C1345($tempTarget; $item.property; $val_r)  // read the value in the style sheet
 					$temp.value:=$val_r
 				: ($item.valueType=Is object:K8:27)
-					WP GET ATTRIBUTES:C1345($tempTarget; $item.property; $val_o)  // read the value in the style sheet
+					WP Get attributes:C1345($tempTarget; $item.property; $val_o)  // read the value in the style sheet
 					$temp.value:=$val_o
 				: ($item.valueType=Is collection:K8:32)
-					WP GET ATTRIBUTES:C1345($tempTarget; $item.property; $val_c)  // read the value in the style sheet
+					WP Get attributes:C1345($tempTarget; $item.property; $val_c)  // read the value in the style sheet
 					$temp.value:=$val_c
 			End case 
 			

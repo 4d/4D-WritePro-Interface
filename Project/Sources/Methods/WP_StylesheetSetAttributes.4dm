@@ -1,35 +1,15 @@
 //%attributes = {"invisible":true}
-C_OBJECT:C1216($1; $o)
+#DECLARE($o : Object)
 
-C_BOOLEAN:C305($removeFromSource)
-C_BOOLEAN:C305($checkNormal; $checkValue)
-C_BOOLEAN:C305($exit)
-C_BOOLEAN:C305($sameAsNormal)
-
-C_COLLECTION:C1488($_attributes)
-C_COLLECTION:C1488($updateList)
-C_COLLECTION:C1488($stackList)
-
-C_LONGINT:C283($type)
-
-C_OBJECT:C1216($item)
-C_OBJECT:C1216($source)
-C_OBJECT:C1216($paragraph)
-C_OBJECT:C1216($target)
-C_OBJECT:C1216($document)
-C_OBJECT:C1216($normal)
-C_OBJECT:C1216($stackItem)
-
-C_TEXT:C284($action)
-C_TEXT:C284($property)
-C_TEXT:C284($jsonSource; $jsonNormal)
-
-$o:=$1
+var $removeFromSource; $checkNormal; $checkValue; $exit; $sameAsNormal : Boolean
+var $_attributes; $updateList; $stackList : Collection
+var $type : Integer
+var $item; $source; $paragraph; $target; $document; $normal; $stackItem : Object
+var $action; $property; $jsonSource; $jsonNormal : Text
 
 $_attributes:=$o.list
 $source:=$o.from
 $target:=$o.to
-
 
 If ($o.remove#Null:C1517)
 	$removeFromSource:=$o.remove
