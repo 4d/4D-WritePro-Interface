@@ -1,7 +1,7 @@
 WP UpdateWidget("WPtoolbar"; "WParea")
 
 
-ContextMemnu_Display("WParea"; ["paragraph"; "table"; "spell"])
+ContextMemu_Display("WParea"; ["paragraph"; "table"; "spell"])
 
 
 
