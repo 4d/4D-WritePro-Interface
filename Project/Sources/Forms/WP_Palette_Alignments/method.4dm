@@ -1,8 +1,5 @@
 var $ptrTextLineHeightUnit : Pointer
 var $setupOK : Boolean
-var $typeSelection : Boolean
-
-$typeSelection:=Form:C1466.selection.type
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)
