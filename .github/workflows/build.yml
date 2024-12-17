@@ -2,8 +2,9 @@ name: Build
 on:
   push:
   pull_request:
-  delete:
-  workflow_dispatch:
+
+env:
+  DEPENDENCIES_BRANCH: 20R6
 
 jobs:
   build:
@@ -11,16 +12,24 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ macos-latest, windows-latest, ubuntu-24.04 ]
+        os: [ macOS,Windows,ubuntu-24.04 ]
     runs-on: ${{ matrix.os }}
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        lfs: true 
+
     - name: Check out 4D-SVG
       uses: actions/checkout@v4
       with:
         repository: 4d/4D-SVG
-        path: Components/SVG.4dbase
+        path: Components/4D-SVG.4dbase
+        ref : ${{ env.DEPENDENCIES_BRANCH }}
+        fetch-depth: 0
+        lfs: true
+
     - name: Build
       uses: 4d/build4d-action@main
       with:
@@ -37,9 +46,19 @@ jobs:
       with:
         fetch-depth: 0
         lfs: true 
-    - uses: wangchucheng/git-repo-sync@v0.1.0
+
+    - name: Get Internal Sync action
+      uses: actions/checkout@v4
+      with:
+        repository: 4d/gitlabsync-action
+        ref: main
+        path: .github/workflows/external/sync
+        token: ${{ secrets.CI_GIT_SYNC }}
+
+    - id: Sync
+      name: Sync
+      uses: ./.github/workflows/external/sync/
       with:
         target-url: ${{ secrets.TARGET_URL }}
         target-username: ${{ secrets.TARGET_USERNAME }}
         target-token: ${{ secrets.TARGET_TOKEN }}
-
