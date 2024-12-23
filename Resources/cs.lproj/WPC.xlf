@@ -2211,6 +2211,33 @@ Chcete ji nahradit?</target>
           <target>SVG export</target>
         </trans-unit>        
       </group>
+    <group resname="ResetSectionOptions">
+        <trans-unit id="ResetSections1" resname="ResetSectionAndSubsections">
+          <source>Reset section and subsections</source>
+          <target>Obnovit sekci a podsekce</target>
+        </trans-unit>
+        <trans-unit id="ResetSections2" resname="ResetSection">
+          <source>Reset section</source>
+          <target>Obnovit sekci</target>
+        </trans-unit>
+        <trans-unit id="ResetSections3" resname="ResetFirstPage">
+          <source>Reset first page</source>
+          <target>Obnovit první stránku</target>
+        </trans-unit>
+        <trans-unit id="ResetSections4" resname="ResetLeftAndRightPages">
+          <source>Reset left and right pages</source>
+          <target>Obnovit levé a pravé stránky</target>
+        </trans-unit>
+        <trans-unit id="ResetSections5" resname="ResetLeftPage">
+          <source>Reset left pages</source>
+          <target>Obnovit levé stránky</target>
+        </trans-unit>
+        <trans-unit id="ResetSections6" resname="ResetRightPage">
+          <source>Reset right pages</source>
+          <target>Obnovit pravé stránky</target>
+        </trans-unit>
+      </group>
+      
     </body>
   </file>
 
