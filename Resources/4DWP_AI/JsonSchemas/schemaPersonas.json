@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "personas",
+    "description": "schema for 4D Write Pro AI personas",
+    "definitions":
+     {
+        "persona":
+        {
+          "type": "object",
+          "properties":
+          {
+              "name":
+              {
+                "type": "string"
+              },
+              "function":
+              {
+                "type": "string"
+              },
+              "description":
+              {
+              "type": "string"
+              }
+          },
+            "required":
+            [
+              "label",
+              "source",
+              "description"
+            ]
+        }
+    },
+
+    "type": "array",
+    "items":
+    {
+    "$ref": "#/definitions/personas"
+    }
+}

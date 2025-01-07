@@ -1,53 +1,24 @@
 //%attributes = {}
-////$d:=Chaîne(Date du jour; Système date court)
-////$h:=Chaîne(Heure courante; Système heure court)
 
 
 
-//var $doc : cs.WPdocument
-//var $section1a; $section1b : cs.WPsection
-//var $textRange : cs.WPrange
-//var $range : cs.WPrange
+//$localizedPersonaFolders:=[]
+//$defaultPersonaFolders:=[]
 
-//var $header; $footer : cs.WPelement
-//var $textBox : cs.WPelement
+//$lang:="fr"
 
-
-//var $text : Text
+//$localizedPersonaFolders.push(Folder("/RESOURCES/4DWP_AI/Personas/"+$lang))
+//$localizedPersonaFolders.push(Folder("/RESOURCES/4DWP_AI/Personas/"+$lang; *))
+//$localizedPersonaFolders.push(Folder(Folder(fk user preferences folder).path+"4DWP_AI/Personas/"+$lang; fk posix path))
 
 
-//$doc:=cs.WPdocument.new()
-
-
-
-//$doc.setText("blablabla"; wk append)
-//$text:=$doc.getText()
-
-//$range:=$doc.textRange(1; 3)
-
-
-//$section1a:=cs.WPsection.new($doc.document; 1)
-//$section1b:=cs.WPsection.new($range.range)
-
-
-//$header:=$section1b.newHeader()
-//$footer:=$section1b.newFooter()
-
-//$textBox:=$doc.newTextBox()
-
-//$textBox.delete()
-
-
-//aiPref:=New object
-//aiPref.apiKey:="xxx"
-//$json:=JSON Stringify(aiPref; *)
-//$file:=File(Folder(fk resources folder).path+"aiPref.json")
-
-//$file.setText($json)
+//$defaultPersonaFolders.push(Folder("/RESOURCES/4DWP_AI/Personas/en/"))
+//$defaultPersonaFolders.push(Folder("/RESOURCES/4DWP_AI/Personas/en/"; *))
+//$defaultPersonaFolders.push(Folder(Folder(fk user preferences folder).path+"4DWP_AI/Personas/en"; fk posix path))
 
 
 
 
 
 
-
+//$ai:=cs.AiWizard.new()
