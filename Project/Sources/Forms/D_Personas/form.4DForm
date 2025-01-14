@@ -3,14 +3,12 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"windowSizingX": "variable",
+	"windowSizingX": "fixed",
 	"windowSizingY": "variable",
 	"windowMinWidth": 0,
 	"windowMinHeight": 0,
 	"windowMaxWidth": 32767,
 	"windowMaxHeight": 32767,
-	"rightMargin": 20,
-	"bottomMargin": 20,
 	"events": [
 		"onLoad",
 		"onTimer"
@@ -19,138 +17,109 @@
 	"destination": "detailScreen",
 	"pages": [
 		{
-			"objects": {}
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 280,
+					"height": 420,
+					"stroke": "transparent",
+					"fill": "#E5E5E5",
+					"sizingY": "grow"
+				}
+			}
 		},
 		{
 			"objects": {
-				"Button": {
-					"type": "button",
-					"top": 318,
-					"left": 915,
-					"width": 70,
-					"height": 20,
-					"sizingX": "move",
-					"sizingY": "move",
-					"dataSource": "Button",
-					"action": "cancel",
-					"shortcutKey": "[Esc]",
-					"text": "Cancel",
-					"events": [
-						"onClick"
-					]
-				},
-				"Button1": {
-					"type": "button",
-					"top": 318,
-					"left": 995,
-					"width": 70,
-					"height": 20,
-					"sizingX": "move",
-					"sizingY": "move",
-					"dataSource": "Button",
-					"action": "accept",
-					"shortcutKey": "[Enter]",
-					"text": "OK",
-					"defaultButton": true,
-					"events": [
-						"onClick"
-					]
-				},
-				"Button2": {
-					"type": "button",
-					"text": "Button",
-					"top": 44,
-					"left": 964,
-					"width": 257,
-					"height": 43,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button2.4dm"
-				},
 				"Input": {
 					"type": "input",
-					"left": 468,
-					"top": 26,
+					"left": 466,
+					"top": 40,
 					"width": 314,
 					"height": 17,
-					"dataSource": "Form:C1466.persona.name"
+					"dataSource": "Form:C1466.editPersona.name"
 				},
 				"Input1": {
 					"type": "input",
-					"left": 468,
-					"top": 63,
+					"left": 466,
+					"top": 73,
 					"width": 314,
-					"height": 145,
-					"dataSource": "Form:C1466.persona.prompt"
+					"height": 215,
+					"dataSource": "Form:C1466.editPersona.prompt",
+					"sizingY": "grow"
 				},
 				"Input2": {
 					"type": "input",
-					"left": 468,
-					"top": 222,
+					"left": 466,
+					"top": 515,
 					"width": 314,
 					"height": 17,
-					"dataSource": "Form:C1466.persona.temperature",
-					"dataSourceTypeHint": "integer"
+					"dataSource": "Form:C1466.editPersona.temperature",
+					"dataSourceTypeHint": "integer",
+					"sizingY": "move"
 				},
 				"Input3": {
 					"type": "input",
-					"left": 50,
-					"top": 530,
-					"width": 192,
+					"left": 303,
+					"top": 122,
+					"width": 123,
 					"height": 17,
 					"dataSource": "Form:C1466.persona._origin",
-					"dataSourceTypeHint": "integer"
+					"dataSourceTypeHint": "integer",
+					"fontStyle": "italic",
+					"stroke": "#b1c4dd"
 				},
 				"btnSave": {
 					"type": "button",
-					"text": "Save…",
-					"top": 303,
-					"left": 632,
+					"text": ".Save",
+					"top": 374,
+					"left": 630,
 					"width": 150,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btnSave.4dm"
+					"method": "ObjectMethods/btnSave.4dm",
+					"focusable": false,
+					"sizingX": "move",
+					"sizingY": "move"
 				},
 				"Text": {
 					"type": "text",
-					"text": "Name:",
-					"top": 26,
-					"left": 335,
+					"text": ".Name:",
+					"top": 40,
+					"left": 348,
 					"width": 106,
 					"height": 16,
 					"textAlign": "right"
 				},
 				"Text1": {
 					"type": "text",
-					"text": "Prompt:",
-					"top": 63,
-					"left": 325,
+					"text": ".Prompt:",
+					"top": 73,
+					"left": 348,
 					"width": 106,
 					"height": 16,
 					"textAlign": "right"
 				},
 				"Text2": {
 					"type": "text",
-					"text": "Temperature:",
-					"top": 222,
-					"left": 335,
+					"text": ".Temperature:",
+					"top": 515,
+					"left": 348,
 					"width": 106,
 					"height": 16,
-					"textAlign": "right"
+					"textAlign": "right",
+					"sizingY": "move"
 				},
 				"LB_Personas": {
 					"type": "listbox",
-					"left": 33,
-					"top": 33,
-					"width": 288,
-					"height": 447,
+					"left": 0,
+					"top": 0,
+					"width": 280,
+					"height": 420,
 					"events": [
-						"onClick",
-						"onHeaderClick",
-						"onDataChange",
 						"onSelectionChange"
 					],
 					"dataSource": "Form:C1466.ai.personas",
@@ -158,12 +127,15 @@
 					"currentItemSource": "Form:C1466.persona",
 					"showHeaders": false,
 					"scrollbarHorizontal": "hidden",
-					"rowHeight": "32px",
+					"rowHeight": "25px",
 					"verticalAlign": "middle",
-					"fontSize": 18,
 					"selectionMode": "single",
 					"verticalLineStroke": "transparent",
 					"method": "ObjectMethods/LB_Personas.4dm",
+					"hideFocusRing": true,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"sizingY": "grow",
 					"columns": [
 						{
 							"header": {
@@ -175,7 +147,7 @@
 								"name": "Footer1"
 							},
 							"dataSource": "This:C1470.name",
-							"width": 220
+							"width": 240
 						},
 						{
 							"header": {
@@ -189,14 +161,14 @@
 							"dataSource": "This:C1470._originIcon",
 							"dataSourceTypeHint": "picture",
 							"pictureFormat": "proportionalTopLeft",
-							"width": 50
+							"width": 35
 						}
 					]
 				},
 				"Popup Dropdown List1": {
 					"type": "dropdown",
-					"left": 470,
-					"top": 270,
+					"left": 468,
+					"top": 311,
 					"width": 312,
 					"height": 23,
 					"events": [
@@ -204,42 +176,50 @@
 					],
 					"dataSource": "Form:C1466.saveDestination",
 					"dataSourceTypeHint": "object",
+					"focusable": false,
+					"sizingY": "move",
 					"method": "ObjectMethods/Popup Dropdown List1.4dm"
 				},
 				"Text3": {
 					"type": "text",
-					"text": "Save as:",
-					"top": 272,
-					"left": 335,
+					"text": ".Save in:",
+					"top": 313,
+					"left": 348,
 					"width": 106,
 					"height": 16,
-					"textAlign": "right"
+					"textAlign": "right",
+					"sizingY": "move"
 				},
 				"btnDelete": {
 					"type": "button",
-					"text": "Delete…",
-					"top": 303,
-					"left": 470,
+					"text": ".Delete…",
+					"top": 374,
+					"left": 463,
 					"width": 150,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/btnDelete.4dm"
+					"method": "ObjectMethods/btnDelete.4dm",
+					"focusable": false,
+					"sizingX": "move",
+					"sizingY": "move"
 				},
 				"Input4": {
 					"type": "input",
-					"left": 50,
-					"top": 560,
-					"width": 192,
+					"left": 303,
+					"top": 145,
+					"width": 123,
 					"height": 17,
 					"dataSource": "Form:C1466.persona._fileName",
-					"dataSourceTypeHint": "integer"
+					"dataSourceTypeHint": "integer",
+					"fontStyle": "italic",
+					"stroke": "#b1c4dd"
 				}
 			}
 		}
 	],
-	"geometryStamp": 180,
+	"geometryStamp": 325,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
@@ -247,5 +227,7 @@
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"width": 800,
+	"height": 420
 }

@@ -9,9 +9,9 @@ var $validated : Boolean
 
 $personas:=[]
 
-$folder:=Folder:C1567("/DATA/4DWP_AI/Personas/"+$lang)  // host data
+$folder:=Folder:C1567("/DATA/Personas/"+$lang; *)  // host data
 If ($folder.exists=False:C215)
-	$folder:=Folder:C1567("/DATA/4DWP_AI/Personas/en/")  // host data
+	$folder:=Folder:C1567("/DATA/Personas/en/"; *)  // host data
 End if 
 
 If ($folder.exists)

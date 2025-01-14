@@ -4,14 +4,16 @@ Case of
 		Form:C1466.ai:=cs:C1710.AiWizard.new()
 		LISTBOX SELECT ROW:C912(*; "LB_Personas"; 1; lk replace selection:K53:1)
 		
-		Form:C1466.saveDestination:={values: ["Default"; "Resources"; "User"; "All users"]; index: 0}
+		Form:C1466.saveDestination:={values: [".Default"; ".Resources"; ".Single user"; ".All users"]; index: 0}
 		
-		SET TIMER:C645(-1)
+		UI_Personas("init")
 		
 	: (Form event code:C388=On Timer:K2:25)
-		SET TIMER:C645(0)
 		
-		UI_Personas
+		
+		SET TIMER:C645(0)
+		UI_Personas("enable")
+		
 		
 		
 End case 

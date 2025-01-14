@@ -2,18 +2,25 @@
 #DECLARE($persona : Object; $lang : Text)
 
 var $folder : 4D:C1709.Folder
-var $file : 4D:C1709.File
+var $oldFile; $newFile : 4D:C1709.File
 var $json : Text
 
-$folder:=Folder:C1567("/DATA/4DWP_AI/Personas/"+$lang)  // host data
+$folder:=Folder:C1567("/DATA/Personas/"+$lang; *)  // host data
 If ($folder.exists=False:C215)
-	$folder:=Folder:C1567("/DATA/4DWP_AI/Personas/en/")  // host data
+	$folder.create()
 End if 
 
-$file:=File:C1566($folder.path+$persona.name+".json"; fk posix path:K87:1)
+$oldFile:=File:C1566($folder.platformPath+$persona._fileName; fk platform path:K87:2)
+If ($oldFile.exists)  // always
+	$oldFile.delete()
+End if 
+
+$newFile:=File:C1566($folder.platformPath+$persona.name+".json"; fk platform path:K87:2)
 OB REMOVE:C1226($persona; "_origin")
 OB REMOVE:C1226($persona; "_originIcon")
+OB REMOVE:C1226($persona; "_fileName")
+
 $json:=JSON Stringify:C1217($persona; *)
-$file.setText($json)
+$newFile.setText($json)
 
 

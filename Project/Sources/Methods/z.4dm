@@ -17,8 +17,6 @@
 //$defaultPersonaFolders.push(Folder(Folder(fk user preferences folder).path+"4DWP_AI/Personas/en"; fk posix path))
 
 
-
-
-
-
 //$ai:=cs.AiWizard.new()
+
+
