@@ -4224,12 +4224,32 @@
 					"stroke": "#888888",
 					"width": 0,
 					"startPoint": "topLeft"
+				},
+				"btnClear1": {
+					"type": "button",
+					"top": 30,
+					"left": 820,
+					"width": 40,
+					"height": 40,
+					"stroke": "#FF0000",
+					"focusable": false,
+					"icon": "",
+					"iconFrames": 4,
+					"style": "custom",
+					"popupPlacement": "none",
+					"method": "ObjectMethods/btnClear1.4dm",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:clear",
+					"text": "AI"
 				}
 			},
 			"entryOrder": [
 				"btnImport",
 				"btnExport",
-				"btnClear"
+				"btnClear",
+				"btnClear1"
 			]
 		},
 		{
@@ -4514,5 +4534,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7352
+	"geometryStamp": 7354
 }

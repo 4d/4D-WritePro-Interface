@@ -13,7 +13,7 @@
 		"onLoad",
 		"onTimer"
 	],
-	"windowTitle": "window title",
+	"windowTitle": ".Personas editor",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -122,7 +122,7 @@
 					"events": [
 						"onSelectionChange"
 					],
-					"dataSource": "Form:C1466.ai.personas",
+					"dataSource": "Form:C1466.personaWizard.personas",
 					"listboxType": "collection",
 					"currentItemSource": "Form:C1466.persona",
 					"showHeaders": false,

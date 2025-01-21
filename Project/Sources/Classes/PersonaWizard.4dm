@@ -8,7 +8,6 @@ Class constructor($formName : Text)
 	
 Function getPersonas()->$personas : Collection
 	
-	
 	var $folder : 4D:C1709.Folder
 	var $file : 4D:C1709.File
 	var $lang; $DBname : Text
@@ -46,10 +45,11 @@ Function getPersonas()->$personas : Collection
 				//$validated:=This.JSONvalidate("persona"; $file.getText())
 				$validated:=True:C214
 				If ($validated)
-					$persona:=JSON Parse:C1218($file.getText())
+					$persona:=JSON Parse:C1218($file.getText())  // .name and .prompt and .temperature
 					$persona._fileName:=$file.fullName
 					$persona._origin:=$i  // 0: "Default" 1:"Resources" 2:"User")
 					$persona._originIcon:=This:C1470._originIcons[$i]
+					
 					$personas.push($persona)
 				End if 
 			End for each 
@@ -66,6 +66,11 @@ Function getPersonas()->$personas : Collection
 	$personas.combine($dataPersonas)
 	
 	
+Function getValues()->$values : Collection
+	
+	$values:=This:C1470.personas.extract("name")
+	
+	
 Function getIcons()->$icons : Collection
 	
 	var $fileNames : Collection
@@ -80,11 +85,11 @@ Function getIcons()->$icons : Collection
 		$icons.push($picture)
 	End for each 
 	
-Function getPersona($id : Integer)->$persona : Object
+	//Function getPersona($id : Integer)->$persona : Object
 	
-	If ($id<=This:C1470.personas.length)
-		$persona:=This:C1470.personas[$id]
-	End if 
+	//If ($id<=This.personas.length)
+	//$persona:=This.personas[$id]
+	//End if 
 	
 Function save($persona : Object; $saveWhere : Integer)
 	

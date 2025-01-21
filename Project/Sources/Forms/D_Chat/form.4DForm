@@ -1,0 +1,432 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1080,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onTimer"
+	],
+	"windowTitle": "Prompt Window",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"text": "Tab control",
+					"top": 10,
+					"left": 20,
+					"width": 1040,
+					"height": 690,
+					"dataSource": "Form:C1466.local.tabs",
+					"dataSourceTypeHint": "object",
+					"method": "ObjectMethods/Tab Control.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "grow",
+					"sizingY": "grow"
+				}
+			}
+		},
+		{
+			"objects": {
+				"WParea": {
+					"type": "write",
+					"top": 310,
+					"left": 40,
+					"width": 1000,
+					"height": 370,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.WPai",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					],
+					"layoutMode": "embedded",
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"showFooters": false,
+					"showHeaders": false
+				},
+				"btnGenerate": {
+					"type": "button",
+					"text": "Generate",
+					"top": 270,
+					"left": 840,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btnGenerate.4dm",
+					"focusable": false,
+					"defaultButton": true,
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"VisionUrl": {
+					"type": "input",
+					"left": 250,
+					"top": 953,
+					"width": 440,
+					"height": 17,
+					"dataSource": "Form:C1466.url",
+					"visibility": "visible",
+					"placeholder": "Enter an image url",
+					"sizingX": "grow",
+					"sizingY": "fixed"
+				},
+				"Prompt": {
+					"type": "input",
+					"left": 200,
+					"top": 270,
+					"width": 550,
+					"height": 20,
+					"dataSource": "Form:C1466.prompt",
+					"visibility": "visible",
+					"placeholder": "Ask anything",
+					"sizingX": "grow",
+					"sizingY": "fixed",
+					"events": [
+						"onAfterEdit"
+					],
+					"method": "ObjectMethods/Prompt.4dm"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Cancel",
+					"top": 720,
+					"left": 1215,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"defaultButton": false,
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "cancel"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Function:",
+					"top": 711,
+					"left": 1480,
+					"width": 80,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Reset context",
+					"top": 720,
+					"left": 19,
+					"width": 140,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"defaultButton": false,
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"method": "ObjectMethods/Button2.4dm"
+				},
+				"Prompt1": {
+					"type": "input",
+					"left": 250,
+					"top": 913,
+					"width": 880,
+					"height": 20,
+					"dataSource": "Form:C1466.answer",
+					"visibility": "visible",
+					"placeholder": "…",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fontSize": 16
+				},
+				"btnThem1": {
+					"type": "button",
+					"text": "xx",
+					"top": 50,
+					"left": 40,
+					"width": 140,
+					"height": 180,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/AI/EcoFriendlyLiving.png",
+					"style": "custom",
+					"method": "ObjectMethods/btnThem1.4dm",
+					"fontWeight": "bold",
+					"imageHugsTitle": false
+				},
+				"btnThem2": {
+					"type": "button",
+					"text": "xx",
+					"top": 50,
+					"left": 194,
+					"width": 140,
+					"height": 180,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/AI/EcoFriendlyLiving.png",
+					"style": "custom",
+					"method": "ObjectMethods/btnThem2.4dm",
+					"fontWeight": "bold",
+					"imageHugsTitle": false
+				},
+				"btnThem4": {
+					"type": "button",
+					"text": "xx",
+					"top": 50,
+					"left": 500,
+					"width": 140,
+					"height": 180,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/AI/EcoFriendlyLiving.png",
+					"style": "custom",
+					"method": "ObjectMethods/btnThem4.4dm",
+					"fontWeight": "bold",
+					"imageHugsTitle": false
+				},
+				"btnThem3": {
+					"type": "button",
+					"text": "xx",
+					"top": 50,
+					"left": 347,
+					"width": 140,
+					"height": 180,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/AI/EcoFriendlyLiving.png",
+					"style": "custom",
+					"method": "ObjectMethods/btnThem3.4dm",
+					"fontWeight": "bold",
+					"imageHugsTitle": false
+				},
+				"Button8": {
+					"type": "button",
+					"text": "Insert text",
+					"top": 751,
+					"left": 1215,
+					"width": 120,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"defaultButton": false,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "cancel"
+				},
+				"btnThem5": {
+					"type": "button",
+					"text": "xx",
+					"top": 50,
+					"left": 653,
+					"width": 140,
+					"height": 180,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/AI/EcoFriendlyLiving.png",
+					"style": "custom",
+					"method": "ObjectMethods/btnThem5.4dm",
+					"fontWeight": "bold",
+					"imageHugsTitle": false
+				},
+				"btnThem6": {
+					"type": "button",
+					"text": "xx",
+					"top": 50,
+					"left": 806,
+					"width": 140,
+					"height": 180,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/AI/EcoFriendlyLiving.png",
+					"style": "custom",
+					"method": "ObjectMethods/btnThem6.4dm",
+					"fontWeight": "bold",
+					"imageHugsTitle": false
+				},
+				"WaitGears": {
+					"type": "picture",
+					"top": 320,
+					"left": 50,
+					"width": 96,
+					"height": 96,
+					"picture": "/RESOURCES/Images/AI/AI.gif",
+					"pictureFormat": "scaled",
+					"visibility": "hidden",
+					"sizingX": "fixed"
+				},
+				"WPwidget": {
+					"type": "subform",
+					"top": 15,
+					"left": 1328,
+					"width": 260,
+					"height": 680,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"detailForm": "WP_Palette",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Button11": {
+					"type": "button",
+					"text": "Reset Text",
+					"top": 720,
+					"left": 171,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"defaultButton": false,
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "",
+					"method": "ObjectMethods/Button11.4dm"
+				},
+				"btnThem7": {
+					"type": "button",
+					"text": "",
+					"top": 120,
+					"left": 960,
+					"width": 80,
+					"height": 80,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/AI/DicesShadow.png",
+					"style": "custom",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/btnThem7.4dm",
+					"sizingX": "move"
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"left": 200,
+					"top": 235,
+					"width": 550,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "Form:C1466.otherThems",
+					"focusable": false,
+					"method": "ObjectMethods/Popup Dropdown List.4dm",
+					"sizingX": "grow"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Other thems:",
+					"top": 238,
+					"left": 39,
+					"width": 130,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold"
+				},
+				"Button3": {
+					"type": "button",
+					"text": "More thems!",
+					"top": 236,
+					"left": 840,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm",
+					"focusable": false,
+					"defaultButton": false,
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"Button4": {
+					"type": "button",
+					"text": "ICON",
+					"top": 751,
+					"left": 1371,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm",
+					"focusable": false,
+					"defaultButton": false,
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"stroke": "#ff6347"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Prompt:",
+					"top": 271,
+					"left": 39,
+					"width": 130,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold"
+				}
+			}
+		}
+	],
+	"geometryStamp": 1782,
+	"editor": {
+		"activeView": "Gears",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"Gears": {
+				"objects": [
+					"Tab Control",
+					"WaitGears",
+					"WPwidget",
+					"Popup Dropdown List",
+					"Text1",
+					"Text2"
+				]
+			}
+		}
+	},
+	"method": "method.4dm",
+	"width": 1080,
+	"height": 760,
+	"menuBar": "Main"
+}

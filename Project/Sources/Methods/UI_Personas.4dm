@@ -23,11 +23,11 @@ Case of
 		
 	: ($action="init")
 		
-		Form:C1466.ai:=cs:C1710.AiWizard.new()
-		Form:C1466.personasDD:={values: Form:C1466.ai.personas.extract("name"); index: 0}
+		Form:C1466.personaWizard:=cs:C1710.PersonaWizard.new()
+		Form:C1466.personasDD:={values: Form:C1466.personaWizard.getValues(); index: 0}
 		
 		LISTBOX SELECT ROW:C912(*; "LB_Personas"; 1; lk replace selection:K53:1)
-		Form:C1466.editPersona:=OB Copy:C1225(Form:C1466.ai.personas[0])
+		Form:C1466.editPersona:=OB Copy:C1225(Form:C1466.personaWizard.personas[0])
 		
 		SET TIMER:C645(-1)
 		
