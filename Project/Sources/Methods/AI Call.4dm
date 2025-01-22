@@ -1,4 +1,6 @@
 //%attributes = {"invisible":true,"shared":true}
+
+
 #DECLARE($aiParameters : Object)
 
 var $openAI : cs:C1710.ai.openAI
