@@ -88,11 +88,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="17" resname="Lists">
           <source>Lists</source>
-          <target state="needs-review-translation">Listes</target>
+          <target>Listes</target>
         </trans-unit>
         <trans-unit id="25" resname="LineHeightColon">
           <source>Line Height:</source>
-          <target state="needs-review-translation">Hauteur ligne :</target>
+          <target>Hauteur ligne :</target>
         </trans-unit>
         <trans-unit id="84" resname="StyleColon0">
           <source>Style:</source>
@@ -104,7 +104,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="J/YshwyIKycFvHMMljmKyA" resname="CopyRuler">
           <source>Copy ruler</source>
-          <target state="needs-review-translation">Copier la règle</target>
+          <target>Copier la règle</target>
         </trans-unit>
         <trans-unit id="TbhlTOVpXGK5g/2set0oGw" resname="PasteRuler">
           <source>Paste ruler</source>
@@ -116,7 +116,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="MzVx3kZk0LyQrDAWjJAUrA" resname="DecreaseIndent">
           <source>Decrease indent</source>
-          <target state="needs-review-translation">Réduire l'indentation</target>
+          <target>Réduire l'indentation</target>
         </trans-unit>
         <trans-unit id="jOdgvUoCqlAAvJ9MNLCnTQ" resname="insert">
           <source>Insert</source>
@@ -278,7 +278,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="eAIqOo9+b5XNQn3YeW33eg" resname="FontsElipsis">
           <source>Fonts…</source>
-          <target state="needs-review-translation">Polices de caractères…</target>
+          <target>Polices de caractères…</target>
         </trans-unit>
       </group>
       <group resname="PaletteFrame">
@@ -456,7 +456,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="75" resname="AltTextColon">
           <source>Alternate text:</source>
-          <target state="needs-review-translation">Texte alternatif :</target>
+          <target>Texte alternatif :</target>
         </trans-unit>
         <trans-unit id="76" resname="ZeroAuto">
           <source>(0 = Auto)</source>
@@ -510,7 +510,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="84" resname="DefaultLeadingChar">
           <source>Default leading char.:</source>
-          <target state="needs-review-translation">Caractère de conduite :</target>
+          <target>Caractère de conduite :</target>
         </trans-unit>
         <trans-unit id="85" resname="LeadingChar">
           <source>Leading char.</source>
@@ -766,7 +766,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="3" resname="Content">
           <source>Content</source>
-          <target state="needs-review-translation">Contenu</target>
+          <target>Contenu</target>
         </trans-unit>
         <trans-unit id="4" resname="Paper">
           <source>Paper</source>
@@ -934,7 +934,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="UNLqBZ0kwRTrWB3TzdCdnA" resname="StyleSheetPlaceHolder">
           <source>Style sheet name</source>
-          <target state="needs-review-translation">Nom de la feuille de style</target>
+          <target>Nom de la feuille de style</target>
         </trans-unit>
       </group>
       <group resname="StylesheetEditor">
@@ -1248,11 +1248,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="262" resname="FindElipsis">
           <source>Find…</source>
-          <target state="needs-review-translation">Chercher…</target>
+          <target>Chercher…</target>
         </trans-unit>
         <trans-unit id="260" resname="FullWord">
           <source>Full words only</source>
-          <target state="needs-review-translation">Mots entiers uniquement</target>
+          <target>Mots entiers uniquement</target>
         </trans-unit>
         <trans-unit id="259" resname="KeepCharStyle">
           <source>Keep each character style</source>
@@ -1296,7 +1296,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="mWfZe71n2prS1bwT5Kl/7Q" resname="KanaSensitive">
           <source>Kana sensitive</source>
-          <target state="needs-review-translation">Respecter les caractères kana (Japon)</target>
+          <target>Respecter les caractères kana (Japon)</target>
         </trans-unit>
         <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="WidthSensitive">
           <source>Width sensitive</source>
@@ -1304,7 +1304,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="msIfGk9Zlbu60aimbEHQOw" resname="OccurrencesReplaced">
           <source>&lt;x&gt; occurrences have been replaced.</source>
-          <target state="needs-review-translation">&lt;x&gt; occurrences ont été remplacées.</target>
+          <target>&lt;x&gt; occurrences ont été remplacées.</target>
         </trans-unit>
         <trans-unit id="ZUDcR0S8puBf1AHiVHqHWw" resname="SearchOptions">
           <source>Search options</source>
@@ -1494,7 +1494,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="nx2miGaaD+xCPQKlY//Q+g" resname="nilPointer">
           <source>The pointer on 4D Write Pro document is nil.</source>
-          <target state="needs-review-translation">Le pointeur vers le document 4D Write Pro document est nil.</target>
+          <target>Le pointeur vers le document 4D Write Pro document est nil.</target>
         </trans-unit>
         <trans-unit id="2UM2PhxkLdT3NCFN+uzEJA" resname="thisTypeOfDocumentCantBeImported">
           <source>This type of document can't be imported.</source>
@@ -1504,7 +1504,7 @@ This file is distributed under the same license as the product package.-->
       <group resname="DialogExport">
         <trans-unit id="seROCZqSCuxQqqVcq1uboA" resname="exportPDF">
           <source>PDF Export</source>
-          <target state="needs-review-translation">Export PDF</target>
+          <target>Export PDF</target>
         </trans-unit>
         <trans-unit id="jgUBKQFLQybetTjjMlYaYA" resname="backgroundAndTextBoxes">
           <source>Background and text boxes</source>
@@ -1536,15 +1536,15 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="gVQaYSHGiwZBwAt4P5iaYw" resname="print">
           <source>Print</source>
-          <target state="needs-review-translation">Impression</target>
+          <target>Impression</target>
         </trans-unit>
         <trans-unit id="rfCY4nYj4m3OHuYW++DWlA" resname="maxPictureDPI">
           <source>Maximum DPI for pictures:</source>
-          <target state="needs-review-translation">Maximum PPP pour les images :</target>
+          <target>Maximum PPP pour les images :</target>
         </trans-unit>
         <trans-unit id="EuJJLbs1LD5q4/WlL7w0XA" resname="cidHostDomainName">
           <source>CID Host domain name:</source>
-          <target state="needs-review-translation">Nom de domaine CID :</target>
+          <target>Nom de domaine CID :</target>
         </trans-unit>
         <trans-unit id="J+Sxu8o5HUf7ju4qU4EfMQ" resname="optimizedFor">
           <source>Optimized for:</source>
@@ -1560,11 +1560,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="fMOz7wl6MpDwxlU77dYxUA" resname="InfoScreen">
           <source>Document size will be smaller and any pictures will be compressed to "jpg" or "png"</source>
-          <target state="needs-review-translation">La taille du document sera réduite et les images compressées en "jpg" ou en "png".</target>
+          <target>La taille du document sera réduite et les images compressées en "jpg" ou en "png".</target>
         </trans-unit>
         <trans-unit id="SD+Y7dnDCOmvJ94LKms7CQ" resname="InfoPrint">
           <source>Document size will be bigger and any pictures will be keep their original "codec".</source>
-          <target state="needs-review-translation">La taille du document sera plus grande et les images conserveront leur "codec" original.</target>
+          <target>La taille du document sera plus grande et les images conserveront leur "codec" original.</target>
         </trans-unit>
         <trans-unit id="M/by8K2LDXD/OhCDfGnX+Q" resname="InfoFormulas">
           <source>When selected, all formulas will be recomputed before export.
@@ -1582,11 +1582,11 @@ Dans le cas contraire, seules les formules n'ayant jamais été évaluées seron
         </trans-unit>
         <trans-unit id="caQYk8btXcl+pUBojuXPoQ" resname="InfoEmbedPictures">
           <source>With this option, the generated SVG document will be standalone but its size will increase</source>
-          <target state="needs-review-translation">Avec cette option, le document SVG généré sera autonome mais sa taille augmentera</target>
+          <target>Avec cette option, le document SVG généré sera autonome mais sa taille augmentera</target>
         </trans-unit>
         <trans-unit id="Jm3zqgXEMB//3tACqAcZ0A" resname="InfoExportPictures">
           <source>This option allows you to export the images of your document to an external "images" folder. The SVG file will be lighter.</source>
-          <target state="needs-review-translation">Cette option permet s'exporter les images de votre document dans un dossier "images" externe. Le fichier SVG sera plus léger.</target>
+          <target>Cette option permet s'exporter les images de votre document dans un dossier "images" externe. Le fichier SVG sera plus léger.</target>
         </trans-unit>
         <trans-unit id="l5yK2FqhagnuTfX+7DfKjA" resname="InfoCreateFolder">
           <source>A folder will be created and will contain the SVG file and the pictures folder if needed.</source>
@@ -1602,7 +1602,7 @@ Dans le cas contraire, seules les formules n'ayant jamais été évaluées seron
         </trans-unit>
         <trans-unit id="ftw1H7xGhhRTkqQ2O2LLGg" resname="EnableGoogleFonts">
           <source>Enable Google fonts substitution</source>
-          <target state="needs-review-translation">Activer la substitution Google fonts</target>
+          <target>Activer la substitution Google fonts</target>
         </trans-unit>
         <trans-unit id="NqxkQgc34W90eQYBmYkkvg" resname="InfoGoogleFonts">
           <source>This option adds a Google font import directive.
@@ -1617,7 +1617,7 @@ Utilisez cette option si les polices de votre document ne sont pas multiplatefor
         <trans-unit id="9rxyF4rWKl6cSTgcq13Plw" resname="ConfirmImageFolder">
           <source>An "Images" folder already exists there!
 Would you like to replace it?</source>
-          <target state="needs-review-translation">Un dossier "Images" existe déjà à cet endroit !
+          <target>Un dossier "Images" existe déjà à cet endroit !
 Souhaitez-vous le remplacer ?</target>
         </trans-unit>
         <trans-unit id="ZYahIeSDiz5Tz/hjbW8C2A" resname="Overwrite">
@@ -1626,7 +1626,7 @@ Souhaitez-vous le remplacer ?</target>
         </trans-unit>
         <trans-unit id="gJPawW7rsig8FtISvxRypw" resname="All">
           <source>All</source>
-          <target state="needs-review-translation">Toutes</target>
+          <target>Toutes</target>
         </trans-unit>
         <trans-unit id="JYFMlsryz/0iGg7gUz7AUA" resname="FromComma">
           <source>From:</source>
@@ -1646,7 +1646,7 @@ Souhaitez-vous le remplacer ?</target>
         </trans-unit>
         <trans-unit id="DlMn8kPNE6u2c2tRr8jppA" resname="FileNamePrompt">
           <source>Name of the file to be created</source>
-          <target state="needs-review-translation">Nom du fichier à créer</target>
+          <target>Nom du fichier à créer</target>
         </trans-unit>
         <trans-unit id="9AHHUOIbvZ1JaXXlXU4VWQ" resname="FolderNamePrompt">
           <source>Name of the folder to be created</source>
@@ -1673,11 +1673,11 @@ Souhaitez-vous le remplacer ?</target>
       <group resname="DialogImport">
         <trans-unit id="35LPRJSfvhoZuOyzHa/LXw" resname="EraseDocument">
           <source>Erase the document</source>
-          <target state="needs-review-translation">Effacer le document</target>
+          <target>Effacer le document</target>
         </trans-unit>
         <trans-unit id="FlHVoUXe7QVKBS23F0ny5Q" resname="BeforeDocument">
           <source>at the beginning</source>
-          <target state="needs-review-translation">au début</target>
+          <target>au début</target>
         </trans-unit>
         <trans-unit id="v2qONMZHKzxZtNap9RsfFw" resname="AfterDocument">
           <source>at the end</source>
@@ -1705,7 +1705,7 @@ Souhaitez-vous le remplacer ?</target>
         </trans-unit>
         <trans-unit id="ERLyD4OELj5tXGKqcoTmNQ" resname="InfoReplaceSelection">
           <source>(or replace current selection)</source>
-          <target state="needs-review-translation">(ou remplacer la sélection courante)</target>
+          <target>(ou remplacer la sélection courante)</target>
         </trans-unit>
         <trans-unit id="fUY1y/mfq8YIayhWmfKZeg" resname="SelectFile">
           <source>Select file to import…</source>
@@ -1729,7 +1729,7 @@ Souhaitez-vous le remplacer ?</target>
         </trans-unit>
         <trans-unit id="+siVncaV7S9ujx1b+dIgiA" resname="SelectDocumentOfType">
           <source>Select a document (.txt, .4wp or .4w7)</source>
-          <target state="needs-review-translation">Sélectionner un document (.txt, .4wp or .4w7)</target>
+          <target>Sélectionner un document (.txt, .4wp or .4w7)</target>
         </trans-unit>
         <trans-unit id="ovkE8m6t9hOAvs5WY9nA7A" resname="ConfirmClear">
           <source>This action will remove all content from the document.</source>
@@ -1881,11 +1881,11 @@ Souhaitez-vous le remplacer ?</target>
         </trans-unit>
         <trans-unit id="ynXAPxhJMkNpcwRliQMXvg" resname="insertImageURL">
           <source>Insert an image URL…</source>
-          <target state="needs-review-translation">Insérer l'URL d'une image…</target>
+          <target>Insérer l'URL d'une image…</target>
         </trans-unit>
         <trans-unit id="m3a/CgZ8NS600XAnT/CuFA" resname="insertImageFormula">
           <source>Insert an image formula…</source>
-          <target state="needs-review-translation">Insérer une formule image…</target>
+          <target>Insérer une formule image…</target>
         </trans-unit>
         <trans-unit id="PkaSe6J+O4IfvlHou7auvA" resname="editImageURL">
           <source>Edit image URL…</source>
