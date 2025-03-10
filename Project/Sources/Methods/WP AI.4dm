@@ -6,31 +6,25 @@ var $windowID : Integer
 var $file : 4D:C1709.File
 var $ai_pref : Object
 var $ok : Boolean
-
-
-If (Count parameters:C259<2)
-	$apikey:=""
-End if 
+var $x1; $y1; $x2; $y2 : Integer
 
 If ($apikey#"")
-	$ok:=True:C214
-Else 
 	
-	$file:=File:C1566("/RESOURCES/4DWP_AI/aiPref.json")
-	If ($file.exists)
-		$ai_pref:=JSON Parse:C1218($file.getText())
-		$apiKey:=$ai_pref.apiKey
-		$ok:=True:C214
-	Else 
-		ALERT:C41("The Resources/AI/aiPref.json file is missing!")
-		$ok:=False:C215
+	If (Undefined:C82(oForm))
+		oForm:={AIwindow: 0}
 	End if 
-End if 
-
-If ($ok)
 	
-	$windowID:=Open form window:C675("D_AI_Prompt"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4; *)
-	DIALOG:C40("D_AI_Prompt"; {apiKey: $apiKey; windowID: $windowID; wpSelection: $wpSelection})
+	If (oForm.aiWindow=0)
+		oForm.aiWindow:=Open form window:C675("D_AI_Prompt"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4; *)
+		DIALOG:C40("D_AI_Prompt"; {apiKey: $apiKey; windowID: oForm.aiWindow; wpSelection: $wpSelection}; *)
+		
+	Else 
+		
+		GET WINDOW RECT:C443($x1; $y1; $x2; $y2; oForm.aiWindow)
+		SET WINDOW RECT:C444($x1; $y1; $x2; $y2; oForm.aiWindow)
+		
+	End if 
+	
 	
 Else 
 	

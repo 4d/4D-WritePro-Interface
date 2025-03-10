@@ -1,0 +1,27 @@
+﻿[
+	
+	{
+		"prompt": "Pouvez-vous résumer le texte sélectionné ?",
+		"source": "selection"
+	},
+	{
+		"prompt": "Pouvez-vous résumer le document entier ?",
+		"source": "document"
+	},
+	{
+		"prompt": "Pouvez-vous traduite le texte sélectionné en anglais ?",
+		"source": "selection"
+	},
+	{
+		"prompt": "Pouvez-vous traduite le document entier en anglais ?",
+		"source": "document"
+	},
+	{
+		"prompt": "Pouvez-vous vérifier la grammaire du texte sélectionné et me signaler les erreurs ?",
+		"source": "selection"
+	},
+	{
+		"prompt": "Pouvez-vous vérifier la grammaire du document entier et me signaler les erreurs ?",
+		"source": "document"
+	}
+]

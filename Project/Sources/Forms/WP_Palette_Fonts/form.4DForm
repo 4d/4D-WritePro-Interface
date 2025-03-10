@@ -846,17 +846,6 @@
 						"onClick"
 					]
 				},
-				"background1": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 570,
-					"visibility": "hidden",
-					"fill": "#CBCBCB",
-					"stroke": "transparent",
-					"borderRadius": 8
-				},
 				"Text": {
 					"type": "text",
 					"top": 20,
@@ -1038,6 +1027,58 @@
 					"width": 10,
 					"height": 20,
 					"visibility": "hidden"
+				},
+				"btnClear1": {
+					"type": "button",
+					"top": 556,
+					"left": 110,
+					"width": 40,
+					"height": 40,
+					"stroke": "#FF0000",
+					"focusable": false,
+					"icon": "",
+					"iconFrames": 4,
+					"style": "regular",
+					"popupPlacement": "none",
+					"method": "ObjectMethods/btnClear1.4dm",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:clear",
+					"text": "AI"
+				},
+				"Separator3": {
+					"type": "rectangle",
+					"top": 523,
+					"left": 5,
+					"width": 250,
+					"height": 15,
+					"fill": "#929292",
+					"stroke": "transparent",
+					"borderRadius": 4
+				},
+				"sepLbl_SpecialChars1": {
+					"type": "text",
+					"top": 524,
+					"left": 25,
+					"width": 210,
+					"height": 13,
+					"stroke": "#c0c0c0",
+					"class": "Palette",
+					"textAlign": "center",
+					"text": "A.I.",
+					"fontTheme": "additional"
+				},
+				"background1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"visibility": "hidden",
+					"fill": "#CBCBCB",
+					"stroke": "transparent",
+					"borderRadius": 8
 				}
 			},
 			"entryOrder": [
@@ -1068,7 +1109,8 @@
 				"ColorShadow",
 				"btn_InsertSH",
 				"btn_RemoveSH",
-				"fontLongName"
+				"fontLongName",
+				"btnClear1"
 			]
 		}
 	],
@@ -1104,8 +1146,8 @@
 			"View 9": {
 				"visible": false,
 				"objects": [
-					"background1",
-					"Text"
+					"Text",
+					"background1"
 				]
 			}
 		}
@@ -1114,5 +1156,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1301
+	"geometryStamp": 1319
 }

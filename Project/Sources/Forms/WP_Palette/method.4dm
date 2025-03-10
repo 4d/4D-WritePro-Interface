@@ -63,8 +63,11 @@ Case of
 		oForm.eventCode:=-1  //  no need to test "undefined" see WP_SetListFont
 		oForm.eventForcedCode:=-1  //  no need to test "undefined" see WP_SetListFont
 		
-		
 		oForm.skinAppliedMain:=UI_ApplySkin
+		
+		
+		oForm.aiKey:=""  //  no need to test "undefined" see UI_manageAIButton
+		oForm.aiWindow:=0  // ΩAIΩ
 		
 		If (Form:C1466#Null:C1517)
 			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)
@@ -110,12 +113,9 @@ Case of
 		
 		
 	: (Form event code:C388=On Unload:K2:2)
-		//CLEAR VARIABLE(oForm)  // don't clear it, it may still be used in other windows in the same process
 		
-		//oForm:=New object  //commented on 2024-05-13 (ACI0104798) 
-		//{
-		// finally don't clear at all (RL 2024-05-13)
-		// oForm should be renamed Form.local but too many occurences (RL 2024-05-13)
-		//}
+		If (Not:C34(Undefined:C82(oForm.aiWindow))) && (oForm.aiWindow#0)  // ΩAIΩ
+			CALL FORM:C1391(oForm.aiWindow; "AI_Update"; "Close"; Form:C1466.selection)
+		End if 
 		
 End case 

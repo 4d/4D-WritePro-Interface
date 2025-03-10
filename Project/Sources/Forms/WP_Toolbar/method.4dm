@@ -1,9 +1,9 @@
 // ACI0104036 : standard action in button "Popup_columnCount" :   columncount  -> section/columncount
 
-C_COLLECTION:C1488($_buttonNames)
-C_LONGINT:C283($typeSelection)
-C_LONGINT:C283($page)
-C_OBJECT:C1216($param)
+var $_buttonNames : Collection
+var $typeSelection : Integer
+var $page : Integer
+var $param : Object
 
 Case of 
 		
@@ -66,6 +66,8 @@ Case of
 		oForm.eventCode:=-1  //  no need to test "undefined" see WP_SetListFont
 		oForm.eventForcedCode:=-1  //  no need to test "undefined" see WP_SetListFont
 		
+		oForm.aiKey:=""  //  no need to test "undefined" see UI_manageAIButton
+		oForm.aiWindow:=0  // ΩAIΩ
 		
 		// temporarly
 		OBJECT SET ENABLED:C1123(*; "ssType3"; False:C215)
@@ -89,23 +91,23 @@ Case of
 		//Montrer les images vides ou non prises en charge.
 		
 		//tips
-		OBJECT SET HELP TIP:C1181(*; "btn_visibleEmptyImages"; Get action info:C1442("visibleEmptyImages").title)
-		OBJECT SET HELP TIP:C1181(*; "btn_displayAsSymbol"; Get action info:C1442("displayFormulaAsSymbol").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_visibleEmptyImages"; Action info:C1442("visibleEmptyImages").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_displayAsSymbol"; Action info:C1442("displayFormulaAsSymbol").title)
 		
 		
-		OBJECT SET HELP TIP:C1181(*; "btn_imageBehind@"; Get action info:C1442("anchorLayout?value=behind").title)  //@ is temporary
-		OBJECT SET HELP TIP:C1181(*; "btn_imageInline@"; Get action info:C1442("anchorLayout?value=inline").title)
-		OBJECT SET HELP TIP:C1181(*; "btn_imageInFront@"; Get action info:C1442("anchorLayout?value=front").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_imageBehind@"; Action info:C1442("anchorLayout?value=behind").title)  //@ is temporary
+		OBJECT SET HELP TIP:C1181(*; "btn_imageInline@"; Action info:C1442("anchorLayout?value=inline").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_imageInFront@"; Action info:C1442("anchorLayout?value=front").title)
 		
-		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapTopBottom"; Get action info:C1442("anchorLayout?value=wrapTopBottom").title)
-		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquare"; Get action info:C1442("anchorLayout?value=wrapSquare").title)
-		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareLeft"; Get action info:C1442("anchorLayout?value=wrapSquareLeft").title)
-		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareRight"; Get action info:C1442("anchorLayout?value=wrapSquareRight").title)
-		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareLargest"; Get action info:C1442("anchorLayout?value=wrapSquareLargest").title)
-		OBJECT SET HELP TIP:C1181(*; "btn_visibleTableBorders"; Get action info:C1442("visibleTableBorders").title)  // 20R6
+		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapTopBottom"; Action info:C1442("anchorLayout?value=wrapTopBottom").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquare"; Action info:C1442("anchorLayout?value=wrapSquare").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareLeft"; Action info:C1442("anchorLayout?value=wrapSquareLeft").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareRight"; Action info:C1442("anchorLayout?value=wrapSquareRight").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_ImageWrapSquareLargest"; Action info:C1442("anchorLayout?value=wrapSquareLargest").title)
+		OBJECT SET HELP TIP:C1181(*; "btn_visibleTableBorders"; Action info:C1442("visibleTableBorders").title)  // 20R6
 		
-		OBJECT SET TITLE:C194(*; "cb_distinctFirstPage"; Get action info:C1442("section/differentFirstPage").title)
-		OBJECT SET TITLE:C194(*; "cb_distinctLeftRightPage"; Get action info:C1442("section/differentLeftRightPages").title)
+		OBJECT SET TITLE:C194(*; "cb_distinctFirstPage"; Action info:C1442("section/differentFirstPage").title)
+		OBJECT SET TITLE:C194(*; "cb_distinctLeftRightPage"; Action info:C1442("section/differentLeftRightPages").title)
 		
 		If (Form:C1466#Null:C1517)
 			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)
@@ -194,11 +196,23 @@ Case of
 						// WP_GetProtection  // page 2
 						
 					End if 
+					
+					If (Not:C34(Undefined:C82(oForm.aiWindow))) && (oForm.aiWindow#0)
+						CALL FORM:C1391(oForm.aiWindow; "AI_Update"; "Context"; Form:C1466.selection)
+					End if 
+					
 				End if 
 			End if 
 		End if 
 		
 		UI_Toolbar  // will call UI_PaletteFindAndReplace
+		
+		
+	: (Form event code:C388=On Unload:K2:2)
+		
+		If (Not:C34(Undefined:C82(oForm.aiWindow))) && (oForm.aiWindow#0)
+			CALL FORM:C1391(oForm.aiWindow; "AI_Update"; "Close"; Form:C1466.selection)
+		End if 
 		
 	Else 
 		

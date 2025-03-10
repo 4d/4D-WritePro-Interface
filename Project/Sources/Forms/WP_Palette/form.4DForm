@@ -9,6 +9,7 @@
 	"markerFooter": 680,
 	"events": [
 		"onLoad",
+		"onUnload",
 		"onTimer",
 		"onResize",
 		"onBoundVariableChange"
@@ -27,26 +28,6 @@
 		null,
 		{
 			"objects": {
-				"background": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 29,
-					"fill": "#D7DDD7",
-					"stroke": "transparent",
-					"borderRadius": 0
-				},
-				"TabArea": {
-					"type": "rectangle",
-					"top": 4,
-					"left": 2,
-					"width": 256,
-					"height": 22,
-					"visibility": "hidden",
-					"stroke": "#9400d3",
-					"fill": "transparent"
-				},
 				"PaletteSubform": {
 					"type": "subform",
 					"top": 30,
@@ -69,6 +50,26 @@
 					"scrollbarHorizontal": "hidden",
 					"sizingX": "grow",
 					"sizingY": "grow"
+				},
+				"background": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 29,
+					"fill": "#D7DDD7",
+					"stroke": "transparent",
+					"borderRadius": 0
+				},
+				"TabArea": {
+					"type": "rectangle",
+					"top": 4,
+					"left": 2,
+					"width": 256,
+					"height": 22,
+					"visibility": "hidden",
+					"stroke": "#9400d3",
+					"fill": "transparent"
 				},
 				"Line": {
 					"type": "line",
@@ -503,7 +504,9 @@
 			"View 5": {},
 			"View 6": {},
 			"View 7": {},
-			"View 8": {},
+			"View 8": {
+				"visible": false
+			},
 			"Invisible By default": {
 				"visible": false,
 				"objects": [
@@ -513,5 +516,5 @@
 			}
 		}
 	},
-	"geometryStamp": 526
+	"geometryStamp": 530
 }
