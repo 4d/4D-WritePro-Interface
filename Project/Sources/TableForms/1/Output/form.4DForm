@@ -18,16 +18,6 @@
 		null,
 		{
 			"objects": {
-				"Rectangle": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 943,
-					"height": 338,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"stroke": "transparent"
-				},
 				"Picture3": {
 					"type": "picture",
 					"top": -5,
@@ -110,7 +100,7 @@
 			}
 		}
 	],
-	"geometryStamp": 156,
+	"geometryStamp": 157,
 	"$4d": {
 		"version": "1",
 		"kind": "form"

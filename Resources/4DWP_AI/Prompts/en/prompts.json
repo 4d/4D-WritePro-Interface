@@ -1,0 +1,26 @@
+﻿[
+	{
+		"prompt": "Can you summarize this section for me?",
+		"source": "selection"
+	},
+	{
+		"prompt": "Can you summarize the whole document for me?",
+		"source": "document"
+	},
+	{
+		"prompt": "Can you translate this this section into french?",
+		"source": "selection"
+	},
+	{
+		"prompt": "Can you translate the whole document into french?",
+		"source": "document"
+	},
+	{
+		"prompt": "Can you check the grammar of this section and tell me if there is any error?",
+		"source": "selection"
+	},
+	{
+		"prompt": "Can you check the grammar of this document and tell me if there is any error?",
+		"source": "document"
+	}
+]

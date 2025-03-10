@@ -25,6 +25,7 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 		End if 
 	End if 
 	
+	
 	If (Form:C1466.selection#Null:C1517)
 		
 		$page:=FORM Get current page:C276(*)
@@ -117,9 +118,12 @@ If (Form:C1466#Null:C1517)  //;"The variable associated to the toolbar should be
 		
 		UI_ManageTextAreaButtons  // buttons btn_insertTextArea and btn_insertTextArea1 (page 2 and 5)
 		
+		UI_ManageAIbutton  // don't know yet on which tab this button shall be located
 		
 		//  TAB BUTTONS ARE ALWAYS ENABLED.
 		OBJECT SET ENABLED:C1123(*; "tab@"; True:C214)
+		
+		
 		
 		
 		//// the local protection button is ALWAYS based on global document protection

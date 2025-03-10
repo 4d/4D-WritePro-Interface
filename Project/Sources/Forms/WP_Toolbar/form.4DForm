@@ -10,6 +10,7 @@
 	"markerFooter": 90,
 	"events": [
 		"onLoad",
+		"onUnload",
 		"onTimer",
 		"onResize",
 		"onBoundVariableChange",
@@ -4225,31 +4226,31 @@
 					"width": 0,
 					"startPoint": "topLeft"
 				},
-				"btnClear1": {
+				"btnAI": {
 					"type": "button",
-					"top": 30,
-					"left": 820,
+					"top": 40,
+					"left": 235,
 					"width": 40,
 					"height": 40,
 					"stroke": "#FF0000",
 					"focusable": false,
-					"icon": "",
+					"icon": "/RESOURCES/Images/AI/open-AI_32.png",
 					"iconFrames": 4,
 					"style": "custom",
 					"popupPlacement": "none",
-					"method": "ObjectMethods/btnClear1.4dm",
+					"method": "ObjectMethods/btnAI.4dm",
 					"events": [
 						"onClick"
 					],
 					"tooltip": ":xliff:clear",
-					"text": "AI"
+					"text": ""
 				}
 			},
 			"entryOrder": [
 				"btnImport",
 				"btnExport",
 				"btnClear",
-				"btnClear1"
+				"btnAI"
 			]
 		},
 		{
@@ -4534,5 +4535,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7354
+	"geometryStamp": 7362
 }

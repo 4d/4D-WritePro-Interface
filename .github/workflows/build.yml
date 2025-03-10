@@ -30,6 +30,16 @@ jobs:
         fetch-depth: 0
         lfs: true
 
+    - name: Check out 4D-AIKit
+      uses: actions/checkout@v4
+      with:
+        repository: 4d/4D-AIKit
+        path: Components/4D-AIKit.4dbase
+        ref : ${{ env.DEPENDENCIES_BRANCH }}
+        token: ${{ secrets.PAT_TOKEN }}
+        fetch-depth: 0
+        lfs: true
+
     - name: Build
       uses: 4d/build4d-action@main
       with:

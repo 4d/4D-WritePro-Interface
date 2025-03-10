@@ -1,0 +1,26 @@
+.history_area {
+    background-color: rgb(200, 200, 200)
+}
+
+.prompt_area {
+    color: lightgrey;
+    background-color: rgb(250, 250, 250)
+}
+
+.separator{
+    color: lightgrey;
+}
+
+@media (prefers-color-scheme: dark){
+    .history_area {
+        background-color: rgb(100, 100, 100);
+    }
+    .prompt_area {
+        color: rgb(100, 100, 100);
+        background-color: rgb(50, 50, 50)
+    }
+    .separator{
+        color: rgb(100, 100, 100);
+    }
+    
+}    

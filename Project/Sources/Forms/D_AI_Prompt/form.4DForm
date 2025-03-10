@@ -1,0 +1,555 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 960,
+	"windowMinHeight": 620,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onTimer"
+	],
+	"windowTitle": "",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"xxx": {
+					"type": "rectangle",
+					"top": 520,
+					"left": 20,
+					"width": 640,
+					"height": 80,
+					"borderRadius": 10,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"class": "prompt_area"
+				},
+				"spinner": {
+					"type": "picture",
+					"top": 528,
+					"left": 620,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/AI/spinner.gif",
+					"pictureFormat": "scaled",
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"history_area": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 680,
+					"width": 280,
+					"height": 620,
+					"strokeDashArray": [
+						6,
+						2
+					],
+					"sizingX": "move",
+					"sizingY": "grow",
+					"strokeWidth": 1,
+					"visibility": "visible",
+					"class": "history_area",
+					"stroke": "transparent"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Model",
+					"top": 15,
+					"left": 1067,
+					"width": 80,
+					"height": 16,
+					"fontWeight": "bold",
+					"sizingX": "move"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Persona",
+					"top": 85,
+					"left": 1067,
+					"width": 80,
+					"height": 16,
+					"fontWeight": "bold",
+					"sizingX": "move"
+				},
+				"Text2": {
+					"type": "text",
+					"text": ":xliff:History",
+					"top": 15,
+					"left": 700,
+					"width": 200,
+					"height": 16,
+					"fontWeight": "bold",
+					"sizingX": "move"
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"left": 1067,
+					"top": 45,
+					"width": 234,
+					"height": 25,
+					"events": [
+						"onDataChange"
+					],
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Popup Dropdown List1": {
+					"type": "dropdown",
+					"left": 1067,
+					"top": 115,
+					"width": 234,
+					"height": 25,
+					"events": [
+						"onDataChange"
+					],
+					"sizingX": "move",
+					"focusable": false
+				},
+				"LB_Bookmarks": {
+					"type": "listbox",
+					"left": 700,
+					"top": 51,
+					"width": 240,
+					"height": 538,
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"showHeaders": false,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"hideFocusRing": true,
+					"hideSystemHighlight": true,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.bookmarks",
+					"method": "ObjectMethods/LB_Bookmarks.4dm",
+					"currentItemSource": "Form:C1466.selectedRow",
+					"currentItemPositionSource": "Form:C1466.selectedRowID",
+					"metaSource": "UI_AI_Prompt(\"meta\")",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"width": 240,
+							"dataSource": "This:C1470.prompt",
+							"rowHeightAuto": true,
+							"wordwrap": "normal",
+							"enterable": false
+						}
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 46,
+					"left": 0,
+					"width": 679,
+					"height": 0,
+					"sizingX": "grow",
+					"class": "separator"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 498,
+					"left": 0,
+					"width": 679,
+					"height": 0,
+					"sizingY": "move",
+					"sizingX": "grow",
+					"class": "separator"
+				},
+				"WParea": {
+					"type": "write",
+					"top": 60,
+					"left": 20,
+					"width": 640,
+					"height": 388,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.WPai",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"layoutMode": "embedded",
+					"showFooters": false,
+					"showHeaders": false,
+					"showBackground": true,
+					"showSelection": true,
+					"enterable": false
+				},
+				"Button": {
+					"type": "button",
+					"text": "",
+					"top": 10,
+					"left": 632,
+					"width": 28,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"sizingX": "move",
+					"style": "toolbar",
+					"borderStyle": "none",
+					"icon": "/RESOURCES/Images/AI/tab_32.png",
+					"iconFrames": 4
+				},
+				"Input": {
+					"type": "input",
+					"left": 90,
+					"top": 530,
+					"width": 530,
+					"height": 49,
+					"dataSource": "Form:C1466.prompt",
+					"hideFocusRing": true,
+					"borderStyle": "none",
+					"sizingY": "move",
+					"fontWeight": "normal",
+					"sizingX": "grow",
+					"method": "ObjectMethods/Input.4dm",
+					"events": [
+						"onAfterEdit"
+					],
+					"placeholder": ":xliff:PromptPlaceHolder",
+					"fill": "transparent",
+					"fontTheme": "normal"
+				},
+				"btn_launch": {
+					"type": "button",
+					"text": "",
+					"top": 530,
+					"left": 620,
+					"width": 30,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_launch.4dm",
+					"sizingX": "move",
+					"style": "toolbar",
+					"borderStyle": "none",
+					"sizingY": "move",
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "[Return]",
+					"icon": "/RESOURCES/Images/AI/send_32.png",
+					"iconFrames": 4,
+					"tooltip": ":xliff:SendRequest"
+				},
+				"btn_InsertAsStyledText": {
+					"type": "button",
+					"text": "",
+					"top": 460,
+					"left": 530,
+					"width": 30,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_InsertAsStyledText.4dm",
+					"sizingX": "move",
+					"style": "toolbar",
+					"borderStyle": "none",
+					"sizingY": "move",
+					"icon": "/RESOURCES/Images/AI/insert-withStyle_32.png",
+					"iconFrames": 4,
+					"focusable": false,
+					"tooltip": ":xliff:ReturnStyledText"
+				},
+				"Button5": {
+					"type": "button",
+					"text": "",
+					"top": 758,
+					"left": 140,
+					"width": 28,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed",
+					"style": "toolbar",
+					"borderStyle": "none",
+					"icon": "/RESOURCES/Images/AI/reset_32.png",
+					"iconFrames": 4,
+					"method": "ObjectMethods/Button5.4dm",
+					"textPlacement": "right",
+					"imageHugsTitle": true
+				},
+				"btn_Enclosure": {
+					"type": "button",
+					"text": "",
+					"top": 756,
+					"left": 43,
+					"width": 30,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed",
+					"style": "custom",
+					"borderStyle": "none",
+					"sizingY": "move",
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "",
+					"icon": "/RESOURCES/Images/AI/attachment_32.png",
+					"iconFrames": 4,
+					"imageHugsTitle": true
+				},
+				"btn_Target": {
+					"type": "button",
+					"text": "",
+					"top": 756,
+					"left": 84,
+					"width": 30,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed",
+					"style": "custom",
+					"borderStyle": "none",
+					"sizingY": "move",
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "",
+					"icon": "/RESOURCES/Images/AI/target_32.png",
+					"iconFrames": 4,
+					"imageHugsTitle": true
+				},
+				"btn_Prompt": {
+					"type": "button",
+					"text": "",
+					"top": 530,
+					"left": 30,
+					"width": 50,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed",
+					"style": "roundedBevel",
+					"borderStyle": "none",
+					"sizingY": "move",
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "",
+					"icon": "/RESOURCES/Images/AI/prompt_32.png",
+					"iconFrames": 4,
+					"imageHugsTitle": true,
+					"popupPlacement": "linked",
+					"dataSource": "",
+					"method": "ObjectMethods/btn_Prompt.4dm",
+					"focusable": false
+				},
+				"btn_ClipboardAsText": {
+					"type": "button",
+					"text": "",
+					"top": 460,
+					"left": 590,
+					"width": 30,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_ClipboardAsText.4dm",
+					"sizingX": "move",
+					"style": "toolbar",
+					"borderStyle": "none",
+					"sizingY": "move",
+					"icon": "/RESOURCES/Images/AI/copy-noStyle_32.png",
+					"iconFrames": 4,
+					"focusable": false,
+					"tooltip": ":xliff:CopyRawText"
+				},
+				"btn_InsertAsText": {
+					"type": "button",
+					"text": "",
+					"top": 460,
+					"left": 490,
+					"width": 30,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_InsertAsText.4dm",
+					"sizingX": "move",
+					"style": "toolbar",
+					"borderStyle": "none",
+					"sizingY": "move",
+					"icon": "/RESOURCES/Images/AI/insert-noStyle_32.png",
+					"iconFrames": 4,
+					"focusable": false,
+					"tooltip": ":xliff:ReturnRawText"
+				},
+				"btn_ClipboardAsStyledText": {
+					"type": "button",
+					"text": "",
+					"top": 460,
+					"left": 630,
+					"width": 30,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_ClipboardAsStyledText.4dm",
+					"sizingX": "move",
+					"style": "toolbar",
+					"borderStyle": "none",
+					"sizingY": "move",
+					"icon": "/RESOURCES/Images/AI/copy-withStyle_32.png",
+					"iconFrames": 4,
+					"action": "",
+					"focusable": false,
+					"tooltip": ":xliff:CopyStyledText"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 460,
+					"left": 575,
+					"width": 0,
+					"height": 30,
+					"stroke": "#c0c0c0",
+					"sizingY": "move",
+					"sizingX": "move"
+				},
+				"Button12": {
+					"type": "button",
+					"text": "No § bgnd",
+					"top": 832,
+					"left": 165,
+					"width": 147,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button12.4dm",
+					"sizingX": "move",
+					"sizingY": "move",
+					"stroke": "#ff6347"
+				},
+				"Radio Button": {
+					"type": "radio",
+					"text": "Do not send document",
+					"top": 666,
+					"left": 724,
+					"width": 202,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "move",
+					"radioGroup": "SendOptions",
+					"dataSource": "Form:C1466.radio.opt1",
+					"stroke": "#808080"
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"text": "Send selected text",
+					"top": 686,
+					"left": 724,
+					"width": 202,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "move",
+					"radioGroup": "SendOptions",
+					"dataSource": "Form:C1466.radio.opt2",
+					"stroke": "#808080"
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"text": "Send the whole document",
+					"top": 705,
+					"left": 724,
+					"width": 202,
+					"height": 15,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "move",
+					"radioGroup": "SendOptions",
+					"dataSource": "Form:C1466.radio.opt3",
+					"stroke": "#808080"
+				},
+				"btnClear": {
+					"type": "button",
+					"top": 10,
+					"left": 907,
+					"width": 40,
+					"height": 40,
+					"stroke": "#FF0000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Home/Clear_32.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"popupPlacement": "none",
+					"method": "ObjectMethods/btnClear.4dm",
+					"events": [
+						"onClick"
+					],
+					"tooltip": ":xliff:EraseHistory",
+					"sizingX": "move"
+				}
+			}
+		}
+	],
+	"geometryStamp": 1780,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"Frame": {
+				"objects": [
+					"history_area"
+				]
+			}
+		}
+	},
+	"width": 960,
+	"height": 620,
+	"method": "method.4dm",
+	"menuBar": "Main"
+}

@@ -2097,6 +2097,53 @@ Souhaitez-vous le remplacer ?</target>
         
       </group>
 
+      <group resname="DialogAI_Prompt">
+          <trans-unit id="xx" resname="History">
+            <source>History</source>
+            <target>Historique</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ClearHistory">
+          <source>Do you really want to erase all the history?</source>
+          <target>Voulez-vous vraiment effacer tout l'historique ?</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="PromptPlaceHolder">
+          <source>Enter your request</source>
+          <target>Saisissez votre demande</target>
+        </trans-unit>        
+      </group>
+
+      <group resname="DialogAI_Prompt_Tips">
+          <trans-unit id="xx" resname="ReturnRawText">
+            <source>Return row text</source>
+            <target>Renvoyer le texte brut</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ReturnStyledText">
+          <source>Return styled text</source>
+          <target>Renvoyer le texte stylé</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CopyRawText">
+          <source>Copy raw text</source>
+          <target>Copier le texte brut</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CopyStyledText">
+          <source>Copy styled text</source>
+          <target>Copier le texte stylé</target>
+        </trans-unit>      
+        <trans-unit id="xx" resname="EraseHistory">
+          <source>Erase history</source>
+          <target>Effacer l'historique</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="SendRequest">
+          <source>Send request</source>
+          <target>Envoyer la requête</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ResendRequest">
+          <source>Resend request</source>
+          <target>Renvoyer la requête</target>
+        </trans-unit>  
+      </group>
+
+
       <group resname="Menu_Paragraph">
         <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
           <source>Reset paragraph font attributes</source>

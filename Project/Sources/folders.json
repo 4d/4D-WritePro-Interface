@@ -1,4 +1,24 @@
 {
+	"AI": {
+		"methods": [
+			"AI Call",
+			"AI Dialog",
+			"AI_CallBack",
+			"AI_CallBack_old",
+			"AI_DeletePersona",
+			"AI_GetPersonas",
+			"AI_SavePersona",
+			"AI_Update",
+			"AI_updateForm",
+			"UI_AI_Prompt",
+			"UI_Personas",
+			"WP AI",
+			"WP SetAIKey"
+		],
+		"forms": [
+			"D_AI_Prompt"
+		]
+	},
 	"CLASSES": {
 		"classes": [
 			"Toolbar"
@@ -113,6 +133,25 @@
 			"D_FindOptions"
 		]
 	},
+	"WP_": {
+		"methods": [
+			"WP_ComputeFormulas",
+			"WP_FillFontStyles",
+			"WP_FreezeFormulas",
+			"WP_GetFormulas",
+			"WP_GetTablesWithDataSource",
+			"WP_GetURL",
+			"WP_ReadPreferences",
+			"WP_SetFormula",
+			"WP_SetFormulaOrda",
+			"WP_SetImageExpression",
+			"WP_SetListFont",
+			"WP_SetTextboxProtection",
+			"WP_SetURL",
+			"WP_TableWizard",
+			"WP_TableWizardNew"
+		]
+	},
 	"WP_Private": {
 		"methods": [
 			"MENU_Display",
@@ -168,6 +207,7 @@
 	},
 	"WP_Public": {
 		"methods": [
+			"WP MDtoWP",
 			"WP RemoveDocumentIndex",
 			"WP SetDocumentIndex",
 			"WP ShowTabPages",

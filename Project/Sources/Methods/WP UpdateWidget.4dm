@@ -106,6 +106,5 @@ Case of
 		//Else 
 		//// Either $areaName or $widgetName is not well defined
 		//End if 
-		
 End case 
 
