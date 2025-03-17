@@ -36,7 +36,7 @@ Case of
 		Form:C1466._extra.count:=0  // used to detect first answer
 		Form:C1466._extra.answer:=""  // use to cumulate answer
 		
-		Form:C1466.chat.prompt($aiParameters.prompt)
+		Form:C1466.chat.prompt($aiParameters.prompt)  //<----- CALL
 		
 		//$messages:=[]
 		//$messages.push({role: "system"; content: "You are a helpful assistant."})

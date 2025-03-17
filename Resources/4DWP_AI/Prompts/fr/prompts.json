@@ -1,26 +1,38 @@
 ﻿[
 	
 	{
+		"title": "Résumer la sélection",
 		"prompt": "Pouvez-vous résumer le texte sélectionné ?",
 		"source": "selection"
 	},
 	{
+		"title": "Résumer le document",
 		"prompt": "Pouvez-vous résumer le document entier ?",
 		"source": "document"
 	},
 	{
+		"title": "-"
+	},
+	{
+		"title": "Traduire la sélection",
 		"prompt": "Pouvez-vous traduite le texte sélectionné en anglais ?",
 		"source": "selection"
 	},
 	{
+		"title": "Traduire le document",
 		"prompt": "Pouvez-vous traduite le document entier en anglais ?",
 		"source": "document"
 	},
 	{
+		"title": "-"
+	},
+	{
+		"title": "Vérifier la sélection",
 		"prompt": "Pouvez-vous vérifier la grammaire du texte sélectionné et me signaler les erreurs ?",
 		"source": "selection"
 	},
 	{
+		"title": "Vérifier le document",
 		"prompt": "Pouvez-vous vérifier la grammaire du document entier et me signaler les erreurs ?",
 		"source": "document"
 	}

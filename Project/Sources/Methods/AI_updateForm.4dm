@@ -3,10 +3,10 @@
 
 var $file : 4D:C1709.File
 var $_breaks : Collection
-var $tempoThems : Collection
+var $tempoThems; $breaks : Collection
 var $result; $p : Integer
 var $memoRange1; $memoRange2; $promptRange; $answerRange; $breakRange : Object
-var $break; $bm; $elem : Object
+var $break; $bm; $elem; $range : Object
 var $picture; $pictureL; $pictureS : Picture
 var $filePath; $prompt : Text
 var $newDoc : Object
@@ -15,6 +15,9 @@ var $newDoc : Object
 //WP SELECT($range)
 
 Case of 
+		
+	: ($action="")  // error to be managed
+		Form:C1466._extra.state:=1  // rub
 		
 	: ($action="Set Text")
 		
@@ -26,6 +29,14 @@ Case of
 			$memoRange2:=WP Text range:C1341(Form:C1466.WPai; wk end text:K81:164; wk end text:K81:164)
 			
 			$promptRange:=WP Text range:C1341(Form:C1466.WPai; $memoRange1.end; $memoRange2.end)
+			
+			// link paragraphs if more than one in the prompt (transform § breaks into line breaks)
+			$breaks:=WP Get breaks:C1768($promptRange; wk paragraph break:K81:259)
+			For each ($break; $breaks)
+				$range:=WP Text range:C1341(Form:C1466.WPai; $break.start; $break.end)
+				WP Insert break:C1413($range; wk line break:K81:186; wk replace:K81:177)
+			End for each 
+			
 			WP SET ATTRIBUTES:C1342($promptRange; wk style sheet:K81:63; "Prompt")
 			
 			WP Insert break:C1413(Form:C1466.WPai; wk paragraph break:K81:259; wk append:K81:179)
@@ -77,6 +88,8 @@ Case of
 			WP SELECT:C1348(*; "WParea"; $bm.answerRange)
 			GOTO OBJECT:C206(*; "WParea")  // to avoid the light grey highlight
 			
+			Form:C1466._extra.state:=2  // re-run
+			
 		End if 
 		
 		Form:C1466._extra.count+=1
@@ -123,7 +136,5 @@ Case of
 		
 End case 
 
-
-Form:C1466._extra.state:=2
 SET TIMER:C645(-1)
 

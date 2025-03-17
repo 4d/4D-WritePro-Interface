@@ -10,7 +10,7 @@ Case of
 		
 		Form:C1466._extra:={}
 		Form:C1466._extra.expanded:=True:C214
-		Form:C1466._extra.state:=-1  // -1 : désabled (run not allowed) 0: "run" / 1: "running" / 2:"rerun"
+		Form:C1466._extra.state:=-1  // -1 : desabled (run not allowed) 0: "run" / 1: "running" / 2:"rerun"
 		
 		
 		Form:C1466.openAI:=cs:C1710.AIKit.OpenAI.new(oform.aiKey)  // PRIVATE KEY
@@ -46,7 +46,7 @@ Case of
 		Form:C1466.promptMenu:=Create menu:C408
 		$i:=0
 		For each ($item; Form:C1466.prompts)
-			APPEND MENU ITEM:C411(Form:C1466.promptMenu; $item.prompt)
+			APPEND MENU ITEM:C411(Form:C1466.promptMenu; $item.title)
 			SET MENU ITEM PARAMETER:C1004(Form:C1466.promptMenu; -1; String:C10($i))
 			$i+=1
 		End for each 

@@ -228,7 +228,7 @@
 					"left": 90,
 					"top": 530,
 					"width": 530,
-					"height": 49,
+					"height": 59,
 					"dataSource": "Form:C1466.prompt",
 					"hideFocusRing": true,
 					"borderStyle": "none",
@@ -262,7 +262,7 @@
 					"shortcutControl": false,
 					"shortcutShift": false,
 					"shortcutAlt": false,
-					"shortcutKey": "[Return]",
+					"shortcutKey": "[Enter]",
 					"icon": "/RESOURCES/Images/AI/send_32.png",
 					"iconFrames": 4,
 					"tooltip": ":xliff:SendRequest"
@@ -535,7 +535,7 @@
 			}
 		}
 	],
-	"geometryStamp": 1780,
+	"geometryStamp": 1781,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

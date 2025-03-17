@@ -16,7 +16,7 @@ If (Form:C1466.bookmarks.length>0)
 	WP SELECT:C1348(*; "WParea"; $range)  //$range.start; $range.start)
 	
 	GOTO OBJECT:C206(*; "WParea")
-	//SET TIMER(-1)
+	SET TIMER:C645(-1)  // to enable buttons
 	
 	//Form.WPai:=Form.WPai
 	

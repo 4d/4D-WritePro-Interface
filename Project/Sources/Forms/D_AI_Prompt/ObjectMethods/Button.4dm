@@ -5,7 +5,7 @@ var $x1; $y1; $x2; $y2 : Integer
 
 GET WINDOW RECT:C443($winLeft; $winTop; $winRight; $WinBottom; Form:C1466.windowID)
 
-OBJECT GET COORDINATES:C663(*; "Rect_Frame"; $x1; $y1; $x2; $y2)
+OBJECT GET COORDINATES:C663(*; "history_area"; $x1; $y1; $x2; $y2)
 
 If (Form:C1466._extra.expanded)
 	//FORM SET SIZE($x1; $y2)
