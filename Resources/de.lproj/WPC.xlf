@@ -2094,7 +2094,51 @@ Soll er ersetzt werden?</target>
         </trans-unit>
           
       </group>
+<group resname="DialogAI_Prompt">
+        <trans-unit id="xx" resname="History">
+          <source>History</source>
+          <target>Verlauf</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ClearHistory">
+          <source>Do you really want to erase all the history?</source>
+          <target>Wollen Sie wirklich die ganze Verlauf löschen?</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="PromptPlaceHolder">
+          <source>Enter your request</source>
+          <target>Geben Sie Ihre Anfrage ein</target>
+        </trans-unit>    
+      </group>
 
+      <group resname="DialogAI_Prompt_Tips">
+          <trans-unit id="xx" resname="ReturnRawText">
+            <source>Return row text</source>
+            <target>Zeilentext zurückgeben</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ReturnStyledText">
+          <source>Return styled text</source>
+          <target>Gestylten Text zurückgeben</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CopyRawText">
+          <source>Copy raw text</source>
+          <target>Rohtext kopieren</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CopyStyledText">
+          <source>Copy styled text</source>
+          <target>Formatierten Text kopieren</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="EraseHistory">
+          <source>Erase history</source>
+          <target>Verlauf löschen</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="SendRequest">
+          <source>Send request</source>
+          <target>Anfrage senden</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ResendRequest">
+          <source>Resend request</source>
+          <target>Anfrage erneut senden</target>
+        </trans-unit>        
+      </group>
 
       <group resname="Menu_Paragraph">
         <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
