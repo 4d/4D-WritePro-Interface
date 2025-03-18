@@ -6,32 +6,36 @@ var $H; $S; $L : Real
 var $font; $skinName; $name : Text
 var $skin : Object
 
+
+
+
 // Default values based on app
 // CF Toolbar constructor
 
-If (FORM Get color scheme:C1761="light")
-	
-	$fontColor:=0x00101010  // font color
-	$backgroundColor:=0x00D8D8D8  // background color
-	
-	$separatorFontColor:=0x00383838  // separator font color
-	$separatorColor:=0x00B0B0B0  //
-	
-	$iconBorder:=0x00E8E8E8  //0x00C0C0C0
-	$iconBackground:=0x00E8E8E8
-	
-Else 
-	
-	$fontColor:=0x00F0F0F0
-	$backgroundColor:=0x00404040
-	
-	$separatorFontColor:=0x00C8C8C8
-	$separatorColor:=0x00303030  // 
-	
-	$iconBorder:=0x00303030
-	$iconBackground:=0x00303030
-	
-End if 
+
+//If (FORM Get color scheme="light")
+
+//$fontColor:=0x00101010  // font color
+//$backgroundColor:=0x00D8D8D8  // background color
+
+//$separatorFontColor:=0x00383838  // separator font color
+//$separatorColor:=0x00B0B0B0  //
+
+//$iconBorder:=0x00E8E8E8  //0x00C0C0C0
+//$iconBackground:=0x00E8E8E8
+
+//Else 
+
+//$fontColor:=0x00F0F0F0
+//$backgroundColor:=0x00404040
+
+//$separatorFontColor:=0x00C8C8C8
+//$separatorColor:=0x00303030  // 
+
+//$iconBorder:=0x00303030
+//$iconBackground:=0x00303030
+
+//End if 
 
 
 If (oForm.skin#Null:C1517)
@@ -140,22 +144,26 @@ If (oForm.skin#Null:C1517)
 		End if 
 		
 	End if 
+	
+	OBJECT SET RGB COLORS:C628(*; "background@"; $backgroundColor; $backgroundColor)  // background (toolbar + sidebar)
+	OBJECT SET RGB COLORS:C628(*; "tabRect_@"; $backgroundColor; $backgroundColor)  // toolbat tabs 
+	
+	OBJECT SET RGB COLORS:C628(*; "Separator@"; $separatorColor; $separatorColor)
+	OBJECT SET RGB COLORS:C628(*; "sepLbl@"; $separatorFontColor; $separatorColor)
+	OBJECT SET RGB COLORS:C628(*; "line@"; $separatorColor; $separatorColor)
+	OBJECT SET RGB COLORS:C628(*; "IconBgnd@"; $iconBorder; $iconBackground)  // $separatorColor; $separatorColor)
+	
+	
+	OBJECT SET RGB COLORS:C628(*; "rb@"; $fontColor; Background color:K23:2)  // radio buttons
+	OBJECT SET RGB COLORS:C628(*; "cb@"; $fontColor; Background color:K23:2)  // check boxes
+	OBJECT SET RGB COLORS:C628(*; "lbl_@"; $fontColor)  //;Background color) // labels
+	OBJECT SET RGB COLORS:C628(*; "tabBtn_@"; $fontColor)  // toolbat labels
+	
 End if 
 
 
-OBJECT SET RGB COLORS:C628(*; "background@"; $backgroundColor; $backgroundColor)  // background (toolbar + sidebar)
-OBJECT SET RGB COLORS:C628(*; "tabRect_@"; $backgroundColor; $backgroundColor)  // toolbat tabs 
 
-OBJECT SET RGB COLORS:C628(*; "Separator@"; $separatorColor; $separatorColor)
-OBJECT SET RGB COLORS:C628(*; "sepLbl@"; $separatorFontColor; $separatorColor)
-OBJECT SET RGB COLORS:C628(*; "line@"; $separatorColor; $separatorColor)
-OBJECT SET RGB COLORS:C628(*; "IconBgnd@"; $iconBorder; $iconBackground)  // $separatorColor; $separatorColor)
-
-
-OBJECT SET RGB COLORS:C628(*; "rb@"; $fontColor; Background color:K23:2)  // radio buttons
-OBJECT SET RGB COLORS:C628(*; "cb@"; $fontColor; Background color:K23:2)  // check boxes
-OBJECT SET RGB COLORS:C628(*; "lbl_@"; $fontColor)  //;Background color) // labels
-OBJECT SET RGB COLORS:C628(*; "tabBtn_@"; $fontColor)  // toolbat labels
+// a finir…
 
 
 // listboxes tabulations & bookmarks
@@ -173,6 +181,8 @@ If (oForm.ToolbarTabs#Null:C1517)  // toolbar mode
 Else   // side bar mode
 	
 End if 
+
+
 
 $skinApplied:=True:C214
 

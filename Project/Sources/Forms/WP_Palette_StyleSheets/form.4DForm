@@ -32,9 +32,8 @@
 					"left": 0,
 					"width": 260,
 					"height": 440,
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 0
+					"borderRadius": 0,
+					"class": "background"
 				},
 				"LB_StyleSheets": {
 					"type": "listbox",
@@ -141,9 +140,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_position": {
 					"type": "text",
@@ -151,10 +149,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
 					"textAlign": "center",
-					"fontTheme": "additional",
-					"text": ":xliff:stylesheets"
+					"text": ":xliff:stylesheets",
+					"class": "separatorFont"
 				},
 				"btnUpdateStylesheet": {
 					"type": "button",
@@ -364,5 +361,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 49
+	"geometryStamp": 57
 }

@@ -2114,8 +2114,8 @@ Would you like to replace it?</target>
 
       <group resname="DialogAI_Prompt_Tips">
           <trans-unit id="xx" resname="ReturnRawText">
-            <source>Return row text</source>
-            <target>Return row text</target>
+            <source>Return raw text</source>
+            <target>Return raw text</target>
         </trans-unit>
         <trans-unit id="xx" resname="ReturnStyledText">
           <source>Return styled text</source>

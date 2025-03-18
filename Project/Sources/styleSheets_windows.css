@@ -8,8 +8,23 @@
 	font-size: 12px;
 }
 
+.separatorFont{
+    color: #F0F0F0;
+	font-family: Segoe UI;
+	font-size: 12px;
+}
 .Palette {
 	font-family: Segoe UI;
 	font-size: 12px;
 }
 
+
+@media (prefers-color-scheme: dark){
+
+	.separatorFont{
+		color: #101010;
+		font-family: Segoe UI;
+		font-size: 12px;
+	}
+
+}

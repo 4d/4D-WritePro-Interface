@@ -446,9 +446,9 @@
 					"left": 575,
 					"width": 0,
 					"height": 30,
-					"stroke": "#c0c0c0",
 					"sizingY": "move",
-					"sizingX": "move"
+					"sizingX": "move",
+					"class": "separator"
 				},
 				"Button12": {
 					"type": "button",
@@ -535,7 +535,7 @@
 			}
 		}
 	],
-	"geometryStamp": 1781,
+	"geometryStamp": 1783,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

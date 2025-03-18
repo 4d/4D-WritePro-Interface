@@ -33,9 +33,8 @@
 					"left": 0,
 					"width": 260,
 					"height": 620,
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 0
+					"borderRadius": 0,
+					"class": "background"
 				},
 				"Separator2": {
 					"type": "rectangle",
@@ -43,9 +42,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_backgroundPicture": {
 					"type": "text",
@@ -53,11 +51,9 @@
 					"left": 40,
 					"width": 180,
 					"height": 13,
-					"stroke": "#FFFFFF",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
-					"text": ":xliff:BackgroundPicture",
-					"fontTheme": "additional"
+					"text": ":xliff:BackgroundPicture"
 				},
 				"lbl_Repeat": {
 					"type": "text",
@@ -67,8 +63,7 @@
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:RepeatColon",
-					"fontTheme": "additional"
+					"text": ":xliff:RepeatColon"
 				},
 				"lbl_Clip": {
 					"type": "text",
@@ -78,8 +73,7 @@
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:Clip",
-					"fontTheme": "additional"
+					"text": ":xliff:Clip"
 				},
 				"lbl_Origin": {
 					"type": "text",
@@ -89,8 +83,7 @@
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:Origin",
-					"fontTheme": "additional"
+					"text": ":xliff:Origin"
 				},
 				"bgndSizeHor": {
 					"type": "input",
@@ -140,8 +133,7 @@
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:HorizontalSize",
-					"fontTheme": "additional"
+					"text": ":xliff:HorizontalSize"
 				},
 				"lbl_VertSize": {
 					"type": "text",
@@ -151,8 +143,7 @@
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:VerticalSize",
-					"fontTheme": "additional"
+					"text": ":xliff:VerticalSize"
 				},
 				"lbl_Picture": {
 					"type": "text",
@@ -162,8 +153,7 @@
 					"height": 16,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:PictureHyphen",
-					"fontTheme": "additional"
+					"text": ":xliff:PictureHyphen"
 				},
 				"bgndPictPreview": {
 					"type": "input",
@@ -194,8 +184,7 @@
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:PositionsColon",
-					"fontTheme": "additional"
+					"text": ":xliff:PositionsColon"
 				},
 				"horizontalSizeUnits": {
 					"type": "dropdown",
@@ -289,7 +278,7 @@
 					"left": 40,
 					"width": 200,
 					"height": 1,
-					"stroke": "#808080"
+					"class": "separator"
 				},
 				"Line3": {
 					"type": "line",
@@ -297,7 +286,7 @@
 					"left": 40,
 					"width": 200,
 					"height": 1,
-					"stroke": "#808080"
+					"class": "separator"
 				},
 				"Line4": {
 					"type": "line",
@@ -305,7 +294,7 @@
 					"left": 40,
 					"width": 200,
 					"height": 1,
-					"stroke": "#808080"
+					"class": "separator"
 				},
 				"lbl_Picture2": {
 					"type": "text",
@@ -315,8 +304,7 @@
 					"height": 16,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:MoveHyphen",
-					"fontTheme": "additional"
+					"text": ":xliff:MoveHyphen"
 				},
 				"lbl_Position1": {
 					"type": "text",
@@ -326,8 +314,7 @@
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:PositionColon",
-					"fontTheme": "additional"
+					"text": ":xliff:PositionColon"
 				},
 				"lbl_Picture3": {
 					"type": "text",
@@ -337,8 +324,7 @@
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:PageHyphen",
-					"fontTheme": "additional"
+					"text": ":xliff:PageHyphen"
 				},
 				"Separator3": {
 					"type": "rectangle",
@@ -346,9 +332,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_paragraph1": {
 					"type": "text",
@@ -356,10 +341,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
 					"textAlign": "center",
-					"fontTheme": "additional",
-					"text": ":xliff:PictureAndTextboxes"
+					"text": ":xliff:PictureAndTextboxes",
+					"class": "separatorFont"
 				},
 				"Popup_anchorVerticalAlign": {
 					"type": "dropdown",
@@ -405,8 +389,7 @@
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:SectionHyphen",
-					"fontTheme": "additional"
+					"text": ":xliff:SectionHyphen"
 				},
 				"btn_imageMoveToBack": {
 					"type": "button",
@@ -537,9 +520,9 @@
 					"width": 80,
 					"height": 13,
 					"textAlign": "right",
-					"fontTheme": "additional",
 					"text": ":xliff:ApplyToColon",
-					"fontWeight": "normal"
+					"fontWeight": "normal",
+					"class": "Palette"
 				},
 				"xbtn_Clear": {
 					"type": "button",
@@ -614,8 +597,7 @@
 					"height": 13,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:InsertHyphen",
-					"fontTheme": "additional"
+					"text": ":xliff:InsertHyphen"
 				},
 				"lbl_Picture4": {
 					"type": "text",
@@ -625,8 +607,7 @@
 					"height": 16,
 					"class": "Palette",
 					"textAlign": "right",
-					"text": ":xliff:PictureHyphen",
-					"fontTheme": "additional"
+					"text": ":xliff:PictureHyphen"
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -731,13 +712,11 @@
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
-			"View 2": {},
-			"View 3": {},
-			"View 4": {},
-			"View 5": {},
-			"View 6": {},
-			"View 7": {},
-			"View 8": {},
+			"Background": {
+				"objects": [
+					"Background"
+				]
+			},
 			"TITRE": {
 				"visible": false,
 				"objects": [
@@ -751,5 +730,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1603
+	"geometryStamp": 1621
 }

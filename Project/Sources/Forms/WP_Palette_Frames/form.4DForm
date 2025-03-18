@@ -33,10 +33,9 @@
 					"left": 0,
 					"width": 260,
 					"height": 620,
-					"fill": "#C8C8C8",
-					"stroke": "transparent",
 					"borderRadius": 0,
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"class": "background"
 				},
 				"Separator1": {
 					"type": "rectangle",
@@ -44,10 +43,9 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
-					"stroke": "transparent",
 					"borderRadius": 4,
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"class": "separator"
 				},
 				"sepLbl_Frame": {
 					"type": "text",
@@ -55,11 +53,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
 					"text": ":xliff:Frame",
-					"fontTheme": "additional",
 					"sizingX": "fixed"
 				},
 				"btnAction": {
@@ -85,10 +81,9 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
-					"stroke": "transparent",
 					"borderRadius": 4,
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"class": "separator"
 				},
 				"sepLbl_padding": {
 					"type": "text",
@@ -96,11 +91,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
 					"text": ":xliff:Padding",
-					"fontTheme": "additional",
 					"sizingX": "fixed"
 				},
 				"Popup_applyMarginsTo": {
@@ -446,12 +439,13 @@
 		}
 	],
 	"editor": {
-		"activeView": "View 1",
+		"activeView": "View 2",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
 			"View 2": {
 				"objects": [
+					"Background",
 					"sepLbl_Frame",
 					"Separator3",
 					"sepLbl_padding"
@@ -476,5 +470,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1618
+	"geometryStamp": 1628
 }

@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"windowSizingX": "fixed",
 	"width": 480,
@@ -131,9 +131,9 @@
 					"height": 23,
 					"stroke": "#808080",
 					"textAlign": "left",
-					"fontFamily": ".SF NS Text",
 					"fontSize": 18,
-					"text": ":xliff:ssInfoForced"
+					"text": ":xliff:ssInfoForced",
+					"fontTheme": "normal"
 				},
 				"LBedit": {
 					"type": "listbox",
@@ -156,7 +156,7 @@
 					"verticalLineStroke": "transparent",
 					"fill": "transparent",
 					"verticalAlign": "middle",
-					"fontFamily": ".SF NS Text",
+					"fontFamily": "System Font Regular",
 					"fontSize": 11,
 					"borderStyle": "none",
 					"events": [
@@ -179,15 +179,15 @@
 								"name": "Header4",
 								"text": "Attribute",
 								"verticalAlign": "middle",
-								"fontFamily": ".SF NS Text",
-								"fontSize": 11
+								"fontSize": 11,
+								"fontTheme": "normal"
 							},
 							"footer": {
 								"name": "Footer4",
 								"timeFormat": "hh_mm_ss",
 								"verticalAlign": "middle",
-								"fontFamily": ".SF NS Text",
-								"fontSize": 11
+								"fontSize": 11,
+								"fontTheme": "normal"
 							}
 						},
 						{
@@ -197,7 +197,6 @@
 							"maxWidth": 32000,
 							"textAlign": "right",
 							"verticalAlign": "middle",
-							"fontFamily": ".SF NS Text",
 							"fontSize": 11,
 							"events": [
 								"onClick",
@@ -206,16 +205,17 @@
 							"header": {
 								"name": "Header2",
 								"verticalAlign": "middle",
-								"fontFamily": ".SF NS Text",
-								"fontSize": 11
+								"fontSize": 11,
+								"fontTheme": "normal"
 							},
 							"footer": {
 								"name": "Footer2",
 								"timeFormat": "hh_mm_ss",
 								"verticalAlign": "middle",
-								"fontFamily": ".SF NS Text",
-								"fontSize": 11
-							}
+								"fontSize": 11,
+								"fontTheme": "normal"
+							},
+							"fontTheme": "normal"
 						},
 						{
 							"name": "colStylesheet",
@@ -236,15 +236,15 @@
 								"name": "Header3",
 								"text": "Value",
 								"verticalAlign": "middle",
-								"fontFamily": ".SF NS Text",
-								"fontSize": 11
+								"fontSize": 11,
+								"fontTheme": "normal"
 							},
 							"footer": {
 								"name": "Footer3",
 								"timeFormat": "hh_mm_ss",
 								"verticalAlign": "middle",
-								"fontFamily": ".SF NS Text",
-								"fontSize": 11
+								"fontSize": 11,
+								"fontTheme": "normal"
 							}
 						},
 						{
@@ -265,15 +265,15 @@
 								"name": "Header5",
 								"text": "Normal",
 								"verticalAlign": "middle",
-								"fontFamily": ".SF NS Text",
-								"fontSize": 11
+								"fontSize": 11,
+								"fontTheme": "normal"
 							},
 							"footer": {
 								"name": "Footer5",
 								"timeFormat": "hh_mm_ss",
 								"verticalAlign": "middle",
-								"fontFamily": ".SF NS Text",
-								"fontSize": 11
+								"fontSize": 11,
+								"fontTheme": "normal"
 							}
 						},
 						{
@@ -295,15 +295,15 @@
 								"name": "Header1",
 								"text": "Normal",
 								"verticalAlign": "middle",
-								"fontFamily": ".SF NS Text",
-								"fontSize": 11
+								"fontSize": 11,
+								"fontTheme": "normal"
 							},
 							"footer": {
 								"name": "Footer1",
 								"timeFormat": "hh_mm_ss",
 								"verticalAlign": "middle",
-								"fontFamily": ".SF NS Text",
-								"fontSize": 11
+								"fontSize": 11,
+								"fontTheme": "normal"
 							}
 						}
 					]
@@ -316,9 +316,9 @@
 					"height": 50,
 					"stroke": "#808080",
 					"textAlign": "left",
-					"fontFamily": ".SF NS Text",
 					"fontSize": 13,
-					"text": ":xliff:ssInfoDetailed"
+					"text": ":xliff:ssInfoDetailed",
+					"fontTheme": "normal"
 				},
 				"Button1": {
 					"type": "button",
@@ -344,10 +344,10 @@
 					"width": 157,
 					"height": 16,
 					"textAlign": "left",
-					"fontFamily": ".SF NS Text",
 					"fontSize": 12,
 					"fontWeight": "bold",
-					"text": "Use 'Normal' property"
+					"text": "Use 'Normal' property",
+					"fontTheme": "normal"
 				},
 				"LabelForced": {
 					"type": "text",
@@ -356,17 +356,17 @@
 					"width": 140,
 					"height": 16,
 					"textAlign": "right",
-					"fontFamily": ".SF NS Text",
 					"fontSize": 12,
 					"fontWeight": "bold",
-					"text": "Forced"
+					"text": "Forced",
+					"fontTheme": "normal"
 				},
 				"HorizontallSeparator": {
 					"type": "line",
 					"top": 130,
 					"left": 40,
 					"width": 400,
-					"stroke": "#696969"
+					"class": "separator"
 				},
 				"Bouton": {
 					"type": "button",
@@ -387,7 +387,7 @@
 					"left": 297,
 					"height": 377,
 					"sizingY": "grow",
-					"stroke": "#696969"
+					"class": "separator"
 				}
 			}
 		},
@@ -870,9 +870,9 @@
 					"height": 23,
 					"stroke": "#808080",
 					"textAlign": "left",
-					"fontFamily": ".SF NS Text",
 					"fontSize": 18,
-					"text": "↳  Forced in style sheet"
+					"text": "↳  Forced in style sheet",
+					"fontTheme": "normal"
 				}
 			}
 		},
@@ -1266,9 +1266,9 @@
 					"height": 23,
 					"stroke": "#808080",
 					"textAlign": "left",
-					"fontFamily": ".SF NS Text",
 					"fontSize": 18,
-					"text": "↳  Forced in style sheet"
+					"text": "↳  Forced in style sheet",
+					"fontTheme": "normal"
 				}
 			}
 		}
@@ -1292,5 +1292,10 @@
 			"View 8": {},
 			"View 9": {}
 		}
+	},
+	"geometryStamp": 4,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
 	}
 }

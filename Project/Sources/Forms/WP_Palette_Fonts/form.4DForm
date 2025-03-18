@@ -32,10 +32,9 @@
 					"top": 0,
 					"left": 0,
 					"width": 260,
-					"height": 570,
-					"fill": "#D6D6D6",
-					"stroke": "transparent",
-					"borderRadius": 0
+					"height": 590,
+					"borderRadius": 0,
+					"class": "background"
 				},
 				"IconBgnd2": {
 					"type": "rectangle",
@@ -43,9 +42,8 @@
 					"left": 210,
 					"width": 40,
 					"height": 22,
-					"fill": "#FFFFFF",
-					"stroke": "#c0c0c0",
-					"borderRadius": 0
+					"borderRadius": 0,
+					"class": "iconFrame"
 				},
 				"IconBgnd1": {
 					"type": "rectangle",
@@ -53,9 +51,8 @@
 					"left": 160,
 					"width": 40,
 					"height": 22,
-					"fill": "#FFFFFF",
-					"stroke": "#c0c0c0",
-					"borderRadius": 0
+					"borderRadius": 0,
+					"class": "iconFrame"
 				},
 				"fontFamilly": {
 					"type": "dropdown",
@@ -325,9 +322,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#929292",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_Shadows": {
 					"type": "text",
@@ -335,11 +331,9 @@
 					"left": 25,
 					"width": 210,
 					"height": 13,
-					"stroke": "#c0c0c0",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
-					"text": ":xliff:Shadows",
-					"fontTheme": "additional"
+					"text": ":xliff:Shadows"
 				},
 				"fontSizeInput": {
 					"type": "input",
@@ -736,9 +730,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#929292",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_SpecialChars": {
 					"type": "text",
@@ -746,11 +739,9 @@
 					"left": 25,
 					"width": 210,
 					"height": 13,
-					"stroke": "#c0c0c0",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
-					"text": ":xliff:SpecialCharacters",
-					"fontTheme": "additional"
+					"text": ":xliff:SpecialCharacters"
 				},
 				"lbl_SoftHyphen": {
 					"type": "text",
@@ -1030,22 +1021,22 @@
 				},
 				"btnClear1": {
 					"type": "button",
-					"top": 556,
+					"top": 550,
 					"left": 110,
 					"width": 40,
-					"height": 40,
+					"height": 30,
 					"stroke": "#FF0000",
 					"focusable": false,
-					"icon": "",
+					"icon": "/RESOURCES/Images/AI/open-AI_32.png",
 					"iconFrames": 4,
-					"style": "regular",
+					"style": "custom",
 					"popupPlacement": "none",
 					"method": "ObjectMethods/btnClear1.4dm",
 					"events": [
 						"onClick"
 					],
 					"tooltip": ":xliff:clear",
-					"text": "AI"
+					"text": ""
 				},
 				"Separator3": {
 					"type": "rectangle",
@@ -1053,9 +1044,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#929292",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_SpecialChars1": {
 					"type": "text",
@@ -1063,11 +1053,9 @@
 					"left": 25,
 					"width": 210,
 					"height": 13,
-					"stroke": "#c0c0c0",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
-					"text": "A.I.",
-					"fontTheme": "additional"
+					"text": "A.I."
 				},
 				"background1": {
 					"type": "rectangle",
@@ -1120,7 +1108,6 @@
 		"views": {
 			"View 1": {},
 			"Frames": {
-				"visible": false,
 				"objects": [
 					"background"
 				]
@@ -1156,5 +1143,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1319
+	"geometryStamp": 1348
 }

@@ -8,8 +8,23 @@
 	font-size: 13px;
 }
 
+.separatorFont{
+    color: #F0F0F0;
+	font-family: System Font Regular;
+	font-size: 11px;
+}
+
 .Palette {
 	font-family: System Font Regular;
 	font-size: 11px;
 }
 
+@media (prefers-color-scheme: dark){
+
+	.separatorFont{
+		color: #101010;
+		font-family: System Font Regular;
+		font-size: 11px;
+	}
+
+}

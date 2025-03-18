@@ -32,15 +32,14 @@
 					"left": 0,
 					"width": 260,
 					"height": 440,
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 0
+					"borderRadius": 0,
+					"class": "background"
 				},
 				"LB_Bookmarks": {
 					"type": "listbox",
 					"top": 50,
-					"left": 25,
-					"width": 210,
+					"left": 20,
+					"width": 220,
 					"height": 340,
 					"resizingMode": "legacy",
 					"hideFocusRing": true,
@@ -64,6 +63,7 @@
 						"onSelectionChange",
 						"onBeforeDataEntry"
 					],
+					"class": "separator",
 					"columns": [
 						{
 							"name": "lb_bookmarkNames",
@@ -139,9 +139,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_position": {
 					"type": "text",
@@ -149,10 +148,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
 					"textAlign": "center",
-					"fontTheme": "additional",
-					"text": ":xliff:Bookmarks"
+					"text": ":xliff:Bookmarks",
+					"class": "separatorFont"
 				},
 				"btnReload": {
 					"type": "button",
@@ -202,6 +200,14 @@
 					"height": 620,
 					"visibility": "hidden",
 					"stroke": "#da70d6"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 389,
+					"left": 20,
+					"width": 220,
+					"height": 1,
+					"class": "separator"
 				}
 			}
 		}
@@ -235,5 +241,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 29
+	"geometryStamp": 109
 }

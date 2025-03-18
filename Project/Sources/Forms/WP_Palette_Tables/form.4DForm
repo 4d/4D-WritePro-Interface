@@ -32,9 +32,8 @@
 					"left": 0,
 					"width": 260,
 					"height": 540,
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 0
+					"borderRadius": 0,
+					"class": "background"
 				},
 				"Separator1": {
 					"type": "rectangle",
@@ -42,9 +41,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 17,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_Frame": {
 					"type": "text",
@@ -52,11 +50,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
-					"text": ":xliff:LabelRows",
-					"fontTheme": "additional"
+					"text": ":xliff:LabelRows"
 				},
 				"Separator3": {
 					"type": "rectangle",
@@ -64,9 +60,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 17,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_padding": {
 					"type": "text",
@@ -74,11 +69,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
-					"text": ":xliff:LabelColumns",
-					"fontTheme": "additional"
+					"text": ":xliff:LabelColumns"
 				},
 				"btnInsertAboveRow": {
 					"type": "button",
@@ -160,9 +153,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 17,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_padding1": {
 					"type": "text",
@@ -170,11 +162,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
-					"text": ":xliff:LabelCells",
-					"fontTheme": "additional"
+					"text": ":xliff:LabelCells"
 				},
 				"btnDeleteRows": {
 					"type": "button",
@@ -218,18 +208,18 @@
 					"top": 240,
 					"left": 120,
 					"width": 100,
-					"stroke": "#696969",
 					"height": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line1": {
 					"type": "line",
 					"top": 405,
 					"left": 120,
 					"width": 100,
-					"stroke": "#696969",
 					"height": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Separator4": {
 					"type": "rectangle",
@@ -237,9 +227,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 17,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_Frame1": {
 					"type": "text",
@@ -247,11 +236,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
-					"text": ":xliff:Table",
-					"fontTheme": "additional"
+					"text": ":xliff:Table"
 				},
 				"btnInsertTable": {
 					"type": "button",
@@ -277,9 +264,9 @@
 					"top": 75,
 					"left": 120,
 					"width": 100,
-					"stroke": "#696969",
 					"height": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btnTableSettings": {
 					"type": "button",
@@ -422,12 +409,13 @@
 		}
 	],
 	"editor": {
-		"activeView": "View 1",
+		"activeView": "View 2",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
 			"View 2": {
 				"objects": [
+					"Background",
 					"sepLbl_Frame",
 					"Separator3",
 					"sepLbl_padding",
@@ -453,5 +441,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 75
+	"geometryStamp": 148
 }

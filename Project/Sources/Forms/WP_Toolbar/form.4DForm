@@ -865,8 +865,7 @@
 					"height": 70,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"fill": "#E0E0E0",
-					"stroke": "transparent"
+					"class": "background"
 				}
 			}
 		},
@@ -1063,9 +1062,9 @@
 					"top": 60,
 					"left": 210,
 					"height": 24,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btn_backgroundColor": {
 					"type": "button",
@@ -1217,27 +1216,27 @@
 					"top": 30,
 					"left": 350,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line13": {
 					"type": "line",
 					"top": 30,
 					"left": 460,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line4": {
 					"type": "line",
 					"top": 30,
 					"left": 600,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Popup Dropdown List2": {
 					"type": "dropdown",
@@ -1771,27 +1770,18 @@
 					"top": 30,
 					"left": 335,
 					"height": 50,
-					"stroke": "#696969",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line5": {
 					"type": "line",
 					"top": 30,
 					"left": 635,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
-				},
-				"Line3": {
-					"type": "line",
-					"top": 110,
-					"left": 590,
-					"height": 50,
-					"stroke": "#696969",
-					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btn_pageModePage": {
 					"type": "checkbox",
@@ -1839,9 +1829,9 @@
 					"top": 30,
 					"left": 140,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btn_showHide4Dexpressions": {
 					"type": "checkbox",
@@ -1874,9 +1864,9 @@
 					"top": 30,
 					"left": 540,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"zoomIcon": {
 					"type": "picture",
@@ -2082,18 +2072,18 @@
 					"top": 60,
 					"left": 260,
 					"height": 22,
-					"stroke": "#696969",
 					"width": 1,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line66": {
 					"type": "line",
 					"top": 30,
 					"left": 685,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btn_insertTextArea1": {
 					"type": "button",
@@ -2230,18 +2220,18 @@
 					"top": 30,
 					"left": 475,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line8": {
 					"type": "line",
 					"top": 30,
 					"left": 745,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"popMarginTop": {
 					"type": "dropdown",
@@ -2301,9 +2291,9 @@
 					"top": 30,
 					"left": 200,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"lbl_Text": {
 					"type": "text",
@@ -2428,9 +2418,9 @@
 					"top": 30,
 					"left": 855,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btn_copy1": {
 					"type": "button",
@@ -2533,9 +2523,9 @@
 					"top": 30,
 					"left": 200,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btnBorderStyleLeft1": {
 					"type": "button",
@@ -2621,9 +2611,9 @@
 					"top": 30,
 					"left": 760,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Popup_columnCount": {
 					"type": "dropdown",
@@ -2719,9 +2709,9 @@
 					"top": 30,
 					"left": 460,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"popRadius": {
 					"type": "dropdown",
@@ -2935,45 +2925,45 @@
 					"top": 30,
 					"left": 360,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line43": {
 					"type": "line",
 					"top": 30,
 					"left": 505,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line45": {
 					"type": "line",
 					"top": 30,
 					"left": 625,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line44": {
 					"type": "line",
 					"top": 30,
 					"left": 755,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line42": {
 					"type": "line",
 					"top": 30,
 					"left": 825,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btn_insertTextArea2": {
 					"type": "button",
@@ -2999,9 +2989,9 @@
 					"top": 40,
 					"left": 75,
 					"height": 30,
-					"stroke": "#888888",
 					"width": 1,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btn_insertImage1": {
 					"type": "button",
@@ -3026,9 +3016,9 @@
 					"top": 30,
 					"left": 165,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btn_imageInline1": {
 					"type": "checkbox",
@@ -3338,9 +3328,9 @@
 					"top": 30,
 					"left": 195,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Image15": {
 					"type": "picture",
@@ -3356,9 +3346,9 @@
 					"top": 30,
 					"left": 665,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btnPrintPreview1": {
 					"type": "button",
@@ -3514,9 +3504,9 @@
 					"top": 30,
 					"left": 110,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"lbl_Background": {
 					"type": "text",
@@ -3550,18 +3540,18 @@
 					"top": 30,
 					"left": 320,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line56": {
 					"type": "line",
 					"top": 30,
 					"left": 530,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"lbl_Size3": {
 					"type": "text",
@@ -3578,9 +3568,9 @@
 					"top": 30,
 					"left": 690,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btnRowSettings": {
 					"type": "button",
@@ -3947,36 +3937,36 @@
 					"top": 30,
 					"left": 155,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line11": {
 					"type": "line",
 					"top": 30,
 					"left": 245,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line14": {
 					"type": "line",
 					"top": 30,
 					"left": 335,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line53": {
 					"type": "line",
 					"top": 30,
 					"left": 545,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btn_spellShowDialog": {
 					"type": "checkbox",
@@ -3996,9 +3986,9 @@
 					"top": 30,
 					"left": 755,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				}
 			}
 		},
@@ -4027,9 +4017,9 @@
 					"top": 30,
 					"left": 285,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"cbCellProtected": {
 					"type": "checkbox",
@@ -4108,27 +4098,27 @@
 					"top": 30,
 					"left": 805,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line67": {
 					"type": "line",
 					"top": 30,
 					"left": 75,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line69": {
 					"type": "line",
 					"top": 30,
 					"left": 365,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"cbTextboxProtected": {
 					"type": "checkbox",
@@ -4213,18 +4203,18 @@
 					"top": 30,
 					"left": 205,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line64": {
 					"type": "line",
 					"top": 30,
 					"left": 135,
 					"height": 50,
-					"stroke": "#888888",
 					"width": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btnAI": {
 					"type": "button",
@@ -4535,5 +4525,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7362
+	"geometryStamp": 7447
 }

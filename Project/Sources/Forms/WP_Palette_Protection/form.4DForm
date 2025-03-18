@@ -36,9 +36,8 @@
 					"left": 0,
 					"width": 260,
 					"height": 620,
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 0
+					"borderRadius": 0,
+					"class": "background"
 				},
 				"Separator4": {
 					"type": "rectangle",
@@ -46,9 +45,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_Frame1": {
 					"type": "text",
@@ -56,11 +54,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
-					"text": ":xliff:protection",
-					"fontTheme": "additional"
+					"text": ":xliff:protection"
 				},
 				"cbParagraphProtected": {
 					"type": "checkbox",
@@ -98,9 +94,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_Frame2": {
 					"type": "text",
@@ -108,12 +103,10 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
-					"class": "Palette",
+					"class": "separatorFont",
 					"textAlign": "center",
 					"text": ":xliff:document",
-					"fill": "transparent",
-					"fontTheme": "additional"
+					"fill": "transparent"
 				},
 				"decor2": {
 					"type": "picture",
@@ -253,9 +246,7 @@
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
-			"View 2": {
-				"visible": false
-			},
+			"View 2": {},
 			"View 3": {
 				"visible": false
 			},
@@ -280,8 +271,9 @@
 					"Rect2",
 					"Text"
 				]
-			}
+			},
+			"View 10": {}
 		}
 	},
-	"geometryStamp": 249
+	"geometryStamp": 259
 }

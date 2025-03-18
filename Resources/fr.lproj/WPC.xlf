@@ -2114,7 +2114,7 @@ Souhaitez-vous le remplacer ?</target>
 
       <group resname="DialogAI_Prompt_Tips">
           <trans-unit id="xx" resname="ReturnRawText">
-            <source>Return row text</source>
+            <source>Return raw text</source>
             <target>Renvoyer le texte brut</target>
         </trans-unit>
         <trans-unit id="xx" resname="ReturnStyledText">

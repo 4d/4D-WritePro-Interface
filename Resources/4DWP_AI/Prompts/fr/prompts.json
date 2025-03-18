@@ -15,12 +15,12 @@
 	},
 	{
 		"title": "Traduire la sélection",
-		"prompt": "Pouvez-vous traduite le texte sélectionné en anglais ?",
+		"prompt": "Pouvez-vous traduire le texte sélectionné en anglais ?",
 		"source": "selection"
 	},
 	{
 		"title": "Traduire le document",
-		"prompt": "Pouvez-vous traduite le document entier en anglais ?",
+		"prompt": "Pouvez-vous traduire le document entier en anglais ?",
 		"source": "document"
 	},
 	{

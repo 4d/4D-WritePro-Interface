@@ -4,14 +4,28 @@
 
 .prompt_area {
     color: lightgrey;
-    background-color: rgb(250, 250, 250)
 }
 
 .separator{
-    color: lightgrey;
+    color: rgb(100, 100, 100);
+    background-color: rgb(100, 100, 100);
+    horizontalLineStroke: rgb(100,100,100);
+}
+.iconFrame{
+    color: #E8E8E8;
+    background-color:#E8E8E8;
 }
 
-@media (prefers-color-scheme: dark){
+.fontColor{
+    color: #101010
+}
+
+.background{
+    color: #D8D8D8;
+    background-color: #D8D8D8;
+}
+    
+    @media (prefers-color-scheme: dark){
     .history_area {
         background-color: rgb(100, 100, 100);
     }
@@ -20,7 +34,20 @@
         background-color: rgb(50, 50, 50)
     }
     .separator{
-        color: rgb(100, 100, 100);
+        color: rgb(200, 200, 200);
+        background-color: rgb(200, 200, 200);
+        horizontalLineStroke: rgb(200,200,200);
+    }
+    .iconFrame{
+        color:#A0A0A0;
+        background-color: #707070
+    }
+    .fontColor{
+        color: #F0F0F0
+    }
+    .background{
+        color: #404040;
+        background-color: #404040;
     }
     
 }    

@@ -32,9 +32,8 @@
 					"left": 0,
 					"width": 260,
 					"height": 620,
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 0
+					"borderRadius": 0,
+					"class": "background"
 				},
 				"lbl_Align1": {
 					"type": "text",
@@ -52,9 +51,9 @@
 					"top": 510,
 					"left": 30,
 					"width": 200,
-					"stroke": "#696969",
 					"height": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"STD_verticalAlign": {
 					"type": "dropdown",
@@ -126,9 +125,9 @@
 					"top": 435,
 					"left": 30,
 					"width": 200,
-					"stroke": "#696969",
 					"height": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"btn_visibleEmptyImages": {
 					"type": "checkbox",
@@ -219,9 +218,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"Separator1": {
 					"type": "rectangle",
@@ -229,9 +227,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_paragraph": {
 					"type": "text",
@@ -239,10 +236,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
 					"textAlign": "center",
-					"fontTheme": "additional",
-					"text": ":xliff:Paragraph"
+					"text": ":xliff:Paragraph",
+					"class": "separatorFont"
 				},
 				"lbl_MinWidth": {
 					"type": "text",
@@ -270,10 +266,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
 					"textAlign": "center",
-					"fontTheme": "additional",
-					"text": ":xliff:display"
+					"text": ":xliff:display",
+					"class": "separatorFont"
 				},
 				"lbl_MinWidth2": {
 					"type": "text",
@@ -301,9 +296,8 @@
 					"left": 5,
 					"width": 250,
 					"height": 15,
-					"fill": "#777777",
-					"stroke": "transparent",
-					"borderRadius": 4
+					"borderRadius": 4,
+					"class": "separator"
 				},
 				"sepLbl_paragraph1": {
 					"type": "text",
@@ -311,10 +305,9 @@
 					"left": 20,
 					"width": 220,
 					"height": 13,
-					"stroke": "#FFFFFF",
 					"textAlign": "center",
-					"fontTheme": "additional",
-					"text": ":xliff:Document"
+					"text": ":xliff:Document",
+					"class": "separatorFont"
 				},
 				"btn_pageModePage": {
 					"type": "checkbox",
@@ -478,20 +471,20 @@
 				"Line1": {
 					"type": "line",
 					"top": 200,
-					"left": 40,
+					"left": 30,
 					"width": 200,
-					"stroke": "#696969",
 					"height": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"Line2": {
 					"type": "line",
 					"top": 85,
-					"left": 40,
+					"left": 30,
 					"width": 200,
-					"stroke": "#696969",
 					"height": 0,
-					"startPoint": "topLeft"
+					"startPoint": "topLeft",
+					"class": "separator"
 				},
 				"UserUnitNames": {
 					"type": "dropdown",
@@ -613,27 +606,17 @@
 		"defaultView": "View 1",
 		"views": {
 			"Backgroud": {
-				"selectable": false
+				"objects": [
+					"Background"
+				]
 			},
 			"View 1": {},
-			"Grid": {
-				"visible": false
-			},
-			"View 4": {
-				"visible": false
-			},
-			"View 5": {
-				"visible": false
-			},
-			"View 6": {
-				"visible": false
-			},
-			"View 7": {
-				"visible": false
-			},
-			"View 8": {
-				"visible": false
-			},
+			"Grid": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
 			"Front": {
 				"visible": false,
 				"objects": [
@@ -647,5 +630,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 629
+	"geometryStamp": 670
 }
