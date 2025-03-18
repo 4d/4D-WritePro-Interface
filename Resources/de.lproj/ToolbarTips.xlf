@@ -46,7 +46,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="95" resname="autoCorrection">
           <source>Automatic correction</source>
-          <target state="needs-translation">Autokorrektur</target>
+          <target>Autokorrektur</target>
         </trans-unit>
         <trans-unit id="101" resname="autoDashSubstitutionsEnabled">
           <source>Replace -- with —</source>
@@ -146,11 +146,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="108" resname="enableGrammar">
           <source>Check grammar with spelling</source>
-          <target state="needs-translation">Grammatikprüfung aktivieren</target>
+          <target>Grammatik mit Rechtschreibung prüfen</target>
         </trans-unit>
         <trans-unit id="90" resname="enableSpell">
           <source>Enable spellcheck</source>
-          <target state="needs-translation">Rechtschreibprüfung</target>
+          <target>Rechtschreibprüfung aktivieren</target>
         </trans-unit>
         <trans-unit id="97" resname="enableSubstitution">
           <source>Activate system substitution</source>
@@ -166,7 +166,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="96" resname="forgetIgnore">
           <source>Clear the list of ignored words</source>
-          <target state="needs-translation">Vergessen/Ignorieren</target>
+          <target>Die Liste der ignorierten Wörter löschen</target>
         </trans-unit>
         <trans-unit id="47" resname="freeze4DExpressions">
           <source>Freeze 4D expressions</source>
@@ -174,7 +174,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="91" resname="ignore">
           <source>Ignore the word</source>
-          <target state="needs-translation">Ignorieren</target>
+          <target>Das Wort ignorieren</target>
         </trans-unit>
         <trans-unit id="78" resname="imageBehind">
           <source>Image behind text</source>
@@ -198,7 +198,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="45" resname="insertExpression">
           <source>Insert or edit 4D expression</source>
-          <target state="needs-translation">4D Ausdruck einfügen oder ändern</target>
+          <target>4D Ausdruck einfügen oder ändern</target>
         </trans-unit>
         <trans-unit id="51" resname="insertPageBreak">
           <source>Insert page break</source>
@@ -322,7 +322,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="98" resname="removeSubstitution">
           <source>Ignore system substitution</source>
-          <target state="needs-translation">Entferne Substitutionen</target>
+          <target>Systemsubstitution ignorieren</target>
         </trans-unit>
         <trans-unit id="24" resname="selectAll">
           <source>Select all</source>
@@ -366,7 +366,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="102" resname="spellDialog">
           <source>Show the spell Checking dialog</source>
-          <target state="needs-translation">Rechtschreibdialog</target>
+          <target>Rechtschreibdialog anzeigen</target>
         </trans-unit>
         <trans-unit id="FF84ifbM0/hfJWYZADoijw" resname="strikethrough">
           <source>Strikethrough</source>
@@ -378,7 +378,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="110" resname="substitutions">
           <source>Indicate substitution</source>
-          <target state="needs-translation">Zeige / Verstecke Substitutionen</target>
+          <target>Substitutionen Anzeigen</target>
         </trans-unit>
         <trans-unit id="11" resname="superscript">
           <source>Superscript</source>
