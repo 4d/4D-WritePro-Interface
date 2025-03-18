@@ -207,7 +207,7 @@ This file is distributed under the same license as the product package.-->
           <target>Pokročilé nastavení…</target>
         </trans-unit>
         <trans-unit id="dOtz4kYVKAUCtHPmPtDbdw" resname="PictureAndTextboxes">
-          <source>Picture &amp; textboxes</source>
+          <source>Pictures &amp; text boxes</source>
           <target>Obrázky &amp; textová pole</target>
         </trans-unit>
       </group>
@@ -671,7 +671,7 @@ This file is distributed under the same license as the product package.-->
           <target>Body</target>
         </trans-unit>
         <trans-unit id="5" resname="auto">
-          <source>auto</source>
+          <source>Auto</source>
           <target>Auto</target>
         </trans-unit>
         <trans-unit id="6" resname="pct">
@@ -1251,8 +1251,8 @@ This file is distributed under the same license as the product package.-->
           <target>Nalézt…</target>
         </trans-unit>
         <trans-unit id="260" resname="FullWord">
-          <source>Full word</source>
-          <target>Pouze celá slova (Full word)</target>
+          <source>Full words only</source>
+          <target state="needs-translation">Pouze celá slova (Full word)</target>
         </trans-unit>
         <trans-unit id="259" resname="KeepCharStyle">
           <source>Keep each character style</source>
@@ -1559,16 +1559,16 @@ This file is distributed under the same license as the product package.-->
           <target>Export…</target>
         </trans-unit>
         <trans-unit id="fMOz7wl6MpDwxlU77dYxUA" resname="InfoScreen">
-          <source>Document size will be smaller and the pictures will be compressed into "jpg" or "png"</source>
-          <target>Velikost dokumentu bude menší a obrázky budou komprimovány do "jpg" nebo "png"</target>
+          <source>Document size will be smaller and any pictures will be compressed to "jpg" or "png"</source>
+          <target state="needs-translation">Velikost dokumentu bude menší a obrázky budou komprimovány do "jpg" nebo "png"</target>
         </trans-unit>
         <trans-unit id="SD+Y7dnDCOmvJ94LKms7CQ" resname="InfoPrint">
-          <source>Document size will be bigger and the pictures will be keep their original "codec".</source>
-          <target>Velikost obrázku bude větší a obrázky budou drženy ve svých originálních "codec".</target>
+          <source>Document size will be bigger and any pictures will be keep their original "codec".</source>
+          <target state="needs-translation">Velikost obrázku bude větší a obrázky budou drženy ve svých originálních "codec".</target>
         </trans-unit>
         <trans-unit id="M/by8K2LDXD/OhCDfGnX+Q" resname="InfoFormulas">
           <source>When selected, all formulas will be recomputed before export.
-            
+
 When not selected, only formulas that have never been evaluated will be computed.</source>
           <target>Pokud zvolíte, všechny výrazy budou před exportem přepočítány.
             
@@ -1604,8 +1604,8 @@ Pokud toto nezvolíte, budou vypočítány pouze výrazy, jež ještě nebyly vy
         </trans-unit>
         <trans-unit id="NqxkQgc34W90eQYBmYkkvg" resname="InfoGoogleFonts">
           <source>This option adds a Google font import directive.
- Use this option if the fonts in your document are not cross-platform.</source>
           <target>Tato možnost přidává pokyn pro import písem Google.
+Use this option if the fonts in your document are not cross-platform.</source>
 Tuto možnost použijte, pokud písma v dokumentu nejsou meziplatformová.</target>
         </trans-unit>
         <trans-unit id="KRk/LGj7Cj0IKqbAD1+m2Q" resname="PagesComma">
@@ -1802,12 +1802,12 @@ Chcete ji nahradit?</target>
           <target>Zarovnání</target>
         </trans-unit>
         <trans-unit id="zRIujmEncGp6o57fw558gQ" resname="HorizontalHyphen">
-          <source>Horizontal:</source>
-          <target>Vodorovný:</target>
+          <source>Horizontal alignment:</source>
+          <target state="needs-translation">Vodorovný:</target>
         </trans-unit>
         <trans-unit id="8LsAUIhSSfbN0OJ6Lw53Tg" resname="VerticalHyphen">
-          <source>Vertical:</source>
-          <target>Svislý:</target>
+          <source>Vertical alignment:</source>
+          <target state="needs-translation">Svislý:</target>
         </trans-unit>
         <trans-unit id="OeBtEIyH9SPbvssc58l4CQ" resname="OriginHyphen">
           <source>Origin:</source>
@@ -2060,13 +2060,13 @@ Chcete ji nahradit?</target>
         </trans-unit>
  
         <trans-unit id="xx" resname="JSONparseError">
-          <source>Soubor ":1" is malformed.
+          <source>The file ":1" is malformed.
 (JSON parsing error)</source>
           <target>>Soubor ":1" je zdeformovaný.
 (JSON chyba parsování)</target>
         </trans-unit>
         <trans-unit id="xx" resname="JSONvalidationError">
-          <source>Soubor ":1" is not valid.
+          <source>The file ":1" is not valid.
 (JSON validation error)</source>
           <target>Soubor ":1" je neplatný.
 (JSON chyba validace)</target>

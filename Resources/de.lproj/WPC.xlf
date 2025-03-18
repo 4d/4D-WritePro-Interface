@@ -67,8 +67,8 @@ This file is distributed under the same license as the product package.-->
           <target>Vert. Ausr.:</target>
         </trans-unit>
         <trans-unit id="11" resname="FirstIndentationColon">
-          <source>1st Indentation:</source>
-          <target>1. Einrück.:</target>
+          <source>1st indent.:</source>
+          <target state="needs-translation">1. Einrück.:</target>
         </trans-unit>
         <trans-unit id="13" resname="BackgroundColon">
           <source>Background:</source>
@@ -155,12 +155,12 @@ This file is distributed under the same license as the product package.-->
           <target>Ursprung:</target>
         </trans-unit>
         <trans-unit id="23" resname="HorizontalSize">
-          <source>Horizontal Size:</source>
-          <target>Breite:</target>
+          <source>Hor. Size:</source>
+          <target state="needs-translation">Breite:</target>
         </trans-unit>
         <trans-unit id="24" resname="VerticalSize">
-          <source>Vertical Size:</source>
-          <target>Höhe:</target>
+          <source>Vert. Size:</source>
+          <target state="needs-translation">Höhe:</target>
         </trans-unit>
         <trans-unit id="25" resname="PositionColon">
           <source>Position:</source>
@@ -207,8 +207,8 @@ This file is distributed under the same license as the product package.-->
           <target>Erweiterte Einstellungen…</target>
         </trans-unit>
         <trans-unit id="dOtz4kYVKAUCtHPmPtDbdw" resname="PictureAndTextboxes">
-          <source>Picture &amp; textboxes</source>
-          <target state="new">Bilder &amp; Textfelder</target>
+          <source>Pictures &amp; text boxes</source>
+          <target state="needs-translation">Bilder &amp; Textfelder</target>
         </trans-unit>
       </group>
       <group resname="PaletteFonts">
@@ -241,8 +241,8 @@ This file is distributed under the same license as the product package.-->
           <target>Unterstrichen</target>
         </trans-unit>
         <trans-unit id="34" resname="LineColon">
-          <source>line:</source>
-          <target>Unterstrichen:</target>
+          <source>Line:</source>
+          <target state="needs-translation">Unterstrichen:</target>
         </trans-unit>
         <trans-unit id="35" resname="ColorColon:">
           <source>Color:</source>
@@ -455,8 +455,8 @@ This file is distributed under the same license as the product package.-->
           <target>Höhe:</target>
         </trans-unit>
         <trans-unit id="75" resname="AltTextColon">
-          <source>Alternate text</source>
-          <target>Ersatztext</target>
+          <source>Alternate text:</source>
+          <target state="needs-translation">Ersatztext</target>
         </trans-unit>
         <trans-unit id="76" resname="ZeroAuto">
           <source>(0 = Auto)</source>
@@ -509,8 +509,8 @@ This file is distributed under the same license as the product package.-->
           <target>Neue Tabellierung</target>
         </trans-unit>
         <trans-unit id="84" resname="DefaultLeadingChar">
-          <source>Default leading char.</source>
-          <target>Standard Füllzeichen:</target>
+          <source>Default leading char.:</source>
+          <target state="needs-translation">Standard Füllzeichen:</target>
         </trans-unit>
         <trans-unit id="85" resname="LeadingChar">
           <source>Leading char.</source>
@@ -599,19 +599,19 @@ This file is distributed under the same license as the product package.-->
           <target>Importieren…</target>
         </trans-unit>
         <trans-unit id="99" resname="ExportAs">
-          <source>Export as</source>
-          <target>Exportieren als:</target>
+          <source>Export as:</source>
+          <target state="needs-translation">Exportieren als:</target>
         </trans-unit>
         <trans-unit id="100" resname="HtmlEllipsis">
           <source>HTML…</source>
           <target>HTML…</target>
         </trans-unit>
         <trans-unit id="101" resname="4DWriteProEllipsis">
-          <source>4D WritePro…</source>
+          <source>4D Write Pro…</source>
           <target>4D Write Pro…</target>
         </trans-unit>
         <trans-unit id="UxW87OWPGPdnNHB/00tm4w" resname="WordEllipsis">
-          <source>Word…</source>
+          <source>Microsoft Word…</source>
           <target>Microsoft Word…</target>
         </trans-unit>
         <trans-unit id="azodlWWrSTDq7NsEsKhs2w" resname="PdfEllipsis">
@@ -667,12 +667,12 @@ This file is distributed under the same license as the product package.-->
           <target>Zoll</target>
         </trans-unit>
         <trans-unit id="4" resname="pt">
-          <source>pt</source>
-          <target>pt</target>
+          <source>Points</source>
+          <target state="needs-translation">pt</target>
         </trans-unit>
         <trans-unit id="5" resname="auto">
-          <source>auto</source>
           <target>Auto</target>
+          <source>Auto</source>
         </trans-unit>
         <trans-unit id="6" resname="pct">
           <source>%</source>
@@ -1247,12 +1247,12 @@ This file is distributed under the same license as the product package.-->
           <target>Vorherige</target>
         </trans-unit>
         <trans-unit id="262" resname="FindElipsis">
-          <source>Find/Replace</source>
+          <source>Find…</source>
           <target>Suchen…</target>
         </trans-unit>
         <trans-unit id="260" resname="FullWord">
-          <source>Full word</source>
-          <target>Nur ganzes Wort</target>
+          <source>Full words only</source>
+          <target state="needs-translation">Nur ganzes Wort</target>
         </trans-unit>
         <trans-unit id="259" resname="KeepCharStyle">
           <source>Keep each character style</source>
@@ -1295,7 +1295,7 @@ This file is distributed under the same license as the product package.-->
           <target>Akzent Sensitive</target>
         </trans-unit>
         <trans-unit id="mWfZe71n2prS1bwT5Kl/7Q" resname="KanaSensitive">
-          <source>kana sensitive</source>
+          <source>Kana sensitive</source>
           <target>Kana Sensitive</target>
         </trans-unit>
         <trans-unit id="MXimbql17Fcbqrr2WKgPsg" resname="WidthSensitive">
@@ -1323,8 +1323,8 @@ This file is distributed under the same license as the product package.-->
           <target>Mit Kopf- und Fußteilen</target>
         </trans-unit>
         <trans-unit id="pZv3LaV+16Uw8EoSBOzxLA" resname="KeyboardBased">
-          <source>Based on '&lt;1&gt;' keyboard </source>
-          <target>Suche basiert auf '&lt;1&gt;' Tastatur </target>
+          <source>Search based on '&lt;1&gt;' keyboard </source>
+          <target state="needs-translation">Suche basiert auf '&lt;1&gt;' Tastatur </target>
         </trans-unit>
         <trans-unit id="4TFSNZU8Z6IMoq+NekNNIg" resname="OccurencesColon">
           <source>Occurences:</source>
@@ -1345,12 +1345,12 @@ This file is distributed under the same license as the product package.-->
           <target>Darunter einfügen</target>
         </trans-unit>
         <trans-unit id="279" resname="InsertLeft">
-          <source>Insert on the left</source>
-          <target>Links einfügen</target>
+          <source>Insert to the left</source>
+          <target state="needs-translation">Links einfügen</target>
         </trans-unit>
         <trans-unit id="280" resname="InsertRight">
-          <source>Insert on the right</source>
-          <target>Rechts einfügen</target>
+          <source>Insert to the right</source>
+          <target state="needs-translation">Rechts einfügen</target>
         </trans-unit>
         <trans-unit id="281" resname="DeleteRow">
           <source>Delete row</source>
@@ -1523,7 +1523,7 @@ This file is distributed under the same license as the product package.-->
           <target>Hauptteil</target>
         </trans-unit>   
         <trans-unit id="tMZO5KyH1Qe77I7HSLR6og" resname="htmlWysiwyg">
-          <source>HTML "WYSIWIG"</source>
+          <source>HTML "WYSIWYG"</source>
           <target>HTML "WYSIWYG"</target>
         </trans-unit>
         <trans-unit id="7yp1Rkz6KWEs2pehpSqJoA" resname="recomputeFormulas">
@@ -1559,12 +1559,12 @@ This file is distributed under the same license as the product package.-->
           <target>Export…</target>
         </trans-unit>
         <trans-unit id="fMOz7wl6MpDwxlU77dYxUA" resname="InfoScreen">
-          <source>The document size will be smaller and the pictures will be compressed into "jpg" or "png"</source>
-          <target>Die Größe des Dokuments wird kleiner und Bilder werden als "jpg" oder "png" komprimiert</target>
+          <source>Document size will be smaller and any pictures will be compressed to "jpg" or "png"</source>
+          <target state="needs-translation">Die Größe des Dokuments wird kleiner und Bilder werden als "jpg" oder "png" komprimiert</target>
         </trans-unit>
         <trans-unit id="SD+Y7dnDCOmvJ94LKms7CQ" resname="InfoPrint">
-          <source>The document size will be bigger and the pictures will be keep their original "codec".</source>
-          <target>Die Größe des Dokuments wird größer und Bilder behalten ihr Format.</target>
+          <source>Document size will be bigger and any pictures will be keep their original "codec".</source>
+          <target state="needs-translation">Die Größe des Dokuments wird größer und Bilder behalten ihr Format.</target>
         </trans-unit>
         <trans-unit id="M/by8K2LDXD/OhCDfGnX+Q" resname="InfoFormulas">
           <source>When selected, all formulas will be recomputed before export.
@@ -1599,8 +1599,8 @@ Ansonsten werden nur Formeln berechnet, die noch nie ausgewertet wurden.</target
           <target>Exportiere Bilder des Dokuments</target>
         </trans-unit>
         <trans-unit id="ftw1H7xGhhRTkqQ2O2LLGg" resname="EnableGoogleFonts">
-          <source>Import Google fonts</source>
-          <target>Aktiviere Google-Schriften Ersetzung</target>
+          <source>Enable Google fonts substitution</source>
+          <target state="needs-translation">Aktiviere Google-Schriften Ersetzung</target>
         </trans-unit>
         <trans-unit id="NqxkQgc34W90eQYBmYkkvg" resname="InfoGoogleFonts">
           <source>This option adds a Google font import directive.
@@ -1609,8 +1609,8 @@ Use this option if the fonts in your document are not cross-platform.</source>
 Verwenden Sie diese Option falls Sie Schriften im Dokument benutzen, die nicht Cross-Plattform verfügbar sind.</target>
         </trans-unit>
         <trans-unit id="KRk/LGj7Cj0IKqbAD1+m2Q" resname="PagesComma">
-          <source>Page number:</source>
-          <target>Seiten:</target>
+          <source>Pages:</source>
+          <target state="needs-translation">Seiten:</target>
         </trans-unit>
         <trans-unit id="9rxyF4rWKl6cSTgcq13Plw" resname="ConfirmImageFolder">
           <source>An "Images" folder already exists there!
@@ -1674,16 +1674,16 @@ Soll er ersetzt werden?</target>
           <target>Dokument löschen</target>
         </trans-unit>
         <trans-unit id="FlHVoUXe7QVKBS23F0ny5Q" resname="BeforeDocument">
-          <source>At the beginning of the document</source>
-          <target>am Anfang</target>
+          <source>at the beginning</source>
+          <target state="needs-translation">am Anfang</target>
         </trans-unit>
         <trans-unit id="v2qONMZHKzxZtNap9RsfFw" resname="AfterDocument">
-          <source>At the end of the document</source>
-          <target>am Ende</target>
+          <source>at the end</source>
+          <target state="needs-translation">am Ende</target>
         </trans-unit>
         <trans-unit id="ewuKg1WiWojJOtdoz3wpqg" resname="ReplaceSelection">
-          <source>Replace the current selection</source>
-          <target>an aktueller Kursor-Position</target>
+          <source>at cursor position</source>
+          <target state="needs-translation">an aktueller Kursor-Position</target>
         </trans-unit>
         <trans-unit id="kRahCITb8zTZzcaUFp2q0Q" resname="ImportOptions">
           <source>Import options</source>
@@ -1702,24 +1702,24 @@ Soll er ersetzt werden?</target>
           <target>Vor dem letzten Fußteil (wenn vorhanden)</target>
         </trans-unit>
         <trans-unit id="ERLyD4OELj5tXGKqcoTmNQ" resname="InfoReplaceSelection">
-          <source>(or insert at the cursor position)</source>
-          <target>(Oder an aktueller Kursorposition einfügen)</target>
+          <source>(or replace current selection)</source>
+          <target state="needs-translation">(Oder an aktueller Kursorposition einfügen)</target>
         </trans-unit>
         <trans-unit id="fUY1y/mfq8YIayhWmfKZeg" resname="SelectFile">
           <source>Select file to import…</source>
           <target>Dokument für Import auswählen…</target>
         </trans-unit>
         <trans-unit id="ceXUiqKwcVAUS6ay3ug5xQ" resname="ReplaceDocument">
-          <source>Replace document</source>
-          <target>Aktuelles Dokument ersetzen</target>
+          <source>Replace the current document</source>
+          <target state="needs-translation">Aktuelles Dokument ersetzen</target>
         </trans-unit>
         <trans-unit id="NFtFcqXg4EZ1lxL/0wtdpw" resname="InfoReplaceDocument">
           <source>The full document will be replaced including headers and footers.</source>
           <target>Das gesamte Dokument wird inklusive Kopf-/Fußteile ersetzt.</target>
         </trans-unit>
         <trans-unit id="V9QRc48mupZaPsRVherBRQ" resname="InfoNotImported">
-          <source>Note: The headers, footers and anchored pictures will not be imported.</source>
-          <target>Kopfteile/Fußteile und feststehende Bilder werden nicht importiert.</target>
+          <source>The headers, footers and anchored pictures will not be imported.</source>
+          <target state="needs-translation">Kopfteile/Fußteile und feststehende Bilder werden nicht importiert.</target>
         </trans-unit>
         <trans-unit id="n4aL7HhXL+o5ruwGL/guAQ" resname="InsertInTheDocument">
           <source>Insert in the document…</source>
@@ -1770,12 +1770,12 @@ Soll er ersetzt werden?</target>
       </group>
       <group resname="DialogPictureSettings">
         <trans-unit id="nyFYGQNHQerfVfW24a7oeQ" resname="MarginsHyphen">
-          <source>Margins</source>
+          <source>Margins:</source>
           <target>Ränder:</target>
         </trans-unit>
         <trans-unit id="wL0rIpQnidAkY6wndHrvDg" resname="PaddingHyphen">
-          <source>Padding</source>
-          <target>Abstand:</target>
+          <source>Padding:</source>
+          <target state="needs-translation">Abstand:</target>
         </trans-unit>
         <trans-unit id="PiyV+E6B2BOy4GNsS6PbpQ" resname="FormulaAndURL">
           <source>Formula and URL</source>
@@ -1790,7 +1790,7 @@ Soll er ersetzt werden?</target>
           <target>URL:</target>
         </trans-unit>
         <trans-unit id="tX1lPAf1vFI1IN4iTPThbQ" resname="AlternateTextHyphen">
-          <source>Alternate text</source>
+          <source>Alternate text:</source>
           <target>Alternativer Text:</target>
         </trans-unit>
         <trans-unit id="lUrF6H2gRySYCSMqQIxzdA" resname="PagesAndSections">
@@ -1802,12 +1802,12 @@ Soll er ersetzt werden?</target>
           <target>Ausrichtungen</target>
         </trans-unit>
         <trans-unit id="zRIujmEncGp6o57fw558gQ" resname="HorizontalHyphen">
-          <source>Horizontal:</source>
-          <target>Horizontal:</target>
+          <source>Horizontal alignment:</source>
+          <target state="needs-translation">Horizontal:</target>
         </trans-unit>
         <trans-unit id="8LsAUIhSSfbN0OJ6Lw53Tg" resname="VerticalHyphen">
-          <source>Vertical:</source>
-          <target>Vertikal:</target>
+          <source>Vertical alignment:</source>
+          <target state="needs-translation">Vertikal:</target>
         </trans-unit>
         <trans-unit id="OeBtEIyH9SPbvssc58l4CQ" resname="OriginHyphen">
           <source>Origin:</source>
@@ -1969,32 +1969,32 @@ Soll er ersetzt werden?</target>
           <target>Themen:</target>
         </trans-unit>
         <trans-unit id="xx" resname="ColumnsColon">
-          <source>Columns</source>
-          <target>Spalten:</target>
+          <source>Columns:</source>
+          <target state="needs-translation">Spalten:</target>
         </trans-unit>          
         <trans-unit id="xx" resname="RowsColon">
-          <source>Rows</source>
-          <target>Zeilen:</target>
+          <source>Rows:</source>
+          <target state="needs-translation">Zeilen:</target>
         </trans-unit>
         <trans-unit id="xx" resname="DisplayColon">
-          <source>Display</source>
-          <target>Anzeigen:</target>
+          <source>Display:</source>
+          <target state="needs-translation">Anzeigen:</target>
         </trans-unit>            
         <trans-unit id="xx" resname="HeadersColon">
           <source>Header rows:</source>
           <target>Kopfzeilen:</target>
         </trans-unit>
         <trans-unit id="xx" resname="BreaksAboveColon">
-          <source>Breaks above rows:</source>
-          <target>Zwischensummen über den Zeilen:</target>
+          <source>Summary rows above:</source>
+          <target state="needs-translation">Zwischensummen über den Zeilen:</target>
         </trans-unit>
         <trans-unit id="xx" resname="DataRowColon">
           <source>Data row:</source>
           <target>Datenzeilen:</target>
         </trans-unit>
         <trans-unit id="xx" resname="BreaksBelowColon">
-          <source>Breaks below rows:</source>
-          <target>Zwischensumme unter den Zeilen:</target>
+          <source>Summary rows below:</source>
+          <target state="needs-translation">Zwischensumme unter den Zeilen:</target>
         </trans-unit>
         <trans-unit id="xx" resname="CarryOverColon">
           <source>Carry over row:</source>
@@ -2031,8 +2031,8 @@ Soll er ersetzt werden?</target>
         </trans-unit>
 
         <trans-unit id="xx" resname="InfoMain">
-          <source>This dialog allows you to insert a table in your document, the contents of which will be based on the database data.</source>
-          <target>Mit diesem Dialog können Sie eine Tabelle in Ihr Dokument einfügen, deren Inhalt auf den Daten der Datenbank basiert.</target>
+          <source>This dialog box allows you to insert a table in your document, the contents of which will be based on database data.</source>
+          <target state="needs-translation">Mit diesem Dialog können Sie eine Tabelle in Ihr Dokument einfügen, deren Inhalt auf den Daten der Datenbank basiert.</target>
         </trans-unit>
         <trans-unit id="xx" resname="InfoContextualClic">
           <source>Use the contextual menu to insert additional formulas into the table.</source>
@@ -2055,8 +2055,8 @@ Soll er ersetzt werden?</target>
           <target>Die Übertragszeile wird vor jedem Seitenumbruch eingefügt (falls vorhanden)..</target>
         </trans-unit>
         <trans-unit id="xx" resname="InfoExtraRows">
-          <source>The extra rows are inserted at the end of the table.</source>
-          <target>Die zusätzlichen Zeilen werden am Ende der Tabelle hinzugefügt.</target>
+          <source>The extra rows are added at the end of the table.</source>
+          <target state="needs-translation">Die zusätzlichen Zeilen werden am Ende der Tabelle hinzugefügt.</target>
         </trans-unit>
 
          <trans-unit id="xx" resname="JSONparseError">
@@ -2066,9 +2066,9 @@ Soll er ersetzt werden?</target>
 (JSON Parsing Error)</target>
         </trans-unit>
         <trans-unit id="xx" resname="JSONvalidationError">
-          <source>The file ":1" is malformed.
-(JSON parsing error)</source>
-          <target>Die Datei ":1" ist fehlerhaft.
+          <source>The file ":1" is not valid.
+(JSON validation error)</source>
+          <target state="needs-translation">Die Datei ":1" ist fehlerhaft.
 (JSON Validation Error)</target>
         </trans-unit>
         
@@ -2215,8 +2215,8 @@ Soll er ersetzt werden?</target>
           <target>Umbruchszeile entfernen</target>
         </trans-unit>
         <trans-unit id="Menu_SetTableBreak_3" resname="EnterBreakName">
-          <source>Enter the name of the attribute to use as break</source>
-          <target>Geben Sie den Ausdruck ein, um den Umbruch festzulegen:</target>
+          <source>Enter the expression to use as break…</source>
+          <target state="needs-translation">Geben Sie den Ausdruck ein, um den Umbruch festzulegen:</target>
         </trans-unit>
         <trans-unit id="Menu_SetTableBreak_4" resname="SetBreak">
           <source>Set</source>
