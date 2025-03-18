@@ -1604,8 +1604,8 @@ Pokud toto nezvolíte, budou vypočítány pouze výrazy, jež ještě nebyly vy
         </trans-unit>
         <trans-unit id="NqxkQgc34W90eQYBmYkkvg" resname="InfoGoogleFonts">
           <source>This option adds a Google font import directive.
-          <target>Tato možnost přidává pokyn pro import písem Google.
 Use this option if the fonts in your document are not cross-platform.</source>
+          <target>Tato možnost přidává pokyn pro import písem Google.
 Tuto možnost použijte, pokud písma v dokumentu nejsou meziplatformová.</target>
         </trans-unit>
         <trans-unit id="KRk/LGj7Cj0IKqbAD1+m2Q" resname="PagesComma">
