@@ -145,7 +145,7 @@ This file is distributed under the same license as the product package.-->
           <target>Couper</target>
         </trans-unit>
         <trans-unit id="108" resname="enableGrammar">
-          <source>Check grammar</source>
+          <source>Check grammar with spelling</source>
           <target>Activer la correction grammaticale</target>
         </trans-unit>
         <trans-unit id="90" resname="enableSpell">

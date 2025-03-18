@@ -1967,7 +1967,7 @@ Souhaitez-vous le remplacer ?</target>
           <target>Modèles :</target>
         </trans-unit>
         <trans-unit id="xx" resname="ThemesColon">
-          <source>Themes</source>
+          <source>Themes:</source>
           <target>Thèmes :</target>
         </trans-unit>
         <trans-unit id="xx" resname="ColumnsColon">
