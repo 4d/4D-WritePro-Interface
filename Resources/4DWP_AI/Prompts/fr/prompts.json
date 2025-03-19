@@ -27,6 +27,19 @@
 		"title": "-"
 	},
 	{
+		"title": "Reformuler la sélection",
+		"prompt": "Pouvez-vous m'aider à améliorer le texte sélectionné ? J'aimerais qu'il soit plus clair et plus attrayant.",
+		"source": "selection"
+	},
+	{
+		"title": "Reformuler le document",
+		"prompt": "Pouvez-vous m'aider à améliorer le document entier ? J'aimerais qu'il soit plus clair et plus attrayant.",
+		"source": "document"
+	},
+	{
+		"title": "-"
+	},
+	{
 		"title": "Vérifier la sélection",
 		"prompt": "Pouvez-vous vérifier la grammaire du texte sélectionné et me signaler les erreurs ?",
 		"source": "selection"
@@ -35,5 +48,8 @@
 		"title": "Vérifier le document",
 		"prompt": "Pouvez-vous vérifier la grammaire du document entier et me signaler les erreurs ?",
 		"source": "document"
+	},
+	{
+		"title": "-"
 	}
 ]

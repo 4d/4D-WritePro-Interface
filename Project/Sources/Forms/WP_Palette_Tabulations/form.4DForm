@@ -42,7 +42,7 @@
 					"left": 10,
 					"width": 70,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:TypeColon"
 				},
@@ -182,7 +182,7 @@
 					"left": 0,
 					"width": 160,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:DefaultLeadingChar"
 				},
@@ -192,7 +192,7 @@
 					"left": 172,
 					"width": 53,
 					"height": 14,
-					"class": "Palette",
+					"class": "widget",
 					"textAlign": "center",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -223,6 +223,8 @@
 						"onDataChange",
 						"onSelectionChange"
 					],
+					"class": "separator",
+					"verticalLineStroke": "transparent",
 					"columns": [
 						{
 							"name": "lb_offsets",
@@ -316,7 +318,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:defaultTabColon"
 				},
@@ -327,7 +329,7 @@
 					"width": 53,
 					"height": 14,
 					"dataSourceTypeHint": "number",
-					"class": "Palette",
+					"class": "widget",
 					"contextMenu": "none",
 					"dragging": "none",
 					"dropping": "custom",
@@ -507,5 +509,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 117
+	"geometryStamp": 129
 }

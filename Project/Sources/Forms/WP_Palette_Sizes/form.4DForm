@@ -41,7 +41,7 @@
 					"left": 10,
 					"width": 100,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:VertAlignColon",
 					"fontTheme": "additional"
@@ -62,7 +62,7 @@
 					"width": 120,
 					"height": 18,
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"events": [
 						"onDataChange"
 					],
@@ -87,7 +87,7 @@
 					"width": 50,
 					"height": 14,
 					"dataSourceTypeHint": "number",
-					"class": "Palette",
+					"class": "widget",
 					"textAlign": "right",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -106,7 +106,7 @@
 					"left": 10,
 					"width": 100,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:minHeightColon"
 				},
@@ -118,7 +118,8 @@
 					"height": 13,
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": ":xliff:ZeroAuto"
+					"text": ":xliff:ZeroAuto",
+					"class": "label"
 				},
 				"Line": {
 					"type": "line",
@@ -149,7 +150,7 @@
 					"width": 150,
 					"height": 14,
 					"text": ":xliff:SetWidth",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"radioGroup": "Group10",
 					"method": "ObjectMethods/rbWidthOption1.4dm",
@@ -164,7 +165,7 @@
 					"width": 150,
 					"height": 14,
 					"text": ":xliff:VariableWidth",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"radioGroup": "Group10",
 					"method": "ObjectMethods/rbWidthOption2.4dm",
@@ -179,7 +180,7 @@
 					"width": 50,
 					"height": 14,
 					"dataSourceTypeHint": "number",
-					"class": "Palette",
+					"class": "widget",
 					"textAlign": "right",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -199,7 +200,7 @@
 					"width": 50,
 					"height": 14,
 					"dataSourceTypeHint": "number",
-					"class": "Palette",
+					"class": "widget",
 					"textAlign": "right",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -246,7 +247,7 @@
 					"left": 10,
 					"width": 100,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:minWidthColon"
 				},
@@ -258,7 +259,8 @@
 					"height": 13,
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": ":xliff:ZeroAuto"
+					"text": ":xliff:ZeroAuto",
+					"class": "label"
 				},
 				"sepLbl_Picture1": {
 					"type": "text",
@@ -276,7 +278,7 @@
 					"left": 10,
 					"width": 100,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:WidthColon"
 				},
@@ -286,7 +288,7 @@
 					"left": 0,
 					"width": 110,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:UnitColon"
 				},
@@ -356,7 +358,7 @@
 					"left": 0,
 					"width": 110,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:modeHyphen"
 				},
@@ -366,7 +368,7 @@
 					"left": 0,
 					"width": 110,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:elementsHyphen"
 				},
@@ -443,7 +445,8 @@
 					"height": 18,
 					"tooltip": ":xliff:zoom",
 					"focusable": false,
-					"action": "zoom"
+					"action": "zoom",
+					"class": "widget"
 				},
 				"btn_visibleVerticalRuler": {
 					"type": "checkbox",
@@ -464,7 +467,7 @@
 					"left": -1,
 					"width": 110,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:zoomHyphen"
 				},
@@ -494,7 +497,7 @@
 					"height": 18,
 					"focusable": false,
 					"action": "userUnit",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"btn_alignTop": {
 					"type": "checkbox",
@@ -605,11 +608,7 @@
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
-			"Backgroud": {
-				"objects": [
-					"Background"
-				]
-			},
+			"Backgroud": {},
 			"View 1": {},
 			"Grid": {},
 			"View 4": {},
@@ -630,5 +629,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 670
+	"geometryStamp": 706
 }

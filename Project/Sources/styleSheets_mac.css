@@ -14,7 +14,12 @@
 	font-size: 11px;
 }
 
-.Palette {
+
+.label {
+	font-family: System Font Regular;
+	font-size: 11px;
+}
+.widget {
 	font-family: System Font Regular;
 	font-size: 11px;
 }

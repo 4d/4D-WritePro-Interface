@@ -45,7 +45,7 @@
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.keyboardBased",
 					"text": ":xliff:KeyboardBased",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -78,7 +78,7 @@
 					"height": 17,
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.replace",
-					"class": "Palette",
+					"class": "widget",
 					"dragging": "none",
 					"dropping": "custom",
 					"method": "ObjectMethods/inputReplace.4dm",
@@ -142,7 +142,7 @@
 					"height": 18,
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.find",
-					"class": "Palette",
+					"class": "widget",
 					"dragging": "none",
 					"dropping": "custom",
 					"method": "ObjectMethods/inputFind.4dm",
@@ -166,7 +166,7 @@
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.caseSensitive",
 					"text": ":xliff:CaseSensitive",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -182,7 +182,7 @@
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.fullWord",
 					"text": ":xliff:FullWord",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -197,7 +197,7 @@
 					"height": 20,
 					"sizingX": "fixed",
 					"text": ":xliff:ReplaceAll",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"method": "ObjectMethods/btnReplaceAll.4dm",
 					"events": [
@@ -235,7 +235,7 @@
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.keepCharStyle",
 					"text": ":xliff:KeepCharStyle",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -249,7 +249,7 @@
 					"height": 20,
 					"sizingX": "fixed",
 					"text": ":xliff:ReplaceAndNext",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"method": "ObjectMethods/btnReplaceSingleAndFind.4dm",
 					"events": [
@@ -264,7 +264,7 @@
 					"height": 20,
 					"sizingX": "fixed",
 					"text": ":xliff:Replace",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"method": "ObjectMethods/btnReplaceSingle.4dm",
 					"events": [
@@ -280,7 +280,7 @@
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.diacriticSensitive",
 					"text": ":xliff:AccentSensitive",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -296,7 +296,7 @@
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.kanaSensitive",
 					"text": ":xliff:KanaSensitive",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -312,7 +312,7 @@
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.widthSensitive",
 					"text": ":xliff:WidthSensitive",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -337,7 +337,7 @@
 					"sizingX": "fixed",
 					"dataSource": "oForm.FR.includeHeadersAndFooters",
 					"text": ":xliff:IncludeHeadersAndFooters",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -490,7 +490,7 @@
 			}
 		}
 	},
-	"geometryStamp": 1976,
+	"geometryStamp": 2002,
 	"$4d": {
 		"version": "1",
 		"kind": "form"

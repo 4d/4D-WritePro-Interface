@@ -52,7 +52,7 @@
 					"tooltip": ":xliff:lists",
 					"focusable": false,
 					"action": "listStyleType",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"IconBgnd14": {
 					"type": "rectangle",
@@ -174,7 +174,8 @@
 					"method": "ObjectMethods/textIndentInput.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"class": "widget"
 				},
 				"rb1": {
 					"type": "radio",
@@ -210,7 +211,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:HorAlignColon",
 					"fontTheme": "additional"
@@ -221,7 +222,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:BackgroundColon",
 					"fontTheme": "additional"
@@ -232,7 +233,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:FirstIndentationColon",
 					"fontTheme": "additional"
@@ -253,7 +254,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:StyleColon0",
 					"fontTheme": "additional"
@@ -291,7 +292,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:LineHeightColon",
 					"fontTheme": "additional"
@@ -395,7 +396,8 @@
 					"method": "ObjectMethods/TextLineHeightUnit.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"class": "widget"
 				},
 				"IconBgnd11": {
 					"type": "rectangle",
@@ -460,7 +462,8 @@
 					"method": "ObjectMethods/textLineHeightInput.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"class": "widget"
 				},
 				"IconBgnd12": {
 					"type": "rectangle",
@@ -655,7 +658,8 @@
 					"height": 19,
 					"tooltip": ":xliff:columnsCount",
 					"focusable": false,
-					"action": "section/columnCount"
+					"action": "section/columnCount",
+					"class": "widget"
 				},
 				"Separator5": {
 					"type": "rectangle",
@@ -682,10 +686,9 @@
 					"left": 205,
 					"width": 35,
 					"height": 32,
-					"fill": "#FFFFFF",
-					"stroke": "#c0c0c0",
 					"borderRadius": 0,
-					"visibility": "hidden"
+					"visibility": "hidden",
+					"class": "iconFrame"
 				},
 				"btn_etc1": {
 					"type": "button",
@@ -712,7 +715,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:numberHiphen",
 					"fontTheme": "additional"
@@ -726,7 +729,7 @@
 					"tooltip": ":xliff:marginTop",
 					"focusable": false,
 					"action": "paragraph/marginTop",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"popMarginBottom": {
 					"type": "dropdown",
@@ -737,7 +740,7 @@
 					"tooltip": ":xliff:marginBottom",
 					"focusable": false,
 					"action": "paragraph/marginBottom",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"popMarginLeft": {
 					"type": "dropdown",
@@ -748,7 +751,7 @@
 					"tooltip": ":xliff:marginLeft",
 					"focusable": false,
 					"action": "paragraph/marginLeft",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"popMarginRight": {
 					"type": "dropdown",
@@ -759,7 +762,7 @@
 					"tooltip": ":xliff:marginRight",
 					"focusable": false,
 					"action": "paragraph/marginRight",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"popMarginAll": {
 					"type": "dropdown",
@@ -769,7 +772,7 @@
 					"height": 18,
 					"focusable": false,
 					"action": "paragraph/margin",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"Popup_applyMarginsTo": {
 					"type": "dropdown",
@@ -783,7 +786,7 @@
 					"events": [
 						"onDataChange"
 					],
-					"class": "Palette"
+					"class": "widget"
 				},
 				"lbl_Text": {
 					"type": "text",
@@ -793,7 +796,8 @@
 					"height": 13,
 					"textAlign": "right",
 					"fontTheme": "additional",
-					"text": ":xliff:ApplyToColon"
+					"text": ":xliff:ApplyToColon",
+					"class": "label"
 				},
 				"lbl_Text1": {
 					"type": "text",
@@ -803,7 +807,8 @@
 					"height": 13,
 					"textAlign": "right",
 					"fontTheme": "additional",
-					"text": ":xliff:globalColon"
+					"text": ":xliff:globalColon",
+					"class": "label"
 				},
 				"Text6": {
 					"type": "text",
@@ -813,7 +818,8 @@
 					"width": 66,
 					"height": 13,
 					"fontTheme": "additional",
-					"textAlign": "right"
+					"textAlign": "right",
+					"class": "label"
 				},
 				"Static Picture1": {
 					"type": "picture",
@@ -1083,31 +1089,6 @@
 					"height": 20,
 					"visibility": "hidden"
 				},
-				"Rect2": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 620,
-					"visibility": "hidden",
-					"fill": "#CCCCCC",
-					"stroke": "transparent",
-					"borderRadius": 8
-				},
-				"Text": {
-					"type": "text",
-					"top": 20,
-					"left": 10,
-					"width": 40,
-					"height": 528,
-					"visibility": "hidden",
-					"stroke": "#AAAAAA",
-					"textAlign": "right",
-					"fontFamily": ".Helvetica Neue DeskInterface",
-					"fontSize": 28,
-					"textAngle": 270,
-					"text": "4D WritePro Alignments"
-				},
 				"IconBgnd1": {
 					"type": "rectangle",
 					"top": 498,
@@ -1135,6 +1116,31 @@
 					],
 					"tooltip": ":xliff:DeleteOrResetSections",
 					"method": "ObjectMethods/btn_removeSection.4dm"
+				},
+				"Rect2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"visibility": "hidden",
+					"fill": "#CCCCCC",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Text": {
+					"type": "text",
+					"top": 20,
+					"left": 10,
+					"width": 40,
+					"height": 528,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 28,
+					"textAngle": 270,
+					"text": "4D WritePro Alignments"
 				}
 			},
 			"entryOrder": [
@@ -1246,5 +1252,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 3562
+	"geometryStamp": 3630
 }

@@ -9,7 +9,7 @@
 .separator{
     color: rgb(100, 100, 100);
     background-color: rgb(100, 100, 100);
-    horizontalLineStroke: rgb(100,100,100);
+    horizontalLineStroke: #C8C8C8;
 }
 .iconFrame{
     color: #E8E8E8;
@@ -24,7 +24,16 @@
     color: #D8D8D8;
     background-color: #D8D8D8;
 }
-    
+
+.enabledTab{
+    color: #101010;
+    background-color: #D8D8D8;
+}
+.disabledTab{
+    color: #383838;
+    background-color: #B0B0B0;
+}
+
     @media (prefers-color-scheme: dark){
     .history_area {
         background-color: rgb(100, 100, 100);
@@ -36,7 +45,7 @@
     .separator{
         color: rgb(200, 200, 200);
         background-color: rgb(200, 200, 200);
-        horizontalLineStroke: rgb(200,200,200);
+        horizontalLineStroke: #282828;
     }
     .iconFrame{
         color:#A0A0A0;
@@ -49,5 +58,12 @@
         color: #404040;
         background-color: #404040;
     }
-    
+    .enabledTab{
+        color: #F0F0F0;
+        background-color: #404040;
+    }
+    .disabledTab{
+        color: #A0A0A0;
+        background-color: #303030;
+    }
 }    

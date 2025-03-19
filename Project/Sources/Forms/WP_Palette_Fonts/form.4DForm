@@ -62,7 +62,7 @@
 					"height": 18,
 					"dataSource": "WP_FontFamilly",
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"method": "ObjectMethods/fontFamilly.4dm",
 					"events": [
 						"onDataChange"
@@ -76,7 +76,7 @@
 					"height": 18,
 					"dataSource": "WP_fontStyle",
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"method": "ObjectMethods/fontStyle.4dm",
 					"events": [
 						"onDataChange"
@@ -163,7 +163,7 @@
 					"height": 16,
 					"dataSource": "oForm.cbBold",
 					"text": ":xliff:Bold",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"threeState": true,
 					"events": [],
@@ -182,7 +182,7 @@
 					"height": 16,
 					"dataSource": "oForm.cbItalic",
 					"text": ":xliff:Italic",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"threeState": true,
 					"events": [],
@@ -200,7 +200,7 @@
 					"width": 140,
 					"height": 16,
 					"text": ":xliff:Linethrough",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"threeState": true,
 					"events": [],
@@ -234,7 +234,7 @@
 					"width": 140,
 					"height": 16,
 					"text": ":xliff:Underline",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"threeState": true,
 					"events": [],
@@ -343,7 +343,7 @@
 					"height": 14,
 					"dataSource": "oForm.fontSize",
 					"dataSourceTypeHint": "number",
-					"class": "Palette",
+					"class": "widget",
 					"contextMenu": "none",
 					"numberFormat": "######0 pt",
 					"dragging": "none",
@@ -361,7 +361,7 @@
 					"height": 14,
 					"dataSource": "oForm.shadowOffset",
 					"dataSourceTypeHint": "number",
-					"class": "Palette",
+					"class": "widget",
 					"contextMenu": "none",
 					"numberFormat": "######0 pt",
 					"dragging": "none",
@@ -377,7 +377,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:FontColon"
 				},
@@ -387,7 +387,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:ColorColon"
 				},
@@ -397,7 +397,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:SizeColon"
 				},
@@ -407,7 +407,7 @@
 					"left": 15,
 					"width": 115,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:LineColon"
 				},
@@ -417,7 +417,7 @@
 					"left": 15,
 					"width": 115,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:ColorColon"
 				},
@@ -427,7 +427,7 @@
 					"left": 65,
 					"width": 65,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:ColorColon"
 				},
@@ -437,7 +437,7 @@
 					"left": 65,
 					"width": 65,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:OffsetColon"
 				},
@@ -447,7 +447,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:BackgroundColon"
 				},
@@ -457,7 +457,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:StyleColon0"
 				},
@@ -467,7 +467,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:TransformColon"
 				},
@@ -659,7 +659,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:StyleColon1"
 				},
@@ -669,7 +669,7 @@
 					"left": 15,
 					"width": 115,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:LineColon"
 				},
@@ -679,7 +679,7 @@
 					"left": 15,
 					"width": 115,
 					"height": 14,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:ColorColon"
 				},
@@ -749,7 +749,7 @@
 					"left": 0,
 					"width": 150,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:SoftHyphen",
 					"fontTheme": "additional"
@@ -793,7 +793,7 @@
 					"width": 90,
 					"height": 18,
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"events": [],
 					"action": "textUnderlineStyle"
 				},
@@ -804,7 +804,7 @@
 					"width": 90,
 					"height": 18,
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"events": [],
 					"action": "textLinethroughStyle"
 				},
@@ -815,7 +815,7 @@
 					"width": 140,
 					"height": 18,
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"events": [
 						"onDataChange"
 					],
@@ -829,7 +829,7 @@
 					"height": 16,
 					"dataSource": "oForm.cbShadow",
 					"text": ":xliff:Shadow",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"threeState": true,
 					"method": "ObjectMethods/cbShadow1.4dm",
@@ -1143,5 +1143,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1348
+	"geometryStamp": 1416
 }

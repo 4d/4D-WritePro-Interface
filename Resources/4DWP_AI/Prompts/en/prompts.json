@@ -26,6 +26,19 @@
 		"title": "-"
 	},
 	{
+		"title": "Rewrite the section",
+		"prompt": "Can you help me improve this section? I'd like it to be clearer and more engaging.",
+		"source": "selection"
+	},
+	{
+		"title": "Rewrite the document",
+		"prompt": "Can you help me improve this document? I'd like it to be clearer and more engaging.",
+		"source": "document"
+	},
+	{
+		"title": "-"
+	},
+	{
 		"title": "Check the section grammar",
 		"prompt": "Can you check the grammar of this section and tell me if there is any error?",
 		"source": "selection"

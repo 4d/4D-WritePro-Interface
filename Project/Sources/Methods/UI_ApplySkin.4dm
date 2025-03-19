@@ -151,7 +151,8 @@ If (oForm.skin#Null:C1517)
 	OBJECT SET RGB COLORS:C628(*; "Separator@"; $separatorColor; $separatorColor)
 	OBJECT SET RGB COLORS:C628(*; "sepLbl@"; $separatorFontColor; $separatorColor)
 	OBJECT SET RGB COLORS:C628(*; "line@"; $separatorColor; $separatorColor)
-	OBJECT SET RGB COLORS:C628(*; "IconBgnd@"; $iconBorder; $iconBackground)  // $separatorColor; $separatorColor)
+	//OBJECT SET RGB COLORS(*; "IconBgnd@"; $iconBorder; $iconBackground)  // $separatorColor; $separatorColor)
+	OBJECT SET RGB COLORS:C628(*; "IconBgnd@"; $separatorColor; $backgroundColor)  // $separatorColor; $separatorColor)
 	
 	
 	OBJECT SET RGB COLORS:C628(*; "rb@"; $fontColor; Background color:K23:2)  // radio buttons
@@ -159,16 +160,13 @@ If (oForm.skin#Null:C1517)
 	OBJECT SET RGB COLORS:C628(*; "lbl_@"; $fontColor)  //;Background color) // labels
 	OBJECT SET RGB COLORS:C628(*; "tabBtn_@"; $fontColor)  // toolbat labels
 	
+	
+Else 
+	
+	OBJECT GET RGB COLORS:C1074(*; "enabledTab"; $fontColor; $backgroundColor)
+	OBJECT GET RGB COLORS:C1074(*; "disabledTab"; $separatorFontColor; $separatorColor)
+	
 End if 
-
-
-
-// a finir…
-
-
-// listboxes tabulations & bookmarks
-LISTBOX SET GRID COLOR:C842(*; "lb_@"; $separatorColor; True:C214; False:C215)
-OBJECT SET RGB COLORS:C628(*; "lb_@"; $fontColor; Background color none:K23:10)
 
 
 If (oForm.ToolbarTabs#Null:C1517)  // toolbar mode
@@ -178,10 +176,7 @@ If (oForm.ToolbarTabs#Null:C1517)  // toolbar mode
 	$name:=oForm.ToolbarTabs.allButtonNames[FORM Get current page:C276(*)-1]
 	oForm.ToolbarTabs.activate($name)
 	
-Else   // side bar mode
-	
 End if 
-
 
 
 $skinApplied:=True:C214

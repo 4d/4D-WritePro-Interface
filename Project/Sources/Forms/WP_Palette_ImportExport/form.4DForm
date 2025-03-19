@@ -91,7 +91,7 @@
 					"width": 140,
 					"height": 22,
 					"sizingX": "move",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"text": ":xliff:4DWriteProEllipsis",
 					"icon": "",
@@ -110,7 +110,7 @@
 					"width": 140,
 					"height": 22,
 					"sizingX": "move",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"text": ":xliff:WordEllipsis",
 					"icon": "",
@@ -129,7 +129,7 @@
 					"width": 140,
 					"height": 22,
 					"sizingX": "move",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"text": ":xliff:htmlEllipsis",
 					"icon": "",
@@ -148,7 +148,7 @@
 					"width": 140,
 					"height": 22,
 					"sizingX": "move",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"text": ":xliff:HtmlMimeEllipsis",
 					"icon": "",
@@ -167,7 +167,7 @@
 					"width": 140,
 					"height": 22,
 					"sizingX": "move",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"text": ":xliff:PdfEllipsis",
 					"icon": "",
@@ -205,7 +205,7 @@
 					"width": 140,
 					"height": 22,
 					"sizingX": "move",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"text": ":xliff:ClearEllipsis",
 					"icon": "",
@@ -224,7 +224,7 @@
 					"width": 140,
 					"height": 22,
 					"sizingX": "move",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"text": ":xliff:TextEllipsis",
 					"icon": "",
@@ -243,7 +243,7 @@
 					"width": 140,
 					"height": 22,
 					"sizingX": "move",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"text": ":xliff:ImportEllipsis",
 					"icon": "",
@@ -262,7 +262,7 @@
 					"width": 140,
 					"height": 22,
 					"sizingX": "move",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"text": ":xliff:svgEllipsis",
 					"icon": "",
@@ -318,7 +318,8 @@
 					"height": 20,
 					"tooltip": ":xliff:pageSize",
 					"focusable": false,
-					"action": "pageSize"
+					"action": "pageSize",
+					"class": "widget"
 				},
 				"btnPrint": {
 					"type": "button",
@@ -357,7 +358,8 @@
 					"height": 20,
 					"tooltip": ":xliff:pageOrientation",
 					"focusable": false,
-					"action": "section/pageOrientation"
+					"action": "section/pageOrientation",
+					"class": "widget"
 				},
 				"Image15": {
 					"type": "picture",
@@ -394,7 +396,7 @@
 					"width": 120,
 					"height": 22,
 					"sizingX": "move",
-					"class": "Palette",
+					"class": "widget",
 					"focusable": false,
 					"text": ":xliff:print",
 					"icon": "",
@@ -511,5 +513,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 376
+	"geometryStamp": 400
 }

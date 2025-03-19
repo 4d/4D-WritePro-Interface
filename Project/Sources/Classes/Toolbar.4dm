@@ -1,3 +1,13 @@
+property allButtonNames; buttonNames : Collection
+
+property direction : Text
+property container; bestContainer : Text
+property buttonsWidth; buttonsHeight : Integer
+property maxWidth; maxHeight : Integer
+property fontColor; backgroundColor; separatorFontColor; separatorColor : Integer
+property bestSize : Boolean
+property buttonMargins; labelMargins : Object
+property rect; bestRect : Object
 
 Class constructor($allButtonNames : Collection; $container : Text)
 	

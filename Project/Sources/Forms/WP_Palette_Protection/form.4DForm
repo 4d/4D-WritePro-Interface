@@ -71,7 +71,8 @@
 					],
 					"dataSource": "Form:C1466.paragraphProtected",
 					"method": "ObjectMethods/cbParagraphProtected.4dm",
-					"threeState": true
+					"threeState": true,
+					"class": "widget"
 				},
 				"cbProtectionEnabled": {
 					"type": "checkbox",
@@ -86,7 +87,8 @@
 					],
 					"dataSource": "Form:C1466.protectionEnabled",
 					"method": "ObjectMethods/cbProtectionEnabled.4dm",
-					"threeState": false
+					"threeState": false,
+					"class": "widget"
 				},
 				"Separator1": {
 					"type": "rectangle",
@@ -139,7 +141,8 @@
 					],
 					"dataSource": "Form:C1466.tableProtected",
 					"method": "ObjectMethods/cbTableProtected.4dm",
-					"threeState": true
+					"threeState": true,
+					"class": "widget"
 				},
 				"cbRowProtected": {
 					"type": "checkbox",
@@ -154,7 +157,8 @@
 					],
 					"dataSource": "Form:C1466.rowProtected",
 					"method": "ObjectMethods/cbRowProtected.4dm",
-					"threeState": true
+					"threeState": true,
+					"class": "widget"
 				},
 				"cbCellProtected": {
 					"type": "checkbox",
@@ -169,7 +173,8 @@
 					],
 					"dataSource": "Form:C1466.cellProtected",
 					"method": "ObjectMethods/cbCellProtected.4dm",
-					"threeState": true
+					"threeState": true,
+					"class": "widget"
 				},
 				"cbTableProtected1": {
 					"type": "checkbox",
@@ -184,7 +189,8 @@
 					],
 					"dataSource": "Form:C1466.textboxProtected",
 					"method": "ObjectMethods/cbTableProtected1.4dm",
-					"threeState": false
+					"threeState": false,
+					"class": "widget"
 				},
 				"decor3": {
 					"type": "picture",
@@ -275,5 +281,5 @@
 			"View 10": {}
 		}
 	},
-	"geometryStamp": 259
+	"geometryStamp": 271
 }

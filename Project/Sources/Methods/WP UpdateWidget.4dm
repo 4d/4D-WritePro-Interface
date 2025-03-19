@@ -65,14 +65,11 @@ Case of
 					$oWidgetUpdate.focus:=True:C214
 			End case 
 			
-			
-			If (Count parameters:C259>=3)
-				//$skin:=$3
-				$oWidgetUpdate.skin:=$skin
-			End if 
-			
 			$send:=True:C214
 			Case of 
+				: (Count parameters:C259>=3)  // update skin // KEEP THIS CASE FIRST !
+					$oWidgetUpdate.skin:=$skin
+					
 				: (Form event code:C388=On Load:K2:1)
 				: (Form event code:C388=On After Edit:K2:43)
 				: (Form event code:C388=On Selection Change:K2:29)

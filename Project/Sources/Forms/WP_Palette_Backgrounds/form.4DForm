@@ -61,7 +61,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:RepeatColon"
 				},
@@ -71,7 +71,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:Clip"
 				},
@@ -81,7 +81,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:Origin"
 				},
@@ -91,7 +91,7 @@
 					"left": 95,
 					"width": 55,
 					"height": 14,
-					"class": "Palette",
+					"class": "widget",
 					"textAlign": "right",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -111,7 +111,7 @@
 					"left": 95,
 					"width": 55,
 					"height": 14,
-					"class": "Palette",
+					"class": "widget",
 					"textAlign": "right",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -131,7 +131,7 @@
 					"left": 10,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:HorizontalSize"
 				},
@@ -141,7 +141,7 @@
 					"left": 10,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:VerticalSize"
 				},
@@ -151,7 +151,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 16,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:PictureHyphen"
 				},
@@ -182,7 +182,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:PositionsColon"
 				},
@@ -193,7 +193,7 @@
 					"width": 75,
 					"height": 19,
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"events": [
 						"onDataChange"
 					],
@@ -208,7 +208,7 @@
 					"width": 75,
 					"height": 19,
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"events": [
 						"onDataChange"
 					],
@@ -243,7 +243,8 @@
 					"action": "anchorPage",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"class": "widget"
 				},
 				"Popup_anchorToSection": {
 					"type": "dropdown",
@@ -256,7 +257,8 @@
 					"action": "anchorSection",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"class": "widget"
 				},
 				"btn_PictInfo": {
 					"type": "button",
@@ -268,9 +270,9 @@
 					"events": [
 						"onClick"
 					],
-					"stroke": "automatic",
 					"focusable": false,
-					"method": "ObjectMethods/btn_PictInfo.4dm"
+					"method": "ObjectMethods/btn_PictInfo.4dm",
+					"class": "widget"
 				},
 				"Line1": {
 					"type": "line",
@@ -302,7 +304,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 16,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:MoveHyphen"
 				},
@@ -312,7 +314,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:PositionColon"
 				},
@@ -322,7 +324,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:PageHyphen"
 				},
@@ -355,7 +357,8 @@
 						"onDataChange"
 					],
 					"action": "image/anchorVerticalAlign",
-					"focusable": false
+					"focusable": false,
+					"class": "widget"
 				},
 				"Popup_anchorHorizontalAlign": {
 					"type": "dropdown",
@@ -367,7 +370,8 @@
 						"onDataChange"
 					],
 					"action": "image/anchorHorizontalAlign",
-					"focusable": false
+					"focusable": false,
+					"class": "widget"
 				},
 				"Popup_anchorLayout": {
 					"type": "dropdown",
@@ -379,7 +383,8 @@
 						"onDataChange"
 					],
 					"action": "image/anchorLayout",
-					"focusable": false
+					"focusable": false,
+					"class": "widget"
 				},
 				"lbl_Picture1": {
 					"type": "text",
@@ -387,7 +392,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:SectionHyphen"
 				},
@@ -441,7 +446,7 @@
 					"width": 150,
 					"height": 19,
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"events": [
 						"onDataChange"
 					],
@@ -454,7 +459,7 @@
 					"width": 150,
 					"height": 19,
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"events": [
 						"onDataChange"
 					],
@@ -467,7 +472,7 @@
 					"width": 150,
 					"height": 19,
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"events": [
 						"onDataChange"
 					],
@@ -480,7 +485,7 @@
 					"width": 150,
 					"height": 19,
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"events": [
 						"onDataChange"
 					],
@@ -493,7 +498,7 @@
 					"width": 150,
 					"height": 19,
 					"focusable": false,
-					"class": "Palette",
+					"class": "widget",
 					"events": [
 						"onDataChange"
 					],
@@ -511,7 +516,7 @@
 					"events": [
 						"onDataChange"
 					],
-					"class": "Palette"
+					"class": "widget"
 				},
 				"lbl_Text": {
 					"type": "text",
@@ -522,7 +527,7 @@
 					"textAlign": "right",
 					"text": ":xliff:ApplyToColon",
 					"fontWeight": "normal",
-					"class": "Palette"
+					"class": "label"
 				},
 				"xbtn_Clear": {
 					"type": "button",
@@ -534,9 +539,9 @@
 					"events": [
 						"onClick"
 					],
-					"stroke": "automatic",
 					"focusable": false,
-					"method": "ObjectMethods/xbtn_Clear.4dm"
+					"method": "ObjectMethods/xbtn_Clear.4dm",
+					"class": "widget"
 				},
 				"xbtn_Apply": {
 					"type": "button",
@@ -548,9 +553,9 @@
 					"events": [
 						"onClick"
 					],
-					"stroke": "automatic",
 					"focusable": false,
-					"method": "ObjectMethods/xbtn_Apply.4dm"
+					"method": "ObjectMethods/xbtn_Apply.4dm",
+					"class": "widget"
 				},
 				"btn_insertImage": {
 					"type": "button",
@@ -595,7 +600,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 13,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:InsertHyphen"
 				},
@@ -605,7 +610,7 @@
 					"left": 0,
 					"width": 80,
 					"height": 16,
-					"class": "Palette",
+					"class": "label",
 					"textAlign": "right",
 					"text": ":xliff:PictureHyphen"
 				},
@@ -730,5 +735,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1621
+	"geometryStamp": 1685
 }

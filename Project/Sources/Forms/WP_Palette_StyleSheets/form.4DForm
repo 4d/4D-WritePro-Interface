@@ -65,6 +65,7 @@
 						"onSelectionChange",
 						"onBeforeDataEntry"
 					],
+					"class": "separator",
 					"columns": [
 						{
 							"name": "stylesheet_Names",
@@ -361,5 +362,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 57
+	"geometryStamp": 63
 }

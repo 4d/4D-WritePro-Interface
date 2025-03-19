@@ -108,7 +108,7 @@
 					"events": [
 						"onDataChange"
 					],
-					"class": "Palette"
+					"class": "widget"
 				},
 				"lbl_Text": {
 					"type": "text",
@@ -118,7 +118,8 @@
 					"height": 13,
 					"textAlign": "right",
 					"fontTheme": "additional",
-					"text": ":xliff:ApplyToColon"
+					"text": ":xliff:ApplyToColon",
+					"class": "label"
 				},
 				"popPaddingTop": {
 					"type": "dropdown",
@@ -129,7 +130,7 @@
 					"tooltip": ":xliff:paddingTop",
 					"focusable": false,
 					"action": "paragraph/paddingTop",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"popPaddingBottom": {
 					"type": "dropdown",
@@ -140,7 +141,7 @@
 					"tooltip": ":xliff:paddingBottom",
 					"focusable": false,
 					"action": "paragraph/paddingBottom",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"popPaddingLeft": {
 					"type": "dropdown",
@@ -151,7 +152,7 @@
 					"tooltip": ":xliff:paddingLeft",
 					"focusable": false,
 					"action": "paragraph/paddingLeft",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"popPaddingRight": {
 					"type": "dropdown",
@@ -162,7 +163,7 @@
 					"tooltip": ":xliff:paddingRight",
 					"focusable": false,
 					"action": "paragraph/paddingRight",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"popPaddingAll": {
 					"type": "dropdown",
@@ -173,7 +174,7 @@
 					"tooltip": ":xliff:padding",
 					"focusable": false,
 					"action": "paragraph/padding",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"btnBorderStyleAll": {
 					"type": "button",
@@ -307,7 +308,7 @@
 					],
 					"action": "paragraph/borderRadius",
 					"tooltip": ":xliff:Radius",
-					"class": "Palette"
+					"class": "widget"
 				},
 				"Text2": {
 					"type": "text",
@@ -317,7 +318,8 @@
 					"width": 66,
 					"height": 13,
 					"fontTheme": "additional",
-					"textAlign": "right"
+					"textAlign": "right",
+					"class": "label"
 				},
 				"Text3": {
 					"type": "text",
@@ -327,7 +329,8 @@
 					"width": 66,
 					"height": 13,
 					"fontTheme": "additional",
-					"textAlign": "right"
+					"textAlign": "right",
+					"class": "label"
 				},
 				"Text4": {
 					"type": "text",
@@ -337,7 +340,8 @@
 					"width": 66,
 					"height": 13,
 					"fontTheme": "additional",
-					"textAlign": "right"
+					"textAlign": "right",
+					"class": "label"
 				},
 				"Text5": {
 					"type": "text",
@@ -347,7 +351,8 @@
 					"width": 66,
 					"height": 13,
 					"fontTheme": "additional",
-					"textAlign": "right"
+					"textAlign": "right",
+					"class": "label"
 				},
 				"Text6": {
 					"type": "text",
@@ -357,7 +362,8 @@
 					"width": 66,
 					"height": 13,
 					"fontTheme": "additional",
-					"textAlign": "right"
+					"textAlign": "right",
+					"class": "label"
 				},
 				"Static Picture1": {
 					"type": "picture",
@@ -470,5 +476,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1628
+	"geometryStamp": 1654
 }

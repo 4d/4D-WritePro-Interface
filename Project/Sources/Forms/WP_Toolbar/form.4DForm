@@ -588,7 +588,8 @@
 					],
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Home.4dm",
-					"focusable": false
+					"focusable": false,
+					"class": ""
 				},
 				"tabBtn_Insert": {
 					"type": "button",
@@ -602,7 +603,8 @@
 					],
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Insert.4dm",
-					"focusable": false
+					"focusable": false,
+					"class": ""
 				},
 				"tabBtn_Margins": {
 					"type": "button",
@@ -616,7 +618,8 @@
 					],
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Margins.4dm",
-					"focusable": false
+					"focusable": false,
+					"class": ""
 				},
 				"tabBtn_Borders": {
 					"type": "button",
@@ -630,7 +633,8 @@
 					],
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Borders.4dm",
-					"focusable": false
+					"focusable": false,
+					"class": ""
 				},
 				"tabBtn_Images": {
 					"type": "button",
@@ -644,7 +648,8 @@
 					],
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Images.4dm",
-					"focusable": false
+					"focusable": false,
+					"class": ""
 				},
 				"tabBtn_Printing": {
 					"type": "button",
@@ -658,7 +663,8 @@
 					],
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Printing.4dm",
-					"focusable": false
+					"focusable": false,
+					"class": ""
 				},
 				"tabBtn_Tables": {
 					"type": "button",
@@ -672,7 +678,8 @@
 					],
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Tables.4dm",
-					"focusable": false
+					"focusable": false,
+					"class": ""
 				},
 				"tabBtn_Spell": {
 					"type": "button",
@@ -686,7 +693,8 @@
 					],
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Spell.4dm",
-					"focusable": false
+					"focusable": false,
+					"class": ""
 				},
 				"tabBtn_Protection": {
 					"type": "button",
@@ -701,7 +709,8 @@
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Protection.4dm",
 					"stroke": "automatic",
-					"focusable": false
+					"focusable": false,
+					"class": ""
 				},
 				"tabBtn_ImportExport": {
 					"type": "button",
@@ -715,7 +724,8 @@
 					],
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_ImportExport.4dm",
-					"focusable": false
+					"focusable": false,
+					"class": ""
 				},
 				"tabBtn_FindAndReplace": {
 					"type": "button",
@@ -729,7 +739,8 @@
 					],
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_FindAndReplace.4dm",
-					"focusable": false
+					"focusable": false,
+					"class": ""
 				},
 				"cbBold1": {
 					"type": "checkbox",
@@ -866,6 +877,24 @@
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"class": "background"
+				},
+				"disabledTab": {
+					"type": "text",
+					"text": "Do not delete me, i'm used to get the disabled tabs colors (from CSS)",
+					"top": 222,
+					"left": 0,
+					"width": 499,
+					"height": 21,
+					"class": "disabledTab"
+				},
+				"enabledTab": {
+					"type": "text",
+					"text": "Do not delete me, i'm used to get the enabled tabs colors (from CSS)",
+					"top": 196,
+					"left": 0,
+					"width": 499,
+					"height": 21,
+					"class": "enabledTab"
 				}
 			}
 		},
@@ -951,7 +980,8 @@
 					"events": [
 						"onDataChange"
 					],
-					"fontFamily": ""
+					"fontFamily": "",
+					"class": ""
 				},
 				"cbBold": {
 					"type": "checkbox",
@@ -2303,7 +2333,8 @@
 					"height": 14,
 					"textAlign": "right",
 					"fontTheme": "additional",
-					"text": ":xliff:applyMarginsTo"
+					"text": ":xliff:applyMarginsTo",
+					"class": "label"
 				},
 				"Image8": {
 					"type": "picture",
@@ -2503,7 +2534,8 @@
 					"height": 13,
 					"textAlign": "right",
 					"fontTheme": "additional",
-					"text": ":xliff:applyBordersTo"
+					"text": ":xliff:applyBordersTo",
+					"class": "label"
 				},
 				"popup_applyBordersTo": {
 					"type": "dropdown",
@@ -3397,7 +3429,8 @@
 					"height": 13,
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": ":xliff:LabelRows"
+					"text": ":xliff:LabelRows",
+					"class": "label"
 				},
 				"lbl_Size2": {
 					"type": "text",
@@ -3407,7 +3440,8 @@
 					"height": 13,
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": ":xliff:LabelColumns"
+					"text": ":xliff:LabelColumns",
+					"class": "label"
 				},
 				"btnInsertAboveRow": {
 					"type": "button",
@@ -3516,7 +3550,8 @@
 					"height": 16,
 					"textAlign": "left",
 					"fontTheme": "normal",
-					"text": ":xliff:LabelCells"
+					"text": ":xliff:LabelCells",
+					"class": "label"
 				},
 				"btnTableSettings": {
 					"type": "button",
@@ -3561,7 +3596,8 @@
 					"height": 13,
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": ":xliff:LabelTable"
+					"text": ":xliff:LabelTable",
+					"class": "label"
 				},
 				"Line57": {
 					"type": "line",
@@ -4525,5 +4561,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7447
+	"geometryStamp": 7565
 }
