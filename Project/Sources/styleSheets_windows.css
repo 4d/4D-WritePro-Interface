@@ -9,7 +9,7 @@
 }
 
 .separatorFont{
-    color: #F0F0F0;
+	stroke: #383838;
 	font-family: Segoe UI;
 	font-size: 12px;
 }
@@ -18,6 +18,12 @@
 	font-family: Segoe UI;
 	font-size: 12px;
 }
+
+.tabLabel {
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
 .widget {
 	font-family: Segoe UI;
 	font-size: 12px;
@@ -32,7 +38,7 @@
 @media (prefers-color-scheme: dark){
 
 	.separatorFont{
-		color: #101010;
+		stroke: #F0F0F0;
 		font-family: Segoe UI;
 		font-size: 12px;
 	}

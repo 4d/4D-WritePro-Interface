@@ -33,18 +33,6 @@
 					"sizingY": "move",
 					"class": "prompt_area"
 				},
-				"spinner": {
-					"type": "picture",
-					"top": 528,
-					"left": 620,
-					"width": 32,
-					"height": 32,
-					"picture": "/RESOURCES/Images/AI/spinner.gif",
-					"pictureFormat": "scaled",
-					"visibility": "hidden",
-					"sizingX": "move",
-					"sizingY": "move"
-				},
 				"history_area": {
 					"type": "rectangle",
 					"top": 0,
@@ -531,11 +519,23 @@
 					],
 					"tooltip": ":xliff:EraseHistory",
 					"sizingX": "move"
+				},
+				"spinner": {
+					"type": "picture",
+					"top": 558,
+					"left": 620,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/AI/spinner.gif",
+					"pictureFormat": "scaled",
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move"
 				}
 			}
 		}
 	],
-	"geometryStamp": 1783,
+	"geometryStamp": 1814,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

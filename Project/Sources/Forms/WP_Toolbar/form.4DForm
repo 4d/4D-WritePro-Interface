@@ -589,7 +589,7 @@
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Home.4dm",
 					"focusable": false,
-					"class": ""
+					"class": "tabLabel"
 				},
 				"tabBtn_Insert": {
 					"type": "button",
@@ -604,7 +604,7 @@
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Insert.4dm",
 					"focusable": false,
-					"class": ""
+					"class": "tabLabel"
 				},
 				"tabBtn_Margins": {
 					"type": "button",
@@ -619,7 +619,7 @@
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Margins.4dm",
 					"focusable": false,
-					"class": ""
+					"class": "tabLabel"
 				},
 				"tabBtn_Borders": {
 					"type": "button",
@@ -634,7 +634,7 @@
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Borders.4dm",
 					"focusable": false,
-					"class": ""
+					"class": "tabLabel"
 				},
 				"tabBtn_Images": {
 					"type": "button",
@@ -649,7 +649,7 @@
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Images.4dm",
 					"focusable": false,
-					"class": ""
+					"class": "tabLabel"
 				},
 				"tabBtn_Printing": {
 					"type": "button",
@@ -664,7 +664,7 @@
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Printing.4dm",
 					"focusable": false,
-					"class": ""
+					"class": "tabLabel"
 				},
 				"tabBtn_Tables": {
 					"type": "button",
@@ -679,7 +679,7 @@
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Tables.4dm",
 					"focusable": false,
-					"class": ""
+					"class": "tabLabel"
 				},
 				"tabBtn_Spell": {
 					"type": "button",
@@ -694,7 +694,7 @@
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_Spell.4dm",
 					"focusable": false,
-					"class": ""
+					"class": "tabLabel"
 				},
 				"tabBtn_Protection": {
 					"type": "button",
@@ -710,7 +710,7 @@
 					"method": "ObjectMethods/tabBtn_Protection.4dm",
 					"stroke": "automatic",
 					"focusable": false,
-					"class": ""
+					"class": "tabLabel"
 				},
 				"tabBtn_ImportExport": {
 					"type": "button",
@@ -725,7 +725,7 @@
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_ImportExport.4dm",
 					"focusable": false,
-					"class": ""
+					"class": "tabLabel"
 				},
 				"tabBtn_FindAndReplace": {
 					"type": "button",
@@ -740,7 +740,7 @@
 					"style": "toolbar",
 					"method": "ObjectMethods/tabBtn_FindAndReplace.4dm",
 					"focusable": false,
-					"class": ""
+					"class": "tabLabel"
 				},
 				"cbBold1": {
 					"type": "checkbox",
@@ -4268,8 +4268,9 @@
 					"events": [
 						"onClick"
 					],
-					"tooltip": ":xliff:clear",
-					"text": ""
+					"text": "",
+					"visibility": "hidden",
+					"tooltip": ":xliff:AI"
 				}
 			},
 			"entryOrder": [
@@ -4561,5 +4562,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7565
+	"geometryStamp": 7596
 }

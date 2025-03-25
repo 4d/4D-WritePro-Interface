@@ -596,6 +596,34 @@
 						"onClick"
 					],
 					"sizingX": "fixed"
+				},
+				"Button26": {
+					"type": "button",
+					"text": "Activate AI",
+					"top": 954,
+					"left": 35,
+					"width": 101,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button26.4dm",
+					"sizingY": "move",
+					"focusable": false
+				},
+				"Button27": {
+					"type": "button",
+					"text": "Unactivate AI",
+					"top": 954,
+					"left": 161,
+					"width": 101,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button27.4dm",
+					"sizingY": "move",
+					"focusable": false
 				}
 			}
 		}
@@ -604,7 +632,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 239,
+	"geometryStamp": 252,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

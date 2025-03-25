@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 
 #DECLARE($wpSelection : Object; $apikey : Text)
 

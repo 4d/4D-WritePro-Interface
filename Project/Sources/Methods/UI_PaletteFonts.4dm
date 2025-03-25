@@ -38,6 +38,7 @@ Else
 	
 End if 
 
+UI_ManageAIbutton  // makes button VISIBLE or NOT, so it MIGHT be visible but still disabled
 
 // ACI0104990 Pat Bensky
 Case of 

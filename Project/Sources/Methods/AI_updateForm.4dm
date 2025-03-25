@@ -21,78 +21,84 @@ Case of
 		
 	: ($action="Set Text")
 		
-		If (Form:C1466._extra.count=0)
-			$prompt:=Form:C1466.prompt
+		If (Not:C34(Undefined:C82(Form:C1466.openAI)))
 			
-			$memoRange1:=WP Text range:C1341(Form:C1466.WPai; wk end text:K81:164; wk end text:K81:164)
-			WP SET TEXT:C1574(Form:C1466.WPai; $prompt; wk append:K81:179)
-			$memoRange2:=WP Text range:C1341(Form:C1466.WPai; wk end text:K81:164; wk end text:K81:164)
+			If (Form:C1466._extra.count=0)
+				$prompt:=Form:C1466.prompt
+				
+				$memoRange1:=WP Text range:C1341(Form:C1466.WPai; wk end text:K81:164; wk end text:K81:164)
+				WP SET TEXT:C1574(Form:C1466.WPai; $prompt; wk append:K81:179)
+				$memoRange2:=WP Text range:C1341(Form:C1466.WPai; wk end text:K81:164; wk end text:K81:164)
+				
+				$promptRange:=WP Text range:C1341(Form:C1466.WPai; $memoRange1.end; $memoRange2.end)
+				
+				// link paragraphs if more than one in the prompt (transform § breaks into line breaks)
+				$breaks:=WP Get breaks:C1768($promptRange; wk paragraph break:K81:259)
+				For each ($break; $breaks)
+					$range:=WP Text range:C1341(Form:C1466.WPai; $break.start; $break.end)
+					WP Insert break:C1413($range; wk line break:K81:186; wk replace:K81:177)
+				End for each 
+				
+				WP SET ATTRIBUTES:C1342($promptRange; wk style sheet:K81:63; "Prompt")
+				
+				WP Insert break:C1413(Form:C1466.WPai; wk paragraph break:K81:259; wk append:K81:179)
+				$memoRange1:=WP Text range:C1341(Form:C1466.WPai; wk end text:K81:164; wk end text:K81:164)
+				
+				Form:C1466._extra.memoStart:=$memoRange1.end
+				Form:C1466._extra.memoPrompt:=$prompt
+				
+			End if 
 			
-			$promptRange:=WP Text range:C1341(Form:C1466.WPai; $memoRange1.end; $memoRange2.end)
+			Form:C1466._extra.answer+=$content
 			
-			// link paragraphs if more than one in the prompt (transform § breaks into line breaks)
-			$breaks:=WP Get breaks:C1768($promptRange; wk paragraph break:K81:259)
-			For each ($break; $breaks)
-				$range:=WP Text range:C1341(Form:C1466.WPai; $break.start; $break.end)
-				WP Insert break:C1413($range; wk line break:K81:186; wk replace:K81:177)
-			End for each 
 			
-			WP SET ATTRIBUTES:C1342($promptRange; wk style sheet:K81:63; "Prompt")
+			If ($terminated) || True:C214  // every time, not only only if ended
+				$newDoc:=WP MDtoWP(Form:C1466._extra.answer)
+			Else 
+				$newDoc:=WP New:C1317
+				WP SET TEXT:C1574($newDoc; Form:C1466._extra.answer; wk append:K81:179)
+			End if 
 			
-			WP Insert break:C1413(Form:C1466.WPai; wk paragraph break:K81:259; wk append:K81:179)
-			$memoRange1:=WP Text range:C1341(Form:C1466.WPai; wk end text:K81:164; wk end text:K81:164)
+			$answerRange:=WP Text range:C1341(Form:C1466.WPai; Form:C1466._extra.memoStart; wk end text:K81:164)
+			$answerRange:=WP Insert document body:C1411($answerRange; $newDoc; wk replace:K81:177)
 			
-			Form:C1466._extra.memoStart:=$memoRange1.end
-			Form:C1466._extra.memoPrompt:=$prompt
+			If (FORM Get color scheme:C1761="dark")
+				WP SET ATTRIBUTES:C1342(Form:C1466.WPai; wk text color:K81:64; "white")
+			End if 
 			
-		End if 
-		
-		Form:C1466._extra.answer+=$content
-		
-		
-		If ($terminated) || True:C214  // every time, not only only if ended
-			$newDoc:=WP MDtoWP(Form:C1466._extra.answer)
+			//If (Not($terminated))
+			//WP SET ATTRIBUTES($answerRange; wk style sheet; "Normal")
+			//End if 
+			
+			WP SELECT:C1348(Form:C1466.WPai; $answerRange.end; $answerRange.end)  // To allow the text to scroll "live"
+			
+			If ($terminated)
+				
+				WP Insert break:C1413(Form:C1466.WPai; wk paragraph break:K81:259; wk append:K81:179)
+				// insert a new bookmark
+				
+				$bm:=New object:C1471
+				$bm.prompt:="• "+Substring:C12(Form:C1466._extra.memoPrompt; 1; 120)
+				$bm.promptRange:=$promptRange
+				$bm.answerRange:=$answerRange
+				$bm.id:=Form:C1466.bookmarks.length+1
+				
+				Form:C1466.bookmarks.push($bm)
+				Form:C1466.bookmarks:=Form:C1466.bookmarks
+				
+				LISTBOX SELECT ROW:C912(*; "LB_Bookmarks"; $bm.id)
+				WP SELECT:C1348(*; "WParea"; $bm.answerRange)
+				GOTO OBJECT:C206(*; "WParea")  // to avoid the light grey highlight
+				
+				Form:C1466._extra.state:=2  // re-run
+				
+			End if 
+			
+			Form:C1466._extra.count+=1
+			
 		Else 
-			$newDoc:=WP New:C1317
-			WP SET TEXT:C1574($newDoc; Form:C1466._extra.answer; wk append:K81:179)
+			// the AI_Prompt window has been closed
 		End if 
-		
-		$answerRange:=WP Text range:C1341(Form:C1466.WPai; Form:C1466._extra.memoStart; wk end text:K81:164)
-		$answerRange:=WP Insert document body:C1411($answerRange; $newDoc; wk replace:K81:177)
-		
-		If (FORM Get color scheme:C1761="dark")
-			WP SET ATTRIBUTES:C1342(Form:C1466.WPai; wk text color:K81:64; "white")
-		End if 
-		
-		//If (Not($terminated))
-		//WP SET ATTRIBUTES($answerRange; wk style sheet; "Normal")
-		//End if 
-		
-		WP SELECT:C1348(Form:C1466.WPai; $answerRange.end; $answerRange.end)  // To allow the text to scroll "live"
-		
-		If ($terminated)
-			
-			WP Insert break:C1413(Form:C1466.WPai; wk paragraph break:K81:259; wk append:K81:179)
-			// insert a new bookmark
-			
-			$bm:=New object:C1471
-			$bm.prompt:="• "+Substring:C12(Form:C1466._extra.memoPrompt; 1; 120)
-			$bm.promptRange:=$promptRange
-			$bm.answerRange:=$answerRange
-			$bm.id:=Form:C1466.bookmarks.length+1
-			
-			Form:C1466.bookmarks.push($bm)
-			Form:C1466.bookmarks:=Form:C1466.bookmarks
-			
-			LISTBOX SELECT ROW:C912(*; "LB_Bookmarks"; $bm.id)
-			WP SELECT:C1348(*; "WParea"; $bm.answerRange)
-			GOTO OBJECT:C206(*; "WParea")  // to avoid the light grey highlight
-			
-			Form:C1466._extra.state:=2  // re-run
-			
-		End if 
-		
-		Form:C1466._extra.count+=1
 		
 	: ($action="Reset Context")
 		
@@ -102,7 +108,9 @@ Case of
 		WP SET ATTRIBUTES:C1342(Form:C1466.WPai; wk background color:K81:20; wk transparent:K81:134)
 		
 		Form:C1466.bookmarks:=[]
-		
+		Form:C1466.prompt:=""
+		Form:C1466._extra.state:=-1  // -1 : desabled (run not allowed) 0: "run" / 1: "running" / 2:"rerun"
+		Form:C1466._extra.count:=0
 		
 	: ($action="images")
 		

@@ -1019,7 +1019,7 @@
 					"height": 20,
 					"visibility": "hidden"
 				},
-				"btnClear1": {
+				"btnAI": {
 					"type": "button",
 					"top": 550,
 					"left": 110,
@@ -1031,14 +1031,14 @@
 					"iconFrames": 4,
 					"style": "custom",
 					"popupPlacement": "none",
-					"method": "ObjectMethods/btnClear1.4dm",
+					"method": "ObjectMethods/btnAI.4dm",
 					"events": [
 						"onClick"
 					],
-					"tooltip": ":xliff:clear",
+					"tooltip": ":xliff:AI",
 					"text": ""
 				},
-				"Separator3": {
+				"Separator_AI": {
 					"type": "rectangle",
 					"top": 523,
 					"left": 5,
@@ -1047,7 +1047,7 @@
 					"borderRadius": 4,
 					"class": "separator"
 				},
-				"sepLbl_SpecialChars1": {
+				"sepLbl_AI": {
 					"type": "text",
 					"top": 524,
 					"left": 25,
@@ -1055,7 +1055,7 @@
 					"height": 13,
 					"class": "separatorFont",
 					"textAlign": "center",
-					"text": "A.I."
+					"text": ":xliff:AI"
 				},
 				"background1": {
 					"type": "rectangle",
@@ -1098,7 +1098,7 @@
 				"btn_InsertSH",
 				"btn_RemoveSH",
 				"fontLongName",
-				"btnClear1"
+				"btnAI"
 			]
 		}
 	],
@@ -1143,5 +1143,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1416
+	"geometryStamp": 1425
 }

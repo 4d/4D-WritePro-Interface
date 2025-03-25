@@ -50,6 +50,7 @@ Case of
 			
 			// …to here
 			UI_PaletteFonts
+			UI_ManageAIbutton  // may be moved somewhere else later
 			
 		Else 
 			//something wrong with setup (ex: cursor was in the header and header has been deleted)

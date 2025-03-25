@@ -25,28 +25,17 @@ Case of
 				
 			: (Form:C1466._extra.state=1)  //"running"
 				OBJECT SET VISIBLE:C603(*; "spinner"; True:C214)
-				OBJECT SET VISIBLE:C603(*; "wait@"; True:C214)
+				$format:=Replace string:C233($format; "PICT"; "send_32.png")
 				$helpTip:=""
-				
-				//WP SELECT(Form.WPai; wk start text; wk start text)
-				//$color:=Choose(Random%10; "#FAF0FC"; "#FCF1FA"; "#F3FAF8"; "#F4FAF8"; "#FCF4FF"; "#F6F8FA"; "#F8F4FD"; "#FAFBFF"; "#FFF8FB"; "#FcF9FD")
-				//WP SET ATTRIBUTES(Form.WPai; wk background color; $color)
-				//WP SET ATTRIBUTES(WP Paragraph range(Form.WPai); wk background color; $color)
-				//SET TIMER(10)
 				
 			: (Form:C1466._extra.state=2)  //"re-run"
 				$format:=Replace string:C233($format; "PICT"; "resend_32.png")
 				$helpTip:=Localized string:C991("ResendRequest")
 		End case 
 		
-		
-		//If (Form._extra.state#1)  // no more running
-		//WP SET ATTRIBUTES(Form.WPai; wk background color; "white")
-		//WP SET ATTRIBUTES(WP Paragraph range(Form.WPai); wk background color; wk transparent)
-		//End if 
-		
-		
+		OBJECT SET VISIBLE:C603(*; "btn_launch"; (Form:C1466._extra.state#1))
 		OBJECT SET FORMAT:C236(*; "btn_launch"; $format)
+		
 		OBJECT SET HELP TIP:C1181(*; "btn_launch"; $helpTip)
 		OBJECT SET ENABLED:C1123(*; "btn_launch"; (Form:C1466._extra.state>=0))  // -1 mean no text in the prompt
 		

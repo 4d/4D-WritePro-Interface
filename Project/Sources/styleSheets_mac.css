@@ -9,16 +9,21 @@
 }
 
 .separatorFont{
-    color: #F0F0F0;
+    stroke: #383838;
 	font-family: System Font Regular;
 	font-size: 11px;
 }
-
 
 .label {
 	font-family: System Font Regular;
 	font-size: 11px;
 }
+
+.tabLabel {
+	font-family: System Font Regular;
+	font-size: 13px;
+}
+
 .widget {
 	font-family: System Font Regular;
 	font-size: 11px;
@@ -27,7 +32,7 @@
 @media (prefers-color-scheme: dark){
 
 	.separatorFont{
-		color: #101010;
+		stroke: #F0F0F0;
 		font-family: System Font Regular;
 		font-size: 11px;
 	}

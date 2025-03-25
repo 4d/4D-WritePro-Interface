@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 var $win : Integer
 
 $win:=Open form window:C675("D_AI_Personas")

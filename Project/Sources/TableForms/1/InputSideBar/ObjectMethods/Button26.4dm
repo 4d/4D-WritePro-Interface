@@ -8,7 +8,7 @@ If ($file.exists)
 	$apiKey:=$ai_pref.apiKey
 	
 	WP SetAIKey($apiKey)
-	WP UpdateWidget("WPtoolbar"; "WParea")
+	WP UpdateWidget("WPwidget"; "WParea")
 	
 Else 
 	ALERT:C41("The Resources/AI/aiPref.json file is missing!")

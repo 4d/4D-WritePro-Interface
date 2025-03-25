@@ -2098,7 +2098,7 @@ Souhaitez-vous le remplacer ?</target>
       </group>
 
       <group resname="DialogAI_Prompt">
-          <trans-unit id="xx" resname="History">
+        <trans-unit id="xx" resname="History">
             <source>History</source>
             <target>Historique</target>
         </trans-unit>
@@ -2109,7 +2109,11 @@ Souhaitez-vous le remplacer ?</target>
         <trans-unit id="xx" resname="PromptPlaceHolder">
           <source>Enter your request</source>
           <target>Saisissez votre demande</target>
-        </trans-unit>        
+        </trans-unit>   
+        <trans-unit id="xx" resname="AI">
+          <source>A.I.</source>
+          <target>I.A.</target>
+        </trans-unit>     
       </group>
 
       <group resname="DialogAI_Prompt_Tips">
