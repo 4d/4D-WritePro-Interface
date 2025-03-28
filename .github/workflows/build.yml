@@ -4,7 +4,7 @@ on:
   pull_request:
 
 env:
-  DEPENDENCIES_BRANCH: main
+  DEPENDENCIES_BRANCH: 20R9
 
 jobs:
   build:
