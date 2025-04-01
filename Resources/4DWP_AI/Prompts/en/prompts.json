@@ -1,7 +1,7 @@
 ﻿[
 	{
-		"title": "Summarize the section",
-		"prompt": "Can you summarize this section for me?",
+		"title": "Summarize the selection",
+		"prompt": "Can you summarize the selected text for me?",
 		"source": "selection"
 	},
 	{
@@ -13,8 +13,8 @@
 		"title": "-"
 	},
 	{
-		"title": "Translate the section",
-		"prompt": "Can you translate this section into french?",
+		"title": "Translate the selection",
+		"prompt": "Can you translate the selected text into french?",
 		"source": "selection"
 	},
 	{
@@ -26,8 +26,8 @@
 		"title": "-"
 	},
 	{
-		"title": "Rewrite the section",
-		"prompt": "Can you help me improve this section? I'd like it to be clearer and more engaging.",
+		"title": "Rewrite the selection",
+		"prompt": "Can you help me improve the selected text? I'd like it to be clearer and more engaging.",
 		"source": "selection"
 	},
 	{
@@ -39,8 +39,8 @@
 		"title": "-"
 	},
 	{
-		"title": "Check the section grammar",
-		"prompt": "Can you check the grammar of this section and tell me if there is any error?",
+		"title": "Check the selection grammar",
+		"prompt": "Can you check the grammar of the selected text and tell me if there is any error?",
 		"source": "selection"
 	},
 	{

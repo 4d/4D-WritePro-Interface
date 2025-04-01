@@ -11,9 +11,17 @@ If ($result.success)
 	End if 
 	
 Else 
-	// Alert($result.errors.formula(Formula(JSON Stringify($1))).join("\n"))
 	
-	AI_updateForm(""; "")  // just change state
+	If ($result.errors.length>0)
+		$answer:=""
+		$answer+="**"+Localized string:C991("ErrorCodeColon")+"**"
+		$answer+=$result.errors[0].code+"\r"
+		$answer+="**"+Localized string:C991("ErrorMessageColon")+"**"
+		$answer+=$result.errors[0].message
+	Else 
+		$answer:=Localized string:C991("GlobalError")
+	End if 
+	AI_updateForm($answer; "Error")  // just change state
 	
 End if 
 

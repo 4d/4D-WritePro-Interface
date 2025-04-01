@@ -7,7 +7,12 @@ If ($file.exists)
 	$ai_pref:=JSON Parse:C1218($file.getText())
 	$apiKey:=$ai_pref.apiKey
 	
-	WP SetAIKey($apiKey)
+	If (Shift down:C543)
+		WP SetAIKey("Golf")
+	Else 
+		WP SetAIKey($apiKey)
+	End if 
+	
 	WP UpdateWidget("WPtoolbar"; "WParea")
 	
 Else 

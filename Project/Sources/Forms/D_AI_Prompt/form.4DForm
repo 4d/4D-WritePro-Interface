@@ -231,30 +231,6 @@
 					"fill": "transparent",
 					"fontTheme": "normal"
 				},
-				"btn_launch": {
-					"type": "button",
-					"text": "",
-					"top": 530,
-					"left": 620,
-					"width": 30,
-					"height": 30,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/btn_launch.4dm",
-					"sizingX": "move",
-					"style": "toolbar",
-					"borderStyle": "none",
-					"sizingY": "move",
-					"shortcutAccel": false,
-					"shortcutControl": false,
-					"shortcutShift": false,
-					"shortcutAlt": false,
-					"shortcutKey": "[Enter]",
-					"icon": "/RESOURCES/Images/AI/send_32.png",
-					"iconFrames": 4,
-					"tooltip": ":xliff:SendRequest"
-				},
 				"btn_InsertAsStyledText": {
 					"type": "button",
 					"text": "",
@@ -522,7 +498,7 @@
 				},
 				"spinner": {
 					"type": "picture",
-					"top": 558,
+					"top": 528,
 					"left": 620,
 					"width": 32,
 					"height": 32,
@@ -531,11 +507,35 @@
 					"visibility": "hidden",
 					"sizingX": "move",
 					"sizingY": "move"
+				},
+				"btn_launch": {
+					"type": "button",
+					"text": "",
+					"top": 530,
+					"left": 620,
+					"width": 30,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_launch.4dm",
+					"sizingX": "move",
+					"style": "toolbar",
+					"borderStyle": "none",
+					"sizingY": "move",
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "[Enter]",
+					"icon": "/RESOURCES/Images/AI/send_32.png",
+					"iconFrames": 4,
+					"tooltip": ":xliff:SendRequest"
 				}
 			}
 		}
 	],
-	"geometryStamp": 1814,
+	"geometryStamp": 1823,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

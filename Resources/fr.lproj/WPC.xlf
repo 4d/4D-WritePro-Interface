@@ -2113,7 +2113,19 @@ Souhaitez-vous le remplacer ?</target>
         <trans-unit id="xx" resname="AI">
           <source>A.I.</source>
           <target>I.A.</target>
-        </trans-unit>     
+        </trans-unit>
+        <trans-unit id="xx" resname="ErrorCodeColon">
+          <source>Error code: </source>
+          <target>Code erreur : </target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ErrorMessageColon">
+          <source>Error message: </source>
+          <target>Message d'erreur : </target>
+        </trans-unit>
+        <trans-unit id="xx" resname="GlobalError">
+          <source>An error occured.</source>
+          <target>Une erreur est survenue.</target>
+        </trans-unit>       
       </group>
 
       <group resname="DialogAI_Prompt_Tips">
