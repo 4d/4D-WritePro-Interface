@@ -2106,7 +2106,23 @@ Soll er ersetzt werden?</target>
         <trans-unit id="xx" resname="PromptPlaceHolder">
           <source>Enter your request</source>
           <target>Geben Sie Ihre Anfrage ein</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="AI">
+          <source>A.I.</source>
+          <target>A.I.</target>
         </trans-unit>    
+        <trans-unit id="xx" resname="ErrorCodeColon">
+          <source>Error code: </source>
+          <target>Fehlercode: </target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ErrorMessageColon">
+          <source>Error message: </source>
+          <target>Fehlermeldung: </target>
+        </trans-unit>
+        <trans-unit id="xx" resname="GlobalError">
+          <source>An error occured.</source>
+          <target>Ein Fehler ist aufgetreten.</target>
+        </trans-unit>   
       </group>
 
       <group resname="DialogAI_Prompt_Tips">
