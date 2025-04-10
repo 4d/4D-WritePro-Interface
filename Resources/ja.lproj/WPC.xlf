@@ -672,7 +672,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="5" resname="auto">
           <source>Auto</source>
-          <target state="needs-translation">auto</target>
+          <target>自動</target>
         </trans-unit>
         <trans-unit id="6" resname="pct">
           <source>%</source>
@@ -2096,6 +2096,71 @@ Would you like to replace it?</source>
 
 
 </group>
+
+
+      <group resname="DialogAI_Prompt">
+        <trans-unit id="xx" resname="History">
+          <source>History</source>
+          <target>履歴</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ClearHistory">
+          <source>Do you really want to erase all the history?</source>
+          <target>履歴を本当に全て消去しますか?</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="PromptPlaceHolder">
+          <source>Enter your request</source>
+          <target>要望を入力</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="AI">
+          <source>A.I.</source>
+          <target>A.I.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ErrorCodeColon">
+          <source>Error code: </source>
+          <target>エラーコード: </target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ErrorMessageColon">
+          <source>Error message: </source>
+          <target>エラーメッセージ: </target>
+        </trans-unit>
+        <trans-unit id="xx" resname="GlobalError">
+          <source>An error occured.</source>
+          <target>エラーが発生しました。</target>
+        </trans-unit>    
+      </group>
+
+      <group resname="DialogAI_Prompt_Tips">
+
+        <trans-unit id="xx" resname="ReturnRawText">
+            <source>Return raw text</source>
+            <target>標準テキストを返す</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ReturnStyledText">
+          <source>Return styled text</source>
+          <target>スタイル付きテキストを返す</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CopyRawText">
+          <source>Copy raw text</source>
+          <target>標準テキストをコピー</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CopyStyledText">
+          <source>Copy styled text</source>
+          <target>スタイル付きテキストをコピー</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="EraseHistory">
+          <source>Erase history</source>
+          <target>履歴を消去</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="SendRequest">
+          <source>Send request</source>
+          <target>要望を送信</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ResendRequest">
+          <source>Resend request</source>
+          <target>要望を再送信</target>
+        </trans-unit>        
+      </group>
+
 
 
       <group resname="Menu_Paragraph">
