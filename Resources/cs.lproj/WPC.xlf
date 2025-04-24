@@ -1252,7 +1252,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="260" resname="FullWord">
           <source>Full words only</source>
-          <target state="needs-translation">Pouze celá slova (Full word)</target>
+          <target>Pouze celá slova</target>
         </trans-unit>
         <trans-unit id="259" resname="KeepCharStyle">
           <source>Keep each character style</source>
@@ -1560,11 +1560,11 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="fMOz7wl6MpDwxlU77dYxUA" resname="InfoScreen">
           <source>Document size will be smaller and any pictures will be compressed to "jpg" or "png"</source>
-          <target state="needs-translation">Velikost dokumentu bude menší a obrázky budou komprimovány do "jpg" nebo "png"</target>
+          <target>Velikost dokumentu bude menší a všechny obrázky budou komprimovány do "jpg" nebo "png"</target>
         </trans-unit>
         <trans-unit id="SD+Y7dnDCOmvJ94LKms7CQ" resname="InfoPrint">
           <source>Document size will be bigger and any pictures will be keep their original "codec".</source>
-          <target state="needs-translation">Velikost obrázku bude větší a obrázky budou drženy ve svých originálních "codec".</target>
+          <target>Velikost obrázku bude větší a všechny obrázky budou drženy ve svých originálních "codec".</target>
         </trans-unit>
         <trans-unit id="M/by8K2LDXD/OhCDfGnX+Q" resname="InfoFormulas">
           <source>When selected, all formulas will be recomputed before export.
@@ -1803,11 +1803,11 @@ Chcete ji nahradit?</target>
         </trans-unit>
         <trans-unit id="zRIujmEncGp6o57fw558gQ" resname="HorizontalHyphen">
           <source>Horizontal alignment:</source>
-          <target state="needs-translation">Vodorovný:</target>
+          <target>Vodorovné zarovnání:</target>
         </trans-unit>
         <trans-unit id="8LsAUIhSSfbN0OJ6Lw53Tg" resname="VerticalHyphen">
           <source>Vertical alignment:</source>
-          <target state="needs-translation">Svislý:</target>
+          <target>Svislé zarovnání:</target>
         </trans-unit>
         <trans-unit id="OeBtEIyH9SPbvssc58l4CQ" resname="OriginHyphen">
           <source>Origin:</source>
@@ -2093,7 +2093,69 @@ Chcete ji nahradit?</target>
           <target>Zobrazit zástupný řádek</target>
         </trans-unit>
       </group>
-      
+
+      <group resname="DialogAI_Prompt">
+        <trans-unit id="xx" resname="History">
+          <source>History</source>
+          <target>Historie</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ClearHistory">
+          <source>Do you really want to erase all the history?</source>
+          <target>Opravdu chcete smazat celou historii?</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="PromptPlaceHolder">
+          <source>Enter your request</source>
+          <target>Zadejte svůj požadavek</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="AI">
+          <source>A.I.</source>
+          <target>A.I.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ErrorCodeColon">
+          <source>Error code: </source>
+          <target>Kód chyby: </target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ErrorMessageColon">
+          <source>Error message: </source>
+          <target>Chybová zpráva: </target>
+        </trans-unit>
+        <trans-unit id="xx" resname="GlobalError">
+          <source>An error occured.</source>
+          <target>Došlo k chybě.</target>
+        </trans-unit>    
+      </group>
+
+      <group resname="DialogAI_Prompt_Tips">
+
+        <trans-unit id="xx" resname="ReturnRawText">
+            <source>Return raw text</source>
+            <target>Vrátit nezpracovaný text</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ReturnStyledText">
+          <source>Return styled text</source>
+          <target>Vrátit stylizovaný text</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CopyRawText">
+          <source>Copy raw text</source>
+          <target>Kopírovat nezpracovaný text</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CopyStyledText">
+          <source>Copy styled text</source>
+          <target>Kopírovat stylizovaný text</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="EraseHistory">
+          <source>Erase history</source>
+          <target>Vymazat historii</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="SendRequest">
+          <source>Send request</source>
+          <target>Odeslat požadavek</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ResendRequest">
+          <source>Resend request</source>
+          <target>Znovu odeslat požadavek</target>
+        </trans-unit>        
+      </group>
       
       <group resname="Menu_Paragraph">
         <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
