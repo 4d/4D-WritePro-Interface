@@ -14,12 +14,12 @@
 	},
 	{
 		"title": "Translate the selection",
-		"prompt": "Can you translate the selected text into french?",
+		"prompt": "Can you translate the selected text into French?",
 		"source": "selection"
 	},
 	{
 		"title": "Translate the document",
-		"prompt": "Can you translate the whole document into french?",
+		"prompt": "Can you translate the whole document into French?",
 		"source": "document"
 	},
 	{

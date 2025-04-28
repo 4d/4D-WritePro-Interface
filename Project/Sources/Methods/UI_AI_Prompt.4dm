@@ -34,6 +34,7 @@ Case of
 		End case 
 		
 		OBJECT SET VISIBLE:C603(*; "btn_launch"; (Form:C1466._extra.state#1))
+		OBJECT SET ENABLED:C1123(*; "btnClear"; (Form:C1466._extra.state#1))  // do NOT enable "clear history" while running
 		OBJECT SET FORMAT:C236(*; "btn_launch"; $format)
 		
 		OBJECT SET HELP TIP:C1181(*; "btn_launch"; $helpTip)
