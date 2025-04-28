@@ -529,7 +529,7 @@
 				"FakeFocusFontColor": {
 					"type": "picture",
 					"top": 99,
-					"left": 190,
+					"left": 340,
 					"width": 10,
 					"height": 10,
 					"pictureFormat": "scaled",
@@ -538,7 +538,7 @@
 				"FakeFocusBackgroundColor": {
 					"type": "picture",
 					"top": 127,
-					"left": 190,
+					"left": 340,
 					"width": 10,
 					"height": 10,
 					"visibility": "hidden",
@@ -548,7 +548,7 @@
 				"FakeFocusUnderlineColor": {
 					"type": "picture",
 					"top": 303,
-					"left": 230,
+					"left": 380,
 					"width": 10,
 					"height": 10,
 					"visibility": "hidden",
@@ -558,7 +558,7 @@
 				"FakeFocusShadowColor": {
 					"type": "picture",
 					"top": 427,
-					"left": 230,
+					"left": 380,
 					"width": 10,
 					"height": 10,
 					"visibility": "hidden",
@@ -695,7 +695,7 @@
 				"FakeFocusLinethroughColor": {
 					"type": "picture",
 					"top": 235,
-					"left": 230,
+					"left": 380,
 					"width": 10,
 					"height": 10,
 					"visibility": "hidden",
@@ -1067,6 +1067,24 @@
 					"fill": "#CBCBCB",
 					"stroke": "transparent",
 					"borderRadius": 8
+				},
+				"btnClearBackground": {
+					"type": "button",
+					"top": 121,
+					"left": 195,
+					"width": 24,
+					"height": 24,
+					"stroke": "#FF0000",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Sidebar/Clear_24.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"popupPlacement": "none",
+					"method": "ObjectMethods/btnClearBackground.4dm",
+					"events": [
+						"onClick"
+					],
+					"text": ""
 				}
 			},
 			"entryOrder": [
@@ -1098,7 +1116,8 @@
 				"btn_InsertSH",
 				"btn_RemoveSH",
 				"fontLongName",
-				"btnAI"
+				"btnAI",
+				"btnClearBackground"
 			]
 		}
 	],
@@ -1143,5 +1162,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1425
+	"geometryStamp": 1554
 }
