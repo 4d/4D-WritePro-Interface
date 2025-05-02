@@ -1,0 +1,51 @@
+﻿[
+	{
+	  "title": "Resumir la selección",
+	  "prompt": "¿Podría resumir el texto seleccionado?",
+	  "source": "selection"
+	},
+	{
+	  "title": "Resumir el documento",
+	  "prompt": "¿Podría resumir todo el documento?",
+	  "source": "document"
+	},
+	{
+	  "title": "-"
+	},
+	{
+	  "title": "Traducir la selección",
+	  "prompt": "¿Podría traducir el texto seleccionado a inglés?",
+	  "source": "selection"
+	},
+	{
+	  "title": "Traducir el documento",
+	  "prompt": "¿Podría traducir todo el documento a inglés?",
+	  "source": "document"
+	},
+	{
+	  "title": "-"
+	},
+	{
+	  "title": "Reescribir la selección",
+	  "prompt": "¿Podría ayudarme a mejorar el texto seleccionado? Me gustaría que fuera más claro y atractivo.",
+	  "source": "selection"
+	},
+	{
+	  "title": "Reescribir el documento",
+	  "prompt": "¿Podría ayudarme a mejorar este documento? Me gustaría que fuera más claro y atractivo.",
+	  "source": "document"
+	},
+	{
+	  "title": "-"
+	},
+	{
+	  "title": "Verificar la gramática de la selección",
+	  "prompt": "¿Podría verificar la gramática del texto seleccionado y decirme si hay algún error?",
+	  "source": "selection"
+	},
+	{
+	  "title": "Verificar la gramática del documento",
+	  "prompt": "¿Podría verificar la gramática de este documento y decirme si hay algún error?",
+	  "source": "document"
+	}
+  ]

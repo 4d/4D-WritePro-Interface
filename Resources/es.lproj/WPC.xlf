@@ -2096,6 +2096,70 @@ Would you like to replace it?</source>
       </group>
 
 
+
+      <group resname="DialogAI_Prompt">
+        <trans-unit id="xx" resname="History">
+          <source>History</source>
+          <target>Histórico</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ClearHistory">
+          <source>Do you really want to erase all the history?</source>
+          <target>¿De verdad quiere borrar todo el historial?</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="PromptPlaceHolder">
+          <source>Enter your request</source>
+          <target>Ingrese su solicitud</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="AI">
+          <source>A.I.</source>
+          <target>I.A.</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ErrorCodeColon">
+          <source>Error code: </source>
+          <target>Código de error: </target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ErrorMessageColon">
+          <source>Error message: </source>
+          <target>Mensaje de error: </target>
+        </trans-unit>
+        <trans-unit id="xx" resname="GlobalError">
+          <source>An error occured.</source>
+          <target>Se ha producido un error.</target>
+        </trans-unit>    
+      </group>
+
+      <group resname="DialogAI_Prompt_Tips">
+
+        <trans-unit id="xx" resname="ReturnRawText">
+            <source>Return raw text</source>
+            <target>Devolver texto sin formato</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ReturnStyledText">
+          <source>Return styled text</source>
+          <target>Devolver texto con estilo</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CopyRawText">
+          <source>Copy raw text</source>
+          <target>Copiar texto bruto</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="CopyStyledText">
+          <source>Copy styled text</source>
+          <target>Copiar texto con estilo</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="EraseHistory">
+          <source>Erase history</source>
+          <target>Borrar la historia</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="SendRequest">
+          <source>Send request</source>
+          <target>Enviar petición</target>
+        </trans-unit>
+        <trans-unit id="xx" resname="ResendRequest">
+          <source>Resend request</source>
+          <target>Reenviar la petición</target>
+        </trans-unit>        
+      </group>
+
       <group resname="Menu_Paragraph">
         <trans-unit id="OBu9prb/tV2ysSeEdfq4GQ" resname="resetFontAttributes">
           <source>Reset paragraph font attributes</source>
