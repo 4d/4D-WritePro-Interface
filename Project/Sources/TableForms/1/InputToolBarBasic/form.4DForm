@@ -177,7 +177,7 @@
 					"type": "button",
 					"text": "Unactivate AI",
 					"top": 739,
-					"left": 588,
+					"left": 321,
 					"width": 121,
 					"height": 27,
 					"events": [
@@ -209,7 +209,7 @@
 		"kind": "form"
 	},
 	"method": "method.4dm",
-	"geometryStamp": 476,
+	"geometryStamp": 477,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

@@ -28,29 +28,6 @@
 		null,
 		{
 			"objects": {
-				"PaletteSubform": {
-					"type": "subform",
-					"top": 30,
-					"left": 0,
-					"width": 260,
-					"height": 620,
-					"detailForm": "WP_Palette_Fonts",
-					"focusable": false,
-					"deletableInList": false,
-					"doubleClickInRowAction": "editSubrecord",
-					"doubleClickInEmptyAreaAction": "addSubrecord",
-					"selectionMode": "multiple",
-					"printFrame": "variable",
-					"method": "ObjectMethods/PaletteSubform.4dm",
-					"events": [
-						"onDataChange"
-					],
-					"borderStyle": "none",
-					"scrollbarVertical": "visible",
-					"scrollbarHorizontal": "hidden",
-					"sizingX": "grow",
-					"sizingY": "grow"
-				},
 				"background": {
 					"type": "rectangle",
 					"top": 0,
@@ -484,12 +461,35 @@
 					"fontSize": 50,
 					"textAngle": 270,
 					"text": "4D WritePro Widget"
+				},
+				"PaletteSubform": {
+					"type": "subform",
+					"top": 30,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"detailForm": "WP_Palette_Fonts",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/PaletteSubform.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"borderStyle": "none",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow"
 				}
 			}
 		}
 	],
 	"editor": {
-		"activeView": "View 1",
+		"activeView": "Invisible By default",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
@@ -507,7 +507,6 @@
 				"visible": false
 			},
 			"Invisible By default": {
-				"visible": false,
 				"objects": [
 					"Rect1",
 					"Text"
@@ -515,5 +514,5 @@
 			}
 		}
 	},
-	"geometryStamp": 536
+	"geometryStamp": 538
 }

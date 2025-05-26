@@ -1,33 +1,33 @@
-C_TEXT:C284($menuRef; $choice)
+var $menuRef; $choice : Text
 $menuRef:=Create menu:C408
 
-APPEND MENU ITEM:C411($menuRef; Get localized string:C991("subscript"))
+APPEND MENU ITEM:C411($menuRef; Localized string:C991("subscript"))
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "fontSubscript")
 SET MENU ITEM ICON:C984($menuRef; -1; "Path:/RESOURCES/Images/MenuIcons/Subscript_24_1.png")
 
-APPEND MENU ITEM:C411($menuRef; Get localized string:C991("superscript"))
+APPEND MENU ITEM:C411($menuRef; Localized string:C991("superscript"))
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "fontSuperscript")
 SET MENU ITEM ICON:C984($menuRef; -1; "Path:/RESOURCES/Images/MenuIcons/Superscript_24_1.png")
 
 APPEND MENU ITEM:C411($menuRef; "-")
 
-APPEND MENU ITEM:C411($menuRef; Get localized string:C991("Uppercase"))
+APPEND MENU ITEM:C411($menuRef; Localized string:C991("Uppercase"))
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textTransform?value=uppercase")
 
-APPEND MENU ITEM:C411($menuRef; Get localized string:C991("Lowercase"))
+APPEND MENU ITEM:C411($menuRef; Localized string:C991("Lowercase"))
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textTransform?value=lowercase")
 
-APPEND MENU ITEM:C411($menuRef; Get localized string:C991("Capitalize"))
+APPEND MENU ITEM:C411($menuRef; Localized string:C991("Capitalize"))
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textTransform?value=capitalize")
 
-APPEND MENU ITEM:C411($menuRef; Get localized string:C991("SmallUppercase"))
+APPEND MENU ITEM:C411($menuRef; Localized string:C991("SmallUppercase"))
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textTransform?value=small-uppercase")
 
-APPEND MENU ITEM:C411($menuRef; Get localized string:C991("TextTransformNone"))
+APPEND MENU ITEM:C411($menuRef; Localized string:C991("TextTransformNone"))
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textTransform?value=none")
 
 APPEND MENU ITEM:C411($menuRef; "-")
-APPEND MENU ITEM:C411($menuRef; Get localized string:C991("FontsElipsis"))
+APPEND MENU ITEM:C411($menuRef; Localized string:C991("FontsElipsis"))
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "font/showDialog")
 
 APPEND MENU ITEM:C411($menuRef; "-")
@@ -53,12 +53,19 @@ SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8;
 APPEND MENU ITEM:C411($menuRef; ak standard action title:K76:83)
 SET MENU ITEM PROPERTY:C973($menuRef; -1; Associated standard action name:K28:8; "textShadowOffset")
 
+If (Form:C1466.selection#Null:C1517)
+	APPEND MENU ITEM:C411($menuRef; "-")
+	APPEND MENU ITEM:C411($menuRef; Localized string:C991("TransparentBackground"))
+	SET MENU ITEM PARAMETER:C1004($menuRef; -1; "TransparentBackground")
+End if 
 
 $choice:=Dynamic pop up menu:C1006($menuRef)
 
 RELEASE MENU:C978($menuRef)
 
-
+If ($choice="TransparentBackground")
+	WP_SetBackgroundColor(Form:C1466.selection; wk transparent:K81:134)
+End if 
 
 
 //APPEND TO ARRAY($ptrArrayNames->; Get localized string("TextTransformNone"))
