@@ -105,15 +105,7 @@
 			"WP_Palette_FindAndReplace"
 		]
 	},
-	"Table Forms": {
-		"tables": [
-			"SAMPLE"
-		],
-		"forms": [
-			"[SAMPLE]InputToolBar",
-			"[SAMPLE]Output"
-		]
-	},
+	"Table Forms": {},
 	"TOOLBARS": {
 		"methods": [
 			"debug_ReformatButtons",

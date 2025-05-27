@@ -3,7 +3,16 @@ C_BOOLEAN:C305($setupOK)
 C_LONGINT:C283($typeSelection)
 
 $paletteID:=1
-$typeSelection:=Form:C1466.selection.type
+
+
+// ACI0103861
+Case of 
+	: (Form:C1466.selection=Null:C1517)
+	: (Value type:C1509(Form:C1466.selection.type)#Is real:K8:4)
+	Else 
+		$typeSelection:=Form:C1466.selection.type
+End case 
+
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)
@@ -32,24 +41,30 @@ Case of
 		
 		// UI_PaletteFonts moved from here…
 		
-		If ($setupOK) & ($typeSelection#2)
+		// ACI0103861
+		
+		If ($setupOK)
 			
-			WP_GetFontInfo(Form:C1466.selection)  // font, size, weight, textcolor
+			If ($typeSelection#2)
+				
+				WP_GetFontInfo(Form:C1466.selection)  // font, size, weight, textcolor
+				
+				WP_GetBackgroundColor(Form:C1466.selection)
+				
+				WP_GetTextUnderline(Form:C1466.selection)
+				
+				//WP_GetFontVertAlign(Form.selection)
+				
+				//WP_GetTextTransform(Form.selection)
+				
+				WP_GetTextShadow(Form:C1466.selection)
+				
+			End if 
 			
-			WP_GetBackgroundColor(Form:C1466.selection)
-			
-			WP_GetTextUnderline(Form:C1466.selection)
-			
-			//WP_GetFontVertAlign(Form.selection)
-			
-			//WP_GetTextTransform(Form.selection)
-			
-			WP_GetTextShadow(Form:C1466.selection)
+			// …to here
+			UI_PaletteFonts
 			
 		End if 
-		
-		// …to here
-		UI_PaletteFonts
 		
 		//: (Form event=On Close Box)
 		

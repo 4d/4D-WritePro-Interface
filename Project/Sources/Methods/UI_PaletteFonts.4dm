@@ -1,6 +1,7 @@
 //%attributes = {"invisible":true}
 C_LONGINT:C283($typeSelection)
 
+
 If (UI_isProtected(False:C215))  // false means don't take focus into account
 	
 	OBJECT SET ENABLED:C1123(*; "@"; False:C215)
