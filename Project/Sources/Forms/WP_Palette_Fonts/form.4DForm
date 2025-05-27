@@ -1057,17 +1057,6 @@
 					"textAlign": "center",
 					"text": ":xliff:AI"
 				},
-				"background1": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 260,
-					"height": 620,
-					"visibility": "hidden",
-					"fill": "#CBCBCB",
-					"stroke": "transparent",
-					"borderRadius": 8
-				},
 				"btnClearBackground": {
 					"type": "button",
 					"top": 121,
@@ -1085,6 +1074,17 @@
 						"onClick"
 					],
 					"text": ""
+				},
+				"background1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 620,
+					"visibility": "hidden",
+					"fill": "#CBCBCB",
+					"stroke": "transparent",
+					"borderRadius": 8
 				}
 			},
 			"entryOrder": [

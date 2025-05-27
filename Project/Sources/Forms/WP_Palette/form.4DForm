@@ -448,20 +448,6 @@
 					"stroke": "transparent",
 					"borderRadius": 0
 				},
-				"Text": {
-					"type": "text",
-					"top": 20,
-					"left": 10,
-					"width": 60,
-					"height": 630,
-					"visibility": "hidden",
-					"stroke": "#AAAAAA",
-					"textAlign": "right",
-					"fontFamily": ".Helvetica Neue DeskInterface",
-					"fontSize": 50,
-					"textAngle": 270,
-					"text": "4D WritePro Widget"
-				},
 				"PaletteSubform": {
 					"type": "subform",
 					"top": 30,
@@ -484,6 +470,20 @@
 					"scrollbarHorizontal": "hidden",
 					"sizingX": "grow",
 					"sizingY": "grow"
+				},
+				"Text": {
+					"type": "text",
+					"top": 20,
+					"left": 10,
+					"width": 60,
+					"height": 630,
+					"visibility": "hidden",
+					"stroke": "#AAAAAA",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 50,
+					"textAngle": 270,
+					"text": "4D WritePro Widget"
 				}
 			}
 		}
@@ -514,5 +514,5 @@
 			}
 		}
 	},
-	"geometryStamp": 538
+	"geometryStamp": 546
 }
