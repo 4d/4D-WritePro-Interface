@@ -21,7 +21,7 @@ If (Not:C34($protected))  // still not protected ?
 		$protected:=Not:C34(Form:C1466.enterable)
 	End if 
 	
-	If (Not:C34($protected))  // still not protected ?
+	If (Not:C34($protected)) && (Form:C1466.selection#Null:C1517)  // still not protected ? // ACI0103861
 		
 		WP Get attributes:C1345(Form:C1466.selection.owner; wk protection enabled:K81:307; $protectedDoc)  // 1 protection enabled, 0 protection disabled
 		WP Get attributes:C1345(Form:C1466.selection; wk protected:K81:306; $protectedSel)  // 1 protected, 0 not protected, wk mixed= semi protected
