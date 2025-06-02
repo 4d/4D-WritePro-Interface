@@ -3,7 +3,14 @@ var $setupOK : Boolean
 var $typeSelection : Integer
 
 $paletteID:=1
-$typeSelection:=Form:C1466.selection.type
+
+// ACI0103861
+Case of 
+	: (Form:C1466.selection=Null:C1517)
+	: (Value type:C1509(Form:C1466.selection.type)#Is real:K8:4)
+	Else 
+		$typeSelection:=Form:C1466.selection.type
+End case 
 
 Case of 
 	: (Form event code:C388=On Load:K2:1)
