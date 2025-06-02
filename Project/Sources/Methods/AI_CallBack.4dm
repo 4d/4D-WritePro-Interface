@@ -14,8 +14,12 @@ Else
 	
 	If ($result.errors.length>0)
 		$answer:=""
-		$answer+="**"+Localized string:C991("ErrorCodeColon")+"**"
-		$answer+=$result.errors[0].code+"\r"
+		
+		If (Value type:C1509($result.errors[0].code)=Is real:K8:4)  // ACI0105627
+			$answer+="**"+Localized string:C991("ErrorCodeColon")+"**"
+			$answer+=$result.errors[0].code+"\r"
+		End if 
+		
 		$answer+="**"+Localized string:C991("ErrorMessageColon")+"**"
 		$answer+=$result.errors[0].message
 	Else 
