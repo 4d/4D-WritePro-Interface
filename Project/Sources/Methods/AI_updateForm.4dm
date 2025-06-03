@@ -16,8 +16,17 @@ var $newDoc : Object
 
 Case of 
 		
-	: ($action="")  // error to be managed
-		Form:C1466._extra.state:=1  // rub
+		//: ($action="")  // error to be managed
+		//Form._extra.state:=1  // rub
+		
+		//ACI0105627
+		
+	: ($action="Error")  // error to be managed
+		Form:C1466._extra.state:=0  // Run
+		AI_updateForm($content; "Set Text"; True:C214)
+		
+		
+		
 		
 	: ($action="Set Text")
 		

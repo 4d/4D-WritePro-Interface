@@ -13,7 +13,28 @@ If ($result.success)
 Else 
 	// Alert($result.errors.formula(Formula(JSON Stringify($1))).join("\n"))
 	
-	AI_updateForm(""; "")  // just change state
+	//AI_updateForm(""; "")  // just change state
+	
+	
+	
+	//ACI0105627
+	
+	If ($result.errors.length>0)
+		$answer:=""
+		
+		If (Value type:C1509($result.errors[0].code)=Is real:K8:4)  // ACI0105627
+			$answer+="**"+Localized string:C991("ErrorCodeColon")+"**"
+			$answer+=$result.errors[0].code+"\r"
+		End if 
+		
+		$answer+="**"+Localized string:C991("ErrorMessageColon")+"**"
+		$answer+=$result.errors[0].message
+	Else 
+		$answer:=Localized string:C991("GlobalError")
+	End if 
+	
+	AI_updateForm($answer; "Error")  // just change state
+	
 	
 End if 
 
