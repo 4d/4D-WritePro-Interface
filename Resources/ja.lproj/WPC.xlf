@@ -830,6 +830,10 @@ This file is distributed under the same license as the product package.-->
           <source>Small uppercase</source>
           <target>全て小さな大文字</target>
         </trans-unit>
+        <trans-unit id="5" resname="TransparentBackground">
+          <source>Transparent background</source>
+          <target>透明の背景</target>
+        </trans-unit>
       </group>
       <group resname="PaletteStylesheets">
         <trans-unit id="169" resname="characterStylesheets">
