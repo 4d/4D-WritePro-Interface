@@ -507,7 +507,6 @@
 				"visible": false
 			},
 			"Invisible By default": {
-				"visible": false,
 				"objects": [
 					"Rect1",
 					"Text"

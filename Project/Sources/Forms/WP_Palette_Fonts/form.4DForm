@@ -1108,6 +1108,7 @@
 		"views": {
 			"View 1": {},
 			"Frames": {
+				"visible": false,
 				"objects": [
 					"background"
 				]
@@ -1143,5 +1144,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 1425
+	"geometryStamp": 1426
 }
