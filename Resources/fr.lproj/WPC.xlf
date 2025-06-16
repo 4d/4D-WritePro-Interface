@@ -1390,15 +1390,15 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="292" resname="Table">
           <source>Table</source>
-          <target>Table</target>
+          <target>Tableau</target>
         </trans-unit>
         <trans-unit id="293" resname="InsertTable">
           <source>Insert table</source>
-          <target>Insérer table</target>
+          <target>Insérer tableau</target>
         </trans-unit>
         <trans-unit id="294" resname="LabelTable">
           <source>Table</source>
-          <target>Table</target>
+          <target>Tableau</target>
         </trans-unit>
         <trans-unit id="VHydT13fVdf+VH5qRRUFtg" resname="menuBorderStyle">
           <source>Border Style</source>
@@ -1442,7 +1442,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
         <trans-unit id="WdntTS/LhHFkvUQujjopMQ" resname="menuInsertTable">
           <source>Insert Table</source>
-          <target>Insérer table</target>
+          <target>Insérer tableau</target>
         </trans-unit>
         <trans-unit id="dXc0WnW6WSXYVOsmA0j/+g" resname="Cell">
           <source>Cell</source>
@@ -2088,7 +2088,7 @@ Souhaitez-vous le remplacer ?</target>
         </trans-unit>
         <trans-unit id="xx" resname="TE_HideTable">
           <source>Hide table</source>
-          <target>Masquer la table</target>
+          <target>Masquer le tableau</target>
         </trans-unit>
         <trans-unit id="xx" resname="TE_ShowPlaceholder">
           <source>Show placeholder row</source>
@@ -2195,7 +2195,7 @@ Souhaitez-vous le remplacer ?</target>
         </trans-unit>
         <trans-unit id="a21/ILiIHT15NrT6WxTPpA" resname="FreezeTables">
           <source>Freeze tables</source>
-          <target>Figer les tables</target>
+          <target>Figer les tableaux</target>
         </trans-unit>
       </group>
       <group resname="Menu_Compute">
@@ -2209,7 +2209,7 @@ Souhaitez-vous le remplacer ?</target>
         </trans-unit>
         <trans-unit id="bK4KIBvTGBVXEffFIfIYkg" resname="ComputeTables">
           <source>Compute tables</source>
-          <target>Évaluer les tables</target>
+          <target>Évaluer les tableaux</target>
         </trans-unit>
       </group>
 
