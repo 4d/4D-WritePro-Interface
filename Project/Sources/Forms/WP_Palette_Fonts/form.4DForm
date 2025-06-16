@@ -1150,6 +1150,7 @@
 				"visible": false
 			},
 			"View 9": {
+				"visible": false,
 				"objects": [
 					"Text",
 					"background1"
