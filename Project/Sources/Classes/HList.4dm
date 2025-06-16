@@ -1,3 +1,6 @@
+
+property hlist : Integer
+
 Class constructor()
 	
 	This:C1470.hlist:=New list:C375
