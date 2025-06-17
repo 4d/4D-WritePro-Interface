@@ -3760,25 +3760,6 @@
 					],
 					"method": "ObjectMethods/btnCellSettings.4dm",
 					"tooltip": ":xliff:Properties"
-				},
-				"btnCellUnmerge1": {
-					"type": "button",
-					"top": 35,
-					"left": 820,
-					"width": 40,
-					"height": 40,
-					"action": "cell/split",
-					"class": "Palette",
-					"focusable": false,
-					"icon": "Images/TableBorders_33.png",
-					"iconFrames": 4,
-					"textPlacement": "right",
-					"style": "custom",
-					"popupPlacement": "none",
-					"events": [
-						"onClick"
-					],
-					"tooltip": ":xliff:unmergeCells"
 				}
 			}
 		},
@@ -4562,5 +4543,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7596
+	"geometryStamp": 7598
 }
