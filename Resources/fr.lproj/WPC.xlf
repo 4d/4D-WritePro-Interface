@@ -830,10 +830,6 @@ This file is distributed under the same license as the product package.-->
           <source>Small uppercase</source>
           <target>Petites majuscules</target>
         </trans-unit>
-        <trans-unit id="5" resname="TransparentBackground">
-          <source>Transparent background</source>
-          <target>Fond transparent</target>
-        </trans-unit>
       </group>
       <group resname="PaletteStylesheets">
         <trans-unit id="169" resname="characterStylesheets">
