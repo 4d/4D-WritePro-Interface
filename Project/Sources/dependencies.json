@@ -3,10 +3,6 @@
 		"4D AIKit": {
 			"github": "4d/4D-AIKit-public",
 			"version": "4d"
-		},
-		"4D SVG": {
-			"github": "4d/4D-SVG",
-			"version": "4d"
 		}
 	}
 }

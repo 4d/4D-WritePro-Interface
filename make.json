@@ -1,7 +1,7 @@
 {
   "excludedPlatforms": "linux",
   "components": [
-    "4D SVG", "4D AIKit"
+    "4D AIKit"
   ],
   "postBuild": {
     "remove": [

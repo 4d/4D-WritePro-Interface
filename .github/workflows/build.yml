@@ -21,15 +21,6 @@ jobs:
         fetch-depth: 0
         lfs: true 
 
-    - name: Check out 4D-SVG
-      uses: actions/checkout@v4
-      with:
-        repository: 4d/4D-SVG
-        path: Components/4D-SVG.4dbase
-        ref : ${{ env.DEPENDENCIES_BRANCH }}
-        fetch-depth: 0
-        lfs: true
-
     - name: Check out 4D-AIKit
       uses: actions/checkout@v4
       with:
