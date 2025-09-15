@@ -14,7 +14,7 @@ Else
 End if 
 
 
-$visible:=(oForm.aiKey#"")
+$visible:=(oForm.aiKey#"") && (Bool:C1537(Storage:C1525.aiKey.componentExists))
 OBJECT SET VISIBLE:C603(*; "btnAI"; $visible)  // toolbar & sidebar
 
 OBJECT SET VISIBLE:C603(*; "Separator_AI"; $visible)  // sidebar
