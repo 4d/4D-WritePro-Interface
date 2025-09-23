@@ -2,6 +2,8 @@ name: Release
 on: 
   release:
     types: [published]
+env:
+  DEPENDENCIES_BRANCH: main
 jobs:
   create:
     name: "Create"
@@ -20,6 +22,24 @@ jobs:
           sparse-checkout: |
             ${{ secrets.POST_BUILD_PATH }}
           path: Components/${{ secrets.POST_BUILD_REPO }}
+
+      - name: Get Package Manager Action
+        uses: actions/checkout@v5
+        with:
+            repository: 4d/packageManager
+            ref: ${{ env.DEPENDENCIES_BRANCH }}
+            path: Components/packageManager
+            token: ${{ secrets.PAT_TOKEN }}
+            
+      - name: Fetch
+        uses: ./Components/packageManager
+        with:
+          product-line: vcs
+          version: vcs
+          build: official
+          token: ${{ secrets.DLTK }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }} # to fetch repository, GitHub release api
 
       - name: BuildAndPackage
         id: build-package
