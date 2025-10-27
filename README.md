@@ -1,4 +1,4 @@
-# 4d-WritePro-interface
+# 4D WritePro Interface
 
 4D WritePro interface offers a set of palettes, which allow end users to easily customize a 4D Write Pro document.
 
