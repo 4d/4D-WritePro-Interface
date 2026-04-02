@@ -29,6 +29,15 @@
 	"pages": [
 		{
 			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 173,
+					"left": 0,
+					"width": 87,
+					"height": 63,
+					"stroke": "#ffd700",
+					"fill": "#c0c0c0"
+				},
 				"TabArea": {
 					"type": "rectangle",
 					"top": 0,
@@ -449,8 +458,8 @@
 				"Button": {
 					"type": "button",
 					"text": "LOREM",
-					"top": 671,
-					"left": 742,
+					"top": 191,
+					"left": 520,
 					"width": 138,
 					"height": 24,
 					"events": [
@@ -463,7 +472,6 @@
 					"shortcutKey": "l",
 					"method": "ObjectMethods/Button.4dm",
 					"focusable": false,
-					"sizingX": "move",
 					"sizingY": "move"
 				},
 				"tabRect_Home": {
@@ -744,16 +752,12 @@
 				},
 				"cbBold1": {
 					"type": "checkbox",
-					"top": 656,
-					"left": 10,
+					"top": 176,
+					"left": 5,
 					"width": 28,
 					"height": 24,
-					"tooltip": ":xliff:bold",
 					"action": "fontBold",
-					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Home/Bold_24.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
 					"style": "toolbar",
 					"events": [
 						"onClick"
@@ -763,20 +767,18 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "b",
-					"sizingY": "move"
+					"sizingY": "move",
+					"iconFrames": 4,
+					"focusable": false
 				},
 				"cbItalic1": {
 					"type": "checkbox",
-					"top": 656,
-					"left": 38,
+					"top": 176,
+					"left": 33,
 					"width": 28,
 					"height": 24,
-					"tooltip": ":xliff:italic",
 					"action": "fontItalic",
-					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Home/Italic_24.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
 					"style": "toolbar",
 					"events": [
 						"onClick"
@@ -786,20 +788,18 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "i",
-					"sizingY": "move"
+					"sizingY": "move",
+					"iconFrames": 4,
+					"focusable": false
 				},
 				"btn_underline1": {
 					"type": "checkbox",
-					"top": 656,
-					"left": 66,
+					"top": 176,
+					"left": 59,
 					"width": 28,
 					"height": 24,
-					"tooltip": ":xliff:underline",
 					"action": "fontUnderline",
-					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Home/Underline_24.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
 					"style": "toolbar",
 					"events": [
 						"onClick"
@@ -809,13 +809,15 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "u",
-					"sizingY": "move"
+					"sizingY": "move",
+					"iconFrames": 4,
+					"focusable": false
 				},
 				"Text4": {
 					"type": "text",
-					"text": "<<--  Always active even if visible only in tab 1\r(drawback : can't be disabled, but who cares ?)",
-					"top": 660,
-					"left": 100,
+					"text": "⬅︎  Always active even if visible only in tab 1\r(drawback : can't be disabled, but who cares ?)",
+					"top": 190,
+					"left": 94,
 					"width": 371,
 					"height": 46,
 					"fontWeight": "bold",
@@ -824,12 +826,10 @@
 				},
 				"TB_SizeUp": {
 					"type": "button",
-					"top": 687,
-					"left": 10,
+					"top": 207,
+					"left": 5,
 					"width": 30,
 					"height": 24,
-					"tooltip": ":xliff:fontSizeUp",
-					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Home/FontSizeUp_24.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
@@ -843,16 +843,15 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "+",
-					"sizingY": "move"
+					"sizingY": "move",
+					"focusable": false
 				},
 				"TB_SizeDown": {
 					"type": "button",
-					"top": 687,
-					"left": 40,
+					"top": 207,
+					"left": 33,
 					"width": 30,
 					"height": 24,
-					"tooltip": ":xliff:fontSizeDown",
-					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Home/FontSizeDown_24.png",
 					"iconFrames": 4,
 					"textPlacement": "center",
@@ -866,7 +865,8 @@
 					"shortcutShift": false,
 					"shortcutAlt": false,
 					"shortcutKey": "-",
-					"sizingY": "move"
+					"sizingY": "move",
+					"focusable": false
 				},
 				"Background": {
 					"type": "rectangle",
@@ -881,19 +881,19 @@
 				"disabledTab": {
 					"type": "text",
 					"text": "Do not delete me, i'm used to get the disabled tabs colors (from CSS)",
-					"top": 222,
+					"top": 136,
 					"left": 0,
-					"width": 499,
-					"height": 21,
+					"width": 421,
+					"height": 17,
 					"class": "disabledTab"
 				},
 				"enabledTab": {
 					"type": "text",
 					"text": "Do not delete me, i'm used to get the enabled tabs colors (from CSS)",
-					"top": 196,
+					"top": 110,
 					"left": 0,
-					"width": 499,
-					"height": 21,
+					"width": 418,
+					"height": 17,
 					"class": "enabledTab"
 				}
 			}
@@ -1116,8 +1116,8 @@
 				},
 				"btn_clear": {
 					"type": "button",
-					"top": 742,
-					"left": 1054,
+					"top": 181,
+					"left": 1066,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:clear",
@@ -1186,8 +1186,8 @@
 				},
 				"btn_selectAll": {
 					"type": "button",
-					"top": 742,
-					"left": 1084,
+					"top": 181,
+					"left": 1096,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:selectAll",
@@ -1233,8 +1233,8 @@
 				},
 				"TB_FontSize": {
 					"type": "dropdown",
-					"top": 702,
-					"left": 1054,
+					"top": 141,
+					"left": 1066,
 					"width": 120,
 					"height": 20,
 					"tooltip": ":xliff:size",
@@ -1281,7 +1281,7 @@
 				"Stylesheet_btnAdd": {
 					"type": "button",
 					"top": 30,
-					"left": 800,
+					"left": 699,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:newStylesheet",
@@ -1298,7 +1298,7 @@
 				"Stylesheet_btnDelete": {
 					"type": "button",
 					"top": 30,
-					"left": 838,
+					"left": 730,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:deleteStylesheet",
@@ -1314,8 +1314,8 @@
 				},
 				"Stylesheet_btnUpdate": {
 					"type": "button",
-					"top": 58,
-					"left": 800,
+					"top": 30,
+					"left": 761,
 					"width": 30,
 					"height": 24,
 					"tooltip": ":xliff:updateStylesheet",
@@ -1331,13 +1331,10 @@
 				"Stylesheet_Type2": {
 					"type": "radio",
 					"top": 26,
-					"left": 640,
-					"width": 30,
-					"height": 30,
+					"left": 634,
+					"width": 32,
+					"height": 32,
 					"dataSource": "oForm.styleSheet.btnType[1]",
-					"fontFamily": "Xingkai SC Light",
-					"fontSize": 11,
-					"stroke": "#FFFFFF",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Text_32.png",
 					"iconFrames": 4,
@@ -1352,11 +1349,10 @@
 				"Stylesheet_Type1": {
 					"type": "radio",
 					"top": 26,
-					"left": 610,
-					"width": 30,
-					"height": 30,
+					"left": 602,
+					"width": 32,
+					"height": 32,
 					"dataSource": "oForm.styleSheet.btnType[0]",
-					"stroke": "#FFFFFF",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Paragraph_32.png",
 					"iconFrames": 4,
@@ -1371,8 +1367,8 @@
 				"Stylesheet_Names": {
 					"type": "dropdown",
 					"top": 60,
-					"left": 620,
-					"width": 165,
+					"left": 608,
+					"width": 180,
 					"height": 20,
 					"focusable": false,
 					"method": "ObjectMethods/Stylesheet_Names.4dm",
@@ -1382,8 +1378,8 @@
 				},
 				"WP1": {
 					"type": "dropdown",
-					"top": 671,
-					"left": 1054,
+					"top": 110,
+					"left": 1066,
 					"width": 120,
 					"height": 21,
 					"dataSource": "WP_fontLongName",
@@ -1489,8 +1485,8 @@
 				"Button3": {
 					"type": "button",
 					"text": "•",
-					"top": 786,
-					"left": 1054,
+					"top": 225,
+					"left": 1066,
 					"width": 62,
 					"height": 40,
 					"events": [
@@ -1515,6 +1511,107 @@
 					"dataSource": "oForm.comboFontSizes",
 					"method": "ObjectMethods/cbox_FontSize.4dm"
 				},
+				"Stylesheet_Type3": {
+					"type": "radio",
+					"top": 26,
+					"left": 666,
+					"width": 31,
+					"height": 32,
+					"dataSource": "oForm.styleSheet.btnType[6]",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/hierarchicalStyleSheet.svg",
+					"style": "custom",
+					"radioGroup": "Group31",
+					"method": "ObjectMethods/Stylesheet_Type3.4dm",
+					"events": [
+						"onClick"
+					],
+					"iconFrames": 1
+				},
+				"Line3": {
+					"type": "line",
+					"top": 30,
+					"left": 698,
+					"height": 24,
+					"width": 0,
+					"startPoint": "topLeft",
+					"class": "separator"
+				},
+				"Line73": {
+					"type": "line",
+					"top": 30,
+					"left": 792,
+					"height": 50,
+					"width": 0,
+					"startPoint": "topLeft",
+					"class": "separator"
+				},
+				"listLevelInc": {
+					"type": "button",
+					"top": 30,
+					"left": 797,
+					"width": 26,
+					"height": 24,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/indentIncrease.svg",
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"action": "listLevelInc"
+				},
+				"listLevelDec": {
+					"type": "button",
+					"top": 30,
+					"left": 824,
+					"width": 26,
+					"height": 24,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/indentDecrease.svg",
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"action": "listLevelDec"
+				},
+				"listLevelAppend": {
+					"type": "button",
+					"top": 30,
+					"left": 852,
+					"width": 26,
+					"height": 24,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/indentIncrease2.svg",
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"action": "listLevelAppend"
+				},
+				"listLevelConcatStringFormat": {
+					"type": "dropdown",
+					"top": 60,
+					"left": 824,
+					"width": 54,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					],
+					"action": "listLevelConcatStringFormat"
+				},
+				"listNumberFormat": {
+					"type": "button",
+					"text": "1.",
+					"top": 60,
+					"left": 796,
+					"width": 27,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "listNumberFormat"
+				},
 				"Rect2": {
 					"type": "rectangle",
 					"top": 0,
@@ -1538,7 +1635,49 @@
 					"fontSize": 44,
 					"text": "4D Write Pro Toolbar"
 				}
-			}
+			},
+			"entryOrder": [
+				"fontFamilly",
+				"fontStyle",
+				"cbox_FontSize",
+				"cbBold",
+				"cbItalic",
+				"btn_underline",
+				"btn_strikethrough",
+				"btn_backgroundColor",
+				"btn_colorShowDialog",
+				"btn_colorShowDialog1",
+				"btn_colorShowDialog2",
+				"Popup Dropdown List2",
+				"btn_paste",
+				"btn_cut",
+				"btn_copy",
+				"Button2",
+				"Button1",
+				"btn_undo",
+				"btn_info",
+				"btn_alignTextLeft",
+				"btn_alignTextCenter",
+				"btn_alignTextRight",
+				"btn_alignTextJustify",
+				"Stylesheet_Type1",
+				"Stylesheet_Type2",
+				"Stylesheet_Type3",
+				"Stylesheet_Names",
+				"Stylesheet_btnAdd",
+				"Stylesheet_btnDelete",
+				"Stylesheet_btnUpdate",
+				"listLevelInc",
+				"listLevelDec",
+				"listLevelAppend",
+				"listNumberFormat",
+				"listLevelConcatStringFormat",
+				"btn_clear",
+				"btn_selectAll",
+				"TB_FontSize",
+				"WP1",
+				"Button3"
+			]
 		},
 		{
 			"objects": {
@@ -4504,9 +4643,9 @@
 	],
 	"editor": {
 		"groups": {
-			"Group31": [
-				"Stylesheet_Type2",
-				"Stylesheet_Type1"
+			"Group": [
+				"Rect2",
+				"Text2"
 			]
 		},
 		"activeView": "View 1",
@@ -4516,8 +4655,7 @@
 			"Hidden": {
 				"visible": false,
 				"objects": [
-					"Rect2",
-					"Text2"
+					"Group"
 				]
 			},
 			"View 3": {
@@ -4543,5 +4681,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7598
+	"geometryStamp": 7900
 }

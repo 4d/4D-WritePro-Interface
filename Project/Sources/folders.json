@@ -21,6 +21,10 @@
 	},
 	"CLASSES": {
 		"classes": [
+			"color",
+			"PersonaWizard",
+			"preferences",
+			"TableWizard",
 			"Toolbar"
 		]
 	},
@@ -130,7 +134,8 @@
 			"TB_SwitchSkin"
 		],
 		"forms": [
-			"D_FindOptions"
+			"D_FindOptions",
+			"WP_Toolbar"
 		]
 	},
 	"WP_": {
