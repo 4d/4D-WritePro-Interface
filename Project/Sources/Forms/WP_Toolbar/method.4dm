@@ -46,7 +46,7 @@ Case of
 			wk type table:K81:222; \
 			wk type table row:K81:223; \
 			wk type table cell:K81:224; \
-			wk type paragraph:K81:191]}
+			wk type paragraph:K81:191/* Hierarchical Style Sheets */]}
 		
 		// Find and replace (Page 11)
 		oForm.FR:={\
