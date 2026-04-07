@@ -1,11 +1,10 @@
 //%attributes = {"invisible":true}
 var $document : Object:=Form:C1466.selection[wk owner:K81:168]
+var $type:=WP_GetStylesheetType
+var $c:=WP Get style sheets:C1655($document; $type)
 
-var $stylesheetType:=WP_GetStylesheetType
-var $_stylesheets:=WP Get style sheets:C1655($document; $stylesheetType)
-
-var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
-COLLECTION TO ARRAY:C1562($_stylesheets; $ptrStylesheetNames->; "name")
-SORT ARRAY:C229($ptrStylesheetNames->; >)
+var $namesArrayPtr:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
+COLLECTION TO ARRAY:C1562($c; $namesArrayPtr->; "name")
+SORT ARRAY:C229($namesArrayPtr->; >)
 
 WP_GetStyleSheet

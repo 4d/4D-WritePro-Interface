@@ -31,11 +31,11 @@ If ($styleSheet=Null:C1517)
 	
 End if 
 
-var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
+var $namesArrayPtr:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
 var $name : Text:=$styleSheet.name
-var $p:=Find in array:C230($ptrStylesheetNames->; $name)
+var $pos:=Find in array:C230($namesArrayPtr->; $name)
 
-$p:=$p>0 ? $p : 0
+$pos:=$pos>0 ? $pos : 0
 
-$ptrStylesheetNames->:=$p  // Toolbar widget
-LISTBOX SELECT ROW:C912(*; "LB_StyleSheets"; $p; lk replace selection:K53:1)  // Palette widget
+$namesArrayPtr->:=$pos  // Toolbar widget
+LISTBOX SELECT ROW:C912(*; "LB_StyleSheets"; $pos; lk replace selection:K53:1)  // Palette widget

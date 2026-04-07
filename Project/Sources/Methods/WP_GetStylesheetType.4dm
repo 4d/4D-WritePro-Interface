@@ -1,6 +1,6 @@
 //%attributes = {"invisible":true}
-#DECLARE()->$value : Integer
-var $index : Integer
+#DECLARE() : Integer
 
-$index:=oForm.styleSheet.btnType.indexOf(1)
-$value:=oForm.styleSheet.btnValue[$index]
+var $index : Integer:=oForm.styleSheet.btnType.indexOf(1)
+
+return oForm.styleSheet.btnValue[$index]

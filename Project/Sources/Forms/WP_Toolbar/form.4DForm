@@ -1415,7 +1415,6 @@
 					"left": 316,
 					"width": 30,
 					"height": 24,
-					"action": "",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/TBcommon/Home/ellipsis_24.png",
 					"iconFrames": 4,
@@ -1610,7 +1609,8 @@
 					"events": [
 						"onClick"
 					],
-					"action": "listNumberFormat"
+					"action": "listNumberFormat",
+					"focusable": false
 				},
 				"Rect2": {
 					"type": "rectangle",
