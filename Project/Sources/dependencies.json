@@ -1,4 +1,5 @@
 {
+	"version": 2140,
 	"dependencies": {
 		"4D AIKit": {
 			"github": "4d/4D-AIKit",
