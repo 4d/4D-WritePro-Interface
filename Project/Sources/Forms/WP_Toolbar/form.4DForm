@@ -1518,14 +1518,14 @@
 					"height": 32,
 					"dataSource": "oForm.styleSheet.btnType[6]",
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/hierarchicalStyleSheet.svg",
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Multi-levelstyle_sheets.png",
 					"style": "custom",
 					"radioGroup": "Group31",
 					"method": "ObjectMethods/Stylesheet_Type3.4dm",
 					"events": [
 						"onClick"
 					],
-					"iconFrames": 1
+					"iconFrames": 4
 				},
 				"Line3": {
 					"type": "line",
@@ -1548,16 +1548,17 @@
 				"listLevelInc": {
 					"type": "button",
 					"top": 30,
-					"left": 797,
+					"left": 796,
 					"width": 26,
 					"height": 24,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/indentIncrease.svg",
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Increaselist_level.png",
 					"style": "custom",
 					"events": [
 						"onClick"
 					],
-					"action": "listLevelInc"
+					"action": "listLevelInc",
+					"iconFrames": 4
 				},
 				"listLevelDec": {
 					"type": "button",
@@ -1566,12 +1567,13 @@
 					"width": 26,
 					"height": 24,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/indentDecrease.svg",
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Decreaselist_level.png",
 					"style": "custom",
 					"events": [
 						"onClick"
 					],
-					"action": "listLevelDec"
+					"action": "listLevelDec",
+					"iconFrames": 4
 				},
 				"listLevelAppend": {
 					"type": "button",
@@ -1580,12 +1582,13 @@
 					"width": 26,
 					"height": 24,
 					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/indentIncrease2.svg",
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Appendlist_level.png",
 					"style": "custom",
 					"events": [
 						"onClick"
 					],
-					"action": "listLevelAppend"
+					"action": "listLevelAppend",
+					"iconFrames": 4
 				},
 				"listLevelConcatStringFormat": {
 					"type": "dropdown",
@@ -1634,6 +1637,38 @@
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 44,
 					"text": "4D Write Pro Toolbar"
+				},
+				"Line74": {
+					"type": "line",
+					"top": 34,
+					"left": 796,
+					"width": 81,
+					"height": 0,
+					"stroke": "#ff0000"
+				},
+				"Line75": {
+					"type": "line",
+					"top": 32,
+					"left": 610,
+					"width": 81,
+					"height": 0,
+					"stroke": "#ff0000"
+				},
+				"Line76": {
+					"type": "line",
+					"top": 52,
+					"left": 610,
+					"width": 81,
+					"height": 0,
+					"stroke": "#ff0000"
+				},
+				"Line77": {
+					"type": "line",
+					"top": 49,
+					"left": 796,
+					"width": 81,
+					"height": 0,
+					"stroke": "#ff0000"
 				}
 			},
 			"entryOrder": [
@@ -4695,5 +4730,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7903
+	"geometryStamp": 7934
 }

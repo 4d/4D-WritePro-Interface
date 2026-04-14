@@ -1,89 +1,56 @@
 //%attributes = {"invisible":true}
-var $_attributes : Collection
-var $stylesheetType; $n : Integer
-var $source; $o; $stylesheet; $document; $styleSheet : Object
-var $ptrListbox; $ptrStylesheetNames : Pointer
+var $stylesheetType:=WP_GetStylesheetType  // Paragraph, char, picture, table, row or cell
+
+var $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")
+var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
+
+If (Is nil pointer:C315($ptrListbox))  // From toolbar
+	
+	var $indx:=$ptrStylesheetNames->
+	
+Else   // From palette
+	
+	$indx:=Find in array:C230($ptrListbox->; True:C214)  // Index
+	
+End if 
+
 var $stylesheetName : Text
 
-$stylesheetType:=WP_GetStylesheetType  // paragraph, char, picture, table, row or cell
+If ($indx>0)
+	
+	$stylesheetName:=$ptrStylesheetNames->{$indx}
+	
+End if 
 
-$ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")
-$ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
-
-Case of 
-	: (Form event code:C388=On Clicked:K2:4)
+If (Length:C16($stylesheetName)#0)
+	
+	var $document : Object:=Form:C1466.selection[wk owner:K81:168]
+	var $styleSheet:=WP Get style sheet:C1656($document; $stylesheetName)
+	
+	If ($stylesheet#Null:C1517)  // Should never happen
 		
-		If (Not:C34(Is nil pointer:C315($ptrListbox)))  // from palette
-			$n:=Find in array:C230($ptrListbox->; True:C214)  // index
-		Else   //                                 from toolbar
-			$n:=$ptrStylesheetNames->
-		End if 
-		If ($n>0)
-			$stylesheetName:=$ptrStylesheetNames->{$n}
-		End if 
+		var $_attributes:=WP_GetStyleAttributesByType($stylesheetType)  // All possible attributes for this type of style sheet
 		
-		//If (False)
-		
-		//$menu:=Create menu
-		
-		//If ($stylesheetType=wk type paragraph)
-		//APPEND MENU ITEM($menu;Get localized string("menuEditDefault"))
-		//SET MENU ITEM PARAMETER($menu;-1;"EditDefault")
-		//End if 
-		
-		//If ($stylesheetName#"")
-		//APPEND MENU ITEM($menu;Replace string(Get localized string("menuEditStylesheet");"<1>";$stylesheetName))
-		//SET MENU ITEM PARAMETER($menu;-1;"EditStylesheet")
-		//APPEND MENU ITEM($menu;"(-")
-		//End if 
-		
-		//$choice:=Dynamic pop up menu($menu)
-		//RELEASE MENU($menu)
-		
-		//Case of 
-		//: ($choice="EditDefault")  // update default style sheet
-		
-		//$document:=Form.selection[wk owner]
-		//$styleSheet:=WP Get style sheet($document;$stylesheetType)
-		
-		//: ($choice="EditStylesheet")  // update 'zzz' style sheet
-		
-		//$document:=Form.selection[wk owner]
-		//$styleSheet:=WP Get style sheet($document;$stylesheetName)
-		
-		//End case 
-		
-		//Else 
-		
-		If ($stylesheetName#"")
-			$document:=Form:C1466.selection[wk owner:K81:168]
-			$styleSheet:=WP Get style sheet:C1656($document; $stylesheetName)
-			
-			If ($stylesheet#Null:C1517)  // should never happen
+		Case of 
 				
-				$_attributes:=WP_GetStyleAttributesByType($stylesheetType)  // all possible attributes for this type of style sheet
+				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+			: ($stylesheetType=wk type default:K81:190)
 				
-				Case of 
-					: ($stylesheetType=wk type default:K81:190)
-						$source:=Form:C1466.selection
-						
-					: ($stylesheetType=wk type paragraph:K81:191)
-						//$source:=WP Paragraph range(Form.selection)
-						$source:=Form:C1466.selection
-						
-				End case 
+				var $source : Object:=Form:C1466.selection
 				
-				$o:=New object:C1471
+				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+			: ($stylesheetType=wk type paragraph:K81:191)
 				
-				$o.list:=$_attributes
-				$o.from:=$source
-				$o.to:=$stylesheet
-				//$o.remove:=True
+				// $source:=WP Paragraph range(Form.selection)
+				$source:=Form:C1466.selection
 				
-				WP_StylesheetSetAttributes($o)  //$_attributes;$source;$stylesheet;True)
-				
-				//WP SET ATTRIBUTES($source; wk style sheet; $styleSheet)
-				
-			End if 
-		End if 
-End case 
+				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+		End case 
+		
+		WP_StylesheetSetAttributes({\
+			list: $_attributes; \
+			from: $source; \
+			to: $stylesheet})
+		
+	End if 
+End if 
