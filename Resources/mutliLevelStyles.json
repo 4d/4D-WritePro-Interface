@@ -1,0 +1,148 @@
+{
+  "predefinedMultiLevelLists": [
+    {
+      "name": "Technical Blue Print",
+      "levels": [
+        {
+          "level": 1,
+          "listStyleType": "decimal"
+        },
+        {
+          "level": 2,
+          "listStyleType": "decimal",
+          "listConcatStringFormat": true
+        },
+        {
+          "level": 3,
+          "listStyleType": "decimal",
+          "listConcatStringFormat": true
+        },
+        {
+          "level": 4,
+          "listStyleType": "decimal",
+          "listConcatStringFormat": true
+        },
+        {
+          "level": 5,
+          "listStyleType": "decimal",
+          "listConcatStringFormat": true
+        }
+      ]
+    },
+    {
+      "name": "Legal & Governance",
+      "levels": [
+        {
+          "level": 1,
+          "listStyleType": "upperRoman"
+        },
+        {
+          "level": 2,
+          "listStyleType": "upperLatin"
+        },
+        {
+          "level": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "level": 4,
+          "listStyleType": "lowerLatin",
+          "listNumberFormat": "endParenthis"
+        },
+        {
+          "level": 5,
+          "listStyleType": "decimal",
+          "listNumberFormat": "doubleParenthis"
+        },
+        {
+          "level": 6,
+          "listStyleType": "lowerLatin",
+          "listNumberFormat": "doubleParenthis"
+        },
+        {
+          "level": 7,
+          "listStyleType": "lowerRoman",
+          "listNumberFormat": "doubleParenthis"
+        }
+      ]
+    },
+    {
+      "name": "Education Material",
+      "levels": [
+        {
+          "level": 1,
+          "listStyleType": "upperRoman",
+          "font": "Calibri",
+          "fontSize": 18,
+          "color": "#7C3AED",
+          "bold": true
+        },
+        {
+          "level": 2,
+          "listStyleType": "decimal",
+          "font": "Calibri",
+          "fontSize": 16,
+          "color": "#2563EB",
+          "bold": true
+        },
+        {
+          "level": 3,
+          "listStyleType": "decimal",
+          "listConcatStringFormat": true,
+          "font": "Calibri",
+          "fontSize": 14,
+          "color": "#059669"
+        },
+        {
+          "level": 4,
+          "listStyleType": "lowerLatin",
+          "font": "Calibri",
+          "fontSize": 13,
+          "color": "#D97706"
+        },
+        {
+          "level": 5,
+          "listStyleType": "disc",
+          "font": "Calibri",
+          "fontSize": 12,
+          "color": "#374151"
+        }
+      ]
+    },
+    {
+      "name": "Meeting Minutes",
+      "levels": [
+        {
+          "level": 1,
+          "listStyleType": "decimal"
+        },
+        {
+          "level": 2,
+          "listStyleType": "disc"
+        }
+      ]
+    },
+    {
+      "name": "Visual Hierarchy",
+      "levels": [
+        {
+          "level": 1,
+          "listStyleType": "disc"
+        },
+        {
+          "level": 2,
+          "listStyleType": "circle"
+        },
+        {
+          "level": 3,
+          "listStyleType": "square"
+        },
+        {
+          "level": 4,
+          "listStyleType": "none",
+          "custom": "-"
+        }
+      ]
+    }
+  ]
+}

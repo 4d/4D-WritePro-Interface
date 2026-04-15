@@ -27,18 +27,27 @@ var $namesArrayPtr:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Nam
 // MARK:- Update the list of style sheets
 var $c:=WP Get style sheets:C1655(Form:C1466.selection[wk owner:K81:168]; $type)
 
-If ($type=1)
+If ($type=wk type paragraph:K81:191)
 	
-	var $isList : Boolean:=Bool:C1537(oForm.styleSheet.btnType[6])  // || (Num($styleSheet.listStyleType)#0)
+/* 📌 Requirement #21272
 	
-	If ($isList)
+When the "Paragraph style sheets" button is active 
+(which means the "Multi-level style sheets" button is deactivated), 
+then the dropdown list shall contain only the paragraph style sheets that are not multi-level style sheets
+	
+*/
+	
+	var $isList:=Bool:C1537(oForm.styleSheet.btnType[6])
+	
+	If ($isList)  // Keep only list style sheets
 		
-		// Keep only list style sheets
 		$c:=$c.query("listStyleType != null AND name != normal")
 		
-	Else 
+	Else   // Keep only paragraphe style sheets
 		
-		// Keep only paragraphe style sheets
+		// Save the name of the “Normal” style sheet
+		
+		var $normal : Text:=$c.query("listStyleType = 0").first().name
 		$c:=$c.query("listStyleType = null")
 		
 	End if 
@@ -46,24 +55,43 @@ If ($type=1)
 	$c:=$c.extract("name")
 	$c.sort()
 	
-	If ($c.length>0)
-		
-		$c.push("-")
-		
-	End if 
-	
 	If ($isList)
 		
-		// TODO: Localisation
-		$c.push("Technical Blue Print")
-		$c.push("Legal & Governance")
-		$c.push("Education Material")
-		$c.push("Meeting Minutes")
-		$c.push("Visual Hierarchy")
+/* 📌 Requirement #21240
+		
+In the style sheets dropdown list, there shall be 5 pre-defined multi-level style sheets (templates) 
+for the user to choose from
+		
+*/
+		
+		If (Form:C1466.predefinedMultiLevelLists#Null:C1517)\
+			 && (Form:C1466.predefinedMultiLevelLists.length>0)
+			
+/*  📌 Requirement #21247
+			
+In the style sheets dropdown list, the multi-level style sheets shall be divided into 2: 
+• the ones defined in the WP document at the top, 
+• and the templates at the bottom
+			
+*/
+			
+			If ($c.length>0)
+				
+				$c.push("-")
+				
+			End if 
+			
+			var $o : Object
+			For each ($o; Form:C1466.predefinedMultiLevelLists)
+				
+				$c.push($o.name)
+				
+			End for each 
+		End if 
 		
 	Else 
 		
-		$c.push("Normal")
+		$c.push($normal)
 		
 	End if 
 	

@@ -1545,7 +1545,7 @@
 					"startPoint": "topLeft",
 					"class": "separator"
 				},
-				"listLevelInc": {
+				"list Level Inc": {
 					"type": "button",
 					"top": 30,
 					"left": 796,
@@ -1560,7 +1560,7 @@
 					"action": "listLevelInc",
 					"iconFrames": 4
 				},
-				"listLevelDec": {
+				"list Level Dec": {
 					"type": "button",
 					"top": 30,
 					"left": 824,
@@ -1575,7 +1575,7 @@
 					"action": "listLevelDec",
 					"iconFrames": 4
 				},
-				"listLevelAppend": {
+				"list Level Append": {
 					"type": "button",
 					"top": 30,
 					"left": 852,
@@ -1592,28 +1592,15 @@
 				},
 				"listLevelConcatStringFormat": {
 					"type": "dropdown",
-					"top": 60,
-					"left": 824,
+					"top": 110,
+					"left": 823,
 					"width": 54,
 					"height": 20,
 					"focusable": false,
 					"events": [
 						"onDataChange"
 					],
-					"action": "listLevelConcatStringFormat"
-				},
-				"listNumberFormat": {
-					"type": "button",
-					"text": "1.",
-					"top": 60,
-					"left": 796,
-					"width": 27,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"action": "listNumberFormat",
-					"focusable": false
+					"action": "listConcatStringFormat"
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -1644,7 +1631,8 @@
 					"left": 796,
 					"width": 81,
 					"height": 0,
-					"stroke": "#ff0000"
+					"stroke": "#ff0000",
+					"visibility": "hidden"
 				},
 				"Line75": {
 					"type": "line",
@@ -1652,7 +1640,8 @@
 					"left": 610,
 					"width": 81,
 					"height": 0,
-					"stroke": "#ff0000"
+					"stroke": "#ff0000",
+					"visibility": "hidden"
 				},
 				"Line76": {
 					"type": "line",
@@ -1660,7 +1649,8 @@
 					"left": 610,
 					"width": 81,
 					"height": 0,
-					"stroke": "#ff0000"
+					"stroke": "#ff0000",
+					"visibility": "hidden"
 				},
 				"Line77": {
 					"type": "line",
@@ -1668,7 +1658,33 @@
 					"left": 796,
 					"width": 81,
 					"height": 0,
-					"stroke": "#ff0000"
+					"stroke": "#ff0000",
+					"visibility": "hidden"
+				},
+				"listNumberFormat": {
+					"type": "dropdown",
+					"top": 59,
+					"left": 796,
+					"width": 52,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					],
+					"action": "listNumberFormat"
+				},
+				"Button4": {
+					"type": "button",
+					"text": "Button",
+					"top": 58,
+					"left": 852,
+					"width": 23,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"action": "listConcatStringFormat",
+					"focusable": false
 				}
 			},
 			"entryOrder": [
@@ -1702,16 +1718,17 @@
 				"Stylesheet_btnAdd",
 				"Stylesheet_btnDelete",
 				"Stylesheet_btnUpdate",
-				"listLevelInc",
-				"listLevelDec",
-				"listLevelAppend",
-				"listNumberFormat",
+				"list Level Inc",
+				"list Level Dec",
+				"list Level Append",
 				"listLevelConcatStringFormat",
 				"btn_clear",
 				"btn_selectAll",
 				"TB_FontSize",
 				"WP1",
-				"Button3"
+				"Button3",
+				"listNumberFormat",
+				"Button4"
 			]
 		},
 		{
@@ -4730,5 +4747,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7934
+	"geometryStamp": 7959
 }
