@@ -6,7 +6,7 @@ var $area : Object:=Form:C1466.wp
 WP SET TEXT:C1574($area; $txt; wk append:K81:179)
 
 // Create 3 hierarchical list style sheets
-WP New style sheet:C1650($area; wk type paragraph:K81:191; "MyList"; 3)
+var $o:=WP New style sheet:C1650($area; wk type paragraph:K81:191; "MyList"; 3)
 
 // Retrieve each level
 var $level1:=WP Get style sheet:C1656($area; "MyList"; 1)  // Root level
