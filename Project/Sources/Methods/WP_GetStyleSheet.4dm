@@ -64,8 +64,8 @@ for the user to choose from
 		
 */
 		
-		If (Form:C1466.predefinedMultiLevelLists#Null:C1517)\
-			 && (Form:C1466.predefinedMultiLevelLists.length>0)
+		If (oForm.predefinedMultiLevelLists#Null:C1517)\
+			 && (oForm.predefinedMultiLevelLists.length>0)
 			
 /*  📌 Requirement #21247
 			
@@ -82,7 +82,7 @@ In the style sheets dropdown list, the multi-level style sheets shall be divided
 			End if 
 			
 			var $o : Object
-			For each ($o; Form:C1466.predefinedMultiLevelLists)
+			For each ($o; oForm.predefinedMultiLevelLists)
 				
 				$c.push($o.name)
 				

@@ -15,8 +15,8 @@ If (Form:C1466=Null:C1517)  // ACI0100560
 	
 End if 
 
-// Check only on load
-If (Form event code:C388=On Load:K2:1)
+// MARK: Check only on load
+If (FORM Event:C1606.code=On Load:K2:1)
 	
 	If (Form:C1466.spellCheck#Null:C1517)
 		
@@ -37,36 +37,46 @@ that will contain the definition of the pre-defined multi-level lists
 
 */
 
-Form:C1466.predefinedMultiLevelLists:=[]
-
-/*
-
-This file can be overridden by adding a file of a similar name to the folder 4DWP_MultiLevel 
-under the local Resources folder of the database
-
-*/
-var $file:=File:C1566("/RESOURCES/4DWP_MultiLevel/mutliLevelStyles.json"; *)
-
-If (Not:C34($file.exists))
+If /* DEV */((Structure file:C489=Structure file:C489(*)) && Shift down:C543)
 	
-	$file:=File:C1566("/RESOURCES/mutliLevelStyles.json")
+	oForm.predefinedMultiLevelLists:=[]
+	
+Else 
+	
+	oForm.predefinedMultiLevelLists:=oForm.predefinedMultiLevelLists || []
 	
 End if 
 
-If ($file.exists)
+If (oForm.predefinedMultiLevelLists.length=0)
+/*
 	
-	var $mutliLevelStyles : Collection:=JSON Parse:C1218($file.getText()).predefinedMultiLevelLists
+This file can be overridden by adding a file of a similar name to the folder 4DWP_MultiLevel 
+under the local Resources folder of the database
 	
-	If ($mutliLevelStyles#Null:C1517)\
-		 && ($mutliLevelStyles.length>0)
+*/
+	var $file:=File:C1566("/RESOURCES/4DWP_MultiLevel/mutliLevelStyles.json"; *)
+	
+	If (Not:C34($file.exists))  // Use the built-in templates
 		
-		var $o : Object
+		$file:=File:C1566(Localized document path:C1105("mutliLevelStyles.json"); fk platform path:K87:2)
 		
-		For each ($o; $mutliLevelStyles)
+	End if 
+	
+	If ($file.exists)
+		
+		var $mutliLevelStyles : Collection:=JSON Parse:C1218($file.getText()).predefinedMultiLevelLists
+		
+		If ($mutliLevelStyles#Null:C1517)\
+			 && ($mutliLevelStyles.length>0)
 			
-			Form:C1466.predefinedMultiLevelLists.push($o)
+			var $o : Object
 			
-		End for each 
+			For each ($o; $mutliLevelStyles)
+				
+				oForm.predefinedMultiLevelLists.push($o)
+				
+			End for each 
+		End if 
 	End if 
 End if 
 

@@ -1625,47 +1625,11 @@
 					"fontSize": 44,
 					"text": "4D Write Pro Toolbar"
 				},
-				"Line74": {
-					"type": "line",
-					"top": 34,
-					"left": 796,
-					"width": 81,
-					"height": 0,
-					"stroke": "#ff0000",
-					"visibility": "hidden"
-				},
-				"Line75": {
-					"type": "line",
-					"top": 32,
-					"left": 610,
-					"width": 81,
-					"height": 0,
-					"stroke": "#ff0000",
-					"visibility": "hidden"
-				},
-				"Line76": {
-					"type": "line",
-					"top": 52,
-					"left": 610,
-					"width": 81,
-					"height": 0,
-					"stroke": "#ff0000",
-					"visibility": "hidden"
-				},
-				"Line77": {
-					"type": "line",
-					"top": 49,
-					"left": 796,
-					"width": 81,
-					"height": 0,
-					"stroke": "#ff0000",
-					"visibility": "hidden"
-				},
 				"listNumberFormat": {
 					"type": "dropdown",
-					"top": 59,
+					"top": 60,
 					"left": 796,
-					"width": 52,
+					"width": 54,
 					"height": 20,
 					"focusable": false,
 					"events": [
@@ -1673,13 +1637,12 @@
 					],
 					"action": "listNumberFormat"
 				},
-				"Button4": {
-					"type": "button",
-					"text": "Button",
-					"top": 58,
-					"left": 852,
-					"width": 23,
-					"height": 24,
+				"listConcatStringFormat": {
+					"type": "checkbox",
+					"top": 62,
+					"left": 856,
+					"width": 20,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
@@ -1728,7 +1691,7 @@
 				"WP1",
 				"Button3",
 				"listNumberFormat",
-				"Button4"
+				"listConcatStringFormat"
 			]
 		},
 		{
@@ -4747,5 +4710,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7959
+	"geometryStamp": 7982
 }

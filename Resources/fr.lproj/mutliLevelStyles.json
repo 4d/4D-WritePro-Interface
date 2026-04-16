@@ -1,7 +1,7 @@
 {
   "predefinedMultiLevelLists": [
     {
-      "name": "Technical Blue Print",
+      "name": "Structure technique",
       "levels": [
         { "level": 1, "listStyleType": "wk decimal" },
         { "level": 2, "listStyleType": "wk decimal" , "listConcatStringFormat": true },
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "name": "Legal and Governance",
+      "name": "Cadre juridique et gouvernance",
       "levels": [
         { "level": 1, "listStyleType": "wk upper roman" },
         { "level": 2, "listStyleType": "wk upper latin" },
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "name": "Education Material",
+      "name": "Contenu pédagogique",
       "levels": [
         { "level": 1, "listStyleType": "wk upper roman", "font": "Calibri", "fontSize": 18, "color": "#7C3AED", "fontBold": true, "listFont": "Calibri Bold"},
         { "level": 2, "listStyleType": "wk decimal", "font": "Calibri", "fontSize": 16, "color": "#2563EB", "fontBold": true, "listFont": "Calibri Bold" },
@@ -33,14 +33,14 @@
       ]
     },
     {
-      "name": "Meeting Minutes",
+      "name": "Compte rendu de réunion",
       "levels": [
         { "level": 1, "listStyleType": "wk decimal" },
         { "level": 2, "listStyleType": "wk disc" }
       ]
     },
     {
-      "name": "Visual Hierarchy",
+      "name": "Hiérarchie visuelle",
       "levels": [
         { "level": 1, "listStyleType": "wk club" },
         { "level": 2, "listStyleType":  "wk diamond"},

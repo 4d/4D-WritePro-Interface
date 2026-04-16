@@ -2,32 +2,32 @@
 #DECLARE($o : Object)
 
 var $_attributes : Collection
-var $source; $target : Object
-var $name : Text
 
-$source:=$o.from
-$target:=$o.to
 
-If ($o.list#Null:C1517)
-	$_attributes:=$o.list
-Else 
-	ARRAY TEXT:C222($_attributeNames; 0)
-	$_attributes:=New collection:C1472
-	OB GET PROPERTY NAMES:C1232($source; $_attributeNames)
-	ARRAY TO COLLECTION:C1563($_attributes; $_attributeNames)
-End if 
+var $source : Object:=$o.from
+var $target : Object:=$o.to
 
-//$object:=New object
-For each ($name; $_attributes)  // only contains attribute NAMES, VALUES will be added (or not)
+$_attributes:=$o.list || OB Entries:C1720($source)
+
+var $item : Object
+For each ($item; $_attributes)  // Only contains attribute NAMES, VALUES will be added (or not)
 	
 	Case of 
-		: ($name="name")
-		: ($name="type")
-		: ($name="owner")
+			
+			// ________________________________________________________________________________
+		: ($item.name="name")
+			
+			// ________________________________________________________________________________
+		: ($item.name="type")
+			
+			// ________________________________________________________________________________
+		: ($item.name="owner")
+			
+			// ________________________________________________________________________________
 		Else 
-			$target[$name]:=$source[$name]
+			
+			$target[$item.name]:=$source[$item.name]
+			
+			// ________________________________________________________________________________
 	End case 
-	
 End for each 
-
-
