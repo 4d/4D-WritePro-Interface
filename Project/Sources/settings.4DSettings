@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="24">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="26">
 	<com.4d>
 		<web>
 			<standalone_server>
@@ -21,9 +21,9 @@
 			<developper display_toolbar="true"/>
 			<user formula_editor_with_full_lists="true"/>
 		</interface>
-		<general component_classStore_name="" startup_environnement="0"/>
+		<general component_classStore_name="" execute_host_database_event="true" startup_environnement="0"/>
 		<database>
-			<misc use_ast_interpreter="false" win_form_text_directwrite="true"/>
+			<misc legacy_print_rendering="true" mac_use_lf="false" no_bom="false" non_blocking_printing="false" prefer_null_than_blank_values="false" split_catalog="false" standard_xpath="true" use_ast_interpreter="false" win_form_text_directwrite="true"/>
 			<cache flush_buffer_delay="20s"/>
 		</database>
 		<server>

@@ -1525,7 +1525,8 @@
 					"events": [
 						"onClick"
 					],
-					"iconFrames": 4
+					"iconFrames": 4,
+					"tooltip": ":xliff:multiLevelstylesheets"
 				},
 				"Line3": {
 					"type": "line",
@@ -1558,7 +1559,8 @@
 						"onClick"
 					],
 					"action": "listLevelInc",
-					"iconFrames": 4
+					"iconFrames": 4,
+					"tooltip": ":xliff:increaseListLevel"
 				},
 				"list Level Dec": {
 					"type": "button",
@@ -1573,7 +1575,8 @@
 						"onClick"
 					],
 					"action": "listLevelDec",
-					"iconFrames": 4
+					"iconFrames": 4,
+					"tooltip": ":xliff:decreaseListLevel"
 				},
 				"list Level Append": {
 					"type": "button",
@@ -1588,7 +1591,8 @@
 						"onClick"
 					],
 					"action": "listLevelAppend",
-					"iconFrames": 4
+					"iconFrames": 4,
+					"tooltip": ":xliff:appendLevelToList"
 				},
 				"listLevelConcatStringFormat": {
 					"type": "dropdown",
@@ -1601,6 +1605,32 @@
 						"onDataChange"
 					],
 					"action": "listConcatStringFormat"
+				},
+				"listNumberFormat": {
+					"type": "dropdown",
+					"top": 60,
+					"left": 796,
+					"width": 54,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					],
+					"action": "listNumberFormat",
+					"tooltip": ":xliff:numberingMarkerParenthesis"
+				},
+				"listConcatStringFormat": {
+					"type": "checkbox",
+					"top": 62,
+					"left": 856,
+					"width": 20,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"action": "listConcatStringFormat",
+					"focusable": false,
+					"tooltip": ":xliff:concatenateNumberingMarker"
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -1624,30 +1654,6 @@
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 44,
 					"text": "4D Write Pro Toolbar"
-				},
-				"listNumberFormat": {
-					"type": "dropdown",
-					"top": 60,
-					"left": 796,
-					"width": 54,
-					"height": 20,
-					"focusable": false,
-					"events": [
-						"onDataChange"
-					],
-					"action": "listNumberFormat"
-				},
-				"listConcatStringFormat": {
-					"type": "checkbox",
-					"top": 62,
-					"left": 856,
-					"width": 20,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"action": "listConcatStringFormat",
-					"focusable": false
 				}
 			},
 			"entryOrder": [
@@ -4710,5 +4716,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7982
+	"geometryStamp": 7983
 }

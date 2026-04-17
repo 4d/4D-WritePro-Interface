@@ -3,52 +3,52 @@
     {
       "name": "Structure technique",
       "levels": [
-        { "level": 1, "listStyleType": "wk decimal" },
-        { "level": 2, "listStyleType": "wk decimal" , "listConcatStringFormat": true },
-        { "level": 3, "listStyleType": "wk decimal" , "listConcatStringFormat": true},
-        { "level": 4, "listStyleType": "wk decimal"  , "listConcatStringFormat": true},
-        { "level": 5, "listStyleType": "wk decimal" , "listConcatStringFormat": true}
+        { "listStyleType": "wk decimal" },
+        { "listStyleType": "wk decimal" , "listConcatStringFormat": true },
+        { "listStyleType": "wk decimal" , "listConcatStringFormat": true},
+        { "listStyleType": "wk decimal"  , "listConcatStringFormat": true},
+        { "listStyleType": "wk decimal" , "listConcatStringFormat": true}
       ]
     },
     {
       "name": "Cadre juridique et gouvernance",
       "levels": [
-        { "level": 1, "listStyleType": "wk upper roman" },
-        { "level": 2, "listStyleType": "wk upper latin" },
-        { "level": 3, "listStyleType": "wk decimal" },
-        { "level": 4, "listStyleType": "wk lower latin", "listStringFormatLtr": "#)" },
-        { "level": 5, "listStyleType": "wk decimal", "listStringFormatLtr": "(#)"},
-        { "level": 6, "listStyleType": "wk lower latin", "listStringFormatLtr": "(#)" },
-        { "level": 7, "listStyleType": "wk lower roman", "listStringFormatLtr": "(#)" }
+        { "listStyleType": "wk upper roman" },
+        { "listStyleType": "wk upper latin" },
+        { "listStyleType": "wk decimal" },
+        { "listStyleType": "wk lower latin", "listStringFormatLtr": "#)" },
+        { "listStyleType": "wk decimal", "listStringFormatLtr": "(#)"},
+        { "listStyleType": "wk lower latin", "listStringFormatLtr": "(#)" },
+        { "listStyleType": "wk lower roman", "listStringFormatLtr": "(#)" }
       ]
     },
     {
       "name": "Contenu pédagogique",
       "levels": [
-        { "level": 1, "listStyleType": "wk upper roman", "font": "Calibri", "fontSize": 18, "color": "#7C3AED", "fontBold": true, "listFont": "Calibri Bold"},
-        { "level": 2, "listStyleType": "wk decimal", "font": "Calibri", "fontSize": 16, "color": "#2563EB", "fontBold": true, "listFont": "Calibri Bold" },
-        { "level": 3, "listStyleType": "wk decimal","listConcatStringFormat": true,"font": "Calibri", "fontSize": 14, "color": "#059669", "fontBold": true, "listFont": "Calibri Bold" },
-        { "level": 4, "listStyleType": "wk lower latin","font": "Calibri", "fontSize": 13, "color": "#D97706", "fontBold": true, "listFont": "Calibri Bold" },
-        { "level": 5, "listStyleType": "wk disc","font": "Calibri", "fontSize": 12, "color": "#374151" }
+        { "listStyleType": "wk upper roman", "font": "Calibri", "fontSize": 18, "color": "#7C3AED", "fontBold": true, "listFont": "Calibri Bold"},
+        { "listStyleType": "wk decimal", "font": "Calibri", "fontSize": 16, "color": "#2563EB", "fontBold": true, "listFont": "Calibri Bold" },
+        { "listStyleType": "wk decimal","listConcatStringFormat": true,"font": "Calibri", "fontSize": 14, "color": "#059669", "fontBold": true, "listFont": "Calibri Bold" },
+        { "listStyleType": "wk lower latin","font": "Calibri", "fontSize": 13, "color": "#D97706", "fontBold": true, "listFont": "Calibri Bold" },
+        { "listStyleType": "wk disc","font": "Calibri", "fontSize": 12, "color": "#374151" }
       ]
     },
     {
       "name": "Compte rendu de réunion",
       "levels": [
-        { "level": 1, "listStyleType": "wk decimal" },
-        { "level": 2, "listStyleType": "wk disc" }
+        { "listStyleType": "wk decimal" },
+        { "listStyleType": "wk disc" }
       ]
     },
     {
       "name": "Hiérarchie visuelle",
       "levels": [
-        { "level": 1, "listStyleType": "wk club" },
-        { "level": 2, "listStyleType":  "wk diamond"},
-        { "level": 3, "listStyleType": "wk square" },
-        { "level": 4, "listStyleType": "wk hollow square" },
-        { "level": 5, "listStyleType": "wk disc" },
-        { "level": 6, "listStyleType": "wk circle" },
-        { "level": 7, "listStyleType": "wk custom", "listStringFormatLtr": "-" }
+        { "listStyleType": "wk club" },
+        { "listStyleType":  "wk diamond"},
+        { "listStyleType": "wk square" },
+        { "listStyleType": "wk hollow square" },
+        { "listStyleType": "wk disc" },
+        { "listStyleType": "wk circle" },
+        { "listStyleType": "wk custom", "listStringFormatLtr": "-" }
       ]
     }
   ]

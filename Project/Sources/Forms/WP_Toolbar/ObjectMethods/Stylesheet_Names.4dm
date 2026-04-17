@@ -1,6 +1,7 @@
-var $selected : Text:=Self:C308->{Self:C308->}
-
-var $normalized:=WP_NormalizeStyleSheetName($selected)
+var $name : Text:=Self:C308->{Self:C308->}
+var $styleSheetName:=WP_NormalizeStyleSheetName($name)
+var $wpDoc : Object:=Form:C1466.area
+var $template : Object:=oForm.predefinedMultiLevelLists.query("name = :1"; $name).first()
 
 /* 📌 Requirement #21273
 
@@ -15,55 +16,94 @@ a dialog with the following message and options shall be displayed:
 "Overwrite existing style sheet" or "Create a new style sheet"
 
 */
-var $area : Object:=Form:C1466.area
-var $template : Object:=oForm.predefinedMultiLevelLists.query("name = :1"; $selected).first()
-var $allStyleSheets:=WP Get style sheets:C1655($area; wk type paragraph:K81:191).combine(WP Get style sheets:C1655($area; wk type character:K81:296))
-
-// Create mutliLevelStyles style sheet from template if any
-If ($template#Null:C1517)\
- && ($allStyleSheets.query("name = :1"; $normalized).first()=Null:C1517)
+If ($template#Null:C1517)
 	
-	var $levelCount : Integer:=$template.levels.length
-	var $style:=WP New style sheet:C1650($area; wk type paragraph:K81:191; $normalized; $levelCount)
+	var $styleSheets:=WP Get style sheets:C1655($wpDoc; wk type paragraph:K81:191).combine(WP Get style sheets:C1655($wpDoc; wk type character:K81:296))
+	var $style : Object:=$styleSheets.query("name = :1"; $styleSheetName).first()
+	var $create : Boolean:=($style=Null:C1517)  //&& ($style#$template)
 	
-	var $i : Integer
-	For ($i; 0; $levelCount-1; 1)
+	If (Not:C34($create))
 		
-		var $currentLevel : Object:=$template.levels[$i]
+		CONFIRM:C162(\
+			Replace string:C233(Localized string:C991("aStyleSheetWithThisNameAlreadyExists"); "{name}"; $name); \
+			Localized string:C991("overwriteExistingStyleSheet"); \
+			Localized string:C991("createANewStyleSheet"))
 		
-		var $attribute : Text
-		For each ($attribute; $currentLevel)
+		If (OK=1)  // Overwrite
 			
-			If ($attribute="level")
+			// Delete the existing style
+			WP DELETE STYLE SHEET:C1652($style)
+			
+		Else   // New
+			
+			Repeat 
 				
-				continue
+				$styleSheetName:=TOOL_IncrementString($styleSheetName)
+				
+			Until ($styleSheets.query("name = :1"; $styleSheetName).first()=Null:C1517)
+			
+			Repeat 
+				
+				$styleSheetName:=WP_Request(\
+					Localized string:C991("requestTitle"); \
+					$styleSheetName; \
+					Localized string:C991("requestCreateLabel"); \
+					Localized string:C991("requestCancelLabel"); \
+					Localized string:C991("StyleSheetPlaceHolder"))
+				
+				var $isValid:=Position:C15("section"; $styleSheetName)#1
+				
+				If (Not:C34($isValid))
+					
+					ALERT:C41(Localized string:C991("nameError"))
+					
+				End if 
+			Until ($isValid & (Length:C16($styleSheetName)>0)) | (OK=0)
+			
+			If (OK=0)
+				
+				return 
 				
 			End if 
+		End if 
+	End if 
+	
+	var $length : Integer:=$template.levels.length
+	$style:=WP New style sheet:C1650($wpDoc; wk type paragraph:K81:191; $styleSheetName; $length)
+	
+	var $i : Integer
+	For ($i; 0; $length-1; 1)
+		
+		var $level : Object:=$template.levels[$i]
+		
+		var $attributeName : Text
+		
+		For each ($attributeName; $level)
 			
-			var $value : Variant:=$currentLevel[$attribute]
+			var $attributValue : Variant:=$level[$attributeName]
 			
-			If (["listStyleType"].includes($attribute))
+			If (["listStyleType"].includes($attributeName))
 				
-				If (Value type:C1509($value)=Is text:K8:3)
+				If (Value type:C1509($attributValue)=Is text:K8:3)
 					
-					If (Position:C15("wk "; $value)=0)
+					If (Position:C15("wk "; $attributValue)=0)
 						
-						$value:="wk "+$value
+						$attributValue:="wk "+$attributValue
 						
 					End if 
 					
-					$value:=Formula from string:C1601($value).call()
+					$attributValue:=Formula from string:C1601($attributValue).call()
 					
 				End if 
 			End if 
 			
-			var $level : Object:=WP Get style sheet:C1656($area; $normalized; $i+1)
-			WP SET ATTRIBUTES:C1342($level; $attribute; $value)
+			var $targetLevel : Object:=WP Get style sheet:C1656($wpDoc; $styleSheetName; $i+1)
+			WP SET ATTRIBUTES:C1342($targetLevel; $attributeName; $attributValue)
 			
 		End for each 
 	End for 
 End if 
 
-WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk style sheet:K81:63; $normalized)
+WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk style sheet:K81:63; $styleSheetName)
 
 SET TIMER:C645(-1)

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+  <file datatype="x-STR#" original="Undefined" source-language="en" target-language="es">
+    <header>
+      <prop-group name="4DPop XLIFF Pro">
+        <prop prop-type="version">3.1</prop>
+      </prop-group>
+    </header>
+    <body>
+      <group resname="aStyleSheetWithThisNameAlreadyExists">
+        <trans-unit id="ugYbRVvnrYF54OWOAAY2Cw" resname="aStyleSheetWithThisNameAlreadyExists">
+          <source>A style sheet with the name "{name}" already exists.
+What would you like to do?</source>
+          <target state="new">A style sheet with the name "{name}" already exists.
+What would you like to do?</target>
+        </trans-unit>
+        <trans-unit id="B1LqbgW8NLrn0FM5TQ1XOw" resname="overwriteExistingStyleSheet">
+          <source>Overwrite existing style sheet</source>
+          <target state="new">Overwrite existing style sheet</target>
+        </trans-unit>
+        <trans-unit id="VeilTB6f5+lG8dOe4ydYdw" resname="createANewStyleSheet">
+          <source>Create a new style sheet</source>
+          <target state="new">Create a new style sheet</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

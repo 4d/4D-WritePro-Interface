@@ -6,8 +6,8 @@ This file is distributed under the same license as the product package.-->
 
   <file datatype="plaintext" original="Undefined" source-language="en" target-language="en">
     <header>
-      <prop-group name="Xliff-Editor.4dbase">
-        <prop prop-type="version">2.0</prop>
+      <prop-group name="4DPop XLIFF Pro">
+        <prop prop-type="version">3.1</prop>
       </prop-group>
     </header>
     <body>
@@ -84,15 +84,15 @@ This file is distributed under the same license as the product package.-->
           <source>Borders</source>
           <target>Borders</target>
         </trans-unit>
-        <trans-unit id="83" resname="bordersColor">
+        <trans-unit id="83_2" resname="bordersColor">
           <source>Borders color</source>
           <target>Borders color</target>
         </trans-unit>
-        <trans-unit id="85" resname="bordersNone">
+        <trans-unit id="85_2" resname="bordersNone">
           <source>No borders</source>
           <target>No borders</target>
         </trans-unit>
-        <trans-unit id="86" resname="bordersStyle">
+        <trans-unit id="86_2" resname="bordersStyle">
           <source>Border style</source>
           <target>Border style</target>
         </trans-unit>
@@ -144,7 +144,7 @@ This file is distributed under the same license as the product package.-->
           <source>Cut</source>
           <target>Cut</target>
         </trans-unit>
-        <trans-unit id="108" resname="enableGrammar">
+        <trans-unit id="108_2" resname="enableGrammar">
           <source>Check grammar with spelling</source>
           <target>Check grammar with spelling</target>
         </trans-unit>
@@ -176,15 +176,15 @@ This file is distributed under the same license as the product package.-->
           <source>Ignore the word</source>
           <target>Ignore the word</target>
         </trans-unit>
-        <trans-unit id="78" resname="imageBehind">
+        <trans-unit id="78_2" resname="imageBehind">
           <source>Image behind text</source>
           <target>Image behind text</target>
         </trans-unit>
-        <trans-unit id="80" resname="imageInFront">
+        <trans-unit id="80_2" resname="imageInFront">
           <source>Image in front of text</source>
           <target>Image in front of text</target>
         </trans-unit>
-        <trans-unit id="79" resname="imageInline">
+        <trans-unit id="79_2" resname="imageInline">
           <source>Image inline with text</source>
           <target>Image inline with text</target>
         </trans-unit>
@@ -268,7 +268,7 @@ This file is distributed under the same license as the product package.-->
           <source>Page mode</source>
           <target>Page mode</target>
         </trans-unit>
-        <trans-unit id="86" resname="movetoBack">
+        <trans-unit id="86_3" resname="movetoBack">
           <source>Move to back</source>
           <target>Move to back</target>
         </trans-unit>
@@ -300,21 +300,17 @@ This file is distributed under the same license as the product package.-->
           <source>Page size</source>
           <target>Page size</target>
         </trans-unit>
-        <trans-unit id="87" resname="paragraphs">
+        <trans-unit id="87_2" resname="paragraphs">
           <source>Paragraphs</source>
           <target>Paragraphs</target>
         </trans-unit>
-        <trans-unit id="15" resname="paste">
+        <trans-unit id="15_2" resname="paste">
           <source>Paste</source>
           <target>Paste</target>
         </trans-unit>
         <trans-unit id="103" resname="preview">
           <source>Preview</source>
           <target>Preview</target>
-        </trans-unit>
-        <trans-unit id="105" resname="print">
-          <source>Print</source>
-          <target>Print</target>
         </trans-unit>
         <trans-unit id="26" resname="redo">
           <source>Redo</source>
@@ -348,19 +344,19 @@ This file is distributed under the same license as the product package.-->
           <source>Show / hide headers</source>
           <target>Show / hide headers</target>
         </trans-unit>
-        <trans-unit id="54" resname="showHideHiddenChars">
+        <trans-unit id="54_2" resname="showHideHiddenChars">
           <source>Show / hide hidden chars</source>
           <target>Show / hide hidden chars</target>
         </trans-unit>
-        <trans-unit id="56" resname="showHideHiddenHorizontalRuler">
+        <trans-unit id="56_2" resname="showHideHiddenHorizontalRuler">
           <source>Show / hide horizontal ruler</source>
           <target>Show / hide horizontal ruler</target>
         </trans-unit>
-        <trans-unit id="57" resname="showHideHiddenVerticalRuler">
+        <trans-unit id="57_2" resname="showHideHiddenVerticalRuler">
           <source>Show / hide vertical ruler</source>
           <target>Show / hide vertical ruler</target>
         </trans-unit>
-        <trans-unit id="108" resname="size">
+        <trans-unit id="108_3" resname="size">
           <source>Size</source>
           <target>Size</target>
         </trans-unit>
@@ -420,7 +416,7 @@ This file is distributed under the same license as the product package.-->
           <source>Protect cell</source>
           <target>Protect cell</target>
         </trans-unit>
-        <trans-unit id="xxx" resname="protectTextArea">
+        <trans-unit id="xxxa" resname="protectTextArea">
           <source>Protect text area</source>
           <target>Protect text area</target>
         </trans-unit>
@@ -480,17 +476,41 @@ This file is distributed under the same license as the product package.-->
           <source>Insert a text box</source>
           <target>Insert a text box</target>
         </trans-unit>
-        <trans-unit id="xxx" resname="mergeCells">
+        <trans-unit id="xxxb" resname="mergeCells">
           <source>Merge cells</source>
           <target>Merge cells</target>
         </trans-unit>
-        <trans-unit id="xxx" resname="unmergeCells">
+        <trans-unit id="xxxc" resname="unmergeCells">
           <source>Unmerge cells</source>
           <target>Unmerge cells</target>
         </trans-unit>
+        <trans-unit id="bpGqCWxSJ1c8n_vfQs2bkg" resname="multiLevelstylesheets">
+          <source>Multi-level style sheets</source>
+          <target>Multi-level style sheets</target>
+        </trans-unit>
+        <trans-unit id="w5papCaA1M4PwIzUXyY4zg" resname="increaseListLevel">
+          <source>Increase list level</source>
+          <target>Increase list level</target>
+        </trans-unit>
+        <trans-unit id="_K64fNfSsCwsDfwUzXa5Mg" resname="decreaseListLevel">
+          <source>Decrease list level </source>
+          <target>Decrease list level </target>
+        </trans-unit>
+        <trans-unit id="n_PruREb+sg9X9IQGhnw+Q" resname="appendLevelToList">
+          <source>Append level to list </source>
+          <target>Append level to list </target>
+        </trans-unit>
+        <trans-unit id="yJGtnJ2UsEJNaQXT17h00g" resname="concatenateNumberingMarker">
+          <source>Concatenate numbering marker</source>
+          <target>Concatenate numbering marker</target>
+        </trans-unit>
+        <trans-unit id="IP2_QvQ+LbvEWLRc+zcemg" resname="numberingMarkerParenthesis">
+          <source>Numbering marker Parenthesis</source>
+          <target>Numbering marker Parenthesis</target>
+        </trans-unit>
       </group>
       <group resname="Tabs">
-        <trans-unit id="24" resname="borders">
+        <trans-unit id="24_2" resname="borders">
           <source>Borders</source>
           <target>Borders</target>
         </trans-unit>
@@ -498,7 +518,7 @@ This file is distributed under the same license as the product package.-->
           <source>Home</source>
           <target>Home</target>
         </trans-unit>
-        <trans-unit id="26" resname="images">
+        <trans-unit id="26_2" resname="images">
           <source>Images</source>
           <target>Images</target>
         </trans-unit>
@@ -514,7 +534,7 @@ This file is distributed under the same license as the product package.-->
           <source>Print</source>
           <target>Print</target>
         </trans-unit>
-        <trans-unit id="28" resname="spell">
+        <trans-unit id="28_2" resname="spell">
           <source>Spell &amp; Gram.</source>
           <target>Spell &amp; Gram.</target>
         </trans-unit>
@@ -552,7 +572,7 @@ This file is distributed under the same license as the product package.-->
         </trans-unit>
       </group>
       <group resname="Labels">
-        <trans-unit id="57" resname="applyMarginsTo">
+        <trans-unit id="57_3" resname="applyMarginsTo">
           <source>Apply margins and padding to…</source>
           <target>Apply margins and padding to…</target>
         </trans-unit>
@@ -584,7 +604,7 @@ This file is distributed under the same license as the product package.-->
           <source>Text boxes</source>
           <target>Text boxes</target>
         </trans-unit>
-        <trans-unit id="xxx" resname="PrintSettings">
+        <trans-unit id="xxxd" resname="PrintSettings">
           <source>Print settings…</source>
           <target>Print settings…</target>
         </trans-unit>
