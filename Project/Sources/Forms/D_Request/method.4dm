@@ -2,7 +2,6 @@ OBJECT SET TITLE:C194(*; "labelTitle"; Form:C1466.title)
 OBJECT SET TITLE:C194(*; "buttonOK"; Form:C1466.labelOk)
 OBJECT SET TITLE:C194(*; "buttonCancel"; Form:C1466.labelCancel)
 OBJECT SET PLACEHOLDER:C1295(*; "inputValue"; Form:C1466.placeHolder)
-SET WINDOW TITLE:C213(Form:C1466.windowTitle)
 
 var $left; $right; $top; $bottom : Integer
 OBJECT GET COORDINATES:C663(*; "buttonOK"; $left; $top; $right; $bottom)

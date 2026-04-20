@@ -64,8 +64,9 @@ for the user to choose from
 		
 */
 		
-		If (oForm.predefinedMultiLevelLists#Null:C1517)\
-			 && (oForm.predefinedMultiLevelLists.length>0)
+		var $template:=cs:C1710._wp.me.multiLevelListsTemplates
+		
+		If ($template.length>0)
 			
 /*  📌 Requirement #21247
 			
@@ -82,7 +83,7 @@ In the style sheets dropdown list, the multi-level style sheets shall be divided
 			End if 
 			
 			var $o : Object
-			For each ($o; oForm.predefinedMultiLevelLists)
+			For each ($o; $template)
 				
 				$c.push($o.name)
 				

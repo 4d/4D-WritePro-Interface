@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-#DECLARE($original : Text)->$result : Text
+#DECLARE($original : Text; $separator : Text)->$result : Text
 
 var $lastIsNumber : Boolean
 var $stringNum : Text

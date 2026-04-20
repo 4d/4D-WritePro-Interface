@@ -28,60 +28,6 @@ If (FORM Event:C1606.code=On Load:K2:1)
 	End if 
 End if 
 
-// MARK:- PredefinedMultiLevelLists
-
-/* 📌 Requirement #21274
-
-There shall be a json file called “mutliLevelStyles.json” available in 4D Write Pro Interface Resources/4DWP_MultiLevel folder, 
-that will contain the definition of the pre-defined multi-level lists
-
-*/
-
-If /* DEV */((Structure file:C489=Structure file:C489(*)) && Shift down:C543)
-	
-	oForm.predefinedMultiLevelLists:=[]
-	
-Else 
-	
-	oForm.predefinedMultiLevelLists:=oForm.predefinedMultiLevelLists || []
-	
-End if 
-
-If (oForm.predefinedMultiLevelLists.length=0)
-/*
-	
-This file can be overridden by adding a file of a similar name to the folder 4DWP_MultiLevel 
-under the local Resources folder of the database
-	
-*/
-	var $file:=File:C1566("/RESOURCES/4DWP_MultiLevel/mutliLevelStyles.json"; *)
-	
-	If (Not:C34($file.exists))  // Use the built-in templates
-		
-		$file:=File:C1566(Localized document path:C1105("mutliLevelStyles.json"); fk platform path:K87:2)
-		
-	End if 
-	
-	If ($file.exists)
-		
-		var $mutliLevelStyles : Collection:=JSON Parse:C1218($file.getText()).predefinedMultiLevelLists
-		
-		If ($mutliLevelStyles#Null:C1517)\
-			 && ($mutliLevelStyles.length>0)
-			
-			var $o : Object
-			
-			For each ($o; $mutliLevelStyles)
-				
-				oForm.predefinedMultiLevelLists.push($o)
-				
-			End for each 
-		End if 
-	End if 
-End if 
-
-// MARK:-
-
 If (Form:C1466.selection=Null:C1517)
 	
 	return 

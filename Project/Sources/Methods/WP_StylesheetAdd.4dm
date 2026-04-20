@@ -70,32 +70,16 @@ Case of
 		
 		$i:=Num:C11(Substring:C12($choice; 11))  // 11 = after the "_" in "duplicate_XXX"
 		var $sourceName : Text:=$ptrStylesheetNames->{$i}
-		$newName:=$sourceName
-		
-		Repeat 
-			
-			$newName:=TOOL_IncrementString($newName)
-			var $pos : Integer:=Find in array:C230($allstylesheet_Names; $newName)
-			
-		Until ($pos<0)
-		
-		// Method WP_Request created 2020/06/03 to fix the ACI0100879
-		$newName:=WP_Request($rqTitle; $rqPlaceHolder; $rqOK; $rqCancel; $placeHolder)
+		$newName:=cs:C1710._wp.me.normalizeStyleSheetName($sourceName; Form:C1466.document)
+		$newName:=cs:C1710._wp.me.request($rqTitle; $newName; $rqOK; $rqCancel; $placeHolder)
 		
 		//________________________________________________________________________________
 End case 
 
 If (Bool:C1537(OK))  // resuls of Request
 	
-	// just in case the user refuses the "x" added at the end…
-	$pos:=Find in array:C230($allstylesheet_Names; $newName)
-	
-	While ($pos>0)
-		
-		$newName:=TOOL_IncrementString($newName)
-		$pos:=Find in array:C230($allstylesheet_Names; $newName)
-		
-	End while 
+	// Just in case the user refuses the "x" added at the end…
+	$newName:=cs:C1710._wp.me.normalizeStyleSheetName($sourceName; Form:C1466.document)
 	
 	var $newStylesheet:=WP New style sheet:C1650(Form:C1466.document; $typeStylesheet; $newName)
 	
@@ -133,11 +117,13 @@ If (Bool:C1537(OK))  // resuls of Request
 			//________________________________________________________________________________
 		: ($choice="duplicate_@")
 			
+			var $listLevelIndex : Integer
+			
 			$o:={\
 				from: WP Get style sheet:C1656(Form:C1466.document; $sourceName); \
 				to: $newStylesheet}
 			
-			WP_StylesheetCopyAttributes($o)  // $col;$sourceStylesheet;$newStylesheet)
+			WP_StylesheetCopyAttributes($o)
 			
 			//________________________________________________________________________________
 	End case 

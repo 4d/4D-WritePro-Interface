@@ -77,67 +77,72 @@
 				"example1": {
 					"type": "button",
 					"text": "example 1",
-					"top": 250,
-					"left": 917,
-					"width": 75,
+					"top": 10,
+					"left": 897,
+					"width": 95,
 					"height": 42,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/example1.4dm"
+					"method": "ObjectMethods/example1.4dm",
+					"sizingX": "move"
 				},
 				"example2": {
 					"type": "button",
 					"text": "example 2",
-					"top": 300,
-					"left": 917,
-					"width": 75,
+					"top": 60,
+					"left": 897,
+					"width": 95,
 					"height": 42,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/example2.4dm"
+					"method": "ObjectMethods/example2.4dm",
+					"sizingX": "move"
 				},
 				"example3": {
 					"type": "button",
 					"text": "example 3",
-					"top": 350,
-					"left": 917,
-					"width": 75,
+					"top": 110,
+					"left": 897,
+					"width": 95,
 					"height": 42,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/example3.4dm"
+					"method": "ObjectMethods/example3.4dm",
+					"sizingX": "move"
 				},
 				"example4": {
 					"type": "button",
 					"text": "example 4",
-					"top": 400,
-					"left": 917,
-					"width": 75,
+					"top": 160,
+					"left": 897,
+					"width": 95,
 					"height": 42,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/example4.4dm"
+					"method": "ObjectMethods/example4.4dm",
+					"sizingX": "move"
 				},
 				"example5": {
 					"type": "button",
 					"text": "example 5",
-					"top": 450,
-					"left": 917,
-					"width": 75,
+					"top": 210,
+					"left": 897,
+					"width": 95,
 					"height": 42,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/example5.4dm"
+					"method": "ObjectMethods/example5.4dm",
+					"sizingX": "move"
 				}
 			}
 		}
 	],
-	"geometryStamp": 120,
+	"geometryStamp": 139,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

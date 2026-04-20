@@ -22,10 +22,33 @@
 	"CLASSES": {
 		"classes": [
 			"color",
+			"HList",
 			"PersonaWizard",
 			"preferences",
 			"TableWizard",
 			"Toolbar"
+		]
+	},
+	"Forms": {
+		"forms": [
+			"[Sample]Input_ALL_Palettes",
+			"[Sample]InputBothBars",
+			"[Sample]InputSideBar",
+			"[Sample]InputToolBar",
+			"[Sample]InputToolBarBasic",
+			"[Sample]Output",
+			"D_AI_PromptPersona",
+			"D_DocInfo",
+			"D_Export",
+			"D_Formula",
+			"D_LogDisplay",
+			"D_MDtoWP",
+			"D_PictureSettings",
+			"D_Request",
+			"D_TableWizard",
+			"D_themesEditor",
+			"IconTest",
+			"WP_ToolbarTemp"
 		]
 	},
 	"ImportExport Dialogs": {
@@ -138,8 +161,41 @@
 			"WP_Toolbar"
 		]
 	},
+	"Tools": {
+		"tables": [
+			"Sample"
+		],
+		"methods": [
+			"Absolute",
+			"btn_imageBehind",
+			"CheckAutomaticAction",
+			"Compiler_Arrays",
+			"Compiler_Methods",
+			"Compiler_Variables",
+			"ContextMemu_Display",
+			"distinctKeepOrder",
+			"fillArea",
+			"FR_Script",
+			"getIcon",
+			"gotoArea",
+			"HighlightAll",
+			"InitFontLists",
+			"JSONparseError",
+			"StyleSheetBuildSample",
+			"StylesheetEditMeta",
+			"TOOL_IncrementString"
+		]
+	},
 	"WP_": {
 		"methods": [
+			"WP ContextualMenu",
+			"WP CreateDictionnary",
+			"WP CreatePreview",
+			"WP EditPersonas",
+			"WP FormulaSettings",
+			"WP PictureSettings",
+			"WP UpdateWidget",
+			"WP_BackToArea",
 			"WP_ComputeFormulas",
 			"WP_FillFontStyles",
 			"WP_FreezeFormulas",
@@ -161,17 +217,23 @@
 		"methods": [
 			"MENU_Display",
 			"MENU_Execute",
+			"UI_Formula",
+			"UI_GetApplyTo",
 			"UI_isProtected",
+			"UI_ManageAIbutton",
+			"UI_ManageTextAreaButtons",
 			"UI_PaletteFindAndReplace",
 			"UI_PaletteImage",
 			"UI_PaletteImportExport",
 			"UI_PaletteProtect",
 			"UI_PaletteStylesheets",
 			"UI_PictureSettings",
+			"UI_setApplyTo",
 			"UI_Tables",
 			"UI_Toolbar",
 			"UI_ToolbarStylesheets",
 			"UI_TranslateConstant",
+			"Wizard_InsertFormula",
 			"WP_ApplyPictureSettings",
 			"WP_BorderMenu",
 			"WP_FR_InitOptions",
