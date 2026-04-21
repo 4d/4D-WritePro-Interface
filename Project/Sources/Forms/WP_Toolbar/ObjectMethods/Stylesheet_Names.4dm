@@ -11,7 +11,7 @@ var $isTemplate:=$template#Null:C1517
 
 If ($isTemplate)
 	
-	var $styleSheets:=WP Get style sheets:C1655($doc; wk type paragraph:K81:191).combine(WP Get style sheets:C1655($doc; wk type character:K81:296))
+	var $styleSheets:=cs:C1710._wp.me.styleSheets
 	var $style : Object:=$styleSheets.query("name = :1"; $styleSheetName).first()
 	var $create : Boolean:=($style=Null:C1517)
 	

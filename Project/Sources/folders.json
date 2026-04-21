@@ -1,4 +1,5 @@
 {
+	"(Table Forms)": {},
 	"AI": {
 		"methods": [
 			"AI Call",
@@ -149,7 +150,6 @@
 			"WP_Palette_FindAndReplace"
 		]
 	},
-	"Table Forms": {},
 	"TOOLBARS": {
 		"methods": [
 			"TB_GotoPage",
@@ -281,5 +281,9 @@
 			"WP SwitchToolbar"
 		]
 	},
-	"trash": {}
+	"trash": {
+		"groups": [
+			"(Table Forms)"
+		]
+	}
 }

@@ -17,6 +17,6 @@ For each ($item; $attributes)  // Only contains attribute NAMES, VALUES will be 
 		
 	End if 
 	
-	$target[$item.key]:=$source[$item.key]
+	Try($target[$item.key]:=$source[$item.key])
 	
 End for each 

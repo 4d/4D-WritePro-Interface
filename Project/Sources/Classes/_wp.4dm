@@ -1,4 +1,5 @@
 property _multiLevelListsTemplates : Collection
+property _document : Object
 
 singleton shared Class constructor
 	
@@ -6,6 +7,13 @@ singleton shared Class constructor
 Function get doc() : Object
 	
 	return Form:C1466.area
+	
+	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
+Function get document() : Object
+	
+	This:C1470._document:=This:C1470._document || Form:C1466.selection.owner
+	
+	return This:C1470._document
 	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
 shared Function get multiLevelListsTemplates() : Collection
@@ -51,6 +59,12 @@ that will contain the definition of the pre-defined multi-level lists
 	End if 
 	
 	return This:C1470._multiLevelListsTemplates
+	
+	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
+Function get styleSheets() : Collection
+	
+	var $doc:=This:C1470.doc
+	return WP Get style sheets:C1655($doc; wk type paragraph:K81:191).combine(WP Get style sheets:C1655($doc; wk type character:K81:296))
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function request($title : Text; $value : Text; $labelOk : Text; $labelCancel : Text; $placeHolder : Text) : Text
