@@ -1,4 +1,4 @@
-C_TEXT:C284($action)
+var $action : Text
 
 $action:=MENU_Display("Export")
 

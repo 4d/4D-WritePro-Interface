@@ -1,4 +1,4 @@
-C_COLLECTION:C1488($tabs)
+var $tabs : Collection
 
 Case of 
 	: (Shift down:C543)

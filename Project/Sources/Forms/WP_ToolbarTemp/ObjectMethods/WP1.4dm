@@ -1,13 +1,13 @@
-C_POINTER:C301($ptr)
-C_OBJECT:C1216($wpRange)
+var $ptr : Pointer
+var $wpRange : Object
 
-  // update font in selection
+// update font in selection
 $ptr:=OBJECT Get pointer:C1124(Object subform container:K67:4)
 If (Not:C34(Is nil pointer:C315($ptr)))
-	If (OB Is defined:C1231($ptr->;"selection"))
-		$wpRange:=OB Get:C1224($ptr->;"selection")
+	If (OB Is defined:C1231($ptr->; "selection"))
+		$wpRange:=OB Get:C1224($ptr->; "selection")
 		
-		WP SET ATTRIBUTES:C1342($wpRange;wk font:K81:69;WP_FontFamilly{WP_FontFamilly})
+		WP SET ATTRIBUTES:C1342($wpRange; wk font:K81:69; WP_FontFamilly{WP_FontFamilly})
 		
 	End if 
 End if 

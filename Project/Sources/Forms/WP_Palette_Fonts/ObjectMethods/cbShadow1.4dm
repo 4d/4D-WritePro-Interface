@@ -1,6 +1,6 @@
 
 var $color : Integer
-_O_C_LONGINT:C283($offset)
+var $offset : Integer
 
 If (oForm.cbShadow=2)
 	oForm.cbShadow:=0

@@ -43,12 +43,16 @@ If ($n>0) & ($n<=Size of array:C274($ptrStylesheetNames->))
 			
 			$memo:=Form:C1466.memo
 			
+			//%W-533.3
 			$newName:=$ptrStylesheetNames->{$memo.position}
+			//%W+533.3
 			$p:=Count in array:C907($ptrStylesheetNames->; $newName)
 			
 			If ($p>1)
 				BEEP:C151
+				//%W-533.3
 				$ptrStylesheetNames->{$memo.position}:=$memo.name
+				//%W+533.3
 				
 			Else 
 				// rename the style sheet

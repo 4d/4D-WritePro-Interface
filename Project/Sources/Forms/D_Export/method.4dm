@@ -20,7 +20,7 @@ Case of
 		Form:C1466.local:=New object:C1471
 		
 		Form:C1466.local.pref:=cs:C1710.preferences.new().user("4DWInterface.preferences")
-		Form:C1466.local.pref.sefDefault(New object:C1471("recomputeFormulas"; True:C214))
+		Form:C1466.local.pref.setDefault(New object:C1471("recomputeFormulas"; True:C214))
 		
 		// based on user preferences
 		Form:C1466.recomputeFormulas:=Form:C1466.local.pref.get("recomputeFormulas")

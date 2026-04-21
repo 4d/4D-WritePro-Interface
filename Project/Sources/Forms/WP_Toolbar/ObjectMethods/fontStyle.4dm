@@ -1,4 +1,4 @@
-C_TEXT:C284($font)
+var $font : Text
 
 $font:=WP_fontLongName{WP_fontStyle}
 WP_SetFont(Form:C1466.selection; $font)

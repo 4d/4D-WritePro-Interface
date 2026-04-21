@@ -1,4 +1,4 @@
-C_COLLECTION:C1488($tabs)
+var $tabs : Collection
 
 If (Shift down:C543)
 	$tabs:=New collection:C1472(\

@@ -27,8 +27,10 @@ If (areaName#"") & (areaName=OBJECT Get name:C1087(Object with focus:K67:3))
 		$n:=Size of array:C274($ptrNames->)
 		$p:=Find in array:C230($ptrNames->; $name)
 		
+		//%W-518.5
 		ARRAY BOOLEAN:C223($ptrListbox->; 0)
 		ARRAY BOOLEAN:C223($ptrListbox->; $n)
+		//%W+518.5
 		
 		$ptrListbox->{$p}:=True:C214
 		EDIT ITEM:C870(*; "lb_bookmarkNames"; $p)

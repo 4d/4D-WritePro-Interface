@@ -1,3 +1,6 @@
+property hlist : Integer
+property formObject : Text
+
 Class constructor()
 	
 	This:C1470.hlist:=New list:C375

@@ -21,7 +21,7 @@ Case of
 		SET ALLOWED METHODS:C805($_AllowedMethods)
 		
 		
-		_O_C_OBJECT:C1216($WP_skin)
+		var $WP_skin : Object
 		$WP_skin:=New object:C1471
 		
 		If (FORM Get color scheme:C1761="light")

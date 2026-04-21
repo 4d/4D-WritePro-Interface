@@ -18,7 +18,9 @@ var $stylesheetName : Text
 
 If ($indx>0)
 	
+	//%W-533.3
 	$stylesheetName:=$ptrStylesheetNames->{$indx}
+	//%W+533.3
 	
 End if 
 

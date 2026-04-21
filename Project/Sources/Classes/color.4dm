@@ -1,9 +1,10 @@
+property hsl; rgb : Object
+property main : Integer
+property css : Variant
+
 Class constructor($color)
 	
 	This:C1470.main:=0x0000
-	This:C1470.hsl:=Null:C1517
-	This:C1470.rgb:=Null:C1517
-	This:C1470.css:=Null:C1517
 	
 	Case of 
 			

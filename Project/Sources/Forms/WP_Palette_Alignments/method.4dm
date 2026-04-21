@@ -32,7 +32,9 @@ Case of
 		
 		
 		$ptrTextLineHeightUnit:=OBJECT Get pointer:C1124(Object named:K67:5; "TextLineHeightUnit")
+		//%W-518.5
 		ARRAY TEXT:C222($ptrTextLineHeightUnit->; 0)
+		//%W+518.5
 		APPEND TO ARRAY:C911($ptrTextLineHeightUnit->; "%")
 		APPEND TO ARRAY:C911($ptrTextLineHeightUnit->; "pt")
 		$ptrTextLineHeightUnit->:=1

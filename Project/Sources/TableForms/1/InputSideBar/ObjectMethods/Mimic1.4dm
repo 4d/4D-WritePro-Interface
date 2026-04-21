@@ -1,4 +1,4 @@
-C_TEXT:C284($menu; $result)
+var $menu; $result : Text
 
 $menu:=Create menu:C408
 

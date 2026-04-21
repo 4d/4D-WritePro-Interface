@@ -1,3 +1,6 @@
+property _user; _database; _session : 4D:C1709.Folder
+property target : 4D:C1709.File
+property content : Object
 
 // === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Class constructor()
@@ -7,7 +10,7 @@ Class constructor()
 	
 	This:C1470._user:=Folder:C1567(fk user preferences folder:K87:10).folder(Folder:C1567(Database folder:K5:14; *).name)
 	This:C1470._database:=Folder:C1567(fk database folder:K87:14; *).folder("Preferences")
-	This:C1470._session:=Folder:C1567(fk desktop folder:K87:19).parent.folder("Library/Preferences/")
+	This:C1470._session:=Folder:C1567(fk home folder:K87:24).folder("Library/Preferences/")
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function user($fileName) : cs:C1710.preferences
@@ -41,7 +44,7 @@ Function session($fileName) : cs:C1710.preferences
 	
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === ===
-Function sefDefault($defaultValues : Object)
+Function setDefault($defaultValues : Object)
 	
 	var $attribute : Text
 	

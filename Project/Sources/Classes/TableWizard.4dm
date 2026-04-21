@@ -1,3 +1,6 @@
+property attributes; fileNames; formulas; tables; templateFiles; themeFiles : Collection
+property attributesTranslated; fileNamesTranslated; formulasTranslated; tablesTranslated : Collection
+
 Class constructor($formName : Text)
 	
 	var $file : 4D:C1709.File

@@ -1,11 +1,11 @@
-_O_C_LONGINT:C283(wp_tabList)
+var wp_tabList : Integer
 
 var $setupOK : Boolean
 
-_O_C_LONGINT:C283($paletteID)
+var $paletteID : Integer
 $paletteID:=3
 
-_O_C_LONGINT:C283($typeSelection)
+var $typeSelection : Integer
 $typeSelection:=Form:C1466.selection.type
 
 

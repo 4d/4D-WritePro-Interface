@@ -42,7 +42,7 @@ Case of
 		
 		If ($setupOK) & ($typeSelection#2)
 			
-			WP_GetSizes(Form:C1466.paragraphRange; "paragraph")
+			WP_GetSizes(Form:C1466.paragraphRange)
 			
 		End if 
 		
