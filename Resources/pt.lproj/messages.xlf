@@ -7,7 +7,7 @@
       </prop-group>
     </header>
     <body>
-      <group resname="aStyleSheetWithThisNameAlreadyExists">
+      <group resname="Style sheet with this name already exists">
         <trans-unit id="ugYbRVvnrYF54OWOAAY2Cw" resname="aStyleSheetWithThisNameAlreadyExists">
           <source>A style sheet with the name "{name}" already exists.
 What would you like to do?</source>
@@ -21,6 +21,20 @@ What would you like to do?</target>
         <trans-unit id="VeilTB6f5+lG8dOe4ydYdw" resname="createANewStyleSheet">
           <source>Create a new style sheet</source>
           <target state="new">Create a new style sheet</target>
+        </trans-unit>
+      </group>
+      <group resname="New style sheet">
+        <trans-unit id="h2b7Kg2ulwCxjejR8bEbKw" resname="aStylesheetWithThatNameAlreadyExists.">
+          <source>A style sheet with that name, "{name}", already exists.</source>
+          <target state="new">A style sheet with that name, "{name}", already exists.</target>
+        </trans-unit>
+        <trans-unit id="82+AFnlTCqFCx7WOPrQnFQ" resname="invalidStyleSheetName">
+          <source>Invalid style sheet name.</source>
+          <target state="new">Invalid style sheet name.</target>
+        </trans-unit>
+        <trans-unit id="UC4gFrIBXlMloWycpfkTug" resname="nameIsMandatory">
+          <source>You must enter a name.</source>
+          <target state="new">You must enter a name.</target>
         </trans-unit>
       </group>
     </body>

@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-var $type:=WP_GetStylesheetType
+var $type:=getSelectedStyleSheetType
 
 Case of 
 		

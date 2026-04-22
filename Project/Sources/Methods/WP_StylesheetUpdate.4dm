@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-var $stylesheetType:=WP_GetStylesheetType  // Paragraph, char, picture, table, row or cell
+var $stylesheetType:=getSelectedStyleSheetType  // Paragraph, char, picture, table, row or cell
 
 var $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")
 var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")

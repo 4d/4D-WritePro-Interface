@@ -27,7 +27,7 @@ If ($stylesheetName="normal") | ($stylesheetName="")
 	
 Else 
 	
-	$stylesheetType:=WP_GetStylesheetType  // wk type default or wk type paragraph
+	$stylesheetType:=getSelectedStyleSheetType  // wk type default or wk type paragraph
 	
 	
 	//CONFIRM(".Delete style sheet \""+$stylesheetName+"\"?";".delete";".cancel")
@@ -35,7 +35,7 @@ Else
 	//  //ALERT(".Style sheet can't be delete yet…")
 	//WP DELETE STYLE SHEET(Form.document;$stylesheetName)
 	//WP_GetStyleSheets   // refresh
-	//End if 
+	//End if
 	//SET TIMER(-1)
 	
 	$menu:=Create menu:C408

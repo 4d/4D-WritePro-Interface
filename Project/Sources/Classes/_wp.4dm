@@ -79,7 +79,7 @@ Function request($title : Text; $value : Text; $labelOk : Text; $labelCancel : T
 	
 	var $formName:="D_Request"
 	
-	If (Is macOS:C1572)
+	If (Is macOS:C1572)  //& False
 		
 		var $winRef:=Open form window:C675($formName; Sheet form window:K39:12)
 		
@@ -98,12 +98,99 @@ Function request($title : Text; $value : Text; $labelOk : Text; $labelCancel : T
 	End if 
 	
 	DIALOG:C40("D_Request"; $formData)
+	CLOSE WINDOW:C154($winRef)
 	
 	If (Bool:C1537(OK))
 		
 		return $formData.value
 		
 	End if 
+	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function newStyleSheetName($name : Text; $doc : Object; $type : Integer) : Text
+	
+	$name:=$name || Localized string:C991("requestPlaceHolder")
+	$type:=Count parameters:C259>=3 ? $type : wk type paragraph:K81:191
+	
+	var $title:=Localized string:C991("requestTitle")
+	var $okTitle:=Localized string:C991("requestCreateLabel")
+	var $cancelTitle:=Localized string:C991("requestCancelLabel")
+	var $placeHolder:=Localized string:C991("StyleSheetPlaceHolder")
+	
+	Repeat 
+		
+		$name:=This:C1470.request($title; $name; $okTitle; $cancelTitle; $placeHolder)
+		
+		If (OK=0)
+			
+			return 
+			
+		End if 
+		
+		var $result:=This:C1470.validateStyleSheetName($name; $doc)
+		
+		If ($result.success)
+			
+			return $name
+			
+		Else 
+			
+			Case of 
+					
+					//______________________________________________________
+				: ($result.error="exists")
+					
+					ALERT:C41(Replace string:C233(Localized string:C991("aStylesheetWithThatNameAlreadyExists."); "{name}"; $name))
+					
+					//______________________________________________________
+				: ($result.error="invalid")
+					
+					ALERT:C41(Localized string:C991("invalidStyleSheetName"))
+					
+					//______________________________________________________
+				: ($result.error="empty")
+					
+					ALERT:C41(Localized string:C991("nameIsMandatory"))
+					
+					//______________________________________________________
+			End case 
+		End if 
+	Until ($result.success)
+	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function validateStyleSheetName($name : Text; $doc : Object; $type : Integer) : Object
+	
+	Case of 
+			
+			// ______________________________________________________
+		: (Length:C16($name)=0)  // Empty name
+			
+			return {success: False:C215; error: "empty"}
+			
+			// ______________________________________________________
+		: (Position:C15("section"; $name)=1)\
+			 | (Not:C34(This:C1470._styleSheetNameFollowsRules($name)))
+			
+			return {success: False:C215; error: "invalid"}
+			
+			// ______________________________________________________
+		: ($doc=Null:C1517)  // Just verify the validity
+			
+			return {success: True:C214}
+			
+			// ______________________________________________________
+		Else 
+			
+			// Verify for uniqueness in the document regardless of the type
+			var $styleSheets:=WP Get style sheets:C1655($doc; Count parameters:C259>=3 ? $type : wk type paragraph:K81:191)
+			var $unique:=$styleSheets.query("name= :1"; $name).first()=Null:C1517
+			
+			return $unique\
+				 ? {success: True:C214}\
+				 : {success: False:C215; error: "exists"}
+			
+			// ______________________________________________________
+	End case 
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function normalizeStyleSheetName($name : Text; $doc : Object; $type : Integer) : Text
@@ -141,7 +228,7 @@ The style sheet name must comply with the following rules:
 	
 	For ($i; 1; Length:C16($name); 1)
 		
-		var $char:=Substring:C12($name; $i; 1)
+		var $char:=$name[[$i]]
 		var $code:=Character code:C91($char)
 		
 		If ($i=1)
@@ -173,7 +260,7 @@ The style sheet name must comply with the following rules:
 	End if 
 	
 	// The name must be unique within the document
-	var $allStyleSheets:=WP Get style sheets:C1655($doc; $type#0 ? $type : wk type paragraph:K81:191)
+	var $allStyleSheets:=WP Get style sheets:C1655($doc; Count parameters:C259>=3 ? $type : wk type paragraph:K81:191)
 	
 	While ($allStyleSheets.query("name= :1"; $normalized).first()#Null:C1517)
 		
@@ -182,6 +269,59 @@ The style sheet name must comply with the following rules:
 	End while 
 	
 	return $normalized
+	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function _styleSheetNameFollowsRules($name : Text) : Boolean
+	
+/*
+	
+The style sheet name must comply with the following rules:
+	
+- it must start with a letter
+- it can then contain alphanumeric characters, space characters, "-" characters or unicode characters >= 128
+	
+*/
+	
+	$name:=Trim:C1853($name)
+	
+	var $i : Integer
+	
+	For ($i; 1; Length:C16($name); 1)
+		
+		var $char:=$name[[$i]]
+		var $code:=Character code:C91($char)
+		
+		If ($i=1)
+			
+			// First character = letter or Unicode character >= 128
+			If ($code>=128)\
+				 || Match regex:C1019("[A-Za-z]"; $char; 1; *)
+				
+				continue
+				
+			Else 
+				
+				return 
+				
+			End if 
+			
+		Else 
+			
+			// Next: alnum, space, “-”, Unicode >=128
+			If ($code>=128)\
+				 || Match regex:C1019("[A-Za-z0-9 -]"; $char; 1; *)
+				
+				continue
+				
+			Else 
+				
+				return 
+				
+			End if 
+		End if 
+	End for 
+	
+	return True:C214
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function duplicateStyleSheet($source : Object; $name : Text; $doc : Object)

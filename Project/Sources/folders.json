@@ -215,6 +215,7 @@
 	},
 	"WP_Private": {
 		"methods": [
+			"getSelectedStyleSheetType",
 			"MENU_Display",
 			"MENU_Execute",
 			"UI_Formula",
@@ -243,7 +244,6 @@
 			"WP_GetStyleAttributesByType",
 			"WP_GetStyleSheet",
 			"WP_GetStyleSheets",
-			"WP_GetStylesheetType",
 			"WP_IgnoreError",
 			"WP_InsertSoftHyphen",
 			"WP_PictureSaveSettings",
