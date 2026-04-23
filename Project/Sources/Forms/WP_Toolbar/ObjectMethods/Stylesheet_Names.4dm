@@ -52,7 +52,7 @@ If ($template#Null:C1517)\
 			
 			If (Length:C16($name)=0)  // The user canceled
 				
-				SET TIMER:C645(-1)  // Update list
+				cs:C1710._wp.me.updateListOfStyleSheets()
 				
 				return 
 				
@@ -66,4 +66,4 @@ End if
 
 WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk style sheet:K81:63; $name)
 
-SET TIMER:C645(-1)  // Update list
+cs:C1710._wp.me.updateListOfStyleSheets()

@@ -64,6 +64,33 @@ Function get styleSheets() : Collection
 	var $doc:=This:C1470.doc
 	return WP Get style sheets:C1655($doc; wk type paragraph:K81:191).combine(WP Get style sheets:C1655($doc; wk type character:K81:296))
 	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function updateListOfStyleSheets()
+	
+	var $type:=This:C1470.selectedSyleSheetType(True:C214)
+	var $c:=WP Get style sheets:C1655(This:C1470.document; $type)
+	
+	var $ptr:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
+	COLLECTION TO ARRAY:C1562($c; $ptr->; "name")
+	SORT ARRAY:C229($ptr->; >)
+	
+	WP_GetStyleSheet
+	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function selectedSyleSheetType($main : Boolean) : Integer
+	
+	var $selectedType : Integer:=formData.styleSheet.btnType.indexOf(1)
+	
+	If ($main)
+		
+		return $selectedType=6 ? wk type paragraph:K81:191 : $selectedType
+		
+	Else 
+		
+		return $selectedType
+		
+	End if 
+	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
 Function get normalStyleShet() : Object
 	
@@ -377,11 +404,3 @@ Function duplicateStyleSheet($source : Object; $name : Text; $doc : Object)
 		// TODO: Other style-sheets
 		
 	End if 
-	
-	
-	
-	
-	
-	
-	
-	

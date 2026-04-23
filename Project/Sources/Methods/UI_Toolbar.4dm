@@ -135,7 +135,7 @@ Case of
 					
 					If (Form:C1466.selection.type#wk type image:K81:192)
 						
-						WP_GetStyleSheets
+						cs:C1710._wp.me.updateListOfStyleSheets()
 						
 					End if 
 					

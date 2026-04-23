@@ -5,7 +5,7 @@ var $menu:=Create menu:C408
 APPEND MENU ITEM:C411($menu; Localized string:C991("menuNewFromSelection"))
 SET MENU ITEM PARAMETER:C1004($menu; -1; "newFromSelection")
 
-var $styleSheets:=cs:C1710._wp.me.styleSheets.orderBy("name")  // .query()
+var $styleSheets:=cs:C1710._wp.me.styleSheets.orderBy("name")
 var $length:=$styleSheets.length
 
 If ($length>0)  // 😇 No "duplicate" if no items !
@@ -45,8 +45,8 @@ End if
 var $new:=$choice="newFromSelection"
 var $duplicate:=Position:C15("duplicate_"; $choice)=1
 
-var $selectedType:=getSelectedStyleSheetType  // 0 = Paragraph, 1 = Font, 6 = List
-var $type:=$selectedType=6 ? wk type paragraph:K81:191 : $selectedType
+var $selectedType:=cs:C1710._wp.me.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
+var $type : Integer:=$selectedType=6 ? wk type paragraph:K81:191 : $selectedType
 
 Case of 
 		
@@ -54,9 +54,8 @@ Case of
 	: ($new)
 		
 		var $name:=cs:C1710._wp.me.newStyleSheetName(Localized string:C991("requestPlaceHolder"); Form:C1466.document; $type)
-		var $success:=Length:C16($name)>0
 		
-		If (Not:C34($success))
+		If (Length:C16($name)=0)
 			
 			return   // <NOTHING MORE TO DO>
 			
@@ -83,11 +82,11 @@ Case of
 		// ________________________________________________________________________________
 	: ($duplicate)
 		
-		$styleSheet:=$styleSheets[Num:C11(Delete string:C232($choice; 1; 10))]
-		$name:=cs:C1710._wp.me.newStyleSheetName($styleSheet.name; Form:C1466.document; $type)
-		$success:=Length:C16($name)>0
+		$styleSheet:=$styleSheets[Num:C11(Delete string:C232($choice; 1; 10))]  // Remove prefix "duplicate_"
 		
-		If (Not:C34($success))
+		$name:=cs:C1710._wp.me.newStyleSheetName($styleSheet.name; Form:C1466.document; $type)
+		
+		If (Length:C16($name)=0)
 			
 			return   // <NOTHING MORE TO DO>
 			
@@ -96,55 +95,47 @@ Case of
 		// ________________________________________________________________________________
 End case 
 
-// Ensure that the name is unique & valid
-$name:=cs:C1710._wp.me.normalizeStyleSheetName($name; Form:C1466.document)
-$success:=Length:C16($name)>0
+var $levelCount : Integer:=Num:C11($styleSheet.listLevelCount)
 
-If ($success)
+If ($levelCount=0)
 	
-	var $levelCount : Integer:=Num:C11($styleSheet.listLevelCount)
-	
-	If ($levelCount=0)
-		
 /* 📌 Requirement #21267
 		
 When the selected paragraph has a listStyleType applied to it (not necessarily a style sheet), 
 the “New style sheet based on selection” button shall create a multi-level list of 1 level based on the style
 		
 */
-		If (Num:C11(WP Get attributes:C1345($from; [wk list style type:K81:55])[wk list style type:K81:55])>0)
-			
-			var $to:=WP New style sheet:C1650(Form:C1466.document; $type; $name; 1)
-			
-		Else 
-			
-			$to:=WP New style sheet:C1650(Form:C1466.document; $type; $name)
-			
-		End if 
+	If (Num:C11(WP Get attributes:C1345($from; [wk list style type:K81:55])[wk list style type:K81:55])>0)
+		
+		var $to:=WP New style sheet:C1650(Form:C1466.document; $type; $name; 1)
 		
 	Else 
 		
-		$to:=WP New style sheet:C1650(Form:C1466.document; $type; $name; $levelCount)
+		$to:=WP New style sheet:C1650(Form:C1466.document; $type; $name)
 		
 	End if 
 	
-	Case of 
-			
-			// ________________________________________________________________________________
-		: ($new)
-			
-			WP_StylesheetSetAttributes({list: WP_GetStyleAttributesByType($selectedType); from: $from; to: $to; remove: True:C214})
-			WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk style sheet:K81:63; $to)
-			
-			// ________________________________________________________________________________
-		: ($duplicate)
-			
-			$from:=WP Get style sheet:C1656(Form:C1466.document; $styleSheet.name)
-			WP_StylesheetCopyAttributes({from: $from; to: $to})
-			
-			// ________________________________________________________________________________
-	End case 
+Else 
 	
-	WP_GetStyleSheets  // Update the list
+	$to:=WP New style sheet:C1650(Form:C1466.document; $type; $name; $levelCount)
 	
 End if 
+
+Case of 
+		
+		// ________________________________________________________________________________
+	: ($new)
+		
+		WP_StylesheetSetAttributes({list: WP_GetStyleAttributesByType($selectedType); from: $from; to: $to; remove: True:C214})
+		WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk style sheet:K81:63; $to)
+		
+		// ________________________________________________________________________________
+	: ($duplicate)
+		
+		$from:=WP Get style sheet:C1656(Form:C1466.document; $styleSheet.name)
+		WP_StylesheetCopyAttributes({from: $from; to: $to})
+		
+		// ________________________________________________________________________________
+End case 
+
+cs:C1710._wp.me.updateListOfStyleSheets()
