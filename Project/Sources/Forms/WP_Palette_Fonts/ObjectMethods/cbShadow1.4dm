@@ -2,13 +2,13 @@
 var $color : Integer
 var $offset : Integer
 
-If (oForm.cbShadow=2)
-	oForm.cbShadow:=0
+If (formData.cbShadow=2)
+	formData.cbShadow:=0
 End if 
 
-$offset:=oForm.shadowOffset
+$offset:=formData.shadowOffset
 
-If (oForm.cbShadow=1)
+If (formData.cbShadow=1)
 	If ($offset=0)
 		$offset:=1
 	End if 

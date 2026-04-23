@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-/* 
+/*
 
 Possible values inside collection for sidebar
 
@@ -53,9 +53,9 @@ End if
 //$n:=$_tabs.length
 //For ($i; 0; $n-1)
 //$_tabs[$i]:="tabBtn_"+$_tabs[$i]
-//End for 
+//End for
 
-oForm[$className].setButtons($_tabs)
+formData[$className].setButtons($_tabs)
 
 If ($_tabs.length>0)
 	

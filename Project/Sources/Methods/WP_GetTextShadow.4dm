@@ -11,7 +11,7 @@ If (Not:C34(OB Is empty:C1297($range)))
 	
 	If ($color=wk mixed:K81:89)
 		
-		oForm.cbShadow:=2
+		formData.cbShadow:=2
 		OBJECT SET VISIBLE:C603(*; "MultiShadowColor"; True:C214)
 		OBJECT SET RGB COLORS:C628(*; "ColorShadow"; $frameColor; 0x00FFFFFF)
 		
@@ -20,9 +20,9 @@ If (Not:C34(OB Is empty:C1297($range)))
 		OBJECT SET VISIBLE:C603(*; "MultiShadowColor"; False:C215)
 		
 		If ($color=wk transparent:K81:134)
-			oForm.cbShadow:=0
+			formData.cbShadow:=0
 		Else 
-			oForm.cbShadow:=1
+			formData.cbShadow:=1
 			OBJECT SET RGB COLORS:C628(*; "ColorShadow"; $frameColor; $color)
 		End if 
 		
@@ -35,10 +35,10 @@ If (Not:C34(OB Is empty:C1297($range)))
 		WP Get attributes:C1345($range; wk text shadow offset:K81:72; $offset)
 		
 		If ($offset=wk mixed:K81:89)
-			oForm.cbShadow:=2
-			oForm.shadowOffset:=0
+			formData.cbShadow:=2
+			formData.shadowOffset:=0
 		Else 
-			oForm.shadowOffset:=$offset
+			formData.shadowOffset:=$offset
 		End if 
 		
 	End if 

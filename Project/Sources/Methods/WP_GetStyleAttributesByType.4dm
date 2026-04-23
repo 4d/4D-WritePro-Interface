@@ -18,7 +18,8 @@ $attribtes.push({properties: [wk text shadow color:K81:71; wk text shadow offset
 
 $attribtes.push({properties: [wk text transform:K81:70]})
 
-If ($type=wk type paragraph:K81:191)
+If ($type=wk type paragraph:K81:191)\
+ || ($type=6)
 	
 	// MARK:- Align, indent, tabs
 	$attribtes.push({properties: [wk text align:K81:49]})
@@ -47,6 +48,23 @@ If ($type=wk type paragraph:K81:191)
 	$attribtes.push({properties: [wk border width top:K81:42; wk border width left:K81:40; wk border width bottom:K81:43; wk border width right:K81:41]})  // Special case
 	$attribtes.push({properties: [wk border color top:K81:37; wk border color left:K81:35; wk border color bottom:K81:38; wk border color right:K81:36]})  // Special case
 	$attribtes.push({properties: [wk border radius:K81:44]})
+	
+End if 
+
+If ($type=6)
+	
+	$attribtes.push({properties: [wk list concat string format:K81:395]})
+	$attribtes.push({properties: [wk list font:K81:60]})
+	$attribtes.push({properties: [wk list level count:K81:394]})
+	$attribtes.push({properties: [wk list level index:K81:393]})
+	$attribtes.push({properties: [wk list root style:K81:392]})
+	$attribtes.push({properties: [wk list start number:K81:61]})
+	$attribtes.push({properties: [wk list string format LTR:K81:58]})
+	$attribtes.push({properties: [wk list string format RTL:K81:59]})
+	$attribtes.push({properties: [wk list style image:K81:56]})
+	$attribtes.push({properties: [wk list style image height:K81:57]})
+	$attribtes.push({properties: [wk list style image url:K81:219]})
+	$attribtes.push({properties: [wk list style type:K81:55]})
 	
 End if 
 

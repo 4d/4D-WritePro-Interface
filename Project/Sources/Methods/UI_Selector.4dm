@@ -13,14 +13,14 @@ If ($p>0)
 	$btnName:=Substring:C12($btnName; $p+1)  // logical button name ("Home")
 End if 
 
-$id:=oForm.SidebarTabs.allButtonNames.indexOf($btnName)  //ACI0101694
+$id:=formData.SidebarTabs.allButtonNames.indexOf($btnName)  //ACI0101694
 
 If ($id>=0)
 	
-	$subform:=oForm.SidebarTabs.subforms[$id]
+	$subform:=formData.SidebarTabs.subforms[$id]
 	OBJECT SET SUBFORM:C1138(*; "PaletteSubform"; $subform; "")
 	
-	For each ($btn; oForm.SidebarTabs.buttonNames)
+	For each ($btn; formData.SidebarTabs.buttonNames)
 		//OBJECT SET FONT STYLE(*; $btn; Plain)
 		(OBJECT Get pointer:C1124(Object named:K67:5; "tabBtn_"+$btn))->:=0
 	End for each 

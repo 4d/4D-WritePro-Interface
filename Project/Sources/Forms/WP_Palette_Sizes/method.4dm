@@ -8,8 +8,8 @@ $typeSelection:=Form:C1466.selection.type
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
-		If (oForm=Null:C1517)  // ACI0101427 when used as a single palette, not as a sub-sub-form
-			oForm:=New object:C1471
+		If (formData=Null:C1517)  // ACI0101427 when used as a single palette, not as a sub-sub-form
+			formData:=New object:C1471
 		End if 
 		
 		//OBJECT SET ENABLED(*; "TargetSelector@"; False)  // fake buttons on the right side
@@ -17,7 +17,7 @@ Case of
 		(OBJECT Get pointer:C1124(Object named:K67:5; "rbWidthOption1"))->:=1  //set width by default
 		(OBJECT Get pointer:C1124(Object named:K67:5; "rbWidthOption2"))->:=0
 		
-		oForm.skinAppliedSub:=UI_ApplySkin
+		formData.skinAppliedSub:=UI_ApplySkin
 		
 		//tip for HideEmptyImages
 		OBJECT SET HELP TIP:C1181(*; "btn_visibleEmptyImages"; Action info:C1442("visibleEmptyImages").title)
@@ -34,8 +34,8 @@ Case of
 		
 		$setupOK:=SetupLocalVariables
 		
-		If (oForm.skinAppliedSub=False:C215)  // may have changed on bound variable change
-			oForm.skinAppliedSub:=UI_ApplySkin
+		If (formData.skinAppliedSub=False:C215)  // may have changed on bound variable change
+			formData.skinAppliedSub:=UI_ApplySkin
 		End if 
 		
 		UI_PaletteSizes

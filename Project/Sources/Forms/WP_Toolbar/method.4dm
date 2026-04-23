@@ -1,4 +1,3 @@
-// ACI0104036 : standard action in button "Popup_columnCount" : columncount -> section/columncount
 var $e:=FORM Event:C1606
 
 Case of 
@@ -10,7 +9,7 @@ Case of
 		
 		var $param:={formName: "toolbar"}
 		
-		oForm:=oForm || {}
+		formData:=formData || {}
 		
 		// WITHOUT PREFIX !!! (tabBtn_ or tabRect_" managed in class)
 		var $_buttonNames:=[\
@@ -26,18 +25,17 @@ Case of
 			"ImportExport"; \
 			"FindAndReplace"]
 		
-		oForm.ToolbarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")  // Create CLASS
+		formData.ToolbarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")  // Create CLASS
 		
-		// OForm.ToolbarTabs.setButtonSizes(50; 20) // width (temp) and height (fixed)
-		oForm.ToolbarTabs.setLabelMargins(2; 2)  // 2px label margins
-		oForm.ToolbarTabs.setButtonMargins(2; 0; 2; 0)  // Left - top - right - bottom
-		oForm.ToolbarTabs.pageIndexes:=[1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11]
+		formData.ToolbarTabs.setLabelMargins(2; 2)  // 2px label margins
+		formData.ToolbarTabs.setButtonMargins(2; 0; 2; 0)  // Left - top - right - bottom
+		formData.ToolbarTabs.pageIndexes:=[1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11]
 		
-		oForm.ToolbarTabs.activate($_buttonNames[0])
+		formData.ToolbarTabs.activate($_buttonNames[0])
 		
-		TB_GotoPage(oForm.ToolbarTabs.buttonNames[0])
+		TB_GotoPage(formData.ToolbarTabs.buttonNames[0])
 		
-		oForm.styleSheet:={\
+		formData.styleSheet:={\
 			btnType: [1; 0; 0; 0; 0; 0; 0]; \
 			btnValue: [\
 			wk type paragraph:K81:191; \
@@ -49,7 +47,7 @@ Case of
 			wk type paragraph:K81:191/* Hierarchical Style Sheets */]}
 		
 		// Find and replace (Page 11)
-		oForm.FR:={\
+		formData.FR:={\
 			find: ""; \
 			replace: ""; \
 			displayReplacements: False:C215; \
@@ -57,15 +55,15 @@ Case of
 		
 		// ++see on timer
 		
-		oForm.comboFontSizes:={\
+		formData.comboFontSizes:={\
 			values: [9; 10; 11; 12; 13; 14; 16; 18; 20; 24; 28; 32]; \
 			value: 9}
 		
-		oForm.eventCode:=-1  // No need to test "undefined" see WP_SetListFont
-		oForm.eventForcedCode:=-1  // No need to test "undefined" see WP_SetListFont
+		formData.eventCode:=-1  // No need to test "undefined" see WP_SetListFont
+		formData.eventForcedCode:=-1  // No need to test "undefined" see WP_SetListFont
 		
-		oForm.aiKey:=""  // No need to test "undefined" see UI_manageAIButton
-		oForm.aiWindow:=0  // ΩAIΩ
+		formData.aiKey:=""  // No need to test "undefined" see UI_manageAIButton
+		formData.aiWindow:=0  // ΩAIΩ
 		
 		// Temporarly
 		OBJECT SET ENABLED:C1123(*; "ssType3"; False:C215)
@@ -85,11 +83,8 @@ Case of
 			
 		End if 
 		
-		oForm.skinAppliedMain:=UI_ApplySkin
-		oForm.redrawTabs:=True:C214
-		
-		// Show empty or unsupported images.
-		// Montrer les images vides ou non prises en charge.
+		formData.skinAppliedMain:=UI_ApplySkin
+		formData.redrawTabs:=True:C214
 		
 		// Tips
 		OBJECT SET HELP TIP:C1181(*; "btn_visibleEmptyImages"; Action info:C1442("visibleEmptyImages").title)
@@ -141,7 +136,7 @@ Case of
 		// ________________________________________________________________________________
 	: ($e.code=On Resize:K2:27)
 		
-		oForm.redrawTabs:=True:C214
+		formData.redrawTabs:=True:C214
 		SET TIMER:C645(-1)
 		
 		// ________________________________________________________________________________
@@ -163,9 +158,9 @@ Case of
 				var $typeSelection : Integer:=Form:C1466.selection.type
 				SetupLocalVariables  // In this widget, mainly for areaName and masterTable
 				
-				If (Not:C34(oForm.skinAppliedMain))
+				If (Not:C34(formData.skinAppliedMain))
 					
-					oForm.skinAppliedMain:=UI_ApplySkin
+					formData.skinAppliedMain:=UI_ApplySkin
 					
 				End if 
 				
@@ -173,7 +168,7 @@ Case of
 					
 					WP_GetFormulas
 					WP_GetFontInfo(Form:C1466.selection)  // Font, size, weight, textcolor (common method with font palette)
-					oForm.comboFontSizes.currentValue:=oForm.fontSize
+					formData.comboFontSizes.currentValue:=formData.fontSize
 					
 					var $page:=FORM Get current page:C276(*)
 					
@@ -195,13 +190,13 @@ Case of
 							// UI_PaletteFindAndReplace
 							WP_FR_InitOptions("toolbar")
 							
-							If (Length:C16(oForm.FR.find)>0)  //
+							If (Length:C16(formData.FR.find)>0)  //
 								
-								oForm.FR.occurences:=FR_Script("findAll")  // ; oForm.FR.find)
+								formData.FR.occurences:=FR_Script("findAll")
 								
 							Else 
 								
-								oForm.FR.occurences:=-1
+								formData.FR.occurences:=-1
 								
 							End if 
 							
@@ -210,10 +205,10 @@ Case of
 				End if 
 			End if 
 			
-			If (Not:C34(Undefined:C82(oForm.aiWindow)))\
-				 && (oForm.aiWindow#0)
+			If (Not:C34(Undefined:C82(formData.aiWindow)))\
+				 && (formData.aiWindow#0)
 				
-				CALL FORM:C1391(oForm.aiWindow; "AI_Update"; "Context"; Form:C1466.selection)
+				CALL FORM:C1391(formData.aiWindow; "AI_Update"; "Context"; Form:C1466.selection)
 				
 			End if 
 		End if 
@@ -223,10 +218,10 @@ Case of
 		// ________________________________________________________________________________
 	: ($e.code=On Unload:K2:2)
 		
-		If (Not:C34(Undefined:C82(oForm.aiWindow)))\
-			 && (oForm.aiWindow#0)
+		If (Not:C34(Undefined:C82(formData.aiWindow)))\
+			 && (formData.aiWindow#0)
 			
-			CALL FORM:C1391(oForm.aiWindow; "AI_Update"; "Close"; Form:C1466.selection)
+			CALL FORM:C1391(formData.aiWindow; "AI_Update"; "Close"; Form:C1466.selection)
 			
 		End if 
 		

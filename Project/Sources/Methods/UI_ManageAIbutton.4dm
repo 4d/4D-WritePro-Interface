@@ -3,18 +3,18 @@
 
 var $visible; $enabled : Boolean
 
-If (oForm.aiKey="")
+If (formData.aiKey="")
 	If (Not:C34(Undefined:C82(Storage:C1525.aiKey)))  // The key has been added
-		oForm.aiKey:=Storage:C1525.aiKey.key
+		formData.aiKey:=Storage:C1525.aiKey.key
 	End if 
 Else 
 	If (Undefined:C82(Storage:C1525.aiKey))  // The key has been removed
-		oForm.aiKey:=""
+		formData.aiKey:=""
 	End if 
 End if 
 
 
-$visible:=(oForm.aiKey#"") && (Bool:C1537(Storage:C1525.aiKey.componentExists))
+$visible:=(formData.aiKey#"") && (Bool:C1537(Storage:C1525.aiKey.componentExists))
 OBJECT SET VISIBLE:C603(*; "btnAI"; $visible)  // toolbar & sidebar
 
 OBJECT SET VISIBLE:C603(*; "Separator_AI"; $visible)  // sidebar

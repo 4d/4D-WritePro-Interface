@@ -5,14 +5,11 @@ var $width : Integer
 var $o : Object
 var $ptrSource; $ptrTarget : Pointer
 
-//C_OBJECT(oForm)
-
-
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
-		If (oForm=Null:C1517)
-			oForm:=New object:C1471
+		If (formData=Null:C1517)
+			formData:=New object:C1471
 		End if 
 		
 		// WITHOUT PREFIX !!! (tabBtn_ or tabRect_" managed in class)
@@ -32,17 +29,17 @@ Case of
 			"FindAndReplace")
 		
 		
-		oForm.SidebarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")  // NEW
+		formData.SidebarTabs:=cs:C1710.Toolbar.new($_buttonNames; "TabArea")  // NEW
 		
 		OBJECT GET COORDINATES:C663(*; "TabArea"; $x1; $y1; $x2; $y2)
 		$width:=Int:C8(($x2-$x1)/$_buttonNames.length)  //-1
 		
-		oForm.SidebarTabs.setBestSize(False:C215)  // no labels !
-		oForm.SidebarTabs.setButtonSizes($width; 20)  // for side bar ONLY
-		oForm.SidebarTabs.setLabelMargins(0; 0)  // no labels
-		oForm.SidebarTabs.setButtonMargins(0; 0; 0; 0)
+		formData.SidebarTabs.setBestSize(False:C215)  // no labels !
+		formData.SidebarTabs.setButtonSizes($width; 20)  // for side bar ONLY
+		formData.SidebarTabs.setLabelMargins(0; 0)  // no labels
+		formData.SidebarTabs.setButtonMargins(0; 0; 0; 0)
 		
-		oForm.SidebarTabs.subforms:=New collection:C1472(\
+		formData.SidebarTabs.subforms:=New collection:C1472(\
 			"WP_Palette_Fonts"; \
 			"WP_Palette_Alignments"; \
 			"WP_Palette_Tabulations"; \
@@ -57,17 +54,17 @@ Case of
 			"WP_Palette_ImportExport"; \
 			"WP_Palette_FindAndReplace")
 		
-		UI_Selector(oForm.SidebarTabs.buttonNames[0])
+		UI_Selector(formData.SidebarTabs.buttonNames[0])
 		
 		
-		oForm.eventCode:=-1  //  no need to test "undefined" see WP_SetListFont
-		oForm.eventForcedCode:=-1  //  no need to test "undefined" see WP_SetListFont
+		formData.eventCode:=-1  //  no need to test "undefined" see WP_SetListFont
+		formData.eventForcedCode:=-1  //  no need to test "undefined" see WP_SetListFont
 		
-		oForm.skinAppliedMain:=UI_ApplySkin
+		formData.skinAppliedMain:=UI_ApplySkin
 		
 		
-		oForm.aiKey:=""  //  no need to test "undefined" see UI_manageAIButton
-		oForm.aiWindow:=0  // ΩAIΩ
+		formData.aiKey:=""  //  no need to test "undefined" see UI_manageAIButton
+		formData.aiWindow:=0  // ΩAIΩ
 		
 		If (Form:C1466#Null:C1517)
 			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)
@@ -85,8 +82,8 @@ Case of
 		
 		SET TIMER:C645(0)
 		
-		If (Not:C34(oForm.skinAppliedMain))
-			oForm.skinAppliedMain:=UI_ApplySkin
+		If (Not:C34(formData.skinAppliedMain))
+			formData.skinAppliedMain:=UI_ApplySkin
 		End if 
 		
 		//UI_Palette
@@ -114,8 +111,8 @@ Case of
 		
 	: (Form event code:C388=On Unload:K2:2)
 		
-		If (Not:C34(Undefined:C82(oForm.aiWindow))) && (oForm.aiWindow#0)  // ΩAIΩ
-			CALL FORM:C1391(oForm.aiWindow; "AI_Update"; "Close"; Form:C1466.selection)
+		If (Not:C34(Undefined:C82(formData.aiWindow))) && (formData.aiWindow#0)  // ΩAIΩ
+			CALL FORM:C1391(formData.aiWindow; "AI_Update"; "Close"; Form:C1466.selection)
 		End if 
 		
 End case 

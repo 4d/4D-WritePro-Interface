@@ -20,13 +20,13 @@ End if
 maxTabValue:=138  // inches (value will change if any other unit)
 
 If (Form:C1466.skin#Null:C1517)
-	oForm.skin:=Form:C1466.skin
-	oForm.skinAppliedMain:=False:C215  // will force skin to apply again
-	oForm.skinAppliedSub:=False:C215  // will force skin to apply again
+	formData.skin:=Form:C1466.skin
+	formData.skinAppliedMain:=False:C215  // will force skin to apply again
+	formData.skinAppliedSub:=False:C215  // will force skin to apply again
 End if 
 
 If (Not:C34(Undefined:C82(Form:C1466.eventCode)))  //2023/01/25 by RL
-	oForm.eventCode:=Form:C1466.eventCode
+	formData.eventCode:=Form:C1466.eventCode
 End if 
 
 If (Form:C1466.selection#Null:C1517) && (Not:C34(Undefined:C82(Form:C1466.selection.owner)))  // second condition added by RL on 2024/07/16

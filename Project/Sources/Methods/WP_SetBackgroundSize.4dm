@@ -10,13 +10,13 @@ If (Not:C34(OB Is empty:C1297($range)))
 	If ($value1>0)
 		$attribute1:=String:C10($value1; "&xml")
 	End if 
-	$attribute1:=$attribute1+oForm.horizontalSizeUnits.css[oForm.horizontalSizeUnits.index]
+	$attribute1:=$attribute1+formData.horizontalSizeUnits.css[formData.horizontalSizeUnits.index]
 	
 	$value2:=OBJECT Get value:C1743("bgndSizeVert")
 	If ($value2>0)
 		$attribute2:=String:C10($value2; "&xml")
 	End if 
-	$attribute2:=$attribute2+oForm.verticalSizeUnits.css[oForm.verticalSizeUnits.index]
+	$attribute2:=$attribute2+formData.verticalSizeUnits.css[formData.verticalSizeUnits.index]
 	
 	WP SET ATTRIBUTES:C1342($range; wk background width:K81:27; $attribute1; wk background height:K81:28; $attribute2)
 	

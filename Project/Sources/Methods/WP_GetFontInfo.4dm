@@ -8,7 +8,9 @@ var $fontFamily; $font : Text
 var $fontSize : Real  // ACI0104990 Pat Bensky
 
 If (Count parameters:C259<2)
+	
 	$check:=False:C215
+	
 End if 
 
 $frameColor:=0x00404040
@@ -21,113 +23,114 @@ If (Not:C34(OB Is empty:C1297($range)))
 		$rangeEnd:=OB Get:C1224($range; wk end:K81:88; Is longint:K8:6)
 		
 		$redraw:=($rangeStart#$rangeEnd)
+		
 	Else 
+		
 		$redraw:=True:C214
+		
 	End if 
 	
 	If ($redraw)
 		
 		WP Get attributes:C1345($range; wk font family:K81:65; $fontFamily)
 		$p:=Find in array:C230(WP_fontFamilly; $fontFamily)
+		
 		If ($p<0)
-			// second chance for japanese :-)
+			
+			// Second chance for japanese :-)
 			$p:=Find in array:C230(WP_fontFamillyJapanese; $fontFamily)
+			
 		End if 
 		
-		If ($p>0) & ($p<=Size of array:C274(WP_fontFamilly))
+		If ($p>0)\
+			 & ($p<=Size of array:C274(WP_fontFamilly))
 			
-			// set the drop down to the right value
+			
+			// Set the drop down to the right value
 			WP_fontFamilly:=$p
 			
 			// Then rebuild the font style and long names arrays
 			$fontFamily:=WP_fontFamilly{$p}
 			
-			WP_FillFontStyles($fontFamily)  //ACI0104450
+			WP_FillFontStyles($fontFamily)  // ACI0104450
 			
 			WP Get attributes:C1345($range; wk font:K81:69; $font)
 			$p:=Find in array:C230(WP_fontLongName; $font)
-			If ($p>0) & ($p<=Size of array:C274(WP_fontLongName))
+			
+			If ($p>0)\
+				 & ($p<=Size of array:C274(WP_fontLongName))
+				
 				WP_fontStyle:=$p
 				WP_fontLongName:=$p
+				
 			Else 
-				WP_fontStyle{0}:=$font  // just for display, not selectable !
+				
+				WP_fontStyle{0}:=$font  // Just for display, not selectable !
 				WP_fontLongName{0}:=$font
 				
 				WP_fontStyle:=0
-				//WP_fontFamilly:=0
+				
+				// WP_fontFamilly:=0
+				
 			End if 
 			
 		Else 
-			// font familly not found in array !
 			
-			WP_fontFamilly{0}:=$fontFamily  // just for display, not selectable !
+			// Font familly not found in array !
+			
+			WP_fontFamilly{0}:=$fontFamily  // Just for display, not selectable !
 			WP_fontFamilly:=0
 			
 		End if 
 		
-		If (Not:C34(Undefined:C82(oForm.fonts)))
-			//New font button
+		If (Not:C34(Undefined:C82(formData.fonts)))
+			
+			// New font button
 			
 			WP Get attributes:C1345($range; wk font:K81:69; $font; wk font family:K81:65; $fontFamily)
-			$index:=oForm.fonts.names.indexOf($font)
+			$index:=formData.fonts.names.indexOf($font)
+			
 			If ($index>0)
-				OBJECT SET TITLE:C194(*; "btnFonts"; oForm.fonts.families[$index]+" "+oForm.fonts.styles[$index])
+				
+				OBJECT SET TITLE:C194(*; "btnFonts"; formData.fonts.families[$index]+" "+formData.fonts.styles[$index])
+				
 			Else 
-				$index:=oForm.fonts.families.indexOf($fontFamily)
+				
+				$index:=formData.fonts.families.indexOf($fontFamily)
+				
 				If ($index>0)
-					OBJECT SET TITLE:C194(*; "btnFonts"; oForm.fonts.families[$index])
+					
+					OBJECT SET TITLE:C194(*; "btnFonts"; formData.fonts.families[$index])
+					
 				Else 
+					
 					OBJECT SET TITLE:C194(*; "btnFonts"; "-")
+					
 				End if 
 			End if 
 		End if 
 		
 		// Get the size (always in pt)
 		WP Get attributes:C1345($range; wk font size:K81:66; $fontSize)
+		
 		If ($fontSize#wk mixed:K81:89)
-			oForm.fontSize:=$fontSize
+			
+			formData.fontSize:=$fontSize
+			
 		End if 
-		
-		// standard action since 2022 march 17th
-		
-		//WP GET ATTRIBUTES($range; wk font italic; $style)  //0, 1 or wk mixed
-		//If ($style#wk mixed)
-		//oForm.cbItalic:=$style
-		//Else 
-		//oForm.cbItalic:=2
-		//End if 
-		
-		//WP GET ATTRIBUTES($range; wk font bold; $weight)  //0, 1 or wk mixed
-		//If ($weight#wk mixed)
-		//oForm.cbBold:=$weight
-		//Else 
-		//oForm.cbBold:=2
-		//End if 
 		
 		WP Get attributes:C1345($range; wk text color:K81:64; $color)
+		
 		If ($color=wk mixed:K81:89)
+			
 			OBJECT SET VISIBLE:C603(*; "MultiFontColor"; True:C214)
 			OBJECT SET RGB COLORS:C628(*; "ColorSample"; $frameColor; 0x00FFFFFF)
+			
 		Else 
+			
 			OBJECT SET RGB COLORS:C628(*; "ColorSample"; $frameColor; $color)
 			OBJECT SET VISIBLE:C603(*; "MultiFontColor"; False:C215)
+			
 		End if 
-		
-		//OBJECT SET VISIBLE(*;"InvisibleBackground";False)
-		//OBJECT SET VISIBLE(*;"MultiBackgroundColor";False)
-		//OBJECT SET RGB COLORS(*;"backgroundColor";$frameColor;0x00FFFFFF)
-		
-		//WP GET ATTRIBUTES($range;wk background color;$color)
-		//Case of 
-		//: ($color=wk transparent)
-		//OBJECT SET VISIBLE(*;"InvisibleBackground";True)
-		
-		//: ($color=wk mixed)
-		//OBJECT SET VISIBLE(*;"MultiBackgroundColor";True)
-		
-		//Else 
-		//OBJECT SET RGB COLORS(*;"backgroundColor";$frameColor;$color)
-		//End case 
-		
 	End if 
 End if 

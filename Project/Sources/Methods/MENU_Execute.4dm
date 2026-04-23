@@ -34,7 +34,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 				
 			: ($action="new…") | ($action="clear…")
 				
-				CONFIRM:C162(Get localized string:C991("ConfirmClear"); Get localized string:C991("Clear"); Get localized string:C991("cancel"))  //"Are you sure?")     //ACI0104121
+				CONFIRM:C162(Localized string:C991("ConfirmClear"); Localized string:C991("Clear"); Localized string:C991("cancel"))  //"Are you sure?")     //ACI0104121
 				If (ok=1)  // OK = 1 = Clear    //ACI0104121
 					If (Not:C34(Is nil pointer:C315($ptr)))  // ACI0103839
 						$ptr->:=WP New:C1317
@@ -73,7 +73,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 				
 				If (ok=1)
 					
-					$prompt:=Get localized string:C991("SelectDocumentOfType")
+					$prompt:=Localized string:C991("SelectDocumentOfType")
 					$extension:="txt;text;4w7;4wp;rtf;docx"
 					
 					$path:=Select document:C905(""; $extension; $prompt; 0)  //;.4w7;.4wt //"Select a 4D Write document"
@@ -101,7 +101,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 							: ($file.extension=".docx")  // MAIN ONLY
 								$newDocument:=WP Import document:C1318(document)
 								If ($newDocument.importLog#Null:C1517)
-									CONFIRM:C162(Get localized string:C991("BrowseTheImportLog"); Get localized string:C991("Yes"); Get localized string:C991("No"))
+									CONFIRM:C162(Localized string:C991("BrowseTheImportLog"); Localized string:C991("Yes"); Localized string:C991("No"))
 									
 									If (ok=1)
 										$win:=Open form window:C675("D_LogDisplay"; Movable form dialog box:K39:8; Horizontally centered:K39:1; Vertically centered:K39:4)
@@ -113,7 +113,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 								
 							Else 
 								// this should NEVER append
-								ALERT:C41(Get localized string:C991("thisTypeOfDocumentCantBeImported"))
+								ALERT:C41(Localized string:C991("thisTypeOfDocumentCantBeImported"))
 						End case 
 						
 						ON ERR CALL:C155($memoErrorMethod)
@@ -121,7 +121,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						Case of 
 							: ($options.beforeDocument)
 								$range:=WP Text range:C1341($area; wk start text:K81:165; wk start text:K81:165)
-								WP INSERT DOCUMENT:C1411($range; $newDocument; wk replace:K81:177)
+								WP Insert document body:C1411($range; $newDocument; wk replace:K81:177)
 								
 							: ($options.newDocument)
 								
@@ -134,11 +134,11 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 								
 							: ($options.afterDocument)
 								$range:=WP Text range:C1341($area; wk end text:K81:164; wk start text:K81:165)
-								WP INSERT DOCUMENT:C1411($range; $newDocument; wk replace:K81:177)
+								WP Insert document body:C1411($range; $newDocument; wk replace:K81:177)
 								
 							: ($options.cursorPosition)
 								$range:=WP Selection range:C1340($area)
-								WP INSERT DOCUMENT:C1411($range; $newDocument; wk replace:K81:177)
+								WP Insert document body:C1411($range; $newDocument; wk replace:K81:177)
 								
 						End case 
 						
@@ -157,7 +157,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						$options:=New object:C1471
 						$options.extra:=New object:C1471
 						$options.extra.extension:=$extension
-						$options.extra.windowTitle:=Get localized string:C991("TextExport")
+						$options.extra.windowTitle:=Localized string:C991("TextExport")
 						$options.extra.form:="D_Export"
 						
 					: ($action="exportHTML")
@@ -167,7 +167,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						$options:=New object:C1471
 						$options.extra:=New object:C1471
-						$options.extra.windowTitle:=Get localized string:C991("HTMLExport")
+						$options.extra.windowTitle:=Localized string:C991("HTMLExport")
 						$options.extra.extension:=$extension
 						$options.extra.form:="D_Export"
 						
@@ -183,7 +183,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						$options:=New object:C1471
 						$options.extra:=New object:C1471
-						$options.extra.windowTitle:=Get localized string:C991("HTMLMimeExport")
+						$options.extra.windowTitle:=Localized string:C991("HTMLMimeExport")
 						$options.extra.extension:=$extension
 						$options.extra.form:="D_Export"
 						
@@ -209,7 +209,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						$options[wk visible empty images:K81:369]:=False:C215  // new 19R6 (false by default)
 						$options[wk visible background and anchored elements:K81:289]:=True:C214  // new v20 (true by default - was forced to true before)
 						$options.extra:=New object:C1471
-						$options.extra.windowTitle:=Get localized string:C991("WordExport")
+						$options.extra.windowTitle:=Localized string:C991("WordExport")
 						$options.extra.extension:=$extension
 						$options.extra.form:="D_Export"
 						
@@ -219,7 +219,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						$options:=New object:C1471
 						$options.extra:=New object:C1471
-						$options.extra.windowTitle:=Get localized string:C991("PDFExport")
+						$options.extra.windowTitle:=Localized string:C991("PDFExport")
 						$options.extra.extension:=$extension
 						$options.extra.form:="D_Export"
 						
@@ -238,7 +238,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						$options:=New object:C1471
 						$options.extra:=New object:C1471
-						$options.extra.windowTitle:=Get localized string:C991("SVGExport")
+						$options.extra.windowTitle:=Localized string:C991("SVGExport")
 						$options.extra.extension:=$extension
 						$options.extra.form:="D_Export"
 						
@@ -287,9 +287,9 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 				If (ok=1)
 					
 					If ($action="exportSVG")
-						$title:=Get localized string:C991("FolderNamePrompt")
+						$title:=Localized string:C991("FolderNamePrompt")
 					Else 
-						$title:=Get localized string:C991("FileNamePrompt")
+						$title:=Localized string:C991("FileNamePrompt")
 					End if 
 					
 					$docName:=Select document:C905(""; $extension; $title; File name entry:K24:17)  // ACI0103976 $extension added 2013/06/01 by RL as a fix to Thomas Maul issue
@@ -299,13 +299,13 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						
 						If ($action="exportSVG")
 							
-							$folderPath:=document  // ACI0102385 
+							$folderPath:=document  // ACI0102385
 							
 							//$folderPath:=$file.name+"."+$file.extension
 							If (Test path name:C476($folderPath)=Is a folder:K24:2)
 								DELETE FOLDER:C693($folderPath; Delete with contents:K24:24)
 							End if 
-							CREATE FOLDER:C475($folderPath)  // if path exists, finder manages and request 
+							CREATE FOLDER:C475($folderPath)  // if path exists, finder manages and request
 							
 							If (Substring:C12($folderPath; Length:C16($folderPath); 1)#Folder separator:K24:12)
 								$folderPath:=$folderPath+Folder separator:K24:12
@@ -319,7 +319,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 							
 						Else   // other exports
 							
-							$path:=document  // ACI0102385 
+							$path:=document  // ACI0102385
 							
 							//$file:=Path to object($path; fk platform path) // ACI0103976 removed 2013/06/01 by RL; No need to add the extention, it IS already in the document name
 							//$file.extension:=$extension
@@ -372,7 +372,7 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 				// For each ($paragraph; $collection)
 				// WP GET ATTRIBUTES($paragraph; wk style sheet; $styleSheet)
 				// WP SET ATTRIBUTES($paragraph; wk style sheet; $styleSheet)
-				// End for each 
+				// End for each
 				
 			: ($action="document@")
 				
@@ -415,16 +415,16 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 						$formula:=Formula from string:C1601("String:C10(Current date:C33; 1)"; sk execute in host database:K88:5)  //1=System date short
 						
 					: ($action="documentCurrentTime")
-						//String(Current time; System time short)  
+						//String(Current time; System time short)
 						$formula:=Formula from string:C1601("String:C10(Current time:C178; 9)"; sk execute in host database:K88:5)  //9=System time short
 						
 				End case 
 				
-				WP INSERT FORMULA:C1703(Form:C1466.selection; $formula; wk replace:K81:177)
+				WP Insert formula:C1703(Form:C1466.selection; $formula; wk replace:K81:177)
 				
 			: ($action="freeze@")
 				
-				CONFIRM:C162(Get localized string:C991("ConfirmFreeze"))
+				CONFIRM:C162(Localized string:C991("ConfirmFreeze"))
 				If (ok=1)
 					Case of 
 						: ($action="freezeDocument")
@@ -464,17 +464,17 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 				
 				Case of 
 					: ($action="pictureInsertURL")
-						$url:=Request:C163(Get localized string:C991("URLhyphen"))
+						$url:=Request:C163(Localized string:C991("URLhyphen"))
 						
 						If (ok=1)
-							WP INSERT PICTURE:C1437(Form:C1466.selection; $pict; wk replace:K81:177)
+							WP Insert picture:C1437(Form:C1466.selection; $pict; wk replace:K81:177)
 							WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk image url:K81:218; $url)
 						End if 
 						
 					: ($action="pictureEditURL")
 						
-						$url:=oForm.imageURL
-						$url:=Request:C163(Get localized string:C991("URLhyphen"); $url)
+						$url:=formData.imageURL
+						$url:=Request:C163(Localized string:C991("URLhyphen"); $url)
 						If (ok=1)
 							WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk image url:K81:218; $url)
 						End if 
@@ -534,10 +534,10 @@ If (OB Is defined:C1231(Form:C1466; "areaPointer")) && (OB Is defined:C1231(Form
 		// no action ?
 	End if 
 	
-	//Else 
+	//Else
 	//ALERT(Get localized string("nilPointer"))
-	//End if 
+	//End if
 	
 Else 
-	ALERT:C41(Get localized string:C991("missingPointer"))
+	ALERT:C41(Localized string:C991("missingPointer"))
 End if 

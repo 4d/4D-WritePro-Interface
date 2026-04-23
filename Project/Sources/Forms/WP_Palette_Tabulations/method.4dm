@@ -12,8 +12,8 @@ $typeSelection:=Form:C1466.selection.type
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
-		If (oForm=Null:C1517)  // ACI0101427 when used as a single palette, not as a sub-sub-form
-			oForm:=New object:C1471
+		If (formData=Null:C1517)  // ACI0101427 when used as a single palette, not as a sub-sub-form
+			formData:=New object:C1471
 		End if 
 		
 		_tabs:=New collection:C1472
@@ -42,7 +42,7 @@ Case of
 		
 		OBJECT SET LIST BY REFERENCE:C1266(*; "lb_types"; Required list:K42:20; wp_tabList)
 		
-		oForm.skinAppliedSub:=UI_ApplySkin
+		formData.skinAppliedSub:=UI_ApplySkin
 		
 		If (Form:C1466#Null:C1517)
 			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)
@@ -54,14 +54,14 @@ Case of
 		
 		$setupOK:=SetupLocalVariables
 		
-		If (oForm.skinAppliedSub=False:C215)  // may have changed on bound variable change
-			oForm.skinAppliedSub:=UI_ApplySkin
+		If (formData.skinAppliedSub=False:C215)  // may have changed on bound variable change
+			formData.skinAppliedSub:=UI_ApplySkin
 		End if 
 		
 		
 		If ($setupOK) & ($typeSelection#2)
 			WP_GetTabInfo(Form:C1466.paragraphRange)
-			//WP_TabsDrawBar 
+			//WP_TabsDrawBar
 		End if 
 		
 		UI_PaletteTabulations

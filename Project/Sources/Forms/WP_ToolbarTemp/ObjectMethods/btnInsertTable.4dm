@@ -1,2 +1,0 @@
-
-WP_TableMenu ("InsertTable")

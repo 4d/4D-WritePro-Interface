@@ -9,7 +9,7 @@ var ITEMTEXT : Text
 var masterTable : Pointer
 var maxTabValue : Real
 var numFormat : Text
-var oForm : Object
+var formData : Object
 var oSettings1 : Object
 var oSettings2 : Object
 var oTempArea : Object

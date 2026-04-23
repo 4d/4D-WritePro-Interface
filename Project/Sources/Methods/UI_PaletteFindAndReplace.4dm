@@ -1,84 +1,75 @@
 //%attributes = {"invisible":true}
-var $protected : Boolean
-$protected:=UI_isProtected(False:C215)  // don't manage focus
-
-
-// always true even for protected documents
-
-OBJECT SET ENTERABLE:C238(*; "inputFind"; True:C214)  // 
+// Always true even for protected documents
+OBJECT SET ENTERABLE:C238(*; "inputFind"; True:C214)  //
 OBJECT SET ENABLED:C1123(*; "inputFind"; True:C214)
-OBJECT SET ENABLED:C1123(*; "btnFind@"; (oForm.FR.find#""))  //allow findNext and findPrevious if something in oForm.FR.find
-OBJECT SET ENABLED:C1123(*; "btnOptions"; True:C214)  // options can be fixed prior entering what to be found (does not matter)
+OBJECT SET ENABLED:C1123(*; "btnFind@"; Length:C16(formData.FR.find)#0)  // Allow findNext & findPrevious if something in formData.FR.find
+OBJECT SET ENABLED:C1123(*; "btnOptions"; True:C214)  // Options can be fixed prior entering what to be found (does not matter)
 
+var $protected:=UI_isProtected(False:C215)  // Don't manage focus
 
-If ($protected)  //ACI0103628 
+If ($protected)  // ACI0103628
 	
-	OBJECT SET ENTERABLE:C238(*; "inputReplace"; False:C215)  // can NOT replace : replace text is NOT enterable/available
+	OBJECT SET ENTERABLE:C238(*; "inputReplace"; False:C215)  // Can NOT replace : replace text is NOT enterable/available
 	OBJECT SET ENABLED:C1123(*; "inputReplace"; False:C215)
-	oForm.FR.replace:=""
 	OBJECT SET ENABLED:C1123(*; "btnReplace@"; False:C215)
+	
+	formData.FR.replace:=""
 	
 Else 
 	
-	OBJECT SET ENTERABLE:C238(*; "inputReplace"; True:C214)  //replace text is available
+	OBJECT SET ENTERABLE:C238(*; "inputReplace"; True:C214)  // Replace text is available
 	OBJECT SET ENABLED:C1123(*; "inputReplace"; True:C214)
-	OBJECT SET ENABLED:C1123(*; "btnReplace@"; (oForm.FR.find#""))
+	OBJECT SET ENABLED:C1123(*; "btnReplace@"; Length:C16(formData.FR.find)#0)
 	
-	// more based on options
-	
-	If (oForm.FR.kanaSensitive)
-		
-		//oForm.FR.caseSensitive:=True
-		//oForm.FR.diacriticSensitive:=True
+	// More based on options
+	If (formData.FR.kanaSensitive)
 		
 		OBJECT SET ENABLED:C1123(*; "cbCaseSensitive"; False:C215)
 		OBJECT SET ENABLED:C1123(*; "cbAccentSensitive"; False:C215)
-		
 		OBJECT SET ENABLED:C1123(*; "cbWidthSensitive"; True:C214)
 		
 	Else 
 		
-		//oForm.FR.widthSensitive:=False
-		
 		OBJECT SET ENABLED:C1123(*; "cbCaseSensitive"; True:C214)
 		OBJECT SET ENABLED:C1123(*; "cbAccentSensitive"; True:C214)
-		
 		OBJECT SET ENABLED:C1123(*; "cbWidthSensitive"; False:C215)
 		
 	End if 
 	
-	//
 	OBJECT SET ENTERABLE:C238(*; "occurencesInfo@"; False:C215)
+	OBJECT SET ENABLED:C1123(*; "tabBtn_@"; True:C214)  // The tab buttons are always enabled
 	
-	// the tab buttons are always enabled
-	OBJECT SET ENABLED:C1123(*; "tabBtn_@"; True:C214)
-	
-	//OBJECT SET VISIBLE(*; "Replacement@"; oForm.FR.displayReplacements)
-	//OBJECT SET VISIBLE(*; "Occurences@"; Not(oForm.FR.displayReplacements))
-	
-End if   //ACI0103628 
+End if   // ACI0103628
 
-
-////for sidebar "find"
-If (oForm.FR.find#"")
-	oForm.FR.messageoccurences:=Get localized string:C991("OccurencesColon")+" "+String:C10(oForm.FR.occurences)
+// for sidebar "find"
+If (Length:C16(formData.FR.find)#0)
+	
+	formData.FR.messageoccurences:=Localized string:C991("OccurencesColon")+" "+String:C10(formData.FR.occurences)
+	
 Else 
-	oForm.FR.messageoccurences:=""
+	
+	formData.FR.messageoccurences:=""
+	
 End if 
 
-//for sidebar "replace"
-If (oForm.FR.displayReplacements)
-	oForm.FR.messageReplacements:=Get localized string:C991("ReplacementsColon")+" "+String:C10(oForm.FR.replacements)
+// For sidebar "replace"
+If (formData.FR.displayReplacements)
+	
+	formData.FR.messageReplacements:=Localized string:C991("ReplacementsColon")+" "+String:C10(formData.FR.replacements)
+	
 Else 
-	oForm.FR.messageReplacements:=""
+	
+	formData.FR.messageReplacements:=""
+	
 End if 
 
-
-
-If (oForm.FR.displayReplacements)
-	oForm.FR.message:=oForm.FR.messageReplacements
-	oForm.FR.displayReplacements:=False:C215  // next time occurences shall be displayed
+If (formData.FR.displayReplacements)
+	
+	formData.FR.message:=formData.FR.messageReplacements
+	formData.FR.displayReplacements:=False:C215  // Next time occurences shall be displayed
+	
 Else 
-	oForm.FR.message:=oForm.FR.messageoccurences
+	
+	formData.FR.message:=formData.FR.messageoccurences
+	
 End if 
-

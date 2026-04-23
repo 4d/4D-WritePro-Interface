@@ -1,5 +1,6 @@
 //%attributes = {"invisible":true}
-var $type:=getSelectedStyleSheetType
+var $selectedType:=getSelectedStyleSheetType  // 0 = Paragraph, 1 = Font, 6 = List
+var $type:=$selectedType=6 ? wk type paragraph:K81:191 : $selectedType
 
 Case of 
 		
@@ -37,7 +38,7 @@ then the dropdown list shall contain only the paragraph style sheets that are no
 	
 */
 	
-	var $isList:=Bool:C1537(oForm.styleSheet.btnType[6])
+	var $isList:=Bool:C1537(formData.styleSheet.btnType[6])
 	
 	If ($isList)  // Keep only list style sheets
 		

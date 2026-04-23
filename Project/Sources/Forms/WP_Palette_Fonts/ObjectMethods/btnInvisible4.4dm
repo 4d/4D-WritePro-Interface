@@ -4,16 +4,16 @@ $color:=Call_CustomColorPalette(False:C215; "ColorShadow")  // false means do no
 
 If ($color#-1)
 	
-	oForm.cbShadow:=1
+	formData.cbShadow:=1
 	
 	Case of 
 		: ($color>=0)
 			
 			OBJECT SET RGB COLORS:C628(*; "ColorShadow"; $color; $color)
-			$offset:=oForm.shadowOffset
+			$offset:=formData.shadowOffset
 			If ($offset<1)
 				$offset:=1
-				oForm.shadowOffset:=1
+				formData.shadowOffset:=1
 			End if 
 			
 			WP_SetTextShadow(Form:C1466.selection; $offset; $color)

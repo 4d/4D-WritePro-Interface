@@ -13,13 +13,13 @@ If (Not:C34(OB Is empty:C1297($range)))
 		$sizeUnit:=""
 		
 		If ($type=1)
-			WP GET ATTRIBUTES:C1345($range; wk background width:K81:27; $size)
+			WP Get attributes:C1345($range; wk background width:K81:27; $size)
 			$refValue:="bgndSizeHor"  //Form.horizontalSizeValue
-			$refUnit:=oForm.horizontalSizeUnits
+			$refUnit:=formData.horizontalSizeUnits
 		Else 
-			WP GET ATTRIBUTES:C1345($range; wk background height:K81:28; $size)
+			WP Get attributes:C1345($range; wk background height:K81:28; $size)
 			$refValue:="bgndSizeVert"  //Form.verticalSizeValue
-			$refUnit:=oForm.verticalSizeUnits
+			$refUnit:=formData.verticalSizeUnits
 		End if 
 		
 		

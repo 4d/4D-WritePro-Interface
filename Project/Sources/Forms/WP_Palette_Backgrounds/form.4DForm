@@ -101,7 +101,7 @@
 						"onGettingFocus",
 						"onDataChange"
 					],
-					"dataSource": "oForm.bgndSizeHor",
+					"dataSource": "formData.bgndSizeHor",
 					"dataSourceTypeHint": "number",
 					"numberFormat": "####0.00;;"
 				},
@@ -121,7 +121,7 @@
 						"onGettingFocus",
 						"onDataChange"
 					],
-					"dataSource": "oForm.bgndSizeVert",
+					"dataSource": "formData.bgndSizeVert",
 					"dataSourceTypeHint": "number",
 					"numberFormat": "####0.00;;"
 				},
@@ -199,7 +199,7 @@
 					],
 					"method": "ObjectMethods/horizontalSizeUnits.4dm",
 					"dataSourceTypeHint": "object",
-					"dataSource": "oForm.horizontalSizeUnits"
+					"dataSource": "formData.horizontalSizeUnits"
 				},
 				"verticalSizeUnits": {
 					"type": "dropdown",
@@ -214,7 +214,7 @@
 					],
 					"method": "ObjectMethods/verticalSizeUnits.4dm",
 					"dataSourceTypeHint": "object",
-					"dataSource": "oForm.verticalSizeUnits"
+					"dataSource": "formData.verticalSizeUnits"
 				},
 				"btnAction": {
 					"type": "button",

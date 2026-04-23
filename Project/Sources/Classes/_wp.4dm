@@ -11,9 +11,7 @@ Function get doc() : Object
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
 Function get document() : Object
 	
-	This:C1470._document:=This:C1470._document || Form:C1466.selection.owner
-	
-	return This:C1470._document
+	return Form:C1466.document || Form:C1466.selection.owner
 	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
 shared Function get multiLevelListsTemplates() : Collection
@@ -65,6 +63,11 @@ Function get styleSheets() : Collection
 	
 	var $doc:=This:C1470.doc
 	return WP Get style sheets:C1655($doc; wk type paragraph:K81:191).combine(WP Get style sheets:C1655($doc; wk type character:K81:296))
+	
+	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
+Function get normalStyleShet() : Object
+	
+	return WP Get style sheet:C1656(This:C1470.document; "Normal")
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function request($title : Text; $value : Text; $labelOk : Text; $labelCancel : Text; $placeHolder : Text) : Text

@@ -7,7 +7,7 @@ If ($color=-1)
 Else 
 	OBJECT SET VISIBLE:C603(*; "MultiLinethroughColor"; False:C215)
 	//(OBJECT Get pointer(Object named;"cbUnderline"))->:=1
-	oForm.cbLinethrough:=1
+	formData.cbLinethrough:=1
 	Case of 
 			
 		: ($color>=0)

@@ -26,7 +26,7 @@ $menu:=Create menu:C408  // create IMPORT submenu first
 //APPEND MENU ITEM($importMenu; Get localized string("4DWriteEllipsis"))  //"As .text Document")
 //SET MENU ITEM PARAMETER($importMenu; -1; "import4dWrite")
 
-//End if 
+//End if
 
 Case of 
 	: ($content="export")
@@ -223,14 +223,14 @@ Case of
 			$_formulas:=WP Get formulas:C1702(Form:C1466.selection)
 			
 			If ($_formulas.length>0)
-				oForm.imageSource:=$_formulas[0].formula.source  // //ACI0104098
+				formData.imageSource:=$_formulas[0].formula.source  // //ACI0104098
 				
 				APPEND MENU ITEM:C411($menu; Localized string:C991("editImageFormula"))
 				SET MENU ITEM PARAMETER:C1004($menu; -1; "pictureInsertFormula")
 				
 			Else 
 				If ($url#"") & ($url#"data:@")
-					oForm.imageURL:=$url
+					formData.imageURL:=$url
 					APPEND MENU ITEM:C411($menu; Localized string:C991("editImageURL"))
 					SET MENU ITEM PARAMETER:C1004($menu; -1; "pictureEditURL")
 				Else 

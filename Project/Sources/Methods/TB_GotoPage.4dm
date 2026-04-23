@@ -1,41 +1,23 @@
 //%attributes = {"invisible":true}
-#DECLARE($btnName : Text)
+#DECLARE($buttonName : Text)
 
-var $id; $page; $p : Integer
+$buttonName:=$buttonName || OBJECT Get name:C1087(Object current:K67:2)  // Physical button name ("btn_Home")
 
-If (Count parameters:C259=0)
-	$btnName:=OBJECT Get name:C1087(Object current:K67:2)  // physical button name ("btn_Home")
+var $pos:=Position:C15("_"; $buttonName)
+
+If ($pos>0)
+	
+	$buttonName:=Substring:C12($buttonName; $pos+1)  // Logical button name ("Home")
+	
 End if 
 
-$p:=Position:C15("_"; $btnName)
-If ($p>0)
-	$btnName:=Substring:C12($btnName; $p+1)  // logical button name ("Home")
-End if 
-
-
-$id:=oForm.ToolbarTabs.allButtonNames.indexOf($btnName)  // ACI0101694
-//$id:=oForm.ToolbarTabs.buttonNames.indexOf($btnName)  // ACI0101694
+var $id : Integer:=formData.ToolbarTabs.allButtonNames.indexOf($buttonName)  // ACI0101694
 
 If ($id>=0)
 	
-	$page:=oForm.ToolbarTabs.pageIndexes[$id]
-	
-	//$tempppppp:=0
-	//If (Shift down)
-	//$page:=$page+1
-	//End if 
-	
+	var $page : Integer:=formData.ToolbarTabs.pageIndexes[$id]
 	FORM GOTO PAGE:C247($page; *)
 	
-	oForm.ToolbarTabs.activate($btnName)
-	
-	//For each ($btn; oForm.ToolbarTabs.buttonNames)
-	//OBJECT SET FONT STYLE(*; $btn; Plain)
-	//End for each 
-	//OBJECT SET FONT STYLE(*; $btnName; Bold)
-	
+	formData.ToolbarTabs.activate($buttonName)
 	
 End if 
-
-
-

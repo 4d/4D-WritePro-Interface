@@ -26,10 +26,10 @@ Else
 			//If (Not(Undefined(oSettings1)))
 			//If (Not(OB Is empty(oSettings1)))
 			//OBJECT SET ENABLED(*; "btnPaste"; True)
-			//Else 
+			//Else
 			//OBJECT SET ENABLED(*; "btnPaste"; False)
-			//End if 
-			//End if 
+			//End if
+			//End if
 			
 	End case 
 	
@@ -42,9 +42,9 @@ UI_ManageAIbutton  // makes button VISIBLE or NOT, so it MIGHT be visible but st
 
 // ACI0104990 Pat Bensky
 Case of 
-	: (oForm.fontSize=Int:C8(oForm.fontSize))
+	: (formData.fontSize=Int:C8(formData.fontSize))
 		OBJECT SET FORMAT:C236(*; "fontSizeInput"; "###0;-###0;0")
-	: ((oForm.fontSize*10)=Int:C8(oForm.fontSize*10))
+	: ((formData.fontSize*10)=Int:C8(formData.fontSize*10))
 		OBJECT SET FORMAT:C236(*; "fontSizeInput"; "###0.0;-###0.0;0")
 	Else 
 		OBJECT SET FORMAT:C236(*; "fontSizeInput"; "###0.00;-###0.0;00")

@@ -24,22 +24,22 @@ var $skin : Object
 //$iconBorder:=0x00E8E8E8  //0x00C0C0C0
 //$iconBackground:=0x00E8E8E8
 
-//Else 
+//Else
 
 //$fontColor:=0x00F0F0F0
 //$backgroundColor:=0x00404040
 
 //$separatorFontColor:=0x00C8C8C8
-//$separatorColor:=0x00303030  // 
+//$separatorColor:=0x00303030  //
 
 //$iconBorder:=0x00303030
 //$iconBackground:=0x00303030
 
-//End if 
+//End if
 
 
-If (oForm.skin#Null:C1517)
-	$skin:=oForm.skin
+If (formData.skin#Null:C1517)
+	$skin:=formData.skin
 	
 	If (Not:C34(OB Is empty:C1297($skin)))
 		
@@ -146,7 +146,7 @@ If (oForm.skin#Null:C1517)
 	End if 
 	
 	OBJECT SET RGB COLORS:C628(*; "background@"; $backgroundColor; $backgroundColor)  // background (toolbar + sidebar)
-	OBJECT SET RGB COLORS:C628(*; "tabRect_@"; $backgroundColor; $backgroundColor)  // toolbat tabs 
+	OBJECT SET RGB COLORS:C628(*; "tabRect_@"; $backgroundColor; $backgroundColor)  // toolbat tabs
 	
 	OBJECT SET RGB COLORS:C628(*; "Separator@"; $separatorColor; $separatorColor)
 	OBJECT SET RGB COLORS:C628(*; "sepLbl@"; $separatorFontColor; $separatorColor)
@@ -169,12 +169,12 @@ Else
 End if 
 
 
-If (oForm.ToolbarTabs#Null:C1517)  // toolbar mode
+If (formData.ToolbarTabs#Null:C1517)  // toolbar mode
 	
-	oForm.ToolbarTabs.setColors($fontColor; $backgroundColor; $separatorFontColor; $separatorColor)  // front;back
+	formData.ToolbarTabs.setColors($fontColor; $backgroundColor; $separatorFontColor; $separatorColor)  // front;back
 	
-	$name:=oForm.ToolbarTabs.allButtonNames[FORM Get current page:C276(*)-1]
-	oForm.ToolbarTabs.activate($name)
+	$name:=formData.ToolbarTabs.allButtonNames[FORM Get current page:C276(*)-1]
+	formData.ToolbarTabs.activate($name)
 	
 End if 
 

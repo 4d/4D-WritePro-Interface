@@ -2,10 +2,10 @@
 OBJECT SET ENABLED:C1123(*; "@"; False:C215)  // ACI0100560
 OBJECT SET ENTERABLE:C238(*; "@"; False:C215)  // ACI0100560
 
-If (oForm.redrawTabs)
+If (formData.redrawTabs)
 	
-	oForm.ToolbarTabs.redraw()
-	oForm.redrawTabs:=False:C215
+	formData.ToolbarTabs.redraw()
+	formData.redrawTabs:=False:C215
 	
 End if 
 
@@ -68,12 +68,12 @@ Case of
 			Case of 
 					
 					// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
-				: (oForm.fontSize=Int:C8(oForm.fontSize))
+				: (formData.fontSize=Int:C8(formData.fontSize))
 					
 					OBJECT SET FORMAT:C236(*; "cbox_FontSize"; "###0;-###0;0")
 					
 					// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
-				: ((oForm.fontSize*10)=Int:C8(oForm.fontSize*10))
+				: ((formData.fontSize*10)=Int:C8(formData.fontSize*10))
 					
 					OBJECT SET FORMAT:C236(*; "cbox_FontSize"; "###0.0;-###0.0;0")
 					

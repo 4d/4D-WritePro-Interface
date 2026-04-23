@@ -10,18 +10,18 @@ var $x1; $y1; $x2; $y2 : Integer
 
 If ($apikey#"")
 	
-	If (Undefined:C82(oForm))
-		oForm:={AIwindow: 0}
+	If (Undefined:C82(formData))
+		formData:={AIwindow: 0}
 	End if 
 	
-	If (oForm.aiWindow=0)
-		oForm.aiWindow:=Open form window:C675("D_AI_Prompt"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4; *)
-		DIALOG:C40("D_AI_Prompt"; {apiKey: $apiKey; windowID: oForm.aiWindow; wpSelection: $wpSelection}; *)
+	If (formData.aiWindow=0)
+		formData.aiWindow:=Open form window:C675("D_AI_Prompt"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4; *)
+		DIALOG:C40("D_AI_Prompt"; {apiKey: $apiKey; windowID: formData.aiWindow; wpSelection: $wpSelection}; *)
 		
 	Else 
 		
-		GET WINDOW RECT:C443($x1; $y1; $x2; $y2; oForm.aiWindow)
-		SET WINDOW RECT:C444($x1; $y1; $x2; $y2; oForm.aiWindow)
+		GET WINDOW RECT:C443($x1; $y1; $x2; $y2; formData.aiWindow)
+		SET WINDOW RECT:C444($x1; $y1; $x2; $y2; formData.aiWindow)
 		
 	End if 
 	

@@ -52,12 +52,12 @@ If (Count parameters:C259>0)
 			$size:=OBJECT Get value:C1743($changeWhat)
 			If ($size<=0)
 				OBJECT SET VALUE:C1742($changeWhat; 0)
-				oForm.horizontalSizeUnits.index:=0  // "auto"
+				formData.horizontalSizeUnits.index:=0  // "auto"
 			Else 
-				If (oForm.horizontalSizeUnits.index<=2)
+				If (formData.horizontalSizeUnits.index<=2)
 					// can't be "auto", "cover" nor "contain" anymore
-					oForm.horizontalSizeUnits.index:=4  //mm
-					oForm.horizontalSizeUnits.memoUnit:="mm"
+					formData.horizontalSizeUnits.index:=4  //mm
+					formData.horizontalSizeUnits.memoUnit:="mm"
 				End if 
 			End if 
 			
@@ -65,35 +65,35 @@ If (Count parameters:C259>0)
 			$size:=OBJECT Get value:C1743($changeWhat)
 			If ($size<=0)
 				OBJECT SET VALUE:C1742($changeWhat; 0)
-				oForm.verticalSizeUnits.index:=0  // "auto"
+				formData.verticalSizeUnits.index:=0  // "auto"
 			Else 
-				If (oForm.verticalSizeUnits.index=0)
+				If (formData.verticalSizeUnits.index=0)
 					// can't be "auto" anymore
-					oForm.verticalSizeUnits.index:=2  //mm
-					oForm.verticalSizeUnits.memoUnit:="mm"
+					formData.verticalSizeUnits.index:=2  //mm
+					formData.verticalSizeUnits.memoUnit:="mm"
 				End if 
 			End if 
 			
 		: ($changeWhat="horizontalSizeUnits")  // ------------------------------------------------- DROPDOWN FOR HORIZONTAL UNIT
-			$index:=oForm.horizontalSizeUnits.index
+			$index:=formData.horizontalSizeUnits.index
 			If ($index<=2)  // "auto", "cover" or "contain"
 				//if unit = auto, cover or contain, then value MUST be 0
 				
 				OBJECT SET VALUE:C1742("bgndSizeHor"; 0)
-				oForm.horizontalSizeUnits.memoUnit:=""
+				formData.horizontalSizeUnits.memoUnit:=""
 				
 				// two SPECIAL cases : "cover" and "contain"
 				If ($index=1) || ($index=2)
 					OBJECT SET VALUE:C1742("bgndSizeVert"; 0)
-					oForm.verticalSizeUnits.index:=0  // force to "auto"
+					formData.verticalSizeUnits.index:=0  // force to "auto"
 					OBJECT SET ENABLED:C1123(*; "verticalSizeUnits"; False:C215)
 					OBJECT SET ENTERABLE:C238(*; "bgndSizeVert"; False:C215)
 				End if 
 				
 			Else 
 				$size:=Num:C11(OBJECT Get value:C1743("bgndSizeHor"))
-				$index:=oForm.horizontalSizeUnits.index
-				$newUnit:=oForm.horizontalSizeUnits.css[$index]
+				$index:=formData.horizontalSizeUnits.index
+				$newUnit:=formData.horizontalSizeUnits.css[$index]
 				
 				If ($size<=0)
 					// value can't be 0 anymore
@@ -101,43 +101,43 @@ If (Count parameters:C259>0)
 					OBJECT SET VALUE:C1742("bgndSizeHor"; $size)  // 100% 10mm 1cm 0.25in 10pt 10px
 				Else 
 					// convert from previous unit to new unit
-					$oldUnit:=oForm.horizontalSizeUnits.memoUnit
+					$oldUnit:=formData.horizontalSizeUnits.memoUnit
 					
 					If ($oldUnit#"") && ($oldUnit#"%") && ($newUnit#"") & ($newUnit#"%")
 						$size:=WP_Convert($size; $oldUnit; $newUnit)
 						OBJECT SET VALUE:C1742("bgndSizeHor"; $size)
 					End if 
 				End if 
-				oForm.horizontalSizeUnits.memoUnit:=$newUnit
+				formData.horizontalSizeUnits.memoUnit:=$newUnit
 			End if 
 			
 		: ($changeWhat="verticalSizeUnits")  // ------------------------------------------------- DROPDOWN FOR VERTICAL UNIT
 			//if unit = auto then value = ""
-			If (oForm.verticalSizeUnits.index=0)
+			If (formData.verticalSizeUnits.index=0)
 				OBJECT SET VALUE:C1742("bgndSizeVert"; 0)
-				oForm.verticalSizeUnits.memoUnit:=""
+				formData.verticalSizeUnits.memoUnit:=""
 			Else 
 				$size:=Num:C11(OBJECT Get value:C1743("bgndSizeVert"))
-				$index:=oForm.verticalSizeUnits.index
-				$newUnit:=oForm.verticalSizeUnits.css[$index]
+				$index:=formData.verticalSizeUnits.index
+				$newUnit:=formData.verticalSizeUnits.css[$index]
 				If ($size=0)
 					// value can not be ""
-					$index:=oForm.verticalSizeUnits.index
+					$index:=formData.verticalSizeUnits.index
 					$size:=Choose:C955($index; 0; 100; 10; 1; 0.25; 10; 10)  //;0; to skip "auto"
 					OBJECT SET VALUE:C1742("bgndSizeVert"; $size)  // 100% 10mm 1cm 0.25in 10pt 10px
 					
-					oForm.verticalSizeUnits.memoUnit:=oForm.verticalSizeUnits.css[$index]
+					formData.verticalSizeUnits.memoUnit:=formData.verticalSizeUnits.css[$index]
 					
 				Else 
 					// convert from previous unit to new unit
 					// convert from previous unit to new unit
-					$oldUnit:=oForm.verticalSizeUnits.memoUnit
+					$oldUnit:=formData.verticalSizeUnits.memoUnit
 					
 					If ($oldUnit#"") && ($oldUnit#"%") && ($newUnit#"") & ($newUnit#"%")
 						$size:=WP_Convert($size; $oldUnit; $newUnit)
 						OBJECT SET VALUE:C1742("bgndSizeVert"; $size)
 					End if 
-					oForm.verticalSizeUnits.memoUnit:=$newUnit
+					formData.verticalSizeUnits.memoUnit:=$newUnit
 					
 				End if 
 			End if 
@@ -148,10 +148,10 @@ If (Count parameters:C259>0)
 	Case of 
 		: ($changeWhat="bgndSizeHor") || ($changeWhat="horizontalSizeUnits")
 			$changeWhat:="bgndSizeHor"
-			$unitsRef:=oForm.horizontalSizeUnits
+			$unitsRef:=formData.horizontalSizeUnits
 		: ($changeWhat="bgndSizeVert") || ($changeWhat="verticalSizeUnits")
 			$changeWhat:="bgndSizeVert"
-			$unitsRef:=oForm.verticalSizeUnits
+			$unitsRef:=formData.verticalSizeUnits
 	End case 
 	
 	$size:=OBJECT Get value:C1743($changeWhat)

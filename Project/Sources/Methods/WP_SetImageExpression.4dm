@@ -3,7 +3,7 @@ var $trueExpression : Text
 var $ptr : Pointer
 var $n : Integer
 
-$trueExpression:=oForm.imageSource
+$trueExpression:=formData.imageSource
 // the formula is displayed with virtual structure
 // parse to real structure before edit
 

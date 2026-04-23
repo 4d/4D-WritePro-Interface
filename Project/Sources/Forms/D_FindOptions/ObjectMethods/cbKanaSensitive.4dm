@@ -1,14 +1,14 @@
-If (oForm.FR.kanaSensitive)
+If (formData.FR.kanaSensitive)
 	
-	oForm.FR.caseSensitive:=True:C214
-	oForm.FR.diacriticSensitive:=True:C214
+	formData.FR.caseSensitive:=True:C214
+	formData.FR.diacriticSensitive:=True:C214
 	
 	
 Else 
 	
-	oForm.FR.caseSensitive:=False:C215
-	oForm.FR.diacriticSensitive:=False:C215
+	formData.FR.caseSensitive:=False:C215
+	formData.FR.diacriticSensitive:=False:C215
 	
-	oForm.FR.widthSensitive:=False:C215
+	formData.FR.widthSensitive:=False:C215
 	
 End if 

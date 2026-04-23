@@ -13,7 +13,7 @@ Case of
 		Form:C1466._extra.state:=-1  // -1 : desabled (run not allowed) 0: "run" / 1: "running" / 2:"rerun"
 		
 		
-		Form:C1466.openAI:=cs:C1710.AIKit.OpenAI.new(oform.aiKey)  // PRIVATE KEY
+		Form:C1466.openAI:=cs:C1710.AIKit.OpenAI.new(formData.aiKey)  // PRIVATE KEY
 		
 		
 		Form:C1466.bookmarks:=[]
@@ -24,7 +24,7 @@ Case of
 		
 		//If (FORM Get color scheme="dark")
 		//WP SET ATTRIBUTES(Form.WPai; wk text color; "white")
-		//End if 
+		//End if
 		
 		If (Macintosh command down:C546 && Macintosh option down:C545)
 			Form:C1466.prompt:="Je souhaite un descriptif détaillé de la tour Eiffel"
@@ -94,7 +94,7 @@ Case of
 	: (Form event code:C388=On Unload:K2:2)
 		
 		RELEASE MENU:C978(Form:C1466.promptMenu)
-		oForm.aiWindow:=0
+		formData.aiWindow:=0
 		
 End case 
 

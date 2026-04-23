@@ -9,8 +9,8 @@ $typeSelection:=Form:C1466.selection.type
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
-		If (oForm=Null:C1517)  // ACI0101427 when used as a single palette, not as a sub-sub-form
-			oForm:=New object:C1471
+		If (formData=Null:C1517)  // ACI0101427 when used as a single palette, not as a sub-sub-form
+			formData:=New object:C1471
 		End if 
 		
 		OBJECT SET STYLE SHEET:C1257(*; "@"; Automatic style sheet_additional:K14:14)
@@ -18,68 +18,68 @@ Case of
 		TB_setAutomaticActions("background")
 		
 		// <ACI0104082>
-		oForm.bgndSizeHor:=0  // Input Hor.
-		oForm.bgndSizeVert:=0  // Input Vert.
+		formData.bgndSizeHor:=0  // Input Hor.
+		formData.bgndSizeVert:=0  // Input Vert.
 		
 		
-		oForm.horizontalSizeUnits:=New object:C1471  // Dropdown Hor.
+		formData.horizontalSizeUnits:=New object:C1471  // Dropdown Hor.
 		
-		oForm.horizontalSizeUnits.values:=New collection:C1472()
-		oForm.horizontalSizeUnits.values.push(Localized string:C991("auto"))
-		oForm.horizontalSizeUnits.values.push(Localized string:C991("cover"))
-		oForm.horizontalSizeUnits.values.push(Localized string:C991("contain"))
-		oForm.horizontalSizeUnits.values.push(Localized string:C991("pct"))
-		oForm.horizontalSizeUnits.values.push(Localized string:C991("mm"))
-		oForm.horizontalSizeUnits.values.push(Localized string:C991("cm"))
-		oForm.horizontalSizeUnits.values.push(Localized string:C991("inches"))
-		oForm.horizontalSizeUnits.values.push(Localized string:C991("pt"))
-		oForm.horizontalSizeUnits.values.push(Localized string:C991("pixels"))
+		formData.horizontalSizeUnits.values:=New collection:C1472()
+		formData.horizontalSizeUnits.values.push(Localized string:C991("auto"))
+		formData.horizontalSizeUnits.values.push(Localized string:C991("cover"))
+		formData.horizontalSizeUnits.values.push(Localized string:C991("contain"))
+		formData.horizontalSizeUnits.values.push(Localized string:C991("pct"))
+		formData.horizontalSizeUnits.values.push(Localized string:C991("mm"))
+		formData.horizontalSizeUnits.values.push(Localized string:C991("cm"))
+		formData.horizontalSizeUnits.values.push(Localized string:C991("inches"))
+		formData.horizontalSizeUnits.values.push(Localized string:C991("pt"))
+		formData.horizontalSizeUnits.values.push(Localized string:C991("pixels"))
 		
-		oForm.horizontalSizeUnits.css:=New collection:C1472()
-		oForm.horizontalSizeUnits.css.push("auto")
-		oForm.horizontalSizeUnits.css.push("cover")
-		oForm.horizontalSizeUnits.css.push("contain")
-		oForm.horizontalSizeUnits.css.push("%")
-		oForm.horizontalSizeUnits.css.push("mm")
-		oForm.horizontalSizeUnits.css.push("cm")
-		oForm.horizontalSizeUnits.css.push("in")
-		oForm.horizontalSizeUnits.css.push("pt")
-		oForm.horizontalSizeUnits.css.push("px")
+		formData.horizontalSizeUnits.css:=New collection:C1472()
+		formData.horizontalSizeUnits.css.push("auto")
+		formData.horizontalSizeUnits.css.push("cover")
+		formData.horizontalSizeUnits.css.push("contain")
+		formData.horizontalSizeUnits.css.push("%")
+		formData.horizontalSizeUnits.css.push("mm")
+		formData.horizontalSizeUnits.css.push("cm")
+		formData.horizontalSizeUnits.css.push("in")
+		formData.horizontalSizeUnits.css.push("pt")
+		formData.horizontalSizeUnits.css.push("px")
 		
-		oForm.horizontalSizeUnits.memoUnit:=""
+		formData.horizontalSizeUnits.memoUnit:=""
 		
-		oForm.horizontalSizeUnits.index:=0
+		formData.horizontalSizeUnits.index:=0
 		
 		
 		
-		oForm.verticalSizeUnits:=New object:C1471  // Dropdown Vert.
+		formData.verticalSizeUnits:=New object:C1471  // Dropdown Vert.
 		
-		oForm.verticalSizeUnits.values:=New collection:C1472()
-		oForm.verticalSizeUnits.values.push(Localized string:C991("auto"))
-		oForm.verticalSizeUnits.values.push(Localized string:C991("pct"))
-		oForm.verticalSizeUnits.values.push(Localized string:C991("mm"))
-		oForm.verticalSizeUnits.values.push(Localized string:C991("cm"))
-		oForm.verticalSizeUnits.values.push(Localized string:C991("inches"))
-		oForm.verticalSizeUnits.values.push(Localized string:C991("pt"))
-		oForm.verticalSizeUnits.values.push(Localized string:C991("pixels"))
+		formData.verticalSizeUnits.values:=New collection:C1472()
+		formData.verticalSizeUnits.values.push(Localized string:C991("auto"))
+		formData.verticalSizeUnits.values.push(Localized string:C991("pct"))
+		formData.verticalSizeUnits.values.push(Localized string:C991("mm"))
+		formData.verticalSizeUnits.values.push(Localized string:C991("cm"))
+		formData.verticalSizeUnits.values.push(Localized string:C991("inches"))
+		formData.verticalSizeUnits.values.push(Localized string:C991("pt"))
+		formData.verticalSizeUnits.values.push(Localized string:C991("pixels"))
 		
-		oForm.verticalSizeUnits.css:=New collection:C1472()
-		oForm.verticalSizeUnits.css.push("auto")
-		oForm.verticalSizeUnits.css.push("%")
-		oForm.verticalSizeUnits.css.push("mm")
-		oForm.verticalSizeUnits.css.push("cm")
-		oForm.verticalSizeUnits.css.push("in")
-		oForm.verticalSizeUnits.css.push("pt")
-		oForm.verticalSizeUnits.css.push("px")
+		formData.verticalSizeUnits.css:=New collection:C1472()
+		formData.verticalSizeUnits.css.push("auto")
+		formData.verticalSizeUnits.css.push("%")
+		formData.verticalSizeUnits.css.push("mm")
+		formData.verticalSizeUnits.css.push("cm")
+		formData.verticalSizeUnits.css.push("in")
+		formData.verticalSizeUnits.css.push("pt")
+		formData.verticalSizeUnits.css.push("px")
 		
-		oForm.verticalSizeUnits.memoUnit:=""
+		formData.verticalSizeUnits.memoUnit:=""
 		
-		oForm.verticalSizeUnits.index:=0
+		formData.verticalSizeUnits.index:=0
 		// </ACI0104082>
 		
 		
 		
-		oForm.skinAppliedSub:=UI_ApplySkin
+		formData.skinAppliedSub:=UI_ApplySkin
 		
 		If (Form:C1466#Null:C1517)
 			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)
@@ -91,8 +91,8 @@ Case of
 		
 		$setupOK:=SetupLocalVariables
 		
-		If (oForm.skinAppliedSub=False:C215)  // may have changed on bound variable change
-			oForm.skinAppliedSub:=UI_ApplySkin
+		If (formData.skinAppliedSub=False:C215)  // may have changed on bound variable change
+			formData.skinAppliedSub:=UI_ApplySkin
 		End if 
 		
 		UI_PaletteBackgrounds
