@@ -1,7 +1,6 @@
 //%attributes = {"invisible":true}
 var $hdl:=cs:C1710._wp.me
 var $selectedType:=$hdl.selectedSyleSheetType()  // Paragraph, char, picture, table, row or cell
-var $type:=$hdl.selectedSyleSheetType(True:C214)
 var $name:=$hdl.selectedStyleSheetName()
 
 If (Length:C16($name)=0)
