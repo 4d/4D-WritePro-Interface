@@ -65,6 +65,46 @@ Function get styleSheets() : Collection
 	return WP Get style sheets:C1655($doc; wk type paragraph:K81:191).combine(WP Get style sheets:C1655($doc; wk type character:K81:296))
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function selectedStyleSheetIndex() : Integer
+	
+	var $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")  // In palette
+	var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")  // I toolbar
+	
+	If (Is nil pointer:C315($ptrListbox))  // From toolbar
+		
+		return $ptrStylesheetNames->
+		
+	Else   // From palette
+		
+		return Find in array:C230($ptrListbox->; True:C214)  // Index
+		
+	End if 
+	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function selectedStyleSheetName() : Text
+	
+	var $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")  // In palette
+	var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")  // I toolbar
+	
+	If (Is nil pointer:C315($ptrListbox))  // From toolbar
+		
+		var $indx:=$ptrStylesheetNames->
+		
+	Else   // From palette
+		
+		$indx:=Find in array:C230($ptrListbox->; True:C214)  // Index
+		
+	End if 
+	
+	If ($indx>0)
+		
+		//%W-533.3
+		return $ptrStylesheetNames->{$indx}
+		//%W+533.3
+		
+	End if 
+	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function updateListOfStyleSheets()
 	
 	var $selectedType:=This:C1470.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List

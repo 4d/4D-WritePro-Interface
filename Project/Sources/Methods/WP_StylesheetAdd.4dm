@@ -1,11 +1,13 @@
 //%attributes = {"invisible":true}
+var $hdl:=cs:C1710._wp.me
+
 // MARK:- Display menu
 var $menu:=Create menu:C408
 
 APPEND MENU ITEM:C411($menu; Localized string:C991("menuNewFromSelection"))
 SET MENU ITEM PARAMETER:C1004($menu; -1; "newFromSelection")
 
-var $styleSheets:=cs:C1710._wp.me.styleSheets.orderBy("name")
+var $styleSheets:=$hdl.styleSheets.orderBy("name")
 var $length:=$styleSheets.length
 
 If ($length>0)  // 😇 No "duplicate" if no items !
@@ -45,15 +47,15 @@ End if
 var $new:=$choice="newFromSelection"
 var $duplicate:=Position:C15("duplicate_"; $choice)=1
 
-var $selectedType:=cs:C1710._wp.me.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
-var $type : Integer:=$selectedType=6 ? wk type paragraph:K81:191 : $selectedType
+var $selectedType:=$hdl.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
+var $type : Integer:=$hdl.selectedSyleSheetType(True:C214)
 
 Case of 
 		
 		// ________________________________________________________________________________
 	: ($new)
 		
-		var $name:=cs:C1710._wp.me.newStyleSheetName(Localized string:C991("requestPlaceHolder"); Form:C1466.document; $type)
+		var $name:=$hdl.newStyleSheetName(Localized string:C991("requestPlaceHolder"); Form:C1466.document; $type)
 		
 		If (Length:C16($name)=0)
 			
@@ -69,12 +71,18 @@ Case of
 				var $from : Object:=Form:C1466.selection
 				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
-			: ($selectedType=6)\
-				 || ($type=wk type paragraph:K81:191)
+			: ($type=wk type paragraph:K81:191)
 				
 				$from:=WP Paragraph range:C1346(Form:C1466.selection)
 				var $styleSheet : Object
 				WP Get attributes:C1345($from; wk style sheet:K81:63; $styleSheet)
+				
+				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+			: ($selectedType=6)  // Hierarchical style sheet
+				
+				$from:=WP Paragraph range:C1346(Form:C1466.selection)
+				WP Get attributes:C1345($from; wk style sheet:K81:63; $styleSheet)
+				
 				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
 		End case 
@@ -84,7 +92,7 @@ Case of
 		
 		$styleSheet:=$styleSheets[Num:C11(Delete string:C232($choice; 1; 10))]  // Remove prefix "duplicate_"
 		
-		$name:=cs:C1710._wp.me.newStyleSheetName($styleSheet.name; Form:C1466.document; $type)
+		$name:=$hdl.newStyleSheetName($styleSheet.name; Form:C1466.document; $type)
 		
 		If (Length:C16($name)=0)
 			
@@ -138,4 +146,4 @@ Case of
 		// ________________________________________________________________________________
 End case 
 
-cs:C1710._wp.me.updateListOfStyleSheets()
+$hdl.updateListOfStyleSheets()
