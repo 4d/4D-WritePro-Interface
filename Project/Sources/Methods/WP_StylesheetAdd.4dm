@@ -7,7 +7,7 @@ var $menu:=Create menu:C408
 APPEND MENU ITEM:C411($menu; Localized string:C991("menuNewFromSelection"))
 SET MENU ITEM PARAMETER:C1004($menu; -1; "newFromSelection")
 
-var $styleSheets:=$hdl.styleSheets.orderBy("name")
+var $styleSheets:=$hdl.orderedStyleSheets
 var $length:=$styleSheets.length
 
 If ($length>0)  // 😇 No "duplicate" if no items !
@@ -55,7 +55,7 @@ Case of
 		// ________________________________________________________________________________
 	: ($new)
 		
-		var $name:=$hdl.newStyleSheetName(Localized string:C991("requestPlaceHolder"); Form:C1466.document; $type)
+		var $name:=$hdl.newStyleSheetName(Localized string:C991("requestPlaceHolder"); $hdl.document; $type)
 		
 		If (Length:C16($name)=0)
 			
@@ -68,19 +68,19 @@ Case of
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
 			: ($type=wk type default:K81:190)
 				
-				var $from : Object:=Form:C1466.selection
+				var $from : Object:=$hdl.selection
 				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
 			: ($type=wk type paragraph:K81:191)
 				
-				$from:=WP Paragraph range:C1346(Form:C1466.selection)
+				$from:=WP Paragraph range:C1346($hdl.selection)
 				var $styleSheet : Object
 				WP Get attributes:C1345($from; wk style sheet:K81:63; $styleSheet)
 				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
 			: ($selectedType=6)  // Hierarchical style sheet
 				
-				$from:=WP Paragraph range:C1346(Form:C1466.selection)
+				$from:=WP Paragraph range:C1346($hdl.selection)
 				WP Get attributes:C1345($from; wk style sheet:K81:63; $styleSheet)
 				
 				
@@ -92,7 +92,7 @@ Case of
 		
 		$styleSheet:=$styleSheets[Num:C11(Delete string:C232($choice; 1; 10))]  // Remove prefix "duplicate_"
 		
-		$name:=$hdl.newStyleSheetName($styleSheet.name; Form:C1466.document; $type)
+		$name:=$hdl.newStyleSheetName($styleSheet.name; $hdl.document; $type)
 		
 		If (Length:C16($name)=0)
 			
@@ -105,29 +105,20 @@ End case
 
 var $levelCount : Integer:=Num:C11($styleSheet.listLevelCount)
 
-If ($levelCount=0)
-	
 /* 📌 Requirement #21267
-		
+
 When the selected paragraph has a listStyleType applied to it (not necessarily a style sheet), 
 the “New style sheet based on selection” button shall create a multi-level list of 1 level based on the style
-		
+
 */
-	If (Num:C11(WP Get attributes:C1345($from; [wk list style type:K81:55])[wk list style type:K81:55])>0)
-		
-		var $to:=WP New style sheet:C1650(Form:C1466.document; $type; $name; 1)
-		
-	Else 
-		
-		$to:=WP New style sheet:C1650(Form:C1466.document; $type; $name)
-		
-	End if 
+If ($levelCount=0)\
+ && (Num:C11(WP Get attributes:C1345($from; [wk list style type:K81:55])[wk list style type:K81:55])>0)
 	
-Else 
-	
-	$to:=WP New style sheet:C1650(Form:C1466.document; $type; $name; $levelCount)
+	$levelCount:=1
 	
 End if 
+
+var $to:=$hdl.newStyleSheet($name; $type; $levelCount)
 
 Case of 
 		
@@ -135,12 +126,12 @@ Case of
 	: ($new)
 		
 		WP_StylesheetSetAttributes({list: WP_GetStyleAttributesByType($selectedType); from: $from; to: $to; remove: True:C214})
-		WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk style sheet:K81:63; $to)
+		WP SET ATTRIBUTES:C1342($hdl.selection; wk style sheet:K81:63; $to)
 		
 		// ________________________________________________________________________________
 	: ($duplicate)
 		
-		$from:=WP Get style sheet:C1656(Form:C1466.document; $styleSheet.name)
+		$from:=WP Get style sheet:C1656($hdl.document; $styleSheet.name)
 		WP_StylesheetCopyAttributes({from: $from; to: $to})
 		
 		// ________________________________________________________________________________

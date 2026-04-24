@@ -1,28 +1,16 @@
 //%attributes = {"invisible":true}
-var $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")
-var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
+var $hdl:=cs:C1710._wp.me
+var $name : Text:=$hdl.selectedStyleSheetName()
 
-If (Not:C34(Is nil pointer:C315($ptrListbox)))  // Executed from palette
-	
-	var $indx:=Find in array:C230($ptrListbox->; True:C214)
-	
-Else   // Executed from toolbar
-	
-	$indx:=$ptrStylesheetNames->
-	
-End if 
-
-var $stylesheetName : Text:=$indx>0 ? $ptrStylesheetNames->{$indx} : ""
-
-If ($stylesheetName="normal")\
- | (Length:C16($stylesheetName)=0)
+If ($name="normal")\
+ | (Length:C16($name)=0)
 	
 	return   // Should NEVER happend, the button should be disabled
 	
 End if 
 
-var $selectedType:=cs:C1710._wp.me.selectedSyleSheetType()
-var $type:=cs:C1710._wp.me.selectedSyleSheetType(True:C214)
+var $selectedType:=$hdl.selectedSyleSheetType()
+var $type:=$hdl.selectedSyleSheetType(True:C214)
 
 /* 📌 Requirement #21270
 
@@ -37,12 +25,12 @@ hall have the same behavior as with other types of style sheets (see description
 • If a sub-level style sheet is applied to the selected paragraph, then only the sub-level is deleted
 
 */
-var $isRootLevel : Boolean:=($selectedType=6) && Not:C34(Match regex:C1019("\\slvl\\s\\d"; $stylesheetName; 1))
+var $isRootLevel : Boolean:=($selectedType=6) && Not:C34(Match regex:C1019("\\slvl\\s\\d"; $name; 1))
 
 var $menu:=Create menu:C408
 
 var $menuLabel:=Localized string:C991("menuDeleteStylesheet")
-$menuLabel:=Replace string:C233($menuLabel; "<1>"; $stylesheetName)
+$menuLabel:=Replace string:C233($menuLabel; "<1>"; $name)
 APPEND MENU ITEM:C411($menu; $menuLabel)
 SET MENU ITEM PARAMETER:C1004($menu; -1; "Delete")
 
@@ -71,17 +59,17 @@ Case of
 		// ________________________________________________________________________________
 	: ($choice="Delete")
 		
-		var $message:=Replace string:C233(Localized string:C991("confirmDeleteStylesheet"); "<1>"; $stylesheetName)
+		var $message:=Replace string:C233(Localized string:C991("confirmDeleteStylesheet"); "<1>"; $name)
 		
 		If ($isRootLevel)
+			
+			// TODO: Check if at leas one sub-level
 			
 			$message+="\r\r.All sub-level style sheets will be removed."
 			
 		End if 
 		
-		CONFIRM:C162($message; \
-			Localized string:C991("delete"); \
-			Localized string:C991("cancel"))
+		CONFIRM:C162($message; Localized string:C991("delete"))
 		
 		If (Not:C34(Bool:C1537(OK)))
 			
@@ -89,19 +77,19 @@ Case of
 			
 		End if 
 		
-		WP DELETE STYLE SHEET:C1652(Form:C1466.document; $stylesheetName)
+		WP DELETE STYLE SHEET:C1652($hdl.document; $name)
 		
-		WP_GetStyleSheets
+		$hdl.updateListOfStyleSheets()
 		
 		// ________________________________________________________________________________
 	: ($choice="character")
 		
-		WP RESET ATTRIBUTES:C1344(Form:C1466.selection; wk style sheet:K81:63)
+		WP RESET ATTRIBUTES:C1344($hdl.selection; wk style sheet:K81:63)
 		
 		// ________________________________________________________________________________
 	: ($choice="paragraph")
 		
-		WP RESET ATTRIBUTES:C1344(WP Paragraph range:C1346(Form:C1466.selection); wk style sheet:K81:63)
+		WP RESET ATTRIBUTES:C1344($hdl.paragraph; wk style sheet:K81:63)
 		
 		// ________________________________________________________________________________
 End case 

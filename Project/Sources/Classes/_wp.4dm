@@ -4,7 +4,7 @@ property _document : Object
 singleton shared Class constructor
 	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
-Function get doc() : Object
+Function get area() : Object
 	
 	return Form:C1466.area
 	
@@ -12,6 +12,16 @@ Function get doc() : Object
 Function get document() : Object
 	
 	return Form:C1466.document || Form:C1466.selection.owner
+	
+	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
+Function get selection() : Object
+	
+	return Form:C1466.selection
+	
+	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
+Function get paragraph() : Object
+	
+	return WP Paragraph range:C1346(This:C1470.selection)
 	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
 shared Function get multiLevelListsTemplates() : Collection
@@ -61,8 +71,25 @@ that will contain the definition of the pre-defined multi-level lists
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
 Function get styleSheets() : Collection
 	
-	var $doc:=This:C1470.doc
-	return WP Get style sheets:C1655($doc; wk type paragraph:K81:191).combine(WP Get style sheets:C1655($doc; wk type character:K81:296))
+	return WP Get style sheets:C1655(This:C1470.area; wk type paragraph:K81:191).combine(WP Get style sheets:C1655(This:C1470.area; wk type character:K81:296))
+	
+	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
+Function get orderedStyleSheets() : Collection
+	
+	return This:C1470.styleSheets.orderBy("name")
+	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function newStyleSheet($name : Text; $type : Integer; $levelCount : Integer) : Object
+	
+	If ($levelCount>0)
+		
+		return WP New style sheet:C1650(This:C1470.document; $type; $name; $levelCount)
+		
+	Else 
+		
+		return WP New style sheet:C1650(This:C1470.document; $type; $name)
+		
+	End if 
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function selectedStyleSheetIndex() : Integer
