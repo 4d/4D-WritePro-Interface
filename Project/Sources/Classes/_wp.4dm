@@ -67,8 +67,26 @@ Function get styleSheets() : Collection
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function updateListOfStyleSheets()
 	
-	var $type:=This:C1470.selectedSyleSheetType(True:C214)
+	var $selectedType:=This:C1470.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
+	var $type:=$selectedType=6 ? wk type paragraph:K81:191 : $selectedType+1
+	
+	
 	var $c:=WP Get style sheets:C1655(This:C1470.document; $type)
+	
+	Case of 
+			
+			// ______________________________________________________
+		: ($selectedType=0)  // Paragraph
+			
+			$c:=$c.query("listLevelCount = :1"; 0)
+			
+			// ______________________________________________________
+		: ($selectedType=6)  // Hierarhical list
+			
+			$c:=$c.query("listLevelCount != :1"; 0)
+			
+			// ______________________________________________________
+	End case 
 	
 	var $ptr:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
 	COLLECTION TO ARRAY:C1562($c; $ptr->; "name")
@@ -83,7 +101,7 @@ Function selectedSyleSheetType($main : Boolean) : Integer
 	
 	If ($main)
 		
-		return $selectedType=6 ? wk type paragraph:K81:191 : $selectedType
+		return $selectedType=6 ? wk type paragraph:K81:191 : $selectedType+1
 		
 	Else 
 		

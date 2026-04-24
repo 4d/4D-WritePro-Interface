@@ -1,88 +1,109 @@
 //%attributes = {"invisible":true}
-var $delete : Boolean
-var $stylesheetType : Integer
-var $ptrListbox; $ptrStylesheetNames : Pointer
-var $menu; $menuLabel; $choice; $stylesheetName : Text
-var $p : Integer
+var $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")
+var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
 
-$ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")
-$ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
-If (Not:C34(Is nil pointer:C315($ptrListbox)))  // executed from palette
-	$p:=Find in array:C230($ptrListbox->; True:C214)
-Else   // executed from toolbar
-	$p:=$ptrStylesheetNames->
+If (Not:C34(Is nil pointer:C315($ptrListbox)))  // Executed from palette
+	
+	var $indx:=Find in array:C230($ptrListbox->; True:C214)
+	
+Else   // Executed from toolbar
+	
+	$indx:=$ptrStylesheetNames->
+	
 End if 
 
-If ($p>0)
-	$stylesheetName:=$ptrStylesheetNames->{$p}
-Else 
-	$stylesheetName:=""
+var $stylesheetName : Text:=$indx>0 ? $ptrStylesheetNames->{$indx} : ""
+
+If ($stylesheetName="normal")\
+ | (Length:C16($stylesheetName)=0)
+	
+	return   // Should NEVER happend, the button should be disabled
+	
 End if 
 
-If ($stylesheetName="normal") | ($stylesheetName="")
-	
-	//$delete:=False
-	// should NEVER happend, the button should be disabled
-	
-	
-Else 
-	
-	$stylesheetType:=getSelectedStyleSheetType  // wk type default or wk type paragraph
-	
-	
-	//CONFIRM(".Delete style sheet \""+$stylesheetName+"\"?";".delete";".cancel")
-	//If (ok=1)  // cancel = 1, delete = 0
-	//  //ALERT(".Style sheet can't be delete yet…")
-	//WP DELETE STYLE SHEET(Form.document;$stylesheetName)
-	//WP_GetStyleSheets   // refresh
-	//End if
-	//SET TIMER(-1)
-	
-	$menu:=Create menu:C408
-	$delete:=True:C214
-	
-	If ($delete)
-		$menuLabel:=Localized string:C991("menuDeleteStylesheet")
-		$menuLabel:=Replace string:C233($menuLabel; "<1>"; $stylesheetName)
-		APPEND MENU ITEM:C411($menu; $menuLabel)
-		SET MENU ITEM PARAMETER:C1004($menu; -1; "Delete")
-	End if 
-	
-	If ($stylesheetType=wk type default:K81:190)
-		APPEND MENU ITEM:C411($menu; Localized string:C991("menuRemoveCharacterStyleshet"))
-		SET MENU ITEM PARAMETER:C1004($menu; -1; "RemoveCharacterSS")
-	End if 
-	
-	If ($stylesheetType=wk type paragraph:K81:191)
+var $selectedType:=cs:C1710._wp.me.selectedSyleSheetType()
+var $type:=cs:C1710._wp.me.selectedSyleSheetType(True:C214)
+
+/* 📌 Requirement #21270
+
+When the selected paragraph has a root-level or sub-level style sheet applied to it, 
+the “Delete STYLENAME style sheet”, "Remove STYLENAME style sheet" and "Update style sheet" buttons s
+hall have the same behavior as with other types of style sheets (see description)
+
+• If a root-level style sheet is applied to the selected paragraph:
+  - the root-level style sheet along with its sub-level style sheets shall be deleted in this case
+  - a confirmation message warning the user that all sub-level style sheets will be deleted as well shall be displayed before the deletion
+
+• If a sub-level style sheet is applied to the selected paragraph, then only the sub-level is deleted
+
+*/
+var $isRootLevel : Boolean:=($selectedType=6) && Not:C34(Match regex:C1019("\\slvl\\s\\d"; $stylesheetName; 1))
+
+var $menu:=Create menu:C408
+
+var $menuLabel:=Localized string:C991("menuDeleteStylesheet")
+$menuLabel:=Replace string:C233($menuLabel; "<1>"; $stylesheetName)
+APPEND MENU ITEM:C411($menu; $menuLabel)
+SET MENU ITEM PARAMETER:C1004($menu; -1; "Delete")
+
+Case of 
+		
+		// ______________________________________________________
+	: ($selectedType=6)\
+		 || ($type=wk type paragraph:K81:191)
+		
 		APPEND MENU ITEM:C411($menu; Localized string:C991("menuRemoveParagraphStylesheet"))
-		SET MENU ITEM PARAMETER:C1004($menu; -1; "RemoveParagraphSS")
-	End if 
-	
-	
-	$choice:=Dynamic pop up menu:C1006($menu)
-	RELEASE MENU:C978($menu)
-	Case of 
-		: ($choice="Delete")
+		SET MENU ITEM PARAMETER:C1004($menu; -1; "paragraph")
+		// ______________________________________________________
+	: ($type=wk type default:K81:190)
+		
+		APPEND MENU ITEM:C411($menu; Localized string:C991("menuRemoveCharacterStylesheet"))
+		SET MENU ITEM PARAMETER:C1004($menu; -1; "character")
+		
+		// ______________________________________________________
+End case 
+
+var $choice:=Dynamic pop up menu:C1006($menu)
+RELEASE MENU:C978($menu)
+
+Case of 
+		
+		// ________________________________________________________________________________
+	: ($choice="Delete")
+		
+		var $message:=Replace string:C233(Localized string:C991("confirmDeleteStylesheet"); "<1>"; $stylesheetName)
+		
+		If ($isRootLevel)
 			
-			CONFIRM:C162(Replace string:C233(Localized string:C991("confirmDeleteStylesheet"); "<1>"; $stylesheetName); Localized string:C991("delete"); Localized string:C991("cancel"))
-			If (ok=1)
-				WP DELETE STYLE SHEET:C1652(Form:C1466.document; $stylesheetName)
-			End if 
-			WP_GetStyleSheets
+			$message+="\r\r.All sub-level style sheets will be removed."
 			
-		: ($choice="RemoveCharacterSS")
-			WP RESET ATTRIBUTES:C1344(Form:C1466.selection; wk style sheet:K81:63)
+		End if 
+		
+		CONFIRM:C162($message; \
+			Localized string:C991("delete"); \
+			Localized string:C991("cancel"))
+		
+		If (Not:C34(Bool:C1537(OK)))
 			
-		: ($choice="RemoveParagraphSS")
-			WP RESET ATTRIBUTES:C1344(WP Paragraph range:C1346(Form:C1466.selection); wk style sheet:K81:63)
+			return 
 			
-	End case 
-	
-	SET TIMER:C645(-1)
-	
-End if 
+		End if 
+		
+		WP DELETE STYLE SHEET:C1652(Form:C1466.document; $stylesheetName)
+		
+		WP_GetStyleSheets
+		
+		// ________________________________________________________________________________
+	: ($choice="character")
+		
+		WP RESET ATTRIBUTES:C1344(Form:C1466.selection; wk style sheet:K81:63)
+		
+		// ________________________________________________________________________________
+	: ($choice="paragraph")
+		
+		WP RESET ATTRIBUTES:C1344(WP Paragraph range:C1346(Form:C1466.selection); wk style sheet:K81:63)
+		
+		// ________________________________________________________________________________
+End case 
 
-
-
-
-
+SET TIMER:C645(-1)
