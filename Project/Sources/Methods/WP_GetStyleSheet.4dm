@@ -53,8 +53,7 @@ then the dropdown list shall contain only the paragraph style sheets that are no
 		
 	End if 
 	
-	$c:=$c.extract("name")
-	$c.sort()
+	$c:=$c.extract("name").sort()
 	
 	If ($isList)
 		

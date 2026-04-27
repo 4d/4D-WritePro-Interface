@@ -2,10 +2,11 @@
 var $selectedItem : Text:=Self:C308->{Self:C308->}
 //%W+533.3
 
-var $name:=cs:C1710._wp.me.normalizeStyleSheetName($selectedItem)
+var $ui:=cs:C1710._wp.me
+var $name:=$ui.normalizeStyleSheetName($selectedItem)
 
 // Is this a template?
-var $template : Object:=cs:C1710._wp.me.multiLevelListsTemplates.query("name = :1"; $selectedItem).first()
+var $template : Object:=$ui.multiLevelListsTemplates.query("name = :1"; $selectedItem).first()
 
 /* 📌 Requirement #21273
 
@@ -31,9 +32,7 @@ var $index : Integer:=Self:C308->
 If ($template#Null:C1517)\
  && ($index>Find in array:C230($_items; "-"))
 	
-	var $doc : Object:=cs:C1710._wp.me.doc
-	var $styleSheets:=cs:C1710._wp.me.styleSheets
-	var $styleSheet : Object:=$styleSheets.query("name = :1"; $name).first()
+	var $styleSheet : Object:=$ui.styleSheets.query("name = :1"; $name).first()
 	
 	If ($styleSheet#Null:C1517)
 		
@@ -48,11 +47,11 @@ If ($template#Null:C1517)\
 			
 		Else   // Create a new style sheet
 			
-			$name:=cs:C1710._wp.me.newStyleSheetName($styleSheet.name; $doc; wk type paragraph:K81:191)
+			$name:=$ui.newStyleSheetName($styleSheet.name; $ui.document; wk type paragraph:K81:191)
 			
 			If (Length:C16($name)=0)  // The user canceled
 				
-				cs:C1710._wp.me.updateListOfStyleSheets()
+				$ui.updateListOfStyleSheets()
 				
 				return 
 				
@@ -60,10 +59,10 @@ If ($template#Null:C1517)\
 		End if 
 	End if 
 	
-	cs:C1710._wp.me.duplicateStyleSheet($template; $name; $doc)
+	$ui.duplicateStyleSheet($template; $name; $ui.document)
 	
 End if 
 
-WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk style sheet:K81:63; $name)
+WP SET ATTRIBUTES:C1342($ui.selection; wk style sheet:K81:63; $name)
 
-cs:C1710._wp.me.updateListOfStyleSheets()
+$ui.updateListOfStyleSheets()

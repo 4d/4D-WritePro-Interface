@@ -135,8 +135,7 @@ Function selectedStyleSheetName() : Text
 Function updateListOfStyleSheets()
 	
 	var $selectedType:=This:C1470.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
-	var $type:=$selectedType=6 ? wk type paragraph:K81:191 : $selectedType+1
-	
+	var $type:=This:C1470.selectedSyleSheetType(True:C214)  //$selectedType=6 ? wk type paragraph : $selectedType+1
 	
 	var $c:=WP Get style sheets:C1655(This:C1470.document; $type)
 	
@@ -458,7 +457,6 @@ Function duplicateStyleSheet($source : Object; $name : Text; $doc : Object)
 			var $level : Object:=$source.levels[$i]
 			
 			var $attributeName : Text
-			
 			For each ($attributeName; $level)
 				
 				var $attributValue : Variant:=$level[$attributeName]

@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-var $hdl:=cs:C1710._wp.me
+var $ui:=cs:C1710._wp.me
 
 // MARK:- Display menu
 var $menu:=Create menu:C408
@@ -7,7 +7,7 @@ var $menu:=Create menu:C408
 APPEND MENU ITEM:C411($menu; Localized string:C991("menuNewFromSelection"))
 SET MENU ITEM PARAMETER:C1004($menu; -1; "newFromSelection")
 
-var $styleSheets:=$hdl.orderedStyleSheets
+var $styleSheets:=$ui.orderedStyleSheets
 var $length:=$styleSheets.length
 
 If ($length>0)  // 😇 No "duplicate" if no items !
@@ -47,15 +47,15 @@ End if
 var $new:=$choice="newFromSelection"
 var $duplicate:=Position:C15("duplicate_"; $choice)=1
 
-var $selectedType:=$hdl.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
-var $type : Integer:=$hdl.selectedSyleSheetType(True:C214)
+var $selectedType:=$ui.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
+var $type : Integer:=$ui.selectedSyleSheetType(True:C214)
 
 Case of 
 		
 		// ________________________________________________________________________________
 	: ($new)
 		
-		var $name:=$hdl.newStyleSheetName(Localized string:C991("requestPlaceHolder"); $hdl.document; $type)
+		var $name:=$ui.newStyleSheetName(Localized string:C991("requestPlaceHolder"); $ui.document; $type)
 		
 		If (Length:C16($name)=0)
 			
@@ -63,26 +63,43 @@ Case of
 			
 		End if 
 		
+		var $styleSheet_ : Object
+		
 		Case of 
 				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
 			: ($type=wk type default:K81:190)
 				
-				var $from : Object:=$hdl.selection
-				
-				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
-			: ($type=wk type paragraph:K81:191)
-				
-				$from:=WP Paragraph range:C1346($hdl.selection)
-				var $styleSheet : Object
-				WP Get attributes:C1345($from; wk style sheet:K81:63; $styleSheet)
+				var $from : Object:=$ui.selection
 				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
 			: ($selectedType=6)  // Hierarchical style sheet
 				
-				$from:=WP Paragraph range:C1346($hdl.selection)
+				$from:=WP Paragraph range:C1346($ui.selection)
+				var $styleSheet : Object
 				WP Get attributes:C1345($from; wk style sheet:K81:63; $styleSheet)
 				
+/* 📌 Requirement #21268
+				
+When the selected paragraph has a root-level or a sub-level style sheet applied to it,
+the “New style sheet based on selection” button shall create a new root-level style sheet 
+exactly like it along with its sub-levels
+				
+*/
+				//If ($styleSheet.listRootStyle#"")  // Sub-level
+				
+				//$styleSheet_:=WP Get style sheet($ui.document; $styleSheet.listRootStyle)
+				
+				//End if 
+				
+				//$new:=False
+				//$duplicate:=True
+				
+				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+			: ($type=wk type paragraph:K81:191)
+				
+				$from:=WP Paragraph range:C1346($ui.selection)
+				WP Get attributes:C1345($from; wk style sheet:K81:63; $styleSheet)
 				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
 		End case 
@@ -92,7 +109,7 @@ Case of
 		
 		$styleSheet:=$styleSheets[Num:C11(Delete string:C232($choice; 1; 10))]  // Remove prefix "duplicate_"
 		
-		$name:=$hdl.newStyleSheetName($styleSheet.name; $hdl.document; $type)
+		$name:=$ui.newStyleSheetName($styleSheet.name; $ui.document; $type)
 		
 		If (Length:C16($name)=0)
 			
@@ -118,23 +135,48 @@ If ($levelCount=0)\
 	
 End if 
 
-var $to:=$hdl.newStyleSheet($name; $type; $levelCount)
+var $to:=$ui.newStyleSheet($name; $type; $levelCount)
 
 Case of 
 		
 		// ________________________________________________________________________________
 	: ($new)
 		
-		WP_StylesheetSetAttributes({list: WP_GetStyleAttributesByType($selectedType); from: $from; to: $to; remove: True:C214})
-		WP SET ATTRIBUTES:C1342($hdl.selection; wk style sheet:K81:63; $to)
+		If (Num:C11($styleSheet.listLevelCount)>0)
+			
+			var $main : Text:=$styleSheet.listRootStyle || $styleSheet.name
+			var $source; $target : 4D:C1709.WriteStyleSheet
+			var $doc:=$ui.document
+			
+			For ($i; 1; $levelCount; 1)
+				
+				$source:=WP Get style sheet:C1656($doc; $main; $i)
+				$target:=WP Get style sheet:C1656($doc; $name; $i)
+				
+				var $attributes:=OB Entries:C1720($source)
+				
+				var $item : Object
+				For each ($item; $attributes)
+					
+					Try($target[$item.key]:=$source[$item.key])
+					
+				End for each 
+			End for 
+			
+		Else 
+			
+			WP_StylesheetSetAttributes({list: WP_GetStyleAttributesByType($selectedType); from: $from; to: $to; remove: True:C214})
+			WP SET ATTRIBUTES:C1342($ui.selection; wk style sheet:K81:63; $to)
+			
+		End if 
 		
 		// ________________________________________________________________________________
 	: ($duplicate)
 		
-		$from:=WP Get style sheet:C1656($hdl.document; $styleSheet.name)
+		$from:=WP Get style sheet:C1656($ui.document; $styleSheet.name)
 		WP_StylesheetCopyAttributes({from: $from; to: $to})
 		
 		// ________________________________________________________________________________
 End case 
 
-$hdl.updateListOfStyleSheets()
+$ui.updateListOfStyleSheets()
