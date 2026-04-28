@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-var $ui:=cs:C1710._wp.me
+var $ui:=cs:C1710._ui.me
 
 // MARK:- Display menu
 var $menu:=Create menu:C408
@@ -15,7 +15,6 @@ If ($length>0)  // 😇 No "duplicate" if no items !
 	var $submenu:=Create menu:C408
 	
 	var $i : Integer
-	
 	For ($i; 0; $length-1; 1)
 		
 		If (Match regex:C1019("(?m-si)\\slvl\\s\\d+$"; $styleSheets[$i].name; 1))  // Levels
@@ -79,22 +78,6 @@ Case of
 				var $styleSheet : Object
 				WP Get attributes:C1345($from; wk style sheet:K81:63; $styleSheet)
 				
-/* 📌 Requirement #21268
-				
-When the selected paragraph has a root-level or a sub-level style sheet applied to it,
-the “New style sheet based on selection” button shall create a new root-level style sheet 
-exactly like it along with its sub-levels
-				
-*/
-				//If ($styleSheet.listRootStyle#"")  // Sub-level
-				
-				//$styleSheet_:=WP Get style sheet($ui.document; $styleSheet.listRootStyle)
-				
-				//End if 
-				
-				//$new:=False
-				//$duplicate:=True
-				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
 			: ($type=wk type paragraph:K81:191)
 				
@@ -128,6 +111,7 @@ When the selected paragraph has a listStyleType applied to it (not necessarily a
 the “New style sheet based on selection” button shall create a multi-level list of 1 level based on the style
 
 */
+
 If ($levelCount=0)\
  && (Num:C11(WP Get attributes:C1345($from; [wk list style type:K81:55])[wk list style type:K81:55])>0)
 	
@@ -142,25 +126,24 @@ Case of
 		// ________________________________________________________________________________
 	: ($new)
 		
+/* 📌 Requirement #21268
+		
+When the selected paragraph has a root-level or a sub-level style sheet applied to it,
+the “New style sheet based on selection” button shall create a new root-level style sheet 
+exactly like it along with its sub-levels
+		
+*/
+		
 		If (Num:C11($styleSheet.listLevelCount)>0)
 			
 			var $main : Text:=$styleSheet.listRootStyle || $styleSheet.name
-			var $source; $target : 4D:C1709.WriteStyleSheet
-			var $doc:=$ui.document
 			
 			For ($i; 1; $levelCount; 1)
 				
-				$source:=WP Get style sheet:C1656($doc; $main; $i)
-				$target:=WP Get style sheet:C1656($doc; $name; $i)
+				$ui.copyStyleSheetAtributes(\
+					WP Get style sheet:C1656($ui.document; $main; $i); \
+					WP Get style sheet:C1656($ui.document; $name; $i))
 				
-				var $attributes:=OB Entries:C1720($source)
-				
-				var $item : Object
-				For each ($item; $attributes)
-					
-					Try($target[$item.key]:=$source[$item.key])
-					
-				End for each 
 			End for 
 			
 		Else 
@@ -173,8 +156,25 @@ Case of
 		// ________________________________________________________________________________
 	: ($duplicate)
 		
-		$from:=WP Get style sheet:C1656($ui.document; $styleSheet.name)
-		WP_StylesheetCopyAttributes({from: $from; to: $to})
+		If (Num:C11($styleSheet.listLevelCount)>0)
+			
+			$main:=$styleSheet.listRootStyle || $styleSheet.name
+			
+			For ($i; 1; $levelCount; 1)
+				
+				$ui.copyStyleSheetAtributes(\
+					WP Get style sheet:C1656($ui.document; $main; $i); \
+					WP Get style sheet:C1656($ui.document; $name; $i))
+				
+			End for 
+			
+		Else 
+			
+			
+			$from:=WP Get style sheet:C1656($ui.document; $styleSheet.name)
+			$ui.copyStyleSheetAtributes($from; $to)
+			
+		End if 
 		
 		// ________________________________________________________________________________
 End case 

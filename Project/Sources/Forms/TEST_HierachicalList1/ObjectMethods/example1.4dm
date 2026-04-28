@@ -1,0 +1,1 @@
+OBJECT SET VALUE:C1742("wpArea"; WP Import document:C1318(File:C1566("/PACKAGE/DEV/example1.4wp")))

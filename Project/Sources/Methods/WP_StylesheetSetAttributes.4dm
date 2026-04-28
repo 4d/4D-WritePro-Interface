@@ -13,7 +13,7 @@ var $removeFromSource : Boolean:=$o.remove#Null:C1517 ? $o.remove : False:C215
 var $checkNormal : Boolean:=($target.name#"Normal")
 
 // var $normal:=WP Get style sheet(Form.document; "Normal")
-var $normal:=cs:C1710._wp.me.normalStyleShet
+var $normal:=cs:C1710._ui.me.normalStyleShet
 
 var $updateList:=[]  // Global list of objects (attributes + values) to update into the target style sheet
 

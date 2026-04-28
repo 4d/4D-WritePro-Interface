@@ -1,70 +1,73 @@
+var $styleSheetNamesPtr:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
 
+var $column; $row : Integer
+LISTBOX GET CELL POSITION:C971(*; "LB_StyleSheets"; $column; $row)
 
-var $col; $n; $p : Integer
-var $memo; $styleSheet : Object
-var $ptrLB; $ptrStylesheetNames : Pointer
-var $stylesheetName; $newName : Text
+var $ui:=cs:C1710._ui.me
+var $e:=FORM Event:C1606
 
-$ptrLB:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")
-$ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
-
-LISTBOX GET CELL POSITION:C971(*; "LB_StyleSheets"; $col; $n)
-
-If ($n>0) & ($n<=Size of array:C274($ptrStylesheetNames->))
-	
-	Case of 
+Case of 
+		
+		// ________________________________________________________________________________
+	: ($row<=0)\
+		 || ($row>Size of array:C274($styleSheetNamesPtr->))
+		
+		return 
+		
+		// ________________________________________________________________________________
+	: ($e.code=On Selection Change:K2:29)\
+		 | ($e.code=On Clicked:K2:4)
+		
+		var $name : Text:=$styleSheetNamesPtr->{$row}
+		WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk style sheet:K81:63; $name)
+		
+		SET TIMER:C645(-1)
+		
+		// ________________________________________________________________________________
+	: ($e.code=On Before Data Entry:K2:39)
+		
+		$name:=$styleSheetNamesPtr->{$row}
+		
+		If ($name="Normal")
 			
-			//: (Form event code=On Clicked)
+			$0:=-1  // Not enterable
 			
-			//If (Contextual click) & (Shift down) & (Macintosh option down)
-			//WP_StylesheetEdit 
-			//End if 
+		Else 
 			
-		: (Form event code:C388=On Selection Change:K2:29) | (Form event code:C388=On Clicked:K2:4)
+			var $memo:={name: $name; position: $row}
+			Form:C1466.memo:=$memo
 			
-			$stylesheetName:=$ptrStylesheetNames->{$n}
-			WP SET ATTRIBUTES:C1342(Form:C1466.selection; wk style sheet:K81:63; $stylesheetName)
+		End if 
+		
+		// ________________________________________________________________________________
+	: ($e.code=On Data Change:K2:15)
+		
+		$memo:=Form:C1466.memo
+		
+		//%W-533.3
+		var $newName : Text:=$styleSheetNamesPtr->{$memo.position}
+		//%W+533.3
+		
+		If (Count in array:C907($styleSheetNamesPtr->; $newName)>1)
 			
-			SET TIMER:C645(-1)
-			
-		: (Form event code:C388=On Before Data Entry:K2:39)
-			
-			$stylesheetName:=$ptrStylesheetNames->{$n}
-			If ($stylesheetName="Normal")
-				$0:=-1  // not enterable
-			Else 
-				$memo:=New object:C1471
-				$memo.name:=$stylesheetName
-				$memo.position:=$n
-				Form:C1466.memo:=$memo
-			End if 
-			
-		: (Form event code:C388=On Data Change:K2:15)
-			
-			$memo:=Form:C1466.memo
+			BEEP:C151
 			
 			//%W-533.3
-			$newName:=$ptrStylesheetNames->{$memo.position}
+			$styleSheetNamesPtr->{$memo.position}:=$memo.name  // Restore
 			//%W+533.3
-			$p:=Count in array:C907($ptrStylesheetNames->; $newName)
 			
-			If ($p>1)
-				BEEP:C151
-				//%W-533.3
-				$ptrStylesheetNames->{$memo.position}:=$memo.name
-				//%W+533.3
+		Else 
+			
+			// Rename the style sheet
+			var $styleSheet : 4D:C1709.WriteStyleSheet:=WP Get style sheet:C1656($ui.document; Form:C1466.memo.name)
+			
+			If ($styleSheet#Null:C1517)
 				
-			Else 
-				// rename the style sheet
-				$styleSheet:=WP Get style sheet:C1656(Form:C1466.document; Form:C1466.memo.name)
-				If ($styleSheet#Null:C1517)
-					$styleSheet.name:=$newName
-					
-					WP_GetStyleSheets  // reload list
-					
-				End if 
+				$styleSheet.name:=$newName
+				$ui.updateListOfStyleSheets()
+				
 			End if 
-			
-	End case 
-	
-End if 
+		End if 
+		
+		// ________________________________________________________________________________
+End case 

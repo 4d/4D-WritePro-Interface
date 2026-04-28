@@ -64,7 +64,7 @@ for the user to choose from
 		
 */
 		
-		var $template:=cs:C1710._wp.me.multiLevelListsTemplates
+		var $template:=cs:C1710._ui.me.multiLevelListsTemplates
 		
 		If ($template.length>0)
 			

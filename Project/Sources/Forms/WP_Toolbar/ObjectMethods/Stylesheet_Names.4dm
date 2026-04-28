@@ -2,7 +2,7 @@
 var $selectedItem : Text:=Self:C308->{Self:C308->}
 //%W+533.3
 
-var $ui:=cs:C1710._wp.me
+var $ui:=cs:C1710._ui.me
 var $name:=$ui.normalizeStyleSheetName($selectedItem)
 
 // Is this a template?

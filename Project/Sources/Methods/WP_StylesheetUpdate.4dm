@@ -1,7 +1,7 @@
 //%attributes = {"invisible":true}
-var $hdl:=cs:C1710._wp.me
-var $selectedType:=$hdl.selectedSyleSheetType()  // Paragraph, char, picture, table, row or cell
-var $name:=$hdl.selectedStyleSheetName()
+var $ui:=cs:C1710._ui.me
+var $selectedType:=$ui.selectedSyleSheetType()  // Paragraph, char, picture, table, row or cell
+var $name:=$ui.selectedStyleSheetName()
 
 If (Length:C16($name)=0)
 	
@@ -9,7 +9,7 @@ If (Length:C16($name)=0)
 	
 End if 
 
-var $styleSheet:=WP Get style sheet:C1656($hdl.document; $name)
+var $styleSheet:=WP Get style sheet:C1656($ui.document; $name)
 
 If ($stylesheet=Null:C1517)  // Should never happen
 	

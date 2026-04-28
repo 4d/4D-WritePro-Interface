@@ -68,6 +68,7 @@ that will contain the definition of the pre-defined multi-level lists
 	
 	return This:C1470._multiLevelListsTemplates
 	
+	// MARK:- STYLE SHEETS
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
 Function get styleSheets() : Collection
 	
@@ -135,7 +136,7 @@ Function selectedStyleSheetName() : Text
 Function updateListOfStyleSheets()
 	
 	var $selectedType:=This:C1470.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
-	var $type:=This:C1470.selectedSyleSheetType(True:C214)  //$selectedType=6 ? wk type paragraph : $selectedType+1
+	var $type:=This:C1470.selectedSyleSheetType(True:C214)
 	
 	var $c:=WP Get style sheets:C1655(This:C1470.document; $type)
 	
@@ -144,19 +145,18 @@ Function updateListOfStyleSheets()
 			// ______________________________________________________
 		: ($selectedType=0)  // Paragraph
 			
-			$c:=$c.query("listLevelCount = :1"; 0)
+			$c:=$c.query("listLevelCount = 0").orderBy("name")
 			
 			// ______________________________________________________
 		: ($selectedType=6)  // Hierarhical list
 			
-			$c:=$c.query("listLevelCount != :1"; 0)
+			$c:=$c.query("listLevelCount != 0").orderBy("name")
 			
 			// ______________________________________________________
 	End case 
 	
 	var $ptr:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
 	COLLECTION TO ARRAY:C1562($c; $ptr->; "name")
-	SORT ARRAY:C229($ptr->; >)
 	
 	WP_GetStyleSheet
 	
@@ -179,46 +179,6 @@ Function selectedSyleSheetType($main : Boolean) : Integer
 Function get normalStyleShet() : Object
 	
 	return WP Get style sheet:C1656(This:C1470.document; "Normal")
-	
-	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
-Function request($title : Text; $value : Text; $labelOk : Text; $labelCancel : Text; $placeHolder : Text) : Text
-	
-	var $formData:={\
-		title: Localized string:C991($title) || $title; \
-		value: Localized string:C991($value) || $value; \
-		labelOk: Localized string:C991($labelOk) || $labelOk; \
-		labelCancel: Localized string:C991($labelCancel) || $labelCancel; \
-		placeHolder: Localized string:C991($placeHolder) || $placeHolder\
-		}
-	
-	var $formName:="D_Request"
-	
-	If (Is macOS:C1572)  //& False
-		
-		var $winRef:=Open form window:C675($formName; Sheet form window:K39:12)
-		
-	Else 
-		
-		var $left; $top; $right; $bottom : Integer
-		GET WINDOW RECT:C443($left; $top; $right; $bottom)
-		
-		var $formWidth:=420
-		
-/*Horizontaly centered in the main window */$left:=(($left+$right)/2)-Int:C8($formWidth/2)
-/* Arbitrary 40 pixels from the top */$top+=40
-		
-		$winRef:=Open form window:C675($formName; Movable form dialog box:K39:8; $left; $top)
-		
-	End if 
-	
-	DIALOG:C40("D_Request"; $formData)
-	CLOSE WINDOW:C154($winRef)
-	
-	If (Bool:C1537(OK))
-		
-		return $formData.value
-		
-	End if 
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function newStyleSheetName($name : Text; $doc : Object; $type : Integer) : Text
@@ -485,5 +445,53 @@ Function duplicateStyleSheet($source : Object; $name : Text; $doc : Object)
 	Else 
 		
 		// TODO: Other style-sheets
+		
+	End if 
+	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function copyStyleSheetAtributes($source : 4D:C1709.WriteStyleSheet; $target : 4D:C1709.WriteStyleSheet)
+	
+	cs:C1710._tools.me.copyAttributes($source; $target; \
+		["name"; "owner"; "type"; "listLevelCount"; "listLevelIndex"; "listRootStyle"])
+	
+	
+	// MARK:-
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function request($title : Text; $value : Text; $labelOk : Text; $labelCancel : Text; $placeHolder : Text) : Text
+	
+	var $formData:={\
+		title: Localized string:C991($title) || $title; \
+		value: Localized string:C991($value) || $value; \
+		labelOk: Localized string:C991($labelOk) || $labelOk; \
+		labelCancel: Localized string:C991($labelCancel) || $labelCancel; \
+		placeHolder: Localized string:C991($placeHolder) || $placeHolder\
+		}
+	
+	var $formName:="D_Request"
+	
+	If (Is macOS:C1572)  //& False
+		
+		var $winRef:=Open form window:C675($formName; Sheet form window:K39:12)
+		
+	Else 
+		
+		var $left; $top; $right; $bottom : Integer
+		GET WINDOW RECT:C443($left; $top; $right; $bottom)
+		
+		var $formWidth:=420
+		
+/*Horizontaly centered in the main window */$left:=(($left+$right)/2)-Int:C8($formWidth/2)
+/* Arbitrary 40 pixels from the top */$top+=40
+		
+		$winRef:=Open form window:C675($formName; Movable form dialog box:K39:8; $left; $top)
+		
+	End if 
+	
+	DIALOG:C40("D_Request"; $formData)
+	CLOSE WINDOW:C154($winRef)
+	
+	If (Bool:C1537(OK))
+		
+		return $formData.value
 		
 	End if 

@@ -1,64 +1,61 @@
-//C_LONGINT(wp_tabList)
-
-var $setupOK : Boolean
-
-//C_LONGINT($paletteID)
-//$paletteID:=3
-
+var $ui:=cs:C1710._ui.me
+var $e:=FORM Event:C1606
 
 Case of 
-	: (Form event code:C388=On Load:K2:1)
 		
-		If (formData=Null:C1517)  // ACI0101427 when used as a single palette, not as a sub-sub-form
-			formData:=New object:C1471
-		End if 
+		//________________________________________________________________________________
+	: ($e.code=On Load:K2:1)
+		
+		formData:=formData || {}
 		
 		If (Undefined:C82(formData.styleSheet))
-			formData.styleSheet:=New object:C1471
-			formData.styleSheet.btnType:=New collection:C1472(1; 0; 0; 0; 0; 0)
-			formData.styleSheet.btnValue:=New collection:C1472(wk type paragraph:K81:191; wk type default:K81:190; wk type image:K81:192; wk type table:K81:222; wk type table row:K81:223; wk type table cell:K81:224)
+			
+			formData.styleSheet:={\
+				btnType: [1; 0; 0; 0; 0; 0; 0]; \
+				btnValue: [\
+				wk type paragraph:K81:191; \
+				wk type default:K81:190; \
+				wk type image:K81:192; \
+				wk type table:K81:222; \
+				wk type table row:K81:223; \
+				wk type table cell:K81:224; \
+				wk type paragraph:K81:191/* Hierarchical Style Sheets */]}
+			
 		End if 
-		
-		// temporarly
-		OBJECT SET ENABLED:C1123(*; "Stylesheet_Type3"; False:C215)
-		OBJECT SET ENABLED:C1123(*; "Stylesheet_Type4"; False:C215)
-		OBJECT SET ENABLED:C1123(*; "Stylesheet_Type5"; False:C215)
-		OBJECT SET ENABLED:C1123(*; "Stylesheet_Type6"; False:C215)
-		
-		
-		//If (Form.selection.type=2)
-		//// static pict selected
-		//Else
-		//WP_GetStyleSheets
-		//End if
-		
-		//OBJECT SET STYLE SHEET(*;"@";Automatic style sheet_additional)
 		
 		formData.skinAppliedSub:=UI_ApplySkin
 		
 		If (Form:C1466#Null:C1517)
-			SET TIMER:C645(-1)  // IF events are NOT managed in the area, then Form will be null (ACI0102661)
+			
+			SET TIMER:C645(-1)  // If events are NOT managed in the area, then Form will be null (ACI0102661)
+			
 		End if 
 		
-	: (Form event code:C388=On Bound Variable Change:K2:52) | (Form event code:C388=On Timer:K2:25)
+		//________________________________________________________________________________
+	: ($e.code=On Bound Variable Change:K2:52)\
+		 | ($e.code=On Timer:K2:25)
 		
 		SET TIMER:C645(0)
 		
-		$setupOK:=SetupLocalVariables
+		var $setupOK:=SetupLocalVariables
 		
-		If (formData.skinAppliedSub=False:C215)  // may have changed on bound variable change
+		If (formData.skinAppliedSub=False:C215)  // May have changed on bound variable change
+			
 			formData.skinAppliedSub:=UI_ApplySkin
+			
 		End if 
 		
 		If (Form:C1466.selection.type=2)
-			// static pict selected
+			
+			// Static pict selected
+			
 		Else 
-			WP_GetStyleSheets
+			
+			$ui.updateListOfStyleSheets()
+			
 		End if 
 		
 		UI_PaletteStylesheets
 		
-		
-		//: (Form event=On Unload)
-		
+		//________________________________________________________________________________
 End case 

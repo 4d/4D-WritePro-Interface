@@ -37,6 +37,12 @@ What would you like to do?</target>
           <target state="new">You must enter a name.</target>
         </trans-unit>
       </group>
+      <group resname="Style sheets">
+        <trans-unit id="_Hk5nQH0uamRkCfbe9UdzA" resname="allSub-levelStyleSheetsWillBeRemoved">
+          <source>All sub-level style sheets will be removed.</source>
+          <target state="new">All sub-level style sheets will be removed.</target>
+        </trans-unit>
+      </group>
     </body>
   </file>
 </xliff>

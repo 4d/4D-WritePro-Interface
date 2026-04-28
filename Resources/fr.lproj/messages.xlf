@@ -37,6 +37,12 @@ Que souhaitez-vous faire ?</target>
           <target>Il est obligatoire d'indiquer un nom.</target>
         </trans-unit>
       </group>
+      <group resname="Style sheets">
+        <trans-unit id="_Hk5nQH0uamRkCfbe9UdzA" resname="allSub-levelStyleSheetsWillBeRemoved">
+          <source>All sub-level style sheets will be removed.</source>
+          <target>Toutes les feuilles de style de niveau inférieur seront supprimées.</target>
+        </trans-unit>
+      </group>
     </body>
   </file>
 </xliff>

@@ -104,9 +104,9 @@
 				"btnAdd": {
 					"type": "button",
 					"top": 405,
-					"left": 40,
-					"width": 30,
-					"height": 30,
+					"left": 5,
+					"width": 24,
+					"height": 24,
 					"tooltip": ":xliff:newStylesheet",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Sidebar/plusArrow.png",
@@ -121,9 +121,9 @@
 				"btnDelete": {
 					"type": "button",
 					"top": 405,
-					"left": 80,
-					"width": 30,
-					"height": 30,
+					"left": 31,
+					"width": 24,
+					"height": 24,
 					"tooltip": ":xliff:deleteStylesheet",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Sidebar/minusArrow.png",
@@ -157,9 +157,9 @@
 				"btnUpdateStylesheet": {
 					"type": "button",
 					"top": 405,
-					"left": 120,
-					"width": 30,
-					"height": 30,
+					"left": 57,
+					"width": 24,
+					"height": 24,
 					"tooltip": ":xliff:updateStylesheet",
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Sidebar/reload.png",
@@ -323,17 +323,112 @@
 					"fontSize": 28,
 					"textAngle": 270,
 					"text": "4D WritePro Style sheets"
+				},
+				"Stylesheet_Type3": {
+					"type": "radio",
+					"top": 40,
+					"left": 79,
+					"width": 24,
+					"height": 24,
+					"dataSource": "formData.styleSheet.btnType[6]",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Multi-levelstyle_sheets.png",
+					"style": "custom",
+					"radioGroup": "Group6",
+					"method": "ObjectMethods/Stylesheet_Type3.4dm",
+					"events": [
+						"onClick"
+					],
+					"iconFrames": 4,
+					"tooltip": ":xliff:multiLevelstylesheets"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 405,
+					"left": 84,
+					"height": 24,
+					"width": 0,
+					"startPoint": "topLeft",
+					"class": "separator"
+				},
+				"list Level Inc": {
+					"type": "button",
+					"top": 405,
+					"left": 88,
+					"width": 24,
+					"height": 24,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Increaselist_level.png",
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"action": "listLevelInc",
+					"iconFrames": 4,
+					"tooltip": ":xliff:increaseListLevel"
+				},
+				"list Level Dec": {
+					"type": "button",
+					"top": 405,
+					"left": 116,
+					"width": 24,
+					"height": 24,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Decreaselist_level.png",
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"action": "listLevelDec",
+					"iconFrames": 4,
+					"tooltip": ":xliff:decreaseListLevel"
+				},
+				"list Level Append": {
+					"type": "button",
+					"top": 405,
+					"left": 144,
+					"width": 24,
+					"height": 24,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/Appendlist_level.png",
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"action": "listLevelAppend",
+					"iconFrames": 4,
+					"tooltip": ":xliff:appendLevelToList"
+				},
+				"listNumberFormat": {
+					"type": "dropdown",
+					"top": 407,
+					"left": 170,
+					"width": 59,
+					"height": 20,
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					],
+					"action": "listNumberFormat",
+					"tooltip": ":xliff:numberingMarkerParenthesis"
+				},
+				"listConcatStringFormat": {
+					"type": "checkbox",
+					"top": 406,
+					"left": 231,
+					"width": 24,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"action": "listConcatStringFormat",
+					"focusable": false,
+					"tooltip": ":xliff:concatenateNumberingMarker"
 				}
 			}
 		}
 	],
 	"editor": {
-		"groups": {
-			"Group6": [
-				"ssType2",
-				"ssType1"
-			]
-		},
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
@@ -362,5 +457,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 63
+	"geometryStamp": 137
 }

@@ -259,7 +259,6 @@
 			"WP_ShowTabPages",
 			"WP_StyleFillEditLB",
 			"WP_StylesheetAdd",
-			"WP_StylesheetCopyAttributes",
 			"WP_StylesheetEdit",
 			"WP_StylesheetRemove",
 			"WP_StylesheetSetAttributes",

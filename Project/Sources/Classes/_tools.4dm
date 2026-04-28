@@ -14,3 +14,22 @@ Function incrementString($original : Text; $separator : Text; $format : Text) : 
 	$num+=1
 	return $original+$separator+String:C10($num; $format)
 	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function copyAttributes($source : Object; $target : Object; $skip : Collection)
+	
+	$skip:=$skip || []
+	
+	var $attributes:=OB Keys:C1719($source)
+	var $key : Text
+	
+	For each ($key; $attributes)
+		
+		If ($skip.includes($key))
+			
+			continue
+			
+		End if 
+		
+		$target[$key]:=$source[$key]
+		
+	End for each 
