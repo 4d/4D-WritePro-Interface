@@ -45,11 +45,7 @@ Case of
 			
 		End if 
 		
-		If (Form:C1466.selection.type=2)
-			
-			// Static pict selected
-			
-		Else 
+		If (Form:C1466.selection.type#2)  // not Static pict selected
 			
 			$ui.updateListOfStyleSheets()
 			

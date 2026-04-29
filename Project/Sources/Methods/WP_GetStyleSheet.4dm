@@ -1,18 +1,20 @@
 //%attributes = {"invisible":true}
-var $selectedType:=getSelectedStyleSheetType  // 0 = Paragraph, 1 = Font, 6 = List
-var $type:=$selectedType=6 ? wk type paragraph:K81:191 : $selectedType
+var $ui:=cs:C1710._ui.me
+
+var $selectedType:=$ui.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
+var $type:=$ui.selectedSyleSheetType(True:C214)
 
 Case of 
 		
 		// ________________________________________________________________________________
 	: ($type=wk type default:K81:190)
 		
-		var $range : Object:=Form:C1466.selection
+		var $range : Object:=$ui.selection
 		
 		// ________________________________________________________________________________
 	: ($type=wk type paragraph:K81:191)
 		
-		$range:=WP Paragraph range:C1346(Form:C1466.selection)
+		$range:=WP Paragraph range:C1346($ui.selection)
 		
 		// ________________________________________________________________________________
 End case 
@@ -26,7 +28,7 @@ End if
 var $namesArrayPtr:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
 
 // MARK:- Update the list of style sheets
-var $c:=WP Get style sheets:C1655(Form:C1466.selection[wk owner:K81:168]; $type)
+var $c:=WP Get style sheets:C1655($ui.document; $type)
 
 If ($type=wk type paragraph:K81:191)
 	
@@ -38,7 +40,7 @@ then the dropdown list shall contain only the paragraph style sheets that are no
 	
 */
 	
-	var $isList:=Bool:C1537(formData.styleSheet.btnType[6])
+	var $isList:=$selectedType=6
 	
 	If ($isList)  // Keep only list style sheets
 		

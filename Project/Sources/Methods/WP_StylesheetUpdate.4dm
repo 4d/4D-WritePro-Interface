@@ -19,5 +19,5 @@ End if
 
 WP_StylesheetSetAttributes({\
 list: WP_GetStyleAttributesByType($selectedType); \
-from: Form:C1466.selection; \
+from: $ui.selection; \
 to: $stylesheet})

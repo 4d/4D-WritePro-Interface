@@ -12,8 +12,23 @@
 	"rightMargin": 20,
 	"bottomMargin": 20,
 	"events": [
-		"onLoad"
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
 	],
+	"windowTitle": "window title",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -23,18 +38,16 @@
 			"objects": {
 				"WParea": {
 					"type": "write",
-					"top": 109,
-					"left": 30,
+					"top": 90,
+					"left": 0,
 					"width": 880,
-					"height": 590,
+					"height": 1033,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"dataSource": "Form:C1466.wp",
 					"hideFocusRing": true,
 					"scrollbarVertical": "automatic",
 					"scrollbarHorizontal": "automatic",
 					"dpi": 0,
-					"borderStyle": "none",
 					"method": "ObjectMethods/WParea.4dm",
 					"events": [
 						"onLoad",
@@ -42,12 +55,14 @@
 						"onGettingFocus",
 						"onSelectionChange",
 						"onAfterEdit"
-					]
+					],
+					"borderStyle": "none",
+					"dataSource": "Form:C1466.wpArea"
 				},
 				"WPtoolbar": {
 					"type": "subform",
-					"top": 19,
-					"left": 30,
+					"top": 0,
+					"left": 0,
 					"width": 880,
 					"height": 90,
 					"sizingX": "grow",
@@ -58,10 +73,81 @@
 					"doubleClickInEmptyAreaAction": "addSubrecord",
 					"selectionMode": "multiple",
 					"printFrame": "variable"
+				},
+				"example1": {
+					"type": "button",
+					"text": "example 1",
+					"top": 10,
+					"left": 897,
+					"width": 95,
+					"height": 42,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/example1.4dm",
+					"sizingX": "move"
+				},
+				"example2": {
+					"type": "button",
+					"text": "example 2",
+					"top": 60,
+					"left": 897,
+					"width": 95,
+					"height": 42,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/example2.4dm",
+					"sizingX": "move"
+				},
+				"example3": {
+					"type": "button",
+					"text": "example 3",
+					"top": 110,
+					"left": 897,
+					"width": 95,
+					"height": 42,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/example3.4dm",
+					"sizingX": "move"
+				},
+				"example4": {
+					"type": "button",
+					"text": "example 4",
+					"top": 160,
+					"left": 897,
+					"width": 95,
+					"height": 42,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/example4.4dm",
+					"sizingX": "move"
+				},
+				"example5": {
+					"type": "button",
+					"text": "example 5",
+					"top": 210,
+					"left": 897,
+					"width": 95,
+					"height": 42,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/example5.4dm",
+					"sizingX": "move"
 				}
 			}
 		}
 	],
-	"geometryStamp": 48,
-	"method": "method.4dm"
+	"geometryStamp": 139,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }

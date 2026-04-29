@@ -1630,7 +1630,10 @@
 					],
 					"action": "listConcatStringFormat",
 					"focusable": false,
-					"tooltip": ":xliff:concatenateNumberingMarker"
+					"tooltip": ":xliff:concatenateNumberingMarker",
+					"style": "custom",
+					"iconFrames": 4,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/listConcatStringFormat.svg"
 				},
 				"Rect2": {
 					"type": "rectangle",
@@ -4716,5 +4719,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7983
+	"geometryStamp": 7984
 }

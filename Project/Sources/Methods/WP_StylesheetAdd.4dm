@@ -75,7 +75,7 @@ Case of
 			: ($selectedType=6)  // Hierarchical style sheet
 				
 				$from:=WP Paragraph range:C1346($ui.selection)
-				var $styleSheet : Object
+				var $styleSheet : cs:C1710._stylesheet
 				WP Get attributes:C1345($from; wk style sheet:K81:63; $styleSheet)
 				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅

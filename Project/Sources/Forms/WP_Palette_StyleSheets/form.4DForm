@@ -41,9 +41,7 @@
 					"left": 25,
 					"width": 210,
 					"height": 320,
-					"resizingMode": "legacy",
 					"hideFocusRing": true,
-					"movableRows": false,
 					"hideExtraBlankRows": true,
 					"rowHeight": "20px",
 					"rowHeightAutoMin": "20px",
@@ -52,11 +50,7 @@
 					"headerHeight": "20px",
 					"selectionMode": "single",
 					"scrollbarHorizontal": "hidden",
-					"scrollbarVertical": "automatic",
-					"stroke": "automatic",
 					"fill": "transparent",
-					"fontFamily": "System Font Regular",
-					"fontSize": 11,
 					"borderStyle": "none",
 					"method": "ObjectMethods/LB_StyleSheets.4dm",
 					"events": [
@@ -65,7 +59,14 @@
 						"onSelectionChange",
 						"onBeforeDataEntry"
 					],
-					"class": "separator",
+					"class": "",
+					"fontSize": 11,
+					"movableRows": false,
+					"sortable": false,
+					"stroke": "automatic",
+					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
+					"focusable": false,
 					"columns": [
 						{
 							"name": "stylesheet_Names",
@@ -215,90 +216,6 @@
 						"onClick"
 					]
 				},
-				"ssType3": {
-					"type": "radio",
-					"top": 40,
-					"left": 296,
-					"width": 22,
-					"height": 30,
-					"sizingX": "move",
-					"dataSource": "formData.styleSheet.btnType[2]",
-					"tooltip": ":xliff:imageStylesheets",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Sidebar/picture.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "",
-					"method": "ObjectMethods/ssType3.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"ssType4": {
-					"type": "radio",
-					"top": 40,
-					"left": 334,
-					"width": 22,
-					"height": 30,
-					"sizingX": "move",
-					"dataSource": "formData.styleSheet.btnType[3]",
-					"tooltip": ":xliff:tableStylesheets",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Tables/TableSettings_32.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "",
-					"method": "ObjectMethods/ssType4.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"ssType5": {
-					"type": "radio",
-					"top": 40,
-					"left": 372,
-					"width": 22,
-					"height": 30,
-					"sizingX": "move",
-					"dataSource": "formData.styleSheet.btnType[4]",
-					"tooltip": ":xliff:rowStylesheets",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Tables/RowSettings_32.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "",
-					"method": "ObjectMethods/ssType5.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"ssType6": {
-					"type": "radio",
-					"top": 40,
-					"left": 410,
-					"width": 22,
-					"height": 30,
-					"sizingX": "move",
-					"dataSource": "formData.styleSheet.btnType[5]",
-					"tooltip": ":xliff:cellStylesheets",
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"icon": "/RESOURCES/Images/Toolbar1/Tables/CellSettings_32.png",
-					"iconFrames": 4,
-					"textPlacement": "center",
-					"style": "custom",
-					"customBackgroundPicture": "",
-					"method": "ObjectMethods/ssType6.4dm",
-					"events": [
-						"onClick"
-					]
-				},
 				"Rect2": {
 					"type": "rectangle",
 					"top": 0,
@@ -423,7 +340,10 @@
 					],
 					"action": "listConcatStringFormat",
 					"focusable": false,
-					"tooltip": ":xliff:concatenateNumberingMarker"
+					"tooltip": ":xliff:concatenateNumberingMarker",
+					"style": "custom",
+					"iconFrames": 4,
+					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/listConcatStringFormat.svg"
 				}
 			}
 		}
@@ -457,5 +377,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 137
+	"geometryStamp": 144
 }

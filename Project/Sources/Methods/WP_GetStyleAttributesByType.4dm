@@ -1,6 +1,8 @@
 //%attributes = {"invisible":true}
 #DECLARE($type : Integer) : Collection
 
+var $isHierarchical:=$type=6  // Hierarchical Style Sheet
+
 var $attributes:=[]
 
 // MARK:- Common: Font, Text
@@ -18,12 +20,11 @@ $attributes.push({properties: [wk text shadow color:K81:71; wk text shadow offse
 
 $attributes.push({properties: [wk text transform:K81:70]})
 
+// MARK:- Common: Paragrah & Hierarchical Style Sheet
 If ($type=wk type paragraph:K81:191)\
- || ($type=6)
+ || ($isHierarchical)
 	
-	// MARK:- Align, indent, tabs
 	$attributes.push({properties: [wk text align:K81:49]})
-	$attributes.push({properties: [wk vertical align:K81:9]})
 	
 	$attributes.push({properties: [wk text indent:K81:52]})
 	$attributes.push({properties: [wk line height:K81:51]})
@@ -51,12 +52,18 @@ If ($type=wk type paragraph:K81:191)\
 	
 End if 
 
-If ($type=6)  // Hierarchical style sheet
+// MARK:- Onl for Paragrah
+If ($type=wk type paragraph:K81:191)
+	
+	$attributes.push({properties: [wk vertical align:K81:9]})
+	
+End if 
+
+// MARK:- Onl for Hierarchical Style Sheet
+If ($isHierarchical)
 	
 	$attributes.push({properties: [wk list concat string format:K81:395]})
 	$attributes.push({properties: [wk list font:K81:60]})
-	$attributes.push({properties: [wk list level count:K81:394]})
-	$attributes.push({properties: [wk list level index:K81:393]})
 	$attributes.push({properties: [wk list root style:K81:392]})
 	$attributes.push({properties: [wk list start number:K81:61]})
 	$attributes.push({properties: [wk list string format LTR:K81:58]})

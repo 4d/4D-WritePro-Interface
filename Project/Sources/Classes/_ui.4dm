@@ -9,19 +9,29 @@ Function get area() : Object
 	return Form:C1466.area
 	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
-Function get document() : Object
+Function get document() : 4D:C1709.WriteDocument
 	
-	return Form:C1466.document || Form:C1466.selection.owner
+	return Form:C1466.document || This:C1470.selection.owner
 	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
-Function get selection() : Object
+Function get selection() : cs:C1710._range
 	
 	return Form:C1466.selection
 	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
-Function get paragraph() : Object
+Function get paragraph() : cs:C1710._range
 	
 	return WP Paragraph range:C1346(This:C1470.selection)
+	
+	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
+Function get isToolbar() : Boolean
+	
+	return (Current form name:C1298="WP_Toolbar")
+	
+	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
+Function get isPalette() : Boolean
+	
+	return Not:C34(This:C1470.isToolbar)
 	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
 shared Function get multiLevelListsTemplates() : Collection
@@ -137,8 +147,7 @@ Function updateListOfStyleSheets()
 	
 	var $selectedType:=This:C1470.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
 	var $type:=This:C1470.selectedSyleSheetType(True:C214)
-	
-	var $c:=WP Get style sheets:C1655(This:C1470.document; $type)
+	var $c:=$selectedType=1 ? WP Get style sheets:C1655(This:C1470.document; wk type character:K81:296) : WP Get style sheets:C1655(This:C1470.document; $type)
 	
 	Case of 
 			
@@ -158,7 +167,136 @@ Function updateListOfStyleSheets()
 	var $ptr:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
 	COLLECTION TO ARRAY:C1562($c; $ptr->; "name")
 	
-	WP_GetStyleSheet
+	//WP_GetStyleSheet
+	This:C1470.getCurrentStyleSheet()
+	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function getCurrentStyleSheet()
+	
+	var $selectedType:=This:C1470.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
+	var $type:=This:C1470.selectedSyleSheetType(True:C214)
+	
+	Case of 
+			
+			// ________________________________________________________________________________
+		: ($type=wk type default:K81:190)  // Character
+			
+			var $range:=This:C1470.selection
+			
+			// ________________________________________________________________________________
+		: ($type=wk type paragraph:K81:191)
+			
+			$range:=WP Paragraph range:C1346(This:C1470.selection)
+			
+			// ________________________________________________________________________________
+	End case 
+	
+	If (OB Is empty:C1297($range))
+		
+		return 
+		
+	End if 
+	
+	var $stylesheet_Names:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
+	
+	// MARK:- Update the list of style sheets
+	var $c:=WP Get style sheets:C1655(This:C1470.document; $type)
+	
+	If ($type=wk type paragraph:K81:191)
+		
+/* 📌 Requirement #21272
+		
+When the "Paragraph style sheets" button is active 
+(which means the "Multi-level style sheets" button is deactivated), 
+then the dropdown list shall contain only the paragraph style sheets that are not multi-level style sheets
+		
+*/
+		
+		var $isList:=$selectedType=6
+		
+		If ($isList)  // Keep only list style sheets
+			
+			$c:=$c.query("listStyleType != null AND name != normal")
+			
+		Else   // Keep only paragraphe style sheets
+			
+			// Save the name of the “Normal” style sheet
+			
+			var $normal : Text:=$c.query("listStyleType = 0").first().name
+			$c:=$c.query("listStyleType = null")
+			
+		End if 
+		
+		$c:=$c.extract("name").sort()
+		
+		If ($isList)
+			
+/* 📌 Requirement #21240
+			
+In the style sheets dropdown list, there shall be 5 pre-defined multi-level style sheets (templates) 
+for the user to choose from
+			
+*/
+			
+			var $template:=cs:C1710._ui.me.multiLevelListsTemplates
+			
+			If ($template.length>0)
+				
+/*  📌 Requirement #21247
+				
+In the style sheets dropdown list, the multi-level style sheets shall be divided into 2: 
+• the ones defined in the WP document at the top, 
+• and the templates at the bottom
+				
+*/
+				
+				If ($c.length>0)
+					
+					$c.push("-")
+					
+				End if 
+				
+				var $o : Object
+				For each ($o; $template)
+					
+					$c.push($o.name)
+					
+				End for each 
+			End if 
+			
+		Else 
+			
+			$c.push($normal)
+			
+		End if 
+		
+		COLLECTION TO ARRAY:C1562($c; $stylesheet_Names->)
+		
+	End if 
+	
+	var $styleSheet : Object
+	WP Get attributes:C1345($range; wk style sheet:K81:63; $styleSheet)
+	
+	If ($styleSheet=Null:C1517)
+		
+		return   // <NOTHING MORE TO DO>
+		
+	End if 
+	
+	// MARK:- Select the current style sheet if ny
+	var $name : Text:=$styleSheet.name
+	var $pos:=Find in array:C230($stylesheet_Names->; $name)
+	$pos:=$pos>0 ? $pos : 0
+	
+	If (This:C1470.isToolbar)
+		
+		$stylesheet_Names->:=$pos
+		
+	Else 
+		
+		LISTBOX SELECT ROW:C912(*; "LB_StyleSheets"; $pos; $pos=0 ? lk remove from selection:K53:3 : lk replace selection:K53:1)
+		
+	End if 
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function selectedSyleSheetType($main : Boolean) : Integer
@@ -167,7 +305,25 @@ Function selectedSyleSheetType($main : Boolean) : Integer
 	
 	If ($main)
 		
-		return $selectedType=6 ? wk type paragraph:K81:191 : $selectedType+1
+		Case of 
+				//______________________________________________________
+			: ($selectedType=0)\
+				 || ($selectedType=6)
+				
+				return wk type paragraph:K81:191
+				
+				//______________________________________________________
+			: ($selectedType=1)
+				
+				return wk type default:K81:190
+				
+				//______________________________________________________
+			Else 
+				
+				return $selectedType+1
+				
+				//______________________________________________________
+		End case 
 		
 	Else 
 		
@@ -176,7 +332,7 @@ Function selectedSyleSheetType($main : Boolean) : Integer
 	End if 
 	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
-Function get normalStyleShet() : Object
+Function get normalStyleSheet() : Object
 	
 	return WP Get style sheet:C1656(This:C1470.document; "Normal")
 	
