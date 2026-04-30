@@ -105,33 +105,38 @@ Case of
 		
 		$memo:=Form:C1466.memo
 		
-		//%W-533.3
-		var $newName : Text:=$styleSheets->{$memo.position}
-		//%W+533.3
+		TRACE:C157
 		
-		If (Count in array:C907($styleSheets->; $newName)>1)
-			
-			BEEP:C151
-			
-			//%W-533.3
-			$styleSheets->{$memo.position}:=$memo.name  // Restore
-			//%W+533.3
-			
-		Else 
-			
-			// Rename the style sheet
-			$styleSheet:=WP Get style sheet:C1656($ui.document; $memo.name)
-			
-			If ($styleSheet=Null:C1517)
-				
-				return 
-				
-			End if 
-			
-			$styleSheet.name:=$newName
-			$ui.updateListOfStyleSheets()
-			
-		End if 
+/*
+//%W-533.3
+var $newName : Text:=$styleSheets->{$memo.position}
+//%W+533.3
+		
+If (Count in array($styleSheets->; $newName)>1)
+		
+BEEP
+		
+//%W-533.3
+$styleSheets->{$memo.position}:=$memo.name  // Restore
+//%W+533.3
+		
+Else 
+		
+// Rename the style sheet
+$styleSheet:=WP Get style sheet($ui.document; $memo.name)
+		
+If ($styleSheet=Null)
+		
+return 
+		
+End if 
+		
+$styleSheet.name:=$newName
+$ui.updateListOfStyleSheets()
+		
+End if 
+*/
+		
 		
 		// ________________________________________________________________________________
 End case 

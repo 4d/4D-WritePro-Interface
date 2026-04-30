@@ -751,7 +751,7 @@ Function copyStyleSheetAtributes($source : 4D:C1709.WriteStyleSheet; $target : 4
 Function styleSheetMetaInfoExpression($item : Object) : Object
 	
 	
-	$meta:=New object:C1471
+	var $meta:=New object:C1471
 	
 	If (Bool:C1537($item.template))  //ID is an attribute of collection objects/entities
 		
