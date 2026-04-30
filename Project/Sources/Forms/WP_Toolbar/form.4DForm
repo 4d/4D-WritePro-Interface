@@ -1374,7 +1374,8 @@
 					"method": "ObjectMethods/Stylesheet_Names.4dm",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"visibility": "hidden"
 				},
 				"WP1": {
 					"type": "dropdown",
@@ -1657,6 +1658,20 @@
 					"fontFamily": ".Helvetica Neue DeskInterface",
 					"fontSize": 44,
 					"text": "4D Write Pro Toolbar"
+				},
+				"Stylesheet_Names1": {
+					"type": "dropdown",
+					"top": 60,
+					"left": 608,
+					"width": 180,
+					"height": 20,
+					"focusable": false,
+					"method": "ObjectMethods/Stylesheet_Names1.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "Form:C1466.styleSheets"
 				}
 			},
 			"entryOrder": [
@@ -1700,7 +1715,8 @@
 				"WP1",
 				"Button3",
 				"listNumberFormat",
-				"listConcatStringFormat"
+				"listConcatStringFormat",
+				"Stylesheet_Names1"
 			]
 		},
 		{
@@ -4719,5 +4735,5 @@
 			}
 		}
 	},
-	"geometryStamp": 7984
+	"geometryStamp": 7994
 }

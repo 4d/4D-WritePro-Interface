@@ -67,6 +67,7 @@
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
 					"focusable": false,
+					"visibility": "hidden",
 					"columns": [
 						{
 							"name": "stylesheet_Names",
@@ -344,6 +345,80 @@
 					"style": "custom",
 					"iconFrames": 4,
 					"icon": "/RESOURCES/Images/Toolbar1/Stylesheets/listConcatStringFormat.svg"
+				},
+				"LB_StyleSheets1": {
+					"type": "listbox",
+					"top": 70,
+					"left": 26,
+					"width": 210,
+					"height": 320,
+					"hideFocusRing": true,
+					"hideExtraBlankRows": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"headerHeight": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/LB_StyleSheets1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onBeforeDataEntry"
+					],
+					"class": "",
+					"fontSize": 11,
+					"movableRows": false,
+					"sortable": false,
+					"stroke": "automatic",
+					"scrollbarVertical": "automatic",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.styleSheets",
+					"currentItemSource": "Form:C1466.styleSheetsItem",
+					"currentItemPositionSource": "Form:C1466.styleSheetsItemPosition",
+					"selectedItemsSource": "Form:C1466.styleSheetsSeletedItems",
+					"metaSource": "Form:C1466.ui.styleSheetMetaInfoExpression(This:C1470)",
+					"columns": [
+						{
+							"name": "name",
+							"width": 210,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"fill": "#DDDDDD",
+							"textAlign": "left",
+							"fontFamily": "System Font Regular",
+							"fontSize": 11,
+							"events": [
+								"onLosingFocus",
+								"onDataChange",
+								"onBeforeDataEntry"
+							],
+							"header": {
+								"name": "Header2",
+								"text": ":xliff:Position",
+								"stroke": "#000000",
+								"fontFamily": "System Font Regular",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#FFFFFF",
+								"fill": "#DDDDDD",
+								"fontFamily": "System Font Regular",
+								"fontSize": 11
+							},
+							"dataSource": "This:C1470.name"
+						}
+					]
 				}
 			}
 		}
@@ -377,5 +452,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 144
+	"geometryStamp": 167
 }

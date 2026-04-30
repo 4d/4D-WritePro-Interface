@@ -1,68 +1,46 @@
 //%attributes = {"invisible":true}
-var $n; $p; $win : Integer
-var $document; $styleSheet; $form : Object
-var $ptrStylesheetNames; $ptrListbox : Pointer
-var $stylesheetName; $newName : Text
+var $ui:=cs:C1710._ui.me
+var $name : Text:=Form:C1466.styleSheets.currentValue
 
-$ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")
-$ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
-
-If (Not:C34(Is nil pointer:C315($ptrListbox)))  // From palette
+If (Length:C16($name)=0)
 	
-	$n:=Find in array:C230($ptrListbox->; True:C214)  // Index
-	
-Else   // From toolbar
-	
-	$n:=$ptrStylesheetNames->
+	return 
 	
 End if 
 
-If ($n>0)
+var $styleSheet:=WP Get style sheet:C1656($ui.document; $name)
+
+If ($styleSheet=Null:C1517)
 	
-	$stylesheetName:=$ptrStylesheetNames->{$n}
+	return 
 	
 End if 
 
-If (Length:C16($stylesheetName)#0)
+var $form:={\
+stylesheet: $styleSheet; \
+selection: Form:C1466.selection; \
+name: $form.stylesheet.name}  // If stylesheet.name = "normal" the dialog will disable almost everything
+
+$form.winRef:=Open form window:C675("WP_StyleSheetEdit"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4)
+DIALOG:C40("WP_StyleSheetEdit"; $form)
+CLOSE WINDOW:C154($form.winRef)
+
+If ($form.name#$form.stylesheet.name)
 	
-	$document:=Form:C1466.selection[wk owner:K81:168]
-	$styleSheet:=WP Get style sheet:C1656($document; $stylesheetName)
+	// Changed named, must be checked
+	var $c:=$ui.styleSheets
+	var $t : Text:=$form.name
+	
+	While ($c.query("name = :1"; $t).length>0)
+		
+		$t:=cs:C1710._tools.me.incrementString($t)
+		
+	End while 
+	
+	$form.stylesheet.name:=$t
 	
 End if 
 
-If ($styleSheet#Null:C1517)
-	
-	$form:=New object:C1471
-	$form.stylesheet:=$styleSheet
-	$form.selection:=Form:C1466.selection
-	$form.name:=$form.stylesheet.name  // If stylesheet.name = "normal" the dialog will disable almost everything
-	
-	$win:=Open form window:C675("WP_StyleSheetEdit"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4)
-	DIALOG:C40("WP_StyleSheetEdit"; $form)
-	
-	If ($form.name#$form.stylesheet.name)
-		
-		// Changed named, must be checked
-		ARRAY TEXT:C222($allstylesheet_Names; 0)
-		
-		COLLECTION TO ARRAY:C1562(WP Get style sheets:C1655(Form:C1466.document; wk type paragraph:K81:191).concat(WP Get style sheets:C1655(Form:C1466.document; wk type character:K81:296)); $allstylesheet_Names; "name")
-		
-		$newName:=$form.name
-		$p:=Find in array:C230($allstylesheet_Names; $newName)
-		
-		While ($p>0)
-			
-			$newName:=TOOL_IncrementString($newName)
-			$p:=Find in array:C230($allstylesheet_Names; $newName)
-			
-		End while 
-		
-		$form.stylesheet.name:=$form.name
-		
-	End if 
-	
-	WP_GetStyleSheets  // Reload list
-	
-End if 
+$ui.updateListOfStyleSheets()
 
 SET TIMER:C645(-1)

@@ -1,9 +1,7 @@
 //%attributes = {"invisible":true}
-var $ptrStylesheetNames : Pointer
-var $p : Integer
-var $name : Text
+var $ui:=cs:C1710._ui.me
 
-If (Form:C1466.selection.type=wk type image:K81:192)
+If ($ui.selection.type=wk type image:K81:192)
 	
 	OBJECT SET ENABLED:C1123(*; "Stylesheet_@"; False:C215)
 	
@@ -11,20 +9,26 @@ Else
 	
 	OBJECT SET ENABLED:C1123(*; "Stylesheet_@"; True:C214)
 	
-	$ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "Stylesheet_Names")
-	
-	$p:=$ptrStylesheetNames->
-	
-	If ($p>0)
-		$name:=$ptrStylesheetNames->{$p}
+	If ($ui._withSyleSheetsAsCollection)
+		
+		var $name : Text:=Form:C1466.styleSheets.currentValue
+		
+		If (Form:C1466.styleSheets.index#-1)
+			
+			$name:=Form:C1466.styleSheets.values[Form:C1466.styleSheets.index]
+			
+		End if 
+		
 	Else 
-		$name:=""
+		
+		var $ptrStylesheetNames : Pointer
+		var $p : Integer
+		$ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "Stylesheet_Names")
+		$p:=$ptrStylesheetNames->
+		$name:=$p>0 ? $ptrStylesheetNames->{$p} : ""
+		
 	End if 
 	
-	If ($name="normal") | ($name="")
-		OBJECT SET ENABLED:C1123(*; "Stylesheet_btnDelete"; False:C215)
-	Else 
-		OBJECT SET ENABLED:C1123(*; "Stylesheet_btnDelete"; True:C214)
-	End if 
+	OBJECT SET ENABLED:C1123(*; "Stylesheet_btnDelete"; (Length:C16($name)>0) && ($name#"normal"))
 	
 End if 

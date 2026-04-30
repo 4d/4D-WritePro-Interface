@@ -25,6 +25,8 @@ Case of
 		
 		formData.skinAppliedSub:=UI_ApplySkin
 		
+		Form:C1466.ui:=$ui
+		
 		If (Form:C1466#Null:C1517)
 			
 			SET TIMER:C645(-1)  // If events are NOT managed in the area, then Form will be null (ACI0102661)
@@ -45,7 +47,7 @@ Case of
 			
 		End if 
 		
-		If (Form:C1466.selection.type#2)  // not Static pict selected
+		If ($ui.selection.type#2)  // not Static pict selected
 			
 			$ui.updateListOfStyleSheets()
 			

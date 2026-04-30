@@ -1,4 +1,19 @@
 {
+	"_OBSOLETES": {
+		"methods": [
+			"WP_GetStyleSheet",
+			"WP_GetStyleSheets"
+		]
+	},
+	"_UNUSED": {
+		"methods": [
+			"WP_StylesheetEdit"
+		],
+		"forms": [
+			"WP_StyleSheetEdit"
+		]
+	},
+	"(PaletteForms)": {},
 	"(Table Forms)": {},
 	"AI": {
 		"methods": [
@@ -107,28 +122,9 @@
 			"WP_SetTextUnderline"
 		]
 	},
-	"PaletteForms": {
-		"forms": [
-			"WP_CustomColors",
-			"WP_Palette",
-			"WP_Palette_Alignments",
-			"WP_Palette_Backgrounds",
-			"WP_Palette_BookMarks",
-			"WP_Palette_Expressions",
-			"WP_Palette_Fonts",
-			"WP_Palette_Frames",
-			"WP_Palette_ImportExport",
-			"WP_Palette_Protection",
-			"WP_Palette_Sizes",
-			"WP_Palette_StyleSheets",
-			"WP_Palette_Tables",
-			"WP_Palette_Tabulations"
-		]
-	},
 	"PALETTES": {
 		"groups": [
-			"Methods",
-			"PaletteForms"
+			"Methods"
 		],
 		"methods": [
 			"4D_Licence",
@@ -146,7 +142,21 @@
 			"WP_SetFont"
 		],
 		"forms": [
-			"WP_Palette_FindAndReplace"
+			"WP_CustomColors",
+			"WP_Palette",
+			"WP_Palette_Alignments",
+			"WP_Palette_Backgrounds",
+			"WP_Palette_BookMarks",
+			"WP_Palette_Expressions",
+			"WP_Palette_FindAndReplace",
+			"WP_Palette_Fonts",
+			"WP_Palette_Frames",
+			"WP_Palette_ImportExport",
+			"WP_Palette_Protection",
+			"WP_Palette_Sizes",
+			"WP_Palette_StyleSheets",
+			"WP_Palette_Tables",
+			"WP_Palette_Tabulations"
 		]
 	},
 	"TOOLBARS": {
@@ -241,8 +251,6 @@
 			"WP_GetProtections",
 			"WP_GetStyleAttributesByGroup",
 			"WP_GetStyleAttributesByType",
-			"WP_GetStyleSheet",
-			"WP_GetStyleSheets",
 			"WP_IgnoreError",
 			"WP_InsertSoftHyphen",
 			"WP_PictureSaveSettings",
@@ -259,15 +267,11 @@
 			"WP_ShowTabPages",
 			"WP_StyleFillEditLB",
 			"WP_StylesheetAdd",
-			"WP_StylesheetEdit",
 			"WP_StylesheetRemove",
 			"WP_StylesheetSetAttributes",
 			"WP_StylesheetUpdate",
 			"WP_SwitchToolbar",
 			"WP_TableMenu"
-		],
-		"forms": [
-			"WP_StyleSheetEdit"
 		]
 	},
 	"WP_Public": {
@@ -281,6 +285,7 @@
 	},
 	"trash": {
 		"groups": [
+			"(PaletteForms)",
 			"(Table Forms)"
 		]
 	}

@@ -1,6 +1,8 @@
 property _multiLevelListsTemplates : Collection
 property _document : Object
 
+property _withSyleSheetsAsCollection:=True:C214
+
 singleton shared Class constructor
 	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
@@ -105,41 +107,55 @@ Function newStyleSheet($name : Text; $type : Integer; $levelCount : Integer) : O
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function selectedStyleSheetIndex() : Integer
 	
-	var $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")  // In palette
-	var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")  // I toolbar
-	
-	If (Is nil pointer:C315($ptrListbox))  // From toolbar
+	If (This:C1470._withSyleSheetsAsCollection)
 		
-		return $ptrStylesheetNames->
+		return Form:C1466.styleSheets.index
 		
-	Else   // From palette
+	Else 
 		
-		return Find in array:C230($ptrListbox->; True:C214)  // Index
+		var $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")  // In palette
+		var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")  // I toolbar
 		
+		If (Is nil pointer:C315($ptrListbox))  // From toolbar
+			
+			return $ptrStylesheetNames->
+			
+		Else   // From palette
+			
+			return Find in array:C230($ptrListbox->; True:C214)  // Index
+			
+		End if 
 	End if 
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 Function selectedStyleSheetName() : Text
 	
-	var $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")  // In palette
-	var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")  // I toolbar
-	
-	If (Is nil pointer:C315($ptrListbox))  // From toolbar
+	If (This:C1470._withSyleSheetsAsCollection)
 		
-		var $indx:=$ptrStylesheetNames->
+		return Form:C1466.styleSheets.currentValue
 		
-	Else   // From palette
+	Else 
 		
-		$indx:=Find in array:C230($ptrListbox->; True:C214)  // Index
+		var $ptrListbox:=OBJECT Get pointer:C1124(Object named:K67:5; "LB_StyleSheets")  // In palette
+		var $ptrStylesheetNames:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")  // I toolbar
 		
-	End if 
-	
-	If ($indx>0)
+		If (Is nil pointer:C315($ptrListbox))  // From toolbar
+			
+			var $indx:=$ptrStylesheetNames->
+			
+		Else   // From palette
+			
+			$indx:=Find in array:C230($ptrListbox->; True:C214)  // Index
+			
+		End if 
 		
-		//%W-533.3
-		return $ptrStylesheetNames->{$indx}
-		//%W+533.3
-		
+		If ($indx>0)
+			
+			//%W-533.3
+			return $ptrStylesheetNames->{$indx}
+			//%W+533.3
+			
+		End if 
 	End if 
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
@@ -147,6 +163,7 @@ Function updateListOfStyleSheets()
 	
 	var $selectedType:=This:C1470.selectedSyleSheetType()  // 0 = Paragraph, 1 = Font, 6 = List
 	var $type:=This:C1470.selectedSyleSheetType(True:C214)
+	
 	var $c:=$selectedType=1 ? WP Get style sheets:C1655(This:C1470.document; wk type character:K81:296) : WP Get style sheets:C1655(This:C1470.document; $type)
 	
 	Case of 
@@ -164,8 +181,37 @@ Function updateListOfStyleSheets()
 			// ______________________________________________________
 	End case 
 	
-	var $ptr:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
-	COLLECTION TO ARRAY:C1562($c; $ptr->; "name")
+	If (This:C1470._withSyleSheetsAsCollection)
+		
+		OBJECT SET VISIBLE:C603(*; "Stylesheet_Names"; False:C215)
+		OBJECT SET VISIBLE:C603(*; "Stylesheet_Names1"; True:C214)
+		
+		
+		If (This:C1470.isToolbar)
+			
+			Form:C1466.styleSheets.data:=$c
+			Form:C1466.styleSheets.values:=$c.extract("name")
+			Form:C1466.styleSheets.index:=-1
+			Form:C1466.styleSheets.currentValue:=""
+			
+		Else 
+			
+			Form:C1466.styleSheets:=$c
+			
+		End if 
+		
+		//Form.styleSheets:={}
+		
+		
+	Else 
+		
+		OBJECT SET VISIBLE:C603(*; "Stylesheet_Names1"; False:C215)
+		OBJECT SET VISIBLE:C603(*; "Stylesheet_Names"; True:C214)
+		
+		var $ptr:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
+		COLLECTION TO ARRAY:C1562($c; $ptr->; "name")
+		
+	End if 
 	
 	//WP_GetStyleSheet
 	This:C1470.getCurrentStyleSheet()
@@ -197,8 +243,6 @@ Function getCurrentStyleSheet()
 		
 	End if 
 	
-	var $stylesheet_Names:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
-	
 	// MARK:- Update the list of style sheets
 	var $c:=WP Get style sheets:C1655(This:C1470.document; $type)
 	
@@ -220,14 +264,31 @@ then the dropdown list shall contain only the paragraph style sheets that are no
 			
 		Else   // Keep only paragraphe style sheets
 			
-			// Save the name of the “Normal” style sheet
+			If (This:C1470._withSyleSheetsAsCollection)
+				
+				// Save the "Normal" style 
+				var $normal_ : Object:=$c.query("listStyleType = 0").first()
+				
+			Else 
+				
+				// Save the name of the "Normal" style sheet
+				var $normal : Text:=$c.query("listStyleType = 0").first().name
+				
+			End if 
 			
-			var $normal : Text:=$c.query("listStyleType = 0").first().name
 			$c:=$c.query("listStyleType = null")
 			
 		End if 
 		
-		$c:=$c.extract("name").sort()
+		If (This:C1470._withSyleSheetsAsCollection)
+			
+			$c:=$c.orderBy("name")
+			
+		Else 
+			
+			$c:=$c.extract("name").sort
+			
+		End if 
 		
 		If ($isList)
 			
@@ -238,7 +299,7 @@ for the user to choose from
 			
 */
 			
-			var $template:=cs:C1710._ui.me.multiLevelListsTemplates
+			var $template:=This:C1470.multiLevelListsTemplates
 			
 			If ($template.length>0)
 				
@@ -252,26 +313,66 @@ In the style sheets dropdown list, the multi-level style sheets shall be divided
 				
 				If ($c.length>0)
 					
-					$c.push("-")
-					
+					If (This:C1470._withSyleSheetsAsCollection)
+						
+						$c.push({name: "TEMPLATES"; separator: True:C214})
+						
+					Else 
+						
+						$c.push("-")
+						
+					End if 
 				End if 
 				
 				var $o : Object
+				
 				For each ($o; $template)
 					
-					$c.push($o.name)
-					
+					If (This:C1470._withSyleSheetsAsCollection)
+						
+						// /*$c.push({name: " "+$o.name})*/
+						$c.push({name: $o.name; template: True:C214})
+						
+					Else 
+						
+						$c.push($o.name)
+						
+					End if 
 				End for each 
 			End if 
 			
 		Else 
 			
-			$c.push($normal)
-			
+			If (This:C1470._withSyleSheetsAsCollection)
+				
+				$c.push($normal_)
+				
+			Else 
+				
+				$c.push($normal)
+				
+			End if 
 		End if 
 		
-		COLLECTION TO ARRAY:C1562($c; $stylesheet_Names->)
-		
+		If (This:C1470._withSyleSheetsAsCollection)
+			
+			If (This:C1470.isToolbar)
+				
+				Form:C1466.styleSheets.data:=$c
+				Form:C1466.styleSheets.values:=$c.extract("name")
+				
+			Else 
+				
+				Form:C1466.styleSheets:=$c
+				
+			End if 
+			
+		Else 
+			
+			var $stylesheet_Names:=OBJECT Get pointer:C1124(Object named:K67:5; "stylesheet_Names")
+			COLLECTION TO ARRAY:C1562($c; $stylesheet_Names->)
+			
+		End if 
 	End if 
 	
 	var $styleSheet : Object
@@ -285,17 +386,53 @@ In the style sheets dropdown list, the multi-level style sheets shall be divided
 	
 	// MARK:- Select the current style sheet if ny
 	var $name : Text:=$styleSheet.name
-	var $pos:=Find in array:C230($stylesheet_Names->; $name)
-	$pos:=$pos>0 ? $pos : 0
 	
 	If (This:C1470.isToolbar)
 		
-		$stylesheet_Names->:=$pos
+		If (This:C1470._withSyleSheetsAsCollection)
+			
+			If ($c.indices("name = :1"; $name).length>0)
+				
+				Form:C1466.styleSheets.index:=$c.indices("name = :1"; $name).first()
+				
+			Else 
+				
+				Form:C1466.styleSheets.index:=-1
+				Form:C1466.styleSheets.currentValue:=""
+				
+			End if 
+			
+		Else 
+			
+			var $pos:=Find in array:C230($stylesheet_Names->; $name)
+			$pos:=$pos>0 ? $pos : 0
+			$stylesheet_Names->:=$pos
+			
+		End if 
 		
 	Else 
 		
-		LISTBOX SELECT ROW:C912(*; "LB_StyleSheets"; $pos; $pos=0 ? lk remove from selection:K53:3 : lk replace selection:K53:1)
-		
+		If (This:C1470._withSyleSheetsAsCollection)
+			
+			Form:C1466.styleSheets:=Form:C1466.styleSheets
+			
+			If ($c.indices("name = :1"; $name).length>0)
+				
+				LISTBOX SELECT ROW:C912(*; "LB_StyleSheets1"; $c.indices("name = :1"; $name).first()+1; lk replace selection:K53:1)
+				
+			Else 
+				
+				LISTBOX SELECT ROW:C912(*; "LB_StyleSheets1"; 0; lk remove from selection:K53:3)
+				
+			End if 
+			
+		Else 
+			
+			$pos:=Find in array:C230($stylesheet_Names->; $name)
+			$pos:=$pos>0 ? $pos : 0
+			LISTBOX SELECT ROW:C912(*; "LB_StyleSheets"; $pos; $pos=0 ? lk remove from selection:K53:3 : lk replace selection:K53:1)
+			
+		End if 
 	End if 
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
@@ -609,6 +746,54 @@ Function copyStyleSheetAtributes($source : 4D:C1709.WriteStyleSheet; $target : 4
 	
 	cs:C1710._tools.me.copyAttributes($source; $target; \
 		["name"; "owner"; "type"; "listLevelCount"; "listLevelIndex"; "listRootStyle"])
+	
+	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+Function styleSheetMetaInfoExpression($item : Object) : Object
+	
+	
+	$meta:=New object:C1471
+	
+	If (Bool:C1537($item.template))  //ID is an attribute of collection objects/entities
+		
+		//$meta.stroke:="purple"
+		$meta.cell:=New object:C1471("name"; New object:C1471("stroke"; "orange"))
+		
+	Else 
+		
+		$meta.cell:=New object:C1471("name"; New object:C1471("stroke"; "red"))
+		
+	End if 
+	
+	
+	
+/*
+var $meta:={stroke: "red"}
+	
+Case of 
+	
+//______________________________________________________
+: (Bool($item.separator))
+	
+//$meta.cell.name.disabled:=True
+//$meta.unselectable:=True
+	
+//______________________________________________________
+: (Bool($item.template))
+	
+//$meta.cell.name.fontStyle="italic"
+//$meta.cell.name.textDecoration="underline"
+	
+//______________________________________________________
+Else 
+	
+// A "Case of" statement should never omit "Else"
+	
+//______________________________________________________
+End case 
+*/
+	
+	
+	return $meta
 	
 	
 	// MARK:-
