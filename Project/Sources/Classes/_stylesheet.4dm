@@ -1,5 +1,7 @@
 property name : Text
-property owner : 4D:C1709.WriteDocument
+
+// FIXME: Use 4D.Write class
+property owner : Object/*4D.WriteDocument*/
 property type : Integer
 property font; fontSize : Text
 property marginBottom; marginLeft; marginRright; marginTop : Text
@@ -12,7 +14,4 @@ property listImageURLtext
 
 Class constructor
 	
-	
 Function getAttibutes() : Collection
-	
-	

@@ -45,7 +45,9 @@ Case of
 		If ($template#Null:C1517)\
 			 && ($index>Find in array:C230($_items; "-"))
 			
-			var $styleSheet : 4D:C1709.WriteStyleSheet:=$ui.styleSheets.query("name = :1"; $name).first()
+			// FIXME: Use 4D.Write class
+			// var $styleSheet : 4D.WriteStyleSheet:=$ui.styleSheets.query("name = :1"; $name).first()
+			var $styleSheet : Object:=$ui.styleSheets.query("name = :1"; $name).first()
 			
 			If ($styleSheet#Null:C1517)
 				

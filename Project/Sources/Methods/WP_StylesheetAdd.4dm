@@ -62,8 +62,6 @@ Case of
 			
 		End if 
 		
-		var $styleSheet_ : Object
-		
 		Case of 
 				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
@@ -75,14 +73,14 @@ Case of
 			: ($selectedType=6)  // Hierarchical style sheet
 				
 				$from:=WP Paragraph range:C1346($ui.selection)
-				var $styleSheet : cs:C1710._stylesheet
-				WP Get attributes:C1345($from; wk style sheet:K81:63; $styleSheet)
+				var $current : Text
+				WP Get attributes:C1345($from; wk style sheet:K81:63; $current)
 				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
 			: ($type=wk type paragraph:K81:191)
 				
 				$from:=WP Paragraph range:C1346($ui.selection)
-				WP Get attributes:C1345($from; wk style sheet:K81:63; $styleSheet)
+				WP Get attributes:C1345($from; wk style sheet:K81:63; $current)
 				
 				// ┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
 		End case 
@@ -90,9 +88,8 @@ Case of
 		// ________________________________________________________________________________
 	: ($duplicate)
 		
-		$styleSheet:=$styleSheets[Num:C11(Delete string:C232($choice; 1; 10))]  // Remove prefix "duplicate_"
-		
-		$name:=$ui.newStyleSheetName($styleSheet.name; $ui.document; $type)
+		$current:=$styleSheets[Num:C11(Delete string:C232($choice; 1; 10))]  // Remove prefix "duplicate_"
+		$name:=$ui.newStyleSheetName($current; $ui.document; $type)
 		
 		If (Length:C16($name)=0)
 			
@@ -103,6 +100,7 @@ Case of
 		// ________________________________________________________________________________
 End case 
 
+var $styleSheet : cs:C1710._stylesheet:=$ui.styleSheets.query("name = :1"; $current).first()
 var $levelCount : Integer:=Num:C11($styleSheet.listLevelCount)
 
 /* 📌 Requirement #21267

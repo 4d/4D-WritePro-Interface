@@ -107,24 +107,7 @@
 			"WP_SetTextUnderline"
 		]
 	},
-	"PaletteForms": {
-		"forms": [
-			"WP_CustomColors",
-			"WP_Palette",
-			"WP_Palette_Alignments",
-			"WP_Palette_Backgrounds",
-			"WP_Palette_BookMarks",
-			"WP_Palette_Expressions",
-			"WP_Palette_Fonts",
-			"WP_Palette_Frames",
-			"WP_Palette_ImportExport",
-			"WP_Palette_Protection",
-			"WP_Palette_Sizes",
-			"WP_Palette_StyleSheets",
-			"WP_Palette_Tables",
-			"WP_Palette_Tabulations"
-		]
-	},
+	"PaletteForms": {},
 	"PALETTES": {
 		"groups": [
 			"Methods",
@@ -146,7 +129,21 @@
 			"WP_SetFont"
 		],
 		"forms": [
-			"WP_Palette_FindAndReplace"
+			"WP_CustomColors",
+			"WP_Palette",
+			"WP_Palette_Alignments",
+			"WP_Palette_Backgrounds",
+			"WP_Palette_BookMarks",
+			"WP_Palette_Expressions",
+			"WP_Palette_FindAndReplace",
+			"WP_Palette_Fonts",
+			"WP_Palette_Frames",
+			"WP_Palette_ImportExport",
+			"WP_Palette_Protection",
+			"WP_Palette_Sizes",
+			"WP_Palette_StyleSheets",
+			"WP_Palette_Tables",
+			"WP_Palette_Tabulations"
 		]
 	},
 	"TOOLBARS": {

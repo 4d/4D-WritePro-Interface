@@ -9,7 +9,8 @@ Function get area() : Object
 	return Form:C1466.area
 	
 	// <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <== <==
-Function get document() : 4D:C1709.WriteDocument
+	// FIXME: Use 4D.Write class
+Function get document() : Object/*4D.WriteDocument*/
 	
 	return Form:C1466.document || This:C1470.selection.owner
 	
@@ -291,6 +292,7 @@ In the style sheets dropdown list, the multi-level style sheets shall be divided
 	If (This:C1470.isToolbar)
 		
 		$stylesheet_Names->:=$pos
+		OBJECT SET ENABLED:C1123(*; "Stylesheet_btnDelete"; (Length:C16($name)>0) && ($name#"normal"))
 		
 	Else 
 		
@@ -605,7 +607,9 @@ Function duplicateStyleSheet($source : Object; $name : Text; $doc : Object)
 	End if 
 	
 	// === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
-Function copyStyleSheetAtributes($source : 4D:C1709.WriteStyleSheet; $target : 4D:C1709.WriteStyleSheet)
+	// FIXME: Use 4D.Write class
+/*Function copyStyleSheetAtributes($source : 4D.WriteStyleSheet; $target : 4D.WriteStyleSheet)*/
+Function copyStyleSheetAtributes($source : Object; $target : Object)
 	
 	cs:C1710._tools.me.copyAttributes($source; $target; \
 		["name"; "owner"; "type"; "listLevelCount"; "listLevelIndex"; "listRootStyle"])
