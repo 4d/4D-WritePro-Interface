@@ -11,36 +11,36 @@
         <trans-unit id="ugYbRVvnrYF54OWOAAY2Cw" resname="aStyleSheetWithThisNameAlreadyExists">
           <source>A style sheet with the name "{name}" already exists.
 What would you like to do?</source>
-          <target state="new">A style sheet with the name "{name}" already exists.
-What would you like to do?</target>
+          <target>Seznam stylů s tímto názvem "{name}" již existuje.
+Co chcete dělat?</target>
         </trans-unit>
         <trans-unit id="B1LqbgW8NLrn0FM5TQ1XOw" resname="overwriteExistingStyleSheet">
           <source>Overwrite existing style sheet</source>
-          <target state="new">Overwrite existing style sheet</target>
+          <target>Přepsat existující seznam stylů</target>
         </trans-unit>
         <trans-unit id="VeilTB6f5+lG8dOe4ydYdw" resname="createANewStyleSheet">
           <source>Create a new style sheet</source>
-          <target state="new">Create a new style sheet</target>
+          <target>Vytvořit nový seznam stylů</target>
         </trans-unit>
       </group>
       <group resname="New style sheet">
         <trans-unit id="h2b7Kg2ulwCxjejR8bEbKw" resname="aStylesheetWithThatNameAlreadyExists.">
           <source>A style sheet with that name, "{name}", already exists.</source>
-          <target state="new">A style sheet with that name, "{name}", already exists.</target>
+          <target>seznam stylů s tímto názvem, "{name}", již existuje.</target>
         </trans-unit>
         <trans-unit id="82+AFnlTCqFCx7WOPrQnFQ" resname="invalidStyleSheetName">
           <source>Invalid style sheet name.</source>
-          <target state="new">Invalid style sheet name.</target>
+          <target>Neplatný název seznamu stylů.</target>
         </trans-unit>
         <trans-unit id="UC4gFrIBXlMloWycpfkTug" resname="nameIsMandatory">
           <source>You must enter a name.</source>
-          <target state="new">You must enter a name.</target>
+          <target>Musíte vložit název.</target>
         </trans-unit>
       </group>
       <group resname="Style sheets">
         <trans-unit id="_Hk5nQH0uamRkCfbe9UdzA" resname="allSub-levelStyleSheetsWillBeRemoved">
           <source>All sub-level style sheets will be removed.</source>
-          <target state="new">All sub-level style sheets will be removed.</target>
+          <target>Všechny podúrovně seznamu stylů budou odstraněny.</target>
         </trans-unit>
       </group>
     </body>
