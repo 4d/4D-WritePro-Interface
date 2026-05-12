@@ -42,6 +42,8 @@ shared Function get multiLevelListsTemplates() : Collection
 There shall be a json file called “multiLevelStyles.json” available in 4D Write Pro Interface Resources/4DWP_MultiLevel folder, 
 that will contain the definition of the pre-defined multi-level lists
 	
+⚠️ Update: No unnecessary enclosing folder
+	
 */
 	
 	If (This:C1470._multiLevelListsTemplates#Null:C1517)  // Cache
@@ -52,7 +54,7 @@ that will contain the definition of the pre-defined multi-level lists
 	
 	This:C1470._multiLevelListsTemplates:=New shared collection:C1527
 	
-	var $file:=File:C1566("/RESOURCES/4DWP_MultiLevel/multiLevelStyles.json"; *)
+	var $file:=File:C1566("/RESOURCES/multiLevelStyles.json"; *)
 	
 	If (Not:C34($file.exists))  // Use the built-in templates
 		
