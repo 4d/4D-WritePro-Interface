@@ -986,7 +986,7 @@
 					"dataSource": "Button",
 					"action": "cancel",
 					"shortcutKey": "[Esc]",
-					"text": "Cancel",
+					"text": ":xliff:cancel",
 					"events": [
 						"onClick"
 					],
@@ -1004,7 +1004,7 @@
 					"dataSource": "Button",
 					"action": "accept",
 					"shortcutKey": "[Enter]",
-					"text": "OK",
+					"text": ":xliff:ok",
 					"defaultButton": true,
 					"events": [
 						"onClick"
