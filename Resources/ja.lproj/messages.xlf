@@ -11,36 +11,36 @@
         <trans-unit id="ugYbRVvnrYF54OWOAAY2Cw" resname="aStyleSheetWithThisNameAlreadyExists">
           <source>A style sheet with the name "{name}" already exists.
 What would you like to do?</source>
-          <target state="new">A style sheet with the name "{name}" already exists.
-What would you like to do?</target>
+          <target>同じ名前"{name}"を持ったスタイルシートが既に存在します。
+実行しますか？</target>
         </trans-unit>
         <trans-unit id="B1LqbgW8NLrn0FM5TQ1XOw" resname="overwriteExistingStyleSheet">
           <source>Overwrite existing style sheet</source>
-          <target state="new">Overwrite existing style sheet</target>
+          <target>既存のスタイルシートを上書きする</target>
         </trans-unit>
         <trans-unit id="VeilTB6f5+lG8dOe4ydYdw" resname="createANewStyleSheet">
           <source>Create a new style sheet</source>
-          <target state="new">Create a new style sheet</target>
+          <target>新しいスタイルシートを作成する</target>
         </trans-unit>
       </group>
       <group resname="New style sheet">
         <trans-unit id="h2b7Kg2ulwCxjejR8bEbKw" resname="aStylesheetWithThatNameAlreadyExists.">
           <source>A style sheet with that name, "{name}", already exists.</source>
-          <target state="new">A style sheet with that name, "{name}", already exists.</target>
+          <target>その"{name}"と同じ名前を持ったスタイルシートが既に存在します。</target>
         </trans-unit>
         <trans-unit id="82+AFnlTCqFCx7WOPrQnFQ" resname="invalidStyleSheetName">
           <source>Invalid style sheet name.</source>
-          <target state="new">Invalid style sheet name.</target>
+          <target>無効なスタイルシート名です。</target>
         </trans-unit>
         <trans-unit id="UC4gFrIBXlMloWycpfkTug" resname="nameIsMandatory">
           <source>You must enter a name.</source>
-          <target state="new">You must enter a name.</target>
+          <target>名前の入力は必須です。</target>
         </trans-unit>
       </group>
       <group resname="Style sheets">
         <trans-unit id="_Hk5nQH0uamRkCfbe9UdzA" resname="allSub-levelStyleSheetsWillBeRemoved">
           <source>All sub-level style sheets will be removed.</source>
-          <target state="new">All sub-level style sheets will be removed.</target>
+          <target>全てのサブレベルのスタイルシートは削除されます。</target>
         </trans-unit>
       </group>
     </body>
