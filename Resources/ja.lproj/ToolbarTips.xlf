@@ -310,10 +310,6 @@
           <source>Preview</source>
           <target>プレビュー</target>
         </trans-unit>
-        <trans-unit id="105" resname="print">
-          <source>Print</source>
-          <target>印刷</target>
-        </trans-unit>
         <trans-unit id="26" resname="redo">
           <source>Redo</source>
           <target>やり直し</target>
