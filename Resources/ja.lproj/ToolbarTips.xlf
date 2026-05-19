@@ -82,15 +82,15 @@
           <source>Borders</source>
           <target>境界線</target>
         </trans-unit>
-        <trans-unit id="83" resname="bordersColor">
+        <trans-unit id="83_2" resname="bordersColor">
           <source>Borders color</source>
           <target>境界線カラー</target>
         </trans-unit>
-        <trans-unit id="85" resname="bordersNone">
+        <trans-unit id="85_2" resname="bordersNone">
           <source>No borders</source>
           <target>境界線なし</target>
         </trans-unit>
-        <trans-unit id="86" resname="bordersStyle">
+        <trans-unit id="86_2" resname="bordersStyle">
           <source>Border style</source>
           <target>境界線スタイル</target>
         </trans-unit>
@@ -142,7 +142,7 @@
           <source>Cut</source>
           <target>カット</target>
         </trans-unit>
-        <trans-unit id="108" resname="enableGrammar">
+        <trans-unit id="108_2" resname="enableGrammar">
           <source>Check grammar with spelling</source>
           <target>文法とスペルをチェック</target>
         </trans-unit>
@@ -174,15 +174,15 @@
           <source>Ignore the word</source>
           <target>単語を無視</target>
         </trans-unit>
-        <trans-unit id="78" resname="imageBehind">
+        <trans-unit id="78_2" resname="imageBehind">
           <source>Image behind text</source>
           <target>テキストの背景に画像</target>
         </trans-unit>
-        <trans-unit id="80" resname="imageInFront">
+        <trans-unit id="80_2" resname="imageInFront">
           <source>Image in front of text</source>
           <target>テキストの前面に画像</target>
         </trans-unit>
-        <trans-unit id="79" resname="imageInline">
+        <trans-unit id="79_2" resname="imageInline">
           <source>Image inline with text</source>
           <target>テキストインライン画像</target>
         </trans-unit>
@@ -266,7 +266,7 @@
           <source>Page mode</source>
           <target>ページモード</target>
         </trans-unit>
-        <trans-unit id="86" resname="movetoBack">
+        <trans-unit id="86_3" resname="movetoBack">
           <source>Move to back</source>
           <target>背後に移動</target>
         </trans-unit>
@@ -298,11 +298,11 @@
           <source>Page size</source>
           <target>ページサイズ</target>
         </trans-unit>
-        <trans-unit id="87" resname="paragraphs">
+        <trans-unit id="87_2" resname="paragraphs">
           <source>Paragraphs</source>
           <target>段落</target>
         </trans-unit>
-        <trans-unit id="15" resname="paste">
+        <trans-unit id="15_2" resname="paste">
           <source>Paste</source>
           <target>ペースト</target>
         </trans-unit>
@@ -346,19 +346,19 @@
           <source>Show / hide headers</source>
           <target>ヘッダーを表示/非表示</target>
         </trans-unit>
-        <trans-unit id="54" resname="showHideHiddenChars">
+        <trans-unit id="54_2" resname="showHideHiddenChars">
           <source>Show / hide hidden chars</source>
           <target>非表示文字を表示/非表示</target>
         </trans-unit>
-        <trans-unit id="56" resname="showHideHiddenHorizontalRuler">
+        <trans-unit id="56_2" resname="showHideHiddenHorizontalRuler">
           <source>Show / hide horizontal ruler</source>
           <target>水平ルーラーを表示/非表示</target>
         </trans-unit>
-        <trans-unit id="57" resname="showHideHiddenVerticalRuler">
+        <trans-unit id="57_2" resname="showHideHiddenVerticalRuler">
           <source>Show / hide vertical ruler</source>
           <target>垂直ルーラーを表示/非表示</target>
         </trans-unit>
-        <trans-unit id="108" resname="size">
+        <trans-unit id="108_3" resname="size">
           <source>Size</source>
           <target>サイズ</target>
         </trans-unit>
@@ -485,90 +485,34 @@
         <trans-unit id="xxxc" resname="unmergeCells">
           <source>Unmerge cells</source>
           <target>セルの結合を解除</target>
-        </trans-unit> 
-        <trans-unit id="83_2" resname="bordersColor">
-          <source>Borders color</source>
-          <target state="new">Borders color</target>
-        </trans-unit>
-        <trans-unit id="85_2" resname="bordersNone">
-          <source>No borders</source>
-          <target state="new">No borders</target>
-        </trans-unit>
-        <trans-unit id="86_2" resname="bordersStyle">
-          <source>Border style</source>
-          <target state="new">Border style</target>
-        </trans-unit>
-        <trans-unit id="108_2" resname="enableGrammar">
-          <source>Check grammar with spelling</source>
-          <target state="new">Check grammar with spelling</target>
-        </trans-unit>
-        <trans-unit id="78_2" resname="imageBehind">
-          <source>Image behind text</source>
-          <target state="new">Image behind text</target>
-        </trans-unit>
-        <trans-unit id="80_2" resname="imageInFront">
-          <source>Image in front of text</source>
-          <target state="new">Image in front of text</target>
-        </trans-unit>
-        <trans-unit id="79_2" resname="imageInline">
-          <source>Image inline with text</source>
-          <target state="new">Image inline with text</target>
-        </trans-unit>
-        <trans-unit id="86_3" resname="movetoBack">
-          <source>Move to back</source>
-          <target state="new">Move to back</target>
-        </trans-unit>
-        <trans-unit id="87_2" resname="paragraphs">
-          <source>Paragraphs</source>
-          <target state="new">Paragraphs</target>
-        </trans-unit>
-        <trans-unit id="15_2" resname="paste">
-          <source>Paste</source>
-          <target state="new">Paste</target>
-        </trans-unit>
-        <trans-unit id="54_2" resname="showHideHiddenChars">
-          <source>Show / hide hidden chars</source>
-          <target state="new">Show / hide hidden chars</target>
-        </trans-unit>
-        <trans-unit id="56_2" resname="showHideHiddenHorizontalRuler">
-          <source>Show / hide horizontal ruler</source>
-          <target state="new">Show / hide horizontal ruler</target>
-        </trans-unit>
-        <trans-unit id="57_2" resname="showHideHiddenVerticalRuler">
-          <source>Show / hide vertical ruler</source>
-          <target state="new">Show / hide vertical ruler</target>
-        </trans-unit>
-        <trans-unit id="108_3" resname="size">
-          <source>Size</source>
-          <target state="new">Size</target>
         </trans-unit>
         <trans-unit id="bpGqCWxSJ1c8n_vfQs2bkg" resname="multiLevelstylesheets">
           <source>Multi-level style sheets</source>
-          <target state="new">Multi-level style sheets</target>
+          <target>マルチレベルスタイルシート</target>
         </trans-unit>
         <trans-unit id="w5papCaA1M4PwIzUXyY4zg" resname="increaseListLevel">
           <source>Increase list level</source>
-          <target state="new">Increase list level</target>
+          <target>リストレベルを上げる</target>
         </trans-unit>
         <trans-unit id="_K64fNfSsCwsDfwUzXa5Mg" resname="decreaseListLevel">
           <source>Decrease list level </source>
-          <target state="new">Decrease list level </target>
+          <target>リストレベルを下げる</target>
         </trans-unit>
         <trans-unit id="n_PruREb+sg9X9IQGhnw+Q" resname="appendLevelToList">
           <source>Append level to list </source>
-          <target state="new">Append level to list </target>
+          <target>リストにレベルを追加</target>
         </trans-unit>
         <trans-unit id="yJGtnJ2UsEJNaQXT17h00g" resname="concatenateNumberingMarker">
           <source>Concatenate numbering marker</source>
-          <target state="new">Concatenate numbering marker</target>
+          <target>ナンバリングマーカーを連結</target>
         </trans-unit>
         <trans-unit id="IP2_QvQ+LbvEWLRc+zcemg" resname="numberingMarkerParenthesis">
           <source>Numbering marker Parenthesis</source>
-          <target state="new">Numbering marker Parenthesis</target>
+          <target>ナンバリングマーカーのカッコ</target>
         </trans-unit>
       </group>
       <group resname="Tabs">
-        <trans-unit id="24" resname="borders">
+        <trans-unit id="24_2" resname="borders">
           <source>Borders</source>
           <target>境界線</target>
         </trans-unit>
@@ -576,7 +520,7 @@
           <source>Home</source>
           <target>ホーム</target>
         </trans-unit>
-        <trans-unit id="26" resname="images">
+        <trans-unit id="26_2" resname="images">
           <source>Images</source>
           <target>画像</target>
         </trans-unit>
@@ -592,7 +536,7 @@
           <source>Print</source>
           <target>印刷</target>
         </trans-unit>
-        <trans-unit id="28" resname="spell">
+        <trans-unit id="28_2" resname="spell">
           <source>Spell &amp; Gram.</source>
           <target>スペル &amp; 文法</target>
         </trans-unit>
@@ -628,21 +572,9 @@
           <source>Delete or reset sections</source>
           <target>セクションの削除またはリセット</target>
         </trans-unit>
-        <trans-unit id="24_2" resname="borders">
-          <source>Borders</source>
-          <target state="new">Borders</target>
-        </trans-unit>
-        <trans-unit id="26_2" resname="images">
-          <source>Images</source>
-          <target state="new">Images</target>
-        </trans-unit>
-        <trans-unit id="28_2" resname="spell">
-          <source>Spell &amp; Gram.</source>
-          <target state="new">Spell &amp; Gram.</target>
-        </trans-unit>
       </group>
       <group resname="Labels">
-        <trans-unit id="57" resname="applyMarginsTo">
+        <trans-unit id="57_3" resname="applyMarginsTo">
           <source>Apply margins and padding to…</source>
           <target>マージンとパッディングを適用…</target>
         </trans-unit>
@@ -677,10 +609,6 @@
         <trans-unit id="xxxd" resname="PrintSettings">
           <source>Print settings…</source>
           <target>印刷設定…</target>
-        </trans-unit>
-        <trans-unit id="57_3" resname="applyMarginsTo">
-          <source>Apply margins and padding to…</source>
-          <target state="new">Apply margins and padding to…</target>
         </trans-unit>
       </group>
     </body>
