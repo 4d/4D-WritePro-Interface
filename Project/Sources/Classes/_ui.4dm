@@ -587,6 +587,13 @@ Function duplicateStyleSheet($source : Object; $name : Text; $doc : Object)
 				
 				var $attributValue : Variant:=$level[$attributeName]
 				
+				// MARK: [Bug]: Constant names are not accepted as json keys in multiLevelStyles.json #22631
+				If (Position:C15("wk "; $attributeName)=1)
+					
+					$attributeName:=Formula from string:C1601($attributeName).call()
+					
+				End if 
+				
 				If (["listStyleType"].includes($attributeName))
 					
 					If (Value type:C1509($attributValue)=Is text:K8:3)
